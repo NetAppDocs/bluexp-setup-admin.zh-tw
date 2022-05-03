@@ -1,0 +1,108 @@
+---
+sidebar: sidebar 
+permalink: reference-permissions-gcp.html 
+keywords: permissions, gcp, gcp permissions 
+summary: Cloud Manager 需要權限、才能在雲端供應商中執行動作。這些權限包含在 NetApp 提供的原則中。您可能想要瞭解 Cloud Manager 使用這些權限的功能。 
+---
+= Google Cloud中Connector的必要權限
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Manager 需要權限、才能在雲端供應商中執行動作。這些權限包含在中 https://mysupport.netapp.com/site/info/cloud-manager-policies["NetApp 提供的原則"^]。您可能想要瞭解 Cloud Manager 使用這些權限的功能。
+
+適用於 GCP 的 Cloud Manager 原則包含 Cloud Manager 部署和管理 Cloud Volumes ONTAP 功能所需的權限。
+
+[cols="50,50"]
+|===
+| 行動 | 目的 
+
+
+| - compute 、 disks.create - compute 、 disks.createSnapshot - compute.disks.delete - compute 、 disks.Get - compute 、 disks.list - compute.disks.setLabels - compute.disks.use | 建立及管理 Cloud Volumes ONTAP 磁碟以供使用。 
+
+
+| - compute 、防火牆、 create - compute.firewalls.delete - compute 、防火牆、 Get - compute 、防火牆、 list | 建立 Cloud Volumes ONTAP 防火牆規則以供使用。 
+
+
+| 運算： globalOperations 。 Get | 以取得作業狀態。 
+
+
+| - compiler.images.Get - compile.images.getFromFamily - compile.images.list - compute.images.useReadOnly | 取得 VM 執行個體的映像。 
+
+
+| - compute.instances.attachDisk - compute.instances.detachDisk | 可將磁碟安裝到 Cloud Volumes ONTAP 實體上、並將其拆離。 
+
+
+| - compute.instances.create - compute.instances.delete | 建立及刪除 Cloud Volumes ONTAP 不顯示的 VM 執行個體。 
+
+
+| - compute.instances.get | 列出 VM 執行個體。 
+
+
+| - compute.instances.getSerialPortOutput | 以取得主控台記錄。 
+
+
+| - compute.instances.list | 可檢索區域中的實例列表。 
+
+
+| - compute.instances.setDeletionProtection | 設定執行個體的刪除保護。 
+
+
+| - compute.instances.setLabels | 以新增標籤。 
+
+
+| - compute.instances.setMachineType - compute.instances.setMinCpuPlatform | 變更 Cloud Volumes ONTAP 機器類型以供使用。 
+
+
+| - compute.instances.setMetadata | 新增中繼資料。 
+
+
+| - compute.instances.setTags | 新增防火牆規則的標記。 
+
+
+| - compute.instances.start - compute.instances.stop - compute.instances.updateDisplayDevice | 開始和停止 Cloud Volumes ONTAP 功能。 
+
+
+| - compute 。 machineTypes 。 Get | 取得要檢查 qoutas 的核心數量。 
+
+
+| - compute.projects.get | 支援多個專案。 
+
+
+| - compute 、 snapshots.create - compute.snapshots.delete - compute 、 snapshots.Get - compute 、 snapshots.list - compute.snapshots.setLabels | 以建立及管理持續磁碟快照。 
+
+
+| - compute.networks.get - compute.networks.list - compute .regions.Get - compute .regions.list - compute .subnetworks .Get - compute .subnetworks .list - compute .zonewores.Get - compute .zones.list | 取得建立全新 Cloud Volumes ONTAP 的物件虛擬機器執行個體所需的網路資訊。 
+
+
+| deploymentmanager.compositeTypes.get - deploymentmanager.compositeTypes.list - deploymentmanager.deployments.create - deploymentmanager.deployments.delete - deploymentmanager.deployments.get - deploymentmanager.deployments.list - deploymentmanager.in清單 - deploymentmanager.in清 - deploymentmanager.in清單 - deploymentmanager.operations - deploymentmanager.operations .list - deploymentmanager.separes.Get - deploymentmanager.operations - deploymentmanager.types.list - deploymentmanager.list | 使用 Cloud Volumes ONTAP Google Cloud Deployment Manager 部署物件虛擬機器執行個體。 
+
+
+| - logging.logEntries .list - logging.privateLogEntries .list | 以取得堆疊記錄磁碟機。 
+
+
+| - resourcemanager.projects.get | 支援多個專案。 
+
+
+| - storage 、 buckets 、 create - storage.buckets.delete - storage 、 buckets 、 storage 、 buckets 、 list - storage 、 buckets 、 update | 建立及管理 Google Cloud Storage 儲存庫以進行資料分層。 
+
+
+| - cloudkms.cryptoKeyVersions.useToEncrypt - cloudkms.cryptoKeys.Get - cloudkms.cryptoKeys.list - cloudkms.keycles.list | 搭配 Cloud Volumes ONTAP 使用 Cloud Key Management Service 的客戶管理加密金鑰。 
+
+
+| - compute.instances.setServiceAccount - iam.serviceAccounts.actAs - iam.serviceAccounts.getIamPolicy - iam.serviceAccounts.list - 儲存空間 .objects.Get - 儲存空間 .objects.list | 在 Cloud Volumes ONTAP 整個過程中設定服務帳戶。此服務帳戶提供資料分層至 Google Cloud Storage 儲存庫的權限。 
+
+
+| - compute 、 addresses.list - compute 、 backendServices.create - compute.networks.updatePolicy - compute 、 Region. 、 BackendServices.create - compute 、 Region. 、 BackendServices.list | 部署 HA 配對。 
+
+
+| - compute.subnetworks.use - compute.subnetworks.useExternalIp - compute.instances.addAccessConfig | 以實現Cloud Data Sense。 
+
+
+| - container。叢集。Get - container。叢集。清單 | 探索在Google Kubernetes Engine中執行的Kubernetes叢集。 
+|===

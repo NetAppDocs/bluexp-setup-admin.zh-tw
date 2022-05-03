@@ -1,0 +1,45 @@
+---
+sidebar: sidebar 
+permalink: concept-accounts-gcp.html 
+keywords: cloud provider accounts, gcp, gcp accounts, google cloud platform, google accounts, google cloud platform accounts, permissions, tiering, data tiering, account for data tiering, account for tiering, project, projects, add project, select new project, gcp project, google project, google cloud project 
+summary: 服務帳戶可讓Cloud Manager擁有部署和管理Cloud Volumes ONTAP 與Connector相同專案或不同專案中的各種系統的權限。 
+---
+= Google Cloud 專案、權限和帳戶
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+服務帳戶可讓Cloud Manager擁有部署和管理Cloud Volumes ONTAP 與Connector相同專案或不同專案中的各種系統的權限。
+
+
+
+== Cloud Manager 的專案與權限
+
+在 Cloud Volumes ONTAP Google Cloud 中部署時、您必須先在 Google Cloud 專案中部署 Connector 。Connector 無法在您的內部環境或其他雲端供應商中執行。
+
+直接從 Cloud Manager 部署 Connector 之前、必須先設定兩組權限：
+
+. 您需要使用具有從 Cloud Manager 啟動 Connector VM 執行個體權限的 Google 帳戶來部署 Connector 。
+. 部署 Connector 時、系統會提示您選取 https://cloud.google.com/iam/docs/service-accounts["服務帳戶"^] 適用於 VM 執行個體。Cloud Manager 可從服務帳戶取得權限 Cloud Volumes ONTAP 、代表您建立及管理各種系統。將自訂角色附加至服務帳戶、即可提供權限。
+
+
+我們已設定兩個 Y反 洗錢檔案、其中包含使用者和服務帳戶所需的權限。 link:task-creating-connectors-gcp.html["瞭解如何使用 Yaml 檔案來設定權限"]。
+
+下圖說明上述第 1 和第 2 項所述的權限要求：
+
+image:diagram_permissions_gcp.png["說明"]
+
+
+
+== 適用於此產品的專案 Cloud Volumes ONTAP
+
+可與 Connector 位於同一個專案中、或位於不同的專案中。 Cloud Volumes ONTAP若要在 Cloud Volumes ONTAP 不同的專案中部署功能、您必須先將 Connector 服務帳戶和角色新增至該專案。
+
+* link:task-creating-connectors-gcp.html#setting-up-gcp-permissions-to-create-a-connector["瞭解如何設定服務帳戶"]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-gcp.html["瞭解如何在 Cloud Volumes ONTAP GCP 中部署功能、並選擇專案"^]
+

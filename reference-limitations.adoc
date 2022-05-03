@@ -1,0 +1,111 @@
+---
+sidebar: sidebar 
+permalink: reference-limitations.html 
+keywords: limitations, active directory, ad, iscsi, key managers, ip address, govcloud, cloud manager, Cloud Volumes ONTAP, days, 14 days, running, Connectors should remain running 
+summary: 已知限制指出本產品版本不支援的平台、裝置或功能、或是無法與產品正確互通的平台、裝置或功能。請仔細檢閱這些限制。 
+---
+= 已知限制
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+已知限制指出本產品版本不支援的平台、裝置或功能、或是無法與產品正確互通的平台、裝置或功能。請仔細檢閱這些限制。
+
+這些限制僅適用於Cloud Manager的設定與管理：Connector、SaaS平台等。
+
+
+
+== 連接器限制
+
+
+
+=== 可能與172範圍內的IP位址發生衝突
+
+Cloud Manager部署連接器時、會有兩個介面、其中IP位址介於172.17.0.0/16和172.18.0.0/16範圍內。
+
+如果您的網路已設定具有上述任一範圍的子網路、則Cloud Manager可能會發生連線失敗。例如ONTAP 、在Cloud Manager中探索內部的功能不全的叢集可能會失敗。
+
+因應措施是變更連接器介面的IP位址。如需協助、請聯絡NetApp支援部門。
+
+
+
+=== 僅支援HTTP Proxy伺服器
+
+如果您的企業原則要求您使用Proxy伺服器來進行所有的HTTP通訊至網際網路、則必須設定連接器以使用該HTTP Proxy伺服器。Proxy 伺服器可以位於雲端或網路中。
+
+Cloud Manager不支援使用連接器的HTTPS Proxy。
+
+
+
+=== 不支援SSL解密
+
+Cloud Manager不支援啟用SSL解密的防火牆組態。如果啟用SSL解密、Cloud Manager會顯示錯誤訊息、而Connector執行個體則會顯示為非作用中。
+
+為了增強安全性、您可以選擇 link:task-installing-https-cert.html["安裝由憑證授權單位（CA）簽署的HTTPS憑證"]。
+
+
+
+=== 載入本機UI時顯示空白頁面
+
+如果您載入連接器的本機使用者介面、UI有時可能無法顯示、您只會看到空白頁面。
+
+此問題與快取問題有關。因應措施是使用無痕式或私有網路瀏覽器工作階段。
+
+
+
+=== 不支援共享 Linux 主機
+
+與其他應用程式共用的VM不支援Connector。VM必須專用於Connector軟體。
+
+
+
+=== 第三方代理程式與擴充功能
+
+Connector VM不支援協力廠商代理程式或VM擴充。
+
+
+
+== SaaS限制
+
+
+
+=== SaaS 平台在政府區域中已停用
+
+如果您在 AWS GovCloud 區域、 Azure Gov 區域或 Azure DoD 區域部署 Connector 、則只能透過 Connector 的主機 IP 位址存取 Cloud Manager 。系統會停用整個帳戶的 SaaS 平台存取權。
+
+這表示只有能夠存取終端使用者內部 VPC/vnet 的授權使用者、才能使用 Cloud Manager 的 UI 或 API 。
+
+這也表示 Cloud Manager 無法提供下列服務：
+
+* Kubernetes
+* 雲端分層
+* 全域檔案快取
+
+
+使用這些服務需要SaaS平台。
+
+
+NOTE: 雲端備份、雲端資料認同及監控服務均在政府區域提供支援與使用。
+
+
+
+== 市場限制
+
+
+
+=== Azure和Google Cloud合作夥伴不提供隨用隨付功能
+
+如果您是Microsoft Cloud Solution Provider（CSP）合作夥伴或Google Cloud合作夥伴、則無法使用NetApp隨用隨付訂閱。您必須購買授權、並以BYOL授權部署NetApp雲端解決方案。
+
+下列NetApp雲端服務不提供隨用隨付訂閱：
+
+* Cloud Volumes ONTAP
+* 雲端分層
+* 雲端備份
+* 雲端資料感測
+

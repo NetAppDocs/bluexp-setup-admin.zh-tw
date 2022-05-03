@@ -1,0 +1,41 @@
+---
+sidebar: sidebar 
+permalink: task-viewing-amazon-s3.html 
+keywords: s3 buckets, s3 storage, s3 working environment, amazon s3 buckets, amazon s3 working environment 
+summary: 在 AWS 中安裝 Connector 之後、 Cloud Manager 可以自動探索安裝在 AWS 帳戶中的 Amazon S3 儲存區相關資訊。 
+---
+= 檢視您的 Amazon S3 時段
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+在 AWS 中安裝 Connector 之後、 Cloud Manager 可以自動探索安裝在 AWS 帳戶中的 Amazon S3 儲存區相關資訊。
+
+您可以查看 S3 儲存桶的詳細資料、包括區域、存取層級、儲存層級、以及儲存桶是否搭配 Cloud Volumes ONTAP 使用以進行備份或資料分層。您也可以使用Cloud Data Sense掃描S3儲存區。
+
+.步驟
+. link:task-creating-connectors-aws.html["安裝連接器"] 在您要檢視 Amazon S3 儲存區的 AWS 帳戶中。
++
+您應該會在不久之後自動看到 Amazon S3 工作環境。
+
++
+image:screenshot_s3_we.gif["Amazon S3 工作環境的快照。"]
+
+. 按一下工作環境、然後從右窗格中選取一個動作。
++
+image:screenshot_s3_actions.gif["在您選取 Amazon S3 工作環境之後顯示「行動」窗格的快照。此窗格顯示 S3 的相關資訊：儲存區數量和區域數量。此窗格也有兩個動作：「啟用法規遵循」和「檢視桶」。"]
+
+. 按一下「 * 啟用法規遵循 * 」、掃描 S3 儲存區的個人和敏感資料。
++
+如需詳細資料、請參閱 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-scanning-s3.html["Amazon S3的Cloud Data Sense入門"^]。
+
+. 按一下「 * 檢視桶 * 」、即可檢視 AWS 帳戶中 S3 桶的詳細資料。
++
+image:screenshot_amazon_s3.gif["顯示 Amazon S3 工作環境詳細資料的螢幕快照：儲存區總數和區域總數、使用中服務的儲存區數目、以及顯示每個 S3 儲存區詳細資料的表格。"]
+
+

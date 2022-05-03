@@ -1,0 +1,16 @@
+---
+layout: astra 
+sidebar: sidebar 
+permalink: index.html 
+lead: 'Get started with Cloud Manager so that you can start using NetApp"s cloud services to manage your data across a hybrid multicloud. After set up is complete, you can administer your NetApp accounts, Connectors, cloud provider accounts, and more.' 
+summary: 開始使用Cloud Manager、即可開始使用NetApp的雲端服務來管理混合式多雲端的資料。設定完成後、您可以管理NetApp帳戶、連接器、雲端供應商帳戶等。 
+---
+= 設定及管理Cloud Manager
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+

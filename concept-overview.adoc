@@ -1,0 +1,101 @@
+---
+sidebar: sidebar 
+permalink: concept-overview.html 
+keywords: overview, concepts, features, use case, days, 14 days 
+summary: Cloud Manager 可讓 IT 專家和雲端架構設計師使用 NetApp 的雲端解決方案、集中管理混合式多雲端基礎架構。 
+---
+= 深入瞭解 Cloud Manager
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+Cloud Manager 可讓 IT 專家和雲端架構設計師使用 NetApp 的雲端解決方案、集中管理混合式多雲端基礎架構。
+
+
+
+== 功能
+
+Cloud Manager 是企業級 SaaS 型管理平台、無論資料位於何處、都能讓您隨時掌控資料。
+
+* 設定與使用 https://cloud.netapp.com/ontap-cloud["Cloud Volumes ONTAP"^] 實現跨雲端的高效率多重傳輸協定資料管理。
+* 設定及使用檔案儲存服務：
++
+** https://cloud.netapp.com/azure-netapp-files["Azure NetApp Files"^]
+** https://cloud.netapp.com/fsx-for-ontap["Amazon FSX for ONTAP Sf"^]
+** https://cloud.netapp.com/cloud-volumes-service-for-aws["AWS 適用的 Cloud Volumes Service"^]
+** https://cloud.netapp.com/cloud-volumes-service-for-gcp["適用於 Google Cloud Cloud Volumes Service"^]
+
+
+* 建立 ONTAP 磁碟區、備份至雲端、在混合雲中複寫資料、以及將冷資料分層至雲端、藉此探索及管理內部的支援功能。
+* 啟用整合式雲端服務、例如：
++
+** https://cloud.netapp.com/cloud-compliance["雲端資料感測"^]
+** https://cloud.netapp.com/cloud-insights["Cloud Insights"^]
+** https://cloud.netapp.com/cloud-backup-service["雲端備份"^]
+
+
+
+
+https://cloud.netapp.com/cloud-manager["深入瞭解 Cloud Manager"^]。
+
+
+
+== 支援的物件儲存供應商
+
+Cloud Manager 可讓您管理雲端儲存設備、並在 Amazon Web Services 、 Microsoft Azure 及 Google Cloud 中使用雲端服務。
+
+
+
+== 成本
+
+Cloud Manager 軟體是由 NetApp 免費提供。
+
+在大多數的工作中、 Cloud Manager 會提示您在雲端網路中部署 Connector 、這會導致雲端供應商對運算執行個體和相關儲存設備的收費。您可以選擇在內部環境中執行 Connector 軟體。
+
+
+
+== Cloud Manager 的運作方式
+
+Cloud Manager 包含與 NetApp Cloud Central 整合的 SaaS 型介面、以及可管理 Cloud Volumes ONTAP 各種效益和其他雲端服務的 Connectors 。
+
+
+
+=== 軟體即服務
+
+Cloud Manager 可透過存取 https://cloudmanager.netapp.com["SaaS 型使用者介面"^] 和 API 。這項SaaS體驗可讓您在最新功能發佈時自動存取、並在NetApp帳戶和連接器之間輕鬆切換。
+
+
+
+=== NetApp Cloud Central
+
+https://cloud.netapp.com["NetApp Cloud Central"^] 提供集中位置以供存取和管理 https://www.netapp.com/us/products/cloud-services/use-cases-for-netapp-cloud-services.aspx["NetApp 雲端服務"^]。透過集中式使用者驗證、您可以使用相同的認證資料集來存取 Cloud Manager 和 Cloud Insights 其他雲端服務、例如：
+
+
+
+=== NetApp帳戶
+
+首次登入Cloud Manager時、系統會提示您建立_NetApp帳戶_。此帳戶提供多租戶共享、可讓您在隔離的 _stap空間 _ 中組織使用者和資源。
+
+
+
+=== 連接器
+
+在大多數情況下、帳戶管理員需要在雲端或內部部署網路中部署 _Connector_ 。Connector 可讓 Cloud Manager 管理公有雲環境中的資源與程序。
+
+連接器應隨時保持執行狀態。這對於您持續啟用的服務健全狀況和營運而言十分重要。
+
+例如、連接器是 Cloud Volumes ONTAP 指功能健全及運作的關鍵元件。如果連接器電源關閉、 Cloud Volumes ONTAP 則在與連接器失去通訊超過 14 天之後、將會關閉此功能。
+
+link:concept-connectors.html["深入瞭解何時需要連接器及其運作方式"]。
+
+
+
+== SOC 2類型2認證
+
+一家獨立認證的公共會計公司和服務稽核員、負責審查Cloud Manager Cloud Sync 、NetApp、Cloud Tiering、Cloud Data Sense和Cloud Backup（Cloud Manager平台）、並確認他們已根據適用的信任服務條件、達成SOC 2類報告。
+
+https://www.netapp.com/company/trust-center/compliance/soc-2/["檢視NetApp的SOC 2報告"^]

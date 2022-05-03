@@ -1,0 +1,79 @@
+---
+sidebar: sidebar 
+permalink: reference-user-roles.html 
+keywords: user, users, roles, role, task, permission, permissions, tasks, admin, Account Admin, Workspace Admin, Cloud Compliance Viewer, Cloud Data Sense, SnapCenter Admin 
+summary: 「帳戶管理員」、「工作區管理員」、「法規遵循檢視器」及SnapCenter 「支援對象管理員」角色、可為使用者提供特定權限。 
+---
+= 角色
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+「帳戶管理員」、「工作區管理員」、「法規遵循檢視器」及SnapCenter 「支援對象管理員」角色、可為使用者提供特定權限。
+
+Compliance Viewer角色適用於唯讀的Cloud Data Sense存取。
+
+[cols="24,19,19,19,19"]
+|===
+| 工作 | 帳戶管理員 | 工作區管理 | 法規遵循檢視器 | 系統管理員SnapCenter 
+
+
+| 管理工作環境 | 是的 | 是的 | 否 | 否 
+
+
+| 在工作環境中啟用服務 | 是的 | 是的 | 否 | 否 
+
+
+| 檢視資料複寫狀態 | 是的 | 是的 | 否 | 否 
+
+
+| 檢視時間表 | 是的 | 是的 | 否 | 否 
+
+
+| 在工作區之間切換 | 是的 | 是的 | 是的 | 否 
+
+
+| 檢視資料感應掃描結果 | 是的 | 是的 | 是的 | 否 
+
+
+| 刪除工作環境 | 是的 | 否 | 否 | 否 
+
+
+| 將 Kubernetes 叢集連接至工作環境 | 是的 | 否 | 否 | 否 
+
+
+| 接收 Cloud Volumes ONTAP 此報告 | 是的 | 否 | 否 | 否 
+
+
+| 建立連接器 | 是的 | 否 | 否 | 否 
+
+
+| 管理NetApp帳戶 | 是的 | 否 | 否 | 否 
+
+
+| 管理認證資料 | 是的 | 否 | 否 | 否 
+
+
+| 修改 Cloud Manager 設定 | 是的 | 否 | 否 | 否 
+
+
+| 檢視及管理支援儀表板 | 是的 | 否 | 否 | 否 
+
+
+| 從 Cloud Manager 移除工作環境 | 是的 | 否 | 否 | 否 
+
+
+| 安裝 HTTPS 憑證 | 是的 | 否 | 否 | 否 
+
+
+| 使用SnapCenter 《支援服務 | 是的 | 是的 | 否 | 是的 
+|===
+.相關連結
+* link:task-setting-up-netapp-accounts.html["在NetApp帳戶中設定工作區和使用者"]
+* link:task-managing-netapp-accounts.html["管理NetApp帳戶中的工作區和使用者"]
+

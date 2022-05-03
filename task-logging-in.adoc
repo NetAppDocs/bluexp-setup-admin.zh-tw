@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: task-logging-in.html 
+keywords: logging in, log in, sign in, signing in, cloud central, netapp cloud central, user account, federated, federation, federated login, federation login 
+summary: 'Cloud Manager 介面可透過 SaaS 型使用者介面存取、方法是前往 https://cloudmanager.netapp.com[]。' 
+---
+= 登入 Cloud Manager
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Manager 介面可透過 SaaS 型使用者介面存取、方法是前往 https://cloudmanager.netapp.com[]。
+
+
+TIP: 您可以使用單一登入、從公司目錄（聯盟身分識別）使用認證登入。若要深入瞭解、請前往 https://cloud.netapp.com/help-center["Cloud Central說明中心"^] 然後按一下* Cloud Central登入選項*。
+
+.步驟
+. 開啟網頁瀏覽器並前往 https://cloudmanager.netapp.com[]。
+. 使用您的 NetApp Cloud Central 認證登入。
++
+image:screenshot_login.gif["Cloud Central 的登入畫面。"]
+
+
+
+您現在已經登入、可以開始使用Cloud Manager來管理混合式多雲端基礎架構。

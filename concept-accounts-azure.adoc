@@ -1,0 +1,61 @@
+---
+sidebar: sidebar 
+permalink: concept-accounts-azure.html 
+keywords: cloud provider accounts, azure, azure accounts, service principal, multiple accounts, permissions, policy, policies, subscriptions, credentials 
+summary: Cloud Manager 可讓您在部署 Cloud Volumes ONTAP 時選擇要使用的 Azure 認證資料。您可以 Cloud Volumes ONTAP 使用初始 Azure 認證來部署所有的整套系統、也可以新增其他認證資料。 
+---
+= Azure 認證與權限
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Manager 可讓您在部署 Cloud Volumes ONTAP 時選擇要使用的 Azure 認證資料。您可以 Cloud Volumes ONTAP 使用初始 Azure 認證來部署所有的整套系統、也可以新增其他認證資料。
+
+
+
+== Azure 初始認證
+
+從Cloud Manager部署Connector時、您需要使用具備部署Connector虛擬機器權限的Azure帳戶或服務主體。所需權限列於 https://mysupport.netapp.com/site/info/cloud-manager-policies["Azure 的連接器部署原則"^]。
+
+當 Cloud Manager 在 Azure 中部署 Connector 虛擬機器時、就能實現 https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["系統指派的託管身分識別"^] 在虛擬機器上建立自訂角色、然後將其指派給虛擬機器。此角色可讓 Cloud Manager 在該 Azure 訂閱中管理資源和程序。 link:reference-permissions-azure.html["檢閱 Cloud Manager 如何使用權限"]。
+
+image:diagram_permissions_initial_azure.png["顯示 Cloud Central 在 Azure 帳戶和訂閱中部署 Cloud Manager 的概念性映像。系統指派的託管身分識別已啟用、並將自訂角色指派給 Cloud Manager 虛擬機器。"]
+
+Cloud Manager 會在您為 Cloud Volumes ONTAP 下列項目建立新的工作環境時、依預設選取這些 Azure 認證資料：
+
+image:screenshot_accounts_select_azure.gif["顯示「詳細資料 & 認證」頁面中「切換帳戶」選項的快照。"]
+
+
+
+== 額外的 Azure 訂閱、提供託管身分識別
+
+託管身分識別與您啟動 Connector 的訂閱相關聯。如果您想要選擇不同的 Azure 訂閱、則需要 link:task-adding-azure-accounts.html#associating-additional-azure-subscriptions-with-a-managed-identity["將託管身分識別與這些訂閱建立關聯"]。
+
+
+
+== 其他 Azure 認證資料
+
+如果您要使用 Cloud Volumes ONTAP 不同的 Azure 認證資料來部署功能、則必須授予所需的權限 link:task-adding-azure-accounts.html["在 Azure Active Directory 中建立及設定服務主體"] 針對每個 Azure 帳戶。下圖顯示兩個額外的帳戶、每個帳戶都設有提供權限的服務主體和自訂角色：
+
+image:diagram_permissions_multiple_azure.png["顯示初始 Azure 帳戶（透過自訂角色和託管身分識別接收權限）的概念性映像、以及透過自訂角色和服務主體接收權限的兩個額外帳戶。"]
+
+您可以 link:task-adding-azure-accounts.html#adding-azure-accounts-to-cloud-manager["將帳戶認證新增至 Cloud Manager"] 提供 AD 服務主體的詳細資料。
+
+新增一組認證資料之後、您可以在建立新的工作環境時切換至這些認證資料：
+
+image:screenshot_accounts_switch_azure.gif["在詳細資料 & 認證頁面中按一下「切換帳戶」之後、顯示在雲端供應商帳戶之間選取的快照。"]
+
+.Marketplace 部署和內部部署呢？
+****
+以上各節說明推薦的 Connector 部署方法、該方法來自 NetApp Cloud Central 。您也可以從部署連接器至 Azure link:task-launching-azure-mktp.html["Azure Marketplace"]您也可以 link:task-installing-linux.html["在內部部署安裝連接器"]。
+
+如果您使用 Marketplace 、則會以相同方式提供權限。您只需要手動建立及設定 Connector 的託管身分識別、然後為任何其他帳戶提供權限。
+
+對於內部部署、您無法設定 Connector 的託管身分識別、但您可以像使用服務主體一樣提供額外帳戶的權限。
+
+****

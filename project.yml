@@ -1,0 +1,161 @@
+---
+settings:
+  name: Set up and administration
+  platform: cloud
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  langs: zh-tw,us-en,ja-jp,zh-cn,ko-kr
+sidebar:
+  entries:
+  - title: 所有Cloud Manager文件
+    url: https://docs.netapp.com/us-en/cloud-manager-family
+  - title: 設定與管理文件
+    url: "/index.html"
+  - title: 版本資訊
+    entries:
+    - title: 新增功能
+      url: "/whats-new.html"
+    - title: 限制
+      url: "/reference-limitations.html"
+  - title: 開始使用
+    entries:
+    - title: 深入瞭解 Cloud Manager
+      url: "/concept-overview.html"
+    - title: 入門檢查清單
+      url: "/reference-checklist-cm.html"
+    - title: 註冊 Cloud Central
+      url: "/task-signing-up.html"
+    - title: 登入 Cloud Manager
+      url: "/task-logging-in.html"
+    - title: 設定NetApp帳戶
+      entries:
+      - title: 瞭解NetApp客戶
+        url: "/concept-netapp-accounts.html"
+      - title: 設定工作區和使用者
+        url: "/task-setting-up-netapp-accounts.html"
+    - title: 設定連接器
+      entries:
+      - title: 深入瞭解連接器
+        url: "/concept-connectors.html"
+      - title: 設定您的網路
+        url: "/reference-networking-cloud-manager.html"
+      - title: 在 AWS 中建立連接器
+        url: "/task-creating-connectors-aws.html"
+      - title: 在 Azure 中建立 Connector
+        url: "/task-creating-connectors-azure.html"
+      - title: 在Google Cloud中建立Connector
+        url: "/task-creating-connectors-gcp.html"
+    - title: 下一步
+      url: "/reference-whats-next.html"
+  - title: 管理 Cloud Manager
+    entries:
+    - title: NetApp客戶
+      entries:
+      - title: 管理您的帳戶
+        url: "/task-managing-netapp-accounts.html"
+      - title: 監控您帳戶中的作業
+        url: "/task-monitor-cm-operations.html"
+      - title: 使用者角色
+        url: "/reference-user-roles.html"
+    - title: 連接器
+      entries:
+      - title: 進階部署
+        entries:
+        - title: 從 AWS Marketplace 建立
+          url: "/task-launching-aws-mktp.html"
+        - title: 從 Azure Marketplace 建立
+          url: "/task-launching-azure-mktp.html"
+        - title: 使用網際網路在自己的主機上安裝
+          url: "/task-installing-linux.html"
+        - title: 在內部安裝、無需網際網路
+          url: "/task-install-connector-onprem-no-internet.html"
+      - title: 尋找連接器的系統ID
+        url: "/task-finding-system-id.html"
+      - title: 管理現有的連接器
+        url: "/task-managing-connectors.html"
+      - title: 安裝 HTTPS 憑證
+        url: "/task-installing-https-cert.html"
+      - title: 設定 Proxy 設定
+        url: "/task-configuring-proxy.html"
+      - title: 預設組態
+        url: "/reference-connector-default-config.html"
+    - title: AWS認證資料
+      entries:
+      - title: 總覽
+        url: "/concept-accounts-aws.html"
+      - title: 管理認證與訂閱
+        url: "/task-adding-aws-accounts.html"
+    - title: Azure認證
+      entries:
+      - title: 總覽
+        url: "/concept-accounts-azure.html"
+      - title: 管理認證與訂閱
+        url: "/task-adding-azure-accounts.html"
+    - title: Google Cloud認證資料
+      entries:
+      - title: 總覽
+        url: "/concept-accounts-gcp.html"
+      - title: 管理認證與訂閱
+        url: "/task-adding-gcp-accounts.html"
+    - title: NetApp支援網站帳戶
+      url: "/task-adding-nss-accounts.html"
+  - title: 參考資料
+    entries:
+    - title: Connector的AWS權限
+      url: "/reference-permissions-aws.html"
+    - title: 連接器的Azure權限
+      url: "/reference-permissions-azure.html"
+    - title: Connector的Google Cloud權限
+      url: "/reference-permissions-gcp.html"
+  - title: 知識與支援
+    entries:
+    - title: 註冊以取得支援
+      url: "/task-support-registration.html"
+    - title: 取得協助
+      url: "/task-get-help.html"
+  - title: 法律聲明
+    url: "/legal-notices.html"
+homepage:
+  tiles:
+  - title: 開始使用
+    links:
+    - title: 深入瞭解 Cloud Manager
+      url: concept-overview.html
+    - title: 入門檢查清單
+      url: reference-checklist-cm.html
+  - title: 連接器
+    links:
+    - title: 深入瞭解連接器
+      url: concept-connectors.html
+    - title: 設定您的網路
+      url: reference-networking-cloud-manager.html
+    - title: 管理連接器
+      url: task-managing-connectors.html
+  - title: NetApp客戶
+    links:
+    - title: 瞭解NetApp客戶
+      url: concept-netapp-accounts.html
+    - title: 設定工作區和使用者
+      url: task-setting-up-netapp-accounts.html
+    - title: 管理您的NetApp帳戶
+      url: task-managing-netapp-accounts.html
+  - title: 雲端供應商帳戶
+    links:
+    - title: 管理 AWS 認證資料
+      url: task-adding-aws-accounts.html
+    - title: 管理 Azure 認證資料
+      url: task-adding-azure-accounts.html
+    - title: 管理Google Cloud認證資料
+      url: task-adding-gcp-accounts.html
+  - title: 部落格社群
+    links:
+    - title: NetApp社群
+      url: https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS
+    - title: Cloud Central部落格
+      url: https://cloud.netapp.com/blog/topic/cloud-manager
+    - title: 雲端網路研討會
+      url: https://cloud.netapp.com/events
+product-family: {}

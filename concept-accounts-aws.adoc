@@ -1,0 +1,77 @@
+---
+sidebar: sidebar 
+permalink: concept-accounts-aws.html 
+keywords: cloud provider accounts, aws, aws accounts, keys, multiple accounts, permissions, aws permissions, policy, policies, json 
+summary: Cloud Manager 可讓您選擇部署 Cloud Volumes ONTAP 時要使用的 AWS 認證資料。您可以 Cloud Volumes ONTAP 使用初始 AWS 認證來部署所有的資訊系統、也可以新增其他認證資料。 
+---
+= AWS 認證與權限
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Manager 可讓您選擇部署 Cloud Volumes ONTAP 時要使用的 AWS 認證資料。您可以 Cloud Volumes ONTAP 使用初始 AWS 認證來部署所有的資訊系統、也可以新增其他認證資料。
+
+
+
+== 初始 AWS 認證資料
+
+從Cloud Manager部署Connector時、您需要為IAM使用者提供IAM角色或存取金鑰的ARN。您使用的驗證方法必須具有必要的權限、才能在AWS中部署Connector執行個體。所需權限列於 https://mysupport.netapp.com/site/info/cloud-manager-policies["AWS 的連接器部署原則"^]。
+
+Cloud Manager 在 AWS 中啟動 Connector 執行個體時、會為執行個體建立 IAM 角色和執行個體設定檔。它也附加原則、讓Connector有權限管理該AWS帳戶內的資源和程序。 link:reference-permissions-aws.html["檢閱 Cloud Manager 如何使用權限"]。
+
+image:diagram_permissions_initial_aws.png["顯示 Cloud Central 在 AWS 帳戶中部署 Cloud Manager 的概念性映像。IAM 原則會指派給附加至 Cloud Manager 執行個體的 IAM 角色。"]
+
+Cloud Manager 會在您為 Cloud Volumes ONTAP 下列項目建立新的工作環境時、依預設選取這些 AWS 認證資料：
+
+image:screenshot_accounts_select_aws.gif["顯示「詳細資料 & 認證」頁面中「切換帳戶」選項的快照。"]
+
+
+
+== 其他 AWS 認證資料
+
+有兩種方法可以新增額外的AWS認證資料。
+
+
+
+=== 將AWS認證資料新增至現有的Connector
+
+如果您想要在 Cloud Volumes ONTAP 不同的 AWS 帳戶中啟動功能、您也可以選擇 link:task-adding-aws-accounts.html["為 IAM 使用者或信任帳戶中角色的 ARN 提供 AWS 金鑰"]。下圖顯示兩個額外的帳戶、一個透過信任帳戶中的 IAM 角色提供權限、另一個則透過 IAM 使用者的 AWS 金鑰提供權限：
+
+image:diagram_permissions_multiple_aws.png["顯示兩個額外帳戶的概念性映像。每個都有 IAM 原則、一個附加到 IAM 使用者、另一個附加到 IAM 角色。"]
+
+您可以 link:task-adding-aws-accounts.html#adding-aws-accounts-to-cloud-manager["將帳戶認證新增至 Cloud Manager"] 指定 IAM 角色的 Amazon 資源名稱（ ARN ）或 IAM 使用者的 AWS 金鑰。
+
+新增一組認證資料之後、您可以在建立新的工作環境時切換至這些認證資料：
+
+image:screenshot_accounts_switch_aws.png["在詳細資料 & 認證頁面中按一下「切換帳戶」之後、顯示在雲端供應商帳戶之間選取的快照。"]
+
+
+
+=== 直接將AWS認證資料新增至Cloud Manager
+
+將新的AWS認證資料新增至Cloud Manager、可讓Cloud Manager擁有必要的權限、以建立和管理適用於ONTAP 整個作業環境的FSX、或是建立Connector。
+
+
+
+== Marketplace 部署和內部部署呢？
+
+以上各節說明建議的連接器部署方法、該方法來自 Cloud Manager 。您也可以從部署 AWS 中的 Connector link:task-launching-aws-mktp.html["AWS Marketplace"] 您也可以 link:task-installing-linux.html["在內部部署安裝連接器"]。
+
+如果您使用 Marketplace 、則會以相同方式提供權限。您只需要手動建立和設定 IAM 角色、然後為任何其他帳戶提供權限。
+
+對於內部部署、您無法為 Cloud Manager 系統設定 IAM 角色、但您可以像提供額外 AWS 帳戶一樣提供權限。
+
+
+
+== 我該如何安全地旋轉 AWS 認證資料？
+
+如上所述、 Cloud Manager 可讓您以幾種方式提供 AWS 認證資料：與 Connector 執行個體相關的 IAM 角色、在信任的帳戶中擔任 IAM 角色、或提供 AWS 存取金鑰。
+
+Cloud Manager 採用前兩個選項、使用 AWS 安全性權杖服務取得持續循環的暫用認證資料。此程序是最佳實務做法、它是自動且安全的。
+
+如果您為 Cloud Manager 提供 AWS 存取金鑰、您應該定期在 Cloud Manager 中更新金鑰、藉此旋轉金鑰。這是完全手動的程序。

@@ -1,0 +1,51 @@
+---
+permalink: legal-notices.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= 法律聲明
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+法律聲明提供版權聲明、商標、專利等存取權限。
+
+
+
+== 版權
+
+http://www.netapp.com/us/legal/copyright.aspx[]
+
+
+
+== 商標
+
+NetApp 、 NetApp 標誌及 NetApp 商標頁面上列出的標章均為 NetApp 、 Inc. 的商標。其他公司與產品名稱可能為其各自所有者的商標。
+
+http://www.netapp.com/us/legal/netapptmlist.aspx[]
+
+
+
+== 專利
+
+如需最新的 NetApp 擁有專利清單、請參閱：
+
+https://www.netapp.com/us/media/patents-page.pdf[]
+
+
+
+== 隱私權政策
+
+https://www.netapp.com/us/legal/privacypolicy/index.aspx[]
+
+
+
+== 開放原始碼
+
+通知檔案提供有關 NetApp 軟體所使用之協力廠商版權與授權的資訊。
+
+* link:media/notice_cloud_manager_3.9.pdf["Cloud Manager 3.9 注意事項"^]
+

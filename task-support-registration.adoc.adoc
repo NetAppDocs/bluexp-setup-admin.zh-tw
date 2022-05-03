@@ -1,0 +1,54 @@
+---
+sidebar: sidebar 
+permalink: task-support-registration.html 
+keywords: support registration, register for support, support, nss account, add nss account, 
+summary: 在您透過NetApp技術支援開啟支援案例之前、您必須先將NetApp支援網站帳戶新增至Cloud Manager、然後註冊以取得支援。 
+---
+= 註冊以取得支援
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+在您透過NetApp技術支援開啟支援案例之前、您必須先將NetApp支援網站帳戶新增至Cloud Manager、然後註冊以取得支援。
+
+
+
+== 新增一個NSS帳戶
+
+「支援儀表板」可讓您從單一位置新增及管理所有NetApp支援網站帳戶。
+
+.步驟
+. 如果您還沒有 NetApp 支援網站帳戶、 https://register.netapp.com/register/start["註冊一項"^]。
+. 在Cloud Manager主控台右上角、按一下「說明」圖示、然後選取*「支援」*。
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-help-support.png["「說明」功能表的快照、其中「支援」是第一個列出的選項"]
+
+. 按一下「*」「nss管理」>「新增nssAccount」*。
+. 出現提示時、按一下*繼續*以重新導向至Microsoft登入頁面。
++
+NetApp使用Microsoft Azure Active Directory做為身分識別供應商、提供專為支援與授權所設計的驗證服務。
+
+. 在登入頁面上、提供您的NetApp支援網站註冊電子郵件地址和密碼、以執行驗證程序。
++
+此動作可讓Cloud Manager使用您的NSS帳戶。
+
++
+附註：帳戶必須是客戶層級的帳戶（非來賓帳戶或臨時帳戶）。
+
+
+
+
+
+== 註冊您的帳戶以取得支援
+
+支援註冊可從支援儀表板的Cloud Manager取得。
+
+.步驟
+. 在Cloud Manager主控台右上角、按一下「說明」圖示、然後選取*「支援」*。
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-help-support.png["「說明」功能表的快照、其中「支援」是第一個列出的選項"]
+
+. 在* Resources（資源）*選項卡中，單擊* Register for Support*（註冊以獲得支持*）。
+. 選取您要登錄的NSS認證、然後按一下「*登錄*」。
+

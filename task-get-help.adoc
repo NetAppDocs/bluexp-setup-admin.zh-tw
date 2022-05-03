@@ -1,0 +1,56 @@
+---
+sidebar: sidebar 
+permalink: task-get-help.html 
+keywords: help, ticket, open support case, support, netapp support, technical support, call support, phone number, open ticket, web ticket, open an issue 
+summary: NetApp以多種方式支援Cloud Manager。我們全年無休提供豐富的免費自助支援選項、例如知識庫（KB）文章和社群論壇。您的支援註冊包括透過網路票證提供遠端技術支援。 
+---
+= 取得協助
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+NetApp以多種方式支援Cloud Manager及其雲端服務。我們全年無休提供豐富的免費自助支援選項、例如知識庫（KB）文章和社群論壇。您的支援註冊包括透過網路票證提供遠端技術支援。
+
+
+
+== 自我支援
+
+這些選項可供免費使用、一天24小時、一週7天：
+
+* https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services["知識庫"^]
++
+請搜尋Cloud Manager知識庫、找出有助於疑難排解問題的文章。
+
+* http://community.netapp.com/["社群"^]
++
+加入Cloud Manager社群、追蹤後續討論或建立新討論。
+
+* 文件
++
+您目前正在檢視的Cloud Manager文件。
+
+* mailto：ng-cloudmanager-feedback@netapp.com [意見反應電子郵件]
++
+我們非常重視您的意見。提交意見反應、協助我們改善Cloud Manager。
+
+
+
+
+
+== NetApp支援
+
+除了上述的自我支援選項、您也可以與NetApp支援工程師合作、在您啟動支援之後解決任何問題。
+
+.步驟
+. 在Cloud Manager中、按一下*「說明」>「支援」*。
+. 在「Technical Support（技術支援）」下選擇可用的選項之一：
++
+.. 按一下*致電我們*以尋找NetApp技術支援的電話號碼。
+.. 按一下「*開啟問題*」、選取其中一個選項、然後按一下「*傳送*」。
++
+NetApp代表將審查您的案例、並盡快回覆您。
+
+
+
+

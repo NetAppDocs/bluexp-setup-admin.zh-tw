@@ -1,0 +1,122 @@
+---
+sidebar: sidebar 
+permalink: task-setting-up-netapp-accounts.html 
+keywords: account settings, workspaces, Connector, account admin, workspace admin, users, associate, disassociate, add user, add users, user management, administer, user, management, account, user account, user accounts, create workspace, add workspace, setup workspace, workspace, Connector, manage Connector, manage workspace, associate Connector 
+summary: 首次登入Cloud Manager時、系統會提示您建立NetApp帳戶。此帳戶提供多租戶共享、可讓您在隔離的工作區中組織使用者和資源。 
+---
+= 在您的NetApp帳戶中設定工作區和使用者
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+首次登入Cloud Manager時、系統會提示您建立_NetApp帳戶_。此帳戶提供多租戶共享、可讓您在隔離的 _stap空間 _ 中組織使用者和資源。
+
+link:concept-netapp-accounts.html["深入瞭解NetApp客戶的運作方式"]。
+
+設定您的NetApp帳戶、讓使用者能夠存取Cloud Manager、並存取工作區中的工作環境。只要新增單一使用者或新增多個使用者和工作區即可。
+
+
+
+== 新增工作區
+
+在 Cloud Manager 中、工作區可讓您將一組工作環境與其他工作環境和其他使用者隔離。例如、您可以建立兩個工作區、並將個別使用者與每個工作區建立關聯。
+
+.步驟
+. 從上而下 https://cloudmanager.netapp.com["Cloud Manager"^]，單擊* Account（帳戶）*下拉列表。
++
+image:screenshot_account_settings_menu.gif["在 Cloud Manager 上方橫幅中顯示「帳戶設定」選項的快照。"]
+
+. 按一下目前選取帳戶旁的 * 管理帳戶 * 。
++
+image:screenshot_manage_account_settings.gif["顯示「帳戶」下拉式清單中可用的「管理帳戶設定」選項的快照。"]
+
+. 按一下 * 工作區 * 。
+. 按一下「 * 新增工作區 * 」。
+. 輸入工作區名稱、然後按一下 * 「 Add* （新增 * ）」。
+
+
+如果「工作區管理」需要存取此工作區、您就必須建立使用者的關聯。您也需要將 Connectors 與工作區建立關聯、讓 Workspace Admins 能夠使用這些 Connectors 。
+
+
+
+== 新增使用者
+
+將Cloud Central使用者與NetApp帳戶建立關聯、讓這些使用者可以在Cloud Manager中建立及管理工作環境。
+
+.步驟
+. 如果使用者尚未這麼做、請要求使用者前往 https://cloud.netapp.com["NetApp Cloud Central"^] 並註冊。
+. 從上而下 https://cloudmanager.netapp.com["Cloud Manager"^]，單擊* Account（帳戶）*下拉列表並單擊* Manage Account*（管理帳戶）。
++
+image:screenshot_manage_account_settings.gif["顯示「帳戶」下拉式清單中可用的「管理帳戶設定」選項的快照。"]
+
+. 在「成員」索引標籤中、按一下「*關聯使用者*」。
+. 輸入使用者的電子郵件地址、然後為使用者選取角色：
++
+** * 客戶管理 * ：可在 Cloud Manager 中執行任何動作。
+** * 工作區管理 * ：可在指派的工作區中建立及管理資源。
+** *法規遵循檢視器*：只能檢視Cloud Data Sense控管與法規遵循資訊、並針對有權存取的工作區產生報告。
+** *《管理員*》：可以使用「支援服務」來建立應用程式一致的備份、並使用這些備份來還原資料。SnapCenter SnapCenter此服務目前為試用版。
+
+
+. 如果您選取帳戶管理員以外的帳戶、請選取一個或多個工作區以與該使用者建立關聯。
++
+image:screenshot_associate_user.gif["螢幕擷取畫面、顯示如何透過選取角色和相關工作區來建立使用者關聯。"]
+
+. 按一下「 * 經銷 * 」。
+
+
+使用者應收到 NetApp Cloud Central 寄送的電子郵件、標題為「 Account Association （客戶關聯）」。 電子郵件中包含存取 Cloud Manager 所需的資訊。
+
+
+
+== 將Workspace Admins與工作區建立關聯
+
+您可以隨時將 Workspace Admins 與其他工作區建立關聯。建立使用者關聯可讓他們在該工作區中建立及檢視工作環境。
+
+.步驟
+. 從 Cloud Manager 頂端、按一下 * Account* 下拉式清單、然後按一下 * Manage Account* 。
++
+image:screenshot_manage_account_settings.gif["顯示「帳戶」下拉式清單中可用的「管理帳戶設定」選項的快照。"]
+
+. 在「成員」索引標籤中、按一下對應使用者列中的動作功能表。
++
+image:screenshot_associate_user_workspace.png["快照顯示將游標移到「使用者」表格中使用者名稱上時可用的動作功能表。"]
+
+. 按一下 * 管理工作區 * 。
+. 選取一或多個工作區、然後按一下「 * 套用 * 」。
+
+
+只要 Connector 也與工作區相關聯、使用者就能從 Cloud Manager 存取這些工作區。
+
+
+
+== 將Connectors與工作區建立關聯
+
+您需要將 Connector 與工作空間建立關聯、讓 Workspace Admins 可以使用這些 Connectors 來建立 Cloud Volumes ONTAP 一套系統。
+
+如果您只有帳戶管理員、則不需要將 Connector 與工作區建立關聯。根據預設、 Account Admins 可存取 Cloud Manager 中的所有工作區。
+
+link:concept-netapp-accounts.html#users-workspaces-and-service-connectors["深入瞭解使用者、工作區和連接器"]。
+
+.步驟
+. 從 Cloud Manager 頂端、按一下 * Account* 下拉式清單、然後按一下 * Manage Account* 。
++
+image:screenshot_manage_account_settings.gif["顯示「帳戶」下拉式清單中可用的「管理帳戶設定」選項的快照。"]
+
+. 按一下 * Connector* 。
+. 針對您要建立關聯的連接器、按一下 * 管理工作區 * 。
+. 選取一或多個工作區、然後按一下「 * 套用 * 」。
+
+
+Workspace 管理員現在可以使用這些連接器來建立 Cloud Volumes ONTAP 功能不一的系統。
+
+
+
+== 接下來呢？
+
+現在您已經設定好帳戶、您可以隨時移除使用者、管理工作區、連接器和訂閱、來管理帳戶。 link:task-managing-netapp-accounts.html["瞭解如何管理您的帳戶"]。

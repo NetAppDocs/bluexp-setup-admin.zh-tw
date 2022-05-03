@@ -1,0 +1,294 @@
+---
+sidebar: sidebar 
+permalink: whats-new.html 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
+summary: 瞭解Cloud Manager管理功能的新功能、包括NetApp帳戶、連接器、雲端供應商認證等。 
+---
+= 新功能
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+瞭解Cloud Manager管理功能的新功能：NetApp客戶、連接器、雲端供應商認證等。
+
+
+
+== 2022年5月2日
+
+
+
+=== 連接器3.9.18
+
+* 下列Google Cloud區域現在支援Connector：
++
+** 德里（亞洲-南2）
+** 墨爾本（澳洲-蘇特斯塔2）
+** 米蘭（歐洲-西8）
+** 聖地牙哥（西南1）
+
+
++
+https://cloud.netapp.com/cloud-volumes-global-regions["檢視支援區域的完整清單"^]
+
+* 當您選取要搭配Connector使用的Google Cloud服務帳戶時、Cloud Manager現在會顯示與每個服務帳戶相關聯的電子郵件地址。檢視電子郵件地址可讓您更容易區分共用相同名稱的服務帳戶。
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-google-cloud-service-account.png["服務帳戶欄位的快照"]
+
+* 我們已在支援的OS上、在VM執行個體上、在Google Cloud上認證Connector https://cloud.google.com/compute/shielded-vm/docs/shielded-vm["防護VM功能"^]
+* 此版本的Connector也包含Cloud Volumes ONTAP 了一些功能強化功能。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#2-may-2022["瞭解這些增強功能"^]
+* Connector需要新的AWS權限才能部署Cloud Volumes ONTAP 功能。
++
+在單一可用度區域（AZ）中部署HA配對時、現在需要下列權限才能建立AWS分散配置群組：
+
++
+[source, json]
+----
+"ec2:DescribePlacementGroups",
+"iam:GetRolePolicy",
+----
++
+現在需要這些權限、才能最佳化Cloud Manager建立放置群組的方式。
+
++
+請務必為您新增至Cloud Manager的每組AWS認證資料提供這些權限。您可以在上找到最新的權限清單 https://mysupport.netapp.com/site/info/cloud-manager-policies["Cloud Manager 原則頁面"^]。
+
+
+
+
+
+== 2022年4月3日
+
+
+
+=== 連接器3.9.17
+
+* 您現在可以透過讓Cloud Manager承擔您在環境中設定的IAM角色來建立Connector。這種驗證方法比共用AWS存取金鑰和秘密金鑰更安全。
++
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["瞭解如何使用IAM角色建立連接器"]。
+
+* 此版本的Connector也包含Cloud Volumes ONTAP 了一些功能強化功能。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#3-april-2022["瞭解這些增強功能"^]
+
+
+
+
+== 2022年2月27日
+
+
+
+=== 連接器3.9.16
+
+* 當您在Google Cloud中建立新的Connector時、Cloud Manager現在會顯示所有現有的防火牆原則。之前Cloud Manager不會顯示任何沒有目標標記的原則。
+* 此版本的Connector也包含Cloud Volumes ONTAP 了一些功能強化功能。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#27-february-2022["瞭解這些增強功能"^]
+
+
+
+
+== 2022年1月30日
+
+
+
+=== 連接器3.9.15
+
+此版本的Connector包含Cloud Volumes ONTAP 一些功能強化功能。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#30-january-2022["瞭解這些增強功能"^]
+
+
+
+== 2022年1月2日
+
+
+
+=== 減少連接器的端點數量
+
+為了管理公有雲環境中的資源和程序、我們減少了Connector需要聯絡的端點數量。
+
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-networking-cloud-manager.html#outbound-internet-access["檢視所需端點的清單"]。
+
+
+
+=== 連接器的EBS磁碟加密
+
+當您從Cloud Manager在AWS中部署新的Connector時、您現在可以選擇使用預設的主要金鑰或管理金鑰來加密Connector的EBS磁碟。
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-connector-disk-encryption.png["在AWS中建立連接器時顯示磁碟加密選項的快照。"]
+
+
+
+=== 適用於NSS帳戶的電子郵件地址
+
+Cloud Manager現在可以顯示與NetApp支援網站帳戶相關的電子郵件地址。
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-nss-display-email.png["顯示NetApp支援網站帳戶動作功能表的快照、其中包含顯示電子郵件地址的功能。"]
+
+
+
+== 2021年11月28日
+
+
+
+=== NetApp支援網站帳戶所需的更新
+
+自2021年12月起、NetApp現在使用Microsoft Azure Active Directory做為身分識別供應商、提供專為支援與授權所設計的驗證服務。此更新之後、Cloud Manager會提示您更新先前新增之任何現有NetApp Support網站帳戶的認證資料。
+
+如果您尚未將您的NSS帳戶移轉至IDaaas、首先需要移轉帳戶、然後在Cloud Manager中更新您的認證資料。
+
+* link:task-adding-nss-accounts.html#update-an-nss-account-for-the-new-authentication-method["瞭解如何將新的驗證方法更新至新的NSS帳戶"]。
+* https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/FAQs_for_NetApp_adoption_of_MS_Azure_AD_B2C_for_login["深入瞭解NetApp使用Microsoft Azure AD進行身分識別管理的相關資訊"^]
+
+
+
+
+=== 變更NSS帳戶Cloud Volumes ONTAP 以供使用
+
+如果您的組織有多個NetApp Support Site帳戶、您現在可以變更Cloud Volumes ONTAP 哪個帳戶與某個系統相關聯。
+
+link:task-adding-nss-accounts.html#attach-a-working-environment-to-a-different-nss-account["瞭解如何將工作環境附加至不同的NSS帳戶"]。
+
+
+
+== 2021年11月4日
+
+
+
+=== SOC 2類型2認證
+
+一家獨立認證的公共會計公司和服務稽核員、負責審查Cloud Manager Cloud Sync 、NetApp、Cloud Tiering、Cloud Data Sense和Cloud Backup（Cloud Manager平台）、並確認他們已根據適用的信任服務條件、達成SOC 2類報告。
+
+https://www.netapp.com/company/trust-center/compliance/soc-2/["檢視NetApp的SOC 2報告"^]。
+
+
+
+=== 連接器不再支援做為Proxy
+
+您無法再使用Cloud Manager Connector做為Proxy伺服器、從AutoSupport 停止傳送消息Cloud Volumes ONTAP 。此功能已移除、不再受支援。您必須AutoSupport 透過NAT執行個體或環境的Proxy服務提供不必要的連線功能。
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-verify-autosupport.html["深入瞭解驗證AutoSupport 使用Cloud Volumes ONTAP 效益的方法"^]
+
+
+
+== 2021年10月31日
+
+
+
+=== 使用服務主體進行驗證
+
+當您在Microsoft Azure中建立新的Connector時、現在可以使用Azure服務主體進行驗證、而非使用Azure帳戶認證。
+
+link:task-creating-connectors-azure.html#create-a-connector-using-a-service-principal["瞭解如何與Azure服務主體進行驗證"]。
+
+
+
+=== 認證增強
+
+我們重新設計了「認證」頁面、以方便使用、並符合Cloud Manager介面的目前外觀與風格。
+
+
+
+== 2021年9月2日
+
+
+
+=== 已新增通知服務
+
+通知服務已推出、因此您可以檢視在目前登入工作階段期間所啟動的Cloud Manager作業狀態。您可以驗證作業是否成功、或是否失敗。 link:task-monitor-cm-operations.html["瞭解如何監控您帳戶中的營運"]。
+
+
+
+== 2021年8月1日
+
+
+
+=== 連接器支援RHEL 7.9
+
+連接器現在支援執行Red Hat Enterprise Linux 7.9的主機。
+
+link:task-installing-linux.html["檢視Connector的系統需求"]。
+
+
+
+== 2021年7月7日
+
+
+
+=== 新增連接器精靈的增強功能
+
+我們重新設計了「*新增連接器*」精靈、以新增選項並使其更易於使用。您現在可以新增標記、指定角色（適用於AWS或Azure）、上傳Proxy伺服器的根憑證、檢視Terraform自動化程式碼、檢視進度詳細資料等。
+
+* link:task-creating-connectors-aws.html["在 AWS 中建立連接器"]
+* link:task-creating-connectors-azure.html["在 Azure 中建立 Connector"]
+* link:task-creating-connectors-gcp.html["在 GCP 中建立連接器"]
+
+
+
+
+=== 支援儀表板的NSS帳戶管理
+
+NetApp支援網站（NSS）帳戶現在可從支援儀表板進行管理、而非從「設定」功能表進行管理。這項變更可讓您更輕鬆地從單一位置尋找及管理所有支援相關資訊。
+
+link:task-adding-nss-accounts.html["瞭解如何管理NSS帳戶"]。
+
+image:screenshot_nss_management.png["支援儀表板中的\"NSS\"管理索引標籤快照、您可在其中新增NSS\"帳戶。"]
+
+
+
+== 2021年5月5日
+
+
+
+=== 時間軸中的帳戶
+
+Cloud Manager中的時間表現在顯示與帳戶管理相關的行動和事件。這些動作包括建立使用者關聯、建立工作區及建立連接器等項目。如果您需要識別執行特定行動的人員、或是需要識別行動的狀態、檢查時間表會很有幫助。
+
+link:task-monitor-cm-operations.html#auditing-user-activity-in-your-account["瞭解如何將時間表篩選為「租賃」服務"]。
+
+
+
+== 2021年4月11日
+
+
+
+=== API直接呼叫Cloud Manager
+
+如果您已設定Proxy伺服器、現在可以啟用選項、將API呼叫直接傳送至Cloud Manager、而無需透過Proxy。此選項受AWS或Google Cloud中執行的Connectors支援。
+
+link:task-configuring-proxy.html["深入瞭解此設定"]。
+
+
+
+=== 服務帳戶使用者
+
+您現在可以建立服務帳戶使用者。
+
+服務帳戶扮演「使用者」的角色、可撥打授權API呼叫至Cloud Manager進行自動化。如此一來、您就不需要根據實際使用者帳戶建置自動化指令碼、也能隨時離開公司、因此更容易管理自動化作業。如果您使用同盟、則可以建立權杖、而不需從雲端產生更新權杖。
+
+link:task-managing-netapp-accounts.html#creating-and-managing-service-accounts["深入瞭解如何使用服務帳戶"]。
+
+
+
+=== 私有預覽
+
+您現在可以允許帳戶中的私有預覽、以在Cloud Manager中預覽新的NetApp雲端服務。
+
+link:task-managing-netapp-accounts.html#allowing-private-previews["深入瞭解此選項"]。
+
+
+
+=== 第三方服務
+
+您也可以允許帳戶中的第三方服務存取Cloud Manager中提供的第三方服務。
+
+link:task-managing-netapp-accounts.html#allowing-third-party-services["深入瞭解此選項"]。
+
+
+
+== 2021年2月9日
+
+
+
+=== 支援儀表板改良功能
+
+我們已更新「支援儀表板」、讓您新增NetApp支援網站認證資料、以註冊您的支援。您也可以直接從儀表板啟動NetApp支援案例。只要按一下「說明」圖示、然後按*「支援」*即可。

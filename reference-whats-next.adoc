@@ -1,0 +1,27 @@
+---
+sidebar: sidebar 
+permalink: reference-whats-next.html 
+keywords: get started, create working environments, manage settings 
+summary: 現在您已經登入並設定 Cloud Manager 、使用者就能開始建立及探索工作環境。 
+---
+= 下一步
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+現在您已經登入並設定 Cloud Manager 、使用者就能開始建立及探索工作環境。
+
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-aws.html["開始使用 Cloud Volumes ONTAP 適用於 AWS 的解決方法"^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-azure.html["立即開始使用 Cloud Volumes ONTAP 適用於 Azure 的解決方法"^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-gcp.html["立即開始使用 Cloud Volumes ONTAP 適用於 Google Cloud 的解決方案"^]
+* https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["設定 Azure NetApp Files 功能"^]
+* https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/start/task-getting-started-fsx.html["設定Amazon FSXfor ONTAP Sfor Sfor"^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-service-aws/task-manage-cvs-aws.html["設定 Cloud Volumes Service AWS 的功能"^]
+* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["探索內部部署 ONTAP 的叢集"^]
+* link:task-viewing-amazon-s3.html["探索您的 Amazon S3 儲存庫"]
+

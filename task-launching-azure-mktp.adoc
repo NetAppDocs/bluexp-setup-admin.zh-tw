@@ -1,0 +1,132 @@
+---
+sidebar: sidebar 
+permalink: task-launching-azure-mktp.html 
+keywords: install, installation, installing, marketplace, azure, deploy, virtual machine, permissions, deploy connector in azure, install connector in azure 
+summary: 最好直接從 Cloud Manager 建立 Connector 、但您也可以從 Azure Marketplace （如有需要）啟動 Connector 。建立並設定 Connector 之後、 Cloud Manager 會在您建立新的工作環境時自動使用。 
+---
+= 從Azure Marketplace建立連接器
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+最好直接從 Cloud Manager 建立 Connector 、但您也可以從 Azure Marketplace （如有需要）啟動 Connector 。建立並設定 Connector 之後、 Cloud Manager 會在您建立新的工作環境時自動使用。
+
+
+
+== 在 Azure 中建立 Connector
+
+使用Azure Marketplace中的映像在Azure中部署Connector、然後登入Connector以指定您的NetApp帳戶。
+
+.步驟
+. 前往Azure Marketplace的NetApp Connector VM頁面。
++
+** https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-oncommand-cloud-manager["適用於商業區域的Azure Marketplace頁面"^]
+** https://portal.azure.us/#blade/Microsoft_Azure_Marketplace/GalleryItemDetailsBladeNopdl/id/netapp.netapp-oncommand-cloud-manager/product/%7B%22displayName%22%3A%22NetApp%20Connector%20VM%22%2C%22itemDisplayName%22%3A%22NetApp%20Connector%20VM%22%2C%22id%22%3A%22netapp.netapp-oncommand-cloud-manager%22%2C%22bigId%22%3A%22DZH318Z0BPMZ%22%2C%22offerId%22%3A%22netapp-oncommand-cloud-manager%22%2C%22publisherId%22%3A%22netapp%22%2C%22publisherDisplayName%22%3A%22NetApp%22%2C%22summary%22%3A%22Start%20here%20to%20deploy%20NetApp%20Connector%20in%20case%20it%20is%20not%20possible%20directly%20from%20Cloud%20Manager%22%2C%22longSummary%22%3A%22Start%20here%20to%20deploy%20NetApp%20Connector%20VM%20in%20Azure%20in%20case%20it%20is%20not%20possible%20to%20deploy%20directly%20from%20Cloud%20Manager%22%2C%22description%22%3A%22Some%20Cloud%20Manager%20features%20requires%20a%20connector.%20The%20connector%20enables%20Cloud%20Manager%20to%20manage%20resources%20and%20processes%20within%20your%20public%20and%20hybrid%20cloud%20environment.%5CnFor%20complete%20Cloud%20Manager%20service%20including%20Cloud%20Volumes%20ONTAP%20storage%20services%20and%20Data%20Services%2C%20with%20built%20in%20connector%20installation%2C%20it%20is%20recommended%20to%20subscribe%20the%20following%20SaaS%20listing%3A%5Cn%3Ca%20href%3D%5C%22https%3A%2F%2Fazuremarketplace.microsoft.com%2Fen-us%2Fmarketplace%2Fapps%2Fnetapp.cloud-manager%3Ftab%3DOverview.%5C%22%20target%3D%5C%22_blank%5C%22%3E%20Cloud%20Manager%20-%20Deploy%20%26%20Manage%20Cloud%20Data%20Services%3C%2Fa%3E%5Cn%5Cn%3Ch3%3EHow%20to%20Get%20Started%3C%2Fh3%3E%20%5Cn%3Cul%3E%5Cn%3Cli%3E%3Ca%20href%3D%5C%22https%3A%2F%2Fdocs.netapp.com%2Fus-en%2Foccm%2Fconcept_connectors.html%5C%22%20target%3D%5C%22_blank%5C%22%3E%20Learn%20when%20a%20Connector%20is%20required%3C%2Fa%3E%3C%2Fli%3E%5Cn%3Cli%3E%3Ca%20href%3D%5C%22https%3A%2F%2Fdocs.netapp.com%2Fus-en%2Foccm%2Ftask_launching_azure_mktp.html%5C%22%20target%3D%5C%22_blank%5C%22%3E%20Deploying%20Cloud%20Manager%20from%20the%20Azure%20Marketplace%3C%2Fa%3E%3C%2Fli%3E%5Cn%3C%2Ful%3E%5Cn%3Ch3%3ESupport%3A%3C%2Fh3%3E%5Cn%3Cul%3E%5Cn%3Cli%3E%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.netapp.com%2Fazure%2Fcontact%2F%5C%22%20target%3D%5C%22_blank%5C%22%3E%20Contact%20our%20Cloud%20expert%20team%3C%2Fa%3E%3C%2Fli%3E%5Cn%3C%2Ful%3E%22%2C%22isPrivate%22%3Afalse%2C%22hasPrivateOffer%22%3Afalse%2C%22isMacc%22%3Atrue%2C%22isPreview%22%3Afalse%2C%22isByol%22%3Atrue%2C%22isCSPEnabled%22%3Atrue%2C%22isCSPSelective%22%3Afalse%2C%22isThirdParty%22%3Atrue%2C%22isStopSell%22%3Afalse%2C%22isReseller%22%3Afalse%2C%22hasFreeTrials%22%3Afalse%2C%22marketingMaterial%22%3A%5B%5D%2C%22legalTermsUri%22%3A%22https%3A%2F%2Fquery.prod.cms.rt.microsoft.com%2Fcms%2Fapi%2Fam%2Fbinary%2FRE4ViQd%22%2C%22privacyPolicyUri%22%3A%22https%3A%2F%2Fwww.netapp.com%2Fcompany%2Flegal%2Fprivacy-policy%2F%22%2C%22version%22%3A%228eebc6b6-4d8a-4965-8226-472a0b3e6515%22%2C%22metadata%22%3A%7B%22leadGeneration%22%3A%7B%22productId%22%3Anull%7D%2C%22testDrive%22%3Anull%7D%2C%22categoryIds%22%3A%5B%22storage%22%2C%22data-lifecycle-management%22%2C%22enterprise-hybrid-storage%22%2C%22virtualMachine%22%2C%22virtualMachine-Arm%22%2C%22azureCertified%22%2C%22fromDataMarket%22%2C%22microsoft-badged%22%5D%2C%22screenshotUris%22%3A%5B%22https%3A%2F%2Fstore-images.s-microsoft.com%2Fimage%2Fapps.42606.ac063191-8cc9-443d-85d5-a6331e1b4271.eda5eea5-a9aa-4163-a9b9-f3072487b254.149efa4e-6e7c-4032-864f-25ea2d7f2de8%22%5D%2C%22videos%22%3A%5B%5D%2C%22links%22%3A%5B%7B%22id%22%3A%22Cloud%20Manager%22%2C%22displayName%22%3A%22Cloud%20Manager%22%2C%22uri%22%3A%22https%3A%2F%2Fcloud.netapp.com%2Fcloud-manager%22%7D%2C%7B%22id%22%3A%22NetApp%20Support%22%2C%22displayName%22%3A%22NetApp%20Support%22%2C%22uri%22%3A%22https%3A%2F%2Fcloud.netapp.com%2Fcontact-cds%22%7D%5D%2C%22filters%22%3A%5B%5D%2C%22plans%22%3A%5B%7B%22id%22%3A%220001%22%2C%22displayName%22%3A%22OnCommand%20Cloud%20Manager%20(BYOL)%22%2C%22summary%22%3A%22Streamline%20the%20deployment%20and%20management%20of%20Cloud%20Volumes%20ONTAP%22%2C%22description%22%3A%22%3Ch2%3EKey%20Features%3C%2Fh2%3E%3Cul%3E%3Cli%3ESimplifies%20configuration%20and%20deployment%20of%20Cloud%20Volumes%20ONTAP%3C%2Fli%3E%3Cli%3EProvides%20a%20central%20point%20of%20control%20for%20all%20Cloud%20Volumes%20ONTAP%20instances%3C%2Fli%3E%3Cli%3EAutomates%20data%20movement%20between%20on-premise%20environments%20and%20the%20cloud%3C%2Fli%3E%3Cli%3EMakes%20automated%20recommendations%20for%20buying%20new%20storage%20as%20needed%3C%2Fli%3E%3Cli%3EFacilitates%20hybrid%20IT%20environments%20that%20include%20Cloud%20Volumes%20ONTAP%2C%20FAS%20and%20AFF%20storage%20environments%3C%2Fli%3E%3C%2Ful%3E%5Cn%5Cn%3Ch2%3EUsage%20Instructions%3C%2Fh2%3EImportant%3A%20You%20must%20use%20OnCommand%20Cloud%20Manager%20to%20launch%20Cloud%20Volumes%20ONTAP%20environments.%20You%20cannot%20launch%20Cloud%20Volumes%20ONTAP%20directly%20from%20the%20Azure%20portal%2C%20as%20the%20Cloud%20Volumes%20ONTAP%20system%20will%20not%20be%20deployed%20correctly.%20At%20a%20high%20level%2C%20deploying%20OnCommand%20Cloud%20Manager%20and%20Cloud%20Volumes%20ONTAP%20involves%20these%20steps%3A%3Col%3E%3Cli%3EPrepare%20your%20Azure%20environment%3C%2Fli%3E%3Cli%3EEnable%20programmatic%20deployment%20on%20the%20Cloud%20Volumes%20ONTAP%20products%20you%20plan%20to%20use%20from%20the%20Azure%20Marketplace%3C%2Fli%3E%3Cli%3ELaunch%20the%20OnCommand%20Cloud%20Manager%20software%20instance%20in%20Azure%20(use%20HDD%20volumes%20for%20lower%20cost%20instances)%3C%2Fli%3E%3Cli%3EAccess%20OnCommand%20Cloud%20Manager%20by%20entering%20the%20instance%20IP%20address%20in%20a%20web%20browser%3C%2Fli%3E%3Cli%3EComplete%20the%20Setup%20wizard%3C%2Fli%3E%3Cli%3EUse%20OnCommand%20Cloud%20Manager%20to%20launch%20Cloud%20Volumes%20ONTAP%20instances%3C%2Fli%3E%3C%2Fol%3E%5Cn%5Cn%3Ch2%3ESupport%3C%2Fh2%3ESoftware%20support%20is%20included%20with%20this%20offering%20for%20the%20duration%20of%20the%20Cloud%20Volumes%20ONTAP%20subscription%20purchased.%20NetApp%20has%20extensive%20self-support%20options%20including%20knowledge%20base%2C%20documentation%2C%20videos%2C%20and%20community%20forums%20that%20are%20available%2024x7.%20NetApp%20customers%20can%20also%20get%20support%20from%20our%20tech%20support%20team%20via%20chat%2C%20web%20tickets%2C%20or%20phone.%20%20See%20the%20useful%20links%20section%20below%20for%20more.%22%2C%22restrictedAudience%22%3A%7B%7D%2C%22skuId%22%3A%220001%22%2C%22planId%22%3A%22occm-byol%22%2C%22legacyPlanId%22%3A%22netapp.netapp-oncommand-cloud-manageroccm-byol%22%2C%22keywords%22%3A%5B%5D%2C%22type%22%3A%22VirtualMachine%22%2C%22leadGeneration%22%3A%7B%22productId%22%3A%22netapp.netapp-oncommand-cloud-manageroccm-byol%22%7D%2C%22testDrive%22%3Anull%2C%22availabilities%22%3A%5B%5D%2C%22categoryIds%22%3A%5B%5D%2C%22conversionPaths%22%3A%5B%5D%2C%22metadata%22%3A%7B%7D%2C%22operatingSystem%22%3A%7B%22family%22%3A%22Linux%22%2C%22type%22%3A%22Other%20Linux%22%2C%22name%22%3A%22RedHat%207.2%22%7D%2C%22uiDefinitionUri%22%3A%22https%3A%2F%2Fcatalogartifact.azureedge.net%2Fpublicartifacts%2Fnetapp.netapp-oncommand-cloud-manager-d69cbc32-ab9d-42f9-84e1-65b314b291f9-occm-byol%2FUiDefinition.json%22%2C%22artifacts%22%3A%5B%7B%22name%22%3A%22DefaultTemplate%22%2C%22uri%22%3A%22https%3A%2F%2Fcatalogartifact.azureedge.net%2Fpublicartifacts%2Fnetapp.netapp-oncommand-cloud-manager-d69cbc32-ab9d-42f9-84e1-65b314b291f9-occm-byol%2FArtifacts%2FmainTemplate.json%22%2C%22type%22%3A%22Template%22%7D%2C%7B%22name%22%3A%22UiDefinition.json%22%2C%22uri%22%3A%22https%3A%2F%2Fcatalogartifact.azureedge.net%2Fpublicartifacts%2Fnetapp.netapp-oncommand-cloud-manager-d69cbc32-ab9d-42f9-84e1-65b314b291f9-occm-byol%2FUiDefinition.json%22%2C%22type%22%3A%22Custom%22%7D%2C%7B%22name%22%3A%22createuidefinition%22%2C%22uri%22%3A%22https%3A%2F%2Fcatalogartifact.azureedge.net%2Fpublicartifacts%2Fnetapp.netapp-oncommand-cloud-manager-d69cbc32-ab9d-42f9-84e1-65b314b291f9-occm-byol%2FArtifacts%2Fcreateuidefinition.json%22%2C%22type%22%3A%22Custom%22%7D%5D%2C%22isPrivate%22%3Afalse%2C%22isHidden%22%3Afalse%2C%22hasFreeTrials%22%3Afalse%2C%22isByol%22%3Atrue%2C%22isFree%22%3Atrue%2C%22isPayg%22%3Afalse%2C%22isStopSell%22%3Afalse%2C%22cspState%22%3A%22OptIn%22%2C%22isQuantifiable%22%3Afalse%2C%22vmSecuritytype%22%3A%22None%22%2C%22displayRank%22%3A%222147483647%22%2C%22purchaseDurationDiscounts%22%3A%5B%5D%2C%22upns%22%3A%5B%5D%2C%22hasRI%22%3Afalse%2C%22stackType%22%3A%22ARM%22%7D%5D%2C%22selectedPlanId%22%3A%22occm-byol%22%2C%22iconFileUris%22%3A%7B%22small%22%3A%22https%3A%2F%2Fstore-images.s-microsoft.com%2Fimage%2Fapps.46149.ac063191-8cc9-443d-85d5-a6331e1b4271.527009cd-0dd1-4010-b0f3-f02eafa09061.e885edff-cdb0-4919-b555-6cb17199c20f%22%2C%22medium%22%3A%22https%3A%2F%2Fstore-images.s-microsoft.com%2Fimage%2Fapps.49094.ac063191-8cc9-443d-85d5-a6331e1b4271.527009cd-0dd1-4010-b0f3-f02eafa09061.9139b9f2-b9d6-46ac-b5b3-81db72fdaf0b%22%2C%22wide%22%3A%22https%3A%2F%2Fstore-images.s-microsoft.com%2Fimage%2Fapps.6407.ac063191-8cc9-443d-85d5-a6331e1b4271.527009cd-0dd1-4010-b0f3-f02eafa09061.72a070fd-4362-4328-aab1-cda8165125e6%22%2C%22large%22%3A%22https%3A%2F%2Fstore-images.s-microsoft.com%2Fimage%2Fapps.30206.ac063191-8cc9-443d-85d5-a6331e1b4271.527009cd-0dd1-4010-b0f3-f02eafa09061.60dd6e7b-7889-4a0c-87ce-100eefe8521f%22%7D%2C%22itemType%22%3A%22Single%22%2C%22hasNoProducts%22%3Afalse%2C%22hasNoPlans%22%3Afalse%2C%22filledHeartIcon%22%3A%7B%22type%22%3A1%2C%22data%22%3A%22%3Csvg%20viewBox%3D'0%200%2016%2015'%20class%3D'msportalfx-svg-placeholder'%20role%3D'presentation'%20focusable%3D'false'%20xmlns%3Asvg%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20xmlns%3Axlink%3D'http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink'%3E%3Cg%3E%3Ctitle%3E%3C%2Ftitle%3E%3Cpath%20d%3D'M14.758%201.242c.276.276.505.578.688.906.188.328.325.669.414%201.024a4.257%204.257%200%200%201-1.103%204.086L8%2014.008l-6.758-6.75a4.269%204.269%200%200%201-.695-.906%204.503%204.503%200%200%201-.414-1.016%204.437%204.437%200%200%201%200-2.164c.094-.354.232-.695.414-1.024A4.302%204.302%200%200%201%202.625.32C3.141.107%203.682%200%204.25%200s1.109.107%201.625.32c.516.214.977.521%201.383.922l.742.75.742-.75A4.292%204.292%200%200%201%2010.125.32C10.641.107%2011.182%200%2011.75%200s1.109.107%201.625.32c.516.214.977.521%201.383.922z'%20class%3D'msportalfx-svg-c19'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E%22%7D%2C%22emptyHeartIcon%22%3A%7B%22type%22%3A1%2C%22data%22%3A%22%3Csvg%20viewBox%3D'0%200%2016%2015'%20class%3D'msportalfx-svg-placeholder'%20role%3D'presentation'%20focusable%3D'false'%20xmlns%3Asvg%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20xmlns%3Axlink%3D'http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink'%3E%3Cg%3E%3Ctitle%3E%3C%2Ftitle%3E%3Cpath%20d%3D'M11.75%200c.588%200%201.14.112%201.656.336.516.224.966.529%201.352.914.385.38.687.83.906%201.352.224.515.336%201.065.336%201.648%200%20.568-.11%201.112-.328%201.633-.214.52-.518.979-.914%201.375L8%2014.008l-6.758-6.75A4.256%204.256%200%200%201%20.32%205.883%204.263%204.263%200%200%201%200%204.25a4.177%204.177%200%200%201%201.242-3c.386-.385.836-.69%201.352-.914A4.113%204.113%200%200%201%204.25%200c.432%200%20.818.05%201.156.148.339.1.651.237.938.415.291.171.567.38.828.625.266.244.542.513.828.804.286-.291.56-.56.82-.805.266-.244.542-.453.828-.625.292-.177.607-.315.946-.414A4.126%204.126%200%200%201%2011.75%200zm2.297%206.547c.307-.307.541-.659.703-1.055.162-.396.242-.81.242-1.242a3.19%203.19%200%200%200-.25-1.266%203.048%203.048%200%200%200-.695-1.023%203.095%203.095%200%200%200-1.031-.68%203.192%203.192%200%200%200-1.266-.25c-.438%200-.825.07-1.164.211a3.816%203.816%200%200%200-.938.54%207.001%207.001%200%200%200-.828.765c-.26.281-.534.568-.82.86a31.352%2031.352%200%200%201-.82-.852%207.247%207.247%200%200%200-.836-.774%204.017%204.017%200%200%200-.946-.562A2.875%202.875%200%200%200%204.25%201c-.448%200-.87.086-1.266.258A3.222%203.222%200%200%200%201%204.25c0%20.432.08.846.242%201.242.167.396.404.748.711%201.055L8%2012.594l6.047-6.047z'%20class%3D'msportalfx-svg-c19%20msportalfx-svg-c19'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E%22%7D%2C%22deleteIcon%22%3A%7B%22type%22%3A17%2C%22options%22%3Anull%7D%2C%22searchId%22%3A%221650995185079_marketplaceOffersBladeSearchContext%22%2C%22searchTelemetryId%22%3A%22a273c689-018c-448d-99e6-4b5e6204d289%22%2C%22searchIndex%22%3A0%2C%22searchScore%22%3A490.40115%2C%22privateBadgeText%22%3Anull%2C%22curationCategoryDisplayName%22%3A%22Compute%22%2C%22menuItemId%22%3A%22home%22%2C%22subMenuItemId%22%3A%22Search%20results%22%2C%22createBladeType%22%3A1%2C%22offerType%22%3A%22VirtualMachine%22%2C%22useEnterpriseContract%22%3Afalse%2C%22hasStandardContractAmendments%22%3Afalse%2C%22standardContractAmendmentsRevisionId%22%3A%2200000000-0000-0000-0000-000000000000%22%2C%22cspLegalTermsUri%22%3A%22https%3A%2F%2Fquery.prod.cms.rt.microsoft.com%2Fcms%2Fapi%2Fam%2Fbinary%2FRE4ViQd%22%2C%22supportUri%22%3Anull%2C%22isMicrosoftProduct%22%3Atrue%2C%22productOwnershipSellingMotion%22%3A%223PPAgency%22%2C%22galleryItemAccess%22%3A0%2C%22privateSubscriptions%22%3A%5B%5D%2C%22isTenantPrivate%22%3Afalse%2C%22hasRIPlans%22%3Afalse%2C%22isCoreVm%22%3Afalse%7D/selectionMode//resourceGroupId//resourceGroupLocation//dontDiscardJourney//selectedMenuId/home/launchingContext/%7B%22galleryItemId%22%3A%22netapp.netapp-oncommand-cloud-manageroccm-byol%22%2C%22source%22%3A%5B%22GalleryFeaturedMenuItemPart%22%2C%22VirtualizedTileDetails%22%5D%2C%22menuItemId%22%3A%22home%22%2C%22subMenuItemId%22%3A%22Search%20results%22%7D/searchTelemetryId/a273c689-018c-448d-99e6-4b5e6204d289["Azure政府區域的Azure Marketplace頁面"^]
+
+
+. 按一下「 * 立即取得 * 」、然後按一下「 * 繼續 * 」。
+. 從 Azure 入口網站按一下 * 「 Create 」（建立） * 、然後依照步驟設定虛擬機器。
++
+設定 VM 時請注意下列事項：
+
++
+** Cloud Manager 可搭配 HDD 或 SSD 磁碟以最佳方式執行。
+** 選擇符合 CPU 和 RAM 需求的 VM 大小。我們建議使用 DS3 v2 。
++
+link:task-installing-linux.html["檢閱 VM 需求"]。
+
+** 對於網路安全性群組、 Connector 需要使用 SSH 、 HTTP 和 HTTPS 的傳入連線。
++
+link:reference-networking-cloud-manager.html#rules-for-the-connector-in-azure["深入瞭解 Connector 的安全性群組規則"]。
+
+** 在「 * 管理 * 」下、選取「 * 開啟 * 」、為連接器啟用 * 系統指派的託管身分識別 * 。
++
+此設定非常重要、因為託管身分識別可讓 Connector 虛擬機器在 Azure Active Directory 中識別自己、而無需提供任何認證。 https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["深入瞭解 Azure 資源的託管身分識別"^]。
+
+
+
+. 在「 * 檢閱 + 建立 * 」頁面上、檢閱您的選擇、然後按一下「 * 建立 * 」開始部署。
++
+Azure 以指定的設定部署虛擬機器。虛擬機器和 Connector 軟體應在大約五分鐘內執行。
+
+. 從連線至 Connector 虛擬機器的主機開啟網頁瀏覽器、然後輸入下列 URL ：
++
+http://_ipaddress_:80[]
+
+. 登入後、設定 Connector ：
++
+.. 指定要與Connector建立關聯的NetApp帳戶。
++
+link:concept-netapp-accounts.html["瞭解NetApp客戶"]。
+
+.. 輸入系統名稱。
++
+image:screenshot_set_up_cloud_manager.gif["螢幕快照顯示「設定Cloud Manager」畫面、可讓您選取NetApp帳戶並命名系統。"]
+
+
+
+
+
+現在已安裝並設定 Connector 。您必須先授予 Azure 權限、使用者才能在 Cloud Volumes ONTAP Azure 中部署不必要的功能。
+
+
+
+== 授予 Azure 權限
+
+當您在 Azure 中部署 Connector 時、您應該已啟用 https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["系統指派的託管身分識別"^]。您現在必須建立自訂角色、然後將角色指派給 Connector 虛擬機器以進行一或多項訂閱、以授予必要的 Azure 權限。
+
+.步驟
+. 使用 Cloud Manager 原則建立自訂角色：
++
+.. 下載 https://mysupport.netapp.com/site/info/cloud-manager-policies["Cloud Manager Azure 原則"^]。
+.. 將 Azure 訂閱 ID 新增至可指派的範圍、以修改 Json 檔案。
++
+您應該為使用者建立 Cloud Volumes ONTAP 的各個 Azure 訂閱新增 ID 。
+
++
+* 範例 *
+
++
+「 AssignableScopes 」： [ 「 /unorder/d333af45-0d07-4154-943d-c25fbzzzz 」、「 /unorder/54b91999-b3e6-4599-908e-416e0zzzz 」、「 /unuses/398e471c-3bzzz-4bez-4bez-4bez-4bz-4bz-4bz-4bz-4bz-4bz-4bz-4bz-4bz-4bz-4bz-4bez-
+
+.. 使用 Json 檔案在 Azure 中建立自訂角色。
++
+下列範例說明如何使用 Azure CLI 2.0 建立自訂角色：
+
++
+「AZ角色定義建立-角色定義C：\Policy_for_Cloud Manager、Azure _3.9.8.json」
+
++
+您現在應該擁有名為 Cloud Manager 的自訂角色、可以指派給 Connector 虛擬機器。
+
+
+
+. 將角色指派給連接器虛擬機器以進行一或多項訂閱：
++
+.. 開啟 * 「訂閱」 * 服務、然後選取您要在其中部署 Cloud Volumes ONTAP 的訂閱。
+.. 按一下*存取控制（IAM）*>*新增*>*新增角色指派*。
+.. 在「*角色*」索引標籤中、選取「* Cloud Manager operator*」角色、然後按一下「*下一步*」。
++
+
+NOTE: Cloud Manager 運算子是中提供的預設名稱 https://mysupport.netapp.com/site/info/cloud-manager-policies["Cloud Manager 原則"]。如果您為角色選擇不同的名稱、請改為選取該名稱。
+
+.. 在「*成員*」索引標籤中、完成下列步驟：
++
+*** 指派*託管身分識別*的存取權。
+*** 按一下*選取成員*、選取建立連接器虛擬機器的訂閱、選擇*虛擬機器*、然後選取連接器虛擬機器。
+*** 按一下*選取*。
+*** 單擊 * 下一步 * 。
+
+
+.. 按一下「*檢閱+指派*」。
+.. 如果您想要從 Cloud Volumes ONTAP 其他訂閱中部署、請切換至該訂閱、然後重複這些步驟。
+
+
+
+
+Connector 現在擁有管理公有雲環境中資源和程序所需的權限。當您建立新的工作環境時、 Cloud Manager 會自動使用此 Connector 。但如果您有多個連接器、就需要 link:task-managing-connectors.html["在兩者之間切換"]。

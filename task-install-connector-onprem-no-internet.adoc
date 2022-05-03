@@ -1,0 +1,117 @@
+---
+sidebar: sidebar 
+permalink: task-install-connector-onprem-no-internet.html 
+keywords: connector, dark site, install dark site, install connector no internet, install connector on prem 
+summary: 您可以將Connector安裝在無法存取網際網路的內部部署Linux主機上。接著您可以探索內部ONTAP 的支援叢集、在叢集之間複寫資料、並使用Cloud Data Sense掃描資料。 
+---
+= 在內部安裝Connector、無需網際網路存取
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以將Connector安裝在無法存取網際網路的內部部署Linux主機上。接著您可以探索內部ONTAP 的支援叢集、在叢集之間複寫資料、並使用Cloud Data Sense掃描資料。
+
+這些安裝說明特別適用於上述使用案例。 link:concept-connectors.html#how-to-create-a-connector["瞭解部署Connector的其他方法"]。
+
+
+
+== 驗證主機需求
+
+Connector 軟體必須在符合特定作業系統需求、 RAM 需求、連接埠需求等的主機上執行。
+
+需要專用主機:: 與其他應用程式共用的主機不支援 Connector 。主機必須是專屬主機。
+CPU:: 4 個核心或 4 個 vCPU
+RAM:: 16 GB
+支援的作業系統::
++
+--
+* CentOS 7.6.
+* CentOS 7.7
+* CentOS 7.8
+* CentOS 7.9
+* Red Hat Enterprise Linux 7.6
+* Red Hat Enterprise Linux 7.7
+* Red Hat Enterprise Linux 7.8
+* Red Hat Enterprise Linux 7.9
++
+Red Hat Enterprise Linux 系統必須在 Red Hat 訂購管理中註冊。如果未登錄、系統將無法在 Connector 安裝期間存取儲存庫來更新所需的協力廠商軟體。
+
++
+這些作業系統的英文版本支援 Connector 。
+
+
+
+--
+Hypervisor:: 通過認證可執行 CentOS 或 Red Hat Enterprise Linux 的裸機或託管 Hypervisorhttps://access.redhat.com/certified-hypervisors["Red Hat 解決方案：哪些 Hypervisor 已通過認證、可執行 Red Hat Enterprise Linux ？"^]
+磁碟類型:: 需要SSD
+/opt 中的磁碟空間:: 必須有100 GiB的可用空間
+/var.中的磁碟空間:: 必須提供20 GiB的空間
+Docker引擎:: 安裝Connector之前、主機上需要Docker Engine 19版或更新版本。 https://docs.docker.com/engine/install/["檢視安裝指示"^]。
+
+
+
+
+== 安裝Connector
+
+驗證是否有支援的Linux主機之後、您就可以取得Connector軟體、然後再進行安裝。
+
+需要root權限才能安裝Connector。
+
+.步驟
+. 確認已啟用並執行Docker。
++
+[source, cli]
+----
+sudo sysctl enable docker && sudo sysctl start docker
+----
+. 從下載 Cloud Manager 軟體 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支援網站"^]。
+. 將安裝程式複製到Linux主機。
+. 指派執行指令碼的權限。
++
+[source, cli]
+----
+chmod +x /path/cloud-manager-connector-offline-v3.9.16
+----
+. 執行安裝指令碼：
++
+[source, cli]
+----
+sudo /path/cloud-manager-connector-offline-v3.9.16
+----
+. 開啟網頁瀏覽器並輸入 https://_ipaddress_[] 其中_ipaddress_是Linux主機的IP位址。
++
+您應該會看到下列畫面。
+
++
+image:screenshot-onprem-darksite-welcome.png["在網頁瀏覽器中輸入Connector的IP位址之後、會出現歡迎頁面的快照。"]
+
+. 按一下*設定新的Cloud Manager*、然後依照提示設定系統。
++
+** *系統詳細資料*：輸入Cloud Manager系統的名稱和公司名稱。
++
+image:screenshot-onprem-darksite-details.png["系統詳細資料頁面的快照、會提示您輸入Cloud Manager名稱和公司名稱。"]
+
+** *建立管理使用者*：建立系統的管理使用者。
++
+此使用者帳戶在本機系統上執行。無法連線至NetApp Cloud Central。
+
+** *審查*：檢閱詳細資料、接受授權合約、然後按一下*設定*。
+
+
+. 使用您剛建立的管理員使用者登入Cloud Manager。
+
+
+現在已安裝Connector、您可以開始使用適用於黑暗站台部署的Cloud Manager功能。
+
+.接下來是什麼？#8217？
+* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["探索內部ONTAP 的叢集"^]
+* https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["在內部ONTAP 的等量叢集之間複寫資料"^]
+* https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html["使用Cloud Data Sense掃描Volume資料"^]
+
+
+當新版Connector軟體推出時、這些軟體將發佈至NetApp支援網站。 link:task-managing-connectors.html["瞭解如何升級Connector"]。

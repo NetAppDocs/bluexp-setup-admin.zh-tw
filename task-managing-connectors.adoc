@@ -1,0 +1,285 @@
+---
+sidebar: sidebar 
+permalink: task-managing-connectors.html 
+keywords: managing connectors, uninstall connector, switch connectors, switch between connectors, go to local UI, local interface, local connector, local cloud manager 
+summary: 建立一或多個連接器之後、您可以在連接器之間切換、連線至連接器上執行的本機使用者介面等、來管理連接器。 
+---
+= 管理現有的連接器
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+建立一或多個連接器之後、您可以在連接器之間切換、連線至連接器上執行的本機使用者介面等、來管理連接器。
+
+
+
+== 在連接器之間切換
+
+如果您有多個連接器、可以在它們之間切換、以查看與特定連接器相關聯的工作環境。
+
+例如、假設您是在多個雲端環境中工作。您可能在 AWS 中有一個 Connector 、在 Google Cloud 中有一個 Connector 。您必須在這些連接器之間切換、才能管理 Cloud Volumes ONTAP 在雲端上執行的各種功能。
+
+.步驟
+. 按一下「 * Connector* （ * 連接器 * ）」下拉式清單、選取「 Another Connector （另一個連接器）」、然後按一下「 * Switch*
++
+image:screenshot_connector_switch.gif["螢幕擷取畫面會在標題和「切換」動作中顯示「 Connector 」圖示。"]
+
++
+Cloud Manager 會重新整理並顯示與所選 Connector 相關的工作環境。
+
+
+
+
+
+== 存取本機UI
+
+雖然您應該從 SaaS 使用者介面執行幾乎所有的工作、但連接器上仍有本機使用者介面可供使用。需要從 Connector 本身執行的幾項工作需要使用此介面：
+
+* link:task-configuring-proxy.html["設定 Proxy 伺服器"]
+* 安裝修補程式（您通常會與 NetApp 人員一起安裝修補程式）
+* 下載 AutoSupport 資訊（如有問題、通常由 NetApp 人員引導）
+
+
+.步驟
+. link:task-logging-in.html["登入 Cloud Manager SaaS 介面"^] 從連線至連接器執行個體的機器。
++
+如果連接器沒有公有 IP 位址、您將需要 VPN 連線、或是需要從連接器所在的同一個網路中的跨接主機連線。
+
+. 按一下「* Connector*（*連接器*）」下拉式清單、然後按一下「*移至本機ui*」。
++
+image:screenshot_connector_local_ui.gif["螢幕擷取畫面會在標題中顯示 Connector 圖示、以及「前往本機 UI 」動作。"]
+
++
+在 Connector 上執行的 Cloud Manager 介面會載入新的瀏覽器索引標籤。
+
+
+
+
+
+== 下載AutoSupport 或傳送更新訊息
+
+如果您有任何問題、NetApp人員可能會要求您傳送AutoSupport 一份關於解決疑難的消息給NetApp支援部門。
+
+.步驟
+. 連接到連接器本機UI、如前節所述。
+. 在Cloud Manager主控台右上角、按一下「說明」圖示、然後選取*「支援」*。
++
+image:screenshot-help-support.png["「說明」功能表的快照、其中「支援」是第一個列出的選項"]
+
+. 按一下 * Connector* 。
+. 根據您傳送資訊給NetApp支援部門的方式、請選擇下列其中一個選項：
++
+.. 選取選項、將AutoSupport 此資訊下載到您的本機機器。然後、您可以使用偏好的方法將其傳送給NetApp支援部門。
+.. 按一下「*傳送AutoSupport S編*」、直接將訊息傳送給NetApp支援部門。
+
+
++
+image:screenshot-connector-autosupport.png[""]
+
+
+
+
+
+== 連線至Linux VM
+
+如果您需要連線至執行Connector的Linux VM、可以使用雲端供應商提供的連線選項來執行。
+
+
+
+=== AWS
+
+在AWS中建立Connector執行個體時、您提供了AWS存取金鑰和秘密金鑰。您可以將此金鑰配對用於執行個體的SSH。
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html["AWS文件：連線至您的Linux執行個體"^]
+
+
+
+=== Azure
+
+在Azure中建立Connector VM時、您選擇使用密碼或SSH公開金鑰進行驗證。使用您選擇的驗證方法來連線至VM。
+
+https://docs.microsoft.com/en-us/azure/virtual-machines/linux/mac-create-ssh-keys#ssh-into-your-vm["Azure文件：SSH進入VM"^]
+
+
+
+=== Google Cloud
+
+在Google Cloud中建立Connector時、您無法指定驗證方法。不過、您可以使用Google Cloud Console或Google Cloud CLI（gclCloud）連線至Linux VM執行個體。
+
+https://cloud.google.com/compute/docs/instances/connecting-to-instance["Google Cloud Docs：連線至Linux VM"^]
+
+
+
+== 套用安全性更新
+
+更新Connector上的作業系統、確保其已安裝最新的安全性更新。
+
+.步驟
+. 存取Connector主機上的CLI Shell。
+. 以提高的權限執行下列命令：
++
+[source, cli]
+----
+sudo -s
+service service-manager stop
+yum -y update –-security
+service service-manager start
+----
+
+
+
+
+== 變更連接器的IP位址
+
+如果貴企業需要、您可以變更由雲端供應商自動指派之Connector執行個體的內部IP位址和公有IP位址。
+
+.步驟
+. 依照雲端供應商的指示、變更連接器執行個體的本機IP位址或公有IP位址（或兩者）。
+. 如果您變更了公有IP位址、而且需要連線至連接器上執行的本機使用者介面、請重新啟動連接器執行個體、以Cloud Manager登錄新的IP位址。
+. 如果您變更了私有IP位址、請更新Cloud Volumes ONTAP 支援的還原組態檔案備份位置、以便將備份傳送到Connector上的新私有IP位址。
++
+.. 從Cloud Volumes ONTAP 支援的CLI執行下列命令、以移除目前的備份目標：
++
+[source, cli]
+----
+system configuration backup settings modify -destination ""
+----
+.. 前往Cloud Manager、開啟工作環境。
+.. 按一下功能表、然後選取*進階>組態備份*。
+.. 按一下*設定備份目標*。
+
+
+
+
+
+
+== 編輯連接器的URI
+
+新增及移除連接器的URI。
+
+.步驟
+. 按一下Cloud Manager標頭中的* Connector*下拉式清單。
+. 按一下「*管理連接器*」。
+. 按一下連接器的動作功能表、然後按一下*編輯URI *。
+. 新增及移除URI、然後按一下「*套用*」。
+
+
+
+
+== 修正使用Google Cloud NAT閘道時的下載失敗
+
+Connector會自動下載Cloud Volumes ONTAP 適用於更新的軟體。如果您的組態使用Google Cloud NAT閘道、下載可能會失敗。您可以限制軟體映像分成的零件數量來修正此問題。此步驟必須使用Cloud Manager API完成。
+
+.步驟
+. 將PUT要求提交至/occm/config、並以下列Json做為本文：
+
+
+[source]
+----
+{
+  "maxDownloadSessions": 32
+}
+----
+_MaxDownloadSseds_的值可以是1或任何大於1的整數。如果值為1、則下載的映像不會分割。
+
+請注意、32為範例值。您應該使用的值取決於NAT組態和可同時使用的工作階段數目。
+
+https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#occmconfig["深入瞭解/occm/config API呼叫"^]。
+
+
+
+== 升級內部部署的Connector、不需存取網際網路
+
+如果您 link:task-install-connector-onprem-no-internet.html["將Connector安裝在無法存取網際網路的內部部署主機上"]、您可以在NetApp支援網站提供較新版本時升級Connector。
+
+在升級過程中、連接器需要重新啟動、以便在升級期間無法使用使用者介面。
+
+.步驟
+. 從下載 Cloud Manager 軟體 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支援網站"^]。
+. 將安裝程式複製到Linux主機。
+. 指派執行指令碼的權限。
++
+[source, cli]
+----
+chmod +x /path/cloud-manager-connector-offline-v3.9.14
+----
+. 執行安裝指令碼：
++
+[source, cli]
+----
+sudo /path/cloud-manager-connector-offline-v3.9.14
+----
+. 升級完成後、您可以前往*「Help」（說明）>「Support」（支援）>「Connector*」（連接器*）來驗證連接器的版本。
+
+
+.在可存取網際網路的主機上進行軟體升級呢？
+****
+只要有、 Connector 就會自動將其軟體更新至最新版本 link:reference-networking-cloud-manager.html["傳出網際網路存取"] 以取得軟體更新。
+
+****
+
+
+== 從Cloud Manager移除Connectors
+
+如果連接器處於非作用中狀態、您可以將其從 Cloud Manager 的連接器清單中移除。如果您刪除了 Connector 虛擬機器、或是卸載了 Connector 軟體、則可以這麼做。
+
+請注意下列關於移除連接器的事項：
+
+* 此動作不會刪除虛擬機器。
+* 此動作無法還原、只要從 Cloud Manager 移除 Connector 、就無法將其新增回 Cloud Manager 。
+
+
+.步驟
+. 按一下Cloud Manager標頭中的* Connector*下拉式清單。
+. 按一下「*管理連接器*」。
+. 按一下非作用中連接器的動作功能表、然後按一下 * 移除連接器 * 。
++
+image:screenshot_connector_remove.gif["連接器 Widget 的快照、可讓您移除非作用中的連接器。"]
+
+. 輸入要確認的連接器名稱、然後按一下「移除」。
+
+
+Cloud Manager 會將 Connector 從記錄中移除。
+
+
+
+== 解除安裝Connector軟體
+
+解除安裝Connector軟體以疑難排解問題、或從主機上永久移除軟體。您需要使用的步驟取決於連接器是安裝在可存取網際網路的主機上、還是安裝在無法存取網際網路的受限網路中。
+
+
+
+=== 從可存取網際網路的主機解除安裝
+
+線上連接器包含一個解除安裝指令碼、可用來解除安裝軟體。
+
+.步驟
+. 從 Linux 主機執行解除安裝指令碼：
++
+* /opt/application/NetApp/cloudmanager/in/uninstall.sh [silined]*
+
++
+_silon_ 執行指令碼時不會提示您確認。
+
+
+
+
+
+=== 從無法存取網際網路的主機解除安裝
+
+如果您從NetApp支援網站下載Connector軟體、並將其安裝在無法存取網際網路的受限網路中、請使用這些命令。
+
+.步驟
+. 從Linux主機執行下列命令：
++
+[source, cli]
+----
+docker-compose -f /opt/application/netapp/ds/docker-compose.yml down -v
+rm -rf /opt/application/netapp/ds
+----
+
