@@ -16,7 +16,7 @@ summary: 客戶管理員必須先部署 Connector 、才能使用大多數 Cloud
 [role="lead"]
 客戶管理員必須先部署 _Connector_ 、才能使用大多數 Cloud Manager 功能。 link:concept-connectors.html["瞭解何時需要連接器"]。Connector 可讓 Cloud Manager 管理公有雲環境中的資源與程序。
 
-本頁說明如何直接從 Cloud Manager 在 GCP 中建立 Connector 。 link:concept-connectors.html#how-to-create-a-connector["瞭解部署Connector的其他方法"]。
+本頁說明如何直接從Cloud Manager在Google Cloud中建立Connector。 link:concept-connectors.html#how-to-create-a-connector["瞭解部署Connector的其他方法"]。
 
 這些步驟必須由具有「帳戶管理」角色的使用者完成。工作區管理員無法建立 Connector 。
 
@@ -27,10 +27,10 @@ TIP: 當您建立第一個 Cloud Volumes ONTAP 運作環境時、如果您還沒
 
 == 設定權限
 
-在部署Connector之前、您必須確保GCP帳戶擁有正確的權限、而且已針對Connector VM設定服務帳戶。
+在部署Connector之前、您必須先確保Google Cloud帳戶擁有正確的權限、並為Connector VM設定服務帳戶。
 
 .步驟
-. 確認部署Connector的GCP使用者具有中的權限 https://occm-sample-policies.s3.amazonaws.com/Setup_As_Service_3.7.3_GCP.yaml["GCP 的連接器部署原則"^]。
+. 確認部署Connector的Google Cloud使用者具有中的權限 https://occm-sample-policies.s3.amazonaws.com/Setup_As_Service_3.7.3_GCP.yaml["Google Cloud的Connector部署原則"^]。
 +
 https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["您可以使用 Yaml 檔案建立自訂角色"^] 然後附加到使用者。您需要使用 gCloud 命令列來建立角色。
 
@@ -39,17 +39,17 @@ https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-
 建立此服務帳戶時、您會將其與Connector VM建立關聯。
 
 +
-.. https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["在 GCP 中建立角色"^] 這包括在中定義的權限 https://occm-sample-policies.s3.amazonaws.com/Policy_for_Cloud_Manager_3.9.10_GCP.yaml["GCP 的 Cloud Manager 原則"^]。同樣地、您需要使用 gCloud 命令列。
+.. https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["在 GCP 中建立角色"^] 這包括在中定義的權限 https://occm-sample-policies.s3.amazonaws.com/Policy_for_Cloud_Manager_3.9.10_GCP.yaml["適用於Google Cloud的Cloud Manager原則"^]。同樣地、您需要使用 gCloud 命令列。
 +
 此 Y反 洗錢檔案所含的權限與步驟 1 中的權限不同。
 
-.. https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account["建立 GCP 服務帳戶、並套用您剛建立的自訂角色"^]。
+.. https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account["建立Google Cloud服務帳戶、並套用您剛建立的自訂角色"^]。
 .. 如果您想要在 Cloud Volumes ONTAP 其他專案中部署 https://cloud.google.com/iam/docs/granting-changing-revoking-access#granting-console["將具有 Cloud Manager 角色的服務帳戶新增至該專案、以授予存取權"^]。您必須針對每個專案重複此步驟。
 
 
 
 
-GCP使用者現在擁有建立Connector所需的權限、並已設定Connector VM的服務帳戶。
+Google Cloud使用者現在擁有建立Connector所需的權限、並已設定Connector VM的服務帳戶。
 
 
 
@@ -59,10 +59,19 @@ GCP使用者現在擁有建立Connector所需的權限、並已設定Connector V
 
 [cols="10,10,10,20,20,30"]
 |===
-| 服務帳戶 | 建立者 | 裝載於 | 服務專案權限 | 主機專案權限 | 目的 
+| 身分識別 | 建立者 | 裝載於 | 服務專案權限 | 主機專案權限 | 目的 
 
 
-| Cloud Manager服務帳戶 | 自訂 | 服務專案  a| 
+| 用於部署Connector的Google帳戶 | 自訂 | 服務專案  a| 
+* https://occm-sample-policies.s3.amazonaws.com/Setup_As_Service_3.7.3_GCP.yaml["在此.yaml檔案中找到的權限"^]
+
+ a| 
+* compute.networkUser
+
+| 在服務專案中部署Connector 
+
+
+| 連接器服務帳戶 | 自訂 | 服務專案  a| 
 * https://occm-sample-policies.s3.amazonaws.com/Policy_for_Cloud_Manager_3.9.10_GCP.yaml["在此.yaml檔案中找到的權限"^]
 
  a| 
@@ -79,22 +88,22 @@ GCP使用者現在擁有建立Connector所需的權限、並已設定Connector V
 | 不適用 | （選用）用於資料分層和雲端備份 
 
 
-| Google API服務代理程式 | GCP | 服務專案  a| 
+| Google API服務代理程式 | Google Cloud | 服務專案  a| 
 * （預設）編輯器
 
  a| 
 * compute.networkUser
 
-| 代表部署與GCP API互動。允許Cloud Manager使用共享網路。 
+| 代表部署與Google Cloud API互動。允許Cloud Manager使用共享網路。 
 
 
-| Google Compute Engine預設服務帳戶 | GCP | 服務專案  a| 
+| Google Compute Engine預設服務帳戶 | Google Cloud | 服務專案  a| 
 * （預設）編輯器
 
  a| 
 * compute.networkUser
 
-| 代表部署來部署GCP執行個體和運算基礎架構。允許Cloud Manager使用共享網路。 
+| 代表部署部署部署部署Google Cloud執行個體和運算基礎架構。允許Cloud Manager使用共享網路。 
 |===
 附註：
 
@@ -123,7 +132,7 @@ GCP使用者現在擁有建立Connector所需的權限、並已設定Connector V
 
 
 
-== 在 GCP 中建立連接器
+== 在Google Cloud中建立Connector
 
 直接從Cloud Manager使用者介面或使用gCloud在Google Cloud中建立Connector。
 
@@ -178,7 +187,7 @@ NOTE: 除非您啟動連接器、否則不會有傳入流量進入連接器。HT
 --
 . 使用您偏好的方法登入gCloud SDK。
 +
-在我們的範例中、我們會使用已安裝gCloud SDK的本機Shell、但您可以在GCP主控台使用原生Google Cloud Shell。
+在我們的範例中、我們會使用已安裝gCloud SDK的本機Shell、但您可以在Google Cloud主控台使用原生Google Cloud Shell。
 
 +
 如需Google Cloud SDK的詳細資訊、請參閱 link:https://cloud.google.com/sdk["Google Cloud SDK文件頁面"^]。
