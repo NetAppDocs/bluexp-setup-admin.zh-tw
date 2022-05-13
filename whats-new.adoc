@@ -18,6 +18,16 @@ summary: 瞭解Cloud Manager管理功能的新功能、包括NetApp帳戶、連�
 
 
 
+== 2022年5月12日
+
+
+
+=== 連接器3.9.18修補程式
+
+我們更新了Connector、推出錯誤修正。最值得注意的是Cloud Volumes ONTAP 、當Connector位於共享VPC時、會影響到Google Cloud中的功能不均部署。
+
+
+
 == 2022年5月2日
 
 

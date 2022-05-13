@@ -2144,4 +2144,7 @@
   <block id="abb8f06c60f79c0d26aa84ecd4b682a9" category="cell">代表部署部署部署部署Google Cloud執行個體和運算基礎架構。允許Cloud Manager使用共享網路。</block>
   <block id="c251b4e4495910558d988ba699a63a67" category="section-title">在Google Cloud中建立Connector</block>
   <block id="70d434e2bfd18a27962842edd06609f7" category="paragraph">在我們的範例中、我們會使用已安裝gCloud SDK的本機Shell、但您可以在Google Cloud主控台使用原生Google Cloud Shell。</block>
+  <block id="390e66de0b25a9d9b226d4ede6fa20b5" category="section-title">2022年5月12日</block>
+  <block id="e2632c3a4c1aff50543e98b03420fd3c" category="section-title">連接器3.9.18修補程式</block>
+  <block id="8156333613ef46e2aeaf70650af07b00" category="paragraph">我們更新了Connector、推出錯誤修正。最值得注意的是Cloud Volumes ONTAP 、當Connector位於共享VPC時、會影響到Google Cloud中的功能不均部署。</block>
 </blocks>
