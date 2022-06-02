@@ -37,7 +37,7 @@ Cloud Manager部署連接器時、會有兩個介面、其中IP位址介於172.1
 
 如果您的網路已設定具有上述任一範圍的子網路、則Cloud Manager可能會發生連線失敗。例如ONTAP 、在Cloud Manager中探索內部的功能不全的叢集可能會失敗。
 
-因應措施是變更連接器介面的IP位址。如需協助、請聯絡NetApp支援部門。
+請參閱知識庫文章 link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Manager/Cloud_Manager_shows_inactive_as_Connector_IP_range_in_172.x.x.x_conflict_with_docker_network["Cloud Manager Connector IP與現有網路發生衝突"] 如需如何變更連接器介面的IP位址的指示。
 
 
 

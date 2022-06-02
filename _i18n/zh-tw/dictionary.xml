@@ -369,7 +369,6 @@
   <block id="911d15b7ac55478d2b567e8488658687" category="section-title">可能與172範圍內的IP位址發生衝突</block>
   <block id="3853b1ba353b50f09828dc0d39b3ed95" category="paragraph">Cloud Manager部署連接器時、會有兩個介面、其中IP位址介於172.17.0.0/16和172.18.0.0/16範圍內。</block>
   <block id="9f608f9c1c8b1ff5590819babfd8d682" category="paragraph">如果您的網路已設定具有上述任一範圍的子網路、則Cloud Manager可能會發生連線失敗。例如ONTAP 、在Cloud Manager中探索內部的功能不全的叢集可能會失敗。</block>
-  <block id="9bf0231c4a9bbfcd51ea4f7ad43e1483" category="paragraph">因應措施是變更連接器介面的IP位址。如需協助、請聯絡NetApp支援部門。</block>
   <block id="82538689c7a66297973814120306d42f" category="section-title">僅支援HTTP Proxy伺服器</block>
   <block id="e65172f12d5a004e18b6be974b9871c6" category="section-title">不支援SSL解密</block>
   <block id="1018bf3973d23cb2399e2be9645e0c24" category="paragraph">Cloud Manager不支援啟用SSL解密的防火牆組態。如果啟用SSL解密、Cloud Manager會顯示錯誤訊息、而Connector執行個體則會顯示為非作用中。</block>
@@ -2147,4 +2146,6 @@
   <block id="390e66de0b25a9d9b226d4ede6fa20b5" category="section-title">2022年5月12日</block>
   <block id="e2632c3a4c1aff50543e98b03420fd3c" category="section-title">連接器3.9.18修補程式</block>
   <block id="8156333613ef46e2aeaf70650af07b00" category="paragraph">我們更新了Connector、推出錯誤修正。最值得注意的是Cloud Volumes ONTAP 、當Connector位於共享VPC時、會影響到Google Cloud中的功能不均部署。</block>
+  <block id="9d629a9ec3f84748aec778918407cebb" category="inline-link-macro">Cloud Manager Connector IP與現有網路發生衝突</block>
+  <block id="a1fd2cb29c69b5f22a015cf8e9b56775" category="paragraph">請參閱知識庫文章 <block ref="a91fb084431280c2dea29b2cdbf32954" category="inline-link-macro-rx"></block> 如需如何變更連接器介面的IP位址的指示。</block>
 </blocks>
