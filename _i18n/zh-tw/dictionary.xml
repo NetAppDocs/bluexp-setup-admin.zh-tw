@@ -2054,7 +2054,6 @@
   <block id="3e080914efe0d0ca025439fbb68d437f" category="paragraph">支援註冊可從支援儀表板的Cloud Manager取得。</block>
   <block id="fb07bf6b7698dbe934b8b2164d915484" category="list-text">在* Resources（資源）*選項卡中，單擊* Register for Support*（註冊以獲得支持*）。</block>
   <block id="392fb0270d0d84dbc3fdf8c67da1e5ad" category="list-text">選取您要登錄的NSS認證、然後按一下「*登錄*」。</block>
-  <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">所有Cloud Manager文件</block>
   <block id="b7117438679aa668508b75822322c225" category="sidebar">設定與管理文件</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">版本資訊</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
@@ -2148,4 +2147,17 @@
   <block id="8156333613ef46e2aeaf70650af07b00" category="paragraph">我們更新了Connector、推出錯誤修正。最值得注意的是Cloud Volumes ONTAP 、當Connector位於共享VPC時、會影響到Google Cloud中的功能不均部署。</block>
   <block id="9d629a9ec3f84748aec778918407cebb" category="inline-link-macro">Cloud Manager Connector IP與現有網路發生衝突</block>
   <block id="a1fd2cb29c69b5f22a015cf8e9b56775" category="paragraph">請參閱知識庫文章 <block ref="a91fb084431280c2dea29b2cdbf32954" category="inline-link-macro-rx"></block> 如需如何變更連接器介面的IP位址的指示。</block>
+  <block id="f8b475a3fefebada77a30229238d0a1a" category="section-title">2022年6月7日</block>
+  <block id="40beea3ec23a7affa39b1a1cbd52f21d" category="section-title">連接器3.9.19</block>
+  <block id="fb9fefdc512037af8c4c1f84c436bd8e" category="list-text">現在AWS雅加達地區（ap東南3區）支援Connector。</block>
+  <block id="49ed7ab586a5135eae3ee7b3aea2ae20" category="list-text">現在Azure Brazil東南地區支援Connector。</block>
+  <block id="1765dff10197df4bf080f41e5537f2a5" category="list-text">此版本的Connector也包含Cloud Volumes ONTAP 了加強功能的功能、以及內部ONTAP 的叢集增強功能。</block>
+  <block id="03e6ae21f561049c3e8010740c63aab3" category="inline-link">深入瞭Cloud Volumes ONTAP 解功能強化功能</block>
+  <block id="2027473f3ca71543274163d3bb9dd8e1" category="list-text"><block ref="2027473f3ca71543274163d3bb9dd8e1" category="inline-link-rx"></block></block>
+  <block id="6ff2a7981cc8a7efd758e8ffec4cc69e" category="inline-link">深入瞭ONTAP 解內部叢集增強功能</block>
+  <block id="f0aff813a70ef2591adfbb6a1a06b553" category="list-text"><block ref="f0aff813a70ef2591adfbb6a1a06b553" category="inline-link-rx"></block></block>
+  <block id="d91c9747b757db55982f71a386bfd0d6" category="cell">- compute.instanceGroups.get - compute、addresses.Get</block>
+  <block id="e6896223c5f9bd9bbdd1b0c9eac6686f" category="cell">在HA配對上建立及管理儲存VM。</block>
+  <block id="4a95dbd25f9c78f9b32c636955913f0c" category="cell">「EC2：統計資料Volume修改」、「EC2：修改Volume」、</block>
+  <block id="2ab6f4b7f1eda4096fbe91764dbb5eb6" category="cell">可設定Cloud Volumes ONTAP 及管理支援Amazon EBS彈性Volume功能的資訊區集合體。</block>
 </blocks>

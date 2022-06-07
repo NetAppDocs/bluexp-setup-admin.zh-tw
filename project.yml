@@ -10,8 +10,6 @@ settings:
   langs: zh-tw,us-en,ja-jp,zh-cn,ko-kr
 sidebar:
   entries:
-  - title: 所有Cloud Manager文件
-    url: https://docs.netapp.com/us-en/cloud-manager-family
   - title: 設定與管理文件
     url: "/index.html"
   - title: 版本資訊
@@ -161,3 +159,4 @@ homepage:
 product-family:
   name: Cloud Manager
   repo: cloud-manager-family
+  sidebar_label: All Cloud Manager documentation

@@ -105,4 +105,7 @@ Cloud Manager 需要權限、才能在雲端供應商中執行動作。這些權
 
 
 | - container。叢集。Get - container。叢集。清單 | 探索在Google Kubernetes Engine中執行的Kubernetes叢集。 
+
+
+| - compute.instanceGroups.get - compute、addresses.Get | 在HA配對上建立及管理儲存VM。 
 |===

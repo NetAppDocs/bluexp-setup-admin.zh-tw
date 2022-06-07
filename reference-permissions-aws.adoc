@@ -102,4 +102,7 @@ Cloud Manager 使用 AWS 帳戶來撥打 API 呼叫數項 AWS 服務、包括 EC
 
 
 | "EC2：取消程序位置群組"、"iam：Get勞力 政策"、 | 為部署在單一可用度區域（AZ）的HA配對建立AWS分散配置群組。 
+
+
+| 「EC2：統計資料Volume修改」、「EC2：修改Volume」、 | 可設定Cloud Volumes ONTAP 及管理支援Amazon EBS彈性Volume功能的資訊區集合體。 
 |===
