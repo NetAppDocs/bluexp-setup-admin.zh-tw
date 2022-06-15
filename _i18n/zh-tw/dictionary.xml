@@ -1064,7 +1064,6 @@
   <block id="249345af661bafcf4f8bd3a0b9d6e949" category="inline-link-macro">深入瞭解何時需要連接器及其運作方式</block>
   <block id="5becfd4bbec3e5daaed9dbc85669ff84" category="paragraph"><block ref="850c1601f372329538aba5fe3f86430c" category="inline-link-macro-rx"></block>。</block>
   <block id="958c315a8c40765f65895091ecc83488" category="paragraph"><block ref="958c315a8c40765f65895091ecc83488" category="inline-link-rx"></block></block>
-  <block id="4c7da566c048accbd9ccb27c9b060bde" category="summary">您可以將Connector安裝在無法存取網際網路的內部部署Linux主機上。接著您可以探索內部ONTAP 的支援叢集、在叢集之間複寫資料、並使用Cloud Data Sense掃描資料。</block>
   <block id="424a4bbc5d90882baf6dfd31a70caf62" category="doc">在內部安裝Connector、無需網際網路存取</block>
   <block id="92241232df0720bddf843b8b16c8be1a" category="paragraph">這些安裝說明特別適用於上述使用案例。 <block ref="f56df5f8b4fd558a7482d6115403eadd" category="inline-link-macro-rx"></block>。</block>
   <block id="3d0bf05155f3dfd0eeccf9e953d46156" category="list-text">磁碟類型</block>
@@ -1091,8 +1090,6 @@
   <block id="533c556705825be9a1a97d191373f80f" category="list-text"><block ref="533c556705825be9a1a97d191373f80f" category="inline-link-rx"></block></block>
   <block id="8160a46a5d4541efd7702f3fa8a2ecad" category="inline-link">在內部ONTAP 的等量叢集之間複寫資料</block>
   <block id="1b8412d43fb2448299621a31132c8729" category="list-text"><block ref="1b8412d43fb2448299621a31132c8729" category="inline-link-rx"></block></block>
-  <block id="44260f7555e9d7359b83f5d558c95bf0" category="inline-link">使用Cloud Data Sense掃描Volume資料</block>
-  <block id="19ffc38fbe7641c4f1c1b5bba95bd159" category="list-text"><block ref="19ffc38fbe7641c4f1c1b5bba95bd159" category="inline-link-rx"></block></block>
   <block id="c4d9d6c8e652595e9d46970f56499783" category="inline-link-macro">瞭解如何升級Connector</block>
   <block id="873c98dded4257d9b65fdcad74460e91" category="paragraph">當新版Connector軟體推出時、這些軟體將發佈至NetApp支援網站。 <block ref="c7624839f14a2e41667804d3cbb29094" category="inline-link-macro-rx"></block>。</block>
   <block id="1574ea6eaa169a957e1542cd590656c0" category="summary">Cloud Manager 需要權限、才能在雲端供應商中執行動作。這些權限包含在 NetApp 提供的原則中。您可能想要瞭解 Cloud Manager 使用這些權限的功能。</block>
@@ -2160,4 +2157,9 @@
   <block id="2ab6f4b7f1eda4096fbe91764dbb5eb6" category="cell">可設定Cloud Volumes ONTAP 及管理支援Amazon EBS彈性Volume功能的資訊區集合體。</block>
   <block id="fe133d1f6db8d046e4b328c0d9a967a1" category="paragraph">每個NetApp帳戶最多只能有50個不受使用中授權模式限制的不受限。Cloud Volumes ONTAP</block>
   <block id="ae5034ae6657395ba1fc2a16d2c55db3" category="paragraph">_system_是HA配對或單一節點系統。例如、如果您有八Cloud Volumes ONTAP 個用作「用作」的「用作」、四個用作單一節點的系統、您的帳戶中總共有12個系統、還有38個額外系統的空間。</block>
+  <block id="bea9d9e1b3f9260b5dafbfee794aead7" category="summary">您可以將Connector安裝在無法存取網際網路的內部部署Linux主機上。接著您可以探索內部ONTAP 的支援叢集、在叢集之間複寫資料、使用Cloud Backup備份磁碟區、然後使用Cloud Data Sense進行掃描。</block>
+  <block id="89b945901df4999cfbb07b91df7f3e83" category="inline-link">使用Cloud Backup將ONTAP 內部的等量資料備份StorageGRID 至不實</block>
+  <block id="0ef5e09df96e6b4d97470a69c3a5bb03" category="list-text"><block ref="0ef5e09df96e6b4d97470a69c3a5bb03" category="inline-link-rx"></block></block>
+  <block id="c6e51205c48cc37a7cc66b973d442adf" category="inline-link">使用ONTAP Cloud Data SENSE掃描內部的不全區資料</block>
+  <block id="a2946220130b0d51ecc66e35f8a65cbe" category="list-text"><block ref="a2946220130b0d51ecc66e35f8a65cbe" category="inline-link-rx"></block></block>
 </blocks>

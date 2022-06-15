@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-install-connector-onprem-no-internet.html 
 keywords: connector, dark site, install dark site, install connector no internet, install connector on prem 
-summary: 您可以將Connector安裝在無法存取網際網路的內部部署Linux主機上。接著您可以探索內部ONTAP 的支援叢集、在叢集之間複寫資料、並使用Cloud Data Sense掃描資料。 
+summary: 您可以將Connector安裝在無法存取網際網路的內部部署Linux主機上。接著您可以探索內部ONTAP 的支援叢集、在叢集之間複寫資料、使用Cloud Backup備份磁碟區、然後使用Cloud Data Sense進行掃描。 
 ---
 = 在內部安裝Connector、無需網際網路存取
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 您可以將Connector安裝在無法存取網際網路的內部部署Li
 
 
 [role="lead"]
-您可以將Connector安裝在無法存取網際網路的內部部署Linux主機上。接著您可以探索內部ONTAP 的支援叢集、在叢集之間複寫資料、並使用Cloud Data Sense掃描資料。
+您可以將Connector安裝在無法存取網際網路的內部部署Linux主機上。接著您可以探索內部ONTAP 的支援叢集、在叢集之間複寫資料、使用Cloud Backup備份磁碟區、然後使用Cloud Data Sense進行掃描。
 
 這些安裝說明特別適用於上述使用案例。 link:concept-connectors.html#how-to-create-a-connector["瞭解部署Connector的其他方法"]。
 
@@ -111,7 +111,8 @@ image:screenshot-onprem-darksite-details.png["系統詳細資料頁面的快照�
 .接下來是什麼？#8217？
 * https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["探索內部ONTAP 的叢集"^]
 * https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["在內部ONTAP 的等量叢集之間複寫資料"^]
-* https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html["使用Cloud Data Sense掃描Volume資料"^]
+* https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html["使用Cloud Backup將ONTAP 內部的等量資料備份StorageGRID 至不實"^]
+* https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html["使用ONTAP Cloud Data SENSE掃描內部的不全區資料"^]
 
 
 當新版Connector軟體推出時、這些軟體將發佈至NetApp支援網站。 link:task-managing-connectors.html["瞭解如何升級Connector"]。
