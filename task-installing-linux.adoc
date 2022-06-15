@@ -89,7 +89,7 @@ Hypervisor:: 通過認證可執行 CentOS 或 Red Hat Enterprise Linux 的裸機
 +
 [source, cli]
 ----
-chmod +x OnCommandCloudManager-V3.9.16.sh
+chmod +x OnCommandCloudManager-V3.9.19.sh
 ----
 . 執行安裝指令碼。
 +
@@ -98,7 +98,7 @@ chmod +x OnCommandCloudManager-V3.9.16.sh
 +
 [source, cli]
 ----
- ./OnCommandCloudManager-V3.9.16.sh [silent] [proxy=ipaddress] [proxyport=port] [proxyuser=user_name] [proxypwd=password]
+ ./OnCommandCloudManager-V3.9.19.sh [silent] [proxy=ipaddress] [proxyport=port] [proxyuser=user_name] [proxypwd=password]
 ----
 +
 _silon_ 在不提示您提供資訊的情況下執行安裝。

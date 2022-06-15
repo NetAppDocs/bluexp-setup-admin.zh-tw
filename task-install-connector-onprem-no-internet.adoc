@@ -75,13 +75,13 @@ sudo sysctl enable docker && sudo sysctl start docker
 +
 [source, cli]
 ----
-chmod +x /path/cloud-manager-connector-offline-v3.9.16
+chmod +x /path/cloud-manager-connector-offline-v3.9.19
 ----
 . 執行安裝指令碼：
 +
 [source, cli]
 ----
-sudo /path/cloud-manager-connector-offline-v3.9.16
+sudo /path/cloud-manager-connector-offline-v3.9.19
 ----
 . 開啟網頁瀏覽器並輸入 https://_ipaddress_[] 其中_ipaddress_是Linux主機的IP位址。
 +
