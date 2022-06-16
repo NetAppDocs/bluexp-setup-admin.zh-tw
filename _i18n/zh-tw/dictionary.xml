@@ -1060,7 +1060,6 @@
   <block id="fe4a785cf549e843e958f443c4baf0fe" category="section-title">連接器</block>
   <block id="199551a545dccacd58cda6ddf3c48b21" category="paragraph">在大多數情況下、帳戶管理員需要在雲端或內部部署網路中部署 _Connector_ 。Connector 可讓 Cloud Manager 管理公有雲環境中的資源與程序。</block>
   <block id="e3b183b81588a53a9977e2f408f637ca" category="paragraph">連接器應隨時保持執行狀態。這對於您持續啟用的服務健全狀況和營運而言十分重要。</block>
-  <block id="6eee50fc3992cd30620eeeea86d66be2" category="paragraph">例如、連接器是 Cloud Volumes ONTAP 指功能健全及運作的關鍵元件。如果連接器電源關閉、 Cloud Volumes ONTAP 則在與連接器失去通訊超過 14 天之後、將會關閉此功能。</block>
   <block id="249345af661bafcf4f8bd3a0b9d6e949" category="inline-link-macro">深入瞭解何時需要連接器及其運作方式</block>
   <block id="5becfd4bbec3e5daaed9dbc85669ff84" category="paragraph"><block ref="850c1601f372329538aba5fe3f86430c" category="inline-link-macro-rx"></block>。</block>
   <block id="958c315a8c40765f65895091ecc83488" category="paragraph"><block ref="958c315a8c40765f65895091ecc83488" category="inline-link-rx"></block></block>
@@ -2162,4 +2161,5 @@
   <block id="0ef5e09df96e6b4d97470a69c3a5bb03" category="list-text"><block ref="0ef5e09df96e6b4d97470a69c3a5bb03" category="inline-link-rx"></block></block>
   <block id="c6e51205c48cc37a7cc66b973d442adf" category="inline-link">使用ONTAP Cloud Data SENSE掃描內部的不全區資料</block>
   <block id="a2946220130b0d51ecc66e35f8a65cbe" category="list-text"><block ref="a2946220130b0d51ecc66e35f8a65cbe" category="inline-link-rx"></block></block>
+  <block id="fe287ea744fed512490d3282fcd528aa" category="paragraph">例如、連接器是Cloud Volumes ONTAP 運作過程中的關鍵要素。如果連接器關機、Cloud Volumes ONTAP 具有節點型授權的現象將會在與連接器失去通訊超過14天之後關閉。</block>
 </blocks>
