@@ -80,17 +80,9 @@ Connector VM不支援協力廠商代理程式或VM擴充。
 
 這表示只有能夠存取終端使用者內部 VPC/vnet 的授權使用者、才能使用 Cloud Manager 的 UI 或 API 。
 
-這也表示 Cloud Manager 無法提供下列服務：
+請注意、這些地區僅支援Cloud Volumes ONTAP 的服務包括：功能完善、雲端備份、雲端資料認證及複寫。政府區域不支援其他NetApp服務。
 
-* Kubernetes
-* 雲端分層
-* 全域檔案快取
-
-
-使用這些服務需要SaaS平台。
-
-
-NOTE: 雲端備份、雲端資料認同及監控服務均在政府區域提供支援與使用。
+link:task-managing-connectors.html#access-the-local-ui["瞭解如何存取Connector上的本機UI"]。
 
 
 

@@ -385,11 +385,8 @@
   <block id="3197827325be6e413fb43c8aa3862608" category="section-title">SaaS 平台在政府區域中已停用</block>
   <block id="6aef346cd7f1d02d8a385ef5501430b5" category="paragraph">如果您在 AWS GovCloud 區域、 Azure Gov 區域或 Azure DoD 區域部署 Connector 、則只能透過 Connector 的主機 IP 位址存取 Cloud Manager 。系統會停用整個帳戶的 SaaS 平台存取權。</block>
   <block id="01b185b57976f8db5702424954f912de" category="paragraph">這表示只有能夠存取終端使用者內部 VPC/vnet 的授權使用者、才能使用 Cloud Manager 的 UI 或 API 。</block>
-  <block id="b1ba27dfecc5d2afa7479b0e66831cb2" category="paragraph">這也表示 Cloud Manager 無法提供下列服務：</block>
   <block id="30136395f01879792198317c11831ea4" category="list-text">Kubernetes</block>
   <block id="24e6e2f6171b43a847fe194a9a9b5cd0" category="list-text">全域檔案快取</block>
-  <block id="8f8ddac26068fbb5a6761635f0559bf3" category="paragraph">使用這些服務需要SaaS平台。</block>
-  <block id="7719c1d7366788cfbb45dc7ab4e61716" category="admonition">雲端備份、雲端資料認同及監控服務均在政府區域提供支援與使用。</block>
   <block id="4c8bad6756ca0d84a9a56e8303428c9c" category="section-title">市場限制</block>
   <block id="09b41782e7d4a148f9a7da9ba9dd8aab" category="section-title">Azure和Google Cloud合作夥伴不提供隨用隨付功能</block>
   <block id="3bb34cc4b91242a4a34cd43a6fe0fd46" category="paragraph">如果您是Microsoft Cloud Solution Provider（CSP）合作夥伴或Google Cloud合作夥伴、則無法使用NetApp隨用隨付訂閱。您必須購買授權、並以BYOL授權部署NetApp雲端解決方案。</block>
@@ -547,12 +544,10 @@
   <block id="4b8bff03335e3b9e10cd47a213ff79e2" category="paragraph"><block ref="4b8bff03335e3b9e10cd47a213ff79e2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a9512880dd99d7a0ea8a44aae7aaf9aa" category="paragraph">Cloud Manager 會重新整理並顯示與所選 Connector 相關的工作環境。</block>
   <block id="61fb0edb10f3698f23f558d3a9ffae84" category="section-title">存取本機UI</block>
-  <block id="13f82657bcb08b6808b377b42bb36b38" category="paragraph">雖然您應該從 SaaS 使用者介面執行幾乎所有的工作、但連接器上仍有本機使用者介面可供使用。需要從 Connector 本身執行的幾項工作需要使用此介面：</block>
   <block id="8f1f697128124fa5f7ac3ca04e2076b2" category="inline-link-macro">設定 Proxy 伺服器</block>
   <block id="e18fe7db665c72786571535a9d181827" category="list-text"><block ref="e18fe7db665c72786571535a9d181827" category="inline-link-macro-rx"></block></block>
   <block id="5534b7b22bef2cb909c67010ed56403f" category="list-text">安裝修補程式（您通常會與 NetApp 人員一起安裝修補程式）</block>
   <block id="999d1ceb3abf34cebd09823173040124" category="list-text">下載 AutoSupport 資訊（如有問題、通常由 NetApp 人員引導）</block>
-  <block id="fe21300b1f75f7d8f3a770f3424dd83c" category="list-text">按一下「* Connector*（*連接器*）」下拉式清單、然後按一下「*移至本機ui*」。</block>
   <block id="a37f4dabe9cfbc81f6c1fb589f9a8944" category="section-title">下載AutoSupport 或傳送更新訊息</block>
   <block id="f7cf26738e01a9e2fd6edaaed1bee6cd" category="paragraph">如果您有任何問題、NetApp人員可能會要求您傳送AutoSupport 一份關於解決疑難的消息給NetApp支援部門。</block>
   <block id="3f2b9d19ff40b6e5f2b07c71dc124069" category="list-text">連接到連接器本機UI、如前節所述。</block>
@@ -2162,4 +2157,10 @@
   <block id="c6e51205c48cc37a7cc66b973d442adf" category="inline-link">使用ONTAP Cloud Data SENSE掃描內部的不全區資料</block>
   <block id="a2946220130b0d51ecc66e35f8a65cbe" category="list-text"><block ref="a2946220130b0d51ecc66e35f8a65cbe" category="inline-link-rx"></block></block>
   <block id="fe287ea744fed512490d3282fcd528aa" category="paragraph">例如、連接器是Cloud Volumes ONTAP 運作過程中的關鍵要素。如果連接器關機、Cloud Volumes ONTAP 具有節點型授權的現象將會在與連接器失去通訊超過14天之後關閉。</block>
+  <block id="f959d763eb10941db3ab7db04cdccc7d" category="paragraph">雖然您應該從 SaaS 使用者介面執行幾乎所有的工作、但連接器上仍有本機使用者介面可供使用。如果您是從政府區域或沒有外傳網際網路存取的網站存取Cloud Manager、則必須使用連接器上執行的本機使用者介面。</block>
+  <block id="bf16d7909c891a5a760cab0ad77d53bc" category="list-text">輸入您的使用者名稱和密碼以登入。</block>
+  <block id="bb88bf03aaf2d1b8891c8b85df8bd28f" category="paragraph">請注意、這些地區僅支援Cloud Volumes ONTAP 的服務包括：功能完善、雲端備份、雲端資料認證及複寫。政府區域不支援其他NetApp服務。</block>
+  <block id="4141e80854c65807682dd0ff767b4228" category="inline-link-macro">瞭解如何存取Connector上的本機UI</block>
+  <block id="b5d309d79224e6f55d1d4c6b68090c82" category="paragraph"><block ref="2061c033ff26af000ddf0a91359fc3b2" category="inline-link-macro-rx"></block>。</block>
+  <block id="60eb2845b0a0e58270dc0f4a47eeb2b9" category="paragraph">如果您是從政府區域或沒有外傳網際網路存取權限的站台存取Cloud Manager、則必須登入連接器上執行的本機使用者介面。 <block ref="2061c033ff26af000ddf0a91359fc3b2" category="inline-link-macro-rx"></block>。</block>
 </blocks>
