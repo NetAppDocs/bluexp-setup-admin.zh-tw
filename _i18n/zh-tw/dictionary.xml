@@ -2149,8 +2149,6 @@
   <block id="e6896223c5f9bd9bbdd1b0c9eac6686f" category="cell">在HA配對上建立及管理儲存VM。</block>
   <block id="4a95dbd25f9c78f9b32c636955913f0c" category="cell">「EC2：統計資料Volume修改」、「EC2：修改Volume」、</block>
   <block id="2ab6f4b7f1eda4096fbe91764dbb5eb6" category="cell">可設定Cloud Volumes ONTAP 及管理支援Amazon EBS彈性Volume功能的資訊區集合體。</block>
-  <block id="fe133d1f6db8d046e4b328c0d9a967a1" category="paragraph">每個NetApp帳戶最多只能有50個不受使用中授權模式限制的不受限。Cloud Volumes ONTAP</block>
-  <block id="ae5034ae6657395ba1fc2a16d2c55db3" category="paragraph">_system_是HA配對或單一節點系統。例如、如果您有八Cloud Volumes ONTAP 個用作「用作」的「用作」、四個用作單一節點的系統、您的帳戶中總共有12個系統、還有38個額外系統的空間。</block>
   <block id="bea9d9e1b3f9260b5dafbfee794aead7" category="summary">您可以將Connector安裝在無法存取網際網路的內部部署Linux主機上。接著您可以探索內部ONTAP 的支援叢集、在叢集之間複寫資料、使用Cloud Backup備份磁碟區、然後使用Cloud Data Sense進行掃描。</block>
   <block id="89b945901df4999cfbb07b91df7f3e83" category="inline-link">使用Cloud Backup將ONTAP 內部的等量資料備份StorageGRID 至不實</block>
   <block id="0ef5e09df96e6b4d97470a69c3a5bb03" category="list-text"><block ref="0ef5e09df96e6b4d97470a69c3a5bb03" category="inline-link-rx"></block></block>
@@ -2163,4 +2161,6 @@
   <block id="4141e80854c65807682dd0ff767b4228" category="inline-link-macro">瞭解如何存取Connector上的本機UI</block>
   <block id="b5d309d79224e6f55d1d4c6b68090c82" category="paragraph"><block ref="2061c033ff26af000ddf0a91359fc3b2" category="inline-link-macro-rx"></block>。</block>
   <block id="60eb2845b0a0e58270dc0f4a47eeb2b9" category="paragraph">如果您是從政府區域或沒有外傳網際網路存取權限的站台存取Cloud Manager、則必須登入連接器上執行的本機使用者介面。 <block ref="2061c033ff26af000ddf0a91359fc3b2" category="inline-link-macro-rx"></block>。</block>
+  <block id="3ac6338087c4180b5cbb359584abab3a" category="paragraph">無論使用何種授權模式、每個NetApp帳戶最多只能有20個不受限的功能。Cloud Volumes ONTAP</block>
+  <block id="b730a5e05a41eebeb51f5aee7c746386" category="paragraph">_system_是HA配對或單一節點系統。例如、如果您有兩Cloud Volumes ONTAP 個用作2個用作2個用作2個用作2個用作2個用作2個用作單一節點的系統、則您的帳戶中總共有4個用作16個用作額外系統的空間。</block>
 </blocks>
