@@ -22,9 +22,21 @@ TIP: 您可以使用單一登入、從公司目錄（聯盟身分識別）使用
 .步驟
 . 開啟網頁瀏覽器並前往 https://cloud.netapp.com/["NetApp Cloud Central"^]。
 . 按一下 * 註冊 * 。
-. 填寫表單、然後按一下 * 註冊 * 。
+. 您有兩種選擇：
++
+.. 填寫表單、然後按一下 * 註冊 * 。
 +
 image:screenshot_cloud_central_signup.gif["Cloud Central 的註冊表單快照、您可在其中輸入電子郵件地址、密碼、公司、名稱和電話號碼。"]
+
+.. 如果您已註冊NetApp支援網站帳戶、請按一下*登入NetApp*、然後輸入您的NetApp支援網站認證資料。
++
+每次登入時、您都必須使用在此註冊程序中選擇的選項。
+
++
+
+NOTE: 當您使用NetApp登入時、您的NetApp支援網站認證不會新增至Support Dashboard中的Cloud Manager。
+
+
 
 . 等待 NetApp Cloud Central 寄送電子郵件。
 . 按一下電子郵件中的連結、確認您的電子郵件地址。

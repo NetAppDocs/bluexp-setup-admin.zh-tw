@@ -763,9 +763,7 @@
   <block id="6294a96fba20202cd9ffb33f93601bb2" category="inline-link">Cloud Central說明中心</block>
   <block id="5569b20291c46e5ea715240a969348a0" category="admonition">您可以使用單一登入、從公司目錄（聯盟身分識別）使用認證登入。若要深入瞭解、請前往<block ref="2c92c928be02227d051a5057c2e57fc6" category="inline-link-rx"></block> 然後按一下* Cloud Central登入選項*。</block>
   <block id="89e460c9a52ba6b696ff1bf3de604ff8" category="list-text">開啟網頁瀏覽器並前往<block ref="ed21e31bd71ab546f26978ff562b5c5d" category="inline-link-rx"></block>。</block>
-  <block id="465b9d23562359c56377ba35bfcf5c48" category="list-text">使用您的 NetApp Cloud Central 認證登入。</block>
   <block id="7e3c9594a3f6833ecddbf1cbe150528c" category="inline-image-macro">Cloud Central 的登入畫面。</block>
-  <block id="33ec64420d3361f9794053a9add38468" category="paragraph"><block ref="33ec64420d3361f9794053a9add38468" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1c6b5d54a9051a8a77fa6a66f0a8cc9b" category="paragraph">您現在已經登入、可以開始使用Cloud Manager來管理混合式多雲端基礎架構。</block>
   <block id="03323567c630b264b4c89ec222d86d88" category="summary">客戶管理員必須先部署 Connector 、才能使用大多數 Cloud Manager 功能。Connector 可讓 Cloud Manager 管理公有雲環境中的資源與程序。</block>
   <block id="ace843a9a86d3677aa70c0e5dd1d64b5" category="doc">從Cloud Manager在Google Cloud中建立Connector</block>
@@ -2163,4 +2161,16 @@
   <block id="60eb2845b0a0e58270dc0f4a47eeb2b9" category="paragraph">如果您是從政府區域或沒有外傳網際網路存取權限的站台存取Cloud Manager、則必須登入連接器上執行的本機使用者介面。 <block ref="2061c033ff26af000ddf0a91359fc3b2" category="inline-link-macro-rx"></block>。</block>
   <block id="3ac6338087c4180b5cbb359584abab3a" category="paragraph">無論使用何種授權模式、每個NetApp帳戶最多只能有20個不受限的功能。Cloud Volumes ONTAP</block>
   <block id="b730a5e05a41eebeb51f5aee7c746386" category="paragraph">_system_是HA配對或單一節點系統。例如、如果您有兩Cloud Volumes ONTAP 個用作2個用作2個用作2個用作2個用作2個用作2個用作單一節點的系統、則您的帳戶中總共有4個用作16個用作額外系統的空間。</block>
+  <block id="38ce4e90f119b89b2fdf1f274431e262" category="section-title">2022年6月28日</block>
+  <block id="47d69a1f17128c359904338c3502fe31" category="section-title">使用NetApp認證登入</block>
+  <block id="f646305c890b8deec88379aeecbe56a5" category="paragraph">當新使用者註冊Cloud Central時、他們現在可以選擇*登入NetApp*選項、以NetApp支援網站認證登入。這是輸入電子郵件地址和密碼的替代方法。</block>
+  <block id="f27b2370dfece83354cbb560bf251abc" category="admonition">使用電子郵件地址和密碼的現有登入必須持續使用該登入方法。「以NetApp登入」選項適用於註冊的新使用者。</block>
+  <block id="38f56a558a4d21cafea24d2843b0d77d" category="list-text">輸入您的NetApp Cloud Central認證資料、或按一下*登入NetApp*並輸入您的NetApp支援網站認證資料、即可登入。</block>
+  <block id="7fd998996aeaec7fba56157b137fee51" category="paragraph">您必須選擇註冊Cloud Central時使用的選項。</block>
+  <block id="decc333898509c715afbf4242e91a6fc" category="list-text">如果您註冊時輸入了電子郵件和密碼、則每次登入時都必須輸入這些認證資料。</block>
+  <block id="13a0adeb2b159ac19c415adb2a302ac7" category="list-text">如果您以NetApp支援網站認證登入、則每次都需要使用該登入選項。</block>
+  <block id="e7330d051a059d074bb6d948d1b195a1" category="paragraph"><block ref="e7330d051a059d074bb6d948d1b195a1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0a3af967406da233deb44a3e3518540a" category="list-text">如果您已註冊NetApp支援網站帳戶、請按一下*登入NetApp*、然後輸入您的NetApp支援網站認證資料。</block>
+  <block id="0eac24292d137662727eddfcb308122d" category="paragraph">每次登入時、您都必須使用在此註冊程序中選擇的選項。</block>
+  <block id="5bcda5b087049d72bac31d0484792c9e" category="admonition">當您使用NetApp登入時、您的NetApp支援網站認證不會新增至Support Dashboard中的Cloud Manager。</block>
 </blocks>
