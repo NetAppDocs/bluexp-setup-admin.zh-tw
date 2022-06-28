@@ -2170,7 +2170,7 @@
   <block id="decc333898509c715afbf4242e91a6fc" category="list-text">如果您註冊時輸入了電子郵件和密碼、則每次登入時都必須輸入這些認證資料。</block>
   <block id="13a0adeb2b159ac19c415adb2a302ac7" category="list-text">如果您以NetApp支援網站認證登入、則每次都需要使用該登入選項。</block>
   <block id="e7330d051a059d074bb6d948d1b195a1" category="paragraph"><block ref="e7330d051a059d074bb6d948d1b195a1" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0a3af967406da233deb44a3e3518540a" category="list-text">如果您已註冊NetApp支援網站帳戶、請按一下*登入NetApp*、然後輸入您的NetApp支援網站認證資料。</block>
   <block id="0eac24292d137662727eddfcb308122d" category="paragraph">每次登入時、您都必須使用在此註冊程序中選擇的選項。</block>
   <block id="5bcda5b087049d72bac31d0484792c9e" category="admonition">當您使用NetApp登入時、您的NetApp支援網站認證不會新增至Support Dashboard中的Cloud Manager。</block>
+  <block id="bb3811f4fe37370092ea428b21cf1249" category="list-text">如果您有已註冊的NetApp支援網站帳戶、請按一下*登入NetApp*、然後輸入您的NetApp支援網站認證資料。</block>
 </blocks>
