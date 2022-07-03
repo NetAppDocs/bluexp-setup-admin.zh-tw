@@ -2094,7 +2094,6 @@
   <block id="dbb3531fc9f461de7f3beb2624712465" category="section-title">連接器3.9.20</block>
   <block id="d62eba143e9a6b4f6e0d6902d78ea096" category="list-text">我們推出新的方法、可導覽至Cloud Manager介面不斷增加的功能清單。現在只要將游標放在左側面板上、即可輕鬆找到所有熟悉的Cloud Manager功能。</block>
   <block id="fb8e25a66c3a27139d3ea3e1474c7db3" category="inline-image-macro">顯示Cloud Manager新左側導覽功能表的快照。</block>
-  <block id="f0b1755d1a809617265e005b6e1a8124" category="paragraph"><block ref="f0b1755d1a809617265e005b6e1a8124" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e37234425776295f1624526d17572b8e" category="list-text">您現在可以設定Cloud Manager以電子郵件傳送通知、即使您尚未登入系統、也能得知重要的系統活動。</block>
   <block id="2f439d7fd2d68628b2c40e59bc7ec352" category="inline-link-macro">深入瞭解監控帳戶運作的相關資訊</block>
   <block id="8fe400bbcf74fee5f6ca96b5d06fd8a8" category="paragraph"><block ref="6207ce0a1413f0c60f2c0a13a1fde26f" category="inline-link-macro-rx"></block>。</block>
@@ -2102,7 +2101,6 @@
   <block id="5134e5a3a5a026f57f4938b2eaa07031" category="paragraph">在Azure或Google Cloud中安裝Connector之後、Cloud Manager現在會自動探索Azure訂閱中Azure Blob儲存設備的相關資訊、或是在安裝Connector的專案中探索Google Cloud Storage的相關資訊。Cloud Manager會將物件儲存設備顯示為工作環境、您可以開啟以檢視更多詳細資訊。</block>
   <block id="a2f44a550843ebb8ee7fe06e85e5d378" category="paragraph">以下是Azure Blob工作環境的範例：</block>
   <block id="c5a0af9953d83a32751880ddded4d5ec" category="inline-image-macro">這是一個快照、顯示Azure Blob工作環境、您可以在其中檢視高層級的總覽、然後查看儲存帳戶的詳細資訊。</block>
-  <block id="69ea64e8072e702aaf3256d7a40211ee" category="paragraph"><block ref="69ea64e8072e702aaf3256d7a40211ee" category="inline-image-macro-rx" type="image"></block></block>
   <block id="402ca8386bc10e708c8fa4cd43e8856e" category="list-text">我們重新設計Amazon S3工作環境的資源頁面、提供更詳細的S3儲存區資訊、例如容量、加密詳細資料等。</block>
   <block id="82e8338c73d6540f48f2e0cc8d035511" category="list-text">馬德里（歐洲-西南1）</block>
   <block id="1a1145c860165dcd96b82eb7d32cd59f" category="list-text">巴黎（歐洲-西9）</block>
@@ -2331,4 +2329,6 @@
   <block id="53ac904630fdbb4d62f208e001934c7c" category="list-text">IAM：GetInstanceProfile</block>
   <block id="7acc5c4a78b2f3e43bbeb07b9c5f8108" category="inline-link">深入瞭解此限制</block>
   <block id="b6eb1b17db480470497e94d3911d9e12" category="paragraph">每個NetApp帳戶僅限Cloud Volumes ONTAP 使用最多數量的不重樣系統。<block ref="ed7500cfb54e6cf775da8a8506d96f75" category="inline-link-rx"></block></block>
+  <block id="1da5b30af8a0c5d1ce771dde6d9be98e" category="paragraph"><block ref="1da5b30af8a0c5d1ce771dde6d9be98e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0ce7c9606b5f3d67c288c6ffe90a846e" category="paragraph"><block ref="0ce7c9606b5f3d67c288c6ffe90a846e" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
