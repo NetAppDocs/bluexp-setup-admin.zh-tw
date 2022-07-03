@@ -22,13 +22,17 @@ summary: 新增及管理AWS認證資料、讓Cloud Manager擁有在AWS帳戶中�
 
 您可以將AWS認證資料新增至現有的Connector、或直接新增至Cloud Manager：
 
-* 將AWS認證資料新增至現有的Connector
+* 將額外的AWS認證資料新增至現有的Connector
 +
-將新的AWS認證資料新增至現有的Connector、可讓您Cloud Volumes ONTAP 使用相同的Connector在另一個AWS帳戶中部署。 <<Add credentials to a Connector,瞭解如何將AWS認證資料新增至Connector>>。
+將新的AWS認證資料新增至現有的Connector、可讓您Cloud Volumes ONTAP 使用相同的Connector在另一個AWS帳戶中部署。 <<Add additional credentials to a Connector,瞭解如何將AWS認證資料新增至Connector>>。
 
-* 直接將AWS認證資料新增至Cloud Manager
+* 將AWS認證資料新增至Cloud Manager以建立Connector
 +
-將新的AWS認證資料新增至Cloud Manager、可讓Cloud Manager擁有必要的權限、以建立和管理適用於ONTAP 整個作業環境的FSX、或是建立Connector。 <<Add credentials to Cloud Manager,瞭解如何將AWS認證資料新增至Cloud Manager>>。
+將新的AWS認證資料新增至Cloud Manager、可讓Cloud Manager擁有建立Connector所需的權限。 <<Add credentials to Cloud Manager for creating a Connector,瞭解如何將AWS認證資料新增至Cloud Manager>>。
+
+* 將AWS認證資料新增至Cloud Manager for FSX ONTAP for Sf
++
+將新的AWS認證資料新增至Cloud Manager、可讓Cloud Manager擁有必要的權限、以建立及管理FSXfor ONTAP the Sfor。 https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["瞭解如何設定FSX for ONTAP Sfor Sfor Sfor的權限"^]
 
 
 
@@ -44,7 +48,7 @@ Cloud Manager 採用前兩個選項、使用 AWS 安全性權杖服務取得持�
 
 
 
-== 新增認證到Connector
+== 新增其他認證資料至Connector
 
 將AWS認證資料新增至Connector、以便在Cloud Volumes ONTAP 其他AWS帳戶中部署及管理功能。您可以在其他帳戶中提供IAM角色的ARN、或是提供AWS存取金鑰。
 
@@ -141,11 +145,9 @@ image:screenshot_accounts_switch_aws.png["在詳細資料 & 認證頁面中按�
 
 
 
-== 新增認證資料至Cloud Manager
+== 將認證資料新增至Cloud Manager以建立Connector
 
-為Cloud Manager提供IAM角色的ARN、讓Cloud Manager擁有必要的權限、可為ONTAP 工作環境建立FSX或 建立連接器、藉此將AWS認證新增至Cloud Manager。
-
-您可以在建立FSXfor ONTAP the Sfor the Sfor the Sfor the Sfor the Sfuse環境或建立新的Connector時、使用認證資料。
+提供IAM角色的ARN、讓Cloud Manager擁有建立Connector所需的權限、藉此將AWS認證新增至Cloud Manager。您可以在建立新的Connector時選擇這些認證資料。
 
 
 
@@ -162,11 +164,9 @@ image:screenshot_accounts_switch_aws.png["在詳細資料 & 認證頁面中按�
 +
 ** 在*信任的實體類型*下、選取* AWS帳戶*。
 ** 選取*其他AWS帳戶*、然後輸入Cloud Manager SaaS的ID：952013314444.
-** 建立一個原則、其中包含建立FSXfor ONTAP the S作業 環境或建立連接器所需的權限。
+** 建立包含建立Connector所需權限的原則。
 +
-*** https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["檢視FSXfor ONTAP Sfor Sf哪些 權限"^]
-*** 從檢視Connector部署原則 https://mysupport.netapp.com/site/info/cloud-manager-policies["Cloud Manager 原則頁面"^]
-
+從檢視Connector部署原則 https://mysupport.netapp.com/site/info/cloud-manager-policies["Cloud Manager 原則頁面"^]
 
 
 
@@ -197,7 +197,7 @@ image:screenshot_settings_icon.gif["顯示 Cloud Manager 主控台右上角「�
 
 
 
-現在您可以在建立FSXfor ONTAP the Sfor the Sfor the Sfor the fuse環境或建立新的Connector時、使用認證資料。
+您現在可以在建立新的Connector時使用認證資料。
 
 
 

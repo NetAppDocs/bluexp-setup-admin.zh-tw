@@ -393,7 +393,6 @@
   <block id="33a2b7ff6dc79a8e4cc0b966b36b485d" category="paragraph">下列NetApp雲端服務不提供隨用隨付訂閱：</block>
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="list-text">Cloud Volumes ONTAP</block>
   <block id="d882bf73cd5caf1e5aa39edbf893ad74" category="list-text">雲端資料感測</block>
-  <block id="5e8d19da75a8b6ccce6aaa5d933f8f5d" category="summary">您可以監控Cloud Manager執行的作業狀態、查看是否有任何需要解決的問題。您可以在「通知中心」或「時間表」中檢視狀態。</block>
   <block id="1c7784f7c916758812d6f71e8b886a5e" category="doc">監控您帳戶中的作業</block>
   <block id="0c6abed7ba16b0c5ed00cc5dc01fbcd5" category="paragraph">此表格提供通知中心與時間表的比較、讓您瞭解每項服務的內容。</block>
   <block id="9085e5686dfeb6405cc2917702710ed3" category="cell">通知中心</block>
@@ -401,21 +400,13 @@
   <block id="0486b07a3d352a89611f0005bff8bbd3" category="cell">顯示事件和行動的高層級狀態</block>
   <block id="c32042b6c968f47ecb4422de1d828cb1" category="cell">提供每個事件或行動的詳細資料、以供進一步調查</block>
   <block id="a5c1b2ed537308ce80afa4dc2316d6a1" category="cell">顯示目前登入工作階段的狀態：登出後、資訊不會出現在通知中心</block>
-  <block id="32e761e6e5329a33f23e7cc9da3074a6" category="cell">保留直到上個月的狀態</block>
   <block id="b2d8a4e919485c2282a84ad3f4408095" category="cell">僅顯示在使用者介面中啟動的動作</block>
   <block id="8c6775236733a876a2482bf9932cd018" category="cell">顯示UI或API的所有動作</block>
   <block id="b39e5932e5cb552fc7335a37242f82b9" category="cell">顯示使用者啟動的動作</block>
   <block id="ccd4bc4aaf0a115f3a6bbe1e30e9ef4c" category="cell">顯示所有動作、無論是使用者啟動或系統啟動</block>
   <block id="d040772afd73d06726db90efc0407647" category="cell">依重要性篩選結果</block>
   <block id="29ab04719210957e371eb573f91dbb73" category="cell">依服務、行動、使用者、狀態及其他項目篩選</block>
-  <block id="9ee2bdcf8fc9126dec61af7833c5a7ff" category="section-title">使用通知中心監控作業狀態</block>
-  <block id="f1c53fff682db8018bf204803f5beae8" category="paragraph">通知就像是追蹤您在Cloud Manager中啟動之作業進度的事件、以便您確認作業是否成功、或是否失敗。您可以檢視在目前登入工作階段期間所啟動的Cloud Manager作業（以及未來雲端服務作業）狀態。</block>
-  <block id="99cd7a102b6f7dd7ccf9a838365cd684" category="paragraph">目前僅Cloud Volumes ONTAP 支援建立及刪除下列物件的通知：</block>
-  <block id="1466896d5b0d20c0d6c674a18c41b022" category="list-text">工作環境</block>
-  <block id="46710fe77f663864a23e02a880a9ae53" category="list-text">集合體</block>
-  <block id="078831e29f354e83fac6da3db6ed6b7b" category="list-text">磁碟區</block>
   <block id="40da6f1400e45d080a97992a6a539894" category="inline-image-macro">通知鈴聲</block>
-  <block id="65cb7a00a52fe8747af691195a38593d" category="paragraph">您可以按一下通知鈴聲（<block ref="df7c8a71ca3da4359e40e121f18f87b9" category="inline-image-macro-rx" type="image"></block>）。警示中的小球型罩顏色代表作用中的最高層級嚴重性通知。因此、如果您看到紅色的球型罩、就表示您應該查看重要通知。</block>
   <block id="d59387ab05a2cbd005866b74628417a0" category="inline-image-macro">顯示通知中心目前通知清單的快照。</block>
   <block id="e24c5199eee665d8e879dc72dc56c667" category="paragraph"><block ref="e24c5199eee665d8e879dc72dc56c667" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6cb9efb52e844953331e64c6588258d5" category="section-title">篩選通知</block>
@@ -432,7 +423,6 @@
   <block id="32d01e2ee6eb96c809aad8205457b728" category="section-title">稽核您帳戶中的使用者活動</block>
   <block id="50bb8640e882684969c34ae623ca3d5e" category="paragraph">Cloud Manager中的時間表顯示使用者完成的帳戶管理動作。這包括關聯使用者、建立工作區、建立連接器等管理動作。</block>
   <block id="322812be635bbd80fb94dbae450a00b4" category="paragraph">如果您需要識別執行特定行動的人員、或是需要識別行動的狀態、檢查時間表會很有幫助。</block>
-  <block id="351baefdab0634c3a967ecfb602f64ea" category="list-text">按一下「*所有服務&gt;時間表*」。</block>
   <block id="b505fc306e045c1511c6f1d37531ee7f" category="list-text">在「篩選器」下、按一下「*服務*」、「啟用*佔用*」、然後按一下「*套用*」。</block>
   <block id="7aa6a4ffdbdc6eccd7f131257c7de6a8" category="paragraph">時間軸會更新以顯示帳戶管理動作。</block>
   <block id="ce21e7ae4271271294ccbf54c8fd6864" category="summary">NetApp以多種方式支援Cloud Manager。我們全年無休提供豐富的免費自助支援選項、例如知識庫（KB）文章和社群論壇。您的支援註冊包括透過網路票證提供遠端技術支援。</block>
@@ -1088,61 +1078,8 @@
   <block id="06645c43c34bb238a7352c0ffaf29f49" category="doc">AWS中Connector的必要權限</block>
   <block id="9edd86f763fc6d21418429b5c63134af" category="inline-link">NetApp 提供的原則</block>
   <block id="cfd01abeea487fb705ae7a8ea38814da" category="paragraph">Cloud Manager 需要權限、才能在雲端供應商中執行動作。這些權限包含在中<block ref="d2f8d77175d2dd5e5ed1a096c2593510" category="inline-link-rx"></block>。您可能想要瞭解 Cloud Manager 使用這些權限的功能。</block>
-  <block id="f6619a1c896a4d87a38e339f0bbf2daf" category="paragraph">Cloud Manager 使用 AWS 帳戶來撥打 API 呼叫數項 AWS 服務、包括 EC2 、 S3 、 CloudForation 、 IAM 、 安全性權杖服務（ STS ）和金鑰管理服務（ KMS ）。</block>
   <block id="06df33001c1d7187fdd81ea1f5b277aa" category="cell">行動</block>
-  <block id="feb69cba943a0bf1d35c3241c08a7585" category="cell">"EC2 ： StartInstances" 、 "EC2 ：停止 Instances" 、 "EC2 ：說明資訊 " 、 "EC2 ：說明資訊狀態 " 、 "EC2 ：執行資訊 " 、 "EC2 ：終端實例 " 、 "EC2 ：修改實例屬性 " 、</block>
-  <block id="dc6b603ede2fb9f7b2167bddd6c18e78" category="cell">啟動 Cloud Volumes ONTAP 一個執行個體、並停止、啟動及監控執行個體。</block>
-  <block id="5170a6e11a0d410d51001b6189104d5b" category="cell">"EC2 ：取消訂閱實例屬性 " 、</block>
-  <block id="92f69a6800d57f0ca15ad51a1c574436" category="cell">驗證是否已針對支援的執行個體類型啟用增強式網路功能。</block>
-  <block id="2431056d4d2c9ddab8b8806f89c32645" category="cell">"EC2 ：取消航線表 " 、 "EC2 ：取消航線影像 " 、</block>
-  <block id="f98bed33fb0c98b4385cbac8b28c31b6" category="cell">啟動 Cloud Volumes ONTAP 功能不只是功能不一的 HA 組態。</block>
-  <block id="ddffa84f2d5ddf54df06ca164f295bab" category="cell">"EC2 ：建立標記 " 、</block>
-  <block id="04ed252cc254fb3e2e3ab1490cc342c0" category="cell">標記 Cloud Manager 所建立的每個資源、並加上「 WorkingEnvironment 」和「 WorkingEnvironment Id 」標記。Cloud Manager 會使用這些標籤來進行維護和成本分配。</block>
-  <block id="6360b76052d622cf2ee7f27e85b4d39c" category="cell">"EC2 ：建立磁碟區 " 、 "EC2 ：指定磁碟區 " 、 "EC2 ：修改磁碟區屬性 " 、 "EC2 ：附加磁碟區 " 、 "EC2 ：刪除磁碟區 " 、 "EC2 ：分離磁碟區 " 、</block>
-  <block id="79b0af086c58a227b928a2e7bb14b96c" category="cell">管理 Cloud Volumes ONTAP EBS 磁碟區、這些磁碟區可作為後端儲存設備使用。</block>
-  <block id="54f1220f9cea15e69d1dfd1a8e1949e9" category="cell">EC2 ： CreeSecurity Group 、「 EC2 ：刪除安全性群組」、「 EC2 ：取消安全性群組」、「 EC2 ：重新執行安全性群組 Egress 」、「 EC2 ：授權安全性群組 Egress 」、 "EC2 ： AuthorizeSecurity GroupIngress 、 "EC2 ： RevokeSecurity GroupIngress 」、</block>
-  <block id="7e269e44eed573c1c12ae0f65ad28aad" category="cell">建立預先定義 Cloud Volumes ONTAP 的安全性群組以供使用。</block>
-  <block id="5c0455fe145ed11dc068a75e6e14343c" category="cell">"EC2 ：建立網路介面 " 、 "EC2 ：指定網路介面 " 、 "EC2 ：刪除網路介面 " 、 "EC2 ：修改網路介面屬性 " 、</block>
   <block id="e81639b3c138e7deea81d6ea285642c3" category="cell">建立並管理 Cloud Volumes ONTAP 目標子網路中的網路介面以供其使用。</block>
-  <block id="bc4a4f5a4d77f0d3adfbe055988ebad5" category="cell">"EC2 ：取消訂閱子網路 " 、 "EC2 ：取消訂閱 Vpcs" 、</block>
-  <block id="c16176e76672e363d3ae3a919c8e9071" category="cell">取得目的地子網路和安全群組的清單、這是建立 Cloud Volumes ONTAP 新的功能環境時所需的。</block>
-  <block id="4565a1a4035f85b5ef5dad5de7ba47b0" category="cell">"EC2 ：脫色器 DhcpOptions " 、</block>
-  <block id="e3eee4d199010637597a90050bcdb496" category="cell">在啟動 Cloud Volumes ONTAP Isname 執行個體時、決定 DNS 伺服器和預設網域名稱。</block>
-  <block id="23d985a5648f032afd1704c32e035bec" category="cell">"EC2 ：建立 Snapshot " 、 "EC2 ：刪除 Snapshot " 、 "EC2 ：取消快照 " 、</block>
-  <block id="76ddd0913d0613b90e0ac307c38c1ca9" category="cell">在初始設定期間及 Cloud Volumes ONTAP 停止執行個體時、都會擷取 EBS Volume 的快照。</block>
-  <block id="067189f3c34ff397bb11ca2b09712ce6" category="cell">"EC2 ： GetConsole 輸出 " 、</block>
-  <block id="215a7358270627a7045db1afa58e0e7e" category="cell">擷取 Cloud Volumes ONTAP 附加於 AutoSupport 不檢訊息的功能。</block>
-  <block id="8d51b40bb6e105332e10bd0c3efad022" category="cell">「 EC2 ：免持鑰匙會議」、</block>
-  <block id="474b08266984af38460de1fcd3e68d9e" category="cell">在啟動執行個體時取得可用的金鑰配對清單。</block>
-  <block id="824879419848a15df1643509746b60bf" category="cell">"EC2 ：取消註冊 " 、</block>
-  <block id="98e454327ced0d4a3e01e23ca7415423" category="cell">取得可用 AWS 區域的清單。</block>
-  <block id="6d04eb7253459baaa3b987b6fdd22343" category="cell">"EC2 ：刪除標記 " 、 "EC2 ：取消標記 " 、</block>
-  <block id="f77324452240f2ec9b97c9d90c25c370" category="cell">管理 Cloud Volumes ONTAP 與實例有關的資源標記。</block>
-  <block id="80bd5e91275c18aa878d604b8b7bc1b6" category="cell">「雲端形成：建立堆疊」、「雲端形成：刪除堆疊」、「雲端形成：取消堆疊」、「雲端形成：雲端堆疊」、「雲端形成：取消堆疊事件」、「雲端形成：驗證範本」、</block>
-  <block id="d1955c7aa6a50cd1f8064ebe27ead6bb" category="cell">啟動 Cloud Volumes ONTAP 執行個體。</block>
-  <block id="94000632aa8758ec1f26a0115e76e3e8" category="cell">「 IAM ： PassRole 」、「 iam ： CreeRole 」、「 iam ： Delete 角色」、「 iam ： PuttrolePolicy 」、「 iam ： CrestanceProfile 」、 "IAM ：刪除角色原則 " 、 "iam ： AddRoleToInstanceProfile" 、 "iam ： RemoveRoleFromInstanceProfile" 、 "iam ：刪除實例設定檔 " 、</block>
-  <block id="334d249e5303d38a836fd83ab5c6efd7" category="cell">「 IAM ：清單實例設定檔」、「 STS:DecodeAuthorizationMessage 」、「 EC2 ： Associate IamInstanceProfile 」、「 EC2 ：說明程式碼產生關聯性關聯性」、「 EC2 ：關聯性 IamInstanceProfile 」、</block>
-  <block id="955511edf25866d77f27429a69afe592" category="cell">管理 Cloud Volumes ONTAP 執行個體的執行個體設定檔。</block>
-  <block id="a9b5c6bfb4513f0982f314de38a8ac0f" category="cell">「 S3 ： GetBucketTagging」 、「 S3 ： GetBucketLocation 」、「 S3 ： ListAllMyBucket 」、「 S3 ：清單 Bucket 」</block>
-  <block id="681ce93d57ad8816bfe1aca775d105f5" category="cell">取得 AWS S3 儲存區的相關資訊、讓 Cloud Manager 能夠與 NetApp Data Fabric Cloud Sync 的功能整合。</block>
-  <block id="ea73629204744bc4e00ec9b357a6eb38" category="cell">「 S3 ：建立 Bucket 」、「 S3 ：刪除 Bucket 」、「 S3 ： GetLifecycleConfiguration 」、「 S3 ： PuttleecycleConfiguration 」、「 S3 ： PuttBucketting 標記」、 「 S3 ： listBucketVerions 」、「 S3 ： GetBucketPolicyStatus 」、「 S3 ： GetBucketPublicAccessBlock 」、「 S3 ： GetBucketAcl 」、「 S3 ： GetBucketPolicy 」、 「 S3 ： PuttBucketPublicAccessBlock 」</block>
-  <block id="eaacc3ae187e9cff5bb76cde6d72c352" category="cell">管理 Cloud Volumes ONTAP 作為資料分層容量層的 S3 儲存區。</block>
-  <block id="ae1a5dcbd44b42e45c9ae5a6ef92d11c" category="cell">「 kms ： List * 」、「 kms ： ReEncrypt * 」、「 kms ： vesk* 」、「 kms ： Create Grant 」、</block>
-  <block id="25b859b64344382764d86df1147b712f" category="cell">使用 Cloud Volumes ONTAP AWS 金鑰管理服務（ KMS ）啟用資料加密功能。</block>
-  <block id="2c51888f65027b6b841a91ef20e98075" category="cell">"CE:GetReservationUtilization" 、 "CE:GetDimensionValues" 、 "CE:GetCostAndusage" 、 "CE:GetTags"</block>
-  <block id="bea235d6bcf7752986ebd55f08d0b55f" category="cell">取得 AWS 成本資料 Cloud Volumes ONTAP 以供使用。</block>
-  <block id="7f65ba4b21f070b05fec30fb0b79818b" category="cell">"EC2 ：建立位置群組 " 、 "EC2 ：刪除位置群組 "</block>
-  <block id="a7366f3b4083ea8a4c1bf6f7bea92222" category="cell">當您在單一 AWS 可用性區域中部署 HA 組態時、 Cloud Manager 會在 AWS 分散配置群組中啟動兩個 HA 節點和中介器。</block>
-  <block id="7198497e7930d70b3413941abc74e122" category="cell">「 EC2 ：取消訂閱保留服務」</block>
-  <block id="edb68c4ca4c606b87cbb2aee5acdb744" category="cell">Cloud Manager將權限作為Cloud Data Sense部署的一部分、用於選擇要使用的執行個體類型。</block>
-  <block id="8274628cdc1a638e234c1627b1226922" category="cell">"EC2：建立標記"、"EC2：刪除標記"、"EC2：取消標記"、"tag:getResources"、"tag:getTagKeys"、 「標記：getTagValues」、「標記：TagResources」、「標記：UntagResources」</block>
-  <block id="ca11f864d1d24298bcf7e821561507f3" category="cell">可讓您使用Cloud Manager標記服務來管理AWS資源上的標記。</block>
-  <block id="9257ea230a460909e07d0bfe81207794" category="cell">「 S3 ：刪除 Bucket 」、「 S3 ： GetLifecycleConfiguration 」、「 S3 ： PuttlecycleConfiguration 」、「 S3 ： Puttketting 標記」、「 S3 ： listBucketVerions 」、 「 S3 ： GetObject 」、「 S3 ：清單桶」、「 S3 ：清單 AllMyBucket 」、「 S3 ： GetBucketTagging」 、「 S3 ： GetBucketLocation 」「 S3 ： GetBucketPolicyStatus 」、 「 S3 ： GetBucketPublicAccessBlock 」、「 S3 ： GetBucketAcl 」、「 S3 ： GetBucketPolicy 」、「 S3 ： PuttBucketPublicAccessBlock 」</block>
-  <block id="2445d6dfa41a1dd564df073cc12fb413" category="cell">啟用「備份到 S3 」服務時、 Cloud Manager 會使用這些權限。</block>
-  <block id="54e507c4461f09157653db1c97f633b3" category="cell">"EKS：listClusters"、"EKS：DescribeCluster"、"iam：GetInstanceProfile"、</block>
-  <block id="716a2c38419203ac88bbd14e10539866" category="cell">可探索Amazon EKS叢集。</block>
-  <block id="e0399b3db0c9216059d2e42a30b09612" category="cell">"EC2：取消程序位置群組"、"iam：Get勞力 政策"、</block>
-  <block id="4811a96d917e86f9cc499d8404bd91c9" category="cell">為部署在單一可用度區域（AZ）的HA配對建立AWS分散配置群組。</block>
   <block id="b5441eaf94d0d5d0c26bd9ea4151ec50" category="summary">在大多數情況下、您需要在雲端或內部部署網路中部署 Connector 。Connector 可讓 Cloud Manager 管理公有雲環境中的資源與程序。</block>
   <block id="e6e80588e9fe7cf89218fea44300f7ca" category="doc">深入瞭解連接器</block>
   <block id="7db11db3233c991a19efc9abb64ac347" category="paragraph">在大多數情況下、帳戶管理員需要在雲端或內部部署網路中部署 _Connector_ 。Connector是Cloud Manager日常使用的重要元件。Connector可讓Cloud Manager管理公有雲環境中的資源與程序。</block>
@@ -1150,7 +1087,6 @@
   <block id="9eda86aecbd5d5afc09db24b73cff1b5" category="paragraph">需要連接器才能使用Cloud Manager中的許多功能和服務。</block>
   <block id="992a0f0542384f1ee5ef51b7cf4ae6c4" category="section-title">服務</block>
   <block id="234eb6bb27d592cbf06aa6537a33a380" category="list-text">Amazon FSX提供ONTAP 功能完善的管理功能</block>
-  <block id="07ef1eb956a87b51e019643b6f5d73a5" category="list-text">Amazon S3 儲存區探索</block>
   <block id="85eb427901278daf26f132cb3e076914" category="list-text">Kubernetes叢集</block>
   <block id="423e555c5ec3885f2bb5d9d2d6627f63" category="list-text">監控</block>
   <block id="6c253a8aff5dfa835a77545b3006abc8" category="list-text">內部部署 ONTAP 的叢集</block>
@@ -1175,8 +1111,6 @@
   <block id="e0a5500471a0b62bea8de0405782f268" category="section-title">Google Cloud部署注意事項</block>
   <block id="9b2658aca840a5bb63ea0f460945616d" category="section-title">連接器應保持運作</block>
   <block id="fa1f9e92f4f0aa51cba859b2dbc37a02" category="section-title">如何建立連接器</block>
-  <block id="cc5581f22ce63f7556f4354dd88e93e0" category="paragraph">「帳戶管理員Cloud Volumes ONTAP 」必須先建立連接器、工作區管理員才能建立運作環境、並使用上述任何其他服務。</block>
-  <block id="71e28ecafe43c8df318f195746ba6a2f" category="paragraph">帳戶管理員可以透過多種方式建立 Connector ：</block>
   <block id="3e889e02d7a02cbc9daaa364c56aa381" category="list-text">直接從 Cloud Manager （建議）</block>
   <block id="2a6d41af9b09f97725c64e2705d629b2" category="inline-link-macro">在 AWS 中建立</block>
   <block id="f6a61a9eb8031d1e8178ffee4fa56624" category="list-text"><block ref="f6a61a9eb8031d1e8178ffee4fa56624" category="inline-link-macro-rx"></block></block>
@@ -1245,10 +1179,8 @@
   <block id="04815ce9e672307905b39de5009dcd18" category="paragraph">在 Cloud Manager 中、工作區可讓您將一組工作環境與其他工作環境和其他使用者隔離。例如、您可以建立兩個工作區、並將個別使用者與每個工作區建立關聯。</block>
   <block id="74f4470dab11a8041b3f684fab8864bc" category="list-text">從上而下<block ref="9b8e7795fec77c6c7cc8e5f6ca58867f" category="inline-link-rx"></block>，單擊* Account（帳戶）*下拉列表。</block>
   <block id="667f9a4e33c2cfcaea0966df0722d888" category="inline-image-macro">在 Cloud Manager 上方橫幅中顯示「帳戶設定」選項的快照。</block>
-  <block id="3c0c17adfadc5411ec36c64a2cb34ce6" category="paragraph"><block ref="3c0c17adfadc5411ec36c64a2cb34ce6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0e220d57324e8ec19657c586d617f1b3" category="list-text">按一下目前選取帳戶旁的 * 管理帳戶 * 。</block>
   <block id="155907ffed37b938531a447277cae166" category="inline-image-macro">顯示「帳戶」下拉式清單中可用的「管理帳戶設定」選項的快照。</block>
-  <block id="fcf5dd520b92e39be509ae40b2957fcf" category="paragraph"><block ref="fcf5dd520b92e39be509ae40b2957fcf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="78626d5ac9643e7a5e7a9fced8feae4d" category="list-text">按一下 * 工作區 * 。</block>
   <block id="81446251aaccc40f4478ee561cafd788" category="list-text">按一下「 * 新增工作區 * 」。</block>
   <block id="d3bbc11f58f987ca4f75347944ff9a5f" category="list-text">輸入工作區名稱、然後按一下 * 「 Add* （新增 * ）」。</block>
@@ -1668,14 +1600,11 @@
   <block id="cd5bd8ef122a32412aa67ffac252516e" category="doc">管理AWS認證資料和Cloud Manager訂閱</block>
   <block id="9a1152221994c4390c82d2e946e8ba93" category="paragraph">您可以將AWS認證資料新增至現有的Connector、或直接新增至Cloud Manager：</block>
   <block id="86ae9eb7648ce9574603dd22de833a70" category="inline-xref">瞭解如何將AWS認證資料新增至Connector</block>
-  <block id="83e2c729c13db1077fa9b54d7289d7a0" category="paragraph">將新的AWS認證資料新增至現有的Connector、可讓您Cloud Volumes ONTAP 使用相同的Connector在另一個AWS帳戶中部署。 <block ref="568ce14d3cdae759e790bc127b222228" category="inline-xref-macro-rx"></block>。</block>
   <block id="899c13f90184c78b69349bbceb931d16" category="inline-xref">瞭解如何將AWS認證資料新增至Cloud Manager</block>
-  <block id="e8303b3c359355a29e343d1741791f05" category="paragraph">將新的AWS認證資料新增至Cloud Manager、可讓Cloud Manager擁有必要的權限、以建立和管理適用於ONTAP 整個作業環境的FSX、或是建立Connector。 <block ref="2b759c7fb1c1b2ce728a7fb1e8e64b6d" category="inline-xref-macro-rx"></block>。</block>
   <block id="d40f2c83e95f6746ea810ba2593deb2d" category="section-title">如何旋轉認證資料</block>
   <block id="e7273d95e9d37fd9da1a8a44576c6922" category="inline-link-macro">深入瞭解 AWS 認證與權限</block>
   <block id="49a4eb544564882dc7440ee482a753dd" category="paragraph">Cloud Manager 可讓您以幾種方式提供 AWS 認證資料：與 Connector 執行個體相關的 IAM 角色、在信任的帳戶中擔任 IAM 角色、或提供 AWS 存取金鑰。 <block ref="327ad200be450c94b449dea92a32b142" category="inline-link-macro-rx"></block>。</block>
   <block id="c0f3d62ee13e3d6026170d25c9384876" category="paragraph">Cloud Manager 採用前兩個選項、使用 AWS 安全性權杖服務取得持續循環的暫用認證資料。此程序是最佳實務做法、因為它是自動且安全的。</block>
-  <block id="2107472aff38cfdebba436df3f42b23b" category="section-title">新增認證到Connector</block>
   <block id="448746f589ceea8f1b3191a05fe6c57c" category="paragraph">將AWS認證資料新增至Connector、以便在Cloud Volumes ONTAP 其他AWS帳戶中部署及管理功能。您可以在其他帳戶中提供IAM角色的ARN、或是提供AWS存取金鑰。</block>
   <block id="1b516070ab36ad4c186fe30bd203fb45" category="section-title">授予權限</block>
   <block id="8a128a994df87cb5973b2c0be1404679" category="paragraph">在您新增額外的AWS認證資料至Connector之前、您必須先提供必要的權限。這些權限可讓 Cloud Manager 管理該 AWS 帳戶內的資源和程序。您提供權限的方式取決於您是否要為Cloud Manager提供信任帳戶或AWS金鑰中角色的ARN。</block>
@@ -1709,16 +1638,10 @@
   <block id="a1418a1fbbbe1aec52c1618b6cc4b381" category="list-text">*定義認證資料*：提供可信IAM角色的ARN（Amazon資源名稱）、或輸入AWS存取金鑰和秘密金鑰。</block>
   <block id="1e65c796a2058f2e006fb33cdd7e9879" category="paragraph">若要以Cloud Volumes ONTAP 每小時費率（PAYGO）或是以年度合約支付、AWS認證資料必須與Cloud Volumes ONTAP 從AWS Marketplace訂閱的功能相關聯。</block>
   <block id="59c42111c120e2a009a663d366f4914f" category="paragraph">現在、您可以在建立新的工作環境時、從「詳細資料與認證」頁面切換至不同的認證資料集：</block>
-  <block id="80eeb375dbaa0ef03077d457dd5bbb95" category="section-title">新增認證資料至Cloud Manager</block>
-  <block id="86a80f2c5791260c43446585966588d0" category="paragraph">為Cloud Manager提供IAM角色的ARN、讓Cloud Manager擁有必要的權限、可為ONTAP 工作環境建立FSX或 建立連接器、藉此將AWS認證新增至Cloud Manager。</block>
-  <block id="620ca61d4ab126187e2b08ea732bc73d" category="paragraph">您可以在建立FSXfor ONTAP the Sfor the Sfor the Sfor the Sfor the Sfuse環境或建立新的Connector時、使用認證資料。</block>
   <block id="d8a56d983b91f097e5ba55dd03a18509" category="section-title">設定IAM角色</block>
   <block id="d9a499196547b3d025fe2a7d3c56baa1" category="paragraph">設定IAM角色、讓Cloud Manager SaaS能夠承擔角色。</block>
   <block id="44030f19e52b4a03b050525f287bbc15" category="list-text">前往目標帳戶中的IAM主控台。</block>
   <block id="7d85138efc851d16b36fe016a7d406df" category="list-text">選取*其他AWS帳戶*、然後輸入Cloud Manager SaaS的ID：952013314444.</block>
-  <block id="e8d22804fac9dc3460dec3cade490b3d" category="list-text">建立一個原則、其中包含建立FSXfor ONTAP the S作業 環境或建立連接器所需的權限。</block>
-  <block id="3d35bba2e5ea6e739fb94736dc402017" category="inline-link">檢視FSXfor ONTAP Sfor Sf哪些 權限</block>
-  <block id="df00618b6e4c6f7fcb9a7fbb4c65b54e" category="list-text"><block ref="df00618b6e4c6f7fcb9a7fbb4c65b54e" category="inline-link-rx"></block></block>
   <block id="a7670b1f58884f1ec2ecfbedc687193d" category="list-text">從檢視Connector部署原則<block ref="685f869a0580bc1af63188a3b940f7ac" category="inline-link-rx"></block></block>
   <block id="e08f06cebc90d5cc269f643f2df5ab95" category="list-text">複製IAM角色的角色ARN、以便在下一步將其貼到Cloud Manager中。</block>
   <block id="cb42da6cc008fcaadb5690213a1db71a" category="inline-xref">您現在可以將它新增至 Cloud Manager</block>
@@ -1727,7 +1650,6 @@
   <block id="5138a631dd35ae5628a6137742d99bcc" category="paragraph">如果您剛建立IAM角色、可能需要幾分鐘的時間才能使用。請稍候幾分鐘、再將認證資料新增至Cloud Manager。</block>
   <block id="15d1c1365d4f855b7d77c93232a59906" category="list-text">*認證資料位置*：選取* Amazon Web Services &gt; Cloud Manager*。</block>
   <block id="8cf335d7d3b1dd5cdac30699d20489c0" category="list-text">*定義認證資料*：提供IAM角色的ARN（Amazon資源名稱）。</block>
-  <block id="174c30e12e5caabc3d6093c8f5d239eb" category="paragraph">現在您可以在建立FSXfor ONTAP the Sfor the Sfor the Sfor the fuse環境或建立新的Connector時、使用認證資料。</block>
   <block id="94935dba78b982df4dbaaf55737f4d0b" category="section-title">建立AWS訂閱的關聯</block>
   <block id="99d8101dd6c55cd4a41adde2e1c707a9" category="paragraph">將 AWS 認證資料新增至 Cloud Manager 之後、您可以將 AWS Marketplace 訂閱與這些認證資料建立關聯。訂閱可讓您以Cloud Volumes ONTAP 小時費率（PAYGO）或使用年度合約來支付報銷費用、並使用其他NetApp雲端服務。</block>
   <block id="5ad7bc2b388bb236e1686ac8da3a1898" category="paragraph">您可能會在將認證新增至 Cloud Manager 之後、在兩種情況下建立 AWS Marketplace 訂閱的關聯：</block>
@@ -1831,7 +1753,6 @@
   <block id="3fc84828d29031ccb044fc851a791dd5" category="inline-link-macro">設定NetApp帳戶</block>
   <block id="72c3eeaa29779a60f2efe95a1c173302" category="paragraph">如需逐步指示、請參閱 <block ref="2e63be6a139b9c6424fb3c44b74add23" category="inline-link-macro-rx"></block>。</block>
   <block id="6b9aff54334b24c64be5688e6f9c12cc" category="section-title">最大Cloud Volumes ONTAP 的系統</block>
-  <block id="a259bb127cd2a1cd02edf6a3a2484f33" category="paragraph">如果您有任何問題、請聯絡您的客戶代表或銷售團隊。</block>
   <block id="ff73074ccafb0bcfc1c49a09ceb6532f" category="section-title">帳戶設定</block>
   <block id="6f42c9f4b429467eb11ea5ae99b87c9d" category="paragraph">Cloud Manager中的「管理帳戶」小工具可讓客戶管理員管理NetApp帳戶。如果您剛建立帳戶、就會從頭開始。但如果您已經設定帳戶、您會看到 _ 全部 _ 與帳戶相關聯的使用者、工作區、連接器和訂閱。</block>
   <block id="e8d4079a6995ce39f10add4f26ab239b" category="paragraph">「總覽」頁面會顯示「帳戶名稱」和「帳戶ID」。註冊某些服務時、您可能需要提供您的帳戶ID。本頁也包含一些Cloud Manager組態選項。</block>
@@ -2144,8 +2065,6 @@
   <block id="f0aff813a70ef2591adfbb6a1a06b553" category="list-text"><block ref="f0aff813a70ef2591adfbb6a1a06b553" category="inline-link-rx"></block></block>
   <block id="d91c9747b757db55982f71a386bfd0d6" category="cell">- compute.instanceGroups.get - compute、addresses.Get</block>
   <block id="e6896223c5f9bd9bbdd1b0c9eac6686f" category="cell">在HA配對上建立及管理儲存VM。</block>
-  <block id="4a95dbd25f9c78f9b32c636955913f0c" category="cell">「EC2：統計資料Volume修改」、「EC2：修改Volume」、</block>
-  <block id="2ab6f4b7f1eda4096fbe91764dbb5eb6" category="cell">可設定Cloud Volumes ONTAP 及管理支援Amazon EBS彈性Volume功能的資訊區集合體。</block>
   <block id="bea9d9e1b3f9260b5dafbfee794aead7" category="summary">您可以將Connector安裝在無法存取網際網路的內部部署Linux主機上。接著您可以探索內部ONTAP 的支援叢集、在叢集之間複寫資料、使用Cloud Backup備份磁碟區、然後使用Cloud Data Sense進行掃描。</block>
   <block id="89b945901df4999cfbb07b91df7f3e83" category="inline-link">使用Cloud Backup將ONTAP 內部的等量資料備份StorageGRID 至不實</block>
   <block id="0ef5e09df96e6b4d97470a69c3a5bb03" category="list-text"><block ref="0ef5e09df96e6b4d97470a69c3a5bb03" category="inline-link-rx"></block></block>
@@ -2158,8 +2077,6 @@
   <block id="4141e80854c65807682dd0ff767b4228" category="inline-link-macro">瞭解如何存取Connector上的本機UI</block>
   <block id="b5d309d79224e6f55d1d4c6b68090c82" category="paragraph"><block ref="2061c033ff26af000ddf0a91359fc3b2" category="inline-link-macro-rx"></block>。</block>
   <block id="60eb2845b0a0e58270dc0f4a47eeb2b9" category="paragraph">如果您是從政府區域或沒有外傳網際網路存取權限的站台存取Cloud Manager、則必須登入連接器上執行的本機使用者介面。 <block ref="2061c033ff26af000ddf0a91359fc3b2" category="inline-link-macro-rx"></block>。</block>
-  <block id="3ac6338087c4180b5cbb359584abab3a" category="paragraph">無論使用何種授權模式、每個NetApp帳戶最多只能有20個不受限的功能。Cloud Volumes ONTAP</block>
-  <block id="b730a5e05a41eebeb51f5aee7c746386" category="paragraph">_system_是HA配對或單一節點系統。例如、如果您有兩Cloud Volumes ONTAP 個用作2個用作2個用作2個用作2個用作2個用作2個用作單一節點的系統、則您的帳戶中總共有4個用作16個用作額外系統的空間。</block>
   <block id="38ce4e90f119b89b2fdf1f274431e262" category="section-title">2022年6月28日</block>
   <block id="47d69a1f17128c359904338c3502fe31" category="section-title">使用NetApp認證登入</block>
   <block id="f646305c890b8deec88379aeecbe56a5" category="paragraph">當新使用者註冊Cloud Central時、他們現在可以選擇*登入NetApp*選項、以NetApp支援網站認證登入。這是輸入電子郵件地址和密碼的替代方法。</block>
@@ -2173,4 +2090,245 @@
   <block id="5bcda5b087049d72bac31d0484792c9e" category="admonition">當您使用NetApp登入時、您的NetApp支援網站認證不會新增至Support Dashboard中的Cloud Manager。</block>
   <block id="bb3811f4fe37370092ea428b21cf1249" category="list-text">如果您有已註冊的NetApp支援網站帳戶、請按一下*登入NetApp*、然後輸入您的NetApp支援網站認證資料。</block>
   <block id="fa4e197c715b6a6e61487c84fa10bc13" category="paragraph"><block ref="fa4e197c715b6a6e61487c84fa10bc13" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1511b856d0328cfba458b8f83c2e94e3" category="section-title">2022年7月3日</block>
+  <block id="dbb3531fc9f461de7f3beb2624712465" category="section-title">連接器3.9.20</block>
+  <block id="d62eba143e9a6b4f6e0d6902d78ea096" category="list-text">我們推出新的方法、可導覽至Cloud Manager介面不斷增加的功能清單。現在只要將游標放在左側面板上、即可輕鬆找到所有熟悉的Cloud Manager功能。</block>
+  <block id="fb8e25a66c3a27139d3ea3e1474c7db3" category="inline-image-macro">顯示Cloud Manager新左側導覽功能表的快照。</block>
+  <block id="f0b1755d1a809617265e005b6e1a8124" category="paragraph"><block ref="f0b1755d1a809617265e005b6e1a8124" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e37234425776295f1624526d17572b8e" category="list-text">您現在可以設定Cloud Manager以電子郵件傳送通知、即使您尚未登入系統、也能得知重要的系統活動。</block>
+  <block id="2f439d7fd2d68628b2c40e59bc7ec352" category="inline-link-macro">深入瞭解監控帳戶運作的相關資訊</block>
+  <block id="8fe400bbcf74fee5f6ca96b5d06fd8a8" category="paragraph"><block ref="6207ce0a1413f0c60f2c0a13a1fde26f" category="inline-link-macro-rx"></block>。</block>
+  <block id="0f9a1f2b52f5c8456ca5d25ab69eea52" category="list-text">Cloud Manager現在支援Azure Blob儲存設備和Google Cloud Storage做為工作環境、類似於Amazon S3支援。</block>
+  <block id="5134e5a3a5a026f57f4938b2eaa07031" category="paragraph">在Azure或Google Cloud中安裝Connector之後、Cloud Manager現在會自動探索Azure訂閱中Azure Blob儲存設備的相關資訊、或是在安裝Connector的專案中探索Google Cloud Storage的相關資訊。Cloud Manager會將物件儲存設備顯示為工作環境、您可以開啟以檢視更多詳細資訊。</block>
+  <block id="a2f44a550843ebb8ee7fe06e85e5d378" category="paragraph">以下是Azure Blob工作環境的範例：</block>
+  <block id="c5a0af9953d83a32751880ddded4d5ec" category="inline-image-macro">這是一個快照、顯示Azure Blob工作環境、您可以在其中檢視高層級的總覽、然後查看儲存帳戶的詳細資訊。</block>
+  <block id="69ea64e8072e702aaf3256d7a40211ee" category="paragraph"><block ref="69ea64e8072e702aaf3256d7a40211ee" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="402ca8386bc10e708c8fa4cd43e8856e" category="list-text">我們重新設計Amazon S3工作環境的資源頁面、提供更詳細的S3儲存區資訊、例如容量、加密詳細資料等。</block>
+  <block id="82e8338c73d6540f48f2e0cc8d035511" category="list-text">馬德里（歐洲-西南1）</block>
+  <block id="1a1145c860165dcd96b82eb7d32cd59f" category="list-text">巴黎（歐洲-西9）</block>
+  <block id="eb4cae07e62b958e999eaa4c0d9b254b" category="list-text">華沙（歐洲中心2）</block>
+  <block id="05f08f9410eed79855c8ade92149a276" category="list-text">現在Azure West US 3區域支援Connector。</block>
+  <block id="e8249b4253d6a921188373a80621c098" category="list-text">此版本的Connector也包含Cloud Volumes ONTAP 了一些功能強化功能。</block>
+  <block id="6ccb5320771ae7d28e23216dda7e303f" category="paragraph"><block ref="6ccb5320771ae7d28e23216dda7e303f" category="inline-link-rx"></block></block>
+  <block id="c330137e6e1ce0bfce55a8c86df33a2b" category="paragraph"><block ref="c330137e6e1ce0bfce55a8c86df33a2b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c04c08fe80b97e132e0d3900955bcba0" category="paragraph"><block ref="c04c08fe80b97e132e0d3900955bcba0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1119a5c0ca85ec4912ce192d30735c02" category="summary">您可以監控Cloud Manager執行的作業狀態、查看是否有任何需要解決的問題。您可以在「通知中心」、「時間表」中檢視狀態、或將通知傳送至您的電子郵件。</block>
+  <block id="2fe85263c62b0b870277c30652459354" category="cell">保留上個月的狀態</block>
+  <block id="5c61dbbb22810fcf5149eb1192885607" category="cell">可將通知以電子郵件傳送給帳戶使用者和其他人</block>
+  <block id="e92861fef775acb8c5a64f8d282a8b80" category="cell">無電子郵件功能</block>
+  <block id="d6706ddca18dfba027152ceaeffb550e" category="section-title">使用通知中心監控活動</block>
+  <block id="18aff76a65beb281247b3066c1a37525" category="paragraph">通知會追蹤您在Cloud Manager中啟動的作業進度、以便您確認作業是否成功。您可透過這些工具來檢視目前登入工作階段期間所啟動的許多Cloud Manager作業狀態。</block>
+  <block id="5cf9ecbcae765efe1cb17d1c802e39cb" category="paragraph">您可以按一下通知鈴聲（<block ref="df7c8a71ca3da4359e40e121f18f87b9" category="inline-image-macro-rx" type="image"></block>）。警示中的小球型罩顏色代表作用中的最高層級嚴重性通知。因此、如果您看到紅色的球型罩、就表示您應該查看重要通知。</block>
+  <block id="6c836fac6db418cb1aa7dbc3dbd8ff62" category="inline-xref">設定電子郵件通知設定</block>
+  <block id="411759a1626269084faceb1751fdaca6" category="paragraph">您也可以設定Cloud Manager以電子郵件傳送通知、即使您尚未登入系統、也能得知重要的系統活動。電子郵件可傳送給屬於您NetApp雲端帳戶一部分的任何Cloud Central使用者、或傳送給任何其他需要注意特定系統活動類型的收件者。請參閱 <block ref="2fb0285882e9333d924eb054161cd903" category="inline-xref-macro-rx"></block> 以下。</block>
+  <block id="2a4be390687f80c7cdf976afca0fe778" category="section-title">通知類型</block>
+  <block id="0ebfeb3212b9bb4b152ea82a5877a33b" category="paragraph">通知分為下列類別：</block>
+  <block id="9e89e978c220a2a733d027866cb12907" category="cell">通知類型</block>
+  <block id="278d01e5af56273bae1bb99a98b370cd" category="cell">關鍵</block>
+  <block id="0b68cecd3f3f6281c0b25a5c4847524e" category="cell">如果未立即採取修正行動、可能導致服務中斷。</block>
+  <block id="902b0d55fddef6f8d651fe1035b7d4bd" category="cell">錯誤</block>
+  <block id="e5fb3557abe29146a95749081ab3a190" category="cell">某項行動或程序因故障而結束、或是在未採取修正行動時可能導致故障。</block>
+  <block id="0eaadb4fcb48a0a0ed7bc9868be9fbaa" category="cell">警告</block>
+  <block id="aa228af2278ceaf301af095317b0ff34" category="cell">您應注意的問題、以確保其未達到嚴重嚴重性。此嚴重性的通知不會造成服務中斷、因此可能不需要立即採取修正行動。</block>
+  <block id="c76e3867213cff8946148c6510af0736" category="cell">建議</block>
+  <block id="e601c98c25210dcc8d9e790827097756" category="cell">系統建議您採取行動來改善系統或特定服務、例如：節省成本、建議新服務、建議的安全組態等</block>
+  <block id="a82be0f551b8708bc08eb33cd9ded0cf" category="cell">資訊</block>
+  <block id="43c6159740686137c49fb6d6b07640f2" category="cell">提供有關行動或程序的其他資訊的訊息。</block>
+  <block id="505a83f220c02df2f85c3810cd9ceb38" category="cell">成功</block>
+  <block id="ae75ef51af35154ca4a9e6d19fb16774" category="cell">已成功完成行動或程序。</block>
+  <block id="a6def99842bc15d42718893f4b26be8c" category="paragraph">您可以透過電子郵件傳送特定類型的通知、即使您尚未登入Cloud Manager、也能得知重要的系統活動。電子郵件可傳送給您的NetApp帳戶中的任何使用者、或是任何其他需要注意特定系統活動類型的收件者。</block>
+  <block id="b51460585ce77934e0d0f7ab2636f940" category="paragraph">依預設、帳戶管理員會收到所有「重大」和「建議」通知的電子郵件。根據預設、所有其他使用者和收件者都會設定為不接收任何通知電子郵件。</block>
+  <block id="f6cf378d25bc2bcaeedbdbd322fec41b" category="paragraph">您必須是帳戶管理員、才能自訂通知設定。</block>
+  <block id="b53a221b71b7a12562d2dac0686fd53c" category="list-text">在Cloud Manager功能表列中、按一下*設定&gt;警示與通知設定*。</block>
+  <block id="dffb0ae952f619b638efb5dbc37b121a" category="inline-image-macro">顯示如何顯示「警示與通知設定」頁面的快照。</block>
+  <block id="7d1b8c811a59859856f7d6e326206f8e" category="paragraph"><block ref="7d1b8c811a59859856f7d6e326206f8e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1574c3b98d877a336e31fff7f6edacbc" category="list-text">從「帳戶使用者_」索引標籤或「_其他收件者_」索引標籤中選取一位或多位使用者、然後選擇要傳送的通知類型：</block>
+  <block id="e0f7b60aad81cb4fcc78cf6261b98ff0" category="list-text">若要變更單一使用者、請按一下該使用者「通知」欄中的功能表、檢查要傳送的通知類型、然後按一下「*套用*」。</block>
+  <block id="41d14bf0cc8b5a28d6f816e19d00ff99" category="list-text">若要變更多位使用者、請勾選每位使用者的方塊、按一下*管理電子郵件通知*、勾選要傳送的通知類型、然後按一下*套用*。</block>
+  <block id="c620f9967c3de275d7f81b04c1220bbb" category="inline-image-macro">顯示如何變更多位使用者通知的螢幕快照。</block>
+  <block id="ba47221b59f846f383b80e1123a79d45" category="paragraph"><block ref="ba47221b59f846f383b80e1123a79d45" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="74f842f681dec95e3fcba9672d30f73a" category="section-title">新增其他電子郵件收件者</block>
+  <block id="da69d368769f4f71d80717684f0fae51" category="inline-link-macro">管理帳戶頁面</block>
+  <block id="2866a3379eb6bd7cd5780936bb9623e0" category="paragraph">出現在「_Account Users_」（帳戶使用者_）標籤的使用者、會自動從您NetApp帳戶中的使用者（從 <block ref="7ec5341aa06784128979f04caa0eaf74" category="inline-link-macro-rx"></block>）。您可以在「_其他收件者_」索引標籤中新增電子郵件地址、以供無權存取Cloud Manager但需要收到特定警示和通知類型通知的其他人員或群組使用。</block>
+  <block id="0286e36de56c941ab35aeb846ce40a9e" category="list-text">在「警示與通知設定」頁面中、按一下*「新增收件者」*。</block>
+  <block id="acd827f1422fd31386324c56e2be6d81" category="inline-image-macro">顯示如何新增電子郵件收件者以接收警示和通知的螢幕快照。</block>
+  <block id="5e56842d0cfbf695522e945a01570eba" category="paragraph"><block ref="5e56842d0cfbf695522e945a01570eba" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b434da4c5ce39b5e4a95ec5159a66676" category="list-text">輸入姓名、電子郵件地址、然後選取收件者要接收的通知類型、然後按一下*「Add New Recipient*（新增收件者*）」。</block>
+  <block id="34cb1ceabae36f23fad53ac3e3680af5" category="list-text">從左側導覽功能表中、選取* Timeline *。</block>
+  <block id="19d38e2a40bebb64998474cbec167167" category="list-text">將額外的AWS認證資料新增至現有的Connector</block>
+  <block id="2d85cb7a34de23c6b7db0459f207a310" category="paragraph">將新的AWS認證資料新增至現有的Connector、可讓您Cloud Volumes ONTAP 使用相同的Connector在另一個AWS帳戶中部署。 <block ref="c25c39db29c727f1578fc8385e3c589b" category="inline-xref-macro-rx"></block>。</block>
+  <block id="b43214d44180a6ca97389c1482285fbf" category="list-text">將AWS認證資料新增至Cloud Manager以建立Connector</block>
+  <block id="cb41c26ca274622d9ea3398c74867451" category="paragraph">將新的AWS認證資料新增至Cloud Manager、可讓Cloud Manager擁有建立Connector所需的權限。 <block ref="d9eb564bf95618e99248c2b1e3146ece" category="inline-xref-macro-rx"></block>。</block>
+  <block id="69aa4e5daaa10834feb82eec574735eb" category="list-text">將AWS認證資料新增至Cloud Manager for FSX ONTAP for Sf</block>
+  <block id="f63d604edef29843d35ad367e0d82814" category="inline-link">瞭解如何設定FSX for ONTAP Sfor Sfor Sfor的權限</block>
+  <block id="072e31a95d82576794bb6565d0330309" category="paragraph">將新的AWS認證資料新增至Cloud Manager、可讓Cloud Manager擁有必要的權限、以建立及管理FSXfor ONTAP the Sfor。<block ref="47d6cf2cfadcdba49cba9314ed556d4e" category="inline-link-rx"></block></block>
+  <block id="38d6d2ec27372e53c82e1227b5be44d4" category="section-title">新增其他認證資料至Connector</block>
+  <block id="bf19fb3e70cc4e8379089c708c9d3206" category="section-title">將認證資料新增至Cloud Manager以建立Connector</block>
+  <block id="10f9b8e8923f8e5a230d95b268fa385f" category="paragraph">提供IAM角色的ARN、讓Cloud Manager擁有建立Connector所需的權限、藉此將AWS認證新增至Cloud Manager。您可以在建立新的Connector時選擇這些認證資料。</block>
+  <block id="875232e8c1abaa42024ddc396bcef6da" category="list-text">建立包含建立Connector所需權限的原則。</block>
+  <block id="8dbc816059e1b421ecb65c693d5f2171" category="paragraph">您現在可以在建立新的Connector時使用認證資料。</block>
+  <block id="c3d36b4a46dce16b3ad60eecabc87582" category="list-text">Amazon S3探索</block>
+  <block id="bde43e83db72512f1aea47540264c8f0" category="list-text">Azure Blob探索</block>
+  <block id="6060e8f925263dfdc63a751c294072e0" category="list-text">Google Cloud Storage探索</block>
+  <block id="cb7056b970dafeecb7fd7cc3be301248" category="paragraph">「帳戶管理員Cloud Volumes ONTAP 」必須先建立連接器、工作區管理員才能建立運作環境、並使用上述任何其他服務。管理員可以透過多種方式建立Connector：</block>
+  <block id="29a0d45ad000865bf5504b2da4dc6816" category="paragraph">以下各節說明如何將權限用於每項NetApp雲端服務。如果您的企業原則規定只有在需要時才提供權限、此資訊就很有幫助。</block>
+  <block id="c6705240238244043d7e0d39f6ce1db1" category="section-title">應用程式範本標記</block>
+  <block id="0cae22bc84eb90b52cc86e22b140eb0c" category="paragraph">當您使用應用程式範本標記服務時、Connector會發出下列API要求來管理AWS資源上的標記：</block>
+  <block id="693adfb773a054f1c9287da186e8ce5d" category="list-text">EC2：建立標記</block>
+  <block id="3a2cbdfb7b022d729d851d5052148241" category="list-text">EC2：刪除標記</block>
+  <block id="684a1bfe5fbc91f18d96de978a7df58a" category="list-text">EC2：取消標示</block>
+  <block id="4c62ed8ff3597b57ab26a72e8f7294b7" category="list-text">標記：getResources</block>
+  <block id="b2ca34a52079f0ba5f066943f1dd2482" category="list-text">標記：getTagKeys</block>
+  <block id="f624e5f75138eb92caddd44e1bc7342e" category="list-text">標記：getTagValues</block>
+  <block id="5e665d8f5cf0c341dce9f3bd5e7f4cc0" category="list-text">標記：TagResources</block>
+  <block id="5e10058ad3f07bfeca3eef81de09ce28" category="list-text">標記：取消標記資源</block>
+  <block id="ea6a60190611f087b7d1024fdd12f16c" category="paragraph">Connector會提出下列API要求、以部署Cloud Backup的還原執行個體：</block>
+  <block id="027d28fab935de1ef9181da062feac6b" category="list-text">EC2：啟動安裝</block>
+  <block id="68d58bcae13312f57154b0dc5bd5bee5" category="list-text">EC2：停止執行</block>
+  <block id="c8e20ceabac2b519b4f4eb301166c9bd" category="list-text">EC2：資料說明</block>
+  <block id="3bd5f6b3ab1440bcdf688a075a360180" category="list-text">EC2：取消訂閱即時狀態</block>
+  <block id="392b3d4b5b32ec7fec96c348ecef2c2a" category="list-text">EC2：RunInstances</block>
+  <block id="f52c8ff7f97e2de39d8d76587c9f5398" category="list-text">EC2：終端安裝</block>
+  <block id="339c73e7ad58b4e1def2de5bc9ccdc2e" category="list-text">EC2：取消訂閱實例屬性</block>
+  <block id="952195e7922a9dcf0a6d5068e747e85f" category="list-text">EC2：取消影像</block>
+  <block id="214856c145abfa33038f64154c203919" category="list-text">EC2：建立磁碟區</block>
+  <block id="dfe69f2eb83bcef99d0bb464b50fbf34" category="list-text">EC2：建立安全性群組</block>
+  <block id="fa70443be85a3feec8a5eb9d46413a96" category="list-text">EC2：無資料子網路</block>
+  <block id="1bf0cfdea85e9a3c3d97e1c6b8c7c7c1" category="list-text">EC2：取消功能Vpcs</block>
+  <block id="624105df248e28f049a2f58eb3552d40" category="list-text">EC2：取消註冊</block>
+  <block id="6ccfab5404f73a6b0bacb222665e72d7" category="list-text">雲端：建立堆疊</block>
+  <block id="790375dd29bbbf581b13619a3430be3e" category="list-text">雲端：刪除堆疊</block>
+  <block id="f404fc6d0850472807e4fcd86203a313" category="list-text">雲端：無標準堆疊</block>
+  <block id="dae64d851fb086fcc7f34e869728783b" category="paragraph">Connector會提出下列API要求、以管理Amazon S3中的備份：</block>
+  <block id="57beb7405f0a1c7bc500e793294e4d80" category="list-text">S3：GetBucketLocation</block>
+  <block id="e21c94a36c6dbf24001a64bddce9456f" category="list-text">S3：ListAllMyb桶</block>
+  <block id="05cce54a3c6e4b27fe1202c73065ac29" category="list-text">S3：清單庫</block>
+  <block id="d0e4bee632dc55607e492853b76d8194" category="list-text">S3：建立桶</block>
+  <block id="0c1b0b85cf95eb29ecb3d5b774e010c2" category="list-text">S3：Get生命 週期組態</block>
+  <block id="b1b9fd8bb730a38b7633b4263b5c30ec" category="list-text">S3：Putt升降 器組態</block>
+  <block id="f7e22455b86c7ea94ba86cc949d37161" category="list-text">S3：PuttBucketting</block>
+  <block id="30756eb77e955d4514eb285a2d31ee73" category="list-text">S3：listBucketVerions</block>
+  <block id="f480e46cdd0b09e0a4d7a66cea36fc72" category="list-text">S3：GetBucketAcl</block>
+  <block id="4958fee4803d2e1cfa3375212fdcc52a" category="list-text">S3：PuttBucketPublicAccessBlock</block>
+  <block id="b18a2220ba0da795c31cbb6cd990fd49" category="list-text">公里：清單*</block>
+  <block id="2101c43af42db107614da3d2faadb4dc" category="list-text">公里：描述*</block>
+  <block id="53cfd5032381d05f65cbc6d64e0004f5" category="list-text">S3：GetObject</block>
+  <block id="9072562ed0b0a146d2eee12aaa27baf4" category="list-text">EC2：已描述VpcEndpoints</block>
+  <block id="276e466538acff21910df6227231c79f" category="list-text">kms：清單別名</block>
+  <block id="599a8ceed768fab9cc6e39dff7c9f215" category="list-text">S3：PuttEncryptionConfiguration</block>
+  <block id="21eddde0f415ffe52f38d432d14088c9" category="paragraph">當您使用搜尋與還原方法還原磁碟區和檔案時、Connector會發出下列API要求：</block>
+  <block id="ec68e11afcd3e390ebf5080e8af5b735" category="list-text">S3：刪除物件</block>
+  <block id="538e4e83b58b6bce3bde0ae671e33b67" category="list-text">S3：刪除ObjectVersion</block>
+  <block id="2fadb459df3bdee0dccfda5cc625c37b" category="list-text">S3：listBucketMultiPartUploads</block>
+  <block id="8e0864f8129f5d2b658668b9103e83a5" category="list-text">S3：PuttObject</block>
+  <block id="b9ddada4de32510796065dc8e8165711" category="list-text">S3：PuttBucketAcl</block>
+  <block id="e24d90c482d00361a495cd937be3bb7b" category="list-text">S3：中止多重角色上傳</block>
+  <block id="9c6f56f3012c2178f15d4346495a0a67" category="list-text">S3：列出多個零件上傳零件</block>
+  <block id="7cd7eca4bb03196079ee9a9bde3115be" category="list-text">Athena：StartQueryExecutionc</block>
+  <block id="95c87da99fc1ee2016d0e9c8cb02409d" category="list-text">Athena：GetQueryResults</block>
+  <block id="f0fba07e47b7e372e7ac0e365ea7027a" category="list-text">Athena：GetQueryExecution</block>
+  <block id="0c6b0369ea554dd3ec72e592055d373a" category="list-text">Athena：停止查詢執行</block>
+  <block id="053eccd51ed9451171879091960925f5" category="list-text">黏著劑：建立資料庫</block>
+  <block id="8aa289a776893bb855ec1aa9bed5209b" category="list-text">黏著劑：CreateTable</block>
+  <block id="a269a322dce9f7dfa0a7cbd6c919eaf4" category="list-text">黏著劑：批字刪除分割區</block>
+  <block id="1ff2ee005f6ebf372516a77eb1822174" category="paragraph">Connector會提出下列API要求來部署Cloud Data Sense執行個體：</block>
+  <block id="a5ea263b5c1fc9d98e3502347db5f38a" category="list-text">EC2：AttachVolume</block>
+  <block id="5c1d3b82016ca9ba106bc6c28ab8c44a" category="list-text">EC2：刪除安全性群組</block>
+  <block id="f81c1800b5bdeba91c623d2a3d6cd80b" category="list-text">EC2：取消安全性群組</block>
+  <block id="6d284e37c36390a37443cf46fd082a1b" category="list-text">EC2：建立網路介面</block>
+  <block id="ce8fb0925b8abe52d5d90a64663ad1be" category="list-text">EC2：網路介面</block>
+  <block id="ff7f7be0cb6fd6d6bfa0e735a61fc8a8" category="list-text">EC2：刪除網路介面</block>
+  <block id="0989933f390e4823213ec2adae8c79d2" category="list-text">EC2：建立Snapshot</block>
+  <block id="da044dbe1821a39f63f98e823344b062" category="list-text">雲端：取消功能堆疊事件</block>
+  <block id="d734a02593a16de307a6ba72b9e0a84f" category="list-text">IAM：AddRoleToInstanceProfile</block>
+  <block id="5e56dcab5a3d5a272d5e0ea580b6ef9c" category="list-text">EC2：Associate IamInstanceProfile</block>
+  <block id="878addcc09e93b6f03a1af8fb9aa5472" category="list-text">EC2：解讀IamInstanceProfileAssociations</block>
+  <block id="cf515733161bef5174a0b4727d3a287a" category="paragraph">使用Cloud Data Sense時、Connector會發出下列API要求來掃描S3儲存區：</block>
+  <block id="70c72880a06cb649d8a568819cf5e5d1" category="list-text">S3：GetBucketting</block>
+  <block id="e0c462b127c385a7109b2d96fee158ff" category="list-text">S3：GetBucketPolicyStatus</block>
+  <block id="19c320aeee7c39747dcce0815428eea9" category="list-text">S3：GetBucketPolicy</block>
+  <block id="9dcf380856979ca5b723d30e996e1f95" category="list-text">IAM：GetRole</block>
+  <block id="60cfe31830d467874bb430da1683504e" category="list-text">STS: Assume勞力</block>
+  <block id="a5ee53db07b5874a6adfc974dafbbd58" category="paragraph">連接器會在您使用雲端分層時、提出下列API要求、將資料分層至Amazon S3。</block>
+  <block id="004bf6c9a40003140292e97330236c53" category="cell">行動</block>
+  <block id="271544c6feabf3364f5e9d9d71e81991" category="cell">用於設定？</block>
+  <block id="536dc5b351662225d606f29978fb2842" category="cell">用於日常營運？</block>
+  <block id="c31a8d2fed6934d9957a2df9cb48885e" category="paragraph">Connector會提出下列API要求、要求在Cloud Volumes ONTAP AWS中部署及管理功能。</block>
+  <block id="8619817b40d160813e1d9e3fbcd2855a" category="cell">用於部署？</block>
+  <block id="9c9abc943aab3664ef495a82ad4bd11f" category="cell">用於刪除？</block>
+  <block id="5af7e92e7fbd51883a785485859afd3d" category="cell">建立及管理IAM角色及Cloud Volumes ONTAP 執行個體設定檔以利執行個體</block>
+  <block id="e3282902ca031e34a1aa86c7ee684a82" category="cell">IAM：清單執行設定檔</block>
+  <block id="3b8d1aa9f2727ee5948e48b70e7ea00b" category="cell">IAM：建立角色</block>
+  <block id="2fa83ed2b5f63d43f8aaf2419688821c" category="cell">IAM：刪除角色</block>
+  <block id="a6e64d0684dcf803ad58d40684383bb9" category="cell">IAM：Putt角色 原則</block>
+  <block id="b099faa86e7e0f5f378356dee887478b" category="cell">IAM：CreatanceProfile</block>
+  <block id="1566e3ce8fd64a52b0ba8d5bd6b1d6d2" category="cell">IAM：刪除角色原則</block>
+  <block id="b5a94c08b69b4b7f78637d9e9362ee11" category="cell">IAM：RemoveRoleFromInstanceProfile</block>
+  <block id="c23cf794dff78b49a2406145038d63f5" category="cell">IAM：刪除InstanceProfile</block>
+  <block id="f6ae0a8a1321975a6474722dcafe1322" category="cell">IAM：密碼</block>
+  <block id="d0946769aa3944c2e9e6feb1f6b23851" category="cell">EC2：中斷IamInstanceProfile</block>
+  <block id="817af26026c416850fbe7b9f610053f8" category="cell">解碼授權狀態訊息</block>
+  <block id="90723f1781278d57fb4f6c3f64e63a19" category="cell">STS:解碼授權訊息</block>
+  <block id="c67b7c82529835a49fde9a553fae41a7" category="cell">說明帳戶可使用的指定映像（Amis）</block>
+  <block id="54a4d76d5869b375291de0bd8b2566cf" category="cell">描述VPC中的路由表（僅HA配對需要）</block>
+  <block id="c01627c2648879b9ec55b1fca3cbeaf8" category="cell">EC2：取消功能表</block>
+  <block id="17b14c1ab3e8350a6f996c6de43f64f9" category="cell">停止、啟動及監控執行個體</block>
+  <block id="21d0110f8008b90efa11a26fa83b57c3" category="cell">EC2：修改實例屬性</block>
+  <block id="4334838bb012bcce350df94e430e8251" category="cell">確認已針對支援的執行個體類型啟用增強式網路功能</block>
+  <block id="f1d835bacd60573faa9e3559c63d1f1b" category="cell">使用「WorkingEnvironment」和「WorkingEnvironmentId」標記來標記資源、這些標記用於維護和成本分配</block>
+  <block id="4df68ee329324d6bfab7f1a6bec005d1" category="cell">管理Cloud Volumes ONTAP EBS磁碟區、這些磁碟區可作為後端儲存設備使用</block>
+  <block id="776040484a8199155a9dc8b59d59a80e" category="cell">EC2：減量磁碟區</block>
+  <block id="41335cfc4c2fb5b48949f4e7610951ec" category="cell">EC2：修改Volume屬性</block>
+  <block id="451d09025146b4c5f4b33a18aa0c4234" category="cell">EC2：刪除Volume</block>
+  <block id="06622319fb198ee98832f726ac405c79" category="cell">EC2：分離Volume</block>
+  <block id="1c921773262c6a99c2023b5b7ebe50d8" category="cell">建立及管理安全性群組Cloud Volumes ONTAP 以利執行</block>
+  <block id="6b55ca61283cdb7482b6730fe7aa8ee7" category="cell">EC2：RevokeSecurity GroupEgress</block>
+  <block id="0c2207eca5bac43f82f2b5fedbd86541" category="cell">EC2：授權安全性群組出口</block>
+  <block id="4391a439092a7705738b377b8f7d9770" category="cell">EC2：授權安全性群組入口</block>
+  <block id="2a95c3248cb0dae5784981086f9b60e6" category="cell">EC2：RevokeSecurity GroupIngress</block>
+  <block id="dd5e5ec5720cb7ce2bde41b83b22504a" category="cell">在Cloud Volumes ONTAP 目標子網路中建立及管理用於實現效能不中斷的網路介面</block>
+  <block id="c07c3c9fb58e5661267c1d69b19a4625" category="cell">EC2：修改網路互連屬性</block>
+  <block id="04844a87d8314fe1e6bc42ce9f40e3b5" category="cell">取得目的地子網路和安全性群組清單</block>
+  <block id="deecc88ee53f73cf0897562a4e2fe49f" category="cell">取得DNS伺服器和Cloud Volumes ONTAP 預設的網域名稱以供執行個體使用</block>
+  <block id="10da10750f5abb2bffb583947f1ace05" category="cell">EC2：取消功能DhcpOptions</block>
+  <block id="6c9741300c3794573c1f1d3839d05a79" category="cell">拍攝EBS Volume的快照Cloud Volumes ONTAP 以供其使用</block>
+  <block id="fc28bbdf9badba7bbeb760ba7510ad2d" category="cell">EC2：刪除Snapshot</block>
+  <block id="1b32c4c3d001e61965fb50f468ebf0fa" category="cell">EC2：取消快照</block>
+  <block id="9225c0e83b846b8f1588357947e0dc3a" category="cell">擷取Cloud Volumes ONTAP 附加於AutoSupport 資訊畫面的功能</block>
+  <block id="a018f1be3bfa4533d043570e804c006c" category="cell">EC2：GetConsole輸出</block>
+  <block id="312de8336b76e9964cac95161a7e5782" category="cell">取得可用金鑰組的清單</block>
+  <block id="b561747f1044749aaeab8082f02c0c2f" category="cell">EC2：評量會議</block>
+  <block id="d3a6e606d403e90b617202bd6d9bf438" category="cell">取得可用AWS區域的清單</block>
+  <block id="29c9112ad5de5e65a42305c3875fe633" category="cell">管理Cloud Volumes ONTAP 與實例相關的資源標記</block>
+  <block id="7a10534a7524e11187f8a4ce2d3f2704" category="cell">建立及管理AWS CloudForation範本的堆疊</block>
+  <block id="6f25bb2faea408ecb06dc30a96791ac2" category="cell">cloudformation：驗證範本</block>
+  <block id="008eceda501c3038492fc4fdebf63110" category="cell">建立並管理Cloud Volumes ONTAP S3儲存區、讓整個系統做為資料分層的容量層</block>
+  <block id="3d48378493503b3c7c04da8400942853" category="cell">S3：刪除資源桶</block>
+  <block id="65a1ad8e5c7e4227f90d2816e2a42fdb" category="cell">S3：GetBucketPublicAccessBlock</block>
+  <block id="17b712134bd1e93b6948a0a5c9373e79" category="cell">使用Cloud Volumes ONTAP AWS金鑰管理服務（KMS）啟用資料加密功能</block>
+  <block id="d5ef88abafcd6e55acdf43a7b5e4413a" category="cell">公里：ReEncrypt *</block>
+  <block id="341d6f040d34917cbc708be689644fc5" category="cell">公里：建立授予</block>
+  <block id="c56dde60b28c88e27c4c3174cfc998e5" category="cell">取得AWS成本資料Cloud Volumes ONTAP 以供使用</block>
+  <block id="7ece0980451e018d7766b0e5f1ac02bb" category="cell">CE：GetReservationUtilization</block>
+  <block id="fb039d4fc4119ba105aab9fac87b7f37" category="cell">CE：GetDimensionValues</block>
+  <block id="bba6542a0e46014b21a818003b1e41d2" category="cell">CE：GetCostAndusage</block>
+  <block id="f74e5982a82afd7d2755b24355dd08c6" category="cell">CE：GetTags</block>
+  <block id="369aad6f89489e3292ff7cc6ee60488a" category="cell">在單一AWS可用性區域中、為兩個HA節點建立並管理AWS分散放置群組、以及協調器</block>
+  <block id="742d1c396005fec9d48163ebc8b0cbf7" category="cell">EC2：建立位置群組</block>
+  <block id="1a68c5f9c662699cb823586b38edef0b" category="cell">EC2：刪除位置群組</block>
+  <block id="ef7a7b1bec08bef324977926c1fc910c" category="cell">建立報告</block>
+  <block id="096f855751ca8a251f3a90595e899592" category="cell">FSX：說明*</block>
+  <block id="32e6bcbc3ba209ad50015d597c501851" category="cell">FSX：清單*</block>
+  <block id="f3edb201fee35ccc535ef38207132cb5" category="cell">建立及管理可支援Amazon EBS彈性Volume功能的集合體</block>
+  <block id="9708e121f9f5200cf3806e89c2633b16" category="cell">EC2：說明體積修改</block>
+  <block id="a0343d4d10d8960a1347cc4819cae46b" category="cell">EC2：修改Volume</block>
+  <block id="fced0ebf1fcf946eb97f030a892b2b08" category="paragraph">Connector會在部署期間提出下列API要求、以部署全域檔案快取執行個體：</block>
+  <block id="3a902f1e8a6db9861a0a7608e2c5f711" category="list-text">cloudwatch：GetMetricStatistics</block>
+  <block id="1bad3fa525f7b2c60b554cc8a36a911c" category="list-text">雲端：清單堆疊</block>
+  <block id="8e07bbd9f07bb93eda5ce53675e2dd26" category="paragraph">Connector會提出下列API要求、以探索及管理Amazon EKS叢集：</block>
+  <block id="b272876bb8d27e636bb70f2dce15cb34" category="list-text">EKS：清單叢集</block>
+  <block id="457a1b6178515d282232753f808e8cf5" category="list-text">EKS：取消叢集</block>
+  <block id="53ac904630fdbb4d62f208e001934c7c" category="list-text">IAM：GetInstanceProfile</block>
+  <block id="7acc5c4a78b2f3e43bbeb07b9c5f8108" category="inline-link">深入瞭解此限制</block>
+  <block id="b6eb1b17db480470497e94d3911d9e12" category="paragraph">每個NetApp帳戶僅限Cloud Volumes ONTAP 使用最多數量的不重樣系統。<block ref="ed7500cfb54e6cf775da8a8506d96f75" category="inline-link-rx"></block></block>
 </blocks>

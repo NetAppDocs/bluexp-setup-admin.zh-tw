@@ -27,12 +27,14 @@ summary: 在大多數情況下、您需要在雲端或內部部署網路中部�
 === 服務
 
 * Amazon FSX提供ONTAP 功能完善的管理功能
-* Amazon S3 儲存區探索
+* Amazon S3探索
+* Azure Blob探索
 * 雲端備份
 * 雲端資料感測
 * 雲端分層
 * Cloud Volumes ONTAP
 * 全域檔案快取
+* Google Cloud Storage探索
 * Kubernetes叢集
 * 監控
 * 內部部署 ONTAP 的叢集
@@ -95,9 +97,7 @@ summary: 在大多數情況下、您需要在雲端或內部部署網路中部�
 
 == 如何建立連接器
 
-「帳戶管理員Cloud Volumes ONTAP 」必須先建立連接器、工作區管理員才能建立運作環境、並使用上述任何其他服務。
-
-帳戶管理員可以透過多種方式建立 Connector ：
+「帳戶管理員Cloud Volumes ONTAP 」必須先建立連接器、工作區管理員才能建立運作環境、並使用上述任何其他服務。管理員可以透過多種方式建立Connector：
 
 * 直接從 Cloud Manager （建議）
 +

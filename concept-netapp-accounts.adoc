@@ -30,16 +30,6 @@ image:screenshot_account_settings.gif["顯示「管理帳戶」小工具的快�
 
 
 
-== 最大Cloud Volumes ONTAP 的系統
-
-無論使用何種授權模式、每個NetApp帳戶最多只能有20個不受限的功能。Cloud Volumes ONTAP
-
-_system_是HA配對或單一節點系統。例如、如果您有兩Cloud Volumes ONTAP 個用作2個用作2個用作2個用作2個用作2個用作2個用作單一節點的系統、則您的帳戶中總共有4個用作16個用作額外系統的空間。
-
-如果您有任何問題、請聯絡您的客戶代表或銷售團隊。
-
-
-
 == 帳戶設定
 
 Cloud Manager中的「管理帳戶」小工具可讓客戶管理員管理NetApp帳戶。如果您剛建立帳戶、就會從頭開始。但如果您已經設定帳戶、您會看到 _ 全部 _ 與帳戶相關聯的使用者、工作區、連接器和訂閱。
@@ -133,3 +123,9 @@ image:diagram_cloud_central_accounts_one.png["顯示包含兩個工作區的單�
 請注意、帳戶 2 包含兩個獨立的連接器。如果您的系統位於不同的地區、或是位於不同的雲端供應商、就可能發生這種情況。
 
 image:diagram_cloud_central_accounts_two.png["顯示兩個NetApp帳戶的圖表、每個帳戶各有多個工作區及其相關的Workspace Admins。"]
+
+
+
+== 最大Cloud Volumes ONTAP 的系統
+
+每個NetApp帳戶僅限Cloud Volumes ONTAP 使用最多數量的不重樣系統。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#max-number-of-systems["深入瞭解此限制"^]

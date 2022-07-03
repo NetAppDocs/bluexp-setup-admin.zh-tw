@@ -29,11 +29,11 @@ link:concept-netapp-accounts.html["深入瞭解NetApp客戶的運作方式"]。
 .步驟
 . 從上而下 https://cloudmanager.netapp.com["Cloud Manager"^]，單擊* Account（帳戶）*下拉列表。
 +
-image:screenshot_account_settings_menu.gif["在 Cloud Manager 上方橫幅中顯示「帳戶設定」選項的快照。"]
+image:screenshot-account-settings-menu.png["在 Cloud Manager 上方橫幅中顯示「帳戶設定」選項的快照。"]
 
 . 按一下目前選取帳戶旁的 * 管理帳戶 * 。
 +
-image:screenshot_manage_account_settings.gif["顯示「帳戶」下拉式清單中可用的「管理帳戶設定」選項的快照。"]
+image:screenshot-manage-account-settings.png["顯示「帳戶」下拉式清單中可用的「管理帳戶設定」選項的快照。"]
 
 . 按一下 * 工作區 * 。
 . 按一下「 * 新增工作區 * 」。
@@ -52,7 +52,7 @@ image:screenshot_manage_account_settings.gif["顯示「帳戶」下拉式清單�
 . 如果使用者尚未這麼做、請要求使用者前往 https://cloud.netapp.com["NetApp Cloud Central"^] 並註冊。
 . 從上而下 https://cloudmanager.netapp.com["Cloud Manager"^]，單擊* Account（帳戶）*下拉列表並單擊* Manage Account*（管理帳戶）。
 +
-image:screenshot_manage_account_settings.gif["顯示「帳戶」下拉式清單中可用的「管理帳戶設定」選項的快照。"]
+image:screenshot-manage-account-settings.png["顯示「帳戶」下拉式清單中可用的「管理帳戶設定」選項的快照。"]
 
 . 在「成員」索引標籤中、按一下「*關聯使用者*」。
 . 輸入使用者的電子郵件地址、然後為使用者選取角色：
@@ -81,7 +81,7 @@ image:screenshot_associate_user.gif["螢幕擷取畫面、顯示如何透過選�
 .步驟
 . 從 Cloud Manager 頂端、按一下 * Account* 下拉式清單、然後按一下 * Manage Account* 。
 +
-image:screenshot_manage_account_settings.gif["顯示「帳戶」下拉式清單中可用的「管理帳戶設定」選項的快照。"]
+image:screenshot-manage-account-settings.png["顯示「帳戶」下拉式清單中可用的「管理帳戶設定」選項的快照。"]
 
 . 在「成員」索引標籤中、按一下對應使用者列中的動作功能表。
 +
@@ -106,7 +106,7 @@ link:concept-netapp-accounts.html#users-workspaces-and-service-connectors["深�
 .步驟
 . 從 Cloud Manager 頂端、按一下 * Account* 下拉式清單、然後按一下 * Manage Account* 。
 +
-image:screenshot_manage_account_settings.gif["顯示「帳戶」下拉式清單中可用的「管理帳戶設定」選項的快照。"]
+image:screenshot-manage-account-settings.png["顯示「帳戶」下拉式清單中可用的「管理帳戶設定」選項的快照。"]
 
 . 按一下 * Connector* 。
 . 針對您要建立關聯的連接器、按一下 * 管理工作區 * 。
