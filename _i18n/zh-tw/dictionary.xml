@@ -2113,7 +2113,6 @@
   <block id="5c61dbbb22810fcf5149eb1192885607" category="cell">可將通知以電子郵件傳送給帳戶使用者和其他人</block>
   <block id="e92861fef775acb8c5a64f8d282a8b80" category="cell">無電子郵件功能</block>
   <block id="d6706ddca18dfba027152ceaeffb550e" category="section-title">使用通知中心監控活動</block>
-  <block id="18aff76a65beb281247b3066c1a37525" category="paragraph">通知會追蹤您在Cloud Manager中啟動的作業進度、以便您確認作業是否成功。您可透過這些工具來檢視目前登入工作階段期間所啟動的許多Cloud Manager作業狀態。</block>
   <block id="5cf9ecbcae765efe1cb17d1c802e39cb" category="paragraph">您可以按一下通知鈴聲（<block ref="df7c8a71ca3da4359e40e121f18f87b9" category="inline-image-macro-rx" type="image"></block>）。警示中的小球型罩顏色代表作用中的最高層級嚴重性通知。因此、如果您看到紅色的球型罩、就表示您應該查看重要通知。</block>
   <block id="6c836fac6db418cb1aa7dbc3dbd8ff62" category="inline-xref">設定電子郵件通知設定</block>
   <block id="411759a1626269084faceb1751fdaca6" category="paragraph">您也可以設定Cloud Manager以電子郵件傳送通知、即使您尚未登入系統、也能得知重要的系統活動。電子郵件可傳送給屬於您NetApp雲端帳戶一部分的任何Cloud Central使用者、或傳送給任何其他需要注意特定系統活動類型的收件者。請參閱 <block ref="2fb0285882e9333d924eb054161cd903" category="inline-xref-macro-rx"></block> 以下。</block>
@@ -2150,7 +2149,6 @@
   <block id="acd827f1422fd31386324c56e2be6d81" category="inline-image-macro">顯示如何新增電子郵件收件者以接收警示和通知的螢幕快照。</block>
   <block id="5e56842d0cfbf695522e945a01570eba" category="paragraph"><block ref="5e56842d0cfbf695522e945a01570eba" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b434da4c5ce39b5e4a95ec5159a66676" category="list-text">輸入姓名、電子郵件地址、然後選取收件者要接收的通知類型、然後按一下*「Add New Recipient*（新增收件者*）」。</block>
-  <block id="34cb1ceabae36f23fad53ac3e3680af5" category="list-text">從左側導覽功能表中、選取* Timeline *。</block>
   <block id="19d38e2a40bebb64998474cbec167167" category="list-text">將額外的AWS認證資料新增至現有的Connector</block>
   <block id="2d85cb7a34de23c6b7db0459f207a310" category="paragraph">將新的AWS認證資料新增至現有的Connector、可讓您Cloud Volumes ONTAP 使用相同的Connector在另一個AWS帳戶中部署。 <block ref="c25c39db29c727f1578fc8385e3c589b" category="inline-xref-macro-rx"></block>。</block>
   <block id="b43214d44180a6ca97389c1482285fbf" category="list-text">將AWS認證資料新增至Cloud Manager以建立Connector</block>
@@ -2328,4 +2326,7 @@
   <block id="1da5b30af8a0c5d1ce771dde6d9be98e" category="paragraph"><block ref="1da5b30af8a0c5d1ce771dde6d9be98e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0ce7c9606b5f3d67c288c6ffe90a846e" category="paragraph"><block ref="0ce7c9606b5f3d67c288c6ffe90a846e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="991b7c6e5c5e3b71cf64a28ea679cff0" category="paragraph"><block ref="8b6b603d70c42ac6b5c1db56412efc72" category="inline-link-rx"></block>。</block>
+  <block id="87d47630996394fbe848adac841d4925" category="paragraph">通知會追蹤您在Cloud Manager中啟動的作業進度、以便您確認作業是否成功。您可透過這些工具來檢視目前登入工作階段期間所啟動的許多Cloud Manager作業狀態。目前並非所有服務都會將資訊報告至通知中心。</block>
+  <block id="e8bcd4ad549fa51ff8495440daac2515" category="paragraph">*附註：*若連接器安裝在沒有網際網路存取的網站上、則不支援傳送電子郵件通知。</block>
+  <block id="5d85fadabc5fc8c195c36c4e3f0560e1" category="list-text">在Cloud Manager功能表列中、按一下*設定&gt;時間軸*。</block>
 </blocks>
