@@ -2323,14 +2323,6 @@
   <block id="222ddb2f355a49f64fb3858123f2b97b" category="open-title">標準區域</block>
   <block id="1411debdb32e6b128ca27ec92a708cbd" category="open-title">GovCloud（美國）地區</block>
   <block id="a8416eae2db8c97eb943559351fab358" category="open-title">C2S環境</block>
-  <block id="7aeec8e03839d4257ba5f4202385f180" category="paragraph">= AWS權限的使用方式</block>
-  <block id="47a02297a8a7a625b8d56a1bf4ed5dcd" category="paragraph">==應用程式範本標記</block>
-  <block id="30ed8b0e985eaba7a7073c132f8cb03b" category="paragraph">=雲端備份</block>
-  <block id="67d4a69ca3cbae45477957d43a887a02" category="paragraph">==雲端資料感測</block>
-  <block id="a30f1c854df5756a9cc0eacb77ef62ce" category="paragraph">=雲端分層</block>
-  <block id="d0acc8326b3b20bd03e68cce411bbe59" category="paragraph">== Cloud Volumes ONTAP 不一樣</block>
-  <block id="ae6217be8cef3f2bfa9e18fc14e3f6e5" category="paragraph">==全域檔案快取</block>
-  <block id="ef78c533302dd923d5ae17d103f26aae" category="paragraph">== Kubernetes</block>
   <block id="6686aeeff6eb0de250e6d134bb4b8cd5" category="list-text">透過複製及貼上的內容來建立原則 <block ref="9b22ee86ed2d831066d00816566458ca" category="inline-link-macro-rx"></block>。</block>
   <block id="f3a061f1a8165759dd31c8b1fe6bda72" category="list-text">從IAM主控台複製並貼上的內容、以建立原則 <block ref="9b22ee86ed2d831066d00816566458ca" category="inline-link-macro-rx"></block>。</block>
   <block id="3d35bba2e5ea6e739fb94736dc402017" category="inline-link">檢視FSXfor ONTAP Sfor Sf哪些 權限</block>
@@ -2392,4 +2384,6 @@
   <block id="ae81c7a36dd08cf53ecb511b4f9f0335" category="paragraph">您必須將此自訂角色套用至連接器VM的服務帳戶。 <block ref="1d7f634038d3d5655a7471210f5f8839" category="inline-link-macro-rx"></block>。</block>
   <block id="823b2e7894c2b52c1e9adc9ea10b9be5" category="section-title">如何使用Google Cloud權限</block>
   <block id="a4f605cd0aab29ee5fb50f28627cef5d" category="sidebar">權限摘要</block>
+  <block id="abc9b009fdeb5b04ca7bcd60cdae2434" category="section-title">AWS權限的使用方式</block>
+  <block id="c6705240238244043d7e0d39f6ce1db1" category="section-title">應用程式範本標記</block>
 </blocks>

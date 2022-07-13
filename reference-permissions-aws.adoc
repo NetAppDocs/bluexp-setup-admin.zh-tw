@@ -626,11 +626,16 @@ Cloud Manager在AWS中啟動Connector執行個體時、會將原則附加至執�
 }
 ----
 --
-= AWS權限的使用方式
+====
+
+
+== AWS權限的使用方式
 
 以下各節說明如何將權限用於每項NetApp雲端服務。如果您的企業原則規定只有在需要時才提供權限、此資訊就很有幫助。
 
-==應用程式範本標記
+
+
+=== 應用程式範本標記
 
 當您使用應用程式範本標記服務時、Connector會發出下列API要求來管理AWS資源上的標記：
 
@@ -644,7 +649,9 @@ Cloud Manager在AWS中啟動Connector執行個體時、會將原則附加至執�
 * 標記：取消標記資源
 
 
-=雲端備份
+
+
+=== 雲端備份
 
 Connector會提出下列API要求、以部署Cloud Backup的還原執行個體：
 
@@ -711,7 +718,9 @@ Connector會提出下列API要求、以管理Amazon S3中的備份：
 * 黏著劑：批字刪除分割區
 
 
-==雲端資料感測
+
+
+=== 雲端資料感測
 
 Connector會提出下列API要求來部署Cloud Data Sense執行個體：
 
@@ -761,7 +770,9 @@ Connector會提出下列API要求來部署Cloud Data Sense執行個體：
 * STS: Assume勞力
 
 
-=雲端分層
+
+
+=== 雲端分層
 
 連接器會在您使用雲端分層時、提出下列API要求、將資料分層至Amazon S3。
 
@@ -781,7 +792,9 @@ Connector會提出下列API要求來部署Cloud Data Sense執行個體：
 
 | EC2：取消註冊 | 是的 | 是的 
 |===
-== Cloud Volumes ONTAP 不一樣
+
+
+=== Cloud Volumes ONTAP
 
 Connector會提出下列API要求、要求在Cloud Volumes ONTAP AWS中部署及管理功能。
 
@@ -1050,7 +1063,9 @@ Connector會提出下列API要求、要求在Cloud Volumes ONTAP AWS中部署及
 
 | EC2：修改Volume | 否 | 是的 | 否 
 |===
-==全域檔案快取
+
+
+=== 全域檔案快取
 
 Connector會在部署期間提出下列API要求、以部署全域檔案快取執行個體：
 
@@ -1059,7 +1074,9 @@ Connector會在部署期間提出下列API要求、以部署全域檔案快取�
 * 雲端：清單堆疊
 
 
-== Kubernetes
+
+
+=== Kubernetes
 
 Connector會提出下列API要求、以探索及管理Amazon EKS叢集：
 
@@ -1068,5 +1085,3 @@ Connector會提出下列API要求、以探索及管理Amazon EKS叢集：
 * EKS：取消叢集
 * IAM：GetInstanceProfile
 
-
-====
