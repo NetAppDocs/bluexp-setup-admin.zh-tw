@@ -123,9 +123,3 @@ image:diagram_cloud_central_accounts_one.png["顯示包含兩個工作區的單�
 請注意、帳戶 2 包含兩個獨立的連接器。如果您的系統位於不同的地區、或是位於不同的雲端供應商、就可能發生這種情況。
 
 image:diagram_cloud_central_accounts_two.png["顯示兩個NetApp帳戶的圖表、每個帳戶各有多個工作區及其相關的Workspace Admins。"]
-
-
-
-== 最大Cloud Volumes ONTAP 的系統
-
-每個NetApp帳戶僅限Cloud Volumes ONTAP 使用最多數量的不重樣系統。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#max-number-of-systems["深入瞭解此限制"^]

@@ -1752,7 +1752,6 @@
   <block id="7fe2b3cad6e0fd3e01f58b23a9a48525" category="paragraph"><block ref="7fe2b3cad6e0fd3e01f58b23a9a48525" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3fc84828d29031ccb044fc851a791dd5" category="inline-link-macro">設定NetApp帳戶</block>
   <block id="72c3eeaa29779a60f2efe95a1c173302" category="paragraph">如需逐步指示、請參閱 <block ref="2e63be6a139b9c6424fb3c44b74add23" category="inline-link-macro-rx"></block>。</block>
-  <block id="6b9aff54334b24c64be5688e6f9c12cc" category="section-title">最大Cloud Volumes ONTAP 的系統</block>
   <block id="ff73074ccafb0bcfc1c49a09ceb6532f" category="section-title">帳戶設定</block>
   <block id="6f42c9f4b429467eb11ea5ae99b87c9d" category="paragraph">Cloud Manager中的「管理帳戶」小工具可讓客戶管理員管理NetApp帳戶。如果您剛建立帳戶、就會從頭開始。但如果您已經設定帳戶、您會看到 _ 全部 _ 與帳戶相關聯的使用者、工作區、連接器和訂閱。</block>
   <block id="e8d4079a6995ce39f10add4f26ab239b" category="paragraph">「總覽」頁面會顯示「帳戶名稱」和「帳戶ID」。註冊某些服務時、您可能需要提供您的帳戶ID。本頁也包含一些Cloud Manager組態選項。</block>
@@ -2096,7 +2095,6 @@
   <block id="fb8e25a66c3a27139d3ea3e1474c7db3" category="inline-image-macro">顯示Cloud Manager新左側導覽功能表的快照。</block>
   <block id="e37234425776295f1624526d17572b8e" category="list-text">您現在可以設定Cloud Manager以電子郵件傳送通知、即使您尚未登入系統、也能得知重要的系統活動。</block>
   <block id="2f439d7fd2d68628b2c40e59bc7ec352" category="inline-link-macro">深入瞭解監控帳戶運作的相關資訊</block>
-  <block id="8fe400bbcf74fee5f6ca96b5d06fd8a8" category="paragraph"><block ref="6207ce0a1413f0c60f2c0a13a1fde26f" category="inline-link-macro-rx"></block>。</block>
   <block id="0f9a1f2b52f5c8456ca5d25ab69eea52" category="list-text">Cloud Manager現在支援Azure Blob儲存設備和Google Cloud Storage做為工作環境、類似於Amazon S3支援。</block>
   <block id="5134e5a3a5a026f57f4938b2eaa07031" category="paragraph">在Azure或Google Cloud中安裝Connector之後、Cloud Manager現在會自動探索Azure訂閱中Azure Blob儲存設備的相關資訊、或是在安裝Connector的專案中探索Google Cloud Storage的相關資訊。Cloud Manager會將物件儲存設備顯示為工作環境、您可以開啟以檢視更多詳細資訊。</block>
   <block id="a2f44a550843ebb8ee7fe06e85e5d378" category="paragraph">以下是Azure Blob工作環境的範例：</block>
@@ -2327,8 +2325,7 @@
   <block id="b272876bb8d27e636bb70f2dce15cb34" category="list-text">EKS：清單叢集</block>
   <block id="457a1b6178515d282232753f808e8cf5" category="list-text">EKS：取消叢集</block>
   <block id="53ac904630fdbb4d62f208e001934c7c" category="list-text">IAM：GetInstanceProfile</block>
-  <block id="7acc5c4a78b2f3e43bbeb07b9c5f8108" category="inline-link">深入瞭解此限制</block>
-  <block id="b6eb1b17db480470497e94d3911d9e12" category="paragraph">每個NetApp帳戶僅限Cloud Volumes ONTAP 使用最多數量的不重樣系統。<block ref="ed7500cfb54e6cf775da8a8506d96f75" category="inline-link-rx"></block></block>
   <block id="1da5b30af8a0c5d1ce771dde6d9be98e" category="paragraph"><block ref="1da5b30af8a0c5d1ce771dde6d9be98e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0ce7c9606b5f3d67c288c6ffe90a846e" category="paragraph"><block ref="0ce7c9606b5f3d67c288c6ffe90a846e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="991b7c6e5c5e3b71cf64a28ea679cff0" category="paragraph"><block ref="8b6b603d70c42ac6b5c1db56412efc72" category="inline-link-rx"></block>。</block>
 </blocks>
