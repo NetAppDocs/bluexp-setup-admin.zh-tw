@@ -25,35 +25,198 @@ TIP: 當您建立第一個 Cloud Volumes ONTAP 運作環境時、如果您還沒
 
 
 
-== 設定權限
+== 設定部署Connector的權限
 
-在部署Connector之前、您必須先確保Google Cloud帳戶擁有正確的權限、並為Connector VM設定服務帳戶。
+在部署Connector之前、您必須確保Google Cloud帳戶擁有正確的權限。
 
 .步驟
-. 確認部署Connector的Google Cloud使用者具有中的權限 https://occm-sample-policies.s3.amazonaws.com/Setup_As_Service_3.7.3_GCP.yaml["Google Cloud的Connector部署原則"^]。
+. https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["建立自訂角色"^] 包括下列權限：
 +
-https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["您可以使用 Yaml 檔案建立自訂角色"^] 然後附加到使用者。您需要使用 gCloud 命令列來建立角色。
+[source, yaml]
+----
+title: Connector deployment policy
+description: Permissions for the user who deploys the Connector from Cloud Manager
+stage: GA
+includedPermissions:
+- compute.disks.create
+- compute.disks.get
+- compute.disks.list
+- compute.disks.setLabels
+- compute.disks.use
+- compute.firewalls.create
+- compute.firewalls.delete
+- compute.firewalls.get
+- compute.firewalls.list
+- compute.globalOperations.get
+- compute.images.get
+- compute.images.getFromFamily
+- compute.images.list
+- compute.images.useReadOnly
+- compute.instances.attachDisk
+- compute.instances.create
+- compute.instances.get
+- compute.instances.list
+- compute.instances.setDeletionProtection
+- compute.instances.setLabels
+- compute.instances.setMachineType
+- compute.instances.setMetadata
+- compute.instances.setTags
+- compute.instances.start
+- compute.instances.updateDisplayDevice
+- compute.machineTypes.get
+- compute.networks.get
+- compute.networks.list
+- compute.networks.updatePolicy
+- compute.projects.get
+- compute.regions.get
+- compute.regions.list
+- compute.subnetworks.get
+- compute.subnetworks.list
+- compute.zoneOperations.get
+- compute.zones.get
+- compute.zones.list
+- deploymentmanager.compositeTypes.get
+- deploymentmanager.compositeTypes.list
+- deploymentmanager.deployments.create
+- deploymentmanager.deployments.delete
+- deploymentmanager.deployments.get
+- deploymentmanager.deployments.list
+- deploymentmanager.manifests.get
+- deploymentmanager.manifests.list
+- deploymentmanager.operations.get
+- deploymentmanager.operations.list
+- deploymentmanager.resources.get
+- deploymentmanager.resources.list
+- deploymentmanager.typeProviders.get
+- deploymentmanager.typeProviders.list
+- deploymentmanager.types.get
+- deploymentmanager.types.list
+- resourcemanager.projects.get
+- compute.instances.setServiceAccount
+- iam.serviceAccounts.list
+----
+. 將自訂角色附加至將從Cloud Manager部署Connector的使用者。
 
-. 設定具有 Cloud Manager 所需權限的服務帳戶、以便在 Cloud Volumes ONTAP 專案中建立及管理各種系統。
+
+Google Cloud使用者現在擁有建立Connector所需的權限。
+
+
+
+== 設定Connector的服務帳戶
+
+需要有服務帳戶、才能讓Connector獲得管理Google Cloud資源所需的權限。建立此服務帳戶時、您會將其與Connector VM建立關聯。
+
+服務帳戶的權限與您在上一節中設定的權限不同。
+
+.步驟
+. https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["建立自訂角色"^] 包括下列權限：
 +
-建立此服務帳戶時、您會將其與Connector VM建立關聯。
+[source, yaml]
+----
+title: NetApp Cloud Manager
+description: Permissions for the service account associated with the Connector instance.
+stage: GA
+includedPermissions:
+- iam.serviceAccounts.actAs
+- compute.regionBackendServices.create
+- compute.regionBackendServices.get
+- compute.regionBackendServices.list
+- compute.networks.updatePolicy
+- compute.backendServices.create
+- compute.addresses.list
+- compute.disks.create
+- compute.disks.createSnapshot
+- compute.disks.delete
+- compute.disks.get
+- compute.disks.list
+- compute.disks.setLabels
+- compute.disks.use
+- compute.firewalls.create
+- compute.firewalls.delete
+- compute.firewalls.get
+- compute.firewalls.list
+- compute.globalOperations.get
+- compute.images.get
+- compute.images.getFromFamily
+- compute.images.list
+- compute.images.useReadOnly
+- compute.instances.addAccessConfig
+- compute.instances.attachDisk
+- compute.instances.create
+- compute.instances.delete
+- compute.instances.detachDisk
+- compute.instances.get
+- compute.instances.getSerialPortOutput
+- compute.instances.list
+- compute.instances.setDeletionProtection
+- compute.instances.setLabels
+- compute.instances.setMachineType
+- compute.instances.setMetadata
+- compute.instances.setTags
+- compute.instances.start
+- compute.instances.stop
+- compute.instances.updateDisplayDevice
+- compute.machineTypes.get
+- compute.networks.get
+- compute.networks.list
+- compute.projects.get
+- compute.regions.get
+- compute.regions.list
+- compute.snapshots.create
+- compute.snapshots.delete
+- compute.snapshots.get
+- compute.snapshots.list
+- compute.snapshots.setLabels
+- compute.subnetworks.get
+- compute.subnetworks.list
+- compute.subnetworks.use
+- compute.subnetworks.useExternalIp
+- compute.zoneOperations.get
+- compute.zones.get
+- compute.zones.list
+- compute.instances.setServiceAccount
+- deploymentmanager.compositeTypes.get
+- deploymentmanager.compositeTypes.list
+- deploymentmanager.deployments.create
+- deploymentmanager.deployments.delete
+- deploymentmanager.deployments.get
+- deploymentmanager.deployments.list
+- deploymentmanager.manifests.get
+- deploymentmanager.manifests.list
+- deploymentmanager.operations.get
+- deploymentmanager.operations.list
+- deploymentmanager.resources.get
+- deploymentmanager.resources.list
+- deploymentmanager.typeProviders.get
+- deploymentmanager.typeProviders.list
+- deploymentmanager.types.get
+- deploymentmanager.types.list
+- logging.logEntries.list
+- logging.privateLogEntries.list
+- resourcemanager.projects.get
+- storage.buckets.create
+- storage.buckets.delete
+- storage.buckets.get
+- storage.buckets.list
+- cloudkms.cryptoKeyVersions.useToEncrypt
+- cloudkms.cryptoKeys.get
+- cloudkms.cryptoKeys.list
+- cloudkms.keyRings.list
+- storage.buckets.update
+- iam.serviceAccounts.getIamPolicy
+- iam.serviceAccounts.list
+- storage.objects.get
+- storage.objects.list
+----
+. https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account["建立Google Cloud服務帳戶、並套用您剛建立的自訂角色"^]。
+. 如果您想要在 Cloud Volumes ONTAP 其他專案中部署 https://cloud.google.com/iam/docs/granting-changing-revoking-access#granting-console["將具有 Cloud Manager 角色的服務帳戶新增至該專案、以授予存取權"^]。您必須針對每個專案重複此步驟。
 
-+
-.. https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["在 GCP 中建立角色"^] 這包括在中定義的權限 https://occm-sample-policies.s3.amazonaws.com/Policy_for_Cloud_Manager_3.9.10_GCP.yaml["適用於Google Cloud的Cloud Manager原則"^]。同樣地、您需要使用 gCloud 命令列。
-+
-此 Y反 洗錢檔案所含的權限與步驟 1 中的權限不同。
 
-.. https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account["建立Google Cloud服務帳戶、並套用您剛建立的自訂角色"^]。
-.. 如果您想要在 Cloud Volumes ONTAP 其他專案中部署 https://cloud.google.com/iam/docs/granting-changing-revoking-access#granting-console["將具有 Cloud Manager 角色的服務帳戶新增至該專案、以授予存取權"^]。您必須針對每個專案重複此步驟。
+已設定Connector VM的服務帳戶。
 
 
 
-
-Google Cloud使用者現在擁有建立Connector所需的權限、並已設定Connector VM的服務帳戶。
-
-
-
-=== 共享VPC權限
+== 共享VPC權限
 
 如果您使用共享VPC將資源部署到服務專案、則需要下列權限。此表供參考、當IAM組態完成時、您的環境應反映權限表。
 
@@ -63,7 +226,7 @@ Google Cloud使用者現在擁有建立Connector所需的權限、並已設定Co
 
 
 | 用於部署Connector的Google帳戶 | 自訂 | 服務專案  a| 
-* https://occm-sample-policies.s3.amazonaws.com/Setup_As_Service_3.7.3_GCP.yaml["在此.yaml檔案中找到的權限"^]
+* link:task-creating-connectors-gcp.html#set-up-permissions-to-deploy-the-connector["本節所提供的權限"]
 
  a| 
 * compute.networkUser
@@ -72,7 +235,7 @@ Google Cloud使用者現在擁有建立Connector所需的權限、並已設定Co
 
 
 | 連接器服務帳戶 | 自訂 | 服務專案  a| 
-* https://occm-sample-policies.s3.amazonaws.com/Policy_for_Cloud_Manager_3.9.10_GCP.yaml["在此.yaml檔案中找到的權限"^]
+* link:task-creating-connectors-gcp.html#set-up-permissions-for-the-connector["本節所提供的權限"]
 
  a| 
 * compute.networkUser
@@ -137,7 +300,7 @@ Google Cloud使用者現在擁有建立Connector所需的權限、並已設定Co
 直接從Cloud Manager使用者介面或使用gCloud在Google Cloud中建立Connector。
 
 .您需要的是 #8217 ；需要的是什麼
-* 。 https://mysupport.netapp.com/site/info/cloud-manager-policies["必要權限"^] 如本頁第一節所述、適用於您的Google Cloud帳戶。
+* 您的Google Cloud帳戶所需的權限、如本頁第一節所述。
 * Google Cloud 專案。
 * 擁有建立及管理Cloud Volumes ONTAP 功能所需權限的服務帳戶、如本頁第一節所述。
 * 您所選的 Google Cloud 區域中的 VPC 和子網路。

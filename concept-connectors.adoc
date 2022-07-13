@@ -134,7 +134,10 @@ Cloud Manager會在需要建立連接器以完成動作時提示您建立連接�
 
 從 Cloud Manager 建立 Connector 的使用者需要特定權限、才能在您選擇的雲端供應商中部署執行個體。Cloud Manager 會在您建立 Connector 時提醒您權限要求。
 
-https://mysupport.netapp.com/site/info/cloud-manager-policies["檢視每個雲端供應商的原則"^]。
+* link:task-creating-connectors-aws.html["檢視所需的AWS權限"]
+* link:task-creating-connectors-azure.html["檢視必要的Azure權限"]
+* link:task-creating-connectors-gcp.html["檢視必要的Google Cloud權限"]
+
 
 
 
@@ -146,7 +149,10 @@ Connector 需要特定的雲端供應商權限、才能代表您執行作業。�
 
 如果您是從 AWS Marketplace 、 Azure Marketplace 或手動安裝軟體來建立 Connector 、則必須確保擁有適當的權限。
 
-https://mysupport.netapp.com/site/info/cloud-manager-policies["檢視每個雲端供應商的原則"^]
+* link:reference-permissions-aws.html["瞭解Connector如何使用AWS權限"]
+* link:reference-permissions-azure.html["瞭解Connector如何使用Azure權限"]
+* link:reference-permissions-gcp.html["瞭解Connector如何使用Google Cloud權限"]
+
 
 
 

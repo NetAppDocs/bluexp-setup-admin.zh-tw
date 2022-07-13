@@ -115,4 +115,4 @@ image:screenshot-onprem-darksite-details.png["系統詳細資料頁面的快照�
 * https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html["使用ONTAP Cloud Data SENSE掃描內部的不全區資料"^]
 
 
-當新版Connector軟體推出時、這些軟體將發佈至NetApp支援網站。 link:task-managing-connectors.html["瞭解如何升級Connector"]。
+當新版Connector軟體推出時、這些軟體將發佈至NetApp支援網站。 link:task-managing-connectors.html#upgrade-the-connector-on-prem-without-internet-access["瞭解如何升級Connector"]。

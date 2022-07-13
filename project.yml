@@ -102,6 +102,8 @@ sidebar:
       url: "/task-adding-nss-accounts.html"
   - title: 參考資料
     entries:
+    - title: 權限摘要
+      url: "/reference-permissions.html"
     - title: Connector的AWS權限
       url: "/reference-permissions-aws.html"
     - title: 連接器的Azure權限

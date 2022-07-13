@@ -4,7 +4,7 @@ permalink: reference-permissions-gcp.html
 keywords: permissions, gcp, gcp permissions 
 summary: Cloud Manager 需要權限、才能在雲端供應商中執行動作。這些權限包含在 NetApp 提供的原則中。您可能想要瞭解 Cloud Manager 使用這些權限的功能。 
 ---
-= Google Cloud中Connector的必要權限
+= Connector的Google Cloud權限
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,9 +14,118 @@ summary: Cloud Manager 需要權限、才能在雲端供應商中執行動作。
 
 
 [role="lead"]
-Cloud Manager 需要權限、才能在雲端供應商中執行動作。這些權限包含在中 https://mysupport.netapp.com/site/info/cloud-manager-policies["NetApp 提供的原則"^]。您可能想要瞭解 Cloud Manager 使用這些權限的功能。
+Cloud Manager需要權限才能在Google Cloud中執行動作。這些權限包含在NetApp提供的自訂角色中。您可能想要瞭解 Cloud Manager 使用這些權限的功能。
 
-適用於 GCP 的 Cloud Manager 原則包含 Cloud Manager 部署和管理 Cloud Volumes ONTAP 功能所需的權限。
+
+
+== 服務帳戶權限
+
+下方顯示的自訂角色提供Connector在Google Cloud網路中管理資源和程序所需的權限。
+
+您必須將此自訂角色套用至連接器VM的服務帳戶。 link:task-creating-connectors-gcp.html["檢視逐步指示"]。
+
+您也必須確保在後續版本中新增權限時、該角色是最新的。
+
+[source, yaml]
+----
+title: NetApp Cloud Manager
+description: Permissions for the service account associated with the Connector instance.
+stage: GA
+includedPermissions:
+- iam.serviceAccounts.actAs
+- compute.regionBackendServices.create
+- compute.regionBackendServices.get
+- compute.regionBackendServices.list
+- compute.networks.updatePolicy
+- compute.backendServices.create
+- compute.addresses.list
+- compute.disks.create
+- compute.disks.createSnapshot
+- compute.disks.delete
+- compute.disks.get
+- compute.disks.list
+- compute.disks.setLabels
+- compute.disks.use
+- compute.firewalls.create
+- compute.firewalls.delete
+- compute.firewalls.get
+- compute.firewalls.list
+- compute.globalOperations.get
+- compute.images.get
+- compute.images.getFromFamily
+- compute.images.list
+- compute.images.useReadOnly
+- compute.instances.addAccessConfig
+- compute.instances.attachDisk
+- compute.instances.create
+- compute.instances.delete
+- compute.instances.detachDisk
+- compute.instances.get
+- compute.instances.getSerialPortOutput
+- compute.instances.list
+- compute.instances.setDeletionProtection
+- compute.instances.setLabels
+- compute.instances.setMachineType
+- compute.instances.setMetadata
+- compute.instances.setTags
+- compute.instances.start
+- compute.instances.stop
+- compute.instances.updateDisplayDevice
+- compute.machineTypes.get
+- compute.networks.get
+- compute.networks.list
+- compute.projects.get
+- compute.regions.get
+- compute.regions.list
+- compute.snapshots.create
+- compute.snapshots.delete
+- compute.snapshots.get
+- compute.snapshots.list
+- compute.snapshots.setLabels
+- compute.subnetworks.get
+- compute.subnetworks.list
+- compute.subnetworks.use
+- compute.subnetworks.useExternalIp
+- compute.zoneOperations.get
+- compute.zones.get
+- compute.zones.list
+- compute.instances.setServiceAccount
+- deploymentmanager.compositeTypes.get
+- deploymentmanager.compositeTypes.list
+- deploymentmanager.deployments.create
+- deploymentmanager.deployments.delete
+- deploymentmanager.deployments.get
+- deploymentmanager.deployments.list
+- deploymentmanager.manifests.get
+- deploymentmanager.manifests.list
+- deploymentmanager.operations.get
+- deploymentmanager.operations.list
+- deploymentmanager.resources.get
+- deploymentmanager.resources.list
+- deploymentmanager.typeProviders.get
+- deploymentmanager.typeProviders.list
+- deploymentmanager.types.get
+- deploymentmanager.types.list
+- logging.logEntries.list
+- logging.privateLogEntries.list
+- resourcemanager.projects.get
+- storage.buckets.create
+- storage.buckets.delete
+- storage.buckets.get
+- storage.buckets.list
+- cloudkms.cryptoKeyVersions.useToEncrypt
+- cloudkms.cryptoKeys.get
+- cloudkms.cryptoKeys.list
+- cloudkms.keyRings.list
+- storage.buckets.update
+- iam.serviceAccounts.getIamPolicy
+- iam.serviceAccounts.list
+- storage.objects.get
+- storage.objects.list
+----
+
+
+== 如何使用Google Cloud權限
 
 [cols="50,50"]
 |===

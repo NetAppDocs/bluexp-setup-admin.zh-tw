@@ -82,7 +82,7 @@ NOTE: 當您從 Cloud Manager 部署 Connector 時、 Cloud Manager 會自動為
 +
 ** 在*信任的實體類型*下、選取* AWS帳戶*。
 ** 選取*其他AWS帳戶*、然後輸入連接器執行個體所在帳戶的ID。
-** 使用Cloud Manager IAM原則建立原則、可從取得 https://mysupport.netapp.com/site/info/cloud-manager-policies["Cloud Manager 原則頁面"^]。
+** 透過複製及貼上的內容來建立原則 link:reference-permissions-aws.html["連接器的IAM原則"]。
 
 
 . 複製IAM角色的角色ARN、以便稍後將其貼到Cloud Manager中。
@@ -97,8 +97,7 @@ NOTE: 當您從 Cloud Manager 部署 Connector 時、 Cloud Manager 會自動為
 如果您想要為 IAM 使用者提供 AWS 金鑰給 Cloud Manager 、則必須將必要的權限授予該使用者。Cloud Manager IAM 原則定義了允許 Cloud Manager 使用的 AWS 動作和資源。
 
 .步驟
-. 請從下載 Cloud Manager IAM 原則 https://mysupport.netapp.com/site/info/cloud-manager-policies["Cloud Manager 原則頁面"^]。
-. 從 IAM 主控台複製並貼上 Cloud Manager IAM 原則中的文字、以建立您自己的原則。
+. 從IAM主控台複製並貼上的內容、以建立原則 link:reference-permissions-aws.html["連接器的IAM原則"]。
 +
 https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html["AWS 文件：建立 IAM 原則"^]
 
@@ -166,7 +165,9 @@ image:screenshot_accounts_switch_aws.png["在詳細資料 & 認證頁面中按�
 ** 選取*其他AWS帳戶*、然後輸入Cloud Manager SaaS的ID：952013314444.
 ** 建立包含建立Connector所需權限的原則。
 +
-從檢視Connector部署原則 https://mysupport.netapp.com/site/info/cloud-manager-policies["Cloud Manager 原則頁面"^]
+*** https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["檢視FSXfor ONTAP Sfor Sf哪些 權限"^]
+*** link:task-creating-connectors-aws.html#create-an-iam-policy["檢視Connector部署原則"]
+
 
 
 

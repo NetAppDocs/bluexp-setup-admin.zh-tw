@@ -40,7 +40,7 @@ Cloud Manager 可讓您選擇要部署 Cloud Volumes ONTAP 的 Azure 認證和 A
 *** 選取 * Cloud Manager operator* 角色。
 +
 
-NOTE: Cloud Manager 運算子是中提供的預設名稱 https://mysupport.netapp.com/site/info/cloud-manager-policies["Cloud Manager 原則"]。如果您為角色選擇不同的名稱、請改為選取該名稱。
+NOTE: Cloud Manager運算子是Connector原則中提供的預設名稱。如果您為角色選擇不同的名稱、請改為選取該名稱。
 
 *** 指派 * 虛擬機器 * 的存取權。
 *** 選取建立 Connector 虛擬機器的訂閱。
@@ -120,12 +120,10 @@ image:screenshot_azure_ad.gif["顯示 Microsoft Azure 中的 Active Directory �
 您必須將服務委託人繫結至一或多個 Azure 訂閱、並指派自訂的「 OnCommand 支援對象」角色給該委託人、以便 Cloud Manager 在 Azure 中擁有權限。
 
 .步驟
-. 下載 https://mysupport.netapp.com/site/info/cloud-manager-policies["Cloud Manager Azure 原則"^]。
+. 建立自訂角色：
 +
-
-TIP: 在連結上按一下滑鼠右鍵、然後按一下「 * 另存連結為 ... * 」下載檔案。
-
-. 將 Azure 訂閱 ID 新增至可指派的範圍、以修改 Json 檔案。
+.. 複製的內容 link:reference-permissions-azure.html["Connector的自訂角色權限"] 並將它們儲存在Json檔案中。
+.. 將 Azure 訂閱 ID 新增至可指派的範圍、以修改 Json 檔案。
 +
 您應該為使用者建立 Cloud Volumes ONTAP 的各個 Azure 訂閱新增 ID 。
 
@@ -140,26 +138,28 @@ TIP: 在連結上按一下滑鼠右鍵、然後按一下「 * 另存連結為 ..
 "/subscriptions/54b91999-b3e6-4599-908e-416e0zzzzzzz",
 "/subscriptions/398e471c-3b42-4ae7-9b59-ce5bbzzzzzzz"
 ----
-. 使用 Json 檔案在 Azure 中建立自訂角色。
+.. 使用 Json 檔案在 Azure 中建立自訂角色。
 +
 下列步驟說明如何在Azure Cloud Shell中使用Bash建立角色。
 
 +
-.. 開始 https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Azure Cloud Shell"^] 並選擇Bash環境。
-.. 上傳Json檔案。
+*** 開始 https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Azure Cloud Shell"^] 並選擇Bash環境。
+*** 上傳Json檔案。
 +
 image:screenshot_azure_shell_upload.png["Azure Cloud Shell的快照、您可在其中選擇上傳檔案的選項。"]
 
-.. 輸入下列Azure CLI命令：
+*** 輸入下列Azure CLI命令：
 +
 [source, azurecli]
 ----
-az role definition create --role-definition Policy_for_cloud_Manager_Azure_3.9.8.json
+az role definition create --role-definition Policy_for_Setup_As_Service_Azure.json
 ----
-
-
 +
-您現在應該擁有名為 _Cloud Manager operator_ 的自訂角色。
+您現在應該擁有名為 Cloud Manager 的自訂角色、可以指派給 Connector 虛擬機器。
+
+
+
+
 
 . 將應用程式指派給角色：
 +
