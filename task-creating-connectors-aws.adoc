@@ -221,3 +221,5 @@ NOTE: 除非您啟動連接器、否則不會有傳入流量進入連接器。HT
 
 
 您需要將 Connector 與工作空間建立關聯、讓 Workspace Admins 可以使用這些 Connectors 來建立 Cloud Volumes ONTAP 一套系統。如果您只有帳戶管理員、則不需要將 Connector 與工作區建立關聯。根據預設、 Account Admins 可存取 Cloud Manager 中的所有工作區。 link:task-setting-up-netapp-accounts.html#associating-connectors-with-workspaces["深入瞭解"]。
+
+如果您在建立Connector的同一個AWS帳戶中有Amazon S3儲存區、則會在畫版上自動顯示Amazon S3工作環境。 link:task-viewing-amazon-s3.html["深入瞭解如何運用此工作環境"]。

@@ -1,0 +1,41 @@
+---
+sidebar: sidebar 
+permalink: task-viewing-gcp-storage.html 
+keywords: google cloud storage buckets, google cloud storage, google cloud storage working environment 
+summary: 在Google Cloud中安裝Connector之後、Cloud Manager可以自動探索有關Google Cloud儲存區的資訊、這些儲存區位於安裝Connector的Google帳戶中。此時會將Google Cloud Storage工作環境新增至CanvasTM、以便您檢視此資訊。 
+---
+= 檢視您的Google Cloud Storage儲存桶
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+在Google Cloud中安裝Connector之後、Cloud Manager可以自動探索Google Cloud Storage儲存桶的相關資訊、這些儲存桶位於安裝Connector的Google帳戶中。此時會將Google Cloud Storage工作環境新增至CanvasTM、以便您檢視此資訊。
+
+您可以查看Google Cloud Storage儲存桶的詳細資料、包括位置、存取狀態、儲存設備類別、總容量和已用容量等。這些儲存庫可做為雲端備份、雲端分層或Cloud Sync 還原作業的目的地。
+
+.步驟
+. link:task-creating-connectors-gcp.html["安裝連接器"] 在您想要檢視Google Cloud Storage儲存桶的Google帳戶中。
++
+不久之後、您應該會自動看到Google Cloud Storage工作環境。
+
++
+image:screenshot-gcp-cloud-storage-we.png["Google Cloud Storage工作環境的快照。"]
+
+. 按一下工作環境、然後從右窗格中選取一個動作。
++
+image:screenshot-gcp-cloud-storage-actions.png["在您選取Google Cloud Storage工作環境之後、會顯示「行動」窗格的快照。窗格會顯示使用同步服務的總儲存格數和動作。"]
+
+. 按一下*同步資料*、即可將資料同步至Google Cloud Storage儲存桶或從中同步。
++
+如需詳細資料、請參閱 https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["關於此服務的總覽Cloud Sync"^]。
+
+. 按一下*輸入工作環境*、即可檢視Google帳戶中的庫存箱詳細資料。
++
+image:screenshot-gcp-cloud-storage-details.png["顯示Google Cloud Storage工作環境詳細資料的快照：儲存區總數、容量和位置、然後顯示每個儲存區詳細資料的表格。"]
+
+

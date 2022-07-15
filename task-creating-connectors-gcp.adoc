@@ -436,3 +436,5 @@ image:screenshot_set_up_cloud_manager.gif["顯示「設定連接器」畫面的�
 --
 ====
 現在已安裝Connector、並使用您的NetApp帳戶進行設定。當您建立新的工作環境時、 Cloud Manager 會自動使用此 Connector 。但如果您有多個連接器、就需要 link:task-managing-connectors.html["在兩者之間切換"]。
+
+如果您在建立Connector的同一個Google Cloud帳戶中有Google Cloud Storage儲存桶、您會在畫版上看到Google Cloud Storage工作環境自動出現。 link:task-viewing-gcp-storage.html["深入瞭解如何運用此工作環境"]。
