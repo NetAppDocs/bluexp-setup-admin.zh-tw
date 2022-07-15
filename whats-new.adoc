@@ -54,7 +54,7 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operatio
 以下是Azure Blob工作環境的範例：
 
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-azure-blob.png["這是一個快照、顯示Azure Blob工作環境、您可以在其中檢視高層級的總覽、然後查看儲存帳戶的詳細資訊。"]
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-azure-blob-details.png["這是一個快照、顯示Azure Blob工作環境、您可以在其中檢視高層級的總覽、然後查看儲存帳戶的詳細資訊。"]
 
 * 我們重新設計Amazon S3工作環境的資源頁面、提供更詳細的S3儲存區資訊、例如容量、加密詳細資料等。
 * 下列Google Cloud區域現在支援Connector：
