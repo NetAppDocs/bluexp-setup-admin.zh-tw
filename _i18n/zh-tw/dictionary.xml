@@ -2423,4 +2423,11 @@
   <block id="e11597621f115e17031710501eefedbc" category="sidebar">檢視您的Amazon S3儲存庫</block>
   <block id="bce447551b8153911559a7a705721ffe" category="sidebar">檢視您的Azure Blob帳戶</block>
   <block id="82f74539a8232efa9fe9d44fbb820377" category="sidebar">檢視您的Google Cloud Storage儲存桶</block>
+  <block id="a334cff76a53c8f9b93a01e24c56c9e5" category="section-title">2022年7月15日</block>
+  <block id="fd07056b3157389b873051e9d2dd6d40" category="section-title">原則變更</block>
+  <block id="4c2e66937d2d8ba8680502b29c20f843" category="paragraph">我們在文件中直接新增Cloud Manager原則、以更新文件內容。這表示您現在可以在Cloud Volumes ONTAP 說明如何設定的步驟旁、檢視連接器和右側的必要權限。這些原則先前可從NetApp支援網站的頁面存取。</block>
+  <block id="28f37fc0eb4fe20ff92020d4d8d46b8d" category="inline-link-macro">以下範例顯示用來建立連接器的AWS IAM角色權限</block>
+  <block id="449d304f6ee19f4cd91497b67641d687" category="paragraph"><block ref="2381483aa809d20dc8ed09c651a1b090" category="inline-link-macro-rx"></block>。</block>
+  <block id="49056d93dd3cd3fc9129ebadcf6877e0" category="inline-link-macro">檢視Cloud Manager的權限摘要</block>
+  <block id="289c267aad7151f388f9cb33c2dd25ca" category="paragraph">我們也建立了一個頁面、提供每個原則的連結。 <block ref="95fc2556330780df6dd239853ed18808" category="inline-link-macro-rx"></block>。</block>
 </blocks>
