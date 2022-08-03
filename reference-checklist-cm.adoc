@@ -75,7 +75,7 @@ AWS 服務（ amazonaws.com):
 
 |===
 --
-連接器的傳出網路:: 登入Cloud Manager之後、帳戶管理員必須在雲端供應商或內部部署網路中部署_Connector_。Connector 可讓 Cloud Manager 管理公有雲環境中的資源與程序。連接器不需要Azure NetApp Files 用在功能不全的地方、Cloud Volumes Service 但Cloud Sync Cloud Manager中的所有其他服務和功能都需要連接器。 link:concept-connectors.html["深入瞭解連接器及其運作方式"]。
+連接器的傳出網路:: 登入Cloud Manager之後、Cloud Manager帳戶管理員必須在雲端供應商或內部部署網路中部署_Connector_。Connector 可讓 Cloud Manager 管理公有雲環境中的資源與程序。連接器不需要Azure NetApp Files 用在功能不全的地方、Cloud Volumes Service 但Cloud Sync Cloud Manager中的所有其他服務和功能都需要連接器。 link:concept-connectors.html["深入瞭解連接器及其運作方式"]。
 +
 --
 * 您部署Connector的網路位置必須具有傳出網際網路連線。

@@ -14,9 +14,14 @@ summary: 如果您的企業原則要求您使用Proxy伺服器來進行所有的
 
 
 [role="lead"]
-如果您的企業原則要求您使用Proxy伺服器來進行所有的HTTP通訊至網際網路、則必須設定連接器以使用該HTTP Proxy伺服器。Proxy 伺服器可以位於雲端或網路中。
+如果您的企業原則要求您使用Proxy伺服器來進行所有的HTTP通訊至網際網路、則必須將連接器設定為使用HTTP Proxy伺服器。Proxy 伺服器可以位於雲端或網路中。
 
-Cloud Manager不支援使用連接器的HTTPS Proxy。
+
+NOTE: Cloud Manager不支援使用連接器的HTTPS Proxy。
+
+若將連接器設定為使用HTTP Proxy伺服器、則當公用IP位址或NAT閘道無法使用時、即可提供傳出網際網路存取。此Proxy伺服器僅提供連接器與傳出連線。它不提供Cloud Volumes ONTAP 任何連接功能給不適用的系統。
+
+如果Cloud Volumes ONTAP 無法透過外部網際網路連線來傳送AutoSupport 各種消息、Cloud Manager會自動將Cloud Volumes ONTAP 這些系統設定為使用連接器隨附的Proxy伺服器。 link:reference-networking-cloud-manager.html#proxy-server-for-autosupport-messages["深入瞭解如何使用Proxy伺服器來傳送AutoSupport 功能不實的訊息"]。
 
 
 
@@ -56,8 +61,6 @@ NOTE: Cloud Manager 不支援包含 @ 字元的密碼。
 
 
 
-
-指定 Proxy 伺服器之後、系統 Cloud Volumes ONTAP 會自動設定新的更新功能、讓您在傳送 AutoSupport 更新訊息時使用 Proxy 伺服器。如果您在使用者建立 Cloud Volumes ONTAP 完整套系統之前未指定 Proxy 伺服器、則他們必須使用 System Manager 在 AutoSupport 各個系統的「更新」選項中手動設定 Proxy 伺服器。
 
 
 

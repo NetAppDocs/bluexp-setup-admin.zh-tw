@@ -86,7 +86,7 @@ https://cloud.netapp.com["NetApp Cloud Central"^] 提供集中位置以供存取
 
 === 連接器
 
-在大多數情況下、帳戶管理員需要在雲端或內部部署網路中部署 _Connector_ 。Connector 可讓 Cloud Manager 管理公有雲環境中的資源與程序。
+在大多數情況下、Cloud Manager帳戶管理員需要在雲端或內部部署網路中部署_Connector_。Connector 可讓 Cloud Manager 管理公有雲環境中的資源與程序。
 
 連接器應隨時保持執行狀態。這對於您持續啟用的服務健全狀況和營運而言十分重要。
 

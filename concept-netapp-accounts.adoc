@@ -22,7 +22,7 @@ NetApp帳戶_提供多租戶共享、讓您從Cloud Manager內部、在隔離的
 
 image:screenshot_account_selection.gif["Cloud Manager設定精靈的快照、會提示您輸入要在其中建立Cloud Manager的NetApp帳戶。"]
 
-接著、帳戶管理員可以管理使用者（成員）、工作區、連接器及訂閱、藉此修改此帳戶的設定：
+Cloud Manager帳戶管理員接著可以管理使用者（成員）、工作區、連接器及訂閱、藉此修改此帳戶的設定：
 
 image:screenshot_account_settings.gif["顯示「管理帳戶」小工具的快照、您可從中管理使用者、工作區和連接器。"]
 

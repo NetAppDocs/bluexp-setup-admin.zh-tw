@@ -18,6 +18,30 @@ summary: 瞭解Cloud Manager管理功能的新功能、包括NetApp帳戶、連�
 
 
 
+== 2022年7月31日
+
+
+
+=== 連接器3.9.21
+
+* 我們推出新方法、探索您尚未在Cloud Manager中管理的現有雲端資源。
++
+在畫版上、「*我的商機*」索引標籤提供集中位置、可讓您探索現有資源、並將這些資源新增至Cloud Manager、以便在混合式多雲端上提供一致的資料服務與作業。
+
++
+在此初始版本中、「我的商機」可讓您在ONTAP AWS帳戶中探索現有的FSX for Solidffile系統。
+
++
+https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#discover-using-my-opportunities["瞭解如何利用ONTAP My Opportunity探索FSXfor Sfor"^]
+
+* 此版本的Connector也包含Cloud Volumes ONTAP 了一些功能強化功能。
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#31-july-2022["深入瞭Cloud Volumes ONTAP 解功能強化功能"^]
+
+
+
+
+
 == 2022年7月15日
 
 

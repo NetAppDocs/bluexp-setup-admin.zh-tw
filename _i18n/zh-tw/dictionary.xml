@@ -54,7 +54,6 @@
   <block id="bdaeab98be7ea04f74f8e3ab24e46ace" category="paragraph">無論是哪一種情況、請確保安全群組規則僅允許從授權的IP或子網路存取、以確保網路存取安全。</block>
   <block id="69ff128f810d7736dba17f0dc54a437f" category="list-text">連接器的傳出網路</block>
   <block id="aad0acfa5f3eeed54fc96b5bafd12ca7" category="inline-link-macro">深入瞭解連接器及其運作方式</block>
-  <block id="617982aec051134e2f885a80f6a78496" category="list-text">登入Cloud Manager之後、帳戶管理員必須在雲端供應商或內部部署網路中部署_Connector_。Connector 可讓 Cloud Manager 管理公有雲環境中的資源與程序。連接器不需要Azure NetApp Files 用在功能不全的地方、Cloud Volumes Service 但Cloud Sync Cloud Manager中的所有其他服務和功能都需要連接器。 <block ref="fc0525c57d574c03610221b6665bff18" category="inline-link-macro-rx"></block>。</block>
   <block id="9827c1dc4f901b9ac9340f0034c5a996" category="list-text">您部署Connector的網路位置必須具有傳出網際網路連線。</block>
   <block id="ffcad347e7fbe5448bc3fabe48be2db8" category="paragraph">連接器需要存取傳出網際網路、才能連絡下列端點、以便管理公有雲環境中的資源和程序。</block>
   <block id="8963387394e2ee3e2a5a9ba160566a58" category="cell">\https://support.netapp.com</block>
@@ -189,7 +188,6 @@
   <block id="3d069ceba6ecf8b2c1c3def00d512e45" category="list-text">如果伺服器需要基本驗證、請指定使用者名稱和密碼</block>
   <block id="4cc186df234138a57b2e8c5d8e5f7f8d" category="list-text">按一下「 * 儲存 * 」。</block>
   <block id="560f8b1720391a9b9211056825d81c34" category="admonition">Cloud Manager 不支援包含 @ 字元的密碼。</block>
-  <block id="a864c2ef2889efb2c1cef4e7a61e317c" category="paragraph">指定 Proxy 伺服器之後、系統 Cloud Volumes ONTAP 會自動設定新的更新功能、讓您在傳送 AutoSupport 更新訊息時使用 Proxy 伺服器。如果您在使用者建立 Cloud Volumes ONTAP 完整套系統之前未指定 Proxy 伺服器、則他們必須使用 System Manager 在 AutoSupport 各個系統的「更新」選項中手動設定 Proxy 伺服器。</block>
   <block id="54734e5bba3b83b2757e43d1ff24b2c4" category="section-title">啟用直接API流量</block>
   <block id="f3e5ee27dee8d530004192ac1d6e4a06" category="paragraph">如果您已設定Proxy伺服器、則可直接將API呼叫傳送至Cloud Manager、而無需透過Proxy。此選項受AWS、Azure或Google Cloud中執行的Connectors支援。</block>
   <block id="a10c3460c01965af15b02ac3cd407880" category="list-text">在* General *下、按一下* Support Direct API Traffic *。</block>
@@ -738,10 +736,8 @@
   <block id="89e460c9a52ba6b696ff1bf3de604ff8" category="list-text">開啟網頁瀏覽器並前往<block ref="ed21e31bd71ab546f26978ff562b5c5d" category="inline-link-rx"></block>。</block>
   <block id="7e3c9594a3f6833ecddbf1cbe150528c" category="inline-image-macro">Cloud Central 的登入畫面。</block>
   <block id="1c6b5d54a9051a8a77fa6a66f0a8cc9b" category="paragraph">您現在已經登入、可以開始使用Cloud Manager來管理混合式多雲端基礎架構。</block>
-  <block id="03323567c630b264b4c89ec222d86d88" category="summary">客戶管理員必須先部署 Connector 、才能使用大多數 Cloud Manager 功能。Connector 可讓 Cloud Manager 管理公有雲環境中的資源與程序。</block>
   <block id="ace843a9a86d3677aa70c0e5dd1d64b5" category="doc">從Cloud Manager在Google Cloud中建立Connector</block>
   <block id="d8598e788f4cdbbc8716c5468d4b8cea" category="inline-link-macro">瞭解何時需要連接器</block>
-  <block id="49dc29bc56279a820af0d347c1b82bb9" category="paragraph">客戶管理員必須先部署 _Connector_ 、才能使用大多數 Cloud Manager 功能。 <block ref="39840e1bb98f6582f1bf4e505d666ea1" category="inline-link-macro-rx"></block>。Connector 可讓 Cloud Manager 管理公有雲環境中的資源與程序。</block>
   <block id="64eb2a190db67a4e0dae6cdf01667439" category="paragraph">這些步驟必須由具有「帳戶管理」角色的使用者完成。工作區管理員無法建立 Connector 。</block>
   <block id="ae3a5ebb3239a3ff5e98c880652bab45" category="admonition">當您建立第一個 Cloud Volumes ONTAP 運作環境時、如果您還沒有 Cloud Manager 、 Cloud Manager 會提示您建立 Connector 。</block>
   <block id="436551d909ff1add0114d9105eddf95f" category="section-title">共享VPC權限</block>
@@ -1012,7 +1008,6 @@
   <block id="ac252743de820aac9183d9f76d4bed67" category="section-title">NetApp帳戶</block>
   <block id="0455fa6b5d0d257994fb2b5b4d23a62f" category="paragraph">首次登入Cloud Manager時、系統會提示您建立_NetApp帳戶_。此帳戶提供多租戶共享、可讓您在隔離的 _stap空間 _ 中組織使用者和資源。</block>
   <block id="fe4a785cf549e843e958f443c4baf0fe" category="section-title">連接器</block>
-  <block id="199551a545dccacd58cda6ddf3c48b21" category="paragraph">在大多數情況下、帳戶管理員需要在雲端或內部部署網路中部署 _Connector_ 。Connector 可讓 Cloud Manager 管理公有雲環境中的資源與程序。</block>
   <block id="e3b183b81588a53a9977e2f408f637ca" category="paragraph">連接器應隨時保持執行狀態。這對於您持續啟用的服務健全狀況和營運而言十分重要。</block>
   <block id="249345af661bafcf4f8bd3a0b9d6e949" category="inline-link-macro">深入瞭解何時需要連接器及其運作方式</block>
   <block id="5becfd4bbec3e5daaed9dbc85669ff84" category="paragraph"><block ref="850c1601f372329538aba5fe3f86430c" category="inline-link-macro-rx"></block>。</block>
@@ -1049,7 +1044,6 @@
   <block id="e81639b3c138e7deea81d6ea285642c3" category="cell">建立並管理 Cloud Volumes ONTAP 目標子網路中的網路介面以供其使用。</block>
   <block id="b5441eaf94d0d5d0c26bd9ea4151ec50" category="summary">在大多數情況下、您需要在雲端或內部部署網路中部署 Connector 。Connector 可讓 Cloud Manager 管理公有雲環境中的資源與程序。</block>
   <block id="e6e80588e9fe7cf89218fea44300f7ca" category="doc">深入瞭解連接器</block>
-  <block id="7db11db3233c991a19efc9abb64ac347" category="paragraph">在大多數情況下、帳戶管理員需要在雲端或內部部署網路中部署 _Connector_ 。Connector是Cloud Manager日常使用的重要元件。Connector可讓Cloud Manager管理公有雲環境中的資源與程序。</block>
   <block id="098ba24e143dd197f509e41083f0103e" category="section-title">需要連接器時</block>
   <block id="9eda86aecbd5d5afc09db24b73cff1b5" category="paragraph">需要連接器才能使用Cloud Manager中的許多功能和服務。</block>
   <block id="992a0f0542384f1ee5ef51b7cf4ae6c4" category="section-title">服務</block>
@@ -1615,7 +1609,6 @@
   <block id="a3e15006a0362130cf46b948ce3a5626" category="inline-link-macro">探索您的 Amazon S3 儲存庫</block>
   <block id="3f48c5e9be05508878e1ceb77d8423a7" category="list-text"><block ref="3f48c5e9be05508878e1ceb77d8423a7" category="inline-link-macro-rx"></block></block>
   <block id="d98965029959cf812f65a40947f08b57" category="doc">從Cloud Manager在Azure中建立Connector</block>
-  <block id="92a434e5c8c01591e755815db4146d11" category="paragraph">客戶管理員必須先部署 _Connector_ 、才能使用大多數 Cloud Manager 功能。Connector 可讓 Cloud Manager 管理公有雲環境中的資源與程序。 <block ref="39840e1bb98f6582f1bf4e505d666ea1" category="inline-link-macro-rx"></block>。</block>
   <block id="f7870b8098a9e390eee4f74b3f7a5083" category="paragraph">本頁說明如何直接從 Cloud Manager 在 Azure 中建立 Connector 。 <block ref="f56df5f8b4fd558a7482d6115403eadd" category="inline-link-macro-rx"></block>。</block>
   <block id="6ff761f13f23672779199bb67cdb97a7" category="paragraph">若要部署Connector、您必須提供Cloud Manager登入資訊、並具備在Azure中建立Connector VM所需的權限。</block>
   <block id="fd6f3efc498de1b121d4286a7865dda4" category="paragraph">您有兩種選擇：</block>
@@ -1674,7 +1667,6 @@
   <block id="6f043f3f027945cd04779d74f747b622" category="paragraph">第一次存取Cloud Manager時、系統會提示您選擇或建立NetApp帳戶：</block>
   <block id="7b37eddf603f774ec043af3facd5283b" category="inline-image-macro">Cloud Manager設定精靈的快照、會提示您輸入要在其中建立Cloud Manager的NetApp帳戶。</block>
   <block id="73407f73ba1f6e7b2aaca68e40797433" category="paragraph"><block ref="73407f73ba1f6e7b2aaca68e40797433" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="31d5604259a74d39a9b75c9aa16cedf4" category="paragraph">接著、帳戶管理員可以管理使用者（成員）、工作區、連接器及訂閱、藉此修改此帳戶的設定：</block>
   <block id="b2eef7b6d059839882bf88ec94098a7c" category="inline-image-macro">顯示「管理帳戶」小工具的快照、您可從中管理使用者、工作區和連接器。</block>
   <block id="7fe2b3cad6e0fd3e01f58b23a9a48525" category="paragraph"><block ref="7fe2b3cad6e0fd3e01f58b23a9a48525" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3fc84828d29031ccb044fc851a791dd5" category="inline-link-macro">設定NetApp帳戶</block>
@@ -1724,7 +1716,6 @@
   <block id="f9735044d45473836ac5749fa2decf2c" category="paragraph"><block ref="f9735044d45473836ac5749fa2decf2c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="63f6e1958614b96c8fd95bf42f5748fd" category="summary">註冊 NetApp Cloud Central 、即可存取 NetApp 的雲端服務。</block>
   <block id="fb74c4ef62549ee8dd9207310052bd9c" category="doc">註冊 NetApp Cloud Central</block>
-  <block id="d996d11becb7cda914270a69d29d4db1" category="list-text">開啟網頁瀏覽器並前往<block ref="25c9ce3f64e912d3750c233c5edfffad" category="inline-link-rx"></block>。</block>
   <block id="cb95642e206c980191590d63445b26a7" category="list-text">按一下 * 註冊 * 。</block>
   <block id="2ca0e0597feba3b9ab097009f96b443c" category="list-text">填寫表單、然後按一下 * 註冊 * 。</block>
   <block id="8ed42493503a731371f86e4d62e09eb3" category="inline-image-macro">Cloud Central 的註冊表單快照、您可在其中輸入電子郵件地址、密碼、公司、名稱和電話號碼。</block>
@@ -1817,7 +1808,6 @@
   <block id="0c01b3b7191c43507ad9ca43d6443731" category="cell">提供HTTPS存取、從用戶端網頁瀏覽器存取本機使用者介面、以及從Cloud Data Sense執行個體連線</block>
   <block id="b136ef5f6a01d816991fe3cf7a6ac763" category="cell">TCP</block>
   <block id="dff8e9c2ac33381546d96deea9922999" category="cell">3128</block>
-  <block id="187604dd1244abc6ff03471775e9f32d" category="cell">如果您的AWS網路不使用NAT或Proxy、則可提供Cloud Data Sense執行個體以存取網際網路</block>
   <block id="cb4b69eb9bd10da82c15dca2f86a1385" category="cell">9060</block>
   <block id="a88f9f8d3b07dc3b0bfb7e3fd41aaebe" category="cell">提供啟用和使用Cloud Data Sense的能力（僅適用於GovCloud部署）</block>
   <block id="7fcf8a20eb9257fce9235438893a7754" category="section-title">傳出規則</block>
@@ -2050,7 +2040,6 @@
   <block id="505a83f220c02df2f85c3810cd9ceb38" category="cell">成功</block>
   <block id="ae75ef51af35154ca4a9e6d19fb16774" category="cell">已成功完成行動或程序。</block>
   <block id="a6def99842bc15d42718893f4b26be8c" category="paragraph">您可以透過電子郵件傳送特定類型的通知、即使您尚未登入Cloud Manager、也能得知重要的系統活動。電子郵件可傳送給您的NetApp帳戶中的任何使用者、或是任何其他需要注意特定系統活動類型的收件者。</block>
-  <block id="b51460585ce77934e0d0f7ab2636f940" category="paragraph">依預設、帳戶管理員會收到所有「重大」和「建議」通知的電子郵件。根據預設、所有其他使用者和收件者都會設定為不接收任何通知電子郵件。</block>
   <block id="f6cf378d25bc2bcaeedbdbd322fec41b" category="paragraph">您必須是帳戶管理員、才能自訂通知設定。</block>
   <block id="b53a221b71b7a12562d2dac0686fd53c" category="list-text">在Cloud Manager功能表列中、按一下*設定&gt;警示與通知設定*。</block>
   <block id="dffb0ae952f619b638efb5dbc37b121a" category="inline-image-macro">顯示如何顯示「警示與通知設定」頁面的快照。</block>
@@ -2082,7 +2071,6 @@
   <block id="c3d36b4a46dce16b3ad60eecabc87582" category="list-text">Amazon S3探索</block>
   <block id="bde43e83db72512f1aea47540264c8f0" category="list-text">Azure Blob探索</block>
   <block id="6060e8f925263dfdc63a751c294072e0" category="list-text">Google Cloud Storage探索</block>
-  <block id="cb7056b970dafeecb7fd7cc3be301248" category="paragraph">「帳戶管理員Cloud Volumes ONTAP 」必須先建立連接器、工作區管理員才能建立運作環境、並使用上述任何其他服務。管理員可以透過多種方式建立Connector：</block>
   <block id="29a0d45ad000865bf5504b2da4dc6816" category="paragraph">以下各節說明如何將權限用於每項NetApp雲端服務。如果您的企業原則規定只有在需要時才提供權限、此資訊就很有幫助。</block>
   <block id="0cae22bc84eb90b52cc86e22b140eb0c" category="paragraph">當您使用應用程式範本標記服務時、Connector會發出下列API要求來管理AWS資源上的標記：</block>
   <block id="693adfb773a054f1c9287da186e8ce5d" category="list-text">EC2：建立標記</block>
@@ -2432,4 +2420,41 @@
   <block id="884e026d3505b2b3847b25f6cecb4de7" category="cell">探索Google Cloud Storage儲存桶的相關資訊。</block>
   <block id="2c6996f5a98ca1cbcfa64873c18f13e9" category="paragraph"><block ref="077586b4338f7fc9c66e0ae0e2365a30" category="inline-link-rx"></block>。</block>
   <block id="2533820d9e3e679d169b5decdbf29c60" category="paragraph">我們也建立了一個頁面、提供每個原則的連結。<block ref="3bc30da5781f88e99acbb8ce33011928" category="inline-link-rx"></block>。</block>
+  <block id="956bddad3e5f8a7fd33a97a2e0bd6afc" category="summary">在「我的商機」索引標籤上、「我的商機」索引標籤提供集中位置來探索現有資源、您可以將這些資源新增至Cloud Manager、以便在混合式多雲端上提供一致的資料服務和作業。</block>
+  <block id="d5b2a1bd414bfe3065bf4b9d53fde9e9" category="doc">我的商機</block>
+  <block id="155ccfd3578c4b827fbaaa1208c5c86a" category="paragraph">在畫版上、「*我的商機*」索引標籤提供集中位置、可讓您探索現有資源、並將這些資源新增至Cloud Manager、以便在混合式多雲端上提供一致的資料服務與作業。</block>
+  <block id="04e60b39adde0e5f7e0bdecbea515591" category="paragraph">目前、My Opportunity可讓您在ONTAP AWS帳戶中探索現有的FSXfor Solidffile系統。</block>
+  <block id="0023c752677bd572df55463d76cf9b90" category="inline-link">瞭解如何利用ONTAP My Opportunity探索FSXfor Sfor</block>
+  <block id="b8aac0d7b730cae52d7fa6174da69a85" category="paragraph"><block ref="b8aac0d7b730cae52d7fa6174da69a85" category="inline-link-rx"></block></block>
+  <block id="6233440a829ea8d3e6200b654640bc7d" category="summary">Cloud Manager帳戶管理員必須先部署Connector、才能使用大多數Cloud Manager功能。Connector 可讓 Cloud Manager 管理公有雲環境中的資源與程序。</block>
+  <block id="da68412a7fbaa56185ffff11a0811d32" category="paragraph">Cloud Manager帳戶管理員必須先部署_Connector_、才能使用大多數Cloud Manager功能。Connector 可讓 Cloud Manager 管理公有雲環境中的資源與程序。 <block ref="39840e1bb98f6582f1bf4e505d666ea1" category="inline-link-macro-rx"></block>。</block>
+  <block id="5f174caa182ccf4eda7018d2ae4ed7a0" category="section-title">開啟連接埠3128以顯示AutoSupport 資訊</block>
+  <block id="77f16a3db28b4fd446bc2af9109d59db" category="paragraph">如果您計畫在Cloud Volumes ONTAP 無法連上傳出網際網路連線的子網路中部署「還原」系統、Cloud Manager會自動將Cloud Volumes ONTAP 「還原」設定為使用連接器做為Proxy伺服器。</block>
+  <block id="5fc25795a93f92bfee952eef3220d9e5" category="paragraph">唯一的需求是確保連接器的安全性群組允許連接埠3128上的傳入連線。部署Connector之後、您需要開啟此連接埠。</block>
+  <block id="489db3f339b691ea4dea5f4572483024" category="paragraph">如果您使用預設的資訊安全群組Cloud Volumes ONTAP 來執行此功能、則無需變更其安全群組。但是如果您打算定義嚴格Cloud Volumes ONTAP 的for the Sfor the Sfor the、那麼您也必須確保Cloud Volumes ONTAP 該安全性群組允許連接埠3128上的傳出連線。</block>
+  <block id="117e86e552d0c131628c9b59f4f27b24" category="paragraph">如果您的企業原則要求您使用Proxy伺服器來進行所有的HTTP通訊至網際網路、則必須將連接器設定為使用HTTP Proxy伺服器。Proxy 伺服器可以位於雲端或網路中。</block>
+  <block id="cd5948a5853fc000f635c34407e9be0e" category="paragraph">若將連接器設定為使用HTTP Proxy伺服器、則當公用IP位址或NAT閘道無法使用時、即可提供傳出網際網路存取。此Proxy伺服器僅提供連接器與傳出連線。它不提供Cloud Volumes ONTAP 任何連接功能給不適用的系統。</block>
+  <block id="d108a5c38a5cb3124175cfab4db4ec03" category="inline-link-macro">深入瞭解如何使用Proxy伺服器來傳送AutoSupport 功能不實的訊息</block>
+  <block id="87463ee8edca33f75eed85e674b8f926" category="paragraph">如果Cloud Volumes ONTAP 無法透過外部網際網路連線來傳送AutoSupport 各種消息、Cloud Manager會自動將Cloud Volumes ONTAP 這些系統設定為使用連接器隨附的Proxy伺服器。 <block ref="4790ec07d3308f2887f9351ce8bd06a9" category="inline-link-macro-rx"></block>。</block>
+  <block id="bc2ef3610c6865883f50e9f5733a7dbe" category="paragraph">Cloud Manager帳戶管理員必須先部署_Connector_、才能使用大多數Cloud Manager功能。 <block ref="39840e1bb98f6582f1bf4e505d666ea1" category="inline-link-macro-rx"></block>。Connector 可讓 Cloud Manager 管理公有雲環境中的資源與程序。</block>
+  <block id="b71c0af8fd2f3db874128374c9e382a9" category="paragraph">Cloud Manager帳戶管理員接著可以管理使用者（成員）、工作區、連接器及訂閱、藉此修改此帳戶的設定：</block>
+  <block id="0ceeb24c560eb06b8d18aae0d9dd03c4" category="paragraph">根據預設、Cloud Manager帳戶管理員會收到所有「重大」和「建議」通知的電子郵件。根據預設、所有其他使用者和收件者都會設定為不接收任何通知電子郵件。</block>
+  <block id="2724db8eb831856d2bcad22cc1470034" category="paragraph">連接器沒有傳入流量、除非您啟動連接器、或連接器是AutoSupport 作為Proxy來接收資訊、否則連接器不會傳入。HTTP 和 HTTPS 可存取 <block ref="a4d556f51af89bcef8612c38a831609f" category="inline-link-macro-rx"></block>、在極少數情況下使用。只有當您需要連線至主機進行疑難排解時、才需要 SSH 。</block>
+  <block id="4fe83d6a1c091adff7b022a5ed50374f" category="section-title">Proxy伺服器、以利AutoSupport 傳達訊息</block>
+  <block id="68363af0cfc7fb5fa02c6d822a0e3f1c" category="paragraph">如果無法Cloud Volumes ONTAP 透過傳出網際網路連線傳送AutoSupport 不出的消息、Cloud Manager會自動設定Cloud Volumes ONTAP 以使用Connector做為Proxy伺服器。</block>
+  <block id="0e3e7ba11a5d193853da473b9d805b91" category="paragraph">如果您定義了Cloud Volumes ONTAP 嚴格的傳出規則以供支援、那麼Cloud Volumes ONTAP 您也必須確保支援透過連接埠3128建立_Outbound _連線的安全性群組。</block>
+  <block id="6d222908a201e6b65bf048113504f4c1" category="inline-xref">深入瞭解Connector的Proxy伺服器</block>
+  <block id="379c1280ecc325be9f0d74d095f55ae9" category="cell">提供可存取網際網路的功能、將資訊傳送給NetApp支援部門。Cloud Volumes ONTAP AutoSupport您必須在部署後手動開啟此連接埠。 <block ref="9a4dd6e745bb9c3853507bba2251a2cd" category="inline-xref-macro-rx"></block>。</block>
+  <block id="68c909dd3a30c6ef6f35eff4ef3ad457" category="paragraph">在大多數情況下、Cloud Manager帳戶管理員需要在雲端或內部部署網路中部署_Connector_。Connector 可讓 Cloud Manager 管理公有雲環境中的資源與程序。</block>
+  <block id="9998984c95caccce61e49ca25de1c99f" category="paragraph">請注意、註冊表單中只允許英文字元。</block>
+  <block id="0948a4e54803455bbc7561374084a508" category="list-text">開啟網頁瀏覽器並前往<block ref="25c9ce3f64e912d3750c233c5edfffad" category="inline-link-rx"></block></block>
+  <block id="92c98a22e55c97d93ef587c4ab17c0c0" category="paragraph">在大多數情況下、Cloud Manager帳戶管理員需要在雲端或內部部署網路中部署_Connector_。Connector是Cloud Manager日常使用的重要元件。Connector可讓Cloud Manager管理公有雲環境中的資源與程序。</block>
+  <block id="6cfc3e268dd85bc996870e9d6e4ee23e" category="paragraph">Cloud Manager客戶管理員必須先建立連接器、工作區管理員才能建立Cloud Volumes ONTAP 可運作的環境、並使用上述任何其他服務。管理員可以透過多種方式建立Connector：</block>
+  <block id="7d01d614f55d9a17fd8f5a391015e623" category="list-text">登入Cloud Manager之後、Cloud Manager帳戶管理員必須在雲端供應商或內部部署網路中部署_Connector_。Connector 可讓 Cloud Manager 管理公有雲環境中的資源與程序。連接器不需要Azure NetApp Files 用在功能不全的地方、Cloud Volumes Service 但Cloud Sync Cloud Manager中的所有其他服務和功能都需要連接器。 <block ref="fc0525c57d574c03610221b6665bff18" category="inline-link-macro-rx"></block>。</block>
+  <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">2022年7月31日</block>
+  <block id="01f2c0e19d8bbd614814f0651e7feec1" category="section-title">連接器3.9.21</block>
+  <block id="1beb197487d0f07564b924071751aa36" category="list-text">我們推出新方法、探索您尚未在Cloud Manager中管理的現有雲端資源。</block>
+  <block id="586c381704849af8eb925f1bb3c1cc89" category="paragraph">在此初始版本中、「我的商機」可讓您在ONTAP AWS帳戶中探索現有的FSX for Solidffile系統。</block>
+  <block id="56148e3a5b597bf775527bf28e119033" category="paragraph"><block ref="56148e3a5b597bf775527bf28e119033" category="inline-link-rx"></block></block>
+  <block id="a92dc2a225f00bb9e0d676f2e4ae484e" category="sidebar">使用我的商機探索</block>
 </blocks>

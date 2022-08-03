@@ -81,7 +81,17 @@ Cloud Manager部署連接器時、會有兩個介面、其中IP位址介於172.1
 
 == 連接埠和安全性群組
 
-除非您啟動連接器、否則不會有傳入流量進入連接器。HTTP 和 HTTPS 可存取 link:concept-connectors.html#the-local-user-interface["本機 UI"]、在極少數情況下使用。只有當您需要連線至主機進行疑難排解時、才需要 SSH 。
+連接器沒有傳入流量、除非您啟動連接器、或連接器是AutoSupport 作為Proxy來接收資訊、否則連接器不會傳入。HTTP 和 HTTPS 可存取 link:concept-connectors.html#the-local-user-interface["本機 UI"]、在極少數情況下使用。只有當您需要連線至主機進行疑難排解時、才需要 SSH 。
+
+
+
+=== Proxy伺服器、以利AutoSupport 傳達訊息
+
+如果無法Cloud Volumes ONTAP 透過傳出網際網路連線傳送AutoSupport 不出的消息、Cloud Manager會自動設定Cloud Volumes ONTAP 以使用Connector做為Proxy伺服器。
+
+唯一的需求是確保連接器的安全性群組允許連接埠3128上的傳入連線。部署Connector之後、您需要開啟此連接埠。
+
+如果您定義了Cloud Volumes ONTAP 嚴格的傳出規則以供支援、那麼Cloud Volumes ONTAP 您也必須確保支援透過連接埠3128建立_Outbound _連線的安全性群組。
 
 
 
@@ -107,7 +117,7 @@ Connector 的安全性群組需要傳入和傳出規則。
 | HTTPS | 443.. | 提供HTTPS存取、從用戶端網頁瀏覽器存取本機使用者介面、以及從Cloud Data Sense執行個體連線 
 
 
-| TCP | 3128 | 如果您的AWS網路不使用NAT或Proxy、則可提供Cloud Data Sense執行個體以存取網際網路 
+| TCP | 3128 | 提供可存取網際網路的功能、將資訊傳送給NetApp支援部門。Cloud Volumes ONTAP AutoSupport您必須在部署後手動開啟此連接埠。 <<Proxy server for AutoSupport messages,深入瞭解Connector的Proxy伺服器>>。 
 
 
 | TCP | 9060 | 提供啟用和使用Cloud Data Sense的能力（僅適用於GovCloud部署） 
@@ -183,6 +193,9 @@ Connector 的安全性群組需要傳入和傳出規則。
 | HTTPS | 443.. | 提供HTTPS存取、從用戶端網頁瀏覽器存取本機使用者介面、以及從Cloud Data Sense執行個體連線 
 
 
+| TCP | 3128 | 提供可存取網際網路的功能、將資訊傳送給NetApp支援部門。Cloud Volumes ONTAP AutoSupport您必須在部署後手動開啟此連接埠。 <<Proxy server for AutoSupport messages,深入瞭解Connector的Proxy伺服器>>。 
+
+
 | TCP | 9060 | 提供啟用和使用Cloud Data Sense的能力（僅適用於政府雲端部署） 
 |===
 
@@ -248,6 +261,9 @@ NOTE: 來源 IP 位址為 Connector 主機。
 
 
 | HTTPS | 443.. | 提供 HTTPS 存取、從用戶端網頁瀏覽器存取本機使用者介面 
+
+
+| TCP | 3128 | 提供可存取網際網路的功能、將資訊傳送給NetApp支援部門。Cloud Volumes ONTAP AutoSupport您必須在部署後手動開啟此連接埠。 <<Proxy server for AutoSupport messages,深入瞭解Connector的Proxy伺服器>>。 
 |===
 
 

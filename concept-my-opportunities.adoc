@@ -1,0 +1,21 @@
+---
+sidebar: sidebar 
+permalink: concept-my-opportunities.html 
+keywords: discover, discovering fsx, discover fsx, discovering, my opportunities, opportunities 
+summary: 在「我的商機」索引標籤上、「我的商機」索引標籤提供集中位置來探索現有資源、您可以將這些資源新增至Cloud Manager、以便在混合式多雲端上提供一致的資料服務和作業。 
+---
+= 我的商機
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+在畫版上、「*我的商機*」索引標籤提供集中位置、可讓您探索現有資源、並將這些資源新增至Cloud Manager、以便在混合式多雲端上提供一致的資料服務與作業。
+
+目前、My Opportunity可讓您在ONTAP AWS帳戶中探索現有的FSXfor Solidffile系統。
+
+https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#discover-using-my-opportunities["瞭解如何利用ONTAP My Opportunity探索FSXfor Sfor"^]

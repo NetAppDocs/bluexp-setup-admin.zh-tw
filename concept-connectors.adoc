@@ -14,7 +14,7 @@ summary: 在大多數情況下、您需要在雲端或內部部署網路中部�
 
 
 [role="lead"]
-在大多數情況下、帳戶管理員需要在雲端或內部部署網路中部署 _Connector_ 。Connector是Cloud Manager日常使用的重要元件。Connector可讓Cloud Manager管理公有雲環境中的資源與程序。
+在大多數情況下、Cloud Manager帳戶管理員需要在雲端或內部部署網路中部署_Connector_。Connector是Cloud Manager日常使用的重要元件。Connector可讓Cloud Manager管理公有雲環境中的資源與程序。
 
 
 
@@ -97,7 +97,7 @@ summary: 在大多數情況下、您需要在雲端或內部部署網路中部�
 
 == 如何建立連接器
 
-「帳戶管理員Cloud Volumes ONTAP 」必須先建立連接器、工作區管理員才能建立運作環境、並使用上述任何其他服務。管理員可以透過多種方式建立Connector：
+Cloud Manager客戶管理員必須先建立連接器、工作區管理員才能建立Cloud Volumes ONTAP 可運作的環境、並使用上述任何其他服務。管理員可以透過多種方式建立Connector：
 
 * 直接從 Cloud Manager （建議）
 +

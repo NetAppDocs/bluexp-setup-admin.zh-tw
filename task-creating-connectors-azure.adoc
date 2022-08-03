@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-creating-connectors-azure.html 
 keywords: create connector in azure, launch connector in azure, deploy connector in azure, azure connector, connector azure, connector permissions, create custom role, create azure custom role, azure custom role 
-summary: 客戶管理員必須先部署 Connector 、才能使用大多數 Cloud Manager 功能。Connector 可讓 Cloud Manager 管理公有雲環境中的資源與程序。 
+summary: Cloud Manager帳戶管理員必須先部署Connector、才能使用大多數Cloud Manager功能。Connector 可讓 Cloud Manager 管理公有雲環境中的資源與程序。 
 ---
 = 從Cloud Manager在Azure中建立Connector
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 客戶管理員必須先部署 Connector 、才能使用大多數 Cloud
 
 
 [role="lead"]
-客戶管理員必須先部署 _Connector_ 、才能使用大多數 Cloud Manager 功能。Connector 可讓 Cloud Manager 管理公有雲環境中的資源與程序。 link:concept-connectors.html["瞭解何時需要連接器"]。
+Cloud Manager帳戶管理員必須先部署_Connector_、才能使用大多數Cloud Manager功能。Connector 可讓 Cloud Manager 管理公有雲環境中的資源與程序。 link:concept-connectors.html["瞭解何時需要連接器"]。
 
 本頁說明如何直接從 Cloud Manager 在 Azure 中建立 Connector 。 link:concept-connectors.html#how-to-create-a-connector["瞭解部署Connector的其他方法"]。
 
@@ -553,3 +553,13 @@ NOTE: 除非您啟動連接器、否則不會有傳入流量進入連接器。HT
 您需要將 Connector 與工作空間建立關聯、讓 Workspace Admins 可以使用這些 Connectors 來建立 Cloud Volumes ONTAP 一套系統。如果您只有帳戶管理員、則不需要將 Connector 與工作區建立關聯。根據預設、 Account Admins 可存取 Cloud Manager 中的所有工作區。 link:task-setting-up-netapp-accounts.html#associating-connectors-with-workspaces["深入瞭解"]。
 
 如果您在建立Connector的同一個Azure帳戶中擁有Azure Blob儲存設備、您會看到Azure Blob工作環境會自動出現在Canvas. link:task-viewing-azure-blob.html["深入瞭解如何運用此工作環境"]。
+
+
+
+== 開啟連接埠3128以顯示AutoSupport 資訊
+
+如果您計畫在Cloud Volumes ONTAP 無法連上傳出網際網路連線的子網路中部署「還原」系統、Cloud Manager會自動將Cloud Volumes ONTAP 「還原」設定為使用連接器做為Proxy伺服器。
+
+唯一的需求是確保連接器的安全性群組允許連接埠3128上的傳入連線。部署Connector之後、您需要開啟此連接埠。
+
+如果您使用預設的資訊安全群組Cloud Volumes ONTAP 來執行此功能、則無需變更其安全群組。但是如果您打算定義嚴格Cloud Volumes ONTAP 的for the Sfor the Sfor the、那麼您也必須確保Cloud Volumes ONTAP 該安全性群組允許連接埠3128上的傳出連線。

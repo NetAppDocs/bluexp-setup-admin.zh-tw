@@ -19,8 +19,10 @@ summary: 註冊 NetApp Cloud Central 、即可存取 NetApp 的雲端服務。
 
 TIP: 您可以使用單一登入、從公司目錄（聯盟身分識別）使用認證登入。若要深入瞭解、請前往 https://cloud.netapp.com/help-center["Cloud Central說明中心"^] 然後按一下* Cloud Central登入選項*。
 
+請注意、註冊表單中只允許英文字元。
+
 .步驟
-. 開啟網頁瀏覽器並前往 https://cloud.netapp.com/["NetApp Cloud Central"^]。
+. 開啟網頁瀏覽器並前往 https://cloud.netapp.com/["NetApp Cloud Central"^]
 . 按一下 * 註冊 * 。
 . 您有兩種選擇：
 +

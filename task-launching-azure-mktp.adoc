@@ -148,3 +148,13 @@ NOTE: Cloud Manager操作員是Cloud Manager原則中提供的預設名稱。如
 Connector 現在擁有管理公有雲環境中資源和程序所需的權限。當您建立新的工作環境時、 Cloud Manager 會自動使用此 Connector 。但如果您有多個連接器、就需要 link:task-managing-connectors.html["在兩者之間切換"]。
 
 如果您在建立Connector的同一個Azure帳戶中擁有Azure Blob儲存設備、您會看到Azure Blob工作環境會自動出現在Canvas. link:task-viewing-azure-blob.html["深入瞭解如何運用此工作環境"]。
+
+
+
+== 開啟連接埠3128以顯示AutoSupport 資訊
+
+如果您計畫在Cloud Volumes ONTAP 無法連上傳出網際網路連線的子網路中部署「還原」系統、Cloud Manager會自動將Cloud Volumes ONTAP 「還原」設定為使用連接器做為Proxy伺服器。
+
+唯一的需求是確保連接器的安全性群組允許連接埠3128上的傳入連線。部署Connector之後、您需要開啟此連接埠。
+
+如果您使用預設的資訊安全群組Cloud Volumes ONTAP 來執行此功能、則無需變更其安全群組。但是如果您打算定義嚴格Cloud Volumes ONTAP 的for the Sfor the Sfor the、那麼您也必須確保Cloud Volumes ONTAP 該安全性群組允許連接埠3128上的傳出連線。
