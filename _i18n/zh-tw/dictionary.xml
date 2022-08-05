@@ -1930,7 +1930,6 @@
   <block id="6b3a1b41a32e70a38db42e8ec15a6fba" category="list-text">EC2執行個體類型為T3.xLarge。</block>
   <block id="1c4a1f461d9d9ab860d5238735bbfa23" category="list-text">映像的作業系統為Red Hat Enterprise Linux 7.6（HVM）。</block>
   <block id="09572768e7bd2d34b2a051ebb8774173" category="list-text">EC2 Linux執行個體的使用者名稱為EC2使用者。</block>
-  <block id="3e08af2c96d38d93f2b461c17451752f" category="list-text">預設的系統磁碟為50 GiB gp2磁碟。</block>
   <block id="b8c4a5bd8ed4eb470e80955a542dd4bf" category="section-title">Azure詳細資料</block>
   <block id="82e44dd5e94a855110f9dea154fed0ed" category="list-text">VM類型為DS3 v2。</block>
   <block id="6b20346212b35fa23c8778f7b40af243" category="list-text">映像的作業系統為CentOS 7.6。</block>
@@ -2457,4 +2456,5 @@
   <block id="586c381704849af8eb925f1bb3c1cc89" category="paragraph">在此初始版本中、「我的商機」可讓您在ONTAP AWS帳戶中探索現有的FSX for Solidffile系統。</block>
   <block id="56148e3a5b597bf775527bf28e119033" category="paragraph"><block ref="56148e3a5b597bf775527bf28e119033" category="inline-link-rx"></block></block>
   <block id="a92dc2a225f00bb9e0d676f2e4ae484e" category="sidebar">使用我的商機探索</block>
+  <block id="efabd80ebdd217a47d9be936e5f0b8aa" category="list-text">預設的系統磁碟為100 GiB gp2磁碟。</block>
 </blocks>
