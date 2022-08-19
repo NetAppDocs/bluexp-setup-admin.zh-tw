@@ -2457,4 +2457,5 @@
   <block id="56148e3a5b597bf775527bf28e119033" category="paragraph"><block ref="56148e3a5b597bf775527bf28e119033" category="inline-link-rx"></block></block>
   <block id="a92dc2a225f00bb9e0d676f2e4ae484e" category="sidebar">使用我的商機探索</block>
   <block id="efabd80ebdd217a47d9be936e5f0b8aa" category="list-text">預設的系統磁碟為100 GiB gp2磁碟。</block>
+  <block id="02bc515db3673d54b5989cdf43534729" category="list-text">按一下「*同步資料*」、即可將資料與S3儲存區同步或從S3儲存區同步。</block>
 </blocks>

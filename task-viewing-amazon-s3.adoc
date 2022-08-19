@@ -30,6 +30,10 @@ image:screenshot_s3_we.gif["Amazon S3 工作環境的快照。"]
 +
 image:screenshot_s3_actions.gif["在您選取 Amazon S3 工作環境之後顯示「行動」窗格的快照。此窗格顯示S3的相關資訊：儲存區數量和可用服務。"]
 
+. 按一下「*同步資料*」、即可將資料與S3儲存區同步或從S3儲存區同步。
++
+如需詳細資料、請參閱 https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["關於此服務的總覽Cloud Sync"^]。
+
 . 如果您想要Cloud Data Sense掃描S3儲存區的個人和敏感資料、請按一下「*啟用*」。
 +
 如需詳細資料、請參閱 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-scanning-s3.html["Amazon S3的Cloud Data Sense入門"^]。
