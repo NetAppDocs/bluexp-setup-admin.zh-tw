@@ -1993,7 +1993,6 @@
   <block id="13a0adeb2b159ac19c415adb2a302ac7" category="list-text">如果您以NetApp支援網站認證登入、則每次都需要使用該登入選項。</block>
   <block id="e7330d051a059d074bb6d948d1b195a1" category="paragraph"><block ref="e7330d051a059d074bb6d948d1b195a1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0eac24292d137662727eddfcb308122d" category="paragraph">每次登入時、您都必須使用在此註冊程序中選擇的選項。</block>
-  <block id="5bcda5b087049d72bac31d0484792c9e" category="admonition">當您使用NetApp登入時、您的NetApp支援網站認證不會新增至Support Dashboard中的Cloud Manager。</block>
   <block id="bb3811f4fe37370092ea428b21cf1249" category="list-text">如果您有已註冊的NetApp支援網站帳戶、請按一下*登入NetApp*、然後輸入您的NetApp支援網站認證資料。</block>
   <block id="fa4e197c715b6a6e61487c84fa10bc13" category="paragraph"><block ref="fa4e197c715b6a6e61487c84fa10bc13" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1511b856d0328cfba458b8f83c2e94e3" category="section-title">2022年7月3日</block>
@@ -2458,4 +2457,6 @@
   <block id="a92dc2a225f00bb9e0d676f2e4ae484e" category="sidebar">使用我的商機探索</block>
   <block id="efabd80ebdd217a47d9be936e5f0b8aa" category="list-text">預設的系統磁碟為100 GiB gp2磁碟。</block>
   <block id="02bc515db3673d54b5989cdf43534729" category="list-text">按一下「*同步資料*」、即可將資料與S3儲存區同步或從S3儲存區同步。</block>
+  <block id="ff544de20f1db68a595954432523da78" category="inline-link-macro">瞭解如何將您的NSS認證新增至Cloud Manager</block>
+  <block id="d9ca7aa291299ee1e7d3ee864546df7e" category="admonition">當您使用「以NetApp登入」選項時、您的NetApp支援網站（NSS）認證不會新增至「支援儀表板」中的Cloud Manager。您必須將您的NSS認證新增至Cloud Manager、才能啟用Cloud Volumes ONTAP 關鍵的流程來執行支援功能、並透過Active IQ 支援功能進行預測性分析和主動式支援。 <block ref="d6386b10f546ed3137ed8f21203dfb6b" category="inline-link-macro-rx"></block>。</block>
 </blocks>

@@ -36,7 +36,7 @@ image:screenshot-cloud-central-signup.png["Cloud Central 的註冊表單快照�
 
 +
 
-NOTE: 當您使用NetApp登入時、您的NetApp支援網站認證不會新增至Support Dashboard中的Cloud Manager。
+NOTE: 當您使用「以NetApp登入」選項時、您的NetApp支援網站（NSS）認證不會新增至「支援儀表板」中的Cloud Manager。您必須將您的NSS認證新增至Cloud Manager、才能啟用Cloud Volumes ONTAP 關鍵的流程來執行支援功能、並透過Active IQ 支援功能進行預測性分析和主動式支援。 link:task-adding-nss-accounts.html["瞭解如何將您的NSS認證新增至Cloud Manager"]。
 
 
 

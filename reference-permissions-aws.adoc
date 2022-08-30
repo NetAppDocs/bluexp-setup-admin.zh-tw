@@ -326,7 +326,7 @@ Cloud Manager在AWS中啟動Connector執行個體時、會將原則附加至執�
       "Effect": "Allow",
       "Action": [
         "ec2:DescribeRegions",
-        "iam:ListInstanceProfiles",
+        "iam:GetInstanceProfile",
         "eks:ListClusters",
         "eks:DescribeCluster"
       ],
