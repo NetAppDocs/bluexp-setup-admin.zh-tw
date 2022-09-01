@@ -384,7 +384,7 @@ $ gcloud components update
 [source, bash]
 ----
 gcloud compute instances create <instance-name>
-  --machine-type=n1-standard-4
+  --machine-type=n2-standard-4
   --image-project=netapp-cloudmanager
   --image-family=cloudmanager
   --scopes=cloud-platform

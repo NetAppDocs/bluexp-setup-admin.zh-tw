@@ -660,7 +660,6 @@
   <block id="893ba5865a015de9dc77765cdf7184e3" category="list-text">Azure VM 大小</block>
   <block id="a6daae7da601d04e5cdb89d612a8d9b1" category="list-text">符合上述 CPU 和 RAM 需求的執行個體類型。我們建議使用 DS3 v2 。</block>
   <block id="0779e9296a32341a31830e6c4e36d7f5" category="list-text">GCP 機器類型</block>
-  <block id="a364c69650d36423667264592b72c7ce" category="list-text">符合上述 CPU 和 RAM 需求的執行個體類型。建議使用n1-Standard-4。</block>
   <block id="984ca77a9a51746d3dd5a855a71d3493" category="inline-link">防護VM功能</block>
   <block id="5e59673ea4dc0650f587413c4848c02c" category="paragraph">Google Cloud支援Connector的VM執行個體、其作業系統可支援此連接器<block ref="bd10301ee2e8f0cb38112a71d2b6920c" category="inline-link-rx"></block></block>
   <block id="bbf3330385f894cd7bd34b34e4c36d6c" category="list-text">支援的作業系統</block>
@@ -1935,7 +1934,6 @@
   <block id="6b20346212b35fa23c8778f7b40af243" category="list-text">映像的作業系統為CentOS 7.6。</block>
   <block id="474a089504b47eb34ee00ee62f121108" category="list-text">預設系統磁碟為100 GiB優質SSD磁碟。</block>
   <block id="f246cf5f23e765f0a7ebed4a6c1d923a" category="section-title">Google Cloud詳細資料</block>
-  <block id="eea8625f5c96ad7dadcdf9b2b4ddc80d" category="list-text">VM執行個體為n1-Standard-4。</block>
   <block id="eac23d653ed188286a19e5301fe3807e" category="list-text">映像的作業系統為CentOS 7.9。</block>
   <block id="6cb5fb9b61376b8ee3092321445fdea4" category="list-text">預設系統磁碟為100 GiB SSD持續磁碟。</block>
   <block id="bc4aa6323016172de14a6835883b27c7" category="section-title">安裝資料夾</block>
@@ -2459,4 +2457,6 @@
   <block id="02bc515db3673d54b5989cdf43534729" category="list-text">按一下「*同步資料*」、即可將資料與S3儲存區同步或從S3儲存區同步。</block>
   <block id="ff544de20f1db68a595954432523da78" category="inline-link-macro">瞭解如何將您的NSS認證新增至Cloud Manager</block>
   <block id="d9ca7aa291299ee1e7d3ee864546df7e" category="admonition">當您使用「以NetApp登入」選項時、您的NetApp支援網站（NSS）認證不會新增至「支援儀表板」中的Cloud Manager。您必須將您的NSS認證新增至Cloud Manager、才能啟用Cloud Volumes ONTAP 關鍵的流程來執行支援功能、並透過Active IQ 支援功能進行預測性分析和主動式支援。 <block ref="d6386b10f546ed3137ed8f21203dfb6b" category="inline-link-macro-rx"></block>。</block>
+  <block id="98de57befcb39b412a8dac16a11d762e" category="list-text">符合上述 CPU 和 RAM 需求的執行個體類型。建議使用n2-Standard-4。</block>
+  <block id="0964bfe0dd83b0d60f5d55fd4502a11b" category="list-text">VM執行個體為n2-Standard-4。</block>
 </blocks>
