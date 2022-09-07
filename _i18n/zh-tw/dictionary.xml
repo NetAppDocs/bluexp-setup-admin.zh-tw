@@ -2459,4 +2459,5 @@
   <block id="d9ca7aa291299ee1e7d3ee864546df7e" category="admonition">當您使用「以NetApp登入」選項時、您的NetApp支援網站（NSS）認證不會新增至「支援儀表板」中的Cloud Manager。您必須將您的NSS認證新增至Cloud Manager、才能啟用Cloud Volumes ONTAP 關鍵的流程來執行支援功能、並透過Active IQ 支援功能進行預測性分析和主動式支援。 <block ref="d6386b10f546ed3137ed8f21203dfb6b" category="inline-link-macro-rx"></block>。</block>
   <block id="98de57befcb39b412a8dac16a11d762e" category="list-text">符合上述 CPU 和 RAM 需求的執行個體類型。建議使用n2-Standard-4。</block>
   <block id="0964bfe0dd83b0d60f5d55fd4502a11b" category="list-text">VM執行個體為n2-Standard-4。</block>
+  <block id="d17764ffa4b2b993f35778d5e7c1f22e" category="cell">API將Azure和ONTAP VMware呼叫、Cloud Data Sense、勒索軟體服務、並將AutoSupport VMware訊息傳送給NetApp</block>
 </blocks>

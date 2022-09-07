@@ -234,7 +234,7 @@ NOTE: 來源 IP 位址為 Connector 主機。
 | 服務 | 傳輸協定 | 連接埠 | 目的地 | 目的 
 
 
-| API 呼叫與 AutoSupport 功能 | HTTPS | 443.. | 傳出網際網路和 ONTAP 叢集管理 LIF | API會呼叫AWS和ONTAP VMware、Cloud Data Sense、勒索軟體服務、並將AutoSupport 這些訊息傳送給NetApp 
+| API 呼叫與 AutoSupport 功能 | HTTPS | 443.. | 傳出網際網路和 ONTAP 叢集管理 LIF | API將Azure和ONTAP VMware呼叫、Cloud Data Sense、勒索軟體服務、並將AutoSupport VMware訊息傳送給NetApp 
 
 
 | DNS | UDP | 53. | DNS | 用於 Cloud Manager 的 DNS 解析 
