@@ -1124,7 +1124,7 @@ Connector會在部署期間提出下列API要求、以部署全域檔案快取�
 
 === FSX ONTAP
 
-Connector會提出下列API要求來探索及管理FSXfor ONTAP the Sfor the：
+Connector會提出下列API要求來管理FSXfor ONTAP Sfor the：
 
 * EC2：資料說明
 * EC2：取消訂閱即時狀態
