@@ -127,14 +127,15 @@ Cloud Manager在AWS中啟動Connector執行個體時、會將原則附加至執�
         "cloudformation:DeleteStack",
         "ec2:DescribePlacementGroups",
         "iam:GetRolePolicy",
-		"s3:ListAllMyBuckets",
+		    "s3:ListAllMyBuckets",
         "s3:GetObject",
         "iam:GetRole",
         "s3:DeleteObject",
         "s3:DeleteObjectVersion",
         "s3:PutObject",
-		"ec2:ModifyVolume",
-        "ec2:DescribeVolumesModifications"
+		    "ec2:ModifyVolume",
+        "ec2:DescribeVolumesModifications",
+		    "s3:GetEncryptionConfiguration"
       ],
       "Resource": "*"
     },
@@ -144,7 +145,7 @@ Cloud Manager在AWS中啟動Connector執行個體時、會將原則附加至執�
       "Action": [
         "ec2:StartInstances",
         "ec2:StopInstances",
-        "ec2:DescribeInstances",
+		    "ec2:DescribeInstances",
         "ec2:DescribeInstanceStatus",
         "ec2:RunInstances",
         "ec2:TerminateInstances",
@@ -196,7 +197,21 @@ Cloud Manager在AWS中啟動Connector執行個體時、會將原則附加至執�
         "s3:PutBucketAcl",
         "s3:AbortMultipartUpload",
         "s3:ListMultipartUploadParts",
-        "s3:DeleteBucket"
+        "s3:DeleteBucket",
+		    "s3:GetObjectVersionTagging",
+			  "s3:GetObjectVersionAcl",
+	   		"s3:GetObjectRetention",
+	   		"s3:GetObjectTagging",
+	   		"s3:GetObjectVersion",
+	   		"s3:PutObjectVersionTagging",
+	   		"s3:PutObjectRetention",
+	   		"s3:DeleteObjectTagging",
+	   		"s3:DeleteObjectVersionTagging",
+	   		"s3:GetBucketObjectLockConfiguration",
+	   		"s3:GetBucketVersioning",
+	   		"s3:PutBucketObjectLockConfiguration",
+	   		"s3:PutBucketVersioning",
+	   		"s3:BypassGovernanceRetention"
       ],
       "Resource": [
         "arn:aws:s3:::netapp-backup-*"
@@ -326,9 +341,9 @@ Cloud Manager在AWS中啟動Connector執行個體時、會將原則附加至執�
       "Effect": "Allow",
       "Action": [
         "ec2:DescribeRegions",
-        "iam:GetInstanceProfile",
         "eks:ListClusters",
-        "eks:DescribeCluster"
+        "eks:DescribeCluster",
+		    "iam:GetInstanceProfiles"
       ],
       "Resource": "*"
     },
@@ -718,6 +733,37 @@ Connector會提出下列API要求、以管理Amazon S3中的備份：
 * 黏著劑：批字刪除分割區
 
 
+當您使用DataLock和勒索軟體保護來進行Volume備份時、Connector會發出下列API要求：
+
+* S3：GetObjectVersion標記
+* S3：GetBucketObjectLockConfiguration
+* S3：GetObjectVerionAcl
+* S3：PuttObjectTagging
+* S3：刪除物件
+* S3：刪除ObjectTagging
+* S3：GetObjectRetention
+* S3：刪除ObjectVersion標記
+* S3：PuttObject
+* S3：GetObject
+* S3：PuttBucketObjectLockConfiguration
+* S3：Get生命 週期組態
+* S3：listBucketByTags
+* S3：GetBucketting
+* S3：刪除ObjectVersion
+* S3：listBucketVerions
+* S3：清單庫
+* S3：PuttBucketting
+* S3：GetObjectTagging
+* S3：PuttBucketVersion
+* S3：PuttObjectVersion標記
+* S3：GetBucketVersion
+* S3：GetBucketAcl
+* S3：BypassGovernanceRetention
+* S3：PuttObjectRetention
+* S3：GetBucketLocation
+* S3：GetObjectVersion
+
+
 
 
 === 雲端資料感測
@@ -1076,6 +1122,42 @@ Connector會在部署期間提出下列API要求、以部署全域檔案快取�
 
 
 
+=== FSX ONTAP
+
+Connector會提出下列API要求來探索及管理FSXfor ONTAP the Sfor the：
+
+* EC2：資料說明
+* EC2：取消訂閱即時狀態
+* EC2：取消訂閱實例屬性
+* EC2：取消功能表
+* EC2：取消影像
+* EC2：建立標記
+* EC2：減量磁碟區
+* EC2：取消安全性群組
+* EC2：網路介面
+* EC2：無資料子網路
+* EC2：取消功能Vpcs
+* EC2：取消功能DhcpOptions
+* EC2：取消快照
+* EC2：評量會議
+* EC2：取消註冊
+* EC2：取消標示
+* EC2：解讀IamInstanceProfileAssociations
+* EC2：取消訂閱保留服務
+* EC2：已描述VpcEndpoints
+* EC2：取消功能Vpcs
+* EC2：說明體積修改
+* EC2：取消目標位置群組
+* 公里：清單*
+* 公里：描述*
+* 公里：建立授予
+* kms：清單別名
+* FSX：說明*
+* FSX：清單*
+
+
+
+
 === Kubernetes
 
 Connector會提出下列API要求、以探索及管理Amazon EKS叢集：
@@ -1085,3 +1167,11 @@ Connector會提出下列API要求、以探索及管理Amazon EKS叢集：
 * EKS：取消叢集
 * IAM：GetInstanceProfile
 
+
+
+
+=== S3儲存區探索
+
+Connector提出下列API要求以探索Amazon S3儲存區：
+
+S3：GetEncryptionConfiguration
