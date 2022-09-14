@@ -71,7 +71,7 @@ image:screenshot-help-support.png["「說明」功能表的快照、其中「支
 
 
 +
-image:screenshot-connector-autosupport.png[""]
+image:screenshot-connector-autosupport.png["「支援儀表板」的快照、顯示使用者可以按一下以下載及傳送AutoSupport 各種資訊。"]
 
 
 

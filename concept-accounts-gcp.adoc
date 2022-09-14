@@ -32,7 +32,7 @@ summary: 服務帳戶可讓Cloud Manager擁有部署和管理Cloud Volumes ONTAP
 
 下圖說明上述第 1 和第 2 項所述的權限要求：
 
-image:diagram_permissions_gcp.png["說明"]
+image:diagram_permissions_gcp.png["概念性影像、說明Google和服務帳戶部署Cloud Volumes ONTAP 的權限要求。"]
 
 
 

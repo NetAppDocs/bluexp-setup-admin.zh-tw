@@ -529,7 +529,6 @@
   <block id="24d980f868691fec5316d23a370b1a82" category="list-text">根據您傳送資訊給NetApp支援部門的方式、請選擇下列其中一個選項：</block>
   <block id="b9ec9a523cf55268d71bff7e627ff5be" category="list-text">選取選項、將AutoSupport 此資訊下載到您的本機機器。然後、您可以使用偏好的方法將其傳送給NetApp支援部門。</block>
   <block id="1be1fe56cfe6a879b6c9c537795ab474" category="list-text">按一下「*傳送AutoSupport S編*」、直接將訊息傳送給NetApp支援部門。</block>
-  <block id="038465d74b6306845fffdf73a6d9b4ef" category="paragraph"><block ref="038465d74b6306845fffdf73a6d9b4ef" category="inline-image-macro-rx" type="image"></block></block>
   <block id="92ca244e2f6af5665f270d0017a9ee62" category="section-title">連線至Linux VM</block>
   <block id="e55bb4f4a0a85c49aa386bbab887b86f" category="paragraph">如果您需要連線至執行Connector的Linux VM、可以使用雲端供應商提供的連線選項來執行。</block>
   <block id="cf13d388949fc1d11bc6f3a402d09a9c" category="paragraph">在AWS中建立Connector執行個體時、您提供了AWS存取金鑰和秘密金鑰。您可以將此金鑰配對用於執行個體的SSH。</block>
@@ -1858,8 +1857,6 @@
   <block id="361b7d728922145fd2ca0e3452223253" category="inline-link-macro">瞭解如何使用 Yaml 檔案來設定權限</block>
   <block id="4e1c6449adb7c84edc67d892edd6565c" category="paragraph">我們已設定兩個 Y反 洗錢檔案、其中包含使用者和服務帳戶所需的權限。 <block ref="cd5291ac5e03c6d3b89e0c36ca9255d0" category="inline-link-macro-rx"></block>。</block>
   <block id="fee2d29ad57ecb4f5309060016b4495c" category="paragraph">下圖說明上述第 1 和第 2 項所述的權限要求：</block>
-  <block id="74d08617d74abf19fd56b9d2616415e0" category="inline-image-macro">說明</block>
-  <block id="255370d53f2dbf9e81af416701f41c1c" category="paragraph"><block ref="255370d53f2dbf9e81af416701f41c1c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ebd7d1e81a9a2891e260eecaa709adbf" category="section-title">適用於此產品的專案 Cloud Volumes ONTAP</block>
   <block id="a4ccd00c9229d2a8510153f89f2a576a" category="paragraph">可與 Connector 位於同一個專案中、或位於不同的專案中。 Cloud Volumes ONTAP若要在 Cloud Volumes ONTAP 不同的專案中部署功能、您必須先將 Connector 服務帳戶和角色新增至該專案。</block>
   <block id="c5eb6c02a9d49411a265d5ddf6527796" category="inline-link-macro">瞭解如何設定服務帳戶</block>
@@ -2484,4 +2481,8 @@
   <block id="1fd4dfa3fe95514f04e3ecdd7e8a001d" category="paragraph">Connector提出下列API要求以探索Amazon S3儲存區：</block>
   <block id="080045bf6ab788297df2820c007203af" category="paragraph">S3：GetEncryptionConfiguration</block>
   <block id="2e0aa8db26606696ba7bb05ec89284a7" category="paragraph">Connector會提出下列API要求來管理FSXfor ONTAP Sfor the：</block>
+  <block id="fd4365eba430cfa4f48d4c96ee23c1cc" category="inline-image-macro">「支援儀表板」的快照、顯示使用者可以按一下以下載及傳送AutoSupport 各種資訊。</block>
+  <block id="328e4502038eaedc10a81f50a70db084" category="paragraph"><block ref="328e4502038eaedc10a81f50a70db084" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1b33affeaa41a09a9f3a99d38d14376f" category="inline-image-macro">概念性影像、說明Google和服務帳戶部署Cloud Volumes ONTAP 的權限要求。</block>
+  <block id="61ed3f7479580c6ad0ce86e9e6f3dd8d" category="paragraph"><block ref="61ed3f7479580c6ad0ce86e9e6f3dd8d" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
