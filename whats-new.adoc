@@ -26,6 +26,9 @@ summary: 瞭解Cloud Manager管理功能的新功能、包括NetApp帳戶、連�
 
 * 我們新增_產品內建指南_來強化連接器部署精靈、提供符合Connector安裝最低需求的步驟：權限、驗證和網路。
 * 您現在可以直接從*支援儀表板*的Cloud Manager建立NetApp支援案例。
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-get-help.html#netapp-support["瞭解如何建立案例"]。
+
 * 此版本的Connector也包含Cloud Volumes ONTAP 了一些功能強化功能。
 +
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#18-september-2022["深入瞭Cloud Volumes ONTAP 解功能強化功能"^]

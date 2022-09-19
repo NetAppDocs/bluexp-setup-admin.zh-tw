@@ -2525,4 +2525,6 @@
   <block id="52352d978b8e538f26067965a59f6fc7" category="list-text">按一下*登入*。</block>
   <block id="7b4c71e61e7482bb002c55117cf6e7a8" category="list-text">您現在有兩種選擇：</block>
   <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">所有Cloud Manager文件</block>
+  <block id="59c4ba689ab2a5e1f09df561f47e0d6c" category="inline-link">瞭解如何建立案例</block>
+  <block id="55fc63d7111caa2a4badd753983607c4" category="paragraph"><block ref="45512476d85432fc18c9be020e976fed" category="inline-link-rx"></block>。</block>
 </blocks>
