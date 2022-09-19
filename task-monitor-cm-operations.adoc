@@ -50,7 +50,7 @@ summary: 您可以監控Cloud Manager執行的作業狀態、查看是否有任�
 
 image:screenshot_notification_full.png["顯示通知中心目前通知清單的快照。"]
 
-您也可以設定Cloud Manager以電子郵件傳送通知、即使您尚未登入系統、也能得知重要的系統活動。電子郵件可傳送給屬於您NetApp雲端帳戶一部分的任何Cloud Central使用者、或傳送給任何其他需要注意特定系統活動類型的收件者。請參閱 <<Setting email notification settings,設定電子郵件通知設定>> 以下。
+您也可以設定Cloud Manager以電子郵件傳送通知、即使您尚未登入系統、也能得知重要的系統活動。電子郵件可傳送給屬於您NetApp雲端帳戶一部分的任何Cloud Central使用者、或傳送給任何其他需要注意特定系統活動類型的收件者。請參閱  email notification settings,設定電子郵件通知設定 以下。
 
 
 

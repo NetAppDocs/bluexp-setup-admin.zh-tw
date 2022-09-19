@@ -18,6 +18,22 @@ summary: 瞭解Cloud Manager管理功能的新功能、包括NetApp帳戶、連�
 
 
 
+== 2022年9月18日
+
+
+
+=== 連接器3.9.22
+
+* 我們新增_產品內建指南_來強化連接器部署精靈、提供符合Connector安裝最低需求的步驟：權限、驗證和網路。
+* 您現在可以直接從*支援儀表板*的Cloud Manager建立NetApp支援案例。
+* 此版本的Connector也包含Cloud Volumes ONTAP 了一些功能強化功能。
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#18-september-2022["深入瞭Cloud Volumes ONTAP 解功能強化功能"^]
+
+
+
+
+
 == 2022年7月31日
 
 
@@ -232,7 +248,7 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors
 
 為了管理公有雲環境中的資源和程序、我們減少了Connector需要聯絡的端點數量。
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-networking-cloud-manager.html#outbound-internet-access["檢視所需端點的清單"]。
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["檢視所需端點的清單"]
 
 
 

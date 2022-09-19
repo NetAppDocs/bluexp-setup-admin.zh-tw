@@ -30,11 +30,11 @@ Cloud Manager帳戶管理員必須先部署_Connector_、才能使用大多數Cl
 
 . 出現提示時、請使用您的Microsoft帳戶登入。此帳戶必須具有特定的Azure權限。這是預設選項。
 +
-<<Create a Connector using your Azure account,請依照下列步驟開始使用>>。
+ a Connector using your Azure account,請依照下列步驟開始使用。
 
 . 提供Azure AD服務負責人的詳細資料。此服務主體也需要特定權限。
 +
-<<Create a Connector using a service principal,請依照下列步驟開始使用>>。
+ a Connector using a service principal,請依照下列步驟開始使用。
 
 
 
@@ -42,7 +42,65 @@ Cloud Manager帳戶管理員必須先部署_Connector_、才能使用大多數Cl
 
 == Azure地區的相關注意事項
 
-連接器應部署在Cloud Volumes ONTAP 其所管理的或所管理的各個系統所在的Azure區域 https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure區域配對"^] 適用於整個系統。Cloud Volumes ONTAP這項需求可確保Cloud Volumes ONTAP Azure Private Link連線可用於連接至相關的儲存帳戶。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html["瞭Cloud Volumes ONTAP 解如何使用Azure Private Link"^]。
+連接器應部署在Cloud Volumes ONTAP 其所管理的或所管理的各個系統所在的Azure區域 https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure區域配對"^] 適用於整個系統。Cloud Volumes ONTAP這項需求可確保Cloud Volumes ONTAP Azure Private Link連線可用於連接至相關的儲存帳戶。
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html["瞭Cloud Volumes ONTAP 解如何使用Azure Private Link"^]
+
+
+
+== 設定網路
+
+設定您的網路、讓 Connector 能夠管理公有雲環境中的資源和程序。除了連接器的vnet和子網路之外、您還需要確保符合下列需求。
+
+
+
+=== 連線至目標網路
+
+連接器需要網路連線至您所建立的工作環境類型以及您打算啟用的服務。
+
+例如、如果您在公司網路中安裝Connector、則必須設定VPN連線至要啟動Cloud Volumes ONTAP 效益的vnet。
+
+
+
+=== 傳出網際網路存取
+
+連接器需要存取傳出網際網路、才能管理公有雲環境中的資源和程序。
+
+[cols="2*"]
+|===
+| 端點 | 目的 
+
+
+| \https://support.netapp.com | 以取得授權資訊、並將AutoSupport 資訊傳送給NetApp支援部門。 
+
+
+| \https://*.cloudmanager.cloud.netapp.com | 在Cloud Manager中提供SaaS功能與服務。 
+
+
+| \https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net | 升級Connector及其Docker元件。 
+|===
+
+
+=== Proxy伺服器
+
+如果您的組織需要為所有傳出的網際網路流量部署HTTP Proxy、請取得下列有關HTTP Proxy的資訊：
+
+* IP 位址
+* 認證資料
+* HTTPS憑證
+
+
+
+
+=== 安全性群組
+
+連接器沒有傳入流量、除非您啟動連接器、或連接器是AutoSupport 作為Proxy來接收資訊、否則連接器不會傳入。HTTP 和 HTTPS 可存取 link:concept-connectors.html#the-local-user-interface["本機 UI"]、在極少數情況下使用。只有當您需要連線至主機進行疑難排解時、才需要 SSH 。
+
+
+
+=== IP位址限制
+
+可能與172範圍內的IP位址發生衝突。 link:reference-limitations.html["深入瞭解此限制"]。
 
 
 
@@ -208,15 +266,14 @@ Cloud Manager 可讓您直接從 Azure 的使用者介面建立連接器。
 image:screenshot_connector_add.gif["螢幕擷取畫面、會在標題和「新增連接器」動作中顯示「連接器」圖示。"]
 
 . 選擇 * Microsoft Azure * 作為雲端供應商。
+. 在「*部署連接器*」頁面上、檢閱您需要的詳細資料。您有兩種選擇：
 +
-請記住、連接器必須連線至您所建立的工作環境類型、以及您計畫啟用的服務。
+.. 按一下*繼續*、使用產品內建指南準備部署。每個步驟都包含文件本頁所含的資訊。
+.. 如果您已依照本頁的步驟準備好、請按一下*跳至部署*。
 
-+
-link:reference-networking-cloud-manager.html["深入瞭解連接器的網路需求"]。
 
 . 依照精靈中的步驟建立連接器：
 +
-** *準備好*：檢視您需要的內容、然後按一下*下一步*。
 ** 如果出現提示、請登入您的 Microsoft 帳戶、該帳戶應有建立虛擬機器所需的權限。
 +
 此表單由 Microsoft 擁有及託管。您的認證資料不會提供給 NetApp 。
@@ -232,10 +289,6 @@ TIP: 如果您已經登入 Azure 帳戶、 Cloud Manager 將自動使用該帳�
 
 ** * 網路 * ：選擇 Vnet 和子網路、是否啟用公用 IP 位址、以及是否指定 Proxy 組態（選用）。
 ** * 安全性群組 * ：選擇是建立新的安全性群組、還是選擇允許傳入 HTTP 、 HTTPS 及 SSH 存取的現有安全性群組。
-+
-
-NOTE: 除非您啟動連接器、否則不會有傳入流量進入連接器。HTTP 和 HTTPS 可存取 link:concept-connectors.html#the-local-user-interface["本機 UI"]、在極少數情況下使用。只有當您需要連線至主機進行疑難排解時、才需要 SSH 。
-
 ** *審查*：請檢閱您的選擇、確認您的設定正確無誤。
 
 
@@ -262,11 +315,11 @@ NOTE: 除非您啟動連接器、否則不會有傳入流量進入連接器。HT
 在Azure Active Directory中建立及設定服務主體、並取得Cloud Manager所需的Azure認證資料、以授予在Azure中部署Connector所需的權限。
 
 .步驟
-. <<Create an Azure Active Directory application>>。
-. <<Assign the application to a role>>。
-. <<Add Windows Azure Service Management API permissions>>。
-. <<Get the application ID and directory ID>>。
-. <<Create a client secret>>。
+.  an Azure Active Directory application。
+.  the application to a role。
+.  Windows Azure Service Management API permissions。
+.  the application ID and directory ID。
+.  a client secret。
 
 
 
@@ -503,6 +556,13 @@ Cloud Manager 可讓您直接從 Azure 的使用者介面建立連接器。
 .您需要的是 #8217 ；需要的是什麼
 * Azure 訂閱。
 * 您所選擇的 Azure 區域中的 Vnet 和子網路。
+* 如果您的組織需要代理處理所有傳出的網際網路流量、則HTTP Proxy的詳細資料如下：
++
+** IP 位址
+** 認證資料
+** HTTPS憑證
+
+
 * 如果您不想讓Cloud Manager自動為Connector建立Azure角色、則必須自行建立 link:reference-permissions-azure.html["使用此頁面上的原則"]。
 +
 這些權限適用於Connector執行個體本身。這是一組不同於您先前設定的權限、只要部署Connector即可。
@@ -515,21 +575,26 @@ Cloud Manager 可讓您直接從 Azure 的使用者介面建立連接器。
 image:screenshot_connector_add.gif["螢幕擷取畫面、會在標題和「新增連接器」動作中顯示「連接器」圖示。"]
 
 . 選擇 * Microsoft Azure * 作為雲端供應商。
+. 在*部署連接器*頁面上：
 +
-請記住、連接器必須連線至您所建立的工作環境類型、以及您計畫啟用的服務。
+.. 在「*驗證*」下、按一下「* Active Directory服務主體*」、然後輸入Azure Active Directory服務主體的相關資訊、以授予必要的權限：
++
+*** 應用程式（用戶端） ID ：請參閱  the application ID and directory ID。
+*** 目錄（租戶） ID ：請參閱  the application ID and directory ID。
+*** 用戶端機密：請參閱  a client secret。
 
+
+.. 按一下*登入*。
+.. 您現在有兩種選擇：
 +
-link:reference-networking-cloud-manager.html["深入瞭解連接器的網路需求"]。
+*** 按一下*繼續*、使用產品內建指南準備部署。產品內建指南中的每個步驟都包含文件本頁所含的資訊。
+*** 如果您已依照本頁的步驟準備好、請按一下*跳至部署*。
+
+
+
 
 . 依照精靈中的步驟建立連接器：
 +
-** *準備就緒*：按一下* Azure AD服務委託人*、然後輸入Azure Active Directory服務委託人的相關資訊、以授予必要的權限：
-+
-*** 應用程式（用戶端） ID ：請參閱 <<Get the application ID and directory ID>>。
-*** 目錄（租戶） ID ：請參閱 <<Get the application ID and directory ID>>。
-*** 用戶端機密：請參閱 <<Create a client secret>>。
-
-
 ** * VM驗證*：選擇Azure訂閱、位置、新資源群組或現有資源群組、然後選擇驗證方法。
 ** *詳細資料*：輸入執行個體的名稱、指定標記、然後選擇是否要Cloud Manager建立具有必要權限的新角色、或是要選取您設定的現有角色 link:reference-permissions-azure.html["必要的權限"]。
 +
@@ -537,10 +602,6 @@ link:reference-networking-cloud-manager.html["深入瞭解連接器的網路需�
 
 ** * 網路 * ：選擇 Vnet 和子網路、是否啟用公用 IP 位址、以及是否指定 Proxy 組態（選用）。
 ** * 安全性群組 * ：選擇是建立新的安全性群組、還是選擇允許傳入 HTTP 、 HTTPS 及 SSH 存取的現有安全性群組。
-+
-
-NOTE: 除非您啟動連接器、否則不會有傳入流量進入連接器。HTTP 和 HTTPS 可存取 link:concept-connectors.html#the-local-user-interface["本機 UI"]、在極少數情況下使用。只有當您需要連線至主機進行疑難排解時、才需要 SSH 。
-
 ** *審查*：請檢閱您的選擇、確認您的設定正確無誤。
 
 

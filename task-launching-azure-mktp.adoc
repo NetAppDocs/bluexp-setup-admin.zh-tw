@@ -42,7 +42,7 @@ link:task-installing-linux.html["檢閱 VM 需求"]。
 
 ** 對於網路安全性群組、 Connector 需要使用 SSH 、 HTTP 和 HTTPS 的傳入連線。
 +
-link:reference-networking-cloud-manager.html#rules-for-the-connector-in-azure["深入瞭解 Connector 的安全性群組規則"]。
+link:reference-ports-azure.html["深入瞭解 Connector 的安全性群組規則"]。
 
 ** 在「 * 管理 * 」下、選取「 * 開啟 * 」、為連接器啟用 * 系統指派的託管身分識別 * 。
 +

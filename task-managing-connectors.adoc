@@ -211,7 +211,7 @@ sudo /path/cloud-manager-connector-offline-v3.9.14
 
 .在可存取網際網路的主機上進行軟體升級呢？
 ****
-只要有、 Connector 就會自動將其軟體更新至最新版本 link:reference-networking-cloud-manager.html["傳出網際網路存取"] 以取得軟體更新。
+只要連接器能夠存取傳出的網際網路來取得軟體更新、連接器就會自動將軟體更新至最新版本。
 
 ****
 

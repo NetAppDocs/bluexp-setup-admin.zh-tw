@@ -28,7 +28,7 @@ image:diagram_permissions_initial_aws.png["顯示 Cloud Central 在 AWS 帳戶�
 
 Cloud Manager 會在您為 Cloud Volumes ONTAP 下列項目建立新的工作環境時、依預設選取這些 AWS 認證資料：
 
-image:screenshot_accounts_select_aws.gif["顯示「詳細資料 & 認證」頁面中「切換帳戶」選項的快照。"]
+image:screenshot_accounts_select_aws.gif["顯示「詳細資料  認證」頁面中「切換帳戶」選項的快照。"]
 
 
 
@@ -48,7 +48,7 @@ image:diagram_permissions_multiple_aws.png["顯示兩個額外帳戶的概念性
 
 新增一組認證資料之後、您可以在建立新的工作環境時切換至這些認證資料：
 
-image:screenshot_accounts_switch_aws.png["在詳細資料 & 認證頁面中按一下「切換帳戶」之後、顯示在雲端供應商帳戶之間選取的快照。"]
+image:screenshot_accounts_switch_aws.png["在詳細資料  認證頁面中按一下「切換帳戶」之後、顯示在雲端供應商帳戶之間選取的快照。"]
 
 
 

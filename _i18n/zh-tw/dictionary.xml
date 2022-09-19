@@ -425,12 +425,8 @@
   <block id="80b1b0d2b1ebf2b3cba2d25759801afd" category="list-text">mailto：ng-cloudmanager-feedback@netapp.com [意見反應電子郵件]</block>
   <block id="bff60abbc46aceed0f73a3a4f6cfb123" category="paragraph">我們非常重視您的意見。提交意見反應、協助我們改善Cloud Manager。</block>
   <block id="0659d428df833a806e29e65e632d380a" category="section-title">NetApp支援</block>
-  <block id="c91b5a63849b8d2db01014ed33192735" category="paragraph">除了上述的自我支援選項、您也可以與NetApp支援工程師合作、在您啟動支援之後解決任何問題。</block>
   <block id="6c08c57e382a25a778455184cd9b1a4a" category="list-text">在Cloud Manager中、按一下*「說明」&gt;「支援」*。</block>
   <block id="f5052c65917d7341726235d4d4941461" category="list-text">在「Technical Support（技術支援）」下選擇可用的選項之一：</block>
-  <block id="bece28b158ab337d9ed24b00d7d02cc7" category="list-text">按一下*致電我們*以尋找NetApp技術支援的電話號碼。</block>
-  <block id="efe81cff8e6f47ec59ef94167b76bf5a" category="list-text">按一下「*開啟問題*」、選取其中一個選項、然後按一下「*傳送*」。</block>
-  <block id="cbb1040836732e478409dacf7e45171a" category="paragraph">NetApp代表將審查您的案例、並盡快回覆您。</block>
   <block id="5cc47ef6d684116dbea75fa5016faf05" category="summary">提供您NetApp支援網站（NSS）帳戶的認證資料、以啟用Cloud Volumes ONTAP 關鍵的流程來執行支援功能、並透過Active IQ 支援功能實現預測性分析和主動式支援。</block>
   <block id="8f0fbce5212b79c3be90b1745b1b5ce9" category="doc">在Cloud Manager中新增及管理NetApp支援網站帳戶</block>
   <block id="3b878279a04dc47d60932cb294d96259" category="section-title">總覽</block>
@@ -577,8 +573,6 @@
   <block id="482c8088b93a78c2682279e88617ca7f" category="list-text">執行安裝指令碼：</block>
   <block id="29796d02ce8782cd7e5fc7ab3be29617" category="list-text">升級完成後、您可以前往*「Help」（說明）&gt;「Support」（支援）&gt;「Connector*」（連接器*）來驗證連接器的版本。</block>
   <block id="d36184010415512fdb8a8816b7d2aba8" category="sidebar-title">在可存取網際網路的主機上進行軟體升級呢？</block>
-  <block id="f94f2faae5f0168a2ca69885c77dda4c" category="inline-link-macro">傳出網際網路存取</block>
-  <block id="969d18f13e33afc75147c1b461d02137" category="paragraph">只要有、 Connector 就會自動將其軟體更新至最新版本 <block ref="ecd51bbcdaf97b05f08f632de186709c" category="inline-link-macro-rx"></block> 以取得軟體更新。</block>
   <block id="781589b0a0e3477e5ba0477e895a07ab" category="section-title">從Cloud Manager移除Connectors</block>
   <block id="965420933f6f91639691e88c7155f544" category="paragraph">如果連接器處於非作用中狀態、您可以將其從 Cloud Manager 的連接器清單中移除。如果您刪除了 Connector 虛擬機器、或是卸載了 Connector 軟體、則可以這麼做。</block>
   <block id="c5c64fb69c2266a9bd084b1cc03349b6" category="paragraph">請注意下列關於移除連接器的事項：</block>
@@ -680,8 +674,6 @@
   <block id="12e2060dbbd01e288c66757f239fb192" category="list-text">/var.中的磁碟空間</block>
   <block id="530ae65bce71acbabc920f0c53c4b5c2" category="list-text">必須提供20 GiB的空間</block>
   <block id="c8f224037ea295aeec347c94779d9932" category="list-text">傳出網際網路存取</block>
-  <block id="7ebcb503cdda50b6cfafe4b188689a5c" category="inline-link-macro">連接器的網路需求</block>
-  <block id="8f13fe03e92b3df99e4fdab3f70b8bd0" category="list-text">安裝 Connector 和 Connector 時、需要外傳網際網路存取、才能管理公有雲環境中的資源和程序。如需端點清單、請參閱 <block ref="4ec3519046179fc5881484cb894283f9" category="inline-link-macro-rx"></block>。</block>
   <block id="7c521ef00b3568ffec78f7d18b3f23a1" category="section-title">安裝Connector</block>
   <block id="96ddb04a1d15e031f2d343e6829e4b6c" category="paragraph">驗證是否有支援的Linux主機之後、您就可以取得Connector軟體、然後再進行安裝。</block>
   <block id="7bc3966adb932d8b546fbfa4ef7113d7" category="paragraph">需要root權限才能安裝Connector。</block>
@@ -761,7 +753,6 @@
   <block id="a143e53bf3d41d3d4dd612ba13200112" category="list-text">只有當您未將防火牆規則傳遞給部署、而且選擇讓Cloud Manager為您建立時、才需要在主機專案中部署manager.manager。如果未指定任何規則、Cloud Manager將在主機專案中建立包含VPC0防火牆規則的部署。</block>
   <block id="8e7c4c2e8dfd2e81f9feb42ddfb2e9a8" category="list-text">只有當您未將防火牆規則傳遞至部署、並選擇讓Cloud Manager為您建立防火牆規則時、才需要使用Firewall.create和firewall.delete。這些權限位於Cloud Manager服務帳戶.yaml檔案中。如果您使用共用VPC部署HA配對、這些權限將用於建立VPC1、2和3的防火牆規則。對於所有其他部署、這些權限也會用於建立VPC0的規則。</block>
   <block id="770b8b43613e5c706e2c10ec7bcc3ec7" category="list-text">對於資料分層、分層服務帳戶必須在服務帳戶上具有serviceAccount.user角色、而不只是在專案層級。目前、如果您在專案層級指派serviceAccount.user、則當您使用getIAMPolicy查詢服務帳戶時、不會顯示權限。</block>
-  <block id="c7f5a66dce6cabcd44a4ff22ae6d25c3" category="section-title">啟用 Google Cloud API</block>
   <block id="f8a0ce106d194d305897d63efea46b8d" category="paragraph">部署 Connector 和 Cloud Volumes ONTAP 功能完善的應用程式需要多個 API 。</block>
   <block id="e478bf49f8034f2197e96520fa338da6" category="inline-link">在專案中啟用下列 Google Cloud API</block>
   <block id="9aca519981ff488b54188be9e154de6f" category="list-text"><block ref="dc5737502524148f78bf03ba18318700" category="inline-link-rx"></block>。</block>
@@ -772,27 +763,19 @@
   <block id="71660685d00034957db3f9a31c160978" category="list-text">身分識別與存取管理（ IAM ） API</block>
   <block id="4642830f208507b4a2a5ff5bed0d9b97" category="paragraph">直接從Cloud Manager使用者介面或使用gCloud在Google Cloud中建立Connector。</block>
   <block id="a711863513c11f3a6d86294acc7be0ba" category="list-title">您需要的是 #8217 ；需要的是什麼</block>
-  <block id="9d2307f8f5a2d2672e417c7fb2c70c0e" category="list-text">Google Cloud 專案。</block>
-  <block id="566f8342f1a7975e05d47735cbd31877" category="list-text">擁有建立及管理Cloud Volumes ONTAP 功能所需權限的服務帳戶、如本頁第一節所述。</block>
-  <block id="bea8942e248f7318b017a2750ff8ec51" category="list-text">您所選的 Google Cloud 區域中的 VPC 和子網路。</block>
   <block id="315474a8ef79b74899073fc979f12da4" category="open-title">Cloud Manager</block>
   <block id="d2b74161d054c69894469355bb22cb63" category="list-text">如果您要建立第一個工作環境、請按一下 * 新增工作環境 * 、然後依照提示進行。否則、請按一下「 * Connector* 」下拉式清單、然後選取「 * 新增 Connector* 」。</block>
   <block id="df5b4e7d7b6a4648ec54c1e80de11594" category="inline-image-macro">螢幕擷取畫面、會在標題和「新增連接器」動作中顯示「連接器」圖示。</block>
   <block id="6afef7f4017876f5216334b8130f14fb" category="paragraph"><block ref="6afef7f4017876f5216334b8130f14fb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5ec1fdc717a09349991e1304c5bd757a" category="list-text">選擇 * Google Cloud Platform * 做為雲端供應商。</block>
-  <block id="336114c46de5c797c5cd262aae516be2" category="paragraph">請記住、連接器必須連線至您所建立的工作環境類型、以及您計畫啟用的服務。</block>
-  <block id="d172834beb0d4fd204de13e87e3eba66" category="inline-link-macro">深入瞭解連接器的網路需求</block>
-  <block id="df9f9795bfc1dcf5ccbef82292d61b8c" category="paragraph"><block ref="accae6a387d2cb0876547bc017cc7afc" category="inline-link-macro-rx"></block>。</block>
   <block id="b0e1a0461b32155d621f46d8d6f39569" category="list-text">依照精靈中的步驟建立連接器：</block>
   <block id="af9010f3e11d7efceb7ba88d02e92d39" category="list-text">*準備好*：檢視您需要的內容。</block>
   <block id="12e9d88275170959cb7167c4c85f6c77" category="list-text">如果出現提示、請登入您的 Google 帳戶、該帳戶應有建立虛擬機器執行個體所需的權限。</block>
   <block id="29b28ad1793cec26548948fbe79ebfd5" category="paragraph">這份表單由 Google 擁有及託管。您的認證資料不會提供給 NetApp 。</block>
-  <block id="a4a29fe3efca12ad39a6639b81ae7b18" category="list-text">*基本設定*：輸入虛擬機器執行個體的名稱、指定標記、選取專案、然後選取具有必要權限的服務帳戶（如需詳細資料、請參閱上節）。</block>
   <block id="221cebedac65af2855cc9b0f21c55587" category="list-text">* 位置 * ：指定執行個體的區域、區域、 VPC 和子網路。</block>
   <block id="39ca94376c3d56de257bd39a110e0c3b" category="list-text">* 網路 * ：選擇是否啟用公用 IP 位址、並選擇性地指定 Proxy 組態。</block>
   <block id="86f1b50eaa6c71046b42471aa31a534e" category="list-text">* 防火牆原則 * ：選擇是建立新的防火牆原則、還是選擇允許傳入 HTTP 、 HTTPS 及 SSH 存取的現有防火牆原則。</block>
   <block id="ae6252cb830dbd695650f78870fe4309" category="inline-link-macro">本機 UI</block>
-  <block id="be034f7a422abd26eb70ed41db2b1284" category="admonition">除非您啟動連接器、否則不會有傳入流量進入連接器。HTTP 和 HTTPS 可存取 <block ref="a4d556f51af89bcef8612c38a831609f" category="inline-link-macro-rx"></block>、在極少數情況下使用。只有當您需要連線至主機進行疑難排解時、才需要 SSH 。</block>
   <block id="77c0c575c550fbbb80de7e5c1eda4fbc" category="list-text">*審查*：請檢閱您的選擇、確認您的設定正確無誤。</block>
   <block id="43da6e9199aecb615e775a9a6d77b458" category="paragraph">執行個體應在 7 分鐘內就緒。您應該留在頁面上、直到程序完成為止。</block>
   <block id="7f22bf39aaf5ce5980111c3587bef5b5" category="open-title">gCloud</block>
@@ -884,7 +867,6 @@
   <block id="3eb3c5317b96f11c0338c5ff2b831a15" category="section-title">減少連接器的端點數量</block>
   <block id="3ea953e33860f2fb58e83ea9f9842e28" category="paragraph">為了管理公有雲環境中的資源和程序、我們減少了Connector需要聯絡的端點數量。</block>
   <block id="deb7ce1a594b9c903900b5242dc0085e" category="inline-link">檢視所需端點的清單</block>
-  <block id="3f9908dd0d34e73be621e521e51cd6a8" category="paragraph"><block ref="5f52a012a929ebfb0b0a901a58e91a4c" category="inline-link-rx"></block>。</block>
   <block id="cdacfba529ee299ab36d1cdf539f519d" category="section-title">連接器的EBS磁碟加密</block>
   <block id="dcf92cfff3fdb05a27221d7e0f407165" category="paragraph">當您從Cloud Manager在AWS中部署新的Connector時、您現在可以選擇使用預設的主要金鑰或管理金鑰來加密Connector的EBS磁碟。</block>
   <block id="e47c7d2e2b0dfe5aea5df23ca3dc5523" category="inline-image-macro">在AWS中建立連接器時顯示磁碟加密選項的快照。</block>
@@ -1280,7 +1262,6 @@
   <block id="36bf6fd71e8981aa05c53805d789be2a" category="paragraph"><block ref="d2c78667c1f082bc15de6497425b6b70" category="inline-link-macro-rx"></block>。</block>
   <block id="7d081ddd1a763e64370bc13c27e3eaa1" category="list-text">對於網路安全性群組、 Connector 需要使用 SSH 、 HTTP 和 HTTPS 的傳入連線。</block>
   <block id="e12ee8fc49a830a2c114fcbb887441c1" category="inline-link-macro">深入瞭解 Connector 的安全性群組規則</block>
-  <block id="84a00cc621355536ed32f8f80f8aca63" category="paragraph"><block ref="9bd7b55c24855dfc42004fce619eab35" category="inline-link-macro-rx"></block>。</block>
   <block id="477f88046f056bb40397ec7e6effe28f" category="list-text">在「 * 管理 * 」下、選取「 * 開啟 * 」、為連接器啟用 * 系統指派的託管身分識別 * 。</block>
   <block id="089f373f5f48b55cde8c8de1db96243c" category="inline-link">深入瞭解 Azure 資源的託管身分識別</block>
   <block id="76f2625388817626b5d20572023827a8" category="paragraph">此設定非常重要、因為託管身分識別可讓 Connector 虛擬機器在 Azure Active Directory 中識別自己、而無需提供任何認證。<block ref="f91ce7faef49711445322691b4d6ac64" category="inline-link-rx"></block>。</block>
@@ -1367,9 +1348,6 @@
   <block id="3faf40ec673a27da72957bee9f22e597" category="paragraph">AWS 使用者現在擁有從 Cloud Manager 建立 Connector 所需的權限。當 Cloud Manager 提示您時、您需要為此使用者指定 AWS 存取金鑰。</block>
   <block id="94ee7072c2750da1997438a715efb7d4" category="section-title">建立連接器</block>
   <block id="555955942c711a4d2bbe3fdd1980539b" category="paragraph">Cloud Manager 可讓您直接從 AWS 使用者介面建立連接器。</block>
-  <block id="4f17567a3649c9a7e40e769fe63ec8b1" category="list-text">AWS驗證方法：Cloud Manager可以承擔的IAM角色ARN、或IAM使用者的AWS存取金鑰和秘密金鑰。</block>
-  <block id="696168c9b9e3d6be0b4ff452721f4186" category="list-text">您選擇的 AWS 區域中的 VPC 、子網路和金鑰組。</block>
-  <block id="fafb693c24f4f5cc7a281b93dae71348" category="paragraph">這些是Connector管理公有雲環境中資源所需的權限。這是一組不同於您所提供的建立Connector執行個體的權限。</block>
   <block id="7cddf1ab764729128f3c7130203d73a0" category="list-text">選擇* Amazon Web Services*做為您的雲端供應商、然後按一下*繼續*。</block>
   <block id="0f3262c52ea3cde7a6e7d8f3ced3e5d5" category="list-text">* AWS認證資料*：指定您的AWS區域、然後選擇驗證方法、這是Cloud Manager可以承擔的IAM角色、或是AWS存取金鑰和秘密金鑰。</block>
   <block id="8b8f36850755c4ac43a0df238add8748" category="inline-link-macro">瞭解如何新增其他認證資料</block>
@@ -1615,7 +1593,6 @@
   <block id="28593cc8bcd7f02af87999270a737f43" category="paragraph"><block ref="70914cf64b30f894c82eb432d6410289" category="inline-xref-macro-rx"></block>。</block>
   <block id="e3e02b70df514c22082124328763d018" category="list-text">提供Azure AD服務負責人的詳細資料。此服務主體也需要特定權限。</block>
   <block id="3436333152b4e50a69b25e424a5d0873" category="paragraph"><block ref="1b633d2a7bc357dbd77dec7eba8d64c7" category="inline-xref-macro-rx"></block>。</block>
-  <block id="3390be7199c4e1acf84371ce3c4ae2a4" category="paragraph">連接器應部署在Cloud Volumes ONTAP 其所管理的或所管理的各個系統所在的Azure區域<block ref="71e0e9a7366955554f0600c5ea8cfc7f" category="inline-link-rx"></block> 適用於整個系統。Cloud Volumes ONTAP這項需求可確保Cloud Volumes ONTAP Azure Private Link連線可用於連接至相關的儲存帳戶。<block ref="8fd2062cae8df3766c9ddefca48991a5" category="inline-link-rx"></block>。</block>
   <block id="cd82a81f0c2bccf261869166e5786c07" category="section-title">使用您的Azure帳戶建立Connector</block>
   <block id="358332b40331dd189cc9fff0c6200e31" category="paragraph">在Azure中建立Connector的預設方法是在出現提示時、使用Azure帳戶登入。登入表單由Microsoft擁有及託管。您的認證資料不會提供給 NetApp 。</block>
   <block id="4feea8fb07471b49da12ae6ce993e00f" category="section-title">設定Azure帳戶的權限</block>
@@ -1633,7 +1610,6 @@
   <block id="3c8e2502b00949bb2ead22830ddfa05d" category="list-text">您所選擇的 Azure 區域中的 Vnet 和子網路。</block>
   <block id="bb0af45d6e9045bc2046c5f245006f7c" category="paragraph">這些權限適用於Connector執行個體本身。這是一組不同於您先前設定的權限、只要部署Connector即可。</block>
   <block id="02a8c4a4e553694e2236fd17bb20b197" category="list-text">選擇 * Microsoft Azure * 作為雲端供應商。</block>
-  <block id="16ba6b23ebb7e77d30def44d01db853d" category="list-text">*準備好*：檢視您需要的內容、然後按一下*下一步*。</block>
   <block id="e48f95b272ee0611b76ed8e7da5e4d48" category="list-text">如果出現提示、請登入您的 Microsoft 帳戶、該帳戶應有建立虛擬機器所需的權限。</block>
   <block id="e0f74d06e87b3ad6fc9f3b3cfc573c38" category="paragraph">此表單由 Microsoft 擁有及託管。您的認證資料不會提供給 NetApp 。</block>
   <block id="5d149ff1e8243862b942bfa90d45a31b" category="admonition">如果您已經登入 Azure 帳戶、 Cloud Manager 將自動使用該帳戶。如果您有多個帳戶、則可能需要先登出、以確保您使用的是正確的帳戶。</block>
@@ -1655,7 +1631,6 @@
   <block id="dcfc7ba2828a1d6032c910983d209303" category="paragraph">從Cloud Manager建立Connector時、您需要提供應用程式的應用程式（用戶端）ID和目錄（租戶）ID。Cloud Manager 會使用 ID 以程式設計方式登入。</block>
   <block id="b5b7f7358bfd5257e7b59755057a10d8" category="paragraph">您的服務主體現在已設定完成、您應該已經複製應用程式（用戶端） ID 、目錄（租戶） ID 、以及用戶端機密的值。建立Connector時、您必須在Cloud Manager中輸入此資訊。</block>
   <block id="5c75ce614010ed72ceeef735acca6f29" category="section-title">使用服務主體登入以建立Connector</block>
-  <block id="2b9b47b03d312cd1cc440b106bd893e4" category="list-text">*準備就緒*：按一下* Azure AD服務委託人*、然後輸入Azure Active Directory服務委託人的相關資訊、以授予必要的權限：</block>
   <block id="42dedb42cdb310c29307f9649dd6b146" category="list-text">應用程式（用戶端） ID ：請參閱 <block ref="6e43fddc58b77d10342452e0c5f86200" category="inline-xref-macro-rx"></block>。</block>
   <block id="e6bfb5bdb5586f534e2e3adf3bc1f74a" category="list-text">目錄（租戶） ID ：請參閱 <block ref="6e43fddc58b77d10342452e0c5f86200" category="inline-xref-macro-rx"></block>。</block>
   <block id="aca5096ac18d904bd7d20b609f13571d" category="list-text">用戶端機密：請參閱 <block ref="2f8da44aff19ae4d1a810f6d1d618984" category="inline-xref-macro-rx"></block>。</block>
@@ -1775,23 +1750,9 @@
   <block id="cfce2399f4f36929c6a0ea17350ac8aa" category="cell">以實現Cloud Data Sense。</block>
   <block id="f85c74998244978e7f2016bbc795aea2" category="cell">- container。叢集。Get - container。叢集。清單</block>
   <block id="ddfb140a67cb8f801143468683f3e453" category="cell">探索在Google Kubernetes Engine中執行的Kubernetes叢集。</block>
-  <block id="93fd4230b4afd5ccd3311e78e4c88ac9" category="summary">設定您的網路、讓 Connector 能夠管理公有雲環境中的資源和程序。最重要的步驟是確保從網際網路存取各種端點。</block>
-  <block id="b087af2757d2e30512be9aad9abf3ddb" category="doc">設定連接器的網路</block>
-  <block id="6863e249b85870e839574ab2abf04db4" category="paragraph">設定您的網路、讓 Connector 能夠管理公有雲環境中的資源和程序。最重要的步驟是確保從網際網路存取各種端點。</block>
-  <block id="f2452bb1e7a9e3a7a0569f14cb282cca" category="paragraph">此頁面上的資訊適用於連接器具有傳出網際網路存取的典型部署。</block>
-  <block id="20f41095471130e3ee55ad0782eeccd0" category="inline-link-macro">將 Connector 設定為使用 Proxy 伺服器</block>
-  <block id="b123956f032314223a27df4bc333c4f5" category="admonition">如果您的網路使用 Proxy 伺服器來進行所有與網際網路的通訊、您可以從「設定」頁面指定 Proxy 伺服器。請參閱 <block ref="95523c9035aa1062ac8a3632aeb6e06b" category="inline-link-macro-rx"></block>。</block>
   <block id="be541d1f37f2cc0c7ba1cfd7fcfbb4db" category="section-title">連線至目標網路</block>
   <block id="19dfd3f6e4e8058b5d5537232d50ca9b" category="paragraph">連接器需要網路連線至您所建立的工作環境類型以及您打算啟用的服務。</block>
-  <block id="c3a5da2edea375289d166ef749b9bd1e" category="paragraph">例如、如果您在公司網路中安裝 Connector 、則必須設定 VPN 連線至 VPC 或 vnet 、以便在其中啟動 Cloud Volumes ONTAP 更新。</block>
-  <block id="d7a9479796563c8f42a47db3973f774c" category="paragraph">連接器需要外傳網際網路存取。</block>
-  <block id="5137b25e1ad14548ebb74e1d06668375" category="section-title">端點來管理公有雲環境中的資源</block>
   <block id="c0dfa216f26874dae52a89e0090a3358" category="paragraph">連接器需要存取傳出網際網路、才能管理公有雲環境中的資源和程序。</block>
-  <block id="e858d45ba275a9ce09e00dcf57c80b28" category="section-title">端點以在 Linux 主機上安裝 Connector</block>
-  <block id="39daa013874edb655057fc35e76e0e19" category="paragraph">您可以選擇在自己的 Linux 主機上手動安裝 Connector 軟體。如果您這麼做、則 Connector 安裝程式必須在安裝過程中存取下列 URL ：</block>
-  <block id="3ca10cbf1786d683696248daeef7a67c" category="section-title">連接埠和安全性群組</block>
-  <block id="fd1958e5e74317f89c6c16bbca7d1446" category="section-title">AWS 中 Connector 的規則</block>
-  <block id="0fbb894005047753551829b93d408eac" category="paragraph">Connector 的安全性群組需要傳入和傳出規則。</block>
   <block id="1b3884b38c271fe13c8142e1355e4523" category="section-title">傳入規則</block>
   <block id="888a77f5ac0748b6c8001822417df8b6" category="cell">傳輸協定</block>
   <block id="60aaf44d4b562252c04db7f98497e9aa" category="cell">連接埠</block>
@@ -1835,10 +1796,7 @@
   <block id="f5ef036b4d8b630721e51fe23489fbc9" category="cell">UDP</block>
   <block id="d82c8d1619ad8176d665453cfb2e55f0" category="cell">53.</block>
   <block id="dd8679112f038315d04028c46da1fef7" category="cell">用於 Cloud Manager 的 DNS 解析</block>
-  <block id="b445de53411a165e9c56da6430c38d59" category="section-title">Azure 中的 Connector 規則</block>
   <block id="b774573fe7b53358246a054f6d44ca83" category="cell">提供啟用和使用Cloud Data Sense的能力（僅適用於政府雲端部署）</block>
-  <block id="b52a434afaffee3d1646df3eb9acc853" category="section-title">GCP 中的 Connector 規則</block>
-  <block id="5ea521a799e1cf043cd101ec326044f6" category="paragraph">連接器的防火牆規則需要傳入和傳出規則。</block>
   <block id="2f0c197eb73a7c6da10b03384f241025" category="cell">提供 HTTPS 存取、從用戶端網頁瀏覽器存取本機使用者介面</block>
   <block id="aa414a57d6f1347fc5212beb06655a8e" category="paragraph">連接器的預先定義防火牆規則會開啟所有傳出流量。如果可以接受、請遵循基本的傳出規則。如果您需要更嚴格的規則、請使用進階的傳出規則。</block>
   <block id="bd83f7d2350eb6b777b2622dfd275ab6" category="paragraph">Connector 的預先定義防火牆規則包括下列傳出規則。</block>
@@ -1881,7 +1839,6 @@
   <block id="7c0d614e33fd8b90d55d92a3d18d3e5d" category="sidebar">設定NetApp帳戶</block>
   <block id="4893ffd05430036bfec4fab3ee00d110" category="sidebar">設定工作區和使用者</block>
   <block id="38d95e0fcb99197130dc276778f94262" category="sidebar">設定連接器</block>
-  <block id="4e85b7aafac6d2da235acd904c8d01ca" category="sidebar">設定您的網路</block>
   <block id="0876dbe9a324b66ea7ac9a411751f1e7" category="sidebar">在Google Cloud中建立Connector</block>
   <block id="6edea119df8ceb037e21f33c59986aaa" category="sidebar">管理 Cloud Manager</block>
   <block id="031368c5cb02c2094066fcba2fdb92d5" category="sidebar">NetApp客戶</block>
@@ -1948,7 +1905,6 @@
   <block id="483a6486004960ab28236293d3cf2bce" category="cell">連接器服務帳戶</block>
   <block id="9165bdf7bcd983e5b9eeeea3649fe93d" category="cell">代表部署與Google Cloud API互動。允許Cloud Manager使用共享網路。</block>
   <block id="abb8f06c60f79c0d26aa84ecd4b682a9" category="cell">代表部署部署部署部署Google Cloud執行個體和運算基礎架構。允許Cloud Manager使用共享網路。</block>
-  <block id="c251b4e4495910558d988ba699a63a67" category="section-title">在Google Cloud中建立Connector</block>
   <block id="70d434e2bfd18a27962842edd06609f7" category="paragraph">在我們的範例中、我們會使用已安裝gCloud SDK的本機Shell、但您可以在Google Cloud主控台使用原生Google Cloud Shell。</block>
   <block id="390e66de0b25a9d9b226d4ede6fa20b5" category="section-title">2022年5月12日</block>
   <block id="e2632c3a4c1aff50543e98b03420fd3c" category="section-title">連接器3.9.18修補程式</block>
@@ -2321,7 +2277,6 @@
   <block id="91ae93d60d63596e2482a109b23c1290" category="list-text">按一下*「新增權限」&gt;「直接附加現有原則」*。</block>
   <block id="8bcbf62e98416780ffe2095559aba87a" category="list-text">選取您建立的原則。</block>
   <block id="7480dbf3472d377494469f75467b8989" category="list-text">按一下「*下一步*」、然後按一下「*新增權限*」。</block>
-  <block id="e0704797fef70128c24dd4546bea3df2" category="list-text">如果您不想讓Cloud Manager自動為Connector建立IAM角色、則必須自行建立 <block ref="33c2e52293a8423cf2f0baa8f297e502" category="inline-link-macro-rx"></block>。</block>
   <block id="f7f5e7e3e9ba567310782ed8cfddf80c" category="list-text">選擇您要Cloud Manager建立具有所需權限的新角色、或是要選取您所設定的現有角色 <block ref="8b098a06817becf62c06297dd76999b5" category="inline-link-macro-rx"></block>。</block>
   <block id="dd35c8de0229dd896078da10fa6ca77d" category="inline-link-macro">GCP的連接器原則</block>
   <block id="073869152f1998576e0d772f1465dce4" category="list-text"><block ref="b3e2dfdb02c4ef9473e0b3fb573ce75f" category="inline-link-rx"></block> 這包括在中定義的權限 <block ref="0557e57dd138b7d2b4d9ced6dcd6f706" category="inline-link-macro-rx"></block>。</block>
@@ -2336,7 +2291,6 @@
   <block id="aecabcaa0f622aafe82a445d66cf8ca7" category="inline-link-macro">本節所提供的權限</block>
   <block id="3c011542a6f32f96698424943f4c21db" category="list-text"><block ref="3c011542a6f32f96698424943f4c21db" category="inline-link-macro-rx"></block></block>
   <block id="e99cec7b008996e3bd5b81e8019e24ba" category="list-text"><block ref="e99cec7b008996e3bd5b81e8019e24ba" category="inline-link-macro-rx"></block></block>
-  <block id="ffeb29f758cf37b9f2c9b599fb609031" category="list-text">您的Google Cloud帳戶所需的權限、如本頁第一節所述。</block>
   <block id="f56eaa1aab7c91f2f987469fb824ff7a" category="inline-link-macro">檢視所需的AWS權限</block>
   <block id="c3eae6aa2c5fdc205f8fa520ed336419" category="list-text"><block ref="c3eae6aa2c5fdc205f8fa520ed336419" category="inline-link-macro-rx"></block></block>
   <block id="bcccd030f9d90bb330cfffec45ec9788" category="inline-link-macro">檢視必要的Azure權限</block>
@@ -2427,15 +2381,10 @@
   <block id="489db3f339b691ea4dea5f4572483024" category="paragraph">如果您使用預設的資訊安全群組Cloud Volumes ONTAP 來執行此功能、則無需變更其安全群組。但是如果您打算定義嚴格Cloud Volumes ONTAP 的for the Sfor the Sfor the、那麼您也必須確保Cloud Volumes ONTAP 該安全性群組允許連接埠3128上的傳出連線。</block>
   <block id="117e86e552d0c131628c9b59f4f27b24" category="paragraph">如果您的企業原則要求您使用Proxy伺服器來進行所有的HTTP通訊至網際網路、則必須將連接器設定為使用HTTP Proxy伺服器。Proxy 伺服器可以位於雲端或網路中。</block>
   <block id="cd5948a5853fc000f635c34407e9be0e" category="paragraph">若將連接器設定為使用HTTP Proxy伺服器、則當公用IP位址或NAT閘道無法使用時、即可提供傳出網際網路存取。此Proxy伺服器僅提供連接器與傳出連線。它不提供Cloud Volumes ONTAP 任何連接功能給不適用的系統。</block>
-  <block id="d108a5c38a5cb3124175cfab4db4ec03" category="inline-link-macro">深入瞭解如何使用Proxy伺服器來傳送AutoSupport 功能不實的訊息</block>
-  <block id="87463ee8edca33f75eed85e674b8f926" category="paragraph">如果Cloud Volumes ONTAP 無法透過外部網際網路連線來傳送AutoSupport 各種消息、Cloud Manager會自動將Cloud Volumes ONTAP 這些系統設定為使用連接器隨附的Proxy伺服器。 <block ref="4790ec07d3308f2887f9351ce8bd06a9" category="inline-link-macro-rx"></block>。</block>
   <block id="bc2ef3610c6865883f50e9f5733a7dbe" category="paragraph">Cloud Manager帳戶管理員必須先部署_Connector_、才能使用大多數Cloud Manager功能。 <block ref="39840e1bb98f6582f1bf4e505d666ea1" category="inline-link-macro-rx"></block>。Connector 可讓 Cloud Manager 管理公有雲環境中的資源與程序。</block>
   <block id="b71c0af8fd2f3db874128374c9e382a9" category="paragraph">Cloud Manager帳戶管理員接著可以管理使用者（成員）、工作區、連接器及訂閱、藉此修改此帳戶的設定：</block>
   <block id="0ceeb24c560eb06b8d18aae0d9dd03c4" category="paragraph">根據預設、Cloud Manager帳戶管理員會收到所有「重大」和「建議」通知的電子郵件。根據預設、所有其他使用者和收件者都會設定為不接收任何通知電子郵件。</block>
   <block id="2724db8eb831856d2bcad22cc1470034" category="paragraph">連接器沒有傳入流量、除非您啟動連接器、或連接器是AutoSupport 作為Proxy來接收資訊、否則連接器不會傳入。HTTP 和 HTTPS 可存取 <block ref="a4d556f51af89bcef8612c38a831609f" category="inline-link-macro-rx"></block>、在極少數情況下使用。只有當您需要連線至主機進行疑難排解時、才需要 SSH 。</block>
-  <block id="4fe83d6a1c091adff7b022a5ed50374f" category="section-title">Proxy伺服器、以利AutoSupport 傳達訊息</block>
-  <block id="68363af0cfc7fb5fa02c6d822a0e3f1c" category="paragraph">如果無法Cloud Volumes ONTAP 透過傳出網際網路連線傳送AutoSupport 不出的消息、Cloud Manager會自動設定Cloud Volumes ONTAP 以使用Connector做為Proxy伺服器。</block>
-  <block id="0e3e7ba11a5d193853da473b9d805b91" category="paragraph">如果您定義了Cloud Volumes ONTAP 嚴格的傳出規則以供支援、那麼Cloud Volumes ONTAP 您也必須確保支援透過連接埠3128建立_Outbound _連線的安全性群組。</block>
   <block id="6d222908a201e6b65bf048113504f4c1" category="inline-xref">深入瞭解Connector的Proxy伺服器</block>
   <block id="379c1280ecc325be9f0d74d095f55ae9" category="cell">提供可存取網際網路的功能、將資訊傳送給NetApp支援部門。Cloud Volumes ONTAP AutoSupport您必須在部署後手動開啟此連接埠。 <block ref="9a4dd6e745bb9c3853507bba2251a2cd" category="inline-xref-macro-rx"></block>。</block>
   <block id="68c909dd3a30c6ef6f35eff4ef3ad457" category="paragraph">在大多數情況下、Cloud Manager帳戶管理員需要在雲端或內部部署網路中部署_Connector_。Connector 可讓 Cloud Manager 管理公有雲環境中的資源與程序。</block>
@@ -2485,4 +2434,95 @@
   <block id="328e4502038eaedc10a81f50a70db084" category="paragraph"><block ref="328e4502038eaedc10a81f50a70db084" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1b33affeaa41a09a9f3a99d38d14376f" category="inline-image-macro">概念性影像、說明Google和服務帳戶部署Cloud Volumes ONTAP 的權限要求。</block>
   <block id="61ed3f7479580c6ad0ce86e9e6f3dd8d" category="paragraph"><block ref="61ed3f7479580c6ad0ce86e9e6f3dd8d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c0c1fbd3a68059273f48a44be8f588e1" category="summary">連接器的Azure安全性群組需要傳入和傳出規則。</block>
+  <block id="569fe31933e5918613ae1efa70e82d16" category="doc">Azure中的安全性群組規則</block>
+  <block id="ab46fcbc2aadf36c7b717189309f5fac" category="list-text">Connector安裝程式必須在安裝過程中存取下列URL：</block>
+  <block id="a499e60b7101b8dc7028a8de9d72f713" category="paragraph">只要連接器能夠存取傳出的網際網路來取得軟體更新、連接器就會自動將軟體更新至最新版本。</block>
+  <block id="6b068f0a943d421535c7d8d412ee3522" category="list-text">E系列系統</block>
+  <block id="392d70ca39f31f10bd637936769788df" category="list-text">StorageGRID</block>
+  <block id="06ad314b340900d226b1196e1fe289e9" category="section-title">快速入門</block>
+  <block id="91e06e9a9ef97681b798e2e5e007ba97" category="paragraph">請依照下列步驟快速入門、或向下捲動至其餘部分以取得完整詳細資料。</block>
+  <block id="4e25b51b91caf6711f6cdffd01015593" category="paragraph">若要在AWS中啟動Connector、Cloud Manager必須透過擔任IAM角色或使用AWS存取金鑰來驗證AWS。無論使用哪一種選項、都需要IAM原則。</block>
+  <block id="d2b8d6f0cd04659de9813fba0b765319" category="inline-xref">檢視IAM角色</block>
+  <block id="5695f1494bf1a23e4dfb636b83f9663c" category="inline-xref">請依照逐步指示操作</block>
+  <block id="e55593614a7f3a45e77ff97daf29fa18" category="paragraph"><block ref="bd1177e3d8f8248f18d9f01f00d6aa84" category="inline-xref-macro-rx"></block> 或 <block ref="f998d9b8f7fa449c8986f949582854eb" category="inline-xref-macro-rx"></block>。</block>
+  <block id="3d19b00e58ef1af50dd7a50cb57d2a9b" category="paragraph">您將需要VPC和子網路、並可從網際網路連線至特定端點。如果傳出網際網路需要HTTP Proxy、則您需要IP位址、認證和HTTPS憑證。</block>
+  <block id="0adaf59e592ea102330ecf66723d01c0" category="inline-xref">檢視網路需求</block>
+  <block id="e18d3aaf46d9323ec3d44fd9d3878734" category="paragraph"><block ref="77e8c70950b7db505fe53c4bcd55f41a" category="inline-xref-macro-rx"></block>。</block>
+  <block id="e988340d1dfb68e041da5e7a65701097" category="paragraph">按一下「Connector（連接器）」下拉式清單、選取「* Add Connector*（新增連接器*）」、然後依照提示進行</block>
+  <block id="cd444a79f98ccbe383b146279f3bb526" category="inline-xref">請依照逐步指示操作</block>
+  <block id="442342eacc7f01318bc860131355649e" category="paragraph"><block ref="ca365c48bf30193bd65b99125fcf8cd5" category="inline-xref-macro-rx"></block>。</block>
+  <block id="ab316a3ccbad97726269c9705958262a" category="section-title">設定網路</block>
+  <block id="7213720ac295b1a74851802d3a5a56b8" category="paragraph">設定您的網路、讓 Connector 能夠管理公有雲環境中的資源和程序。除了連接器的VPC和子網路之外、您還需要確保符合下列需求。</block>
+  <block id="1b3deabe2c9e1e4a0b1167212bbfaef2" category="paragraph">例如、如果您在公司網路中安裝Connector、則必須設定VPN連線至VPC、以便在其中啟動Cloud Volumes ONTAP 效益管理功能。</block>
+  <block id="824f455afa0ae197e5e7156988b6dc50" category="section-title">Proxy伺服器</block>
+  <block id="3ae1b8362f96338c0c28c7652251bc8b" category="paragraph">如果您的組織需要為所有傳出的網際網路流量部署HTTP Proxy、請取得下列有關HTTP Proxy的資訊：</block>
+  <block id="75ba8d70e3692ba200f0e0df37b4d2ae" category="list-text">IP 位址</block>
+  <block id="2daf1cb573c2c61422faf64610cf9402" category="list-text">認證資料</block>
+  <block id="6a3f3799bc264d32568bb7169ddd515a" category="list-text">HTTPS憑證</block>
+  <block id="338578acf7e0dc54ebcd8c3592f0b022" category="section-title">安全性群組</block>
+  <block id="d72a801b2f49d6a4ed170ebdf3cf0efc" category="section-title">IP位址限制</block>
+  <block id="65d425afa00c3ead65e6a786e55b60bc" category="inline-link-macro">深入瞭解此限制</block>
+  <block id="2ef89d258d7b7a558315c92ffe06a70a" category="paragraph">可能與172範圍內的IP位址發生衝突。 <block ref="9903a97952b05fb45b71a9f44012cd1c" category="inline-link-macro-rx"></block>。</block>
+  <block id="1fbc47392baedd9a8a771f5372aa43d4" category="list-text">在「*部署連接器*」頁面上、檢閱您需要的詳細資料。您有兩種選擇：</block>
+  <block id="639c5d452ac23b93fb028a8d3101d2c2" category="list-text">按一下*繼續*、使用產品內建指南準備部署。產品內建指南中的每個步驟都包含文件本頁所含的資訊。</block>
+  <block id="ce670b5c6b0b9f0203bdb18071265645" category="list-text">如果您已依照本頁的步驟準備好、請按一下*跳至部署*。</block>
+  <block id="10d640974ffe6a13a9a3a5b33c7610d6" category="paragraph">請確定您的金鑰配對正確、可與連接器搭配使用。如果沒有金鑰配對、您將無法存取Connector虛擬機器。</block>
+  <block id="f7ba76d5c9beab0576f118a6254843e9" category="section-title">2022年9月18日</block>
+  <block id="567aae3125fb3d0d81322caa575a9843" category="section-title">連接器3.9.22</block>
+  <block id="e9da1b86eba52d6822a9d7c294a3641c" category="list-text">我們新增_產品內建指南_來強化連接器部署精靈、提供符合Connector安裝最低需求的步驟：權限、驗證和網路。</block>
+  <block id="871cd14deee4188642f0f5e041d9e0bd" category="list-text">您現在可以直接從*支援儀表板*的Cloud Manager建立NetApp支援案例。</block>
+  <block id="b657064056ea8bf270b50939fb0c9bfe" category="paragraph"><block ref="b657064056ea8bf270b50939fb0c9bfe" category="inline-link-rx"></block></block>
+  <block id="9329698e280db3b309a02e9cb9e73a75" category="paragraph"><block ref="9329698e280db3b309a02e9cb9e73a75" category="inline-link-rx"></block></block>
+  <block id="4691b4c7ea6b67a757c3d7c68596a75b" category="summary">在內部部署的Linux主機上手動安裝Connector時、會使用下列傳入連接埠。</block>
+  <block id="a3a26be97d56db88b1db47012a0942e5" category="paragraph"><block ref="7ce76aff95b05035629c9343687faa19" category="inline-link-macro-rx"></block>。</block>
+  <block id="6d7e2c1c0f4420a7bd5fd9b30ef6949e" category="summary">Connector的AWS安全性群組需要傳入和傳出規則。</block>
+  <block id="60f0453bf0393ab630be6aa37dc20180" category="doc">AWS中的安全群組規則</block>
+  <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">除了上述的自我支援選項、您也可以在啟動支援之後、與NetApp支援專家合作解決任何問題。</block>
+  <block id="e2a733504c4088b809813bbb35a3ddfd" category="inline-link-macro">瞭解如何註冊以取得支援</block>
+  <block id="09651e14b46d7e8697d32de90d0deacb" category="paragraph">若要使用*建立案例*功能、您必須先執行Cloud Manager帳戶ID序號的一次性登錄（即960xxxx）。 <block ref="3349e4b3d05f646f2f1421bee7c2ad26" category="inline-link-macro-rx"></block>。</block>
+  <block id="383133cb6f7207b1c65c3ace94aa5e95" category="list-text">如果您想與電話上的其他人通話、請按一下*「呼叫我們*」。您將會被導向netapp.com上的頁面、其中列出您可以撥打的電話號碼。</block>
+  <block id="bf5bc6ab0f95f17f4e98c9d766b8c11d" category="list-text">按一下*建立案例*、與NetApp支援專家一起開啟問題單：</block>
+  <block id="b53e0a259f4a0c8e7da80d6c94e26c84" category="list-text">*《支援帳戶*》：選取與開立支援案例的人員相關的適用的NSS帳戶。NetApp 支援網站除了以下提供的其他電子郵件之外、此人將是NetApp聯絡的主要聯絡人。</block>
+  <block id="ec65cc87efda54741062da1fce99ff76" category="paragraph">如果您看不到您的NSS帳戶、可以瀏覽至Cloud Manager「Support（支援）」區段中的「* nssn* Management（* nssnss管理*）」索引標籤、將其新增至該處。</block>
+  <block id="b3144caf7d928b7954447c757b3ed77b" category="list-text">*服務*：選取問題相關的服務。例如、Cloud Manager在特定於服務工作流程或功能的技術支援問題時。</block>
+  <block id="2e50c5f85523f0aba9ff2db10f18279c" category="list-text">*工作環境*：如果適用於儲存設備、請選取* Cloud Volumes ONTAP 《*》或*《內部部署*》、然後選取相關的工作環境。</block>
+  <block id="1e38219c106fb9d07d173c027b8911c7" category="paragraph">工作環境清單位於您在服務的最上層橫幅中所選的Cloud Manager帳戶、工作區和Connector範圍內。</block>
+  <block id="e6f29fb3c7636dc0040600dd0e84bb79" category="list-text">*案例優先順序*：選擇案例的優先順序、可以是低、中、高或嚴重。</block>
+  <block id="835eb4008e97c2a7f69bbb2725285e34" category="paragraph">若要深入瞭解這些優先順序、請將滑鼠游標暫留在欄位名稱旁的資訊圖示上。</block>
+  <block id="0f7d9319c95a8be1492e74601c4b3259" category="list-text">*問題說明*：提供問題的詳細說明、包括任何適用的錯誤訊息或您執行的疑難排解步驟。</block>
+  <block id="002c6f26fb01affb37b8cf3cef7a1fb0" category="list-text">*其他電子郵件地址*：如果您想讓其他人知道此問題、請輸入其他電子郵件地址。</block>
+  <block id="baaf0e61add7d12cf8d12e023d5aef18" category="inline-image-macro">「建立案例」表單的快照、可讓您使用NetApp支援建立案例。</block>
+  <block id="a2ff30886e1baf1e7d5045b5fc24f5b9" category="paragraph"><block ref="a2ff30886e1baf1e7d5045b5fc24f5b9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="18f487556417bb6d9721a7005ae097c9" category="paragraph">您的支援案例編號會出現快顯視窗。NetApp支援專家將會審查您的案例、並盡快回覆您。</block>
+  <block id="04e15da1deae9568b4dcda64fbb0c8d5" category="paragraph">如需支援案例的記錄、請按一下*設定&gt;時間軸*、然後尋找名為「create support case」的行動。 最右側的按鈕可讓您展開動作以查看詳細資料。</block>
+  <block id="5c56753585e89a84941bb3a78bc681af" category="paragraph">嘗試建立案例時、可能會遇到下列錯誤訊息：</block>
+  <block id="a30f69ab0ec85d427a3e8835713525bd" category="paragraph">"您無權針對所選服務建立案例"</block>
+  <block id="148f13242c3e296dc276821cdc574921" category="paragraph">此錯誤可能表示、與此相關聯的NSS帳戶及記錄公司與Cloud Manager帳戶序號的記錄公司不同（例如960xxxx)或工作環境序號。您可以在「建立案例*」表單頂端查看您的NSS帳戶清單、以找出最適合的項目、或使用下列其中一個選項尋求協助：</block>
+  <block id="e01df0b4dfd95eba2c59333419e4fac6" category="list-text">使用產品內對談</block>
+  <block id="639be990cfca56ab4b63685d8bacd437" category="list-text">請至提交非技術案例<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block></block>
+  <block id="7628d27e67d0fc21276a5e1d4d9776e4" category="summary">Connector的Google Cloud防火牆規則需要傳入和傳出規則。</block>
+  <block id="e22a4abc98b47ca148e0dfda7e259162" category="doc">Google Cloud中的防火牆規則</block>
+  <block id="05070f603d4009196dfaec7e5ec5e933" category="paragraph">如果Cloud Volumes ONTAP 無法透過外部網際網路連線來傳送AutoSupport 各種消息、Cloud Manager會自動將Cloud Volumes ONTAP 這些系統設定為使用連接器隨附的Proxy伺服器。唯一的需求是確保連接器的安全群組允許透過連接埠3128進行傳入連線。部署Connector之後、您需要開啟此連接埠。</block>
+  <block id="a4359ad4c0ffb5518aa6c64f29f02b5b" category="paragraph">建立並附加自訂角色、確保您的Google Cloud帳戶擁有正確的權限。</block>
+  <block id="79b5e164502a529d170531ef62df5f6e" category="inline-xref">檢視自訂角色</block>
+  <block id="41b98c70857fbd877eaa6d5aa2afb38f" category="paragraph"><block ref="56342c0f42ba8cc53bfd82f726307829" category="inline-xref-macro-rx"></block>。</block>
+  <block id="f3644ee5935c45fc9eda641aff25c872" category="paragraph">建立Connector VM時、您需要將其與服務帳戶建立關聯。此服務帳戶必須具有自訂角色、且具有管理Google Cloud資源的權限。</block>
+  <block id="10b8e1fabef4ff1cdc6916e0d45fd2d9" category="paragraph"><block ref="43195205bf0c290642c5b60423b88943" category="inline-xref-macro-rx"></block>。</block>
+  <block id="01790991bacd709c167c554d551529eb" category="list-title">span class="image"&gt;&lt;imgrc=<block ref="687851ea92b6566013c78343fcd6878f" category="inline-link-rx"></block> Alt="wer"&gt;&lt;/span&gt;啟用Google Cloud API</block>
+  <block id="9a11eb5da5d06e3593dc6b41553d97e5" category="section-title">設定權限</block>
+  <block id="ec8725380aa2f688c9b9d45557c44600" category="section-title">設定服務帳戶</block>
+  <block id="3824876226172edfe0f17e8022b60fda" category="section-title">啟用 Google Cloud API</block>
+  <block id="abfd76b9567ca082322504a092e076c7" category="list-text">*詳細資料*：輸入虛擬機器執行個體的名稱、指定標籤、選取專案、然後選取具有必要權限的服務帳戶（詳細資料請參閱上節）。</block>
+  <block id="0e4b0391e50169d97fc505f0c73a94ba" category="paragraph">連接器應部署在Cloud Volumes ONTAP 其所管理的或所管理的各個系統所在的Azure區域<block ref="71e0e9a7366955554f0600c5ea8cfc7f" category="inline-link-rx"></block> 適用於整個系統。Cloud Volumes ONTAP這項需求可確保Cloud Volumes ONTAP Azure Private Link連線可用於連接至相關的儲存帳戶。</block>
+  <block id="07a7f9f6c28c927482b86d1b2710f6a3" category="paragraph"><block ref="07a7f9f6c28c927482b86d1b2710f6a3" category="inline-link-rx"></block></block>
+  <block id="85b230e60d81c13f5dc04f2f6348b69b" category="paragraph">設定您的網路、讓 Connector 能夠管理公有雲環境中的資源和程序。除了連接器的vnet和子網路之外、您還需要確保符合下列需求。</block>
+  <block id="7f98194e906061755ef77e3cbe8a33a9" category="paragraph">例如、如果您在公司網路中安裝Connector、則必須設定VPN連線至要啟動Cloud Volumes ONTAP 效益的vnet。</block>
+  <block id="a3f904af5bc42ef6ae44062da5d02b45" category="list-text">按一下*繼續*、使用產品內建指南準備部署。每個步驟都包含文件本頁所含的資訊。</block>
+  <block id="7b3422536b44078a6701640706be10a0" category="list-text">如果您的組織需要代理處理所有傳出的網際網路流量、則HTTP Proxy的詳細資料如下：</block>
+  <block id="1086659fbba9a8aed49e109adc659d56" category="list-text">在*部署連接器*頁面上：</block>
+  <block id="3e51a9204bf7c3a99ce916328857c361" category="list-text">在「*驗證*」下、按一下「* Active Directory服務主體*」、然後輸入Azure Active Directory服務主體的相關資訊、以授予必要的權限：</block>
+  <block id="52352d978b8e538f26067965a59f6fc7" category="list-text">按一下*登入*。</block>
+  <block id="7b4c71e61e7482bb002c55117cf6e7a8" category="list-text">您現在有兩種選擇：</block>
+  <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">所有Cloud Manager文件</block>
 </blocks>

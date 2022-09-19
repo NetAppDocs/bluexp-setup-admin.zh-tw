@@ -22,6 +22,30 @@ Cloud Manager帳戶管理員必須先部署_Connector_、才能使用大多數Cl
 
 
 
+== 快速入門
+
+請依照下列步驟快速入門、或向下捲動至其餘部分以取得完整詳細資料。
+
+[role="quick-margin-para"]
+若要在AWS中啟動Connector、Cloud Manager必須透過擔任IAM角色或使用AWS存取金鑰來驗證AWS。無論使用哪一種選項、都需要IAM原則。
+
+[role="quick-margin-para"]
+ an IAM policy,檢視IAM角色 或  up AWS authentication,請依照逐步指示操作。
+
+[role="quick-margin-para"]
+您將需要VPC和子網路、並可從網際網路連線至特定端點。如果傳出網際網路需要HTTP Proxy、則您需要IP位址、認證和HTTPS憑證。
+
+[role="quick-margin-para"]
+ up networking,檢視網路需求。
+
+[role="quick-margin-para"]
+按一下「Connector（連接器）」下拉式清單、選取「* Add Connector*（新增連接器*）」、然後依照提示進行
+
+[role="quick-margin-para"]
+ a Connector,請依照逐步指示操作。
+
+
+
 == 設定AWS驗證
 
 Cloud Manager必須先與AWS驗證、才能在VPC中部署Connector執行個體。您可以選擇下列其中一種驗證方法：
@@ -164,18 +188,65 @@ AWS 使用者現在擁有從 Cloud Manager 建立 Connector 所需的權限。�
 
 
 
+== 設定網路
+
+設定您的網路、讓 Connector 能夠管理公有雲環境中的資源和程序。除了連接器的VPC和子網路之外、您還需要確保符合下列需求。
+
+
+
+=== 連線至目標網路
+
+連接器需要網路連線至您所建立的工作環境類型以及您打算啟用的服務。
+
+例如、如果您在公司網路中安裝Connector、則必須設定VPN連線至VPC、以便在其中啟動Cloud Volumes ONTAP 效益管理功能。
+
+
+
+=== 傳出網際網路存取
+
+連接器需要存取傳出網際網路、才能管理公有雲環境中的資源和程序。
+
+[cols="2*"]
+|===
+| 端點 | 目的 
+
+
+| \https://support.netapp.com | 以取得授權資訊、並將AutoSupport 資訊傳送給NetApp支援部門。 
+
+
+| \https://*.cloudmanager.cloud.netapp.com | 在Cloud Manager中提供SaaS功能與服務。 
+
+
+| \https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net | 升級Connector及其Docker元件。 
+|===
+
+
+=== Proxy伺服器
+
+如果您的組織需要為所有傳出的網際網路流量部署HTTP Proxy、請取得下列有關HTTP Proxy的資訊：
+
+* IP 位址
+* 認證資料
+* HTTPS憑證
+
+
+
+
+=== 安全性群組
+
+連接器沒有傳入流量、除非您啟動連接器、或連接器是AutoSupport 作為Proxy來接收資訊、否則連接器不會傳入。HTTP 和 HTTPS 可存取 link:concept-connectors.html#the-local-user-interface["本機 UI"]、在極少數情況下使用。只有當您需要連線至主機進行疑難排解時、才需要 SSH 。
+
+
+
+=== IP位址限制
+
+可能與172範圍內的IP位址發生衝突。 link:reference-limitations.html["深入瞭解此限制"]。
+
+
+
 == 建立連接器
 
 Cloud Manager 可讓您直接從 AWS 使用者介面建立連接器。
-
-.您需要的是 #8217 ；需要的是什麼
-* AWS驗證方法：Cloud Manager可以承擔的IAM角色ARN、或IAM使用者的AWS存取金鑰和秘密金鑰。
-* 您選擇的 AWS 區域中的 VPC 、子網路和金鑰組。
-* 如果您不想讓Cloud Manager自動為Connector建立IAM角色、則必須自行建立 link:reference-permissions-aws.html["使用此頁面上的原則"]。
-+
-這些是Connector管理公有雲環境中資源所需的權限。這是一組不同於您所提供的建立Connector執行個體的權限。
-
-
 
 .步驟
 . 如果您要建立第一個工作環境、請按一下 * 新增工作環境 * 、然後依照提示進行。否則、請按一下「 * Connector* 」下拉式清單、然後選取「 * 新增 Connector* 」。
@@ -183,11 +254,11 @@ Cloud Manager 可讓您直接從 AWS 使用者介面建立連接器。
 image:screenshot_connector_add.gif["螢幕擷取畫面、會在標題和「新增連接器」動作中顯示「連接器」圖示。"]
 
 . 選擇* Amazon Web Services*做為您的雲端供應商、然後按一下*繼續*。
+. 在「*部署連接器*」頁面上、檢閱您需要的詳細資料。您有兩種選擇：
 +
-請記住、連接器必須連線至您所建立的工作環境類型、以及您計畫啟用的服務。
+.. 按一下*繼續*、使用產品內建指南準備部署。產品內建指南中的每個步驟都包含文件本頁所含的資訊。
+.. 如果您已依照本頁的步驟準備好、請按一下*跳至部署*。
 
-+
-link:reference-networking-cloud-manager.html["深入瞭解連接器的網路需求"]。
 
 . 依照精靈中的步驟建立連接器：
 +
@@ -206,11 +277,10 @@ TIP: 如果選擇*假定角色*、您可以從連接器部署精靈建立第一�
 
 
 ** *網路*：指定執行個體的VPC、子網路和金鑰配對、選擇是否啟用公用IP位址、以及選擇性地指定Proxy組態。
-** * 安全性群組 * ：選擇是建立新的安全性群組、還是選擇允許傳入 HTTP 、 HTTPS 及 SSH 存取的現有安全性群組。
 +
+請確定您的金鑰配對正確、可與連接器搭配使用。如果沒有金鑰配對、您將無法存取Connector虛擬機器。
 
-NOTE: 除非您啟動連接器、否則不會有傳入流量進入連接器。HTTP 和 HTTPS 可存取 link:concept-connectors.html#the-local-user-interface["本機 UI"]、在極少數情況下使用。只有當您需要連線至主機進行疑難排解時、才需要 SSH 。
-
+** * 安全性群組 * ：選擇是建立新的安全性群組、還是選擇允許傳入 HTTP 、 HTTPS 及 SSH 存取的現有安全性群組。
 ** *審查*：請檢閱您的選擇、確認您的設定正確無誤。
 
 
@@ -219,8 +289,6 @@ NOTE: 除非您啟動連接器、否則不會有傳入流量進入連接器。HT
 執行個體應在 7 分鐘內就緒。您應該留在頁面上、直到程序完成為止。
 
 
-
-您需要將 Connector 與工作空間建立關聯、讓 Workspace Admins 可以使用這些 Connectors 來建立 Cloud Volumes ONTAP 一套系統。如果您只有帳戶管理員、則不需要將 Connector 與工作區建立關聯。根據預設、 Account Admins 可存取 Cloud Manager 中的所有工作區。 link:task-setting-up-netapp-accounts.html#associating-connectors-with-workspaces["深入瞭解"]。
 
 如果您在建立Connector的同一個AWS帳戶中有Amazon S3儲存區、則會在畫版上自動顯示Amazon S3工作環境。 link:task-viewing-amazon-s3.html["深入瞭解如何運用此工作環境"]。
 

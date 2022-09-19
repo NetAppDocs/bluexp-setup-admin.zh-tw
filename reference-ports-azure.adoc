@@ -1,0 +1,82 @@
+---
+sidebar: sidebar 
+permalink: reference-ports-azure.html 
+keywords: ports, security group, http, https, inbound, outbound 
+summary: 連接器的Azure安全性群組需要傳入和傳出規則。 
+---
+= Azure中的安全性群組規則
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+連接器的Azure安全性群組需要傳入和傳出規則。
+
+
+
+== 傳入規則
+
+[cols="3*"]
+|===
+| 傳輸協定 | 連接埠 | 目的 
+
+
+| SSH | 22 | 提供對 Connector 主機的 SSH 存取權 
+
+
+| HTTP | 80 | 提供從用戶端 Web 瀏覽器到本機使用者介面的 HTTP 存取 
+
+
+| HTTPS | 443.. | 提供HTTPS存取、從用戶端網頁瀏覽器存取本機使用者介面、以及從Cloud Data Sense執行個體連線 
+
+
+| TCP | 3128 | 提供可存取網際網路的功能、將資訊傳送給NetApp支援部門。Cloud Volumes ONTAP AutoSupport您必須在部署後手動開啟此連接埠。  server for AutoSupport messages,深入瞭解Connector的Proxy伺服器。 
+
+
+| TCP | 9060 | 提供啟用和使用Cloud Data Sense的能力（僅適用於政府雲端部署） 
+|===
+
+
+== 傳出規則
+
+Connector 的預先定義安全性群組會開啟所有傳出流量。如果可以接受、請遵循基本的傳出規則。如果您需要更嚴格的規則、請使用進階的傳出規則。
+
+
+
+=== 基本傳出規則
+
+Connector 的預先定義安全性群組包括下列傳出規則。
+
+[cols="3*"]
+|===
+| 傳輸協定 | 連接埠 | 目的 
+
+
+| 所有 TCP | 全部 | 所有傳出流量 
+
+
+| 所有的 udp | 全部 | 所有傳出流量 
+|===
+
+
+=== 進階傳出規則
+
+如果您需要嚴格的傳出流量規則、可以使用下列資訊、僅開啟連接器傳出通訊所需的連接埠。
+
+
+NOTE: 來源 IP 位址為 Connector 主機。
+
+[cols="5*"]
+|===
+| 服務 | 傳輸協定 | 連接埠 | 目的地 | 目的 
+
+
+| API 呼叫與 AutoSupport 功能 | HTTPS | 443.. | 傳出網際網路和 ONTAP 叢集管理 LIF | API將Azure和ONTAP VMware呼叫、Cloud Data Sense、勒索軟體服務、並將AutoSupport VMware訊息傳送給NetApp 
+
+
+| DNS | UDP | 53. | DNS | 用於 Cloud Manager 的 DNS 解析 
+|===

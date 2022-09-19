@@ -24,11 +24,11 @@ summary: 新增及管理AWS認證資料、讓Cloud Manager擁有在AWS帳戶中�
 
 * 將額外的AWS認證資料新增至現有的Connector
 +
-將新的AWS認證資料新增至現有的Connector、可讓您Cloud Volumes ONTAP 使用相同的Connector在另一個AWS帳戶中部署。 <<Add additional credentials to a Connector,瞭解如何將AWS認證資料新增至Connector>>。
+將新的AWS認證資料新增至現有的Connector、可讓您Cloud Volumes ONTAP 使用相同的Connector在另一個AWS帳戶中部署。  additional credentials to a Connector,瞭解如何將AWS認證資料新增至Connector。
 
 * 將AWS認證資料新增至Cloud Manager以建立Connector
 +
-將新的AWS認證資料新增至Cloud Manager、可讓Cloud Manager擁有建立Connector所需的權限。 <<Add credentials to Cloud Manager for creating a Connector,瞭解如何將AWS認證資料新增至Cloud Manager>>。
+將新的AWS認證資料新增至Cloud Manager、可讓Cloud Manager擁有建立Connector所需的權限。  credentials to Cloud Manager for creating a Connector,瞭解如何將AWS認證資料新增至Cloud Manager。
 
 * 將AWS認證資料新增至Cloud Manager for FSX ONTAP for Sf
 +
@@ -63,8 +63,8 @@ NOTE: 當您從 Cloud Manager 部署 Connector 時、 Cloud Manager 會自動為
 
 * 選項 *
 
-* <<Grant permissions by assuming an IAM role in another account>>
-* <<Grant permissions by providing AWS keys>>
+*  permissions by assuming an IAM role in another account
+*  permissions by providing AWS keys
 
 
 
@@ -88,7 +88,7 @@ NOTE: 當您從 Cloud Manager 部署 Connector 時、 Cloud Manager 會自動為
 . 複製IAM角色的角色ARN、以便稍後將其貼到Cloud Manager中。
 
 
-帳戶現在擁有必要的權限。 <<add-the-credentials,您現在可以將認證資料新增至Connector>>。
+帳戶現在擁有必要的權限。 ,您現在可以將認證資料新增至Connector。
 
 
 
@@ -109,7 +109,7 @@ https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html["AW
 
 
 
-帳戶現在擁有必要的權限。 <<add-the-credentials,您現在可以將認證資料新增至Connector>>。
+帳戶現在擁有必要的權限。 ,您現在可以將認證資料新增至Connector。
 
 
 
@@ -140,7 +140,7 @@ image:screenshot_settings_icon.gif["顯示 Cloud Manager 主控台右上角「�
 
 現在、您可以在建立新的工作環境時、從「詳細資料與認證」頁面切換至不同的認證資料集：
 
-image:screenshot_accounts_switch_aws.png["在詳細資料 & 認證頁面中按一下「切換帳戶」之後、顯示在雲端供應商帳戶之間選取的快照。"]
+image:screenshot_accounts_switch_aws.png["在詳細資料  認證頁面中按一下「切換帳戶」之後、顯示在雲端供應商帳戶之間選取的快照。"]
 
 
 
@@ -174,7 +174,7 @@ image:screenshot_accounts_switch_aws.png["在詳細資料 & 認證頁面中按�
 . 複製IAM角色的角色ARN、以便在下一步將其貼到Cloud Manager中。
 
 
-IAM角色現在擁有所需的權限。 <<add-the-credentials-2,您現在可以將它新增至 Cloud Manager>>。
+IAM角色現在擁有所需的權限。 ,您現在可以將它新增至 Cloud Manager。
 
 
 

@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: reference-ports-on-prem.html 
+keywords: networking, network, requirements, ports, on-prem, linux, http, https 
+summary: 在內部部署的Linux主機上手動安裝Connector時、會使用下列傳入連接埠。 
+---
+= 內部連接器的連接埠
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+在內部部署的Linux主機上手動安裝Connector時、會使用下列_inbound連接埠。
+
+這些傳入規則適用於內部部署連接器的兩種部署模式：安裝時可存取網際網路、或是無法存取網際網路。
+
+[cols="10,10,80"]
+|===
+| 傳輸協定 | 連接埠 | 目的 
+
+
+| HTTP | 80 | 提供從用戶端 Web 瀏覽器到本機使用者介面的 HTTP 存取 
+
+
+| HTTPS | 443.. | 提供 HTTPS 存取、從用戶端網頁瀏覽器存取本機使用者介面 
+|===

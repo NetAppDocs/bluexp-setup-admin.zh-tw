@@ -1,0 +1,79 @@
+---
+sidebar: sidebar 
+permalink: reference-ports-gcp.html 
+keywords: ports, firewall rules, http, https, inbound, outbound 
+summary: Connector的Google Cloud防火牆規則需要傳入和傳出規則。 
+---
+= Google Cloud中的防火牆規則
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Connector的Google Cloud防火牆規則需要傳入和傳出規則。
+
+
+
+== 傳入規則
+
+[cols="10,10,80"]
+|===
+| 傳輸協定 | 連接埠 | 目的 
+
+
+| SSH | 22 | 提供對 Connector 主機的 SSH 存取權 
+
+
+| HTTP | 80 | 提供從用戶端 Web 瀏覽器到本機使用者介面的 HTTP 存取 
+
+
+| HTTPS | 443.. | 提供 HTTPS 存取、從用戶端網頁瀏覽器存取本機使用者介面 
+
+
+| TCP | 3128 | 提供可存取網際網路的功能、將資訊傳送給NetApp支援部門。Cloud Volumes ONTAP AutoSupport您必須在部署後手動開啟此連接埠。  server for AutoSupport messages,深入瞭解Connector的Proxy伺服器。 
+|===
+
+
+== 傳出規則
+
+連接器的預先定義防火牆規則會開啟所有傳出流量。如果可以接受、請遵循基本的傳出規則。如果您需要更嚴格的規則、請使用進階的傳出規則。
+
+
+
+=== 基本傳出規則
+
+Connector 的預先定義防火牆規則包括下列傳出規則。
+
+[cols="20,20,60"]
+|===
+| 傳輸協定 | 連接埠 | 目的 
+
+
+| 所有 TCP | 全部 | 所有傳出流量 
+
+
+| 所有的 udp | 全部 | 所有傳出流量 
+|===
+
+
+=== 進階傳出規則
+
+如果您需要嚴格的傳出流量規則、可以使用下列資訊、僅開啟連接器傳出通訊所需的連接埠。
+
+
+NOTE: 來源 IP 位址為 Connector 主機。
+
+[cols="5*"]
+|===
+| 服務 | 傳輸協定 | 連接埠 | 目的地 | 目的 
+
+
+| API 呼叫與 AutoSupport 功能 | HTTPS | 443.. | 傳出網際網路和 ONTAP 叢集管理 LIF | API會呼叫GCP和ONTAP VMware、Cloud Data Sense、勒索軟體服務、並將AutoSupport 此訊息傳送給NetApp 
+
+
+| DNS | UDP | 53. | DNS | 用於 Cloud Manager 的 DNS 解析 
+|===

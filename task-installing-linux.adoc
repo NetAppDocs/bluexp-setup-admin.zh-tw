@@ -61,7 +61,18 @@ Red Hat Enterprise Linux 系統必須在 Red Hat 訂購管理中註冊。如果�
 Hypervisor:: 通過認證可執行 CentOS 或 Red Hat Enterprise Linux 的裸機或託管 Hypervisorhttps://access.redhat.com/certified-hypervisors["Red Hat 解決方案：哪些 Hypervisor 已通過認證、可執行 Red Hat Enterprise Linux ？"^]
 /opt 中的磁碟空間:: 必須有100 GiB的可用空間
 /var.中的磁碟空間:: 必須提供20 GiB的空間
-傳出網際網路存取:: 安裝 Connector 和 Connector 時、需要外傳網際網路存取、才能管理公有雲環境中的資源和程序。如需端點清單、請參閱 link:reference-networking-cloud-manager.html["連接器的網路需求"]。
+傳出網際網路存取:: Connector安裝程式必須在安裝過程中存取下列URL：
++
+--
+* \https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+* \https://s3.amazonaws.com/aws-cli/awscli-bundle.zip
+* \https://*.blob.core.windows.net或\https://hub.docker.com
++
+主機可能會在安裝期間嘗試更新作業系統套件。主機可聯絡不同的鏡射站台、以取得這些 OS 套件。
+
+
+
+--
 
 
 

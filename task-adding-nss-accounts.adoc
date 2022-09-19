@@ -100,7 +100,7 @@ NetApp使用Microsoft Azure Active Directory做為身分識別供應商、提供
 +
 完成此程序之後、您更新的帳戶現在應該會在表格中列為_new帳戶。此表中仍會列出_舊版_帳戶、以及任何現有的工作環境關聯。
 
-. 如果Cloud Volumes ONTAP 現有的不工作環境附加至舊版帳戶、請依照下列步驟執行 <<Attach a working environment to a different NSS account,將這些工作環境附加至不同的NSS帳戶>>。
+. 如果Cloud Volumes ONTAP 現有的不工作環境附加至舊版帳戶、請依照下列步驟執行  a working environment to a different NSS account,將這些工作環境附加至不同的NSS帳戶。
 . 移至舊版的nsso帳戶、按一下 image:icon-action.png["這是三個並排點的圖示"] 然後選取*刪除*。
 
 
@@ -174,7 +174,7 @@ Cloud Manager會顯示NetApp支援網站使用者名稱及相關的電子郵件�
 
 刪除任何不再想與Cloud Manager搭配使用的NSS帳戶。
 
-請注意、您無法刪除目前與Cloud Volumes ONTAP 某個運作環境相關聯的帳戶。您首先需要 <<Attach a working environment to a different NSS account,將這些工作環境附加至不同的NSS帳戶>>。
+請注意、您無法刪除目前與Cloud Volumes ONTAP 某個運作環境相關聯的帳戶。您首先需要  a working environment to a different NSS account,將這些工作環境附加至不同的NSS帳戶。
 
 .步驟
 . 在Cloud Manager主控台右上角、按一下「說明」圖示、然後選取*「支援」*。
