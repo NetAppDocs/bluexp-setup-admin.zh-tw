@@ -827,8 +827,6 @@
   <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">開放原始碼</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知檔案提供有關 NetApp 軟體所使用之協力廠商版權與授權的資訊。</block>
-  <block id="4940124e8487cb4ea36f1511a195cf66" category="inline-link-macro">Cloud Manager 3.9 注意事項</block>
-  <block id="c069fcc68c5dfa73ccc99924c836cae9" category="list-text"><block ref="c069fcc68c5dfa73ccc99924c836cae9" category="inline-link-macro-rx"></block></block>
   <block id="84a965b235dbf71095fa90c6e442a58e" category="summary">瞭解Cloud Manager管理功能的新功能、包括NetApp帳戶、連接器、雲端供應商認證等。</block>
   <block id="490414e0366b091220802d406e52c076" category="doc">新功能</block>
   <block id="f6197c5e32978fc6ef2a0a4b4ae9403a" category="paragraph">瞭解Cloud Manager管理功能的新功能：NetApp客戶、連接器、雲端供應商認證等。</block>
@@ -2527,4 +2525,6 @@
   <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">所有Cloud Manager文件</block>
   <block id="59c4ba689ab2a5e1f09df561f47e0d6c" category="inline-link">瞭解如何建立案例</block>
   <block id="55fc63d7111caa2a4badd753983607c4" category="paragraph"><block ref="45512476d85432fc18c9be020e976fed" category="inline-link-rx"></block>。</block>
+  <block id="d14a27b37d19411318313c75f11baf13" category="inline-link-macro">Cloud Manager注意事項</block>
+  <block id="300aa46e11928dbde4552827675beb31" category="list-text"><block ref="300aa46e11928dbde4552827675beb31" category="inline-link-macro-rx"></block></block>
 </blocks>
