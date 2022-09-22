@@ -1766,7 +1766,6 @@
   <block id="b136ef5f6a01d816991fe3cf7a6ac763" category="cell">TCP</block>
   <block id="dff8e9c2ac33381546d96deea9922999" category="cell">3128</block>
   <block id="cb4b69eb9bd10da82c15dca2f86a1385" category="cell">9060</block>
-  <block id="a88f9f8d3b07dc3b0bfb7e3fd41aaebe" category="cell">提供啟用和使用Cloud Data Sense的能力（僅適用於GovCloud部署）</block>
   <block id="7fcf8a20eb9257fce9235438893a7754" category="section-title">傳出規則</block>
   <block id="f27967c4c8769094dfb727988a22cbfa" category="paragraph">Connector 的預先定義安全性群組會開啟所有傳出流量。如果可以接受、請遵循基本的傳出規則。如果您需要更嚴格的規則、請使用進階的傳出規則。</block>
   <block id="d4dc7fa133657e4530cfde55110ec3c1" category="section-title">基本傳出規則</block>
@@ -1794,7 +1793,6 @@
   <block id="f5ef036b4d8b630721e51fe23489fbc9" category="cell">UDP</block>
   <block id="d82c8d1619ad8176d665453cfb2e55f0" category="cell">53.</block>
   <block id="dd8679112f038315d04028c46da1fef7" category="cell">用於 Cloud Manager 的 DNS 解析</block>
-  <block id="b774573fe7b53358246a054f6d44ca83" category="cell">提供啟用和使用Cloud Data Sense的能力（僅適用於政府雲端部署）</block>
   <block id="2f0c197eb73a7c6da10b03384f241025" category="cell">提供 HTTPS 存取、從用戶端網頁瀏覽器存取本機使用者介面</block>
   <block id="aa414a57d6f1347fc5212beb06655a8e" category="paragraph">連接器的預先定義防火牆規則會開啟所有傳出流量。如果可以接受、請遵循基本的傳出規則。如果您需要更嚴格的規則、請使用進階的傳出規則。</block>
   <block id="bd83f7d2350eb6b777b2622dfd275ab6" category="paragraph">Connector 的預先定義防火牆規則包括下列傳出規則。</block>
@@ -2527,4 +2525,5 @@
   <block id="55fc63d7111caa2a4badd753983607c4" category="paragraph"><block ref="45512476d85432fc18c9be020e976fed" category="inline-link-rx"></block>。</block>
   <block id="d14a27b37d19411318313c75f11baf13" category="inline-link-macro">Cloud Manager注意事項</block>
   <block id="300aa46e11928dbde4552827675beb31" category="list-text"><block ref="300aa46e11928dbde4552827675beb31" category="inline-link-macro-rx"></block></block>
+  <block id="84f0978b53ad6dbefb1e08686d6c7c18" category="cell">提供在政府雲端部署中啟用和使用Cloud Data Sense和Cloud Backup的能力。如果您在Cloud Manager帳戶中停用SaaS介面、Cloud Backup也需要此連接埠。</block>
 </blocks>
