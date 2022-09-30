@@ -71,6 +71,9 @@ Cloud Manager 包含與 NetApp Cloud Central 整合的 SaaS 型介面、以及�
 Cloud Manager 可透過存取 https://cloudmanager.netapp.com["SaaS 型使用者介面"^] 和 API 。這項SaaS體驗可讓您在最新功能發佈時自動存取、並在NetApp帳戶和連接器之間輕鬆切換。
 
 
+TIP: 如果您的作業環境無法存取傳出的網際網路、您可以在該環境中安裝Connector軟體、並存取Connector上的本機使用者介面。 link:concept-connectors.html["深入瞭解連接器"]。
+
+
 
 === NetApp Cloud Central
 
@@ -90,7 +93,7 @@ https://cloud.netapp.com["NetApp Cloud Central"^] 提供集中位置以供存取
 
 連接器應隨時保持執行狀態。這對於您持續啟用的服務健全狀況和營運而言十分重要。
 
-例如、連接器是Cloud Volumes ONTAP 運作過程中的關鍵要素。如果連接器關機、Cloud Volumes ONTAP 具有節點型授權的現象將會在與連接器失去通訊超過14天之後關閉。
+例如、連接器是Cloud Volumes ONTAP 運作過程中的關鍵要素。如果連接器電源關閉、 Cloud Volumes ONTAP 則在與連接器失去通訊超過 14 天之後、將會關閉此功能。
 
 link:concept-connectors.html["深入瞭解何時需要連接器及其運作方式"]。
 

@@ -16,7 +16,7 @@ summary: 'Cloud Manager 介面可透過 SaaS 型使用者介面存取、方法�
 [role="lead"]
 Cloud Manager 介面可透過 SaaS 型使用者介面存取、方法是前往 https://cloudmanager.netapp.com[]。
 
-如果您是從政府區域或沒有外傳網際網路存取權限的站台存取Cloud Manager、則必須登入連接器上執行的本機使用者介面。 link:task-managing-connectors.html#access-the-local-ui["瞭解如何存取Connector上的本機UI"]。
+如果您是從政府區域或沒有外傳網際網路存取權限的站台存取Cloud Manager、則必須在建立Connector之後登入本機使用者介面。 link:task-managing-connectors.html#access-the-local-ui["瞭解如何存取Connector上的本機UI"]。
 
 
 TIP: 您可以使用單一登入、從公司目錄（聯盟身分識別）使用認證登入。若要深入瞭解、請前往 https://cloud.netapp.com/help-center["Cloud Central說明中心"^] 然後按一下* Cloud Central登入選項*。

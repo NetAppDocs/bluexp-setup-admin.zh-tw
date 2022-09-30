@@ -10,16 +10,51 @@ summary: 在您透過NetApp技術支援開啟支援案例之前、您必須先�
 :imagesdir: ../media/
 
 
-在您透過NetApp技術支援開啟支援案例之前、您必須先將NetApp支援網站帳戶新增至Cloud Manager、然後註冊以取得支援。
+在您透過NetApp技術支援開啟支援案例之前、您必須先在NetApp 支援網站 Cloud Manager中新增一個支援（NSS）帳戶、然後註冊以取得支援。
 
 
 
-== 新增一個NSS帳戶
+== 支援登錄總覽
+
+有兩種登錄形式可啟動支援服務權利：
+
+* 註冊Cloud Manager帳戶ID支援訂閱（您的20位數960xxxxxxx序號位於Cloud Manager的「Support Resources（支援資源）」頁面）。
++
+這是Cloud Manager中任何服務的單一支援訂閱ID。每個Cloud Manager帳戶層級的支援訂閱都必須註冊。
+
+* 在Cloud Volumes ONTAP 雲端供應商的市場中註冊與訂閱相關的支援服務序號（這些序號為20位數909601xxxxxxxx序號）。
++
+這些序號通常稱為「_PAYGO」序號、並在Cloud Volumes ONTAP 部署時由Cloud Manager產生。
+
+
+
+註冊這兩種序號類型、就能開啟支援服務單、自動產生個案及Active IQ 進行支援。
+
+您的註冊方式取決於您是新客戶或現有客戶或合作夥伴。
+
+* 現有客戶或合作夥伴
++
+身為現有的NetApp客戶或合作夥伴、您可以使用NetApp 支援網站 您的畫面（NSS）SSO帳戶執行上述登錄。在「支援儀表板」中、Cloud Manager提供一個* nssn*管理*頁面、您可以在其中新增您的nss.新增您的NSS帳戶後、Cloud Manager會自動為您註冊這些序號。
+
++
+ an NSS account to Cloud Manager,瞭解如何新增您的NSS帳戶。
+
+* NetApp新推出
++
+如果您是NetApp的新客戶、您必須在NetApp的支援註冊網站上完成Cloud Manager帳戶ID序號的一次性註冊。完成此註冊並建立新的NSS帳戶之後、您就可以在Cloud Manager中使用此帳戶自動註冊、以便繼續進行。
+
++
+ with NetApp,瞭解如何向NetApp註冊。
+
+
+
+
+
+== 將一個新增至Cloud Manager的NSS
 
 「支援儀表板」可讓您從單一位置新增及管理所有NetApp支援網站帳戶。
 
 .步驟
-. 如果您還沒有 NetApp 支援網站帳戶、 https://register.netapp.com/register/start["註冊一項"^]。
 . 在Cloud Manager主控台右上角、按一下「說明」圖示、然後選取*「支援」*。
 +
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-help-support.png["「說明」功能表的快照、其中「支援」是第一個列出的選項"]
@@ -31,24 +66,92 @@ NetApp使用Microsoft Azure Active Directory做為身分識別供應商、提供
 
 . 在登入頁面上、提供您的NetApp支援網站註冊電子郵件地址和密碼、以執行驗證程序。
 +
-此動作可讓Cloud Manager使用您的NSS帳戶。
+這些行動可讓Cloud Manager使用您的NSS帳戶進行授權下載、軟體升級驗證、以及未來的支援註冊等作業。
 
 +
-附註：帳戶必須是客戶層級的帳戶（非來賓帳戶或臨時帳戶）。
+請注意下列事項：
+
++
+** 帳戶必須是客戶層級的帳戶（不是來賓帳戶或臨時帳戶）。
+** 成功登入後、NetApp會儲存NSS.使用者名稱。這是系統產生的ID、會對應至您的電子郵件。在「* nssn*管理*」頁面上、您可以從顯示電子郵件 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-nss-menu.png["三個橫點的圖示"] 功能表。
+** 如果您需要重新整理登入認證憑證權杖、也可以在中使用*更新認證*選項 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-nss-menu.png["三個橫點的圖示"] 功能表。使用此選項會提示您重新登入。
 
 
 
 
 
-== 註冊您的帳戶以取得支援
 
-支援註冊可從支援儀表板的Cloud Manager取得。
+== 向NetApp註冊
+
+您如何註冊NetApp支援取決於您是否已擁有NetApp 支援網站 一個NetApp（NSS）帳戶。
+
+
+
+=== 現有的客戶、擁有一個新服務客戶帳戶
+
+如果您是擁有NSS帳戶的NetApp客戶、只需透過Cloud Manager註冊即可獲得支援。
 
 .步驟
 . 在Cloud Manager主控台右上角、按一下「說明」圖示、然後選取*「支援」*。
 +
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-help-support.png["「說明」功能表的快照、其中「支援」是第一個列出的選項"]
 
-. 在* Resources（資源）*選項卡中，單擊* Register for Support*（註冊以獲得支持*）。
-. 選取您要登錄的NSS認證、然後按一下「*登錄*」。
+. 如果您尚未這麼做、請將您的NSS帳戶新增至Cloud Manager。
+. 在*資源*頁面上、按一下*註冊以取得支援*。
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-register-support.png["顯示帳戶序號和「Register for Support」（註冊支援）選項的快照"]
 
+
+
+
+
+=== 現有客戶、但無NSS.帳戶
+
+如果您是現有的NetApp客戶、擁有現有授權和序號、但_否_ nss_帳戶、您只需要建立一個nss.帳戶。
+
+.步驟
+. 完成建立NetApp 支援網站 一個不完善的帳戶 https://mysupport.netapp.com/site/user/registration["《使用者登錄表》NetApp 支援網站"^]
++
+.. 請務必選擇適當的使用者層級、通常為* NetApp客戶/終端使用者*。
+.. 請務必將上述使用的Cloud Manager帳戶序號（960xxxx）複製到序號欄位。這將加速帳戶處理。
+
+
+
+
+
+
+=== NetApp全新推出
+
+如果您是NetApp的新客戶、而且您沒有新的NSS帳戶、請依照下列每個步驟操作。
+
+.步驟
+. 在Cloud Manager主控台右上角、按一下「說明」圖示、然後選取*「支援」*。
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-help-support.png["「說明」功能表的快照、其中「支援」是第一個列出的選項"]
+
+. 從「Support Registration（支援登錄）」頁面找到Cloud Manager帳戶ID序號。
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-serial-number.png["「說明」功能表的快照、其中「支援」是第一個列出的選項"]
+
+. 瀏覽至 https://register.netapp.com["NetApp的支援註冊網站"^] 並選擇*我不是NetApp註冊客戶*。
+. 填寫必填欄位（紅色星號）。
+. 在*產品系列*欄位中、選取* Cloud Manager*、然後選取適用的帳單供應商。
+. 複製上述步驟2的Cloud Manager帳戶序號、完成安全性檢查、然後確認您已閱讀NetApp的全球資料隱私權政策。
++
+系統會立即將電子郵件傳送至提供的信箱、以完成此安全交易。如果驗證電子郵件在幾分鐘內未送達、請務必檢查您的垃圾郵件資料夾。
+
+. 確認電子郵件中的行動。
++
+確認將您的申請提交給NetApp、並建議您建立NetApp 支援網站 一個申請表。
+
+. 完成建立NetApp 支援網站 一個不完善的帳戶 https://mysupport.netapp.com/site/user/registration["《使用者登錄表》NetApp 支援網站"^]
++
+.. 請務必選擇適當的使用者層級、通常為* NetApp客戶/終端使用者*。
+.. 請務必將上述使用的Cloud Manager帳戶序號（960xxxx）複製到序號欄位。這將加速帳戶處理。
+
+
+
+
+在此過程中、NetApp應與您聯絡。這是新使用者的一次性就職練習。
+
+一旦擁有NetApp 支援網站 您的不二帳戶、您就可以瀏覽至Cloud Manager、新增此新增的NSS-帳戶以供日後登錄。

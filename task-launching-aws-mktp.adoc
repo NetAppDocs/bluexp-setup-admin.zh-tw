@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-launching-aws-mktp.html 
-keywords: install connector, create connector, deploy connector, installation, installing, marketplace, aws, launch, launching, ec2 console, iam role 
+keywords: install connector, create connector, deploy connector, installation, installing, marketplace, aws, launch, launching, ec2 console, iam role, govcloud, government, aws government, aws govcloud, gov marketplace 
 summary: 最好直接從 Cloud Manager 建立 Connector 、但如果您不想指定 AWS 存取金鑰、可以從 AWS Marketplace 啟動 Connector 。建立並設定 Connector 之後、 Cloud Manager 會在您建立新的工作環境時自動使用。 
 ---
 = 從AWS Marketplace建立連接器
@@ -14,7 +14,18 @@ summary: 最好直接從 Cloud Manager 建立 Connector 、但如果您不想指
 
 
 [role="lead"]
-最好直接從 Cloud Manager 建立 Connector 、但如果您不想指定 AWS 存取金鑰、可以從 AWS Marketplace 啟動 Connector 。建立並設定 Connector 之後、 Cloud Manager 會在您建立新的工作環境時自動使用。
+對於AWS商業區域而言、最好直接從Cloud Manager建立Connector、但您也可以從AWS Marketplace（如果您願意）啟動Connector。對於AWS政府區域、您無法從Cloud Manager的SaaS網站將Connector部署到政府區域、因此下一個最佳選擇是從AWS Marketplace部署Connector。
+
+
+TIP: 您也可以在網路或雲端的現有Linux主機上下載並安裝Connector軟體。 link:task-installing-linux.html["瞭解如何在現有的Linux主機上安裝Connector"]。
+
+
+
+== 在AWS商業區域建立Connector
+
+您可以直接從AWS Marketplace產品項目for Cloud Manager、在AWS商業區域啟動Connector執行個體。
+
+建立Connector的IAM使用者必須擁有AWS Marketplace權限、才能訂閱及取消訂閱。
 
 .步驟
 . 在AWS中設定權限：
@@ -23,10 +34,7 @@ summary: 最好直接從 Cloud Manager 建立 Connector 、但如果您不想指
 .. 建立角色類型為 Amazon EC2 的 IAM 角色、並將您在上一步建立的原則附加至角色。
 
 
-. 現在請前往 https://aws.amazon.com/marketplace/pp/B018REK8QG["AWS Marketplace 上的 Cloud Manager 頁面"^] 從 AMI 部署 Cloud Manager 。
-+
-IAM 使用者必須擁有 AWS Marketplace 權限才能訂閱及取消訂閱。
-
+. 前往 https://aws.amazon.com/marketplace/pp/B018REK8QG["AWS Marketplace 上的 Cloud Manager 頁面"^] 若要從AMI部署Cloud Manager：
 . 在 Marketplace 頁面上、按一下 * 繼續訂閱 * 、然後按一下 * 繼續進行組態 * 。
 +
 image:screenshot_subscribe_cm.gif["螢幕快照顯示 AWS Marketplace 上的「繼續訂閱並繼續設定」按鈕。"]
@@ -38,18 +46,23 @@ image:screenshot_subscribe_cm.gif["螢幕快照顯示 AWS Marketplace 上的「�
 
 . 依照提示設定及部署執行個體：
 +
-** * 選擇執行個體類型 * ：視區域可用度而定、請選擇其中一種支援的執行個體類型（建議使用 T3.xlge ）。
+** *名稱和標記*：輸入執行個體的名稱和標記。
+** *應用程式與作業系統映像*：跳過本節。Cloud Manager AMI已選取。
+** *執行個體類型*：視區域可用度而定、請選擇其中一種支援的執行個體類型（建議使用T3.xlge）。
 +
 link:task-installing-linux.html["檢閱執行個體需求"]。
 
-** * 設定執行個體 * ：選取 VPC 和子網路、選擇您在步驟 1 中建立的 IAM 角色、啟用終止保護（建議）、並選擇符合您需求的任何其他組態選項。
+** *金鑰配對（登入）*：選取您要用來安全連線至執行個體的金鑰配對。
+** *網路設定*：視需要編輯網路設定：
 +
-image:screenshot_aws_iam_role.gif["在 AWS 的「設定執行個體」頁面上顯示欄位的快照。您應該在步驟 1 中建立的 IAM 角色已選取。"]
+*** 選擇所需的VPC和子網路。
+*** 指定執行個體是否應有公有IP位址。
+*** 指定防火牆設定、以啟用Connector執行個體所需的連線方法：SSH、HTTP和HTTPS。
 
-** * 新增儲存設備 * ：保留預設的儲存選項。
-** * 新增標記 * ：視需要輸入執行個體的標記。
-** * 設定安全性群組 * ：指定連接器執行個體所需的連線方法： SSH 、 HTTP 和 HTTPS 。
-** * 審查 * ：檢閱您的選擇、然後按一下 * 啟動 * 。
+
+** *設定儲存設備*：保留預設的儲存選項。
+** *進階詳細資料*：在「* IAM intance profile *」下、選擇您在步驟1中建立的IAM角色。
+** *摘要*：檢閱摘要、然後按一下*啟動執行個體*。
 +
 AWS 會以指定的設定啟動軟體。Connector 執行個體和軟體應在大約五分鐘內執行。
 
@@ -71,11 +84,86 @@ image:screenshot_set_up_cloud_manager.gif["顯示「設定連接器」畫面的�
 
 
 
+. 開啟網頁瀏覽器並前往 https://cloudmanager.netapp.com[] 開始使用Connector with Cloud Manager。
 
 
 現在已安裝Connector、並使用您的NetApp帳戶進行設定。當您建立新的工作環境時、 Cloud Manager 會自動使用此 Connector 。但如果您有多個連接器、就需要 link:task-managing-connectors.html["在兩者之間切換"]。
 
 如果您在建立Connector的同一個AWS帳戶中有Amazon S3儲存區、則會在畫版上自動顯示Amazon S3工作環境。 link:task-viewing-amazon-s3.html["深入瞭解如何運用此工作環境"]。
+
+
+
+== 在AWS政府區域中建立Connector
+
+若要在AWS政府區域中部署Connector、您需要前往EC2服務、並從AWS Marketplace選取Cloud Manager產品。
+
+.步驟
+. 在AWS中設定權限：
++
+.. 從IAM主控台複製並貼上的內容、以建立您自己的原則 link:reference-permissions-aws.html["連接器的IAM原則"]。
+.. 建立角色類型為 Amazon EC2 的 IAM 角色、並將您在上一步建立的原則附加至角色。
+
+
+. 前往AWS Marketplace的Cloud Manager產品。
++
+IAM 使用者必須擁有 AWS Marketplace 權限才能訂閱及取消訂閱。
+
++
+.. 開啟EC2服務、然後選取* Launch instance*。
+.. 選擇* AWS Marketplace *。
+.. 搜尋Cloud Manager並選取產品項目。
++
+image:screenshot-gov-cloud-mktp.png["在AWS Marketplace中搜尋Cloud Manager產品後、會顯示快照"]
+
+.. 按一下 * 繼續 * 。
+
+
+. 依照提示設定及部署執行個體：
++
+** *選擇執行個體類型*：視區域可用度而定、請選擇其中一種支援的執行個體類型（建議使用T3.xlge）。
++
+link:task-installing-linux.html["檢閱執行個體需求"]。
+
+** *設定執行個體詳細資料*：選取VPC和子網路、選擇您在步驟1中建立的IAM角色、啟用終止保護（建議）、並選擇符合您需求的任何其他組態選項。
++
+image:screenshot_aws_iam_role.gif["在 AWS 的「設定執行個體」頁面上顯示欄位的快照。您應該在步驟 1 中建立的 IAM 角色已選取。"]
+
+** * 新增儲存設備 * ：保留預設的儲存選項。
+** * 新增標記 * ：視需要輸入執行個體的標記。
+** * 設定安全性群組 * ：指定連接器執行個體所需的連線方法： SSH 、 HTTP 和 HTTPS 。
+** * 審查 * ：檢閱您的選擇、然後按一下 * 啟動 * 。
+
+
++
+AWS 會以指定的設定啟動軟體。Connector 執行個體和軟體應在大約五分鐘內執行。
+
+. 從連線至 Connector 執行個體的主機開啟網頁瀏覽器、然後輸入下列 URL ：
++
+http://_ipaddress_:80[]
+
+. 登入後、設定 Connector ：
++
+.. 指定要與Connector建立關聯的NetApp帳戶。
++
+link:concept-netapp-accounts.html["瞭解NetApp客戶"]。
+
+.. 輸入系統名稱。
++
+image:screenshot_set_up_cloud_manager.gif["顯示「設定連接器」畫面的快照、可讓您選取NetApp帳戶並命名系統。"]
+
+
+
+
+
+現在已安裝Connector、並使用您的NetApp帳戶進行設定。
+
+只要您想使用Cloud Manager、請開啟網頁瀏覽器並連線至Connector執行個體的IP位址： http://_ipaddress_:80[]
+
+由於連接器部署在政府區域、因此無法從存取 https://cloudmanager.netapp.com[]。
+
+
+
+== 開啟連接埠3128以顯示AutoSupport 資訊
 
 如果您計畫在Cloud Volumes ONTAP 無法連上傳出網際網路連線的子網路中部署「還原」系統、Cloud Manager會自動將Cloud Volumes ONTAP 「還原」設定為使用連接器做為Proxy伺服器。
 

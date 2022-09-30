@@ -45,6 +45,8 @@ sidebar:
         url: "/task-creating-connectors-azure.html"
       - title: 在Google Cloud中建立Connector
         url: "/task-creating-connectors-gcp.html"
+      - title: 在政府區域中建立連接器
+        url: "/task-create-connectors-gov.html"
     - title: 下一步
       url: "/reference-whats-next.html"
   - title: 管理 Cloud Manager
