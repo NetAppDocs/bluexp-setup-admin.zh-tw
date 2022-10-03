@@ -59,7 +59,7 @@ Azure 以指定的設定部署虛擬機器。虛擬機器和 Connector 軟體應
 
 . 從連線至 Connector 虛擬機器的主機開啟網頁瀏覽器、然後輸入下列 URL ：
 +
-http://_ipaddress_[]
+https://_ipaddress_[]
 
 . 登入後、設定 Connector ：
 +
@@ -79,7 +79,7 @@ image:screenshot_set_up_cloud_manager.gif["螢幕快照顯示「設定Cloud Mana
 
 如果Connector位於Azure商業區域、請開啟網頁瀏覽器並前往 https://cloudmanager.netapp.com[] 開始使用Connector with Cloud Manager。
 
-如果Connector位於Azure政府區域、您可以開啟網頁瀏覽器並連線至Connector執行個體的IP位址、以使用Cloud Manager： http://_ipaddress_[]
+如果Connector位於Azure政府區域、您可以開啟網頁瀏覽器並連線至Connector執行個體的IP位址、以使用Cloud Manager： https://_ipaddress_[]
 
 由於連接器部署在政府區域、因此無法從存取 https://cloudmanager.netapp.com[]。
 
