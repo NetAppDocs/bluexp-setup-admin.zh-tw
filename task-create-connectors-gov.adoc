@@ -16,7 +16,10 @@ summary: 如果您是在政府區域營運、則必須從雲端供應商的市�
 [role="lead"]
 如果您是在政府區域營運、則必須從雲端供應商的市場部署Connector、或在現有的Linux主機上手動安裝Connector軟體。您無法從Cloud Manager的SaaS網站將Connector部署到政府區域。
 
+請使用下列其中一個連結來檢視建立連接器的指示：
+
 * link:task-launching-aws-mktp.html#create-the-connector-in-an-aws-government-region["從AWS Marketplace建立連接器"]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-aws-c2s.html["在Cloud Volumes ONTAP AWS C2S環境中建立連接器與功能"^]
 * link:task-launching-azure-mktp.html["從Azure Marketplace建立連接器"]
 * link:task-installing-linux.html["在您自己的Linux主機上安裝Connector"]
 +
@@ -24,6 +27,6 @@ summary: 如果您是在政府區域營運、則必須從雲端供應商的市�
 
 
 
-部署Connector之後、您可以開啟網頁瀏覽器並連線至Connector執行個體的IP位址、以存取Cloud Manager： http://_ipaddress_:80[]
+部署Connector之後、您可以開啟網頁瀏覽器並連線至Connector執行個體的IP位址、以存取Cloud Manager： http://_ipaddress_[]
 
 由於連接器部署在政府區域、因此無法從存取 https://cloudmanager.netapp.com[]。
