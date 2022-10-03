@@ -67,7 +67,7 @@ Docker引擎:: 安裝Connector之前、主機上需要Docker Engine 19版或更�
 +
 [source, cli]
 ----
-sudo sysctl enable docker && sudo sysctl start docker
+sudo systemctl enable docker && sudo systemctl start docker
 ----
 . 從下載 Cloud Manager 軟體 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支援網站"^]。
 . 將安裝程式複製到Linux主機。

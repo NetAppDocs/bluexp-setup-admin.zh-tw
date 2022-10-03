@@ -2612,4 +2612,5 @@
   <block id="32ca71310dadc8fc1c3dc9edd297e66e" category="paragraph">部署Connector之後、您可以開啟網頁瀏覽器並連線至Connector執行個體的IP位址、以存取Cloud Manager：<block ref="a60ca185b138421b16753fe169ef52b7" category="inline-link-rx"></block></block>
   <block id="9878eb7f6fc13faa4a717cc5b1192951" category="paragraph">Cloud Manager帳戶管理員可透過多種方式建立Connector：</block>
   <block id="08bcb1ae91400f74899c5825a1f7973c" category="paragraph">而您應該從執行幾乎所有的工作<block ref="8f305b98f88a161e5a1e68aca36c2103" category="inline-link-rx"></block>、連接器上仍有本機使用者介面可供使用。如果您在無法存取網際網路的環境（例如政府區域）中安裝Connector、以及需要從Connector本身執行的幾項工作（而非SaaS介面）、則需要使用此介面：</block>
+  <block id="08072de6f5a921907c2b45d019f7d63c" category="paragraph">若要在您自己的Linux主機上手動安裝、您必須使用「線上」安裝程式、將Connector安裝在可存取網際網路的主機上。Cloud Manager提供獨立的「離線」安裝程式、但只有內部部署網站無法存取網際網路時才支援。政府區域不支援此功能。</block>
 </blocks>
