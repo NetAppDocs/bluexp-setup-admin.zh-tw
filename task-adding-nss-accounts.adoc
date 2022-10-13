@@ -38,13 +38,16 @@ summary: 提供您NetApp支援網站（NSS）帳戶的認證資料、以啟用Cl
 
 == 新增一個NSS帳戶
 
-「支援儀表板」可讓您從單一位置新增及管理所有NetApp支援網站帳戶。
+「支援儀表板」可讓您新增及管理NetApp 支援網站 要搭配Cloud Manager使用的各種不一致帳戶。
+
+* 如果您有客戶層級的帳戶、可以新增一或多個NSS帳戶。
+* 如果您有合作夥伴或經銷商帳戶、您可以新增一或多個NSS帳戶、但這些帳戶無法與客戶層級帳戶一起新增。
+
 
 .步驟
-. 如果您還沒有 NetApp 支援網站帳戶、 https://register.netapp.com/register/start["註冊一項"^]。
 . 在Cloud Manager主控台右上角、按一下「說明」圖示、然後選取*「支援」*。
 +
-image:screenshot-help-support.png["「說明」功能表的快照、其中「支援」是第一個列出的選項"]
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-help-support.png["「說明」功能表的快照、其中「支援」是第一個列出的選項"]
 
 . 按一下「*」「nss管理」>「新增nssAccount」*。
 . 出現提示時、按一下*繼續*以重新導向至Microsoft登入頁面。
@@ -53,19 +56,15 @@ NetApp使用Microsoft Azure Active Directory做為身分識別供應商、提供
 
 . 在登入頁面上、提供您的NetApp支援網站註冊電子郵件地址和密碼、以執行驗證程序。
 +
-此動作可讓Cloud Manager使用您的NSS帳戶。
+這些行動可讓Cloud Manager使用您的NSS帳戶進行授權下載、軟體升級驗證、以及未來的支援註冊等作業。
 
 +
-請注意帳戶的下列需求：
+請注意下列事項：
 
 +
 ** 帳戶必須是客戶層級的帳戶（不是來賓帳戶或臨時帳戶）。
-** 如果您打算部署節點型BYOL系統：
-+
-*** 帳戶必須獲得授權、才能存取 BYOL 系統的序號。
-*** 如果您購買安全的 BYOL 訂閱、則需要安全的 NSS 帳戶。
-
-
+** 成功登入後、NetApp會儲存NSS.使用者名稱。這是系統產生的ID、會對應至您的電子郵件。在「* nssn*管理*」頁面上、您可以從顯示電子郵件 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-nss-menu.png["三個橫點的圖示"] 功能表。
+** 如果您需要重新整理登入認證憑證權杖、也可以在中使用*更新認證*選項 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-nss-menu.png["三個橫點的圖示"] 功能表。使用此選項會提示您重新登入。
 
 
 

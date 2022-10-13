@@ -437,9 +437,6 @@
   <block id="1d82e88d22e4fb3ffa42a186537412b7" category="list-text">升級Cloud Volumes ONTAP 到最新版本的更新版</block>
   <block id="44a35d5df111ae5a22a3e5c29dab7dfb" category="list-text">使用Active IQ Cloud Manager中的「解決方案」</block>
   <block id="aeaeee19a7c393222e407a525cf01991" category="section-title">新增一個NSS帳戶</block>
-  <block id="de2241fea60d98698faaa196ff73ee80" category="paragraph">「支援儀表板」可讓您從單一位置新增及管理所有NetApp支援網站帳戶。</block>
-  <block id="5be2593b5948f30a15179a32daa73ee2" category="inline-link">註冊一項</block>
-  <block id="14b05cf61f1aba58d38b393e69b69538" category="list-text">如果您還沒有 NetApp 支援網站帳戶、<block ref="0a8e82436ea73fe635862cfba3acf101" category="inline-link-rx"></block>。</block>
   <block id="0046efb3377274ff3215d4b30269809e" category="list-text">在Cloud Manager主控台右上角、按一下「說明」圖示、然後選取*「支援」*。</block>
   <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">「說明」功能表的快照、其中「支援」是第一個列出的選項</block>
   <block id="357be4e47fe6e7132dca092006062510" category="paragraph"><block ref="357be4e47fe6e7132dca092006062510" category="inline-image-macro-rx" type="image"></block></block>
@@ -447,12 +444,7 @@
   <block id="8aaf101e623c543c7eef3c65f6233366" category="list-text">出現提示時、按一下*繼續*以重新導向至Microsoft登入頁面。</block>
   <block id="19d089db572ee6a1e154a0c9c9e57bfd" category="paragraph">NetApp使用Microsoft Azure Active Directory做為身分識別供應商、提供專為支援與授權所設計的驗證服務。</block>
   <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">在登入頁面上、提供您的NetApp支援網站註冊電子郵件地址和密碼、以執行驗證程序。</block>
-  <block id="f5fb4199485234c409525f430b737010" category="paragraph">此動作可讓Cloud Manager使用您的NSS帳戶。</block>
-  <block id="56adf724101d4208ec84510dd5141cbe" category="paragraph">請注意帳戶的下列需求：</block>
   <block id="0f0a0d646a020cf3a65ce82ada4cfb01" category="list-text">帳戶必須是客戶層級的帳戶（不是來賓帳戶或臨時帳戶）。</block>
-  <block id="f35b3071eb18e73b5274b2d3930c1cec" category="list-text">如果您打算部署節點型BYOL系統：</block>
-  <block id="4f67a838013dae97fbc2ef8c52275e5d" category="list-text">帳戶必須獲得授權、才能存取 BYOL 系統的序號。</block>
-  <block id="920eb18d0b8767d6fc05b934ad81e34b" category="list-text">如果您購買安全的 BYOL 訂閱、則需要安全的 NSS 帳戶。</block>
   <block id="63d2e0a30403957935d0feb5bb5d0de3" category="paragraph">現在、使用者可以在建立新Cloud Volumes ONTAP 的視覺系統、註冊現有Cloud Volumes ONTAP 的視覺系統、以及在Active IQ 使用效益資料時選擇帳戶。</block>
   <block id="6602afb860a6cca23c3b75bf601365eb" category="inline-link">在 Cloud Volumes ONTAP AWS 中啟動</block>
   <block id="3e33b81f05bb640dee79c5aa4e351c91" category="list-text"><block ref="3e33b81f05bb640dee79c5aa4e351c91" category="inline-link-rx"></block></block>
@@ -2624,4 +2616,7 @@
   <block id="6fe79cfc93a8b51f7a8316a55877bfc4" category="list-text">共享VPC權限（如果您使用共享VPC將資源部署到服務項目）</block>
   <block id="893b6747ffabae1d7bbd6d266f24c4ab" category="section-title">設定共享VPC權限</block>
   <block id="17d9282186c2451db90a83330e5c9d7b" category="list-text"><block ref="17d9282186c2451db90a83330e5c9d7b" category="inline-link-macro-rx"></block></block>
+  <block id="77bdda0b5be7d2725f2b5941d74db0e2" category="paragraph">「支援儀表板」可讓您新增及管理NetApp 支援網站 要搭配Cloud Manager使用的各種不一致帳戶。</block>
+  <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">如果您有客戶層級的帳戶、可以新增一或多個NSS帳戶。</block>
+  <block id="4fde72c535fd0cd463dbeb49347cdfae" category="list-text">如果您有合作夥伴或經銷商帳戶、您可以新增一或多個NSS帳戶、但這些帳戶無法與客戶層級帳戶一起新增。</block>
 </blocks>
