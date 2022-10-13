@@ -74,7 +74,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-pr
 | \https://support.netapp.com | 以取得授權資訊、並將AutoSupport 資訊傳送給NetApp支援部門。 
 
 
-| \https://*.cloudmanager.cloud.netapp.com | 在Cloud Manager中提供SaaS功能與服務。 
+| \https://*.cloudmanager.cloud.netapp.com \https://cloudmanager.cloud.netapp.com | 在Cloud Manager中提供SaaS功能與服務。 
 
 
 | \https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net | 升級Connector及其Docker元件。 

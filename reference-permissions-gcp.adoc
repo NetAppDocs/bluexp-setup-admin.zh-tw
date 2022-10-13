@@ -209,7 +209,13 @@ includedPermissions:
 | - compute.instances.setServiceAccount - iam.serviceAccounts.actAs - iam.serviceAccounts.getIamPolicy - iam.serviceAccounts.list - 儲存空間 .objects.Get - 儲存空間 .objects.list | 在 Cloud Volumes ONTAP 整個過程中設定服務帳戶。此服務帳戶提供資料分層至 Google Cloud Storage 儲存庫的權限。 
 
 
-| - compute 、 addresses.list - compute 、 backendServices.create - compute.networks.updatePolicy - compute 、 Region. 、 BackendServices.create - compute 、 Region. 、 BackendServices.list | 部署 HA 配對。 
+| 運算.addresses.list | 在部署HA配對時擷取區域中的位址。 
+
+
+| - compute。backendServices.create - compute。區域BackendServices.create - compute。區域BackendServices.Get - compute。區域BackendServices.list | 設定後端服務以在HA配對中分配流量。 
+
+
+| - compute.networks.updatePolicy | 將防火牆規則套用至HA配對的VPC和子網路。 
 
 
 | - compute.subnetworks.use - compute.subnetworks.useExternalIp - compute.instances.addAccessConfig | 以實現Cloud Data Sense。 

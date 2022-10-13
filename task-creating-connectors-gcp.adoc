@@ -29,17 +29,20 @@ TIP: 當您建立第一個 Cloud Volumes ONTAP 運作環境時、如果您還沒
 
 請依照下列步驟快速入門、或向下捲動至其餘部分以取得完整詳細資料。
 
-[role="quick-margin-para"]
-建立並附加自訂角色、確保您的Google Cloud帳戶擁有正確的權限。
+.span class="image"><imgrc="https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png"[] alt="1"></span>設定權限
+* 建立並附加自訂角色、確保您的Google Cloud帳戶擁有正確的權限。
++
+ up permissions to deploy the Connector。
 
-[role="quick-margin-para"]
- up permissions,檢視自訂角色。
+* 建立Connector VM時、您需要將其與服務帳戶建立關聯。此服務帳戶必須具有自訂角色、且具有管理Google Cloud資源的權限。
++
+ up a service account for the Connector。
 
-[role="quick-margin-para"]
-建立Connector VM時、您需要將其與服務帳戶建立關聯。此服務帳戶必須具有自訂角色、且具有管理Google Cloud資源的權限。
+* 如果您使用的是共享VPC、請在服務專案和主機專案中設定權限。
++
+ up shared VPC permissions。
 
-[role="quick-margin-para"]
- up a service account,檢視自訂角色。
+
 
 [role="quick-margin-para"]
 您將需要VPC和子網路、並可從網際網路連線至特定端點。如果傳出網際網路需要HTTP Proxy、則您需要IP位址、認證和HTTPS憑證。
@@ -47,7 +50,7 @@ TIP: 當您建立第一個 Cloud Volumes ONTAP 運作環境時、如果您還沒
 [role="quick-margin-para"]
  up networking,檢視網路需求。
 
-.span class="image"><imgrc="https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png"[] Alt="wer"></span>啟用Google Cloud API
+.span class="image"><imgrc="https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png"[] Alt="there"></span>啟用Google Cloud API
 * Cloud Deployment Manager V2 API
 * 雲端記錄 API
 * Cloud Resource Manager API
@@ -64,6 +67,17 @@ TIP: 當您建立第一個 Cloud Volumes ONTAP 運作環境時、如果您還沒
 
 
 == 設定權限
+
+下列項目需要權限：
+
+* 部署Connector VM的使用者
+* 部署期間需要附加至Connector VM的服務帳戶
+* 共享VPC權限（如果您使用共享VPC將資源部署到服務項目）
+
+
+
+
+=== 設定部署Connector的權限
 
 在部署Connector之前、您必須確保Google Cloud帳戶擁有正確的權限。
 
@@ -140,7 +154,7 @@ Google Cloud使用者現在擁有建立Connector所需的權限。
 
 
 
-== 設定服務帳戶
+=== 設定Connector的服務帳戶
 
 需要有服務帳戶、才能讓Connector獲得管理Google Cloud資源所需的權限。建立此服務帳戶時、您會將其與Connector VM建立關聯。
 
@@ -256,57 +270,7 @@ includedPermissions:
 
 
 
-== 設定網路
-
-設定您的網路、讓 Connector 能夠管理公有雲環境中的資源和程序。除了連接器的VPC和子網路之外、您還需要確保符合下列需求。
-
-
-
-=== 連線至目標網路
-
-連接器需要網路連線至您所建立的工作環境類型以及您打算啟用的服務。
-
-例如、如果您在公司網路中安裝Connector、則必須設定VPN連線至VPC、以便在其中啟動Cloud Volumes ONTAP 效益管理功能。
-
-
-
-=== 傳出網際網路存取
-
-連接器需要存取傳出網際網路、才能管理公有雲環境中的資源和程序。
-
-[cols="2*"]
-|===
-| 端點 | 目的 
-
-
-| \https://support.netapp.com | 以取得授權資訊、並將AutoSupport 資訊傳送給NetApp支援部門。 
-
-
-| \https://*.cloudmanager.cloud.netapp.com | 在Cloud Manager中提供SaaS功能與服務。 
-
-
-| \https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net | 升級Connector及其Docker元件。 
-|===
-
-
-=== Proxy伺服器
-
-如果您的組織需要為所有傳出的網際網路流量部署HTTP Proxy、請取得下列有關HTTP Proxy的資訊：
-
-* IP 位址
-* 認證資料
-* HTTPS憑證
-
-
-
-
-=== 安全性群組
-
-連接器沒有傳入流量、除非您啟動連接器、或連接器是AutoSupport 作為Proxy來接收資訊、否則連接器不會傳入。HTTP 和 HTTPS 可存取 link:concept-connectors.html#the-local-user-interface["本機 UI"]、在極少數情況下使用。只有當您需要連線至主機進行疑難排解時、才需要 SSH 。
-
-
-
-=== 共享VPC權限
+=== 設定共享VPC權限
 
 如果您使用共享VPC將資源部署到服務專案、則需要下列權限。此表供參考、當IAM組態完成時、您的環境應反映權限表。
 
@@ -325,7 +289,7 @@ includedPermissions:
 
 
 | 連接器服務帳戶 | 自訂 | 服務專案  a| 
-* link:task-creating-connectors-gcp.html#set-up-permissions-for-the-connector["本節所提供的權限"]
+* link:task-creating-connectors-gcp.html#set-up-a-service-account-for-the-connector["本節所提供的權限"]
 
  a| 
 * compute.networkUser
@@ -364,6 +328,56 @@ includedPermissions:
 . 只有當您未將防火牆規則傳遞至部署、並選擇讓Cloud Manager為您建立防火牆規則時、才需要使用Firewall.create和firewall.delete。這些權限位於Cloud Manager服務帳戶.yaml檔案中。如果您使用共用VPC部署HA配對、這些權限將用於建立VPC1、2和3的防火牆規則。對於所有其他部署、這些權限也會用於建立VPC0的規則。
 . 對於資料分層、分層服務帳戶必須在服務帳戶上具有serviceAccount.user角色、而不只是在專案層級。目前、如果您在專案層級指派serviceAccount.user、則當您使用getIAMPolicy查詢服務帳戶時、不會顯示權限。
 
+
+
+
+== 設定網路
+
+設定您的網路、讓 Connector 能夠管理公有雲環境中的資源和程序。除了連接器的VPC和子網路之外、您還需要確保符合下列需求。
+
+
+
+=== 連線至目標網路
+
+連接器需要網路連線至您所建立的工作環境類型以及您打算啟用的服務。
+
+例如、如果您在公司網路中安裝Connector、則必須設定VPN連線至VPC、以便在其中啟動Cloud Volumes ONTAP 效益管理功能。
+
+
+
+=== 傳出網際網路存取
+
+連接器需要存取傳出網際網路、才能管理公有雲環境中的資源和程序。
+
+[cols="2*"]
+|===
+| 端點 | 目的 
+
+
+| \https://support.netapp.com | 以取得授權資訊、並將AutoSupport 資訊傳送給NetApp支援部門。 
+
+
+| \https://*.cloudmanager.cloud.netapp.com \https://cloudmanager.cloud.netapp.com | 在Cloud Manager中提供SaaS功能與服務。 
+
+
+| \https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net | 升級Connector及其Docker元件。 
+|===
+
+
+=== Proxy伺服器
+
+如果您的組織需要為所有傳出的網際網路流量部署HTTP Proxy、請取得下列有關HTTP Proxy的資訊：
+
+* IP 位址
+* 認證資料
+* HTTPS憑證
+
+
+
+
+=== 安全性群組
+
+連接器沒有傳入流量、除非您啟動連接器、或連接器是AutoSupport 作為Proxy來接收資訊、否則連接器不會傳入。HTTP 和 HTTPS 可存取 link:concept-connectors.html#the-local-user-interface["本機 UI"]、在極少數情況下使用。只有當您需要連線至主機進行疑難排解時、才需要 SSH 。
 
 
 
