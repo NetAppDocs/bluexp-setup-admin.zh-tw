@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-limitations.html 
-keywords: limitations, active directory, ad, iscsi, key managers, ip address, govcloud, cloud manager, Cloud Volumes ONTAP, days, 14 days, running, Connectors should remain running 
+keywords: limitations, active directory, ad, iscsi, key managers, ip address, govcloud, cloud manager, Cloud Volumes ONTAP, days, running, Connectors should remain running 
 summary: 已知限制指出本產品版本不支援的平台、裝置或功能、或是無法與產品正確互通的平台、裝置或功能。請仔細檢閱這些限制。 
 ---
 = 已知限制

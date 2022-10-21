@@ -638,7 +638,6 @@
   <block id="2b55387dd066c5bac646ac61543d152d" category="list-text">CPU</block>
   <block id="379f39ccee41ac65b6cdfb0734a7098c" category="list-text">4 個核心或 4 個 vCPU</block>
   <block id="e53619c1fe611a51eeeb8d148ba6e532" category="list-text">RAM</block>
-  <block id="752a423b7896d2c8176434adcd527e26" category="list-text">16 GB</block>
   <block id="38522fbf43585538a7a55ea25460e779" category="list-text">AWS EC2 執行個體類型</block>
   <block id="3cdc0b8cb855b1fb9c206c3d696b6c9e" category="list-text">符合上述 CPU 和 RAM 需求的執行個體類型。建議使用T3.xLarge。</block>
   <block id="893ba5865a015de9dc77765cdf7184e3" category="list-text">Azure VM 大小</block>
@@ -2580,7 +2579,6 @@
   <block id="cc7175a084ebd6e004cb2c751c162569" category="paragraph">一旦擁有NetApp 支援網站 您的不二帳戶、您就可以瀏覽至Cloud Manager、新增此新增的NSS-帳戶以供日後登錄。</block>
   <block id="b2066702e3e6316940ded0c6aa30980d" category="list-text">登入Cloud Manager之後、Cloud Manager帳戶管理員必須在雲端供應商或內部部署網路中部署_Connector_。Connector 可讓 Cloud Manager 管理公有雲環境中的資源與程序。請注意、Cloud Manager中大部分的服務和功能都需要連接器、但並非所有的服務和功能都需要連接器。 <block ref="fc0525c57d574c03610221b6665bff18" category="inline-link-macro-rx"></block>。</block>
   <block id="7608a60c77d3b58b2fe8cdc80a69c915" category="admonition">如果您的作業環境無法存取傳出的網際網路、您可以在該環境中安裝Connector軟體、並存取Connector上的本機使用者介面。 <block ref="c5bcec7879e3189e4c7a5fdbd8b19a5b" category="inline-link-macro-rx"></block>。</block>
-  <block id="398448ac9e129f38d5f9d9b9e4710793" category="paragraph">例如、連接器是Cloud Volumes ONTAP 運作過程中的關鍵要素。如果連接器電源關閉、 Cloud Volumes ONTAP 則在與連接器失去通訊超過 14 天之後、將會關閉此功能。</block>
   <block id="b46003b26b49cd1b627ec1666586013e" category="summary">如果您是在政府區域營運、則必須從雲端供應商的市場部署Connector、或使用手動安裝方法。您無法從Cloud Manager的SaaS網站將Connector部署到政府區域。</block>
   <block id="e329219d5ceb07040d4a92f76918e18c" category="doc">在政府區域中建立連接器</block>
   <block id="269732fe326fedbab2007fcb7c8f5090" category="paragraph">如果您是在政府區域營運、則必須從雲端供應商的市場部署Connector、或在現有的Linux主機上手動安裝Connector軟體。您無法從Cloud Manager的SaaS網站將Connector部署到政府區域。</block>
@@ -2619,4 +2617,7 @@
   <block id="77bdda0b5be7d2725f2b5941d74db0e2" category="paragraph">「支援儀表板」可讓您新增及管理NetApp 支援網站 要搭配Cloud Manager使用的各種不一致帳戶。</block>
   <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">如果您有客戶層級的帳戶、可以新增一或多個NSS帳戶。</block>
   <block id="4fde72c535fd0cd463dbeb49347cdfae" category="list-text">如果您有合作夥伴或經銷商帳戶、您可以新增一或多個NSS帳戶、但這些帳戶無法與客戶層級帳戶一起新增。</block>
+  <block id="6c73104e218372ccda6dc2d58fda524d" category="paragraph">例如、連接器是Cloud Volumes ONTAP 運作過程中的關鍵要素。如果連接器電源關閉、Cloud Volumes ONTAP 則在與連接器失去通訊超過14天之後、將停止使用以容量為基礎的BYOL系統。這是因為Connector每天都會在系統上重新整理授權。</block>
+  <block id="b9c53fca7bb84d0455a2b4768b130e38" category="admonition">如果Cloud Volumes ONTAP 您的系統擁有節點型BYOL授權、系統會在14天後繼續執行、因為授權已安裝在Cloud Volumes ONTAP 該系統上。</block>
+  <block id="2538b2df52d923f09592be3b38238322" category="list-text">14 GB</block>
 </blocks>

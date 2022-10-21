@@ -93,7 +93,10 @@ summary: 在大多數情況下、您需要在雲端或內部部署網路中部�
 
 連接器應隨時保持執行狀態。這對於您持續啟用的服務健全狀況和營運而言十分重要。
 
-例如、連接器是Cloud Volumes ONTAP 運作過程中的關鍵要素。如果連接器電源關閉、 Cloud Volumes ONTAP 則在與連接器失去通訊超過 14 天之後、將會關閉此功能。
+例如、連接器是Cloud Volumes ONTAP 運作過程中的關鍵要素。如果連接器電源關閉、Cloud Volumes ONTAP 則在與連接器失去通訊超過14天之後、將停止使用以容量為基礎的BYOL系統。這是因為Connector每天都會在系統上重新整理授權。
+
+
+NOTE: 如果Cloud Volumes ONTAP 您的系統擁有節點型BYOL授權、系統會在14天後繼續執行、因為授權已安裝在Cloud Volumes ONTAP 該系統上。
 
 
 
