@@ -59,13 +59,13 @@ Compliance Viewer角色適用於唯讀的Cloud Data Sense存取。
 | 管理認證資料 | 是的 | 否 | 否 | 否 
 
 
-| 修改 Cloud Manager 設定 | 是的 | 否 | 否 | 否 
+| 修改BlueXP設定 | 是的 | 否 | 否 | 否 
 
 
 | 檢視及管理支援儀表板 | 是的 | 否 | 否 | 否 
 
 
-| 從 Cloud Manager 移除工作環境 | 是的 | 否 | 否 | 否 
+| 從BlueXP移除工作環境 | 是的 | 否 | 否 | 否 
 
 
 | 安裝 HTTPS 憑證 | 是的 | 否 | 否 | 否 

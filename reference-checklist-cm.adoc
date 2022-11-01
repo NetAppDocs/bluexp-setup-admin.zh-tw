@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-checklist-cm.html 
 keywords: networking overview, networking requirements, endpoints, urls, get started, getting started, deployment 
-summary: 請使用此檢查清單、瞭解在連接器具有傳出網際網路存取權限的典型部署中、使用Cloud Manager進行運作所需的條件。 
+summary: 請使用此檢查清單、瞭解在連接器具有傳出網際網路存取的典型部署中、需要哪些資源才能使用BlueXP來啟動和執行。 
 ---
 = 入門檢查清單
 :hardbreaks:
@@ -14,10 +14,10 @@ summary: 請使用此檢查清單、瞭解在連接器具有傳出網際網路�
 
 
 [role="lead"]
-請使用此檢查清單、瞭解在連接器具有傳出網際網路存取權限的典型部署中、使用Cloud Manager進行運作所需的條件。
+請使用此檢查清單、瞭解在連接器具有傳出網際網路存取的典型部署中、需要哪些資源才能使用BlueXP來啟動和執行。
 
-NetApp Cloud Central登入:: 您必須註冊 https://cloud.netapp.com["NetApp Cloud Central"^] 以便存取Cloud Manager和其他雲端服務。
-從網頁瀏覽器存取多個端點的網路:: Cloud Manager使用者介面可從網頁瀏覽器存取。當您使用Cloud Manager使用者介面時、IT人員會聯絡數個端點、以完成資料管理工作。執行網頁瀏覽器的機器必須連線至下列端點。
+登入:: 若要登入BlueXP、您可以使用NetApp 支援網站 您的不實證資料、也可以使用電子郵件和密碼註冊NetApp雲端登入。 link:task-logging-in.html["深入瞭解登入"]。
+從網頁瀏覽器存取多個端點的網路:: 您可以從網頁瀏覽器存取BlueXP使用者介面。使用BlueXP使用者介面時、IT會聯絡數個端點以完成資料管理工作。執行網頁瀏覽器的機器必須連線至下列端點。
 +
 --
 [cols="2*"]
@@ -38,32 +38,32 @@ AWS 服務（ amazonaws.com):
 * 安全性權杖服務（ STOS ）
 * 簡易儲存服務（ S3 ）
 
-| 需要從AWS的Cloud Manager部署Connector。確切的端點取決於部署Connector的區域。 https://docs.aws.amazon.com/general/latest/gr/rande.html["如需詳細資料、請參閱 AWS 文件。"^] 
+| 需要在AWS中部署從BlueXP部署連接器。確切的端點取決於部署Connector的區域。 https://docs.aws.amazon.com/general/latest/gr/rande.html["如需詳細資料、請參閱 AWS 文件。"^] 
 
 
-| \https://management.azure.com \https://login.microsoftonline.com | 在大多數Azure地區部署Cloud Manager連接器時、都必須使用此功能。 
+| \https://management.azure.com \https://login.microsoftonline.com | 在大多數Azure地區中部署來自BlueXP的Connector。 
 
 
-| \https://management.microsoftazure.de \https://login.microsoftonline.de | 需要在Azure Germany地區部署Cloud Manager的Connector。 
+| \https://management.microsoftazure.de \https://login.microsoftonline.de | 需要在Azure Germany地區部署來自BlueXP的Connector。 
 
 
-| \https://management.usgovcloudapi.net \https://login.microsoftonline.com | 需要在Azure US Gov地區部署Cloud Manager的Connector。 
+| \https://management.usgovcloudapi.net \https://login.microsoftonline.com | 需要在Azure US Gov地區部署來自BlueXP的Connector。 
 
 
-| \https://www.googleapis.com | 需要在Google Cloud中部署Cloud Manager的Connector。 
+| \https://www.googleapis.com | 需要在Google Cloud中部署來自BlueXP的Connector。 
 
 
-| \https://signin.b2c.netapp.com | 需要更新NetApp支援網站（NSS）認證或新增新的NSS-認證至Cloud Manager。 
+| \https://signin.b2c.netapp.com | 需要更新NetApp 支援網站 驗證（NSS）認證或新增新的NSS認證至BlueXP。 
 
 
-| \https://netapp-cloud-account.auth0.com \https://cdn.auth0.com \https://services.cloud.netapp.com | 您的網頁瀏覽器會連線至這些端點、以便透過 NetApp Cloud Central 進行集中式使用者驗證。 
+| \https://netapp-cloud-account.auth0.com \https://cdn.auth0.com \https://services.cloud.netapp.com | 您的網頁瀏覽器會連線至這些端點、以便透過BlueXP進行集中式使用者驗證。 
 
 
 | \https://widget.intercom.io | 產品內對談可讓您與 NetApp 雲端專家交談。 
 
 
 | 連接器的IP位址  a| 
-在大多數情況下、您應該使用SaaS UI中的Cloud Manager、但是 link:concept-connectors.html#the-local-user-interface["如果您使用本機UI"]然後您必須從網頁瀏覽器輸入主機的IP位址。
+在大多數情況下、您應該使用SaaS UI中的BlueXP、但是 link:concept-connectors.html#the-local-user-interface["如果您使用本機UI"]然後您必須從網頁瀏覽器輸入主機的IP位址。
 
 視雲端供應商的連線能力而定、請使用指派給主機的私有IP或公有IP：
 
@@ -75,7 +75,7 @@ AWS 服務（ amazonaws.com):
 
 |===
 --
-連接器的傳出網路:: 登入Cloud Manager之後、Cloud Manager帳戶管理員必須在雲端供應商或內部部署網路中部署_Connector_。Connector 可讓 Cloud Manager 管理公有雲環境中的資源與程序。請注意、Cloud Manager中大部分的服務和功能都需要連接器、但並非所有的服務和功能都需要連接器。 link:concept-connectors.html["深入瞭解連接器及其運作方式"]。
+連接器的傳出網路:: 登入BlueXP之後、BlueXP帳戶管理員需要在雲端供應商或內部部署網路中部署_Connector_。Connector讓BlueXP能夠管理公有雲環境中的資源和程序。請注意、大多數的服務和功能都需要連接器、但並非所有的服務和功能都需要連接器。 link:concept-connectors.html["深入瞭解連接器及其運作方式"]。
 +
 --
 * 您部署Connector的網路位置必須具有傳出網際網路連線。
@@ -91,12 +91,12 @@ AWS 服務（ amazonaws.com):
 | \https://support.netapp.com | 以取得授權資訊、並將AutoSupport 資訊傳送給NetApp支援部門。 
 
 
-| \https://*.cloudmanager.cloud.netapp.com \https://cloudmanager.cloud.netapp.com | 在Cloud Manager中提供SaaS功能與服務。 
+| \https://*.cloudmanager.cloud.netapp.com \https://cloudmanager.cloud.netapp.com | 在BlueXP中提供SaaS功能與服務。 
 
 
 | \https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net | 升級Connector及其Docker元件。 
 |===
-* 如果您選擇在自己的Linux主機上手動安裝Connector（而非直接從Cloud Manager介面安裝）、則Connector的安裝程式在安裝過程中需要存取下列端點：
+* 如果您選擇在自己的Linux主機上手動安裝Connector（而非直接從BlueXP介面安裝）、則Connector的安裝程式在安裝程序期間需要存取下列端點：
 +
 ** \https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 ** \https://s3.amazonaws.com/aws-cli/awscli-bundle.zip
@@ -113,7 +113,7 @@ HTTP（80）和HTTPS（443）可存取本機UI、在極少數情況下使用。�
 
 
 --
-雲端供應商權限:: 您需要擁有權限的帳戶、才能直接從Cloud Manager在雲端供應商中部署Connector。
+雲端供應商權限:: 您需要擁有權限的帳戶、以便直接從BlueXP在雲端供應商中部署Connector。
 +
 --
 
@@ -127,14 +127,14 @@ NOTE: 建立連接器的方法有許多種：您可以從建立連接器 link:ta
 | AWS  a| 
 . 使用包含在AWS中建立IAM原則所需權限的Json檔案。
 . 將原則附加至IAM角色或IAM使用者。
-. 建立Connector時、請為Cloud Manager提供IAM角色的ARN或IAM使用者的AWS存取金鑰和秘密金鑰。
+. 建立連接器時、請為BlueXP提供IAM角色的ARN或IAM使用者的AWS存取金鑰和秘密金鑰。
 
 | link:task-creating-connectors-aws.html["按一下此處以檢視詳細步驟"]。 
 
 
 | Azure  a| 
 . 使用包含必要權限的Json檔案、在Azure中建立自訂角色。
-. 將角色指派給將從Cloud Manager建立Connector的使用者。
+. 將角色指派給將從BlueXP建立Connector的使用者。
 . 當您建立Connector時、請使用具有所需權限的Microsoft帳戶（Microsoft擁有並裝載的登入提示）登入。
 
 | link:task-creating-connectors-azure.html["按一下此處以檢視詳細步驟"]。 
@@ -142,7 +142,7 @@ NOTE: 建立連接器的方法有許多種：您可以從建立連接器 link:ta
 
 | Google Cloud  a| 
 . 使用Yaml檔案、其中包含在Google Cloud中建立自訂角色所需的權限。
-. 將該角色附加至將從Cloud Manager建立Connector的使用者。
+. 將該角色附加至將從BlueXP建立Connector的使用者。
 . 如果您打算使用Cloud Volumes ONTAP 此功能、請設定具有所需權限的服務帳戶。
 . 啟用Google Cloud API。
 . 當您建立Connector時、請使用具有所需權限的Google帳戶登入（登入提示由Google擁有並裝載）。
@@ -150,7 +150,7 @@ NOTE: 建立連接器的方法有許多種：您可以從建立連接器 link:ta
 | link:task-creating-connectors-gcp.html["按一下此處以檢視詳細步驟"]。 
 |===
 --
-個別服務的網路功能:: 完成設定之後、您就可以開始使用Cloud Manager提供的服務。請注意、每項服務都有自己的網路需求。如需詳細資料、請參閱下列頁面。
+個別服務的網路功能:: 完成設定之後、您就可以開始使用BlueXP提供的服務了。請注意、每項服務都有自己的網路需求。如需詳細資料、請參閱下列頁面。
 +
 --
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/reference-networking-aws.html["AWS 適用的 Cloud Volumes ONTAP"^]

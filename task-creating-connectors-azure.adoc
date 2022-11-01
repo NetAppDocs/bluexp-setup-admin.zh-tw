@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-creating-connectors-azure.html 
 keywords: create connector in azure, launch connector in azure, deploy connector in azure, azure connector, connector azure, connector permissions, create custom role, create azure custom role, azure custom role 
-summary: Cloud Manager帳戶管理員必須先部署Connector、才能使用大多數Cloud Manager功能。Connector 可讓 Cloud Manager 管理公有雲環境中的資源與程序。 
+summary: BlueXP帳戶管理員必須先部署Connector、才能使用大多數的BlueXP功能。Connector讓BlueXP能夠管理公有雲環境中的資源和程序。 
 ---
-= 從Cloud Manager在Azure中建立Connector
+= 從BlueXP在Azure中建立連接器
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,9 +14,9 @@ summary: Cloud Manager帳戶管理員必須先部署Connector、才能使用大�
 
 
 [role="lead"]
-Cloud Manager帳戶管理員必須先部署_Connector_、才能使用大多數Cloud Manager功能。Connector 可讓 Cloud Manager 管理公有雲環境中的資源與程序。 link:concept-connectors.html["瞭解何時需要連接器"]。
+BlueXP帳戶管理員必須先部署_Connector_、才能使用大多數的BlueXP功能。Connector讓BlueXP能夠管理公有雲環境中的資源和程序。 link:concept-connectors.html["瞭解何時需要連接器"]。
 
-本頁說明如何直接從 Cloud Manager 在 Azure 中建立 Connector 。 link:concept-connectors.html#how-to-create-a-connector["瞭解部署Connector的其他方法"]。
+本頁說明如何直接從BlueXP在Azure中建立Connector。 link:concept-connectors.html#how-to-create-a-connector["瞭解部署Connector的其他方法"]。
 
 這些步驟必須由具有「帳戶管理」角色的使用者完成。工作區管理員無法建立 Connector 。
 
@@ -24,7 +24,7 @@ Cloud Manager帳戶管理員必須先部署_Connector_、才能使用大多數Cl
 
 == 總覽
 
-若要部署Connector、您必須提供Cloud Manager登入資訊、並具備在Azure中建立Connector VM所需的權限。
+若要部署Connector、您必須提供具有在Azure中建立Connector VM所需權限的登入資訊給BlueXP。
 
 您有兩種選擇：
 
@@ -74,7 +74,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-pr
 | \https://support.netapp.com | 以取得授權資訊、並將AutoSupport 資訊傳送給NetApp支援部門。 
 
 
-| \https://*.cloudmanager.cloud.netapp.com \https://cloudmanager.cloud.netapp.com | 在Cloud Manager中提供SaaS功能與服務。 
+| \https://*.cloudmanager.cloud.netapp.com \https://cloudmanager.cloud.netapp.com | 在BlueXP中提供SaaS功能與服務。 
 
 
 | \https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net | 升級Connector及其Docker元件。 
@@ -112,13 +112,13 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-pr
 
 === 設定Azure帳戶的權限
 
-在您從 Cloud Manager 部署 Connector 之前、您必須確保 Azure 帳戶擁有正確的權限。
+您必須先確保Azure帳戶擁有正確的權限、才能從BlueXP部署Connector。
 
 .步驟
 . 複製Azure中新自訂角色所需的權限、並將其儲存在Json檔案中。
 +
 
-NOTE: 此原則僅包含從Cloud Manager在Azure中啟動Connector VM所需的權限。請勿在其他情況下使用此原則。Cloud Manager建立Connector時、會套用新的一組權限至Connector VM、讓Connector能夠管理公有雲環境中的資源。
+NOTE: 此原則僅包含從BlueXP在Azure中啟動Connector VM所需的權限。請勿在其他情況下使用此原則。當BlueXP建立Connector時、它會套用一組新的權限至Connector VM、讓Connector能夠管理公有雲環境中的資源。
 
 +
 [source, json]
@@ -222,7 +222,7 @@ az role definition create --role-definition Policy_for_Setup_As_Service_Azure.js
 +
 您現在應該擁有名為 _Azure Setup AsService_ 的自訂角色。
 
-. 將角色指派給將從 Cloud Manager 部署 Connector 的使用者：
+. 將角色指派給將從BlueXP部署Connector的使用者：
 +
 .. 開啟 * 訂閱 * 服務、然後選取使用者的訂閱。
 .. 按一下 * 存取控制（ IAM ） * 。
@@ -243,18 +243,18 @@ NOTE: Azure Setup AsService是Azure的Connector部署原則中提供的預設名
 
 
 
-Azure 使用者現在擁有從 Cloud Manager 部署 Connector 所需的權限。
+Azure使用者現在擁有從BlueXP部署Connector所需的權限。
 
 
 
 === 使用您的Azure帳戶登入以建立Connector
 
-Cloud Manager 可讓您直接從 Azure 的使用者介面建立連接器。
+BlueXP可讓您直接從Azure的使用者介面建立連接器。
 
 .您需要的是 #8217 ；需要的是什麼
 * Azure 訂閱。
 * 您所選擇的 Azure 區域中的 Vnet 和子網路。
-* 如果您不想讓Cloud Manager自動為Connector建立Azure角色、則必須自行建立 link:reference-permissions-azure.html["使用此頁面上的原則"]。
+* 如果您不想讓BlueXP自動為Connector建立Azure角色、則需要自行建立 link:reference-permissions-azure.html["使用此頁面上的原則"]。
 +
 這些權限適用於Connector執行個體本身。這是一組不同於您先前設定的權限、只要部署Connector即可。
 
@@ -280,10 +280,10 @@ image:screenshot_connector_add.gif["螢幕擷取畫面、會在標題和「新�
 
 +
 
-TIP: 如果您已經登入 Azure 帳戶、 Cloud Manager 將自動使用該帳戶。如果您有多個帳戶、則可能需要先登出、以確保您使用的是正確的帳戶。
+TIP: 如果您已經登入Azure帳戶、則BlueXP會自動使用該帳戶。如果您有多個帳戶、則可能需要先登出、以確保您使用的是正確的帳戶。
 
 ** * VM驗證*：選擇Azure訂閱、位置、新資源群組或現有資源群組、然後選擇驗證方法。
-** *詳細資料*：輸入執行個體的名稱、指定標記、然後選擇是否要Cloud Manager建立具有必要權限的新角色、或是要選取您設定的現有角色 link:reference-permissions-azure.html["必要的權限"]。
+** *詳細資料*：輸入執行個體的名稱、指定標記、然後選擇是否要BlueXP建立具有所需權限的新角色、或是要選取所設定的現有角色 link:reference-permissions-azure.html["必要的權限"]。
 +
 請注意、您可以選擇與此角色相關的訂閱。您選擇的每個訂閱都會提供Connector權限、讓他們在Cloud Volumes ONTAP 這些訂閱中部署功能。
 
@@ -298,7 +298,7 @@ TIP: 如果您已經登入 Azure 帳戶、 Cloud Manager 將自動使用該帳�
 
 
 
-您需要將 Connector 與工作空間建立關聯、讓 Workspace Admins 可以使用這些 Connectors 來建立 Cloud Volumes ONTAP 一套系統。如果您只有帳戶管理員、則不需要將 Connector 與工作區建立關聯。根據預設、 Account Admins 可存取 Cloud Manager 中的所有工作區。 link:task-setting-up-netapp-accounts.html#associating-connectors-with-workspaces["深入瞭解"]。
+您需要將 Connector 與工作空間建立關聯、讓 Workspace Admins 可以使用這些 Connectors 來建立 Cloud Volumes ONTAP 一套系統。如果您只有帳戶管理員、則不需要將 Connector 與工作區建立關聯。帳戶管理員預設能夠存取BlueXP中的所有工作區。 link:task-setting-up-netapp-accounts.html#associating-connectors-with-workspaces["深入瞭解"]。
 
 如果您在建立Connector的同一個Azure帳戶中擁有Azure Blob儲存設備、您會看到Azure Blob工作環境會自動出現在Canvas. link:task-viewing-azure-blob.html["深入瞭解如何運用此工作環境"]。
 
@@ -306,13 +306,13 @@ TIP: 如果您已經登入 Azure 帳戶、 Cloud Manager 將自動使用該帳�
 
 == 使用服務主體建立連接器
 
-您不需要使用Azure帳戶登入、也可以選擇向Cloud Manager提供具備必要權限之Azure服務主體的認證資料。
+您不需要使用Azure帳戶登入、也可以選擇向BlueXP提供具備所需權限之Azure服務主體的認證資料。
 
 
 
 === 使用服務主體授予 Azure 權限
 
-在Azure Active Directory中建立及設定服務主體、並取得Cloud Manager所需的Azure認證資料、以授予在Azure中部署Connector所需的權限。
+在Azure Active Directory中建立及設定服務主體、並取得BlueXP所需的Azure認證資料、以授予在Azure中部署Connector所需的權限。
 
 .步驟
 .  an Azure Active Directory application。
@@ -326,7 +326,7 @@ TIP: 如果您已經登入 Azure 帳戶、 Cloud Manager 將自動使用該帳�
 
 ==== 建立 Azure Active Directory 應用程式
 
-建立Azure Active Directory（AD）應用程式與服務主體、讓Cloud Manager可用來部署Connector。
+建立Azure Active Directory（AD）應用程式與服務主體、以便BlueXP部署Connector。
 
 您必須在 Azure 中擁有適當權限、才能建立 Active Directory 應用程式、並將應用程式指派給角色。如需詳細資訊、請參閱 https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure 說明文件：必要權限"^]。
 
@@ -340,7 +340,7 @@ image:screenshot_azure_ad.gif["顯示 Microsoft Azure 中的 Active Directory �
 . 指定應用程式的詳細資料：
 +
 ** * 名稱 * ：輸入應用程式的名稱。
-** * 帳戶類型 * ：選取帳戶類型（任何帳戶類型都可與 Cloud Manager 搭配使用）。
+** *帳戶類型*：選取帳戶類型（任何帳戶類型均可用於BlueXP）。
 ** *重新導向URI*：您可以將此欄位保留空白。
 
 
@@ -359,7 +359,7 @@ image:screenshot_azure_ad.gif["顯示 Microsoft Azure 中的 Active Directory �
 . 複製Azure中新自訂角色所需的權限、並將其儲存在Json檔案中。
 +
 
-NOTE: 此原則僅包含從Cloud Manager在Azure中啟動Connector VM所需的權限。請勿在其他情況下使用此原則。Cloud Manager建立Connector時、會套用新的一組權限至Connector VM、讓Connector能夠管理公有雲環境中的資源。
+NOTE: 此原則僅包含從BlueXP在Azure中啟動Connector VM所需的權限。請勿在其他情況下使用此原則。當BlueXP建立Connector時、它會套用一組新的權限至Connector VM、讓Connector能夠管理公有雲環境中的資源。
 
 +
 [source, json]
@@ -517,7 +517,7 @@ image:screenshot_azure_service_mgmt_apis_add.gif["Azure 入口網站的快照、
 
 ==== 取得應用程式 ID 和目錄 ID
 
-從Cloud Manager建立Connector時、您需要提供應用程式的應用程式（用戶端）ID和目錄（租戶）ID。Cloud Manager 會使用 ID 以程式設計方式登入。
+從BlueXP建立Connector時、您需要提供應用程式的應用程式（用戶端）ID和目錄（租戶）ID。BlueXP使用ID以程式設計方式登入。
 
 .步驟
 . 在 * Azure Active Directory * 服務中、按一下 * 應用程式註冊 * 、然後選取應用程式。
@@ -531,7 +531,7 @@ image:screenshot_azure_app_ids.gif["顯示 Azure Active Directory 中應用程�
 
 ==== 建立用戶端機密
 
-您需要建立用戶端機密、然後為 Cloud Manager 提供機密的價值、以便 Cloud Manager 使用它來驗證 Azure AD 。
+您需要建立用戶端機密、然後為BlueXP提供機密的價值、以便BlueXP使用它來驗證Azure AD。
 
 .步驟
 . 開啟 * Azure Active Directory * 服務。
@@ -545,13 +545,13 @@ image:screenshot_azure_client_secret.gif["Azure 入口網站的快照、顯示 A
 
 
 
-您的服務主體現在已設定完成、您應該已經複製應用程式（用戶端） ID 、目錄（租戶） ID 、以及用戶端機密的值。建立Connector時、您必須在Cloud Manager中輸入此資訊。
+您的服務主體現在已設定完成、您應該已經複製應用程式（用戶端） ID 、目錄（租戶） ID 、以及用戶端機密的值。建立Connector時、您必須在BlueXP中輸入此資訊。
 
 
 
 === 使用服務主體登入以建立Connector
 
-Cloud Manager 可讓您直接從 Azure 的使用者介面建立連接器。
+BlueXP可讓您直接從Azure的使用者介面建立連接器。
 
 .您需要的是 #8217 ；需要的是什麼
 * Azure 訂閱。
@@ -563,7 +563,7 @@ Cloud Manager 可讓您直接從 Azure 的使用者介面建立連接器。
 ** HTTPS憑證
 
 
-* 如果您不想讓Cloud Manager自動為Connector建立Azure角色、則必須自行建立 link:reference-permissions-azure.html["使用此頁面上的原則"]。
+* 如果您不想讓BlueXP自動為Connector建立Azure角色、則需要自行建立 link:reference-permissions-azure.html["使用此頁面上的原則"]。
 +
 這些權限適用於Connector執行個體本身。這是一組不同於您先前設定的權限、只要部署Connector即可。
 
@@ -596,7 +596,7 @@ image:screenshot_connector_add.gif["螢幕擷取畫面、會在標題和「新�
 . 依照精靈中的步驟建立連接器：
 +
 ** * VM驗證*：選擇Azure訂閱、位置、新資源群組或現有資源群組、然後選擇驗證方法。
-** *詳細資料*：輸入執行個體的名稱、指定標記、然後選擇是否要Cloud Manager建立具有必要權限的新角色、或是要選取您設定的現有角色 link:reference-permissions-azure.html["必要的權限"]。
+** *詳細資料*：輸入執行個體的名稱、指定標記、然後選擇是否要BlueXP建立具有所需權限的新角色、或是要選取所設定的現有角色 link:reference-permissions-azure.html["必要的權限"]。
 +
 請注意、您可以選擇與此角色相關的訂閱。您選擇的每個訂閱都會提供Connector權限、讓他們在Cloud Volumes ONTAP 這些訂閱中部署功能。
 
@@ -611,7 +611,7 @@ image:screenshot_connector_add.gif["螢幕擷取畫面、會在標題和「新�
 
 
 
-您需要將 Connector 與工作空間建立關聯、讓 Workspace Admins 可以使用這些 Connectors 來建立 Cloud Volumes ONTAP 一套系統。如果您只有帳戶管理員、則不需要將 Connector 與工作區建立關聯。根據預設、 Account Admins 可存取 Cloud Manager 中的所有工作區。 link:task-setting-up-netapp-accounts.html#associating-connectors-with-workspaces["深入瞭解"]。
+您需要將 Connector 與工作空間建立關聯、讓 Workspace Admins 可以使用這些 Connectors 來建立 Cloud Volumes ONTAP 一套系統。如果您只有帳戶管理員、則不需要將 Connector 與工作區建立關聯。帳戶管理員預設能夠存取BlueXP中的所有工作區。 link:task-setting-up-netapp-accounts.html#associating-connectors-with-workspaces["深入瞭解"]。
 
 如果您在建立Connector的同一個Azure帳戶中擁有Azure Blob儲存設備、您會看到Azure Blob工作環境會自動出現在Canvas. link:task-viewing-azure-blob.html["深入瞭解如何運用此工作環境"]。
 
@@ -619,7 +619,7 @@ image:screenshot_connector_add.gif["螢幕擷取畫面、會在標題和「新�
 
 == 開啟連接埠3128以顯示AutoSupport 資訊
 
-如果您計畫在Cloud Volumes ONTAP 無法連上傳出網際網路連線的子網路中部署「還原」系統、Cloud Manager會自動將Cloud Volumes ONTAP 「還原」設定為使用連接器做為Proxy伺服器。
+如果您計畫在Cloud Volumes ONTAP 無法連上傳出網際網路連線的子網路中部署「還原」系統、則BlueXP會自動將Cloud Volumes ONTAP 「還原」設定為使用「連接器」做為Proxy伺服器。
 
 唯一的需求是確保連接器的安全性群組允許連接埠3128上的傳入連線。部署Connector之後、您需要開啟此連接埠。
 

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-connectors.html 
 keywords: 'concept, connectors, learn about connectors, service connectors, what are connectors, what is a connector, what"s a connector, days, 14 days' 
-summary: 在大多數情況下、您需要在雲端或內部部署網路中部署 Connector 。Connector 可讓 Cloud Manager 管理公有雲環境中的資源與程序。 
+summary: 在大多數情況下、您需要在雲端或內部部署網路中部署 Connector 。連接器是BlueXP日常使用的重要元件。它可讓BlueXP管理公有雲環境中的資源和程序。 
 ---
 = 深入瞭解連接器
 :hardbreaks:
@@ -14,13 +14,13 @@ summary: 在大多數情況下、您需要在雲端或內部部署網路中部�
 
 
 [role="lead"]
-在大多數情況下、Cloud Manager帳戶管理員需要在雲端或內部部署網路中部署_Connector_。Connector是Cloud Manager日常使用的重要元件。Connector可讓Cloud Manager管理公有雲環境中的資源與程序。
+在大多數情況下、BlueXP帳戶管理員需要在雲端或內部部署網路中部署_Connector_。連接器是BlueXP日常使用的重要元件。它可讓BlueXP管理公有雲環境中的資源和程序。
 
 
 
 == 需要連接器時
 
-需要連接器才能使用Cloud Manager中的許多功能和服務。
+需要連接器才能使用BlueXP中的許多功能和服務。
 
 
 
@@ -44,7 +44,7 @@ summary: 在大多數情況下、您需要在雲端或內部部署網路中部�
 
 下列服務需要*非_*連接器：
 
-* 《數位顧問》 Active IQ
+* 數位顧問
 * Amazon FSX- ONTAP 用於建立工作環境、而Connector不需要建立工作環境、則需要建立及管理磁碟區、複寫資料、並將FSX與ONTAP NetApp雲端服務整合、例如Data Sense和Cloud Sync Sfor。
 * Azure NetApp Files
 +
@@ -102,9 +102,9 @@ NOTE: 如果Cloud Volumes ONTAP 您的系統擁有節點型BYOL授權、系統�
 
 == 如何建立連接器
 
-Cloud Manager帳戶管理員可透過多種方式建立Connector：
+BlueXP帳戶管理員可透過多種方式建立連接器：
 
-* 直接從 Cloud Manager （建議）
+* 直接從BlueXP（建議）
 +
 ** link:task-creating-connectors-aws.html["在 AWS 中建立"]
 ** link:task-creating-connectors-azure.html["在 Azure 中建立"]
@@ -125,7 +125,7 @@ Cloud Manager帳戶管理員可透過多種方式建立Connector：
 
 
 
-如果您是在政府區域營運、則必須從雲端供應商的市場部署Connector、或在現有的Linux主機上手動安裝Connector軟體。您無法從Cloud Manager的SaaS網站將Connector部署到政府區域。
+如果您是在政府區域營運、則必須從雲端供應商的市場部署Connector、或在現有的Linux主機上手動安裝Connector軟體。您無法從BlueXP的SaaS網站將Connector部署到政府區域。
 
 
 
@@ -137,7 +137,7 @@ Cloud Manager帳戶管理員可透過多種方式建立Connector：
 
 === 建立 Connector 的權限
 
-從 Cloud Manager 建立 Connector 的使用者需要特定權限、才能在您選擇的雲端供應商中部署執行個體。Cloud Manager 會在您建立 Connector 時提醒您權限要求。
+從BlueXP建立Connector的使用者需要特定權限、才能在您選擇的雲端供應商中部署執行個體。
 
 * link:task-creating-connectors-aws.html["檢視所需的AWS權限"]
 * link:task-creating-connectors-azure.html["檢視必要的Azure權限"]
@@ -150,7 +150,7 @@ Cloud Manager帳戶管理員可透過多種方式建立Connector：
 
 Connector 需要特定的雲端供應商權限、才能代表您執行作業。例如、部署及管理 Cloud Volumes ONTAP 功能。
 
-當您直接從 Cloud Manager 建立 Connector 時、 Cloud Manager 會以所需的權限來建立 Connector 。您無需做任何事。
+當您直接從BlueXP建立Connector時、BlueXP會以所需的權限來建立Connector。您無需做任何事。
 
 如果您是從 AWS Marketplace 、 Azure Marketplace 或手動安裝軟體來建立 Connector 、則必須確保擁有適當的權限。
 
@@ -163,7 +163,7 @@ Connector 需要特定的雲端供應商權限、才能代表您執行作業。�
 
 == 連接器升級
 
-我們通常每個月更新Connector軟體、以引進新功能並改善穩定性。雖然Cloud Manager平台的大部分服務與功能都是透過SaaS型軟體提供、但其中幾項功能和功能則取決於Connector的版本。其中包括Cloud Volumes ONTAP 支援內部的支援、ONTAP 內部的支援、叢集管理、設定及說明。
+我們通常每個月更新Connector軟體、以引進新功能並改善穩定性。雖然BlueXP平台的大部分服務與功能都是透過SaaS型軟體提供、但其中幾項功能與連接器的版本有何不同。其中包括Cloud Volumes ONTAP 支援內部的支援、ONTAP 內部的支援、叢集管理、設定及說明。
 
 只要連接器能夠存取傳出的網際網路來取得軟體更新、連接器就會自動將軟體更新至最新版本。
 
@@ -171,7 +171,7 @@ Connector 需要特定的雲端供應商權限、才能代表您執行作業。�
 
 == 每個連接器的工作環境數量
 
-Connector可在Cloud Manager中管理多個工作環境。單一Connector應管理的工作環境數量上限各不相同。這取決於工作環境的類型、磁碟區數量、所管理的容量、以及使用者數量。
+Connector可以在BlueXP中管理多個工作環境。單一Connector應管理的工作環境數量上限各不相同。這取決於工作環境的類型、磁碟區數量、所管理的容量、以及使用者數量。
 
 如果您有大規模部署、請與NetApp代表合作調整環境規模。如果您在過程中遇到任何問題、請使用產品內對談與我們聯絡。
 
@@ -198,7 +198,7 @@ Connector可在Cloud Manager中管理多個工作環境。單一Connector應管�
 . link:task-managing-connectors.html["切換至另一個連接器"]
 . 探索現有的工作環境。
 +
-** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-adding-systems.html["將現有Cloud Volumes ONTAP 的不適用系統新增至Cloud Manager"^]
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-adding-systems.html["新增現有Cloud Volumes ONTAP 的元件系統至藍圖XP"^]
 ** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["探索 ONTAP 叢集"^]
 
 
@@ -212,7 +212,7 @@ Connector可在Cloud Manager中管理多個工作環境。單一Connector應管�
 
 == 何時在連接器之間切換
 
-當您建立第一個 Connector 時、 Cloud Manager 會針對您所建立的每個額外工作環境、自動使用該 Connector 。建立額外的 Connector 之後、您必須在兩者之間切換、以查看每個 Connector 專屬的工作環境。
+建立第一個Connector時、BlueXP會自動將該Connector用於您所建立的每個額外工作環境。建立額外的 Connector 之後、您必須在兩者之間切換、以查看每個 Connector 專屬的工作環境。
 
 link:task-managing-connectors.html["瞭解如何在連接器之間切換"]。
 

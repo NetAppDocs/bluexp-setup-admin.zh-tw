@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-whats-next.html 
 keywords: get started, create working environments, manage settings 
-summary: 現在您已經登入並設定 Cloud Manager 、使用者就能開始建立及探索工作環境。 
+summary: 現在您已經登入並設定了BlueXP、使用者就能開始建立及探索工作環境。 
 ---
 = 下一步
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 現在您已經登入並設定 Cloud Manager 、使用者就能開始�
 
 
 [role="lead"]
-現在您已經登入並設定 Cloud Manager 、使用者就能開始建立及探索工作環境。
+現在您已經登入並設定了BlueXP、使用者就能開始建立及探索工作環境。
 
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-aws.html["開始使用 Cloud Volumes ONTAP 適用於 AWS 的解決方法"^]
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-azure.html["立即開始使用 Cloud Volumes ONTAP 適用於 Azure 的解決方法"^]

@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: concept-overview.html 
-keywords: overview, concepts, features, use case, days, 14 days 
-summary: Cloud Manager 可讓 IT 專家和雲端架構設計師使用 NetApp 的雲端解決方案、集中管理混合式多雲端基礎架構。 
+keywords: overview, concepts, features, use case, cloud manager 
+summary: BlueXP讓IT專家和雲端架構設計師能夠使用NetApp的雲端解決方案、集中管理混合式多雲端基礎架構。 
 ---
-= 深入瞭解 Cloud Manager
+= 深入瞭解BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -13,13 +13,13 @@ summary: Cloud Manager 可讓 IT 專家和雲端架構設計師使用 NetApp 的
 :imagesdir: ./media/
 
 
-Cloud Manager 可讓 IT 專家和雲端架構設計師使用 NetApp 的雲端解決方案、集中管理混合式多雲端基礎架構。
+BlueXP（前身為Cloud Manager）可讓IT專家和雲端架構設計師使用NetApp的雲端解決方案、集中管理混合式多雲端基礎架構。
 
 
 
 == 功能
 
-Cloud Manager 是企業級 SaaS 型管理平台、無論資料位於何處、都能讓您隨時掌控資料。
+BlueXP是企業級SaaS型管理平台、無論資料位於何處、都能讓您隨時掌控資料。
 
 * 設定與使用 https://cloud.netapp.com/ontap-cloud["Cloud Volumes ONTAP"^] 實現跨雲端的高效率多重傳輸協定資料管理。
 * 設定及使用檔案儲存服務：
@@ -40,56 +40,56 @@ Cloud Manager 是企業級 SaaS 型管理平台、無論資料位於何處、都
 
 
 
-https://cloud.netapp.com/cloud-manager["深入瞭解 Cloud Manager"^]。
+https://cloud.netapp.com/cloud-manager["深入瞭解BlueXP"^]。
 
 
 
 == 支援的物件儲存供應商
 
-Cloud Manager 可讓您管理雲端儲存設備、並在 Amazon Web Services 、 Microsoft Azure 及 Google Cloud 中使用雲端服務。
+BlueXP可讓您管理雲端儲存設備、並在Amazon Web Services、Microsoft Azure及Google Cloud中使用雲端服務。
 
 
 
 == 成本
 
-Cloud Manager 軟體是由 NetApp 免費提供。
+BlueXP軟體是NetApp免費提供的。
 
-在大多數的工作中、 Cloud Manager 會提示您在雲端網路中部署 Connector 、這會導致雲端供應商對運算執行個體和相關儲存設備的收費。您可以選擇在內部環境中執行 Connector 軟體。
+在大多數的工作中、BlueXP會提示您在雲端網路中部署Connector、這會導致您的雲端供應商收取運算執行個體和相關儲存設備的費用。您可以選擇在內部環境中執行 Connector 軟體。
 
 link:reference-connector-default-config.html["瞭解連接器的預設組態"]。
 
 
 
-== Cloud Manager 的運作方式
+== 藍圖的運作方式
 
-Cloud Manager 包含與 NetApp Cloud Central 整合的 SaaS 型介面、以及可管理 Cloud Volumes ONTAP 各種效益和其他雲端服務的 Connectors 。
+BlueXP包含與BlueXP網站整合的SaaS型介面、以及可管理Cloud Volumes ONTAP 各種效益和其他雲端服務的Connectors。
 
 
 
 === 軟體即服務
 
-Cloud Manager 可透過存取 https://cloudmanager.netapp.com["SaaS 型使用者介面"^] 和 API 。這項SaaS體驗可讓您在最新功能發佈時自動存取、並在NetApp帳戶和連接器之間輕鬆切換。
+可透過存取BlueXP https://cloudmanager.netapp.com["SaaS 型使用者介面"^] 和 API 。這項SaaS體驗可讓您在最新功能發佈時自動存取、並在NetApp帳戶和連接器之間輕鬆切換。
 
 
 TIP: 如果您的作業環境無法存取傳出的網際網路、您可以在該環境中安裝Connector軟體、並存取Connector上的本機使用者介面。 link:concept-connectors.html["深入瞭解連接器"]。
 
 
 
-=== NetApp Cloud Central
+=== BlueXP網站
 
-https://cloud.netapp.com["NetApp Cloud Central"^] 提供集中位置以供存取和管理 https://www.netapp.com/us/products/cloud-services/use-cases-for-netapp-cloud-services.aspx["NetApp 雲端服務"^]。透過集中式使用者驗證、您可以使用相同的認證資料集來存取 Cloud Manager 和 Cloud Insights 其他雲端服務、例如：
+https://cloud.netapp.com["BlueXP網站"^] 提供集中位置以供存取和管理 https://www.netapp.com/us/products/cloud-services/use-cases-for-netapp-cloud-services.aspx["NetApp 雲端服務"^]。透過集中式使用者驗證、您可以使用相同的認證資料集來存取BlueXP和Cloud Insights 其他雲端服務、例如：
 
 
 
 === NetApp帳戶
 
-首次登入Cloud Manager時、系統會提示您建立_NetApp帳戶_。此帳戶提供多租戶共享、可讓您在隔離的 _stap空間 _ 中組織使用者和資源。
+首次登入BlueXP時、系統會提示您建立_NetApp帳戶_。此帳戶提供多租戶共享、可讓您在隔離的 _stap空間 _ 中組織使用者和資源。
 
 
 
 === 連接器
 
-在大多數情況下、Cloud Manager帳戶管理員需要在雲端或內部部署網路中部署_Connector_。Connector 可讓 Cloud Manager 管理公有雲環境中的資源與程序。
+在大多數情況下、BlueXP帳戶管理員需要在雲端或內部部署網路中部署_Connector_。Connector讓BlueXP能夠管理公有雲環境中的資源和程序。
 
 link:concept-connectors.html["深入瞭解何時需要連接器及其運作方式"]。
 
@@ -97,6 +97,6 @@ link:concept-connectors.html["深入瞭解何時需要連接器及其運作方�
 
 == SOC 2類型2認證
 
-一家獨立認證的公共會計公司和服務稽核員、負責審查Cloud Manager Cloud Sync 、NetApp、Cloud Tiering、Cloud Data Sense和Cloud Backup（Cloud Manager平台）、並確認他們已根據適用的信任服務條件、達成SOC 2類報告。
+一家獨立認證的公共會計公司與服務稽核員、研究了BlueXP、Cloud Sync 整套技術、雲端分層、Cloud Data Sense和Cloud Backup（BlueXP平台）、並確認他們已根據適用的信任服務準則、達成SOC 2類報告。
 
 https://www.netapp.com/company/trust-center/compliance/soc-2/["檢視NetApp的SOC 2報告"^]

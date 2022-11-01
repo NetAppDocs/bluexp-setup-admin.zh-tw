@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-viewing-azure-blob.html 
 keywords: blob storage, blob working environment, azure blob storage accounts, azure blob working environment 
-summary: 在Azure中安裝Connector之後、Cloud Manager可自動探索有關安裝Connector之Azure訂閱所在Azure中的Azure儲存體帳戶資訊。Azure Blob工作環境會新增至Canvased、以便您檢視此資訊。 
+summary: 在Azure中安裝Connector之後、BlueXP會自動探索安裝Connector之Azure訂閱所在Azure中的Azure儲存體帳戶相關資訊。Azure Blob工作環境會新增至Canvased、以便您檢視此資訊。 
 ---
 = 檢視您的Azure Blob帳戶
 :hardbreaks:
@@ -14,12 +14,13 @@ summary: 在Azure中安裝Connector之後、Cloud Manager可自動探索有關�
 
 
 [role="lead"]
-在Azure中安裝Connector之後、Cloud Manager可自動探索有關安裝Connector之Azure訂閱所在Azure中的Azure儲存體帳戶資訊。Azure Blob工作環境會新增至Canvased、以便您檢視此資訊。
+在Azure中安裝Connector之後、BlueXP會自動探索安裝Connector之Azure訂閱所在Azure中的Azure儲存體帳戶相關資訊。Azure Blob工作環境會新增至Canvased、以便您檢視此資訊。
 
 您可以查看Azure儲存帳戶的詳細資料、包括位置、資源群組、總容量和已用容量等。這些帳戶可做為雲端備份、雲端分層或Cloud Sync 還原作業的目的地。
 
 .步驟
 . link:task-creating-connectors-azure.html["安裝連接器"] 在您想要檢視Azure儲存帳戶的Azure帳戶中。
+. 從導覽功能表中、選取*儲存設備> Canvas*。
 +
 您應該很快就會自動看到Azure Blob的工作環境。
 

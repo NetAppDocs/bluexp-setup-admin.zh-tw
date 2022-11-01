@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-launching-azure-mktp.html 
 keywords: install, installation, installing, marketplace, azure, deploy, virtual machine, permissions, deploy connector in azure, install connector in azure 
-summary: 最好直接從 Cloud Manager 建立 Connector 、但您也可以從 Azure Marketplace （如有需要）啟動 Connector 。建立並設定 Connector 之後、 Cloud Manager 會在您建立新的工作環境時自動使用。 
+summary: 對於Azure商用區域而言、最好直接從BlueXP建立Connector、但您也可以從Azure Marketplace（如果您願意）啟動Connector。對於Azure政府區域而言、您無法從BlueXP SaaS網站將Connector部署到政府區域、因此下一個最佳選擇是從Azure Marketplace部署Connector。 
 ---
 = 從Azure Marketplace建立連接器
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 最好直接從 Cloud Manager 建立 Connector 、但您也可以從 Az
 
 
 [role="lead"]
-對於Azure商業區域而言、最好直接從Cloud Manager建立Connector、但您也可以從Azure Marketplace（如果您願意）啟動Connector。對於Azure政府區域而言、您無法從Cloud Manager的SaaS網站將Connector部署到政府區域、因此下一個最佳選擇是從Azure Marketplace部署Connector。
+對於Azure商用區域而言、最好直接從BlueXP建立Connector、但您也可以從Azure Marketplace（如果您願意）啟動Connector。對於Azure政府區域而言、您無法從BlueXP SaaS網站將Connector部署到政府區域、因此下一個最佳選擇是從Azure Marketplace部署Connector。
 
 
 TIP: 您也可以在網路或雲端的現有Linux主機上下載並安裝Connector軟體。 link:task-installing-linux.html["瞭解如何在現有的Linux主機上安裝Connector"]。
@@ -38,7 +38,7 @@ TIP: 您也可以在網路或雲端的現有Linux主機上下載並安裝Connect
 設定 VM 時請注意下列事項：
 
 +
-** Cloud Manager 可搭配 HDD 或 SSD 磁碟以最佳方式執行。
+** 連接器可搭配HDD或SSD磁碟以最佳方式執行。
 ** 選擇符合 CPU 和 RAM 需求的 VM 大小。我們建議使用 DS3 v2 。
 +
 link:task-installing-linux.html["檢閱 VM 需求"]。
@@ -69,7 +69,7 @@ link:concept-netapp-accounts.html["瞭解NetApp客戶"]。
 
 .. 輸入系統名稱。
 +
-image:screenshot_set_up_cloud_manager.gif["螢幕快照顯示「設定Cloud Manager」畫面、可讓您選取NetApp帳戶並命名系統。"]
+image:screenshot_set_up_cloud_manager.gif["顯示「設定藍圖XP」畫面的快照、可讓您選取NetApp帳戶並命名系統。"]
 
 
 
@@ -77,9 +77,9 @@ image:screenshot_set_up_cloud_manager.gif["螢幕快照顯示「設定Cloud Mana
 
 現在已安裝Connector、並使用您的NetApp帳戶進行設定。
 
-如果Connector位於Azure商業區域、請開啟網頁瀏覽器並前往 https://cloudmanager.netapp.com[] 開始使用Connector with Cloud Manager。
+如果Connector位於Azure商業區域、請開啟網頁瀏覽器並前往 https://cloudmanager.netapp.com[] 開始使用Connector with BlueXP。
 
-如果Connector位於Azure政府區域、您可以開啟網頁瀏覽器並連線至Connector執行個體的IP位址、以使用Cloud Manager： https://_ipaddress_[]
+如果連接器位於Azure政府區域、您可以開啟網頁瀏覽器並連線至連接器執行個體的IP位址、以使用BlueXP： https://_ipaddress_[]
 
 由於連接器部署在政府區域、因此無法從存取 https://cloudmanager.netapp.com[]。
 
@@ -125,7 +125,7 @@ image:screenshot_azure_shell_upload.png["Azure Cloud Shell的快照、您可在�
 az role definition create --role-definition Policy_for_Setup_As_Service_Azure.json
 ----
 +
-您現在應該擁有名為 Cloud Manager 的自訂角色、可以指派給 Connector 虛擬機器。
+現在您應該有一個名為BlueXP運算子的自訂角色、可以指派給連接器虛擬機器。
 
 
 
@@ -135,10 +135,10 @@ az role definition create --role-definition Policy_for_Setup_As_Service_Azure.js
 +
 .. 開啟 * 「訂閱」 * 服務、然後選取您要在其中部署 Cloud Volumes ONTAP 的訂閱。
 .. 按一下*存取控制（IAM）*>*新增*>*新增角色指派*。
-.. 在「*角色*」索引標籤中、選取「* Cloud Manager operator*」角色、然後按一下「*下一步*」。
+.. 在「*角色*」索引標籤中、選取「*藍圖XP操作員*」角色、然後按一下「*下一步*」。
 +
 
-NOTE: Cloud Manager操作員是Cloud Manager原則中提供的預設名稱。如果您為角色選擇不同的名稱、請改為選取該名稱。
+NOTE: BlueXP運算子是在BlueXP原則中提供的預設名稱。如果您為角色選擇不同的名稱、請改為選取該名稱。
 
 .. 在「*成員*」索引標籤中、完成下列步驟：
 +
@@ -154,7 +154,7 @@ NOTE: Cloud Manager操作員是Cloud Manager原則中提供的預設名稱。如
 
 
 
-Connector 現在擁有管理公有雲環境中資源和程序所需的權限。當您建立新的工作環境時、 Cloud Manager 會自動使用此 Connector 。但如果您有多個連接器、就需要 link:task-managing-connectors.html["在兩者之間切換"]。
+Connector 現在擁有管理公有雲環境中資源和程序所需的權限。在您建立新的工作環境時、BlueXP會自動使用此Connector。但如果您有多個連接器、就需要 link:task-managing-connectors.html["在兩者之間切換"]。
 
 如果您在建立Connector的同一個Azure帳戶中擁有Azure Blob儲存設備、您會看到Azure Blob工作環境會自動出現在Canvas. link:task-viewing-azure-blob.html["深入瞭解如何運用此工作環境"]。
 
@@ -162,7 +162,7 @@ Connector 現在擁有管理公有雲環境中資源和程序所需的權限。�
 
 == 開啟連接埠3128以顯示AutoSupport 資訊
 
-如果您計畫在Cloud Volumes ONTAP 無法連上傳出網際網路連線的子網路中部署「還原」系統、Cloud Manager會自動將Cloud Volumes ONTAP 「還原」設定為使用連接器做為Proxy伺服器。
+如果您計畫在Cloud Volumes ONTAP 無法連上傳出網際網路連線的子網路中部署「還原」系統、則BlueXP會自動將Cloud Volumes ONTAP 「還原」設定為使用「連接器」做為Proxy伺服器。
 
 唯一的需求是確保連接器的安全性群組允許連接埠3128上的傳入連線。部署Connector之後、您需要開啟此連接埠。
 

@@ -4,7 +4,7 @@ permalink: task-adding-nss-accounts.html
 keywords: adding, creating, netapp support site account, nss, update account, update nss account, update nss credentials, delete nss account, remove nss account, change working environment, working environment nss 
 summary: 提供您NetApp支援網站（NSS）帳戶的認證資料、以啟用Cloud Volumes ONTAP 關鍵的流程來執行支援功能、並透過Active IQ 支援功能實現預測性分析和主動式支援。 
 ---
-= 在Cloud Manager中新增及管理NetApp支援網站帳戶
+= 在NetApp 支援網站 BlueXP中新增及管理功能不一致的帳戶
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,38 +14,70 @@ summary: 提供您NetApp支援網站（NSS）帳戶的認證資料、以啟用Cl
 
 
 [role="lead"]
-提供您NetApp支援網站（NSS）帳戶的認證資料、以啟用Cloud Volumes ONTAP 關鍵的流程來執行支援功能、並透過Active IQ 支援功能實現預測性分析和主動式支援。
+提供NetApp 支援網站 您的支援（NSS）帳戶認證資料、以便註冊以取得支援、啟用Cloud Volumes ONTAP 適用於各種功能的關鍵工作流程。
 
 
 
 == 總覽
 
-若要執行下列工作、必須將NetApp Support Site帳戶新增至Cloud Manager：
+若要啟用下列工作、需要將NetApp 支援網站 您的支援帳戶新增至藍圖XP：
 
+* 註冊以取得支援
 * 在Cloud Volumes ONTAP 您自帶授權（BYOL）時部署
 +
-您必須提供您的NSS帳戶、Cloud Manager才能上傳授權金鑰、並啟用您所購買之期限的訂閱。這包括定期續約的自動更新。
+您必須提供您的NSS帳戶、才能讓BlueXP上傳授權金鑰、並啟用您所購買期間的訂閱。這包括定期續約的自動更新。
 
 * 註冊隨用隨付Cloud Volumes ONTAP 的功能不全的系統
 +
 您必須提供您的NSS帳戶、才能啟動系統支援、並取得NetApp技術支援資源的存取權。
 
 * 升級Cloud Volumes ONTAP 到最新版本的更新版
-* 使用Active IQ Cloud Manager中的「解決方案」
 
+
+您也需要輸入您的NSS認證資料、才能在Active IQ BlueXP中使用Digital Advisor（前身為《》）。這些認證資料會直接與您的使用者帳戶建立關聯、僅供數位顧問使用。請參閱後續章節中的更多詳細資料。
+
+
+
+== 管理與數位顧問相關的NSS帳戶
+
+當您在BlueXP中存取Digital Advisor時、系統會提示您輸入您的NSS認證、以登入Digital Advisor。輸入您的NSS認證之後、您會在"nss管理"頁面頂端看到此nss"帳戶。然後您可以視需要管理這些認證資料。
+
+請注意以下關於此nssnss:
+
+* 帳戶是在使用者層級管理、這表示登入的其他使用者無法檢視。
+* 此帳戶無法搭配任何其他BlueXP功能使用：不含Cloud Volumes ONTAP 建立、授權或支援功能。
+* 每位使用者只能有一個與數位顧問相關的NSS帳戶。
+
+
+.步驟
+. 在BlueXP主控台右上角、按一下「說明」圖示、然後選取「*支援*」。
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-help-support.png["「說明」功能表的快照、其中「支援」是第一個列出的選項"]
+
+. 按一下*"nss管理"。
+. 在*您的NSSCredential*下、按一下* Action"、然後選擇下列任一選項：
++
+** *建立NSS*使用者的關聯：新增NetApp 支援網站 適用於該帳戶的認證資料、以便在BlueXP中存取Digital Advisor。
+** *更新現有的認證資料*：更新NetApp 支援網站 您的驗證資料帳戶的認證資料。
+** *刪除*：移除與數位顧問相關的帳戶。
+
+
+
+
+BlueXP會更新與數位顧問相關的NSS帳戶。
 
 
 
 == 新增一個NSS帳戶
 
-「支援儀表板」可讓您新增及管理NetApp 支援網站 要搭配Cloud Manager使用的各種不一致帳戶。
+「支援儀表板」可讓您新增及管理NetApp 支援網站 NetApp帳戶層級上用於BlueXP的各種支援帳戶。
 
 * 如果您有客戶層級的帳戶、可以新增一或多個NSS帳戶。
 * 如果您有合作夥伴或經銷商帳戶、您可以新增一或多個NSS帳戶、但這些帳戶無法與客戶層級帳戶一起新增。
 
 
 .步驟
-. 在Cloud Manager主控台右上角、按一下「說明」圖示、然後選取*「支援」*。
+. 在BlueXP主控台右上角、按一下「說明」圖示、然後選取「*支援*」。
 +
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-help-support.png["「說明」功能表的快照、其中「支援」是第一個列出的選項"]
 
@@ -56,7 +88,7 @@ NetApp使用Microsoft Azure Active Directory做為身分識別供應商、提供
 
 . 在登入頁面上、提供您的NetApp支援網站註冊電子郵件地址和密碼、以執行驗證程序。
 +
-這些行動可讓Cloud Manager使用您的NSS帳戶進行授權下載、軟體升級驗證、以及未來的支援註冊等作業。
+這些行動可讓BlueXP將您的nssa帳戶用於授權下載、軟體升級驗證、以及未來的支援註冊等項目。
 
 +
 請注意下列事項：
@@ -69,7 +101,7 @@ NetApp使用Microsoft Azure Active Directory做為身分識別供應商、提供
 
 
 
-現在、使用者可以在建立新Cloud Volumes ONTAP 的視覺系統、註冊現有Cloud Volumes ONTAP 的視覺系統、以及在Active IQ 使用效益資料時選擇帳戶。
+現在、使用者可以在建立新Cloud Volumes ONTAP 的支援系統、註冊現有Cloud Volumes ONTAP 的支援系統、以及註冊支援時、選擇帳戶。
 
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html["在 Cloud Volumes ONTAP AWS 中啟動"^]
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html["在 Cloud Volumes ONTAP Azure 中啟動"^]
@@ -81,11 +113,11 @@ NetApp使用Microsoft Azure Active Directory做為身分識別供應商、提供
 
 == 更新新驗證方法的NSS帳戶
 
-自2021年11月起、NetApp現在使用Microsoft Azure Active Directory做為身分識別供應商、提供專為支援與授權所設計的驗證服務。此更新之後、Cloud Manager會提示您更新先前新增之任何現有帳戶的認證資料。
+自2021年11月起、NetApp現在使用Microsoft Azure Active Directory做為身分識別供應商、提供專為支援與授權所設計的驗證服務。此更新之後、BlueXP會提示您更新先前新增之任何現有帳戶的認證資料。
 
 .步驟
 . 如果您尚未這麼做、 https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/FAQs_for_NetApp_adoption_of_MS_Azure_AD_B2C_for_login["建立Microsoft Azure Active Directory B2C帳戶、並連結至您目前的NetApp帳戶"^]。
-. 在Cloud Manager主控台右上角、按一下「說明」圖示、然後選取*「支援」*。
+. 在BlueXP主控台右上角、按一下「說明」圖示、然後選取「*支援*」。
 . 按一下*"nss管理"。
 . 針對您要更新的NSS帳戶、按一下*更新帳戶*。
 +
@@ -107,10 +139,14 @@ NetApp使用Microsoft Azure Active Directory做為身分識別供應商、提供
 
 == 更新NSS認證資料
 
-每當您變更您的NSS帳戶認證資料時、都必須在Cloud Manager中更新。
+發生下列任一情況時、您必須更新BlueXP中的NSS帳戶認證：
+
+* 您可以變更帳戶的認證資料
+* 與您帳戶相關的更新Token會在3個月後過期
+
 
 .步驟
-. 在Cloud Manager主控台右上角、按一下「說明」圖示、然後選取*「支援」*。
+. 在BlueXP主控台右上角、按一下「說明」圖示、然後選取「*支援*」。
 . 按一下*"nss管理"。
 . 針對您要更新的NSS帳戶、按一下 image:icon-action.png["這是三個並排點的圖示"] 然後選取*更新認證*。
 +
@@ -132,7 +168,7 @@ NetApp使用Microsoft Azure Active Directory做為身分識別供應商、提供
 此功能僅適用於設定為使用NetApp採用的Microsoft Azure AD進行身分識別管理的NSS帳戶。在使用此功能之前、您需要按一下*「Add nssAccount」（新增nssAccount）*或*「Update Account」（更新帳戶）*。
 
 .步驟
-. 在Cloud Manager主控台右上角、按一下「說明」圖示、然後選取*「支援」*。
+. 在BlueXP主控台右上角、按一下「說明」圖示、然後選取「*支援*」。
 . 按一下*"nss管理"。
 . 完成下列步驟以變更NSS帳戶：
 +
@@ -151,13 +187,13 @@ image:screenshot-nss-change-account.png["螢幕擷取畫面顯示與NetApp Suppo
 
 == 顯示NSS帳戶的電子郵件地址
 
-由於NetApp Support Site帳戶使用Microsoft Azure Active Directory進行驗證服務、因此Cloud Manager中顯示的NSS使用者名稱通常是Azure AD所產生的識別碼。因此、您可能無法立即得知與該帳戶相關的電子郵件地址。但Cloud Manager可選擇顯示相關的電子郵件地址。
+由於此等帳戶使用Microsoft Azure Active Directory進行驗證服務、因此在BlueXP中顯示的NSS使用者名稱通常是Azure AD所產生的識別碼。NetApp 支援網站因此、您可能無法立即得知與該帳戶相關的電子郵件地址。不過、BlueXP有一個選項可以顯示相關的電子郵件地址。
 
 
-TIP: 前往「NSS管理」頁面時、Cloud Manager會為表格中的每個帳戶產生權杖。該權杖包含相關電子郵件地址的相關資訊。當您離開頁面時、便會移除權杖。這些資訊永遠不會快取、有助於保護您的隱私。
+TIP: 當您移至「NSS管理」頁面時、BlueXP會為表格中的每個帳戶產生一個權杖。該權杖包含相關電子郵件地址的相關資訊。當您離開頁面時、便會移除權杖。這些資訊永遠不會快取、有助於保護您的隱私。
 
 .步驟
-. 在Cloud Manager主控台右上角、按一下「說明」圖示、然後選取*「支援」*。
+. 在BlueXP主控台右上角、按一下「說明」圖示、然後選取「*支援*」。
 . 按一下*"nss管理"。
 . 針對您要更新的NSS帳戶、按一下 image:icon-action.png["這是三個並排點的圖示"] 然後選取*顯示電子郵件地址*。
 +
@@ -165,18 +201,18 @@ image:screenshot-nss-display-email.png["顯示NetApp支援網站帳戶動作功�
 
 
 
-Cloud Manager會顯示NetApp支援網站使用者名稱及相關的電子郵件地址。您可以使用複製按鈕來複製電子郵件地址。
+BlueXP會顯示NetApp 支援網站 不完整的使用者名稱及相關的電子郵件地址。您可以使用複製按鈕來複製電子郵件地址。
 
 
 
 == 移除NSS.帳戶
 
-刪除任何不再想與Cloud Manager搭配使用的NSS帳戶。
+刪除任何不再想與BlueXP搭配使用的NSS帳戶。
 
 請注意、您無法刪除目前與Cloud Volumes ONTAP 某個運作環境相關聯的帳戶。您首先需要  a working environment to a different NSS account,將這些工作環境附加至不同的NSS帳戶。
 
 .步驟
-. 在Cloud Manager主控台右上角、按一下「說明」圖示、然後選取*「支援」*。
+. 在BlueXP主控台右上角、按一下「說明」圖示、然後選取「*支援*」。
 . 按一下*"nss管理"。
 . 針對您要刪除的NSS帳戶、按一下 image:icon-action.png["這是三個並排點的圖示"] 然後選取*刪除*。
 +

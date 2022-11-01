@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-accounts-azure.html 
 keywords: cloud provider accounts, azure, azure accounts, service principal, multiple accounts, permissions, policy, policies, subscriptions, credentials 
-summary: Cloud Manager 可讓您在部署 Cloud Volumes ONTAP 時選擇要使用的 Azure 認證資料。您可以 Cloud Volumes ONTAP 使用初始 Azure 認證來部署所有的整套系統、也可以新增其他認證資料。 
+summary: BlueXP可讓您在部署Cloud Volumes ONTAP 時選擇要使用的Azure認證資料。您可以 Cloud Volumes ONTAP 使用初始 Azure 認證來部署所有的整套系統、也可以新增其他認證資料。 
 ---
 = Azure 認證與權限
 :hardbreaks:
@@ -14,19 +14,19 @@ summary: Cloud Manager 可讓您在部署 Cloud Volumes ONTAP 時選擇要使用
 
 
 [role="lead"]
-Cloud Manager 可讓您在部署 Cloud Volumes ONTAP 時選擇要使用的 Azure 認證資料。您可以 Cloud Volumes ONTAP 使用初始 Azure 認證來部署所有的整套系統、也可以新增其他認證資料。
+BlueXP可讓您在部署Cloud Volumes ONTAP 時選擇要使用的Azure認證資料。您可以 Cloud Volumes ONTAP 使用初始 Azure 認證來部署所有的整套系統、也可以新增其他認證資料。
 
 
 
 == Azure 初始認證
 
-從Cloud Manager部署Connector時、您需要使用具備部署Connector虛擬機器權限的Azure帳戶或服務主體。所需權限列於 link:task-creating-connectors-azure.html["Azure 的連接器部署原則"]。
+從BlueXP部署Connector時、您需要使用具備部署Connector虛擬機器權限的Azure帳戶或服務主體。所需權限列於 link:task-creating-connectors-azure.html["Azure 的連接器部署原則"]。
 
-當 Cloud Manager 在 Azure 中部署 Connector 虛擬機器時、就能實現 https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["系統指派的託管身分識別"^] 在虛擬機器上建立自訂角色、然後將其指派給虛擬機器。此角色可讓 Cloud Manager 在該 Azure 訂閱中管理資源和程序。 link:reference-permissions-azure.html["檢閱 Cloud Manager 如何使用權限"]。
+當BlueXP在Azure中部署Connector虛擬機器時、它會啟用 https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["系統指派的託管身分識別"^] 在虛擬機器上建立自訂角色、然後將其指派給虛擬機器。此角色可為BlueXP提供所需的權限、以管理該Azure訂閱中的資源和程序。 link:reference-permissions-azure.html["檢閱BlueXP如何使用權限"]。
 
-image:diagram_permissions_initial_azure.png["顯示 Cloud Central 在 Azure 帳戶和訂閱中部署 Cloud Manager 的概念性映像。系統指派的託管身分識別已啟用、並將自訂角色指派給 Cloud Manager 虛擬機器。"]
+image:diagram_permissions_initial_azure.png["顯示在Azure帳戶和訂閱中部署Connector的BlueXP概念性映像。系統指派的託管身分識別已啟用、並將自訂角色指派給Connector虛擬機器。"]
 
-Cloud Manager 會在您為 Cloud Volumes ONTAP 下列項目建立新的工作環境時、依預設選取這些 Azure 認證資料：
+當您為Cloud Volumes ONTAP 下列項目建立新的工作環境時、BlueXP預設會選取這些Azure認證資料：
 
 image:screenshot_accounts_select_azure.gif["顯示「詳細資料  認證」頁面中「切換帳戶」選項的快照。"]
 
@@ -44,7 +44,7 @@ image:screenshot_accounts_select_azure.gif["顯示「詳細資料  認證」頁�
 
 image:diagram_permissions_multiple_azure.png["顯示初始 Azure 帳戶（透過自訂角色和託管身分識別接收權限）的概念性映像、以及透過自訂角色和服務主體接收權限的兩個額外帳戶。"]
 
-您可以 link:task-adding-azure-accounts.html#adding-azure-accounts-to-cloud-manager["將帳戶認證新增至 Cloud Manager"] 提供 AD 服務主體的詳細資料。
+您可以 link:task-adding-azure-accounts.html#adding-azure-accounts-to-cloud-manager["將帳戶認證新增至BlueXP"] 提供 AD 服務主體的詳細資料。
 
 新增一組認證資料之後、您可以在建立新的工作環境時切換至這些認證資料：
 
@@ -52,7 +52,7 @@ image:screenshot_accounts_switch_azure.gif["在詳細資料  認證頁面中按�
 
 .Marketplace 部署和內部部署呢？
 ****
-以上各節說明推薦的 Connector 部署方法、該方法來自 NetApp Cloud Central 。您也可以從部署連接器至 Azure link:task-launching-azure-mktp.html["Azure Marketplace"]您也可以 link:task-installing-linux.html["在內部部署安裝連接器"]。
+以上各節說明建議的連接器部署方法、該方法來自於BlueXP。您也可以從部署連接器至 Azure link:task-launching-azure-mktp.html["Azure Marketplace"]您也可以 link:task-installing-linux.html["在內部部署安裝連接器"]。
 
 如果您使用 Marketplace 、則會以相同方式提供權限。您只需要手動建立及設定 Connector 的託管身分識別、然後為任何其他帳戶提供權限。
 

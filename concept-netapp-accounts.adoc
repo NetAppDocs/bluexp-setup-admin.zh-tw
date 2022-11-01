@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: concept-netapp-accounts.html 
-keywords: accounts, workspaces, Connector, users, cloud central, admin, Account Admin, Workspace Admin, account settings, workspaces, users, members, connector, service connector, user accounts, what are users, what is a workspace, users and workspaces 
-summary: NetApp帳戶提供多租戶服務、可讓您從Cloud Manager內部、在隔離的工作區中組織使用者和資源。 
+keywords: accounts, workspaces, Connector, users, BlueXP website, admin, Account Admin, Workspace Admin, account settings, workspaces, users, members, connector, service connector, user accounts, what are users, what is a workspace, users and workspaces 
+summary: NetApp帳戶提供多租戶服務、可讓您從BlueXP內部、在隔離的工作區中組織使用者和資源。 
 ---
 = 瞭解NetApp客戶
 :hardbreaks:
@@ -14,15 +14,15 @@ summary: NetApp帳戶提供多租戶服務、可讓您從Cloud Manager內部、�
 
 
 [role="lead"]
-NetApp帳戶_提供多租戶共享、讓您從Cloud Manager內部、在隔離的工作區中組織使用者和資源。
+NetApp帳戶_提供多租戶共享、讓您從BlueXP內部、在隔離的工作區中組織使用者和資源。
 
 例如、多位使用者可以在 Cloud Volumes ONTAP 稱為 _stap空間 _ 的隔離環境中部署及管理各種不一致的系統。除非共用這些工作區、否則其他使用者無法看到這些工作區。
 
-第一次存取Cloud Manager時、系統會提示您選擇或建立NetApp帳戶：
+當您第一次存取BlueXP時、系統會提示您選擇或建立NetApp帳戶：
 
-image:screenshot_account_selection.gif["Cloud Manager設定精靈的快照、會提示您輸入要在其中建立Cloud Manager的NetApp帳戶。"]
+image:screenshot_account_selection.gif["BlueXP安裝精靈的快照、會提示您輸入要在其中建立BlueXP的NetApp帳戶。"]
 
-Cloud Manager帳戶管理員接著可以管理使用者（成員）、工作區、連接器及訂閱、藉此修改此帳戶的設定：
+然後、BlueXP帳戶管理員可以管理使用者（成員）、工作區、連接器及訂閱、藉此修改此帳戶的設定：
 
 image:screenshot_account_settings.gif["顯示「管理帳戶」小工具的快照、您可從中管理使用者、工作區和連接器。"]
 
@@ -32,23 +32,23 @@ image:screenshot_account_settings.gif["顯示「管理帳戶」小工具的快�
 
 == 帳戶設定
 
-Cloud Manager中的「管理帳戶」小工具可讓客戶管理員管理NetApp帳戶。如果您剛建立帳戶、就會從頭開始。但如果您已經設定帳戶、您會看到 _ 全部 _ 與帳戶相關聯的使用者、工作區、連接器和訂閱。
+BlueXP中的「管理帳戶」小工具可讓帳戶管理員管理NetApp帳戶。如果您剛建立帳戶、就會從頭開始。但如果您已經設定帳戶、您會看到 _ 全部 _ 與帳戶相關聯的使用者、工作區、連接器和訂閱。
 
 
 
 == 總覽
 
-「總覽」頁面會顯示「帳戶名稱」和「帳戶ID」。註冊某些服務時、您可能需要提供您的帳戶ID。本頁也包含一些Cloud Manager組態選項。
+「總覽」頁面會顯示「帳戶名稱」和「帳戶ID」。註冊某些服務時、您可能需要提供您的帳戶ID。本頁也包含一些BlueXP組態選項。
 
 
 
 == 成員
 
-成員是您與NetApp帳戶建立關聯的NetApp Cloud Central使用者。將使用者與該帳戶中的帳戶和一或多個工作區建立關聯、可讓這些使用者在 Cloud Manager 中建立及管理工作環境。
+成員是您與NetApp帳戶相關聯的BlueXP使用者。將使用者與該帳戶中的帳戶和一或多個工作區建立關聯、可讓這些使用者在BlueXP中建立及管理工作環境。
 
 當您建立使用者關聯時、您會指派一個角色給他們：
 
-* _Account admin_ ：可在 Cloud Manager 中執行任何動作。
+* _Account admin_：可在BlueXP中執行任何動作。
 * _Workspace 管理 _ ：可在指派的工作區中建立及管理資源。
 * _Compliance Viewer_：只能檢視Cloud Data Sense法規遵循資訊、並針對擁有存取權限的系統產生報告。
 * _SURFAD__：可以使用「支援服務」來建立應用程式一致的備份、並使用這些備份來還原資料。SnapCenter SnapCenter_此服務目前為試用版。_
@@ -60,7 +60,7 @@ link:reference-user-roles.html["深入瞭解這些角色"]。
 
 == 工作區
 
-在 Cloud Manager 中、工作區會將任何數量的工作環境與其他工作環境隔離。除非帳戶管理員將該管理員與該工作區建立關聯、否則 Workspace 系統管理員無法存取工作區中的工作環境。
+在BlueXP中、工作區會將任何數量的_Work處 環境與其他工作環境隔離。除非帳戶管理員將該管理員與該工作區建立關聯、否則 Workspace 系統管理員無法存取工作區中的工作環境。
 
 工作環境代表儲存系統：
 
@@ -75,9 +75,9 @@ link:task-setting-up-netapp-accounts.html["瞭解如何新增工作區"]。
 
 == 連接器
 
-Connector 可讓 Cloud Manager 管理公有雲環境中的資源與程序。Connector 可在您部署在雲端供應商的虛擬機器執行個體上執行、或是在您設定的內部部署主機上執行。
+Connector可讓BlueXP管理公有雲環境中的資源與程序。Connector 可在您部署在雲端供應商的虛擬機器執行個體上執行、或是在您設定的內部部署主機上執行。
 
-您可以使用連接器搭配多個 NetApp 雲端資料服務。例如、如果您已有 Connector for Cloud Manager 、則可在設定雲端分層服務時加以選取。
+您可以使用連接器搭配多個 NetApp 雲端資料服務。例如、如果您已經有一個Connector for BlueXP、則可以在設定雲端分層服務時加以選取。
 
 link:concept-connectors.html["深入瞭解連接器"]。
 
@@ -87,7 +87,7 @@ link:concept-connectors.html["深入瞭解連接器"]。
 
 這些是與所選帳戶相關的NetApp訂閱。
 
-當您從雲端供應商的市場訂閱 Cloud Manager 時、系統會將您重新導向至 Cloud Central 、您需要在其中儲存訂閱內容、並將其與特定帳戶建立關聯。
+當您從雲端供應商的市場訂閱BlueXP時、系統會將您重新導向至BlueXP網站、您需要在其中儲存訂閱內容、並將其與特定帳戶建立關聯。
 
 訂閱之後、即可從「管理帳戶」小工具取得每份訂閱。您只會看到與您目前檢視的帳戶相關聯的訂閱內容。
 
@@ -118,7 +118,7 @@ image:diagram_cloud_central_accounts_one.png["顯示包含兩個工作區的單�
 
 === 範例 2.
 
-以下是另一個使用兩個獨立NetApp帳戶顯示最高層級的多租戶共享的範例。例如、服務供應商可能會在一個帳戶中使用 Cloud Manager 來為客戶提供服務、而使用另一個帳戶來為其中一個業務單位提供災難恢復。
+以下是另一個使用兩個獨立NetApp帳戶顯示最高層級的多租戶共享的範例。例如、服務供應商可能在一個帳戶中使用BlueXP來為客戶提供服務、而使用另一個帳戶來為其中一個業務單位提供災難恢復。
 
 請注意、帳戶 2 包含兩個獨立的連接器。如果您的系統位於不同的地區、或是位於不同的雲端供應商、就可能發生這種情況。
 

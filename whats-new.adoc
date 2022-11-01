@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
-summary: 瞭解Cloud Manager管理功能的新功能、包括NetApp帳戶、連接器、雲端供應商認證等。 
+summary: 瞭解BlueXP（前身為Cloud Manager）管理功能的新功能：NetApp帳戶、連接器、雲端供應商認證等。 
 ---
 = 新功能
 :hardbreaks:
@@ -14,7 +14,13 @@ summary: 瞭解Cloud Manager管理功能的新功能、包括NetApp帳戶、連�
 
 
 [role="lead"]
-瞭解Cloud Manager管理功能的新功能：NetApp客戶、連接器、雲端供應商認證等。
+瞭解BlueXP（前身為Cloud Manager）管理功能的新功能：NetApp帳戶、連接器、雲端供應商認證等。
+
+
+
+== 2022年11月1日
+
+Cloud Manager現在會在NetApp 支援網站 與您帳戶相關的更新權杖在3個月後過期時、提示您更新與您的候用帳戶相關的認證資料。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html#update-nss-credentials["瞭解如何管理NSS帳戶"^]
 
 
 

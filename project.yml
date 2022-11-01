@@ -4,8 +4,10 @@ settings:
   platform: cloud
   internal:
     pdf_enabled: true
+    lipi_enabled: false
   prod:
     pdf_enabled: true
+    lipi_enabled: false
     harmony_enabled: false
   rss_page: whats-new.html
   langs: zh-tw,us-en,ja-jp,zh-cn,ko-kr
@@ -21,13 +23,11 @@ sidebar:
       url: "/reference-limitations.html"
   - title: 開始使用
     entries:
-    - title: 深入瞭解 Cloud Manager
+    - title: 深入瞭解BlueXP
       url: "/concept-overview.html"
     - title: 入門檢查清單
       url: "/reference-checklist-cm.html"
-    - title: 註冊 Cloud Central
-      url: "/task-signing-up.html"
-    - title: 登入 Cloud Manager
+    - title: 登入BlueXP
       url: "/task-logging-in.html"
     - title: 設定NetApp帳戶
       entries:
@@ -49,7 +49,7 @@ sidebar:
         url: "/task-create-connectors-gov.html"
     - title: 下一步
       url: "/reference-whats-next.html"
-  - title: 管理 Cloud Manager
+  - title: 管理BlueXP
     entries:
     - title: NetApp客戶
       entries:
@@ -145,7 +145,7 @@ homepage:
   tiles:
   - title: 開始使用
     links:
-    - title: 深入瞭解 Cloud Manager
+    - title: 深入瞭解BlueXP
       url: concept-overview.html
     - title: 入門檢查清單
       url: reference-checklist-cm.html
@@ -175,11 +175,11 @@ homepage:
     links:
     - title: NetApp社群
       url: https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS
-    - title: Cloud Central部落格
+    - title: BlueXP部落格
       url: https://cloud.netapp.com/blog/topic/cloud-manager
     - title: 雲端網路研討會
       url: https://cloud.netapp.com/events
 product-family:
-  name: Cloud Manager
+  name: BlueXP
   repo: cloud-manager-family
-  sidebar_label: 所有Cloud Manager文件
+  sidebar_label: 所有BlueXP文件

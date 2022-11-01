@@ -69,7 +69,7 @@ Docker引擎:: 安裝Connector之前、主機上需要Docker Engine 19版或更�
 ----
 sudo systemctl enable docker && sudo systemctl start docker
 ----
-. 從下載 Cloud Manager 軟體 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支援網站"^]。
+. 請從下載BlueXP軟體 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支援網站"^]。
 . 將安裝程式複製到Linux主機。
 . 指派執行指令碼的權限。
 +
@@ -90,23 +90,23 @@ sudo /path/cloud-manager-connector-offline-v3.9.19
 +
 image:screenshot-onprem-darksite-welcome.png["在網頁瀏覽器中輸入Connector的IP位址之後、會出現歡迎頁面的快照。"]
 
-. 按一下*設定新的Cloud Manager*、然後依照提示設定系統。
+. 按一下*「設定新的藍圖XP」*、然後依照提示設定系統。
 +
-** *系統詳細資料*：輸入Cloud Manager系統的名稱和公司名稱。
+** *系統詳細資料*：輸入Connector的名稱及您的公司名稱。
 +
-image:screenshot-onprem-darksite-details.png["系統詳細資料頁面的快照、會提示您輸入Cloud Manager名稱和公司名稱。"]
+image:screenshot-onprem-darksite-details.png["系統詳細資料頁面的快照、會提示您輸入BlueXP名稱和公司名稱。"]
 
 ** *建立管理使用者*：建立系統的管理使用者。
 +
-此使用者帳戶在本機系統上執行。無法連線至NetApp Cloud Central。
+此使用者帳戶在本機系統上執行。無法透過BlueXP連線至驗證0服務。
 
 ** *審查*：檢閱詳細資料、接受授權合約、然後按一下*設定*。
 
 
-. 使用您剛建立的管理員使用者登入Cloud Manager。
+. 使用您剛建立的管理使用者登入BlueXP。
 
 
-現在已安裝Connector、您可以開始使用適用於黑暗站台部署的Cloud Manager功能。
+現在已安裝Connector、您可以開始使用在暗站部署中可用的BlueXP功能。
 
 .接下來是什麼？#8217？
 * https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["探索內部ONTAP 的叢集"^]

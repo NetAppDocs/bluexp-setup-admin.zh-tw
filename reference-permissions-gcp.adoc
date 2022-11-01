@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-permissions-gcp.html 
 keywords: permissions, gcp, gcp permissions 
-summary: Cloud Manager 需要權限、才能在雲端供應商中執行動作。這些權限包含在 NetApp 提供的原則中。您可能想要瞭解 Cloud Manager 使用這些權限的功能。 
+summary: BlueXP需要權限才能在雲端供應商中執行動作。這些權限包含在 NetApp 提供的原則中。您可能想要瞭解BlueXP使用這些權限的功能。 
 ---
 = Connector的Google Cloud權限
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Cloud Manager 需要權限、才能在雲端供應商中執行動作。
 
 
 [role="lead"]
-Cloud Manager需要權限才能在Google Cloud中執行動作。這些權限包含在NetApp提供的自訂角色中。您可能想要瞭解 Cloud Manager 使用這些權限的功能。
+BlueXP需要權限才能在Google Cloud中執行動作。這些權限包含在NetApp提供的自訂角色中。您可能想要瞭解BlueXP使用這些權限的功能。
 
 
 
@@ -28,7 +28,7 @@ Cloud Manager需要權限才能在Google Cloud中執行動作。這些權限包�
 
 [source, yaml]
 ----
-title: NetApp Cloud Manager
+title: NetApp BlueXP
 description: Permissions for the service account associated with the Connector instance.
 stage: GA
 includedPermissions:

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-viewing-amazon-s3.html 
 keywords: s3 buckets, s3 storage, s3 working environment, amazon s3 buckets, amazon s3 working environment 
-summary: 在AWS中安裝Connector之後、Cloud Manager可以自動探索安裝Connector之AWS帳戶中的Amazon S3儲存區相關資訊。Amazon S3工作環境會新增至Canvas、以便您檢視此資訊。 
+summary: 在AWS中安裝Connector之後、BlueXP會自動探索安裝Connector之AWS帳戶中的Amazon S3儲存區相關資訊。Amazon S3工作環境會新增至Canvas、以便您檢視此資訊。 
 ---
 = 檢視您的 Amazon S3 時段
 :hardbreaks:
@@ -14,12 +14,13 @@ summary: 在AWS中安裝Connector之後、Cloud Manager可以自動探索安裝C
 
 
 [role="lead"]
-在AWS中安裝Connector之後、Cloud Manager可以自動探索安裝Connector之AWS帳戶中的Amazon S3儲存區相關資訊。Amazon S3工作環境會新增至Canvas、以便您檢視此資訊。
+在AWS中安裝Connector之後、BlueXP會自動探索安裝Connector之AWS帳戶中的Amazon S3儲存區相關資訊。Amazon S3工作環境會新增至Canvas、以便您檢視此資訊。
 
 您可以查看S3儲存區的詳細資料、包括地區、存取原則、帳戶、總容量和已用容量等。這些儲存庫可做為雲端備份、雲端分層或Cloud Sync 還原作業的目的地。此外、您也可以使用Cloud Data Sense來掃描這些儲存區。
 
 .步驟
 . link:task-creating-connectors-aws.html["安裝連接器"] 在您要檢視 Amazon S3 儲存區的 AWS 帳戶中。
+. 從導覽功能表中、選取*儲存設備> Canvas*。
 +
 您應該會在不久之後自動看到 Amazon S3 工作環境。
 

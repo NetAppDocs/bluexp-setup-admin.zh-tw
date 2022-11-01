@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-permissions-aws.html 
 keywords: permissions, actions, aws, aws permissions 
-summary: Cloud Manager在AWS中啟動Connector執行個體時、會將原則附加至執行個體、讓Connector有權管理該AWS帳戶內的資源和程序。連接器使用權限來撥打API呼叫數個AWS服務、包括EC2、S3、CloudForecation、IAM、 金鑰管理服務等。 
+summary: 當BlueXP在AWS中啟動Connector執行個體時、它會將原則附加到執行個體、讓Connector有權限管理該AWS帳戶內的資源和程序。連接器使用權限來撥打API呼叫數個AWS服務、包括EC2、S3、CloudForecation、IAM、 金鑰管理服務等。 
 ---
 = Connector的AWS權限
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Cloud Manager在AWS中啟動Connector執行個體時、會將原則附�
 
 
 [role="lead"]
-Cloud Manager在AWS中啟動Connector執行個體時、會將原則附加至執行個體、讓Connector有權管理該AWS帳戶內的資源和程序。連接器使用權限來撥打API呼叫數個AWS服務、包括EC2、S3、CloudForecation、IAM、 金鑰管理服務（KMS）等。
+當BlueXP在AWS中啟動Connector執行個體時、它會將原則附加到執行個體、讓Connector有權限管理該AWS帳戶內的資源和程序。連接器使用權限來撥打API呼叫數個AWS服務、包括EC2、S3、CloudForecation、IAM、 金鑰管理服務（KMS）等。
 
 
 
@@ -22,7 +22,7 @@ Cloud Manager在AWS中啟動Connector執行個體時、會將原則附加至執�
 
 下列IAM原則提供Connector所需的權限、以便根據AWS區域管理公有雲環境中的資源和程序。
 
-直接從Cloud Manager建立Connector時、Cloud Manager會自動將此原則套用至Connector。
+當您直接從BlueXP建立連接器時、BlueXP會自動將此原則套用至連接器。
 
 如果您是從AWS Marketplace部署Connector、或是在Linux主機上手動安裝Connector、則必須自行設定原則。
 

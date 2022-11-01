@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-adding-aws-accounts.html 
 keywords: permissions, aws, policy, iam, iam role, role, granting, policy, iam policy, iam user, access keys, arn, cloud provider accounts, aws, cloud provider profile, json, iam, credentials, adding credentials, add credentials 
-summary: 新增及管理AWS認證資料、讓Cloud Manager擁有在AWS帳戶中部署及管理雲端資源所需的權限。如果您管理多個 AWS 訂閱、您可以從「認證」頁面將每個訂閱指派給不同的 AWS 認證資料。 
+summary: 新增及管理AWS認證資料、讓BlueXP擁有在AWS帳戶中部署及管理雲端資源所需的權限。如果您管理多個 AWS 訂閱、您可以從「認證」頁面將每個訂閱指派給不同的 AWS 認證資料。 
 ---
-= 管理AWS認證資料和Cloud Manager訂閱
+= 管理適用於BlueXP的AWS認證與訂閱
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,25 +14,25 @@ summary: 新增及管理AWS認證資料、讓Cloud Manager擁有在AWS帳戶中�
 
 
 [role="lead"]
-新增及管理AWS認證資料、讓Cloud Manager擁有在AWS帳戶中部署及管理雲端資源所需的權限。如果您管理多個 AWS 訂閱、您可以從「認證」頁面將每個訂閱指派給不同的 AWS 認證資料。
+新增及管理AWS認證資料、讓BlueXP擁有在AWS帳戶中部署及管理雲端資源所需的權限。如果您管理多個 AWS 訂閱、您可以從「認證」頁面將每個訂閱指派給不同的 AWS 認證資料。
 
 
 
 == 總覽
 
-您可以將AWS認證資料新增至現有的Connector、或直接新增至Cloud Manager：
+您可以將AWS認證資料新增至現有的Connector、或直接新增至BlueXP：
 
 * 將額外的AWS認證資料新增至現有的Connector
 +
 將新的AWS認證資料新增至現有的Connector、可讓您Cloud Volumes ONTAP 使用相同的Connector在另一個AWS帳戶中部署。  additional credentials to a Connector,瞭解如何將AWS認證資料新增至Connector。
 
-* 將AWS認證資料新增至Cloud Manager以建立Connector
+* 將AWS認證資料新增至BlueXP以建立連接器
 +
-將新的AWS認證資料新增至Cloud Manager、可讓Cloud Manager擁有建立Connector所需的權限。  credentials to Cloud Manager for creating a Connector,瞭解如何將AWS認證資料新增至Cloud Manager。
+將新的AWS認證資料新增至藍圖XP、即可賦予藍圖XP建立Connector所需的權限。  credentials to BlueXP for creating a Connector,瞭解如何將AWS認證資料新增至藍圖XP。
 
-* 將AWS認證資料新增至Cloud Manager for FSX ONTAP for Sf
+* 將AWS認證資料新增至適用於FSX ONTAP for Sf更新 的BlueXP
 +
-將新的AWS認證資料新增至Cloud Manager、可讓Cloud Manager擁有必要的權限、以建立及管理FSXfor ONTAP the Sfor。 https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["瞭解如何設定FSX for ONTAP Sfor Sfor Sfor的權限"^]
+新增AWS認證資料至藍圖XP、可讓藍圖XP擁有建立及管理FSXfor ONTAP Sfor的必要權限。 https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["瞭解如何設定FSX for ONTAP Sfor Sfor Sfor的權限"^]
 
 
 
@@ -40,11 +40,11 @@ summary: 新增及管理AWS認證資料、讓Cloud Manager擁有在AWS帳戶中�
 
 == 如何旋轉認證資料
 
-Cloud Manager 可讓您以幾種方式提供 AWS 認證資料：與 Connector 執行個體相關的 IAM 角色、在信任的帳戶中擔任 IAM 角色、或提供 AWS 存取金鑰。 link:concept-accounts-aws.html["深入瞭解 AWS 認證與權限"]。
+BlueXP可讓您以幾種方式提供AWS認證資料：與Connector執行個體相關的IAM角色、在信任的帳戶中擔任IAM角色、或提供AWS存取金鑰。 link:concept-accounts-aws.html["深入瞭解 AWS 認證與權限"]。
 
-Cloud Manager 採用前兩個選項、使用 AWS 安全性權杖服務取得持續循環的暫用認證資料。此程序是最佳實務做法、因為它是自動且安全的。
+在前兩個選項中、BlueXP會使用AWS安全性權杖服務來取得持續循環的暫用認證資料。此程序是最佳實務做法、因為它是自動且安全的。
 
-如果您為 Cloud Manager 提供 AWS 存取金鑰、您應該定期在 Cloud Manager 中更新金鑰、藉此旋轉金鑰。這是完全手動的程序。
+如果您為BlueXP提供AWS存取金鑰、您應該定期在BlueXP中更新金鑰、以旋轉金鑰。這是完全手動的程序。
 
 
 
@@ -56,10 +56,10 @@ Cloud Manager 採用前兩個選項、使用 AWS 安全性權杖服務取得持�
 
 === 授予權限
 
-在您新增額外的AWS認證資料至Connector之前、您必須先提供必要的權限。這些權限可讓 Cloud Manager 管理該 AWS 帳戶內的資源和程序。您提供權限的方式取決於您是否要為Cloud Manager提供信任帳戶或AWS金鑰中角色的ARN。
+在您新增額外的AWS認證資料至Connector之前、您必須先提供必要的權限。這些權限可讓BlueXP管理該AWS帳戶內的資源和程序。您提供權限的方式取決於您是否要為BlueXP提供信任帳戶或AWS金鑰中角色的ARN。
 
 
-NOTE: 當您從 Cloud Manager 部署 Connector 時、 Cloud Manager 會自動為您部署 Connector 的帳戶新增 AWS 認證資料。如果您在現有系統上手動安裝 Connector 軟體、則不會新增此初始帳戶。 link:concept-accounts-aws.html["深入瞭解 AWS 認證與權限"]。
+NOTE: 當您從BlueXP部署Connector時、BlueXP會自動為您部署Connector的帳戶新增AWS認證資料。如果您在現有系統上手動安裝 Connector 軟體、則不會新增此初始帳戶。 link:concept-accounts-aws.html["深入瞭解 AWS 認證與權限"]。
 
 * 選項 *
 
@@ -71,7 +71,7 @@ NOTE: 當您從 Cloud Manager 部署 Connector 時、 Cloud Manager 會自動為
 
 ==== 在另一個帳戶中擔任IAM角色、藉此授予權限
 
-您可以使用 IAM 角色、在部署 Connector 執行個體的來源 AWS 帳戶與其他 AWS 帳戶之間建立信任關係。接著、您將從信任的帳戶中、為 Cloud Manager 提供 IAM 角色的 ARN 。
+您可以使用 IAM 角色、在部署 Connector 執行個體的來源 AWS 帳戶與其他 AWS 帳戶之間建立信任關係。接著、您會向BlueXP提供來自信任帳戶的IAM角色ARN。
 
 .步驟
 . 前往您要部署Cloud Volumes ONTAP 的目標帳戶中的IAM主控台。
@@ -85,7 +85,7 @@ NOTE: 當您從 Cloud Manager 部署 Connector 時、 Cloud Manager 會自動為
 ** 透過複製及貼上的內容來建立原則 link:reference-permissions-aws.html["連接器的IAM原則"]。
 
 
-. 複製IAM角色的角色ARN、以便稍後將其貼到Cloud Manager中。
+. 複製IAM角色的角色ARN、以便稍後將其貼到BlueXP中。
 
 
 帳戶現在擁有必要的權限。 ,您現在可以將認證資料新增至Connector。
@@ -94,7 +94,7 @@ NOTE: 當您從 Cloud Manager 部署 Connector 時、 Cloud Manager 會自動為
 
 ==== 提供AWS金鑰來授予權限
 
-如果您想要為 IAM 使用者提供 AWS 金鑰給 Cloud Manager 、則必須將必要的權限授予該使用者。Cloud Manager IAM 原則定義了允許 Cloud Manager 使用的 AWS 動作和資源。
+如果您想為IAM使用者提供AWS金鑰給BlueXP、則必須將必要的權限授予該使用者。BlueXP IAM原則定義了允許BlueXP使用的AWS動作和資源。
 
 .步驟
 . 從IAM主控台複製並貼上的內容、以建立原則 link:reference-permissions-aws.html["連接器的IAM原則"]。
@@ -117,13 +117,13 @@ https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html["AW
 
 在您提供具備所需權限的AWS帳戶之後、您可以將該帳戶的認證資料新增至現有的Connector。這可讓您Cloud Volumes ONTAP 使用相同的Connector在該帳戶中啟動支援功能。
 
-如果您剛在雲端供應商中建立這些認證資料、可能需要幾分鐘的時間才能使用。請稍候幾分鐘、再將認證資料新增至Cloud Manager。
+如果您剛在雲端供應商中建立這些認證資料、可能需要幾分鐘的時間才能使用。請稍候幾分鐘、再將認證資料新增至BlueXP。
 
 .步驟
-. 請確定Cloud Manager目前已選取正確的Connector。
-. 在 Cloud Manager 主控台右上角、按一下「設定」圖示、然後選取 * 認證 * 。
+. 確定目前在BlueXP中選取正確的連接器。
+. 在BlueXP主控台右上角、按一下「設定」圖示、然後選取*認證*。
 +
-image:screenshot_settings_icon.gif["顯示 Cloud Manager 主控台右上角「設定」圖示的快照。"]
+image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」圖示的快照。"]
 
 . 按一下*「Add Credential*（新增認證*）」、然後依照精靈中的步驟進行。
 +
@@ -144,15 +144,15 @@ image:screenshot_accounts_switch_aws.png["在詳細資料  認證頁面中按一
 
 
 
-== 將認證資料新增至Cloud Manager以建立Connector
+== 新增認證資料至BlueXP以建立連接器
 
-提供IAM角色的ARN、讓Cloud Manager擁有建立Connector所需的權限、藉此將AWS認證新增至Cloud Manager。您可以在建立新的Connector時選擇這些認證資料。
+提供IAM角色的ARN、為BlueXP提供建立Connector所需的權限、將AWS認證新增至BlueXP。您可以在建立新的Connector時選擇這些認證資料。
 
 
 
 === 設定IAM角色
 
-設定IAM角色、讓Cloud Manager SaaS能夠承擔角色。
+設定IAM角色、讓BlueXP SaaS能夠承擔角色。
 
 .步驟
 . 前往目標帳戶中的IAM主控台。
@@ -162,7 +162,7 @@ image:screenshot_accounts_switch_aws.png["在詳細資料  認證頁面中按一
 
 +
 ** 在*信任的實體類型*下、選取* AWS帳戶*。
-** 選取*其他AWS帳戶*、然後輸入Cloud Manager SaaS的ID：952013314444.
+** 選取*其他AWS帳戶*、然後輸入BlueXP SaaS的ID：952013314444.
 ** 建立包含建立Connector所需權限的原則。
 +
 *** https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["檢視FSXfor ONTAP Sfor Sf哪些 權限"^]
@@ -171,27 +171,27 @@ image:screenshot_accounts_switch_aws.png["在詳細資料  認證頁面中按一
 
 
 
-. 複製IAM角色的角色ARN、以便在下一步將其貼到Cloud Manager中。
+. 複製IAM角色的角色ARN、以便在下一步將其貼到BlueXP中。
 
 
-IAM角色現在擁有所需的權限。 ,您現在可以將它新增至 Cloud Manager。
+IAM角色現在擁有所需的權限。 ,您現在可以將它新增至藍圖XP。
 
 
 
 === 新增認證資料
 
-在您提供IAM角色所需的權限之後、請將角色ARN新增至Cloud Manager。
+在您提供IAM角色所需的權限之後、請將角色ARN新增至BlueXP。
 
-如果您剛建立IAM角色、可能需要幾分鐘的時間才能使用。請稍候幾分鐘、再將認證資料新增至Cloud Manager。
+如果您剛建立IAM角色、可能需要幾分鐘的時間才能使用。請稍候幾分鐘、再將認證資料新增至BlueXP。
 
 .步驟
-. 在 Cloud Manager 主控台右上角、按一下「設定」圖示、然後選取 * 認證 * 。
+. 在BlueXP主控台右上角、按一下「設定」圖示、然後選取*認證*。
 +
-image:screenshot_settings_icon.gif["顯示 Cloud Manager 主控台右上角「設定」圖示的快照。"]
+image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」圖示的快照。"]
 
 . 按一下*「Add Credential*（新增認證*）」、然後依照精靈中的步驟進行。
 +
-.. *認證資料位置*：選取* Amazon Web Services > Cloud Manager*。
+.. *認證資料位置*：選取* Amazon Web Services > BlueXP*。
 .. *定義認證資料*：提供IAM角色的ARN（Amazon資源名稱）。
 .. *審查*：確認新認證資料的詳細資料、然後按一下*新增*。
 
@@ -204,18 +204,18 @@ image:screenshot_settings_icon.gif["顯示 Cloud Manager 主控台右上角「�
 
 == 建立AWS訂閱的關聯
 
-將 AWS 認證資料新增至 Cloud Manager 之後、您可以將 AWS Marketplace 訂閱與這些認證資料建立關聯。訂閱可讓您以Cloud Volumes ONTAP 小時費率（PAYGO）或使用年度合約來支付報銷費用、並使用其他NetApp雲端服務。
+將AWS認證資料新增至BlueXP之後、您可以將AWS Marketplace訂閱與這些認證資料建立關聯。訂閱可讓您以Cloud Volumes ONTAP 小時費率（PAYGO）或使用年度合約來支付報銷費用、並使用其他NetApp雲端服務。
 
-您可能會在將認證新增至 Cloud Manager 之後、在兩種情況下建立 AWS Marketplace 訂閱的關聯：
+您可能會在將認證新增至BlueXP之後、在兩種情況下建立AWS Marketplace訂閱的關聯：
 
-* 初次將認證新增至 Cloud Manager 時、您並未建立訂閱關聯。
+* 當您初次將認證新增至BlueXP時、並未建立訂閱關聯。
 * 您想要以新的訂閱取代現有的 AWS Marketplace 訂閱。
 
 
-您必須先建立連接器、才能變更 Cloud Manager 設定。 link:concept-connectors.html#how-to-create-a-connector["瞭解如何建立連接器"]。
+您必須先建立連接器、才能變更BlueXP設定。 link:concept-connectors.html#how-to-create-a-connector["瞭解如何建立連接器"]。
 
 .步驟
-. 在 Cloud Manager 主控台右上角、按一下「設定」圖示、然後選取 * 認證 * 。
+. 在BlueXP主控台右上角、按一下「設定」圖示、然後選取*認證*。
 . 按一下動作功能表以取得一組認證資料、然後選取「*建立訂閱關聯*」。
 +
 image:screenshot_associate_subscription.png["一組現有認證資料的動作功能表快照。"]
@@ -229,13 +229,13 @@ video::video_subscribing_aws.mp4[width=848,height=480]
 
 == 編輯認證資料
 
-在Cloud Manager中編輯AWS認證資料、方法是變更帳戶類型（AWS金鑰或承擔角色）、編輯名稱、或自行更新認證資料（金鑰或角色ARN）。
+在BlueXP中編輯AWS認證資料、方法是變更帳戶類型（AWS金鑰或承擔角色）、編輯名稱、或自行更新認證資料（金鑰或角色ARN）。
 
 
 TIP: 您無法編輯與Connector執行個體相關聯之執行個體設定檔的認證資料。
 
 .步驟
-. 在 Cloud Manager 主控台右上角、按一下「設定」圖示、然後選取 * 認證 * 。
+. 在BlueXP主控台右上角、按一下「設定」圖示、然後選取*認證*。
 . 按一下動作功能表以取得一組認證資料、然後選取*編輯認證*。
 . 進行必要的變更、然後按一下「*套用*」。
 
@@ -244,13 +244,13 @@ TIP: 您無法編輯與Connector執行個體相關聯之執行個體設定檔的
 
 == 刪除認證資料
 
-如果您不再需要一組認證資料、可以從Cloud Manager刪除。您只能刪除與工作環境無關的認證資料。
+如果您不再需要一組認證資料、可以從BlueXP中刪除。您只能刪除與工作環境無關的認證資料。
 
 
 TIP: 您無法刪除與連接器執行個體相關聯之執行個體設定檔的認證。
 
 .步驟
-. 在 Cloud Manager 主控台右上角、按一下「設定」圖示、然後選取 * 認證 * 。
+. 在BlueXP主控台右上角、按一下「設定」圖示、然後選取*認證*。
 . 按一下動作功能表以取得一組認證資料、然後選取*刪除認證資料*。
 . 按一下*刪除*以確認。
 

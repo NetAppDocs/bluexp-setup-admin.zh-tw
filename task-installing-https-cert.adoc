@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-installing-https-cert.html 
 keywords: https certificate, certificate, adding, installing, ca, certificate authority, format, encoding, renewing 
-summary: 根據預設、 Cloud Manager 會使用自我簽署的憑證來存取 Web 主控台的 HTTPS 。您可以安裝由憑證授權單位（ CA ）簽署的憑證、以提供比自我簽署憑證更好的安全保護。 
+summary: 根據預設、BlueXP會使用自我簽署的憑證來存取Web主控台的HTTPS。您可以安裝由憑證授權單位（ CA ）簽署的憑證、以提供比自我簽署憑證更好的安全保護。 
 ---
 = 管理 HTTPS 憑證以確保安全存取
 :hardbreaks:
@@ -14,13 +14,13 @@ summary: 根據預設、 Cloud Manager 會使用自我簽署的憑證來存取 W
 
 
 [role="lead"]
-根據預設、 Cloud Manager 會使用自我簽署的憑證來存取 Web 主控台的 HTTPS 。您可以安裝由憑證授權單位（ CA ）簽署的憑證、以提供比自我簽署憑證更好的安全保護。
+根據預設、BlueXP會使用自我簽署的憑證來存取Web主控台的HTTPS。您可以安裝由憑證授權單位（ CA ）簽署的憑證、以提供比自我簽署憑證更好的安全保護。
 
 
 
 == 開始之前
 
-您必須先建立連接器、才能變更 Cloud Manager 設定。 link:concept-connectors.html#how-to-create-a-connector["瞭解方法"]。
+您必須先建立連接器、才能變更BlueXP設定。 link:concept-connectors.html#how-to-create-a-connector["瞭解方法"]。
 
 
 
@@ -29,9 +29,9 @@ summary: 根據預設、 Cloud Manager 會使用自我簽署的憑證來存取 W
 安裝由 CA 簽署的憑證、以確保安全存取。
 
 .步驟
-. 在 Cloud Manager 主控台右上角、按一下「設定」圖示、然後選取「 * HTTPS 設定 * 」。
+. 在BlueXP主控台右上角、按一下「設定」圖示、然後選取「* HTTPS設定*」。
 +
-image:screenshot_settings_icon.gif["顯示 Cloud Manager 主控台右上角「設定」圖示的快照。"]
+image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」圖示的快照。"]
 
 . 在「 HTTPS 設定」頁面中、產生憑證簽署要求（ CSR ）或安裝您自己的 CA 簽署憑證來安裝憑證：
 +
@@ -43,7 +43,7 @@ image:screenshot_settings_icon.gif["顯示 Cloud Manager 主控台右上角「�
 | 產生 CSR  a| 
 .. 輸入連接器主機的主機名稱或 DNS （其一般名稱）、然後按一下 * 產生 csr* 。
 +
-Cloud Manager 會顯示憑證簽署要求。
+BlueXP會顯示憑證簽署要求。
 
 .. 使用 CSR 將 SSL 憑證要求提交給 CA 。
 +
@@ -65,22 +65,22 @@ Cloud Manager 會顯示憑證簽署要求。
 |===
 
 
-Cloud Manager 現在使用 CA 簽署的憑證來提供安全的 HTTPS 存取。下圖顯示 Cloud Manager 系統的安全存取設定：
+現在、BlueXP使用CA簽署的憑證來提供安全的HTTPS存取。下圖顯示設定為安全存取的BlueXP帳戶：
 
 image:screenshot_https_cert.gif["螢幕擷取畫面：顯示您安裝簽署憑證後的 HTTPS 設定頁面。頁面會顯示憑證內容和續約憑證的選項。"]
 
 
 
-== 續約 Cloud Manager HTTPS 憑證
+== 續約BlueXP HTTPS憑證
 
-您應該在 Cloud Manager HTTPS 憑證過期之前更新、以確保安全存取 Cloud Manager 網路主控台。如果您在憑證到期之前未續約、當使用者使用 HTTPS 存取 Web 主控台時、會出現警告。
+您應該在過期之前更新BlueXP HTTPS憑證、以確保安全存取BlueXP主控台。如果您在憑證到期之前未續約、當使用者使用HTTPS存取Web主控台時、會出現警告。
 
 .步驟
-. 在 Cloud Manager 主控台右上角、按一下「設定」圖示、然後選取「 * HTTPS 設定 * 」。
+. 在BlueXP主控台右上角、按一下「設定」圖示、然後選取「* HTTPS設定*」。
 +
-顯示 Cloud Manager 憑證的詳細資料、包括到期日。
+顯示有關BlueXP憑證的詳細資料、包括到期日。
 
 . 按一下*變更憑證*、然後依照步驟產生CSR或安裝您自己的CA簽署憑證。
 
 
-Cloud Manager 使用新的 CA 簽署憑證來提供安全的 HTTPS 存取。
+BlueXP使用新的CA簽署憑證來提供安全的HTTPS存取。

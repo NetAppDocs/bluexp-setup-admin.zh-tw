@@ -20,13 +20,13 @@ summary: 如果您需要疑難排解 Connector 、可能有助於瞭解其設定
 
 == 具備網際網路存取的預設組態
 
-如果您是從Cloud Manager、雲端供應商的市場部署Connector、或是在可存取網際網路的內部部署Linux主機上手動安裝Connector、則適用下列組態詳細資料。
+如果您是從BlueXP、雲端供應商的市場部署Connector、或是手動將Connector安裝在可存取網際網路的內部部署Linux主機上、則適用下列組態詳細資料。
 
 
 
 === AWS詳細資料
 
-如果您是從Cloud Manager或雲端供應商的市場部署Connector、請注意下列事項：
+如果您是從BlueXP或雲端供應商的市場部署Connector、請注意下列事項：
 
 * EC2執行個體類型為T3.xLarge。
 * 映像的作業系統為Red Hat Enterprise Linux 7.6（HVM）。
@@ -41,7 +41,7 @@ summary: 如果您需要疑難排解 Connector 、可能有助於瞭解其設定
 
 === Azure詳細資料
 
-如果您是從Cloud Manager或雲端供應商的市場部署Connector、請注意下列事項：
+如果您是從BlueXP或雲端供應商的市場部署Connector、請注意下列事項：
 
 * VM類型為DS3 v2。
 * 映像的作業系統為CentOS 7.6。
@@ -55,7 +55,7 @@ summary: 如果您需要疑難排解 Connector 、可能有助於瞭解其設定
 
 === Google Cloud詳細資料
 
-如果您是從Cloud Manager或雲端供應商的市場部署Connector、請注意下列事項：
+如果您是從BlueXP或雲端供應商的市場部署Connector、請注意下列事項：
 
 * VM執行個體為n2-Standard-4。
 * 映像的作業系統為CentOS 7.9。
@@ -85,7 +85,7 @@ Connector 安裝資料夾位於下列位置：
 
 * /opp/application/netapp/cloudmanager/dock_occm/data/log
 +
-此資料夾中的記錄提供有關在Connector上執行雲端服務和Cloud Manager服務的詳細資料。
+此資料夾中的記錄提供有關在Connector上執行雲端服務和BlueXP服務的詳細資料。
 
 
 
@@ -93,7 +93,7 @@ Connector 安裝資料夾位於下列位置：
 
 === 連接器服務
 
-* Cloud Manager 服務的名稱為 occm 。
+* BlueXP服務的名稱為occm。
 * occm 服務取決於 MySQL 服務。
 +
 如果 MySQL 服務當機、則 occm 服務也會停機。
@@ -104,7 +104,7 @@ Connector 安裝資料夾位於下列位置：
 
 === 套件
 
-Cloud Manager 會在 Linux 主機上安裝下列套件（如果尚未安裝）：
+如果尚未安裝下列套件、則BlueXP會在Linux主機上安裝：
 
 * 7Zip
 * AWSCLI
@@ -125,8 +125,8 @@ Cloud Manager 會在 Linux 主機上安裝下列套件（如果尚未安裝）�
 
 * 80 （用於 HTTP 存取）
 * 用於 HTTPS 存取的 443
-* 適用於 Cloud Manager 資料庫的 3306
-* 8080 for the Cloud Manager API Proxy
+* 適用於BlueXP資料庫的3306
+* 8080 for the BlueXP API Proxy
 * 8666 、適用於 Service Manager API
 * 8777 、適用於 Health 檢查器 Container Service API
 

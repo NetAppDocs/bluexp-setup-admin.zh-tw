@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-permissions-azure.html 
 keywords: permissions, azure, azure permissions 
-summary: Cloud Manager在Azure中啟動Connector VM時、會將自訂角色附加至VM、讓Connector有權管理該Azure訂閱中的資源和程序。Connector會使用權限來撥打API呼叫數個Azure服務。 
+summary: 當BlueXP在Azure中啟動Connector VM時、它會將自訂角色附加至VM、讓Connector有權管理該Azure訂閱中的資源和程序。Connector會使用權限來撥打API呼叫數個Azure服務。 
 ---
 = 連接器的Azure權限
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Cloud Manager在Azure中啟動Connector VM時、會將自訂角色附�
 
 
 [role="lead"]
-Cloud Manager在Azure中啟動Connector VM時、會將自訂角色附加至VM、讓Connector有權管理該Azure訂閱中的資源和程序。Connector會使用權限來撥打API呼叫數個Azure服務。
+當BlueXP在Azure中啟動Connector VM時、它會將自訂角色附加至VM、讓Connector有權管理該Azure訂閱中的資源和程序。Connector會使用權限來撥打API呼叫數個Azure服務。
 
 
 
@@ -22,7 +22,7 @@ Cloud Manager在Azure中啟動Connector VM時、會將自訂角色附加至VM、
 
 下列自訂角色提供Connector管理Azure網路中資源與程序所需的權限。
 
-直接從Cloud Manager建立Connector時、Cloud Manager會自動將此自訂角色套用至Connector。
+直接從BlueXP建立連接器時、BlueXP會自動將此自訂角色套用至連接器。
 
 如果您從Azure Marketplace部署Connector、或是在Linux主機上手動安裝Connector、則必須自行設定自訂角色。
 
@@ -31,7 +31,7 @@ Cloud Manager在Azure中啟動Connector VM時、會將自訂角色附加至VM、
 [source, json]
 ----
 {
-    "Name": "Cloud Manager Operator",
+    "Name": "BlueXP Operator",
     "Actions": [
        "Microsoft.Compute/disks/delete",
                         "Microsoft.Compute/disks/read",
@@ -149,7 +149,7 @@ Cloud Manager在Azure中啟動Connector VM時、會將自訂角色附加至VM、
     ],
     "NotActions": [],
     "AssignableScopes": [],
-    "Description": "Cloud Manager Permissions",
+    "Description": "BlueXP Permissions",
     "IsCustom": "true"
 }
 ----
@@ -210,10 +210,10 @@ Cloud Manager在Azure中啟動Connector VM時、會將自訂角色附加至VM、
 | "Microsoft.Authorization/RoleDefinitions/write （ Microsoft 授權 / 角色指派 / 寫入） " 、 "Microsoft.Web/sites/* （ Microsoft 網站 / 網站 / * ） " | 管理 HA 配對的容錯移轉。 
 
 
-| Microsoft.Network/privateEndpoints/write" 、 "Microsoft.Storage/storageAccounts/privateEndpointConnectionsApproval / AC巨 集指令 " 、 "Microsoft.Storage/storageAccounts/privateEndpointConnections/read" 、 "Microsoft.Network/privateEndpoints/read" 、 "Microsoft.Network/privateDnsZones/write" 、 Microsoft.Network/privateDnsZones/virtualNetworkLinks/write" 、「 Microsoft.Network/virtualNetworks/join/action" 、 Microsoft.Network/privateDnsZones/A/write" 、 Microsoft.Network/privateDnsZones/read" 、「 Microsoft.Network/privateDnsZones/virtualNetworkLinks/read" 、 | 可管理私有端點。未將連線提供給子網路外部時、會使用私有端點。Cloud Manager 會為 HA 建立儲存帳戶、但僅在子網路內建立內部連線功能。 
+| Microsoft.Network/privateEndpoints/write" 、 "Microsoft.Storage/storageAccounts/privateEndpointConnectionsApproval / AC巨 集指令 " 、 "Microsoft.Storage/storageAccounts/privateEndpointConnections/read" 、 "Microsoft.Network/privateEndpoints/read" 、 "Microsoft.Network/privateDnsZones/write" 、 Microsoft.Network/privateDnsZones/virtualNetworkLinks/write" 、「 Microsoft.Network/virtualNetworks/join/action" 、 Microsoft.Network/privateDnsZones/A/write" 、 Microsoft.Network/privateDnsZones/read" 、「 Microsoft.Network/privateDnsZones/virtualNetworkLinks/read" 、 | 可管理私有端點。未將連線提供給子網路外部時、會使用私有端點。BlueXP會為HA建立儲存帳戶、但僅在子網路內建立內部連線。 
 
 
-| 「 Microsoft.NetApp/netAppAccounts/capacityPools/volumes/delete" 、 | 讓 Cloud Manager 能夠刪除 Volume 以 Azure NetApp Files 供使用。 
+| 「 Microsoft.NetApp/netAppAccounts/capacityPools/volumes/delete" 、 | 讓BlueXP能夠刪除適用於Azure NetApp Files 此功能的Volume。 
 
 
 | "Microsoft.Resources / 部署 / 作業狀態 / 讀取 " | Azure 在某些虛擬機器部署中需要此權限（視部署期間所使用的基礎實體硬體而定）。 
@@ -222,14 +222,14 @@ Cloud Manager在Azure中啟動Connector VM時、會將自訂角色附加至VM、
 | "microsoft.Resources/edes/operationStatuses/read" 、 "microsoft.Insights / Metrics / read" 、 "Microsoft.Compute/virtualMachines/extensions/write" 、 "Microsoft.Compute/virtualMachines/extensions/read" 、 "Microsoft.Compute/virtualMachines/extensions/delete" 、 Microsoft.Compute/virtualMachines/delete" 、 "Microsoft.Network/networkInterfaces/delete" 、 "Microsoft.Network/networkSecurityGroups/delete" 、 "microsoft.Resources/edes/delete" 、 | 可讓您使用全域檔案快取。 
 
 
-| 「Microsoft.Network/privateEndpoints/delete"、Microsoft.Compute/availabilitySets/delete"、 | 可讓Cloud Manager在Cloud Volumes ONTAP 部署失敗或刪除時、從屬於支援的資源群組移除資源。 
+| 「Microsoft.Network/privateEndpoints/delete"、Microsoft.Compute/availabilitySets/delete"、 | 可讓BlueXP在Cloud Volumes ONTAP 部署失敗或刪除時、從屬於該資源群組的資源中移除資源。 
 
 
 | Microsoft.Compute/diskEncryptionSets/read"「Microsoft.Compute/diskEncryptionSets/write"」、「Microsoft.Compute/diskEncryptionSets/delete""microsoft.KeyVault/Vaults/Deploy / action」、「microsoft.KeyVault/Vaults/read」、「microsoft.KeyVault/Vaults/accesss/write」、 | 可搭配Cloud Volumes ONTAP 使用客戶管理的加密金鑰。API 支援此功能。 
 
 
-| "Microsoft.Resources/標記/讀取"、"Microsoft.Resources/標記/寫入"、"Microsoft.Resources/標記/刪除" | 可讓您使用Cloud Manager標記服務來管理Azure資源上的標記。 
+| "Microsoft.Resources/標記/讀取"、"Microsoft.Resources/標記/寫入"、"Microsoft.Resources/標記/刪除" | 可讓您使用BlueXP標記服務來管理Azure資源上的標記。 
 
 
-| Microsoft.Network/applicationSecurityGroups/write"、「Microsoft.Network/applicationSecurityGroups/read"、Microsoft.Network/applicationSecurityGroups/joinIpConfiguration/action"、Microsoft.Network/networkSecurityGroups/securityRules/write"、「Microsoft.Network/applicationSecurityGroups/delete"、 「Microsoft.Network/networkSecurityGroups/securityRules/delete" | 可讓Cloud Manager設定HA配對的應用程式安全群組、隔離HA互連和叢集網路NIC。 
+| Microsoft.Network/applicationSecurityGroups/write"、「Microsoft.Network/applicationSecurityGroups/read"、Microsoft.Network/applicationSecurityGroups/joinIpConfiguration/action"、Microsoft.Network/networkSecurityGroups/securityRules/write"、「Microsoft.Network/applicationSecurityGroups/delete"、 「Microsoft.Network/networkSecurityGroups/securityRules/delete" | 讓BlueXP設定HA配對的應用程式安全群組、隔離HA互連和叢集網路NIC。 
 |===
