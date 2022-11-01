@@ -343,7 +343,7 @@ summary: 當BlueXP在AWS中啟動Connector執行個體時、它會將原則附�
         "ec2:DescribeRegions",
         "eks:ListClusters",
         "eks:DescribeCluster",
-		    "iam:GetInstanceProfiles"
+        "iam:GetInstanceProfile"
       ],
       "Resource": "*"
     },
