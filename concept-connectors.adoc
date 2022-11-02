@@ -37,7 +37,6 @@ summary: 在大多數情況下、您需要在雲端或內部部署網路中部�
 * 全域檔案快取
 * Google Cloud Storage探索
 * Kubernetes叢集
-* 監控
 * 內部部署 ONTAP 的叢集
 * StorageGRID
 
