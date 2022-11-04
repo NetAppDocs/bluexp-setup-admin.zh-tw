@@ -148,17 +148,8 @@ image:screenshot-manage-account-settings.png["顯示「帳戶」下拉式清單�
 
 以便對進行API呼叫 https://docs.netapp.com/us-en/cloud-manager-automation/tenancy/overview.html["租戶API"^]、您需要取得服務帳戶的承載權杖。
 
-[source, curl]
-----
-curl --location --request POST 'https://netapp-cloud-account.auth0.com/oauth/token' \
---header 'Content-Type: application/json' \
---data-raw '{
-    "grant_type": "client_credentials",
-    "client_secret": "<client secret>",
-    "audience": "https://api.cloud.netapp.com",
-    "client_id": "<client id>"
-}'
-----
+https://docs.netapp.com/us-en/cloud-manager-automation/platform/create_service_token.html["瞭解如何建立服務帳戶權杖"^]
+
 
 
 === 複製用戶端ID

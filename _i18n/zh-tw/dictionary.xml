@@ -822,7 +822,6 @@
   <block id="1b8412d43fb2448299621a31132c8729" category="list-text"><block ref="1b8412d43fb2448299621a31132c8729" category="inline-link-rx"></block></block>
   <block id="c4d9d6c8e652595e9d46970f56499783" category="inline-link-macro">瞭解如何升級Connector</block>
   <block id="06df33001c1d7187fdd81ea1f5b277aa" category="cell">行動</block>
-  <block id="e81639b3c138e7deea81d6ea285642c3" category="cell">建立並管理 Cloud Volumes ONTAP 目標子網路中的網路介面以供其使用。</block>
   <block id="e6e80588e9fe7cf89218fea44300f7ca" category="doc">深入瞭解連接器</block>
   <block id="098ba24e143dd197f509e41083f0103e" category="section-title">需要連接器時</block>
   <block id="992a0f0542384f1ee5ef51b7cf4ae6c4" category="section-title">服務</block>
@@ -1040,48 +1039,6 @@
   <block id="f3c300467d5973dfb4bb4ac50c1635b4" category="list-text">按一下*選取成員*、選取建立連接器虛擬機器的訂閱、選擇*虛擬機器*、然後選取連接器虛擬機器。</block>
   <block id="a2396693254d9ec35f0b6faa885e8f58" category="list-text">按一下*選取*。</block>
   <block id="14a3ec4432f577b0adffd0ed91b508cd" category="list-text">如果您想要從 Cloud Volumes ONTAP 其他訂閱中部署、請切換至該訂閱、然後重複這些步驟。</block>
-  <block id="d97ba5e3e0f58b633ff060180e9fbaff" category="cell">Microsoft.Compute/locations/operations/read" 、「 Microsoft.Compute/locations/vmSizes/read" 、 Microsoft.Compute/operations/read" 、 Microsoft.Compute/virtualMachines/instanceView/read" 、「 Microsoft.Compute/virtualMachines/powerOff/action" 、 Microsoft.Compute/virtualMachines/read" 、「 Microsoft.Compute/virtualMachines/restart/action" 、 Microsoft.Compute/virtualMachines/start/action" 、 Microsoft.Compute/virtualMachines/deallocate/action" 、「 Microsoft.Compute/virtualMachines/vmSizes/read" 、 「 Microsoft.Compute/virtualMachines/write" 、</block>
-  <block id="03e844f92068480c699196ff085bc846" category="cell">建立 Cloud Volumes ONTAP 不同時停止、啟動、刪除及取得系統狀態。</block>
-  <block id="fd9c6454134af594d0f4aceb332bb30b" category="cell">「 Microsoft.Compute/images/write" 、 Microsoft.Compute/images/read" 、</block>
-  <block id="e0ef7509033a0b37c5785395afff0f80" category="cell">可 Cloud Volumes ONTAP 從 VHD 進行支援功能性部署。</block>
-  <block id="53ddb0a6f0f74025d7c007fdcf9c326a" category="cell">Microsoft.Compute/disks/delete" 、 "Microsoft.Compute/disks/read" 、 "Microsoft.Compute/disks/write" 、 "microsoft.Storage/checkamed可用 度 / 讀取 " 、 "microsoft.Storage/operations / 讀取 " 、 "Microsoft.Storage/storageAccounts/listkeys/action 、 "Microsoft.Storage/storageAccounts/read" 、 "Microsoft.Storage/storageAccounts/再生 金鑰 / 行動 " 、 "Microsoft.Storage/storageAccounts/write 、 "Microsoft.Storage/storageAccounts/storageAccounts/delete" 、 "Microsoft.Storage/改 用 / 讀取 " 、</block>
-  <block id="1485ad02cace45a04d0546a3118bcc05" category="cell">管理 Azure 儲存帳戶和磁碟、並將磁碟附加 Cloud Volumes ONTAP 至</block>
-  <block id="2d22322b73530fa21752138a37487151" category="cell">"Microsoft.Storage/storageAccounts/blobServices/contains/read"、"Microsoft.KeyVault/Vaults/read"、"Microsoft.KeyVault/Vaults/accessPolicys/write</block>
-  <block id="7d9ff9593eed7ac04fd87a8cf5bc4744" category="cell">可備份至Azure Blob儲存設備、並加密儲存帳戶</block>
-  <block id="a8b9df73a9d5808e6726a6a31acbc36c" category="cell">「 Microsoft.Network/networkInterfaces/read" 、 Microsoft.Network/networkInterfaces/write" 、「 Microsoft.Network/networkInterfaces/join/action" 、</block>
-  <block id="ea451ff0a822e22b74eb2ac0075aeae5" category="cell">「 Microsoft.Network/networkSecurityGroups/read" 、 Microsoft.Network/networkSecurityGroups/write" 、「 Microsoft.Network/networkSecurityGroups/join/action" 、</block>
-  <block id="5d2c7fa5ce039daf851bec38586dfa4e" category="cell">建立預先定義 Cloud Volumes ONTAP 的網路安全群組以供使用。</block>
-  <block id="eb97a3712f22f00039023cf34b1b5669" category="cell">"Microsoft.Resources/訂購 / 位置 / 讀取 " 、 "Microsoft.Network/locations/operationResults/read" 、 "Microsoft.Network/locations/operations/read" 、 "Microsoft.Network/virtualNetworks/read" 、 "Microsoft.Network/virtualNetworks/checkIpAddressAvailability/read" 、 「 Microsoft.Network/virtualNetworks/subnets/read" 、 Microsoft.Network/virtualNetworks/subnets/virtualMachines/read" 、「 Microsoft.Network/virtualNetworks/virtualMachines/read" 、 Microsoft.Network/virtualNetworks/subnets/join/action" 、</block>
-  <block id="7ddcc999950a03444681bf01d6ca2c7e" category="cell">取得區域、目標 Vnet 和子網路的網路資訊、並將 Cloud Volumes ONTAP 之新增至 VNets 。</block>
-  <block id="3d5d80f03b41b7d18c4166c3d3a18c20" category="cell">「 Microsoft.Network/virtualNetworks/subnets/write" 、 Microsoft.Network/routeTables/join/action" 、</block>
-  <block id="f87bfa28f1001d18feb114065877fc3a" category="cell">啟用 vnet 服務端點以進行資料分層。</block>
-  <block id="be0ff3f4a9a9ba3c9f1d902e2721c261" category="cell">"microsoft.Resources/edes/operations / read" 、 "microsoft.Resources/edes/read" 、 "microsoft.Resources/edes/write 、</block>
-  <block id="5ae975b07208128d0fb591bfbef55e41" category="cell">從 Cloud Volumes ONTAP 範本部署功能。</block>
-  <block id="2da684dfb946dbe5450afe79ab13c0f9" category="cell">"microsoft.Resources/edations/operations/read" 、 "microsoft.Resources/edations/read" 、 "microsoft.Resources/dations/read" 、 "microsoft.Resources/read" 、 "microsoft.Resources/dations/operations/read" 、 "Microsoft.Resources / 訂閱 / 資源群組 / 刪除 " 、 "Microsoft.Resources / 訂閱 / 資源群組 / 讀取 " 、 "Microsoft.Resources / 訂閱 / 資源群組 / 資源 / 讀取 " 、 "Microsoft.Resources / 訂閱 / 資源群組 / 寫入 " 、</block>
-  <block id="85f4accd43cd18cdfebf3cca6d7dc630" category="cell">建立及管理 Cloud Volumes ONTAP 資源群組以供參考。</block>
-  <block id="a3281c57ce5948a8e5ceae169c3756d2" category="cell">「Microsoft.Compute/snapshots/write"、Microsoft.Compute/snapshots/read"、「Microsoft.Compute/snapshots/delete"、Microsoft.Compute/disks/beginGetAccess/action"、</block>
-  <block id="4538e7cd86845a2d80406e031773921a" category="cell">建立及管理 Azure 託管快照。</block>
-  <block id="ce74897c9aa2ec395a2c030d9bcfb687" category="cell">「 Microsoft.Compute/availabilitySets/write" 、 Microsoft.Compute/availabilitySets/read" 、</block>
-  <block id="d5200d7c256dcdc83f4eb6ac423b73a5" category="cell">建立及管理 Cloud Volumes ONTAP 可用度集以供使用。</block>
-  <block id="bdf2b311dd2ec08b889a9ac912858e8f" category="cell">"Microsoft.MarketplaceOrdination/offersTypes /出版商/服務/方案/協議/讀取"、"Microsoft.MarketplaceOrdinations/offersTypes /出版商/服務/計畫/協議/寫入"、</block>
-  <block id="e12a97500e0466292b969f7f36b34bd5" category="cell">可從 Azure Marketplace 進行程式化部署。</block>
-  <block id="09e9256057a299133f2d9e827d5a19e8" category="cell">Microsoft.Network/loadBalancers/read" 、「 Microsoft.Network/loadBalancers/write" 、 Microsoft.Network/loadBalancers/delete" 、 Microsoft.Network/loadBalancers/backendAddressPools/read" 、「 Microsoft.Network/loadBalancers/backendAddressPools/join/action" 、 「 Microsoft.Network/loadBalancers/frontendIPConfigurations/read" 、 Microsoft.Network/loadBalancers/loadBalancingRules/read" 、「 Microsoft.Network/loadBalancers/probes/read" 、 Microsoft.Network/loadBalancers/probes/join/action" 、</block>
-  <block id="6a9efa369ca78d3ae74096e5a91079b5" category="cell">管理 Azure 負載平衡器以供 HA 配對使用。</block>
-  <block id="0406d48f6a8266de7e7cae3a5fa0fafc" category="cell">"Microsoft.Authorization/Locks/*、</block>
-  <block id="e9e0d42f73ca40ed9eaea2770e09e4d7" category="cell">可管理 Azure 磁碟上的鎖定。</block>
-  <block id="8c55404ad7d0a3544e084cb7c1c24b9b" category="cell">"Microsoft.Authorization/RoleDefinitions/write （ Microsoft 授權 / 角色指派 / 寫入） " 、 "Microsoft.Web/sites/* （ Microsoft 網站 / 網站 / * ） "</block>
-  <block id="6dad07dbe3c6cb07c7f11f3ec1d17103" category="cell">管理 HA 配對的容錯移轉。</block>
-  <block id="2728f6b3c1459507cfec0a13d41a801b" category="cell">Microsoft.Network/privateEndpoints/write" 、 "Microsoft.Storage/storageAccounts/privateEndpointConnectionsApproval / AC巨 集指令 " 、 "Microsoft.Storage/storageAccounts/privateEndpointConnections/read" 、 "Microsoft.Network/privateEndpoints/read" 、 "Microsoft.Network/privateDnsZones/write" 、 Microsoft.Network/privateDnsZones/virtualNetworkLinks/write" 、「 Microsoft.Network/virtualNetworks/join/action" 、 Microsoft.Network/privateDnsZones/A/write" 、 Microsoft.Network/privateDnsZones/read" 、「 Microsoft.Network/privateDnsZones/virtualNetworkLinks/read" 、</block>
-  <block id="608e422629f837500b64bfbc33702ba2" category="cell">「 Microsoft.NetApp/netAppAccounts/capacityPools/volumes/delete" 、</block>
-  <block id="e2fe14f41718530a7cc6cb0bc487d120" category="cell">"Microsoft.Resources / 部署 / 作業狀態 / 讀取 "</block>
-  <block id="e42716adc4ef7cad750218e5825c57ea" category="cell">Azure 在某些虛擬機器部署中需要此權限（視部署期間所使用的基礎實體硬體而定）。</block>
-  <block id="28b0ec1cb929a835cac6c02c2551a737" category="cell">"microsoft.Resources/edes/operationStatuses/read" 、 "microsoft.Insights / Metrics / read" 、 "Microsoft.Compute/virtualMachines/extensions/write" 、 "Microsoft.Compute/virtualMachines/extensions/read" 、 "Microsoft.Compute/virtualMachines/extensions/delete" 、 Microsoft.Compute/virtualMachines/delete" 、 "Microsoft.Network/networkInterfaces/delete" 、 "Microsoft.Network/networkSecurityGroups/delete" 、 "microsoft.Resources/edes/delete" 、</block>
-  <block id="5f05dc6284752d92ad8bea8dd9f0c295" category="cell">可讓您使用全域檔案快取。</block>
-  <block id="730d2ff3fd0266eb5bfb7ad8eeaec2c7" category="cell">「Microsoft.Network/privateEndpoints/delete"、Microsoft.Compute/availabilitySets/delete"、</block>
-  <block id="a032cdcdf45ef14060b4217d926bb02d" category="cell">Microsoft.Compute/diskEncryptionSets/read"「Microsoft.Compute/diskEncryptionSets/write"」、「Microsoft.Compute/diskEncryptionSets/delete""microsoft.KeyVault/Vaults/Deploy / action」、「microsoft.KeyVault/Vaults/read」、「microsoft.KeyVault/Vaults/accesss/write」、</block>
-  <block id="ddaeb0a80f847a018dd4f2477519479a" category="cell">可搭配Cloud Volumes ONTAP 使用客戶管理的加密金鑰。API 支援此功能。</block>
-  <block id="6107f1b80d7168738856c2d90ab53dc2" category="cell">"Microsoft.Resources/標記/讀取"、"Microsoft.Resources/標記/寫入"、"Microsoft.Resources/標記/刪除"</block>
-  <block id="6250087ecc700216c1d087cafab27212" category="cell">Microsoft.Network/applicationSecurityGroups/write"、「Microsoft.Network/applicationSecurityGroups/read"、Microsoft.Network/applicationSecurityGroups/joinIpConfiguration/action"、Microsoft.Network/networkSecurityGroups/securityRules/write"、「Microsoft.Network/applicationSecurityGroups/delete"、 「Microsoft.Network/networkSecurityGroups/securityRules/delete"</block>
   <block id="56871f8b2603f3216127f57d5542b3ae" category="section-title">設定AWS驗證</block>
   <block id="30db7b9fd99be0ab8460cabb34938d21" category="section-title">設定IAM角色</block>
   <block id="0e78dc7220ea8b6abafe6ef7aaad9998" category="list-text">前往目標帳戶中的AWS IAM主控台。</block>
@@ -2245,11 +2202,6 @@
   <block id="70f1be412fcdc9d0de757859e335f5a6" category="summary">現在您已經登入並設定了BlueXP、使用者就能開始建立及探索工作環境。</block>
   <block id="082338dd3697084a7af4c20fcdf81e82" category="summary">當BlueXP在Azure中啟動Connector VM時、它會將自訂角色附加至VM、讓Connector有權管理該Azure訂閱中的資源和程序。Connector會使用權限來撥打API呼叫數個Azure服務。</block>
   <block id="770735bf1cfd4e882dd9ac93b90271d3" category="paragraph">直接從BlueXP建立連接器時、BlueXP會自動將此自訂角色套用至連接器。</block>
-  <block id="b3bbeb5a4897f52e8cdae8e060f544d0" category="cell">可管理私有端點。未將連線提供給子網路外部時、會使用私有端點。BlueXP會為HA建立儲存帳戶、但僅在子網路內建立內部連線。</block>
-  <block id="e913cbcfe1712f8e8943e7963f21135f" category="cell">讓BlueXP能夠刪除適用於Azure NetApp Files 此功能的Volume。</block>
-  <block id="3d26da6259d1f1b33623756ab1d8b4e6" category="cell">可讓BlueXP在Cloud Volumes ONTAP 部署失敗或刪除時、從屬於該資源群組的資源中移除資源。</block>
-  <block id="fbdd1281aead9fcc428a33d78b83d165" category="cell">可讓您使用BlueXP標記服務來管理Azure資源上的標記。</block>
-  <block id="b68a116cebad1247b8b69be845634b5a" category="cell">讓BlueXP設定HA配對的應用程式安全群組、隔離HA互連和叢集網路NIC。</block>
   <block id="f0f5ff10d4c591333ded6e8023c5d365" category="cell">提供在政府雲端部署中啟用和使用Cloud Data Sense和Cloud Backup的能力。如果您在BlueXP帳戶中停用SaaS介面、Cloud Backup也需要此連接埠。</block>
   <block id="ecd87ae03b07f0712964d94eb75683a5" category="cell">用於BlueXP的DNS解析</block>
   <block id="ab84a9278b660f1adee8c0a3fe2938de" category="paragraph">如果您是從BlueXP、雲端供應商的市場部署Connector、或是手動將Connector安裝在可存取網際網路的內部部署Linux主機上、則適用下列組態詳細資料。</block>
@@ -2642,4 +2594,157 @@
   <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXP部落格</block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">所有BlueXP文件</block>
   <block id="0600a5fd997330da4629c9667c77df85" category="list-text">目前、只有Cloud Sync 「解決方案」和「雲端備份」會透過電子郵件傳送通知。未來版本將會新增其他服務。</block>
+  <block id="36403db09ed916406c9f181948f4d246" category="paragraph">當您使用應用程式範本標記服務時、Connector會發出下列API要求來管理Azure資源上的標記：</block>
+  <block id="e53322337eb6e5958408340612abf40d" category="list-text">Microsoft.Resources /資源/讀取</block>
+  <block id="5d5a38f96b2eb95a1bae225c6959a21b" category="list-text">Microsoft.Resources /訂閱/作業結果/讀取</block>
+  <block id="ed53cedfd937c8697136ea80c8441bdf" category="list-text">Microsoft.Resources /訂閱/資源群組/讀取</block>
+  <block id="2d9b710833b462f4228f664469b4ad2b" category="list-text">Microsoft.Resources /訂閱/資源群組/資源/讀取</block>
+  <block id="24b67e5085619f368ca5c17aebebec92" category="list-text">Microsoft.Resources /標記/讀取</block>
+  <block id="6cd83551e6ffb01c24e4050fdce7beea" category="list-text">Microsoft.Resources /標記/寫入</block>
+  <block id="cff963a7ee056005e400757f5bb06556" category="paragraph">Connector會提出下列API要求來管理Azure NetApp Files 功能完善的環境：</block>
+  <block id="e400a17015f6033633700b6ba11625ba" category="list-text">Microsoft.NetApp/netAppAccounts/read</block>
+  <block id="6db1cf4cd8e4d2dd21411cc7d81bfe62" category="list-text">Microsoft.NetApp/netAppAccounts/capacityPools/read</block>
+  <block id="d532d42cdca6427a0c94a0fe2b7724bf" category="list-text">Microsoft.NetApp/netAppAccounts/capacityPools/volumes/write</block>
+  <block id="8a2ef2886600a50e48c7ea77de74ad9a" category="list-text">Microsoft.NetApp/netAppAccounts/capacityPools/volumes/read</block>
+  <block id="c937da506293f901431e22784134365b" category="list-text">Microsoft.NetApp/netAppAccounts/capacityPools/volumes/delete</block>
+  <block id="88d71627ded79fcdc49d9c19d3af5b25" category="paragraph">Connector會針對備份與還原作業提出下列API要求：</block>
+  <block id="134f51c649d847fb47aa19ce2c4e1169" category="list-text">Microsoft.Compute/virtualMachines/read</block>
+  <block id="4497a0f6eec879d6bbc81dfce25df573" category="list-text">Microsoft.Compute/virtualMachines/start/action</block>
+  <block id="b1de839ceaf94f5ba40464d57753cc0a" category="list-text">Microsoft.Compute/virtualMachines/deallocate/action</block>
+  <block id="0e7d546ff80798b31300a1327e64204c" category="list-text">Microsoft.Storage/storageAccounts/listkeys/action</block>
+  <block id="b5de09220c1fb4fce37725ad40aa9087" category="list-text">Microsoft.Storage/storageAccounts/read</block>
+  <block id="ab2f957dea03d2c901135f72a5272e10" category="list-text">Microsoft.Storage/storageAccounts/write</block>
+  <block id="0a74bff5ef847ed7cf0a68d927874147" category="list-text">Microsoft.Storage/storageAccounts/blobServices/contains/read</block>
+  <block id="c021d53d86ee121d7daeb8d6346513c3" category="list-text">Microsoft.KeyVault/Vault/Read</block>
+  <block id="258463b52e2421fad3bedc2140b49f90" category="list-text">Microsoft.KeyVault/Vault/accessPolicys/write</block>
+  <block id="a51eaf393dc8321258a43c80e678549f" category="list-text">Microsoft.Network/networkInterfaces/read</block>
+  <block id="7240d0e98a4a1e003313de8075a2def2" category="list-text">Microsoft.Resources /訂閱/位置/讀取</block>
+  <block id="f552a26159bf5dd99d7468ad03d76f34" category="list-text">Microsoft.Network/virtualNetworks/read</block>
+  <block id="d84dc0ddea3fe691a4f90418dade9248" category="list-text">Microsoft.Network/virtualNetworks/subnets/read</block>
+  <block id="35201066be47b10e59c54ab3b179555f" category="list-text">Microsoft.Resources /訂閱/資源群組/寫入</block>
+  <block id="44aba3e6786c20e47276f22dc5d0be6d" category="list-text">Microsoft授權/鎖定/*</block>
+  <block id="d750720d6721266b9f941cb56acf4f27" category="list-text">Microsoft.Network/privateEndpoints/write</block>
+  <block id="8bff0f450839016cb61aeed2bd87a45e" category="list-text">Microsoft.Network/privateEndpoints/read</block>
+  <block id="39059824d612344a55009155b26728ee" category="list-text">Microsoft.Network/privateDnsZones/virtualNetworkLinks/write</block>
+  <block id="92714359ddb46221db9066891e08b51a" category="list-text">Microsoft.Network/virtualNetworks/join/action</block>
+  <block id="346b90a9cf7efc63ddd9c45b9e07608e" category="list-text">Microsoft.Network/privateDnsZones/A/write</block>
+  <block id="8fde89feb7042b8bc088a21408f0fe52" category="list-text">Microsoft.Network/privateDnsZones/read</block>
+  <block id="07076cf3f8dc267e25c28b392656cabc" category="list-text">Microsoft.Network/privateDnsZones/virtualNetworkLinks/read</block>
+  <block id="1e9a070727f886c1955fd0f15493d41a" category="list-text">Microsoft.Compute/virtualMachines/extensions/delete</block>
+  <block id="4dd0963f09940db48a075c82beac2595" category="list-text">Microsoft.Compute/virtualMachines/delete</block>
+  <block id="ddc9558b00c4bc7e90f3a692cef4b3f1" category="list-text">Microsoft.Network/networkInterfaces/delete</block>
+  <block id="63995d3955eeab39b2079345713c2d18" category="list-text">Microsoft.Network/networkSecurityGroups/delete</block>
+  <block id="b80b64cd9bf543f64855143ed4b5fcd0" category="list-text">Microsoft資源/部署/刪除</block>
+  <block id="43fb0ec1619aa20051c9794494536f05" category="list-text">Microsoft.Network/publicIPAddresses/delete</block>
+  <block id="468934d9746a4d6bea918c799a7877cd" category="list-text">Microsoft.Storage/storageAccounts/blobServices/contains/write</block>
+  <block id="9d86ed535c7b2cd7f809bf10164a64e2" category="list-text">Microsoft.ManagedIdentity /使用者身分識別/指派/行動</block>
+  <block id="abe287f9f0c08a4de7772ad1368096d5" category="paragraph">使用搜尋與還原功能時、Connector會發出下列API要求：</block>
+  <block id="cfefa5c4ff629c9bf9659dbc829c253a" category="list-text">Microsoft.Synapse /工作區/寫入</block>
+  <block id="3ba03ce8c40b9ebf7c3ac1f662b6b3a0" category="list-text">Microsoft.Synapse /工作區/讀取</block>
+  <block id="2191541210eaa82f809d85b6c0aa6998" category="list-text">Microsoft.Synapse /工作區/刪除</block>
+  <block id="2d3400ff7eecc41893aeef28846756f3" category="list-text">Microsoft.Synapse /登錄/行動</block>
+  <block id="6f00dfe737b441b3595c82cda15ca063" category="list-text">Microsoft.Synape/checksNameAvailability /行動</block>
+  <block id="bc33ebcbab185df84262658f96fefec1" category="list-text">Microsoft.Synapse /工作區/作業狀態/讀取</block>
+  <block id="993e916f1302e857660bb8e0c6afb098" category="list-text">Microsoft.Synapse /工作區/防火牆規則/讀取</block>
+  <block id="bb2b2f1cc8d96247f3ee60242af20fc2" category="list-text">Microsoft.Synapse /工作區/替代AllIpFiretallRules /行動</block>
+  <block id="8f2699621ad2c9f04e098e13e8158e06" category="list-text">Microsoft.Synapse /工作區/作業結果/讀取</block>
+  <block id="6794a7ecd8e477b5ee60d4ca8d1e16b3" category="paragraph">使用Cloud Data Sense時、Connector會發出下列API要求。</block>
+  <block id="eb2b4b1d8652939a0d566855f6486107" category="cell">Microsoft.Compute/locations/operations/read</block>
+  <block id="c1201ad292c6053460598e5ef998d922" category="cell">Microsoft.Compute/locations/vmSizes/read</block>
+  <block id="1ab19717892b79023b20f4b6d971482c" category="cell">Microsoft.Compute/operations/read</block>
+  <block id="c68d5b55c536e13fdb84caf9a702e778" category="cell">Microsoft.Compute/virtualMachines/instanceView/read</block>
+  <block id="791d48e112962b046d9a71014e589804" category="cell">Microsoft.Compute/virtualMachines/powerOff/action</block>
+  <block id="5bf626c65d1d6898fc01679d1257ac26" category="cell">Microsoft.Compute/virtualMachines/restart/action</block>
+  <block id="49440bf5091c9157457a82ebb91c2632" category="cell">Microsoft.Compute/virtualMachines/vmSizes/read</block>
+  <block id="7e9cf61e0d789720ee2fe9128e2b0d1f" category="cell">Microsoft.Compute/virtualMachines/write</block>
+  <block id="84c52c620298d694ef8d96569f017eea" category="cell">Microsoft.Compute/images/read</block>
+  <block id="edf3b7edd77557b2bb3b1a7cfc25152b" category="cell">Microsoft.Compute/disks/delete</block>
+  <block id="4005e7c027f9b1ffc549c55adba4cfe6" category="cell">Microsoft.Compute/disks/read</block>
+  <block id="01e6750d510ceb11080bb593025a0425" category="cell">Microsoft.Compute/disks/write</block>
+  <block id="3174629bc2aaae6cc45304f4d81ec867" category="cell">Microsoft.Storage/測試可用度/讀取</block>
+  <block id="819e13ace805758c3a73301224ad2977" category="cell">Microsoft.Storage/operations /讀取</block>
+  <block id="9fdf014cebf5603fe302fb0019355d71" category="cell">Microsoft.Storage/storageAccounts/DELETE</block>
+  <block id="d012dba603e7a07aa81c1abf014bb0a9" category="cell">Microsoft.Network/networkInterfaces/write</block>
+  <block id="95d4592870a2ed35b387e457e8c88723" category="cell">Microsoft.Network/networkInterfaces/join/action</block>
+  <block id="9bfe00ca2371f73cf70ea909f86438ae" category="cell">Microsoft.Network/networkSecurityGroups/read</block>
+  <block id="6a2accbb60ebec2670e617f95a8bdbd9" category="cell">Microsoft.Network/networkSecurityGroups/write</block>
+  <block id="dac2b44cc5059ed096bf65411a7b6947" category="cell">Microsoft.Network/locations/operationResults/read</block>
+  <block id="5bac18a3b460691b39c42fee64e75565" category="cell">Microsoft.Network/locations/operations/read</block>
+  <block id="a499a4f06cea1d459844877d0edfa279" category="cell">Microsoft.Network/virtualNetworks/checkIpAddressAvailability/read</block>
+  <block id="da98c4b6193cabcc9f7e692374876909" category="cell">Microsoft.Network/virtualNetworks/subnets/virtualMachines/read</block>
+  <block id="ad5a97439c96cab9bdbb5a0002b3557a" category="cell">Microsoft.Network/virtualNetworks/virtualMachines/read</block>
+  <block id="139349dadb43765fe3ed4c0fabdb4cbe" category="cell">Microsoft.Network/virtualNetworks/subnets/join/action</block>
+  <block id="1e8387ecb341f74503213ffc49b2a619" category="cell">Microsoft.Network/virtualNetworks/subnets/write</block>
+  <block id="8844176320546a2abaeaac0ea4d6de37" category="cell">Microsoft.Network/routeTables/join/action</block>
+  <block id="355d4c5ccf4cfe0b829878bb51fd35be" category="cell">Microsoft.Resources /部署/作業/讀取</block>
+  <block id="c5af106b19c135afd294afc60320be5c" category="cell">Microsoft.Resources /部署/讀取</block>
+  <block id="54df0a2876eee919ba664e42f103b6ba" category="cell">Microsoft.Resources /部署/寫入</block>
+  <block id="74dce501370cb2231ed37ef5776a5fff" category="cell">Microsoft.Resources /訂閱/資源群組/刪除</block>
+  <block id="02c5fd18db0663d9ef0e6c225f1cc7a7" category="paragraph">連接器會在您設定雲端分層時、發出下列API要求。</block>
+  <block id="f786a140deb938ac21ab095b7c402176" category="paragraph">Connector會針對日常作業提出下列API要求。</block>
+  <block id="47ddffc293a6a5748897c2f965fa7212" category="list-text">Microsoft.Storage/storageAccounts/managementPolicys/read</block>
+  <block id="a2fd314f394dbb1eeb56c09e3cd9770f" category="list-text">Microsoft.Storage/storageAccounts/managementPolicys/write</block>
+  <block id="3842dbaca77b11d0e50ab804ff806c4d" category="cell">建立VM、停止、啟動、刪除及取得系統狀態</block>
+  <block id="4d6646e62e7704a2019810651f83d886" category="cell">從VHD啟用部署</block>
+  <block id="e8257e96577d74304108aac52739f494" category="cell">在目標子網路中建立及管理網路介面</block>
+  <block id="69e92fda2ae4363c883f5d9f62c3ee56" category="cell">建立預先定義的網路安全群組</block>
+  <block id="7a29e42d7b44e6dd5272e36cbcf9490f" category="cell">Microsoft.Network/networkSecurityGroups/join/action</block>
+  <block id="89974c87cccaf6e615e089269c5cafd3" category="cell">取得區域、目標Vnet和子網路的網路資訊、並將VM新增至VNets</block>
+  <block id="0bfcdd1da192a52455067c787c3beb96" category="cell">建立及管理資源群組</block>
+  <block id="fbc83673667b5f8516ff2cecafe841b9" category="cell">管理Azure儲存帳戶與磁碟</block>
+  <block id="2ddf00a1779e5d9877ca952508209f19" category="cell">Microsoft.Storage/改 用/讀取</block>
+  <block id="918e12370ef5a97a0d46df20393341d5" category="cell">可備份至Blob儲存設備、並加密儲存帳戶</block>
+  <block id="116bef8c8563595f7343f2d2d18ac853" category="cell">啟用vnet服務端點以進行資料分層</block>
+  <block id="57c9ca6639b751cfa80cb8abf86f3081" category="cell">建立及管理Azure託管快照</block>
+  <block id="773635e3b31edc241a8d3041cc073199" category="cell">Microsoft.Compute/snapshots/write</block>
+  <block id="a51dba084429d0d377fda8845dca771e" category="cell">Microsoft.Compute/snapshots/read</block>
+  <block id="38dc4a6135911a6b70861993c1694609" category="cell">Microsoft.Compute/snapshots/delete</block>
+  <block id="148968b1a07b90bcc8c50b3f70e2bb1f" category="cell">Microsoft.Compute/disks/beginGetAccess/action</block>
+  <block id="2faa5f3c5d46b0ab2fed5863f3b4fe35" category="cell">建立及管理可用度集</block>
+  <block id="f66b3d73b44b47b31388a78851785856" category="cell">Microsoft.Compute/availabilitySets/write</block>
+  <block id="b907b8e597ae0e5dfe42721b598de464" category="cell">Microsoft.Compute/availabilitySets/read</block>
+  <block id="2048f7ade9d4263ed4348733f8446405" category="cell">從市場進行程式化部署</block>
+  <block id="16bc625fd690509edc202e1123d64997" category="cell">Microsoft.MarketplaceOrdination/offersTypes /出版商/優惠/計畫/協議/讀取</block>
+  <block id="db769af3e4155d52560b3b1484b37706" category="cell">Microsoft.MarketplaceOrder/OfferTypes /出版商/服務/計畫/協議/寫入</block>
+  <block id="2129baaaad86a5b2b34c5362043b4ff3" category="cell">管理HA配對的負載平衡器</block>
+  <block id="923f4555e2d70d3c814216d77cc0fa5f" category="cell">Microsoft.Network/loadBalancers/read</block>
+  <block id="07a36f809441483af5bd409cfa9f9544" category="cell">Microsoft.Network/loadBalancers/write</block>
+  <block id="b45feb700c69960351d25bda305486de" category="cell">Microsoft.Network/loadBalancers/delete</block>
+  <block id="35828e2fae59babfd1ed8c78e49e58d2" category="cell">Microsoft.Network/loadBalancers/backendAddressPools/read</block>
+  <block id="f83e235193a1f7c8a19d8879fa4d36b4" category="cell">Microsoft.Network/loadBalancers/loadBalancingRules/read</block>
+  <block id="1b83f1d98c3a2af66e42fdacdb2427b5" category="cell">Microsoft.Network/loadBalancers/probes/read</block>
+  <block id="3d15c64f8d072b2bfeb04a90aedc7017" category="cell">Microsoft.Network/loadBalancers/probes/join/action</block>
+  <block id="71ad4a9f8b1c1dee6633c3edbbdbdc2d" category="cell">可管理Azure磁碟上的鎖定</block>
+  <block id="7560cc8caec761a7e9a877adbe1cb6f9" category="cell">在子網路外沒有連線時、為HA配對啟用私有端點</block>
+  <block id="cc7e29f147aa045ddf8822304dc0e1f4" category="cell">Microsoft儲存設備/儲存帳戶/權限端點連線核准/動作</block>
+  <block id="6ea85effe392556eeffa2a55685797ca" category="cell">Microsoft.Storage/storageAccounts/privateEndpointConnections/read</block>
+  <block id="78c2f93b5769de1a564bb26013df62b4" category="cell">Microsoft.Network/privateDnsZones/write</block>
+  <block id="a4e92c2c648e0e630287027027ef39c8" category="cell">Azure根據基礎實體硬體的需求、進行部分VM部署</block>
+  <block id="d2708b4bfe876dff0475a9deac154f4d" category="cell">Microsoft.Resources /部署/作業狀態/讀取</block>
+  <block id="0842d212d91b90d567d1e486c5416e29" category="cell">如果部署失敗或刪除、請從資源群組移除資源</block>
+  <block id="dbd22581be4b124883e09a2e00810e57" category="cell">Microsoft.Network/privateEndpoints/delete</block>
+  <block id="7b36b9765e87e57966a5744693375b76" category="cell">Microsoft.Compute/availabilitySets/delete</block>
+  <block id="a3d94862b5683998bab3948edae3664e" category="cell">使用API時、可啟用客戶管理的加密金鑰</block>
+  <block id="89efef93d299069d267b4f308efddf51" category="cell">Microsoft.Compute/diskEncryptionSets/read</block>
+  <block id="fa7cb52348aea206877521dd37049d6d" category="cell">Microsoft.Compute/diskEncryptionSets/write</block>
+  <block id="0ccb8ba3ee7827080ce3f6097c4a6c9f" category="cell">Microsoft.KeyVault/Vault/Deploy /行動</block>
+  <block id="f41d9d2928361cc3101884bbef6d3cf6" category="cell">Microsoft.Compute/diskEncryptionSets/delete</block>
+  <block id="90a8f7821b71e6b4f9b9dc56fbb5a376" category="cell">設定HA配對的應用程式安全性群組、以隔離HA互連和叢集網路NIC</block>
+  <block id="d454159a3e14f540ac2e8579231b495a" category="cell">Microsoft.Network/applicationSecurityGroups/write</block>
+  <block id="6d8452d16fa49bad9210db02ca8d8eb7" category="cell">Microsoft.Network/applicationSecurityGroups/read</block>
+  <block id="35ef98e2225282298953b13cc69c684a" category="cell">Microsoft.Network/applicationSecurityGroups/joinIpConfiguration/action</block>
+  <block id="283b1531cfa4724af9daf8a2edb80018" category="cell">Microsoft.Network/networkSecurityGroups/securityRules/write</block>
+  <block id="bf149ea15af0ac216b7f36046ab676ac" category="cell">Microsoft.Network/applicationSecurityGroups/delete</block>
+  <block id="3df37df274ecbc40a8b9e94b42cec4ce" category="cell">Microsoft.Network/networkSecurityGroups/securityRules/delete</block>
+  <block id="66c0e418af8f4db80b2c543835e5ec08" category="cell">讀取、寫入及刪除Cloud Volumes ONTAP 與資源相關的標記</block>
+  <block id="bcbc02e34d63373cb18f0b84bea918b2" category="cell">Microsoft.Resources /標記/刪除</block>
+  <block id="50b420e26df31f72aafe4415d5f0ea4c" category="paragraph">當您使用全域檔案快取時、Connector會發出下列API要求：</block>
+  <block id="f4b5566a2cd5de876b361e9f7aaa2d92" category="list-text">Microsoft.Insights /指標/讀取</block>
+  <block id="542e0e990e0a90f3111cc38f8fc96301" category="list-text">Microsoft.Compute/virtualMachines/extensions/write</block>
+  <block id="027acd9694c335956d7cb35872c2d7f5" category="list-text">Microsoft.Compute/virtualMachines/extensions/read</block>
+  <block id="0987e5bde139c54427573b7afe1d9422" category="paragraph">Connector會提出下列API要求、以探索及管理Azure Kubernetes Service（KS）中執行的叢集：</block>
+  <block id="42f3fa961e42affb80862a782c9341af" category="list-text">Microsoft.ContainerService/管理叢集/讀取</block>
+  <block id="317850f59220c738a6550c8cc0fbd9c5" category="list-text">Microsoft.ContainerService/managedClusters/listClusterUserCredentials/action</block>
+  <block id="7df73b4d45ae40b78f71890397153a90" category="inline-link">瞭解如何建立服務帳戶權杖</block>
+  <block id="60b28f10e8222a1f3de55253077c373d" category="paragraph"><block ref="60b28f10e8222a1f3de55253077c373d" category="inline-link-rx"></block></block>
 </blocks>
