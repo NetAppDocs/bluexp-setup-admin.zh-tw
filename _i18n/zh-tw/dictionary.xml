@@ -2747,4 +2747,7 @@
   <block id="317850f59220c738a6550c8cc0fbd9c5" category="list-text">Microsoft.ContainerService/managedClusters/listClusterUserCredentials/action</block>
   <block id="7df73b4d45ae40b78f71890397153a90" category="inline-link">瞭解如何建立服務帳戶權杖</block>
   <block id="60b28f10e8222a1f3de55253077c373d" category="paragraph"><block ref="60b28f10e8222a1f3de55253077c373d" category="inline-link-rx"></block></block>
+  <block id="c188f3200de41a855c54a31c5e486db6" category="paragraph">如果Cloud Volumes ONTAP 您使用不同的AWS帳戶來進行還原備份、而非用於來源磁碟區、Connector會發出下列API要求：</block>
+  <block id="4b9c42bf1853fa25d534302dbc43f035" category="list-text">S3：PuttBucketPolicy</block>
+  <block id="fa4d7248969f7582be82c5aa4b15e08b" category="list-text">S3：PuttBucketOwnershipControl</block>
 </blocks>
