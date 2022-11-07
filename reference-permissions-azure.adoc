@@ -707,6 +707,9 @@ Connector會提出下列API要求、要求在Cloud Volumes ONTAP AWS中部署及
 
 
 | Microsoft.Resources /標記/刪除 | 是的 | 否 | 否 
+
+
+| 在建立期間加密儲存帳戶 | Microsoft.ManagedIdentity /使用者身分識別/指派/行動 | 是的 | 是的 | 否 
 |===
 
 

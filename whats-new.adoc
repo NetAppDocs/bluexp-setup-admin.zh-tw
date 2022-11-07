@@ -18,6 +18,24 @@ summary: 瞭解BlueXP（前身為Cloud Manager）管理功能的新功能：NetA
 
 
 
+== 2022年11月6日
+
+
+
+=== 連接器3.9.23
+
+* 您的PAYGO訂閱和BlueXP年度合約現已可供檢視及管理、請參閱Digital Wallet。
++
+https://review.docs.netapp.com/us-en/cloud-manager-setup-admin_nov-2022/task-manage-subscriptions.html["瞭解如何管理您的訂閱"^]
+
+* 此版本的Connector也包含Cloud Volumes ONTAP 了一些功能強化功能。
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#6-november-2022["深入瞭Cloud Volumes ONTAP 解功能強化功能"^]
+
+
+
+
+
 == 2022年11月1日
 
 Cloud Manager現在會在NetApp 支援網站 與您帳戶相關的更新權杖在3個月後過期時、提示您更新與您的候用帳戶相關的認證資料。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html#update-nss-credentials["瞭解如何管理NSS帳戶"^]

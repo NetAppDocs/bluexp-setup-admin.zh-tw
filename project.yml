@@ -81,6 +81,8 @@ sidebar:
         url: "/task-configuring-proxy.html"
       - title: 預設組態
         url: "/reference-connector-default-config.html"
+    - title: 訂閱
+      url: "/task-manage-subscriptions.html"
     - title: 探索雲端儲存設備
       entries:
       - title: 檢視您的Amazon S3儲存庫

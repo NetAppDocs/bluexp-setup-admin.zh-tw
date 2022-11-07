@@ -2750,4 +2750,36 @@
   <block id="c188f3200de41a855c54a31c5e486db6" category="paragraph">如果Cloud Volumes ONTAP 您使用不同的AWS帳戶來進行還原備份、而非用於來源磁碟區、Connector會發出下列API要求：</block>
   <block id="4b9c42bf1853fa25d534302dbc43f035" category="list-text">S3：PuttBucketPolicy</block>
   <block id="fa4d7248969f7582be82c5aa4b15e08b" category="list-text">S3：PuttBucketOwnershipControl</block>
+  <block id="c9c484fe908813be17fe13bbdeabfb1d" category="cell">在建立期間加密儲存帳戶</block>
+  <block id="4d17b7f0d1f8c0ae69c0ec8d32fea349" category="summary">當您從雲端供應商的市場訂閱BlueXP時、系統會將您重新導向至BlueXP網站、您需要在其中儲存訂閱內容、並將其與特定帳戶建立關聯。訂閱之後、即可從Digital Wallet管理每份訂閱。</block>
+  <block id="b01b1be092b95233172f870dc729234b" category="doc">管理PAYGO訂閱與合約</block>
+  <block id="e858f445394700e621aa67dd8e3fe958" category="section-title">檢視您的訂閱內容</block>
+  <block id="9c1b3fb5f48f73ce89025933ec931382" category="paragraph">Digital Wallet提供每份PAYGO訂閱的詳細資料、以及與您的BlueXP帳戶和Astra（Astra使用BlueXP的收費服務）相關的年度合約。</block>
+  <block id="43bfd35e9b57eaace0eafa6750af5ff7" category="list-text">從BlueXP導覽功能表中、選取*管理&gt;數位錢包*。</block>
+  <block id="8c3682e85d7f4dbe8a46485082335dec" category="list-text">選擇*訂閱*。</block>
+  <block id="572e470335e0a6d55da05c732a01aed3" category="list-text">當您檢視訂閱的相關資訊時、您可以與表格中的詳細資料互動、如下所示：</block>
+  <block id="6a1de13d318f22872902849cd26467b4" category="list-text">展開一列以檢視更多詳細資料。</block>
+  <block id="d61aec883b403c61da2d8d8e19d78473" category="inline-image-macro">數位錢包中「訂閱」索引標籤的快照、您可以在其中選取列末端的箭頭加以展開。</block>
+  <block id="3a9d2caf2b3b63f1b3ab7d00e469b158" category="paragraph"><block ref="3a9d2caf2b3b63f1b3ab7d00e469b158" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="56594b7222b35921f9fe676eadf6bbdf" category="inline-image-macro">表格標題結尾的加號圖示</block>
+  <block id="31ede6b5001222203bb2fe87698bcc3a" category="list-text">按一下 <block ref="98b11313fea6c4106e5a3c018f0ffbc9" category="inline-image-macro-rx" type="image"></block> 可選擇表格中顯示的列。</block>
+  <block id="c090ce3dc0b8ea780bfa95c666328c67" category="paragraph">請注意、「字詞」和「自動更新」欄預設不會出現。「自動更新」欄僅顯示Azure合約的續約資訊。</block>
+  <block id="48772efe35cdbabca3c0abdab7360b57" category="paragraph">請注意下表所示內容：</block>
+  <block id="4d34f1097f6c8b9cee28bca8b78bbee9" category="list-text">開始日期</block>
+  <block id="d1686d74b72c58f44c6fceaf3011df0b" category="list-text">開始日期是您成功將訂閱與帳戶建立關聯、並開始充電的時間。</block>
+  <block id="716e98867696fbbeed00e3dcd1f76758" category="list-text">如果您在表格中看到N/A、目前無法從雲端供應商的API取得資訊。</block>
+  <block id="cd494d76449d5dfe0c0adfb2f3447761" category="list-text">合約</block>
+  <block id="8090b542b799e2f0268fddd048d44eda" category="list-text">如果您擴充合約的詳細資料、Digital Wallet會顯示目前計畫的可用項目：合約選項和單位（容量或節點數）。</block>
+  <block id="7f96d1365390f4c6a7c1befe0b068769" category="list-text">數位錢包會識別終止日期、以及合約是否即將續約、即將結束、或是否已結束。</block>
+  <block id="d1d7830f95588ae511ee592eab47c2b0" category="list-text">如果您有AWS合約、而且在開始日期之後變更了任何合約選項、請務必從AWS驗證您的合約選項。</block>
+  <block id="6942b724002d90bb0f705f478cdd6bf3" category="section-title">管理您的訂閱</block>
+  <block id="ac3dad7b0d90a8896f44e77f84726619" category="paragraph">您可以重新命名訂閱、並選擇與訂閱相關的帳戶、從Digital Wallet管理訂閱內容。</block>
+  <block id="23531331db8be0d13d9ce3c0685c0c8e" category="paragraph"><block ref="23531331db8be0d13d9ce3c0685c0c8e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="79e4d47d0339f23eefd594d30e729f96" category="list-text">選擇重新命名訂閱、或管理與訂閱相關的NetApp帳戶。</block>
+  <block id="5a4346a01828d72104a6540080377b25" category="section-title">2022年11月6日</block>
+  <block id="f658ebadeb22d41618c5222998030cb9" category="section-title">連接器3.9.23</block>
+  <block id="a7dad5ac7e311dedf2a82e4bb5a713dd" category="list-text">您的PAYGO訂閱和BlueXP年度合約現已可供檢視及管理、請參閱Digital Wallet。</block>
+  <block id="949b19dd7e9f6496c1125f7166270450" category="inline-link">瞭解如何管理您的訂閱</block>
+  <block id="ee0a02cf5f32853f4619caef4f31ab4e" category="paragraph"><block ref="ee0a02cf5f32853f4619caef4f31ab4e" category="inline-link-rx"></block></block>
+  <block id="9fcd0a1eb1b488b623812d42567ce2d8" category="paragraph"><block ref="9fcd0a1eb1b488b623812d42567ce2d8" category="inline-link-rx"></block></block>
 </blocks>

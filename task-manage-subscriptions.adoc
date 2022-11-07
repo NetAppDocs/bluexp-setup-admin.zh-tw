@@ -1,0 +1,78 @@
+---
+sidebar: sidebar 
+permalink: task-manage-subscriptions.html 
+keywords: digital wallet, subscriptions, paygo subscriptions, contracts, annual contracts 
+summary: 當您從雲端供應商的市場訂閱BlueXP時、系統會將您重新導向至BlueXP網站、您需要在其中儲存訂閱內容、並將其與特定帳戶建立關聯。訂閱之後、即可從Digital Wallet管理每份訂閱。 
+---
+= 管理PAYGO訂閱與合約
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+當您從雲端供應商的市場訂閱BlueXP時、系統會將您重新導向至BlueXP網站、您需要在其中儲存訂閱內容、並將其與特定帳戶建立關聯。訂閱之後、即可從Digital Wallet管理每份訂閱。
+
+
+
+== 檢視您的訂閱內容
+
+Digital Wallet提供每份PAYGO訂閱的詳細資料、以及與您的BlueXP帳戶和Astra（Astra使用BlueXP的收費服務）相關的年度合約。
+
+.步驟
+. 從BlueXP導覽功能表中、選取*管理>數位錢包*。
+. 選擇*訂閱*。
++
+您只會看到與您目前檢視的帳戶相關聯的訂閱內容。
+
+. 當您檢視訂閱的相關資訊時、您可以與表格中的詳細資料互動、如下所示：
++
+** 展開一列以檢視更多詳細資料。
++
+image:screenshot-subscriptions-expand.png["數位錢包中「訂閱」索引標籤的快照、您可以在其中選取列末端的箭頭加以展開。"]
+
+** 按一下 image:icon-column-selector.png["表格標題結尾的加號圖示"] 可選擇表格中顯示的列。
++
+請注意、「字詞」和「自動更新」欄預設不會出現。「自動更新」欄僅顯示Azure合約的續約資訊。
+
+
+
++
+請注意下表所示內容：
+
++
+開始日期:: 開始日期是您成功將訂閱與帳戶建立關聯、並開始充電的時間。
+不適用:: 如果您在表格中看到N/A、目前無法從雲端供應商的API取得資訊。
+合約::
++
+--
+** 如果您擴充合約的詳細資料、Digital Wallet會顯示目前計畫的可用項目：合約選項和單位（容量或節點數）。
+** 數位錢包會識別終止日期、以及合約是否即將續約、即將結束、或是否已結束。
+** 如果您有AWS合約、而且在開始日期之後變更了任何合約選項、請務必從AWS驗證您的合約選項。
+
+
+--
+
+
+
+
+
+
+== 管理您的訂閱
+
+您可以重新命名訂閱、並選擇與訂閱相關的帳戶、從Digital Wallet管理訂閱內容。
+
+例如、假設您有兩個帳戶、每個帳戶都是透過個別的訂閱付費。您可能會取消訂閱與其中一個帳戶的關聯、因此該帳戶中的使用者在建立 Cloud Volume ONTAP 的工作環境時、不會意外選擇錯誤的訂閱。
+
+.步驟
+. 從BlueXP導覽功能表中、選取*管理>數位錢包*。
+. 選擇*訂閱*。
+. 按一下您要管理之訂閱對應列中的動作功能表。
++
+image:screenshot-subscription-menu.png["訂閱的動作功能表快照。"]
+
+. 選擇重新命名訂閱、或管理與訂閱相關的NetApp帳戶。
+
