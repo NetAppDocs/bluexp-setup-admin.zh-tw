@@ -127,15 +127,15 @@ summary: 當BlueXP在AWS中啟動Connector執行個體時、它會將原則附�
         "cloudformation:DeleteStack",
         "ec2:DescribePlacementGroups",
         "iam:GetRolePolicy",
-		    "s3:ListAllMyBuckets",
+        "s3:ListAllMyBuckets",
         "s3:GetObject",
         "iam:GetRole",
         "s3:DeleteObject",
         "s3:DeleteObjectVersion",
         "s3:PutObject",
-		    "ec2:ModifyVolume",
+        "ec2:ModifyVolume",
         "ec2:DescribeVolumesModifications",
-		    "s3:GetEncryptionConfiguration"
+        "s3:GetEncryptionConfiguration"
       ],
       "Resource": "*"
     },
@@ -145,7 +145,7 @@ summary: 當BlueXP在AWS中啟動Connector執行個體時、它會將原則附�
       "Action": [
         "ec2:StartInstances",
         "ec2:StopInstances",
-		    "ec2:DescribeInstances",
+        "ec2:DescribeInstances",
         "ec2:DescribeInstanceStatus",
         "ec2:RunInstances",
         "ec2:TerminateInstances",
