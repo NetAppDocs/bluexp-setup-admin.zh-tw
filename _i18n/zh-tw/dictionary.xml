@@ -1478,7 +1478,6 @@
   <block id="6b20346212b35fa23c8778f7b40af243" category="list-text">映像的作業系統為CentOS 7.6。</block>
   <block id="474a089504b47eb34ee00ee62f121108" category="list-text">預設系統磁碟為100 GiB優質SSD磁碟。</block>
   <block id="f246cf5f23e765f0a7ebed4a6c1d923a" category="section-title">Google Cloud詳細資料</block>
-  <block id="eac23d653ed188286a19e5301fe3807e" category="list-text">映像的作業系統為CentOS 7.9。</block>
   <block id="6cb5fb9b61376b8ee3092321445fdea4" category="list-text">預設系統磁碟為100 GiB SSD持續磁碟。</block>
   <block id="bc4aa6323016172de14a6835883b27c7" category="section-title">安裝資料夾</block>
   <block id="81fae4ea40cc442afa43dab4cc001004" category="section-title">記錄檔</block>
@@ -2782,4 +2781,5 @@
   <block id="949b19dd7e9f6496c1125f7166270450" category="inline-link">瞭解如何管理您的訂閱</block>
   <block id="ee0a02cf5f32853f4619caef4f31ab4e" category="paragraph"><block ref="ee0a02cf5f32853f4619caef4f31ab4e" category="inline-link-rx"></block></block>
   <block id="9fcd0a1eb1b488b623812d42567ce2d8" category="paragraph"><block ref="9fcd0a1eb1b488b623812d42567ce2d8" category="inline-link-rx"></block></block>
+  <block id="9683999221dec5e41e35756b2a8aee04" category="list-text">映像的作業系統為Red Hat Enterprise Linux 8.6.</block>
 </blocks>

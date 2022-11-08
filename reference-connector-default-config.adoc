@@ -58,7 +58,7 @@ summary: 如果您需要疑難排解 Connector 、可能有助於瞭解其設定
 如果您是從BlueXP或雲端供應商的市場部署Connector、請注意下列事項：
 
 * VM執行個體為n2-Standard-4。
-* 映像的作業系統為CentOS 7.9。
+* 映像的作業系統為Red Hat Enterprise Linux 8.6.
 +
 作業系統不含 GUI 。您必須使用終端機來存取系統。
 
