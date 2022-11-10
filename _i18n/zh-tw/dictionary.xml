@@ -1014,7 +1014,6 @@
   <block id="0c5f74a83e5cbc5c6c230dd0caf096f7" category="inline-link">適用於商業區域的Azure Marketplace頁面</block>
   <block id="5fb9ace1b2fee444b848b1ad1c5d886c" category="list-text"><block ref="5fb9ace1b2fee444b848b1ad1c5d886c" category="inline-link-rx"></block></block>
   <block id="8ac340f924d72696326df51a32dbdee5" category="inline-link">Azure政府區域的Azure Marketplace頁面</block>
-  <block id="d60d2a63a86471881f173bb3041b00f7" category="list-text"><block ref="d60d2a63a86471881f173bb3041b00f7" category="inline-link-rx"></block></block>
   <block id="225df19c00186b6ea3e256ba18a0a186" category="list-text">按一下「 * 立即取得 * 」、然後按一下「 * 繼續 * 」。</block>
   <block id="74056a9be421d18494e08827c2a4c7f6" category="list-text">從 Azure 入口網站按一下 * 「 Create 」（建立） * 、然後依照步驟設定虛擬機器。</block>
   <block id="d110361593d3c3b635cec5b83db5e311" category="paragraph">設定 VM 時請注意下列事項：</block>
@@ -2782,4 +2781,5 @@
   <block id="9fcd0a1eb1b488b623812d42567ce2d8" category="paragraph"><block ref="9fcd0a1eb1b488b623812d42567ce2d8" category="inline-link-rx"></block></block>
   <block id="9683999221dec5e41e35756b2a8aee04" category="list-text">映像的作業系統為Red Hat Enterprise Linux 8.6.</block>
   <block id="efa03f1c1a0f03001f1680681d9ac8a7" category="paragraph"><block ref="efa03f1c1a0f03001f1680681d9ac8a7" category="inline-link-rx"></block></block>
+  <block id="cc337b5a93c54f8a59d4731866297bf2" category="list-text"><block ref="cc337b5a93c54f8a59d4731866297bf2" category="inline-link-rx"></block></block>
 </blocks>

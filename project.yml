@@ -4,10 +4,8 @@ settings:
   platform: cloud
   internal:
     pdf_enabled: true
-    lipi_enabled: false
   prod:
     pdf_enabled: true
-    lipi_enabled: false
     harmony_enabled: false
   rss_page: whats-new.html
   langs: zh-tw,us-en,ja-jp,zh-cn,ko-kr

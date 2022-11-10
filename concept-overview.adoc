@@ -13,6 +13,7 @@ summary: BlueXP讓IT專家和雲端架構設計師能夠使用NetApp的雲端解
 :imagesdir: ./media/
 
 
+[role="lead"]
 BlueXP（前身為Cloud Manager）可讓IT專家和雲端架構設計師使用NetApp的雲端解決方案、集中管理混合式多雲端基礎架構。
 
 
