@@ -26,7 +26,7 @@ summary: 瞭解BlueXP（前身為Cloud Manager）管理功能的新功能：NetA
 
 * 您的PAYGO訂閱和BlueXP年度合約現已可供檢視及管理、請參閱Digital Wallet。
 +
-https://review.docs.netapp.com/us-en/cloud-manager-setup-admin_nov-2022/task-manage-subscriptions.html["瞭解如何管理您的訂閱"^]
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-manage-subscriptions.html["瞭解如何管理您的訂閱"^]
 
 * 此版本的Connector也包含Cloud Volumes ONTAP 了一些功能強化功能。
 +
