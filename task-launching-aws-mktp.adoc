@@ -30,8 +30,8 @@ TIP: 您也可以在網路或雲端的現有Linux主機上下載並安裝Connect
 .步驟
 . 在AWS中設定權限：
 +
-.. 從IAM主控台複製並貼上的內容、以建立您自己的原則 link:reference-permissions-aws.html["連接器的IAM原則"]。
-.. 建立角色類型為 Amazon EC2 的 IAM 角色、並將您在上一步建立的原則附加至角色。
+.. 從IAM主控台複製並貼上的內容、以建立所需的原則 link:reference-permissions-aws.html["連接器的IAM原則"]。
+.. 使用角色類型Amazon EC2建立IAM角色、並將您在上一步中建立的原則附加至角色。
 
 
 . 前往 https://aws.amazon.com/marketplace/pp/B018REK8QG["AWS Marketplace上的BlueXP頁面"^] 若要從AMI部署連接器：

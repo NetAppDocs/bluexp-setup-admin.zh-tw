@@ -47,7 +47,6 @@
   <block id="db9e137068a05efe5440105c2494b7f1" category="cell">以取得授權資訊、並將AutoSupport 資訊傳送給NetApp支援部門。</block>
   <block id="554841a7559bd190d883de523464d1d1" category="cell">\https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net</block>
   <block id="065880318484084e9bfe33ea9c6a8702" category="cell">升級Connector及其Docker元件。</block>
-  <block id="1608afc958ae647f4bdf5b85e8f9a7b3" category="list-text">\https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm</block>
   <block id="66f9783489f42faf5074015874cb1c5f" category="list-text">\https://s3.amazonaws.com/aws-cli/awscli-bundle.zip</block>
   <block id="b0d26ef113a60166d94bd96f9067b52b" category="list-text">\https://*.blob.core.windows.net或\https://hub.docker.com</block>
   <block id="35bd57a4dcfbd7a695f9beb7d01913c6" category="paragraph">主機可能會在安裝期間嘗試更新作業系統套件。主機可聯絡不同的鏡射站台、以取得這些 OS 套件。</block>
@@ -1177,21 +1176,18 @@
   <block id="86ae9eb7648ce9574603dd22de833a70" category="inline-xref">瞭解如何將AWS認證資料新增至Connector</block>
   <block id="d40f2c83e95f6746ea810ba2593deb2d" category="section-title">如何旋轉認證資料</block>
   <block id="e7273d95e9d37fd9da1a8a44576c6922" category="inline-link-macro">深入瞭解 AWS 認證與權限</block>
-  <block id="448746f589ceea8f1b3191a05fe6c57c" category="paragraph">將AWS認證資料新增至Connector、以便在Cloud Volumes ONTAP 其他AWS帳戶中部署及管理功能。您可以在其他帳戶中提供IAM角色的ARN、或是提供AWS存取金鑰。</block>
   <block id="1b516070ab36ad4c186fe30bd203fb45" category="section-title">授予權限</block>
   <block id="e5fc05695d6d40579715f8fc43e17cf6" category="inline-link-macro">深入瞭解 AWS 認證與權限</block>
   <block id="70fbce3d6c9e05b51c53c71d08732426" category="paragraph">* 選項 *</block>
   <block id="2dbbb3b6b99aebde1c79427caf3046e0" category="list-text"><block ref="02c78f765c83c4fb4a0370471b089610" category="inline-xref-macro-rx"></block></block>
   <block id="0db58c0529496c0e926af5f8c9002335" category="list-text"><block ref="60d271fc50ad3f5d03a8767578822d7b" category="inline-xref-macro-rx"></block></block>
   <block id="6fca6b826d3e4d0980a08d26e6cf905f" category="section-title">在另一個帳戶中擔任IAM角色、藉此授予權限</block>
-  <block id="7ab2c48379bd2eb50d8191dc807ded90" category="list-text">前往您要部署Cloud Volumes ONTAP 的目標帳戶中的IAM主控台。</block>
   <block id="c8797509010c3097dda2b0cd6f8eb8ba" category="list-text">選取*其他AWS帳戶*、然後輸入連接器執行個體所在帳戶的ID。</block>
   <block id="119e27fea013f52fa0d99cc4eb1a4886" category="inline-xref">您現在可以將認證資料新增至Connector</block>
   <block id="0c618f5554982d1866596b56dc00c461" category="paragraph">帳戶現在擁有必要的權限。 <block ref="513a481d36e6d6a9d162b21b254968af" category="inline-xref-macro-rx"></block>。</block>
   <block id="e7e95c3a4b88e02526b2bf48eb3cff3b" category="section-title">提供AWS金鑰來授予權限</block>
   <block id="47d50d25f4b51617534e107d21701e80" category="inline-link">AWS 文件：建立 IAM 原則</block>
   <block id="8466ec46633472a027af5c909c923782" category="paragraph"><block ref="8466ec46633472a027af5c909c923782" category="inline-link-rx"></block></block>
-  <block id="923890d009c62cd46ebbcc491c981264" category="list-text">將原則附加至 IAM 角色或 IAM 使用者。</block>
   <block id="001eb8189b805b3dbf012a0955d8682f" category="inline-link">AWS 文件：建立 IAM 角色</block>
   <block id="f470dc03b4486f269b32bef6a5d721d1" category="list-text"><block ref="f470dc03b4486f269b32bef6a5d721d1" category="inline-link-rx"></block></block>
   <block id="ae447524ca7a094fbd322687e0154e93" category="inline-link">AWS 文件：新增和移除 IAM 原則</block>
@@ -1574,9 +1570,7 @@
   <block id="5e56842d0cfbf695522e945a01570eba" category="paragraph"><block ref="5e56842d0cfbf695522e945a01570eba" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b434da4c5ce39b5e4a95ec5159a66676" category="list-text">輸入姓名、電子郵件地址、然後選取收件者要接收的通知類型、然後按一下*「Add New Recipient*（新增收件者*）」。</block>
   <block id="19d38e2a40bebb64998474cbec167167" category="list-text">將額外的AWS認證資料新增至現有的Connector</block>
-  <block id="2d85cb7a34de23c6b7db0459f207a310" category="paragraph">將新的AWS認證資料新增至現有的Connector、可讓您Cloud Volumes ONTAP 使用相同的Connector在另一個AWS帳戶中部署。 <block ref="c25c39db29c727f1578fc8385e3c589b" category="inline-xref-macro-rx"></block>。</block>
   <block id="f63d604edef29843d35ad367e0d82814" category="inline-link">瞭解如何設定FSX for ONTAP Sfor Sfor Sfor的權限</block>
-  <block id="38d6d2ec27372e53c82e1227b5be44d4" category="section-title">新增其他認證資料至Connector</block>
   <block id="875232e8c1abaa42024ddc396bcef6da" category="list-text">建立包含建立Connector所需權限的原則。</block>
   <block id="8dbc816059e1b421ecb65c693d5f2171" category="paragraph">您現在可以在建立新的Connector時使用認證資料。</block>
   <block id="c3d36b4a46dce16b3ad60eecabc87582" category="list-text">Amazon S3探索</block>
@@ -1780,14 +1774,9 @@
   <block id="c5078b96055d6b776ee265ca4c7650c2" category="paragraph">您也必須確保在後續版本中新增權限時、該角色是最新的。</block>
   <block id="92ec95b8916ebc493b6546010073c81f" category="section-title">Azure權限的使用方式</block>
   <block id="ab75cfa6ae53348a737404e49985eb65" category="paragraph">當新版Connector軟體推出時、這些軟體將發佈至NetApp支援網站。 <block ref="f17f7484922764d58b748b63a8956073" category="inline-link-macro-rx"></block>。</block>
-  <block id="4e1f839391e849a6065024e60ace4c38" category="section-title">IAM原則</block>
-  <block id="d4d0602f330087eb24859ead29d741c3" category="paragraph">下列IAM原則提供Connector所需的權限、以便根據AWS區域管理公有雲環境中的資源和程序。</block>
-  <block id="4862cb85107f653706d201ef95242294" category="paragraph">如果您是從AWS Marketplace部署Connector、或是在Linux主機上手動安裝Connector、則必須自行設定原則。</block>
   <block id="222ddb2f355a49f64fb3858123f2b97b" category="open-title">標準區域</block>
   <block id="1411debdb32e6b128ca27ec92a708cbd" category="open-title">GovCloud（美國）地區</block>
   <block id="a8416eae2db8c97eb943559351fab358" category="open-title">C2S環境</block>
-  <block id="6686aeeff6eb0de250e6d134bb4b8cd5" category="list-text">透過複製及貼上的內容來建立原則 <block ref="9b22ee86ed2d831066d00816566458ca" category="inline-link-macro-rx"></block>。</block>
-  <block id="f3a061f1a8165759dd31c8b1fe6bda72" category="list-text">從IAM主控台複製並貼上的內容、以建立原則 <block ref="9b22ee86ed2d831066d00816566458ca" category="inline-link-macro-rx"></block>。</block>
   <block id="3d35bba2e5ea6e739fb94736dc402017" category="inline-link">檢視FSXfor ONTAP Sfor Sf哪些 權限</block>
   <block id="df00618b6e4c6f7fcb9a7fbb4c65b54e" category="list-text"><block ref="df00618b6e4c6f7fcb9a7fbb4c65b54e" category="inline-link-rx"></block></block>
   <block id="d2ec6bce44b6da11cd78a79db47dd385" category="inline-link-macro">檢視Connector部署原則</block>
@@ -2278,8 +2267,6 @@
   <block id="9c92b299186eaf0673a98ba9b40f21d8" category="paragraph">BlueXP可讓您以幾種方式提供AWS認證資料：與Connector執行個體相關的IAM角色、在信任的帳戶中擔任IAM角色、或提供AWS存取金鑰。 <block ref="327ad200be450c94b449dea92a32b142" category="inline-link-macro-rx"></block>。</block>
   <block id="dac708f9ff7b3626ce8ac5a2ec42c9cf" category="paragraph">在前兩個選項中、BlueXP會使用AWS安全性權杖服務來取得持續循環的暫用認證資料。此程序是最佳實務做法、因為它是自動且安全的。</block>
   <block id="f265ab1711375ae7a7a4e8594c5e1395" category="paragraph">如果您為BlueXP提供AWS存取金鑰、您應該定期在BlueXP中更新金鑰、以旋轉金鑰。這是完全手動的程序。</block>
-  <block id="a048177d059588f14caf812603cfdd39" category="paragraph">在您新增額外的AWS認證資料至Connector之前、您必須先提供必要的權限。這些權限可讓BlueXP管理該AWS帳戶內的資源和程序。您提供權限的方式取決於您是否要為BlueXP提供信任帳戶或AWS金鑰中角色的ARN。</block>
-  <block id="84576afbb5fec67a524a7228418c58be" category="admonition">當您從BlueXP部署Connector時、BlueXP會自動為您部署Connector的帳戶新增AWS認證資料。如果您在現有系統上手動安裝 Connector 軟體、則不會新增此初始帳戶。 <block ref="36da95d92772c6b5e5c7802773061f54" category="inline-link-macro-rx"></block>。</block>
   <block id="cc9abb75b8a4618db30dc1fa4729b191" category="paragraph">您可以使用 IAM 角色、在部署 Connector 執行個體的來源 AWS 帳戶與其他 AWS 帳戶之間建立信任關係。接著、您會向BlueXP提供來自信任帳戶的IAM角色ARN。</block>
   <block id="2a486959a51570756bb9f881e508d399" category="list-text">複製IAM角色的角色ARN、以便稍後將其貼到BlueXP中。</block>
   <block id="c9c2739152f3fc14fabc2dda4c1578c8" category="paragraph">如果您想為IAM使用者提供AWS金鑰給BlueXP、則必須將必要的權限授予該使用者。BlueXP IAM原則定義了允許BlueXP使用的AWS動作和資源。</block>
@@ -2340,7 +2327,6 @@
   <block id="9103937d6e94a5d3e88276d85254bdff" category="paragraph">如果您計畫在Cloud Volumes ONTAP 無法連上傳出網際網路連線的子網路中部署「還原」系統、則BlueXP會自動將Cloud Volumes ONTAP 「還原」設定為使用「連接器」做為Proxy伺服器。</block>
   <block id="0e4e5198cc4ce7f534d554683573c921" category="summary">當BlueXP在AWS中啟動Connector執行個體時、它會將原則附加到執行個體、讓Connector有權限管理該AWS帳戶內的資源和程序。連接器使用權限來撥打API呼叫數個AWS服務、包括EC2、S3、CloudForecation、IAM、 金鑰管理服務等。</block>
   <block id="30782d3f448f611988824827b71e6b96" category="paragraph">當BlueXP在AWS中啟動Connector執行個體時、它會將原則附加到執行個體、讓Connector有權限管理該AWS帳戶內的資源和程序。連接器使用權限來撥打API呼叫數個AWS服務、包括EC2、S3、CloudForecation、IAM、 金鑰管理服務（KMS）等。</block>
-  <block id="025d94cf0afe9214e325eed1d6fcb08e" category="paragraph">當您直接從BlueXP建立連接器時、BlueXP會自動將此原則套用至連接器。</block>
   <block id="fa63e1e893cffd937dfc1bfa0546daf3" category="summary">您可以監控BlueXP執行的作業狀態、查看是否有任何需要解決的問題。您可以在「通知中心」、「時間表」中檢視狀態、或將通知傳送至您的電子郵件。</block>
   <block id="1e687a002fd0b9a542bf652069246ebb" category="paragraph">通知會追蹤您在BlueXP中啟動的作業進度、以便您確認作業是否成功。這些功能可讓您檢視您在目前登入工作階段期間所啟動的許多BlueXP動作狀態。目前並非所有服務都會將資訊報告至通知中心。</block>
   <block id="07ab717203091859eadd0800a6760a62" category="paragraph">您也可以設定BluefXP以電子郵件傳送通知、即使您尚未登入系統、也能得知重要的系統活動。電子郵件可傳送給任何屬於您NetApp雲端帳戶的使用者、或是任何其他需要注意特定系統活動類型的收件者。請參閱 <block ref="2fb0285882e9333d924eb054161cd903" category="inline-xref-macro-rx"></block> 以下。</block>
@@ -2782,4 +2768,28 @@
   <block id="9683999221dec5e41e35756b2a8aee04" category="list-text">映像的作業系統為Red Hat Enterprise Linux 8.6.</block>
   <block id="efa03f1c1a0f03001f1680681d9ac8a7" category="paragraph"><block ref="efa03f1c1a0f03001f1680681d9ac8a7" category="inline-link-rx"></block></block>
   <block id="cc337b5a93c54f8a59d4731866297bf2" category="list-text"><block ref="cc337b5a93c54f8a59d4731866297bf2" category="inline-link-rx"></block></block>
+  <block id="2e5620a6569fc852b94b7e03a147a125" category="paragraph">將AWS認證資料新增至現有的Connector、可提供必要的權限、以管理公有雲環境中的資源和程序。 <block ref="568ce14d3cdae759e790bc127b222228" category="inline-xref-macro-rx"></block>。</block>
+  <block id="2107472aff38cfdebba436df3f42b23b" category="section-title">新增認證到Connector</block>
+  <block id="3b463d710672b6b69227759d4e8c954d" category="paragraph">將AWS認證資料新增至Connector、讓它擁有必要的權限來管理公有雲環境中的資源和程序。您可以在其他帳戶中提供IAM角色的ARN、或是提供AWS存取金鑰。</block>
+  <block id="c482e377fe0af4cde6c8150a691978b5" category="paragraph">將AWS認證資料新增至Connector之前、您必須先提供必要的權限。這些權限可讓BlueXP管理該AWS帳戶內的資源和程序。您提供權限的方式取決於您是否要為BlueXP提供信任帳戶或AWS金鑰中角色的ARN。</block>
+  <block id="907d45cdba89ff9735d0c51d08c2c193" category="admonition">如果您從BlueXP部署Connector、則BlueXP會自動為您部署Connector的帳戶新增AWS認證資料。如果您從AWS Marketplace部署Connector、或是在現有系統上手動安裝Connector軟體、則不會新增此初始帳戶。 <block ref="36da95d92772c6b5e5c7802773061f54" category="inline-link-macro-rx"></block>。</block>
+  <block id="2c76935f38c3f21d03c203f5311fc4f4" category="list-text">前往您要為Connector提供權限的目標帳戶中的IAM主控台。</block>
+  <block id="d8abc68ad3edce81a2a9f0c17b141c80" category="inline-link-macro">連接器的IAM原則</block>
+  <block id="c2e4546cbde31fc634ce4d7fcdec56bb" category="list-text">複製並貼上的內容、以建立所需的原則 <block ref="ee2fdef0fe1bd713e3c2d2a78c0fdb68" category="inline-link-macro-rx"></block>。</block>
+  <block id="357f29ef130f7ac8015a481d6e7c76f7" category="list-text">從IAM主控台複製並貼上的內容、以建立原則 <block ref="ee2fdef0fe1bd713e3c2d2a78c0fdb68" category="inline-link-macro-rx"></block>。</block>
+  <block id="681f994cad6161982250b03f44510310" category="list-text">將原則附加至IAM角色或IAM使用者。</block>
+  <block id="c1141a37b962270fc1e8960233830c99" category="section-title">IAM原則</block>
+  <block id="d169cac20ae3e0b6b9cec32d273de5f2" category="paragraph">以下提供的IAM原則提供Connector所需的權限、可讓您根據AWS區域來管理公有雲環境中的資源和程序。</block>
+  <block id="74b6a526e505305f967084e06fa6aaf3" category="paragraph">如果您直接從BlueXP在標準AWS區域中建立連接器、則BlueXP會自動將原則套用至連接器。在這種情況下、您不需要執行任何動作。</block>
+  <block id="fb86f9a9f53ddf38f2b2297b0200b8a3" category="paragraph">如果您從AWS Marketplace部署Connector、或是在Linux主機上手動安裝Connector、則必須自行設定原則。</block>
+  <block id="b8502b99c36d378968d3d20a7561e523" category="paragraph">您也必須確保原則在後續版本中新增權限時保持最新狀態。</block>
+  <block id="de16d176ab7c6c01a7ce45f2e7213194" category="paragraph">選取您所在的地區以檢視所需的原則：</block>
+  <block id="481dd59686d42d2d6a74eae1a1d763ad" category="paragraph">對於標準區域、權限分佈在兩個原則之間。由於AWS中受管理原則的字元大小上限、因此需要兩個原則。</block>
+  <block id="989bc9b22ba83d48ca30cdc4d2a0cbb8" category="paragraph">第一個原則提供下列服務的權限：</block>
+  <block id="bf43596ea2ef9041f13ded2298cba686" category="paragraph">第二個原則提供下列服務的權限：</block>
+  <block id="6db3bf95be125a91f9ff9118d152f966" category="list-text">應用程式範本標記</block>
+  <block id="995c7db8420cf7c1d22ec979a1f735ba" category="open-title">原則1</block>
+  <block id="897099bfef7e48dc4adcaa1be92bf1a8" category="open-title">原則2</block>
+  <block id="d094d5c78e8dbf27acd1a70c29b4b863" category="list-text">從IAM主控台複製並貼上的內容、以建立所需的原則 <block ref="ee2fdef0fe1bd713e3c2d2a78c0fdb68" category="inline-link-macro-rx"></block>。</block>
+  <block id="a6a23d0964b870781db3c2557ec3583c" category="list-text">使用角色類型Amazon EC2建立IAM角色、並將您在上一步中建立的原則附加至角色。</block>
 </blocks>

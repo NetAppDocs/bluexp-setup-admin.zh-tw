@@ -98,7 +98,6 @@ AWS 服務（ amazonaws.com):
 |===
 * 如果您選擇在自己的Linux主機上手動安裝Connector（而非直接從BlueXP介面安裝）、則Connector的安裝程式在安裝程序期間需要存取下列端點：
 +
-** \https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 ** \https://s3.amazonaws.com/aws-cli/awscli-bundle.zip
 ** \https://*.blob.core.windows.net或\https://hub.docker.com
 +

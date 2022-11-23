@@ -64,7 +64,6 @@ Hypervisor:: 通過認證可執行 CentOS 或 Red Hat Enterprise Linux 的裸機
 傳出網際網路存取:: Connector安裝程式必須在安裝過程中存取下列URL：
 +
 --
-* \https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 * \https://s3.amazonaws.com/aws-cli/awscli-bundle.zip
 * \https://*.blob.core.windows.net或\https://hub.docker.com
 +
