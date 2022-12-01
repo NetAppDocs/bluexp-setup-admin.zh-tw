@@ -128,7 +128,6 @@ summary: 當BlueXP在Azure中啟動Connector VM時、它會將自訂角色附加
                     "Microsoft.Compute/snapshots/delete",
                     "Microsoft.Network/privateEndpoints/delete",
                     "Microsoft.Compute/availabilitySets/delete",
-                    "Microsoft.Network/loadBalancers/delete",
                     "Microsoft.KeyVault/vaults/read",
                     "Microsoft.KeyVault/vaults/accessPolicies/write",
                     "Microsoft.Compute/diskEncryptionSets/write",
@@ -154,6 +153,7 @@ summary: 當BlueXP在Azure中啟動Connector VM時、它會將自訂角色附加
                     "Microsoft.Synapse/workspaces/firewallRules/read",
                     "Microsoft.Synapse/workspaces/replaceAllIpFirewallRules/action",
                     "Microsoft.Synapse/workspaces/operationResults/read",
+                    "Microsoft.Network/publicIPAddresses/delete",
                     "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action"
     ],
     "NotActions": [],
@@ -749,11 +749,19 @@ Connector會提出下列API要求、以探索及管理Azure Kubernetes Service�
 
 === 2022年12月1日
 
-下列權限已新增至Json原則。雲端備份和雲端分層都需要這項功能。
+下列權限已新增至Json原則：
 
-Microsoft.Storage/storageAccounts/blobServices/contains/write
+* Microsoft.Storage/storageAccounts/blobServices/contains/write
++
+雲端備份和雲端分層需要此權限。
 
-下列權限已從Json原則中移除。不再需要。
+* Microsoft.Network/publicIPAddresses/delete
++
+雲端備份需要此權限。
+
+
+
+下列權限已從Json原則中移除、因為不再需要這些權限：
 
 * Microsoft.Compute/images/write
 * Microsoft.Network/loadBalancers/backendAddressPools/join/action

@@ -2784,8 +2784,6 @@
   <block id="64a39273573e4fc2b712d51106db7a4e" category="section-title">變更記錄</block>
   <block id="3133cc4fd29893a0163684e3e3f59633" category="paragraph">新增和移除權限時、我們會在下方各節中加以註記。</block>
   <block id="a6123430b152ca358cd64ba937f6f1b9" category="section-title">2022年12月1日</block>
-  <block id="2b4c0f2b7b106fa61101f47cad35238a" category="paragraph">下列權限已新增至Json原則。雲端備份和雲端分層都需要這項功能。</block>
-  <block id="a8a929fafb2eb09e993d8c797a52b5ef" category="paragraph">下列權限已從Json原則中移除。不再需要。</block>
   <block id="ac692d638162a1dc479fa6a76fb4e114" category="list-text">Microsoft.Compute/images/write</block>
   <block id="61d40b12dddcd9e571bbe7a89b0fbae8" category="list-text">Microsoft.Network/loadBalancers/backendAddressPools/join/action</block>
   <block id="7c90682779ddf616c80c90bad703eddd" category="list-text">Microsoft.Network/loadBalancers/frontendIPConfigurations/read</block>
@@ -2796,4 +2794,8 @@
   <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">從「Support Registration（支援註冊）」頁面找到您的帳戶ID序號。</block>
   <block id="50a1dc01b7312307c34a888071586955" category="list-text">複製上述步驟2的帳戶序號、完成安全性檢查、然後確認您已閱讀NetApp的全球資料隱私權政策。</block>
   <block id="cc8b0535948da368f832027c19b7f853" category="list-text">請務必複製上述序號欄位使用的帳戶序號（960xxxx）。這將加速帳戶處理。</block>
+  <block id="0b4c13076b9b5e7ba5fa39333693ef77" category="paragraph">下列權限已新增至Json原則：</block>
+  <block id="e9c8bdcc91d25115e46e6c43d23fe563" category="paragraph">雲端備份和雲端分層需要此權限。</block>
+  <block id="175e0c32b0d1e82352dde70ca6ad31a2" category="paragraph">雲端備份需要此權限。</block>
+  <block id="1ff61a19534f16f8c2b0aa752b13fb0a" category="paragraph">下列權限已從Json原則中移除、因為不再需要這些權限：</block>
 </blocks>
