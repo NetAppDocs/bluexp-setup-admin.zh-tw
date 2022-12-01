@@ -48,7 +48,6 @@ summary: 當BlueXP在Azure中啟動Connector VM時、它會將自訂角色附加
                     "Microsoft.Compute/virtualMachines/start/action",
                     "Microsoft.Compute/virtualMachines/vmSizes/read",
                     "Microsoft.Compute/virtualMachines/write",
-                    "Microsoft.Compute/images/write",
                     "Microsoft.Compute/images/read",
                     "Microsoft.Network/locations/operationResults/read",
                     "Microsoft.Network/locations/operations/read",
@@ -79,9 +78,9 @@ summary: 當BlueXP在Azure中啟動Connector VM時、它會將自訂角色附加
                     "Microsoft.Storage/storageAccounts/listkeys/action",
                     "Microsoft.Storage/storageAccounts/read",
                     "Microsoft.Storage/storageAccounts/delete",
-                    "Microsoft.Storage/storageAccounts/regeneratekey/action",
                     "Microsoft.Storage/storageAccounts/write",
                     "Microsoft.Storage/storageAccounts/blobServices/containers/read",
+                    "Microsoft.Storage/storageAccounts/blobServices/containers/write",
                     "Microsoft.Storage/usages/read",
                     "Microsoft.Compute/snapshots/write",
                     "Microsoft.Compute/snapshots/read",
@@ -94,8 +93,6 @@ summary: 當BlueXP在Azure中啟動Connector VM時、它會將自訂角色附加
                     "Microsoft.Network/loadBalancers/write",
                     "Microsoft.Network/loadBalancers/delete",
                     "Microsoft.Network/loadBalancers/backendAddressPools/read",
-                    "Microsoft.Network/loadBalancers/backendAddressPools/join/action",
-                    "Microsoft.Network/loadBalancers/frontendIPConfigurations/read",
                     "Microsoft.Network/loadBalancers/loadBalancingRules/read",
                     "Microsoft.Network/loadBalancers/probes/read",
                     "Microsoft.Network/loadBalancers/probes/join/action",
@@ -740,4 +737,26 @@ Connector會提出下列API要求、以探索及管理Azure Kubernetes Service�
 * Microsoft.Resources /訂閱/資源群組/資源/讀取
 * Microsoft.ContainerService/管理叢集/讀取
 * Microsoft.ContainerService/managedClusters/listClusterUserCredentials/action
+
+
+
+
+== 變更記錄
+
+新增和移除權限時、我們會在下方各節中加以註記。
+
+
+
+=== 2022年12月1日
+
+下列權限已新增至Json原則。雲端備份和雲端分層都需要這項功能。
+
+Microsoft.Storage/storageAccounts/blobServices/contains/write
+
+下列權限已從Json原則中移除。不再需要。
+
+* Microsoft.Compute/images/write
+* Microsoft.Network/loadBalancers/backendAddressPools/join/action
+* Microsoft.Network/loadBalancers/frontendIPConfigurations/read
+* Microsoft儲存設備/儲存帳戶/重新產生金鑰/動作
 

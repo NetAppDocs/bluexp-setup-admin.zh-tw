@@ -38,6 +38,7 @@ RAM:: 14 GB
 * Red Hat Enterprise Linux 7.7
 * Red Hat Enterprise Linux 7.8
 * Red Hat Enterprise Linux 7.9
+* Red Hat Enterprise Linux 8.6.
 +
 Red Hat Enterprise Linux 系統必須在 Red Hat 訂購管理中註冊。如果未登錄、系統將無法在 Connector 安裝期間存取儲存庫來更新所需的協力廠商軟體。
 
@@ -51,7 +52,7 @@ Hypervisor:: 通過認證可執行 CentOS 或 Red Hat Enterprise Linux 的裸機
 磁碟類型:: 需要SSD
 /opt 中的磁碟空間:: 必須有100 GiB的可用空間
 /var.中的磁碟空間:: 必須提供20 GiB的空間
-Docker引擎:: 安裝Connector之前、主機上需要Docker Engine 19版或更新版本。 https://docs.docker.com/engine/install/["檢視安裝指示"^]。
+Docker引擎:: 安裝Connector之前、主機上需要Docker Engine 19版或更新版本。 https://docs.docker.com/engine/install/["檢視安裝指示"^]
 
 
 
@@ -69,19 +70,19 @@ Docker引擎:: 安裝Connector之前、主機上需要Docker Engine 19版或更�
 ----
 sudo systemctl enable docker && sudo systemctl start docker
 ----
-. 請從下載BlueXP軟體 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支援網站"^]。
+. 從下載Connector軟體 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支援網站"^]
 . 將安裝程式複製到Linux主機。
 . 指派執行指令碼的權限。
 +
 [source, cli]
 ----
-chmod +x /path/cloud-manager-connector-offline-v3.9.19
+chmod +x /path/cloud-manager-connector-offline-v3.9.23
 ----
 . 執行安裝指令碼：
 +
 [source, cli]
 ----
-sudo /path/cloud-manager-connector-offline-v3.9.19
+sudo /path/cloud-manager-connector-offline-v3.9.23
 ----
 . 開啟網頁瀏覽器並輸入 https://_ipaddress_[] 其中_ipaddress_是Linux主機的IP位址。
 +

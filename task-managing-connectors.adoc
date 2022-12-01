@@ -118,9 +118,9 @@ https://cloud.google.com/compute/docs/instances/connecting-to-instance["Google C
 [source, cli]
 ----
 sudo -s
-service service-manager stop
+service netapp-service-manager stop
 yum -y update –-security
-service service-manager start
+service netapp-service-manager start
 ----
 
 

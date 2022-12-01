@@ -540,12 +540,6 @@
   <block id="880818f23f18d557a415dab94d58f242" category="paragraph">如需將檔案連線及複製到 AWS 中 EC2 執行個體的說明、請參閱<block ref="dc4460aa50f8a612f26d39414027ad75" category="inline-link-rx"></block>。</block>
   <block id="325740f998865be7879e32048d406868" category="list-text">執行安裝指令碼。</block>
   <block id="d2da61b44f426c871849fe81368a8e4f" category="paragraph">如果您有Proxy伺服器、則必須輸入命令參數、如下所示。安裝程式不會提示您提供Proxy的相關資訊。</block>
-  <block id="4043a6aa3722544830ff194f0161ca4b" category="paragraph">_silon_ 在不提示您提供資訊的情況下執行安裝。</block>
-  <block id="9c0cac643033d0d66c01380a30a07c17" category="paragraph">如果主機位於 Proxy 伺服器之後、則需要 _proxy_ 。</block>
-  <block id="35ab3a8c7fbb3509e0d9eafded99ef1c" category="paragraph">_proxyport_ 是 Proxy 伺服器的連接埠。</block>
-  <block id="03834e3dec93fe21ff1b9d27519ca584" category="paragraph">_proxyuser_ 是 Proxy 伺服器的使用者名稱（如果需要基本驗證）。</block>
-  <block id="d042e0838b4543f156e8d676bacd546c" category="paragraph">_proxyypwd_ 是您指定之使用者名稱的密碼。</block>
-  <block id="e9d18c6194bd419fb0e88978d07225d6" category="list-text">除非您指定無聲參數、否則請輸入* Y*繼續安裝。</block>
   <block id="8dae847f59a6afd8d7e49b7b7654d0eb" category="list-text">開啟網頁瀏覽器並輸入下列 URL ：</block>
   <block id="0594b17c3f6f94eb28b63eec7d7d3841" category="paragraph"><block ref="0594b17c3f6f94eb28b63eec7d7d3841" category="inline-link-rx"></block></block>
   <block id="a28c11d82be2375d6506ed209153e0c1" category="paragraph">_ipaddress_ 可以是 localhost 、私有 IP 位址或公有 IP 位址、視主機的組態而定。例如、如果連接器位於沒有公有 IP 位址的公有雲中、您必須輸入連接至連接器主機之主機的私有 IP 位址。</block>
@@ -806,7 +800,6 @@
   <block id="c51a904de7f2c01a69a504d625a71354" category="list-text">需要SSD</block>
   <block id="681992b8581f6d4247af5523a14d0ce4" category="list-text">Docker引擎</block>
   <block id="117c0c98e2a5cb3503de68c655378d13" category="inline-link">檢視安裝指示</block>
-  <block id="d0866929c01f04a0947060329c774b7b" category="list-text">安裝Connector之前、主機上需要Docker Engine 19版或更新版本。<block ref="bbcf0e5e8b0c8687d84c2c22a5ad2ecf" category="inline-link-rx"></block>。</block>
   <block id="9764d03a6c521ac6bf9cc6db107b8351" category="list-text">確認已啟用並執行Docker。</block>
   <block id="a4a102a53f92d88c7ff8bca53cc859e3" category="list-text">開啟網頁瀏覽器並輸入<block ref="e3a51e84cbbae6e45a585984f3be3fd0" category="inline-link-rx"></block> 其中_ipaddress_是Linux主機的IP位址。</block>
   <block id="31f7ed39632ba5f8fbafe2e78de61213" category="paragraph">您應該會看到下列畫面。</block>
@@ -1121,7 +1114,6 @@
   <block id="7681f9932e27b70d263e349bf8e45ccb" category="paragraph">如果 MySQL 服務當機、則 occm 服務也會停機。</block>
   <block id="0cc88c75f9ccb3b092b1a9e54edf31dd" category="list-text">7Zip</block>
   <block id="824e65f15b61863b18403a352208dbf8" category="list-text">AWSCLI</block>
-  <block id="c5fd214cdd0d2b3b4272e73b022ba5c2" category="list-text">Docker</block>
   <block id="d52387880e1ea22817a72d3759213819" category="list-text">Java</block>
   <block id="6f49e891fdb1bb11823492f4d315b2fd" category="list-text">Kubecl</block>
   <block id="62a004b95946bb97541afa471dcca73a" category="list-text">MySQL</block>
@@ -2056,16 +2048,13 @@
   <block id="5b2b7f628f804bcb786a097c7e45aa41" category="inline-link">《使用者登錄表》NetApp 支援網站</block>
   <block id="0c4a8b62da9473fbd5401273c4f85ee0" category="list-text">完成建立NetApp 支援網站 一個不完善的帳戶<block ref="041bcb6d9bdf91f7d6ac92ae3a196e12" category="inline-link-rx"></block></block>
   <block id="d61c9f72493817776f392db42ac446a2" category="list-text">請務必選擇適當的使用者層級、通常為* NetApp客戶/終端使用者*。</block>
-  <block id="d6cb31c22f8f843a781cccec33157281" category="list-text">請務必將上述使用的Cloud Manager帳戶序號（960xxxx）複製到序號欄位。這將加速帳戶處理。</block>
   <block id="e9b1f53d6cabb3394833a4e102eb6a69" category="section-title">NetApp全新推出</block>
   <block id="c20c107d0d4eef6351660f3590324232" category="paragraph">如果您是NetApp的新客戶、而且您沒有新的NSS帳戶、請依照下列每個步驟操作。</block>
-  <block id="59dd2a274c2c6a3cc5b3dce08109019d" category="list-text">從「Support Registration（支援登錄）」頁面找到Cloud Manager帳戶ID序號。</block>
   <block id="ef5e63bb6b6827440a13cc2ec7e9cf56" category="paragraph"><block ref="ef5e63bb6b6827440a13cc2ec7e9cf56" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dd50e314c18933734174c1156dd9237f" category="inline-link">NetApp的支援註冊網站</block>
   <block id="78f94e749b89d69dcbf3baff21ccb958" category="list-text">瀏覽至<block ref="e1c4be66250fd76d5c52bfe2cb7daee2" category="inline-link-rx"></block> 並選擇*我不是NetApp註冊客戶*。</block>
   <block id="d4f633ef130727b2776fa7f45024ca7d" category="list-text">填寫必填欄位（紅色星號）。</block>
   <block id="1128fc8d5ec64880f4d49337ed798d31" category="list-text">在*產品系列*欄位中、選取* Cloud Manager*、然後選取適用的帳單供應商。</block>
-  <block id="1192dec4cc2b923397748a651cef178f" category="list-text">複製上述步驟2的Cloud Manager帳戶序號、完成安全性檢查、然後確認您已閱讀NetApp的全球資料隱私權政策。</block>
   <block id="3a24c87c9971d2011b4df223718f84b4" category="paragraph">系統會立即將電子郵件傳送至提供的信箱、以完成此安全交易。如果驗證電子郵件在幾分鐘內未送達、請務必檢查您的垃圾郵件資料夾。</block>
   <block id="03413baeca1ff7222737d8ce299bd4e8" category="list-text">確認電子郵件中的行動。</block>
   <block id="201080500e946070a2e4873042507c77" category="paragraph">確認將您的申請提交給NetApp、並建議您建立NetApp 支援網站 一個申請表。</block>
@@ -2099,7 +2088,6 @@
   <block id="6fe79cfc93a8b51f7a8316a55877bfc4" category="list-text">共享VPC權限（如果您使用共享VPC將資源部署到服務項目）</block>
   <block id="893b6747ffabae1d7bbd6d266f24c4ab" category="section-title">設定共享VPC權限</block>
   <block id="17d9282186c2451db90a83330e5c9d7b" category="list-text"><block ref="17d9282186c2451db90a83330e5c9d7b" category="inline-link-macro-rx"></block></block>
-  <block id="77bdda0b5be7d2725f2b5941d74db0e2" category="paragraph">「支援儀表板」可讓您新增及管理NetApp 支援網站 要搭配Cloud Manager使用的各種不一致帳戶。</block>
   <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">如果您有客戶層級的帳戶、可以新增一或多個NSS帳戶。</block>
   <block id="4fde72c535fd0cd463dbeb49347cdfae" category="list-text">如果您有合作夥伴或經銷商帳戶、您可以新增一或多個NSS帳戶、但這些帳戶無法與客戶層級帳戶一起新增。</block>
   <block id="6c73104e218372ccda6dc2d58fda524d" category="paragraph">例如、連接器是Cloud Volumes ONTAP 運作過程中的關鍵要素。如果連接器電源關閉、Cloud Volumes ONTAP 則在與連接器失去通訊超過14天之後、將停止使用以容量為基礎的BYOL系統。這是因為Connector每天都會在系統上重新整理授權。</block>
@@ -2566,7 +2554,6 @@
   <block id="929fa09ef9d24654b353f312638ca6e6" category="paragraph">Cloud Manager現在會在NetApp 支援網站 與您帳戶相關的更新權杖在3個月後過期時、提示您更新與您的候用帳戶相關的認證資料。<block ref="abba285888ca54da9f89054b7e57f270" category="inline-link-rx"></block></block>
   <block id="c95623cd0395d5a6bb6105b9d32f197b" category="inline-link-macro">藍圖XP注意事項</block>
   <block id="98a041bbcf45b807a22068084127e26d" category="list-text"><block ref="98a041bbcf45b807a22068084127e26d" category="inline-link-macro-rx"></block></block>
-  <block id="5ddb110e3aced51416d4de7b0626d696" category="list-text">請從下載BlueXP軟體<block ref="99637e01fa8caa34a544049093cac68c" category="inline-link-rx"></block>。</block>
   <block id="f681629287f9315842951d38d04b1eda" category="list-text">按一下*「設定新的藍圖XP」*、然後依照提示設定系統。</block>
   <block id="9f390f684f634b575bf8d3a2e73f760c" category="list-text">*系統詳細資料*：輸入Connector的名稱及您的公司名稱。</block>
   <block id="ed55d4951cd784cfacedc42b26d251dd" category="inline-image-macro">系統詳細資料頁面的快照、會提示您輸入BlueXP名稱和公司名稱。</block>
@@ -2792,4 +2779,21 @@
   <block id="897099bfef7e48dc4adcaa1be92bf1a8" category="open-title">原則2</block>
   <block id="d094d5c78e8dbf27acd1a70c29b4b863" category="list-text">從IAM主控台複製並貼上的內容、以建立所需的原則 <block ref="ee2fdef0fe1bd713e3c2d2a78c0fdb68" category="inline-link-macro-rx"></block>。</block>
   <block id="a6a23d0964b870781db3c2557ec3583c" category="list-text">使用角色類型Amazon EC2建立IAM角色、並將您在上一步中建立的原則附加至角色。</block>
+  <block id="80829c0bc33e1821173e296173ba0a8d" category="list-text">Red Hat Enterprise Linux 8.6.</block>
+  <block id="4e7880d4f8d9cf685f649e74e34a3de7" category="list-text">安裝Connector之前、主機上需要Docker Engine 19版或更新版本。<block ref="bbcf0e5e8b0c8687d84c2c22a5ad2ecf" category="inline-link-rx"></block></block>
+  <block id="64a39273573e4fc2b712d51106db7a4e" category="section-title">變更記錄</block>
+  <block id="3133cc4fd29893a0163684e3e3f59633" category="paragraph">新增和移除權限時、我們會在下方各節中加以註記。</block>
+  <block id="a6123430b152ca358cd64ba937f6f1b9" category="section-title">2022年12月1日</block>
+  <block id="2b4c0f2b7b106fa61101f47cad35238a" category="paragraph">下列權限已新增至Json原則。雲端備份和雲端分層都需要這項功能。</block>
+  <block id="a8a929fafb2eb09e993d8c797a52b5ef" category="paragraph">下列權限已從Json原則中移除。不再需要。</block>
+  <block id="ac692d638162a1dc479fa6a76fb4e114" category="list-text">Microsoft.Compute/images/write</block>
+  <block id="61d40b12dddcd9e571bbe7a89b0fbae8" category="list-text">Microsoft.Network/loadBalancers/backendAddressPools/join/action</block>
+  <block id="7c90682779ddf616c80c90bad703eddd" category="list-text">Microsoft.Network/loadBalancers/frontendIPConfigurations/read</block>
+  <block id="3af64a9cb34f4b06a9e496f1f6a05879" category="list-text">Microsoft儲存設備/儲存帳戶/重新產生金鑰/動作</block>
+  <block id="2ba7eb945a77498b8342e4be53a3761e" category="list-text">從下載Connector軟體<block ref="99637e01fa8caa34a544049093cac68c" category="inline-link-rx"></block></block>
+  <block id="f2575f6d19024f7288cf78d7dc5b3db9" category="paragraph">「支援儀表板」可讓您新增及管理NetApp 支援網站 搭配BlueXP使用的支援帳戶。</block>
+  <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">如果您有合作夥伴或經銷商帳戶、您可以新增一或多個NSS帳戶、但這些帳戶無法與客戶層級帳戶一起新增。</block>
+  <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">從「Support Registration（支援註冊）」頁面找到您的帳戶ID序號。</block>
+  <block id="50a1dc01b7312307c34a888071586955" category="list-text">複製上述步驟2的帳戶序號、完成安全性檢查、然後確認您已閱讀NetApp的全球資料隱私權政策。</block>
+  <block id="cc8b0535948da368f832027c19b7f853" category="list-text">請務必複製上述序號欄位使用的帳戶序號（960xxxx）。這將加速帳戶處理。</block>
 </blocks>

@@ -49,6 +49,7 @@ Google Cloud支援Connector的VM執行個體、其作業系統可支援此連接
 * Red Hat Enterprise Linux 7.7
 * Red Hat Enterprise Linux 7.8
 * Red Hat Enterprise Linux 7.9
+* Red Hat Enterprise Linux 8.6.
 +
 Red Hat Enterprise Linux 系統必須在 Red Hat 訂購管理中註冊。如果未登錄、系統將無法在 Connector 安裝期間存取儲存庫來更新所需的協力廠商軟體。
 
@@ -61,6 +62,7 @@ Red Hat Enterprise Linux 系統必須在 Red Hat 訂購管理中註冊。如果�
 Hypervisor:: 通過認證可執行 CentOS 或 Red Hat Enterprise Linux 的裸機或託管 Hypervisorhttps://access.redhat.com/certified-hypervisors["Red Hat 解決方案：哪些 Hypervisor 已通過認證、可執行 Red Hat Enterprise Linux ？"^]
 /opt 中的磁碟空間:: 必須有100 GiB的可用空間
 /var.中的磁碟空間:: 必須提供20 GiB的空間
+Docker引擎:: 安裝Connector之前、主機上需要Docker Engine 19版或更新版本。 https://docs.docker.com/engine/install/["檢視安裝指示"^]
 傳出網際網路存取:: Connector安裝程式必須在安裝過程中存取下列URL：
 +
 --
@@ -91,6 +93,12 @@ Hypervisor:: 通過認證可執行 CentOS 或 Red Hat Enterprise Linux 的裸機
 
 
 .步驟
+. 確認已啟用並執行Docker。
++
+[source, cli]
+----
+sudo systemctl enable docker && sudo systemctl start docker
+----
 . 從下載Connector軟體 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支援網站"^]，然後將其複製到 Linux 主機。
 +
 如需將檔案連線及複製到 AWS 中 EC2 執行個體的說明、請參閱 http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html["AWS 文件：使用 SSH 連線至 Linux 執行個體"^]。
@@ -99,7 +107,7 @@ Hypervisor:: 通過認證可執行 CentOS 或 Red Hat Enterprise Linux 的裸機
 +
 [source, cli]
 ----
-chmod +x OnCommandCloudManager-V3.9.19.sh
+chmod +x OnCommandCloudManager-V3.9.23.sh
 ----
 . 執行安裝指令碼。
 +
@@ -108,24 +116,8 @@ chmod +x OnCommandCloudManager-V3.9.19.sh
 +
 [source, cli]
 ----
- ./OnCommandCloudManager-V3.9.19.sh [silent] [proxy=ipaddress] [proxyport=port] [proxyuser=user_name] [proxypwd=password]
+ ./OnCommandCloudManager-V3.9.23.sh --proxy http://occm:password@10.0.0.30:9090/ --cacert /root/rootca.pem
 ----
-+
-_silon_ 在不提示您提供資訊的情況下執行安裝。
-
-+
-如果主機位於 Proxy 伺服器之後、則需要 _proxy_ 。
-
-+
-_proxyport_ 是 Proxy 伺服器的連接埠。
-
-+
-_proxyuser_ 是 Proxy 伺服器的使用者名稱（如果需要基本驗證）。
-
-+
-_proxyypwd_ 是您指定之使用者名稱的密碼。
-
-. 除非您指定無聲參數、否則請輸入* Y*繼續安裝。
 +
 現在已安裝Connector。安裝結束時、如果您指定Proxy伺服器、Connector服務（occm）會重新啟動兩次。
 

@@ -52,7 +52,7 @@ summary: 在您透過NetApp技術支援開啟支援案例之前、您必須先�
 
 == 新增一個NSS帳戶至藍圖XP
 
-「支援儀表板」可讓您新增及管理NetApp 支援網站 要搭配Cloud Manager使用的各種不一致帳戶。
+「支援儀表板」可讓您新增及管理NetApp 支援網站 搭配BlueXP使用的支援帳戶。
 
 * 如果您有客戶層級的帳戶、可以新增一或多個NSS帳戶。
 * 如果您有合作夥伴或經銷商帳戶、您可以新增一或多個NSS帳戶、但這些帳戶無法與客戶層級帳戶一起新增。
@@ -133,14 +133,14 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 +
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-help-support.png["「說明」功能表的快照、其中「支援」是第一個列出的選項"]
 
-. 從「Support Registration（支援登錄）」頁面找到Cloud Manager帳戶ID序號。
+. 從「Support Registration（支援註冊）」頁面找到您的帳戶ID序號。
 +
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-serial-number.png["「說明」功能表的快照、其中「支援」是第一個列出的選項"]
 
 . 瀏覽至 https://register.netapp.com["NetApp的支援註冊網站"^] 並選擇*我不是NetApp註冊客戶*。
 . 填寫必填欄位（紅色星號）。
 . 在*產品系列*欄位中、選取* Cloud Manager*、然後選取適用的帳單供應商。
-. 複製上述步驟2的Cloud Manager帳戶序號、完成安全性檢查、然後確認您已閱讀NetApp的全球資料隱私權政策。
+. 複製上述步驟2的帳戶序號、完成安全性檢查、然後確認您已閱讀NetApp的全球資料隱私權政策。
 +
 系統會立即將電子郵件傳送至提供的信箱、以完成此安全交易。如果驗證電子郵件在幾分鐘內未送達、請務必檢查您的垃圾郵件資料夾。
 
@@ -151,7 +151,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 . 完成建立NetApp 支援網站 一個不完善的帳戶 https://mysupport.netapp.com/site/user/registration["《使用者登錄表》NetApp 支援網站"^]
 +
 .. 請務必選擇適當的使用者層級、通常為* NetApp客戶/終端使用者*。
-.. 請務必將上述使用的Cloud Manager帳戶序號（960xxxx）複製到序號欄位。這將加速帳戶處理。
+.. 請務必複製上述序號欄位使用的帳戶序號（960xxxx）。這將加速帳戶處理。
 
 
 

@@ -108,7 +108,6 @@ Connector 安裝資料夾位於下列位置：
 
 * 7Zip
 * AWSCLI
-* Docker
 * Java
 * Kubecl
 * MySQL

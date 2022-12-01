@@ -31,6 +31,7 @@ summary: 當BlueXP在AWS中啟動Connector執行個體時、它會將原則附�
 選取您所在的地區以檢視所需的原則：
 
 .標準區域
+[%collapsible]
 ====
 對於標準區域、權限分佈在兩個原則之間。由於AWS中受管理原則的字元大小上限、因此需要兩個原則。
 
@@ -401,6 +402,7 @@ summary: 當BlueXP在AWS中啟動Connector執行個體時、它會將原則附�
 =====
 ====
 .GovCloud（美國）地區
+[%collapsible]
 ====
 [source, json]
 ----
@@ -562,6 +564,7 @@ summary: 當BlueXP在AWS中啟動Connector執行個體時、它會將原則附�
 ----
 ====
 .C2S環境
+[%collapsible]
 ====
 [source, json]
 ----
