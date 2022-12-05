@@ -28,6 +28,7 @@ summary: 當您建立 Cloud Volumes ONTAP 一個不完善的系統時、您必�
 
 BlueXP可讓您選擇要部署Cloud Volumes ONTAP 的Azure認證和Azure訂閱。除非您建立關聯、否則您無法為託管身分識別設定檔選取不同的 Azure 訂閱 https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["託管身分識別"^] 這些訂閱。
 
+.關於這項工作
 託管身分識別是 link:concept-accounts-azure.html["初始 Azure 帳戶"] 當您從BlueXP部署連接器時。部署Connector時、BlueXP會建立BlueXP運算子角色、並將其指派給Connector虛擬機器。
 
 .步驟
@@ -53,6 +54,7 @@ NOTE: BlueXP運算子是Connector原則中提供的預設名稱。如果您為�
 . 請重複這些步驟以取得額外訂閱內容。
 
 
+.結果
 當您建立新的工作環境時、現在應該能夠從多個 Azure 訂閱中選取託管身分識別設定檔。
 
 image:screenshot_accounts_switch_azure_subscription.gif["此螢幕快照顯示選取 Microsoft Azure Provider 帳戶時、可選擇多個 Azure 訂閱。"]
@@ -74,16 +76,17 @@ TIP: 如果您在現有系統上手動安裝Connector軟體、則不會新增一
 
 BlueXP需要權限才能在Azure中執行動作。您可以在Azure Active Directory中建立及設定服務主體、並取得BlueXP所需的Azure認證資料、將必要的權限授予Azure帳戶。
 
+.關於這項工作
 下圖說明BlueXP如何取得權限在Azure中執行作業。與一或多個Azure訂閱相關聯的服務主體物件、代表Azure Active Directory中的BlueXP、並指派給允許必要權限的自訂角色。
 
 image:diagram_azure_authentication.png["顯示BlueXP在Azure Active Directory進行API呼叫之前、先取得驗證與授權的概念性映像。在Active Directory中、BlueXP角色定義權限。它與一或多個 Azure 訂閱以及代表 Cloud Manger 應用程式的服務主要物件相關聯。"]
 
 .步驟
-.  an Azure Active Directory application,建立 Azure Active Directory 應用程式。
-.  the application to a role,將應用程式指派給角色。
-.  Windows Azure Service Management API permissions,新增 Windows Azure Service Management API 權限。
-.  the application ID and directory ID,取得應用程式 ID 和目錄 ID。
-.  a client secret,建立用戶端機密。
+. <<建立 Azure Active Directory 應用程式,建立 Azure Active Directory 應用程式>>。
+. <<將應用程式指派給角色,將應用程式指派給角色>>。
+. <<新增 Windows Azure Service Management API 權限,新增 Windows Azure Service Management API 權限>>。
+. <<取得應用程式 ID 和目錄 ID,取得應用程式 ID 和目錄 ID>>。
+. <<建立用戶端機密,建立用戶端機密>>。
 
 
 
@@ -92,6 +95,7 @@ image:diagram_azure_authentication.png["顯示BlueXP在Azure Active Directory進
 
 建立Azure Active Directory（AD）應用程式與服務主體、以便BlueXP用於角色型存取控制。
 
+.開始之前
 您必須在 Azure 中擁有適當權限、才能建立 Active Directory 應用程式、並將應用程式指派給角色。如需詳細資訊、請參閱 https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure 說明文件：必要權限"^]。
 
 .步驟
@@ -111,6 +115,7 @@ image:screenshot_azure_ad.gif["顯示 Microsoft Azure 中的 Active Directory �
 . 按一下 * 註冊 * 。
 
 
+.結果
 您已建立 AD 應用程式和服務主體。
 
 
@@ -247,6 +252,7 @@ image:screenshot_azure_client_secret.gif["Azure 入口網站的快照、顯示 A
 
 
 
+.結果
 您的服務主體現在已設定完成、您應該已經複製應用程式（用戶端） ID 、目錄（租戶） ID 、以及用戶端機密的值。新增Azure帳戶時、您必須在BlueXP中輸入此資訊。
 
 
@@ -255,8 +261,10 @@ image:screenshot_azure_client_secret.gif["Azure 入口網站的快照、顯示 A
 
 在您提供Azure帳戶所需的權限之後、即可將該帳戶的認證資料新增至BlueXP。完成此步驟可讓您Cloud Volumes ONTAP 使用不同的Azure認證資料來啟動功能。
 
+.開始之前
 如果您剛在雲端供應商中建立這些認證資料、可能需要幾分鐘的時間才能使用。請稍候幾分鐘、再將認證資料新增至BlueXP。
 
+.您需要的產品
 您必須先建立連接器、才能變更BlueXP設定。 link:concept-connectors.html#how-to-create-a-connector["瞭解方法"]。
 
 .步驟
@@ -269,9 +277,9 @@ image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」�
 .. *認證位置*：選擇* Microsoft Azure > Connector*。
 .. *定義認證*：輸入Azure Active Directory服務主體的相關資訊、以授予必要的權限：
 +
-*** 應用程式（用戶端） ID ：請參閱  the application ID and directory ID。
-*** 目錄（租戶） ID ：請參閱  the application ID and directory ID。
-*** 用戶端機密：請參閱  a client secret。
+*** 應用程式（用戶端） ID ：請參閱 <<取得應用程式 ID 和目錄 ID>>。
+*** 目錄（租戶） ID ：請參閱 <<取得應用程式 ID 和目錄 ID>>。
+*** 用戶端機密：請參閱 <<建立用戶端機密>>。
 
 
 .. *市場訂閱*：立即訂閱或選取現有的訂閱、以建立Marketplace訂閱與這些認證的關聯。
@@ -283,6 +291,7 @@ image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」�
 
 
 
+.結果
 您現在可以從「詳細資料與認證」頁面切換至不同的認證集合 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html["在建立新的工作環境時"^]
 
 image:screenshot_accounts_switch_azure.gif["在詳細資料  認證資料頁面中按一下「編輯認證資料」之後、顯示在認證資料之間選取的快照。"]
@@ -305,6 +314,7 @@ image:screenshot_accounts_switch_azure.gif["在詳細資料  認證資料頁面�
 * 您想要以新的訂閱取代現有的 Azure Marketplace 訂閱。
 
 
+.您需要的產品
 您必須先建立連接器、才能變更BlueXP設定。 link:concept-connectors.html#how-to-create-a-connector["瞭解方法"]。
 
 .步驟

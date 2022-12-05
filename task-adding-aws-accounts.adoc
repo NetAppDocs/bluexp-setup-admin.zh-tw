@@ -24,11 +24,11 @@ summary: 新增及管理AWS認證資料、讓BlueXP擁有在AWS帳戶中部署�
 
 * 將額外的AWS認證資料新增至現有的Connector
 +
-將AWS認證資料新增至現有的Connector、可提供必要的權限、以管理公有雲環境中的資源和程序。  credentials to a Connector,瞭解如何將AWS認證資料新增至Connector。
+將AWS認證資料新增至現有的Connector、可提供必要的權限、以管理公有雲環境中的資源和程序。 <<新增認證到Connector,瞭解如何將AWS認證資料新增至Connector>>。
 
 * 將AWS認證資料新增至BlueXP以建立連接器
 +
-將新的AWS認證資料新增至藍圖XP、即可賦予藍圖XP建立Connector所需的權限。  credentials to BlueXP for creating a Connector,瞭解如何將AWS認證資料新增至藍圖XP。
+將新的AWS認證資料新增至藍圖XP、即可賦予藍圖XP建立Connector所需的權限。 <<新增認證資料至BlueXP以建立連接器,瞭解如何將AWS認證資料新增至藍圖XP>>。
 
 * 將AWS認證資料新增至適用於FSX ONTAP for Sf更新 的BlueXP
 +
@@ -63,8 +63,8 @@ NOTE: 如果您從BlueXP部署Connector、則BlueXP會自動為您部署Connecto
 
 * 選項 *
 
-*  permissions by assuming an IAM role in another account
-*  permissions by providing AWS keys
+* <<在另一個帳戶中擔任IAM角色、藉此授予權限>>
+* <<提供AWS金鑰來授予權限>>
 
 
 
@@ -88,7 +88,8 @@ NOTE: 如果您從BlueXP部署Connector、則BlueXP會自動為您部署Connecto
 . 複製IAM角色的角色ARN、以便稍後將其貼到BlueXP中。
 
 
-帳戶現在擁有必要的權限。 ,您現在可以將認證資料新增至Connector。
+.結果
+帳戶現在擁有必要的權限。 <<add-the-credentials,您現在可以將認證資料新增至Connector>>。
 
 
 
@@ -109,7 +110,8 @@ https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html["AW
 
 
 
-帳戶現在擁有必要的權限。 ,您現在可以將認證資料新增至Connector。
+.結果
+帳戶現在擁有必要的權限。 <<add-the-credentials,您現在可以將認證資料新增至Connector>>。
 
 
 
@@ -117,6 +119,7 @@ https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html["AW
 
 在您提供具備所需權限的AWS帳戶之後、您可以將該帳戶的認證資料新增至現有的Connector。這可讓您Cloud Volumes ONTAP 使用相同的Connector在該帳戶中啟動支援功能。
 
+.開始之前
 如果您剛在雲端供應商中建立這些認證資料、可能需要幾分鐘的時間才能使用。請稍候幾分鐘、再將認證資料新增至BlueXP。
 
 .步驟
@@ -138,6 +141,7 @@ image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」�
 
 
 
+.結果
 現在、您可以在建立新的工作環境時、從「詳細資料與認證」頁面切換至不同的認證資料集：
 
 image:screenshot_accounts_switch_aws.png["在詳細資料  認證頁面中按一下「切換帳戶」之後、顯示在雲端供應商帳戶之間選取的快照。"]
@@ -174,7 +178,8 @@ image:screenshot_accounts_switch_aws.png["在詳細資料  認證頁面中按一
 . 複製IAM角色的角色ARN、以便在下一步將其貼到BlueXP中。
 
 
-IAM角色現在擁有所需的權限。 ,您現在可以將它新增至藍圖XP。
+.結果
+IAM角色現在擁有所需的權限。 <<add-the-credentials-2,您現在可以將它新增至藍圖XP>>。
 
 
 
@@ -182,6 +187,7 @@ IAM角色現在擁有所需的權限。 ,您現在可以將它新增至藍圖XP�
 
 在您提供IAM角色所需的權限之後、請將角色ARN新增至BlueXP。
 
+.開始之前
 如果您剛建立IAM角色、可能需要幾分鐘的時間才能使用。請稍候幾分鐘、再將認證資料新增至BlueXP。
 
 .步驟
@@ -198,6 +204,7 @@ image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」�
 
 
 
+.結果
 您現在可以在建立新的Connector時使用認證資料。
 
 
@@ -212,6 +219,7 @@ image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」�
 * 您想要以新的訂閱取代現有的 AWS Marketplace 訂閱。
 
 
+.您需要的產品
 您必須先建立連接器、才能變更BlueXP設定。 link:concept-connectors.html#how-to-create-a-connector["瞭解如何建立連接器"]。
 
 .步驟

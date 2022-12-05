@@ -82,6 +82,7 @@ Docker引擎:: 安裝Connector之前、主機上需要Docker Engine 19版或更�
 
 驗證是否有支援的Linux主機之後、您就可以取得Connector軟體、然後再進行安裝。
 
+.必要權限
 需要root權限才能安裝Connector。
 
 .關於這項工作
@@ -151,8 +152,10 @@ image:screenshot_set_up_cloud_manager.gif["顯示設定畫面的快照、可讓�
 
 
 
+.結果
 現在已安裝Connector、並使用您的NetApp帳戶進行設定。在您建立新的工作環境時、BlueXP會自動使用此Connector。
 
+.完成後
 設定權限、讓BlueXP能夠管理公有雲環境中的資源和程序：
 
 * AWS ： link:task-adding-aws-accounts.html["設定AWS帳戶、然後將其新增至BlueXP"]

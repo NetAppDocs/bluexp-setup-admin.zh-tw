@@ -65,6 +65,7 @@ BlueXP會顯示憑證簽署要求。
 |===
 
 
+.結果
 現在、BlueXP使用CA簽署的憑證來提供安全的HTTPS存取。下圖顯示設定為安全存取的BlueXP帳戶：
 
 image:screenshot_https_cert.gif["螢幕擷取畫面：顯示您安裝簽署憑證後的 HTTPS 設定頁面。頁面會顯示憑證內容和續約憑證的選項。"]
@@ -83,4 +84,5 @@ image:screenshot_https_cert.gif["螢幕擷取畫面：顯示您安裝簽署憑�
 . 按一下*變更憑證*、然後依照步驟產生CSR或安裝您自己的CA簽署憑證。
 
 
+.結果
 BlueXP使用新的CA簽署憑證來提供安全的HTTPS存取。

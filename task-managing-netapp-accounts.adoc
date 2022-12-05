@@ -64,6 +64,7 @@ image:screenshot_associate_user.gif["螢幕擷取畫面、顯示如何透過選�
 . 按一下「 * 經銷 * 」。
 
 
+.結果
 使用者應收到NetApp BlueXP寄送的電子郵件、標題為「Account Association（客戶關聯）」。 電子郵件中包含存取BlueXP所需的資訊。
 
 
@@ -84,11 +85,12 @@ image:screenshot_associate_user_workspace.png["快照顯示將游標移到「使
 . 按一下 * 解除使用者關聯 * 、然後按一下 * 解除關聯 * 以確認。
 
 
+.結果
 使用者無法再存取此NetApp帳戶中的資源。
 
 
 
-=== 管理 Workspace 管理的工作區
+=== 管理Workspace管理的工作區
 
 您可以隨時建立工作區管理員與工作區的關聯和取消關聯。建立使用者關聯可讓他們在該工作區中建立及檢視工作環境。
 
@@ -105,6 +107,7 @@ image:screenshot_associate_user_workspace.png["快照顯示將游標移到「使
 . 選取要與使用者建立關聯的工作區、然後按一下「 * 套用 * 」。
 
 
+.結果
 只要Connector也與工作區相關聯、使用者就能從BlueXP存取這些工作區。
 
 
@@ -220,7 +223,7 @@ image:screenshot_service_account_actions.gif["快照顯示將游標移到「使�
 
 
 
-== 管理 Connector 的工作空間
+== 管理Connector的工作區
 
 您需要將Connector與工作區建立關聯、讓Workspace Admins能夠從BlueXP存取這些工作區。
 

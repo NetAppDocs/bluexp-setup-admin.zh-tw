@@ -40,6 +40,7 @@ image:screenshot-manage-account-settings.png["顯示「帳戶」下拉式清單�
 . 輸入工作區名稱、然後按一下 * 「 Add* （新增 * ）」。
 
 
+.完成後
 如果「工作區管理」需要存取此工作區、您就必須建立使用者的關聯。您也需要將 Connectors 與工作區建立關聯、讓 Workspace Admins 能夠使用這些 Connectors 。
 
 
@@ -70,6 +71,7 @@ image:screenshot_associate_user.gif["螢幕擷取畫面、顯示如何透過選�
 . 按一下「 * 經銷 * 」。
 
 
+.結果
 使用者應從NetApp BlueXP網站收到一封名為「Account Association（帳戶關聯）」的電子郵件。 電子郵件中包含存取BlueXP所需的資訊。
 
 
@@ -91,6 +93,7 @@ image:screenshot_associate_user_workspace.png["快照顯示將游標移到「使
 . 選取一或多個工作區、然後按一下「 * 套用 * 」。
 
 
+.結果
 只要Connector也與工作區相關聯、使用者就能從BlueXP存取這些工作區。
 
 
@@ -113,6 +116,7 @@ image:screenshot-manage-account-settings.png["顯示「帳戶」下拉式清單�
 . 選取一或多個工作區、然後按一下「 * 套用 * 」。
 
 
+.結果
 Workspace 管理員現在可以使用這些連接器來建立 Cloud Volumes ONTAP 功能不一的系統。
 
 

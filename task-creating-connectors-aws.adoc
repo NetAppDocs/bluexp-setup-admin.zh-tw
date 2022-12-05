@@ -26,23 +26,26 @@ BlueXP帳戶管理員必須先部署_Connector_、才能使用大多數的BlueXP
 
 請依照下列步驟快速入門、或向下捲動至其餘部分以取得完整詳細資料。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] 設定驗證
 [role="quick-margin-para"]
 若要在AWS中啟動Connector、BlueXP必須透過擔任IAM角色或使用AWS存取金鑰來驗證AWS。無論使用哪一種選項、都需要IAM原則。
 
 [role="quick-margin-para"]
- an IAM policy,檢視IAM角色 或  up AWS authentication,請依照逐步指示操作。
+<<建立IAM原則,檢視IAM角色>> 或 <<設定AWS驗證,請依照逐步指示操作>>。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 設定網路
 [role="quick-margin-para"]
 您將需要VPC和子網路、並可從網際網路連線至特定端點。如果傳出網際網路需要HTTP Proxy、則您需要IP位址、認證和HTTPS憑證。
 
 [role="quick-margin-para"]
- up networking,檢視網路需求。
+<<設定網路,檢視網路需求>>。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 建立連接器
 [role="quick-margin-para"]
 按一下「Connector（連接器）」下拉式清單、選取「* Add Connector*（新增連接器*）」、然後依照提示進行
 
 [role="quick-margin-para"]
- a Connector,請依照逐步指示操作。
+<<建立連接器,請依照逐步指示操作>>。
 
 
 
@@ -145,6 +148,7 @@ BlueXP帳戶管理員必須先部署_Connector_、才能使用大多數的BlueXP
 . 按一下「*建立原則*」。
 
 
+.接下來呢？
 將原則附加至BlueXP可以承擔的IAM角色、或附加至IAM使用者。
 
 
@@ -168,6 +172,7 @@ BlueXP帳戶管理員必須先部署_Connector_、才能使用大多數的BlueXP
 . 建立角色之後、請複製角色ARN、以便在建立Connector時將其貼到BlueXP中。
 
 
+.結果
 IAM角色現在擁有所需的權限。
 
 
@@ -184,6 +189,7 @@ IAM角色現在擁有所需的權限。
 . 確保您有權存取IAM使用者的存取金鑰和秘密金鑰。
 
 
+.結果
 AWS使用者現在擁有從BlueXP建立Connector所需的權限。當您收到BlueXP的提示時、您需要為此使用者指定AWS存取金鑰。
 
 
@@ -303,6 +309,7 @@ TIP: 如果選擇*假定角色*、您可以從連接器部署精靈建立第一�
 
 
 
+.完成後
 如果您在建立Connector的同一個AWS帳戶中有Amazon S3儲存區、則會在畫版上自動顯示Amazon S3工作環境。 link:task-viewing-amazon-s3.html["深入瞭解如何運用此工作環境"]。
 
 

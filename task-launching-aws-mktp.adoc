@@ -25,6 +25,7 @@ TIP: 您也可以在網路或雲端的現有Linux主機上下載並安裝Connect
 
 您可以直接從適用於BlueXP的AWS Marketplace產品項目、在AWS商業區域啟動Connector執行個體。
 
+.開始之前
 建立Connector的IAM使用者必須擁有AWS Marketplace權限、才能訂閱及取消訂閱。
 
 .步驟
@@ -87,6 +88,7 @@ image:screenshot_set_up_cloud_manager.gif["顯示「設定連接器」畫面的�
 . 開啟網頁瀏覽器並前往 https://console.bluexp.netapp.com[] 開始使用Connector with BlueXP。
 
 
+.結果
 現在已安裝Connector、並使用您的NetApp帳戶進行設定。在您建立新的工作環境時、BlueXP會自動使用此Connector。但如果您有多個連接器、就需要 link:task-managing-connectors.html["在兩者之間切換"]。
 
 如果您在建立Connector的同一個AWS帳戶中有Amazon S3儲存區、則會在畫版上自動顯示Amazon S3工作環境。 link:task-viewing-amazon-s3.html["深入瞭解如何運用此工作環境"]。
@@ -155,6 +157,7 @@ image:screenshot_set_up_cloud_manager.gif["顯示「設定連接器」畫面的�
 
 
 
+.結果
 現在已安裝Connector、並使用您的NetApp帳戶進行設定。
 
 只要您想使用BlueXP、請開啟網頁瀏覽器並連線至Connector執行個體的IP位址： https://_ipaddress_[]

@@ -64,6 +64,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 
 
 
+.結果
 BlueXP會更新與數位顧問相關的NSS帳戶。
 
 
@@ -101,6 +102,7 @@ NetApp使用Microsoft Azure Active Directory做為身分識別供應商、提供
 
 
 
+.接下來呢？
 現在、使用者可以在建立新Cloud Volumes ONTAP 的支援系統、註冊現有Cloud Volumes ONTAP 的支援系統、以及註冊支援時、選擇帳戶。
 
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html["在 Cloud Volumes ONTAP AWS 中啟動"^]
@@ -131,7 +133,7 @@ NetApp使用Microsoft Azure Active Directory做為身分識別供應商、提供
 +
 完成此程序之後、您更新的帳戶現在應該會在表格中列為_new帳戶。此表中仍會列出_舊版_帳戶、以及任何現有的工作環境關聯。
 
-. 如果Cloud Volumes ONTAP 現有的不工作環境附加至舊版帳戶、請依照下列步驟執行  a working environment to a different NSS account,將這些工作環境附加至不同的NSS帳戶。
+. 如果Cloud Volumes ONTAP 現有的不工作環境附加至舊版帳戶、請依照下列步驟執行 <<將工作環境附加至不同的NSS帳戶,將這些工作環境附加至不同的NSS帳戶>>。
 . 移至舊版的nsso帳戶、按一下 image:icon-action.png["這是三個並排點的圖示"] 然後選取*刪除*。
 
 
@@ -201,6 +203,7 @@ image:screenshot-nss-display-email.png["顯示NetApp支援網站帳戶動作功�
 
 
 
+.結果
 BlueXP會顯示NetApp 支援網站 不完整的使用者名稱及相關的電子郵件地址。您可以使用複製按鈕來複製電子郵件地址。
 
 
@@ -209,7 +212,7 @@ BlueXP會顯示NetApp 支援網站 不完整的使用者名稱及相關的電子
 
 刪除任何不再想與BlueXP搭配使用的NSS帳戶。
 
-請注意、您無法刪除目前與Cloud Volumes ONTAP 某個運作環境相關聯的帳戶。您首先需要  a working environment to a different NSS account,將這些工作環境附加至不同的NSS帳戶。
+請注意、您無法刪除目前與Cloud Volumes ONTAP 某個運作環境相關聯的帳戶。您首先需要 <<將工作環境附加至不同的NSS帳戶,將這些工作環境附加至不同的NSS帳戶>>。
 
 .步驟
 . 在BlueXP主控台右上角、按一下「說明」圖示、然後選取「*支援*」。

@@ -30,11 +30,11 @@ BlueXP帳戶管理員必須先部署_Connector_、才能使用大多數的BlueXP
 
 . 出現提示時、請使用您的Microsoft帳戶登入。此帳戶必須具有特定的Azure權限。這是預設選項。
 +
- a Connector using your Azure account,請依照下列步驟開始使用。
+<<使用您的Azure帳戶建立Connector,請依照下列步驟開始使用>>。
 
 . 提供Azure AD服務負責人的詳細資料。此服務主體也需要特定權限。
 +
- a Connector using a service principal,請依照下列步驟開始使用。
+<<使用服務主體建立連接器,請依照下列步驟開始使用>>。
 
 
 
@@ -256,6 +256,7 @@ NOTE: Azure Setup AsService是Azure的Connector部署原則中提供的預設名
 
 
 
+.結果
 Azure使用者現在擁有從BlueXP部署Connector所需的權限。
 
 
@@ -264,7 +265,7 @@ Azure使用者現在擁有從BlueXP部署Connector所需的權限。
 
 BlueXP可讓您直接從Azure的使用者介面建立連接器。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * Azure 訂閱。
 * 您所選擇的 Azure 區域中的 Vnet 和子網路。
 * 如果您不想讓BlueXP自動為Connector建立Azure角色、則需要自行建立 link:reference-permissions-azure.html["使用此頁面上的原則"]。
@@ -311,6 +312,7 @@ TIP: 如果您已經登入Azure帳戶、則BlueXP會自動使用該帳戶。如�
 
 
 
+.完成後
 您需要將 Connector 與工作空間建立關聯、讓 Workspace Admins 可以使用這些 Connectors 來建立 Cloud Volumes ONTAP 一套系統。如果您只有帳戶管理員、則不需要將 Connector 與工作區建立關聯。帳戶管理員預設能夠存取BlueXP中的所有工作區。 link:task-setting-up-netapp-accounts.html#associating-connectors-with-workspaces["深入瞭解"]。
 
 如果您在建立Connector的同一個Azure帳戶中擁有Azure Blob儲存設備、您會看到Azure Blob工作環境會自動出現在Canvas. link:task-viewing-azure-blob.html["深入瞭解如何運用此工作環境"]。
@@ -328,11 +330,11 @@ TIP: 如果您已經登入Azure帳戶、則BlueXP會自動使用該帳戶。如�
 在Azure Active Directory中建立及設定服務主體、並取得BlueXP所需的Azure認證資料、以授予在Azure中部署Connector所需的權限。
 
 .步驟
-.  an Azure Active Directory application。
-.  the application to a role。
-.  Windows Azure Service Management API permissions。
-.  the application ID and directory ID。
-.  a client secret。
+. <<建立 Azure Active Directory 應用程式>>。
+. <<將應用程式指派給角色>>。
+. <<新增 Windows Azure Service Management API 權限>>。
+. <<取得應用程式 ID 和目錄 ID>>。
+. <<建立用戶端機密>>。
 
 
 
@@ -341,6 +343,7 @@ TIP: 如果您已經登入Azure帳戶、則BlueXP會自動使用該帳戶。如�
 
 建立Azure Active Directory（AD）應用程式與服務主體、以便BlueXP部署Connector。
 
+.開始之前
 您必須在 Azure 中擁有適當權限、才能建立 Active Directory 應用程式、並將應用程式指派給角色。如需詳細資訊、請參閱 https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure 說明文件：必要權限"^]。
 
 .步驟
@@ -360,6 +363,7 @@ image:screenshot_azure_ad.gif["顯示 Microsoft Azure 中的 Active Directory �
 . 按一下 * 註冊 * 。
 
 
+.結果
 您已建立 AD 應用程式和服務主體。
 
 
@@ -558,6 +562,7 @@ image:screenshot_azure_client_secret.gif["Azure 入口網站的快照、顯示 A
 
 
 
+.結果
 您的服務主體現在已設定完成、您應該已經複製應用程式（用戶端） ID 、目錄（租戶） ID 、以及用戶端機密的值。建立Connector時、您必須在BlueXP中輸入此資訊。
 
 
@@ -566,7 +571,7 @@ image:screenshot_azure_client_secret.gif["Azure 入口網站的快照、顯示 A
 
 BlueXP可讓您直接從Azure的使用者介面建立連接器。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * Azure 訂閱。
 * 您所選擇的 Azure 區域中的 Vnet 和子網路。
 * 如果您的組織需要代理處理所有傳出的網際網路流量、則HTTP Proxy的詳細資料如下：
@@ -592,9 +597,9 @@ image:screenshot_connector_add.gif["螢幕擷取畫面、會在標題和「新�
 +
 .. 在「*驗證*」下、按一下「* Active Directory服務主體*」、然後輸入Azure Active Directory服務主體的相關資訊、以授予必要的權限：
 +
-*** 應用程式（用戶端） ID ：請參閱  the application ID and directory ID。
-*** 目錄（租戶） ID ：請參閱  the application ID and directory ID。
-*** 用戶端機密：請參閱  a client secret。
+*** 應用程式（用戶端） ID ：請參閱 <<取得應用程式 ID 和目錄 ID>>。
+*** 目錄（租戶） ID ：請參閱 <<取得應用程式 ID 和目錄 ID>>。
+*** 用戶端機密：請參閱 <<建立用戶端機密>>。
 
 
 .. 按一下*登入*。
@@ -624,6 +629,7 @@ image:screenshot_connector_add.gif["螢幕擷取畫面、會在標題和「新�
 
 
 
+.完成後
 您需要將 Connector 與工作空間建立關聯、讓 Workspace Admins 可以使用這些 Connectors 來建立 Cloud Volumes ONTAP 一套系統。如果您只有帳戶管理員、則不需要將 Connector 與工作區建立關聯。帳戶管理員預設能夠存取BlueXP中的所有工作區。 link:task-setting-up-netapp-accounts.html#associating-connectors-with-workspaces["深入瞭解"]。
 
 如果您在建立Connector的同一個Azure帳戶中擁有Azure Blob儲存設備、您會看到Azure Blob工作環境會自動出現在Canvas. link:task-viewing-azure-blob.html["深入瞭解如何運用此工作環境"]。

@@ -37,14 +37,14 @@ summary: 在您透過NetApp技術支援開啟支援案例之前、您必須先�
 身為現有的NetApp客戶或合作夥伴、您可以使用NetApp 支援網站 您的畫面（NSS）SSO帳戶執行上述登錄。在「支援儀表板」中、BlueXP提供一個* nssn*管理*頁面、您可以在其中新增您的nssa帳戶。新增您的NSS帳戶後、BlueXP會自動為您註冊這些序號。
 
 +
- an NSS account to BlueXP,瞭解如何新增您的NSS帳戶。
+<<新增一個NSS帳戶至藍圖XP,瞭解如何新增您的NSS帳戶>>。
 
 * NetApp新推出
 +
 如果您是NetApp的新客戶、您必須在NetApp的支援註冊網站上完成一次性註冊您的BlueXP帳戶ID序號。完成此註冊並建立新的NSS帳戶之後、您就可以在BlueXP中使用此帳戶自動註冊、以便繼續進行。
 
 +
- with NetApp,瞭解如何向NetApp註冊。
+<<向NetApp註冊,瞭解如何向NetApp註冊>>。
 
 
 
@@ -156,6 +156,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 
 
 
+.完成後
 在此過程中、NetApp應與您聯絡。這是新使用者的一次性就職練習。
 
 一旦擁有NetApp 支援網站 您的不二帳戶、您就可以瀏覽至BlueXP、新增此新的NSS-帳戶以供日後登錄。

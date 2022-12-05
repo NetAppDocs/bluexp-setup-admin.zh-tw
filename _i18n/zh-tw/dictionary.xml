@@ -272,7 +272,6 @@
   <block id="83e566847d42782b3343e108150d7f57" category="section-title">連接器限制</block>
   <block id="911d15b7ac55478d2b567e8488658687" category="section-title">可能與172範圍內的IP位址發生衝突</block>
   <block id="82538689c7a66297973814120306d42f" category="section-title">僅支援HTTP Proxy伺服器</block>
-  <block id="e65172f12d5a004e18b6be974b9871c6" category="section-title">不支援SSL解密</block>
   <block id="7bd92bd111bfbf23b12f73672eb0dd1c" category="inline-link-macro">安裝由憑證授權單位（CA）簽署的HTTPS憑證</block>
   <block id="c3ce271d53cbf6a7afd137a37f4ee8d6" category="paragraph">為了增強安全性、您可以選擇 <block ref="11df3d19916b70ba1d82d33e876689bc" category="inline-link-macro-rx"></block>。</block>
   <block id="e949623e23f093c132f86ba2771e8a2e" category="section-title">載入本機UI時顯示空白頁面</block>
@@ -431,7 +430,6 @@
   <block id="a6a2880e12afb78f4820f1aaf905127c" category="list-text">從Cloud Volumes ONTAP 支援的CLI執行下列命令、以移除目前的備份目標：</block>
   <block id="1962304593497a2b02537345ac7be337" category="list-text">按一下功能表、然後選取*進階&gt;組態備份*。</block>
   <block id="b30f3d123c465c70e2c71150136ed92d" category="list-text">按一下*設定備份目標*。</block>
-  <block id="0e4dffadcdac4ac871fee08c9b43fc4e" category="section-title">編輯連接器的URI</block>
   <block id="e2729464f9bccb35f8d10ba5019f3955" category="paragraph">新增及移除連接器的URI。</block>
   <block id="5e6a0548d1a9b870a897fd2b63da39c6" category="list-text">按一下「*管理連接器*」。</block>
   <block id="184412530c50886985d099a0d5cedd16" category="list-text">按一下連接器的動作功能表、然後按一下*編輯URI *。</block>
@@ -583,7 +581,6 @@
   <block id="9e636409b20980fb5089c87705851b4d" category="list-text">Cloud Resource Manager API</block>
   <block id="1101b09020ade12e90a562489e315c8d" category="list-text">運算引擎 API</block>
   <block id="71660685d00034957db3f9a31c160978" category="list-text">身分識別與存取管理（ IAM ） API</block>
-  <block id="a711863513c11f3a6d86294acc7be0ba" category="list-title">您需要的是 #8217 ；需要的是什麼</block>
   <block id="d2b74161d054c69894469355bb22cb63" category="list-text">如果您要建立第一個工作環境、請按一下 * 新增工作環境 * 、然後依照提示進行。否則、請按一下「 * Connector* 」下拉式清單、然後選取「 * 新增 Connector* 」。</block>
   <block id="df5b4e7d7b6a4648ec54c1e80de11594" category="inline-image-macro">螢幕擷取畫面、會在標題和「新增連接器」動作中顯示「連接器」圖示。</block>
   <block id="6afef7f4017876f5216334b8130f14fb" category="paragraph"><block ref="6afef7f4017876f5216334b8130f14fb" category="inline-image-macro-rx" type="image"></block></block>
@@ -806,7 +803,6 @@
   <block id="baae31039a43d31e57f9e5c0c7262afc" category="paragraph"><block ref="baae31039a43d31e57f9e5c0c7262afc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="43601154a054554dd57207148a15b7b1" category="list-text">*建立管理使用者*：建立系統的管理使用者。</block>
   <block id="b530111cab51b765877bc100b0a43e1f" category="list-text">*審查*：檢閱詳細資料、接受授權合約、然後按一下*設定*。</block>
-  <block id="7c3983f18df54b898b386f7cf4a7d05c" category="list-title">接下來是什麼？#8217？</block>
   <block id="cc9787ce69467700348def59db8ff725" category="inline-link">探索內部ONTAP 的叢集</block>
   <block id="533c556705825be9a1a97d191373f80f" category="list-text"><block ref="533c556705825be9a1a97d191373f80f" category="inline-link-rx"></block></block>
   <block id="8160a46a5d4541efd7702f3fa8a2ecad" category="inline-link">在內部ONTAP 的等量叢集之間複寫資料</block>
@@ -917,7 +913,6 @@
   <block id="7d033896524ebe16495f74d9f7202783" category="paragraph"><block ref="cf2050a2914e59a752ab48465ba00e16" category="inline-link-macro-rx"></block>。</block>
   <block id="33e248648a845f8d6e538dfb02e4620f" category="list-text">針對您要建立關聯的連接器、按一下 * 管理工作區 * 。</block>
   <block id="211c1a963db0ec4433679bba9d1a1973" category="paragraph">Workspace 管理員現在可以使用這些連接器來建立 Cloud Volumes ONTAP 功能不一的系統。</block>
-  <block id="3f297ef15cde0668e93b35f2752fd4fd" category="section-title">接下來呢？</block>
   <block id="a85cd5dda897ee694c0a8a7ebe893293" category="inline-link-macro">瞭解如何管理您的帳戶</block>
   <block id="e93366502d593964f54fa78a54256cef" category="paragraph">現在您已經設定好帳戶、您可以隨時移除使用者、管理工作區、連接器和訂閱、來管理帳戶。 <block ref="4b4f4de61b1c0103e06c096d3b330838" category="inline-link-macro-rx"></block>。</block>
   <block id="55a16520d9c426fd88ba06b9313cc1a0" category="summary">執行初始設定之後、您可以稍後管理使用者、服務帳戶、工作區、連接器和訂閱、來管理帳戶設定。</block>
@@ -937,7 +932,6 @@
   <block id="660b1fe0314b1f04b1a5427df89916e5" category="paragraph">取消使用者關聯後、使用者便無法再存取NetApp帳戶中的資源。</block>
   <block id="6bd6a4807d0f305654a405a52bb8f189" category="list-text">按一下 * 解除使用者關聯 * 、然後按一下 * 解除關聯 * 以確認。</block>
   <block id="7892544a93f2a4d39f1ef832ba4d1eff" category="paragraph">使用者無法再存取此NetApp帳戶中的資源。</block>
-  <block id="c467a2567dd5be7e777708d1616b892d" category="section-title">管理 Workspace 管理的工作區</block>
   <block id="8ecff25aa4ee2497099b60f83bd4dde7" category="paragraph">您可以隨時建立工作區管理員與工作區的關聯和取消關聯。建立使用者關聯可讓他們在該工作區中建立及檢視工作環境。</block>
   <block id="9c3fb861370470582b50839e482bd5f9" category="list-text">選取要與使用者建立關聯的工作區、然後按一下「 * 套用 * 」。</block>
   <block id="7ef475b3aa654a4c77b576b7b693b979" category="section-title">建立及管理服務帳戶</block>
@@ -971,7 +965,6 @@
   <block id="e6b782b96ee9fd72a275037e1f900b6f" category="list-text">按一下 * 新增工作區 * 以建立新的工作區。</block>
   <block id="9606b9dd050f482ce022efaf9f3754c9" category="list-text">按一下 * 重新命名 * 以重新命名工作區。</block>
   <block id="ca4a2e09f147267af54ea5fd1d962c6a" category="list-text">按一下 * 刪除 * 以刪除工作區。</block>
-  <block id="3bf33688db3de262b29d7aef6461deb2" category="section-title">管理 Connector 的工作空間</block>
   <block id="cda68882da0fbacdfcd7b3b52e15c47f" category="list-text">選取要與 Connector 建立關聯的工作區、然後按一下「 * 套用 * 」。</block>
   <block id="95a0841b9a7d083d0e92b10bbb2d9538" category="section-title">管理訂閱</block>
   <block id="0dd6409072fddd7ebe4fbc13bf55f62e" category="paragraph">從雲端供應商的市場訂閱之後、您可以從「帳戶設定」小工具取得每份訂閱內容。您可以選擇重新命名訂閱、以及取消訂閱與一或多個帳戶的關聯。</block>
@@ -2072,12 +2065,10 @@
   <block id="ab989208a01fcee6c888dec1f39482d9" category="cell">設定後端服務以在HA配對中分配流量。</block>
   <block id="739bf63a1a7b0a2e180e692ece9b9b11" category="cell">- compute.networks.updatePolicy</block>
   <block id="40601d6546f763ec088fee026a0da641" category="cell">將防火牆規則套用至HA配對的VPC和子網路。</block>
-  <block id="2e984b55a3264399d03f7fc4df06df78" category="list-title">span class="image"&gt;&lt;imgrc=<block ref="0c3becc25d95e48b9ca863002a042824" category="inline-link-rx"></block> alt="1"&gt;&lt;/span&gt;設定權限</block>
   <block id="6e1d3688abed116ca1fcde1dce3ec4f4" category="paragraph"><block ref="68a9c9d924aeef1d7ada39f0d3540b49" category="inline-xref-macro-rx"></block>。</block>
   <block id="d52202757c4d92357913471e220a772a" category="paragraph"><block ref="f796454a6004e39753971668625d9d8d" category="inline-xref-macro-rx"></block>。</block>
   <block id="39cab3defe876dfaf2b80cf98f49e2c7" category="list-text">如果您使用的是共享VPC、請在服務專案和主機專案中設定權限。</block>
   <block id="324adee08a3c7a87ddad1096556db802" category="paragraph"><block ref="f14d47c142ef6f4bd65c33223ef00cac" category="inline-xref-macro-rx"></block>。</block>
-  <block id="ecd9b46cc61d7175d5da2c42f7b70152" category="list-title">span class="image"&gt;&lt;imgrc=<block ref="ddd753dc2858fe3a5582f20b300a0541" category="inline-link-rx"></block> Alt="there"&gt;&lt;/span&gt;啟用Google Cloud API</block>
   <block id="d84e71566ed38f5bfe97daee41fb601d" category="paragraph">下列項目需要權限：</block>
   <block id="ae741fad6aa93f78e0e5033a1d01d94b" category="list-text">部署Connector VM的使用者</block>
   <block id="302f26bc0fa67eed7c3feeaa0ab2bcab" category="list-text">部署期間需要附加至Connector VM的服務帳戶</block>
@@ -2807,4 +2798,25 @@
   <block id="115781a0043a85f8707c5c99fd02dc75" category="paragraph">\https://cloudmanager.cloud.netapp.com</block>
   <block id="23486ca53d499245ebae5460cf6d10ad" category="paragraph">在BlueXP中提供SaaS功能與服務。</block>
   <block id="7eea1027ea51763c57b7b5965f1ba900" category="admonition">Connector目前正在聯絡「cloudmanager.cloud.netapp.com"」、但即將推出的版本將會開始聯絡「api.bluexp.netapp.com"」。</block>
+  <block id="ffe7522d9ea3d134eb0a945275d454d7" category="paragraph-title">必要權限</block>
+  <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">結果</block>
+  <block id="bd965e38a0c9cf27aa1bde099308e23f" category="paragraph-title">完成後</block>
+  <block id="d59db7846bd10b6d60d21543df9faa9e" category="list-title">您需要的產品</block>
+  <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">開始之前</block>
+  <block id="1bc21092e961975ea4123f4414693f69" category="section-title">不支援SSL解密</block>
+  <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">一</block>
+  <block id="38850c0d5ada5706d4546808821a96d1" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 設定驗證</block>
+  <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">二</block>
+  <block id="0acd6f364c67bcef47587e5727525116" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> 設定網路</block>
+  <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">三</block>
+  <block id="aea46324800b152c6a50caff1d14e2fc" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 建立連接器</block>
+  <block id="58eaebf972358f1cf03d386a4ade1a0f" category="paragraph-title">接下來呢？</block>
+  <block id="eb9bb09a006b6e7bcc7d0b9525344bcf" category="section-title">編輯連接器的URI</block>
+  <block id="62804365dc8c62cf4546f894ddfc5e1c" category="list-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 設定權限</block>
+  <block id="b74f07963110d8742672d27a25bb3383" category="list-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 啟用 Google Cloud API</block>
+  <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">四</block>
+  <block id="3b9dafc67ff049020d09b9ebd18aaa5d" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 建立連接器</block>
+  <block id="5ccc745272c52ce1868d5bcf2b07705a" category="section-title">管理Workspace管理的工作區</block>
+  <block id="1cf32fb78afaf111cd4c8421dc8592a6" category="section-title">管理Connector的工作區</block>
+  <block id="c558073ec27a1686dce5ebbe5da43092" category="paragraph-title">登入選項</block>
 </blocks>

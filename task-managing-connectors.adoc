@@ -236,6 +236,7 @@ image:screenshot_connector_remove.gif["連接器 Widget 的快照、可讓您移
 . 輸入要確認的連接器名稱、然後按一下「移除」。
 
 
+.結果
 BlueXP會將Connector從記錄中移除。
 
 

@@ -61,6 +61,7 @@ Docker引擎:: 安裝Connector之前、主機上需要Docker Engine 19版或更�
 
 驗證是否有支援的Linux主機之後、您就可以取得Connector軟體、然後再進行安裝。
 
+.必要權限
 需要root權限才能安裝Connector。
 
 .步驟
@@ -107,9 +108,10 @@ image:screenshot-onprem-darksite-details.png["系統詳細資料頁面的快照�
 . 使用您剛建立的管理使用者登入BlueXP。
 
 
+.結果
 現在已安裝Connector、您可以開始使用在暗站部署中可用的BlueXP功能。
 
-.接下來是什麼？#8217？
+.接下來呢？
 * https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["探索內部ONTAP 的叢集"^]
 * https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["在內部ONTAP 的等量叢集之間複寫資料"^]
 * https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html["使用Cloud Backup將ONTAP 內部的等量資料備份StorageGRID 至不實"^]
