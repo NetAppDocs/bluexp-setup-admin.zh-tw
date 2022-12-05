@@ -2788,8 +2788,6 @@
   <block id="1ff61a19534f16f8c2b0aa752b13fb0a" category="paragraph">下列權限已從Json原則中移除、因為不再需要這些權限：</block>
   <block id="ddfa1ffd911b64694fdfa28d37b4c1be" category="paragraph">可透過存取BlueXP<block ref="f866435f858a421b8b6b65903cff47d2" category="inline-link-rx"></block> 和 API 。這項SaaS體驗可讓您在最新功能發佈時自動存取、並在NetApp帳戶和連接器之間輕鬆切換。</block>
   <block id="03275fa7fd8487800900fe5ed21b50b4" category="cell">\https://console.bluexp.netapp.com</block>
-  <block id="5dd0aa558dcec51bcf3ae2e8f37b895c" category="cell">\https://*.api.bluexp.netapp.com \https://api.bluexp.netapp.com \https://*.cloudmanager.cloud.netapp.com \https://cloudmanager.cloud.netapp.com</block>
-  <block id="cd93b7c43c5393a3dcd4f5f4c7da7a7f" category="cell">在BlueXP中提供SaaS功能與服務。附註：Connector目前正在聯絡「cloudmanager.cloud.netapp.com"」、但即將推出的版本將會開始聯絡「api.bluexp.netapp.com"」。</block>
   <block id="edd4bfb900f4f2fc34b4612b22b6c5f1" category="list-text">開啟網頁瀏覽器並前往<block ref="4d2f46e46f2e8a8f33bc708599ac780c" category="inline-link-rx"></block> 開始使用Connector with BlueXP。</block>
   <block id="e23437eeb65551eb4b29d1358abc9577" category="paragraph">由於連接器部署在政府區域、因此無法從存取<block ref="4d2f46e46f2e8a8f33bc708599ac780c" category="inline-link-rx"></block>。</block>
   <block id="3a9d5bd356ec8e4fc31c11150128b7ac" category="list-text">開啟網頁瀏覽器、前往<block ref="a47e12f4350b725a128875f50f785a3b" category="inline-link-rx"></block></block>
@@ -2803,4 +2801,10 @@
   <block id="4a11791a9bd4070a9cb5e2e709d06351" category="list-text">Google Cloud Israel地區現在支援Connector。</block>
   <block id="242cf97b6ce4408dde25722d6b0e37f9" category="list-text"><block ref="242cf97b6ce4408dde25722d6b0e37f9" category="inline-link-rx"></block></block>
   <block id="4703fae8488338a7ad69a5cd4347caf3" category="list-text"><block ref="4703fae8488338a7ad69a5cd4347caf3" category="inline-link-rx"></block></block>
+  <block id="37ba276f010f4ea07f1196b487811443" category="paragraph">\https://*.api.bluexp.netapp.com</block>
+  <block id="e1095ff19466581c5274f67123c95036" category="paragraph">\https://api.bluexp.netapp.com</block>
+  <block id="9e434ddc2ad4b9de005368b77254223d" category="paragraph">\https://*.cloudmanager.cloud.netapp.com</block>
+  <block id="115781a0043a85f8707c5c99fd02dc75" category="paragraph">\https://cloudmanager.cloud.netapp.com</block>
+  <block id="23486ca53d499245ebae5460cf6d10ad" category="paragraph">在BlueXP中提供SaaS功能與服務。</block>
+  <block id="7eea1027ea51763c57b7b5965f1ba900" category="admonition">Connector目前正在聯絡「cloudmanager.cloud.netapp.com"」、但即將推出的版本將會開始聯絡「api.bluexp.netapp.com"」。</block>
 </blocks>
