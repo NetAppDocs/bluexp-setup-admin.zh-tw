@@ -25,7 +25,7 @@ summary: 請使用此檢查清單、瞭解在連接器具有傳出網際網路�
 | 端點 | 目的 
 
 
-| \http://cloudmanager.netapp.com | 使用SaaS UI時、您的網頁瀏覽器會連絡此URL。 
+| \https://console.bluexp.netapp.com | 使用SaaS UI時、您的網頁瀏覽器會連絡此URL。 
 
 
  a| 
@@ -91,7 +91,7 @@ AWS 服務（ amazonaws.com):
 | \https://support.netapp.com | 以取得授權資訊、並將AutoSupport 資訊傳送給NetApp支援部門。 
 
 
-| \https://*.cloudmanager.cloud.netapp.com \https://cloudmanager.cloud.netapp.com | 在BlueXP中提供SaaS功能與服務。 
+| \https://*.api.bluexp.netapp.com \https://api.bluexp.netapp.com \https://*.cloudmanager.cloud.netapp.com \https://cloudmanager.cloud.netapp.com | 在BlueXP中提供SaaS功能與服務。附註：Connector目前正在聯絡「cloudmanager.cloud.netapp.com"」、但即將推出的版本將會開始聯絡「api.bluexp.netapp.com"」。 
 
 
 | \https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net | 升級Connector及其Docker元件。 

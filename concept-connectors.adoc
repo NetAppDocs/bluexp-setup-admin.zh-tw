@@ -219,7 +219,7 @@ link:task-managing-connectors.html["瞭解如何在連接器之間切換"]。
 
 == 本機使用者介面
 
-而您應該從執行幾乎所有的工作 https://cloudmanager.netapp.com["SaaS 使用者介面"^]、連接器上仍有本機使用者介面可供使用。如果您在無法存取網際網路的環境（例如政府區域）中安裝Connector、以及需要從Connector本身執行的幾項工作（而非SaaS介面）、則需要使用此介面：
+而您應該從執行幾乎所有的工作 https://console.bluexp.netapp.com["SaaS 使用者介面"^]、連接器上仍有本機使用者介面可供使用。如果您在無法存取網際網路的環境（例如政府區域）中安裝Connector、以及需要從Connector本身執行的幾項工作（而非SaaS介面）、則需要使用此介面：
 
 * link:task-configuring-proxy.html["設定 Proxy 伺服器"]
 * 安裝修補程式（您通常會與 NetApp 人員一起安裝修補程式）

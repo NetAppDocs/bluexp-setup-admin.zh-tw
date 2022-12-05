@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-logging-in.html 
 keywords: logging in, log in, sign in, signing in, cloud central, netapp cloud central, user account, federated, federation, federated login, federation login, login with netapp, log in with netapp, sign up, create account 
-summary: '您可以前往、透過SaaS型使用者介面存取BlueXP介面 https://cloudmanager.netapp.com[]。' 
+summary: 您可以透過SaaS型使用者介面、從網頁瀏覽器存取BlueXP。 
 ---
 = 登入BlueXP
 :hardbreaks:
@@ -37,7 +37,7 @@ summary: '您可以前往、透過SaaS型使用者介面存取BlueXP介面 https
 
 
 .步驟
-. 開啟網頁瀏覽器、前往 https://cloudmanager.netapp.com["BlueXP主控台"^]
+. 開啟網頁瀏覽器、前往 https://console.bluexp.netapp.com["BlueXP主控台"^]
 +
 此時會顯示NetApp BlueXP登入頁面。
 

@@ -18,6 +18,24 @@ summary: 瞭解BlueXP（前身為Cloud Manager）管理功能的新功能：NetA
 
 
 
+== 2022年12月4日
+
+
+
+=== 連接器3.9.24
+
+* 我們已將BlueXP主控台的URL更新為 https://console.bluexp.netapp.com[]
+* Google Cloud Israel地區現在支援Connector。
+* 此版本的Connector也包含Cloud Volumes ONTAP 了加強功能的功能、以及內部ONTAP 的叢集增強功能。
++
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#4-december-2022["深入瞭Cloud Volumes ONTAP 解功能強化功能"^]
+** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/whats-new.html#4-december-2022["深入瞭ONTAP 解內部叢集增強功能"^]
+
+
+
+
+
+
 == 2022年11月6日
 
 

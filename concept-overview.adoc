@@ -69,7 +69,7 @@ BlueXP包含與BlueXP網站整合的SaaS型介面、以及可管理Cloud Volumes
 
 === 軟體即服務
 
-可透過存取BlueXP https://cloudmanager.netapp.com["SaaS 型使用者介面"^] 和 API 。這項SaaS體驗可讓您在最新功能發佈時自動存取、並在NetApp帳戶和連接器之間輕鬆切換。
+可透過存取BlueXP https://console.bluexp.netapp.com["SaaS 型使用者介面"^] 和 API 。這項SaaS體驗可讓您在最新功能發佈時自動存取、並在NetApp帳戶和連接器之間輕鬆切換。
 
 
 TIP: 如果您的作業環境無法存取傳出的網際網路、您可以在該環境中安裝Connector軟體、並存取Connector上的本機使用者介面。 link:concept-connectors.html["深入瞭解連接器"]。

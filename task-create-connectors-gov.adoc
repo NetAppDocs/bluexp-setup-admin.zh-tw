@@ -29,4 +29,4 @@ summary: 如果您是在政府區域營運、則必須從雲端供應商的市�
 
 部署Connector之後、您可以開啟網頁瀏覽器並連線至Connector執行個體的IP位址、以存取BlueXP： https://_ipaddress_[]
 
-由於連接器部署在政府區域、因此無法從存取 https://cloudmanager.netapp.com[]。
+由於連接器部署在政府區域、因此無法從存取 https://console.bluexp.netapp.com[]。

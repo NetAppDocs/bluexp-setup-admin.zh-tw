@@ -14,7 +14,6 @@
   <block id="b59e275c4ece2430dff67db92845ab7f" category="list-text">從網頁瀏覽器存取多個端點的網路</block>
   <block id="b8724da75fb917e992576b17378e66b3" category="cell">端點</block>
   <block id="261addf78c7b2c961032b3dd08ba0b1f" category="cell">目的</block>
-  <block id="6c30ad01491981c7929f0130c0fa3b94" category="cell">\http://cloudmanager.netapp.com</block>
   <block id="0538fa74f685054f07476ce4440d3ce4" category="cell">使用SaaS UI時、您的網頁瀏覽器會連絡此URL。</block>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="doc"></block>
   <block id="b3f4a5004c2a10094d2af8bd28589cbf" category="paragraph">AWS 服務（ amazonaws.com):</block>
@@ -2023,7 +2022,6 @@
   <block id="07910e9ec98e7a02ee5b24f85cc660d2" category="list-text">*選擇執行個體類型*：視區域可用度而定、請選擇其中一種支援的執行個體類型（建議使用T3.xlge）。</block>
   <block id="7de969f5ec8b28cd7687e32ca5c245bc" category="list-text">*設定執行個體詳細資料*：選取VPC和子網路、選擇您在步驟1中建立的IAM角色、啟用終止保護（建議）、並選擇符合您需求的任何其他組態選項。</block>
   <block id="ab055dd2454f72eae9c16179690384d6" category="paragraph">現在已安裝Connector、並使用您的NetApp帳戶進行設定。</block>
-  <block id="d4d1e4d7a1862b2f824535c50d2aef05" category="paragraph">由於連接器部署在政府區域、因此無法從存取<block ref="ed21e31bd71ab546f26978ff562b5c5d" category="inline-link-rx"></block>。</block>
   <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">支援登錄總覽</block>
   <block id="192054ad7601240a3e8be54cc5cc548e" category="paragraph">有兩種登錄形式可啟動支援服務權利：</block>
   <block id="55ff64467cd508971910145ab5d6b3b8" category="list-text">在Cloud Volumes ONTAP 雲端供應商的市場中註冊與訂閱相關的支援服務序號（這些序號為20位數909601xxxxxxxx序號）。</block>
@@ -2065,7 +2063,6 @@
   <block id="58e61369cd7221124732850e5e76afa5" category="list-text"><block ref="58e61369cd7221124732850e5e76afa5" category="inline-link-macro-rx"></block></block>
   <block id="ed735c903ed6cdbd695395bc4d404651" category="inline-link-macro">在您自己的Linux主機上安裝Connector</block>
   <block id="1dbe2aafec7f9c19eaf4c72558a8bc64" category="list-text"><block ref="1dbe2aafec7f9c19eaf4c72558a8bc64" category="inline-link-macro-rx"></block></block>
-  <block id="08bcb1ae91400f74899c5825a1f7973c" category="paragraph">而您應該從執行幾乎所有的工作<block ref="8f305b98f88a161e5a1e68aca36c2103" category="inline-link-rx"></block>、連接器上仍有本機使用者介面可供使用。如果您在無法存取網際網路的環境（例如政府區域）中安裝Connector、以及需要從Connector本身執行的幾項工作（而非SaaS介面）、則需要使用此介面：</block>
   <block id="654a986da1d7f49a7d2efc48def362d3" category="paragraph">請使用下列其中一個連結來檢視建立連接器的指示：</block>
   <block id="f6142793a7fc590c102faad49ea20e0e" category="inline-link">在Cloud Volumes ONTAP AWS C2S環境中建立連接器與功能</block>
   <block id="c9bea61d35e54e0303121feefa6c6e14" category="list-text"><block ref="c9bea61d35e54e0303121feefa6c6e14" category="inline-link-rx"></block></block>
@@ -2075,7 +2072,6 @@
   <block id="ab989208a01fcee6c888dec1f39482d9" category="cell">設定後端服務以在HA配對中分配流量。</block>
   <block id="739bf63a1a7b0a2e180e692ece9b9b11" category="cell">- compute.networks.updatePolicy</block>
   <block id="40601d6546f763ec088fee026a0da641" category="cell">將防火牆規則套用至HA配對的VPC和子網路。</block>
-  <block id="f61e4d929e921b5a3ae0bb6f78fe9b6c" category="cell">\https://*.cloudmanager.cloud.netapp.com \https://cloudmanager.cloud.netapp.com</block>
   <block id="2e984b55a3264399d03f7fc4df06df78" category="list-title">span class="image"&gt;&lt;imgrc=<block ref="0c3becc25d95e48b9ca863002a042824" category="inline-link-rx"></block> alt="1"&gt;&lt;/span&gt;設定權限</block>
   <block id="6e1d3688abed116ca1fcde1dce3ec4f4" category="paragraph"><block ref="68a9c9d924aeef1d7ada39f0d3540b49" category="inline-xref-macro-rx"></block>。</block>
   <block id="d52202757c4d92357913471e220a772a" category="paragraph"><block ref="f796454a6004e39753971668625d9d8d" category="inline-xref-macro-rx"></block>。</block>
@@ -2137,7 +2133,6 @@
   <block id="f2e48283adc0e8071ea35676528cd30b" category="paragraph">您可以使用連接器搭配多個 NetApp 雲端資料服務。例如、如果您已經有一個Connector for BlueXP、則可以在設定雲端分層服務時加以選取。</block>
   <block id="56d806d8894cb6f15ba1fb66e66b3cf3" category="paragraph">當您從雲端供應商的市場訂閱BlueXP時、系統會將您重新導向至BlueXP網站、您需要在其中儲存訂閱內容、並將其與特定帳戶建立關聯。</block>
   <block id="1dfe6f08cb8e712d8c99300a0890f211" category="paragraph">以下是另一個使用兩個獨立NetApp帳戶顯示最高層級的多租戶共享的範例。例如、服務供應商可能在一個帳戶中使用BlueXP來為客戶提供服務、而使用另一個帳戶來為其中一個業務單位提供災難恢復。</block>
-  <block id="8ef3c2a31536595615b3e212550158c6" category="summary">您可以前往、透過SaaS型使用者介面存取BlueXP介面<block ref="ed21e31bd71ab546f26978ff562b5c5d" category="inline-link-rx"></block>。</block>
   <block id="55553d1b65f45713caedcf9f0b1a6042" category="doc">登入BlueXP</block>
   <block id="7f7cb82a5dd812c3a52b46966d21ac40" category="paragraph">您可以透過SaaS型使用者介面、從網頁瀏覽器存取BlueXP。</block>
   <block id="8fa7e084836ae35d976f6f572a47e804" category="paragraph">如果您是從政府區域或沒有外傳網際網路存取權的網站存取BlueXP、則必須登入在連接器本機執行的BlueXP使用者介面。 <block ref="2061c033ff26af000ddf0a91359fc3b2" category="inline-link-macro-rx"></block>。</block>
@@ -2150,7 +2145,6 @@
   <block id="2611f7eb65cf3359137dafdfb95483ae" category="paragraph">此選項支援聯盟連線。您可以使用單一登入、從公司目錄（聯盟身分識別）使用認證登入。若要深入瞭解、請前往<block ref="4281905c7145d3afc1e5083b48ba043f" category="inline-link-rx"></block> 然後按一下*登入選項*。</block>
   <block id="dcc1672f59b5dd25758f8f44fe7f04cd" category="paragraph">每次登入時、您都必須使用第一次登入時所選的相同選項。</block>
   <block id="5975f7e9036c78e6217b16f295f0ca75" category="inline-link">BlueXP主控台</block>
-  <block id="fb6337cedd5ac080f746cd67bc7dda2d" category="list-text">開啟網頁瀏覽器、前往<block ref="943471ca2111af739c9385f70f32e13e" category="inline-link-rx"></block></block>
   <block id="b6f593055aa7e0982c84cef15bca2d4a" category="paragraph">此時會顯示NetApp BlueXP登入頁面。</block>
   <block id="2d9d1cf392d46cf284c202c45ca6710f" category="inline-image-macro">BlueXP的登入頁面。</block>
   <block id="d1458c5f683deb76200e00ee241652dd" category="paragraph"><block ref="d1458c5f683deb76200e00ee241652dd" category="inline-image-macro-rx" type="image"></block></block>
@@ -2211,7 +2205,6 @@
   <block id="36e6435fcbb8fc1cb1db7a6b55e336f8" category="cell">您的網頁瀏覽器會連線至這些端點、以便透過BlueXP進行集中式使用者驗證。</block>
   <block id="9307a4b1840270d6e9b32ec060d29760" category="paragraph">在大多數情況下、您應該使用SaaS UI中的BlueXP、但是 <block ref="9a2b10ef390e45d8a69a5a0f7a3a563a" category="inline-link-macro-rx"></block>然後您必須從網頁瀏覽器輸入主機的IP位址。</block>
   <block id="ea7babb79350418e9437972e245c5e46" category="list-text">登入BlueXP之後、BlueXP帳戶管理員需要在雲端供應商或內部部署網路中部署_Connector_。Connector讓BlueXP能夠管理公有雲環境中的資源和程序。請注意、大多數的服務和功能都需要連接器、但並非所有的服務和功能都需要連接器。 <block ref="fc0525c57d574c03610221b6665bff18" category="inline-link-macro-rx"></block>。</block>
-  <block id="23486ca53d499245ebae5460cf6d10ad" category="cell">在BlueXP中提供SaaS功能與服務。</block>
   <block id="8a4762cb5d44b37be8c41c99aa8c77d1" category="list-text">如果您選擇在自己的Linux主機上手動安裝Connector（而非直接從BlueXP介面安裝）、則Connector的安裝程式在安裝程序期間需要存取下列端點：</block>
   <block id="b9288d749f3ef53ccabb6e5c7c7bc85f" category="list-text">您需要擁有權限的帳戶、以便直接從BlueXP在雲端供應商中部署Connector。</block>
   <block id="aa752bf0c5f36649ca4bd7a513728abe" category="list-text">建立連接器時、請為BlueXP提供IAM角色的ARN或IAM使用者的AWS存取金鑰和秘密金鑰。</block>
@@ -2282,13 +2275,11 @@
   <block id="6093ab906e54fd597a1a62a0db8d90f7" category="paragraph">設定您的NetApp帳戶、讓使用者能夠存取BlueXP、並存取工作區中的工作環境。只要新增單一使用者或新增多個使用者和工作區即可。</block>
   <block id="03aab61534d935d87fc142bbb92ca4bf" category="paragraph">在BlueXP中、工作區可讓您將一組工作環境與其他工作環境和其他使用者隔離。例如、您可以建立兩個工作區、並將個別使用者與每個工作區建立關聯。</block>
   <block id="9b9477e579c3b44dd623d5a6e1ea8d78" category="inline-link">藍圖</block>
-  <block id="26bf7b429dca50c9ed066fcbc0fe8752" category="list-text">從上而下<block ref="8e669678e56bbb701f8cd491b6c6b81c" category="inline-link-rx"></block>，單擊* Account（帳戶）*下拉列表。</block>
   <block id="81da0bcfa753963ae97ffa63aa2045d3" category="inline-image-macro">在BlueXP上方橫幅中顯示「帳戶設定」選項的快照。</block>
   <block id="0fad82c7de53b27425f25cc82c5a54c6" category="paragraph"><block ref="0fad82c7de53b27425f25cc82c5a54c6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9d625af408216ec8b44821662bdd328d" category="paragraph">將使用者與您的NetApp帳戶建立關聯、讓這些使用者可以在BlueXP中建立及管理工作環境。</block>
   <block id="2cfe7b7de2a1df6b585bf1321d37fb8a" category="inline-link">NetApp BlueXP網站</block>
   <block id="cbf27ab4b2fb03424fe3f78612571480" category="list-text">如果使用者尚未這麼做、請要求使用者前往<block ref="fdb05c7a4b59f57e3479646cd3510e5d" category="inline-link-rx"></block> 並註冊。</block>
-  <block id="d67c077f331b19ada2266abd91f9bd27" category="list-text">從上而下<block ref="8e669678e56bbb701f8cd491b6c6b81c" category="inline-link-rx"></block>，單擊* Account（帳戶）*下拉列表並單擊* Manage Account*（管理帳戶）。</block>
   <block id="bc18148d37d0ca0b48c3b71b47ecdda6" category="list-text">*帳戶管理*：可在BlueXP中執行任何動作。</block>
   <block id="4135f01e4f5b8fbe925160e658987f66" category="paragraph">使用者應從NetApp BlueXP網站收到一封名為「Account Association（帳戶關聯）」的電子郵件。 電子郵件中包含存取BlueXP所需的資訊。</block>
   <block id="7670225c06c94037222b05dfdcf81f35" category="list-text">從BlueXP頂端、按一下「*帳戶*」下拉式清單、然後按一下「*管理帳戶*」。</block>
@@ -2330,7 +2321,6 @@
   <block id="0e1b45b3594b4c3ece1911fc871e9fe5" category="list-text">連接器可搭配HDD或SSD磁碟以最佳方式執行。</block>
   <block id="2bf1f619d2f890a36c270d8592ed2afc" category="inline-image-macro">顯示「設定藍圖XP」畫面的快照、可讓您選取NetApp帳戶並命名系統。</block>
   <block id="0d815f71e04fd373dfef85f5c2a1e6b5" category="paragraph"><block ref="0d815f71e04fd373dfef85f5c2a1e6b5" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="a5b94789eb6c3af156b16a2f24662b9f" category="paragraph">如果Connector位於Azure商業區域、請開啟網頁瀏覽器並前往<block ref="ed21e31bd71ab546f26978ff562b5c5d" category="inline-link-rx"></block> 開始使用Connector with BlueXP。</block>
   <block id="f13f9c900e17fbd7423292fc7d7a65ef" category="paragraph">如果連接器位於Azure政府區域、您可以開啟網頁瀏覽器並連線至連接器執行個體的IP位址、以使用BlueXP：<block ref="e3a51e84cbbae6e45a585984f3be3fd0" category="inline-link-rx"></block></block>
   <block id="32d2a3c1d987b586f424356144271b0e" category="paragraph">現在您應該有一個名為BlueXP運算子的自訂角色、可以指派給連接器虛擬機器。</block>
   <block id="54b14f07c36bed41295c2086ea238332" category="list-text">在「*角色*」索引標籤中、選取「*藍圖XP操作員*」角色、然後按一下「*下一步*」。</block>
@@ -2423,7 +2413,6 @@
   <block id="231aa5fbc2bffd88a9700bb68c45554e" category="paragraph">在大多數的工作中、BlueXP會提示您在雲端網路中部署Connector、這會導致您的雲端供應商收取運算執行個體和相關儲存設備的費用。您可以選擇在內部環境中執行 Connector 軟體。</block>
   <block id="a2513e72ab3ae9830fac174977d58572" category="section-title">藍圖的運作方式</block>
   <block id="1d30e47d408ebb4c330e626c7ae44937" category="paragraph">BlueXP包含與BlueXP網站整合的SaaS型介面、以及可管理Cloud Volumes ONTAP 各種效益和其他雲端服務的Connectors。</block>
-  <block id="efbb486f27fc185326b00038cd678e5e" category="paragraph">可透過存取BlueXP<block ref="351552bfdbe47499e4ca9055bf0702b8" category="inline-link-rx"></block> 和 API 。這項SaaS體驗可讓您在最新功能發佈時自動存取、並在NetApp帳戶和連接器之間輕鬆切換。</block>
   <block id="8ff6e794637981d1636a228e2fd99e19" category="section-title">BlueXP網站</block>
   <block id="ccf2bc5e97e215334aa616cd5aae2339" category="inline-link">BlueXP網站</block>
   <block id="4e05b56c4de538910ffb2fd4803fc8fe" category="paragraph"><block ref="1d556453952dc634fd34acc203a3b356" category="inline-link-rx"></block> 提供集中位置以供存取和管理<block ref="f8857ad38375ecb04836e382f93d702b" category="inline-link-rx"></block>。透過集中式使用者驗證、您可以使用相同的認證資料集來存取BlueXP和Cloud Insights 其他雲端服務、例如：</block>
@@ -2539,7 +2528,6 @@
   <block id="7c36ac5a8d104c08bd1c9905b4e5d437" category="paragraph">這些步驟說明如何從EC2主控台啟動執行個體、因為主控台可讓您將IAM角色附加至連接器執行個體。這無法使用 * 從網站啟動 * 動作。</block>
   <block id="5fa511356078e407d467aeb21afa8311" category="list-text">*應用程式與作業系統映像*：跳過本節。已選取連接器AMI。</block>
   <block id="4edef16b6e293b608ed729ff1b418a4a" category="list-text">*進階詳細資料*：在* IAM執行個體設定檔*下、選擇您在步驟1中建立的IAM角色。</block>
-  <block id="ec19230ae1897047839e426fa2215661" category="list-text">開啟網頁瀏覽器並前往<block ref="ed21e31bd71ab546f26978ff562b5c5d" category="inline-link-rx"></block> 開始使用Connector with BlueXP。</block>
   <block id="a03f103fcf1dd2ef39b7a65518ba20f0" category="paragraph">若要在AWS政府區域中部署Connector、您需要前往EC2服務、並從AWS Marketplace選取BlueXP產品。</block>
   <block id="ed9be66b9d8a87806a591a3395f501d5" category="list-text">前往AWS Marketplace的BlueXP產品。</block>
   <block id="19afccead98b1836658110442ef9c5e6" category="list-text">搜尋BlueXP並選取產品項目。</block>
@@ -2798,4 +2786,21 @@
   <block id="e9c8bdcc91d25115e46e6c43d23fe563" category="paragraph">雲端備份和雲端分層需要此權限。</block>
   <block id="175e0c32b0d1e82352dde70ca6ad31a2" category="paragraph">雲端備份需要此權限。</block>
   <block id="1ff61a19534f16f8c2b0aa752b13fb0a" category="paragraph">下列權限已從Json原則中移除、因為不再需要這些權限：</block>
+  <block id="ddfa1ffd911b64694fdfa28d37b4c1be" category="paragraph">可透過存取BlueXP<block ref="f866435f858a421b8b6b65903cff47d2" category="inline-link-rx"></block> 和 API 。這項SaaS體驗可讓您在最新功能發佈時自動存取、並在NetApp帳戶和連接器之間輕鬆切換。</block>
+  <block id="03275fa7fd8487800900fe5ed21b50b4" category="cell">\https://console.bluexp.netapp.com</block>
+  <block id="5dd0aa558dcec51bcf3ae2e8f37b895c" category="cell">\https://*.api.bluexp.netapp.com \https://api.bluexp.netapp.com \https://*.cloudmanager.cloud.netapp.com \https://cloudmanager.cloud.netapp.com</block>
+  <block id="cd93b7c43c5393a3dcd4f5f4c7da7a7f" category="cell">在BlueXP中提供SaaS功能與服務。附註：Connector目前正在聯絡「cloudmanager.cloud.netapp.com"」、但即將推出的版本將會開始聯絡「api.bluexp.netapp.com"」。</block>
+  <block id="edd4bfb900f4f2fc34b4612b22b6c5f1" category="list-text">開啟網頁瀏覽器並前往<block ref="4d2f46e46f2e8a8f33bc708599ac780c" category="inline-link-rx"></block> 開始使用Connector with BlueXP。</block>
+  <block id="e23437eeb65551eb4b29d1358abc9577" category="paragraph">由於連接器部署在政府區域、因此無法從存取<block ref="4d2f46e46f2e8a8f33bc708599ac780c" category="inline-link-rx"></block>。</block>
+  <block id="3a9d5bd356ec8e4fc31c11150128b7ac" category="list-text">開啟網頁瀏覽器、前往<block ref="a47e12f4350b725a128875f50f785a3b" category="inline-link-rx"></block></block>
+  <block id="c82f9c99ecc4a0e28a5ffb0460ebfe3a" category="paragraph">如果Connector位於Azure商業區域、請開啟網頁瀏覽器並前往<block ref="4d2f46e46f2e8a8f33bc708599ac780c" category="inline-link-rx"></block> 開始使用Connector with BlueXP。</block>
+  <block id="d926c3415252261ac99f0db859a4d7b3" category="list-text">從上而下<block ref="aee4448e61ada2b661b72a7b3097a0e5" category="inline-link-rx"></block>，單擊* Account（帳戶）*下拉列表。</block>
+  <block id="ea9ad4803fb503de0112b065d0f6d701" category="list-text">從上而下<block ref="aee4448e61ada2b661b72a7b3097a0e5" category="inline-link-rx"></block>，單擊* Account（帳戶）*下拉列表並單擊* Manage Account*（管理帳戶）。</block>
+  <block id="5bdc787be44f3f39a2c12fd479233dd0" category="paragraph">而您應該從執行幾乎所有的工作<block ref="aa5e73b15e0c62682878b20d8949bc7d" category="inline-link-rx"></block>、連接器上仍有本機使用者介面可供使用。如果您在無法存取網際網路的環境（例如政府區域）中安裝Connector、以及需要從Connector本身執行的幾項工作（而非SaaS介面）、則需要使用此介面：</block>
+  <block id="83ec139c80a3d5b2f11f1a94eed47cd2" category="section-title">2022年12月4日</block>
+  <block id="9a37fbeb5352e14f2a53fe349c60ad58" category="section-title">連接器3.9.24</block>
+  <block id="609db1dbd04bb2ee742cb4078546018c" category="list-text">我們已將BlueXP主控台的URL更新為<block ref="d4d03fd3c2a1ab003ebd5cf52ee8df58" category="inline-link-rx"></block></block>
+  <block id="4a11791a9bd4070a9cb5e2e709d06351" category="list-text">Google Cloud Israel地區現在支援Connector。</block>
+  <block id="242cf97b6ce4408dde25722d6b0e37f9" category="list-text"><block ref="242cf97b6ce4408dde25722d6b0e37f9" category="inline-link-rx"></block></block>
+  <block id="4703fae8488338a7ad69a5cd4347caf3" category="list-text"><block ref="4703fae8488338a7ad69a5cd4347caf3" category="inline-link-rx"></block></block>
 </blocks>
