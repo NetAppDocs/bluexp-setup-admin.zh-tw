@@ -14,11 +14,13 @@ summary: BlueXP帳戶管理員必須先部署Connector、才能使用大多數�
 
 
 [role="lead"]
-BlueXP帳戶管理員必須先部署_Connector_、才能使用大多數的BlueXP功能。Connector讓BlueXP能夠管理公有雲環境中的資源和程序。 link:concept-connectors.html["瞭解何時需要連接器"]。
+BlueXP帳戶管理員必須先部署_Connector_、才能使用大多數的BlueXP功能。Connector讓BlueXP能夠管理公有雲環境中的資源和程序。
 
-本頁說明如何直接從BlueXP在AWS中建立連接器。 link:concept-connectors.html#how-to-create-a-connector["瞭解部署Connector的其他方法"]。
+這些步驟說明如何直接從BlueXP SaaS網站在AWS商業區域建立連接器。
 
-這些步驟必須由具有「帳戶管理」角色的使用者完成。工作區管理員無法建立 Connector 。
+* link:task-create-connectors-gov.html["瞭解如何在政府區域中部署Connector"]
+* link:concept-connectors.html#how-to-create-a-connector["瞭解部署Connector的其他方法"]
+
 
 
 

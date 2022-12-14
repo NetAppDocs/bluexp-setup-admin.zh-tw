@@ -68,9 +68,6 @@ https://_ipaddress_[]
 link:concept-netapp-accounts.html["瞭解NetApp客戶"]。
 
 .. 輸入系統名稱。
-+
-image:screenshot_set_up_cloud_manager.gif["顯示「設定藍圖XP」畫面的快照、可讓您選取NetApp帳戶並命名系統。"]
-
 
 
 

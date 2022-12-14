@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-installing-linux.html 
 keywords: install connector, manually install connector, install connector software, installation, installing, linux, installer, software, on prem, on-prem, silent, configurations, ec2, vm, ports, ram, operating system, os, host, requirement, requirements, hypervisor, disk, space, mysql, centos, rhel, red hat, cpu, disk space 
-summary: 建立Connector最常見的方法是直接從BlueXP或雲端供應商的市場建立Connector。但您可以選擇在網路或雲端的現有 Linux 主機上下載並安裝 Connector 軟體。 
+summary: 建立Connector最常見的方法是直接從BlueXP或雲端供應商的市場建立Connector。但您可以選擇在網路或雲端的現有 Linux 主機上下載並安裝 Connector 軟體。這些步驟僅適用於可存取網際網路的主機。 
 ---
 = 在現有的Linux主機上安裝連接器、該主機可存取網際網路
 :hardbreaks:
@@ -62,16 +62,20 @@ Red Hat Enterprise Linux 系統必須在 Red Hat 訂購管理中註冊。如果�
 Hypervisor:: 通過認證可執行 CentOS 或 Red Hat Enterprise Linux 的裸機或託管 Hypervisorhttps://access.redhat.com/certified-hypervisors["Red Hat 解決方案：哪些 Hypervisor 已通過認證、可執行 Red Hat Enterprise Linux ？"^]
 /opt 中的磁碟空間:: 必須有100 GiB的可用空間
 /var.中的磁碟空間:: 必須提供20 GiB的空間
-Docker引擎:: 安裝Connector之前、主機上需要Docker Engine 19版或更新版本。 https://docs.docker.com/engine/install/["檢視安裝指示"^]
+Docker引擎:: 安裝Connector之前、主機上必須安裝Docker Engine 19.3.1版或更新版本。 https://docs.docker.com/engine/install/["檢視安裝指示"^]
 傳出網際網路存取:: Connector安裝程式必須在安裝過程中存取下列URL：
 +
 --
-* \https://s3.amazonaws.com/aws-cli/awscli-bundle.zip
-* \https://*.blob.core.windows.net或\https://hub.docker.com
-+
+* \https://support.netapp.com
+* \https://mysupport.netapp.com
+* \https://cloudmanager.cloud.netapp.com/tenancy
+* \https://stream.cloudmanager.cloud.netapp.com
+* \https://cloudmanagerinfraprod.azurecr.io
+* \https://production-artifacts.cloudmanager.cloud.netapp.com
+* \https://*.blob.core.windows.net
+
+
 主機可能會在安裝期間嘗試更新作業系統套件。主機可聯絡不同的鏡射站台、以取得這些 OS 套件。
-
-
 
 --
 
@@ -82,8 +86,14 @@ Docker引擎:: 安裝Connector之前、主機上需要Docker Engine 19版或更�
 
 驗證是否有支援的Linux主機之後、您就可以取得Connector軟體、然後再進行安裝。
 
-.必要權限
-需要root權限才能安裝Connector。
+.您需要的產品
+* 安裝Connector的root權限。
+* Proxy伺服器的詳細資料、如果需要Proxy才能從Connector存取網際網路。
++
+您可以選擇在安裝後設定Proxy伺服器、但需要重新啟動Connector。
+
+* 如果Proxy伺服器使用HTTPS、則為CA簽署的憑證。
+
 
 .關於這項工作
 * 安裝會安裝 AWS 命令列工具（ awscli ）、以啟用 NetApp 支援的還原程序。
@@ -102,26 +112,56 @@ sudo systemctl enable docker && sudo systemctl start docker
 ----
 . 從下載Connector軟體 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支援網站"^]，然後將其複製到 Linux 主機。
 +
-如需將檔案連線及複製到 AWS 中 EC2 執行個體的說明、請參閱 http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html["AWS 文件：使用 SSH 連線至 Linux 執行個體"^]。
+您應該下載連接器安裝程式、以便在網路或雲端上使用。
 
 . 指派執行指令碼的權限。
 +
 [source, cli]
 ----
-chmod +x OnCommandCloudManager-V3.9.23.sh
+chmod +x OnCommandCloudManager-V3.9.23
 ----
 . 執行安裝指令碼。
 +
-如果您有Proxy伺服器、則必須輸入命令參數、如下所示。安裝程式不會提示您提供Proxy的相關資訊。
+[source, cli]
+----
+ ./OnCommandCloudManager-V3.9.23 --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
+----
++
+-Proxy和--cacert參數是可選的。如果您有Proxy伺服器、則必須輸入所示的參數。安裝程式不會提示您提供Proxy的相關資訊。
+
++
+以下是使用兩個選用參數的命令範例：
 
 +
 [source, cli]
 ----
- ./OnCommandCloudManager-V3.9.23.sh --proxy http://occm:password@10.0.0.30:9090/ --cacert /root/rootca.pem
+ ./OnCommandCloudManager-V3.9.23 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
 ----
 +
+-Proxy會使用下列其中一種格式、將Connector設定為使用HTTP或HTTPS Proxy伺服器：
+
++
+** \http://address:port
+** \http://username:password@address:port
+** \https://address:port
+** \https://username:password@address:port
+
+
++
+-cacert指定用於連接器與Proxy伺服器之間HTTPS存取的CA簽署憑證。僅當您指定HTTPS Proxy伺服器時、才需要此參數。
+
+
+
+.結果
 現在已安裝Connector。安裝結束時、如果您指定Proxy伺服器、Connector服務（occm）會重新啟動兩次。
 
+
+
+== 設定Connector
+
+註冊或登入、然後設定Connector以使用您的帳戶。
+
+.步驟
 . 開啟網頁瀏覽器並輸入下列 URL ：
 +
 https://_ipaddress_[]
@@ -145,9 +185,6 @@ _ipaddress_ 可以是 localhost 、私有 IP 位址或公有 IP 位址、視主�
 link:concept-netapp-accounts.html["瞭解NetApp客戶"]。
 
 .. 輸入系統名稱。
-+
-image:screenshot_set_up_cloud_manager.gif["顯示設定畫面的快照、可讓您選取NetApp帳戶並命名系統。"]
-
 
 
 
@@ -160,5 +197,5 @@ image:screenshot_set_up_cloud_manager.gif["顯示設定畫面的快照、可讓�
 
 * AWS ： link:task-adding-aws-accounts.html["設定AWS帳戶、然後將其新增至BlueXP"]
 * Azure ： link:task-adding-azure-accounts.html["設定Azure帳戶、然後將其新增至BlueXP"]
-* Google Cloud：請參閱上述步驟7
+* Google Cloud：請參閱上述步驟3
 
