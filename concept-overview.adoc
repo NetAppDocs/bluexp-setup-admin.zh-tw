@@ -23,29 +23,40 @@ BlueXP（前身為Cloud Manager）可讓IT專家和雲端架構設計師使用Ne
 BlueXP是企業級SaaS型管理平台、無論資料位於何處、都能讓您隨時掌控資料。
 
 * 設定與使用 https://cloud.netapp.com/ontap-cloud["Cloud Volumes ONTAP"^] 實現跨雲端的高效率多重傳輸協定資料管理。
-* 設定及使用檔案儲存服務：
+* 設定及使用雲端檔案儲存服務：
 +
-** https://cloud.netapp.com/azure-netapp-files["Azure NetApp Files"^]
-** https://cloud.netapp.com/fsx-for-ontap["Amazon FSX for ONTAP Sf"^]
-** https://cloud.netapp.com/cloud-volumes-service-for-aws["AWS 適用的 Cloud Volumes Service"^]
-** https://cloud.netapp.com/cloud-volumes-service-for-gcp["適用於 Google Cloud Cloud Volumes Service"^]
+** https://bluexp.netapp.com/azure-netapp-files["Azure NetApp Files"^]
+** https://bluexp.netapp.com/fsx-for-ontap["Amazon FSX for ONTAP Sf"^]
+** https://bluexp.netapp.com/cloud-volumes-service-for-gcp["適用於 Google Cloud Cloud Volumes Service"^]
 
 
-* 建立 ONTAP 磁碟區、備份至雲端、在混合雲中複寫資料、以及將冷資料分層至雲端、藉此探索及管理內部的支援功能。
-* 啟用整合式雲端服務、例如：
+* 探索與管理 https://bluexp.netapp.com/netapp-on-premises["內部部署儲存設備"^]
 +
-** https://cloud.netapp.com/cloud-compliance["雲端資料感測"^]
-** https://cloud.netapp.com/cloud-insights["Cloud Insights"^]
-** https://cloud.netapp.com/cloud-backup-service["雲端備份"^]
+** E系列系統
+** 叢集 ONTAP
+** 系統StorageGRID
+
+
+* 使用BlueXP的資料移動性、資料保護及資料分析與控制服務：
++
+** https://bluexp.netapp.com/cloud-backup["雲端備份"^]
+** https://bluexp.netapp.com/netapp-cloud-data-sense["雲端資料感測"^]
+** https://bluexp.netapp.com/cloud-sync-service["Cloud Sync"^]
+** https://bluexp.netapp.com/cloud-tiering["雲端分層"^]
+** https://bluexp.netapp.com/digital-advisor["數位顧問"^]
+** https://bluexp.netapp.com/global-file-cache["全域檔案快取"^]
+** https://bluexp.netapp.com/k8s["Kubernetes"^]
+** https://bluexp.netapp.com/ransomware-protection["勒索軟體保護"^]
+** https://bluexp.netapp.com/replication["複寫"^]
 
 
 
 
-https://cloud.netapp.com/cloud-manager["深入瞭解BlueXP"^]。
+https://cloud.netapp.com/cloud-manager["深入瞭解BlueXP"^]
 
 
 
-== 支援的物件儲存供應商
+== 支援的雲端供應商
 
 BlueXP可讓您管理雲端儲存設備、並在Amazon Web Services、Microsoft Azure及Google Cloud中使用雲端服務。
 
@@ -53,11 +64,7 @@ BlueXP可讓您管理雲端儲存設備、並在Amazon Web Services、Microsoft 
 
 == 成本
 
-BlueXP軟體是NetApp免費提供的。
-
-在大多數的工作中、BlueXP會提示您在雲端網路中部署Connector、這會導致您的雲端供應商收取運算執行個體和相關儲存設備的費用。您可以選擇在內部環境中執行 Connector 軟體。
-
-link:reference-connector-default-config.html["瞭解連接器的預設組態"]。
+BlueXP的定價取決於您計畫使用的服務。 https://bluexp.netapp.com/pricing["瞭解BlueXP定價"^]。
 
 
 

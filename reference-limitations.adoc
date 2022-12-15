@@ -34,14 +34,6 @@ BlueXP部署連接器時、會有兩個介面、其中IP位址介於172.17.0.0/1
 
 
 
-=== 僅支援HTTP Proxy伺服器
-
-如果您的企業原則要求您使用Proxy伺服器來進行所有的HTTP通訊至網際網路、則必須設定連接器以使用該HTTP Proxy伺服器。Proxy 伺服器可以位於雲端或網路中。
-
-BlueXP不支援在連接器上使用HTTPS Proxy。
-
-
-
 === 不支援SSL解密
 
 BlueXP不支援啟用SSL解密的防火牆組態。如果啟用SSL解密、則錯誤訊息會顯示在BlueXP中、而Connector執行個體則顯示為非作用中。
@@ -83,21 +75,3 @@ Connector VM不支援協力廠商代理程式或VM擴充。
 請注意、這些地區僅支援Cloud Volumes ONTAP 的服務包括：功能完善、雲端備份、雲端資料認證及複寫。政府區域不支援其他NetApp服務。
 
 link:task-managing-connectors.html#access-the-local-ui["瞭解如何存取Connector上的本機UI"]。
-
-
-
-== 市場限制
-
-
-
-=== Azure和Google Cloud合作夥伴不提供隨用隨付功能
-
-如果您是Microsoft Cloud Solution Provider（CSP）合作夥伴或Google Cloud合作夥伴、則無法使用NetApp隨用隨付訂閱。您必須購買授權、並以BYOL授權部署NetApp雲端解決方案。
-
-下列NetApp雲端服務不提供隨用隨付訂閱：
-
-* Cloud Volumes ONTAP
-* 雲端分層
-* 雲端備份
-* 雲端資料感測
-

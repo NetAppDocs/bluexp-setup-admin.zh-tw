@@ -16,12 +16,14 @@ summary: 現在您已經登入並設定了BlueXP、使用者就能開始建立�
 [role="lead"]
 現在您已經登入並設定了BlueXP、使用者就能開始建立及探索工作環境。
 
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-aws.html["開始使用 Cloud Volumes ONTAP 適用於 AWS 的解決方法"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-azure.html["立即開始使用 Cloud Volumes ONTAP 適用於 Azure 的解決方法"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-gcp.html["立即開始使用 Cloud Volumes ONTAP 適用於 Google Cloud 的解決方案"^]
-* https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["設定 Azure NetApp Files 功能"^]
-* https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/start/task-getting-started-fsx.html["設定Amazon FSXfor ONTAP Sfor Sfor"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-service-aws/task-manage-cvs-aws.html["設定 Cloud Volumes Service AWS 的功能"^]
-* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["探索內部部署 ONTAP 的叢集"^]
-* link:task-viewing-amazon-s3.html["探索您的 Amazon S3 儲存庫"]
+* https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["Azure NetApp Files"^]
+* https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/start/task-getting-started-fsx.html["Amazon FSX for ONTAP Sf"^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-aws.html["AWS 適用的 Cloud Volumes ONTAP"^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-azure.html["適用於 Azure Cloud Volumes ONTAP"^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-gcp.html["適用於 Google Cloud Cloud Volumes ONTAP"^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-service-gcp/task-set-up-google-cloud.html["適用於 Google Cloud Cloud Volumes Service"^]
+* https://docs.netapp.com/us-en/cloud-manager-e-series/task-discover-e-series.html["E系列系統"^]
+* https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-quick-start.html["Kubernetes叢集"^]
+* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["內部部署 ONTAP 的叢集"^]
+* https://docs.netapp.com/us-en/cloud-manager-storagegrid/task-discover-storagegrid.html["系統StorageGRID"^]
 

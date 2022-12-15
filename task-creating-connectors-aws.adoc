@@ -198,15 +198,15 @@ AWS使用者現在擁有從BlueXP建立Connector所需的權限。當您收到Bl
 
 == 設定網路
 
-設定您的網路、讓 Connector 能夠管理公有雲環境中的資源和程序。除了連接器的VPC和子網路之外、您還需要確保符合下列需求。
+設定您的網路、讓 Connector 能夠管理公有雲環境中的資源和程序。除了連接器的虛擬網路和子網路之外、您還需要確保符合下列需求。
 
 
 
 === 連線至目標網路
 
-連接器需要網路連線至您所建立的工作環境類型以及您打算啟用的服務。
+連接器需要網路連線至您所建立的工作環境類型、以及您計畫啟用的服務。
 
-例如、如果您在公司網路中安裝Connector、則必須設定VPN連線至VPC、以便在其中啟動Cloud Volumes ONTAP 效益管理功能。
+例如、如果您在公司網路中安裝Connector、則必須設定VPN連線至虛擬網路、以便在其中啟動Cloud Volumes ONTAP 效益管理功能。
 
 
 
@@ -255,13 +255,13 @@ NOTE: Connector目前正在聯絡「cloudmanager.cloud.netapp.com"」、但即�
 
 === 安全性群組
 
-連接器沒有傳入流量、除非您啟動連接器、或連接器是AutoSupport 作為Proxy來接收資訊、否則連接器不會傳入。HTTP 和 HTTPS 可存取 link:concept-connectors.html#the-local-user-interface["本機 UI"]、在極少數情況下使用。只有當您需要連線至主機進行疑難排解時、才需要 SSH 。
+連接器沒有傳入流量、除非您啟動連接器、或連接器是AutoSupport 作為Proxy來接收資訊、否則連接器不會傳入。HTTP 和 HTTPS 可存取 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#the-local-user-interface["本機 UI"]、在極少數情況下使用。只有當您需要連線至主機進行疑難排解時、才需要 SSH 。
 
 
 
 === IP位址限制
 
-可能與172範圍內的IP位址發生衝突。 link:reference-limitations.html["深入瞭解此限制"]。
+可能與172範圍內的IP位址發生衝突。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-limitations.html["深入瞭解此限制"]。
 
 
 
