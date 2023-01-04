@@ -115,7 +115,7 @@ link:task-installing-linux.html["檢閱端點清單"]。
 
 * 除非您啟動連接器、否則不會有傳入流量進入連接器。
 +
-HTTP（80）和HTTPS（443）可存取本機UI、在極少數情況下使用。只有在需要連線至主機進行疑難排解時、才需要SSH（22）。
+HTTP（80）和HTTPS（443）可存取本機UI、在極少數情況下使用。只有在需要連線至主機進行疑難排解時、才需要SSH（22）。同時、如果您在Cloud Volumes ONTAP 無法連上傳出網際網路連線的子網路中部署支援系統、則必須透過連接埠3128進行傳入連線。
 
 
 
@@ -157,7 +157,7 @@ NOTE: 建立連接器的方法有許多種：您可以從建立連接器 link:ta
 | link:task-creating-connectors-gcp.html["按一下此處以檢視詳細步驟"]。 
 |===
 --
-個別服務的網路功能:: 完成設定之後、您就可以開始使用BlueXP提供的服務了。請注意、每項服務都有自己的網路需求。如需詳細資料、請參閱下列頁面。
+個別服務的網路功能:: 完成設定之後、您就可以開始使用BlueXP提供的服務。請注意、每項服務都有自己的網路需求。如需詳細資料、請參閱下列頁面。
 +
 --
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/reference-networking-aws.html["AWS 適用的 Cloud Volumes ONTAP"^]

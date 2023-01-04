@@ -32,7 +32,6 @@
   <block id="b809225d6fab27e3db8c3ac3e0a640c5" category="cell">\https://netapp-cloud-account.auth0.com \https://cdn.auth0.com \https://services.cloud.netapp.com</block>
   <block id="abc66ca669cfbd9be590874c67e8d7ef" category="cell">\https://widget.intercom.io</block>
   <block id="30fe214f0e8ecaf9b895a0137cad8ce9" category="cell">產品內對談可讓您與 NetApp 雲端專家交談。</block>
-  <block id="df5b9982059c29cbe72aa6342e6b47a8" category="cell">連接器的IP位址</block>
   <block id="0b83c97017787b7fdc5aaf31aaf0da59" category="inline-link-macro">如果您使用本機UI</block>
   <block id="4c2345ba2614b91eb52d47835c18de63" category="paragraph">視雲端供應商的連線能力而定、請使用指派給主機的私有IP或公有IP：</block>
   <block id="a106b753f18f3561086de4e9f0a06365" category="list-text">如果您有VPN並直接存取虛擬網路、則私有IP可正常運作</block>
@@ -48,7 +47,6 @@
   <block id="065880318484084e9bfe33ea9c6a8702" category="cell">升級Connector及其Docker元件。</block>
   <block id="35bd57a4dcfbd7a695f9beb7d01913c6" category="paragraph">主機可能會在安裝期間嘗試更新作業系統套件。主機可聯絡不同的鏡射站台、以取得這些 OS 套件。</block>
   <block id="11ffd2b7817530008f4bc1916d79b3d7" category="list-text">除非您啟動連接器、否則不會有傳入流量進入連接器。</block>
-  <block id="eedca72959934d39da95314809917fb3" category="paragraph">HTTP（80）和HTTPS（443）可存取本機UI、在極少數情況下使用。只有在需要連線至主機進行疑難排解時、才需要SSH（22）。</block>
   <block id="0d07862d67097acd517fe27c0de099d7" category="list-text">雲端供應商權限</block>
   <block id="cab27dc53edb571cac663ce2e16450dc" category="inline-link-macro">AWS Marketplace</block>
   <block id="21e74b3c28d006317f38a2bc8eb1da3b" category="inline-link-macro">Azure Marketplace</block>
@@ -454,7 +452,6 @@
   <block id="4d67fb715dceafe12fe6803426ac57b2" category="section-title">從可存取網際網路的主機解除安裝</block>
   <block id="e089c95fb359ddfa284cac5771dbcd57" category="paragraph">線上連接器包含一個解除安裝指令碼、可用來解除安裝軟體。</block>
   <block id="6a5be3e06b444aea04beccda3bc9e1d6" category="list-text">從 Linux 主機執行解除安裝指令碼：</block>
-  <block id="e2f6c6cb24129499bc001ae5e6c182d2" category="paragraph">* /opt/application/NetApp/cloudmanager/in/uninstall.sh [silined]*</block>
   <block id="0bb43692ecd0352eecc69c235e34d6f0" category="paragraph">_silon_ 執行指令碼時不會提示您確認。</block>
   <block id="8df713934e0916c402f7101820962747" category="section-title">從無法存取網際網路的主機解除安裝</block>
   <block id="aa03c0a49ae5be9aa71931d934887122" category="paragraph">如果您從NetApp支援網站下載Connector軟體、並將其安裝在無法存取網際網路的受限網路中、請使用這些命令。</block>
@@ -2125,13 +2122,11 @@
   <block id="1a6c8c62d26581c9cf35da7a9ecc4a79" category="cell">需要在Google Cloud中部署來自BlueXP的Connector。</block>
   <block id="8776ba6c1697445dc54ff1aab6a344fe" category="cell">需要更新NetApp 支援網站 驗證（NSS）認證或新增新的NSS認證至BlueXP。</block>
   <block id="36e6435fcbb8fc1cb1db7a6b55e336f8" category="cell">您的網頁瀏覽器會連線至這些端點、以便透過BlueXP進行集中式使用者驗證。</block>
-  <block id="9307a4b1840270d6e9b32ec060d29760" category="paragraph">在大多數情況下、您應該使用SaaS UI中的BlueXP、但是 <block ref="9a2b10ef390e45d8a69a5a0f7a3a563a" category="inline-link-macro-rx"></block>然後您必須從網頁瀏覽器輸入主機的IP位址。</block>
   <block id="ea7babb79350418e9437972e245c5e46" category="list-text">登入BlueXP之後、BlueXP帳戶管理員需要在雲端供應商或內部部署網路中部署_Connector_。Connector讓BlueXP能夠管理公有雲環境中的資源和程序。請注意、大多數的服務和功能都需要連接器、但並非所有的服務和功能都需要連接器。 <block ref="fc0525c57d574c03610221b6665bff18" category="inline-link-macro-rx"></block>。</block>
   <block id="b9288d749f3ef53ccabb6e5c7c7bc85f" category="list-text">您需要擁有權限的帳戶、以便直接從BlueXP在雲端供應商中部署Connector。</block>
   <block id="aa752bf0c5f36649ca4bd7a513728abe" category="list-text">建立連接器時、請為BlueXP提供IAM角色的ARN或IAM使用者的AWS存取金鑰和秘密金鑰。</block>
   <block id="52fa2650896e1ee785bcdceccae31e8d" category="list-text">將角色指派給將從BlueXP建立Connector的使用者。</block>
   <block id="0bf50bb8ad7c4e2c1492e97a5ed174ac" category="list-text">將該角色附加至將從BlueXP建立Connector的使用者。</block>
-  <block id="9248603a11ea2c749d830243087dd219" category="list-text">完成設定之後、您就可以開始使用BlueXP提供的服務了。請注意、每項服務都有自己的網路需求。如需詳細資料、請參閱下列頁面。</block>
   <block id="c9df4195a305212ffd7b56d24f67129d" category="summary">NetApp以多種方式提供對BlueXP的支援。我們全年無休提供豐富的免費自助支援選項、例如知識庫（KB）文章和社群論壇。您的支援註冊包括透過網路票證提供遠端技術支援。</block>
   <block id="7c5661ab6b39ee901cea00a6e7020a49" category="paragraph">NetApp以多種方式支援BlueXP及其雲端服務。我們全年無休提供豐富的免費自助支援選項、例如知識庫（KB）文章和社群論壇。您的支援註冊包括透過網路票證提供遠端技術支援。</block>
   <block id="9a3db1abe5491d0eb9bb5d125981356c" category="paragraph">請搜尋BlueXP知識庫、找出有助於疑難排解問題的文章。</block>
@@ -2816,4 +2811,13 @@
   <block id="92f468efd354e3cfaab0772943ec7f1d" category="list-text"><block ref="92f468efd354e3cfaab0772943ec7f1d" category="inline-link-rx"></block></block>
   <block id="412b379b83628f21da708ff096d131e5" category="list-text"><block ref="412b379b83628f21da708ff096d131e5" category="inline-link-rx"></block></block>
   <block id="a565303474e8a5c2bfe13bce52714f80" category="list-text"><block ref="a565303474e8a5c2bfe13bce52714f80" category="inline-link-rx"></block></block>
+  <block id="a6e1656bf1d677715d170327b95cc743" category="paragraph">*/選項/應用程式/ NetApp /服務經理-2/uninstall.sh [無聲]*</block>
+  <block id="1f7138998459804601fc351f8d442e29" category="section-title">2023年1月1日</block>
+  <block id="e139aa454163ce195b3669d769c3f1c8" category="section-title">連接器3.9.25</block>
+  <block id="ab010f0ae1d3cb2043f9513a1f81beea" category="paragraph">此版本的Connector包含Cloud Volumes ONTAP 了一些強化功能和錯誤修正。</block>
+  <block id="826d1d89ec2a521e40a7a91c2ee8f024" category="paragraph"><block ref="826d1d89ec2a521e40a7a91c2ee8f024" category="inline-link-rx"></block></block>
+  <block id="c07581a9e3714e573075f510c11a8b05" category="cell">連接器的IP位址</block>
+  <block id="1c3a99b9cab6b55c9a46ccd58a1283c8" category="paragraph">在大多數情況下、您應該使用SaaS UI中的BlueXP、但是 <block ref="9a2b10ef390e45d8a69a5a0f7a3a563a" category="inline-link-macro-rx"></block>然後您必須從網頁瀏覽器輸入主機的IP位址。</block>
+  <block id="c24732648af9b734203cc5a8a19f2537" category="paragraph">HTTP（80）和HTTPS（443）可存取本機UI、在極少數情況下使用。只有在需要連線至主機進行疑難排解時、才需要SSH（22）。同時、如果您在Cloud Volumes ONTAP 無法連上傳出網際網路連線的子網路中部署支援系統、則必須透過連接埠3128進行傳入連線。</block>
+  <block id="31cd3194dbc40a48cdae969161abd4a5" category="list-text">完成設定之後、您就可以開始使用BlueXP提供的服務。請注意、每項服務都有自己的網路需求。如需詳細資料、請參閱下列頁面。</block>
 </blocks>

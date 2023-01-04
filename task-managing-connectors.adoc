@@ -254,7 +254,7 @@ BlueXP會將Connector從記錄中移除。
 .步驟
 . 從 Linux 主機執行解除安裝指令碼：
 +
-* /opt/application/NetApp/cloudmanager/in/uninstall.sh [silined]*
+*/選項/應用程式/ NetApp /服務經理-2/uninstall.sh [無聲]*
 
 +
 _silon_ 執行指令碼時不會提示您確認。
