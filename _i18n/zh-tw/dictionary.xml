@@ -2678,7 +2678,6 @@
   <block id="4e7880d4f8d9cf685f649e74e34a3de7" category="list-text">安裝Connector之前、主機上需要Docker Engine 19版或更新版本。<block ref="bbcf0e5e8b0c8687d84c2c22a5ad2ecf" category="inline-link-rx"></block></block>
   <block id="64a39273573e4fc2b712d51106db7a4e" category="section-title">變更記錄</block>
   <block id="3133cc4fd29893a0163684e3e3f59633" category="paragraph">新增和移除權限時、我們會在下方各節中加以註記。</block>
-  <block id="a6123430b152ca358cd64ba937f6f1b9" category="section-title">2022年12月1日</block>
   <block id="ac692d638162a1dc479fa6a76fb4e114" category="list-text">Microsoft.Compute/images/write</block>
   <block id="61d40b12dddcd9e571bbe7a89b0fbae8" category="list-text">Microsoft.Network/loadBalancers/backendAddressPools/join/action</block>
   <block id="7c90682779ddf616c80c90bad703eddd" category="list-text">Microsoft.Network/loadBalancers/frontendIPConfigurations/read</block>
@@ -2820,4 +2819,10 @@
   <block id="1c3a99b9cab6b55c9a46ccd58a1283c8" category="paragraph">在大多數情況下、您應該使用SaaS UI中的BlueXP、但是 <block ref="9a2b10ef390e45d8a69a5a0f7a3a563a" category="inline-link-macro-rx"></block>然後您必須從網頁瀏覽器輸入主機的IP位址。</block>
   <block id="c24732648af9b734203cc5a8a19f2537" category="paragraph">HTTP（80）和HTTPS（443）可存取本機UI、在極少數情況下使用。只有在需要連線至主機進行疑難排解時、才需要SSH（22）。同時、如果您在Cloud Volumes ONTAP 無法連上傳出網際網路連線的子網路中部署支援系統、則必須透過連接埠3128進行傳入連線。</block>
   <block id="31cd3194dbc40a48cdae969161abd4a5" category="list-text">完成設定之後、您就可以開始使用BlueXP提供的服務。請注意、每項服務都有自己的網路需求。如需詳細資料、請參閱下列頁面。</block>
+  <block id="9efb399c3a128a79f4671ff959339e79" category="list-text">Microsoft.Storage/storageAccounts/listAccountSas /行動</block>
+  <block id="a5b807c71b066c1d33685818cfa2806e" category="list-text">Microsoft.Synapse /工作區/私有端點連線核准/行動</block>
+  <block id="176944a9db0702558233e827d21e2f80" category="section-title">2023年1月5日</block>
+  <block id="267cfa5c9c91dc1d99dc797e89903dfa" category="paragraph">雲端備份需要這些權限。</block>
+  <block id="b73f51f05a3d7aca4e9b86bf6b66c214" category="paragraph">此權限是Cloud Volumes ONTAP 進行非必要部署所需的權限。</block>
+  <block id="1d37387582eb7a955869d3991c1dab28" category="section-title">2022年12月1日</block>
 </blocks>

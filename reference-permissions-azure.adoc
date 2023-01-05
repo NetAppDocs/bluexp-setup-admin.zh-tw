@@ -81,6 +81,7 @@ summary: 當BlueXP在Azure中啟動Connector VM時、它會將自訂角色附加
                     "Microsoft.Storage/storageAccounts/write",
                     "Microsoft.Storage/storageAccounts/blobServices/containers/read",
                     "Microsoft.Storage/storageAccounts/blobServices/containers/write",
+                    "Microsoft.Storage/storageAccounts/listAccountSas/action",
                     "Microsoft.Storage/usages/read",
                     "Microsoft.Compute/snapshots/write",
                     "Microsoft.Compute/snapshots/read",
@@ -93,6 +94,7 @@ summary: 當BlueXP在Azure中啟動Connector VM時、它會將自訂角色附加
                     "Microsoft.Network/loadBalancers/write",
                     "Microsoft.Network/loadBalancers/delete",
                     "Microsoft.Network/loadBalancers/backendAddressPools/read",
+                    "Microsoft.Network/loadBalancers/backendAddressPools/join/action",
                     "Microsoft.Network/loadBalancers/loadBalancingRules/read",
                     "Microsoft.Network/loadBalancers/probes/read",
                     "Microsoft.Network/loadBalancers/probes/join/action",
@@ -154,6 +156,7 @@ summary: 當BlueXP在Azure中啟動Connector VM時、它會將自訂角色附加
                     "Microsoft.Synapse/workspaces/replaceAllIpFirewallRules/action",
                     "Microsoft.Synapse/workspaces/operationResults/read",
                     "Microsoft.Network/publicIPAddresses/delete",
+                    "Microsoft.Synapse/workspaces/privateEndpointConnectionsApproval/action",
                     "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action"
     ],
     "NotActions": [],
@@ -208,6 +211,7 @@ Connector會針對備份與還原作業提出下列API要求：
 * Microsoft.Storage/storageAccounts/read
 * Microsoft.Storage/storageAccounts/write
 * Microsoft.Storage/storageAccounts/blobServices/contains/read
+* Microsoft.Storage/storageAccounts/listAccountSas /行動
 * Microsoft.KeyVault/Vault/Read
 * Microsoft.KeyVault/Vault/accessPolicys/write
 * Microsoft.Network/networkInterfaces/read
@@ -246,6 +250,7 @@ Connector會針對備份與還原作業提出下列API要求：
 * Microsoft.Synapse /工作區/防火牆規則/讀取
 * Microsoft.Synapse /工作區/替代AllIpFiretallRules /行動
 * Microsoft.Synapse /工作區/作業結果/讀取
+* Microsoft.Synapse /工作區/私有端點連線核准/行動
 
 
 
@@ -616,19 +621,22 @@ Connector會提出下列API要求、要求在Cloud Volumes ONTAP AWS中部署及
 | Microsoft.Network/loadBalancers/backendAddressPools/read | 是的 | 是的 | 否 
 
 
+| Microsoft.Network/loadBalancers/backendAddressPools/join/action | 是的 | 否 | 否 
+
+
 | Microsoft.Network/loadBalancers/loadBalancingRules/read | 是的 | 否 | 否 
 
 
 | Microsoft.Network/loadBalancers/probes/read | 是的 | 否 | 否 
 
 
-| Microsoft.Network/loadBalancers/probes/join/action | 是的 | 否 | 否 
+| Microsoft.Network/loadBalancers/probes/join/action | 是的 | 否 | 否 | 可管理Azure磁碟上的鎖定 
 
 
-| 可管理Azure磁碟上的鎖定 | Microsoft授權/鎖定/* | 是的 | 是的 | 否 
+| Microsoft授權/鎖定/* | 是的 | 是的 | 否 .10+| 在子網路外沒有連線時、為HA配對啟用私有端點 
 
 
-.10+| 在子網路外沒有連線時、為HA配對啟用私有端點 | Microsoft.Network/privateEndpoints/write | 是的 | 是的 | 否 
+| Microsoft.Network/privateEndpoints/write | 是的 | 是的 | 否 
 
 
 | Microsoft儲存設備/儲存帳戶/權限端點連線核准/動作 | 是的 | 否 | 否 
@@ -655,19 +663,19 @@ Connector會提出下列API要求、要求在Cloud Volumes ONTAP AWS中部署及
 | Microsoft.Network/privateDnsZones/read | 是的 | 是的 | 否 
 
 
-| Microsoft.Network/privateDnsZones/virtualNetworkLinks/read | 是的 | 是的 | 否 
+| Microsoft.Network/privateDnsZones/virtualNetworkLinks/read | 是的 | 是的 | 否 | Azure根據基礎實體硬體的需求、進行部分VM部署 
 
 
-| Azure根據基礎實體硬體的需求、進行部分VM部署 | Microsoft.Resources /部署/作業狀態/讀取 | 是的 | 是的 | 否 
+| Microsoft.Resources /部署/作業狀態/讀取 | 是的 | 是的 | 否 .2+| 如果部署失敗或刪除、請從資源群組移除資源 
 
 
-.2+| 如果部署失敗或刪除、請從資源群組移除資源 | Microsoft.Network/privateEndpoints/delete | 是的 | 是的 | 否 
+| Microsoft.Network/privateEndpoints/delete | 是的 | 是的 | 否 
 
 
-| Microsoft.Compute/availabilitySets/delete | 是的 | 是的 | 否 
+| Microsoft.Compute/availabilitySets/delete | 是的 | 是的 | 否 .4+| 使用API時、可啟用客戶管理的加密金鑰 
 
 
-.4+| 使用API時、可啟用客戶管理的加密金鑰 | Microsoft.Compute/diskEncryptionSets/read | 是的 | 是的 | 是的 
+| Microsoft.Compute/diskEncryptionSets/read | 是的 | 是的 | 是的 
 
 
 | Microsoft.Compute/diskEncryptionSets/write | 是的 | 是的 | 否 
@@ -676,10 +684,10 @@ Connector會提出下列API要求、要求在Cloud Volumes ONTAP AWS中部署及
 | Microsoft.KeyVault/Vault/Deploy /行動 | 是的 | 否 | 否 
 
 
-| Microsoft.Compute/diskEncryptionSets/delete | 是的 | 是的 | 是的 
+| Microsoft.Compute/diskEncryptionSets/delete | 是的 | 是的 | 是的 .6+| 設定HA配對的應用程式安全性群組、以隔離HA互連和叢集網路NIC 
 
 
-.6+| 設定HA配對的應用程式安全性群組、以隔離HA互連和叢集網路NIC | Microsoft.Network/applicationSecurityGroups/write | 否 | 是的 | 否 
+| Microsoft.Network/applicationSecurityGroups/write | 否 | 是的 | 否 
 
 
 | Microsoft.Network/applicationSecurityGroups/read | 否 | 是的 | 是的 
@@ -694,19 +702,16 @@ Connector會提出下列API要求、要求在Cloud Volumes ONTAP AWS中部署及
 | Microsoft.Network/applicationSecurityGroups/delete | 否 | 是的 | 否 
 
 
-| Microsoft.Network/networkSecurityGroups/securityRules/delete | 否 | 是的 | 是的 
+| Microsoft.Network/networkSecurityGroups/securityRules/delete | 否 | 是的 | 是的 .3+| 讀取、寫入及刪除Cloud Volumes ONTAP 與資源相關的標記 
 
 
-.3+| 讀取、寫入及刪除Cloud Volumes ONTAP 與資源相關的標記 | Microsoft.Resources /標記/讀取 | 否 | 是的 | 否 
+| Microsoft.Resources /標記/讀取 | 否 | 是的 | 否 
 
 
 | Microsoft.Resources /標記/寫入 | 是的 | 是的 | 否 
 
 
-| Microsoft.Resources /標記/刪除 | 是的 | 否 | 否 
-
-
-| 在建立期間加密儲存帳戶 | Microsoft.ManagedIdentity /使用者身分識別/指派/行動 | 是的 | 是的 | 否 
+| Microsoft.Resources /標記/刪除 | 是的 | 否 | 否 | 在建立期間加密儲存帳戶 
 |===
 
 
@@ -747,6 +752,23 @@ Connector會提出下列API要求、以探索及管理Azure Kubernetes Service�
 
 
 
+=== 2023年1月5日
+
+下列權限已新增至Json原則：
+
+* Microsoft.Storage/storageAccounts/listAccountSas /行動
+* Microsoft.Synapse /工作區/私有端點連線核准/行動
++
+雲端備份需要這些權限。
+
+* Microsoft.Network/loadBalancers/backendAddressPools/join/action
++
+此權限是Cloud Volumes ONTAP 進行非必要部署所需的權限。
+
+
+
+
+
 === 2022年12月1日
 
 下列權限已新增至Json原則：
@@ -764,7 +786,6 @@ Connector會提出下列API要求、以探索及管理Azure Kubernetes Service�
 下列權限已從Json原則中移除、因為不再需要這些權限：
 
 * Microsoft.Compute/images/write
-* Microsoft.Network/loadBalancers/backendAddressPools/join/action
 * Microsoft.Network/loadBalancers/frontendIPConfigurations/read
 * Microsoft儲存設備/儲存帳戶/重新產生金鑰/動作
 
