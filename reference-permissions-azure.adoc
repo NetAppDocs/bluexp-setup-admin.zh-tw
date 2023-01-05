@@ -33,7 +33,7 @@ summary: 當BlueXP在Azure中啟動Connector VM時、它會將自訂角色附加
 {
     "Name": "BlueXP Operator",
     "Actions": [
-                   "Microsoft.Compute/disks/delete",
+                    "Microsoft.Compute/disks/delete",
                     "Microsoft.Compute/disks/read",
                     "Microsoft.Compute/disks/write",
                     "Microsoft.Compute/locations/operations/read",
@@ -609,7 +609,7 @@ Connector會提出下列API要求、要求在Cloud Volumes ONTAP AWS中部署及
 | Microsoft.MarketplaceOrder/OfferTypes /出版商/服務/計畫/協議/寫入 | 是的 | 是的 | 否 
 
 
-.7+| 管理HA配對的負載平衡器 | Microsoft.Network/loadBalancers/read | 是的 | 是的 | 否 
+.8+| 管理HA配對的負載平衡器 | Microsoft.Network/loadBalancers/read | 是的 | 是的 | 否 
 
 
 | Microsoft.Network/loadBalancers/write | 是的 | 否 | 否 
@@ -630,13 +630,13 @@ Connector會提出下列API要求、要求在Cloud Volumes ONTAP AWS中部署及
 | Microsoft.Network/loadBalancers/probes/read | 是的 | 否 | 否 
 
 
-| Microsoft.Network/loadBalancers/probes/join/action | 是的 | 否 | 否 | 可管理Azure磁碟上的鎖定 
+| Microsoft.Network/loadBalancers/probes/join/action | 是的 | 否 | 否 
 
 
-| Microsoft授權/鎖定/* | 是的 | 是的 | 否 .10+| 在子網路外沒有連線時、為HA配對啟用私有端點 
+| 可管理Azure磁碟上的鎖定 | Microsoft授權/鎖定/* | 是的 | 是的 | 否 
 
 
-| Microsoft.Network/privateEndpoints/write | 是的 | 是的 | 否 
+.10+| 在子網路外沒有連線時、為HA配對啟用私有端點 | Microsoft.Network/privateEndpoints/write | 是的 | 是的 | 否 
 
 
 | Microsoft儲存設備/儲存帳戶/權限端點連線核准/動作 | 是的 | 否 | 否 
@@ -663,19 +663,19 @@ Connector會提出下列API要求、要求在Cloud Volumes ONTAP AWS中部署及
 | Microsoft.Network/privateDnsZones/read | 是的 | 是的 | 否 
 
 
-| Microsoft.Network/privateDnsZones/virtualNetworkLinks/read | 是的 | 是的 | 否 | Azure根據基礎實體硬體的需求、進行部分VM部署 
+| Microsoft.Network/privateDnsZones/virtualNetworkLinks/read | 是的 | 是的 | 否 
 
 
-| Microsoft.Resources /部署/作業狀態/讀取 | 是的 | 是的 | 否 .2+| 如果部署失敗或刪除、請從資源群組移除資源 
+| Azure根據基礎實體硬體的需求、進行部分VM部署 | Microsoft.Resources /部署/作業狀態/讀取 | 是的 | 是的 | 否 
 
 
-| Microsoft.Network/privateEndpoints/delete | 是的 | 是的 | 否 
+.2+| 如果部署失敗或刪除、請從資源群組移除資源 | Microsoft.Network/privateEndpoints/delete | 是的 | 是的 | 否 
 
 
-| Microsoft.Compute/availabilitySets/delete | 是的 | 是的 | 否 .4+| 使用API時、可啟用客戶管理的加密金鑰 
+| Microsoft.Compute/availabilitySets/delete | 是的 | 是的 | 否 
 
 
-| Microsoft.Compute/diskEncryptionSets/read | 是的 | 是的 | 是的 
+.4+| 使用API時、可啟用客戶管理的加密金鑰 | Microsoft.Compute/diskEncryptionSets/read | 是的 | 是的 | 是的 
 
 
 | Microsoft.Compute/diskEncryptionSets/write | 是的 | 是的 | 否 
@@ -684,10 +684,10 @@ Connector會提出下列API要求、要求在Cloud Volumes ONTAP AWS中部署及
 | Microsoft.KeyVault/Vault/Deploy /行動 | 是的 | 否 | 否 
 
 
-| Microsoft.Compute/diskEncryptionSets/delete | 是的 | 是的 | 是的 .6+| 設定HA配對的應用程式安全性群組、以隔離HA互連和叢集網路NIC 
+| Microsoft.Compute/diskEncryptionSets/delete | 是的 | 是的 | 是的 
 
 
-| Microsoft.Network/applicationSecurityGroups/write | 否 | 是的 | 否 
+.6+| 設定HA配對的應用程式安全性群組、以隔離HA互連和叢集網路NIC | Microsoft.Network/applicationSecurityGroups/write | 否 | 是的 | 否 
 
 
 | Microsoft.Network/applicationSecurityGroups/read | 否 | 是的 | 是的 
@@ -702,16 +702,19 @@ Connector會提出下列API要求、要求在Cloud Volumes ONTAP AWS中部署及
 | Microsoft.Network/applicationSecurityGroups/delete | 否 | 是的 | 否 
 
 
-| Microsoft.Network/networkSecurityGroups/securityRules/delete | 否 | 是的 | 是的 .3+| 讀取、寫入及刪除Cloud Volumes ONTAP 與資源相關的標記 
+| Microsoft.Network/networkSecurityGroups/securityRules/delete | 否 | 是的 | 是的 
 
 
-| Microsoft.Resources /標記/讀取 | 否 | 是的 | 否 
+.3+| 讀取、寫入及刪除Cloud Volumes ONTAP 與資源相關的標記 | Microsoft.Resources /標記/讀取 | 否 | 是的 | 否 
 
 
 | Microsoft.Resources /標記/寫入 | 是的 | 是的 | 否 
 
 
-| Microsoft.Resources /標記/刪除 | 是的 | 否 | 否 | 在建立期間加密儲存帳戶 
+| Microsoft.Resources /標記/刪除 | 是的 | 否 | 否 
+
+
+| 在建立期間加密儲存帳戶 | Microsoft.ManagedIdentity /使用者身分識別/指派/行動 | 是的 | 是的 | 否 
 |===
 
 
