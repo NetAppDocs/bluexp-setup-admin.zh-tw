@@ -98,7 +98,7 @@ image:screenshot_notification_filters.png["顯示「通知中心」中兩種可�
 
 [NOTE]
 ====
-* 目前、只有Cloud Sync 「解決方案」和「雲端備份」會透過電子郵件傳送通知。未來版本將會新增其他服務。
+* 目前、只有Cloud Sync VMware、Cloud Backup和勒索軟體保護功能會透過電子郵件傳送通知。未來版本將會新增其他服務。
 * 如果Connector安裝在沒有網際網路存取的網站上、則不支援傳送電子郵件通知。
 
 

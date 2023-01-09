@@ -2455,7 +2455,6 @@
   <block id="a222de5f9a1db461954d4160797dfa76" category="sidebar">管理BlueXP</block>
   <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXP部落格</block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">所有BlueXP文件</block>
-  <block id="0600a5fd997330da4629c9667c77df85" category="list-text">目前、只有Cloud Sync 「解決方案」和「雲端備份」會透過電子郵件傳送通知。未來版本將會新增其他服務。</block>
   <block id="36403db09ed916406c9f181948f4d246" category="paragraph">當您使用應用程式範本標記服務時、Connector會發出下列API要求來管理Azure資源上的標記：</block>
   <block id="e53322337eb6e5958408340612abf40d" category="list-text">Microsoft.Resources /資源/讀取</block>
   <block id="5d5a38f96b2eb95a1bae225c6959a21b" category="list-text">Microsoft.Resources /訂閱/作業結果/讀取</block>
@@ -2830,4 +2829,5 @@
   <block id="ef67c5eab6f3bfee1596c3f8734a88c7" category="paragraph">雖然不需要連接器即可直接探索內部部署ONTAP 的叢集、但如果您想要使用更多的BlueXP功能、則需要連接器。</block>
   <block id="eec3baeb5aa60415324495790bc2f136" category="inline-link">深入瞭解內部ONTAP 部署的叢集探索與管理選項</block>
   <block id="7a5dd38f95e02bff17a0b6c794d9ce2b" category="paragraph"><block ref="7a5dd38f95e02bff17a0b6c794d9ce2b" category="inline-link-rx"></block></block>
+  <block id="82e02d499effaa5b28aba8ede321e414" category="list-text">目前、只有Cloud Sync VMware、Cloud Backup和勒索軟體保護功能會透過電子郵件傳送通知。未來版本將會新增其他服務。</block>
 </blocks>
