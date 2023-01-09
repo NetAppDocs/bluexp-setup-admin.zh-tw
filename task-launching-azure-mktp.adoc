@@ -116,11 +116,11 @@ link:concept-netapp-accounts.html["瞭解NetApp客戶"]。
 +
 image:screenshot_azure_shell_upload.png["Azure Cloud Shell的快照、您可在其中選擇上傳檔案的選項。"]
 
-*** 輸入下列Azure CLI命令：
+*** 使用Azure CLI建立自訂角色：
 +
 [source, azurecli]
 ----
-az role definition create --role-definition Policy_for_Setup_As_Service_Azure.json
+az role definition create --role-definition Connector_Policy.json
 ----
 +
 現在您應該有一個名為BlueXP運算子的自訂角色、可以指派給連接器虛擬機器。

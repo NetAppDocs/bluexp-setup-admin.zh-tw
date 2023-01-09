@@ -20,11 +20,7 @@ summary: 在大多數情況下、您需要在雲端或內部部署網路中部�
 
 == 需要連接器時
 
-需要連接器才能使用BlueXP中的許多功能和服務。
-
-
-
-=== 服務
+下列BlueXP功能與服務需要連接器：
 
 * Amazon FSX提供ONTAP 功能完善的管理功能
 * Amazon S3探索
@@ -37,29 +33,37 @@ summary: 在大多數情況下、您需要在雲端或內部部署網路中部�
 * 全域檔案快取
 * Google Cloud Storage探索
 * Kubernetes叢集
-* 內部部署 ONTAP 的叢集
+* 內部部署ONTAP 的不支援叢集整合至BlueXP資料服務
 * StorageGRID
 
 
 下列服務需要*非_*連接器：
 
 * 數位顧問
-* Amazon FSX- ONTAP 用於建立工作環境、而Connector不需要建立工作環境、則需要建立及管理磁碟區、複寫資料、並將FSX與ONTAP NetApp雲端服務整合、例如Data Sense和Cloud Sync Sfor。
++
+在幾乎所有情況下、您都可以在沒有連接器的情況下、將授權新增至Digital Wallet。
+
++
+連接器新增授權至Digital Wallet所需的唯一時間、是Cloud Volumes ONTAP 針對以節點為基礎的_授權。在這種情況下需要連接器、因為資料是取自Cloud Volumes ONTAP 安裝在效益分析系統上的授權。
+
+* Amazon FSX可ONTAP 建立不只是工作環境
++
+雖然不需要連接器來建立工作環境、但必須建立及管理磁碟區、複寫資料、並將FSXfor ONTAP 功能與NetApp雲端服務整合、例如Data Sense和Cloud Sync Sfor
+
 * Azure NetApp Files
 +
 雖然不需要連接器來設定和管理Azure NetApp Files 功能、但如果您想要使用Cloud Data Sense來掃描Azure NetApp Files 支援資料、則需要連接器。
 
 * 適用於 Google Cloud Cloud Volumes Service
 * Cloud Sync
+* 直接探索內部部署ONTAP 的叢集
++
+雖然不需要連接器即可直接探索內部部署ONTAP 的叢集、但如果您想要使用更多的BlueXP功能、則需要連接器。
+
++
+https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["深入瞭解內部ONTAP 部署的叢集探索與管理選項"^]
 
 
-
-
-=== 數位錢包
-
-在幾乎所有情況下、您都可以在沒有連接器的情況下、將授權新增至Digital Wallet。
-
-連接器新增授權至Digital Wallet所需的唯一時間、是Cloud Volumes ONTAP 針對以節點為基礎的_授權。在這種情況下需要連接器、因為資料是取自Cloud Volumes ONTAP 安裝在效益分析系統上的授權。
 
 
 

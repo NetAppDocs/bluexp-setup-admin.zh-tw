@@ -780,15 +780,12 @@
   <block id="06df33001c1d7187fdd81ea1f5b277aa" category="cell">行動</block>
   <block id="e6e80588e9fe7cf89218fea44300f7ca" category="doc">深入瞭解連接器</block>
   <block id="098ba24e143dd197f509e41083f0103e" category="section-title">需要連接器時</block>
-  <block id="992a0f0542384f1ee5ef51b7cf4ae6c4" category="section-title">服務</block>
   <block id="234eb6bb27d592cbf06aa6537a33a380" category="list-text">Amazon FSX提供ONTAP 功能完善的管理功能</block>
   <block id="85eb427901278daf26f132cb3e076914" category="list-text">Kubernetes叢集</block>
   <block id="6c253a8aff5dfa835a77545b3006abc8" category="list-text">內部部署 ONTAP 的叢集</block>
   <block id="d7c778975033347c9e67ffb83d3e7948" category="paragraph">下列服務需要*非_*連接器：</block>
-  <block id="a8435d00af3d55ea03fdb027caa5b23b" category="list-text">Amazon FSX- ONTAP 用於建立工作環境、而Connector不需要建立工作環境、則需要建立及管理磁碟區、複寫資料、並將FSX與ONTAP NetApp雲端服務整合、例如Data Sense和Cloud Sync Sfor。</block>
   <block id="d4f99f1852ac22c1cad9673e75e03dc1" category="paragraph">雖然不需要連接器來設定和管理Azure NetApp Files 功能、但如果您想要使用Cloud Data Sense來掃描Azure NetApp Files 支援資料、則需要連接器。</block>
   <block id="e367efbc26bd12c0d6ae37dd6a55ef9b" category="list-text">Cloud Sync</block>
-  <block id="986e1f3279b4d74444bd32d4f833afbd" category="section-title">數位錢包</block>
   <block id="cbe129909ca1b56ccace7cbd5ffca407" category="paragraph">在幾乎所有情況下、您都可以在沒有連接器的情況下、將授權新增至Digital Wallet。</block>
   <block id="1ab568c31a52b2095bb19460f2f7bac6" category="paragraph">連接器新增授權至Digital Wallet所需的唯一時間、是Cloud Volumes ONTAP 針對以節點為基礎的_授權。在這種情況下需要連接器、因為資料是取自Cloud Volumes ONTAP 安裝在效益分析系統上的授權。</block>
   <block id="ff0e00d64f60db5d99e55c6d706306cc" category="section-title">支援的位置</block>
@@ -2141,7 +2138,6 @@
   <block id="fa6b601b2fb4e3e5c7b466ecb8bd70ac" category="paragraph">此錯誤可能表示、與該帳戶相關聯的NSS帳戶及記錄公司與BlueXP帳戶序號的記錄公司不同（例如960xxxx)或工作環境序號。您可以在「建立案例*」表單頂端查看您的NSS帳戶清單、以找出最適合的項目、或使用下列其中一個選項尋求協助：</block>
   <block id="f0cdc0b5ab986e2023bc8adbb9019ee4" category="summary">在大多數情況下、您需要在雲端或內部部署網路中部署 Connector 。連接器是BlueXP日常使用的重要元件。它可讓BlueXP管理公有雲環境中的資源和程序。</block>
   <block id="4ef3e263a8519b21e0d35c0289f980ec" category="paragraph">在大多數情況下、BlueXP帳戶管理員需要在雲端或內部部署網路中部署_Connector_。連接器是BlueXP日常使用的重要元件。它可讓BlueXP管理公有雲環境中的資源和程序。</block>
-  <block id="d68d607d7912cfeb0caaf3df3be1ac25" category="paragraph">需要連接器才能使用BlueXP中的許多功能和服務。</block>
   <block id="f079f17b0940258743d34e7b771c715f" category="list-text">數位顧問</block>
   <block id="929fef37761db7862ee3491989ae1b5f" category="paragraph">BlueXP帳戶管理員可透過多種方式建立連接器：</block>
   <block id="9176e438fb1bac846f4dd758c6d57b0e" category="list-text">直接從BlueXP（建議）</block>
@@ -2825,4 +2821,13 @@
   <block id="267cfa5c9c91dc1d99dc797e89903dfa" category="paragraph">雲端備份需要這些權限。</block>
   <block id="b73f51f05a3d7aca4e9b86bf6b66c214" category="paragraph">此權限是Cloud Volumes ONTAP 進行非必要部署所需的權限。</block>
   <block id="1d37387582eb7a955869d3991c1dab28" category="section-title">2022年12月1日</block>
+  <block id="5847199ca78e66e581ccd10e8e88b057" category="list-text">使用Azure CLI建立自訂角色：</block>
+  <block id="2878685a3c92cde3d19e546e9e7ed65b" category="paragraph">下列BlueXP功能與服務需要連接器：</block>
+  <block id="9fc1f8c97e791c3c5fa11f21f2c02740" category="list-text">內部部署ONTAP 的不支援叢集整合至BlueXP資料服務</block>
+  <block id="68e3f4e356478210df0b83fb7c76a924" category="list-text">Amazon FSX可ONTAP 建立不只是工作環境</block>
+  <block id="760c8ab5d3061033f77f7ded2f3cad11" category="paragraph">雖然不需要連接器來建立工作環境、但必須建立及管理磁碟區、複寫資料、並將FSXfor ONTAP 功能與NetApp雲端服務整合、例如Data Sense和Cloud Sync Sfor</block>
+  <block id="184e70c253a2ad370c338775e7482497" category="list-text">直接探索內部部署ONTAP 的叢集</block>
+  <block id="ef67c5eab6f3bfee1596c3f8734a88c7" category="paragraph">雖然不需要連接器即可直接探索內部部署ONTAP 的叢集、但如果您想要使用更多的BlueXP功能、則需要連接器。</block>
+  <block id="eec3baeb5aa60415324495790bc2f136" category="inline-link">深入瞭解內部ONTAP 部署的叢集探索與管理選項</block>
+  <block id="7a5dd38f95e02bff17a0b6c794d9ce2b" category="paragraph"><block ref="7a5dd38f95e02bff17a0b6c794d9ce2b" category="inline-link-rx"></block></block>
 </blocks>
