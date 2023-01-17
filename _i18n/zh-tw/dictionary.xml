@@ -2000,7 +2000,6 @@
   <block id="d84e71566ed38f5bfe97daee41fb601d" category="paragraph">下列項目需要權限：</block>
   <block id="ae741fad6aa93f78e0e5033a1d01d94b" category="list-text">部署Connector VM的使用者</block>
   <block id="302f26bc0fa67eed7c3feeaa0ab2bcab" category="list-text">部署期間需要附加至Connector VM的服務帳戶</block>
-  <block id="6fe79cfc93a8b51f7a8316a55877bfc4" category="list-text">共享VPC權限（如果您使用共享VPC將資源部署到服務項目）</block>
   <block id="893b6747ffabae1d7bbd6d266f24c4ab" category="section-title">設定共享VPC權限</block>
   <block id="17d9282186c2451db90a83330e5c9d7b" category="list-text"><block ref="17d9282186c2451db90a83330e5c9d7b" category="inline-link-macro-rx"></block></block>
   <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">如果您有客戶層級的帳戶、可以新增一或多個NSS帳戶。</block>
@@ -2830,4 +2829,17 @@
   <block id="eec3baeb5aa60415324495790bc2f136" category="inline-link">深入瞭解內部ONTAP 部署的叢集探索與管理選項</block>
   <block id="7a5dd38f95e02bff17a0b6c794d9ce2b" category="paragraph"><block ref="7a5dd38f95e02bff17a0b6c794d9ce2b" category="inline-link-rx"></block></block>
   <block id="82e02d499effaa5b28aba8ede321e414" category="list-text">目前、只有Cloud Sync VMware、Cloud Backup和勒索軟體保護功能會透過電子郵件傳送通知。未來版本將會新增其他服務。</block>
+  <block id="8fb23cdc1bc8f3ca6d2863041a4364b5" category="list-text">如果您要跨Cloud Volumes ONTAP 專案部署解決方案、請確保Connector能夠存取這些專案。</block>
+  <block id="c17e95cb1967072e9156ac6ad6f7c033" category="paragraph"><block ref="02f20f4e9af364f73c72b808dd1224d3" category="inline-xref-macro-rx"></block>。</block>
+  <block id="8e791012319a6cc33e02b9f65f0eb71d" category="paragraph">視組態而定、您可能也需要完成下列步驟：</block>
+  <block id="f78e7e80b2f4d00362b5fcc2740c2408" category="list-text">設定跨專案的權限</block>
+  <block id="f25346a7c8bf8795443396442b179238" category="list-text">設定共用VPC的權限</block>
+  <block id="b54026f2d69ec7f7219507fafb9892a7" category="paragraph">如果您計畫在Cloud Volumes ONTAP Connector所在專案的不同專案中部署支援功能、則需要提供Connector的服務帳戶、以便存取這些專案。</block>
+  <block id="cf4f902f986fa557d6c9a367c5fc98aa" category="paragraph">例如、假設Connector在專案1中、您想在Cloud Volumes ONTAP 專案2中建立一套支援系統。您必須在專案2中授予服務帳戶存取權。</block>
+  <block id="c2e0d7b38c035030529af19f9203dd9b" category="list-text">在Google Cloud主控台中、前往IAM服務、然後選取您要建立Cloud Volumes ONTAP 的項目。</block>
+  <block id="e2b43bc6eddd7c5ec2c7104bd42e0e6e" category="list-text">在「* IAM *」頁面上、選取「*授予存取權*」、並提供所需的詳細資料。</block>
+  <block id="eacb1b3758ebd1aa03b4f1b86b49bd53" category="list-text">輸入Connector服務帳戶的電子郵件。</block>
+  <block id="8f3118254324aa503647a0f0a4cd34cc" category="list-text">選取Connector的自訂角色。</block>
+  <block id="b0cd7667098b2a3439c52ba1f9334faa" category="inline-link">Google Cloud文件</block>
+  <block id="ece59c09a5f78f29903e8e1daac67577" category="paragraph">如需詳細資料、請參閱<block ref="eb023f41fbcdd6f661c855770356f2dc" category="inline-link-rx"></block></block>
 </blocks>

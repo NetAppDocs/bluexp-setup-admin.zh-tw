@@ -39,6 +39,10 @@ TIP: 當您建立第一個Cloud Volumes ONTAP 運作環境時、如果您還沒�
 +
 <<設定Connector的服務帳戶>>。
 
+* 如果您要跨Cloud Volumes ONTAP 專案部署解決方案、請確保Connector能夠存取這些專案。
++
+<<設定跨專案的權限>>。
+
 * 如果您使用的是共享VPC、請在服務專案和主機專案中設定權限。
 +
 <<設定共享VPC權限>>。
@@ -76,7 +80,12 @@ TIP: 當您建立第一個Cloud Volumes ONTAP 運作環境時、如果您還沒�
 
 * 部署Connector VM的使用者
 * 部署期間需要附加至Connector VM的服務帳戶
-* 共享VPC權限（如果您使用共享VPC將資源部署到服務項目）
+
+
+視組態而定、您可能也需要完成下列步驟：
+
+* 設定跨專案的權限
+* 設定共用VPC的權限
 
 
 
@@ -273,6 +282,27 @@ includedPermissions:
 
 .結果
 已設定Connector VM的服務帳戶。
+
+
+
+=== 設定跨專案的權限
+
+如果您計畫在Cloud Volumes ONTAP Connector所在專案的不同專案中部署支援功能、則需要提供Connector的服務帳戶、以便存取這些專案。
+
+例如、假設Connector在專案1中、您想在Cloud Volumes ONTAP 專案2中建立一套支援系統。您必須在專案2中授予服務帳戶存取權。
+
+.步驟
+. 在Google Cloud主控台中、前往IAM服務、然後選取您要建立Cloud Volumes ONTAP 的項目。
+. 在「* IAM *」頁面上、選取「*授予存取權*」、並提供所需的詳細資料。
++
+** 輸入Connector服務帳戶的電子郵件。
+** 選取Connector的自訂角色。
+** 按一下「 * 儲存 * 」。
+
+
+
+
+如需詳細資料、請參閱 https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role["Google Cloud文件"^]
 
 
 
