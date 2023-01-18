@@ -88,7 +88,6 @@
   <block id="dad57e95fc9a5390302ad830888cbdb9" category="inline-link">雲端備份</block>
   <block id="fad43b5fbcb08d889da84d61cf2ea0e8" category="list-text"><block ref="fad43b5fbcb08d889da84d61cf2ea0e8" category="inline-link-rx"></block></block>
   <block id="329d19fc5afbf1e6e6b899cb6324212a" category="summary">您可以管理與Connector VM執行個體相關的認證資料。</block>
-  <block id="0b6a93a12e94b586f0634222ff996760" category="section-title">將 Marketplace 訂閱與 GCP 認證建立關聯</block>
   <block id="fd5876417edb63f12f7c19c175309431" category="paragraph">您可以隨時變更與這些認證資料相關的 Marketplace 訂閱。訂閱可讓您建立隨用隨付 Cloud Volumes ONTAP 的功能、並使用其他 NetApp 雲端服務。</block>
   <block id="fe001b474268cb9300af19ba4c12edd8" category="list-text">按一下動作功能表以取得一組認證資料、然後選取「*建立訂閱關聯*」。</block>
   <block id="0d28acbceed906f52a206d0f3fb0add2" category="inline-image-macro">一組現有認證資料的動作功能表快照。</block>
@@ -110,7 +109,6 @@
   <block id="ca4f48bdc60c2a16dd59109486af30ee" category="paragraph">此步驟會將您的轉帳要求傳送給NetApp。</block>
   <block id="e3d03a33db92a9024d72af3cae4684fd" category="inline-image-macro">註冊快顯畫面。</block>
   <block id="6373a7d66fb33193565645f81635ec0c" category="paragraph"><block ref="6373a7d66fb33193565645f81635ec0c" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1a6175a8e3e5614e22cf07d1d33b6ac8" category="paragraph">GCP訂閱會連結至您的使用者登入所關聯的所有NetApp帳戶。</block>
   <block id="f4c056c11ef2563cc898db48d406c84e" category="inline-image-macro">將GCP訂閱對應至NetApp帳戶的快照。</block>
   <block id="2a085e42ac25547701a033cd0ebb75be" category="paragraph"><block ref="2a085e42ac25547701a033cd0ebb75be" category="inline-image-macro-rx" type="image"></block></block>
   <block id="467e5d6bbcd0ea531c8f7285b69e29ee" category="inline-image-macro">訂閱指派頁面的快照。</block>
@@ -881,10 +879,8 @@
   <block id="211c1a963db0ec4433679bba9d1a1973" category="paragraph">Workspace 管理員現在可以使用這些連接器來建立 Cloud Volumes ONTAP 功能不一的系統。</block>
   <block id="a85cd5dda897ee694c0a8a7ebe893293" category="inline-link-macro">瞭解如何管理您的帳戶</block>
   <block id="e93366502d593964f54fa78a54256cef" category="paragraph">現在您已經設定好帳戶、您可以隨時移除使用者、管理工作區、連接器和訂閱、來管理帳戶。 <block ref="4b4f4de61b1c0103e06c096d3b330838" category="inline-link-macro-rx"></block>。</block>
-  <block id="55a16520d9c426fd88ba06b9313cc1a0" category="summary">執行初始設定之後、您可以稍後管理使用者、服務帳戶、工作區、連接器和訂閱、來管理帳戶設定。</block>
   <block id="e97f2d246afe934ce73e145389529b37" category="doc">管理您的NetApp帳戶</block>
   <block id="d4b56cbbe5ee118eb18ad55bfaaef1f5" category="inline-link-macro">執行初始設定之後</block>
-  <block id="5ca55a4446a62df5192547357ad6fb04" category="paragraph"><block ref="a7a3c89d37624da5130984f9aaffd146" category="inline-link-macro-rx"></block>，您可以稍後管理使用者、服務帳戶、工作區、連接器及訂閱，以管理帳戶設定。</block>
   <block id="1b18a6ba342c7916f9ed427680d9d69c" category="section-title">使用Tenancy API管理您的帳戶</block>
   <block id="1dc658529d6408dff5a6f0516b76a420" category="inline-link">檢視Tenancy API的端點</block>
   <block id="a2eed12a43b27297c587170e14b434f9" category="paragraph"><block ref="a2eed12a43b27297c587170e14b434f9" category="inline-link-rx"></block></block>
@@ -932,17 +928,10 @@
   <block id="9606b9dd050f482ce022efaf9f3754c9" category="list-text">按一下 * 重新命名 * 以重新命名工作區。</block>
   <block id="ca4a2e09f147267af54ea5fd1d962c6a" category="list-text">按一下 * 刪除 * 以刪除工作區。</block>
   <block id="cda68882da0fbacdfcd7b3b52e15c47f" category="list-text">選取要與 Connector 建立關聯的工作區、然後按一下「 * 套用 * 」。</block>
-  <block id="95a0841b9a7d083d0e92b10bbb2d9538" category="section-title">管理訂閱</block>
-  <block id="0dd6409072fddd7ebe4fbc13bf55f62e" category="paragraph">從雲端供應商的市場訂閱之後、您可以從「帳戶設定」小工具取得每份訂閱內容。您可以選擇重新命名訂閱、以及取消訂閱與一或多個帳戶的關聯。</block>
   <block id="eb6dd0692058cd4edb3fb82f48db1f57" category="paragraph">例如、假設您有兩個帳戶、每個帳戶都是透過個別的訂閱付費。您可能會取消訂閱與其中一個帳戶的關聯、因此該帳戶中的使用者在建立 Cloud Volume ONTAP 的工作環境時、不會意外選擇錯誤的訂閱。</block>
-  <block id="4e33b7dde110d702aea770ac0e58ff70" category="inline-link-macro">深入瞭解訂閱內容</block>
-  <block id="09c202bf0add37d2a76b765c2e456516" category="paragraph"><block ref="461fdc6a79888d7d572f0fc87e6f595a" category="inline-link-macro-rx"></block>。</block>
-  <block id="e60fd65ca245c4c248984b9d4277352e" category="list-text">按一下 * 訂閱 * 。</block>
   <block id="1422eb9c77ef6c74d6abe35beedc5d64" category="paragraph">您只會看到與您目前檢視的帳戶相關聯的訂閱內容。</block>
   <block id="73da254ba1aec222348424b9442c52df" category="list-text">按一下您要管理之訂閱對應列中的動作功能表。</block>
   <block id="1dea06c0cd8c3b77e4597670a860c155" category="inline-image-macro">訂閱的動作功能表快照。</block>
-  <block id="c34b4a942868a996723a5a6be924703b" category="paragraph"><block ref="c34b4a942868a996723a5a6be924703b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="acc46a11f0719b1f8e8b77ecf282a60b" category="list-text">選擇重新命名訂閱、或管理與訂閱相關的帳戶。</block>
   <block id="d99140e9dbce5900e2fc973e36296b03" category="section-title">變更您的帳戶名稱</block>
   <block id="189ceeb6f6551a85e755c8abaeac5372" category="paragraph">隨時變更您的帳戶名稱、將其變更為對您有意義的名稱。</block>
   <block id="92301771e4680316275db3e93ac9036c" category="list-text">在「 * 總覽 * 」標籤中、按一下帳戶名稱旁的編輯圖示。</block>
@@ -2329,12 +2318,10 @@
   <block id="7e1224e2fd0f204a7cd31b8672f1b63d" category="list-text">您需要使用具有從BlueXP啟動Connector VM執行個體權限的Google帳戶來部署Connector。</block>
   <block id="a7cc308b583002579bbc229d6f63001c" category="list-text">部署 Connector 時、系統會提示您選取<block ref="98f22f2dda0728ebb39af9a8fe826c8e" category="inline-link-rx"></block> 適用於 VM 執行個體。BlueXP會從服務帳戶取得權限Cloud Volumes ONTAP 、代表您建立及管理各種系統。將自訂角色附加至服務帳戶、即可提供權限。</block>
   <block id="16f38628224f0a131edc6e33cc001598" category="doc">管理BlueXP的Google Cloud認證與訂閱</block>
-  <block id="b0fb7f98471ec678dbb2ee495f025477" category="paragraph">在GCP中部署Connector時、BlueXP會建立一組與Connector VM執行個體相關的預設認證資料。這些是BlueXP用來部署Cloud Volumes ONTAP 功能的認證資料。</block>
   <block id="7a0df3203d8f6522d2b39b5f4c38db03" category="admonition">在您完成下列步驟之前、請先確認您的Google Cloud帳戶擁有「帳單管理」權限、以及BlueXP登入權限。</block>
   <block id="cdcf076c3fd3e62a3c7e3691d02894db" category="inline-link">Google Cloud Marketplace上的NetApp BlueXP頁面</block>
   <block id="b7e7a20500f8489bfa6b8a559c74a1d4" category="list-text">重新導向至之後<block ref="d9d3d72c24d9b3446210d5b539c6bbf5" category="inline-link-rx"></block>下、請確定在頂端導覽功能表中選取正確的專案。</block>
   <block id="10e61096cba50402ef6cb31c1b17e8ae" category="list-text">在快顯對話方塊中、按一下*向NetApp註冊*、將其重新導向至NetApp BlueXP網站。</block>
-  <block id="d702a454ff12f6e62c26b9cc376bfe70" category="admonition">必須完成此步驟、才能將GCP訂閱連結至您的NetApp帳戶。連結訂閱的程序要等到您從本頁重新導向、然後登入BluXP之後才會完成。</block>
   <block id="3654f8874077bf13f59590812bd85494" category="list-text">重新導向至BlueXP之後、請登入或註冊、然後按一下「*完成*」繼續。</block>
   <block id="4314e9e91f1c1e76df01e49490b3367e" category="inline-link">BlueXP網站上的「支持」頁面Cloud Volumes ONTAP</block>
   <block id="289bd5956a254b6fa364eac8856b1768" category="admonition">如果貴組織的人員已從您的帳單帳戶訂閱NetApp BlueXP訂閱、您將會被重新導向至<block ref="03328ba9e09d435ba77b020263fc11e5" category="inline-link-rx"></block> 而是。如果這是意外情況、請聯絡您的NetApp銷售團隊。Google每個Google帳單帳戶只能啟用一次訂閱。</block>
@@ -2842,4 +2829,10 @@
   <block id="8f3118254324aa503647a0f0a4cd34cc" category="list-text">選取Connector的自訂角色。</block>
   <block id="b0cd7667098b2a3439c52ba1f9334faa" category="inline-link">Google Cloud文件</block>
   <block id="ece59c09a5f78f29903e8e1daac67577" category="paragraph">如需詳細資料、請參閱<block ref="eb023f41fbcdd6f661c855770356f2dc" category="inline-link-rx"></block></block>
+  <block id="12106b63996e2c061ca66d31f3a9c50f" category="summary">執行初始設定之後、您可以稍後管理使用者、服務帳戶、工作區和連接器、藉此管理帳戶設定。</block>
+  <block id="f8c69c794c16f5aeea65ba6150c5c239" category="paragraph"><block ref="a7a3c89d37624da5130984f9aaffd146" category="inline-link-macro-rx"></block>，您可以稍後管理使用者、服務帳戶、工作區和連接器來管理帳戶設定。</block>
+  <block id="2dbb2a35f48f58340e040cb41a1d70b1" category="section-title">將Marketplace訂閱與Google Cloud認證建立關聯</block>
+  <block id="72a31d53edf5989e236535eb541ee755" category="paragraph">在Google Cloud中部署Connector時、BlueXP會建立一組與Connector VM執行個體相關的預設認證資料。這些是BlueXP用來部署Cloud Volumes ONTAP 功能的認證資料。</block>
+  <block id="80d154feb16cf91b0edec06497c1ceaa" category="admonition">必須完成此步驟、才能將Google Cloud訂閱連結至您的NetApp帳戶。連結訂閱的程序要等到您從本頁重新導向、然後登入BluXP之後才會完成。</block>
+  <block id="3ef651256a22c79667581299224bf5b3" category="paragraph">Google Cloud訂閱會連結至您使用者登入相關的所有NetApp帳戶。如果您需要限制新訂閱的存取權、可以從Digital Wallet管理與訂閱相關的NetApp帳戶。 <block ref="b8248518be94d54d622f572d1d196b86" category="inline-link-macro-rx"></block>。</block>
 </blocks>

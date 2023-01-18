@@ -18,9 +18,9 @@ summary: 您可以管理與Connector VM執行個體相關的認證資料。
 
 
 
-== 將 Marketplace 訂閱與 GCP 認證建立關聯
+== 將Marketplace訂閱與Google Cloud認證建立關聯
 
-在GCP中部署Connector時、BlueXP會建立一組與Connector VM執行個體相關的預設認證資料。這些是BlueXP用來部署Cloud Volumes ONTAP 功能的認證資料。
+在Google Cloud中部署Connector時、BlueXP會建立一組與Connector VM執行個體相關的預設認證資料。這些是BlueXP用來部署Cloud Volumes ONTAP 功能的認證資料。
 
 您可以隨時變更與這些認證資料相關的 Marketplace 訂閱。訂閱可讓您建立隨用隨付 Cloud Volumes ONTAP 的功能、並使用其他 NetApp 雲端服務。
 
@@ -63,11 +63,11 @@ image:screenshot_gcp_marketplace_register.png["註冊快顯畫面。"]
 
 +
 
-NOTE: 必須完成此步驟、才能將GCP訂閱連結至您的NetApp帳戶。連結訂閱的程序要等到您從本頁重新導向、然後登入BluXP之後才會完成。
+NOTE: 必須完成此步驟、才能將Google Cloud訂閱連結至您的NetApp帳戶。連結訂閱的程序要等到您從本頁重新導向、然後登入BluXP之後才會完成。
 
 . 重新導向至BlueXP之後、請登入或註冊、然後按一下「*完成*」繼續。
 +
-GCP訂閱會連結至您的使用者登入所關聯的所有NetApp帳戶。
+Google Cloud訂閱會連結至您使用者登入相關的所有NetApp帳戶。如果您需要限制新訂閱的存取權、可以從Digital Wallet管理與訂閱相關的NetApp帳戶。 link:task-manage-subscriptions.html#manage-your-subscriptions["瞭解如何管理您的訂閱"]。
 
 +
 image:screenshot_gcp_sub_mapping.png["將GCP訂閱對應至NetApp帳戶的快照。"]
