@@ -20,11 +20,11 @@ NetApp帳戶_提供多租戶共享、讓您從BlueXP內部、在隔離的工作�
 
 當您第一次存取BlueXP時、系統會提示您選擇或建立NetApp帳戶：
 
-image:screenshot_account_selection.gif["BlueXP安裝精靈的快照、會提示您輸入要在其中建立BlueXP的NetApp帳戶。"]
+image:screenshot-account-selection.png["BlueXP安裝精靈的快照、會提示您輸入要在其中建立BlueXP的NetApp帳戶。"]
 
-然後、BlueXP帳戶管理員可以管理使用者（成員）、工作區、連接器及訂閱、藉此修改此帳戶的設定：
+然後、BlueXP Account Admins可透過管理使用者（成員）、工作區和連接器來修改此帳戶的設定：
 
-image:screenshot_account_settings.gif["顯示「管理帳戶」小工具的快照、您可從中管理使用者、工作區和連接器。"]
+image:screenshot-account-settings.png["顯示「管理帳戶」小工具的快照、您可從中管理使用者、工作區和連接器。"]
 
 如需逐步指示、請參閱 link:task-setting-up-netapp-accounts.html["設定NetApp帳戶"]。
 
@@ -32,7 +32,7 @@ image:screenshot_account_settings.gif["顯示「管理帳戶」小工具的快�
 
 == 帳戶設定
 
-BlueXP中的「管理帳戶」小工具可讓帳戶管理員管理NetApp帳戶。如果您剛建立帳戶、就會從頭開始。但如果您已經設定帳戶、您會看到 _ 全部 _ 與帳戶相關聯的使用者、工作區、連接器和訂閱。
+BlueXP中的「管理帳戶」小工具可讓帳戶管理員管理NetApp帳戶。如果您剛建立帳戶、就會從頭開始。但如果您已經設定帳戶、您會看到_所有_與該帳戶相關聯的使用者、工作區和連接器。
 
 
 
@@ -62,11 +62,11 @@ link:reference-user-roles.html["深入瞭解這些角色"]。
 
 在BlueXP中、工作區會將任何數量的_Work處 環境與其他工作環境隔離。除非帳戶管理員將該管理員與該工作區建立關聯、否則 Workspace 系統管理員無法存取工作區中的工作環境。
 
-工作環境代表儲存系統：
+工作環境代表儲存系統。例如：
 
-* 單節點 Cloud Volumes ONTAP 的不完整系統或 HA 配對
-* 您網路中的內部部署 ONTAP 式叢集
-* NetApp 私有儲存組態中的一個叢集 ONTAP
+* 一套系統Cloud Volumes ONTAP
+* 內部部署ONTAP 的叢集
+* Kubernetes叢集
 
 
 link:task-setting-up-netapp-accounts.html["瞭解如何新增工作區"]。
@@ -77,25 +77,9 @@ link:task-setting-up-netapp-accounts.html["瞭解如何新增工作區"]。
 
 Connector可讓BlueXP管理公有雲環境中的資源與程序。Connector 可在您部署在雲端供應商的虛擬機器執行個體上執行、或是在您設定的內部部署主機上執行。
 
-您可以使用連接器搭配多個 NetApp 雲端資料服務。例如、如果您已經有一個Connector for BlueXP、則可以在設定雲端分層服務時加以選取。
+您可以使用連接器搭配多個 NetApp 雲端資料服務。例如、如果您使用Connector來管理Cloud Volumes ONTAP 功能、您可以使用相同的Connector搭配其他服務、例如Cloud Tiering。
 
 link:concept-connectors.html["深入瞭解連接器"]。
-
-
-
-== 訂閱
-
-這些是與所選帳戶相關的NetApp訂閱。
-
-當您從雲端供應商的市場訂閱BlueXP時、系統會將您重新導向至BlueXP網站、您需要在其中儲存訂閱內容、並將其與特定帳戶建立關聯。
-
-訂閱之後、即可從「管理帳戶」小工具取得每份訂閱。您只會看到與您目前檢視的帳戶相關聯的訂閱內容。
-
-您可以選擇重新命名訂閱、以及取消訂閱與一或多個帳戶的關聯。
-
-例如、假設您有兩個帳戶、每個帳戶都是透過個別的訂閱付費。您可能會取消訂閱與其中一個帳戶的關聯、因此該帳戶中的使用者在建立 Cloud Volume ONTAP 的工作環境時、不會意外選擇錯誤的訂閱。
-
-link:task-managing-netapp-accounts.html#managing-subscriptions["瞭解如何管理訂閱"]。
 
 
 

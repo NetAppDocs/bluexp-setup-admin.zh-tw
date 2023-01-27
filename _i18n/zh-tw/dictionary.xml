@@ -117,8 +117,6 @@
   <block id="342df35452bbec008148c714d47038f6" category="list-text">如果訂單顯示時鐘和*待處理*狀態、請返回市場頁面、選擇*管理供應商*以完成上述程序。</block>
   <block id="9547217bb6aa822040056cba67310321" category="inline-image-macro">待處理市場權利的快照。</block>
   <block id="e6ec8d6dff39d45a9056311495699cef" category="paragraph"><block ref="e6ec8d6dff39d45a9056311495699cef" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d4150be963d8e8a8648985d057b82c98" category="summary">如果您的企業原則要求您使用Proxy伺服器來進行所有的HTTP通訊至網際網路、則必須設定連接器以使用該HTTP Proxy伺服器。Proxy 伺服器可以位於雲端或網路中。</block>
-  <block id="bfe172c64db091b2b40778626fd53667" category="doc">設定連接器以使用HTTP Proxy伺服器</block>
   <block id="58dcadbd8de2066b4071d6ed4e0b4baf" category="section-title">在連接器上啟用Proxy</block>
   <block id="a211e8f0d908dfd70d36364b3fbd91b0" category="paragraph">當您將連接器設定為使用 Proxy 伺服器、連接器及 Cloud Volumes ONTAP 其所管理的各種系統（包括任何 HA 協調器）時、都會使用 Proxy 伺服器。</block>
   <block id="3b7b9877611524faf200a074a681f3fc" category="paragraph">請注意、此作業會重新啟動Connector。在繼續之前、請確定Connector未執行任何作業。</block>
@@ -873,7 +871,6 @@
   <block id="33e248648a845f8d6e538dfb02e4620f" category="list-text">針對您要建立關聯的連接器、按一下 * 管理工作區 * 。</block>
   <block id="211c1a963db0ec4433679bba9d1a1973" category="paragraph">Workspace 管理員現在可以使用這些連接器來建立 Cloud Volumes ONTAP 功能不一的系統。</block>
   <block id="a85cd5dda897ee694c0a8a7ebe893293" category="inline-link-macro">瞭解如何管理您的帳戶</block>
-  <block id="e93366502d593964f54fa78a54256cef" category="paragraph">現在您已經設定好帳戶、您可以隨時移除使用者、管理工作區、連接器和訂閱、來管理帳戶。 <block ref="4b4f4de61b1c0103e06c096d3b330838" category="inline-link-macro-rx"></block>。</block>
   <block id="e97f2d246afe934ce73e145389529b37" category="doc">管理您的NetApp帳戶</block>
   <block id="d4b56cbbe5ee118eb18ad55bfaaef1f5" category="inline-link-macro">執行初始設定之後</block>
   <block id="1b18a6ba342c7916f9ed427680d9d69c" category="section-title">使用Tenancy API管理您的帳戶</block>
@@ -1171,7 +1168,6 @@
   <block id="aca5096ac18d904bd7d20b609f13571d" category="list-text">用戶端機密：請參閱 <block ref="2f8da44aff19ae4d1a810f6d1d618984" category="inline-xref-macro-rx"></block>。</block>
   <block id="8853b96c8dcf3d773756121a97f3874f" category="paragraph">例如、多位使用者可以在 Cloud Volumes ONTAP 稱為 _stap空間 _ 的隔離環境中部署及管理各種不一致的系統。除非共用這些工作區、否則其他使用者無法看到這些工作區。</block>
   <block id="b2eef7b6d059839882bf88ec94098a7c" category="inline-image-macro">顯示「管理帳戶」小工具的快照、您可從中管理使用者、工作區和連接器。</block>
-  <block id="7fe2b3cad6e0fd3e01f58b23a9a48525" category="paragraph"><block ref="7fe2b3cad6e0fd3e01f58b23a9a48525" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3fc84828d29031ccb044fc851a791dd5" category="inline-link-macro">設定NetApp帳戶</block>
   <block id="72c3eeaa29779a60f2efe95a1c173302" category="paragraph">如需逐步指示、請參閱 <block ref="2e63be6a139b9c6424fb3c44b74add23" category="inline-link-macro-rx"></block>。</block>
   <block id="ff73074ccafb0bcfc1c49a09ceb6532f" category="section-title">帳戶設定</block>
@@ -1183,20 +1179,11 @@
   <block id="e9b0a93b5b5cd95f3a2c544875c51ae3" category="inline-link-macro">深入瞭解這些角色</block>
   <block id="7895b348f81fb8e1118370d6314dfb51" category="paragraph"><block ref="a7cac0974b1a57b009ba128474746390" category="inline-link-macro-rx"></block>。</block>
   <block id="d5e92609cf510f5f97ac326e907a0540" category="section-title">工作區</block>
-  <block id="60d3dd11504adc56b8a14c980bdd5d7e" category="paragraph">工作環境代表儲存系統：</block>
-  <block id="6d62e44bd211e57c0032e46d82290592" category="list-text">單節點 Cloud Volumes ONTAP 的不完整系統或 HA 配對</block>
-  <block id="77a4ac7460b467c67ece8cfb55ed209d" category="list-text">您網路中的內部部署 ONTAP 式叢集</block>
-  <block id="5e916b8b38543efb8ef5bc8e670d1215" category="list-text">NetApp 私有儲存組態中的一個叢集 ONTAP</block>
   <block id="db0bbabf83c6d4f2a7e710c9d223191c" category="inline-link-macro">瞭解如何新增工作區</block>
   <block id="ced2d945d98014d4467b685b8314caa1" category="paragraph"><block ref="5fada74255cc5bbf99ee00eda10403ac" category="inline-link-macro-rx"></block>。</block>
   <block id="649d75c6283da2a4b802839db32a41af" category="inline-link-macro">深入瞭解連接器</block>
   <block id="75599088791b92751fdc2c9cee3a481e" category="paragraph"><block ref="c5bcec7879e3189e4c7a5fdbd8b19a5b" category="inline-link-macro-rx"></block>。</block>
   <block id="4ca2c509994c2776d0880357b4e8e5be" category="section-title">訂閱</block>
-  <block id="eb7609cbad4b54a1269927272d7ddf53" category="paragraph">這些是與所選帳戶相關的NetApp訂閱。</block>
-  <block id="93568a1c17a387012558e910c14e7060" category="paragraph">訂閱之後、即可從「管理帳戶」小工具取得每份訂閱。您只會看到與您目前檢視的帳戶相關聯的訂閱內容。</block>
-  <block id="bda4907cd89656b2bda837a282994221" category="paragraph">您可以選擇重新命名訂閱、以及取消訂閱與一或多個帳戶的關聯。</block>
-  <block id="3bdc84428bee979e77f1781f40304f42" category="inline-link-macro">瞭解如何管理訂閱</block>
-  <block id="a37da40b1cf1ce86308b603dbc497d9d" category="paragraph"><block ref="443587ef67dfdb72c89535a3fb85e4c4" category="inline-link-macro-rx"></block>。</block>
   <block id="ff7c0fcd6a31e735a61c001f75426961" category="section-title">範例</block>
   <block id="6643fe16b29885768bd30191d9673e3e" category="paragraph">下列範例說明您如何設定帳戶。</block>
   <block id="5035e448f1f49334cb738cddfa38f051" category="admonition">在後續的兩個範例影像中、Connector和Cloud Volumes ONTAP the SURF系 實際上並未駐留NetApp帳戶、而是在雲端供應商中執行。這是每個元件之間關係的概念呈現。</block>
@@ -1788,7 +1775,6 @@
   <block id="5f174caa182ccf4eda7018d2ae4ed7a0" category="section-title">開啟連接埠3128以顯示AutoSupport 資訊</block>
   <block id="5fc25795a93f92bfee952eef3220d9e5" category="paragraph">唯一的需求是確保連接器的安全性群組允許連接埠3128上的傳入連線。部署Connector之後、您需要開啟此連接埠。</block>
   <block id="489db3f339b691ea4dea5f4572483024" category="paragraph">如果您使用預設的資訊安全群組Cloud Volumes ONTAP 來執行此功能、則無需變更其安全群組。但是如果您打算定義嚴格Cloud Volumes ONTAP 的for the Sfor the Sfor the、那麼您也必須確保Cloud Volumes ONTAP 該安全性群組允許連接埠3128上的傳出連線。</block>
-  <block id="117e86e552d0c131628c9b59f4f27b24" category="paragraph">如果您的企業原則要求您使用Proxy伺服器來進行所有的HTTP通訊至網際網路、則必須將連接器設定為使用HTTP Proxy伺服器。Proxy 伺服器可以位於雲端或網路中。</block>
   <block id="cd5948a5853fc000f635c34407e9be0e" category="paragraph">若將連接器設定為使用HTTP Proxy伺服器、則當公用IP位址或NAT閘道無法使用時、即可提供傳出網際網路存取。此Proxy伺服器僅提供連接器與傳出連線。它不提供Cloud Volumes ONTAP 任何連接功能給不適用的系統。</block>
   <block id="6d222908a201e6b65bf048113504f4c1" category="inline-xref">深入瞭解Connector的Proxy伺服器</block>
   <block id="379c1280ecc325be9f0d74d095f55ae9" category="cell">提供可存取網際網路的功能、將資訊傳送給NetApp支援部門。Cloud Volumes ONTAP AutoSupport您必須在部署後手動開啟此連接埠。 <block ref="9a4dd6e745bb9c3853507bba2251a2cd" category="inline-xref-macro-rx"></block>。</block>
@@ -2024,16 +2010,11 @@
   <block id="5c003b7f397067f0fc40909f87cde11b" category="paragraph">NetApp帳戶_提供多租戶共享、讓您從BlueXP內部、在隔離的工作區中組織使用者和資源。</block>
   <block id="c08e0acfb414367415c038345e4c0ad8" category="paragraph">當您第一次存取BlueXP時、系統會提示您選擇或建立NetApp帳戶：</block>
   <block id="ca3dd06e715b50b0d24512292f803669" category="inline-image-macro">BlueXP安裝精靈的快照、會提示您輸入要在其中建立BlueXP的NetApp帳戶。</block>
-  <block id="5b0ceafe4cf4db53492676845d2b61bb" category="paragraph"><block ref="5b0ceafe4cf4db53492676845d2b61bb" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="4fdee13cfdebdc3f01deb5ca5f67934f" category="paragraph">然後、BlueXP帳戶管理員可以管理使用者（成員）、工作區、連接器及訂閱、藉此修改此帳戶的設定：</block>
-  <block id="477ca1b4f458cf89a95d6b523a6cd807" category="paragraph">BlueXP中的「管理帳戶」小工具可讓帳戶管理員管理NetApp帳戶。如果您剛建立帳戶、就會從頭開始。但如果您已經設定帳戶、您會看到 _ 全部 _ 與帳戶相關聯的使用者、工作區、連接器和訂閱。</block>
   <block id="017ed1bc01073c81677d981001613c16" category="paragraph">「總覽」頁面會顯示「帳戶名稱」和「帳戶ID」。註冊某些服務時、您可能需要提供您的帳戶ID。本頁也包含一些BlueXP組態選項。</block>
   <block id="099685cfc1eb5331aeaaf96dd8dcc45c" category="paragraph">成員是您與NetApp帳戶相關聯的BlueXP使用者。將使用者與該帳戶中的帳戶和一或多個工作區建立關聯、可讓這些使用者在BlueXP中建立及管理工作環境。</block>
   <block id="d8b443dec47ef3fe29b32e2c5b56a6ec" category="list-text">_Account admin_：可在BlueXP中執行任何動作。</block>
   <block id="8322c371977d0ed96075b5448c122826" category="paragraph">在BlueXP中、工作區會將任何數量的_Work處 環境與其他工作環境隔離。除非帳戶管理員將該管理員與該工作區建立關聯、否則 Workspace 系統管理員無法存取工作區中的工作環境。</block>
   <block id="dfb1d6b546a58e94444916141dd6a141" category="paragraph">Connector可讓BlueXP管理公有雲環境中的資源與程序。Connector 可在您部署在雲端供應商的虛擬機器執行個體上執行、或是在您設定的內部部署主機上執行。</block>
-  <block id="f2e48283adc0e8071ea35676528cd30b" category="paragraph">您可以使用連接器搭配多個 NetApp 雲端資料服務。例如、如果您已經有一個Connector for BlueXP、則可以在設定雲端分層服務時加以選取。</block>
-  <block id="56d806d8894cb6f15ba1fb66e66b3cf3" category="paragraph">當您從雲端供應商的市場訂閱BlueXP時、系統會將您重新導向至BlueXP網站、您需要在其中儲存訂閱內容、並將其與特定帳戶建立關聯。</block>
   <block id="1dfe6f08cb8e712d8c99300a0890f211" category="paragraph">以下是另一個使用兩個獨立NetApp帳戶顯示最高層級的多租戶共享的範例。例如、服務供應商可能在一個帳戶中使用BlueXP來為客戶提供服務、而使用另一個帳戶來為其中一個業務單位提供災難恢復。</block>
   <block id="55553d1b65f45713caedcf9f0b1a6042" category="doc">登入BlueXP</block>
   <block id="7f7cb82a5dd812c3a52b46966d21ac40" category="paragraph">您可以透過SaaS型使用者介面、從網頁瀏覽器存取BlueXP。</block>
@@ -2084,7 +2065,6 @@
   <block id="5646658d58bb92ba775a6c2cd024ef17" category="paragraph">如果您的網路已設定具有上述任一範圍的子網路、則可能會遇到來自BlueXP的連線故障。例如ONTAP 、在BlueXP中探索內部的功能不全的叢集可能會失敗。</block>
   <block id="4195cd5f5be4f9f1f03edcb9e48c9b07" category="inline-link-macro">BlueXP Connector IP與現有網路衝突</block>
   <block id="290b978e42f71f7d091ff656795a223e" category="paragraph">請參閱知識庫文章 <block ref="ec3dc3610ab92c8939c1af12267841a7" category="inline-link-macro-rx"></block> 如需如何變更連接器介面的IP位址的指示。</block>
-  <block id="2b82837bf5cef64e65d0df717eafd918" category="paragraph">BlueXP不支援在連接器上使用HTTPS Proxy。</block>
   <block id="5f06d23f83d6190c4d06ff980526b619" category="paragraph">BlueXP不支援啟用SSL解密的防火牆組態。如果啟用SSL解密、則錯誤訊息會顯示在BlueXP中、而Connector執行個體則顯示為非作用中。</block>
   <block id="ad031591b605d8cc8b0bf802ff591d40" category="paragraph">如果您在AWS GovCloud區域、Azure Gov區域或Azure DoD區域部署Connector、則只能透過Connector的主機IP位址存取BlueXP。系統會停用整個帳戶的 SaaS 平台存取權。</block>
   <block id="0eecc61a1a6e481db1e7242f1c8c6009" category="paragraph">這表示只有能夠存取終端使用者內部VPC/vnet的授權使用者、才能使用BlueXP的UI或API。</block>
@@ -2855,4 +2835,17 @@
   <block id="9df83ab1f3ab5fb0d62768dd3ff406e6" category="list-text">cloudkms.keyclas.getIamPolicy</block>
   <block id="e7456e97941e04b31434ba6dcce10d88" category="list-text">cloudkms.keyRings.setIamPolicy</block>
   <block id="3705a469472bf9882aff3f58dc3f4c5b" category="cell">shttps：//management．azure.microsoft.scCloud \https://login.microsoftonline.microsoft.scloud</block>
+  <block id="0a72a5335f5b852604ea0ad0c2fe10e1" category="paragraph">現在您已經設定好帳戶、您可以隨時移除使用者、管理工作區及管理Connectors來管理帳戶。 <block ref="4b4f4de61b1c0103e06c096d3b330838" category="inline-link-macro-rx"></block>。</block>
+  <block id="86159ef2c579fd643503396dca6f3885" category="paragraph"><block ref="86159ef2c579fd643503396dca6f3885" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1403ef0f8512715bcf44602da2445c6a" category="paragraph">然後、BlueXP Account Admins可透過管理使用者（成員）、工作區和連接器來修改此帳戶的設定：</block>
+  <block id="8cdce640828eda5cb8aadf745fb4ab7b" category="paragraph"><block ref="8cdce640828eda5cb8aadf745fb4ab7b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="10ae1ddc891d1002b557009f269a5987" category="paragraph">BlueXP中的「管理帳戶」小工具可讓帳戶管理員管理NetApp帳戶。如果您剛建立帳戶、就會從頭開始。但如果您已經設定帳戶、您會看到_所有_與該帳戶相關聯的使用者、工作區和連接器。</block>
+  <block id="dcc399fb58d401bf940e5d9de0f0387a" category="paragraph">工作環境代表儲存系統。例如：</block>
+  <block id="a340186ec1e6c164285cf5a71abe8c4c" category="list-text">一套系統Cloud Volumes ONTAP</block>
+  <block id="e64a5009263178a9824652eb7624d300" category="list-text">內部部署ONTAP 的叢集</block>
+  <block id="46f3c2b17cd41da44d4022428c48ec74" category="list-text">Kubernetes叢集</block>
+  <block id="aa2a9593bd535a1923acb9053fd7788b" category="paragraph">您可以使用連接器搭配多個 NetApp 雲端資料服務。例如、如果您使用Connector來管理Cloud Volumes ONTAP 功能、您可以使用相同的Connector搭配其他服務、例如Cloud Tiering。</block>
+  <block id="a046fbde0a8e04968445555624e37a69" category="summary">如果您的企業原則要求您使用Proxy伺服器來進行所有網際網路通訊、則您必須設定連接器以使用該Proxy伺服器。如果在安裝期間未將Connector設定為使用Proxy伺服器、則可將Connector設定為隨時使用該Proxy伺服器。</block>
+  <block id="07fe9439c5f6159dd126f0b5ad5b0282" category="doc">設定連接器以使用HTTP Proxy伺服器</block>
+  <block id="231f168c8922afc18c96c3ab2866fb77" category="paragraph">BlueXP支援從使用者介面設定HTTP Proxy伺服器。Proxy 伺服器可以位於雲端或網路中。</block>
 </blocks>

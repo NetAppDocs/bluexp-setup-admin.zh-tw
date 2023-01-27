@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-configuring-proxy.html 
 keywords: proxy, proxy server, proxy, internet, HTTP, http, https 
-summary: 如果您的企業原則要求您使用Proxy伺服器來進行所有的HTTP通訊至網際網路、則必須設定連接器以使用該HTTP Proxy伺服器。Proxy 伺服器可以位於雲端或網路中。 
+summary: 如果您的企業原則要求您使用Proxy伺服器來進行所有網際網路通訊、則您必須設定連接器以使用該Proxy伺服器。如果在安裝期間未將Connector設定為使用Proxy伺服器、則可將Connector設定為隨時使用該Proxy伺服器。 
 ---
 = 設定連接器以使用HTTP Proxy伺服器
 :hardbreaks:
@@ -14,10 +14,9 @@ summary: 如果您的企業原則要求您使用Proxy伺服器來進行所有的
 
 
 [role="lead"]
-如果您的企業原則要求您使用Proxy伺服器來進行所有的HTTP通訊至網際網路、則必須將連接器設定為使用HTTP Proxy伺服器。Proxy 伺服器可以位於雲端或網路中。
+如果您的企業原則要求您使用Proxy伺服器來進行所有網際網路通訊、則您必須設定連接器以使用該Proxy伺服器。如果在安裝期間未將Connector設定為使用Proxy伺服器、則可將Connector設定為隨時使用該Proxy伺服器。
 
-
-NOTE: BlueXP不支援在連接器上使用HTTPS Proxy。
+BlueXP支援從使用者介面設定HTTP Proxy伺服器。Proxy 伺服器可以位於雲端或網路中。
 
 若將連接器設定為使用HTTP Proxy伺服器、則當公用IP位址或NAT閘道無法使用時、即可提供傳出網際網路存取。此Proxy伺服器僅提供連接器與傳出連線。它不提供Cloud Volumes ONTAP 任何連接功能給不適用的系統。
 

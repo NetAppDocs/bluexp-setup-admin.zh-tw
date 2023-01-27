@@ -123,4 +123,4 @@ Workspace 管理員現在可以使用這些連接器來建立 Cloud Volumes ONTA
 
 == 接下來呢？
 
-現在您已經設定好帳戶、您可以隨時移除使用者、管理工作區、連接器和訂閱、來管理帳戶。 link:task-managing-netapp-accounts.html["瞭解如何管理您的帳戶"]。
+現在您已經設定好帳戶、您可以隨時移除使用者、管理工作區及管理Connectors來管理帳戶。 link:task-managing-netapp-accounts.html["瞭解如何管理您的帳戶"]。
