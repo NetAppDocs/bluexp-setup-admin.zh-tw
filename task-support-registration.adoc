@@ -14,6 +14,17 @@ summary: 在您透過NetApp技術支援開啟支援案例之前、您必須先�
 
 
 
+== 支援雲端供應商解決方案
+
+如需您已整合至BlueXP的下列雲端供應商解決方案的技術支援、請參閱該產品的藍圖XP文件中的「取得協助」。
+
+* link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/start/concept-fsx-aws.html#getting-help["Amazon FSX for ONTAP Sf"^]
+* link:https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/concept-azure-netapp-files.html#getting-help["Azure NetApp Files"^]
+* link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-service-gcp/concept-cvs-gcp.html#getting-help["適用於 Google Cloud Cloud Volumes Service"^]
+
+
+
+
 == 支援登錄總覽
 
 有兩種登錄形式可啟動支援服務權利：

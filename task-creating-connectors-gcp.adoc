@@ -275,6 +275,11 @@ includedPermissions:
 - storage.objects.list
 - monitoring.timeSeries.list
 - storage.buckets.getIamPolicy
+- cloudkms.cryptoKeys.getIamPolicy
+- cloudkms.cryptoKeys.setIamPolicy
+- cloudkms.keyRings.get
+- cloudkms.keyRings.getIamPolicy
+- cloudkms.keyRings.setIamPolicy
 ----
 . https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account["建立Google Cloud服務帳戶、並套用您剛建立的自訂角色"^]。
 . 如果您想要在 Cloud Volumes ONTAP 其他專案中部署 https://cloud.google.com/iam/docs/granting-changing-revoking-access#granting-console["將具有BlueXP角色的服務帳戶新增至該專案、以授予存取權"^]。您必須針對每個專案重複此步驟。
@@ -388,6 +393,9 @@ includedPermissions:
 [cols="2*"]
 |===
 | 端點 | 目的 
+
+
+| \https://www.googleapis.com/compute/v1/\https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects | 管理Google Cloud中的資源。 
 
 
 | \https://support.netapp.com | 以取得授權資訊、並將AutoSupport 資訊傳送給NetApp支援部門。 

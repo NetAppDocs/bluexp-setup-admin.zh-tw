@@ -124,6 +124,11 @@ includedPermissions:
 - storage.objects.list
 - monitoring.timeSeries.list
 - storage.buckets.getIamPolicy
+- cloudkms.cryptoKeys.getIamPolicy
+- cloudkms.cryptoKeys.setIamPolicy
+- cloudkms.keyRings.get
+- cloudkms.keyRings.getIamPolicy
+- cloudkms.keyRings.setIamPolicy
 ----
 
 
@@ -228,4 +233,27 @@ includedPermissions:
 
 
 | -監控.timeSeries.list -儲存區.buckes.getIamPolicy | 探索Google Cloud Storage儲存桶的相關資訊。 
+
+
+| - cloudkms.cryptoKeys.Get - cloudkms.cryptoKeys.getIamPolicy - cloudkms.cryptoKeys.list - cloudkms.cryptoKeys.setIamPolicy - cloudkms.keyclings - cloudkms.getIamPolicy - cloudkms.keyclings - cloudkms.keyRings.setIamPolicy | 可在Cloud Backup啟動精靈中選取您自己的客戶管理金鑰、而非使用預設的Google管理加密金鑰。 
 |===
+
+
+== 變更記錄
+
+新增和移除權限時、我們會在下方各節中加以註記。
+
+
+
+=== 2023年1月27日
+
+已將下列權限新增至原則：
+
+* cloudkms.cryptoKeys.getIamPolicy
+* cloudkms.cryptoKeys.setIamPolicy
+* cloudkms.keyclous.Get
+* cloudkms.keyclas.getIamPolicy
+* cloudkms.keyRings.setIamPolicy
+
+
+雲端備份需要這些權限。

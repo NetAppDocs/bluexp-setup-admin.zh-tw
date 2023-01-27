@@ -219,6 +219,9 @@ AWS使用者現在擁有從BlueXP建立Connector所需的權限。當您收到Bl
 | 端點 | 目的 
 
 
+| \https：<region> //__LW_AT__.amazonaws.com | 管理AWS中的資源。 
+
+
 | \https://support.netapp.com | 以取得授權資訊、並將AutoSupport 資訊傳送給NetApp支援部門。 
 
 
