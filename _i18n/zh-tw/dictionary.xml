@@ -2848,4 +2848,5 @@
   <block id="a046fbde0a8e04968445555624e37a69" category="summary">如果您的企業原則要求您使用Proxy伺服器來進行所有網際網路通訊、則您必須設定連接器以使用該Proxy伺服器。如果在安裝期間未將Connector設定為使用Proxy伺服器、則可將Connector設定為隨時使用該Proxy伺服器。</block>
   <block id="07fe9439c5f6159dd126f0b5ad5b0282" category="doc">設定連接器以使用HTTP Proxy伺服器</block>
   <block id="231f168c8922afc18c96c3ab2866fb77" category="paragraph">BlueXP支援從使用者介面設定HTTP Proxy伺服器。Proxy 伺服器可以位於雲端或網路中。</block>
+  <block id="adff0cc7ebdc35c0671c2e9adb29cd98" category="paragraph">當SaaS平台停用時、政府區域會支援Cloud Backup、但當SaaS平台停用時、商業區域則不支援</block>
 </blocks>

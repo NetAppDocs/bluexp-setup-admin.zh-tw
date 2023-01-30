@@ -282,6 +282,10 @@ link:concept-netapp-accounts.html#users-workspaces-and-service-connectors["深�
 
 如果停用SaaS平台、則無法從BlueXP取得下列服務：
 
+* 雲端備份
++
+當SaaS平台停用時、政府區域會支援Cloud Backup、但當SaaS平台停用時、商業區域則不支援
+
 * 雲端資料感測
 * Kubernetes
 * 雲端分層
