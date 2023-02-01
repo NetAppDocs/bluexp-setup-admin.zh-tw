@@ -127,7 +127,6 @@
   <block id="612b348971c225ac2d665ccff3a8413d" category="list-text">按一下「*一般*」下的「* HTTP Proxy組態*」。</block>
   <block id="2c451caa323474f558c4e4065578647d" category="list-text">設定Proxy：</block>
   <block id="45258bae64ec247989d17b5b6233b7b8" category="list-text">按一下*啟用Proxy*。</block>
-  <block id="8550306d83f9fe682f85ed3f60217f89" category="list-text">使用語法指定伺服器<block ref="f8f3e404ad5e32f60f55bb48e6395ae6" category="inline-link-rx"></block></block>
   <block id="3d069ceba6ecf8b2c1c3def00d512e45" category="list-text">如果伺服器需要基本驗證、請指定使用者名稱和密碼</block>
   <block id="4cc186df234138a57b2e8c5d8e5f7f8d" category="list-text">按一下「 * 儲存 * 」。</block>
   <block id="54734e5bba3b83b2757e43d1ff24b2c4" category="section-title">啟用直接API流量</block>
@@ -988,7 +987,6 @@
   <block id="edda80be79ac3f7cac925a65c6a3e5b5" category="list-text">新增自訂標記（中繼資料）至執行個體。</block>
   <block id="a6100ac4fa5cb7bbb1c49e95165b96b2" category="inline-link">必要的權限</block>
   <block id="bc08dffbc581e8fd57ce1bac9b369e13" category="list-text">選擇是否要加密Connector的EBS磁碟。您可以選擇使用預設加密金鑰或使用自訂金鑰。</block>
-  <block id="9a5f9a8791099f371ab5a4d09e6974a7" category="list-text">*網路*：指定執行個體的VPC、子網路和金鑰配對、選擇是否啟用公用IP位址、以及選擇性地指定Proxy組態。</block>
   <block id="39c1f44dc3cf3d61f829ba697b33eaac" category="list-text">* 安全性群組 * ：選擇是建立新的安全性群組、還是選擇允許傳入 HTTP 、 HTTPS 及 SSH 存取的現有安全性群組。</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link-macro">深入瞭解</block>
   <block id="cb11319a6aac10698937e0bc23986201" category="summary">「帳戶管理員」、「工作區管理員」、「法規遵循檢視器」及SnapCenter 「支援對象管理員」角色、可為使用者提供特定權限。</block>
@@ -1775,7 +1773,6 @@
   <block id="5f174caa182ccf4eda7018d2ae4ed7a0" category="section-title">開啟連接埠3128以顯示AutoSupport 資訊</block>
   <block id="5fc25795a93f92bfee952eef3220d9e5" category="paragraph">唯一的需求是確保連接器的安全性群組允許連接埠3128上的傳入連線。部署Connector之後、您需要開啟此連接埠。</block>
   <block id="489db3f339b691ea4dea5f4572483024" category="paragraph">如果您使用預設的資訊安全群組Cloud Volumes ONTAP 來執行此功能、則無需變更其安全群組。但是如果您打算定義嚴格Cloud Volumes ONTAP 的for the Sfor the Sfor the、那麼您也必須確保Cloud Volumes ONTAP 該安全性群組允許連接埠3128上的傳出連線。</block>
-  <block id="cd5948a5853fc000f635c34407e9be0e" category="paragraph">若將連接器設定為使用HTTP Proxy伺服器、則當公用IP位址或NAT閘道無法使用時、即可提供傳出網際網路存取。此Proxy伺服器僅提供連接器與傳出連線。它不提供Cloud Volumes ONTAP 任何連接功能給不適用的系統。</block>
   <block id="6d222908a201e6b65bf048113504f4c1" category="inline-xref">深入瞭解Connector的Proxy伺服器</block>
   <block id="379c1280ecc325be9f0d74d095f55ae9" category="cell">提供可存取網際網路的功能、將資訊傳送給NetApp支援部門。Cloud Volumes ONTAP AutoSupport您必須在部署後手動開啟此連接埠。 <block ref="9a4dd6e745bb9c3853507bba2251a2cd" category="inline-xref-macro-rx"></block>。</block>
   <block id="9998984c95caccce61e49ca25de1c99f" category="paragraph">請注意、註冊表單中只允許英文字元。</block>
@@ -1829,7 +1826,6 @@
   <block id="d2b8d6f0cd04659de9813fba0b765319" category="inline-xref">檢視IAM角色</block>
   <block id="5695f1494bf1a23e4dfb636b83f9663c" category="inline-xref">請依照逐步指示操作</block>
   <block id="e55593614a7f3a45e77ff97daf29fa18" category="paragraph"><block ref="bd1177e3d8f8248f18d9f01f00d6aa84" category="inline-xref-macro-rx"></block> 或 <block ref="f998d9b8f7fa449c8986f949582854eb" category="inline-xref-macro-rx"></block>。</block>
-  <block id="3d19b00e58ef1af50dd7a50cb57d2a9b" category="paragraph">您將需要VPC和子網路、並可從網際網路連線至特定端點。如果傳出網際網路需要HTTP Proxy、則您需要IP位址、認證和HTTPS憑證。</block>
   <block id="0adaf59e592ea102330ecf66723d01c0" category="inline-xref">檢視網路需求</block>
   <block id="e18d3aaf46d9323ec3d44fd9d3878734" category="paragraph"><block ref="77e8c70950b7db505fe53c4bcd55f41a" category="inline-xref-macro-rx"></block>。</block>
   <block id="e988340d1dfb68e041da5e7a65701097" category="paragraph">按一下「Connector（連接器）」下拉式清單、選取「* Add Connector*（新增連接器*）」、然後依照提示進行</block>
@@ -1837,7 +1833,6 @@
   <block id="442342eacc7f01318bc860131355649e" category="paragraph"><block ref="ca365c48bf30193bd65b99125fcf8cd5" category="inline-xref-macro-rx"></block>。</block>
   <block id="ab316a3ccbad97726269c9705958262a" category="section-title">設定網路</block>
   <block id="824f455afa0ae197e5e7156988b6dc50" category="section-title">Proxy伺服器</block>
-  <block id="3ae1b8362f96338c0c28c7652251bc8b" category="paragraph">如果您的組織需要為所有傳出的網際網路流量部署HTTP Proxy、請取得下列有關HTTP Proxy的資訊：</block>
   <block id="75ba8d70e3692ba200f0e0df37b4d2ae" category="list-text">IP 位址</block>
   <block id="2daf1cb573c2c61422faf64610cf9402" category="list-text">認證資料</block>
   <block id="6a3f3799bc264d32568bb7169ddd515a" category="list-text">HTTPS憑證</block>
@@ -1886,7 +1881,6 @@
   <block id="0e4b0391e50169d97fc505f0c73a94ba" category="paragraph">連接器應部署在Cloud Volumes ONTAP 其所管理的或所管理的各個系統所在的Azure區域<block ref="71e0e9a7366955554f0600c5ea8cfc7f" category="inline-link-rx"></block> 適用於整個系統。Cloud Volumes ONTAP這項需求可確保Cloud Volumes ONTAP Azure Private Link連線可用於連接至相關的儲存帳戶。</block>
   <block id="07a7f9f6c28c927482b86d1b2710f6a3" category="paragraph"><block ref="07a7f9f6c28c927482b86d1b2710f6a3" category="inline-link-rx"></block></block>
   <block id="a3f904af5bc42ef6ae44062da5d02b45" category="list-text">按一下*繼續*、使用產品內建指南準備部署。每個步驟都包含文件本頁所含的資訊。</block>
-  <block id="7b3422536b44078a6701640706be10a0" category="list-text">如果您的組織需要代理處理所有傳出的網際網路流量、則HTTP Proxy的詳細資料如下：</block>
   <block id="1086659fbba9a8aed49e109adc659d56" category="list-text">在*部署連接器*頁面上：</block>
   <block id="3e51a9204bf7c3a99ce916328857c361" category="list-text">在「*驗證*」下、按一下「* Active Directory服務主體*」、然後輸入Azure Active Directory服務主體的相關資訊、以授予必要的權限：</block>
   <block id="52352d978b8e538f26067965a59f6fc7" category="list-text">按一下*登入*。</block>
@@ -2211,7 +2205,6 @@
   <block id="0d36dab0ce71c33a40b8ea4c8c773291" category="paragraph">允許您帳戶中的第三方服務存取BlueXP中提供的第三方服務。第三方服務是類似NetApp所提供服務的雲端服務、但由第三方公司管理及支援。</block>
   <block id="41f2e26a5f1f980cf07709ccd461458a" category="paragraph">如果停用SaaS平台、則無法從BlueXP取得下列服務：</block>
   <block id="1ce82671debd0854eab737731870ba89" category="admonition">這是一項無法還原的行動、會使您無法使用BlueXP SaaS平台。您需要從本機連接器執行動作。您將無法使用NetApp的許多整合式雲端服務、而重新啟用SaaS平台將需要NetApp支援的協助。</block>
-  <block id="b39b73ad4fe9a846dd3074a3698f2989" category="paragraph">如果Cloud Volumes ONTAP 無法透過外部網際網路連線來傳送AutoSupport 各種消息、則BlueXP會自動將這些Cloud Volumes ONTAP 系統設定為使用連接器隨附的Proxy伺服器。唯一的需求是確保連接器的安全群組允許透過連接埠3128進行傳入連線。部署Connector之後、您需要開啟此連接埠。</block>
   <block id="47e1359a022ca3afaefd4c4135f630ab" category="inline-link-macro">登入BlueXP SaaS介面</block>
   <block id="53cd2d53a0bbb4596900dbf8dc2f1193" category="list-text"><block ref="5cdb1ce54f5091c2b2ed720c94b4f10e" category="inline-link-macro-rx"></block> 從連線至連接器執行個體的機器。</block>
   <block id="b50274362874150065bf00a8be70b751" category="paragraph">在Connector上執行的BlueXP介面會載入新的瀏覽器索引標籤。</block>
@@ -2701,7 +2694,6 @@
   <block id="49fa0b884bb05dfb3678aff69fc2a90f" category="list-text">\https://production-artifacts.cloudmanager.cloud.netapp.com</block>
   <block id="f55e31da35f47937201bdbf54e964315" category="list-text">\https://*.blob.core.windows.net</block>
   <block id="4212008c2b937ee581ff9e530b8440f8" category="list-text">安裝Connector的root權限。</block>
-  <block id="f39873ba3fdf2dff72b117d1ccc0a3f8" category="list-text">Proxy伺服器的詳細資料、如果需要Proxy才能從Connector存取網際網路。</block>
   <block id="2d8d8f0bca25643e72f72642f3d69663" category="paragraph">您可以選擇在安裝後設定Proxy伺服器、但需要重新啟動Connector。</block>
   <block id="65b78a376b8b24b27e70f95a439510ed" category="list-text">如果Proxy伺服器使用HTTPS、則為CA簽署的憑證。</block>
   <block id="e4e566d8d29952e9ed77e5d97574962e" category="paragraph">您應該下載連接器安裝程式、以便在網路或雲端上使用。</block>
@@ -2846,7 +2838,18 @@
   <block id="46f3c2b17cd41da44d4022428c48ec74" category="list-text">Kubernetes叢集</block>
   <block id="aa2a9593bd535a1923acb9053fd7788b" category="paragraph">您可以使用連接器搭配多個 NetApp 雲端資料服務。例如、如果您使用Connector來管理Cloud Volumes ONTAP 功能、您可以使用相同的Connector搭配其他服務、例如Cloud Tiering。</block>
   <block id="a046fbde0a8e04968445555624e37a69" category="summary">如果您的企業原則要求您使用Proxy伺服器來進行所有網際網路通訊、則您必須設定連接器以使用該Proxy伺服器。如果在安裝期間未將Connector設定為使用Proxy伺服器、則可將Connector設定為隨時使用該Proxy伺服器。</block>
-  <block id="07fe9439c5f6159dd126f0b5ad5b0282" category="doc">設定連接器以使用HTTP Proxy伺服器</block>
-  <block id="231f168c8922afc18c96c3ab2866fb77" category="paragraph">BlueXP支援從使用者介面設定HTTP Proxy伺服器。Proxy 伺服器可以位於雲端或網路中。</block>
   <block id="adff0cc7ebdc35c0671c2e9adb29cd98" category="paragraph">當SaaS平台停用時、政府區域會支援Cloud Backup、但當SaaS平台停用時、商業區域則不支援</block>
+  <block id="a8c35528b3f05016e72e71694bb679ee" category="list-text">Proxy伺服器的詳細資料、如果需要Proxy才能從Connector存取網際網路。支援HTTP和HTTPS。</block>
+  <block id="16c184ab0a5376cef0ecef7f0da93ac2" category="list-text">如果主機上已設定_http或_https或proxy_系統變數、請將其移除：</block>
+  <block id="15c8f910fc596ecb4a8b91027b56de66" category="paragraph">如果您未移除這些系統變數、安裝將會失敗。</block>
+  <block id="dae5521ccadea1321150f5f74aad0a58" category="paragraph">如果您的組織需要為所有傳出的網際網路流量部署Proxy伺服器、請取得下列有關HTTP或HTTPS Proxy的資訊：</block>
+  <block id="eea7ea20469c0fce0042b06e0bb1327a" category="list-text">若貴組織需要代理處理所有傳出的網際網路流量、請參閱Proxy伺服器的詳細資料：</block>
+  <block id="5ecf1d4c60139fd535d59e1ca3b91b76" category="paragraph">Connector會提出下列API要求、要求在Cloud Volumes ONTAP Azure中部署及管理功能。</block>
+  <block id="7e3934b4ea56939b597edfcf84aa4803" category="paragraph">您將需要VPC和子網路、並可從網際網路連線至特定端點。如果傳出網際網路需要Proxy伺服器、則您需要IP位址、認證和HTTPS憑證。</block>
+  <block id="146adb7944757e88795676b780c31811" category="doc">設定連接器以使用Proxy伺服器</block>
+  <block id="9d8704731bd068bd3be5ad98b7941cba" category="paragraph">BlueXP支援HTTP和HTTPS。Proxy 伺服器可以位於雲端或網路中。</block>
+  <block id="30d7902c191c571f1aa091af3df65f3d" category="paragraph">如果無法使用公用IP位址或NAT閘道、設定連接器使用Proxy伺服器可提供傳出網際網路存取。此Proxy伺服器僅提供連接器與傳出連線。它不提供Cloud Volumes ONTAP 任何連接功能給不適用的系統。</block>
+  <block id="66dcf6df2e799ff19e8fe5b0ed10a143" category="paragraph">如果Cloud Volumes ONTAP 無法透過外部網際網路連線來傳送AutoSupport 各種消息、則BlueXP會自動將這些Cloud Volumes ONTAP 系統設定為使用連接器隨附的Proxy伺服器。唯一的需求是確保連接器的安全群組允許透過連接埠3128進行傳入連線。部署Connector之後、您需要開啟此連接埠。</block>
+  <block id="25e8eb6a683e97e04e337e061a18205c" category="list-text">使用語法指定伺服器<block ref="f8f3e404ad5e32f60f55bb48e6395ae6" category="inline-link-rx"></block> 或<block ref="9ab29a9097f3907435367cc314192885" category="inline-link-rx"></block></block>
+  <block id="5b2b679cfd4361d102ffc80defe9709e" category="list-text">*網路*：指定執行個體的VPC、子網路和金鑰配對、選擇是否啟用公用IP位址、以及選擇性地指定Proxy組態（支援HTTP和HTTPS）。</block>
 </blocks>

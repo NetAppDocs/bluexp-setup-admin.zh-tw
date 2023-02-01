@@ -425,7 +425,7 @@ Connector會針對日常作業提出下列API要求。
 
 === Cloud Volumes ONTAP
 
-Connector會提出下列API要求、要求在Cloud Volumes ONTAP AWS中部署及管理功能。
+Connector會提出下列API要求、要求在Cloud Volumes ONTAP Azure中部署及管理功能。
 
 [cols="5*"]
 |===

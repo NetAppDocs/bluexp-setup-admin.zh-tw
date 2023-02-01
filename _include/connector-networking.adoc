@@ -66,7 +66,7 @@ NOTE: Connector目前正在聯絡「cloudmanager.cloud.netapp.com"」、但即�
 
 === Proxy伺服器
 
-如果您的組織需要為所有傳出的網際網路流量部署HTTP Proxy、請取得下列有關HTTP Proxy的資訊：
+如果您的組織需要為所有傳出的網際網路流量部署Proxy伺服器、請取得下列有關HTTP或HTTPS Proxy的資訊：
 
 * IP 位址
 * 認證資料

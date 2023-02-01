@@ -110,7 +110,7 @@ NOTE: Connector目前正在聯絡「cloudmanager.cloud.netapp.com"」、但即�
 
 === Proxy伺服器
 
-如果您的組織需要為所有傳出的網際網路流量部署HTTP Proxy、請取得下列有關HTTP Proxy的資訊：
+如果您的組織需要為所有傳出的網際網路流量部署Proxy伺服器、請取得下列有關HTTP或HTTPS Proxy的資訊：
 
 * IP 位址
 * 認證資料
@@ -588,7 +588,7 @@ BlueXP可讓您直接從Azure的使用者介面建立連接器。
 .您需要的產品
 * Azure 訂閱。
 * 您所選擇的 Azure 區域中的 Vnet 和子網路。
-* 如果您的組織需要代理處理所有傳出的網際網路流量、則HTTP Proxy的詳細資料如下：
+* 若貴組織需要代理處理所有傳出的網際網路流量、請參閱Proxy伺服器的詳細資料：
 +
 ** IP 位址
 ** 認證資料

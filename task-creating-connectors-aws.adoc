@@ -37,7 +37,7 @@ BlueXP帳戶管理員必須先部署_Connector_、才能使用大多數的BlueXP
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 設定網路
 [role="quick-margin-para"]
-您將需要VPC和子網路、並可從網際網路連線至特定端點。如果傳出網際網路需要HTTP Proxy、則您需要IP位址、認證和HTTPS憑證。
+您將需要VPC和子網路、並可從網際網路連線至特定端點。如果傳出網際網路需要Proxy伺服器、則您需要IP位址、認證和HTTPS憑證。
 
 [role="quick-margin-para"]
 <<設定網路,檢視網路需求>>。
@@ -247,7 +247,7 @@ NOTE: Connector目前正在聯絡「cloudmanager.cloud.netapp.com"」、但即�
 
 === Proxy伺服器
 
-如果您的組織需要為所有傳出的網際網路流量部署HTTP Proxy、請取得下列有關HTTP Proxy的資訊：
+如果您的組織需要為所有傳出的網際網路流量部署Proxy伺服器、請取得下列有關HTTP或HTTPS Proxy的資訊：
 
 * IP 位址
 * 認證資料
@@ -300,7 +300,7 @@ TIP: 如果選擇*假定角色*、您可以從連接器部署精靈建立第一�
 *** 選擇是否要加密Connector的EBS磁碟。您可以選擇使用預設加密金鑰或使用自訂金鑰。
 
 
-** *網路*：指定執行個體的VPC、子網路和金鑰配對、選擇是否啟用公用IP位址、以及選擇性地指定Proxy組態。
+** *網路*：指定執行個體的VPC、子網路和金鑰配對、選擇是否啟用公用IP位址、以及選擇性地指定Proxy組態（支援HTTP和HTTPS）。
 +
 請確定您的金鑰配對正確、可與連接器搭配使用。如果沒有金鑰配對、您將無法存取Connector虛擬機器。
 
