@@ -59,11 +59,8 @@ summary: 當BlueXP在AWS中啟動Connector執行個體時、它會將原則附�
 [source, json]
 ----
 {
-    "Version": "2012-10-17",
     "Statement": [
         {
-            "Sid": "cvoServicePolicy",
-            "Effect": "Allow",
             "Action": [
                 "ec2:DescribeInstances",
                 "ec2:DescribeInstanceStatus",
@@ -111,6 +108,8 @@ summary: 當BlueXP在AWS中啟動Connector執行個體時、它會將原則附�
                 "ec2:DeleteRoute",
                 "ec2:DeletePlacementGroup",
                 "ec2:DescribePlacementGroups",
+                "ec2:DescribeVolumesModifications",
+                "ec2:ModifyVolume",
                 "cloudformation:CreateStack",
                 "cloudformation:DescribeStacks",
                 "cloudformation:DescribeStackEvents",
@@ -159,11 +158,11 @@ summary: 當BlueXP在AWS中啟動Connector執行個體時、它會將原則附�
                 "fsx:Describe*",
                 "fsx:List*"
             ],
-            "Resource": "*"
+            "Resource": "*",
+            "Effect": "Allow",
+            "Sid": "cvoServicePolicy"
         },
         {
-            "Sid": "backupPolicy",
-            "Effect": "Allow",
             "Action": [
                 "ec2:StartInstances",
                 "ec2:StopInstances",
@@ -197,11 +196,11 @@ summary: 當BlueXP在AWS中啟動Connector執行個體時、它會將原則附�
                 "glue:BatchCreatePartition",
                 "glue:BatchDeletePartition"
             ],
-            "Resource": "*"
+            "Resource": "*",
+            "Effect": "Allow",
+            "Sid": "backupPolicy"
         },
         {
-            "Sid": "backupS3Policy",
-            "Effect": "Allow",
             "Action": [
                 "s3:GetBucketLocation",
                 "s3:ListAllMyBuckets",
@@ -242,11 +241,11 @@ summary: 當BlueXP在AWS中啟動Connector執行個體時、它會將原則附�
             ],
             "Resource": [
                 "arn:aws:s3:::netapp-backup-*"
-            ]
+            ],
+            "Effect": "Allow",
+            "Sid": "backupS3Policy"
         },
         {
-            "Sid": "fabricPoolS3Policy",
-            "Effect": "Allow",
             "Action": [
                 "s3:CreateBucket",
                 "s3:GetLifecycleConfiguration",
@@ -262,34 +261,40 @@ summary: 當BlueXP在AWS中啟動Connector執行個體時、它會將原則附�
             ],
             "Resource": [
                 "arn:aws:s3:::fabric-pool*"
-            ]
+            ],
+            "Effect": "Allow",
+            "Sid": "fabricPoolS3Policy"
         },
         {
-            "Sid": "fabricPoolPolicy",
-            "Effect": "Allow",
             "Action": [
                 "ec2:DescribeRegions"
             ],
-            "Resource": "*"
+            "Resource": "*",
+            "Effect": "Allow",
+            "Sid": "fabricPoolPolicy"
         },
         {
-            "Effect": "Allow",
-            "Action": [
-                "ec2:StartInstances",
-                "ec2:StopInstances",
-                "ec2:TerminateInstances"
-            ],
             "Condition": {
                 "StringLike": {
                     "ec2:ResourceTag/netapp-adc-manager": "*"
                 }
             },
+            "Action": [
+                "ec2:StartInstances",
+                "ec2:StopInstances",
+                "ec2:TerminateInstances"
+            ],
             "Resource": [
                 "arn:aws:ec2:*:*:instance/*"
-            ]
+            ],
+            "Effect": "Allow"
         },
         {
-            "Effect": "Allow",
+            "Condition": {
+                "StringLike": {
+                    "ec2:ResourceTag/WorkingEnvironment": "*"
+                }
+            },
             "Action": [
                 "ec2:StartInstances",
                 "ec2:TerminateInstances",
@@ -298,41 +303,37 @@ summary: 當BlueXP在AWS中啟動Connector執行個體時、它會將原則附�
                 "ec2:StopInstances",
                 "ec2:DeleteVolume"
             ],
-            "Condition": {
-                "StringLike": {
-                    "ec2:ResourceTag/WorkingEnvironment": "*"
-                }
-            },
             "Resource": [
                 "arn:aws:ec2:*:*:instance/*"
-            ]
+            ],
+            "Effect": "Allow"
         },
         {
-            "Effect": "Allow",
             "Action": [
                 "ec2:AttachVolume",
                 "ec2:DetachVolume"
             ],
             "Resource": [
                 "arn:aws:ec2:*:*:volume/*"
-            ]
+            ],
+            "Effect": "Allow"
         },
         {
-            "Effect": "Allow",
-            "Action": [
-                "ec2:DeleteVolume"
-            ],
             "Condition": {
                 "StringLike": {
                     "ec2:ResourceTag/WorkingEnvironment": "*"
                 }
             },
+            "Action": [
+                "ec2:DeleteVolume"
+            ],
             "Resource": [
                 "arn:aws:ec2:*:*:volume/*"
-            ]
+            ],
+            "Effect": "Allow"
         }
     ]
-  }
+}
 ----
 --
 .原則2
@@ -340,62 +341,61 @@ summary: 當BlueXP在AWS中啟動Connector執行個體時、它會將原則附�
 [source, json]
 ----
 {
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Sid": "K8sServicePolicy",
-      "Effect": "Allow",
-      "Action": [
-          "ec2:DescribeRegions",
-          "eks:ListClusters",
-          "eks:DescribeCluster",
-          "iam:GetInstanceProfile"
-      ],
-      "Resource": "*"
-    },
-    {
-        "Sid": "GFCservicePolicy",
-        "Effect": "Allow",
-        "Action": [
-            "cloudformation:DescribeStacks",
-            "cloudwatch:GetMetricStatistics",
-            "cloudformation:ListStacks"
-        ],
-        "Resource": "*"
-    },
-    {
-        "Effect": "Allow",
-        "Action": [
-            "ec2:StartInstances",
-            "ec2:TerminateInstances",
-            "ec2:AttachVolume",
-            "ec2:DetachVolume"
-        ],
-        "Condition": {
-            "StringLike": {
-                "ec2:ResourceTag/GFCInstance": "*"
-            }
+    "Statement": [
+        {
+            "Action": [
+                "ec2:DescribeRegions",
+                "eks:ListClusters",
+                "eks:DescribeCluster",
+                "iam:GetInstanceProfile"
+            ],
+            "Resource": "*",
+            "Effect": "Allow",
+            "Sid": "K8sServicePolicy"
         },
-        "Resource": [
-            "arn:aws:ec2:*:*:instance/*"
-        ]
-    },
-    {
-        "Sid": "tagServicePolicy",
-        "Effect": "Allow",
-        "Action": [
-            "ec2:CreateTags",
-            "ec2:DeleteTags",
-            "ec2:DescribeTags",
-            "tag:getResources",
-            "tag:getTagKeys",
-            "tag:getTagValues",
-            "tag:TagResources",
-            "tag:UntagResources"
-        ],
-        "Resource": "*"
-    }
-  ]
+        {
+            "Action": [
+                "cloudformation:DescribeStacks",
+                "cloudwatch:GetMetricStatistics",
+                "cloudformation:ListStacks"
+            ],
+            "Resource": "*",
+            "Effect": "Allow",
+            "Sid": "GFCservicePolicy"
+        },
+        {
+            "Condition": {
+                "StringLike": {
+                    "ec2:ResourceTag/GFCInstance": "*"
+                }
+            },
+            "Action": [
+                "ec2:StartInstances",
+                "ec2:TerminateInstances",
+                "ec2:AttachVolume",
+                "ec2:DetachVolume"
+            ],
+            "Resource": [
+                "arn:aws:ec2:*:*:instance/*"
+            ],
+            "Effect": "Allow"
+        },
+        {
+            "Action": [
+                "ec2:CreateTags",
+                "ec2:DeleteTags",
+                "ec2:DescribeTags",
+                "tag:getResources",
+                "tag:getTagKeys",
+                "tag:getTagValues",
+                "tag:TagResources",
+                "tag:UntagResources"
+            ],
+            "Resource": "*",
+            "Effect": "Allow",
+            "Sid": "tagServicePolicy"
+        }
+    ]
 }
 ----
 --
