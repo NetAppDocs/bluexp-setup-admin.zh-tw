@@ -1262,7 +1262,6 @@
   <block id="0c01b3b7191c43507ad9ca43d6443731" category="cell">提供HTTPS存取、從用戶端網頁瀏覽器存取本機使用者介面、以及從Cloud Data Sense執行個體連線</block>
   <block id="b136ef5f6a01d816991fe3cf7a6ac763" category="cell">TCP</block>
   <block id="dff8e9c2ac33381546d96deea9922999" category="cell">3128</block>
-  <block id="cb4b69eb9bd10da82c15dca2f86a1385" category="cell">9060</block>
   <block id="7fcf8a20eb9257fce9235438893a7754" category="section-title">傳出規則</block>
   <block id="f27967c4c8769094dfb727988a22cbfa" category="paragraph">Connector 的預先定義安全性群組會開啟所有傳出流量。如果可以接受、請遵循基本的傳出規則。如果您需要更嚴格的規則、請使用進階的傳出規則。</block>
   <block id="d4dc7fa133657e4530cfde55110ec3c1" category="section-title">基本傳出規則</block>
@@ -2048,7 +2047,6 @@
   <block id="70f1be412fcdc9d0de757859e335f5a6" category="summary">現在您已經登入並設定了BlueXP、使用者就能開始建立及探索工作環境。</block>
   <block id="082338dd3697084a7af4c20fcdf81e82" category="summary">當BlueXP在Azure中啟動Connector VM時、它會將自訂角色附加至VM、讓Connector有權管理該Azure訂閱中的資源和程序。Connector會使用權限來撥打API呼叫數個Azure服務。</block>
   <block id="770735bf1cfd4e882dd9ac93b90271d3" category="paragraph">直接從BlueXP建立連接器時、BlueXP會自動將此自訂角色套用至連接器。</block>
-  <block id="f0f5ff10d4c591333ded6e8023c5d365" category="cell">提供在政府雲端部署中啟用和使用Cloud Data Sense和Cloud Backup的能力。如果您在BlueXP帳戶中停用SaaS介面、Cloud Backup也需要此連接埠。</block>
   <block id="ecd87ae03b07f0712964d94eb75683a5" category="cell">用於BlueXP的DNS解析</block>
   <block id="ab84a9278b660f1adee8c0a3fe2938de" category="paragraph">如果您是從BlueXP、雲端供應商的市場部署Connector、或是手動將Connector安裝在可存取網際網路的內部部署Linux主機上、則適用下列組態詳細資料。</block>
   <block id="a0676ac5cfebaef69b53ff7e37cd8c3c" category="paragraph">如果您是從BlueXP或雲端供應商的市場部署Connector、請注意下列事項：</block>
@@ -2852,4 +2850,6 @@
   <block id="66dcf6df2e799ff19e8fe5b0ed10a143" category="paragraph">如果Cloud Volumes ONTAP 無法透過外部網際網路連線來傳送AutoSupport 各種消息、則BlueXP會自動將這些Cloud Volumes ONTAP 系統設定為使用連接器隨附的Proxy伺服器。唯一的需求是確保連接器的安全群組允許透過連接埠3128進行傳入連線。部署Connector之後、您需要開啟此連接埠。</block>
   <block id="25e8eb6a683e97e04e337e061a18205c" category="list-text">使用語法指定伺服器<block ref="f8f3e404ad5e32f60f55bb48e6395ae6" category="inline-link-rx"></block> 或<block ref="9ab29a9097f3907435367cc314192885" category="inline-link-rx"></block></block>
   <block id="5b2b679cfd4361d102ffc80defe9709e" category="list-text">*網路*：指定執行個體的VPC、子網路和金鑰配對、選擇是否啟用公用IP位址、以及選擇性地指定Proxy組態（支援HTTP和HTTPS）。</block>
+  <block id="6bd6b829c865d2a64a85e79355655e12" category="cell">9060、9061</block>
+  <block id="971da77efd7f98f0cb0eeb45103b5b77" category="cell">提供在政府雲端部署中啟用和使用Cloud Data Sense和Cloud Backup的能力。如果您在BlueXP帳戶中停用SaaS介面、雲端備份也需要這些連接埠。</block>
 </blocks>
