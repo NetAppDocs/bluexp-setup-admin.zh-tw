@@ -1,0 +1,67 @@
+---
+sidebar: sidebar 
+permalink: task-sign-up-saas.html 
+keywords: sign up, signing up, sign in, signing in, login with netapp, log in with netapp, create account, account 
+summary: 當您開始使用BlueXP時、第一步就是註冊。系統會提供您建立帳戶的選項、但如果您被邀請加入現有帳戶、則可以跳過該步驟。 
+---
+= 註冊BlueXP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+當您開始使用BlueXP時、第一步就是註冊。系統會提供您建立帳戶的選項、但如果您被邀請加入現有帳戶、則可以跳過該步驟。
+
+.關於政府區域的附註
+如果您需要從政府區域或沒有對外網際網路存取的網站存取BlueXP、則需要建立連接器並登入在連接器本機執行的BlueXP使用者介面。 link:task-managing-connectors.html#access-the-local-ui["瞭解如何存取Connector上的本機UI"]。
+
+.註冊選項
+您可以透過SaaS型使用者介面、從網頁瀏覽器存取BlueXP。
+
+您可以使用下列其中一個選項註冊至BlueXP：
+
+* 您現有NetApp 支援網站 的功能驗證（NSS）認證
+* 指定您的電子郵件地址和密碼、即可登入NetApp雲端
+
+
+這兩種選項都支援聯盟連線、可讓您使用公司目錄（聯盟身分識別）的認證單一登入。註冊之後、您可以從設定聯盟連線 https://cloud.netapp.com/help-center["BlueXP說明中心"^] 選擇* Cloud Central登入選項*。
+
+.步驟
+. 開啟網頁瀏覽器、前往 https://console.bluexp.netapp.com["BlueXP主控台"^]
+. 在*登入*頁面上、選取*註冊*。
++
+
+TIP: 如果您打算使用現有的NSS認證、可以跳過註冊頁面、直接在登入頁面中輸入您的電子郵件地址。在此初次登入時、BlueXP會為您註冊。
+
+. 在*註冊*頁面上、選擇其中一個登入選項：
++
+** 如果您有現有NetApp 支援網站 的Sof（NSS）帳戶、請選取* NetApp 支援網站 用您的Sof the Sof the Sof Your Sof the Sof the Sof the Sof the Sof the
++
+使用此選項時NetApp 支援網站 、您的支援儀表板不會將您的驗證（NSS）認證新增至BlueXP。 link:task-adding-nss-accounts.html["瞭解如何將您的NSS認證新增至支援儀表板、以啟用主要工作流程"]。
+
+** 如果您沒有NSS,但尚未建立NetApp雲端認證,請輸入必要資訊以建立NetApp雲端登入。
++
+請注意、註冊表單中只允許英文字元。
+
+
+
+. 出現提示時、請檢閱終端使用者授權合約並接受條款。
+. 在*歡迎*頁面上、輸入您帳戶的名稱。
++
+如果您的企業已經有帳戶、而您想要加入帳戶、您應該跳過此步驟、並請擁有者將您與帳戶建立關聯。擁有者新增您之後、您就可以登入、而且您可以存取該帳戶。 link:task-managing-netapp-accounts.html#adding-users["瞭解如何將成員新增至現有帳戶"]。
+
++
+帳戶是NetApp身分識別平台的最上層元素。它可讓您新增及管理使用者、角色、權限及工作環境。
+
++
+image:screenshot-account-selection.png["當您以不屬於帳戶的新帳戶登入時、會出現歡迎頁面的快照。"]
+
+. 選擇*建立帳戶*。
+
+
+.結果
+您現在有一個BlueXP登入帳戶。在大多數情況下、下一步是建立連接器、將BlueXP的服務連接至混合雲環境。

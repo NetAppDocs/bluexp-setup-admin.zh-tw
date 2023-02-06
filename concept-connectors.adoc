@@ -101,6 +101,8 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 
 NOTE: 如果Cloud Volumes ONTAP 您的系統擁有節點型BYOL授權、系統會在14天後繼續執行、因為授權已安裝在Cloud Volumes ONTAP 該系統上。
 
+如果您的Connector已關機14天或更久、BlueXP將會通知您。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html["深入瞭解BlueXP通知"]。
+
 
 
 == 如何建立連接器

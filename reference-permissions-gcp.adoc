@@ -71,6 +71,9 @@ includedPermissions:
 - compute.instances.start
 - compute.instances.stop
 - compute.instances.updateDisplayDevice
+- compute.instanceGroups.get
+- compute.addresses.get
+- compute.instances.updateNetworkInterface
 - compute.machineTypes.get
 - compute.networks.get
 - compute.networks.list
@@ -229,7 +232,7 @@ includedPermissions:
 | - container。叢集。Get - container。叢集。清單 | 探索在Google Kubernetes Engine中執行的Kubernetes叢集。 
 
 
-| - compute.instanceGroups.get - compute、addresses.Get | 在HA配對上建立及管理儲存VM。 
+| - compute.instanceGroups.get - compute .addresses.Get - compute.instances.updateNetworkInterface | 在Cloud Volumes ONTAP 以各種方式建立及管理儲存VM的整組。 
 
 
 | -監控.timeSeries.list -儲存區.buckes.getIamPolicy | 探索Google Cloud Storage儲存桶的相關資訊。 
@@ -242,6 +245,17 @@ includedPermissions:
 == 變更記錄
 
 新增和移除權限時、我們會在下方各節中加以註記。
+
+
+
+=== 2023年2月6日
+
+已將下列權限新增至此原則：
+
+* compute.instances.updateNetworkInterface
+
+
+此權限為Cloud Volumes ONTAP 必填欄位。
 
 
 

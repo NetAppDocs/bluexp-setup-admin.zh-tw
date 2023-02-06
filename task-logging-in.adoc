@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-logging-in.html 
 keywords: logging in, log in, sign in, signing in, cloud central, netapp cloud central, user account, federated, federation, federated login, federation login, login with netapp, log in with netapp, sign up, create account 
-summary: 您可以透過SaaS型使用者介面、從網頁瀏覽器存取BlueXP。 
+summary: 註冊BlueXP之後、您可以透過SaaS型使用者介面、從網頁瀏覽器登入。 
 ---
 = 登入BlueXP
 :hardbreaks:
@@ -14,7 +14,9 @@ summary: 您可以透過SaaS型使用者介面、從網頁瀏覽器存取BlueXP�
 
 
 [role="lead"]
-您可以透過SaaS型使用者介面、從網頁瀏覽器存取BlueXP。
+註冊BlueXP之後、您可以透過SaaS型使用者介面、從網頁瀏覽器登入。
+
+link:task-sign-up-saas.html["瞭解如何註冊BlueXP並建立組織"]。
 
 如果您是從政府區域或沒有外傳網際網路存取權的網站存取BlueXP、則必須登入在連接器本機執行的BlueXP使用者介面。 link:task-managing-connectors.html#access-the-local-ui["瞭解如何存取Connector上的本機UI"]。
 
@@ -22,40 +24,21 @@ summary: 您可以透過SaaS型使用者介面、從網頁瀏覽器存取BlueXP�
 您可以使用下列其中一個選項登入BlueXP：
 
 * 您現有NetApp 支援網站 的功能驗證（NSS）認證
-+
-使用此選項時NetApp 支援網站 、您的支援儀表板不會將您的驗證（NSS）認證新增至BlueXP。您必須將您的NSS認證新增至BlueXP、才能啟用Cloud Volumes ONTAP 適用於下列項目的重要工作流程： link:task-adding-nss-accounts.html["瞭解如何將您的NSS認證新增至藍圖XP"]。
-
 * 使用您的電子郵件地址和密碼登入NetApp雲端
+* 聯盟連線
 +
-此選項支援聯盟連線。您可以使用單一登入、從公司目錄（聯盟身分識別）使用認證登入。若要深入瞭解、請前往 https://cloud.netapp.com/help-center["BlueXP說明中心"^] 然後按一下*登入選項*。
+您可以使用單一登入、從公司目錄（聯盟身分識別）使用認證登入。若要深入瞭解、請前往 https://cloud.netapp.com/help-center["BlueXP說明中心"^] 然後按一下*登入選項*。
 
-
-
-每次登入時、您都必須使用第一次登入時所選的相同選項。
-
-* 如果您以NetApp支援網站認證登入、則每次都需要使用該登入選項。
-* 如果您註冊時輸入了電子郵件和密碼、則每次登入時都必須輸入這些認證資料。
 
 
 .步驟
 . 開啟網頁瀏覽器、前往 https://console.bluexp.netapp.com["BlueXP主控台"^]
+. 在*登入*頁面上、輸入與您登入相關的電子郵件地址。
+. 視您登入的相關驗證方法而定、系統會提示您輸入認證資料：
 +
-此時會顯示NetApp BlueXP登入頁面。
-
-+
-image:screenshot-login.png["BlueXP的登入頁面。"]
-
-. 選擇其中一個登入選項：
-+
-** 如果您先前已建立NetApp雲端認證、請使用您的電子郵件和密碼登入。
-** 如果您沒有雲端認證資料、但您有現有NetApp 支援網站 的版本（NSS）帳戶、請選取* NetApp 支援網站 使用您的版本資訊登入*。
-** 如果您沒有NSS,但尚未建立NetApp雲端認證資料,請按一下*註冊*建立NetApp雲端登入。
-+
-請注意、註冊表單中只允許英文字元。
-
-+
-註冊後、您將收到NetApp寄送的電子郵件。按一下電子郵件中的連結、確認您的電子郵件地址、然後登入。
-
+** NetApp雲端認證：輸入您的密碼
+** 聯盟使用者：輸入您的聯盟身分認證資料
+** 系統驗證：輸入您的資料不驗證資料NetApp 支援網站 NetApp 支援網站
 
 
 

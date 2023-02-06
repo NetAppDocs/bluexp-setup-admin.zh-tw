@@ -25,6 +25,8 @@ sidebar:
       url: "/concept-overview.html"
     - title: 入門檢查清單
       url: "/reference-checklist-cm.html"
+    - title: 註冊BlueXP
+      url: "/task-sign-up-saas.html"
     - title: 登入BlueXP
       url: "/task-logging-in.html"
     - title: 設定NetApp帳戶

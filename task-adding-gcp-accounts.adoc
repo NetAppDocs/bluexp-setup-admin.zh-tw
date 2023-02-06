@@ -40,7 +40,7 @@ image:screenshot_gcp_associate.gif["Google Cloud 專案的快照、以及 Google
 
 NOTE: 在您完成下列步驟之前、請先確認您的Google Cloud帳戶擁有「帳單管理」權限、以及BlueXP登入權限。
 
-. 查看訂購步驟、然後按一下*繼續*。
+. 檢閱訂購步驟、然後按一下*繼續*。
 +
 image:screenshot_gcp_sub_popup.png["訂閱快顯畫面。"]
 
@@ -65,16 +65,25 @@ image:screenshot_gcp_marketplace_register.png["註冊快顯畫面。"]
 
 NOTE: 必須完成此步驟、才能將Google Cloud訂閱連結至您的NetApp帳戶。連結訂閱的程序要等到您從本頁重新導向、然後登入BluXP之後才會完成。
 
-. 重新導向至BlueXP之後、請登入或註冊、然後按一下「*完成*」繼續。
+. 從*訂閱指派*頁面：
 +
-Google Cloud訂閱會連結至您使用者登入相關的所有NetApp帳戶。如果您需要限制新訂閱的存取權、可以從Digital Wallet管理與訂閱相關的NetApp帳戶。 link:task-manage-subscriptions.html#manage-your-subscriptions["瞭解如何管理您的訂閱"]。
+** 選取您要與此訂閱建立關聯的NetApp帳戶。
+** 在「*取代現有訂閱*」欄位中、選擇您是否要使用此新訂閱來自動取代現有的單一帳戶訂閱。
++
+此新訂閱取代現有的帳戶所有認證訂閱。如果一組認證資料從未與訂閱建立關聯、則此新訂閱將不會與這些認證資料建立關聯。
 
 +
-image:screenshot_gcp_sub_mapping.png["將GCP訂閱對應至NetApp帳戶的快照。"]
+對於所有其他帳戶、您必須重複這些步驟、手動建立訂閱的關聯。
+
+** 按一下「 * 儲存 * 」。
++
+image:screenshot-google-cloud-subscription.png["訂閱指派頁面的快照、可讓您將此訂閱與一或多個帳戶建立關聯、並選擇取代其中一個帳戶的現有訂閱。"]
 
 +
 
-NOTE: 如果貴組織的人員已從您的帳單帳戶訂閱NetApp BlueXP訂閱、您將會被重新導向至 https://cloud.netapp.com/ontap-cloud?x-gcp-marketplace-token=["BlueXP網站上的「支持」頁面Cloud Volumes ONTAP"^] 而是。如果這是意外情況、請聯絡您的NetApp銷售團隊。Google每個Google帳單帳戶只能啟用一次訂閱。
+NOTE: 如果貴組織的人員已從您的帳單帳戶訂閱NetApp BlueXP訂閱、您將會被重新導向至 https://bluexp.netapp.com/ontap-cloud?x-gcp-marketplace-token=["BlueXP網站上的「支持」頁面Cloud Volumes ONTAP"^] 而是。如果這是意外情況、請聯絡您的NetApp銷售團隊。Google每個Google帳單帳戶只能啟用一次訂閱。
+
+
 
 . 完成此程序後、請瀏覽至BlueXP中的「認證」頁面、然後選取此新的訂閱。
 +
@@ -94,11 +103,11 @@ image:screenshot_gcp_associate.gif["訂閱指派頁面的快照。"]
 image:screenshot_gcp_manage_orders.png["市場頁面訂閱後的快照。"]
 
 +
-.. 如果訂單顯示綠色勾選標記、但這是意外情況、則組織中使用相同帳單帳戶的其他人可能已經訂閱。如果這是意外情況、或您需要此訂閱的詳細資料、請聯絡您的NetApp銷售團隊。
+** 如果訂單顯示綠色勾選標記、但這是意外情況、則組織中使用相同帳單帳戶的其他人可能已經訂閱。如果這是意外情況、或您需要此訂閱的詳細資料、請聯絡您的NetApp銷售團隊。
 +
 image:screenshot_gcp_green_marketplace.png["已接受權利的快照。"]
 
-.. 如果訂單顯示時鐘和*待處理*狀態、請返回市場頁面、選擇*管理供應商*以完成上述程序。
+** 如果訂單顯示時鐘和*待處理*狀態、請返回市場頁面、選擇*管理供應商*以完成上述程序。
 +
 image:screenshot_gcp_pending_marketplace.png["待處理市場權利的快照。"]
 
