@@ -183,7 +183,7 @@ summary: 當BlueXP在AWS中啟動Connector執行個體時、它會將原則附�
                 "cloudformation:DescribeStacks",
                 "kms:List*",
                 "kms:Describe*",
-                "ec2:describeVpcEndpoints",
+                "ec2:DescribeVpcEndpoints",
                 "kms:ListAliases",
                 "athena:StartQueryExecution",
                 "athena:GetQueryResults",
@@ -745,7 +745,7 @@ Connector會提出下列API要求、以管理Amazon S3中的備份：
 * 公里：清單*
 * 公里：描述*
 * S3：GetObject
-* EC2：已描述VpcEndpoints
+* EC2：取消資料VpcEndpoints
 * kms：清單別名
 * S3：PuttEncryptionConfiguration
 
@@ -883,7 +883,10 @@ Connector會提出下列API要求來部署Cloud Data Sense執行個體：
 | S3：Get生命 週期組態 | 是的 | 是的 
 
 
-| EC2：取消註冊 | 是的 | 是的 
+| EC2：取消註冊 | 是的 | 否 
+
+
+| EC2：取消資料VpcEndpoints | 是的 | 否 
 |===
 
 
@@ -1191,7 +1194,7 @@ Connector會提出下列API要求來管理FSXfor ONTAP Sfor the：
 * EC2：取消標示
 * EC2：解讀IamInstanceProfileAssociations
 * EC2：取消訂閱保留服務
-* EC2：已描述VpcEndpoints
+* EC2：取消資料VpcEndpoints
 * EC2：取消功能Vpcs
 * EC2：說明體積修改
 * EC2：取消目標位置群組
@@ -1222,3 +1225,17 @@ Connector會提出下列API要求、以探索及管理Amazon EKS叢集：
 Connector提出下列API要求以探索Amazon S3儲存區：
 
 S3：GetEncryptionConfiguration
+
+
+
+== 變更記錄
+
+新增和移除權限時、我們會在下方各節中加以註記。
+
+
+
+=== 2023年2月14日
+
+雲端分層現在需要下列權限：
+
+EC2：取消資料VpcEndpoints

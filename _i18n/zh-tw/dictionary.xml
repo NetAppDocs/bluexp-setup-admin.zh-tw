@@ -1485,7 +1485,6 @@
   <block id="b18a2220ba0da795c31cbb6cd990fd49" category="list-text">公里：清單*</block>
   <block id="2101c43af42db107614da3d2faadb4dc" category="list-text">公里：描述*</block>
   <block id="53cfd5032381d05f65cbc6d64e0004f5" category="list-text">S3：GetObject</block>
-  <block id="9072562ed0b0a146d2eee12aaa27baf4" category="list-text">EC2：已描述VpcEndpoints</block>
   <block id="276e466538acff21910df6227231c79f" category="list-text">kms：清單別名</block>
   <block id="599a8ceed768fab9cc6e39dff7c9f215" category="list-text">S3：PuttEncryptionConfiguration</block>
   <block id="21eddde0f415ffe52f38d432d14088c9" category="paragraph">當您使用搜尋與還原方法還原磁碟區和檔案時、Connector會發出下列API要求：</block>
@@ -2910,4 +2909,9 @@
   <block id="825c72d4114a9a71a355213f6b79c642" category="list-text">完成「*訂閱指派*」頁面上的步驟：</block>
   <block id="a6b7d96f53186edb463f8f8611f97cd9" category="paragraph">下列影片顯示從Google Cloud Marketplace訂閱的步驟：</block>
   <block id="1c1c040e218e35ae634138db5c2055f4" category="list-text">按一下*檢視購買選項*。</block>
+  <block id="8258ac0fb8b015087851de720e92f796" category="list-text">EC2：取消資料VpcEndpoints</block>
+  <block id="1be1ae3d277ebf372ecefda4d444dbbb" category="section-title">2023年2月14日</block>
+  <block id="fae746653dec0583228106493b15ac1a" category="paragraph">雲端分層現在需要下列權限：</block>
+  <block id="296337985ff5f0cc398e02f1aff0b176" category="paragraph">如果連接器安裝在內部部署環境中、您就無法使用此驗證方法。您必須使用AWS金鑰。</block>
+  <block id="a4a42c8639c0aa2e10cb3a3eaaae664b" category="paragraph">如果連接器安裝在內部部署環境中、則必須使用此驗證方法。您無法使用IAM角色。</block>
 </blocks>
