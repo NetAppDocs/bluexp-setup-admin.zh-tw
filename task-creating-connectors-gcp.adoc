@@ -222,6 +222,9 @@ includedPermissions:
 - compute.instances.start
 - compute.instances.stop
 - compute.instances.updateDisplayDevice
+- compute.instanceGroups.get
+- compute.addresses.get
+- compute.instances.updateNetworkInterface
 - compute.machineTypes.get
 - compute.networks.get
 - compute.networks.list
