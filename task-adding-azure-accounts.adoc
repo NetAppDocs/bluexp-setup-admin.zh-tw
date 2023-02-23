@@ -4,7 +4,7 @@ permalink: task-adding-azure-accounts.html
 keywords: permissions, microsoft, azure, permissions, custom role, role, json, active directory, ad, service principal, key, tenant id, application key, application id, operator role, managed identity, iam, operator, role, virtual machine, create custom role, create azure custom role, azure custom role 
 summary: 當您建立 Cloud Volumes ONTAP 一個不完善的系統時、您必須選擇 Azure 認證資料和 Marketplace 訂閱、才能與該系統搭配使用。如果您管理多個 Azure Marketplace 訂閱、您可以從「認證」頁面將每個訂閱指派給不同的 Azure 認證。 
 ---
-= 管理Azure認證資料和BlueXP訂閱
+= 管理Azure認證資料與BlueXP訂閱
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -78,5 +78,8 @@ NOTE: 來源 IP 位址為 Connector 主機。
 | API 呼叫與 AutoSupport 功能 | HTTPS | 443.. | 傳出網際網路和 ONTAP 叢集管理 LIF | API將Azure和ONTAP VMware呼叫、Cloud Data Sense、勒索軟體服務、並將AutoSupport VMware訊息傳送給NetApp 
 
 
+| API 呼叫 | TCP | 8080 | 資料感知 | 在部署期間探查資料偵測執行個體 
+
+
 | DNS | UDP | 53. | DNS | 用於BlueXP的DNS解析 
 |===
