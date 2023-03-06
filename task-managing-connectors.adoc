@@ -185,9 +185,9 @@ https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html
 
 
 
-== 升級內部部署的Connector、不需存取網際網路
+== 在沒有網際網路連線的位置升級Connector
 
-如果您 link:task-install-connector-onprem-no-internet.html["將Connector安裝在無法存取網際網路的內部部署主機上"]、您可以在NetApp支援網站提供較新版本時升級Connector。
+如果您 link:task-install-connector-onprem-no-internet.html["已將Connector安裝在無法存取網際網路的位置"]，您可以在 NetApp 支援網站提供較新版本時升級 Connector。
 
 在升級過程中、連接器需要重新啟動、以便在升級期間無法使用使用者介面。
 
@@ -198,14 +198,20 @@ https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html
 +
 [source, cli]
 ----
-chmod +x /path/cloud-manager-connector-offline-v3.9.14
+chmod +x /path/cloud-manager-connector-offline-<version>
 ----
++
+其中、就是您下載的Connector版本<version> 。
+
 . 執行安裝指令碼：
 +
 [source, cli]
 ----
-sudo /path/cloud-manager-connector-offline-v3.9.14
+sudo /path/cloud-manager-connector-offline-<version>
 ----
++
+其中、就是您下載的Connector版本<version> 。
+
 . 升級完成後、您可以前往*「Help」（說明）>「Support」（支援）>「Connector*」（連接器*）來驗證連接器的版本。
 
 

@@ -119,7 +119,7 @@ BlueXP帳戶管理員可透過多種方式建立連接器：
 * 在您自己的Linux主機上手動安裝軟體
 +
 ** link:task-installing-linux.html["在可存取網際網路的主機上"]
-** link:task-install-connector-onprem-no-internet.html["在內部主機上、但無法存取網際網路"]
+** link:task-install-connector-onprem-no-internet.html["位於無法存取網際網路的主機上"]
 
 
 * 從雲端供應商的市場

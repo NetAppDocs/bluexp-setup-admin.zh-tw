@@ -41,15 +41,8 @@ Google Cloud支援Connector的VM執行個體、其作業系統可支援此連接
 支援的作業系統::
 +
 --
-* CentOS 7.6.
-* CentOS 7.7
-* CentOS 7.8
-* CentOS 7.9
-* Red Hat Enterprise Linux 7.6
-* Red Hat Enterprise Linux 7.7
-* Red Hat Enterprise Linux 7.8
-* Red Hat Enterprise Linux 7.9
-* Red Hat Enterprise Linux 8.6.
+* CentOS 7.6、7.7、7.8及7.9
+* Red Hat Enterprise Linux 7.6、7.7、7.8、7.9、8.6、 和8.7%
 +
 Red Hat Enterprise Linux 系統必須在 Red Hat 訂購管理中註冊。如果未登錄、系統將無法在 Connector 安裝期間存取儲存庫來更新所需的協力廠商軟體。
 

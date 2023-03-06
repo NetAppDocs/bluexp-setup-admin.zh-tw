@@ -90,3 +90,64 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 * 使用產品內對談
 * 請至提交非技術案例 https://mysupport.netapp.com/site/help[]
 
+
+
+
+== 管理支援案例（預覽）
+
+您可以直接從BlueXP檢視及管理作用中和已解決的支援案例。您可以管理與您的NSS帳戶和貴公司相關的個案。
+
+案例管理可透過預覽取得。我們計畫改善這項體驗、並在即將推出的版本中加入增強功能。請使用產品內建聊天功能、向我們傳送意見反應。
+
+請注意下列事項：
+
+* 頁面頂端的案例管理儀表板提供兩種檢視：
++
+** 左側檢視顯示您所提供的使用者nssc帳戶在過去3個月內開啟的個案總數。
+** 右側檢視顯示過去3個月內、貴公司層級根據您的使用者nssc帳戶所開啟的個案總數。
+
+
++
+表格中的結果會反映您所選檢視的相關個案。
+
+* 您可以新增或移除感興趣的欄、也可以篩選優先順序和狀態等欄的內容。其他欄則只提供排序功能。
++
+如需詳細資料、請參閱下列步驟。
+
+* 在個別案例層級、我們提供更新案例附註或關閉尚未處於「已結案」或「待結案」狀態的案例的功能。
+
+
+.步驟
+. 在BlueXP中、按一下*「說明」>「支援」*。
+. 按一下*個案管理*、如果出現提示、請將您的NSS帳戶新增至藍圖XP。
++
+「*個案管理*」頁面會顯示與您的BlueXP使用者帳戶相關聯的與NSS帳戶相關的未決個案。這是顯示在「* nssnmanagement *」頁面頂端的相同nss.帳戶。
+
+. （可選）修改表格中顯示的資訊：
++
+** 在*組織案例*下、按一下*檢視*以檢視與貴公司相關的所有案例。
+** 選擇確切的日期範圍或選擇不同的時間範圍、以修改日期範圍。
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-case-management-date-range.png["案例管理頁面上方表格上方選項的快照、可讓您選擇確切的日期範圍或過去7天、30天或3個月。"]
+
+** 篩選欄的內容。
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-case-management-filter.png["「狀態」欄中篩選選項的快照、可讓您篩選出符合特定狀態（例如「作用中」或「已關閉」）的個案。"]
+
+** 按一下以變更表格中顯示的欄 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-table-columns.png["出現在表格中的加號圖示"] 然後選擇您要顯示的欄。
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-case-management-columns.png["顯示可在表格中顯示之欄的快照。"]
+
+
+
+. 按一下即可管理現有案例 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-table-action.png["表格最後一欄中出現三個點的圖示"] 並選擇其中一個可用選項：
++
+** *檢視案例*：檢視特定案例的完整詳細資料。
+** *更新案例備註*：提供您問題的其他詳細資料。
+** *結案案例*：提供結案原因的詳細資料、然後按一下*結案案例*。
+
+
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-case-management-actions.png["螢幕擷取畫面、顯示您在表格最後一欄選取功能表後可以採取的動作。"]
+
+

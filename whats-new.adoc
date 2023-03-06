@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
-summary: 瞭解BlueXP（前身為Cloud Manager）管理功能的新功能：NetApp帳戶、連接器、雲端供應商認證等。 
+summary: 瞭解BlueXP管理功能的新功能：NetApp客戶、連接器、雲端供應商認證等。 
 ---
 = 新功能
 :hardbreaks:
@@ -14,7 +14,47 @@ summary: 瞭解BlueXP（前身為Cloud Manager）管理功能的新功能：NetA
 
 
 [role="lead"]
-瞭解BlueXP（前身為Cloud Manager）管理功能的新功能：NetApp帳戶、連接器、雲端供應商認證等。
+瞭解BlueXP管理功能的新功能：NetApp客戶、連接器、雲端供應商認證等。
+
+
+
+== 2023年3月5日
+
+
+
+=== 連接器3.9.27
+
+* 現在可在BlueXP主控台中搜尋。此時、您可以使用搜尋來尋找BlueXP服務和功能。
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-search.png["主控台頂端提供的BlueXP搜尋快照。"]
+
+* 您可以直接從BlueXP檢視及管理作用中和已解決的支援案例。您可以管理與您的NSS帳戶和貴公司相關的個案。
++
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manage-your-support-cases["瞭解如何管理您的支援案例"]。
+
+* 連接器現在支援執行Red Hat Enterprise Linux 8.7的主機。
++
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["檢視Connector的系統需求"]。
+
+* 現在、連接器可在完全隔離網際網路的任何雲端環境中獲得支援。然後您可以使用連接器上執行的BlueXP主控台、在Cloud Volumes ONTAP 同一個位置部署故障、並探索內部部署ONTAP 的故障叢集（如果您的雲端環境與內部部署環境之間有連線）。此類部署不支援其他BlueXP服務、數位錢包除外。
++
+雲端區域可以是美國安全機構的區域、例如AWS C2S/SC2S、Azure IL6或任何商業區域。
+
++
+若要開始使用、請手動安裝Connector軟體、登入在Connector上執行的BlueXP主控台、將BYOL授權新增至Digital Wallet、然後再部署Cloud Volumes ONTAP 。
+
++
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["將Connector安裝在沒有網際網路存取的位置"^]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#access-the-local-ui["存取Connector上的BlueXP主控台"^]
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#manage-byol-licenses["新增未指派的授權"^]
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-overview-cvo.html["立即開始Cloud Volumes ONTAP 使用"^]
+
+
+* 此版本的Connector包含Cloud Volumes ONTAP 一些功能強化功能。
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#5-march-2023["深入瞭Cloud Volumes ONTAP 解功能強化功能"^]
+
+
 
 
 

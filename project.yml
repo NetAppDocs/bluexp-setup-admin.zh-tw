@@ -69,7 +69,7 @@ sidebar:
           url: "/task-launching-azure-mktp.html"
         - title: 使用網際網路在自己的主機上安裝
           url: "/task-installing-linux.html"
-        - title: 在內部安裝、無需網際網路
+        - title: 無需網際網路、即可在自己的主機上安裝
           url: "/task-install-connector-onprem-no-internet.html"
       - title: 尋找連接器的系統ID
         url: "/task-finding-system-id.html"
