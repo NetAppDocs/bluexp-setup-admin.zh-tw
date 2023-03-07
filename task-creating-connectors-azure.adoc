@@ -73,16 +73,16 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-pr
 | 端點 | 目的 
 
 
-| \https://management.azure.com \https://login.microsoftonline.com | 管理Azure公共區域的資源。 
+| \https://management.azure.com \https://login.microsoftonline.com \https://blob.core.windows.net \https://core.windows.net | 管理Azure公共區域的資源。 
 
 
-| \https://management.usgovcloudapi.net \https://login.microsoftonline.us | 管理Azure政府區域的資源。 
+| \https://management.usgovcloudapi.net \https://login.microsoftonline.us \https://blob.core.usgovcloudapi.net \https://core.usgovcloudapi.net | 管理Azure政府區域的資源。 
 
 
-| \https://management.azure.microsoft.scloud \https://login.microsoftonline.microsoft.scloud | 管理Azure IL6區域的資源。 
+| \https://management.azure.microsoft.scloud \https://login.microsoftonline.microsoft.scloud \https://blob.core.microsoft.scloud \https://core.microsoft.scloud | 管理Azure IL6區域的資源。 
 
 
-| \https://management.chinacloudapi.cn \https://login.chinacloudapi.cn | 管理Azure中國地區的資源。 
+| \https://management.chinacloudapi.cn \https://login.chinacloudapi.cn \https://blob.core.chinacloudapi.cn \https://core.chinacloudapi.cn | 管理Azure中國地區的資源。 
 
 
 | \https://support.netapp.com | 以取得授權資訊、並將AutoSupport 資訊傳送給NetApp支援部門。 

@@ -432,7 +432,7 @@ Connector會提出下列API要求、要求在Cloud Volumes ONTAP Azure中部署�
 | 目的 | 行動 | 用於部署？ | 用於日常營運？ | 用於刪除？ 
 
 
-.12+| 建立VM、停止、啟動、刪除及取得系統狀態 | Microsoft.Compute/locations/operations/read | 是的 | 是的 | 否 
+.14+| 建立及管理VM | Microsoft.Compute/locations/operations/read | 是的 | 是的 | 否 
 
 
 | Microsoft.Compute/locations/vmSizes/read | 是的 | 是的 | 否 
@@ -468,10 +468,16 @@ Connector會提出下列API要求、要求在Cloud Volumes ONTAP Azure中部署�
 | Microsoft.Compute/virtualMachines/write | 是的 | 是的 | 否 
 
 
+| Microsoft.Compute/virtualMachines/delete | 是的 | 是的 | 是的 
+
+
+| Microsoft資源/部署/刪除 | 是的 | 否 | 否 
+
+
 | 從VHD啟用部署 | Microsoft.Compute/images/read | 是的 | 否 | 否 
 
 
-.3+| 在目標子網路中建立及管理網路介面 | Microsoft.Network/networkInterfaces/read | 是的 | 是的 | 否 
+.4+| 在目標子網路中建立及管理網路介面 | Microsoft.Network/networkInterfaces/read | 是的 | 是的 | 否 
 
 
 | Microsoft.Network/networkInterfaces/write | 是的 | 是的 | 否 
@@ -480,13 +486,19 @@ Connector會提出下列API要求、要求在Cloud Volumes ONTAP Azure中部署�
 | Microsoft.Network/networkInterfaces/join/action | 是的 | 是的 | 否 
 
 
-.3+| 建立預先定義的網路安全群組 | Microsoft.Network/networkSecurityGroups/read | 是的 | 是的 | 否 
+| Microsoft.Network/networkInterfaces/delete | 是的 | 是的 | 否 
+
+
+.4+| 建立及管理網路安全群組 | Microsoft.Network/networkSecurityGroups/read | 是的 | 是的 | 否 
 
 
 | Microsoft.Network/networkSecurityGroups/write | 是的 | 是的 | 否 
 
 
 | Microsoft.Network/networkSecurityGroups/join/action | 是的 | 否 | 否 
+
+
+| Microsoft.Network/networkSecurityGroups/delete | 否 | 是的 | 是的 
 
 
 .8+| 取得區域、目標Vnet和子網路的網路資訊、並將VM新增至VNets | Microsoft.Network/locations/operationResults/read | 是的 | 是的 | 否 
@@ -618,7 +630,7 @@ Connector會提出下列API要求、要求在Cloud Volumes ONTAP Azure中部署�
 | Microsoft.Network/loadBalancers/delete | 否 | 是的 | 是的 
 
 
-| Microsoft.Network/loadBalancers/backendAddressPools/read | 是的 | 是的 | 否 
+| Microsoft.Network/loadBalancers/backendAddressPools/read | 是的 | 否 | 否 
 
 
 | Microsoft.Network/loadBalancers/backendAddressPools/join/action | 是的 | 否 | 否 
@@ -666,7 +678,7 @@ Connector會提出下列API要求、要求在Cloud Volumes ONTAP Azure中部署�
 | Microsoft.Network/privateDnsZones/virtualNetworkLinks/read | 是的 | 是的 | 否 
 
 
-| Azure根據基礎實體硬體的需求、進行部分VM部署 | Microsoft.Resources /部署/作業狀態/讀取 | 是的 | 是的 | 否 
+| 某些VM部署所需的資源、視基礎實體硬體而定 | Microsoft.Resources /部署/作業狀態/讀取 | 是的 | 是的 | 否 
 
 
 .2+| 如果部署失敗或刪除、請從資源群組移除資源 | Microsoft.Network/privateEndpoints/delete | 是的 | 是的 | 否 
@@ -690,7 +702,7 @@ Connector會提出下列API要求、要求在Cloud Volumes ONTAP Azure中部署�
 .6+| 設定HA配對的應用程式安全性群組、以隔離HA互連和叢集網路NIC | Microsoft.Network/applicationSecurityGroups/write | 否 | 是的 | 否 
 
 
-| Microsoft.Network/applicationSecurityGroups/read | 否 | 是的 | 是的 
+| Microsoft.Network/applicationSecurityGroups/read | 否 | 是的 | 否 
 
 
 | Microsoft.Network/applicationSecurityGroups/joinIpConfiguration/action | 否 | 是的 | 否 
@@ -699,7 +711,7 @@ Connector會提出下列API要求、要求在Cloud Volumes ONTAP Azure中部署�
 | Microsoft.Network/networkSecurityGroups/securityRules/write | 是的 | 是的 | 否 
 
 
-| Microsoft.Network/applicationSecurityGroups/delete | 否 | 是的 | 否 
+| Microsoft.Network/applicationSecurityGroups/delete | 否 | 是的 | 是的 
 
 
 | Microsoft.Network/networkSecurityGroups/securityRules/delete | 否 | 是的 | 是的 
