@@ -324,7 +324,7 @@ TIP: 如果選擇*假定角色*、您可以從連接器部署精靈建立第一�
 
 
 .完成後
-如果您在建立Connector的同一個AWS帳戶中有Amazon S3儲存區、則會在畫版上自動顯示Amazon S3工作環境。 link:task-viewing-amazon-s3.html["深入瞭解如何運用此工作環境"]。
+如果您在建立Connector的同一個AWS帳戶中有Amazon S3儲存區、則會在畫版上自動顯示Amazon S3工作環境。 https://docs.netapp.com/us-en/bluexp-s3-storage/index.html["深入瞭解如何運用此工作環境"]。
 
 
 

@@ -4,7 +4,7 @@ permalink: task-viewing-amazon-s3.html
 keywords: s3 buckets, s3 storage, s3 working environment, amazon s3 buckets, amazon s3 working environment 
 summary: 在AWS中安裝Connector之後、BlueXP會自動探索安裝Connector之AWS帳戶中的Amazon S3儲存區相關資訊。Amazon S3工作環境會新增至Canvas、以便您檢視此資訊。 
 ---
-= 檢視您的 Amazon S3 時段
+= 管理您的Amazon S3儲存區
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,31 +16,8 @@ summary: 在AWS中安裝Connector之後、BlueXP會自動探索安裝Connector�
 [role="lead"]
 在AWS中安裝Connector之後、BlueXP會自動探索安裝Connector之AWS帳戶中的Amazon S3儲存區相關資訊。Amazon S3工作環境會新增至Canvas、以便您檢視此資訊。
 
-您可以查看S3儲存區的詳細資料、包括地區、存取原則、帳戶、總容量和已用容量等。這些儲存庫可做為雲端備份、雲端分層或Cloud Sync 還原作業的目的地。此外、您也可以使用Cloud Data Sense來掃描這些儲存區。
+image:screenshot-amazon-s3-we.png["Amazon S3 工作環境的快照。"]
 
-.步驟
-. link:task-creating-connectors-aws.html["安裝連接器"] 在您要檢視 Amazon S3 儲存區的 AWS 帳戶中。
-. 從導覽功能表中、選取*儲存設備> Canvas*。
-+
-您應該會在不久之後自動看到 Amazon S3 工作環境。
+您可以檢視S3儲存區的詳細資料、包括地區、存取原則、帳戶、總容量和已用容量等。這些儲存庫可做為雲端備份、雲端分層或Cloud Sync 還原作業的目的地。此外、您也可以使用Cloud Data Sense來掃描這些儲存區。
 
-+
-image:screenshot_s3_we.gif["Amazon S3 工作環境的快照。"]
-
-. 按一下工作環境、然後從右窗格中選取一個動作。
-+
-image:screenshot_s3_actions.gif["在您選取 Amazon S3 工作環境之後顯示「行動」窗格的快照。此窗格顯示S3的相關資訊：儲存區數量和可用服務。"]
-
-. 按一下「*同步資料*」、即可將資料與S3儲存區同步或從S3儲存區同步。
-+
-如需詳細資料、請參閱 https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["關於此服務的總覽Cloud Sync"^]。
-
-. 如果您想要Cloud Data Sense掃描S3儲存區的個人和敏感資料、請按一下「*啟用*」。
-+
-如需詳細資料、請參閱 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-scanning-s3.html["Amazon S3的Cloud Data Sense入門"^]。
-
-. 按一下*輸入工作環境*、即可檢視AWS帳戶中S3儲存區的詳細資料。
-+
-image:screenshot_amazon_s3.gif["顯示Amazon S3工作環境詳細資料的快照：儲存區總數和區域總數、然後顯示每個S3儲存區詳細資料的表格。"]
-
-
+新增的功能現在可讓您建立及編輯S3儲存區。 https://docs.netapp.com/us-en/bluexp-s3-storage/index.html["請前往此處瞭解如何使用BlueXP檢視、建立及管理S3儲存區。"]
