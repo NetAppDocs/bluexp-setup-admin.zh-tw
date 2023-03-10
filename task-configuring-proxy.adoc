@@ -65,7 +65,11 @@ NOTE: BlueXP不支援包含@字元的密碼。
 
 == 啟用直接API流量
 
-如果您已設定Proxy伺服器、則可直接將API呼叫傳送至BlueXP、而無需透過Proxy。此選項受AWS、Azure或Google Cloud中執行的Connectors支援。
+如果您將連接器設定為使用Proxy伺服器、則可在連接器上啟用直接API流量、以便直接將API呼叫傳送至雲端供應商服務、而無需透過Proxy。此選項受AWS、Azure或Google Cloud中執行的Connectors支援。
+
+如果您停用使用Azure私有連結Cloud Volumes ONTAP 搭配使用、並改用服務端點、則必須啟用直接API流量。否則、流量將無法正確路由傳送。
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html["深入瞭解如何搭配Cloud Volumes ONTAP 使用Azure Private Link或服務端點搭配使用"]
 
 .步驟
 . 在BlueXP主控台右上角、按一下「設定」圖示、然後選取「*連接器設定*」。

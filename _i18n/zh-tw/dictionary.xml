@@ -891,11 +891,6 @@
   <block id="b48299c449bac839819763792d4aff22" category="list-text">在「*總覽*」標籤中、啟用「*允許私有預覽*」設定。</block>
   <block id="e288a6b2e6cc2fbb00bd407bda387c90" category="section-title">允許第三方服務</block>
   <block id="90837faa596ab1d28c90a381b6997722" category="list-text">在「*總覽*」標籤中、啟用「*允許協力廠商服務*」設定。</block>
-  <block id="4b52ca01dd550f3fab5c378895fbfd60" category="section-title">停用SaaS平台</block>
-  <block id="fa7043a1853c2b6854490998db361dca" category="paragraph">除非您必須遵守公司的安全原則、否則我們不建議停用 SaaS 平台。停用 SaaS 平台會限制您使用 NetApp 整合式雲端服務的能力。</block>
-  <block id="8ea5339a59d1a6a15d2ad2629fa9dd33" category="inline-link-macro">連接器上可用的本機使用者介面</block>
-  <block id="736683b36559de9a86788ab6e33c00d8" category="paragraph">如果您停用SaaS平台、則必須執行的所有工作 <block ref="d248ae1d8e530aaf57663e2d920abe18" category="inline-link-macro-rx"></block>。</block>
-  <block id="bd24a7e9d8368897df823b65a8960e61" category="list-text">在「總覽」索引標籤中、切換停用SaaS平台的選項。</block>
   <block id="6505fd7495c0d65d3dcf8a473c69ddcf" category="doc">從Azure Marketplace建立連接器</block>
   <block id="7f9fe9913d1b2a08f5ff2caaa85912bf" category="section-title">在 Azure 中建立 Connector</block>
   <block id="2653228f6dbeaeda53ae60e7bb131779" category="paragraph">使用Azure Marketplace中的映像在Azure中部署Connector、然後登入Connector以指定您的NetApp帳戶。</block>
@@ -2126,14 +2121,11 @@
   <block id="e98ed4965158505163fc6b7ffa9ba9b0" category="paragraph">您需要將Connector與工作區建立關聯、讓Workspace Admins能夠從BlueXP存取這些工作區。</block>
   <block id="735a598daa91e3f877c73aa4e5e72dca" category="paragraph">允許您帳戶中的私有預覽、以取得新的NetApp雲端服務、這些服務可在BlueXP中預覽。</block>
   <block id="0d36dab0ce71c33a40b8ea4c8c773291" category="paragraph">允許您帳戶中的第三方服務存取BlueXP中提供的第三方服務。第三方服務是類似NetApp所提供服務的雲端服務、但由第三方公司管理及支援。</block>
-  <block id="41f2e26a5f1f980cf07709ccd461458a" category="paragraph">如果停用SaaS平台、則無法從BlueXP取得下列服務：</block>
-  <block id="1ce82671debd0854eab737731870ba89" category="admonition">這是一項無法還原的行動、會使您無法使用BlueXP SaaS平台。您需要從本機連接器執行動作。您將無法使用NetApp的許多整合式雲端服務、而重新啟用SaaS平台將需要NetApp支援的協助。</block>
   <block id="47e1359a022ca3afaefd4c4135f630ab" category="inline-link-macro">登入BlueXP SaaS介面</block>
   <block id="53cd2d53a0bbb4596900dbf8dc2f1193" category="list-text"><block ref="5cdb1ce54f5091c2b2ed720c94b4f10e" category="inline-link-macro-rx"></block> 從連線至連接器執行個體的機器。</block>
   <block id="b50274362874150065bf00a8be70b751" category="paragraph">在Connector上執行的BlueXP介面會載入新的瀏覽器索引標籤。</block>
   <block id="190d3f654701a58653384f20c47c8ecf" category="list-text">在BlueXP主控台右上角、按一下「設定」圖示、然後選取「*連接器設定*」。</block>
   <block id="099fd4b1efe59a1ac46efb50c44be6fd" category="admonition">BlueXP不支援包含@字元的密碼。</block>
-  <block id="0e2ec8861e0eca9eed397572feaa87da" category="paragraph">如果您已設定Proxy伺服器、則可直接將API呼叫傳送至BlueXP、而無需透過Proxy。此選項受AWS、Azure或Google Cloud中執行的Connectors支援。</block>
   <block id="67cbb61f9d12c71b3b67153567963530" category="paragraph">在BlueXP中新增額外Azure訂閱和認證的方法有兩種。</block>
   <block id="d6e059f3de26b29b7be6b2949eae8f3d" category="list-text">如果您要使用Cloud Volumes ONTAP 不同的Azure認證資料來部署功能、請使用服務主體來授予Azure權限、並將其認證資料新增至藍圖XP。</block>
   <block id="44b7efa00ab8e5ca07e5783fe3175bb3" category="paragraph">BlueXP可讓您選擇要部署Cloud Volumes ONTAP 的Azure認證和Azure訂閱。除非您建立關聯、否則您無法為託管身分識別設定檔選取不同的 Azure 訂閱<block ref="683de527faad104d75b2c83aceba6f01" category="inline-link-rx"></block> 這些訂閱。</block>
@@ -2730,7 +2722,6 @@
   <block id="46f3c2b17cd41da44d4022428c48ec74" category="list-text">Kubernetes叢集</block>
   <block id="aa2a9593bd535a1923acb9053fd7788b" category="paragraph">您可以使用連接器搭配多個 NetApp 雲端資料服務。例如、如果您使用Connector來管理Cloud Volumes ONTAP 功能、您可以使用相同的Connector搭配其他服務、例如Cloud Tiering。</block>
   <block id="a046fbde0a8e04968445555624e37a69" category="summary">如果您的企業原則要求您使用Proxy伺服器來進行所有網際網路通訊、則您必須設定連接器以使用該Proxy伺服器。如果在安裝期間未將Connector設定為使用Proxy伺服器、則可將Connector設定為隨時使用該Proxy伺服器。</block>
-  <block id="adff0cc7ebdc35c0671c2e9adb29cd98" category="paragraph">當SaaS平台停用時、政府區域會支援Cloud Backup、但當SaaS平台停用時、商業區域則不支援</block>
   <block id="a8c35528b3f05016e72e71694bb679ee" category="list-text">Proxy伺服器的詳細資料、如果需要Proxy才能從Connector存取網際網路。支援HTTP和HTTPS。</block>
   <block id="16c184ab0a5376cef0ecef7f0da93ac2" category="list-text">如果主機上已設定_http或_https或proxy_系統變數、請將其移除：</block>
   <block id="15c8f910fc596ecb4a8b91027b56de66" category="paragraph">如果您未移除這些系統變數、安裝將會失敗。</block>
@@ -2981,4 +2972,8 @@
   <block id="f19dd7eba16fe45d9a801001a9371842" category="inline-link">瞭解如何從BlueXP在AWS帳戶中新增Amazon S3儲存區</block>
   <block id="3fdb23ee61e644ed849519b472ba51ae" category="paragraph"><block ref="35aa20e861d3bf81209592fa160bd4e4" category="inline-link-rx"></block>。</block>
   <block id="a4f513306c1a0ead14679ffb7c282460" category="sidebar">管理您的Amazon S3儲存庫</block>
+  <block id="6282017b43dee5b3762b81c0124c425c" category="paragraph">如果您將連接器設定為使用Proxy伺服器、則可在連接器上啟用直接API流量、以便直接將API呼叫傳送至雲端供應商服務、而無需透過Proxy。此選項受AWS、Azure或Google Cloud中執行的Connectors支援。</block>
+  <block id="37bccc08c3c6cebbbf500cfe54775991" category="paragraph">如果您停用使用Azure私有連結Cloud Volumes ONTAP 搭配使用、並改用服務端點、則必須啟用直接API流量。否則、流量將無法正確路由傳送。</block>
+  <block id="ac10c9401f16ed5ff0a029bce2712adc" category="inline-link">深入瞭解如何搭配Cloud Volumes ONTAP 使用Azure Private Link或服務端點搭配使用</block>
+  <block id="bfa340d153d70df3ad6af8db39b45e8e" category="paragraph"><block ref="bfa340d153d70df3ad6af8db39b45e8e" category="inline-link-rx"></block></block>
 </blocks>

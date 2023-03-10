@@ -273,31 +273,3 @@ link:concept-netapp-accounts.html#users-workspaces-and-service-connectors["深�
 . 從BlueXP頂端、按一下「*帳戶*」下拉式清單、然後按一下「*管理帳戶*」。
 . 在「*總覽*」標籤中、啟用「*允許協力廠商服務*」設定。
 
-
-
-
-== 停用SaaS平台
-
-除非您必須遵守公司的安全原則、否則我們不建議停用 SaaS 平台。停用 SaaS 平台會限制您使用 NetApp 整合式雲端服務的能力。
-
-如果停用SaaS平台、則無法從BlueXP取得下列服務：
-
-* 雲端備份
-+
-當SaaS平台停用時、政府區域會支援Cloud Backup、但當SaaS平台停用時、商業區域則不支援
-
-* 雲端資料感測
-* Kubernetes
-* 雲端分層
-* 全域檔案快取
-
-
-如果您停用SaaS平台、則必須執行的所有工作 link:task-managing-connectors.html#access-the-local-ui["連接器上可用的本機使用者介面"]。
-
-
-CAUTION: 這是一項無法還原的行動、會使您無法使用BlueXP SaaS平台。您需要從本機連接器執行動作。您將無法使用NetApp的許多整合式雲端服務、而重新啟用SaaS平台將需要NetApp支援的協助。
-
-.步驟
-. 從BlueXP頂端、按一下「*帳戶*」下拉式清單、然後按一下「*管理帳戶*」。
-. 在「總覽」索引標籤中、切換停用SaaS平台的選項。
-
