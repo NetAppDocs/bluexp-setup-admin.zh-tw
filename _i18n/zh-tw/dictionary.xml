@@ -2856,7 +2856,6 @@
   <block id="dd8d2e5dd396a762bed92b10f72f5d67" category="section-title">內部部署總覽</block>
   <block id="4b85a689d4bf46a14216c1f7043d61d9" category="paragraph">在沒有網際網路的內部部署環境中、您可以使用BlueXP探索內部ONTAP 部署的叢集、在叢集之間複寫資料、使用Cloud Backup備份磁碟區、並使用Cloud Data Sense進行掃描。此類部署不支援其他BlueXP服務、數位錢包除外。</block>
   <block id="817fffd09424883c473079707bd42227" category="section-title">雲端總覽</block>
-  <block id="6a2d5b4c5ec168a0a42fd35e394d5e59" category="paragraph">在沒有網際網路的雲端區域、您可以使用BlueXP來部署Cloud Volumes ONTAP 各種系統、並探索內部部署ONTAP 的各種叢集（如果您的雲端環境與內部部署環境之間有連線）。此類部署不支援其他BlueXP服務、數位錢包除外。</block>
   <block id="4965002502fb4ea58d2f984e3fe0a110" category="paragraph">雲端區域可以是美國安全機構的區域、例如AWS C2S/SC2S、Azure IL6或任何商業區域。</block>
   <block id="42e8616c7f9505f6747fcbb59c7b5a93" category="list-text">請從下載受限網路的Connector安裝程式、而無需存取網際網路<block ref="99637e01fa8caa34a544049093cac68c" category="inline-link-rx"></block></block>
   <block id="559e00158f66ad338da1ff42475d15d4" category="paragraph">在內部環境中：</block>
@@ -2938,7 +2937,6 @@
   <block id="796ced97a72330e5ce3c0935b7b09f45" category="paragraph"><block ref="622b6e7f4143df2aca06b538ee1d864e" category="inline-link-rx"></block>。</block>
   <block id="dd9b32305d0c33f8845bee1cdfcfc85a" category="list-text">連接器現在支援執行Red Hat Enterprise Linux 8.7的主機。</block>
   <block id="9954c00cefacf69f28fa1994e949ff83" category="paragraph"><block ref="1c471069dafa2d25f3a632cea0250222" category="inline-link-rx"></block>。</block>
-  <block id="9597dfcf8249ec8766cfb35fd11357f3" category="list-text">現在、連接器可在完全隔離網際網路的任何雲端環境中獲得支援。然後您可以使用連接器上執行的BlueXP主控台、在Cloud Volumes ONTAP 同一個位置部署故障、並探索內部部署ONTAP 的故障叢集（如果您的雲端環境與內部部署環境之間有連線）。此類部署不支援其他BlueXP服務、數位錢包除外。</block>
   <block id="33b6f29ed1acfc0fbed883a6e1f44ef2" category="paragraph">若要開始使用、請手動安裝Connector軟體、登入在Connector上執行的BlueXP主控台、將BYOL授權新增至Digital Wallet、然後再部署Cloud Volumes ONTAP 。</block>
   <block id="376a158ceb7d344fa563cce2aa16018f" category="inline-link">將Connector安裝在沒有網際網路存取的位置</block>
   <block id="6bfdfb1d6b845d41edac4f1eb0065216" category="list-text"><block ref="6bfdfb1d6b845d41edac4f1eb0065216" category="inline-link-rx"></block></block>
@@ -2976,4 +2974,6 @@
   <block id="37bccc08c3c6cebbbf500cfe54775991" category="paragraph">如果您停用使用Azure私有連結Cloud Volumes ONTAP 搭配使用、並改用服務端點、則必須啟用直接API流量。否則、流量將無法正確路由傳送。</block>
   <block id="ac10c9401f16ed5ff0a029bce2712adc" category="inline-link">深入瞭解如何搭配Cloud Volumes ONTAP 使用Azure Private Link或服務端點搭配使用</block>
   <block id="bfa340d153d70df3ad6af8db39b45e8e" category="paragraph"><block ref="bfa340d153d70df3ad6af8db39b45e8e" category="inline-link-rx"></block></block>
+  <block id="ecbd3aa946706d4530b409255ef3a87e" category="paragraph">在沒有網際網路的雲端區域、您可以使用BlueXP來部署Cloud Volumes ONTAP 各種系統、並探索內部部署ONTAP 的各種叢集（如果您的雲端環境與內部部署環境之間有連線）。您也可以在Cloud Volumes ONTAP AWS和Azure商業區域使用Cloud Backup來備份支援不支援的功能（目前AWS和Azure秘密區域不支援備份）。此類部署不支援其他BlueXP服務、數位錢包除外。</block>
+  <block id="a8709880418b83b1477f57ddb74c84e3" category="list-text">現在、連接器可在完全隔離網際網路的任何雲端環境中獲得支援。然後您可以使用連接器上執行的BlueXP主控台、在Cloud Volumes ONTAP 同一個位置部署故障、並探索內部部署ONTAP 的故障叢集（如果您的雲端環境與內部部署環境之間有連線）。您也可以在Cloud Volumes ONTAP AWS和Azure商業區域使用Cloud Backup來備份各種不完整的資料。此類部署不支援其他BlueXP服務、數位錢包除外。</block>
 </blocks>

@@ -26,7 +26,7 @@ summary: 您可以將Connector安裝在與網際網路完全隔離的位置、�
 
 == 雲端總覽
 
-在沒有網際網路的雲端區域、您可以使用BlueXP來部署Cloud Volumes ONTAP 各種系統、並探索內部部署ONTAP 的各種叢集（如果您的雲端環境與內部部署環境之間有連線）。此類部署不支援其他BlueXP服務、數位錢包除外。
+在沒有網際網路的雲端區域、您可以使用BlueXP來部署Cloud Volumes ONTAP 各種系統、並探索內部部署ONTAP 的各種叢集（如果您的雲端環境與內部部署環境之間有連線）。您也可以在Cloud Volumes ONTAP AWS和Azure商業區域使用Cloud Backup來備份支援不支援的功能（目前AWS和Azure秘密區域不支援備份）。此類部署不支援其他BlueXP服務、數位錢包除外。
 
 雲端區域可以是美國安全機構的區域、例如AWS C2S/SC2S、Azure IL6或任何商業區域。
 
