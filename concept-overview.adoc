@@ -97,9 +97,24 @@ https://cloud.netapp.com["BlueXP網站"^] 提供集中位置以供存取和管�
 
 === 連接器
 
-在大多數情況下、BlueXP帳戶管理員需要在雲端或內部部署網路中部署_Connector_。Connector讓BlueXP能夠管理公有雲環境中的資源和程序。
+在大多數情況下、BlueXP帳戶管理員需要在雲端或內部部署網路中部署_Connector_。Connector讓BlueXP能夠管理公有雲環境中的資源和程序。 link:concept-connectors.html["深入瞭解何時需要連接器及其運作方式"]。
 
-link:concept-connectors.html["深入瞭解何時需要連接器及其運作方式"]。
+
+
+==== 連接器必須隨時正常運作
+
+連接器是NetApp BlueXP服務架構的基本部分。您有責任確保相關的連接器隨時正常運作且可存取。雖然這項服務的設計是為了克服連接器可用度的短暫中斷、但您必須在必要時立即採取行動、以補救基礎架構故障。
+
+本文件受EULA規範。如果產品未依照文件操作、則產品的功能與操作、以及您在EULA下的權利、可能會受到不利影響。
+
+
+
+==== Connector的可用度如何影響Cloud Volumes ONTAP 到效益
+
+連接器是Cloud Volumes ONTAP 健全狀況和運作過程中的關鍵要素。如果連接器電源關閉、Cloud Volumes ONTAP 則在與連接器失去通訊超過14天之後、將停止使用以容量為基礎的BYOL系統。這是因為Connector每天都會在系統上重新整理授權。
+
+
+NOTE: 如果Cloud Volumes ONTAP 您的系統擁有節點型BYOL授權、系統會在14天後繼續執行、因為授權已安裝在Cloud Volumes ONTAP 該系統上。
 
 
 

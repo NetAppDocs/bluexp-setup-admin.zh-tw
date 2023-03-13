@@ -67,6 +67,23 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 
 
 
+== 連接器必須隨時正常運作
+
+連接器是NetApp BlueXP服務架構的基本部分。您有責任確保相關的連接器隨時正常運作且可存取。雖然這項服務的設計是為了克服連接器可用度的短暫中斷、但您必須在必要時立即採取行動、以補救基礎架構故障。
+
+本文件受EULA規範。如果產品未依照文件操作、則產品的功能與操作、以及您在EULA下的權利、可能會受到不利影響。
+
+
+
+=== Connector的可用度如何影響Cloud Volumes ONTAP 到效益
+
+連接器是Cloud Volumes ONTAP 健全狀況和運作過程中的關鍵要素。如果連接器電源關閉、Cloud Volumes ONTAP 則在與連接器失去通訊超過14天之後、將停止使用以容量為基礎的BYOL系統。這是因為Connector每天都會在系統上重新整理授權。
+
+
+NOTE: 如果Cloud Volumes ONTAP 您的系統擁有節點型BYOL授權、系統會在14天後繼續執行、因為授權已安裝在Cloud Volumes ONTAP 該系統上。
+
+
+
 == 支援的位置
 
 下列位置支援連接器：
@@ -89,19 +106,6 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 === Google Cloud部署注意事項
 
 如果您想要在Cloud Volumes ONTAP Google Cloud中建立一個不完整的系統、那麼您也必須在Google Cloud上執行一個Connector。您無法使用在AWS、Azure或內部執行的Connector。
-
-
-
-== 連接器應保持運作
-
-連接器應隨時保持執行狀態。這對於您持續啟用的服務健全狀況和營運而言十分重要。
-
-例如、連接器是Cloud Volumes ONTAP 運作過程中的關鍵要素。如果連接器電源關閉、Cloud Volumes ONTAP 則在與連接器失去通訊超過14天之後、將停止使用以容量為基礎的BYOL系統。這是因為Connector每天都會在系統上重新整理授權。
-
-
-NOTE: 如果Cloud Volumes ONTAP 您的系統擁有節點型BYOL授權、系統會在14天後繼續執行、因為授權已安裝在Cloud Volumes ONTAP 該系統上。
-
-如果您的Connector已關機14天或更久、BlueXP將會通知您。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html["深入瞭解BlueXP通知"]。
 
 
 

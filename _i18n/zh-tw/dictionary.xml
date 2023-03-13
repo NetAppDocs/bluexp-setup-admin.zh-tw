@@ -707,9 +707,7 @@
   <block id="1d65728a0a2e2638596bfe785763e9ed" category="inline-link">NetApp 雲端服務</block>
   <block id="ac252743de820aac9183d9f76d4bed67" category="section-title">NetApp帳戶</block>
   <block id="fe4a785cf549e843e958f443c4baf0fe" category="section-title">連接器</block>
-  <block id="e3b183b81588a53a9977e2f408f637ca" category="paragraph">連接器應隨時保持執行狀態。這對於您持續啟用的服務健全狀況和營運而言十分重要。</block>
   <block id="249345af661bafcf4f8bd3a0b9d6e949" category="inline-link-macro">深入瞭解何時需要連接器及其運作方式</block>
-  <block id="5becfd4bbec3e5daaed9dbc85669ff84" category="paragraph"><block ref="850c1601f372329538aba5fe3f86430c" category="inline-link-macro-rx"></block>。</block>
   <block id="958c315a8c40765f65895091ecc83488" category="paragraph"><block ref="958c315a8c40765f65895091ecc83488" category="inline-link-rx"></block></block>
   <block id="92241232df0720bddf843b8b16c8be1a" category="paragraph">這些安裝說明特別適用於上述使用案例。 <block ref="f56df5f8b4fd558a7482d6115403eadd" category="inline-link-macro-rx"></block>。</block>
   <block id="3d0bf05155f3dfd0eeccf9e953d46156" category="list-text">磁碟類型</block>
@@ -750,7 +748,6 @@
   <block id="6882deeb4b60915fc6b7a36d03f329e3" category="inline-link">瞭Cloud Volumes ONTAP 解如何使用Azure Private Link</block>
   <block id="e3deabaf79a43bbc5cb15d28f7dc14f2" category="paragraph">如果您在Azure中部署Connector、則該連接器應部署在Cloud Volumes ONTAP 其所管理的、或是所管理的各個系統所在的Azure區域<block ref="71e0e9a7366955554f0600c5ea8cfc7f" category="inline-link-rx"></block> 適用於整個系統。Cloud Volumes ONTAP這項需求可確保Cloud Volumes ONTAP Azure Private Link連線可用於連接至相關的儲存帳戶。<block ref="8fd2062cae8df3766c9ddefca48991a5" category="inline-link-rx"></block>。</block>
   <block id="e0a5500471a0b62bea8de0405782f268" category="section-title">Google Cloud部署注意事項</block>
-  <block id="9b2658aca840a5bb63ea0f460945616d" category="section-title">連接器應保持運作</block>
   <block id="fa1f9e92f4f0aa51cba859b2dbc37a02" category="section-title">如何建立連接器</block>
   <block id="2a6d41af9b09f97725c64e2705d629b2" category="inline-link-macro">在 AWS 中建立</block>
   <block id="f6a61a9eb8031d1e8178ffee4fa56624" category="list-text"><block ref="f6a61a9eb8031d1e8178ffee4fa56624" category="inline-link-macro-rx"></block></block>
@@ -1899,7 +1896,6 @@
   <block id="893b6747ffabae1d7bbd6d266f24c4ab" category="section-title">設定共享VPC權限</block>
   <block id="17d9282186c2451db90a83330e5c9d7b" category="list-text"><block ref="17d9282186c2451db90a83330e5c9d7b" category="inline-link-macro-rx"></block></block>
   <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">如果您有客戶層級的帳戶、可以新增一或多個NSS帳戶。</block>
-  <block id="6c73104e218372ccda6dc2d58fda524d" category="paragraph">例如、連接器是Cloud Volumes ONTAP 運作過程中的關鍵要素。如果連接器電源關閉、Cloud Volumes ONTAP 則在與連接器失去通訊超過14天之後、將停止使用以容量為基礎的BYOL系統。這是因為Connector每天都會在系統上重新整理授權。</block>
   <block id="b9c53fca7bb84d0455a2b4768b130e38" category="admonition">如果Cloud Volumes ONTAP 您的系統擁有節點型BYOL授權、系統會在14天後繼續執行、因為授權已安裝在Cloud Volumes ONTAP 該系統上。</block>
   <block id="2538b2df52d923f09592be3b38238322" category="list-text">14 GB</block>
   <block id="5fd245f2aeee830efb92d081af6a0e22" category="list-text">如果Connector安裝在沒有網際網路存取的網站上、則不支援傳送電子郵件通知。</block>
@@ -2192,7 +2188,6 @@
   <block id="8ff6e794637981d1636a228e2fd99e19" category="section-title">BlueXP網站</block>
   <block id="ccf2bc5e97e215334aa616cd5aae2339" category="inline-link">BlueXP網站</block>
   <block id="4e05b56c4de538910ffb2fd4803fc8fe" category="paragraph"><block ref="1d556453952dc634fd34acc203a3b356" category="inline-link-rx"></block> 提供集中位置以供存取和管理<block ref="f8857ad38375ecb04836e382f93d702b" category="inline-link-rx"></block>。透過集中式使用者驗證、您可以使用相同的認證資料集來存取BlueXP和Cloud Insights 其他雲端服務、例如：</block>
-  <block id="3f724f244896d73f5824434d26fb0c62" category="paragraph">在大多數情況下、BlueXP帳戶管理員需要在雲端或內部部署網路中部署_Connector_。Connector讓BlueXP能夠管理公有雲環境中的資源和程序。</block>
   <block id="def802d2deb64de5ee040ba416bab8f8" category="paragraph">一家獨立認證的公共會計公司與服務稽核員、研究了BlueXP、Cloud Sync 整套技術、雲端分層、Cloud Data Sense和Cloud Backup（BlueXP平台）、並確認他們已根據適用的信任服務準則、達成SOC 2類報告。</block>
   <block id="51562116f8d941fa36a92a4d3133b0ff" category="summary">服務帳戶可讓BlueXP擁有部署和管理Cloud Volumes ONTAP 與Connector相同專案或不同專案中的各種版本的支援權限。</block>
   <block id="a8f8f08c9d91eeaecc31377113ddd27b" category="section-title">BlueXP的專案與權限</block>
@@ -2772,7 +2767,6 @@
   <block id="2f0488f8a3ca91699637c323ed3b7ae7" category="paragraph">您現在有一個BlueXP登入帳戶。在大多數情況下、下一步是建立連接器、將BlueXP的服務連接至混合雲環境。</block>
   <block id="e5d34a7be7e3c957d955b41f31cc1b6b" category="admonition">如果貴組織的人員已從您的帳單帳戶訂閱NetApp BlueXP訂閱、您將會被重新導向至<block ref="35e104e3e4686d9ee172091b57b45bc0" category="inline-link-rx"></block> 而是。如果這是意外情況、請聯絡您的NetApp銷售團隊。Google每個Google帳單帳戶只能啟用一次訂閱。</block>
   <block id="18ed152ca3e6d97795e3c62f29f14fa3" category="inline-link">深入瞭解BlueXP通知</block>
-  <block id="aea5351abe13a2ef43df184a5caed50e" category="paragraph">如果您的Connector已關機14天或更久、BlueXP將會通知您。<block ref="e16712c557ed9121be1392c11d3884a1" category="inline-link-rx"></block>。</block>
   <block id="4bfec65bcbc9665c362f6c53301324c5" category="cell">- compute.instanceGroups.get - compute .addresses.Get - compute.instances.updateNetworkInterface</block>
   <block id="c5338aa09d091a71f3080053c9a0edc0" category="cell">在Cloud Volumes ONTAP 以各種方式建立及管理儲存VM的整組。</block>
   <block id="00e6f4ddf63e81c5de84a3913163d11d" category="section-title">2023年2月6日</block>
@@ -2976,4 +2970,10 @@
   <block id="bfa340d153d70df3ad6af8db39b45e8e" category="paragraph"><block ref="bfa340d153d70df3ad6af8db39b45e8e" category="inline-link-rx"></block></block>
   <block id="ecbd3aa946706d4530b409255ef3a87e" category="paragraph">在沒有網際網路的雲端區域、您可以使用BlueXP來部署Cloud Volumes ONTAP 各種系統、並探索內部部署ONTAP 的各種叢集（如果您的雲端環境與內部部署環境之間有連線）。您也可以在Cloud Volumes ONTAP AWS和Azure商業區域使用Cloud Backup來備份支援不支援的功能（目前AWS和Azure秘密區域不支援備份）。此類部署不支援其他BlueXP服務、數位錢包除外。</block>
   <block id="a8709880418b83b1477f57ddb74c84e3" category="list-text">現在、連接器可在完全隔離網際網路的任何雲端環境中獲得支援。然後您可以使用連接器上執行的BlueXP主控台、在Cloud Volumes ONTAP 同一個位置部署故障、並探索內部部署ONTAP 的故障叢集（如果您的雲端環境與內部部署環境之間有連線）。您也可以在Cloud Volumes ONTAP AWS和Azure商業區域使用Cloud Backup來備份各種不完整的資料。此類部署不支援其他BlueXP服務、數位錢包除外。</block>
+  <block id="5bf7ac4937c946ab4eedfb091ffa67ab" category="section-title">連接器必須隨時正常運作</block>
+  <block id="1673272503e134b89e873151de0225a4" category="paragraph">連接器是NetApp BlueXP服務架構的基本部分。您有責任確保相關的連接器隨時正常運作且可存取。雖然這項服務的設計是為了克服連接器可用度的短暫中斷、但您必須在必要時立即採取行動、以補救基礎架構故障。</block>
+  <block id="5e546ca24430fc2b79e0e409176438c9" category="paragraph">本文件受EULA規範。如果產品未依照文件操作、則產品的功能與操作、以及您在EULA下的權利、可能會受到不利影響。</block>
+  <block id="8dffc8a152aadc1b397171c4248bd97b" category="section-title">Connector的可用度如何影響Cloud Volumes ONTAP 到效益</block>
+  <block id="65f052fa67c6645d7ad3edc14e47de13" category="paragraph">連接器是Cloud Volumes ONTAP 健全狀況和運作過程中的關鍵要素。如果連接器電源關閉、Cloud Volumes ONTAP 則在與連接器失去通訊超過14天之後、將停止使用以容量為基礎的BYOL系統。這是因為Connector每天都會在系統上重新整理授權。</block>
+  <block id="e7da4bd68a22b069bcff5c88157199b4" category="paragraph">在大多數情況下、BlueXP帳戶管理員需要在雲端或內部部署網路中部署_Connector_。Connector讓BlueXP能夠管理公有雲環境中的資源和程序。 <block ref="850c1601f372329538aba5fe3f86430c" category="inline-link-macro-rx"></block>。</block>
 </blocks>
