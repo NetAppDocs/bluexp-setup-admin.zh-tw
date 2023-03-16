@@ -376,7 +376,6 @@
   <block id="bb036d72177ab633d83cf7c11f211546" category="section-title">套用安全性更新</block>
   <block id="fce63be6a5df1b8f029ff105a6d48616" category="paragraph">更新Connector上的作業系統、確保其已安裝最新的安全性更新。</block>
   <block id="1208149fe3ebe603e8d12495099b22e4" category="list-text">存取Connector主機上的CLI Shell。</block>
-  <block id="065ff36e9f63c035ca95dbe0bff46bfe" category="list-text">以提高的權限執行下列命令：</block>
   <block id="5c6b09600cdfc594130f9f3c053efecb" category="section-title">變更連接器的IP位址</block>
   <block id="a0dc112a414c5a75d4f2454974efc323" category="paragraph">如果貴企業需要、您可以變更由雲端供應商自動指派之Connector執行個體的內部IP位址和公有IP位址。</block>
   <block id="bfe6d8b96fb30d923a8089019f265d6b" category="list-text">依照雲端供應商的指示、變更連接器執行個體的本機IP位址或公有IP位址（或兩者）。</block>
@@ -2976,4 +2975,10 @@
   <block id="8dffc8a152aadc1b397171c4248bd97b" category="section-title">Connector的可用度如何影響Cloud Volumes ONTAP 到效益</block>
   <block id="65f052fa67c6645d7ad3edc14e47de13" category="paragraph">連接器是Cloud Volumes ONTAP 健全狀況和運作過程中的關鍵要素。如果連接器電源關閉、Cloud Volumes ONTAP 則在與連接器失去通訊超過14天之後、將停止使用以容量為基礎的BYOL系統。這是因為Connector每天都會在系統上重新整理授權。</block>
   <block id="e7da4bd68a22b069bcff5c88157199b4" category="paragraph">在大多數情況下、BlueXP帳戶管理員需要在雲端或內部部署網路中部署_Connector_。Connector讓BlueXP能夠管理公有雲環境中的資源和程序。 <block ref="850c1601f372329538aba5fe3f86430c" category="inline-link-macro-rx"></block>。</block>
+  <block id="7889e734551361eda836c7c7bb098d0f" category="list-text">識別主機上是否存在下列目錄：</block>
+  <block id="8a5f2dc93753049d63d32fca4e868454" category="paragraph">/opp/application/NetApp/service-manager-2.</block>
+  <block id="1d356cb442bdf9a28522842dc7a5fc3f" category="paragraph">在2022年底之後建立的連接器應包含此目錄。</block>
+  <block id="aa3abd83021c837147cb63a5da490cfc" category="list-text">視目錄是否存在而定、執行命令來更新作業系統：</block>
+  <block id="d18a6912830b95dcae293a053dd50838" category="list-text">如果目錄存在、請以提高的權限執行下列命令：</block>
+  <block id="7239793e251456f2e73133f34ccc957d" category="list-text">如果目錄_exon_不存在、請以提高的權限執行下列命令：</block>
 </blocks>

@@ -113,15 +113,35 @@ https://cloud.google.com/compute/docs/instances/connecting-to-instance["Google C
 
 .步驟
 . 存取Connector主機上的CLI Shell。
-. 以提高的權限執行下列命令：
+. 識別主機上是否存在下列目錄：
++
+/opp/application/NetApp/service-manager-2.
+
++
+在2022年底之後建立的連接器應包含此目錄。
+
+. 視目錄是否存在而定、執行命令來更新作業系統：
++
+** 如果目錄存在、請以提高的權限執行下列命令：
 +
 [source, cli]
 ----
 sudo -s
 service netapp-service-manager stop
-yum -y update –-security
+yum -y update --security
 service netapp-service-manager start
 ----
+** 如果目錄_exon_不存在、請以提高的權限執行下列命令：
++
+[source, cli]
+----
+sudo -s
+service service-manager stop
+yum -y update --security
+service service-manager start
+----
+
+
 
 
 
