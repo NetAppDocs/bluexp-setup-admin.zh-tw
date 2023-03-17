@@ -27,7 +27,7 @@ link:task-sign-up-saas.html["瞭解如何註冊BlueXP並建立組織"]。
 * 使用您的電子郵件地址和密碼登入NetApp雲端
 * 聯盟連線
 +
-您可以使用單一登入、從公司目錄（聯盟身分識別）使用認證登入。若要深入瞭解、請前往 https://cloud.netapp.com/help-center["BlueXP說明中心"^] 然後按一下*登入選項*。
+您可以使用單一登入、從公司目錄（聯盟身分識別）使用認證登入。 link:concept-federation.html["瞭解如何將身分識別聯盟與BlueXP搭配使用"]。
 
 
 

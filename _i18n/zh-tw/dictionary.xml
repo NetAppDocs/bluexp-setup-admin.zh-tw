@@ -1942,7 +1942,6 @@
   <block id="d168984ba5f06fd829697588a7bfa38c" category="paragraph">您可以使用下列其中一個選項登入BlueXP：</block>
   <block id="19df8bb4b5a805b23aeac731605bdf21" category="list-text">您現有NetApp 支援網站 的功能驗證（NSS）認證</block>
   <block id="691be8e1993c2535e4afe5834afe3b01" category="list-text">使用您的電子郵件地址和密碼登入NetApp雲端</block>
-  <block id="36c40fc323b30ac7c63a4ad0ca63d488" category="inline-link">BlueXP說明中心</block>
   <block id="5975f7e9036c78e6217b16f295f0ca75" category="inline-link">BlueXP主控台</block>
   <block id="0cdc0aaedcc5278681de9de08217447f" category="paragraph">您現在已經登入、可以開始使用BlueXP來管理混合式多雲端基礎架構。</block>
   <block id="1cc2f617f426fbf9060a71767fca6e4d" category="summary">開始使用BlueXP（前身為Cloud Manager）、您就能開始使用NetApp的雲端服務來管理混合式多雲端的資料。設定完成後、您可以管理NetApp帳戶、連接器、雲端供應商帳戶等。</block>
@@ -2747,7 +2746,6 @@
   <block id="213954d7bdaa5b2d9eab4ee897a935d3" category="paragraph-title">註冊選項</block>
   <block id="4c6d74757138aa41d2d5f2b14bb05ad1" category="paragraph">您可以使用下列其中一個選項註冊至BlueXP：</block>
   <block id="d7330e52ac45b9d5a769aa9a5c244319" category="list-text">指定您的電子郵件地址和密碼、即可登入NetApp雲端</block>
-  <block id="521c7a764fe6fa451475e20f1742173e" category="paragraph">這兩種選項都支援聯盟連線、可讓您使用公司目錄（聯盟身分識別）的認證單一登入。註冊之後、您可以從設定聯盟連線<block ref="4281905c7145d3afc1e5083b48ba043f" category="inline-link-rx"></block> 選擇* Cloud Central登入選項*。</block>
   <block id="9f1b84fa92d950a165d75ff20ea339ef" category="list-text">在*登入*頁面上、選取*註冊*。</block>
   <block id="c838c41871c4f726a74cecb65930bcdd" category="admonition">如果您打算使用現有的NSS認證、可以跳過註冊頁面、直接在登入頁面中輸入您的電子郵件地址。在此初次登入時、BlueXP會為您註冊。</block>
   <block id="9a076f8e1167c7f54e717f3312d9be22" category="list-text">在*註冊*頁面上、選擇其中一個登入選項：</block>
@@ -2809,7 +2807,6 @@
   <block id="2a319fe0bd9ba8ece64b79d59a233b15" category="paragraph"><block ref="8c767825ada5127971c09f228e56d843" category="inline-link-macro-rx"></block>。</block>
   <block id="0994880ff67f7251649b7fab82f0a166" category="paragraph-title">登入選項</block>
   <block id="029351726760b5e014b1e49ec512b591" category="list-text">聯盟連線</block>
-  <block id="6c7ff2f2cb289c51829dcc82a760506b" category="paragraph">您可以使用單一登入、從公司目錄（聯盟身分識別）使用認證登入。若要深入瞭解、請前往<block ref="4281905c7145d3afc1e5083b48ba043f" category="inline-link-rx"></block> 然後按一下*登入選項*。</block>
   <block id="03eb7e8aedd1ad900f6996ff1a9cf8dd" category="list-text">在*登入*頁面上、輸入與您登入相關的電子郵件地址。</block>
   <block id="784d4eeca11deaf4ee3f37735e4d0334" category="list-text">視您登入的相關驗證方法而定、系統會提示您輸入認證資料：</block>
   <block id="8a7c8d2028930eaef2c3f44925994051" category="list-text">NetApp雲端認證：輸入您的密碼</block>
@@ -2981,4 +2978,92 @@
   <block id="aa3abd83021c837147cb63a5da490cfc" category="list-text">視目錄是否存在而定、執行命令來更新作業系統：</block>
   <block id="d18a6912830b95dcae293a053dd50838" category="list-text">如果目錄存在、請以提高的權限執行下列命令：</block>
   <block id="7239793e251456f2e73133f34ccc957d" category="list-text">如果目錄_exon_不存在、請以提高的權限執行下列命令：</block>
+  <block id="91d6fce5ad295f4c49b5ab17ad293e4c" category="summary">身分識別聯盟可透過BlueXP進行單一登入、讓使用者使用公司身分的認證登入。您應該先瞭解BlueXP如何支援身分識別聯盟、再與身分識別供應商建立連線。</block>
+  <block id="5a94ee93b1a4f42d5f889b53b576b4f0" category="doc">使用與BlueXP的身分識別聯盟</block>
+  <block id="694b3afac14ef0d070817c7ae79c1199" category="section-title">身分識別聯盟的運作方式</block>
+  <block id="e4f3bdd29d08f22be201dfa18bf12273" category="paragraph">設定身分識別聯盟會在BlueXP的驗證服務供應商（auth0）和您自己的身分識別管理供應商之間建立信任連線。</block>
+  <block id="1c02ebd5b42ffd51f43e9e1999e816c6" category="paragraph">下圖說明身分識別聯盟如何與BlueXP搭配運作：</block>
+  <block id="b92fe45cc758eb55110c7cc104646651" category="inline-image-macro">顯示使用者使用BlueXP進行驗證、以及BlueXP與驗證使用者身分識別供應商之間的連線的圖表。</block>
+  <block id="a15274bd5ac488ac4d633fe751da2ff3" category="paragraph"><block ref="a15274bd5ac488ac4d633fe751da2ff3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a23d15d256e1d62e32d26224787a9a3e" category="list-text">使用者在BlueXP登入頁面上輸入電子郵件地址。</block>
+  <block id="a13915d18d494fb32707e3b2a5c9ba9e" category="list-text">BlueXP會識別電子郵件網域是聯盟連線的一部分、並使用信任的連線將驗證要求傳送給身分識別供應商。</block>
+  <block id="515958a7181ce3bc32c89204b02ae1bc" category="paragraph">當您設定聯盟連線時、BlueXP一律會使用該聯盟連線進行驗證。</block>
+  <block id="22ca6558e5b48604ca4e6d9d3fe9809c" category="list-text">使用者使用公司目錄中的認證資料進行驗證。</block>
+  <block id="c009072a875c9cb65f76f94f4ad103b3" category="list-text">您的身分識別供應商會驗證使用者的身分識別、且使用者已登入BlueXP。</block>
+  <block id="15a8e497f7a36766fdae59431a58e682" category="paragraph">身分識別聯盟使用開放式標準、例如安全聲明標記語言2.0（SAML）和OpenID Connect（OIDC）。</block>
+  <block id="f1a3fd4ef355aad263b4de618c67166b" category="section-title">支援的身分識別供應商</block>
+  <block id="7d141767127fe81f539e933e77b452bf" category="paragraph">BlueXP支援下列身分識別供應商：</block>
+  <block id="a07e97604d6d44417ed607f955f75bb4" category="list-text">安全聲明標記語言（SAML）身分識別供應商</block>
+  <block id="6ed3014fadd3eec5c63b090c750c1377" category="list-text">Microsoft Azure Active Directory（AD）</block>
+  <block id="00f7a7902fa21b12c977cbf65a600530" category="list-text">Active Directory Federation Services（ADFS）</block>
+  <block id="8be692f2d7f8fe746b9e4a80e973c3ab" category="list-text">PingFedate</block>
+  <block id="b3a90c39fbb2a07cca4a396cdcfbcda7" category="paragraph">BlueXP僅支援服務供應商啟動（SP啟動）SSO。不支援身分識別供應商起始（IDP初始化）SSO。</block>
+  <block id="2867eaf4d1bb2c7bca72acfc58e90e99" category="section-title">設定程序總覽</block>
+  <block id="9bdf36a50e22492fdcf035a228537c14" category="paragraph">在您建立BlueXP與身分識別管理供應商之間的連線之前、您應該先瞭解所需採取的步驟、以便做好相應的準備。</block>
+  <block id="7994951112a259112c25d6b6556149a5" category="section-title">SAML身分識別供應商</block>
+  <block id="f55a9b624a2373bae08878c0181a1092" category="paragraph">在高層級上、在BlueXP與SAML身分識別供應商之間建立聯盟連線包括下列步驟：</block>
+  <block id="3fa1942dfddcdac97191c621480a5ded" category="cell">完成者</block>
+  <block id="c4ca4238a0b923820dcc509a6f75849b" category="cell">1.</block>
+  <block id="2e227b32919705455ef0fe6fd61b669d" category="cell">廣告管理員</block>
+  <block id="7402250b00e852b3f4ea20ff6cf99ece" category="paragraph">根據驗證0文件中的準則來設定SAML身分識別提供者。</block>
+  <block id="80723e7f2abf44c346356b58de5584bf" category="paragraph">檢視SAML身分識別供應商的指示：</block>
+  <block id="657ddf7370b0d5eff54a335127a66282" category="inline-link">ADFS</block>
+  <block id="c33ddb3734db9918c602b8a73eb3854a" category="list-text"><block ref="c33ddb3734db9918c602b8a73eb3854a" category="inline-link-rx"></block></block>
+  <block id="9eddef35bc6181a35b1e146b9fbf2579" category="inline-link">奧塔</block>
+  <block id="2619f78e3f38e67ac152c0efcc61ca3d" category="list-text"><block ref="2619f78e3f38e67ac152c0efcc61ca3d" category="inline-link-rx"></block></block>
+  <block id="8b0462fd7af8f1da87014a1daa3319c6" category="inline-link">OneLogin</block>
+  <block id="d8543be54a4507e484f66e71d76ac57a" category="list-text"><block ref="d8543be54a4507e484f66e71d76ac57a" category="inline-link-rx"></block></block>
+  <block id="8b4801b0a2e5acb957a1eb9a5865893e" category="list-text"><block ref="8b4801b0a2e5acb957a1eb9a5865893e" category="inline-link-rx"></block></block>
+  <block id="6391fa72874cbb87eccb79e2fcb2cd5c" category="inline-link">Salesforce</block>
+  <block id="82b805f6a7d8b50e7cf82e8f59f7f40e" category="list-text"><block ref="82b805f6a7d8b50e7cf82e8f59f7f40e" category="inline-link-rx"></block></block>
+  <block id="b2ab9e36a31c68cc5a0abc6b9f7e6052" category="inline-link">產品型資料夾</block>
+  <block id="93e1bb7fc338909c843a3179fcc558ea" category="list-text"><block ref="93e1bb7fc338909c843a3179fcc558ea" category="inline-link-rx"></block></block>
+  <block id="c1e831a160e67d1ff6bfbd7f1e326ea6" category="inline-link">SSOCircle</block>
+  <block id="e784439ab583dc6269222d988a21051a" category="list-text"><block ref="e784439ab583dc6269222d988a21051a" category="inline-link-rx"></block></block>
+  <block id="685a1bb94de19c84d18952bbd724e718" category="inline-link">請遵循下列一般指示</block>
+  <block id="e1b2d18c713df40e0da0fb45bad9d9de" category="paragraph">如果您的身分識別供應商未出現在上方清單中、<block ref="7e20de1bde53a2c364dc941f7f4f716f" category="inline-link-rx"></block></block>
+  <block id="5cad18854556867a3dd05cfaa49bcda2" category="admonition">請勿完成介紹如何使用驗證0建立連線的步驟。您將在下一步建立該連線。</block>
+  <block id="c81e728d9d4c2f636f067f89cc14862c" category="cell">2.</block>
+  <block id="9c9a7aca54b3b1227c02037ae00098e1" category="cell">BlueXP管理</block>
+  <block id="1dd36b1c601a7192a0dbb196db0dae1b" category="inline-link">NetApp聯盟設定頁面</block>
+  <block id="5876b7c2025f98810f3aceb0f477492f" category="paragraph">前往<block ref="635463d6f42fa56c4a5df120d7d58405" category="inline-link-rx"></block> 並建立與BlueXP的連線。</block>
+  <block id="b86474abbb77ac0e71e576bfff42cc23" category="paragraph">若要完成此步驟、您必須向AD管理員取得身分識別供應商的下列資訊：</block>
+  <block id="e71fdf330ff74d0fdbe7b4b72bdd4fa3" category="list-text">登入URL</block>
+  <block id="d42b45203591ce26ca6f367d3af6d372" category="list-text">X509簽署憑證（PEE或CERE格式）</block>
+  <block id="a310970f60e93893530d31ccf2574d6b" category="list-text">登出URL（選用）</block>
+  <block id="91306fbf01cd483884c64bd2f573aa2f" category="paragraph">使用此資訊建立連線之後、「Federation Setup」頁面會列出可傳送給AD管理員的參數、以便在下一步完成組態設定。</block>
+  <block id="eccbc87e4b5ce2fe28308fd9f2a7baf3" category="cell">3.</block>
+  <block id="95df8937201a4d449c13b1649e9ba46d" category="cell">完成步驟2之後、請使用「聯盟設定」頁面上顯示的參數、在身分識別供應商上完成組態設定。</block>
+  <block id="a87ff679a2f3e71d9181a67b7542122c" category="cell">4.</block>
+  <block id="77515c9e6cbb6a15e2cb738105271642" category="cell">從測試並啟用連線<block ref="635463d6f42fa56c4a5df120d7d58405" category="inline-link-rx"></block>請注意、測試連線和啟用連線之間的頁面會重新整理。</block>
+  <block id="6e9feb3d8b1d2610e025f8bd1e048c93" category="section-title">Microsoft Azure AD</block>
+  <block id="fa292d75bd72ae1e1506c8f6c8e39fa3" category="paragraph">在高層級上、在BlueXP和Azure AD之間設定聯盟連線包括下列步驟：</block>
+  <block id="f803510b253eb6863659ac394a94c9b4" category="paragraph">在Azure Active Directory中建立新的應用程式、以及用戶端機密。</block>
+  <block id="a2c2d074b529efb4b812b96b74e02f33" category="inline-link">檢視向Azure AD註冊應用程式的說明</block>
+  <block id="8f916695f0c02d47ca7caf627294b5b2" category="paragraph"><block ref="8f916695f0c02d47ca7caf627294b5b2" category="inline-link-rx"></block></block>
+  <block id="ef64c252ec5198cd24bcab0c5b591d8c" category="paragraph">若要完成此步驟、您必須向AD管理員取得下列資訊：</block>
+  <block id="76525f0f34b48475e5ca33f71d296f3b" category="list-text">用戶端ID</block>
+  <block id="797685b539958d3786d560ae97430767" category="list-text">用戶端機密值</block>
+  <block id="a5ebf29140e5a70af04c991816638085" category="list-text">Microsoft Azure AD網域</block>
+  <block id="bcaf1c3aeb49ac35fd670bdcd8cd4946" category="cell">完成步驟2之後、請使用「聯盟設定」頁面上顯示的參數、在Azure AD中完成組態設定。</block>
+  <block id="d39660f3085c958967d8d820464b4974" category="paragraph">在高層級上、在BlueXP和ADFS之間設定聯盟連線包括下列步驟：</block>
+  <block id="d37e669914774ef1ff275b462c890f08" category="paragraph">設定ADFS伺服器以啟用與BluetXP的身分識別聯盟。</block>
+  <block id="f1b98402afda515a4e3b322603f457af" category="inline-link">檢視使用auth0設定ADFS伺服器的指示</block>
+  <block id="774bae219d61ddaa3803a99b79315467" category="paragraph"><block ref="774bae219d61ddaa3803a99b79315467" category="inline-link-rx"></block></block>
+  <block id="ea984b58d998a6393b5a21a789c7b789" category="paragraph">若要完成此步驟、您必須向AD管理員取得下列資訊：ADFS伺服器的URL或同盟中繼資料檔案。</block>
+  <block id="8d4a0cfaae04a0d29dc491b71ab5dcb1" category="cell">完成步驟2後、使用「Federation Setup」（聯盟設定）頁面上顯示的參數、完成ADFS伺服器上的組態。</block>
+  <block id="9340450967aba985f2ce16f324a6284a" category="paragraph">在高層級上、在BlueXP與PingFedate伺服器之間設定聯盟連線包括下列步驟：</block>
+  <block id="1ed12178ba0d0aded4c5a306f3150570" category="paragraph">根據驗證0文件中的準則來設定PingFedate伺服器。</block>
+  <block id="bb6800676df1891c64f4c92dd2cf1c7e" category="inline-link">檢視建立連線的指示</block>
+  <block id="9534006ccd3ea731e0e001938e3f012a" category="paragraph"><block ref="9534006ccd3ea731e0e001938e3f012a" category="inline-link-rx"></block></block>
+  <block id="b9960b8035bc6ae148d9d0aeae7c957b" category="list-text">PingFedate伺服器的URL</block>
+  <block id="512527e34bba36a42c42f1febf1b5404" category="cell">完成步驟2之後、請使用「聯盟設定」頁面上顯示的參數、在PingFederation伺服器上完成設定。</block>
+  <block id="5b8ff6609e9eeeaa9e1acfdab0eabf9f" category="section-title">更新聯盟連線</block>
+  <block id="6dc0ad0e9c9267dc0e4fb63076e0635a" category="paragraph">在BlueXP管理員啟用連線之後、管理員可以隨時從更新連線<block ref="635463d6f42fa56c4a5df120d7d58405" category="inline-link-rx"></block></block>
+  <block id="b7d9630742e0cc263c04a1065ee99c04" category="paragraph">例如、您可能需要上傳新的憑證來更新連線。</block>
+  <block id="dbc6f5b69f3e88c308c302b2a186606c" category="paragraph">建立連線的BlueXP管理員是唯一能夠更新連線的授權使用者。如果您想要新增其他管理員、可以透過產品內對談與我們聯絡。</block>
+  <block id="4cd9dd3aeeaff4f9e2ee0a8b309b6856" category="inline-link-macro">瞭解如何將身分識別聯盟與BlueXP搭配使用</block>
+  <block id="22978e6bb3ddae7f86434764bd5d9415" category="paragraph">您可以使用單一登入、從公司目錄（聯盟身分識別）使用認證登入。 <block ref="428e058a0b96c0f6b163e3a51b92bb16" category="inline-link-macro-rx"></block>。</block>
+  <block id="66721b55faa00316d484082879eed67d" category="paragraph">這兩種選項都支援聯盟連線、可讓您使用公司目錄（聯盟身分識別）的認證單一登入。您可以在註冊之後設定聯盟連線。 <block ref="428e058a0b96c0f6b163e3a51b92bb16" category="inline-link-macro-rx"></block>。</block>
+  <block id="eed7d7eea79968152bcb0157d198eeea" category="sidebar">身分識別聯盟</block>
 </blocks>

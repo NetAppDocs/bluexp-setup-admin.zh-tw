@@ -51,6 +51,8 @@ sidebar:
       url: "/reference-whats-next.html"
   - title: 管理BlueXP
     entries:
+    - title: 身分識別聯盟
+      url: "/concept-federation.html"
     - title: NetApp客戶
       entries:
       - title: 管理您的帳戶

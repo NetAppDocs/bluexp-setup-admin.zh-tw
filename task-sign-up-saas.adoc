@@ -28,7 +28,7 @@ summary: 當您開始使用BlueXP時、第一步就是註冊。系統會提供�
 * 指定您的電子郵件地址和密碼、即可登入NetApp雲端
 
 
-這兩種選項都支援聯盟連線、可讓您使用公司目錄（聯盟身分識別）的認證單一登入。註冊之後、您可以從設定聯盟連線 https://cloud.netapp.com/help-center["BlueXP說明中心"^] 選擇* Cloud Central登入選項*。
+這兩種選項都支援聯盟連線、可讓您使用公司目錄（聯盟身分識別）的認證單一登入。您可以在註冊之後設定聯盟連線。 link:concept-federation.html["瞭解如何將身分識別聯盟與BlueXP搭配使用"]。
 
 .步驟
 . 開啟網頁瀏覽器、前往 https://console.bluexp.netapp.com["BlueXP主控台"^]
