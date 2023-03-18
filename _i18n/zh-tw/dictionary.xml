@@ -2978,7 +2978,6 @@
   <block id="aa3abd83021c837147cb63a5da490cfc" category="list-text">視目錄是否存在而定、執行命令來更新作業系統：</block>
   <block id="d18a6912830b95dcae293a053dd50838" category="list-text">如果目錄存在、請以提高的權限執行下列命令：</block>
   <block id="7239793e251456f2e73133f34ccc957d" category="list-text">如果目錄_exon_不存在、請以提高的權限執行下列命令：</block>
-  <block id="91d6fce5ad295f4c49b5ab17ad293e4c" category="summary">身分識別聯盟可透過BlueXP進行單一登入、讓使用者使用公司身分的認證登入。您應該先瞭解BlueXP如何支援身分識別聯盟、再與身分識別供應商建立連線。</block>
   <block id="5a94ee93b1a4f42d5f889b53b576b4f0" category="doc">使用與BlueXP的身分識別聯盟</block>
   <block id="694b3afac14ef0d070817c7ae79c1199" category="section-title">身分識別聯盟的運作方式</block>
   <block id="e4f3bdd29d08f22be201dfa18bf12273" category="paragraph">設定身分識別聯盟會在BlueXP的驗證服務供應商（auth0）和您自己的身分識別管理供應商之間建立信任連線。</block>
@@ -3058,7 +3057,6 @@
   <block id="9534006ccd3ea731e0e001938e3f012a" category="paragraph"><block ref="9534006ccd3ea731e0e001938e3f012a" category="inline-link-rx"></block></block>
   <block id="b9960b8035bc6ae148d9d0aeae7c957b" category="list-text">PingFedate伺服器的URL</block>
   <block id="512527e34bba36a42c42f1febf1b5404" category="cell">完成步驟2之後、請使用「聯盟設定」頁面上顯示的參數、在PingFederation伺服器上完成設定。</block>
-  <block id="5b8ff6609e9eeeaa9e1acfdab0eabf9f" category="section-title">更新聯盟連線</block>
   <block id="6dc0ad0e9c9267dc0e4fb63076e0635a" category="paragraph">在BlueXP管理員啟用連線之後、管理員可以隨時從更新連線<block ref="635463d6f42fa56c4a5df120d7d58405" category="inline-link-rx"></block></block>
   <block id="b7d9630742e0cc263c04a1065ee99c04" category="paragraph">例如、您可能需要上傳新的憑證來更新連線。</block>
   <block id="dbc6f5b69f3e88c308c302b2a186606c" category="paragraph">建立連線的BlueXP管理員是唯一能夠更新連線的授權使用者。如果您想要新增其他管理員、可以透過產品內對談與我們聯絡。</block>
@@ -3066,4 +3064,8 @@
   <block id="22978e6bb3ddae7f86434764bd5d9415" category="paragraph">您可以使用單一登入、從公司目錄（聯盟身分識別）使用認證登入。 <block ref="428e058a0b96c0f6b163e3a51b92bb16" category="inline-link-macro-rx"></block>。</block>
   <block id="66721b55faa00316d484082879eed67d" category="paragraph">這兩種選項都支援聯盟連線、可讓您使用公司目錄（聯盟身分識別）的認證單一登入。您可以在註冊之後設定聯盟連線。 <block ref="428e058a0b96c0f6b163e3a51b92bb16" category="inline-link-macro-rx"></block>。</block>
   <block id="eed7d7eea79968152bcb0157d198eeea" category="sidebar">身分識別聯盟</block>
+  <block id="a187fbf78abfcf26b0ccf604029629e6" category="summary">身分識別聯盟可透過BlueXP進行單一登入、讓使用者使用公司身分的認證登入。若要開始使用、請瞭解身分識別聯盟如何與BlueXP搭配運作、然後檢閱設定程序的總覽。</block>
+  <block id="dca3cd1676cfe384fbb50f39c2e26eb4" category="paragraph">_Identity Federation®啟用單一登入BlueXP、讓使用者可以使用公司身分的認證登入。若要開始使用、請瞭解身分識別聯盟如何與BlueXP搭配運作、然後檢閱設定程序的總覽。</block>
+  <block id="6c3d838359f74f39c9ee994a4c202763" category="cell">Active Directory（AD）管理員</block>
+  <block id="38354362734b03037ea9de3dd0ec048c" category="section-title">正在更新聯盟連線</block>
 </blocks>

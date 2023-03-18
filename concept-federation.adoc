@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-federation.html 
 keywords: identity federation, federation, federated identity, set up identity federation, set up federated connection, federated connection 
-summary: 身分識別聯盟可透過BlueXP進行單一登入、讓使用者使用公司身分的認證登入。您應該先瞭解BlueXP如何支援身分識別聯盟、再與身分識別供應商建立連線。 
+summary: 身分識別聯盟可透過BlueXP進行單一登入、讓使用者使用公司身分的認證登入。若要開始使用、請瞭解身分識別聯盟如何與BlueXP搭配運作、然後檢閱設定程序的總覽。 
 ---
 = 使用與BlueXP的身分識別聯盟
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 身分識別聯盟可透過BlueXP進行單一登入、讓使用者使�
 
 
 [role="lead"]
-身分識別聯盟可透過BlueXP進行單一登入、讓使用者使用公司身分的認證登入。您應該先瞭解BlueXP如何支援身分識別聯盟、再與身分識別供應商建立連線。
+_Identity Federation®啟用單一登入BlueXP、讓使用者可以使用公司身分的認證登入。若要開始使用、請瞭解身分識別聯盟如何與BlueXP搭配運作、然後檢閱設定程序的總覽。
 
 
 
@@ -68,7 +68,7 @@ BlueXP僅支援服務供應商啟動（SP啟動）SSO。不支援身分識別供
 | 步驟 | 完成者 | 說明 
 
 
-| 1. | 廣告管理員  a| 
+| 1. | Active Directory（AD）管理員  a| 
 根據驗證0文件中的準則來設定SAML身分識別提供者。
 
 檢視SAML身分識別供應商的指示：
@@ -221,7 +221,7 @@ TIP: 請勿完成介紹如何使用驗證0建立連線的步驟。您將在下�
 |===
 
 
-== 更新聯盟連線
+== 正在更新聯盟連線
 
 在BlueXP管理員啟用連線之後、管理員可以隨時從更新連線 https://services.cloud.netapp.com/federation-setup["NetApp聯盟設定頁面"^]
 
