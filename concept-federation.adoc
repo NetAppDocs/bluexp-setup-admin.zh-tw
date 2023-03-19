@@ -69,7 +69,7 @@ BlueXP僅支援服務供應商啟動（SP啟動）SSO。不支援身分識別供
 
 
 | 1. | Active Directory（AD）管理員  a| 
-根據驗證0文件中的準則來設定SAML身分識別提供者。
+設定您的SAML身分識別供應商、以啟用與BlueXP的身分識別聯盟功能。
 
 檢視SAML身分識別供應商的指示：
 
@@ -85,7 +85,7 @@ BlueXP僅支援服務供應商啟動（SP啟動）SSO。不支援身分識別供
 如果您的身分識別供應商未出現在上方清單中、 https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider["請遵循下列一般指示"^]
 
 
-TIP: 請勿完成介紹如何使用驗證0建立連線的步驟。您將在下一步建立該連線。
+TIP: 請勿完成介紹如何在驗證0中建立連線的步驟。您將在下一步建立該連線。
 
 
 
@@ -120,12 +120,12 @@ TIP: 請勿完成介紹如何使用驗證0建立連線的步驟。您將在下�
 
 
 | 1. | 廣告管理員  a| 
-在Azure Active Directory中建立新的應用程式、以及用戶端機密。
+設定Azure Active Directory以啟用與BlueXP的身分識別聯盟。
 
 https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/azure-active-directory/v2["檢視向Azure AD註冊應用程式的說明"^]
 
 
-TIP: 請勿完成介紹如何使用驗證0建立連線的步驟。您將在下一步建立該連線。
+TIP: 請勿完成介紹如何在驗證0中建立連線的步驟。您將在下一步建立該連線。
 
 
 
@@ -192,12 +192,12 @@ https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-provi
 
 
 | 1. | 廣告管理員  a| 
-根據驗證0文件中的準則來設定PingFedate伺服器。
+設定您的PingFederation伺服器、以啟用與BluedXP的身分識別聯盟。
 
 https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/ping-federate["檢視建立連線的指示"^]
 
 
-TIP: 請勿完成介紹如何使用驗證0建立連線的步驟。您將在下一步建立該連線。
+TIP: 請勿完成介紹如何在驗證0中建立連線的步驟。您將在下一步建立該連線。
 
 
 
@@ -227,4 +227,4 @@ TIP: 請勿完成介紹如何使用驗證0建立連線的步驟。您將在下�
 
 例如、您可能需要上傳新的憑證來更新連線。
 
-建立連線的BlueXP管理員是唯一能夠更新連線的授權使用者。如果您想要新增其他管理員、可以透過產品內對談與我們聯絡。
+建立連線的BlueXP管理員是唯一能夠更新連線的授權使用者。如果您想新增其他管理員、請聯絡NetApp支援部門。
