@@ -16,7 +16,7 @@ summary: 註冊BlueXP之後、您可以透過SaaS型使用者介面、從網頁�
 [role="lead"]
 註冊BlueXP之後、您可以透過SaaS型使用者介面、從網頁瀏覽器登入。
 
-link:task-sign-up-saas.html["瞭解如何註冊BlueXP並建立組織"]。
+link:task-sign-up-saas.html["瞭解如何註冊BlueXP並建立帳戶"]。
 
 如果您是從政府區域或沒有外傳網際網路存取權的網站存取BlueXP、則必須登入在連接器本機執行的BlueXP使用者介面。 link:task-managing-connectors.html#access-the-local-ui["瞭解如何存取Connector上的本機UI"]。
 

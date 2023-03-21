@@ -2756,7 +2756,6 @@
   <block id="b0844d01c75bb6b60219ee536f20aa15" category="list-text">出現提示時、請檢閱終端使用者授權合約並接受條款。</block>
   <block id="a2d1bd30e95a89c4ecb9d6a39da84e3a" category="list-text">在*歡迎*頁面上、輸入您帳戶的名稱。</block>
   <block id="efb45899558a953ff7d6578e89aa2c1c" category="inline-link-macro">瞭解如何將成員新增至現有帳戶</block>
-  <block id="f0416cc7adfb705444d5a66527cb9ce5" category="paragraph">如果您的企業已經有帳戶、而您想要加入帳戶、您應該跳過此步驟、並請擁有者將您與帳戶建立關聯。擁有者新增您之後、您就可以登入、而且您可以存取該帳戶。 <block ref="3b04849a18b87204738aa991e5f8575e" category="inline-link-macro-rx"></block>。</block>
   <block id="ecbca8245155432067c380b55b5146bb" category="paragraph">帳戶是NetApp身分識別平台的最上層元素。它可讓您新增及管理使用者、角色、權限及工作環境。</block>
   <block id="a860f226d10bcd54ab238e5189d94747" category="inline-image-macro">當您以不屬於帳戶的新帳戶登入時、會出現歡迎頁面的快照。</block>
   <block id="e079acaa326ddf3b1cb6ee167cce08f4" category="paragraph"><block ref="e079acaa326ddf3b1cb6ee167cce08f4" category="inline-image-macro-rx" type="image"></block></block>
@@ -2803,8 +2802,6 @@
   <block id="0da34741c0fedd26eb889170d87be2c7" category="list-text">若要將認證資料與新訂閱建立關聯、請按一下*新增訂閱&gt;繼續*、然後依照AWS Marketplace中的步驟進行：</block>
   <block id="c75b8cac68776a239e8da30928fbc723" category="list-text">按一下*設定您的帳戶*。</block>
   <block id="2d362fb636ab4e2644720f00f02ddbfb" category="summary">註冊BlueXP之後、您可以透過SaaS型使用者介面、從網頁瀏覽器登入。</block>
-  <block id="f2209a6bc960d5dd3350ca4b5b662c18" category="inline-link-macro">瞭解如何註冊BlueXP並建立組織</block>
-  <block id="2a319fe0bd9ba8ece64b79d59a233b15" category="paragraph"><block ref="8c767825ada5127971c09f228e56d843" category="inline-link-macro-rx"></block>。</block>
   <block id="0994880ff67f7251649b7fab82f0a166" category="paragraph-title">登入選項</block>
   <block id="029351726760b5e014b1e49ec512b591" category="list-text">聯盟連線</block>
   <block id="03eb7e8aedd1ad900f6996ff1a9cf8dd" category="list-text">在*登入*頁面上、輸入與您登入相關的電子郵件地址。</block>
@@ -3068,4 +3065,7 @@
   <block id="9149dec1c87108fda2f607ad7f9d0f7c" category="paragraph">設定Azure Active Directory以啟用與BlueXP的身分識別聯盟。</block>
   <block id="60f43fc6dd2ef1336922bb7836f8fd10" category="paragraph">設定您的PingFederation伺服器、以啟用與BluedXP的身分識別聯盟。</block>
   <block id="61bc7bf1f88516437cb71c2afcff94f5" category="paragraph">建立連線的BlueXP管理員是唯一能夠更新連線的授權使用者。如果您想新增其他管理員、請聯絡NetApp支援部門。</block>
+  <block id="dbd1aae17ba4f4ca876aea9deb478855" category="inline-link-macro">瞭解如何註冊BlueXP並建立帳戶</block>
+  <block id="f4d0e4f5ec6f078434dc63eacdebe638" category="paragraph"><block ref="94d2906599f74921f2fab3568b028f51" category="inline-link-macro-rx"></block>。</block>
+  <block id="816dc8c932a8afbdb9361ede8774b3d0" category="paragraph">如果您的企業已經有帳戶、而您想要加入帳戶、則應關閉BluXP、並請擁有者將您與帳戶建立關聯。擁有者新增您之後、您就可以登入、而且您可以存取該帳戶。 <block ref="3b04849a18b87204738aa991e5f8575e" category="inline-link-macro-rx"></block>。</block>
 </blocks>
