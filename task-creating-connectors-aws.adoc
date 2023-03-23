@@ -67,6 +67,8 @@ BlueXP帳戶管理員必須先部署_Connector_、才能使用大多數的BlueXP
 
 此原則僅包含從BlueXP啟動AWS中Connector執行個體所需的權限。請勿在其他情況下使用此原則。
 
+如有需要、您可以使用IAM來限制IAM原則 `Condition` 元素。 https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["AWS文件：條件元素"^]
+
 當BlueXP建立Connector時、它會套用一組新的權限至Connector執行個體、讓Connector能夠管理公有雲環境中的資源。
 
 .步驟

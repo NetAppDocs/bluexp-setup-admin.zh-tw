@@ -22,11 +22,14 @@ summary: 當BlueXP在AWS中啟動Connector執行個體時、它會將原則附�
 
 以下提供的IAM原則提供Connector所需的權限、可讓您根據AWS區域來管理公有雲環境中的資源和程序。
 
-如果您直接從BlueXP在標準AWS區域中建立連接器、則BlueXP會自動將原則套用至連接器。在這種情況下、您不需要執行任何動作。
+如有需要、您可以使用IAM來限制IAM原則 `Condition` 元素。 https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["AWS文件：條件元素"^]
 
-如果您從AWS Marketplace部署Connector、或是在Linux主機上手動安裝Connector、則必須自行設定原則。
+請注意下列事項：
 
-您也必須確保原則在後續版本中新增權限時保持最新狀態。
+* 如果您直接從BlueXP在標準AWS區域中建立連接器、則BlueXP會自動將原則套用至連接器。在這種情況下、您不需要執行任何動作。
+* 如果您是從AWS Marketplace部署Connector、在Linux主機上手動安裝Connector、或是想要新增額外的AWS認證到BlueXP、則必須自行設定原則。
+* 您也必須確保原則在後續版本中新增權限時保持最新狀態。
+
 
 選取您所在的地區以檢視所需的原則：
 

@@ -321,9 +321,6 @@ Connector會針對備份與還原作業提出下列API要求：
 | Microsoft.Storage/storageAccounts/write | 是的 | 否 
 
 
-| Microsoft.Storage/storageAccounts/DELETE | 否 | 是的 
-
-
 | Microsoft.Storage/storageAccounts/blobServices/contains/read | 是的 | 是的 
 
 
@@ -764,6 +761,14 @@ Connector會提出下列API要求、以探索及管理Azure Kubernetes Service�
 == 變更記錄
 
 新增和移除權限時、我們會在下方各節中加以註記。
+
+
+
+=== 2023年3月23日
+
+Cloud Data Sense不再需要「Microsoft.Storage/storageAccounts/DELETE」權限。
+
+此權限仍為Cloud Volumes ONTAP 必填項目。
 
 
 

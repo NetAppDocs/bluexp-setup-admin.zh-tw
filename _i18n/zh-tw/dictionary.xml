@@ -2501,7 +2501,6 @@
   <block id="c1141a37b962270fc1e8960233830c99" category="section-title">IAM原則</block>
   <block id="d169cac20ae3e0b6b9cec32d273de5f2" category="paragraph">以下提供的IAM原則提供Connector所需的權限、可讓您根據AWS區域來管理公有雲環境中的資源和程序。</block>
   <block id="74b6a526e505305f967084e06fa6aaf3" category="paragraph">如果您直接從BlueXP在標準AWS區域中建立連接器、則BlueXP會自動將原則套用至連接器。在這種情況下、您不需要執行任何動作。</block>
-  <block id="fb86f9a9f53ddf38f2b2297b0200b8a3" category="paragraph">如果您從AWS Marketplace部署Connector、或是在Linux主機上手動安裝Connector、則必須自行設定原則。</block>
   <block id="b8502b99c36d378968d3d20a7561e523" category="paragraph">您也必須確保原則在後續版本中新增權限時保持最新狀態。</block>
   <block id="de16d176ab7c6c01a7ce45f2e7213194" category="paragraph">選取您所在的地區以檢視所需的原則：</block>
   <block id="481dd59686d42d2d6a74eae1a1d763ad" category="paragraph">對於標準區域、權限分佈在兩個原則之間。由於AWS中受管理原則的字元大小上限、因此需要兩個原則。</block>
@@ -3068,4 +3067,11 @@
   <block id="dbd1aae17ba4f4ca876aea9deb478855" category="inline-link-macro">瞭解如何註冊BlueXP並建立帳戶</block>
   <block id="f4d0e4f5ec6f078434dc63eacdebe638" category="paragraph"><block ref="94d2906599f74921f2fab3568b028f51" category="inline-link-macro-rx"></block>。</block>
   <block id="816dc8c932a8afbdb9361ede8774b3d0" category="paragraph">如果您的企業已經有帳戶、而您想要加入帳戶、則應關閉BluXP、並請擁有者將您與帳戶建立關聯。擁有者新增您之後、您就可以登入、而且您可以存取該帳戶。 <block ref="3b04849a18b87204738aa991e5f8575e" category="inline-link-macro-rx"></block>。</block>
+  <block id="5409221a62615b6b2cf0061a5376c983" category="inline-link">AWS文件：條件元素</block>
+  <block id="4c3260e1174dd82ea2e496ac6f39fc4a" category="paragraph">如有需要、您可以使用IAM來限制IAM原則<block ref="9e2941b3c81256fac10392aaca4ccfde" prefix=" " category="inline-code"></block> 元素。<block ref="19ffef022087e160f1e54b9948795943" category="inline-link-rx"></block></block>
+  <block id="7d6d11737dd3bca1243f4e22e7aeaec1" category="list-text">如果您是從AWS Marketplace部署Connector、在Linux主機上手動安裝Connector、或是想要新增額外的AWS認證到BlueXP、則必須自行設定原則。</block>
+  <block id="0c511f4078f33be6ce46a7b4c4d64f3e" category="section-title">2023年3月23日</block>
+  <block id="43908e244f944d05ab87a4987453f7bc" category="paragraph">Cloud Data Sense不再需要「Microsoft.Storage/storageAccounts/DELETE」權限。</block>
+  <block id="47e8280c2cd82cf2f49537bfd5661b15" category="paragraph">此權限仍為Cloud Volumes ONTAP 必填項目。</block>
+  <block id="15f7c3376619ce497205d543fd1d7767" category="paragraph">如有需要、您可以使用IAM來限制IAM原則<block ref="9e2941b3c81256fac10392aaca4ccfde" prefix=" " category="inline-code"></block> 元素。<block ref="19ffef022087e160f1e54b9948795943" category="inline-link-rx"></block></block>
 </blocks>
