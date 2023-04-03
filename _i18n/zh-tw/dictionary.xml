@@ -3087,14 +3087,14 @@
   <block id="70843c2315ee9e00dc50f03225c92953" category="paragraph">若要開始使用、請選取*新增工作環境*、選取* Amazon Web Services*或*內部部署*、然後選取* VMware vCenter Server*。輸入伺服器的網域名稱或IP位址、然後輸入管理員使用者的使用者名稱和密碼。</block>
   <block id="fb378d84e11ead1b2c8c57bfabde81de" category="list-text">您現在可以管理與您的BlueXP登入相關的使用者認證：ONTAP 功能驗證和NetApp 支援網站 支援（NSS）認證。</block>
   <block id="f06293a36a992a2a1b8c6f6572b6caf8" category="paragraph">當您移至*「設定」&gt;「認證資料」*時、您可以檢視認證資料、更新認證資料並加以刪除。例如、如果您變更這些認證資料的密碼、則需要更新BlueXP中的密碼。</block>
-  <block id="b74c77e09b66a8f63b22e9ec3917cbbc" category="inline-link-macro">瞭解如何管理使用者認證</block>
-  <block id="43cddfbd5a5e952fa3a0613068b01922" category="paragraph"><block ref="f57f6e52027d92bbfed90d112fcd8715" category="inline-link-macro-rx"></block>。</block>
   <block id="4e46804b204e02c9bd12cc6d7232cca6" category="list-text">您現在可以在建立支援案例或更新現有支援案例的案例備註時上傳附件。</block>
   <block id="72c3a2be47cc6617cea246e89af67993" category="inline-link">瞭解如何建立及管理支援案例</block>
   <block id="6d69140f9b878e098eb9bfcd623c9dbd" category="paragraph"><block ref="7f3b2cbcf14ed0f5a85962e6b9e3eba8" category="inline-link-rx"></block>。</block>
   <block id="e19c064fcb68059e563bb5bfdd31cac1" category="list-text"><block ref="e19c064fcb68059e563bb5bfdd31cac1" category="inline-link-rx"></block></block>
   <block id="9e8ad418161e776fb398db9af34585c3" category="list-text"><block ref="9e8ad418161e776fb398db9af34585c3" category="inline-link-rx"></block></block>
-  <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">*附件（選用）*：一次上傳最多五個附件。</block>
-  <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">每個檔案的附件上限為25 MB。支援下列副檔名：TXT、log、pdf、JP/JPEG、rtf、 DOC/docx、xls/xlsx及csv.</block>
-  <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">*更新案例備註*：提供問題的其他詳細資料、或選擇*上傳檔案*最多附加五個檔案。</block>
+  <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">* 附件（選填） * ：上傳最多五個附件、一次上傳一個。</block>
+  <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">每個檔案的附件上限為 25 MB 。支援下列副檔名： txt 、 log 、 pdf 、 jpg/jpeg 、 rtf 、 doc/dox 、 xls/xlsx 和 csv 。</block>
+  <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">* 更新案例附註 * ：提供問題的其他詳細資料、或選擇 * 上傳檔案 * 最多附加五個檔案。</block>
+  <block id="6f6e8b4bb29cff7fb5a94ccadb883777" category="inline-link-macro">瞭解如何管理使用者認證</block>
+  <block id="551a80734187b23f5368b6a5609f3de3" category="paragraph"><block ref="cf16e3f2aabf285f3de8d29b23130725" category="inline-link-macro-rx"></block>。</block>
 </blocks>

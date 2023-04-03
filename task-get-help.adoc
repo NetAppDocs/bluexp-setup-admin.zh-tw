@@ -67,9 +67,9 @@ NetApp以多種方式支援BlueXP及其雲端服務。我們全年無休提供�
 
 *** *問題說明*：提供問題的詳細說明、包括任何適用的錯誤訊息或您執行的疑難排解步驟。
 *** *其他電子郵件地址*：如果您想讓其他人知道此問題、請輸入其他電子郵件地址。
-*** *附件（選用）*：一次上傳最多五個附件。
+*** * 附件（選填） * ：上傳最多五個附件、一次上傳一個。
 +
-每個檔案的附件上限為25 MB。支援下列副檔名：TXT、log、pdf、JP/JPEG、rtf、 DOC/docx、xls/xlsx及csv.
+每個檔案的附件上限為 25 MB 。支援下列副檔名： txt 、 log 、 pdf 、 jpg/jpeg 、 rtf 、 doc/dox 、 xls/xlsx 和 csv 。
 
 
 
@@ -147,9 +147,9 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 . 按一下即可管理現有案例 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-table-action.png["表格最後一欄中出現三個點的圖示"] 並選擇其中一個可用選項：
 +
 ** *檢視案例*：檢視特定案例的完整詳細資料。
-** *更新案例備註*：提供問題的其他詳細資料、或選擇*上傳檔案*最多附加五個檔案。
+** * 更新案例附註 * ：提供問題的其他詳細資料、或選擇 * 上傳檔案 * 最多附加五個檔案。
 +
-每個檔案的附件上限為25 MB。支援下列副檔名：TXT、log、pdf、JP/JPEG、rtf、 DOC/docx、xls/xlsx及csv.
+每個檔案的附件上限為 25 MB 。支援下列副檔名： txt 、 log 、 pdf 、 jpg/jpeg 、 rtf 、 doc/dox 、 xls/xlsx 和 csv 。
 
 ** *結案案例*：提供結案原因的詳細資料、然後按一下*結案案例*。
 
