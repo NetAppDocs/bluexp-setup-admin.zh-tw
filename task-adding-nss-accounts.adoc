@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-adding-nss-accounts.html 
 keywords: adding, creating, netapp support site account, nss, update account, update nss account, update nss credentials, delete nss account, remove nss account, change working environment, working environment nss 
-summary: 提供NetApp 支援網站 您的支援（NSS）帳戶認證資料、以便註冊以取得支援、啟用Cloud Volumes ONTAP 適用於各種功能的關鍵工作流程。 
+summary: 提供NetApp 支援網站 您的支援（NSS）帳戶認證資料、以便註冊以取得支援、啟用Cloud Volumes ONTAP 適用於各種功能的關鍵工作流程。這些NSS認證資料會與整個BlueXP帳戶建立關聯。 
 ---
-= 在NetApp 支援網站 BlueXP中管理各種帳戶
+= 管理與BlueXP帳戶相關聯的NSS認證
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,25 +14,14 @@ summary: 提供NetApp 支援網站 您的支援（NSS）帳戶認證資料、以
 
 
 [role="lead"]
-提供NetApp 支援網站 您的支援（NSS）帳戶認證資料、以便註冊以取得支援、啟用Cloud Volumes ONTAP 適用於各種功能的關鍵工作流程。
+提供NetApp 支援網站 您的支援（NSS）帳戶認證資料、以便註冊以取得支援、啟用Cloud Volumes ONTAP 適用於各種功能的關鍵工作流程。這些NSS認證資料會與整個BlueXP帳戶建立關聯。
+
+
+NOTE: BlueXP也支援為每個BlueXP使用者建立一個NSS帳戶的關聯。 link:task-manage-user-credentials.html["瞭解如何管理使用者層級認證"]。
 
 
 
 == 總覽
-
-BlueXP支援將一個nssa帳戶與每個BlueXP使用者建立關聯、並將一個或多個nssa帳戶與您的BlueXP帳戶建立關聯。
-
-
-
-=== 每個BlueXP使用者的NSS認證
-
-您需要個別的NSS認證資料、才能透過BlueXP存取Digital Advisor帳戶並管理支援案例。這些認證資料僅供登入BlueXP的人員查看。您可以視需要移除及更新認證資料。
-
-<<Manage NSS credentials per BlueXP user,瞭解如何管理每個BlueXP使用者的NSS認證>>。
-
-
-
-=== 您的BlueXP帳戶的NSS認證
 
 若要在BlueXP中啟用下列工作、需要將NetApp 支援網站 此認證與您的特定BlueXP帳戶ID建立關聯：
 
@@ -51,52 +40,9 @@ BlueXP支援將一個nssa帳戶與每個BlueXP使用者建立關聯、並將一�
 
 這些認證資料會與您的特定BlueXP帳戶ID建立關聯。屬於BlueXP帳戶的使用者可以從*支援> nss管理*存取這些認證資料。
 
-<<管理您的BlueXP帳戶的NSS認證,瞭解如何管理您的BlueXP帳戶的NSS認證>>。
 
 
-
-== 管理您的BlueXP登入的NSS認證資料
-
-與您的BlueXP登入相關聯的NSS認證可讓您存取Digital Advisor和個案管理功能。
-
-* 當您在BlueXP中存取Digital Advisor時、系統會提示您輸入您的NSS認證、以登入Digital Advisor。輸入您的NSS認證之後、您會在"nss管理"頁面頂端看到此nss"帳戶。然後您可以視需要管理這些認證資料。
-* 當您存取*支援>個案管理*時、系統會提示您輸入您的NSS認證（如果您尚未輸入）。本頁顯示與您的NSS/帳戶及貴公司相關的支援案例。
-
-
-請注意以下關於此nssnss:
-
-* 帳戶是在使用者層級管理、這表示登入的其他使用者無法檢視。
-* 此帳戶無法搭配任何其他BlueXP功能使用：不適用於Cloud Volumes ONTAP 建立、授權或建立支援案例。
-* 每位使用者只能有一個與數位顧問和案例管理相關的NSS帳戶。
-
-
-.步驟
-. 在BlueXP主控台右上角、按一下「說明」圖示、然後選取「*支援*」。
-+
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-help-support.png["「說明」功能表的快照、其中「支援」是第一個列出的選項"]
-
-. 按一下*"nss管理"。
-. 在*您的NSSCredential*下、按一下* Action"、然後選擇下列任一選項：
-+
-** *建立NSS*使用者的關聯：新增NetApp 支援網站 適用於該帳戶的認證資料。
-** *更新現有的認證資料*：更新NetApp 支援網站 您的驗證資料帳戶的認證資料。
-** *刪除*：移除與您的BlueXP使用者帳戶相關的帳戶。
-
-
-
-
-.結果
-BlueXP會更新您的NSS認證資料。當您存取Digital Advisor或Case Management（個案管理）頁面時、這些變更將會反映出來。
-
-
-
-== 管理您的BlueXP帳戶的NSS認證
-
-管理與您的BlueXP帳戶相關聯的NSS認證、以便註冊以取得支援、建立支援案例、以及啟用Cloud Volumes ONTAP 關鍵工作流程以利執行。
-
-
-
-=== 新增一個NSS帳戶
+== 新增一個NSS帳戶
 
 「支援儀表板」可讓您新增及管理NetApp 支援網站 適用於BlueXP帳戶層級的功能。
 
@@ -153,7 +99,7 @@ NetApp使用Microsoft Azure Active Directory做為身分識別供應商、提供
 
 
 
-=== 更新新驗證方法的NSS帳戶
+== 更新新驗證方法的NSS帳戶
 
 自2021年11月起、NetApp現在使用Microsoft Azure Active Directory做為身分識別供應商、提供專為支援與授權所設計的驗證服務。此更新之後、BlueXP會提示您更新先前新增之任何現有帳戶的認證資料。
 
@@ -179,7 +125,7 @@ NetApp使用Microsoft Azure Active Directory做為身分識別供應商、提供
 
 
 
-=== 更新NSS認證資料
+== 更新NSS認證資料
 
 發生下列任一情況時、您必須更新BlueXP中的NSS帳戶認證：
 
@@ -203,7 +149,7 @@ NetApp使用Microsoft Azure Active Directory做為身分識別供應商、提供
 
 
 
-=== 將工作環境附加至不同的NSS帳戶
+== 將工作環境附加至不同的NSS帳戶
 
 如果您的組織有多個NetApp Support Site帳戶、您可以變更Cloud Volumes ONTAP 哪個帳戶與某個支援系統相關聯。
 
@@ -227,7 +173,7 @@ image:screenshot-nss-change-account.png["螢幕擷取畫面顯示與NetApp Suppo
 
 
 
-=== 顯示NSS帳戶的電子郵件地址
+== 顯示NSS帳戶的電子郵件地址
 
 由於此等帳戶使用Microsoft Azure Active Directory進行驗證服務、因此在BlueXP中顯示的NSS使用者名稱通常是Azure AD所產生的識別碼。NetApp 支援網站因此、您可能無法立即得知與該帳戶相關的電子郵件地址。不過、BlueXP有一個選項可以顯示相關的電子郵件地址。
 
@@ -248,7 +194,7 @@ BlueXP會顯示NetApp 支援網站 不完整的使用者名稱及相關的電子
 
 
 
-=== 移除NSS.帳戶
+== 移除NSS.帳戶
 
 刪除任何不再想與BlueXP搭配使用的NSS帳戶。
 

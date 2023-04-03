@@ -132,7 +132,7 @@ https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html["AW
 +
 image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」圖示的快照。"]
 
-. 按一下*「Add Credential*（新增認證*）」、然後依照精靈中的步驟進行。
+. 在「*帳戶認證*」頁面上、按一下「*新增認證*」、然後依照精靈中的步驟進行。
 +
 .. *認證資料位置*：選取* Amazon Web Services > Connector*。
 .. *定義認證資料*：提供可信IAM角色的ARN（Amazon資源名稱）、或輸入AWS存取金鑰和秘密金鑰。
@@ -199,7 +199,7 @@ IAM角色現在擁有所需的權限。 <<add-the-credentials-2,您現在可以�
 +
 image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」圖示的快照。"]
 
-. 按一下*「Add Credential*（新增認證*）」、然後依照精靈中的步驟進行。
+. 在「*帳戶認證*」頁面上、按一下「*新增認證*」、然後依照精靈中的步驟進行。
 +
 .. *認證資料位置*：選取* Amazon Web Services > BlueXP*。
 .. *定義認證資料*：提供IAM角色的ARN（Amazon資源名稱）。
@@ -228,7 +228,7 @@ image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」�
 
 .步驟
 . 在BlueXP主控台右上角、按一下「設定」圖示、然後選取*認證*。
-. 按一下動作功能表以取得一組認證資料、然後選取「*建立訂閱關聯*」。
+. 在*帳戶認證*頁面上、按一下動作功能表以取得一組認證資料、然後選取*關聯訂閱*。
 +
 image:screenshot_associate_subscription.png["一組現有認證資料的動作功能表快照。"]
 
@@ -274,7 +274,7 @@ TIP: 您無法編輯與Connector執行個體相關聯之執行個體設定檔的
 
 .步驟
 . 在BlueXP主控台右上角、按一下「設定」圖示、然後選取*認證*。
-. 按一下動作功能表以取得一組認證資料、然後選取*編輯認證*。
+. 在*帳戶認證*頁面上、按一下動作功能表以取得一組認證資料、然後選取*編輯認證*。
 . 進行必要的變更、然後按一下「*套用*」。
 
 
@@ -289,6 +289,6 @@ TIP: 您無法刪除與連接器執行個體相關聯之執行個體設定檔的
 
 .步驟
 . 在BlueXP主控台右上角、按一下「設定」圖示、然後選取*認證*。
-. 按一下動作功能表以取得一組認證資料、然後選取*刪除認證資料*。
+. 在*帳戶認證*頁面上、按一下動作功能表以取得一組認證資料、然後選取*刪除認證*。
 . 按一下*刪除*以確認。
 

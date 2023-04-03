@@ -77,7 +77,6 @@
   <block id="fad43b5fbcb08d889da84d61cf2ea0e8" category="list-text"><block ref="fad43b5fbcb08d889da84d61cf2ea0e8" category="inline-link-rx"></block></block>
   <block id="329d19fc5afbf1e6e6b899cb6324212a" category="summary">您可以管理與Connector VM執行個體相關的認證資料。</block>
   <block id="fd5876417edb63f12f7c19c175309431" category="paragraph">您可以隨時變更與這些認證資料相關的 Marketplace 訂閱。訂閱可讓您建立隨用隨付 Cloud Volumes ONTAP 的功能、並使用其他 NetApp 雲端服務。</block>
-  <block id="fe001b474268cb9300af19ba4c12edd8" category="list-text">按一下動作功能表以取得一組認證資料、然後選取「*建立訂閱關聯*」。</block>
   <block id="0d28acbceed906f52a206d0f3fb0add2" category="inline-image-macro">一組現有認證資料的動作功能表快照。</block>
   <block id="ea765af20d763fe16d94ba9ef03fd31b" category="paragraph"><block ref="ea765af20d763fe16d94ba9ef03fd31b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fff6f5125be05a94543d2e88dbd30b27" category="inline-image-macro">Google Cloud 專案的快照、以及 Google Cloud 認證的訂閱內容。</block>
@@ -212,7 +211,6 @@
   <block id="5a3a4c596a95b6a9851a1c7b6539b0ea" category="inline-image-macro">Azure 入口網站的快照、顯示 Azure AD 服務主體的用戶端機密。</block>
   <block id="7c5f29026f30af547f4c1e9a0f0854e6" category="paragraph"><block ref="7c5f29026f30af547f4c1e9a0f0854e6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3348dcc393bde37af6464ca44f92a231" category="inline-link-macro">瞭解方法</block>
-  <block id="11832df968cbb4cdb8e45984c11a77d0" category="list-text">按一下*「Add Credential*（新增認證*）」、然後依照精靈中的步驟進行。</block>
   <block id="58cf09b42fff9dfb526ddbf232538ae2" category="list-text">*認證位置*：選擇* Microsoft Azure &gt; Connector*。</block>
   <block id="5d1285233566f1379ef88c010de06abc" category="list-text">*定義認證*：輸入Azure Active Directory服務主體的相關資訊、以授予必要的權限：</block>
   <block id="cff52132feed6733ab9577cfdb9d7bcc" category="list-text">應用程式（用戶端） ID ：請參閱 <block ref="56cad3532f54e3c99fa324f70e4a55ab" category="inline-xref-macro-rx"></block>。</block>
@@ -230,10 +228,8 @@
   <block id="086754afbe30b09d7f6a643dd6e05800" category="list-text">您想要以新的訂閱取代現有的 Azure Marketplace 訂閱。</block>
   <block id="20a8a479e52579cf8f1fe773676218bc" category="paragraph"><block ref="20a8a479e52579cf8f1fe773676218bc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f237b70f3f3799f90d3acf9d0c78e108" category="section-title">編輯認證資料</block>
-  <block id="be92f90840924f8fb669257f558527d1" category="list-text">按一下動作功能表以取得一組認證資料、然後選取*編輯認證*。</block>
   <block id="34159dbbf51f083cde5521a26697cbfa" category="list-text">進行必要的變更、然後按一下「*套用*」。</block>
   <block id="030914a6fb8d93761dc666e5e31bd6bd" category="section-title">刪除認證資料</block>
-  <block id="16c6fa81afb88d058842087a5734f874" category="list-text">按一下動作功能表以取得一組認證資料、然後選取*刪除認證資料*。</block>
   <block id="e66ca765497b1a570afc1443e2e6de1b" category="list-text">按一下*刪除*以確認。</block>
   <block id="1eba71d64e6c5e410e558530711e835b" category="summary">已知限制指出本產品版本不支援的平台、裝置或功能、或是無法與產品正確互通的平台、裝置或功能。請仔細檢閱這些限制。</block>
   <block id="482723983a4f2af954e36ff41e567451" category="doc">已知限制</block>
@@ -1278,11 +1274,7 @@
   <block id="dd6f576fe34949ea5c3d4b196b2c626d" category="sidebar">管理現有的連接器</block>
   <block id="ca82fdd9a480fcc34a6b470f5ec8e908" category="sidebar">設定 Proxy 設定</block>
   <block id="7c584a16cbf4210dc0a344179e274e09" category="sidebar">預設組態</block>
-  <block id="2c4eed705dd3e0adf6e7194858d8dff7" category="sidebar">AWS認證資料</block>
   <block id="8d855a86408ade086a4d47d808971acd" category="sidebar">管理認證與訂閱</block>
-  <block id="71cf9cd60037f691ceec3200a6f0acf1" category="sidebar">Azure認證</block>
-  <block id="0b3519eda2c4dfc6d4beaa747492c09a" category="sidebar">Google Cloud認證資料</block>
-  <block id="41a3f8399b4901b2c572d51d83f4b79a" category="sidebar">NetApp支援網站帳戶</block>
   <block id="63d5049791d9d79d86e9a108b0a999ca" category="sidebar">參考資料</block>
   <block id="a1dc2e55a815bd7f430fab36f4c28784" category="sidebar">Connector的AWS權限</block>
   <block id="94864bc66faf9702eb87f3ddb6665c2c" category="sidebar">連接器的Azure權限</block>
@@ -2242,13 +2234,8 @@
   <block id="4b8d6d1554d22a2bda6470094c227037" category="paragraph">當您為Cloud Volumes ONTAP 下列項目建立新的工作環境時、BlueXP預設會選取這些Azure認證資料：</block>
   <block id="79f0e2a1f0b9a07786aae7969fdf941c" category="paragraph">您可以 <block ref="fdb068e0f25207f010bf6b52e6d7dd53" category="inline-link-macro-rx"></block> 提供 AD 服務主體的詳細資料。</block>
   <block id="4ac30ed8a8abb75a74c2afca163c3250" category="paragraph">以上各節說明建議的連接器部署方法、該方法來自於BlueXP。您也可以從部署連接器至 Azure <block ref="42416828ae8ae7a901a48c71094e7a44" category="inline-link-macro-rx"></block>您也可以 <block ref="562eb722c78878c7a1bcbac21fbdef4a" category="inline-link-macro-rx"></block>。</block>
-  <block id="333c244077c4c3df40d39cbb97f94995" category="paragraph">提供NetApp 支援網站 您的支援（NSS）帳戶認證資料、以便註冊以取得支援、啟用Cloud Volumes ONTAP 適用於各種功能的關鍵工作流程。</block>
   <block id="2ebfeabed40c2270d9fa8325080a4b3e" category="paragraph">您必須提供您的NSS帳戶、才能讓BlueXP上傳授權金鑰、並啟用您所購買期間的訂閱。這包括定期續約的自動更新。</block>
-  <block id="b34d01d56d89281c69c44eaef7460a79" category="paragraph">當您在BlueXP中存取Digital Advisor時、系統會提示您輸入您的NSS認證、以登入Digital Advisor。輸入您的NSS認證之後、您會在"nss管理"頁面頂端看到此nss"帳戶。然後您可以視需要管理這些認證資料。</block>
-  <block id="60f184ee8b252ec5284ca4bfc102c193" category="paragraph">請注意以下關於此nssnss:</block>
   <block id="37cb0cdf24a1597d838bc5f1699b9e5a" category="list-text">帳戶是在使用者層級管理、這表示登入的其他使用者無法檢視。</block>
-  <block id="3793cae33028a6b75ab0ca8130ca6a9d" category="list-text">在*您的NSSCredential*下、按一下* Action"、然後選擇下列任一選項：</block>
-  <block id="fe11914cdc8e174bef64d941a9b88b00" category="list-text">*更新現有的認證資料*：更新NetApp 支援網站 您的驗證資料帳戶的認證資料。</block>
   <block id="5d7e9ca2f0be827f29d91dca2f767f7f" category="paragraph">現在、使用者可以在建立新Cloud Volumes ONTAP 的支援系統、註冊現有Cloud Volumes ONTAP 的支援系統、以及註冊支援時、選擇帳戶。</block>
   <block id="759f5e4f5dca6e6753e9254efed21ea1" category="paragraph">自2021年11月起、NetApp現在使用Microsoft Azure Active Directory做為身分識別供應商、提供專為支援與授權所設計的驗證服務。此更新之後、BlueXP會提示您更新先前新增之任何現有帳戶的認證資料。</block>
   <block id="90488de845793cd541dd12866e86b44a" category="paragraph">發生下列任一情況時、您必須更新BlueXP中的NSS帳戶認證：</block>
@@ -2795,7 +2782,6 @@
   <block id="cad0970fb2c4e3d28b046315bb4b7f02" category="paragraph"><block ref="ac22e421263f6f828d096313fa20e6a8" category="inline-link-rx"></block>。</block>
   <block id="fdfef50a14b07533a8bab908a66de10c" category="list-text">此版本的Connector包含Cloud Volumes ONTAP 一些功能強化功能。</block>
   <block id="e5fa209a01e6f968295b098866e0fcf5" category="paragraph"><block ref="e5fa209a01e6f968295b098866e0fcf5" category="inline-link-rx"></block></block>
-  <block id="2328f91c347cdd3538e6eec847331d2d" category="list-text">目前、系統會以電子郵件傳送下列BlueXP功能與服務的通知：連接器、Cloud Sync VMware、Cloud Backup及勒索軟體保護。未來版本將會新增其他服務。</block>
   <block id="61130fb01406e968937613de0add552f" category="inline-image-macro">具有三個垂直點的圖示</block>
   <block id="86687429f8938a809fc671fe296b1bcc" category="paragraph">若要關閉所有通知、請在通知中心按一下 <block ref="bfe50e4fac5e58634c6fb748dce94758" category="inline-image-macro-rx" type="image"></block> 並選擇*全部關閉*。<block ref="e49bd0cb9810a0678258a0ab07786c5e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0da34741c0fedd26eb889170d87be2c7" category="list-text">若要將認證資料與新訂閱建立關聯、請按一下*新增訂閱&gt;繼續*、然後依照AWS Marketplace中的步驟進行：</block>
@@ -2847,13 +2833,6 @@
   <block id="559e00158f66ad338da1ff42475d15d4" category="paragraph">在內部環境中：</block>
   <block id="ddc27aae141cdde9ebf1781f29405e62" category="inline-link">部署Cloud Volumes ONTAP</block>
   <block id="d4e942d34e603f30d4aa65123ee69ac5" category="paragraph">在雲端環境中、您可以<block ref="00153078c5cb58fb46fb6b9817a49af6" category="inline-link-rx"></block></block>
-  <block id="3c64f2e1d3b86927fc25494420d8e69e" category="doc">在NetApp 支援網站 BlueXP中管理各種帳戶</block>
-  <block id="8b12e6f38f8b47f363480ac1d3b8327f" category="paragraph">BlueXP支援將一個nssa帳戶與每個BlueXP使用者建立關聯、並將一個或多個nssa帳戶與您的BlueXP帳戶建立關聯。</block>
-  <block id="e6cee5a5293cdefddf2eea3f6f8e63a0" category="section-title">每個BlueXP使用者的NSS認證</block>
-  <block id="9f16a5e3343035191419f8ff9c2e5969" category="paragraph">您需要個別的NSS認證資料、才能透過BlueXP存取Digital Advisor帳戶並管理支援案例。這些認證資料僅供登入BlueXP的人員查看。您可以視需要移除及更新認證資料。</block>
-  <block id="d0c8c4e397d970dc8543d75be500735a" category="inline-xref">瞭解如何管理每個BlueXP使用者的NSS認證</block>
-  <block id="67d6e3f20ef7fa11673f57da719e30a4" category="paragraph"><block ref="7ba791bb5a4402182b386f894b67a43b" category="inline-xref-macro-rx"></block>。</block>
-  <block id="86b693fcb28e522569eb6bcbe22e1048" category="section-title">您的BlueXP帳戶的NSS認證</block>
   <block id="4a2f661974665defd7d188133a1ab48b" category="paragraph">若要在BlueXP中啟用下列工作、需要將NetApp 支援網站 此認證與您的特定BlueXP帳戶ID建立關聯：</block>
   <block id="15c2fed71e5ff16c335e2d40bc485e1e" category="list-text">註冊以取得支援</block>
   <block id="1ca6b2b8383e207951356457a77708e7" category="list-text">建立支援案例</block>
@@ -2861,18 +2840,9 @@
   <block id="a3b3ed2f72536d95b268a4a67722c55d" category="list-text">註冊隨用隨付Cloud Volumes ONTAP 的功能系統</block>
   <block id="f5135b68b75a8404803a1eb438e40c5e" category="list-text">升級Cloud Volumes ONTAP 更新版的更新版</block>
   <block id="a86ad85ddb4228477c624e47ab659180" category="paragraph">這些認證資料會與您的特定BlueXP帳戶ID建立關聯。屬於BlueXP帳戶的使用者可以從*支援&gt; nss管理*存取這些認證資料。</block>
-  <block id="0080504e9313f9b154660cf9d3a82d90" category="inline-xref">瞭解如何管理您的BlueXP帳戶的NSS認證</block>
-  <block id="c8ab27a714bbad7b5a28e63b8123aae5" category="paragraph"><block ref="04ed260555c7204bedee595d1a22139b" category="inline-xref-macro-rx"></block>。</block>
-  <block id="d9307c659c4370870dcc89d984d908e2" category="section-title">管理您的BlueXP登入的NSS認證資料</block>
   <block id="5a201f4198ac7b46778a727f32bd6203" category="paragraph">與您的BlueXP登入相關聯的NSS認證可讓您存取Digital Advisor和個案管理功能。</block>
-  <block id="79dce1fafa49d0b2bbe06423f13f9d58" category="list-text">當您存取*支援&gt;個案管理*時、系統會提示您輸入您的NSS認證（如果您尚未輸入）。本頁顯示與您的NSS/帳戶及貴公司相關的支援案例。</block>
   <block id="d4b8ea0f438d980b900fa0c72d88710f" category="list-text">此帳戶無法搭配任何其他BlueXP功能使用：不適用於Cloud Volumes ONTAP 建立、授權或建立支援案例。</block>
   <block id="37ab7585b9575599c51022bd3b09813a" category="list-text">每位使用者只能有一個與數位顧問和案例管理相關的NSS帳戶。</block>
-  <block id="78eefce62993605d332b1408d42256d7" category="list-text">*建立NSS*使用者的關聯：新增NetApp 支援網站 適用於該帳戶的認證資料。</block>
-  <block id="bb003c773133044d9d8666f477a36cfe" category="list-text">*刪除*：移除與您的BlueXP使用者帳戶相關的帳戶。</block>
-  <block id="65fb057ff5fa0f79f9e974fbbf20b1b4" category="paragraph">BlueXP會更新您的NSS認證資料。當您存取Digital Advisor或Case Management（個案管理）頁面時、這些變更將會反映出來。</block>
-  <block id="ce3a367043c4a6897ab7ccbfa40ad329" category="section-title">管理您的BlueXP帳戶的NSS認證</block>
-  <block id="2a99a7f02260cc6c2b4aa3815cee53ec" category="paragraph">管理與您的BlueXP帳戶相關聯的NSS認證、以便註冊以取得支援、建立支援案例、以及啟用Cloud Volumes ONTAP 關鍵工作流程以利執行。</block>
   <block id="9a030ad8abbc9b1e402feade38bdec50" category="paragraph">「支援儀表板」可讓您新增及管理NetApp 支援網站 適用於BlueXP帳戶層級的功能。</block>
   <block id="ec084bb25ed5b934c09b361069c246b2" category="list-text">NSS-帳戶必須是客戶層級的帳戶（而非來賓帳戶或暫存帳戶）。您可以擁有多個客戶層級的NSS帳戶。</block>
   <block id="27387009488fe78dcc7cb7e3e432792f" category="list-text">如果該帳戶是合作夥伴層級帳戶、則只能有一個NSS帳戶。如果您嘗試新增客戶層級的NSS帳戶、但有合作夥伴層級的帳戶存在、您會收到下列錯誤訊息：</block>
@@ -2909,7 +2879,6 @@
   <block id="ad0ae9ea1f2e8d973a9a0f6bb169f494" category="inline-image-macro">表格最後一欄中出現三個點的圖示</block>
   <block id="98efef1c8a47ed5791b41944e8ff4ec2" category="list-text">按一下即可管理現有案例 <block ref="a0b152b50a56901a75affebabc26ed61" category="inline-image-macro-rx" type="image"></block> 並選擇其中一個可用選項：</block>
   <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">*檢視案例*：檢視特定案例的完整詳細資料。</block>
-  <block id="482429810c2b00a4fa04f9900c560232" category="list-text">*更新案例備註*：提供您問題的其他詳細資料。</block>
   <block id="f791bc685c526af8296381acff10f6a0" category="list-text">*結案案例*：提供結案原因的詳細資料、然後按一下*結案案例*。</block>
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">螢幕擷取畫面、顯示您在表格最後一欄選取功能表後可以採取的動作。</block>
   <block id="e9a5c374fb47ed2ae5cc6108fb36d829" category="paragraph"><block ref="e9a5c374fb47ed2ae5cc6108fb36d829" category="inline-image-macro-rx" type="image"></block></block>
@@ -3074,4 +3043,58 @@
   <block id="43908e244f944d05ab87a4987453f7bc" category="paragraph">Cloud Data Sense不再需要「Microsoft.Storage/storageAccounts/DELETE」權限。</block>
   <block id="47e8280c2cd82cf2f49537bfd5661b15" category="paragraph">此權限仍為Cloud Volumes ONTAP 必填項目。</block>
   <block id="15f7c3376619ce497205d543fd1d7767" category="paragraph">如有需要、您可以使用IAM來限制IAM原則<block ref="9e2941b3c81256fac10392aaca4ccfde" prefix=" " category="inline-code"></block> 元素。<block ref="19ffef022087e160f1e54b9948795943" category="inline-link-rx"></block></block>
+  <block id="81fa6885ef2dca44d4868d3d8ea203c9" category="summary">視您在BlueXP中採取的行動而定、ONTAP 您可能會在NetApp 支援網站 使用者登入BlueXP時、獲得相關的支援功能、包括相關的功能介紹、以及功能完善的支援服務。您可以在建立相關聯之後、在BlueXP中檢視及管理這些認證資料。例如、如果您變更這些認證資料的密碼、則需要更新BlueXP中的密碼。</block>
+  <block id="e3884a4ce043ad31217e0098c7c0537f" category="doc">管理與您的BlueXP登入相關的認證資料</block>
+  <block id="5a66a53c80f94aa60f854872b432d82d" category="paragraph">視您在BlueXP中採取的行動而定、ONTAP 您可能會在NetApp 支援網站 使用者登入BlueXP時、擁有相關的功能驗證資料和功能驗證（NSS）認證資料。您可以在建立相關聯之後、在BlueXP中檢視及管理這些認證資料。例如、如果您變更這些認證資料的密碼、則需要更新BlueXP中的密碼。</block>
+  <block id="823a6e1d7fe661be55dd3af05f972b11" category="section-title">身分證明ONTAP</block>
+  <block id="b82af7a7b96d34942cadb7921514f408" category="paragraph">當您直接探索內部部署ONTAP 的無線叢集而不使用Connector時、系統會提示您輸入ONTAP 叢集的憑據。這些認證資料是在使用者層級進行管理、這表示登入的其他使用者無法檢視這些認證資料。</block>
+  <block id="4cdcf6b8fd95bbaa7cf27e4443c7681b" category="section-title">NSS.認證資料</block>
+  <block id="fb81cc600c8251372b08f0797c3abdd7" category="list-text">當您在BlueXP中存取Digital Advisor時、系統會提示您輸入您的NSS認證、以登入Digital Advisor。</block>
+  <block id="64470ba450382b851139073aed09c635" category="list-text">當您存取*支援&gt;個案管理*時、系統會提示您輸入您的NSS認證（如果您尚未輸入）。此頁面可讓您管理與您的NSS帳戶和貴公司相關的支援案例。</block>
+  <block id="276e2bd44117ba4b3317de4a352235b2" category="paragraph">請注意以下關於NSS帳戶的資訊：</block>
+  <block id="af8b5ac7f9c7fe53fa31652162a91c6e" category="paragraph">支援的資訊也會與您所屬的BlueXP帳戶建立關聯NetApp 支援網站 。您可透過NSS-帳戶層級認證來註冊支援、Cloud Volumes ONTAP 並在攜帶自己的授權（BYOL）時部署支援功能等。</block>
+  <block id="db0f1f3e531a1a1c690b42c9a6daae35" category="inline-link-macro">深入瞭解如何搭配您的BlueXP帳戶使用NSS認證</block>
+  <block id="dacf2f246c2efb276c3709c141985f7c" category="paragraph"><block ref="4734e8f3bab5a9c00aebb286a2f16deb" category="inline-link-macro-rx"></block>。</block>
+  <block id="cc96a4cc30e50577aa6671b076af72e1" category="section-title">管理您的使用者認證資料</block>
+  <block id="fa6e9e9d0c238d856c9d80111986b0b1" category="paragraph">更新使用者名稱和密碼、或刪除認證資料、以管理您的使用者認證資料。</block>
+  <block id="41e1e3cff4a07ce2ecc08e6c09f11092" category="list-text">按一下*使用者認證*。</block>
+  <block id="9afc8b6b41174c0836030fc8ac89ce5a" category="list-text">如果您還沒有任何使用者認證資料、您可以選取*新增NSS帳 戶認證*來新增NetApp 支援網站 您的帳戶。</block>
+  <block id="f89f00feaba2fad2b55607ff15acc121" category="list-text">選擇下列選項來管理現有認證：</block>
+  <block id="73877140c9191100114cf829d4df1aa5" category="list-text">*更新認證資料*：更新帳戶的使用者名稱和密碼。</block>
+  <block id="fc15340823a1f5df29ca8938cb5aca15" category="list-text">*刪除認證資料*：移除與您的BlueXP使用者帳戶相關的帳戶。</block>
+  <block id="9d7731be7d930a1152dbf528e9a20972" category="inline-image-macro">這是一張螢幕快照、顯示了NSS認證資料和ONTAP 驗證資料、以及從動作功能表中選取「更新認證資料」和「刪除認證資料」的功能</block>
+  <block id="a4ecb2be579cb0376c3938220c6db5bf" category="paragraph"><block ref="a4ecb2be579cb0376c3938220c6db5bf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="64286300f4b2d20b21751b700c210a03" category="paragraph">BlueXP會更新您的認證資料。當您存取ONTAP 「叢集」、「數位顧問」或「案例管理」頁面時、這些變更將會反映出來。</block>
+  <block id="5d93a8788cf1a23c80bc3e6304d9b87f" category="summary">提供NetApp 支援網站 您的支援（NSS）帳戶認證資料、以便註冊以取得支援、啟用Cloud Volumes ONTAP 適用於各種功能的關鍵工作流程。這些NSS認證資料會與整個BlueXP帳戶建立關聯。</block>
+  <block id="8c79ce7ab82c8c7e3fb9c6e8a73f8960" category="doc">管理與BlueXP帳戶相關聯的NSS認證</block>
+  <block id="3d41446101a1daf0639146f4555b623b" category="inline-link-macro">瞭解如何管理使用者層級認證</block>
+  <block id="45b496845c319f5bc16fa44745aea5f0" category="admonition">BlueXP也支援為每個BlueXP使用者建立一個NSS帳戶的關聯。 <block ref="92ab4e1c25ae34810f6c6d2ede81f4ab" category="inline-link-macro-rx"></block>。</block>
+  <block id="d6e5647a322b53644cabe536bfdb7f29" category="list-text">在「*帳戶認證*」頁面上、按一下「*新增認證*」、然後依照精靈中的步驟進行。</block>
+  <block id="20724e8d26839906dc872ed7a379a173" category="list-text">在*帳戶認證*頁面上、按一下動作功能表以取得一組認證資料、然後選取*關聯訂閱*。</block>
+  <block id="3d214e0293b46f81700e2b6fbbd385ef" category="list-text">在*帳戶認證*頁面上、按一下動作功能表以取得一組認證資料、然後選取*編輯認證*。</block>
+  <block id="8ce4a1ee477e89ddf51474c4388f851b" category="list-text">在*帳戶認證*頁面上、按一下動作功能表以取得一組認證資料、然後選取*刪除認證*。</block>
+  <block id="05c6578f55ba6f40e6bb7dd1d07e0243" category="list-text">目前、系統會以電子郵件傳送下列BlueXP功能與服務的通知：連接器、Cloud Sync VMware、Cloud Backup、Digital Wallet及勒索軟體保護。未來版本將會新增其他服務。</block>
+  <block id="102787ed6297b34a7504b527e91d01d3" category="section-title">2023年4月3日</block>
+  <block id="a62f3b1b0c4abf78f5d81609e7bdd908" category="section-title">連接器3.9.28</block>
+  <block id="a08572617e25a61e8569807ac103ab07" category="list-text">數位錢包現在支援電子郵件通知。</block>
+  <block id="380d0a0b2cec998dcd9f52b91b24304c" category="paragraph">如果您設定通知設定、您可以在BYOL授權即將過期（「警告」通知）或已過期（「錯誤」通知）時收到電子郵件通知。</block>
+  <block id="335e7f21f0fdfecbe9c04540dcb8cdd6" category="inline-link">瞭解如何設定電子郵件通知</block>
+  <block id="e16804d7658f4d3132a1170b8cec7c7e" category="paragraph"><block ref="9ce9eb475c326d02a5c224ef8589bc0a" category="inline-link-rx"></block>。</block>
+  <block id="1ba259cc1a092c9c30c1a18ccc612c75" category="list-text">Google Cloud Turin地區現在支援Connector。</block>
+  <block id="e9c35e9b853bc286e0f3b1a7ee2e338a" category="list-text">您現在可以在BlueXP中探索VMware vCenter Server。</block>
+  <block id="a5b1ab8743c3279fbcf5a93dcd6de23d" category="paragraph">探索在AWS或內部部署環境中執行的VMware vCenter Server之後、您可以開啟工作環境、以檢視與伺服器相關聯的資料存放區和虛擬機器的詳細資料。</block>
+  <block id="10cc8c1f48423a72bf1e617861999cae" category="paragraph">唯一的需求是連接到執行7.0版或更新版本的VMware vCenter Server的Connector。</block>
+  <block id="70843c2315ee9e00dc50f03225c92953" category="paragraph">若要開始使用、請選取*新增工作環境*、選取* Amazon Web Services*或*內部部署*、然後選取* VMware vCenter Server*。輸入伺服器的網域名稱或IP位址、然後輸入管理員使用者的使用者名稱和密碼。</block>
+  <block id="fb378d84e11ead1b2c8c57bfabde81de" category="list-text">您現在可以管理與您的BlueXP登入相關的使用者認證：ONTAP 功能驗證和NetApp 支援網站 支援（NSS）認證。</block>
+  <block id="f06293a36a992a2a1b8c6f6572b6caf8" category="paragraph">當您移至*「設定」&gt;「認證資料」*時、您可以檢視認證資料、更新認證資料並加以刪除。例如、如果您變更這些認證資料的密碼、則需要更新BlueXP中的密碼。</block>
+  <block id="b74c77e09b66a8f63b22e9ec3917cbbc" category="inline-link-macro">瞭解如何管理使用者認證</block>
+  <block id="43cddfbd5a5e952fa3a0613068b01922" category="paragraph"><block ref="f57f6e52027d92bbfed90d112fcd8715" category="inline-link-macro-rx"></block>。</block>
+  <block id="4e46804b204e02c9bd12cc6d7232cca6" category="list-text">您現在可以在建立支援案例或更新現有支援案例的案例備註時上傳附件。</block>
+  <block id="72c3a2be47cc6617cea246e89af67993" category="inline-link">瞭解如何建立及管理支援案例</block>
+  <block id="6d69140f9b878e098eb9bfcd623c9dbd" category="paragraph"><block ref="7f3b2cbcf14ed0f5a85962e6b9e3eba8" category="inline-link-rx"></block>。</block>
+  <block id="e19c064fcb68059e563bb5bfdd31cac1" category="list-text"><block ref="e19c064fcb68059e563bb5bfdd31cac1" category="inline-link-rx"></block></block>
+  <block id="9e8ad418161e776fb398db9af34585c3" category="list-text"><block ref="9e8ad418161e776fb398db9af34585c3" category="inline-link-rx"></block></block>
+  <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">*附件（選用）*：一次上傳最多五個附件。</block>
+  <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">每個檔案的附件上限為25 MB。支援下列副檔名：TXT、log、pdf、JP/JPEG、rtf、 DOC/docx、xls/xlsx及csv.</block>
+  <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">*更新案例備註*：提供問題的其他詳細資料、或選擇*上傳檔案*最多附加五個檔案。</block>
 </blocks>

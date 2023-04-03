@@ -98,7 +98,7 @@ image:screenshot_notification_filters.png["顯示「通知中心」中兩種可�
 
 [NOTE]
 ====
-* 目前、系統會以電子郵件傳送下列BlueXP功能與服務的通知：連接器、Cloud Sync VMware、Cloud Backup及勒索軟體保護。未來版本將會新增其他服務。
+* 目前、系統會以電子郵件傳送下列BlueXP功能與服務的通知：連接器、Cloud Sync VMware、Cloud Backup、Digital Wallet及勒索軟體保護。未來版本將會新增其他服務。
 * 如果Connector安裝在沒有網際網路存取的網站上、則不支援傳送電子郵件通知。
 
 

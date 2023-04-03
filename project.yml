@@ -83,6 +83,30 @@ sidebar:
         url: "/task-configuring-proxy.html"
       - title: 預設組態
         url: "/reference-connector-default-config.html"
+    - title: 認證資料
+      entries:
+      - title: 管理 AWS 認證資料
+        entries:
+        - title: 總覽
+          url: "/concept-accounts-aws.html"
+        - title: 管理認證與訂閱
+          url: "/task-adding-aws-accounts.html"
+      - title: 管理 Azure 認證資料
+        entries:
+        - title: 總覽
+          url: "/concept-accounts-azure.html"
+        - title: 管理認證與訂閱
+          url: "/task-adding-azure-accounts.html"
+      - title: 管理Google Cloud認證資料
+        entries:
+        - title: 總覽
+          url: "/concept-accounts-gcp.html"
+        - title: 管理認證與訂閱
+          url: "/task-adding-gcp-accounts.html"
+      - title: 管理與BlueXP帳戶相關聯的NSS認證
+        url: "/task-adding-nss-accounts.html"
+      - title: 管理與您的BlueXP登入相關的認證資料
+        url: "/task-manage-user-credentials.html"
     - title: 訂閱
       url: "/task-manage-subscriptions.html"
     - title: 探索雲端儲存設備
@@ -93,26 +117,6 @@ sidebar:
         url: "/task-viewing-azure-blob.html"
       - title: 檢視您的Google Cloud Storage儲存桶
         url: "/task-viewing-gcp-storage.html"
-    - title: AWS認證資料
-      entries:
-      - title: 總覽
-        url: "/concept-accounts-aws.html"
-      - title: 管理認證與訂閱
-        url: "/task-adding-aws-accounts.html"
-    - title: Azure認證
-      entries:
-      - title: 總覽
-        url: "/concept-accounts-azure.html"
-      - title: 管理認證與訂閱
-        url: "/task-adding-azure-accounts.html"
-    - title: Google Cloud認證資料
-      entries:
-      - title: 總覽
-        url: "/concept-accounts-gcp.html"
-      - title: 管理認證與訂閱
-        url: "/task-adding-gcp-accounts.html"
-    - title: NetApp支援網站帳戶
-      url: "/task-adding-nss-accounts.html"
     - title: 使用我的商機探索
       url: "/concept-my-opportunities.html"
   - title: 參考資料
