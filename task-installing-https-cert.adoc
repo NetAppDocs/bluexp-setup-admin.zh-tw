@@ -4,7 +4,7 @@ permalink: task-installing-https-cert.html
 keywords: https certificate, certificate, adding, installing, ca, certificate authority, format, encoding, renewing 
 summary: 根據預設、BlueXP會使用自我簽署的憑證來存取Web主控台的HTTPS。您可以安裝由憑證授權單位（ CA ）簽署的憑證、以提供比自我簽署憑證更好的安全保護。 
 ---
-= 管理 HTTPS 憑證以確保安全存取
+= 安裝 HTTPS 憑證以進行安全存取
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -29,7 +29,7 @@ summary: 根據預設、BlueXP會使用自我簽署的憑證來存取Web主控�
 安裝由 CA 簽署的憑證、以確保安全存取。
 
 .步驟
-. 在BlueXP主控台右上角、按一下「設定」圖示、然後選取「* HTTPS設定*」。
+. 在 BlueXP 主控台的右上角、選取「設定」圖示、然後選取 *HTTPS Setup* 。
 +
 image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」圖示的快照。"]
 
@@ -41,7 +41,7 @@ image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」�
 
 
 | 產生 CSR  a| 
-.. 輸入連接器主機的主機名稱或 DNS （其一般名稱）、然後按一下 * 產生 csr* 。
+.. 輸入 Connector 主機的主機名稱或 DNS （其一般名稱）、然後選取 * 產生 CSR * 。
 +
 BlueXP會顯示憑證簽署要求。
 
@@ -49,14 +49,14 @@ BlueXP會顯示憑證簽署要求。
 +
 憑證必須使用隱私增強型郵件（ PEF ） Base - 64 編碼的 X ． 509 格式。
 
-.. 上傳憑證檔案、然後按一下「*安裝*」。
+.. 上傳憑證檔案、然後選取 * 安裝 * 。
 
 
 
 
 | 安裝您自己的 CA 簽署憑證  a| 
 .. 選擇 * 安裝 CA 簽署的憑證 * 。
-.. 同時載入憑證檔案和私密金鑰、然後按一下「 * 安裝 * 」。
+.. 同時載入憑證檔案和私密金鑰、然後選取 * 安裝 * 。
 +
 憑證必須使用隱私增強型郵件（ PEF ） Base - 64 編碼的 X ． 509 格式。
 
@@ -72,16 +72,16 @@ image:screenshot_https_cert.gif["螢幕擷取畫面：顯示您安裝簽署憑�
 
 
 
-== 續約BlueXP HTTPS憑證
+== 更新 BlueXP HTTPS 憑證
 
 您應該在過期之前更新BlueXP HTTPS憑證、以確保安全存取BlueXP主控台。如果您在憑證到期之前未續約、當使用者使用HTTPS存取Web主控台時、會出現警告。
 
 .步驟
-. 在BlueXP主控台右上角、按一下「設定」圖示、然後選取「* HTTPS設定*」。
+. 在 BlueXP 主控台的右上角、選取「設定」圖示、然後選取 *HTTPS Setup* 。
 +
 顯示有關BlueXP憑證的詳細資料、包括到期日。
 
-. 按一下*變更憑證*、然後依照步驟產生CSR或安裝您自己的CA簽署憑證。
+. 選取 * 變更憑證 * 、然後依照步驟產生 CSR 或安裝您自己的 CA 簽署憑證。
 
 
 .結果

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-adding-azure-accounts.html 
 keywords: permissions, microsoft, azure, permissions, custom role, role, json, active directory, ad, service principal, key, tenant id, application key, application id, operator role, managed identity, iam, operator, role, virtual machine, create custom role, create azure custom role, azure custom role 
-summary: 當您建立 Cloud Volumes ONTAP 一個不完善的系統時、您必須選擇 Azure 認證資料和 Marketplace 訂閱、才能與該系統搭配使用。如果您管理多個 Azure Marketplace 訂閱、您可以從「認證」頁面將每個訂閱指派給不同的 Azure 認證。 
+summary: 新增及管理 Azure 認證、讓 BlueXP 擁有在 Azure 訂閱中部署及管理雲端資源所需的權限。如果您管理多個 Azure Marketplace 訂閱、您可以從「認證」頁面將每個訂閱指派給不同的 Azure 認證。 
 ---
 = 管理Azure認證資料與BlueXP訂閱
 :hardbreaks:
@@ -14,7 +14,13 @@ summary: 當您建立 Cloud Volumes ONTAP 一個不完善的系統時、您必�
 
 
 [role="lead"]
-當您建立Cloud Volumes ONTAP 一個功能完善的系統時、您需要選取Azure認證資料、才能與該系統搭配使用。如果您使用隨用隨付授權、也需要選擇Marketplace訂閱。如果您需要使用多個Azure認證或多個Azure Marketplace訂閱Cloud Volumes ONTAP 以供使用、請依照本頁的步驟進行。
+新增及管理 Azure 認證、讓 BlueXP 擁有在 Azure 訂閱中部署及管理雲端資源所需的權限。如果您管理多個 Azure Marketplace 訂閱、您可以從「認證」頁面將每個訂閱指派給不同的 Azure 認證。
+
+如果您需要使用多個Azure認證或多個Azure Marketplace訂閱Cloud Volumes ONTAP 以供使用、請依照本頁的步驟進行。
+
+
+
+== 總覽
 
 在BlueXP中新增額外Azure訂閱和認證的方法有兩種。
 
@@ -34,9 +40,9 @@ BlueXP可讓您選擇要部署Cloud Volumes ONTAP 的Azure認證和Azure訂閱�
 .步驟
 . 登入 Azure 入口網站。
 . 開啟 * 訂閱 * 服務、然後選取您要部署 Cloud Volumes ONTAP 的訂閱內容。
-. 按一下 * 存取控制（ IAM ） * 。
+. 選取 * 存取控制（ IAM ） * 。
 +
-.. 按一下「 * 新增 * > * 新增角色指派 * 」、然後新增權限：
+.. 選取 * 新增 * > * 新增角色指派 * 、然後新增權限：
 +
 *** 選取*藍圖操作員*角色。
 +
@@ -46,7 +52,7 @@ NOTE: BlueXP運算子是Connector原則中提供的預設名稱。如果您為�
 *** 指派 * 虛擬機器 * 的存取權。
 *** 選取建立 Connector 虛擬機器的訂閱。
 *** 選取 Connector 虛擬機器。
-*** 按一下「 * 儲存 * 」。
+*** 選擇*保存*。
 
 
 
@@ -61,7 +67,7 @@ image:screenshot_accounts_switch_azure_subscription.gif["此螢幕快照顯示�
 
 
 
-== 在BlueXP中新增額外的Azure認證資料
+== 將額外的 Azure 認證新增至 BlueXP
 
 從BlueXP部署Connector時、BlueXP會在擁有必要權限的虛擬機器上啟用系統指派的託管身分識別。當您建立Cloud Volumes ONTAP 全新的作業系統環境時、BlueXP會預設選取這些Azure認證資料。
 
@@ -72,7 +78,7 @@ TIP: 如果您在現有系統上手動安裝Connector軟體、則不會新增一
 
 
 
-=== 使用服務主體授予 Azure 權限
+=== 使用服務主體授與 Azure 權限
 
 BlueXP需要權限才能在Azure中執行動作。您可以在Azure Active Directory中建立及設定服務主體、並取得BlueXP所需的Azure認證資料、將必要的權限授予Azure帳戶。
 
@@ -82,11 +88,11 @@ BlueXP需要權限才能在Azure中執行動作。您可以在Azure Active Direc
 image:diagram_azure_authentication.png["顯示BlueXP在Azure Active Directory進行API呼叫之前、先取得驗證與授權的概念性映像。在Active Directory中、BlueXP角色定義權限。它與一或多個 Azure 訂閱以及代表 Cloud Manger 應用程式的服務主要物件相關聯。"]
 
 .步驟
-. <<建立 Azure Active Directory 應用程式,建立 Azure Active Directory 應用程式>>。
-. <<將應用程式指派給角色,將應用程式指派給角色>>。
-. <<新增 Windows Azure Service Management API 權限,新增 Windows Azure Service Management API 權限>>。
-. <<取得應用程式 ID 和目錄 ID,取得應用程式 ID 和目錄 ID>>。
-. <<建立用戶端機密,建立用戶端機密>>。
+. <<建立 Azure Active Directory 應用程式>>。
+. <<將應用程式指派給角色>>。
+. <<新增 Windows Azure Service Management API 權限>>。
+. <<取得應用程式 ID 和目錄 ID>>。
+. <<建立用戶端機密>>。
 
 
 
@@ -103,8 +109,8 @@ image:diagram_azure_authentication.png["顯示BlueXP在Azure Active Directory進
 +
 image:screenshot_azure_ad.gif["顯示 Microsoft Azure 中的 Active Directory 服務。"]
 
-. 在功能表中、按一下 * 應用程式註冊 * 。
-. 按一下「 * 新登錄 * 」。
+. 在功能表中、選取 * 應用程式註冊 * 。
+. 選取 * 新登錄 * 。
 . 指定應用程式的詳細資料：
 +
 ** * 名稱 * ：輸入應用程式的名稱。
@@ -112,7 +118,7 @@ image:screenshot_azure_ad.gif["顯示 Microsoft Azure 中的 Active Directory �
 ** *重新導向URI*：您可以將此欄位保留空白。
 
 
-. 按一下 * 註冊 * 。
+. 選擇*註冊*。
 
 
 .結果
@@ -170,12 +176,12 @@ az role definition create --role-definition Connector_Policy.json
 +
 .. 從 Azure 入口網站開啟 * 訂閱 * 服務。
 .. 選取訂閱。
-.. 按一下 * 存取控制（ IAM ） > 新增 > 新增角色指派 * 。
-.. 在「*角色*」索引標籤中、選取「*藍圖XP操作員*」角色、然後按一下「*下一步*」。
+.. 選取 * 存取控制（ IAM ） > 新增 > 新增角色指派 * 。
+.. 在 * 角色 * 索引標籤中、選取 * BlueXP 操作員 * 角色、然後選取 * 下一步 * 。
 .. 在「*成員*」索引標籤中、完成下列步驟：
 +
 *** 保留*選取「使用者」、「群組」或「服務主體」*。
-*** 按一下*選取成員*。
+*** 選取 * 選取成員 * 。
 +
 image:screenshot-azure-service-principal-role.png["Azure入口網站的快照、會在新增角色至應用程式時顯示「成員」索引標籤。"]
 
@@ -186,11 +192,11 @@ image:screenshot-azure-service-principal-role.png["Azure入口網站的快照、
 +
 image:screenshot_azure_service_principal_role.png["Azure入口網站的快照、顯示Azure入口網站中的「新增角色指派」表單。"]
 
-*** 選取應用程式、然後按一下*選取*。
-*** 單擊 * 下一步 * 。
+*** 選取應用程式、然後選取 * 選取 * 。
+*** 選擇*下一步*。
 
 
-.. 按一下「*檢閱+指派*」。
+.. 選取 * 檢閱 + 指派 * 。
 +
 服務主體現在擁有部署Connector所需的Azure權限。
 
@@ -208,13 +214,13 @@ image:screenshot_azure_service_principal_role.png["Azure入口網站的快照、
 服務主體必須具有「 Windows Azure Service Management API 」權限。
 
 .步驟
-. 在 * Azure Active Directory * 服務中、按一下 * 應用程式註冊 * 、然後選取應用程式。
-. 按一下「 * API 權限 > 新增權限 * 」。
+. 在 * Azure Active Directory* 服務中、選取 * 應用程式登錄 * 、然後選取應用程式。
+. 選取 * API 權限 > 新增權限 * 。
 . 在「 * Microsoft API* 」下、選取「 * Azure 服務管理 * 」。
 +
 image:screenshot_azure_service_mgmt_apis.gif["Azure 入口網站的快照、顯示 Azure 服務管理 API 權限。"]
 
-. 按一下「 * 以組織使用者身分存取 Azure 服務管理 * 」、然後按一下「 * 新增權限 * 」。
+. 選取 * 以組織使用者身分存取 Azure 服務管理 * 、然後選取 * 新增權限 * 。
 +
 image:screenshot_azure_service_mgmt_apis_add.gif["Azure 入口網站的快照、顯示新增 Azure 服務管理 API 。"]
 
@@ -227,7 +233,7 @@ image:screenshot_azure_service_mgmt_apis_add.gif["Azure 入口網站的快照、
 將Azure帳戶新增至BlueXP時、您必須提供應用程式的應用程式（用戶端）ID和目錄（租戶）ID。BlueXP使用ID以程式設計方式登入。
 
 .步驟
-. 在 * Azure Active Directory * 服務中、按一下 * 應用程式註冊 * 、然後選取應用程式。
+. 在 * Azure Active Directory* 服務中、選取 * 應用程式登錄 * 、然後選取應用程式。
 . 複製 * 應用程式（用戶端） ID* 和 * 目錄（租戶） ID* 。
 +
 image:screenshot_azure_app_ids.gif["顯示 Azure Active Directory 中應用程式的應用程式（用戶端） ID 和目錄（租戶） ID 的快照。"]
@@ -242,10 +248,10 @@ image:screenshot_azure_app_ids.gif["顯示 Azure Active Directory 中應用程�
 
 .步驟
 . 開啟 * Azure Active Directory * 服務。
-. 按一下 * 應用程式註冊 * 、然後選取您的應用程式。
-. 按一下 * 「憑證與機密」 > 「新用戶端機密」 * 。
+. 選取 * 應用程式註冊 * 、然後選取您的應用程式。
+. 選取 * 「憑證與機密」 > 「新用戶端機密」 * 。
 . 提供機密與持續時間的說明。
-. 按一下「 * 新增 * 」。
+. 選取*「Add*」。
 . 複製用戶端機密的值。
 +
 image:screenshot_azure_client_secret.gif["Azure 入口網站的快照、顯示 Azure AD 服務主體的用戶端機密。"]
@@ -268,11 +274,11 @@ image:screenshot_azure_client_secret.gif["Azure 入口網站的快照、顯示 A
 您必須先建立連接器、才能變更BlueXP設定。 link:concept-connectors.html#how-to-create-a-connector["瞭解方法"]。
 
 .步驟
-. 在BlueXP主控台右上角、按一下「設定」圖示、然後選取*認證*。
+. 在 BlueXP 主控台的右上角、選取「設定」圖示、然後選取 * 認證 * 。
 +
 image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」圖示的快照。"]
 
-. 在「*帳戶認證*」頁面上、按一下「*新增認證*」、然後依照精靈中的步驟進行。
+. 在 * 帳戶認證 * 頁面上、選取 * 新增認證 * 、然後依照精靈中的步驟進行。
 +
 .. *認證位置*：選擇* Microsoft Azure > Connector*。
 .. *定義認證*：輸入Azure Active Directory服務主體的相關資訊、以授予必要的權限：
@@ -286,7 +292,7 @@ image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」�
 +
 若要以Cloud Volumes ONTAP 每小時費率（PAYGO）支付給__LW_Y1_Y1_Y1_YGO_Y1_Y1_Y1_Y1_Y1_Y1_Y1_Y1_Y1_Y1_
 
-.. *審查*：確認新認證資料的詳細資料、然後按一下*新增*。
+.. * 審查 * ：確認新認證的詳細資料、然後選取 * 新增 * 。
 
 
 
@@ -294,7 +300,7 @@ image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」�
 .結果
 您現在可以從「詳細資料與認證」頁面切換至不同的認證集合 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html["在建立新的工作環境時"^]
 
-image:screenshot_accounts_switch_azure.gif["在詳細資料  認證資料頁面中按一下「編輯認證資料」之後、顯示在認證資料之間選取的快照。"]
+image:screenshot_accounts_switch_azure.gif["在「詳細資料擴大機；認證」頁面中選取「編輯認證」之後、會顯示在認證之間選取的螢幕擷取畫面。"]
 
 
 
@@ -304,9 +310,9 @@ image:screenshot_accounts_switch_azure.gif["在詳細資料  認證資料頁面�
 
 
 
-=== 將 Azure Marketplace 訂閱與認證資料建立關聯
+=== 將 Azure Marketplace 訂閱與認證建立關聯
 
-將Azure認證資料新增至BlueXP之後、您就可以將Azure Marketplace訂閱與這些認證資料建立關聯。訂閱可讓您建立隨用隨付 Cloud Volumes ONTAP 的功能、並使用其他 NetApp 雲端服務。
+將Azure認證資料新增至BlueXP之後、您就可以將Azure Marketplace訂閱與這些認證資料建立關聯。訂閱可讓您建立隨用隨付的 Cloud Volumes ONTAP 系統、並使用其他 BlueXP 服務。
 
 您可能會在將認證新增至BlueXP之後、在兩種情況下建立Azure Marketplace訂閱的關聯：
 
@@ -318,24 +324,24 @@ image:screenshot_accounts_switch_azure.gif["在詳細資料  認證資料頁面�
 您必須先建立連接器、才能變更BlueXP設定。 link:concept-connectors.html#how-to-create-a-connector["瞭解方法"]。
 
 .步驟
-. 在BlueXP主控台右上角、按一下「設定」圖示、然後選取*認證*。
-. 在*帳戶認證*頁面上、按一下動作功能表以取得一組認證資料、然後選取*關聯訂閱*。
+. 在 BlueXP 主控台的右上角、選取「設定」圖示、然後選取 * 認證 * 。
+. 在 * 帳戶認證 * 頁面上、選取一組認證的動作功能表、然後選取 * 關聯訂閱 * 。
 +
 image:screenshot_azure_add_subscription.png["一組現有認證資料的動作功能表快照。"]
 
-. 若要將認證資料與現有訂閱建立關聯、請從下拉式清單中選取訂閱、然後按一下「*關聯*」。
-. 若要將認證資料與新訂閱建立關聯、請按一下*新增訂閱>繼續*、然後依照Azure Marketplace中的步驟進行：
+. 若要將認證與現有訂閱建立關聯、請從下拉式清單中選取訂閱、然後選取 * 關聯 * 。
+. 若要將認證與新訂閱建立關聯、請選取 * 新增訂閱 > 繼續 * 、然後依照 Azure Marketplace 中的步驟進行：
 +
 .. 出現提示時、請登入您的Azure帳戶。
-.. 按一下*訂閱*。
-.. 填寫表單、然後按一下*訂閱*。
-.. 訂購程序完成後、按一下*立即設定帳戶*。
+.. 選取 * 訂閱 * 。
+.. 填寫表單並選擇 * 訂閱 * 。
+.. 訂閱程序完成後、請選取 * 立即設定帳戶 * 。
 +
 您將被重新導向至BlueXP網站。
 
 .. 從*訂閱指派*頁面：
 +
-*** 選取您要與此訂閱建立關聯的NetApp帳戶。
+*** 選取您要與此訂閱建立關聯的 BlueXP 帳戶。
 *** 在「*取代現有訂閱*」欄位中、選擇您是否要使用此新訂閱來自動取代現有的單一帳戶訂閱。
 +
 此新訂閱取代現有的帳戶所有認證訂閱。如果一組認證資料從未與訂閱建立關聯、則此新訂閱將不會與這些認證資料建立關聯。
@@ -343,7 +349,7 @@ image:screenshot_azure_add_subscription.png["一組現有認證資料的動作�
 +
 對於所有其他帳戶、您必須重複這些步驟、手動建立訂閱的關聯。
 
-*** 按一下「 * 儲存 * 」。
+*** 選擇*保存*。
 +
 下列影片顯示從Azure Marketplace訂閱的步驟：
 
@@ -362,19 +368,19 @@ video::video_subscribing_azure.mp4[width=848,height=480]
 修改Azure服務認證資料的詳細資料、即可在BlueXP中編輯Azure認證資料。例如、如果為服務主體應用程式建立新的密碼、您可能需要更新用戶端密碼。
 
 .步驟
-. 在BlueXP主控台右上角、按一下「設定」圖示、然後選取*認證*。
-. 在*帳戶認證*頁面上、按一下動作功能表以取得一組認證資料、然後選取*編輯認證*。
-. 進行必要的變更、然後按一下「*套用*」。
+. 在 BlueXP 主控台的右上角、選取「設定」圖示、然後選取 * 認證 * 。
+. 在 * 帳戶認證 * 頁面上、選取一組認證的動作功能表、然後選取 * 編輯認證 * 。
+. 進行必要的變更、然後選取 * 套用 * 。
 
 
 
 
-=== 刪除認證資料
+=== 刪除認證
 
 如果您不再需要一組認證資料、可以從BlueXP中刪除。您只能刪除與工作環境無關的認證資料。
 
 .步驟
-. 在BlueXP主控台右上角、按一下「設定」圖示、然後選取*認證*。
-. 在*帳戶認證*頁面上、按一下動作功能表以取得一組認證資料、然後選取*刪除認證*。
-. 按一下*刪除*以確認。
+. 在 BlueXP 主控台的右上角、選取「設定」圖示、然後選取 * 認證 * 。
+. 在 * 帳戶認證 * 頁面上、選取一組認證的動作功能表、然後選取 * 刪除認證 * 。
+. 選擇 * 刪除 * 進行確認。
 

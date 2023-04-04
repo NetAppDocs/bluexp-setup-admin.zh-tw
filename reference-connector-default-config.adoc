@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-connector-default-config.html 
-keywords: linux, user name, operating system, installation files, installation folder, folder, log, logs, service, mysql, packages, linux 
+keywords: linux, user name, operating system, installation files, installation folder, folder, log, logs, service, mysql, packages, linux, connector configuration, connector installation folder, connector folder, connector log 
 summary: 您可能想要在部署連接器之前、或是需要疑難排解任何問題時、先深入瞭解連接器。 
 ---
 = Connector 的預設組態
@@ -115,7 +115,7 @@ Connector 安裝資料夾位於下列位置：
 
 == 預設組態、不含網際網路存取
 
-如果您手動將Connector安裝在無法存取網際網路的內部部署Linux主機上、則適用下列組態。 link:task-install-connector-onprem-no-internet.html["深入瞭解此安裝選項"]。
+如果您手動將Connector安裝在無法存取網際網路的內部部署Linux主機上、則適用下列組態。 link:task-quick-start-private-mode.html["深入瞭解此安裝選項"]。
 
 * Connector 安裝資料夾位於下列位置：
 +

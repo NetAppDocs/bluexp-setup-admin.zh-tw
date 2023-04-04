@@ -26,6 +26,12 @@ summary: 當BlueXP在Azure中啟動Connector VM時、它會將自訂角色附加
 
 如果您從Azure Marketplace部署Connector、或是在Linux主機上手動安裝Connector、則必須自行設定自訂角色。
 
+* link:task-set-up-permissions-azure.html["在 Azure 中設定 Connector 安裝權限（標準模式）"]
+* link:task-set-up-permissions-on-prem.html["設定內部部署 Connector 安裝的權限（標準模式）"]
+* link:task-prepare-restricted-mode.html#prepare-cloud-permissions["設定受限模式的權限"]
+* https://review.docs.netapp.com/us-en/cloud-manager-setup-admin_feb-2022-modes/task-prepare-private-mode.html#prepare-cloud-permissions["設定私有模式的權限"]
+
+
 您也必須確保在後續版本中新增權限時、該角色是最新的。
 
 [source, json]
@@ -169,7 +175,7 @@ summary: 當BlueXP在Azure中啟動Connector VM時、它會將自訂角色附加
 
 == Azure權限的使用方式
 
-以下各節說明如何將權限用於每項NetApp雲端服務。如果您的企業原則規定只有在需要時才提供權限、此資訊就很有幫助。
+下列各節說明如何將權限用於每項 BlueXP 服務。如果您的企業原則規定只有在需要時才提供權限、此資訊就很有幫助。
 
 
 

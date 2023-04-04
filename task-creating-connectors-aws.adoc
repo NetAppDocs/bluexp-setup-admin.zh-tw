@@ -226,6 +226,7 @@ AWS 服務（ amazonaws.com):
 
 * CloudForation
 * 彈性運算雲端（ EC2 ）
+* 身分識別與存取管理（ IAM ）
 * 金鑰管理服務（ KMS ）
 * 安全性權杖服務（ STOS ）
 * 簡易儲存服務（ S3 ）

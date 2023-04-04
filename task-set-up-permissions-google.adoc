@@ -1,0 +1,246 @@
+---
+sidebar: sidebar 
+permalink: task-set-up-permissions-google.html 
+keywords: set up permissions, set up gcp permissions, set up google cloud permissions, google permissions, gcp permissions, service account, create service account, gcp service account, google service account 
+summary: 設定 Google Cloud 權限、以便您使用 BlueXP 在 Google Cloud 中管理資料和儲存基礎架構。 
+---
+= 設定 Google Cloud 權限
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+設定 Google Cloud 權限、以便您使用 BlueXP 在 Google Cloud 中管理資料和儲存基礎架構。
+
+您必須依照下列方式設定 Google Cloud 權限：
+
+* 如果您打算從 BlueXP 或使用 gCloud 建立 Connector 、則需要為將部署 Connector VM 的 Google Cloud 使用者設定權限。
+* 建立角色並將角色授予服務帳戶、以設定 Connector 的權限。
++
+您將此服務帳戶與 Connector VM 建立關聯、以便 BlueXP 具有必要的權限。
+
+
+
+視組態而定、您可能也需要完成下列步驟：
+
+* 設定跨專案的權限
+* 設定共用VPC的權限
+
+
+
+
+== 設定從 BlueXP 或 gCloud 建立 Connector 的權限
+
+在您可以從 BlueXP 或使用 gCloud 部署 Connector 之前、您必須確保 Google Cloud 帳戶擁有正確的權限。
+
+.步驟
+. 在 Google Cloud 中建立自訂角色：
++
+.. 建立包含下列權限的 YAML 檔案：
++
+[source, yaml]
+----
+title: Connector deployment policy
+description: Permissions for the user who deploys the Connector from BlueXP
+stage: GA
+includedPermissions:
+- compute.disks.create
+- compute.disks.get
+- compute.disks.list
+- compute.disks.setLabels
+- compute.disks.use
+- compute.firewalls.create
+- compute.firewalls.delete
+- compute.firewalls.get
+- compute.firewalls.list
+- compute.globalOperations.get
+- compute.images.get
+- compute.images.getFromFamily
+- compute.images.list
+- compute.images.useReadOnly
+- compute.instances.attachDisk
+- compute.instances.create
+- compute.instances.get
+- compute.instances.list
+- compute.instances.setDeletionProtection
+- compute.instances.setLabels
+- compute.instances.setMachineType
+- compute.instances.setMetadata
+- compute.instances.setTags
+- compute.instances.start
+- compute.instances.updateDisplayDevice
+- compute.machineTypes.get
+- compute.networks.get
+- compute.networks.list
+- compute.networks.updatePolicy
+- compute.projects.get
+- compute.regions.get
+- compute.regions.list
+- compute.subnetworks.get
+- compute.subnetworks.list
+- compute.zoneOperations.get
+- compute.zones.get
+- compute.zones.list
+- deploymentmanager.compositeTypes.get
+- deploymentmanager.compositeTypes.list
+- deploymentmanager.deployments.create
+- deploymentmanager.deployments.delete
+- deploymentmanager.deployments.get
+- deploymentmanager.deployments.list
+- deploymentmanager.manifests.get
+- deploymentmanager.manifests.list
+- deploymentmanager.operations.get
+- deploymentmanager.operations.list
+- deploymentmanager.resources.get
+- deploymentmanager.resources.list
+- deploymentmanager.typeProviders.get
+- deploymentmanager.typeProviders.list
+- deploymentmanager.types.get
+- deploymentmanager.types.list
+- resourcemanager.projects.get
+- compute.instances.setServiceAccount
+- iam.serviceAccounts.list
+----
+.. 從 Google Cloud 啟動 Cloud Shell 。
+.. 上傳包含必要權限的 YAML 檔案。
+.. 使用建立自訂角色 `gcloud iam roles create` 命令。
++
+以下範例在專案層級建立名為「 connectorDeployment 」的角色：
+
++
+gCloud iam 角色會建立 connectorDeployment --project=MyProject --file=connector-deployment.yaml
+
++
+https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Google Cloud 文件：建立及管理自訂角色"^]
+
+
+
+. 將此自訂角色指派給將從 BlueXP 或使用 gCloud 部署 Connector 的使用者。
++
+https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role["Google Cloud 文件：授予單一角色"^]
+
+
+
+.結果
+Google Cloud使用者現在擁有建立Connector所需的權限。
+
+
+
+== 設定 Connector 的權限
+
+必須有服務帳戶、才能為 Connector 提供 BlueXP 在 Google Cloud 中管理資源所需的權限。您需要將此服務帳戶與 Connector VM 建立關聯。
+
+.步驟
+. 在 Google Cloud 中建立自訂角色：
++
+.. 建立包含的內容的 YAML 檔案 link:reference-permissions-gcp.html["Connector 的服務帳戶權限"]。
+.. 從 Google Cloud 啟動 Cloud Shell 。
+.. 上傳包含必要權限的 YAML 檔案。
+.. 使用建立自訂角色 `gcloud iam roles create` 命令。
++
+以下範例在專案層級建立名為「 Connector 」的角色：
+
++
+gCloud iam 角色會建立連接器 --project=MyProject --file=connector
+
++
+https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Google Cloud 文件：建立及管理自訂角色"^]
+
+
+
+. 在 Google Cloud 中建立服務帳戶：
++
+.. 在 IAM & Admin 服務中、按一下 * 服務帳戶 > 建立服務帳戶 * 。
+.. 輸入服務帳戶詳細資料、然後按一下 * 建立並繼續 * 。
+.. 選取您剛建立的角色。
+.. 完成剩餘步驟以建立角色。
++
+https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account["Google Cloud 文件：建立服務帳戶"^]
+
+
+
+
+
+.結果
+已設定Connector VM的服務帳戶。
+
+
+
+== 設定跨專案的權限
+
+如果您計畫在Cloud Volumes ONTAP Connector所在專案的不同專案中部署支援功能、則需要提供Connector的服務帳戶、以便存取這些專案。
+
+例如、假設Connector在專案1中、您想在Cloud Volumes ONTAP 專案2中建立一套支援系統。您必須在專案2中授予服務帳戶存取權。
+
+.步驟
+. 在Google Cloud主控台中、前往IAM服務、然後選取您要建立Cloud Volumes ONTAP 的項目。
+. 在「* IAM *」頁面上、選取「*授予存取權*」、並提供所需的詳細資料。
++
+** 輸入Connector服務帳戶的電子郵件。
+** 選取Connector的自訂角色。
+** 按一下「 * 儲存 * 」。
+
+
+
+
+如需詳細資料、請參閱 https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role["Google Cloud文件"^]
+
+
+
+== 設定共享VPC權限
+
+如果您使用共享 VPC 將資源部署到服務專案中、則需要準備權限。
+
+此表供參考、當IAM組態完成時、您的環境應反映權限表。
+
+[cols="10,10,10,20,20,30"]
+|===
+| 身分識別 | 建立者 | 裝載於 | 服務專案權限 | 主機專案權限 | 目的 
+
+
+| Google 帳戶以部署 Connector | 自訂 | 服務專案  a| 
+link:task-set-up-permissions-google.html#set-up-permissions-to-create-the-connector-from-bluexp-or-gcloud["Connector 部署原則"]
+ a| 
+compute.networkUser
+| 在服務專案中部署Connector 
+
+
+| 連接器服務帳戶 | 自訂 | 服務專案  a| 
+link:reference-permissions-gcp.html["Connector 服務帳戶原則"]
+ a| 
+* compute.networkUser
+* 部署manager.manager
+
+| 在Cloud Volumes ONTAP 服務專案中部署及維護功能與服務 
+
+
+| 服務帳戶Cloud Volumes ONTAP | 自訂 | 服務專案  a| 
+* 儲存設備管理
+* 成員：serviceAccount.user的BlueXP服務帳戶
+
+| 不適用 | （選用）用於資料分層和雲端備份 
+
+
+| Google API服務代理程式 | Google Cloud | 服務專案  a| 
+（預設）編輯器
+ a| 
+compute.networkUser
+| 代表部署與Google Cloud API互動。允許BlueXP使用共享網路。 
+
+
+| Google Compute Engine預設服務帳戶 | Google Cloud | 服務專案  a| 
+（預設）編輯器
+ a| 
+compute.networkUser
+| 代表部署部署部署部署Google Cloud執行個體和運算基礎架構。允許BlueXP使用共享網路。 
+|===
+附註：
+
+. 只有當您未將防火牆規則傳遞給部署、並選擇讓BlueXP為您建立時、才需要在主機專案中部署manager.manager。如果未指定任何規則、則BlueXP會在主機專案中建立包含VPC0防火牆規則的部署。
+. 只有當您未將防火牆規則傳遞至部署、並選擇讓BlueXP為您建立防火牆規則時、才需要使用Firewall.create和firewall.delete。這些權限位於BlueXP帳戶.yaml檔案中。如果您使用共用VPC部署HA配對、這些權限將用於建立VPC1、2和3的防火牆規則。對於所有其他部署、這些權限也會用於建立VPC0的規則。
+. 對於資料分層、分層服務帳戶必須在服務帳戶上具有serviceAccount.user角色、而不只是在專案層級。目前、如果您在專案層級指派serviceAccount.user、則當您使用getIAMPolicy查詢服務帳戶時、不會顯示權限。
+

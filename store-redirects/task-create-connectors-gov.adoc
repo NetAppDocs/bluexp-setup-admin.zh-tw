@@ -1,0 +1,8 @@
+---
+permalink: task-create-connectors-gov.html 
+redirect: cloud-manager-setup-admin/task-quick-start-restricted-mode.html 
+---
+= 
+:allow-uri-read: 
+
+

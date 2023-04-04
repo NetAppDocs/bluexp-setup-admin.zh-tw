@@ -1,0 +1,8 @@
+---
+permalink: task-install-connector-onprem-no-internet.html 
+redirect: cloud-manager-setup-admin/task-quick-start-private-mode.html 
+---
+= 
+:allow-uri-read: 
+
+

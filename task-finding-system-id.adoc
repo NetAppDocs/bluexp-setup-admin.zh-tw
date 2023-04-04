@@ -17,8 +17,8 @@ summary: 為協助您開始使用、NetApp代表可能會要求您提供Connecto
 為協助您開始使用、NetApp代表可能會要求您提供Connector的系統ID。此 ID 通常用於授權和疑難排解。
 
 .步驟
-. 在BlueXP主控台右上角、按一下「說明」圖示。
-. 按一下*支援> Connector*。
+. 在 BlueXP 主控台的右上角、選取「說明」圖示。
+. 選擇 * Support > Connector* 。
 +
 系統ID會顯示在頂端。
 

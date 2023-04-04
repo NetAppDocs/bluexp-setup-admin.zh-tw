@@ -1,0 +1,84 @@
+---
+sidebar: sidebar 
+permalink: task-provide-permissions-azure.html 
+keywords: azure permissions, connector permissions, custom role, azure custom role, service principal, how to provide azure permissions, set up azure permissions, provide azure permissions, permissions 
+summary: 如果您是從 Azure Marketplace 建立 Connector 、或是手動安裝軟體、則必須提供 BlueXP 先前設定的權限。 
+---
+= 提供 Azure 對 BlueXP 的權限
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果您是從 Azure Marketplace 建立 Connector 、或是手動安裝軟體、則必須提供 BlueXP 先前設定的權限。
+
+link:task-set-up-permissions-azure.html["瞭解如何設定這些權限"]。
+
+如果您直接從 BlueXP 部署 Connector 、則這些步驟不適用、因為 BlueXP 會在部署期間指派必要的權限。
+
+[role="tabbed-block"]
+====
+.自訂角色
+--
+前往 Azure 入口網站、將 Azure 自訂角色指派給 Connector 虛擬機器、以進行一或多個訂閱。
+
+.步驟
+. 從 Azure Portal 開啟 * Subscriptions * 服務、然後選取您的訂閱。
+. 按一下*存取控制（IAM）*>*新增*>*新增角色指派*。
+. 在「*角色*」索引標籤中、選取「*藍圖XP操作員*」角色、然後按一下「*下一步*」。
++
+
+NOTE: BlueXP運算子是在BlueXP原則中提供的預設名稱。如果您為角色選擇不同的名稱、請改為選取該名稱。
+
+. 在「*成員*」索引標籤中、完成下列步驟：
++
+.. 指派*託管身分識別*的存取權。
+.. 按一下*選取成員*、選取建立連接器虛擬機器的訂閱、選擇*虛擬機器*、然後選取連接器虛擬機器。
+.. 按一下*選取*。
+.. 單擊 * 下一步 * 。
+.. 按一下「*檢閱+指派*」。
+.. 如果您想要從 Cloud Volumes ONTAP 其他訂閱中部署、請切換至該訂閱、然後重複這些步驟。
+
+
+
+
+.結果
+BlueXP 現在擁有代表您在 Azure 中執行動作所需的權限。
+
+.接下來呢？
+前往 https://console.bluexp.netapp.com["BlueXP主控台"^] 開始使用Connector with BlueXP。
+
+--
+.服務主體
+--
+.步驟
+. 前往 https://console.bluexp.netapp.com["BlueXP主控台"^] 並登入。
+. 在BlueXP主控台右上角、按一下「設定」圖示、然後選取*認證*。
++
+image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」圖示的快照。"]
+
+. 按一下*「Add Credential*（新增認證*）」、然後依照精靈中的步驟進行。
++
+.. *認證位置*：選擇* Microsoft Azure > Connector*。
+.. *定義認證*：輸入Azure Active Directory服務主體的相關資訊、以授予必要的權限：
++
+*** 應用程式（用戶端）ID
+*** 目錄（租戶）ID
+*** 用戶端機密
+
+
+.. *市場訂閱*：立即訂閱或選取現有的訂閱、以建立Marketplace訂閱與這些認證的關聯。
+.. *審查*：確認新認證資料的詳細資料、然後按一下*新增*。
+
+
+
+
+.結果
+BlueXP 現在擁有代表您在 Azure 中執行動作所需的權限。
+
+--
+====

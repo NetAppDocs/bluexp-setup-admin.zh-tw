@@ -1,0 +1,88 @@
+---
+sidebar: sidebar 
+permalink: task-quick-start-connector-aws.html 
+keywords: quick start, connector quick start, aws quick start 
+summary: 在 AWS 中建立 Connector 、方法是選擇安裝選項、設定網路、準備權限等。 
+---
+= 快速開始在 AWS 中建立 Connector
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+在 AWS 中建立 Connector 、方法是選擇安裝選項、設定網路、準備權限等。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] 瞭解您的安裝選項
+[role="quick-margin-para"]
+在 AWS 中建立 Connector 的標準方法是直接從 BlueXP 建立、但您也可以從 AWS Marketplace 建立、或是手動將軟體安裝在現有的 Linux 主機上。
+
+[role="quick-margin-para"]
+link:concept-install-options-aws.html["深入瞭解您的安裝選項"]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 設定網路
+[role="quick-margin-para"]
+為 Connector 準備下列項目：
+
+[role="quick-margin-list"]
+* VPC 和子網路
+* 網路連線至您計畫建立及管理工作環境的網路
+* 透過網際網路連線至特定端點、進行日常營運
+* Proxy 伺服器的 IP 位址、認證和 HTTPS 憑證（如果傳出網際網路需要 Proxy 伺服器）
+
+
+[role="quick-margin-para"]
+link:task-set-up-networking-aws.html["深入瞭解網路需求"]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 檢閱主機需求
+[role="quick-margin-para"]
+Connector 軟體必須在符合特定需求的主機上執行。如果您打算在自己的 Linux 主機上手動安裝 Connector 軟體、則應確保主機符合這些需求。如果您是從 BlueXP 或 AWS Marketplace 建立 Connector 、則這些需求會由映像部署軟體來滿足。
+
+[role="quick-margin-para"]
+主要需求如下：
+
+[role="quick-margin-list"]
+* 執行 CentOS 或 Red Hat Enterprise Linux 的專用主機
+* 4個CPU
+* 14 GB RAM
+* Docker引擎
+
+
+[role="quick-margin-para"]
+link:reference-host-requirements-aws.html["深入瞭解這些主機需求"]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"] 設定 AWS 權限
+[role="quick-margin-para"]
+根據您計畫使用的安裝選項來設定 AWS 權限：
+
+[role="quick-margin-list"]
+* * 從 BlueXP* 安裝：建立 IAM 原則、並將其附加至 BlueXP 可以承擔的 IAM 角色、或是您可以提供存取金鑰的 IAM 使用者。BlueXP 使用 AWS 進行驗證、並使用這些權限代表您建立 Connector 執行個體。
+* * 從 AWS Marketplace 安裝 * ：建立 IAM 原則並將其附加至 IAM 角色。您將在安裝期間將此角色與 Connector 執行個體建立關聯。
+* * 手動安裝 * ：建立 IAM 原則、並將其附加至 IAM 角色或 IAM 使用者。您可以將角色與 Connector 執行個體建立關聯、或為 BlueXP 提供 IAM 使用者的存取金鑰。
+
+
+[role="quick-margin-para"]
+link:task-set-up-permissions-aws.html["請依照逐步指示操作"]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"] 建立連接器
+[role="quick-margin-para"]
+使用其中一個可用的安裝選項來建立 Connector ：
+
+[role="quick-margin-list"]
+* * 從 BlueXP* ：按一下「 Connector 」下拉式清單、選取 * 「 Add Connector* 」、然後依照提示進行。
+* * 從 AWS Marketplace * ：前往 https://aws.amazon.com/marketplace/pp/B018REK8QG["AWS Marketplace上的BlueXP頁面"^] 並依照提示透過 EC2 啟動、以便附加 IAM 角色。
+* * 手動安裝 * ：從下載 Connector 軟體 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支援網站"] 並執行安裝指令碼。
+
+
+[role="quick-margin-para"]
+link:task-install-connector-aws.html["請依照逐步指示操作"]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["六"] 提供 BlueXP 權限
+[role="quick-margin-para"]
+如果您在自己的 Linux 主機上手動安裝 Connector 軟體、則必須提供 BlueXP 先前設定的權限。
+
+[role="quick-margin-para"]
+link:task-provide-permissions-aws.html["請依照逐步指示操作"]。

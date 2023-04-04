@@ -1,0 +1,8 @@
+---
+permalink: task-installing-linux.html 
+redirect: cloud-manager-setup-admin/task-install-connector-on-prem.html 
+---
+= 
+:allow-uri-read: 
+
+

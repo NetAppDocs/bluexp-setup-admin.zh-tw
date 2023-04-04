@@ -34,10 +34,10 @@ Connector的AWS安全性群組需要傳入和傳出規則。
 | HTTPS | 443.. | 提供HTTPS存取、從用戶端網頁瀏覽器存取本機使用者介面、以及從Cloud Data Sense執行個體連線 
 
 
-| TCP | 3128 | 提供可存取網際網路的功能、將資訊傳送給NetApp支援部門。Cloud Volumes ONTAP AutoSupport您必須在部署後手動開啟此連接埠。 <<Proxy server for AutoSupport messages,深入瞭解Connector的Proxy伺服器>>。 
+| TCP | 3128 | 提供可存取網際網路的功能、將資訊傳送給NetApp支援部門。Cloud Volumes ONTAP AutoSupport您必須在部署後手動開啟此連接埠。 
 
 
-| TCP | 9060、9061 | 提供在政府雲端部署中啟用和使用Cloud Data Sense和Cloud Backup的能力。如果您在BlueXP帳戶中停用SaaS介面、雲端備份也需要這些連接埠。 
+| TCP | 9060、9061 | 提供在政府地區啟用和使用 Cloud Data Sense 和 Cloud Backup 的能力。 
 |===
 
 
@@ -78,13 +78,10 @@ NOTE: 來源 IP 位址為 Connector 主機。
 | API 呼叫與 AutoSupport 功能 | HTTPS | 443.. | 傳出網際網路和 ONTAP 叢集管理 LIF | API會呼叫AWS和ONTAP VMware、Cloud Data Sense、勒索軟體服務、並將AutoSupport 這些訊息傳送給NetApp 
 
 
-.3+| API 呼叫 | TCP | 3000 | 充當HA中介者ONTAP | 與ONTAP NetApp HA中介人通訊 
+.2+| API 呼叫 | TCP | 3000 | 充當HA中介者ONTAP | 與ONTAP NetApp HA中介人通訊 
 
 
 | TCP | 8080 | 資料感知 | 在部署期間探查資料偵測執行個體 
-
-
-| TCP | 8088 | 備份至 S3 | API 呼叫備份至 S3 
 
 
 | DNS | UDP | 53. | DNS | 用於BlueXP的DNS解析 

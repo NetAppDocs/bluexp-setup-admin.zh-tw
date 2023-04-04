@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: concept-overview.html 
-keywords: overview, concepts, features, use case, cloud manager 
-summary: BlueXP讓IT專家和雲端架構設計師能夠使用NetApp的雲端解決方案、集中管理混合式多雲端基礎架構。 
+keywords: overview, concepts, features, use case, cloud manager, bluexp, how bluexp works, supported cloud providers, cloud providers, hyperscalers 
+summary: NetApp BlueXP 為您的組織提供單一控制面板、協助您在內部部署和雲端環境中建置、保護及管理資料。BlueXP SaaS 平台包含儲存與資料服務、可提供儲存管理、資料移動性、資料保護、以及資料分析與控制。管理功能是透過網路型主控台和 API 提供。 
 ---
 = 深入瞭解BlueXP
 :hardbreaks:
@@ -14,15 +14,18 @@ summary: BlueXP讓IT專家和雲端架構設計師能夠使用NetApp的雲端解
 
 
 [role="lead"]
-BlueXP（前身為Cloud Manager）可讓IT專家和雲端架構設計師使用NetApp的雲端解決方案、集中管理混合式多雲端基礎架構。
+NetApp BlueXP 為您的組織提供單一控制面板、協助您在內部部署和雲端環境中建置、保護及管理資料。BlueXP SaaS 平台包含儲存與資料服務、可提供儲存管理、資料移動性、資料保護、以及資料分析與控制。管理功能是透過網路型主控台和 API 提供。
 
 
 
 == 功能
 
-BlueXP是企業級SaaS型管理平台、無論資料位於何處、都能讓您隨時掌控資料。
+BlueXP 平台提供四大資料管理支柱：儲存、行動力、保護、分析與控制。
 
-* 設定與使用 https://cloud.netapp.com/ontap-cloud["Cloud Volumes ONTAP"^] 實現跨雲端的高效率多重傳輸協定資料管理。
+儲存設備:: 探索、部署及管理儲存設備、無論是在 AWS 、 Azure 、 Google Cloud 或內部部署。
++
+--
+* 設定與使用 https://bluexp.netapp.com/ontap-cloud["Cloud Volumes ONTAP"^] 實現跨雲端的高效率多重傳輸協定資料管理。
 * 設定及使用雲端檔案儲存服務：
 +
 ** https://bluexp.netapp.com/azure-netapp-files["Azure NetApp Files"^]
@@ -30,29 +33,46 @@ BlueXP是企業級SaaS型管理平台、無論資料位於何處、都能讓您�
 ** https://bluexp.netapp.com/cloud-volumes-service-for-gcp["適用於 Google Cloud Cloud Volumes Service"^]
 
 
-* 探索與管理 https://bluexp.netapp.com/netapp-on-premises["內部部署儲存設備"^]
+* 探索與管理 https://bluexp.netapp.com/netapp-on-premises["內部部署儲存設備"^]：
 +
 ** E系列系統
 ** 叢集 ONTAP
 ** 系統StorageGRID
 
 
-* 使用BlueXP的資料移動性、資料保護及資料分析與控制服務：
+
+
+--
+行動力:: 透過同步、複製、分層及快取資料、將資料移至所需的位置。
 +
-** https://bluexp.netapp.com/cloud-backup["雲端備份"^]
-** https://bluexp.netapp.com/netapp-cloud-data-sense["雲端資料感測"^]
-** https://bluexp.netapp.com/cloud-sync-service["Cloud Sync"^]
-** https://bluexp.netapp.com/cloud-tiering["雲端分層"^]
-** https://bluexp.netapp.com/digital-advisor["數位顧問"^]
-** https://bluexp.netapp.com/global-file-cache["全域檔案快取"^]
-** https://bluexp.netapp.com/k8s["Kubernetes"^]
-** https://bluexp.netapp.com/ransomware-protection["勒索軟體保護"^]
-** https://bluexp.netapp.com/replication["複寫"^]
+--
+* https://bluexp.netapp.com/cloud-sync-service["Cloud Sync"^]
+* https://bluexp.netapp.com/cloud-tiering["雲端分層"^]
+* https://bluexp.netapp.com/global-file-cache["全域檔案快取"^]
 
 
+--
+保護:: 使用自動化保護機制來保護資料、避免資料遺失、非計畫性中斷、勒索軟體及其他網路威脅。
++
+--
+* https://bluexp.netapp.com/cloud-backup["雲端備份"^]
+* https://bluexp.netapp.com/replication["複寫"^]
+* https://bluexp.netapp.com/ransomware-protection["勒索軟體保護"^]
+* https://bluexp.netapp.com/k8s["Kubernetes"^]
 
 
-https://cloud.netapp.com/cloud-manager["深入瞭解BlueXP"^]
+--
+分析與控制:: 使用工具來監控、對應及最佳化您的資料儲存與基礎架構。
++
+--
+* https://bluexp.netapp.com/netapp-cloud-data-sense["雲端資料感測"^]
+* https://bluexp.netapp.com/digital-advisor["數位顧問"^]
+
+
+--
+
+
+https://bluexp.netapp.com/["深入瞭解如何使用 BlueXP 協助貴組織"^]
 
 
 
@@ -64,57 +84,43 @@ BlueXP可讓您管理雲端儲存設備、並在Amazon Web Services、Microsoft 
 
 == 成本
 
-BlueXP的定價取決於您計畫使用的服務。 https://bluexp.netapp.com/pricing["瞭解BlueXP定價"^]。
+BlueXP的定價取決於您計畫使用的服務。 https://bluexp.netapp.com/pricing["瞭解BlueXP定價"^]
 
 
 
 == 藍圖的運作方式
 
-BlueXP包含與BlueXP網站整合的SaaS型介面、以及可管理Cloud Volumes ONTAP 各種效益和其他雲端服務的Connectors。
+BlueXP 包括透過 SaaS 層提供的網路型主控台、提供多租戶服務的帳戶、以及管理 Cloud Volumes ONTAP 和其他雲端服務的 Connectors 。
 
 
 
 === 軟體即服務
 
-可透過存取BlueXP https://console.bluexp.netapp.com["SaaS 型使用者介面"^] 和 API 。這項SaaS體驗可讓您在最新功能發佈時自動存取、並在NetApp帳戶和連接器之間輕鬆切換。
-
-
-TIP: 如果您的作業環境無法存取傳出的網際網路、您可以在該環境中安裝Connector軟體、並存取Connector上的本機使用者介面。 link:concept-connectors.html["深入瞭解連接器"]。
+可透過存取BlueXP https://console.bluexp.netapp.com["網路型主控台"^] 和 API 。這項 SaaS 體驗可讓您在推出時自動存取最新功能、並在 BlueXP 帳戶和 Connector 之間輕鬆切換。
 
 
 
-=== BlueXP網站
+=== BlueXP帳戶
 
-https://cloud.netapp.com["BlueXP網站"^] 提供集中位置以供存取和管理 https://www.netapp.com/us/products/cloud-services/use-cases-for-netapp-cloud-services.aspx["NetApp 雲端服務"^]。透過集中式使用者驗證、您可以使用相同的認證資料集來存取BlueXP和Cloud Insights 其他雲端服務、例如：
+第一次登入 BlueXP 時、系統會提示您建立 _BlueXP 帳戶 _ 。此帳戶提供多租戶共享、可讓您在隔離的 _stap空間 _ 中組織使用者和資源。
 
-
-
-=== NetApp帳戶
-
-首次登入BlueXP時、系統會提示您建立_NetApp帳戶_。此帳戶提供多租戶共享、可讓您在隔離的 _stap空間 _ 中組織使用者和資源。
+link:concept-netapp-accounts.html["深入瞭解客戶"]。
 
 
 
 === 連接器
 
-在大多數情況下、BlueXP帳戶管理員需要在雲端或內部部署網路中部署_Connector_。Connector讓BlueXP能夠管理公有雲環境中的資源和程序。 link:concept-connectors.html["深入瞭解何時需要連接器及其運作方式"]。
+您不需要 Connector 即可開始使用 BlueXP 、但您需要建立 Connector 才能解除鎖定所有 BlueXP 功能和服務。Connector 可在內部部署和雲端環境中管理資源和程序。需要使用 Cloud Volumes ONTAP 和其他資料服務。
+
+link:concept-connectors.html["深入瞭解連接器"]。
 
 
 
-==== 連接器必須隨時正常運作
+=== 受限模式和私有模式
 
-連接器是NetApp BlueXP服務架構的基本部分。您有責任確保相關的連接器隨時正常運作且可存取。雖然這項服務的設計是為了克服連接器可用度的短暫中斷、但您必須在必要時立即採取行動、以補救基礎架構故障。
+在安全性和連線能力受限的環境中、也支援 BlueXP 。您可以使用 _limit modity_ 或 _private modity_ 來限制與 BlueXP SaaS 層的輸出連線。
 
-本文件受EULA規範。如果產品未依照文件操作、則產品的功能與操作、以及您在EULA下的權利、可能會受到不利影響。
-
-
-
-==== Connector的可用度如何影響Cloud Volumes ONTAP 到效益
-
-連接器是Cloud Volumes ONTAP 健全狀況和運作過程中的關鍵要素。如果連接器電源關閉、Cloud Volumes ONTAP 則在與連接器失去通訊超過14天之後、將停止使用以容量為基礎的BYOL系統。這是因為Connector每天都會在系統上重新整理授權。
-
-
-NOTE: 如果Cloud Volumes ONTAP 您的系統擁有節點型BYOL授權、系統會在14天後繼續執行、因為授權已安裝在Cloud Volumes ONTAP 該系統上。
+link:concept-modes.html["深入瞭解 BlueXP 部署模式"]。
 
 
 

@@ -1,0 +1,8 @@
+---
+permalink: task-creating-connectors-aws.html 
+redirect: cloud-manager-setup-admin/task-quick-start-connector-aws.html 
+---
+= 
+:allow-uri-read: 
+
+

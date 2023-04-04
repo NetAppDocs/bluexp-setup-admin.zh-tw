@@ -1,0 +1,8 @@
+---
+permalink: task-creating-connectors-azure.html 
+redirect: cloud-manager-setup-admin/task-quick-start-connector-azure.html 
+---
+= 
+:allow-uri-read: 
+
+

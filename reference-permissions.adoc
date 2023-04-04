@@ -25,10 +25,10 @@ summary: 為了使用BlueXP中的功能和服務、您必須提供權限、以�
 | 目的 | 說明 | 連結 
 
 
-| 連接器部署 | 從BlueXP建立Connector的使用者需要特定權限、才能在AWS中部署執行個體。 | link:task-creating-connectors-aws.html["在AWS中從BlueXP建立連接器"] 
+| BlueXP 的連接器部署 | 從BlueXP建立Connector的使用者需要特定權限、才能在AWS中部署執行個體。 | link:task-set-up-permissions-aws.html["設定 AWS 權限"] 
 
 
-| 連接器操作 | 當BlueXP啟動Connector時、它會將原則附加至執行個體、以提供管理AWS帳戶中資源和處理程序所需的權限。您需要自行設定原則 link:task-launching-aws-mktp.html["從市場推出Connector"] 或是您 link:task-adding-aws-accounts.html#add-credentials-to-a-connector["將更多AWS認證資料新增至Connector"]。您也必須確保在後續版本中新增權限時、原則保持在最新狀態。 | link:reference-permissions-aws.html["Connector的AWS權限"] 
+| 連接器操作 | 當BlueXP啟動Connector時、它會將原則附加至執行個體、以提供管理AWS帳戶中資源和處理程序所需的權限。如果您是從市場啟動 Connector 、手動安裝 Connector 、或是您需要自行設定原則 link:task-adding-aws-accounts.html#add-credentials-to-a-connector["將更多AWS認證資料新增至Connector"]。您也必須確保在後續版本中新增權限時、原則保持在最新狀態。 | link:reference-permissions-aws.html["Connector的AWS權限"] 
 
 
 | 作業系統Cloud Volumes ONTAP | 必須將IAM角色附加至Cloud Volumes ONTAP AWS中的每個節點。HA中介者也是如此。預設選項是讓BlueXP為您建立IAM角色、但您可以使用自己的角色。 | https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-set-up-iam-roles.html["瞭解如何自行設定IAM角色"^] 
@@ -42,13 +42,13 @@ summary: 為了使用BlueXP中的功能和服務、您必須提供權限、以�
 | 目的 | 說明 | 連結 
 
 
-| 連接器部署 | 從BlueXP部署Connector時、您需要使用Azure帳戶或服務主體、該用戶必須具有在Azure中部署Connector VM的權限。 | link:task-creating-connectors-azure.html["從BlueXP在Azure中建立連接器"] 
+| BlueXP 的連接器部署 | 從BlueXP部署Connector時、您需要使用Azure帳戶或服務主體、該用戶必須具有在Azure中部署Connector VM的權限。 | link:task-set-up-permissions-azure.html["設定 Azure 權限"] 
 
 
 | 連接器操作  a| 
 當BlueXP在Azure中部署Connector VM時、它會建立自訂角色、提供必要的權限來管理該Azure訂閱中的資源和程序。
 
-您需要自行設定自訂角色（如果您） link:task-launching-azure-mktp.html["從市場推出Connector"] 或是您 link:task-adding-azure-accounts.html#adding-additional-azure-credentials-to-cloud-manager["將更多Azure認證資料新增至Connector"]。
+如果您是從市場啟動 Connector 、手動安裝 Connector 、或是您需要自行設定自訂角色 link:task-adding-azure-accounts.html#adding-additional-azure-credentials-to-cloud-manager["將更多Azure認證資料新增至Connector"]。
 
 您也必須確保在後續版本中新增權限時、原則保持在最新狀態。
  a| 
@@ -64,8 +64,8 @@ link:reference-permissions-azure.html["連接器的Azure權限"]
 | 目的 | 說明 | 連結 
 
 
-| 連接器部署 | 從BlueXP部署Connector的Google Cloud使用者需要特定權限、才能在Google Cloud中部署Connector。 | link:task-creating-connectors-gcp.html#set-up-permissions-to-deploy-the-connector["設定部署Connector的權限"] 
+| 連接器部署 | 從BlueXP部署Connector的Google Cloud使用者需要特定權限、才能在Google Cloud中部署Connector。 | link:task-set-up-permissions-google.html#set-up-permissions-to-create-the-connector-from-bluexp-or-gcloud["設定部署Connector的權限"] 
 
 
-| 連接器操作 | Connector VM執行個體的服務帳戶必須具有特定的日常作業權限。從BlueXP部署時、您需要將服務帳戶與Connector建立關聯。您也必須確保在後續版本中新增權限時、原則保持在最新狀態。 | link:task-creating-connectors-gcp.html#set-up-a-service-account-for-the-connector["設定Connector的服務帳戶"] 
+| 連接器操作 | Connector VM執行個體的服務帳戶必須具有特定的日常作業權限。從BlueXP部署時、您需要將服務帳戶與Connector建立關聯。您也必須確保在後續版本中新增權限時、原則保持在最新狀態。 | link:reference-permissions-gcp.html["Connector的Google Cloud權限"] 
 |===

@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: reference-whats-next-restricted-mode.html 
+keywords: private mode, what you can do 
+summary: 在受限模式下以 BlueXP 啟動並執行之後、您可以開始使用受限模式支援的 BlueXP 服務。 
+---
+= 下一步操作（受限模式）
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+在受限模式下以 BlueXP 啟動並執行之後、您可以開始使用受限模式支援的 BlueXP 服務。
+
+如需協助、請參閱以下服務的文件：
+
+* https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/index.html["Amazon FSX for ONTAP Sfedocs"^]
+* https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/index.html["文件Azure NetApp Files"^]
+* https://docs.netapp.com/us-en/cloud-manager-backup-restore/index.html["雲端備份文件"^]
+* https://docs.netapp.com/us-en/cloud-manager-data-sense/index.html["Cloud Data Sense文件"^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/index.html["文件Cloud Volumes ONTAP"^]
+* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/index.html["內部部署ONTAP 的叢集文件"^]
+* https://docs.netapp.com/us-en/cloud-manager-replication/index.html["複寫文件"^]
+

@@ -4,7 +4,7 @@ permalink: task-managing-netapp-accounts.html
 keywords: account settings, workspaces, Connector, account admin, workspace admin, users, associate, disassociate, add user, add users, user management, administer, user, management, member, remove user, remove users, remove, delete, account, user account, user accounts, add workspace, setup workspace, workspace, Connector, manage Connector, manage workspace, associate Connector, service account 
 summary: 執行初始設定之後、您可以稍後管理使用者、服務帳戶、工作區和連接器、藉此管理帳戶設定。 
 ---
-= 管理您的NetApp帳戶
+= 管理 BlueXP 帳戶
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,13 +14,13 @@ summary: 執行初始設定之後、您可以稍後管理使用者、服務帳�
 
 
 [role="lead"]
-link:task-setting-up-netapp-accounts.html["執行初始設定之後"]，您可以稍後管理使用者、服務帳戶、工作區和連接器來管理帳戶設定。
+您可以透過管理使用者、服務帳戶、工作區和 Connectors 來管理帳戶。
 
-link:concept-netapp-accounts.html["深入瞭解NetApp客戶的運作方式"]。
+link:concept-netapp-accounts.html["深入瞭解 BlueXP 帳戶的運作方式"]。
 
 
 
-== 使用Tenancy API管理您的帳戶
+== 使用 Tenancy API 管理您的帳戶
 
 如果您想要透過傳送API要求來管理帳戶設定、則必須使用_Tenancy API。此API與您用來建立及管理Cloud Volumes ONTAP 各種運作環境的BlueXP API不同。
 
@@ -30,38 +30,37 @@ https://docs.netapp.com/us-en/cloud-manager-automation/tenancy/overview.html["�
 
 == 建立及管理使用者
 
-您帳戶中的使用者可以存取帳戶工作區中的管理資源。
+您帳戶中的使用者可以存取及管理特定工作區中的資源。
 
 
 
 === 新增使用者
 
-將使用者與您的NetApp帳戶建立關聯、讓這些使用者可以在BlueXP中建立及管理工作環境。
+將使用者與您的 BlueXP 帳戶建立關聯、讓這些使用者能夠在 BlueXP 中建立及管理工作環境。
 
 .步驟
-. 如果使用者尚未這麼做、請要求使用者前往 https://cloud.netapp.com["NetApp BlueXP網站"^] 並註冊。
-. 從BlueXP頂端、按一下「*帳戶*」下拉式清單。
+. 如果使用者尚未這麼做、請要求使用者前往 https://bluexp.netapp.com/["NetApp BlueXP網站"^] 並註冊。
+. 從 BlueXP 頂端、選取 * 帳戶 * 下拉式清單。
 +
 image:screenshot-account-settings-menu.png["在BlueXP上方橫幅中顯示「帳戶設定」選項的快照。"]
 
-. 按一下目前選取帳戶旁的 * 管理帳戶 * 。
+. 選取目前所選帳戶旁的 * 管理帳戶 * 。
 +
 image:screenshot-manage-account-settings.png["顯示「帳戶」下拉式清單中可用的「管理帳戶設定」選項的快照。"]
 
-. 在「成員」索引標籤中、按一下「*關聯使用者*」。
+. 從「成員」索引標籤中、選取 * 關聯使用者 * 。
 . 輸入使用者的電子郵件地址、然後為使用者選取角色：
 +
 ** *帳戶管理*：可在BlueXP中執行任何動作。
 ** * 工作區管理 * ：可在指派的工作區中建立及管理資源。
 ** *法規遵循檢視器*：只能檢視Cloud Data Sense法規遵循資訊、並針對有權存取的工作區產生報告。
-** *《管理員*》：可以使用「支援服務」來建立應用程式一致的備份、並使用這些備份來還原資料。SnapCenter SnapCenter_此服務目前為試用版。_
 
 
 . 如果您選取「工作區管理」或「法規遵循檢視器」、請選取一個或多個工作區以與該使用者建立關聯。
 +
 image:screenshot_associate_user.gif["螢幕擷取畫面、顯示如何透過選取角色和相關工作區來建立使用者關聯。"]
 
-. 按一下「 * 經銷 * 」。
+. 選取 * 關聯 * 。
 
 
 .結果
@@ -71,40 +70,40 @@ image:screenshot_associate_user.gif["螢幕擷取畫面、顯示如何透過選�
 
 === 移除使用者
 
-取消使用者關聯後、使用者便無法再存取NetApp帳戶中的資源。
+解除使用者的關聯、使其無法再存取 BlueXP 帳戶中的資源。
 
 .步驟
-. 從BlueXP頂端、按一下「*帳戶*」下拉式清單、然後按一下「*管理帳戶*」。
+. 從 BlueXP 頂端、選取 * 帳戶 * 下拉式清單、然後選取 * 管理帳戶 * 。
 +
 image:screenshot-manage-account-settings.png["顯示「帳戶」下拉式清單中可用的「管理帳戶設定」選項的快照。"]
 
-. 在「成員」索引標籤中、按一下對應使用者列中的動作功能表。
+. 從「成員」索引標籤中、選取與使用者對應的列中的動作功能表。
 +
 image:screenshot_associate_user_workspace.png["快照顯示將游標移到「使用者」表格中使用者名稱上時可用的動作功能表。"]
 
-. 按一下 * 解除使用者關聯 * 、然後按一下 * 解除關聯 * 以確認。
+. 選取 * 取消使用者關聯 * 、然後選取 * 解除關聯 * 進行確認。
 
 
 .結果
-使用者無法再存取此NetApp帳戶中的資源。
+使用者無法再存取此 BlueXP 帳戶中的資源。
 
 
 
-=== 管理Workspace管理的工作區
+=== 管理 Workspace 管理的工作區
 
 您可以隨時建立工作區管理員與工作區的關聯和取消關聯。建立使用者關聯可讓他們在該工作區中建立及檢視工作環境。
 
 .步驟
-. 從BlueXP頂端、按一下「*帳戶*」下拉式清單、然後按一下「*管理帳戶*」。
+. 從 BlueXP 頂端、選取 * 帳戶 * 下拉式清單、然後選取 * 管理帳戶 * 。
 +
 image:screenshot-manage-account-settings.png["顯示「帳戶」下拉式清單中可用的「管理帳戶設定」選項的快照。"]
 
-. 在「成員」索引標籤中、按一下對應使用者列中的動作功能表。
+. 從「成員」索引標籤中、選取與使用者對應的列中的動作功能表。
 +
 image:screenshot_associate_user_workspace.png["快照顯示將游標移到「使用者」表格中使用者名稱上時可用的動作功能表。"]
 
-. 按一下 * 管理工作區 * 。
-. 選取要與使用者建立關聯的工作區、然後按一下「 * 套用 * 」。
+. 選取 * 管理工作區 * 。
+. 選取要與使用者建立關聯的工作區、然後選取 * 套用 * 。
 
 
 .結果
@@ -127,22 +126,22 @@ image:screenshot_associate_user_workspace.png["快照顯示將游標移到「使
 建立所需數量的服務帳戶、以管理工作環境中的資源。
 
 .步驟
-. 從BlueXP頂端、按一下「*帳戶*」下拉式清單。
+. 從 BlueXP 頂端、選取 * 帳戶 * 下拉式清單。
 +
 image:screenshot-account-settings-menu.png["在BlueXP上方橫幅中顯示「帳戶設定」選項的快照。"]
 
-. 按一下目前選取帳戶旁的 * 管理帳戶 * 。
+. 選取目前所選帳戶旁的 * 管理帳戶 * 。
 +
 image:screenshot-manage-account-settings.png["顯示「帳戶」下拉式清單中可用的「管理帳戶設定」選項的快照。"]
 
-. 在「成員」索引標籤中、按一下「*建立服務帳戶*」。
+. 從「成員」標籤中、選取 * 建立服務帳戶 * 。
 . 輸入名稱並選取角色。如果您選擇帳戶管理員以外的角色、請選擇要與此服務帳戶建立關聯的工作區。
-. 按一下「 * 建立 * 」。
+. 選擇* Create *（建立*）。
 . 複製或下載用戶端ID和用戶端密碼。
 +
 用戶端機密只會顯示一次、而且不會儲存在任何位置。複製或下載機密、並安全地儲存。
 
-. 按一下 * 關閉 * 。
+. 選擇*關閉*。
 
 
 
@@ -155,16 +154,16 @@ https://docs.netapp.com/us-en/cloud-manager-automation/platform/create_service_t
 
 
 
-=== 複製用戶端ID
+=== 複製用戶端 ID
 
 您可以隨時複製服務帳戶的用戶端ID。
 
 .步驟
-. 在「成員」索引標籤中、按一下對應於服務帳戶的列中的動作功能表。
+. 從「成員」索引標籤中、選取與服務帳戶對應的列中的動作功能表。
 +
 image:screenshot_service_account_actions.gif["快照顯示將游標移到「使用者」表格中使用者名稱上時可用的動作功能表。"]
 
-. 按一下*用戶端ID*。
+. 選取 * 用戶端 ID* 。
 . ID會複製到剪貼簿。
 
 
@@ -175,17 +174,17 @@ image:screenshot_service_account_actions.gif["快照顯示將游標移到「使�
 重新建立金鑰會刪除此服務帳戶的現有金鑰、然後建立新金鑰。您將無法使用上一個金鑰。
 
 .步驟
-. 在「成員」索引標籤中、按一下對應於服務帳戶的列中的動作功能表。
+. 從「成員」索引標籤中、選取與服務帳戶對應的列中的動作功能表。
 +
 image:screenshot_service_account_actions.gif["快照顯示將游標移到「使用者」表格中使用者名稱上時可用的動作功能表。"]
 
-. 按一下「*重新建立金鑰*」。
-. 按一下「*重新建立*」以確認。
+. 選取 * 重新建立金鑰 * 。
+. 選取 * 重新建立 * 以確認。
 . 複製或下載用戶端ID和用戶端密碼。
 +
 用戶端機密只會顯示一次、而且不會儲存在任何位置。複製或下載機密、並安全地儲存。
 
-. 按一下 * 關閉 * 。
+. 選擇*關閉*。
 
 
 
@@ -195,12 +194,12 @@ image:screenshot_service_account_actions.gif["快照顯示將游標移到「使�
 如果您不再需要使用服務帳戶、請將其刪除。
 
 .步驟
-. 在「成員」索引標籤中、按一下對應於服務帳戶的列中的動作功能表。
+. 從「成員」索引標籤中、選取與服務帳戶對應的列中的動作功能表。
 +
 image:screenshot_service_account_actions.gif["快照顯示將游標移到「使用者」表格中使用者名稱上時可用的動作功能表。"]
 
-. 按一下*刪除*。
-. 再按一下 * 刪除 * 以確認。
+. 選擇*刪除*。
+. 再次選擇 * 刪除 * 進行確認。
 
 
 
@@ -210,20 +209,20 @@ image:screenshot_service_account_actions.gif["快照顯示將游標移到「使�
 透過建立、重新命名及刪除工作區來管理工作區。請注意、如果工作區包含任何資源、您就無法刪除該工作區。它必須是空的。
 
 .步驟
-. 從BlueXP頂端、按一下「*帳戶*」下拉式清單、然後按一下「*管理帳戶*」。
-. 按一下 * 工作區 * 。
+. 從 BlueXP 頂端、選取 * 帳戶 * 下拉式清單、然後選取 * 管理帳戶 * 。
+. 選取 * 工作區 * 。
 . 請選擇下列其中一個選項：
 +
-** 按一下 * 新增工作區 * 以建立新的工作區。
-** 按一下 * 重新命名 * 以重新命名工作區。
-** 按一下 * 刪除 * 以刪除工作區。
+** 選取 * 新增工作區 * 以建立新的工作區。
+** 選取 * 重新命名 * 以重新命名工作區。
+** 選取 * 刪除 * 以刪除工作區。
 
 
 
 
 
 
-== 管理Connector的工作區
+== 管理 Connector 的工作區
 
 您需要將Connector與工作區建立關聯、讓Workspace Admins能夠從BlueXP存取這些工作區。
 
@@ -232,10 +231,10 @@ image:screenshot_service_account_actions.gif["快照顯示將游標移到「使�
 link:concept-netapp-accounts.html#users-workspaces-and-service-connectors["深入瞭解使用者、工作區和連接器"]。
 
 .步驟
-. 從BlueXP頂端、按一下「*帳戶*」下拉式清單、然後按一下「*管理帳戶*」。
-. 按一下 * Connector* 。
-. 針對您要建立關聯的連接器、按一下 * 管理工作區 * 。
-. 選取要與 Connector 建立關聯的工作區、然後按一下「 * 套用 * 」。
+. 從 BlueXP 頂端、選取 * 帳戶 * 下拉式清單、然後選取 * 管理帳戶 * 。
+. 選取 * Connector * 。
+. 為您要關聯的 Connector 選取 * 管理 Workspace* 。
+. 選取要與 Connector 建立關聯的工作區、然後選取 * 套用 * 。
 
 
 
@@ -245,21 +244,21 @@ link:concept-netapp-accounts.html#users-workspaces-and-service-connectors["深�
 隨時變更您的帳戶名稱、將其變更為對您有意義的名稱。
 
 .步驟
-. 從BlueXP頂端、按一下「*帳戶*」下拉式清單、然後按一下「*管理帳戶*」。
-. 在「 * 總覽 * 」標籤中、按一下帳戶名稱旁的編輯圖示。
-. 輸入新的帳戶名稱、然後按一下 * 「 Saving* （儲存 * ）」。
+. 從 BlueXP 頂端、選取 * 帳戶 * 下拉式清單、然後選取 * 管理帳戶 * 。
+. 在 * 總覽 * 標籤中、選取帳戶名稱旁的編輯圖示。
+. 輸入新的帳戶名稱、然後選取 * 儲存 * 。
 
 
 
 
 == 允許私有預覽
 
-允許您帳戶中的私有預覽、以取得新的NetApp雲端服務、這些服務可在BlueXP中預覽。
+允許帳戶中的私人預覽、以存取 BlueXP 中的預覽形式提供的新服務。
 
 私有預覽中的服務無法保證其行為符合預期、而且可能會持續中斷運作並喪失功能。
 
 .步驟
-. 從BlueXP頂端、按一下「*帳戶*」下拉式清單、然後按一下「*管理帳戶*」。
+. 從 BlueXP 頂端、選取 * 帳戶 * 下拉式清單、然後選取 * 管理帳戶 * 。
 . 在「*總覽*」標籤中、啟用「*允許私有預覽*」設定。
 
 
@@ -270,6 +269,6 @@ link:concept-netapp-accounts.html#users-workspaces-and-service-connectors["深�
 允許您帳戶中的第三方服務存取BlueXP中提供的第三方服務。第三方服務是類似NetApp所提供服務的雲端服務、但由第三方公司管理及支援。
 
 .步驟
-. 從BlueXP頂端、按一下「*帳戶*」下拉式清單、然後按一下「*管理帳戶*」。
+. 從 BlueXP 頂端、選取 * 帳戶 * 下拉式清單、然後選取 * 管理帳戶 * 。
 . 在「*總覽*」標籤中、啟用「*允許協力廠商服務*」設定。
 

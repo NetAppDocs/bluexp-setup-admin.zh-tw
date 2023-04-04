@@ -1,0 +1,171 @@
+---
+sidebar: sidebar 
+permalink: task-subscribe-restricted-mode.html 
+keywords: subscribe, subscription, marketplace subscription, paygo, contract, annual contract 
+summary: 從雲端供應商的市場訂閱 BlueXP 、以每小時或每年合約的速度支付 BlueXP 服務費用。 
+---
+= 訂閱 BlueXP （受限模式）
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+從雲端供應商的市場訂閱 BlueXP 、即可按每小時費率（ PAYGO ）或透過年度合約支付 BlueXP 服務費用。
+
+[role="tabbed-block"]
+====
+.AWS
+--
+.步驟
+. 在BlueXP主控台右上角、按一下「設定」圖示、然後選取*認證*。
+. 按一下動作功能表以取得一組認證資料、然後選取「*建立訂閱關聯*」。
++
+image:screenshot_associate_subscription.png["一組現有認證資料的動作功能表快照。"]
+
+. 若要將認證資料與現有訂閱建立關聯、請從下拉式清單中選取訂閱、然後按一下「*關聯*」。
+. 若要將認證資料與新訂閱建立關聯、請按一下*新增訂閱>繼續*、然後依照AWS Marketplace中的步驟進行：
++
+.. 按一下*檢視購買選項*。
+.. 按一下*訂閱*。
+.. 按一下*設定您的帳戶*。
++
+您將被重新導向至BlueXP網站。
+
+.. 從*訂閱指派*頁面：
++
+*** 選取您要與此訂閱建立關聯的 BlueXP 帳戶。
+*** 在「*取代現有訂閱*」欄位中、選擇您是否要使用此新訂閱來自動取代現有的單一帳戶訂閱。
++
+此新訂閱取代現有的帳戶所有認證訂閱。如果一組認證資料從未與訂閱建立關聯、則此新訂閱將不會與這些認證資料建立關聯。
+
++
+對於所有其他帳戶、您必須重複這些步驟、手動建立訂閱的關聯。
+
+*** 按一下「 * 儲存 * 」。
++
+下列影片顯示從 AWS Marketplace 訂閱的步驟：
+
++
+video::video_subscribing_aws.mp4[width=848,height=480]
+
+
+
+
+
+
+--
+.Azure
+--
+
+NOTE: 在 Azure 中、政府地區不支援年度合約。
+
+.步驟
+. 在BlueXP主控台右上角、按一下「設定」圖示、然後選取*認證*。
+. 按一下動作功能表以取得一組認證資料、然後選取「*建立訂閱關聯*」。
++
+image:screenshot_azure_add_subscription.png["一組現有認證資料的動作功能表快照。"]
+
+. 若要將認證資料與現有訂閱建立關聯、請從下拉式清單中選取訂閱、然後按一下「*關聯*」。
+. 若要將認證資料與新訂閱建立關聯、請按一下*新增訂閱>繼續*、然後依照Azure Marketplace中的步驟進行：
++
+.. 出現提示時、請登入您的Azure帳戶。
+.. 按一下*訂閱*。
+.. 填寫表單、然後按一下*訂閱*。
+.. 訂購程序完成後、按一下*立即設定帳戶*。
++
+您將被重新導向至BlueXP網站。
+
+.. 從*訂閱指派*頁面：
++
+*** 選取您要與此訂閱建立關聯的 BlueXP 帳戶。
+*** 在「*取代現有訂閱*」欄位中、選擇您是否要使用此新訂閱來自動取代現有的單一帳戶訂閱。
++
+此新訂閱取代現有的帳戶所有認證訂閱。如果一組認證資料從未與訂閱建立關聯、則此新訂閱將不會與這些認證資料建立關聯。
+
++
+對於所有其他帳戶、您必須重複這些步驟、手動建立訂閱的關聯。
+
+*** 按一下「 * 儲存 * 」。
++
+下列影片顯示從Azure Marketplace訂閱的步驟：
+
++
+video::video_subscribing_azure.mp4[width=848,height=480]
+
+
+
+
+
+
+--
+.Google Cloud
+--
+.步驟
+. 在BlueXP主控台右上角、按一下「設定」圖示、然後選取*認證*。
+. 按一下動作功能表以取得一組認證資料、然後選取「*建立訂閱關聯*」。
++
+image:screenshot_gcp_add_subscription.png["一組現有認證資料的動作功能表快照。"]
+
+. 若要將認證資料與現有訂閱建立關聯、請從下拉式清單中選取Google Cloud專案和訂閱、然後按一下* Associat*。
++
+image:screenshot_gcp_associate.gif["Google Cloud 專案的快照、以及 Google Cloud 認證的訂閱內容。"]
+
+. 如果您尚未訂閱、請按一下*新增訂閱>繼續*、然後依照Google Cloud Marketplace中的步驟進行。
++
+
+NOTE: 在您完成下列步驟之前、請先確認您的Google Cloud帳戶擁有「帳單管理」權限、以及BlueXP登入權限。
+
++
+.. 重新導向至之後 https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Google Cloud Marketplace上的NetApp BlueXP頁面"^]下、請確定在頂端導覽功能表中選取正確的專案。
++
+image:screenshot_gcp_cvo_marketplace.png["Google Cloud 中 Cloud Volumes ONTAP 市場頁面的螢幕擷取畫面。"]
+
+.. 按一下*訂閱*。
+.. 選擇適當的帳單帳戶、並同意條款與條件。
+.. 按一下*訂閱*。
++
+此步驟會將您的轉帳要求傳送給NetApp。
+
+.. 在快顯對話方塊中、按一下*向NetApp、Inc.*註冊
++
+您必須完成此步驟、才能將 Google Cloud 訂閱連結至您的 BlueXP 帳戶。連結訂閱的程序要等到您從本頁重新導向、然後登入BluXP之後才會完成。
+
++
+image:screenshot_gcp_marketplace_register.png["註冊快顯畫面。"]
+
+.. 完成「*訂閱指派*」頁面上的步驟：
++
+
+NOTE: 如果貴組織的人員已從您的帳單帳戶訂閱NetApp BlueXP訂閱、您將會被重新導向至 https://bluexp.netapp.com/ontap-cloud?x-gcp-marketplace-token=["BlueXP網站上的「支持」頁面Cloud Volumes ONTAP"^] 而是。如果這是意外情況、請聯絡您的NetApp銷售團隊。Google每個Google帳單帳戶只能啟用一次訂閱。
+
++
+*** 選取您要與此訂閱建立關聯的 BlueXP 帳戶。
+*** 在「*取代現有訂閱*」欄位中、選擇您是否要使用此新訂閱來自動取代現有的單一帳戶訂閱。
++
+此新訂閱取代現有的帳戶所有認證訂閱。如果一組認證資料從未與訂閱建立關聯、則此新訂閱將不會與這些認證資料建立關聯。
+
++
+對於所有其他帳戶、您必須重複這些步驟、手動建立訂閱的關聯。
+
+*** 按一下「 * 儲存 * 」。
++
+下列影片顯示從Google Cloud Marketplace訂閱的步驟：
+
++
+video::video-subscribing-google-cloud.mp4[width=848,height=480]
+
+
+.. 完成此程序後、請瀏覽至BlueXP中的「認證」頁面、然後選取此新的訂閱。
++
+image:screenshot_gcp_associate.gif["訂閱指派頁面的快照。"]
+
+
+
+
+
+--
+====

@@ -1,0 +1,74 @@
+---
+sidebar: sidebar 
+permalink: task-quick-start-connector-on-prem.html 
+keywords: quick start, connector quick start, on prem quick start 
+summary: 透過設定網路、準備主機、準備雲端權限等方式、在內部環境中建立 Connector 。 
+---
+= 快速開始在內部部署建立 Connector
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+透過設定網路、準備主機、準備雲端權限等方式、在內部環境中建立 Connector 。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] 設定網路
+[role="quick-margin-para"]
+為 Connector 準備下列項目：
+
+[role="quick-margin-list"]
+* 您計畫安裝 Connector 的網路位置
+* 網路連線至您計畫建立及管理工作環境的網路
+* 透過網際網路連線至特定端點、進行日常營運
+* Proxy 伺服器的 IP 位址、認證和 HTTPS 憑證（如果傳出網際網路需要 Proxy 伺服器）
+
+
+[role="quick-margin-para"]
+link:task-set-up-networking-on-prem.html["深入瞭解網路需求"]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 檢閱主機需求
+[role="quick-margin-para"]
+Connector 軟體必須在符合特定需求的主機上執行。主要需求如下：
+
+[role="quick-margin-list"]
+* 執行 CentOS 或 Red Hat Enterprise Linux 的專用主機
+* 4個CPU
+* 14 GB RAM
+* Docker引擎
+
+
+[role="quick-margin-para"]
+link:reference-host-requirements-on-prem.html["深入瞭解這些主機需求"]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 設定雲端權限
+[role="quick-margin-para"]
+為雲端供應商設定權限、以便使用 BlueXP 管理雲端儲存設備：
+
+[role="quick-margin-list"]
+* * AWS * ：建立 IAM 原則、並將原則附加至 IAM 使用者。安裝後、您需要為 BlueXP 提供該 IAM 使用者的存取金鑰。
+* * Azure * ：在 Azure Active Directory 中設定包含必要權限的服務主體。安裝後、您需要為 BlueXP 提供服務主體的認證。
+
+
+[role="quick-margin-para"]
+當 Connector 安裝在您的內部環境中時、就無法管理 Google Cloud 中的儲存或資料。Connector 必須安裝在 Google Cloud 中、才能管理任何儲存設備或位於該處的資料。
+
+[role="quick-margin-para"]
+link:task-set-up-permissions-on-prem.html["請依照每個選項的逐步指示操作"]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"] 安裝 Connector 軟體
+[role="quick-margin-para"]
+從下載Connector軟體 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支援網站"] 並執行安裝指令碼。
+
+[role="quick-margin-para"]
+link:task-install-connector-on-prem.html["請依照逐步指示操作"]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"] 提供 BlueXP 權限
+[role="quick-margin-para"]
+安裝並設定 Connector 之後、您需要新增雲端認證、以便 BlueXP 具有必要的權限、可在 AWS 或 Azure 中執行動作。
+
+[role="quick-margin-para"]
+link:task-provide-permissions-on-prem.html["請依照逐步指示操作"]。

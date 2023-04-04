@@ -28,31 +28,20 @@ BlueXP支援HTTP和HTTPS。Proxy 伺服器可以位於雲端或網路中。
 
 當您將連接器設定為使用 Proxy 伺服器、連接器及 Cloud Volumes ONTAP 其所管理的各種系統（包括任何 HA 協調器）時、都會使用 Proxy 伺服器。
 
-請注意、此作業會重新啟動Connector。在繼續之前、請確定Connector未執行任何作業。
+請注意、此作業會重新啟動Connector。請先確定 Connector 未執行任何作業、然後再繼續。
 
 .步驟
-. link:task-logging-in.html["登入BlueXP SaaS介面"^] 從連線至連接器執行個體的機器。
-+
-如果連接器沒有公有 IP 位址、您將需要 VPN 連線、或是需要從連接器所在的同一個網路中的跨接主機連線。
-
-. 按一下「 * Connector* （ * 連接器 * ）」下拉式清單、然後按一下「 * 移至本機 Ui* （針對特定連接器）」。
-+
-image:screenshot_connector_local_ui.gif["螢幕擷取畫面會在標題中顯示 Connector 圖示、以及「前往本機 UI 」動作。"]
-
-+
-在Connector上執行的BlueXP介面會載入新的瀏覽器索引標籤。
-
-. 在BlueXP主控台右上角、按一下「設定」圖示、然後選取「*連接器設定*」。
+. 在 BlueXP 主控台的右上角、選取設定圖示、然後選取 * 連接器設定 * 。
 +
 image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」圖示的快照。"]
 
-. 按一下「*一般*」下的「* HTTP Proxy組態*」。
+. 在 * 一般 * 下、選取 * HTTP Proxy 組態 * 。
 . 設定Proxy：
 +
-.. 按一下*啟用Proxy*。
+.. 選取 * 啟用 Proxy* 。
 .. 使用語法指定伺服器 http://_address:port_[] 或 https://_address:port_[]
 .. 如果伺服器需要基本驗證、請指定使用者名稱和密碼
-.. 按一下「 * 儲存 * 」。
+.. 選擇*保存*。
 +
 
 NOTE: BlueXP不支援包含@字元的密碼。
@@ -69,13 +58,13 @@ NOTE: BlueXP不支援包含@字元的密碼。
 
 如果您停用使用Azure私有連結Cloud Volumes ONTAP 搭配使用、並改用服務端點、則必須啟用直接API流量。否則、流量將無法正確路由傳送。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html["深入瞭解如何搭配Cloud Volumes ONTAP 使用Azure Private Link或服務端點搭配使用"]
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html["深入瞭解如何搭配Cloud Volumes ONTAP 使用Azure Private Link或服務端點搭配使用"^]
 
 .步驟
-. 在BlueXP主控台右上角、按一下「設定」圖示、然後選取「*連接器設定*」。
+. 在 BlueXP 主控台的右上角、選取設定圖示、然後選取 * 連接器設定 * 。
 +
 image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」圖示的快照。"]
 
-. 在* General *下、按一下* Support Direct API Traffic *。
-. 按一下核取方塊以啟用選項、然後按一下*「Saved*」。
+. 在 * 一般 * 下、選取 * 支援直接 API 流量 * 。
+. 選取核取方塊以啟用選項、然後選取 * 儲存 * 。
 

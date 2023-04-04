@@ -1,0 +1,263 @@
+---
+sidebar: sidebar 
+permalink: task-set-up-permissions-aws.html 
+keywords: aws permissions, set up permissions, set up aws permissions, permissions, iam role, iam policy, json, policy, role, credentials 
+summary: 設定 AWS 權限、讓您可以使用 BlueXP 來管理 AWS 中的資料和儲存基礎架構。設定權限的方式取決於您打算使用的安裝選項。 
+---
+= 設定 AWS 權限
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+設定 AWS 權限、讓您可以使用 BlueXP 來管理 AWS 中的資料和儲存基礎架構。設定權限的方式取決於您打算使用的安裝選項。
+
+您可以選擇下列安裝選項：
+
+* * 從 BlueXP* 安裝：設定權限、讓 BlueXP 能夠使用 AWS 進行驗證並部署執行個體。BlueXP 會在部署期間自動設定 Connector 執行個體的權限。
++
+<<設定從 BlueXP 建立 Connector 的權限,檢視逐步指示>>。
+
+* * 從 AWS Marketplace 安裝 * ：設定您可以與 Connector 執行個體建立關聯的 IAM 角色。
++
+<<從 AWS Marketplace 部署時、請設定 Connector 的權限,檢視逐步指示>>。
+
+* * 手動安裝 * ：建立 IAM 原則、並將其附加至 IAM 角色或 IAM 使用者。
++
+<<設定手動安裝後指派的權限,檢視逐步指示>>。
+
+
+
+
+
+== 設定從 BlueXP 建立 Connector 的權限
+
+在您的VPC中部署Connector執行個體之前、BlueXP必須先與AWS進行驗證。您可以選擇下列其中一種驗證方法：
+
+* 讓BlueXP承擔具有所需權限的IAM角色
+* 為具有所需權限的IAM使用者提供AWS存取金鑰和秘密金鑰
+
+
+無論使用哪一種選項、第一步都是建立 IAM 原則。此原則僅包含從BlueXP啟動AWS中Connector執行個體所需的權限。
+
+如有需要、您可以使用IAM來限制IAM原則 `Condition` 元素。 https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["AWS文件：條件元素"^]
+
+
+TIP: 當 BlueXP 建立 Connector 時、它會將一組新的權限套用至 Connector 執行個體、以啟用 Connector to AWS 資源。
+
+.步驟
+. 前往AWS IAM主控台。
+. 按一下*原則>建立原則*。
+. 按一下「* JSON*」。
+. 複製並貼上下列原則：
++
+[source, json]
+----
+{
+    "Version": "2012-10-17",
+    "Statement": [{
+            "Effect": "Allow",
+            "Action": [
+                "iam:CreateRole",
+                "iam:DeleteRole",
+                "iam:PutRolePolicy",
+                "iam:CreateInstanceProfile",
+                "iam:DeleteRolePolicy",
+                "iam:AddRoleToInstanceProfile",
+                "iam:RemoveRoleFromInstanceProfile",
+                "iam:DeleteInstanceProfile",
+                "iam:PassRole",
+                "ec2:DescribeInstanceStatus",
+                "ec2:RunInstances",
+                "ec2:ModifyInstanceAttribute",
+                "ec2:CreateSecurityGroup",
+                "ec2:DeleteSecurityGroup",
+                "ec2:DescribeSecurityGroups",
+                "ec2:RevokeSecurityGroupEgress",
+                "ec2:AuthorizeSecurityGroupEgress",
+                "ec2:AuthorizeSecurityGroupIngress",
+                "ec2:RevokeSecurityGroupIngress",
+                "ec2:CreateNetworkInterface",
+                "ec2:DescribeNetworkInterfaces",
+                "ec2:DeleteNetworkInterface",
+                "ec2:ModifyNetworkInterfaceAttribute",
+                "ec2:DescribeSubnets",
+                "ec2:DescribeVpcs",
+                "ec2:DescribeDhcpOptions",
+                "ec2:DescribeKeyPairs",
+                "ec2:DescribeRegions",
+                "ec2:DescribeInstances",
+                "ec2:CreateTags",
+                "ec2:DescribeImages",
+                "cloudformation:CreateStack",
+                "cloudformation:DeleteStack",
+                "cloudformation:DescribeStacks",
+                "cloudformation:DescribeStackEvents",
+                "cloudformation:ValidateTemplate",
+                "ec2:AssociateIamInstanceProfile",
+                "ec2:DescribeIamInstanceProfileAssociations",
+                "ec2:DisassociateIamInstanceProfile",
+                "iam:GetRole",
+                "iam:TagRole",
+                "iam:ListRoles",
+                "kms:ListAliases"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:TerminateInstances"
+            ],
+            "Condition": {
+                "StringLike": {
+                    "ec2:ResourceTag/OCCMInstance": "*"
+                }
+            },
+            "Resource": [
+                "arn:aws:ec2:*:*:instance/*"
+            ]
+        }
+    ]
+}
+----
+. 如有需要、請按* Next*並新增標記。
+. 單擊*下一步*並輸入名稱和說明。
+. 按一下「*建立原則*」。
+. 將原則附加至 BlueXP 可以承擔的 IAM 角色、或附加至 IAM 使用者、以便提供 BlueXP 存取金鑰：
++
+** （選項 1 ）設定 BlueXP 可承擔的 IAM 角色：
++
+... 前往目標帳戶中的AWS IAM主控台。
+... 在「存取管理」下、按一下*「角色」>「建立角色」*、然後依照步驟建立角色。
+... 在*信任的實體類型*下、選取* AWS帳戶*。
+... 選取*其他AWS帳戶*、然後輸入BlueXP SaaS帳戶的ID：95201331444
+... 選取您在上一節中建立的原則。
+... 建立角色之後、請複製角色ARN、以便在建立Connector時將其貼到BlueXP中。
+
+
+** （選項 2 ）設定 IAM 使用者的權限、以便提供 BlueXP 存取金鑰：
++
+... 從AWS IAM主控台按一下*使用者*、然後選取使用者名稱。
+... 按一下*「新增權限」>「直接附加現有原則」*。
+... 選取您建立的原則。
+... 按一下「*下一步*」、然後按一下「*新增權限*」。
+... 確保您擁有 IAM 使用者的存取金鑰和秘密金鑰。
+
+
+
+
+
+
+.結果
+您現在應該擁有具有所需權限的 IAM 角色、或是擁有所需權限的 IAM 使用者。從 BlueXP 建立 Connector 時、您可以提供角色或存取金鑰的相關資訊。
+
+
+
+== 從 AWS Marketplace 部署時、請設定 Connector 的權限
+
+在 AWS 中建立 IAM 原則、並將其附加至 IAM 角色。當您從 AWS Marketplace 建立 Connector 時、系統會提示您選取該 IAM 角色。
+
+.步驟
+. 從 IAM 主控台建立原則：
++
+.. 按一下*原則>建立原則*。
+.. 選取 * JSON* 、然後複製並貼上的內容 link:reference-permissions-aws.html["Connector 的 IAM 原則"]。
+.. 完成其餘步驟以建立原則。
++
+視您打算使用的 BlueXP 服務而定、您可能需要建立第二個原則。
+
++
+對於標準區域、權限分佈在兩個原則之間。由於AWS中受管理原則的字元大小上限、因此需要兩個原則。
+
+
+
+. 回到 IAM 主控台、建立 IAM 角色：
++
+.. 按一下 * 角色 > 建立角色 * 。
+.. 選取 * AWS 服務 > EC2* 。
+.. 附加您在上一個步驟中建立的原則來新增權限。
+.. 完成剩餘步驟以建立角色。
+
+
+
+
+.結果
+您現在擁有 IAM 角色、可在 AWS Marketplace 部署期間與 EC2 執行個體建立關聯。
+
+
+
+== 設定手動安裝後指派的權限
+
+如果您在 AWS 中的 Linux 主機上手動安裝 Connector 軟體、您可以透過下列方式提供權限：
+
+* 選項 1 ：建立 IAM 原則、並將原則附加至您可以與 EC2 執行個體建立關聯的 IAM 角色。
+* 選項 2 ：為具有必要權限的 IAM 使用者提供 BlueXP AWS 存取金鑰。
+
+
+[role="tabbed-block"]
+====
+.IAM 角色
+--
+.步驟
+. 從 IAM 主控台建立原則：
++
+.. 按一下*原則>建立原則*。
+.. 選取 * JSON* 、然後複製並貼上的內容 link:reference-permissions-aws.html["Connector 的 IAM 原則"]。
+.. 完成其餘步驟以建立原則。
++
+視您打算使用的 BlueXP 服務而定、您可能需要建立第二個原則。
+
++
+對於標準區域、權限分佈在兩個原則之間。由於AWS中受管理原則的字元大小上限、因此需要兩個原則。 link:reference-permissions-aws.html["深入瞭解 Connector 的 IAM 原則"]。
+
+
+
+. 回到 IAM 主控台、建立 IAM 角色：
++
+.. 按一下 * 角色 > 建立角色 * 。
+.. 選取 * AWS 服務 > EC2* 。
+.. 附加您在上一個步驟中建立的原則來新增權限。
+.. 完成剩餘步驟以建立角色。
+
+
+
+
+.結果
+現在您有一個 IAM 角色、可以在安裝 Connector 之後與 EC2 執行個體建立關聯。 link:task-provide-permissions-aws.html["瞭解如何將這些權限提供給 BlueXP"]。
+
+--
+.AWS 存取金鑰
+--
+.步驟
+. 從 IAM 主控台建立原則：
++
+.. 按一下*原則>建立原則*。
+.. 選取 * JSON* 、然後複製並貼上的內容 link:reference-permissions-aws.html["Connector 的 IAM 原則"]。
+.. 完成其餘步驟以建立原則。
++
+視您打算使用的 BlueXP 服務而定、您可能需要建立第二個原則。
+
++
+對於標準區域、權限分佈在兩個原則之間。由於AWS中受管理原則的字元大小上限、因此需要兩個原則。 link:reference-permissions-aws.html["深入瞭解 Connector 的 IAM 原則"]。
+
+
+
+. 將原則附加至 IAM 使用者。
++
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["AWS 文件：建立 IAM 角色"^]
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["AWS 文件：新增和移除 IAM 原則"^]
+
+
+. 請確定使用者擁有存取金鑰、您可以在安裝 Connector 之後新增至 BlueXP 。
+
+
+.結果
+您現在擁有一個 IAM 使用者、該使用者擁有必要的權限、以及您可以提供給 BlueXP 的存取金鑰。 link:task-provide-permissions-aws.html["瞭解如何將這些權限提供給 BlueXP"]。
+
+--
+====

@@ -1,0 +1,469 @@
+---
+sidebar: sidebar 
+permalink: task-set-up-permissions-azure.html 
+keywords: azure permissions, set up permissions, setup permissions, permissions, custom role, azure custom role, service principal, azure ad service principal, json 
+summary: 設定 Azure 權限、讓您可以使用 BlueXP 來管理 Azure 中的資料和儲存基礎架構。設定權限的方式取決於您打算使用的安裝選項。 
+---
+= 設定 Azure 權限
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+設定 Azure 權限、讓您可以使用 BlueXP 來管理 Azure 中的資料和儲存基礎架構。設定權限的方式取決於您打算使用的安裝選項。
+
+您可以選擇下列安裝選項：
+
+* * 從 BlueXP* 安裝：設定權限、讓 BlueXP 能夠驗證 Azure 並部署 VM 。BlueXP 會在部署期間自動設定 Connector VM 的權限。
++
+<<設定從 BlueXP 建立 Connector 的權限,檢視逐步指示>>。
+
+* * 從 Azure Marketplace* 安裝：設定 Azure 自訂角色以與 Connector VM 或 Azure AD 服務主體建立關聯。
++
+<<設定權限、以便在 Azure Marketplace 部署或手動安裝之後指派,檢視逐步指示>>。
+
+* * 手動安裝 * ：設定 Azure 自訂角色以與 Connector VM 或 Azure AD 服務主體建立關聯。
++
+<<設定權限、以便在 Azure Marketplace 部署或手動安裝之後指派,檢視逐步指示>>。
+
+
+
+
+
+== 設定從 BlueXP 建立 Connector 的權限
+
+若要從 BlueXP 建立 Connector 、您必須提供 BlueXP 登入權限、讓 BlueXP 具備在 Azure 中建立 Connector VM 所需的權限。您有兩種選擇：
+
+. 出現提示時、請使用您的Microsoft帳戶登入。此帳戶必須具有特定的Azure權限。這是預設選項。
+. 提供Azure AD服務負責人的詳細資料。此服務主體也需要特定權限。
+
+
+有了這兩個選項、第一步就是建立自訂角色。
+
+
+
+=== 建立自訂角色
+
+建立您可以指派給 Azure 帳戶或服務主體的自訂角色。
+
+.步驟
+. 複製Azure中新自訂角色所需的權限、並將其儲存在Json檔案中。
++
+
+NOTE: 此原則僅包含從BlueXP在Azure中啟動Connector VM所需的權限。請勿在其他情況下使用此原則。當BlueXP建立Connector時、它會套用一組新的權限至Connector VM、讓Connector能夠管理公有雲環境中的資源。
+
++
+[source, json]
+----
+{
+    "Name": "Azure SetupAsService",
+    "Actions": [
+        "Microsoft.Compute/disks/delete",
+        "Microsoft.Compute/disks/read",
+        "Microsoft.Compute/disks/write",
+        "Microsoft.Compute/locations/operations/read",
+        "Microsoft.Compute/operations/read",
+        "Microsoft.Compute/virtualMachines/instanceView/read",
+        "Microsoft.Compute/virtualMachines/read",
+        "Microsoft.Compute/virtualMachines/write",
+        "Microsoft.Compute/virtualMachines/delete",
+        "Microsoft.Compute/virtualMachines/extensions/write",
+        "Microsoft.Compute/virtualMachines/extensions/read",
+        "Microsoft.Compute/availabilitySets/read",
+        "Microsoft.Network/locations/operationResults/read",
+        "Microsoft.Network/locations/operations/read",
+        "Microsoft.Network/networkInterfaces/join/action",
+        "Microsoft.Network/networkInterfaces/read",
+        "Microsoft.Network/networkInterfaces/write",
+        "Microsoft.Network/networkInterfaces/delete",
+        "Microsoft.Network/networkSecurityGroups/join/action",
+        "Microsoft.Network/networkSecurityGroups/read",
+        "Microsoft.Network/networkSecurityGroups/write",
+        "Microsoft.Network/virtualNetworks/checkIpAddressAvailability/read",
+        "Microsoft.Network/virtualNetworks/read",
+        "Microsoft.Network/virtualNetworks/subnets/join/action",
+        "Microsoft.Network/virtualNetworks/subnets/read",
+        "Microsoft.Network/virtualNetworks/subnets/virtualMachines/read",
+        "Microsoft.Network/virtualNetworks/virtualMachines/read",
+        "Microsoft.Network/publicIPAddresses/write",
+        "Microsoft.Network/publicIPAddresses/read",
+        "Microsoft.Network/publicIPAddresses/delete",
+        "Microsoft.Network/networkSecurityGroups/securityRules/read",
+        "Microsoft.Network/networkSecurityGroups/securityRules/write",
+        "Microsoft.Network/networkSecurityGroups/securityRules/delete",
+        "Microsoft.Network/publicIPAddresses/join/action",
+        "Microsoft.Network/locations/virtualNetworkAvailableEndpointServices/read",
+        "Microsoft.Network/networkInterfaces/ipConfigurations/read",
+        "Microsoft.Resources/deployments/operations/read",
+        "Microsoft.Resources/deployments/read",
+        "Microsoft.Resources/deployments/delete",
+        "Microsoft.Resources/deployments/cancel/action",
+        "Microsoft.Resources/deployments/validate/action",
+        "Microsoft.Resources/resources/read",
+        "Microsoft.Resources/subscriptions/operationresults/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/delete",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Resources/subscriptions/resourcegroups/resources/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/write",
+        "Microsoft.Authorization/roleDefinitions/write",
+        "Microsoft.Authorization/roleAssignments/write",
+        "Microsoft.MarketplaceOrdering/offertypes/publishers/offers/plans/agreements/read",
+        "Microsoft.MarketplaceOrdering/offertypes/publishers/offers/plans/agreements/write",
+        "Microsoft.Network/networkSecurityGroups/delete",
+        "Microsoft.Storage/storageAccounts/delete",
+        "Microsoft.Storage/storageAccounts/write",
+        "Microsoft.Resources/deployments/write",
+        "Microsoft.Resources/deployments/operationStatuses/read",
+        "Microsoft.Authorization/roleAssignments/read"
+    ],
+    "NotActions": [],
+    "AssignableScopes": [],
+    "Description": "Azure SetupAsService",
+    "IsCustom": "true"
+}
+----
+. 將您的Azure訂閱ID新增至可指派的範圍、以修改Json。
++
+* 範例 *
+
++
+[source, json]
+----
+"AssignableScopes": [
+"/subscriptions/d333af45-0d07-4154-943d-c25fbzzzzzzz"
+],
+----
+. 使用 Json 檔案在 Azure 中建立自訂角色。
++
+下列步驟說明如何在Azure Cloud Shell中使用Bash建立角色。
+
++
+.. 開始 https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Azure Cloud Shell"^] 並選擇Bash環境。
+.. 上傳Json檔案。
++
+image:screenshot_azure_shell_upload.png["Azure Cloud Shell的快照、您可在其中選擇上傳檔案的選項。"]
+
+.. 輸入下列Azure CLI命令：
++
+[source, azurecli]
+----
+az role definition create --role-definition Policy_for_Setup_As_Service_Azure.json
+----
+
+
++
+您現在應該擁有名為 _Azure Setup AsService_ 的自訂角色。您現在可以將此自訂角色套用至您的使用者帳戶或服務主體。
+
+
+
+
+
+=== 設定驗證方法
+
+若要部署 BlueXP Connector 、 BlueXP 需要驗證 Azure 。您可以選擇兩種 Azure 驗證方法。
+
+[role="tabbed-block"]
+====
+.Azure 使用者帳戶
+--
+將自訂角色指派給將從 BlueXP 部署 Connector 的使用者。
+
+.步驟
+. 在 Azure 入口網站中、開啟 * 訂閱 * 服務、然後選取使用者的訂閱。
+. 按一下 * 存取控制（ IAM ） * 。
+. 按一下「 * 新增 * > * 新增角色指派 * 」、然後新增權限：
++
+.. 選取「* Azure Setup AsService*」角色、然後按一下「* Next*」。
++
+
+NOTE: Azure Setup AsService是Azure的Connector部署原則中提供的預設名稱。如果您為角色選擇不同的名稱、請改為選取該名稱。
+
+.. 保留*選取「使用者」、「群組」或「服務主體」*。
+.. 按一下*選取成員*、選擇您的使用者帳戶、然後按一下*選取*。
+.. 單擊 * 下一步 * 。
+.. 按一下「*檢閱+指派*」。
+
+
+
+
+.結果
+Azure使用者現在擁有從BlueXP部署Connector所需的權限。
+
+--
+.服務主體
+--
+您可以為 BlueXP 提供具有必要權限的 Azure 服務主體認證、而非使用 Azure 帳戶登入。
+
+在 Azure Active Directory 中建立及設定服務主體、並取得 BlueXP 所需的 Azure 認證。
+
+.建立 Azure Active Directory 應用程式以進行角色型存取控制
+. 確保您在 Azure 中擁有建立 Active Directory 應用程式及將應用程式指派給角色的權限。
++
+如需詳細資訊、請參閱 https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure 說明文件：必要權限"^]。
+
+. 從 Azure 入口網站開啟 * Azure Active Directory * 服務。
++
+image:screenshot_azure_ad.gif["顯示 Microsoft Azure 中的 Active Directory 服務。"]
+
+. 在功能表中、按一下 * 應用程式註冊 * 。
+. 按一下「 * 新登錄 * 」。
+. 指定應用程式的詳細資料：
++
+** * 名稱 * ：輸入應用程式的名稱。
+** *帳戶類型*：選取帳戶類型（任何帳戶類型均可用於BlueXP）。
+** *重新導向URI*：您可以將此欄位保留空白。
+
+
+. 按一下 * 註冊 * 。
++
+您已建立 AD 應用程式和服務主體。
+
+
+
+.將自訂角色指派給應用程式
+. 從 Azure 入口網站開啟 * 訂閱 * 服務。
+. 選取訂閱。
+. 按一下 * 存取控制（ IAM ） > 新增 > 新增角色指派 * 。
+. 在「*角色*」索引標籤中、選取「*藍圖XP操作員*」角色、然後按一下「*下一步*」。
+. 在「*成員*」索引標籤中、完成下列步驟：
++
+.. 保留*選取「使用者」、「群組」或「服務主體」*。
+.. 按一下*選取成員*。
++
+image:screenshot-azure-service-principal-role.png["Azure入口網站的快照、會在新增角色至應用程式時顯示「成員」索引標籤。"]
+
+.. 搜尋應用程式名稱。
++
+範例如下：
+
++
+image:screenshot_azure_service_principal_role.png["Azure入口網站的快照、顯示Azure入口網站中的「新增角色指派」表單。"]
+
+.. 選取應用程式、然後按一下*選取*。
+.. 單擊 * 下一步 * 。
+
+
+. 按一下「*檢閱+指派*」。
++
+服務主體現在擁有部署Connector所需的Azure權限。
+
++
+如果您想要從 Cloud Volumes ONTAP 多個 Azure 訂閱中部署支援功能、則必須將服務授權對象繫結至每個訂閱項目。BlueXP可讓您選擇部署Cloud Volumes ONTAP 時要使用的訂閱內容。
+
+
+
+.新增 Windows Azure Service Management API 權限
+. 在 * Azure Active Directory * 服務中、按一下 * 應用程式註冊 * 、然後選取應用程式。
+. 按一下「 * API 權限 > 新增權限 * 」。
+. 在「 * Microsoft API* 」下、選取「 * Azure 服務管理 * 」。
++
+image:screenshot_azure_service_mgmt_apis.gif["Azure 入口網站的快照、顯示 Azure 服務管理 API 權限。"]
+
+. 按一下「 * 以組織使用者身分存取 Azure 服務管理 * 」、然後按一下「 * 新增權限 * 」。
++
+image:screenshot_azure_service_mgmt_apis_add.gif["Azure 入口網站的快照、顯示新增 Azure 服務管理 API 。"]
+
+
+
+.取得應用程式的應用程式 ID 和目錄 ID
+. 在 * Azure Active Directory * 服務中、按一下 * 應用程式註冊 * 、然後選取應用程式。
+. 複製 * 應用程式（用戶端） ID* 和 * 目錄（租戶） ID* 。
++
+image:screenshot_azure_app_ids.gif["顯示 Azure Active Directory 中應用程式的應用程式（用戶端） ID 和目錄（租戶） ID 的快照。"]
+
++
+將Azure帳戶新增至BlueXP時、您必須提供應用程式的應用程式（用戶端）ID和目錄（租戶）ID。BlueXP使用ID以程式設計方式登入。
+
+
+
+.建立用戶端機密
+. 開啟 * Azure Active Directory * 服務。
+. 按一下 * 應用程式註冊 * 、然後選取您的應用程式。
+. 按一下 * 「憑證與機密」 > 「新用戶端機密」 * 。
+. 提供機密與持續時間的說明。
+. 按一下「 * 新增 * 」。
+. 複製用戶端機密的值。
++
+image:screenshot_azure_client_secret.gif["Azure 入口網站的快照、顯示 Azure AD 服務主體的用戶端機密。"]
+
++
+您現在有一個用戶端秘密、 BlueXP 可以用來驗證 Azure AD 。
+
+
+
+.結果
+您的服務主體現在已設定完成、您應該已經複製應用程式（用戶端） ID 、目錄（租戶） ID 、以及用戶端機密的值。建立Connector時、您必須在BlueXP中輸入此資訊。
+
+--
+====
+
+
+== 設定權限、以便在 Azure Marketplace 部署或手動安裝之後指派
+
+如果您是從 Azure Marketplace 部署 Connector 、或是手動在自己的 Linux 主機上安裝 Connector 軟體、您可以透過下列方式提供權限：
+
+* 選項 1 ：使用系統指派的託管身分識別、將自訂角色指派給 Azure VM 。
+* 選項 2 ：為 BlueXP 提供具有必要權限的 Azure 服務主體認證。
+
+
+[role="tabbed-block"]
+====
+.自訂角色
+--
+.步驟
+. 如果您打算在自己的主機上手動安裝軟體、請在 VM 上啟用系統指派的託管身分識別、以便透過自訂角色提供必要的 Azure 權限。
++
+https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm["Microsoft Azure 文件：使用 Azure 入口網站、在 VM 上設定 Azure 資源的託管身分識別"^]
+
+. 複製的內容 link:reference-permissions-azure.html["Connector的自訂角色權限"] 並將它們儲存在Json檔案中。
+. 將 Azure 訂閱 ID 新增至可指派的範圍、以修改 Json 檔案。
++
+您應該為使用者建立 Cloud Volumes ONTAP 的各個 Azure 訂閱新增 ID 。
+
++
+* 範例 *
+
++
+[source, json]
+----
+"AssignableScopes": [
+"/subscriptions/d333af45-0d07-4154-943d-c25fbzzzzzzz",
+"/subscriptions/54b91999-b3e6-4599-908e-416e0zzzzzzz",
+"/subscriptions/398e471c-3b42-4ae7-9b59-ce5bbzzzzzzz"
+----
+. 使用 Json 檔案在 Azure 中建立自訂角色。
++
+下列步驟說明如何在Azure Cloud Shell中使用Bash建立角色。
+
++
+.. 開始 https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Azure Cloud Shell"^] 並選擇Bash環境。
+.. 上傳Json檔案。
++
+image:screenshot_azure_shell_upload.png["Azure Cloud Shell的快照、您可在其中選擇上傳檔案的選項。"]
+
+.. 使用Azure CLI建立自訂角色：
++
+[source, azurecli]
+----
+az role definition create --role-definition Connector_Policy.json
+----
+
+
+
+
+.結果
+現在您應該有一個名為BlueXP運算子的自訂角色、可以指派給連接器虛擬機器。
+
+link:task-provide-permissions-azure.html["瞭解如何將這些權限提供給 BlueXP"]。
+
+--
+.服務主體
+--
+在 Azure Active Directory 中建立及設定服務主體、並取得 BlueXP 所需的 Azure 認證。
+
+.建立 Azure Active Directory 應用程式以進行角色型存取控制
+. 確保您在 Azure 中擁有建立 Active Directory 應用程式及將應用程式指派給角色的權限。
++
+如需詳細資訊、請參閱 https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure 說明文件：必要權限"^]。
+
+. 從 Azure 入口網站開啟 * Azure Active Directory * 服務。
++
+image:screenshot_azure_ad.gif["顯示 Microsoft Azure 中的 Active Directory 服務。"]
+
+. 在功能表中、按一下 * 應用程式註冊 * 。
+. 按一下「 * 新登錄 * 」。
+. 指定應用程式的詳細資料：
++
+** * 名稱 * ：輸入應用程式的名稱。
+** *帳戶類型*：選取帳戶類型（任何帳戶類型均可用於BlueXP）。
+** *重新導向URI*：您可以將此欄位保留空白。
+
+
+. 按一下 * 註冊 * 。
++
+您已建立 AD 應用程式和服務主體。
+
+
+
+.將自訂角色指派給應用程式
+. 從 Azure 入口網站開啟 * 訂閱 * 服務。
+. 選取訂閱。
+. 按一下 * 存取控制（ IAM ） > 新增 > 新增角色指派 * 。
+. 在「*角色*」索引標籤中、選取「*藍圖XP操作員*」角色、然後按一下「*下一步*」。
+. 在「*成員*」索引標籤中、完成下列步驟：
++
+.. 保留*選取「使用者」、「群組」或「服務主體」*。
+.. 按一下*選取成員*。
++
+image:screenshot-azure-service-principal-role.png["Azure入口網站的快照、會在新增角色至應用程式時顯示「成員」索引標籤。"]
+
+.. 搜尋應用程式名稱。
++
+範例如下：
+
++
+image:screenshot_azure_service_principal_role.png["Azure入口網站的快照、顯示Azure入口網站中的「新增角色指派」表單。"]
+
+.. 選取應用程式、然後按一下*選取*。
+.. 單擊 * 下一步 * 。
+
+
+. 按一下「*檢閱+指派*」。
++
+服務主體現在擁有部署Connector所需的Azure權限。
+
++
+如果您想要從 Cloud Volumes ONTAP 多個 Azure 訂閱中部署支援功能、則必須將服務授權對象繫結至每個訂閱項目。BlueXP可讓您選擇部署Cloud Volumes ONTAP 時要使用的訂閱內容。
+
+
+
+.新增 Windows Azure Service Management API 權限
+. 在 * Azure Active Directory * 服務中、按一下 * 應用程式註冊 * 、然後選取應用程式。
+. 按一下「 * API 權限 > 新增權限 * 」。
+. 在「 * Microsoft API* 」下、選取「 * Azure 服務管理 * 」。
++
+image:screenshot_azure_service_mgmt_apis.gif["Azure 入口網站的快照、顯示 Azure 服務管理 API 權限。"]
+
+. 按一下「 * 以組織使用者身分存取 Azure 服務管理 * 」、然後按一下「 * 新增權限 * 」。
++
+image:screenshot_azure_service_mgmt_apis_add.gif["Azure 入口網站的快照、顯示新增 Azure 服務管理 API 。"]
+
+
+
+.取得應用程式的應用程式 ID 和目錄 ID
+. 在 * Azure Active Directory * 服務中、按一下 * 應用程式註冊 * 、然後選取應用程式。
+. 複製 * 應用程式（用戶端） ID* 和 * 目錄（租戶） ID* 。
++
+image:screenshot_azure_app_ids.gif["顯示 Azure Active Directory 中應用程式的應用程式（用戶端） ID 和目錄（租戶） ID 的快照。"]
+
++
+將Azure帳戶新增至BlueXP時、您必須提供應用程式的應用程式（用戶端）ID和目錄（租戶）ID。BlueXP使用ID以程式設計方式登入。
+
+
+
+.建立用戶端機密
+. 開啟 * Azure Active Directory * 服務。
+. 按一下 * 應用程式註冊 * 、然後選取您的應用程式。
+. 按一下 * 「憑證與機密」 > 「新用戶端機密」 * 。
+. 提供機密與持續時間的說明。
+. 按一下「 * 新增 * 」。
+. 複製用戶端機密的值。
++
+image:screenshot_azure_client_secret.gif["Azure 入口網站的快照、顯示 Azure AD 服務主體的用戶端機密。"]
+
++
+您現在有一個用戶端秘密、 BlueXP 可以用來驗證 Azure AD 。
+
+
+
+.結果
+您的服務主體現在已設定完成、您應該已經複製應用程式（用戶端） ID 、目錄（租戶） ID 、以及用戶端機密的值。新增Azure帳戶時、您必須在BlueXP中輸入此資訊。
+
+link:task-provide-permissions-azure.html["瞭解如何將這些權限提供給 BlueXP"]。
+
+--
+====

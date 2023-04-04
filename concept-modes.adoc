@@ -1,0 +1,405 @@
+---
+sidebar: sidebar 
+permalink: concept-modes.html 
+keywords: dark site, internet, on prem, no internet, supported deployments, govcloud, government access, environments, supported environments, deployment modes, modes, private mode, restricted mode, il6, sc2s, c2s, dark site, sovereign region, saas, government region 
+summary: BlueXP 提供多種部署模式、可讓您以符合業務與安全需求的方式使用 BlueXP 。標準模式利用 BlueXP SaaS 層來提供完整功能、而限制模式和私有模式則適用於有連線限制的組織。 
+---
+= BlueXP 部署模式
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+BlueXP 提供多種 _ 部署模式 _ 、可讓您以符合業務與安全需求的方式使用 BlueXP 。_Standard modity_ 利用 BlueXP SaaS 層提供完整功能、而 _restricted modity_ 和 _private modity_ 則適用於有連線限制的組織。
+
+雖然 BlueXP 在使用受限模式或私有模式時會抑制流量、通訊和資料流、但您有責任確保您的環境（內部部署和雲端環境）符合必要的法規。
+
+
+
+== 總覽
+
+BlueXP 為您的帳戶提供下列部署模式。每種模式的輸出連線需求、部署位置、安裝程序、驗證方法、可用的資料和儲存服務、以及收費方法各不相同。
+
+標準模式:: 使用者可從網路型主控台以雲端服務的形式存取 BlueXP 。根據您計畫使用的 BlueXP 服務、 BlueXP 管理員會建立一個或多個 Connectors 來管理混合雲環境中的資料。
++
+--
+此模式使用透過公用網際網路的加密資料傳輸。
+
+--
+受限模式:: BlueXP Connector 安裝在雲端（位於政府區域、主權雲端區域或商業區域）、而且與 BlueXP SaaS 層的輸出連線有限。使用者可從 Connector 提供的網路型主控台、而非從 SaaS 層、在本機存取 BlueXP 。
++
+--
+此模式通常由州政府和地方政府及受管制公司使用。
+
+<<受限模式,深入瞭解 SaaS 層的輸出連線能力>>。
+
+--
+私有模式:: BlueXP Connector 安裝在內部部署或雲端（位於安全區域、主權雲端區域或商業區域）、而且與 BlueXP SaaS 層之間沒有連線。使用者可從 Connector 提供的網路型主控台、而非從 SaaS 層、在本機存取 BlueXP 。
++
+--
+安全區域包括 https://aws.amazon.com/federal/us-intelligence-community/["AWS C2S 和 SC2S"^] 和 https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6."^]
+
+--
+
+
+下表提供這些模式的比較。
+
+[cols="16h,28,28,28"]
+|===
+|  | 標準模式 | 受限模式 | 私有模式 
+
+
+| 需要連線至 BlueXP SaaS 層？ | 是的 | 僅限外傳 | 否 
+
+
+| 需要連線至雲端供應商？ | 是的 | 是的、在區域內 | 是、在區域內（如果使用 Cloud Volumes ONTAP ） 
+
+
+| 連接器安裝 | 從 BlueXP 、雲端市場或手動安裝 | 雲端市場或手動安裝 | 手動安裝 
+
+
+| 連接器升級 | NetApp Connector 軟體的自動升級 | NetApp Connector 軟體的自動升級 | 需要手動升級 
+
+
+| UI 存取 | 來自 BlueXP SaaS 層 | 從 Connector VM 本機執行 | 從 Connector VM 本機執行 
+
+
+| API 端點 | BlueXP SaaS 層 | BlueXP SaaS 層 | 連接器 
+
+
+| 驗證 | 透過 SaaS 使用驗證 0 、 NSS 登入或身分識別聯盟 | 透過 SaaS 使用驗證 0 或身分識別聯盟 | 本機使用者驗證 
+
+
+| 儲存與資料服務 | 全部均受支援 | 許多都受到支援 | 支援數種 
+
+
+| 授權選項 | 市場訂閱和 BYOL | 市場訂閱和 BYOL | BYOL 
+|===
+請參閱下列各節、深入瞭解這些模式、包括支援哪些 BlueXP 功能和服務。
+
+
+
+== 標準模式
+
+下列映像是標準模式部署的範例。
+
+image:diagram-standard-mode.png["這是一個概念性影像、顯示可在其中使用網路型主控台、 SaaS 層和驗證的公用網際網路、是雲端中的虛擬網路、其中 Connector 正在執行和管理 Cloud Volumes ONTAP 、以及內部部署資料中心中的 AFF 叢集。"]
+
+BlueXP 在標準模式下的運作方式如下：
+
+傳出通訊:: 從 Connector 到 BlueXP SaaS 層、雲端供應商的公開資源、以及其他日常營運所需的重要元件、都需要連線。
++
+--
+* link:task-set-up-networking-aws.html#endpoints-contacted-for-day-to-day-operations["連接器在 AWS 中所接觸的端點"]
+* link:task-set-up-networking-azure.html#endpoints-contacted-for-day-to-day-operations["Connector 在 Azure 中連絡的端點"]
+* link:task-set-up-networking-google.html#endpoints-contacted-for-day-to-day-operations["Connector 在 Google Cloud 中連絡的端點"]
+
+
+--
+Connector 支援的位置:: 在標準模式中、 Connector 可在雲端或內部部署中獲得支援。
+連接器安裝:: 您可以從 BlueXP 的設定精靈、 AWS 或 Azure Marketplace 、或使用安裝程式、在資料中心或雲端的您自己的 Linux 主機上手動安裝 Connector 、來安裝 Connector 。
+連接器升級:: BlueXP 提供 Connector 軟體的自動升級、每月更新一次。
+使用者介面存取:: 使用者介面可從透過 SaaS 層提供的網路型主控台存取。
+API 端點:: API 呼叫會撥打至下列端點： \https://cloudmanager.cloud.netapp.com
+驗證:: 驗證是透過 BlueXP 的雲端服務使用驗證 0 或透過 NetApp 支援網站 （ NSS ）登入來提供。可使用身分識別聯盟。
+支援的 BlueXP 服務:: 所有 BlueXP 服務均可供使用者使用。
+支援的授權選項:: 標準模式支援市場訂閱和 BYOL ；不過、支援的授權選項取決於您使用的 BlueXP 服務。檢閱每項服務的文件、以深入瞭解可用的授權選項。
+如何開始使用標準模式:: 前往 https://console.bluexp.netapp.com["BlueXP 網路型主控台"^] 並註冊。
++
+--
+link:task-quick-start-standard-mode.html["瞭解如何開始使用標準模式"]。
+
+--
+
+
+
+
+== 受限模式
+
+下列映像是受限模式部署的範例。
+
+image:diagram-restricted-mode.png["這是一個概念性影像、顯示可用 SaaS 層和驗證的公用網際網路、連接器執行的雲端中的虛擬網路、並提供對網路型主控台的存取、並在內部部署資料中心中管理 Cloud Volumes ONTAP 和 AFF 叢集。"]
+
+BlueXP 在受限模式下的運作方式如下：
+
+傳出通訊:: 從 Connector 到 BlueXP SaaS 層需要輸出連線、才能使用 BlueXP 資料服務、啟用 Connector 的自動軟體升級、使用驗證 0 型驗證、以及傳送中繼資料以進行充電（儲存 VM 名稱、分配的容量、以及 Volume UUID 、類型和 IOPS ）。
++
+--
+BlueXP SaaS 層不會啟動與 Connector 的通訊。所有通訊都是由 Connector 起始、可視需要從 SaaS 層擷取或推送資料至 SaaS 層。
+
+也需要從區域內連線至雲端供應商資源。
+
+--
+Connector 支援的位置:: 在受限模式下、 Connector 在雲端中受到支援：在政府區域、主權區域或商業區域中。
+連接器安裝:: 您可以從 AWS 或 Azure Marketplace 安裝 Connector 、或在您自己的 Linux 主機上手動安裝 Connector 。
+連接器升級:: BlueXP 提供 Connector 軟體的自動升級、每月更新一次。
+使用者介面存取:: 使用者介面可從部署於雲端區域的 Connector 存取。
+API 端點:: API 呼叫會撥打至下列端點： \https://cloudmanager.cloud.netapp.com
+驗證:: 驗證是透過 BlueXP 的雲端服務使用驗證 0 提供。也提供身分識別聯盟功能。
+支援的 BlueXP 服務:: BlueXP 支援下列受限模式的儲存和資料服務：
++
+--
+[cols="2*"]
+|===
+| 支援的服務 | 附註 
+
+
+| Amazon FSX for ONTAP Sf | 完全支援 
+
+
+| Azure NetApp Files | 完全支援 
+
+
+| 雲端備份 | 受限於政府區域和商業區域、模式受限。受限模式的主權區域不支援。不支援下列功能：應用程式、虛擬機器和 Kubernetes 。 
+
+
+| 雲端資料感測  a| 
+受限模式的政府地區支援。不支援商業區域或採用限制模式的主權區域。
+
+適用下列限制：
+
+* 無法掃描OneDrive帳戶、SharePoint帳戶和Google雲端硬碟帳戶。
+* Microsoft Azure資訊保護（AIP）標籤功能無法整合。
+
+
+
+
+| Cloud Volumes ONTAP | 完全支援 
+
+
+| 數位錢包 | 您可以使用數位錢包搭配下列受限模式支援的授權選項。 
+
+
+| 內部部署 ONTAP 的叢集 | 支援使用 Connector 進行探索、以及不使用 Connector （直接探索）進行探索。當您發現內部叢集有 Connector 時、就不支援進階檢視（ System Manager ）。 
+
+
+| 複寫 | 受限模式的政府地區支援。不支援商業區域或採用限制模式的主權區域。 
+|===
+--
+支援的授權選項:: 受限模式支援下列授權選項：
++
+--
+* 市場訂閱（每小時和每年合約）
++
+請注意下列事項：
+
++
+** 對於 Cloud Volumes ONTAP 、僅支援容量型授權。
+** 在 Azure 中、政府地區不支援年度合約。
+
+
+* BYOL
++
+對於 Cloud Volumes ONTAP 、 BYOL 支援容量型授權和節點型授權。
+
+
+
+--
+如何開始使用受限模式:: 建立 BlueXP 帳戶時、您必須啟用受限模式。
++
+--
+如果您還沒有帳戶、當您第一次從手動安裝的 Connector 登入 BlueXP 、或是從雲端供應商的市場建立的 Connector 登入時、系統會提示您建立帳戶並啟用受限模式。
+
+如果您已經有帳戶、而且想要建立另一個帳戶、則需要使用 Tenancy API 。
+
+請注意、在 BlueXP 建立帳戶之後、您無法變更限制模式設定。您稍後無法啟用受限模式、之後也無法停用。必須在建立帳戶時設定。
+
+* link:task-quick-start-restricted-mode.html["瞭解如何開始使用受限模式"]。
+* link:task-create-account.html["瞭解如何建立其他 BlueXP 帳戶"]。
+
+
+--
+
+
+
+
+== 私有模式
+
+在私有模式中、您可以在內部部署或雲端上安裝 Connector 、然後使用 BlueXP 管理混合雲中的資料。無法連線至 BlueXP SaaS 層。
+
+下列影像顯示私有模式部署的範例、其中 Connector 安裝在雲端、並同時管理 Cloud Volumes ONTAP 和內部部署 ONTAP 叢集。
+
+image:diagram-private-mode-cloud.png["這是一個概念性映像、顯示正在執行 Connector 的雲端中的虛擬網路、並提供對網路型主控台的存取、並在內部部署資料中心中管理 Cloud Volumes ONTAP 和 AFF 叢集。"]
+
+同時、第二個映像顯示私有模式部署的範例、其中 Connector 安裝在內部部署、管理內部部署 ONTAP 叢集、並提供對支援 BlueXP 資料服務的存取。
+
+image:diagram-private-mode-onprem.png["這是一個概念性影像、顯示內部部署的資料中心、其中 Connector 正在執行、可存取網路型主控台、 BlueXP 資料服務、並正在內部部署資料中心中管理 AFF 叢集。"]
+
+BlueXP 在私有模式下的運作方式如下：
+
+傳出通訊:: 不需要輸出連線。所有套件、相依性和基本元件都會隨附於 Connector 、並從本機機器提供服務。只有在部署 Cloud Volumes ONTAP 時、才需要連線至雲端供應商的公開可用資源。
+Connector 支援的位置:: 在私有模式中、 Connector 可在雲端或內部部署中獲得支援。
+連接器安裝:: 您可以在雲端或內部部署的 Linux 主機上、手動安裝 Connector 。
+連接器升級:: 您需要手動升級 Connector 軟體。Connector 軟體會以未定義的時間間隔發佈至 NetApp 支援網站 。
+使用者介面存取:: 使用者介面可從部署於雲端區域或內部部署的 Connector 存取。
+API 端點:: API 呼叫是針對 Connector 虛擬機器進行的。
+驗證:: 驗證是透過本機使用者管理與存取來提供。驗證並非透過 BlueXP 的雲端服務提供。
+雲端部署中支援的 BlueXP 服務:: 當 Connector 安裝在雲端時、 BlueXP 支援下列私有模式的儲存和資料服務：
++
+--
+[cols="2*"]
+|===
+| 支援的服務 | 附註 
+
+
+| 雲端備份 | 支援於 AWS 和 Azure 商業地區。Google Cloud 或中不支援 https://aws.amazon.com/federal/us-intelligence-community/["AWS C2S/SC2S"^] 或 https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6."^] 
+
+
+| Cloud Volumes ONTAP | 由於無法存取網際網路、因此無法使用下列功能：自動軟體升級、 AutoSupport 和 AWS 成本資訊。 
+
+
+| 數位錢包 | 您可以將 Digital Wallet 與下列支援的授權選項一起用於私有模式。 
+
+
+| 內部部署 ONTAP 的叢集 | 需要從雲端（安裝 Connector 的位置）連線至內部環境。不支援不含 Connector 的探索（直接探索）。 
+|===
+--
+內部部署中支援的 BlueXP 服務:: 當 Connector 安裝在內部部署上時、 BlueXP 支援下列具有私有模式的儲存和資料服務：
++
+--
+[cols="2*"]
+|===
+| 支援的服務 | 附註 
+
+
+| 雲端備份 | 僅支援將內部部署 ONTAP 磁碟區備份及還原至 StorageGRID 系統。https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html["瞭解如何將內部部署 ONTAP 資料備份至 StorageGRID"^] 
+
+
+| 雲端資料感測  a| 
+* 唯一支援的資料來源是您可以在本機探索的資料來源。
++
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html#supported-data-sources["檢視您可以在本機探索的來源"^]
+
+* 不支援需要輸出網際網路存取的功能。
++
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html#limitations["檢視功能限制"^]
+
+
+
+
+
+| 數位錢包 | 您可以將 Digital Wallet 與下列支援的授權選項一起用於私有模式。 
+
+
+| 內部部署 ONTAP 的叢集 | 不支援不含 Connector 的探索（直接探索）。 
+
+
+| 複寫 | 完全支援 
+|===
+--
+支援的授權選項:: 私有模式僅支援 BYOL 。
++
+--
+對於 Cloud Volumes ONTAP BYOL 、僅支援節點型授權。不支援容量型授權。由於無法使用外傳網際網路連線、因此您必須在「數位錢包」中手動上傳 Cloud Volumes ONTAP 授權檔案。
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#add-unassigned-licenses["瞭解如何將授權新增至 Digital Wallet"^]
+
+--
+如何開始使用私有模式:: 您可以從 NetApp 支援網站 下載「離線」安裝程式來使用私有模式。
++
+--
+link:task-quick-start-private-mode.html["瞭解如何開始使用私有模式"]。
+
+--
+
+
+
+
+== 服務與功能比較
+
+下表可協助您快速識別哪些 BlueXP 服務和功能支援受限模式和私有模式。
+
+請注意、某些服務可能受到限制的支援。如需有關限制模式和私有模式如何支援這些服務的詳細資訊、請參閱上述各節。
+
+[cols="33h,33,33"]
+|===
+| BlueXP 服務或功能 | 受限模式 | 私有模式 
+
+
+| Amazon FSX for ONTAP Sf | 是的 | 否 
+
+
+| Amazon S3 | 否 | 否 
+
+
+| 應用程式範本 | 否 | 否 
+
+
+| Azure Blob | 否 | 否 
+
+
+| Azure NetApp Files | 是的 | 否 
+
+
+| 雲端備份 | 是的 | 是的 
+
+
+| 雲端資料感測 | 是的 | 是的 
+
+
+| Cloud Sync | 否 | 否 
+
+
+| 雲端分層 | 否 | 否 
+
+
+| Cloud Volumes ONTAP | 是的 | 是的 
+
+
+| 適用於 Google Cloud Cloud Volumes Service | 否 | 否 
+
+
+| 運算 | 否 | 否 
+
+
+| 數位顧問 | 否 | 否 
+
+
+| 數位錢包 | 是的 | 是的 
+
+
+| E系列 | 否 | 否 
+
+
+| 經濟效益 | 否 | 否 
+
+
+| 全域檔案快取 | 否 | 否 
+
+
+| Google Cloud Storage | 否 | 否 
+
+
+| Kubernetes叢集 | 否 | 否 
+
+
+| 內部 ONTAP 部署的叢集 | 是的 | 是的 
+
+
+| 營運恢復能力 | 否 | 否 
+
+
+| 勒索軟體保護 | 否 | 否 
+
+
+| 複寫 | 是的 | 是的 
+
+
+| StorageGRID | 否 | 否 
+
+
+| 認證資料 | 是的 | 是的 
+
+
+| NSS 帳戶 | 是的 | 否 
+
+
+| 通知 | 是的 | 否 
+
+
+| 時間表 | 是的 | 是的 
+|===

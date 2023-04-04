@@ -1,0 +1,225 @@
+---
+sidebar: sidebar 
+permalink: task-install-private-mode.html 
+keywords: install dark site, deploy dark site, install private mode, deploy private mode, install connector dark site, connector dark site, dark site, private mode, no internet 
+summary: 若要在私有模式中設定 BlueXP 、您需要安裝 Connector 、存取 Connector 上執行的使用者介面來設定 BlueXP 、然後提供雲端權限。 
+---
+= 以私有模式部署 Connector
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+若要在私有模式中設定 BlueXP 、您需要安裝 Connector 、存取 Connector 上執行的使用者介面來設定 BlueXP 、然後提供雲端權限。
+
+
+
+== 安裝Connector
+
+從 NetApp 支援網站 下載產品安裝程式、然後在您自己的 Linux 主機上手動安裝 Connector 。
+
+如果您想在中使用 BlueXP https://aws.amazon.com/federal/us-intelligence-community/["AWS 商業雲端服務（ C2S ）環境"^] 接著、您應該遵循個別指示、開始使用該環境。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-aws-c2s.html["瞭解如何在 AWS C2S 環境中開始使用 Cloud Volumes ONTAP"^]
+
+.必要權限
+需要root權限才能安裝Connector。
+
+.步驟
+. 確認已啟用並執行Docker。
++
+[source, cli]
+----
+sudo systemctl enable docker && sudo systemctl start docker
+----
+. 從下載Connector軟體 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支援網站"^]
++
+請務必下載無網際網路存取的受限網路安裝程式。
+
+. 將安裝程式複製到Linux主機。
+. 指派執行指令碼的權限。
++
+[source, cli]
+----
+chmod +x /path/cloud-manager-connector-offline-<version>
+----
++
+其中、就是您下載的Connector版本<version> 。
+
+. 執行安裝指令碼：
++
+[source, cli]
+----
+sudo /path/cloud-manager-connector-offline-<version>
+----
++
+其中、就是您下載的Connector版本<version> 。
+
+
+
+.結果
+已安裝 Connector 軟體。您現在可以設定 BlueXP 。
+
+
+
+== 設定 BlueXP
+
+第一次存取 BlueXP 主控台時、系統會提示您設定 BlueXP 。
+
+.步驟
+. 開啟網頁瀏覽器並輸入 https://_ipaddress_[] 其中 _ipaddress_ 是您安裝 Connector 的 Linux 主機的 IP 位址。
++
+您應該會看到下列畫面。
+
++
+image:screenshot-onprem-darksite-welcome.png["在網頁瀏覽器中輸入Connector的IP位址之後、會出現歡迎頁面的快照。"]
+
+. 按一下*「設定新的藍圖XP」*、然後依照提示設定系統。
++
+** *系統詳細資料*：輸入Connector的名稱及您的公司名稱。
++
+image:screenshot-onprem-darksite-details.png["系統詳細資料頁面的快照、會提示您輸入BlueXP名稱和公司名稱。"]
+
+** *建立管理使用者*：建立系統的管理使用者。
++
+此使用者帳戶在本機系統上執行。無法透過BlueXP連線至驗證0服務。
+
+** *審查*：檢閱詳細資料、接受授權合約、然後按一下*設定*。
+
+
+. 使用您剛建立的管理使用者登入BlueXP。
+
+
+.結果
+現在已安裝並設定 Connector 。
+
+當新版Connector軟體推出時、這些軟體將發佈至NetApp支援網站。 link:task-managing-connectors.html#upgrade-the-connector-on-prem-without-internet-access["瞭解如何升級Connector"]。
+
+.接下來呢？
+提供 BlueXP 先前設定的權限。
+
+
+
+== 提供 BlueXP 的權限
+
+如果您想要建立 Cloud Volumes ONTAP 工作環境、您必須提供 BlueXP 先前設定的雲端權限。
+
+link:task-prepare-private-mode.html#prepare-cloud-permissions["瞭解如何準備雲端權限"]。
+
+[role="tabbed-block"]
+====
+.AWS IAM 角色
+--
+將您先前建立的 IAM 角色附加至 Connector EC2 執行個體。
+
+.步驟
+. 前往 Amazon EC2 主控台。
+. 選取 * 執行個體 * 。
+. 選取 Connector 執行個體。
+. 選取 * 「動作」 > 「安全性」 > 「修改 IAM 角色」 * 。
+. 選取 IAM 角色、然後按一下 * 更新 IAM 角色 * 。
+
+
+.結果
+BlueXP 現在擁有代表您在 AWS 中執行動作所需的權限。
+
+--
+.AWS 存取金鑰
+--
+為具有必要權限的 IAM 使用者提供 BlueXP AWS 存取金鑰。
+
+.步驟
+. 在BlueXP主控台右上角、按一下「設定」圖示、然後選取*認證*。
++
+image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」圖示的快照。"]
+
+. 按一下*「Add Credential*（新增認證*）」、然後依照精靈中的步驟進行。
++
+.. *認證資料位置*：選取* Amazon Web Services > Connector*。
+.. * 定義認證 * ：輸入 AWS 存取金鑰和秘密金鑰。
+.. *市場訂閱*：立即訂閱或選取現有的訂閱、以建立Marketplace訂閱與這些認證的關聯。
+.. *審查*：確認新認證資料的詳細資料、然後按一下*新增*。
+
+
+
+
+.結果
+BlueXP 現在擁有代表您在 AWS 中執行動作所需的權限。
+
+--
+.Azure 角色
+--
+前往 Azure 入口網站、將 Azure 自訂角色指派給 Connector 虛擬機器、以進行一或多個訂閱。
+
+.步驟
+. 從 Azure Portal 開啟 * Subscriptions * 服務、然後選取您的訂閱。
+. 按一下*存取控制（IAM）*>*新增*>*新增角色指派*。
+. 在「*角色*」索引標籤中、選取「*藍圖XP操作員*」角色、然後按一下「*下一步*」。
++
+
+NOTE: BlueXP運算子是在BlueXP原則中提供的預設名稱。如果您為角色選擇不同的名稱、請改為選取該名稱。
+
+. 在「*成員*」索引標籤中、完成下列步驟：
++
+.. 指派*託管身分識別*的存取權。
+.. 按一下*選取成員*、選取建立連接器虛擬機器的訂閱、選擇*虛擬機器*、然後選取連接器虛擬機器。
+.. 按一下*選取*。
+.. 單擊 * 下一步 * 。
+.. 按一下「*檢閱+指派*」。
+.. 如果您想要從 Cloud Volumes ONTAP 其他訂閱中部署、請切換至該訂閱、然後重複這些步驟。
+
+
+
+
+.結果
+BlueXP 現在擁有代表您在 Azure 中執行動作所需的權限。
+
+--
+.Azure 服務主體
+--
+為 BlueXP 提供您先前設定的 Azure 服務主體認證。
+
+.步驟
+. 在BlueXP主控台右上角、按一下「設定」圖示、然後選取*認證*。
++
+image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」圖示的快照。"]
+
+. 按一下*「Add Credential*（新增認證*）」、然後依照精靈中的步驟進行。
++
+.. *認證位置*：選擇* Microsoft Azure > Connector*。
+.. *定義認證*：輸入Azure Active Directory服務主體的相關資訊、以授予必要的權限：
++
+*** 應用程式（用戶端）ID
+*** 目錄（租戶）ID
+*** 用戶端機密
+
+
+.. *市場訂閱*：立即訂閱或選取現有的訂閱、以建立Marketplace訂閱與這些認證的關聯。
+.. *審查*：確認新認證資料的詳細資料、然後按一下*新增*。
+
+
+
+
+.結果
+BlueXP 現在擁有代表您在 Azure 中執行動作所需的權限。
+
+--
+.Google Cloud 服務帳戶
+--
+將服務帳戶與 Connector VM 建立關聯。
+
+.步驟
+. 前往 Google Cloud 入口網站、將服務帳戶指派給 Connector VM 執行個體。
++
+https://cloud.google.com/compute/docs/access/create-enable-service-accounts-for-instances#changeserviceaccountandscopes["Google Cloud 文件：變更執行個體的服務帳戶和存取範圍"^]
+
+. 如果您要在其他專案中部署 Cloud Volumes ONTAP 、請將具有 BlueXP 角色的服務帳戶新增至該專案、以授予存取權。您必須針對每個專案重複此步驟。
+
+
+.結果
+BlueXP 現在擁有代表您在 Google Cloud 中執行動作所需的權限。
+
+--
+====

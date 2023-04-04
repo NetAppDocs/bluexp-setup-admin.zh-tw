@@ -22,7 +22,12 @@ BlueXP需要權限才能在Google Cloud中執行動作。這些權限包含在Ne
 
 下方顯示的自訂角色提供Connector在Google Cloud網路中管理資源和程序所需的權限。
 
-您必須將此自訂角色套用至連接器VM的服務帳戶。 link:task-creating-connectors-gcp.html["檢視逐步指示"]。
+您必須將此自訂角色套用至連接器VM的服務帳戶。
+
+* link:task-set-up-permissions-google.html["設定標準模式的權限"]
+* link:task-prepare-restricted-mode.html#prepare-cloud-permissions["設定受限模式的權限"]
+* https://review.docs.netapp.com/us-en/cloud-manager-setup-admin_feb-2022-modes/task-prepare-private-mode.html#prepare-cloud-permissions["設定私有模式的權限"]
+
 
 您也必須確保在後續版本中新增權限時、該角色是最新的。
 

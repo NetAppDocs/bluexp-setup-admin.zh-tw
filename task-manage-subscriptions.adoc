@@ -34,7 +34,7 @@ Digital Wallet提供每份PAYGO訂閱的詳細資料、以及與您的BlueXP帳�
 +
 image:screenshot-subscriptions-expand.png["數位錢包中「訂閱」索引標籤的快照、您可以在其中選取列末端的箭頭加以展開。"]
 
-** 按一下 image:icon-column-selector.png["表格標題結尾的加號圖示"] 可選擇表格中顯示的列。
+** 選取 image:icon-column-selector.png["表格標題結尾的加號圖示"] 可選擇表格中顯示的列。
 +
 請注意、「字詞」和「自動更新」欄預設不會出現。「自動更新」欄僅顯示Azure合約的續約資訊。
 
@@ -70,9 +70,9 @@ image:screenshot-subscriptions-expand.png["數位錢包中「訂閱」索引標�
 .步驟
 . 從BlueXP導覽功能表中、選取*管理>數位錢包*。
 . 選擇*訂閱*。
-. 按一下您要管理之訂閱對應列中的動作功能表。
+. 選取您要管理之訂閱的對應列中的動作功能表。
 +
 image:screenshot-subscription-menu.png["訂閱的動作功能表快照。"]
 
-. 選擇重新命名訂閱、或管理與訂閱相關的NetApp帳戶。
+. 選擇重新命名訂閱、或管理與訂閱相關的 BlueXP 帳戶。
 

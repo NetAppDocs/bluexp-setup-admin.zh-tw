@@ -1,0 +1,139 @@
+---
+sidebar: sidebar 
+permalink: task-install-connector-on-prem.html 
+keywords: install connector, on prem connector installation, on prem connector, install connector on prem, manual install 
+summary: 在內部部署安裝 Connector 、然後登入並設定以搭配 BlueXP 帳戶使用。 
+---
+= 在內部環境中安裝並設定 Connector
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+在內部部署安裝 Connector 、然後登入並設定以搭配 BlueXP 帳戶使用。
+
+
+
+== 安裝Connector
+
+在內部部署的現有 Linux 主機上下載並安裝 Connector 軟體。
+
+.您需要的產品
+* 安裝Connector的root權限。
+* Proxy伺服器的詳細資料、如果需要Proxy才能從Connector存取網際網路。
++
+您可以選擇在安裝後設定Proxy伺服器、但需要重新啟動Connector。
+
+* CA 簽署的憑證（如果 Proxy 伺服器使用 HTTPS 或 Proxy 是攔截 Proxy ）。
+
+
+.關於這項工作
+* 安裝會安裝 AWS 命令列工具（ awscli ）、以啟用 NetApp 支援的還原程序。
++
+如果您收到安裝 awscli 失敗的訊息、您可以放心忽略該訊息。無需使用工具、連接器即可順利運作。
+
+* NetApp 支援網站上提供的安裝程式可能是較早的版本。安裝後、如果有新版本可用、 Connector 會自動自行更新。
+
+
+.步驟
+. 確認已啟用並執行Docker。
++
+[source, cli]
+----
+sudo systemctl enable docker && sudo systemctl start docker
+----
+. 如果主機上已設定_http或_https或proxy_系統變數、請將其移除：
++
+[source, cli]
+----
+unset http_proxy
+unset https_proxy
+----
++
+如果您未移除這些系統變數、安裝將會失敗。
+
+. 從下載Connector軟體 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支援網站"^]，然後將其複製到 Linux 主機。
++
+您應該下載「線上」 Connector 安裝程式、以供您的網路或雲端使用。Connector 有獨立的「離線」安裝程式、但僅支援私有模式部署。
+
+. 指派執行指令碼的權限。
++
+[source, cli]
+----
+chmod +x OnCommandCloudManager-<version>
+----
++
+其中、就是您下載的Connector版本<version> 。
+
+. 執行安裝指令碼。
++
+[source, cli]
+----
+ ./OnCommandCloudManager-<version> --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
+----
++
+-Proxy和--cacert參數是可選的。如果您有Proxy伺服器、則必須輸入所示的參數。安裝程式不會提示您提供Proxy的相關資訊。
+
++
+以下是使用兩個選用參數的命令範例：
+
++
+[source, cli]
+----
+ ./OnCommandCloudManager-V3.9.26 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+----
++
+-Proxy會使用下列其中一種格式、將Connector設定為使用HTTP或HTTPS Proxy伺服器：
+
++
+** \http://address:port
+** \http://username:password@address:port
+** \https://address:port
+** \https://username:password@address:port
+
+
++
+-cacert指定用於連接器與Proxy伺服器之間HTTPS存取的CA簽署憑證。只有當您指定 HTTPS Proxy 伺服器或 Proxy 是攔截 Proxy 時、才需要此參數。
+
+
+
+.結果
+現在已安裝Connector。安裝結束時、如果您指定Proxy伺服器、Connector服務（occm）會重新啟動兩次。
+
+
+
+== 設定Connector
+
+註冊或登入、然後設定Connector以使用您的帳戶。
+
+.步驟
+. 開啟網頁瀏覽器並輸入下列 URL ：
++
+https://_ipaddress_[]
+
++
+_ipaddress_ 可以是 localhost 、私有 IP 位址或公有 IP 位址、視主機的組態而定。例如、如果連接器位於沒有公有 IP 位址的公有雲中、您必須輸入連接至連接器主機之主機的私有 IP 位址。
+
+. 註冊或登入。
+. 登入之後、請設定BlueXP：
++
+.. 指定與 Connector 相關聯的 BlueXP 帳戶。
+.. 輸入系統名稱。
+.. 在 * 您是在安全的環境中執行？ * 保持停用限制模式。
++
+您應該保持停用受限模式、因為這些步驟說明如何在標準模式中使用 BlueXP 。（此外、當 Connector 安裝在內部部署時、不支援受限模式。）
+
+.. 按一下 * 開始 * 。
+
+
+
+
+.結果
+BlueXP 現在已設定好您剛安裝的 Connector 。
+
+.接下來呢？
+link:task-provide-permissions-on-prem.html["提供 BlueXP 先前設定的權限"]。

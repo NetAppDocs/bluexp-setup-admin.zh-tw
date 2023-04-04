@@ -53,7 +53,7 @@ Compliance Viewer角色適用於唯讀的Cloud Data Sense存取。
 | 建立連接器 | 是的 | 否 | 否 | 否 
 
 
-| 管理NetApp帳戶 | 是的 | 否 | 否 | 否 
+| 管理 BlueXP 帳戶 | 是的 | 否 | 否 | 否 
 
 
 | 管理認證資料 | 是的 | 否 | 否 | 否 
@@ -69,11 +69,8 @@ Compliance Viewer角色適用於唯讀的Cloud Data Sense存取。
 
 
 | 安裝 HTTPS 憑證 | 是的 | 否 | 否 | 否 
-
-
-| 使用SnapCenter 《支援服務 | 是的 | 是的 | 否 | 是的 
 |===
 .相關連結
-* link:task-setting-up-netapp-accounts.html["在NetApp帳戶中設定工作區和使用者"]
-* link:task-managing-netapp-accounts.html["管理NetApp帳戶中的工作區和使用者"]
+* link:task-setting-up-netapp-accounts.html["在 BlueXP 帳戶中設定工作區和使用者"]
+* link:task-managing-netapp-accounts.html["管理 BlueXP 帳戶中的工作區和使用者"]
 

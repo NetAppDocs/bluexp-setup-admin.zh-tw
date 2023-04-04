@@ -1,0 +1,39 @@
+---
+sidebar: sidebar 
+permalink: task-create-account.html 
+keywords: create account, account, create, create another account, tenancy account, tenancy, tenancy account creation 
+summary: 當您註冊 BlueXP 時、系統會提示您為組織建立帳戶。您可能只需要這個帳戶、但如果您的企業需要多個帳戶、則需要使用 Tenancy API 來建立其他帳戶。 
+---
+= 建立另一個 BlueXP 帳戶
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+當您註冊 BlueXP 時、系統會提示您為組織建立帳戶。您可能只需要這個帳戶、但如果您的企業需要多個帳戶、則需要使用 Tenancy API 來建立其他帳戶。
+
+使用下列 API 呼叫建立其他 BlueXP 帳戶：
+
+貼文 `/tenancy/account/{accountName}`
+
+如果您想要啟用受限模式、則需要在要求本文中包含下列項目：
+
+[source, JSON]
+----
+{
+  "isSaasDisabled": true
+}
+----
+
+NOTE: BlueXP 建立帳戶後、您無法變更限制模式設定。您稍後無法啟用受限模式、之後也無法停用。必須在建立帳戶時設定。
+
+https://docs.netapp.com/us-en/cloud-manager-automation/tenancy/post-tenancy-account-.html["瞭解如何使用此 API 呼叫"^]
+
+.相關連結
+* link:concept-netapp-accounts.html["瞭解 BlueXP 帳戶"]
+* link:concept-modes.html["瞭解 BlueXP 部署模式"]
+

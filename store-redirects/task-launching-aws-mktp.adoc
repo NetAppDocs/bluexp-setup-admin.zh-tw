@@ -1,0 +1,8 @@
+---
+permalink: task-launching-aws-mktp.html 
+redirect: cloud-manager-setup-admin/task-install-connector-aws.html 
+---
+= 
+:allow-uri-read: 
+
+

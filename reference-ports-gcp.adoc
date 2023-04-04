@@ -34,7 +34,7 @@ Connector的Google Cloud防火牆規則需要傳入和傳出規則。
 | HTTPS | 443.. | 提供 HTTPS 存取、從用戶端網頁瀏覽器存取本機使用者介面 
 
 
-| TCP | 3128 | 提供可存取網際網路的功能、將資訊傳送給NetApp支援部門。Cloud Volumes ONTAP AutoSupport您必須在部署後手動開啟此連接埠。 <<Proxy server for AutoSupport messages,深入瞭解Connector的Proxy伺服器>>。 
+| TCP | 3128 | 提供可存取網際網路的功能、將資訊傳送給NetApp支援部門。Cloud Volumes ONTAP AutoSupport您必須在部署後手動開啟此連接埠。 
 |===
 
 
@@ -72,7 +72,7 @@ NOTE: 來源 IP 位址為 Connector 主機。
 | 服務 | 傳輸協定 | 連接埠 | 目的地 | 目的 
 
 
-| API 呼叫與 AutoSupport 功能 | HTTPS | 443.. | 傳出網際網路和 ONTAP 叢集管理 LIF | API會呼叫GCP和ONTAP VMware、Cloud Data Sense、勒索軟體服務、並將AutoSupport 此訊息傳送給NetApp 
+| API 呼叫與 AutoSupport 功能 | HTTPS | 443.. | 傳出網際網路和 ONTAP 叢集管理 LIF | API 呼叫 Google Cloud 和 ONTAP 、雲端資料感應、勒索軟體服務、並傳送 AutoSupport 訊息給 NetApp 
 
 
 | API 呼叫 | TCP | 8080 | 資料感知 | 在部署期間探查資料偵測執行個體 

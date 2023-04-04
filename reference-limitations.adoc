@@ -44,7 +44,7 @@ BlueXP不支援啟用SSL解密的防火牆組態。如果啟用SSL解密、則�
 
 === 載入本機UI時顯示空白頁面
 
-如果您載入連接器的本機使用者介面、UI有時可能無法顯示、您只會看到空白頁面。
+如果您載入在 Connector 上執行的 Web 型主控台、介面可能會有時無法顯示、只會出現空白頁面。
 
 此問題與快取問題有關。因應措施是使用無痕式或私有網路瀏覽器工作階段。
 
@@ -59,19 +59,3 @@ BlueXP不支援啟用SSL解密的防火牆組態。如果啟用SSL解密、則�
 === 第三方代理程式與擴充功能
 
 Connector VM不支援協力廠商代理程式或VM擴充。
-
-
-
-== SaaS限制
-
-
-
-=== SaaS 平台在政府區域中已停用
-
-如果您在AWS GovCloud區域、Azure Gov區域或Azure DoD區域部署Connector、則只能透過Connector的主機IP位址存取BlueXP。系統會停用整個帳戶的 SaaS 平台存取權。
-
-這表示只有能夠存取終端使用者內部VPC/vnet的授權使用者、才能使用BlueXP的UI或API。
-
-請注意、這些地區僅支援Cloud Volumes ONTAP 的服務包括：功能完善、雲端備份、雲端資料認證及複寫。政府區域不支援其他NetApp服務。
-
-link:task-managing-connectors.html#access-the-local-ui["瞭解如何存取Connector上的本機UI"]。
