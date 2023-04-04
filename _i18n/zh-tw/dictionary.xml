@@ -303,7 +303,6 @@
   <block id="baa9dd166d2a7f1d62e78a829f4b35a6" category="section-title">Marketplace 部署和內部部署呢？</block>
   <block id="a4542ce435b67066671321f478dce8cc" category="paragraph">如果您使用 Marketplace 、則會以相同方式提供權限。您只需要手動建立和設定 IAM 角色、然後為任何其他帳戶提供權限。</block>
   <block id="70bfaa19a89e29bf0fc2b34b8f3150ba" category="section-title">我該如何安全地旋轉 AWS 認證資料？</block>
-  <block id="8c9f2181d82b2f6caedb70061e845851" category="inline-link-macro">瞭解部署Connector的其他方法</block>
   <block id="f6c634614114f28ad6651cf4345c81a6" category="paragraph">Connector 軟體必須在符合特定作業系統需求、 RAM 需求、連接埠需求等的主機上執行。</block>
   <block id="3e54bf758f50b15d709edd166d8bf82b" category="list-text">與其他應用程式共用的主機不支援 Connector 。主機必須是專屬主機。</block>
   <block id="2b55387dd066c5bac646ac61543d152d" category="list-text">CPU</block>
@@ -643,16 +642,10 @@
   <block id="f3c300467d5973dfb4bb4ac50c1635b4" category="list-text">按一下*選取成員*、選取建立連接器虛擬機器的訂閱、選擇*虛擬機器*、然後選取連接器虛擬機器。</block>
   <block id="a2396693254d9ec35f0b6faa885e8f58" category="list-text">按一下*選取*。</block>
   <block id="14a3ec4432f577b0adffd0ed91b508cd" category="list-text">如果您想要從 Cloud Volumes ONTAP 其他訂閱中部署、請切換至該訂閱、然後重複這些步驟。</block>
-  <block id="56871f8b2603f3216127f57d5542b3ae" category="section-title">設定AWS驗證</block>
-  <block id="30db7b9fd99be0ab8460cabb34938d21" category="section-title">設定IAM角色</block>
   <block id="0e78dc7220ea8b6abafe6ef7aaad9998" category="list-text">前往目標帳戶中的AWS IAM主控台。</block>
   <block id="7f4640b00b5df83a54d4aaaa51f7d6ab" category="list-text">在「存取管理」下、按一下*「角色」&gt;「建立角色」*、然後依照步驟建立角色。</block>
   <block id="e1a3d580d5cb42904b96dc05c0e0903d" category="paragraph">請務必執行下列動作：</block>
   <block id="e506de832b98c2693eb3f400ef0722c0" category="list-text">在*信任的實體類型*下、選取* AWS帳戶*。</block>
-  <block id="d47c23803528fa45fad33a3f83dfcf54" category="paragraph">IAM角色現在擁有所需的權限。</block>
-  <block id="c3f217f9a4bf83b62b55576a453f4e95" category="section-title">設定IAM使用者的權限</block>
-  <block id="90f42b795a98a48d78b53e8d6d353987" category="paragraph">建立Connector時、您可以為具有部署Connector執行個體所需權限的IAM使用者、提供AWS存取金鑰和秘密金鑰。</block>
-  <block id="2148f456d9af28f7a3c6836b09b86d79" category="list-text">確保您有權存取IAM使用者的存取金鑰和秘密金鑰。</block>
   <block id="94ee7072c2750da1997438a715efb7d4" category="section-title">建立連接器</block>
   <block id="7cddf1ab764729128f3c7130203d73a0" category="list-text">選擇* Amazon Web Services*做為您的雲端供應商、然後按一下*繼續*。</block>
   <block id="8b8f36850755c4ac43a0df238add8748" category="inline-link-macro">瞭解如何新增其他認證資料</block>
@@ -1239,8 +1232,6 @@
   <block id="df00618b6e4c6f7fcb9a7fbb4c65b54e" category="list-text"><block ref="df00618b6e4c6f7fcb9a7fbb4c65b54e" category="inline-link-rx"></block></block>
   <block id="d2ec6bce44b6da11cd78a79db47dd385" category="inline-link-macro">檢視Connector部署原則</block>
   <block id="4964e9eef6df2fe316a2618afd8cd963" category="list-text">為具有所需權限的IAM使用者提供AWS存取金鑰和秘密金鑰</block>
-  <block id="176c8e3e6fabfa396e8a23e04654324a" category="paragraph">無論使用哪一個選項、您都必須先建立包含所需權限的IAM原則。</block>
-  <block id="0fdc81bb400ca1e69ba8ff758bfa0311" category="section-title">建立IAM原則</block>
   <block id="1e71ce7defc90d8f5a2c46c08ba968df" category="list-text">前往AWS IAM主控台。</block>
   <block id="cda6184a38ec01634b0cabf02341cb56" category="list-text">按一下*原則&gt;建立原則*。</block>
   <block id="b52a6ab6cdcb340c9e1189b56821ffd8" category="list-text">按一下「* JSON*」。</block>
@@ -1269,7 +1260,6 @@
   <block id="a4f605cd0aab29ee5fb50f28627cef5d" category="sidebar">權限摘要</block>
   <block id="abc9b009fdeb5b04ca7bcd60cdae2434" category="section-title">AWS權限的使用方式</block>
   <block id="c6705240238244043d7e0d39f6ce1db1" category="section-title">應用程式範本標記</block>
-  <block id="8d0d51d4047979af669daac866df81ec" category="inline-link-macro">深入瞭解如何運用此工作環境</block>
   <block id="8038b7f4543340933f0702ca9be2c9c5" category="paragraph">您可以查看Azure儲存帳戶的詳細資料、包括位置、資源群組、總容量和已用容量等。這些帳戶可做為雲端備份、雲端分層或Cloud Sync 還原作業的目的地。</block>
   <block id="4fa9fc9591ffa247eeef55070b3327a0" category="paragraph">您應該很快就會自動看到Azure Blob的工作環境。</block>
   <block id="2ed919302195764ff313fc8d75b59525" category="inline-image-macro">Azure Blob工作環境的快照。</block>
@@ -1303,9 +1293,6 @@
   <block id="155ccfd3578c4b827fbaaa1208c5c86a" category="paragraph">在畫版上、「*我的商機*」索引標籤提供集中位置、可讓您探索現有資源、並將這些資源新增至Cloud Manager、以便在混合式多雲端上提供一致的資料服務與作業。</block>
   <block id="0023c752677bd572df55463d76cf9b90" category="inline-link">瞭解如何利用ONTAP My Opportunity探索FSXfor Sfor</block>
   <block id="b8aac0d7b730cae52d7fa6174da69a85" category="paragraph"><block ref="b8aac0d7b730cae52d7fa6174da69a85" category="inline-link-rx"></block></block>
-  <block id="5f174caa182ccf4eda7018d2ae4ed7a0" category="section-title">開啟連接埠3128以顯示AutoSupport 資訊</block>
-  <block id="5fc25795a93f92bfee952eef3220d9e5" category="paragraph">唯一的需求是確保連接器的安全性群組允許連接埠3128上的傳入連線。部署Connector之後、您需要開啟此連接埠。</block>
-  <block id="489db3f339b691ea4dea5f4572483024" category="paragraph">如果您使用預設的資訊安全群組Cloud Volumes ONTAP 來執行此功能、則無需變更其安全群組。但是如果您打算定義嚴格Cloud Volumes ONTAP 的for the Sfor the Sfor the、那麼您也必須確保Cloud Volumes ONTAP 該安全性群組允許連接埠3128上的傳出連線。</block>
   <block id="9998984c95caccce61e49ca25de1c99f" category="paragraph">請注意、註冊表單中只允許英文字元。</block>
   <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">2022年7月31日</block>
   <block id="01f2c0e19d8bbd614814f0651e7feec1" category="section-title">連接器3.9.21</block>
@@ -1347,15 +1334,7 @@
   <block id="6b068f0a943d421535c7d8d412ee3522" category="list-text">E系列系統</block>
   <block id="392d70ca39f31f10bd637936769788df" category="list-text">StorageGRID</block>
   <block id="06ad314b340900d226b1196e1fe289e9" category="section-title">快速入門</block>
-  <block id="91e06e9a9ef97681b798e2e5e007ba97" category="paragraph">請依照下列步驟快速入門、或向下捲動至其餘部分以取得完整詳細資料。</block>
-  <block id="d2b8d6f0cd04659de9813fba0b765319" category="inline-xref">檢視IAM角色</block>
-  <block id="5695f1494bf1a23e4dfb636b83f9663c" category="inline-xref">請依照逐步指示操作</block>
-  <block id="e55593614a7f3a45e77ff97daf29fa18" category="paragraph"><block ref="bd1177e3d8f8248f18d9f01f00d6aa84" category="inline-xref-macro-rx"></block> 或 <block ref="f998d9b8f7fa449c8986f949582854eb" category="inline-xref-macro-rx"></block>。</block>
-  <block id="0adaf59e592ea102330ecf66723d01c0" category="inline-xref">檢視網路需求</block>
-  <block id="e18d3aaf46d9323ec3d44fd9d3878734" category="paragraph"><block ref="77e8c70950b7db505fe53c4bcd55f41a" category="inline-xref-macro-rx"></block>。</block>
-  <block id="e988340d1dfb68e041da5e7a65701097" category="paragraph">按一下「Connector（連接器）」下拉式清單、選取「* Add Connector*（新增連接器*）」、然後依照提示進行</block>
   <block id="cd444a79f98ccbe383b146279f3bb526" category="inline-xref">請依照逐步指示操作</block>
-  <block id="442342eacc7f01318bc860131355649e" category="paragraph"><block ref="ca365c48bf30193bd65b99125fcf8cd5" category="inline-xref-macro-rx"></block>。</block>
   <block id="ab316a3ccbad97726269c9705958262a" category="section-title">設定網路</block>
   <block id="824f455afa0ae197e5e7156988b6dc50" category="section-title">Proxy伺服器</block>
   <block id="75ba8d70e3692ba200f0e0df37b4d2ae" category="list-text">IP 位址</block>
@@ -1477,7 +1456,6 @@
   <block id="f664478fbdfbd15104b014e41c35e88c" category="doc">BlueXP的權限摘要</block>
   <block id="b26840ebf08ae862c7d257c1229a3091" category="paragraph">為了使用BlueXP中的功能和服務、您必須提供權限、以便BlueXP能在雲端環境中執行作業。使用此頁面上的連結、根據您的目標快速存取所需的權限。</block>
   <block id="1570052dc3548215211726a63fbaaf7a" category="cell">從BlueXP建立Connector的使用者需要特定權限、才能在AWS中部署執行個體。</block>
-  <block id="a9b34414733cf4871ed4d1f23b7438dd" category="inline-link-macro">在AWS中從BlueXP建立連接器</block>
   <block id="ed36c10a45b6f1c2c5b5a23a54e905dd" category="cell">必須將IAM角色附加至Cloud Volumes ONTAP AWS中的每個節點。HA中介者也是如此。預設選項是讓BlueXP為您建立IAM角色、但您可以使用自己的角色。</block>
   <block id="bd39c8654fa47d44bbd01a5d81c6197e" category="cell">從BlueXP部署Connector時、您需要使用Azure帳戶或服務主體、該用戶必須具有在Azure中部署Connector VM的權限。</block>
   <block id="80487192abab0ee504d52b82c771727f" category="paragraph">當BlueXP在Azure中部署Connector VM時、它會建立自訂角色、提供必要的權限來管理該Azure訂閱中的資源和程序。</block>
@@ -1580,13 +1558,11 @@
   <block id="efd9710de9c698fbbeb7b7b11597f70b" category="summary">在AWS中安裝Connector之後、BlueXP會自動探索安裝Connector之AWS帳戶中的Amazon S3儲存區相關資訊。Amazon S3工作環境會新增至Canvas、以便您檢視此資訊。</block>
   <block id="69e6c31f6140607f08425260f2faecb5" category="list-text">從導覽功能表中、選取*儲存設備&gt; Canvas*。</block>
   <block id="3747d8dfb456f8cefbe5ea8eed8a4289" category="summary">在Azure中安裝Connector之後、BlueXP會自動探索安裝Connector之Azure訂閱所在Azure中的Azure儲存體帳戶相關資訊。Azure Blob工作環境會新增至Canvased、以便您檢視此資訊。</block>
-  <block id="df8594159163be47b249c18ed219b911" category="summary">BlueXP帳戶管理員必須先部署Connector、才能使用大多數的BlueXP功能。Connector讓BlueXP能夠管理公有雲環境中的資源和程序。</block>
   <block id="6596ec425be852d6a717fb02e701c2b2" category="list-text">成員：serviceAccount.user的BlueXP服務帳戶</block>
   <block id="ae01528f579ff3037811a74d75459f03" category="cell">代表部署與Google Cloud API互動。允許BlueXP使用共享網路。</block>
   <block id="eb989e3bf7181ed67c5a8beeb875559d" category="cell">代表部署部署部署部署Google Cloud執行個體和運算基礎架構。允許BlueXP使用共享網路。</block>
   <block id="b9097aaa33eb5691bfd95d679a856942" category="list-text">只有當您未將防火牆規則傳遞給部署、並選擇讓BlueXP為您建立時、才需要在主機專案中部署manager.manager。如果未指定任何規則、則BlueXP會在主機專案中建立包含VPC0防火牆規則的部署。</block>
   <block id="4b32545acb84a8a99e56ccc813199881" category="list-text">只有當您未將防火牆規則傳遞至部署、並選擇讓BlueXP為您建立防火牆規則時、才需要使用Firewall.create和firewall.delete。這些權限位於BlueXP帳戶.yaml檔案中。如果您使用共用VPC部署HA配對、這些權限將用於建立VPC1、2和3的防火牆規則。對於所有其他部署、這些權限也會用於建立VPC0的規則。</block>
-  <block id="9103937d6e94a5d3e88276d85254bdff" category="paragraph">如果您計畫在Cloud Volumes ONTAP 無法連上傳出網際網路連線的子網路中部署「還原」系統、則BlueXP會自動將Cloud Volumes ONTAP 「還原」設定為使用「連接器」做為Proxy伺服器。</block>
   <block id="0e4e5198cc4ce7f534d554683573c921" category="summary">當BlueXP在AWS中啟動Connector執行個體時、它會將原則附加到執行個體、讓Connector有權限管理該AWS帳戶內的資源和程序。連接器使用權限來撥打API呼叫數個AWS服務、包括EC2、S3、CloudForecation、IAM、 金鑰管理服務等。</block>
   <block id="30782d3f448f611988824827b71e6b96" category="paragraph">當BlueXP在AWS中啟動Connector執行個體時、它會將原則附加到執行個體、讓Connector有權限管理該AWS帳戶內的資源和程序。連接器使用權限來撥打API呼叫數個AWS服務、包括EC2、S3、CloudForecation、IAM、 金鑰管理服務（KMS）等。</block>
   <block id="fa63e1e893cffd937dfc1bfa0546daf3" category="summary">您可以監控BlueXP執行的作業狀態、查看是否有任何需要解決的問題。您可以在「通知中心」、「時間表」中檢視狀態、或將通知傳送至您的電子郵件。</block>
@@ -1699,17 +1675,10 @@
   <block id="a74d4f6da1f4962caa974b5e68852f05" category="admonition">當您移至「NSS管理」頁面時、BlueXP會為表格中的每個帳戶產生一個權杖。該權杖包含相關電子郵件地址的相關資訊。當您離開頁面時、便會移除權杖。這些資訊永遠不會快取、有助於保護您的隱私。</block>
   <block id="c7a6c5419388c54dd17826c0c6b4dc85" category="paragraph">BlueXP會顯示NetApp 支援網站 不完整的使用者名稱及相關的電子郵件地址。您可以使用複製按鈕來複製電子郵件地址。</block>
   <block id="09e40761f22ee02fc6f59d79db4d6f93" category="paragraph">刪除任何不再想與BlueXP搭配使用的NSS帳戶。</block>
-  <block id="2ff3310af3f7a8c23232832947eccc41" category="paragraph">若要在AWS中啟動Connector、BlueXP必須透過擔任IAM角色或使用AWS存取金鑰來驗證AWS。無論使用哪一種選項、都需要IAM原則。</block>
   <block id="92c5959c8282fd63c3afcbd1c9b13f51" category="paragraph">在您的VPC中部署Connector執行個體之前、BlueXP必須先與AWS進行驗證。您可以選擇下列其中一種驗證方法：</block>
   <block id="61f21c125c1220d8643bea1729345e36" category="list-text">讓BlueXP承擔具有所需權限的IAM角色</block>
-  <block id="782bf08b977691510ad6220ddda7dc2d" category="paragraph">此原則僅包含從BlueXP啟動AWS中Connector執行個體所需的權限。請勿在其他情況下使用此原則。</block>
-  <block id="b8cae782ec5760ca071bf60dc8b10fc8" category="paragraph">當BlueXP建立Connector時、它會套用一組新的權限至Connector執行個體、讓Connector能夠管理公有雲環境中的資源。</block>
-  <block id="88028c3bf97d66cf5d9fa29f350501ef" category="paragraph">將原則附加至BlueXP可以承擔的IAM角色、或附加至IAM使用者。</block>
-  <block id="4abc539bef0053499f9b90f474acb246" category="paragraph">設定BlueXP可以承擔的IAM角色、以便在AWS中部署Connector。</block>
   <block id="b3c7a22f0973e84651078c58ec8c36f6" category="list-text">選取*其他AWS帳戶*、然後輸入BlueXP SaaS帳戶的ID：95201331444</block>
   <block id="b132a51c84b6101c058abbb40225f87d" category="list-text">建立角色之後、請複製角色ARN、以便在建立Connector時將其貼到BlueXP中。</block>
-  <block id="1d997a8ae52644df9be2a609b1d4cd43" category="paragraph">AWS使用者現在擁有從BlueXP建立Connector所需的權限。當您收到BlueXP的提示時、您需要為此使用者指定AWS存取金鑰。</block>
-  <block id="6704f089a6ca354d1ae9f58d8df2ab41" category="paragraph">BlueXP可讓您直接從AWS的使用者介面建立連接器。</block>
   <block id="694fc44336d7d79e22d661cd3051861e" category="list-text">* AWS認證資料*：指定您的AWS區域、然後選擇驗證方法、這是BlueXP可以承擔的IAM角色、或是AWS存取金鑰和秘密金鑰。</block>
   <block id="a91e6553337808a75b0f62d2990d028b" category="list-text">選擇是否要讓BlueXP建立具有所需權限的新角色、或是要選取您所設定的現有角色 <block ref="8b098a06817becf62c06297dd76999b5" category="inline-link-macro-rx"></block>。</block>
   <block id="7c9b14f6116e140202c359bff8bc86c2" category="inline-link">AWS Marketplace上的BlueXP頁面</block>
@@ -1972,11 +1941,9 @@
   <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">開始之前</block>
   <block id="1bc21092e961975ea4123f4414693f69" category="section-title">不支援SSL解密</block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">一</block>
-  <block id="38850c0d5ada5706d4546808821a96d1" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 設定驗證</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">二</block>
   <block id="0acd6f364c67bcef47587e5727525116" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> 設定網路</block>
   <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">三</block>
-  <block id="aea46324800b152c6a50caff1d14e2fc" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 建立連接器</block>
   <block id="58eaebf972358f1cf03d386a4ade1a0f" category="paragraph-title">接下來呢？</block>
   <block id="eb9bb09a006b6e7bcc7d0b9525344bcf" category="section-title">編輯連接器的URI</block>
   <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">四</block>
@@ -1998,11 +1965,6 @@
   <block id="0e304d528ea3fafc4ceebb3dd322c283" category="list-text">\https://username:password@address:port</block>
   <block id="32a79a3da73e9b7dab502ea9e60bf1a5" category="section-title">設定Connector</block>
   <block id="9679c37d1ece85e4705ecd886aca356e" category="paragraph">註冊或登入、然後設定Connector以使用您的帳戶。</block>
-  <block id="bdf21bb8cfe7ab9d40f2a425c4b3b3d2" category="paragraph">BlueXP帳戶管理員必須先部署_Connector_、才能使用大多數的BlueXP功能。Connector讓BlueXP能夠管理公有雲環境中的資源和程序。</block>
-  <block id="2e8e562450aa2519f49cd0db32ef65de" category="inline-link-macro">瞭解如何在政府區域中部署Connector</block>
-  <block id="7f86b05bc7243efe06f8812a8de60993" category="list-text"><block ref="7f86b05bc7243efe06f8812a8de60993" category="inline-link-macro-rx"></block></block>
-  <block id="f56df5f8b4fd558a7482d6115403eadd" category="list-text"><block ref="f56df5f8b4fd558a7482d6115403eadd" category="inline-link-macro-rx"></block></block>
-  <block id="4c8996b4b6a0d48752377c7e6f5e0168" category="paragraph">這些步驟說明如何直接從BlueXP SaaS網站在AWS商業區域建立連接器。</block>
   <block id="973e3a2a390bb57ce9d9e16ac0145023" category="paragraph"><block ref="973e3a2a390bb57ce9d9e16ac0145023" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ff6e28c8eaa73c74f132f30b8a504071" category="list-text">/opp/application/NetApp/cloudmanager/log or</block>
   <block id="f41aa0898b72dcd91cd63bd3d33d4258" category="list-text">/opp/application/NetApp/service-manager-2/logs（從全新3.9.23安裝開始）</block>
@@ -2092,13 +2054,11 @@
   <block id="dae5521ccadea1321150f5f74aad0a58" category="paragraph">如果您的組織需要為所有傳出的網際網路流量部署Proxy伺服器、請取得下列有關HTTP或HTTPS Proxy的資訊：</block>
   <block id="eea7ea20469c0fce0042b06e0bb1327a" category="list-text">若貴組織需要代理處理所有傳出的網際網路流量、請參閱Proxy伺服器的詳細資料：</block>
   <block id="5ecf1d4c60139fd535d59e1ca3b91b76" category="paragraph">Connector會提出下列API要求、要求在Cloud Volumes ONTAP Azure中部署及管理功能。</block>
-  <block id="7e3934b4ea56939b597edfcf84aa4803" category="paragraph">您將需要VPC和子網路、並可從網際網路連線至特定端點。如果傳出網際網路需要Proxy伺服器、則您需要IP位址、認證和HTTPS憑證。</block>
   <block id="146adb7944757e88795676b780c31811" category="doc">設定連接器以使用Proxy伺服器</block>
   <block id="9d8704731bd068bd3be5ad98b7941cba" category="paragraph">BlueXP支援HTTP和HTTPS。Proxy 伺服器可以位於雲端或網路中。</block>
   <block id="30d7902c191c571f1aa091af3df65f3d" category="paragraph">如果無法使用公用IP位址或NAT閘道、設定連接器使用Proxy伺服器可提供傳出網際網路存取。此Proxy伺服器僅提供連接器與傳出連線。它不提供Cloud Volumes ONTAP 任何連接功能給不適用的系統。</block>
   <block id="66dcf6df2e799ff19e8fe5b0ed10a143" category="paragraph">如果Cloud Volumes ONTAP 無法透過外部網際網路連線來傳送AutoSupport 各種消息、則BlueXP會自動將這些Cloud Volumes ONTAP 系統設定為使用連接器隨附的Proxy伺服器。唯一的需求是確保連接器的安全群組允許透過連接埠3128進行傳入連線。部署Connector之後、您需要開啟此連接埠。</block>
   <block id="25e8eb6a683e97e04e337e061a18205c" category="list-text">使用語法指定伺服器<block ref="f8f3e404ad5e32f60f55bb48e6395ae6" category="inline-link-rx"></block> 或<block ref="9ab29a9097f3907435367cc314192885" category="inline-link-rx"></block></block>
-  <block id="5b2b679cfd4361d102ffc80defe9709e" category="list-text">*網路*：指定執行個體的VPC、子網路和金鑰配對、選擇是否啟用公用IP位址、以及選擇性地指定Proxy組態（支援HTTP和HTTPS）。</block>
   <block id="6bd6b829c865d2a64a85e79355655e12" category="cell">9060、9061</block>
   <block id="35189ab5714b42941b6c22320f395243" category="list-text">若要將認證資料與現有訂閱建立關聯、請從下拉式清單中選取訂閱、然後按一下「*關聯*」。</block>
   <block id="7f024bcfe9b965209454c94e48004d5d" category="list-text">若要將認證資料與新訂閱建立關聯、請按一下*新增訂閱&gt;繼續*、然後依照Azure Marketplace中的步驟進行：</block>
@@ -2277,7 +2237,6 @@
   <block id="7b82c8bb5f712b74fd5cab9947ae81fb" category="cell">某些VM部署所需的資源、視基礎實體硬體而定</block>
   <block id="93850b8e1d97181700833dcae4c7e219" category="paragraph"><block ref="93850b8e1d97181700833dcae4c7e219" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ea59f5a18533f0723be7342656f4c831" category="paragraph">您可以檢視S3儲存區的詳細資料、包括地區、存取原則、帳戶、總容量和已用容量等。這些儲存庫可做為雲端備份、雲端分層或Cloud Sync 還原作業的目的地。此外、您也可以使用Cloud Data Sense來掃描這些儲存區。</block>
-  <block id="10a7432528d1253e1f27cd183ae759a7" category="paragraph">如果您在建立Connector的同一個AWS帳戶中有Amazon S3儲存區、則會在畫版上自動顯示Amazon S3工作環境。<block ref="eb59da80ee57b828e1255dafd1c2c796" category="inline-link-rx"></block>。</block>
   <block id="d564f41f7e0ffa3f9e8bc7a809230f94" category="list-text">Connector現在可讓您新增及管理來自BlueXP的Amazon S3儲存區。</block>
   <block id="f19dd7eba16fe45d9a801001a9371842" category="inline-link">瞭解如何從BlueXP在AWS帳戶中新增Amazon S3儲存區</block>
   <block id="3fdb23ee61e644ed849519b472ba51ae" category="paragraph"><block ref="35aa20e861d3bf81209592fa160bd4e4" category="inline-link-rx"></block>。</block>
@@ -2435,7 +2394,6 @@
   <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">每個檔案的附件上限為 25 MB 。支援下列副檔名： txt 、 log 、 pdf 、 jpg/jpeg 、 rtf 、 doc/dox 、 xls/xlsx 和 csv 。</block>
   <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">* 更新案例附註 * ：提供問題的其他詳細資料、或選擇 * 上傳檔案 * 最多附加五個檔案。</block>
   <block id="6f6e8b4bb29cff7fb5a94ccadb883777" category="inline-link-macro">瞭解如何管理使用者認證</block>
-  <block id="551a80734187b23f5368b6a5609f3de3" category="paragraph"><block ref="cf16e3f2aabf285f3de8d29b23130725" category="inline-link-macro-rx"></block>。</block>
   <block id="c0793e2f8a33e26d78982b3c320984fe" category="summary">設定您的網路、讓 Connector 能夠管理混合雲環境中的資源和程序。</block>
   <block id="08533087d95fb07c92ed0773080a65d4" category="doc">設定 Azure 網路</block>
   <block id="1387f52f9e1a700036780a5bf567fab3" category="section-title">vnet 和子網路</block>
@@ -2452,7 +2410,6 @@
   <block id="998d660873d63ba9e547f1686fd6383b" category="paragraph">連接器沒有傳入流量、除非您啟動連接器、或連接器是AutoSupport 作為Proxy來接收資訊、否則連接器不會傳入。</block>
   <block id="b68600c18c6dd9598d4518bc4a3f2c90" category="list-text">HTTP（80）和HTTPS（443）可存取本機UI、在極少數情況下使用。</block>
   <block id="a72a43431413f493c5087ab72327a680" category="list-text">只有在需要連線至主機進行疑難排解時、才需要SSH（22）。</block>
-  <block id="46b7ac383833d40797a3c63596b781a1" category="list-text">如果您在無法使用輸出網際網路連線的子網路中部署 Cloud Volumes ONTAP 系統、則需要透過連接埠 3128 進行輸入連線。</block>
   <block id="99e63f85b1b402024ea4e31c235b8fa7" category="summary">您應該瞭解 BlueXP 如何使用 Azure 認證和權限、以便管理一或多個 Azure 訂閱的認證。</block>
   <block id="3944b94e332ebaaeeb1f75ea267f7687" category="paragraph">從BlueXP部署Connector時、您需要使用具備部署Connector虛擬機器權限的Azure帳戶或服務主體。所需權限列於 <block ref="215c62f8f7b8f0001687c60d93a1178c" category="inline-link-macro-rx"></block>。</block>
   <block id="61d31e18d80b565c39bc938c02808e6f" category="paragraph">您可以 Cloud Volumes ONTAP 使用初始 Azure 認證來部署所有的整套系統、也可以新增其他認證資料。</block>
@@ -2975,7 +2932,6 @@
   <block id="dc98fc3d843c5bcb9c0137740506501a" category="paragraph">如果您改用標準 SKU IP 位址、則 BlueXP 會使用 Connector 的 _private IP 位址、而非公有 IP 。如果您用來存取 BlueXP 主控台的機器無法存取該私有 IP 位址、則 BlueXP 主控台的動作將會失敗。</block>
   <block id="674c2428f094434925fc151f4d9a0556" category="inline-link">Azure 文件：公有 IP SKU</block>
   <block id="dd911b1740a43ff59aad324bd3d90ae3" category="paragraph"><block ref="dd911b1740a43ff59aad324bd3d90ae3" category="inline-link-rx"></block></block>
-  <block id="4cf4de9c40c52fee2df23db446975570" category="paragraph">HTTP （ 80 ）和 HTTPS （ 443 ）可讓您存取 BlueXP 主控台。只有在需要連線至主機進行疑難排解時、才需要SSH（22）。同時、如果您在Cloud Volumes ONTAP 無法連上傳出網際網路連線的子網路中部署支援系統、則必須透過連接埠3128進行傳入連線。</block>
   <block id="65c06ded772ceb4963d08fe97b164419" category="section-title">準備網路以供使用者存取 BlueXP 主控台</block>
   <block id="201391f03ceb3ff56054b6793246b8fe" category="paragraph">在受限模式下、可從 Connector 存取 BlueXP 使用者介面。當您使用 BlueXP 使用者介面時、它會聯絡幾個端點來完成資料管理工作。執行網頁瀏覽器的機器必須連線至下列端點。</block>
   <block id="9d05d3f0e6b6c76ecd11e19cde8e2714" category="section-title">準備雲端權限</block>
@@ -3333,7 +3289,6 @@
   <block id="c8b77e7a211a8e1bbb884962a105fc2f" category="paragraph"><block ref="c8b77e7a211a8e1bbb884962a105fc2f" category="inline-link-rx"></block></block>
   <block id="d2b9555443522ab868fc3d3de8b07657" category="list-text">如果您要在其他專案中部署 Cloud Volumes ONTAP 、請將具有 BlueXP 角色的服務帳戶新增至該專案、以授予存取權。您必須針對每個專案重複此步驟。</block>
   <block id="a6e38b80693d553a1debbba70e8974ef" category="paragraph">BlueXP 現在擁有代表您在 Google Cloud 中執行動作所需的權限。</block>
-  <block id="58109ce72bbdb2b46d159167f65565f4" category="cell">提供可存取網際網路的功能、將資訊傳送給NetApp支援部門。Cloud Volumes ONTAP AutoSupport您必須在部署後手動開啟此連接埠。</block>
   <block id="1a97d500b0ebbf49d9d9119231576127" category="cell">API 呼叫 Google Cloud 和 ONTAP 、雲端資料感應、勒索軟體服務、並傳送 AutoSupport 訊息給 NetApp</block>
   <block id="f12979c6a7d6a702d0a439cabd9892b6" category="summary">直接從 BlueXP 網路型主控台、 Azure Marketplace 或在您自己的 Linux 主機上安裝軟體、建立 Connector 。</block>
   <block id="e8755c6030ac3295c23080fbf9591aa4" category="doc">在 Azure 中建立 Connector</block>
@@ -3644,4 +3599,9 @@
   <block id="b02d6a4d5c11f6d94cd3e2e249d6dec1" category="sidebar">BlueXP 帳戶</block>
   <block id="cb7db6069dfbe23b6c36beb350a5ceaa" category="sidebar">建立另一個帳戶</block>
   <block id="bd684dd31e369444b29047e57d56ff19" category="sidebar">瞭解部署模式</block>
+  <block id="84b297044f3a3c5d5e62a0dca0957998" category="list-text">如果您在無法使用輸出網際網路連線的子網路中部署 Cloud Volumes ONTAP 系統、則需要透過連接埠 3128 進行輸入連線。如果Cloud Volumes ONTAP 無法透過外部網際網路連線來傳送AutoSupport 各種消息、則BlueXP會自動將這些Cloud Volumes ONTAP 系統設定為使用連接器隨附的Proxy伺服器。唯一的需求是確保連接器的安全群組允許透過連接埠3128進行傳入連線。部署Connector之後、您需要開啟此連接埠。</block>
+  <block id="4fd45d0ebe27698075cfa2d13f41913e" category="paragraph">HTTP （ 80 ）和 HTTPS （ 443 ）可讓您存取 BlueXP 主控台。只有在需要連線至主機進行疑難排解時、才需要SSH（22）。</block>
+  <block id="830d9c74b9a0266753efa0c38f11ba15" category="paragraph"><block ref="b3303746b1f0c3c97f0d5584351ddef9" category="inline-link-rx"></block>。</block>
+  <block id="b26ec0454a2259b015367bd3e232bd73" category="inline-link">瞭解 Connector 如何用作 AutoSupport 訊息的 Proxy</block>
+  <block id="452bb1fa479e1a4722dca450d1ca1c28" category="cell">提供可存取網際網路的功能、將資訊傳送給NetApp支援部門。Cloud Volumes ONTAP AutoSupport您必須在部署後手動開啟此連接埠。<block ref="529b3c8e9eb588f2d0ba5bb7d504d0b0" category="inline-link-rx"></block></block>
 </blocks>
