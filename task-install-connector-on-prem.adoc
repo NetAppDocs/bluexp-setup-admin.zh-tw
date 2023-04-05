@@ -4,7 +4,7 @@ permalink: task-install-connector-on-prem.html
 keywords: install connector, on prem connector installation, on prem connector, install connector on prem, manual install 
 summary: 在內部部署安裝 Connector 、然後登入並設定以搭配 BlueXP 帳戶使用。 
 ---
-= 在內部環境中安裝並設定 Connector
+= 在內部部署安裝並設定 Connector
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -920,7 +920,6 @@
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
   <block id="e646e16bee8b32e6ea29e30d01970a6c" category="sidebar">限制</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">開始使用</block>
-  <block id="4893ffd05430036bfec4fab3ee00d110" category="sidebar">設定工作區和使用者</block>
   <block id="0876dbe9a324b66ea7ac9a411751f1e7" category="sidebar">在Google Cloud中建立Connector</block>
   <block id="f20e69549fc23f9df431f9511f177e5e" category="sidebar">管理您的帳戶</block>
   <block id="1016d21e7c7301d878d5d5b3e38eabe0" category="sidebar">監控您帳戶中的作業</block>
@@ -936,7 +935,6 @@
   <block id="9451bddd2cec3e9489f79e90187bcc6a" category="sidebar">Connector的Google Cloud權限</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識與支援</block>
   <block id="c8aded93abddb2318a41b08cba739012" category="sidebar">管理連接器</block>
-  <block id="971244fe0532e4f8237c05b5893a87cc" category="sidebar">雲端供應商帳戶</block>
   <block id="6dc6b060b761d145366b9ed041137917" category="sidebar">管理 AWS 認證資料</block>
   <block id="c135c603177e58023474a65f829c0fd3" category="sidebar">管理 Azure 認證資料</block>
   <block id="15f599d5c4282f662b38657a0b5c5739" category="sidebar">管理Google Cloud認證資料</block>
@@ -2598,9 +2596,6 @@
   <block id="8ff08eb12a4bed8d94e8682a89020c56" category="paragraph">如果您是從市場啟動 Connector 、手動安裝 Connector 、或是您需要自行設定自訂角色 <block ref="3a714b4b67994f94abb2f77ce85a395b" category="inline-link-macro-rx"></block>。</block>
   <block id="cf94f172dc39ef92ca49e3c869407357" category="cell"><block ref="cf94f172dc39ef92ca49e3c869407357" category="inline-link-macro-rx"></block></block>
   <block id="8e83b819241a1bf1d918adcc453afeab" category="cell"><block ref="8e83b819241a1bf1d918adcc453afeab" category="inline-link-macro-rx"></block></block>
-  <block id="094455ede11367dcd18d7e230b191ded" category="summary">直接從 BlueXP 網路型主控台、 AWS Marketplace 或在您自己的 Linux 主機上安裝軟體、在 AWS 中安裝 Connector 。</block>
-  <block id="0f2a7bd76fa63948f4cf64bb86d89e78" category="doc">在 AWS 中建立 Connector</block>
-  <block id="f29acb66f06203028681f614fdb5ffc9" category="paragraph">直接從 BlueXP 網路型主控台、 AWS Marketplace 或在您自己的 Linux 主機上安裝軟體、建立 Connector 。</block>
   <block id="aca02eea323174e41d57225a762eb959" category="list-text">AWS 驗證方法：為具有必要權限的 IAM 使用者提供 IAM 角色或存取金鑰。</block>
   <block id="3f4713c771af26689845a2dfeec86b37" category="inline-link-macro">瞭解如何設定 AWS 權限</block>
   <block id="f911544c9d1c454bbad50b12be4649a1" category="paragraph"><block ref="f911544c9d1c454bbad50b12be4649a1" category="inline-link-macro-rx"></block></block>
@@ -3131,8 +3126,6 @@
   <block id="7196a94f4d2eb95bbda75c84fd8bbaa9" category="admonition">採用受限模式會取代啟用或停用 SaaS 平台的選項。您可以在建立帳戶時啟用限制模式。稍後無法啟用或停用。</block>
   <block id="075b5f25465b6b108fb916bce6a2219f" category="paragraph"><block ref="075b5f25465b6b108fb916bce6a2219f" category="inline-link-rx"></block></block>
   <block id="b3aa89c8e307c0edbec167df38d4b12e" category="list-text"><block ref="b3aa89c8e307c0edbec167df38d4b12e" category="inline-link-macro-rx"></block></block>
-  <block id="3290f144fb2d30a1191c5885cbf89787" category="summary">直接從 BlueXP 網路型主控台、使用 gCloud 或在您自己的 Linux 主機上安裝軟體來建立 Connector 。</block>
-  <block id="a4083914baf04eea7b834a870217add1" category="doc">在 Google Cloud 中建立 Connector</block>
   <block id="d239ca21252855f4ecd1674b876a53d5" category="list-text">建立 Connector 和 Connector VM 服務帳戶所需的 Google Cloud 權限。</block>
   <block id="5720169312f71a133a573e04d4adffa5" category="inline-link-macro">瞭解如何設定 Google Cloud 權限</block>
   <block id="d6995c4749dad4283009bf997f8c6591" category="paragraph"><block ref="d6995c4749dad4283009bf997f8c6591" category="inline-link-macro-rx"></block></block>
@@ -3198,8 +3191,6 @@
   <block id="c7f340765e65732a79e5ddd98e87f7e3" category="paragraph"><block ref="c7f340765e65732a79e5ddd98e87f7e3" category="inline-link-rx"></block></block>
   <block id="73918d630dd9a657f3442a2c1231fd74" category="list-text">在 * 一般 * 下、選取 * 支援直接 API 流量 * 。</block>
   <block id="c569dd49f93a05d537d61130ed43e6e9" category="list-text">選取核取方塊以啟用選項、然後選取 * 儲存 * 。</block>
-  <block id="c889cb7ab0401fc162a518569042c6fd" category="summary">在內部部署安裝 Connector 、然後登入並設定以搭配 BlueXP 帳戶使用。</block>
-  <block id="d4a954ba9bb9cbcddb1f626434808cbc" category="doc">在內部環境中安裝並設定 Connector</block>
   <block id="430c29468d032364c0f94cffe3c8a10b" category="paragraph">在內部部署的現有 Linux 主機上下載並安裝 Connector 軟體。</block>
   <block id="c0112364e46bcec7ed4460a6be7ead53" category="paragraph">您應該保持停用受限模式、因為這些步驟說明如何在標準模式中使用 BlueXP 。（此外、當 Connector 安裝在內部部署時、不支援受限模式。）</block>
   <block id="dcdd03125bee39fb6c8e9aa5e0bfcc7f" category="paragraph">BlueXP 現在已設定好您剛安裝的 Connector 。</block>
@@ -3290,8 +3281,6 @@
   <block id="d2b9555443522ab868fc3d3de8b07657" category="list-text">如果您要在其他專案中部署 Cloud Volumes ONTAP 、請將具有 BlueXP 角色的服務帳戶新增至該專案、以授予存取權。您必須針對每個專案重複此步驟。</block>
   <block id="a6e38b80693d553a1debbba70e8974ef" category="paragraph">BlueXP 現在擁有代表您在 Google Cloud 中執行動作所需的權限。</block>
   <block id="1a97d500b0ebbf49d9d9119231576127" category="cell">API 呼叫 Google Cloud 和 ONTAP 、雲端資料感應、勒索軟體服務、並傳送 AutoSupport 訊息給 NetApp</block>
-  <block id="f12979c6a7d6a702d0a439cabd9892b6" category="summary">直接從 BlueXP 網路型主控台、 Azure Marketplace 或在您自己的 Linux 主機上安裝軟體、建立 Connector 。</block>
-  <block id="e8755c6030ac3295c23080fbf9591aa4" category="doc">在 Azure 中建立 Connector</block>
   <block id="6e1fe4f37983acdfa6e1690c77b55704" category="list-text">在 * 驗證 * 下、選取符合您設定 Azure 權限方式的驗證選項：</block>
   <block id="ca5c14dd1767138ec0ae60d1c4d7a128" category="list-text">選取 * Azure 使用者帳戶 * 以登入您的 Microsoft 帳戶、該帳戶應具有必要的權限。</block>
   <block id="0a3420a284048b3146bfedfda39bc929" category="list-text">選取 * Active Directory 服務主體 * 以輸入有關授與必要權限的 Azure Active Directory 服務主體的資訊：</block>
@@ -3604,4 +3593,14 @@
   <block id="830d9c74b9a0266753efa0c38f11ba15" category="paragraph"><block ref="b3303746b1f0c3c97f0d5584351ddef9" category="inline-link-rx"></block>。</block>
   <block id="b26ec0454a2259b015367bd3e232bd73" category="inline-link">瞭解 Connector 如何用作 AutoSupport 訊息的 Proxy</block>
   <block id="452bb1fa479e1a4722dca450d1ca1c28" category="cell">提供可存取網際網路的功能、將資訊傳送給NetApp支援部門。Cloud Volumes ONTAP AutoSupport您必須在部署後手動開啟此連接埠。<block ref="529b3c8e9eb588f2d0ba5bb7d504d0b0" category="inline-link-rx"></block></block>
+  <block id="cbfb15b83383719b2c85d236f8e414bb" category="summary">直接從 BlueXP 網路型主控台、 AWS Marketplace 或在您自己的 Linux 主機上安裝軟體、建立 Connector 。</block>
+  <block id="0cbc2cd2912b2d177ad6561f8eecd314" category="summary">直接從 BlueXP 網路型主控台、使用 gCloud 或在您自己的 Linux 主機上安裝軟體來建立 Connector 。</block>
+  <block id="b6bbae5bdf4c539603a70f4db19e6b04" category="summary">在內部部署安裝 Connector 、然後登入並設定以搭配 BlueXP 帳戶使用。</block>
+  <block id="1fb392a56edc456b1bc3eddb57b0906b" category="doc">在內部部署安裝並設定 Connector</block>
+  <block id="b03fc4422539272712e207a8d897a72c" category="summary">直接從 BlueXP 網路型主控台、 Azure Marketplace 或在您自己的 Linux 主機上安裝軟體、建立 Connector 。</block>
+  <block id="761d871e89c5ad68ac5c2de768bb7fc4" category="sidebar">在 AWS 中建立連接器（標準模式）</block>
+  <block id="1df187938f50cb0ec2035714e29f9008" category="sidebar">在 Azure 中建立 Connector （標準模式）</block>
+  <block id="421e0ee20fb73cf162f2c03955c94f24" category="sidebar">在 Google Cloud 中建立 Connector （標準模式）</block>
+  <block id="a80c3e3d3461039581490c3b665e6c55" category="sidebar">在內部部署建立連接器（標準模式）</block>
+  <block id="5287995c403f34c9ff0e79af4e8e7c9d" category="sidebar">管理您帳戶的 NSS 認證</block>
 </blocks>
