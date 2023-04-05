@@ -31,7 +31,7 @@ BlueXP _ 部署模式 _ 可讓您以符合業務與安全需求的方式使用 B
 * 私有模式
 
 
-link:concept-modes.html["深入瞭解這些部署模式"]。
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-modes.html["深入瞭解這些部署模式"]。
 
 
 NOTE: 採用受限模式會取代啟用或停用 SaaS 平台的選項。您可以在建立帳戶時啟用限制模式。稍後無法啟用或停用。
