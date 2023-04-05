@@ -3112,8 +3112,6 @@
   <block id="870a261de0f18a65c1ce93a292943250" category="paragraph">從雲端供應商的市場訂閱 BlueXP 、即可按每小時費率（ PAYGO ）或透過年度合約支付 BlueXP 服務費用。</block>
   <block id="26cb38ef7d9165cb6c60daa782ddf448" category="inline-link-macro">瞭解如何訂閱 BlueXP</block>
   <block id="81c3313ea95d8c6400b4938a484d7c52" category="paragraph"><block ref="6def5e6c9f414f70f3dcb72b211d5120" category="inline-link-macro-rx"></block>。</block>
-  <block id="80470a7e4abea9303c2da15c4bf9dd95" category="paragraph">如有需要、您可以使用IAM來限制IAM原則<block ref="9e2941b3c81256fac10392aaca4ccfde" prefix=" " category="inline-code"></block> 元素。<block ref="19ffef022087e160f1e54b9948795943" category="inline-link-rx"></block>如有需要、您可以使用IAM來限制IAM原則<block ref="9e2941b3c81256fac10392aaca4ccfde" prefix=" " category="inline-code"></block> 元素。<block ref="19ffef022087e160f1e54b9948795943" category="inline-link-rx"></block></block>
-  <block id="01565a73da2e1b22e8f52dbae4f47dff" category="paragraph">請注意下列事項：</block>
   <block id="5e7e2fc7d83311cfc7311fe5dec48480" category="list-text">若要檢視使用這些原則的逐步指示、請參閱下列頁面：</block>
   <block id="0e056226cf0c491e9f8541fa39bd442d" category="inline-link-macro">在 AWS （標準模式）中設定 Connector 安裝權限</block>
   <block id="ba958418e2417e3848579844570a221c" category="list-text"><block ref="ba958418e2417e3848579844570a221c" category="inline-link-macro-rx"></block></block>
@@ -3603,4 +3601,5 @@
   <block id="421e0ee20fb73cf162f2c03955c94f24" category="sidebar">在 Google Cloud 中建立 Connector （標準模式）</block>
   <block id="a80c3e3d3461039581490c3b665e6c55" category="sidebar">在內部部署建立連接器（標準模式）</block>
   <block id="5287995c403f34c9ff0e79af4e8e7c9d" category="sidebar">管理您帳戶的 NSS 認證</block>
+  <block id="4c3260e1174dd82ea2e496ac6f39fc4a" category="paragraph">如有需要、您可以使用IAM來限制IAM原則<block ref="9e2941b3c81256fac10392aaca4ccfde" prefix=" " category="inline-code"></block> 元素。<block ref="19ffef022087e160f1e54b9948795943" category="inline-link-rx"></block></block>
 </blocks>
