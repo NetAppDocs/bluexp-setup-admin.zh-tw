@@ -18,7 +18,7 @@ NetApp以多種方式支援BlueXP及其雲端服務。我們全年無休提供�
 
 這些選項可供免費使用、一天24小時、一週7天：
 
-* https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services["知識庫"^]
+* https://kb.netapp.com/Cloud/BlueXP["知識庫"^]
 +
 請搜尋BlueXP知識庫、找出有助於疑難排解問題的文章。
 

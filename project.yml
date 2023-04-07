@@ -1,6 +1,6 @@
 ---
 settings:
-  name: Set up and administration
+  name: Setup and administration
   platform: cloud
   internal:
     pdf_enabled: true
