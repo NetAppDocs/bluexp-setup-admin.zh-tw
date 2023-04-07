@@ -65,12 +65,16 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 * 雲端分層
 * Cloud Volumes ONTAP
 * E系列系統
+* 經濟效益 ^1^
 * 全域檔案快取
 * Google Cloud Storage探索
 * Kubernetes叢集
 * 內部部署ONTAP 的不支援叢集整合至BlueXP資料服務
+* 營運恢復能力 ^1^
 * StorageGRID
 
+
+^1^ 雖然您可以在不使用 Connector 的情況下存取這些服務、但需要有 Connector 才能從服務啟動動作。
 
 
 

@@ -3602,4 +3602,7 @@
   <block id="f53835e0f369158c476f99fda577e700" category="sidebar">設定與管理文件</block>
   <block id="22e332a6ecd5f345a3f720b11f7cf805" category="list-text"><block ref="22e332a6ecd5f345a3f720b11f7cf805" category="inline-link-macro-rx"></block></block>
   <block id="d56f297cb566b98a6b65a6dea3038531" category="list-text"><block ref="d56f297cb566b98a6b65a6dea3038531" category="inline-link-macro-rx"></block></block>
+  <block id="c7a576f5db262c0475afa4a53822979e" category="list-text">經濟效益 ^1^</block>
+  <block id="7713949d8f17ff00f9cdb21469da8a35" category="list-text">營運恢復能力 ^1^</block>
+  <block id="6d95cfc501ca88bca8a0045681608071" category="paragraph">^1^ 雖然您可以在不使用 Connector 的情況下存取這些服務、但需要有 Connector 才能從服務啟動動作。</block>
 </blocks>
