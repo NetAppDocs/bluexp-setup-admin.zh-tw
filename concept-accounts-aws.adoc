@@ -66,7 +66,7 @@ link:task-adding-aws-accounts.html#add-credentials-to-a-connector["瞭解如何�
 
 新增AWS認證資料至藍圖XP、可提供必要的權限來建立及管理適用於ONTAP 整個作業環境的FSX、或是建立Connector。
 
-* link:https://review.docs.netapp.com/us-en/cloud-manager-setup-admin_feb-2022-modes/task-adding-aws-accounts.html#add-credentials-to-bluexp-for-creating-a-connector["瞭解如何將 AWS 認證新增至 BlueXP for Amazon FSX for ONTAP"^]
+* link:task-adding-aws-accounts.html#add-credentials-to-bluexp-for-creating-a-connector["瞭解如何將 AWS 認證新增至 BlueXP for Amazon FSX for ONTAP"^]
 * link:task-adding-aws-accounts.html#add-credentials-to-a-connector["瞭解如何將 AWS 認證新增至 BlueXP 以建立 Connector"]
 
 

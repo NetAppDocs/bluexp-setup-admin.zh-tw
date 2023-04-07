@@ -33,7 +33,7 @@ summary: 當BlueXP在AWS中啟動Connector執行個體時、它會將原則附�
 ** link:task-set-up-permissions-aws.html["在 AWS （標準模式）中設定 Connector 安裝權限"]
 ** link:task-set-up-permissions-on-prem.html["設定內部部署 Connector 安裝的權限（標準模式）"]
 ** link:task-prepare-restricted-mode.html#prepare-cloud-permissions["設定受限模式的權限"]
-** https://review.docs.netapp.com/us-en/cloud-manager-setup-admin_feb-2022-modes/task-prepare-private-mode.html#prepare-cloud-permissions["設定私有模式的權限"]
+** link:task-prepare-private-mode.html#prepare-cloud-permissions["設定私有模式的權限"]
 
 
 
