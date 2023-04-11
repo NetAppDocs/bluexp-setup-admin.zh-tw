@@ -18,6 +18,18 @@ _Identity Federation®啟用單一登入BlueXP、讓使用者可以使用公司�
 
 
 
+== 與 NSS 認證的身分識別聯盟
+
+如果您使用 NetApp 支援網站 （ NSS ）認證登入 BlueXP 、則不應遵循本頁的指示來設定身分識別聯盟。您應該改為執行下列動作：
+
+* 下載並完成 https://kb.netapp.com/@api/deki/files/98382/NetApp-B2C-Federation-Request-Form-April-2022.docx?revision=1["NetApp 聯盟申請表"^]
+* 將表單提交至表單中指定的電子郵件地址
+
+
+NetApp 身分識別與存取管理團隊將審查您的申請。
+
+
+
 == 身分識別聯盟的運作方式
 
 設定身分識別聯盟會在BlueXP的驗證服務供應商（auth0）和您自己的身分識別管理供應商之間建立信任連線。
@@ -56,6 +68,8 @@ BlueXP僅支援服務供應商啟動（SP啟動）SSO。不支援身分識別供
 == 設定程序總覽
 
 在您建立BlueXP與身分識別管理供應商之間的連線之前、您應該先瞭解所需採取的步驟、以便做好相應的準備。
+
+這些步驟僅適用於使用 NetApp 雲端登入登入 BlueXP 的使用者。如果您使用 NSS 認證登入 BlueXP 、 <<與 NSS 認證的身分識別聯盟,瞭解如何使用 NSS 認證設定身分識別聯盟>>。
 
 
 

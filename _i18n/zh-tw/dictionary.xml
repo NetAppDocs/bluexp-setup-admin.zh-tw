@@ -3605,4 +3605,12 @@
   <block id="c7a576f5db262c0475afa4a53822979e" category="list-text">經濟效益 ^1^</block>
   <block id="7713949d8f17ff00f9cdb21469da8a35" category="list-text">營運恢復能力 ^1^</block>
   <block id="6d95cfc501ca88bca8a0045681608071" category="paragraph">^1^ 雖然您可以在不使用 Connector 的情況下存取這些服務、但需要有 Connector 才能從服務啟動動作。</block>
+  <block id="f570b8386694ba0d5563a8784f3135e5" category="section-title">與 NSS 認證的身分識別聯盟</block>
+  <block id="e906028a6376600a0f505777b7c3af9f" category="paragraph">如果您使用 NetApp 支援網站 （ NSS ）認證登入 BlueXP 、則不應遵循本頁的指示來設定身分識別聯盟。您應該改為執行下列動作：</block>
+  <block id="0a3bde973847d35b12a69e1debea9ca9" category="inline-link">NetApp 聯盟申請表</block>
+  <block id="8c992ea897689b69e58371da6a8ae5e6" category="list-text">下載並完成<block ref="82f36446881e14fa28b945cd41d2b383" category="inline-link-rx"></block></block>
+  <block id="78080f8885ea72672a94d1643801d9cb" category="list-text">將表單提交至表單中指定的電子郵件地址</block>
+  <block id="2ffd4295ac6fb250f496a1c2b7840422" category="paragraph">NetApp 身分識別與存取管理團隊將審查您的申請。</block>
+  <block id="40ad51959fd74fabd0db9de7c8f3dfe5" category="inline-xref">瞭解如何使用 NSS 認證設定身分識別聯盟</block>
+  <block id="ab4a64ac474b344fc1e5bf29106eab3b" category="paragraph">這些步驟僅適用於使用 NetApp 雲端登入登入 BlueXP 的使用者。如果您使用 NSS 認證登入 BlueXP 、 <block ref="8f31bfd2719da60e22fa205d55b4f4b7" category="inline-xref-macro-rx"></block>。</block>
 </blocks>
