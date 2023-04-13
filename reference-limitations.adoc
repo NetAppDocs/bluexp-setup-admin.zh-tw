@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-limitations.html 
-keywords: limitations, active directory, ad, iscsi, key managers, ip address, govcloud, BlueXP, Cloud Volumes ONTAP, days, running, Connectors should remain running 
+keywords: limitations, active directory, ad, iscsi, key managers, ip address, govcloud, BlueXP, Cloud Volumes ONTAP, days, running, Connectors should remain running, imdsv2, httpstokens 
 summary: 已知限制指出本產品版本不支援的平台、裝置或功能、或是無法與產品正確互通的平台、裝置或功能。請仔細檢閱這些限制。 
 ---
 = 已知限制
@@ -21,6 +21,18 @@ summary: 已知限制指出本產品版本不支援的平台、裝置或功能�
 
 
 == 連接器限制
+
+
+
+=== 不應變更預設 EC2 執行個體設定
+
+在 AWS 中部署 Connector 時、預設會設定下列 EC2 執行個體設定：
+
+* IMDSv2 設為選用
+* 已將 HttpToken 設定為選用
+
+
+這些設定不應變更為必要。將這些設定變更為「必要」會影響 Connector 和 Cloud Volumes ONTAP 的可用度。
 
 
 

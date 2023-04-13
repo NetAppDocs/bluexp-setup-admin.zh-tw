@@ -3583,4 +3583,9 @@
   <block id="40ad51959fd74fabd0db9de7c8f3dfe5" category="inline-xref">瞭解如何使用 NSS 認證設定身分識別聯盟</block>
   <block id="ab4a64ac474b344fc1e5bf29106eab3b" category="paragraph">這些步驟僅適用於使用 NetApp 雲端登入登入 BlueXP 的使用者。如果您使用 NSS 認證登入 BlueXP 、 <block ref="8f31bfd2719da60e22fa205d55b4f4b7" category="inline-xref-macro-rx"></block>。</block>
   <block id="47bf230a49ecee72c3b36a37f9758812" category="cell">https://www.googleapis.com/compute/v1/ \https://compute.googleapis.com/compute/v1 \https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects</block>
+  <block id="cf4525e15b866700f10e91573643ba54" category="section-title">不應變更預設 EC2 執行個體設定</block>
+  <block id="505d2a7358228b26711e097c3ca6dc24" category="paragraph">在 AWS 中部署 Connector 時、預設會設定下列 EC2 執行個體設定：</block>
+  <block id="b6c588d5cb8cbc221e66a15877aed30a" category="list-text">IMDSv2 設為選用</block>
+  <block id="b29d18da75a3c01939275500a8fc2e70" category="list-text">已將 HttpToken 設定為選用</block>
+  <block id="a91c1c121088ffbd72985e0bf2459f87" category="paragraph">這些設定不應變更為必要。將這些設定變更為「必要」會影響 Connector 和 Cloud Volumes ONTAP 的可用度。</block>
 </blocks>
