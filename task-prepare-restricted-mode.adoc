@@ -140,7 +140,7 @@ AWS 服務（ amazonaws.com):
 | \https://management.chinacloudapi.cn \https://login.chinacloudapi.cn \https://blob.core.chinacloudapi.cn \https://core.chinacloudapi.cn | 管理Azure中國地區的資源。 
 
 
-| \https://www.googleapis.com/compute/v1/\https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects | 管理Google Cloud中的資源。 
+| https://www.googleapis.com/compute/v1/ \https://compute.googleapis.com/compute/v1 \https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects | 管理Google Cloud中的資源。 
 
 
 | \https://support.netapp.com | 以取得授權資訊、並將AutoSupport 資訊傳送給NetApp支援部門。 

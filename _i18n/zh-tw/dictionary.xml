@@ -611,9 +611,6 @@
   <block id="22afe6994929c83f3a017a74a15c514d" category="paragraph">如果您不再需要使用服務帳戶、請將其刪除。</block>
   <block id="a1b9ad007db816daa5055da2e20b5950" category="paragraph">透過建立、重新命名及刪除工作區來管理工作區。請注意、如果工作區包含任何資源、您就無法刪除該工作區。它必須是空的。</block>
   <block id="43623b24ff4be4e0e0174dccd5d4446a" category="list-text">請選擇下列其中一個選項：</block>
-  <block id="eb6dd0692058cd4edb3fb82f48db1f57" category="paragraph">例如、假設您有兩個帳戶、每個帳戶都是透過個別的訂閱付費。您可能會取消訂閱與其中一個帳戶的關聯、因此該帳戶中的使用者在建立 Cloud Volume ONTAP 的工作環境時、不會意外選擇錯誤的訂閱。</block>
-  <block id="1422eb9c77ef6c74d6abe35beedc5d64" category="paragraph">您只會看到與您目前檢視的帳戶相關聯的訂閱內容。</block>
-  <block id="1dea06c0cd8c3b77e4597670a860c155" category="inline-image-macro">訂閱的動作功能表快照。</block>
   <block id="0a1328e44a818b47ecf6db707c8721d7" category="paragraph">私有預覽中的服務無法保證其行為符合預期、而且可能會持續中斷運作並喪失功能。</block>
   <block id="b48299c449bac839819763792d4aff22" category="list-text">在「*總覽*」標籤中、啟用「*允許私有預覽*」設定。</block>
   <block id="90837faa596ab1d28c90a381b6997722" category="list-text">在「*總覽*」標籤中、啟用「*允許協力廠商服務*」設定。</block>
@@ -802,7 +799,6 @@
   <block id="ced2d945d98014d4467b685b8314caa1" category="paragraph"><block ref="5fada74255cc5bbf99ee00eda10403ac" category="inline-link-macro-rx"></block>。</block>
   <block id="649d75c6283da2a4b802839db32a41af" category="inline-link-macro">深入瞭解連接器</block>
   <block id="75599088791b92751fdc2c9cee3a481e" category="paragraph"><block ref="c5bcec7879e3189e4c7a5fdbd8b19a5b" category="inline-link-macro-rx"></block>。</block>
-  <block id="4ca2c509994c2776d0880357b4e8e5be" category="section-title">訂閱</block>
   <block id="ff7c0fcd6a31e735a61c001f75426961" category="section-title">範例</block>
   <block id="6643fe16b29885768bd30191d9673e3e" category="paragraph">下列範例說明您如何設定帳戶。</block>
   <block id="ddc6e5885facb249d958d56dc9bb1acc" category="paragraph">下列範例顯示使用兩個工作區來建立隔離環境的帳戶。第一個工作區適用於正式作業環境、第二個工作區適用於開發環境。</block>
@@ -1849,29 +1845,6 @@
   <block id="4b9c42bf1853fa25d534302dbc43f035" category="list-text">S3：PuttBucketPolicy</block>
   <block id="fa4d7248969f7582be82c5aa4b15e08b" category="list-text">S3：PuttBucketOwnershipControl</block>
   <block id="c9c484fe908813be17fe13bbdeabfb1d" category="cell">在建立期間加密儲存帳戶</block>
-  <block id="4d17b7f0d1f8c0ae69c0ec8d32fea349" category="summary">當您從雲端供應商的市場訂閱BlueXP時、系統會將您重新導向至BlueXP網站、您需要在其中儲存訂閱內容、並將其與特定帳戶建立關聯。訂閱之後、即可從Digital Wallet管理每份訂閱。</block>
-  <block id="b01b1be092b95233172f870dc729234b" category="doc">管理PAYGO訂閱與合約</block>
-  <block id="e858f445394700e621aa67dd8e3fe958" category="section-title">檢視您的訂閱內容</block>
-  <block id="9c1b3fb5f48f73ce89025933ec931382" category="paragraph">Digital Wallet提供每份PAYGO訂閱的詳細資料、以及與您的BlueXP帳戶和Astra（Astra使用BlueXP的收費服務）相關的年度合約。</block>
-  <block id="43bfd35e9b57eaace0eafa6750af5ff7" category="list-text">從BlueXP導覽功能表中、選取*管理&gt;數位錢包*。</block>
-  <block id="8c3682e85d7f4dbe8a46485082335dec" category="list-text">選擇*訂閱*。</block>
-  <block id="572e470335e0a6d55da05c732a01aed3" category="list-text">當您檢視訂閱的相關資訊時、您可以與表格中的詳細資料互動、如下所示：</block>
-  <block id="6a1de13d318f22872902849cd26467b4" category="list-text">展開一列以檢視更多詳細資料。</block>
-  <block id="d61aec883b403c61da2d8d8e19d78473" category="inline-image-macro">數位錢包中「訂閱」索引標籤的快照、您可以在其中選取列末端的箭頭加以展開。</block>
-  <block id="3a9d2caf2b3b63f1b3ab7d00e469b158" category="paragraph"><block ref="3a9d2caf2b3b63f1b3ab7d00e469b158" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="56594b7222b35921f9fe676eadf6bbdf" category="inline-image-macro">表格標題結尾的加號圖示</block>
-  <block id="c090ce3dc0b8ea780bfa95c666328c67" category="paragraph">請注意、「字詞」和「自動更新」欄預設不會出現。「自動更新」欄僅顯示Azure合約的續約資訊。</block>
-  <block id="48772efe35cdbabca3c0abdab7360b57" category="paragraph">請注意下表所示內容：</block>
-  <block id="4d34f1097f6c8b9cee28bca8b78bbee9" category="list-text">開始日期</block>
-  <block id="d1686d74b72c58f44c6fceaf3011df0b" category="list-text">開始日期是您成功將訂閱與帳戶建立關聯、並開始充電的時間。</block>
-  <block id="716e98867696fbbeed00e3dcd1f76758" category="list-text">如果您在表格中看到N/A、目前無法從雲端供應商的API取得資訊。</block>
-  <block id="cd494d76449d5dfe0c0adfb2f3447761" category="list-text">合約</block>
-  <block id="8090b542b799e2f0268fddd048d44eda" category="list-text">如果您擴充合約的詳細資料、Digital Wallet會顯示目前計畫的可用項目：合約選項和單位（容量或節點數）。</block>
-  <block id="7f96d1365390f4c6a7c1befe0b068769" category="list-text">數位錢包會識別終止日期、以及合約是否即將續約、即將結束、或是否已結束。</block>
-  <block id="d1d7830f95588ae511ee592eab47c2b0" category="list-text">如果您有AWS合約、而且在開始日期之後變更了任何合約選項、請務必從AWS驗證您的合約選項。</block>
-  <block id="6942b724002d90bb0f705f478cdd6bf3" category="section-title">管理您的訂閱</block>
-  <block id="ac3dad7b0d90a8896f44e77f84726619" category="paragraph">您可以重新命名訂閱、並選擇與訂閱相關的帳戶、從Digital Wallet管理訂閱內容。</block>
-  <block id="23531331db8be0d13d9ce3c0685c0c8e" category="paragraph"><block ref="23531331db8be0d13d9ce3c0685c0c8e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5a4346a01828d72104a6540080377b25" category="section-title">2022年11月6日</block>
   <block id="f658ebadeb22d41618c5222998030cb9" category="section-title">連接器3.9.23</block>
   <block id="a7dad5ac7e311dedf2a82e4bb5a713dd" category="list-text">您的PAYGO訂閱和BlueXP年度合約現已可供檢視及管理、請參閱Digital Wallet。</block>
@@ -2025,7 +1998,6 @@
   <block id="5bf5309465f91318228a7f956b826348" category="list-text"><block ref="5bf5309465f91318228a7f956b826348" category="inline-link-macro-rx"></block></block>
   <block id="0e2bc9c853e0af52ead12823c025e58b" category="list-text"><block ref="0e2bc9c853e0af52ead12823c025e58b" category="inline-link-macro-rx"></block></block>
   <block id="02efcbea18b9485a78a41871dce1e64d" category="list-text"><block ref="02efcbea18b9485a78a41871dce1e64d" category="inline-link-macro-rx"></block></block>
-  <block id="3933fdb8f34cb01278a72748377338a5" category="cell">\https://www.googleapis.com/compute/v1/\https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects</block>
   <block id="d377a02fb22cec7bf850087d3c9a31fa" category="cell">管理Google Cloud中的資源。</block>
   <block id="4ce604ab4b6f3184f26713f30bde1bbe" category="cell">- cloudkms.cryptoKeys.Get - cloudkms.cryptoKeys.getIamPolicy - cloudkms.cryptoKeys.list - cloudkms.cryptoKeys.setIamPolicy - cloudkms.keyclings - cloudkms.getIamPolicy - cloudkms.keyclings - cloudkms.keyRings.setIamPolicy</block>
   <block id="9e4edb2eed22d4c91a667b29567ee08d" category="cell">可在Cloud Backup啟動精靈中選取您自己的客戶管理金鑰、而非使用預設的Google管理加密金鑰。</block>
@@ -3372,9 +3344,6 @@
   <block id="b7afeec70319496f1e3eb3a317ae30c3" category="doc">設定 Google Cloud 網路</block>
   <block id="acb3a31b8e79039416f86dfe140a002a" category="section-title">VPC 和子網路</block>
   <block id="2ece2735ee78ce884898c747bead2708" category="paragraph">當您建立 Connector 時、您需要指定 Connector 所在的 VPC 和子網路。</block>
-  <block id="33d90cc16eaedf37738a3faf06f00f36" category="list-text">選取 <block ref="98b11313fea6c4106e5a3c018f0ffbc9" category="inline-image-macro-rx" type="image"></block> 可選擇表格中顯示的列。</block>
-  <block id="e97d1d1134e32a84fb4d6d796e3e56a9" category="list-text">選取您要管理之訂閱的對應列中的動作功能表。</block>
-  <block id="1201c1bd99e40a424aee33ac62838b92" category="list-text">選擇重新命名訂閱、或管理與訂閱相關的 BlueXP 帳戶。</block>
   <block id="7badfd12f4665ef65fdb218a565f47d6" category="summary">您應該瞭解以私有模式使用 BlueXP 開始運作所需的條件、以便準備好環境。</block>
   <block id="5f1067df496bfafd5eb793369b955e41" category="doc">準備以私有模式進行部署</block>
   <block id="c597b49a830c4a4ce2fd66c374de3113" category="paragraph">您應該瞭解在私有模式下開始使用 BlueXP 所需的條件、以便準備環境。</block>
@@ -3613,4 +3582,5 @@
   <block id="2ffd4295ac6fb250f496a1c2b7840422" category="paragraph">NetApp 身分識別與存取管理團隊將審查您的申請。</block>
   <block id="40ad51959fd74fabd0db9de7c8f3dfe5" category="inline-xref">瞭解如何使用 NSS 認證設定身分識別聯盟</block>
   <block id="ab4a64ac474b344fc1e5bf29106eab3b" category="paragraph">這些步驟僅適用於使用 NetApp 雲端登入登入 BlueXP 的使用者。如果您使用 NSS 認證登入 BlueXP 、 <block ref="8f31bfd2719da60e22fa205d55b4f4b7" category="inline-xref-macro-rx"></block>。</block>
+  <block id="47bf230a49ecee72c3b36a37f9758812" category="cell">https://www.googleapis.com/compute/v1/ \https://compute.googleapis.com/compute/v1 \https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects</block>
 </blocks>
