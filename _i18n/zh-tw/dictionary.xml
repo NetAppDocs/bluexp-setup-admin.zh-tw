@@ -1887,7 +1887,6 @@
   <block id="e9c8bdcc91d25115e46e6c43d23fe563" category="paragraph">雲端備份和雲端分層需要此權限。</block>
   <block id="175e0c32b0d1e82352dde70ca6ad31a2" category="paragraph">雲端備份需要此權限。</block>
   <block id="1ff61a19534f16f8c2b0aa752b13fb0a" category="paragraph">下列權限已從Json原則中移除、因為不再需要這些權限：</block>
-  <block id="03275fa7fd8487800900fe5ed21b50b4" category="cell">\https://console.bluexp.netapp.com</block>
   <block id="3a9d5bd356ec8e4fc31c11150128b7ac" category="list-text">開啟網頁瀏覽器、前往<block ref="a47e12f4350b725a128875f50f785a3b" category="inline-link-rx"></block></block>
   <block id="83ec139c80a3d5b2f11f1a94eed47cd2" category="section-title">2022年12月4日</block>
   <block id="9a37fbeb5352e14f2a53fe349c60ad58" category="section-title">連接器3.9.24</block>
@@ -3017,9 +3016,6 @@
   <block id="7132b07cc411f1ad7091b34cfe32d739" category="section-title">刪除認證</block>
   <block id="79c33710e10337a79e50227860ebf59a" category="list-text">在 * 帳戶認證 * 頁面上、選取一組認證的動作功能表、然後選取 * 刪除認證 * 。</block>
   <block id="26b956db62dfb9e45d6132f9e41a9d73" category="summary">當您使用透過 SaaS 層提供的 BlueXP 網路型主控台時、它會與多個端點聯絡、以完成資料管理工作。執行 Web 瀏覽器的機器必須連線至這些端點。</block>
-  <block id="b49cf226526bec08997a8b7c5adba39c" category="cell">使用網路型主控台時、您的網頁瀏覽器會連絡此 URL 。</block>
-  <block id="1ecee0edf351652fe1d2dfd06c45adab" category="inline-link-macro">在手動安裝 Connector 期間聯絡的端點</block>
-  <block id="28654ae42df3aaae083bad0a7d52a508" category="list-text"><block ref="28654ae42df3aaae083bad0a7d52a508" category="inline-link-macro-rx"></block></block>
   <block id="5df0e72b51c6390f3f3b21f402ba3612" category="doc">安裝 HTTPS 憑證以進行安全存取</block>
   <block id="bfad05e4d9a8b5fbc930a21d6b53cd7a" category="list-text">在 BlueXP 主控台的右上角、選取「設定」圖示、然後選取 *HTTPS Setup* 。</block>
   <block id="6af98f64f202dba04d4bee35778042a2" category="list-text">輸入 Connector 主機的主機名稱或 DNS （其一般名稱）、然後選取 * 產生 CSR * 。</block>
@@ -3588,4 +3584,16 @@
   <block id="b6c588d5cb8cbc221e66a15877aed30a" category="list-text">IMDSv2 設為選用</block>
   <block id="b29d18da75a3c01939275500a8fc2e70" category="list-text">已將 HttpToken 設定為選用</block>
   <block id="a91c1c121088ffbd72985e0bf2459f87" category="paragraph">這些設定不應變更為必要。將這些設定變更為「必要」會影響 Connector 和 Cloud Volumes ONTAP 的可用度。</block>
+  <block id="ca514cc7f92949257244bf6c32d47ea3" category="cell">https://console.bluexp.netapp.com \https://*.console.bluexp.netapp.com</block>
+  <block id="7926588c37032e15e3fdc15831f4bbb5" category="cell">當您使用 BlueXP 網路型主控台時、您的網路瀏覽器會連絡這些 URL 。</block>
+  <block id="bfb1a8284652de834f7e5f10d70d1b28" category="inline-link-macro">準備網路以供使用者存取 BlueXP 主控台（受限模式）</block>
+  <block id="bbeb91503e087c169e5b9723b8e20883" category="list-text"><block ref="bbeb91503e087c169e5b9723b8e20883" category="inline-link-macro-rx"></block></block>
+  <block id="2860cec66f88d15f252631c132ac68ce" category="inline-link-macro">Connector 在 AWS （標準模式）中所接觸的端點</block>
+  <block id="c5671cdad008988d217498ffee18763f" category="list-text"><block ref="c5671cdad008988d217498ffee18763f" category="inline-link-macro-rx"></block></block>
+  <block id="f30c2ab09bb92e952f9dc522c1d59a4b" category="inline-link-macro">Connector 在 Azure 中接觸的端點（標準模式）</block>
+  <block id="befb6b1b01e0761a5d0ce6f028c4edd2" category="list-text"><block ref="befb6b1b01e0761a5d0ce6f028c4edd2" category="inline-link-macro-rx"></block></block>
+  <block id="51592248285ea432f62366d3bb873cd2" category="inline-link-macro">Connector 在 Google Cloud 中連絡的端點（標準模式）</block>
+  <block id="6de9f5682041f68bedd20c6f93964068" category="list-text"><block ref="6de9f5682041f68bedd20c6f93964068" category="inline-link-macro-rx"></block></block>
+  <block id="554b8b833efd1a5f6c0982f18f3d0820" category="inline-link-macro">手動安裝 Connector 時聯絡的端點（標準模式）</block>
+  <block id="5474364eb5af84ea9df4135b22224135" category="list-text"><block ref="5474364eb5af84ea9df4135b22224135" category="inline-link-macro-rx"></block></block>
 </blocks>
