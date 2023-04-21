@@ -72,10 +72,10 @@ NOTE: 來源 IP 位址為 Connector 主機。
 | 服務 | 傳輸協定 | 連接埠 | 目的地 | 目的 
 
 
-| API 呼叫與 AutoSupport 功能 | HTTPS | 443.. | 傳出網際網路和 ONTAP 叢集管理 LIF | API 呼叫 Google Cloud 和 ONTAP 、雲端資料感應、勒索軟體服務、並傳送 AutoSupport 訊息給 NetApp 
+| API 呼叫與 AutoSupport 功能 | HTTPS | 443.. | 傳出網際網路和 ONTAP 叢集管理 LIF | API 呼叫 Google Cloud 和 ONTAP 、將 BlueXP 分類、 BlueXP 勒索軟體保護、並將 AutoSupport 訊息傳送給 NetApp 
 
 
-| API 呼叫 | TCP | 8080 | 資料感知 | 在部署期間探查資料偵測執行個體 
+| API 呼叫 | TCP | 8080 | BlueXP 分類 | 在部署期間探查至 BlueXP 分類執行個體 
 
 
 | DNS | UDP | 53. | DNS | 用於BlueXP的DNS解析 

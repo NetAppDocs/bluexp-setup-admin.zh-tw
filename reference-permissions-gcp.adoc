@@ -231,7 +231,7 @@ includedPermissions:
 | - compute.networks.updatePolicy | 將防火牆規則套用至HA配對的VPC和子網路。 
 
 
-| - compute.subnetworks.use - compute.subnetworks.useExternalIp - compute.instances.addAccessConfig | 以實現Cloud Data Sense。 
+| - compute.subnetworks.use - compute.subnetworks.useExternalIp - compute.instances.addAccessConfig | 以啟用 BlueXP 分類。 
 
 
 | - container。叢集。Get - container。叢集。清單 | 探索在Google Kubernetes Engine中執行的Kubernetes叢集。 
@@ -243,7 +243,7 @@ includedPermissions:
 | -監控.timeSeries.list -儲存區.buckes.getIamPolicy | 探索Google Cloud Storage儲存桶的相關資訊。 
 
 
-| - cloudkms.cryptoKeys.Get - cloudkms.cryptoKeys.getIamPolicy - cloudkms.cryptoKeys.list - cloudkms.cryptoKeys.setIamPolicy - cloudkms.keyclings - cloudkms.getIamPolicy - cloudkms.keyclings - cloudkms.keyRings.setIamPolicy | 可在Cloud Backup啟動精靈中選取您自己的客戶管理金鑰、而非使用預設的Google管理加密金鑰。 
+| - cloudkms.cryptoKeys.Get - cloudkms.cryptoKeys.getIamPolicy - cloudkms.cryptoKeys.list - cloudkms.cryptoKeys.setIamPolicy - cloudkms.keyclings - cloudkms.getIamPolicy - cloudkms.keyclings - cloudkms.keyRings.setIamPolicy | 可在 BlueXP 備份和恢復激活嚮導中選擇您自己的客戶託管密鑰，而無需使用默認的 Google 託管加密密鑰。 
 |===
 
 
@@ -275,4 +275,4 @@ includedPermissions:
 * cloudkms.keyRings.setIamPolicy
 
 
-雲端備份需要這些權限。
+BlueXP 備份與還原需要這些權限。

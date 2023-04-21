@@ -44,7 +44,7 @@ link:concept-modes.html["深入瞭解 BlueXP 部署模式"]。
 
 * _Account admin_：可在BlueXP中執行任何動作。
 * _Workspace 管理 _ ：可在指派的工作區中建立及管理資源。
-* _Compliance Viewer_：只能檢視Cloud Data Sense法規遵循資訊、並針對擁有存取權限的系統產生報告。
+* _Compliance Viewer_ ：只能檢視 BlueXP 分類的法規遵循資訊、並為擁有存取權限的工作區產生報告。
 
 
 link:reference-user-roles.html["深入瞭解這些角色"]。
@@ -70,7 +70,7 @@ link:task-setting-up-netapp-accounts.html["瞭解如何新增工作區"]。
 
 Connector 會執行 BlueXP 管理資料基礎架構所需執行的動作。Connector 會在您部署在雲端供應商或您設定的內部部署主機上的虛擬機器執行個體上執行。
 
-您可以將 Connector 搭配多個 BlueXP 服務使用。例如、如果您使用Connector來管理Cloud Volumes ONTAP 功能、您可以使用相同的Connector搭配其他服務、例如Cloud Tiering。
+您可以將 Connector 搭配多個 BlueXP 服務使用。例如、如果您使用 Connector 來管理 Cloud Volumes ONTAP 、您可以將同一個 Connector 搭配另一個服務使用、例如 BlueXP 分層。
 
 link:concept-connectors.html["深入瞭解連接器"]。
 

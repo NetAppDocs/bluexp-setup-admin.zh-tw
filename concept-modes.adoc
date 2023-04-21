@@ -154,10 +154,10 @@ API 端點:: API 呼叫會撥打至下列端點： \https://cloudmanager.cloud.n
 | Azure NetApp Files | 完全支援 
 
 
-| 雲端備份 | 受限於政府區域和商業區域、模式受限。受限模式的主權區域不支援。不支援下列功能：應用程式、虛擬機器和 Kubernetes 。 
+| 備份與還原 | 受限於政府區域和商業區域、模式受限。受限模式的主權區域不支援。不支援下列功能：應用程式、虛擬機器和 Kubernetes 。 
 
 
-| 雲端資料感測  a| 
+| 分類  a| 
 受限模式的政府地區支援。不支援商業區域或採用限制模式的主權區域。
 
 適用下列限制：
@@ -171,7 +171,7 @@ API 端點:: API 呼叫會撥打至下列端點： \https://cloudmanager.cloud.n
 | Cloud Volumes ONTAP | 完全支援 
 
 
-| 數位錢包 | 您可以使用數位錢包搭配下列受限模式支援的授權選項。 
+| 數位錢包 | 您可以將數位錢包搭配下列受限模式的支援授權選項一起使用。 
 
 
 | 內部部署 ONTAP 的叢集 | 支援使用 Connector 進行探索、以及不使用 Connector （直接探索）進行探索。當您發現內部叢集有 Connector 時、就不支援進階檢視（ System Manager ）。 
@@ -246,13 +246,13 @@ API 端點:: API 呼叫是針對 Connector 虛擬機器進行的。
 | 支援的服務 | 附註 
 
 
-| 雲端備份 | 支援於 AWS 和 Azure 商業地區。Google Cloud 或中不支援 https://aws.amazon.com/federal/us-intelligence-community/["AWS C2S/SC2S"^] 或 https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6."^] 
+| 備份與還原 | 支援於 AWS 和 Azure 商業地區。Google Cloud 或中不支援 https://aws.amazon.com/federal/us-intelligence-community/["AWS C2S/SC2S"^] 或 https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6."^] 
 
 
 | Cloud Volumes ONTAP | 由於無法存取網際網路、因此無法使用下列功能：自動軟體升級、 AutoSupport 和 AWS 成本資訊。 
 
 
-| 數位錢包 | 您可以將 Digital Wallet 與下列支援的授權選項一起用於私有模式。 
+| 數位錢包 | 您可以將數位錢包與下列支援的授權選項一起用於私有模式。 
 
 
 | 內部部署 ONTAP 的叢集 | 需要從雲端（安裝 Connector 的位置）連線至內部環境。不支援不含 Connector 的探索（直接探索）。 
@@ -266,10 +266,10 @@ API 端點:: API 呼叫是針對 Connector 虛擬機器進行的。
 | 支援的服務 | 附註 
 
 
-| 雲端備份 | 僅支援將內部部署 ONTAP 磁碟區備份及還原至 StorageGRID 系統。https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html["瞭解如何將內部部署 ONTAP 資料備份至 StorageGRID"^] 
+| 備份與還原 | 僅支援將內部部署 ONTAP 磁碟區備份及還原至 StorageGRID 系統。https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html["瞭解如何將內部部署 ONTAP 資料備份至 StorageGRID"^] 
 
 
-| 雲端資料感測  a| 
+| 分類  a| 
 * 唯一支援的資料來源是您可以在本機探索的資料來源。
 +
 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html#supported-data-sources["檢視您可以在本機探索的來源"^]
@@ -282,7 +282,7 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-da
 
 
 
-| 數位錢包 | 您可以將 Digital Wallet 與下列支援的授權選項一起用於私有模式。 
+| 數位錢包 | 您可以將數位錢包與下列支援的授權選項一起用於私有模式。 
 
 
 | 內部部署 ONTAP 的叢集 | 不支援不含 Connector 的探索（直接探索）。 
@@ -294,9 +294,9 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-da
 支援的授權選項:: 私有模式僅支援 BYOL 。
 +
 --
-對於 Cloud Volumes ONTAP BYOL 、僅支援節點型授權。不支援容量型授權。由於無法使用外傳網際網路連線、因此您必須在「數位錢包」中手動上傳 Cloud Volumes ONTAP 授權檔案。
+對於 Cloud Volumes ONTAP BYOL 、僅支援節點型授權。不支援容量型授權。由於無法使用外傳網際網路連線、因此您需要手動上傳 BlueXP 數位錢包中的 Cloud Volumes ONTAP 授權檔案。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#add-unassigned-licenses["瞭解如何將授權新增至 Digital Wallet"^]
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#add-unassigned-licenses["瞭解如何新增授權至 BlueXP 數位錢包"^]
 
 --
 如何開始使用私有模式:: 您可以從 NetApp 支援網站 下載「離線」安裝程式來使用私有模式。
@@ -315,18 +315,15 @@ link:task-quick-start-private-mode.html["瞭解如何開始使用私有模式"]�
 
 請注意、某些服務可能受到限制的支援。如需有關限制模式和私有模式如何支援這些服務的詳細資訊、請參閱上述各節。
 
-[cols="33h,33,33"]
+[cols="19,27,27,27"]
 |===
-| BlueXP 服務或功能 | 受限模式 | 私有模式 
+| 產品領域 | BlueXP 服務或功能 | 受限模式 | 私有模式 
 
 
-| Amazon FSX for ONTAP Sf | 是的 | 否 
+.11+| * 工作環境 * | Amazon FSX for ONTAP Sf | 是的 | 否 
 
 
 | Amazon S3 | 否 | 否 
-
-
-| 應用程式範本 | 否 | 否 
 
 
 | Azure Blob | 否 | 否 
@@ -335,40 +332,10 @@ link:task-quick-start-private-mode.html["瞭解如何開始使用私有模式"]�
 | Azure NetApp Files | 是的 | 否 
 
 
-| 雲端備份 | 是的 | 是的 
-
-
-| 雲端資料感測 | 是的 | 是的 
-
-
-| Cloud Sync | 否 | 否 
-
-
-| 雲端分層 | 否 | 否 
-
-
 | Cloud Volumes ONTAP | 是的 | 是的 
 
 
 | 適用於 Google Cloud Cloud Volumes Service | 否 | 否 
-
-
-| 運算 | 否 | 否 
-
-
-| 數位顧問 | 否 | 否 
-
-
-| 數位錢包 | 是的 | 是的 
-
-
-| E系列 | 否 | 否 
-
-
-| 經濟效益 | 否 | 否 
-
-
-| 全域檔案快取 | 否 | 否 
 
 
 | Google Cloud Storage | 否 | 否 
@@ -380,19 +347,52 @@ link:task-quick-start-private-mode.html["瞭解如何開始使用私有模式"]�
 | 內部 ONTAP 部署的叢集 | 是的 | 是的 
 
 
+| E系列 | 否 | 否 
+
+
+| StorageGRID | 否 | 否 
+
+
+.13+| *服務* | 備份與還原 | 是的 | 是的 
+
+
+| 分類 | 是的 | 是的 
+
+
+| 雲端作業 | 否 | 否 
+
+
+| 複製與同步 | 否 | 否 
+
+
+| 數位顧問 | 否 | 否 
+
+
+| 數位錢包 | 是的 | 是的 
+
+
+| 經濟效益 | 否 | 否 
+
+
+| 邊緣快取 | 否 | 否 
+
+
 | 營運恢復能力 | 否 | 否 
 
 
 | 勒索軟體保護 | 否 | 否 
 
 
+| 補救 | 否 | 否 
+
+
 | 複寫 | 是的 | 是的 
 
 
-| StorageGRID | 否 | 否 
+| 分層 | 否 | 否 
 
 
-| 認證資料 | 是的 | 是的 
+.4+| * 功能 * | 認證資料 | 是的 | 是的 
 
 
 | NSS 帳戶 | 是的 | 否 

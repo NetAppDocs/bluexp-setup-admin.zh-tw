@@ -179,20 +179,6 @@ summary: 當BlueXP在Azure中啟動Connector VM時、它會將自訂角色附加
 
 
 
-=== 應用程式範本標記
-
-當您使用應用程式範本標記服務時、Connector會發出下列API要求來管理Azure資源上的標記：
-
-* Microsoft.Resources /資源/讀取
-* Microsoft.Resources /訂閱/作業結果/讀取
-* Microsoft.Resources /訂閱/資源群組/讀取
-* Microsoft.Resources /訂閱/資源群組/資源/讀取
-* Microsoft.Resources /標記/讀取
-* Microsoft.Resources /標記/寫入
-
-
-
-
 === Azure NetApp Files
 
 Connector會提出下列API要求來管理Azure NetApp Files 功能完善的環境：
@@ -206,9 +192,9 @@ Connector會提出下列API要求來管理Azure NetApp Files 功能完善的環�
 
 
 
-=== 雲端備份
+=== 備份與還原
 
-Connector會針對備份與還原作業提出下列API要求：
+Connector 會針對 BlueXP 備份與還原提出下列 API 要求：
 
 * Microsoft.Compute/virtualMachines/read
 * Microsoft.Compute/virtualMachines/start/action
@@ -261,9 +247,9 @@ Connector會針對備份與還原作業提出下列API要求：
 
 
 
-=== 雲端資料感測
+=== 分類
 
-使用Cloud Data Sense時、Connector會發出下列API要求。
+當您使用 BlueXP 分類時、 Connector 會提出下列 API 要求。
 
 [cols="3*"]
 |===
@@ -404,26 +390,6 @@ Connector會針對備份與還原作業提出下列API要求：
 
 | Microsoft.Resources /訂閱/資源群組/寫入 | 是的 | 否 
 |===
-
-
-=== 雲端分層
-
-連接器會在您設定雲端分層時、發出下列API要求。
-
-* Microsoft.Storage/storageAccounts/listkeys/action
-* Microsoft.Resources /訂閱/資源群組/讀取
-* Microsoft.Resources /訂閱/位置/讀取
-
-
-Connector會針對日常作業提出下列API要求。
-
-* Microsoft.Storage/storageAccounts/blobServices/contains/read
-* Microsoft.Storage/storageAccounts/blobServices/contains/write
-* Microsoft.Storage/storageAccounts/managementPolicys/read
-* Microsoft.Storage/storageAccounts/managementPolicys/write
-* Microsoft.Storage/storageAccounts/read
-
-
 
 
 === Cloud Volumes ONTAP
@@ -733,9 +699,9 @@ Connector會提出下列API要求、要求在Cloud Volumes ONTAP Azure中部署�
 |===
 
 
-=== 全域檔案快取
+=== 邊緣快取
 
-當您使用全域檔案快取時、Connector會發出下列API要求：
+當您使用 BlueXP 邊緣快取時、 Connector 會發出下列 API 要求：
 
 * Microsoft.Insights /指標/讀取
 * Microsoft.Compute/virtualMachines/extensions/write
@@ -764,6 +730,40 @@ Connector會提出下列API要求、以探索及管理Azure Kubernetes Service�
 
 
 
+=== 補救
+
+當您使用 BlueXP 補救措施時、 Connector 會發出下列 API 要求來管理 Azure 資源上的標記：
+
+* Microsoft.Resources /資源/讀取
+* Microsoft.Resources /訂閱/作業結果/讀取
+* Microsoft.Resources /訂閱/資源群組/讀取
+* Microsoft.Resources /訂閱/資源群組/資源/讀取
+* Microsoft.Resources /標記/讀取
+* Microsoft.Resources /標記/寫入
+
+
+
+
+=== 分層
+
+當您設定 BlueXP 分層時、 Connector 會發出下列 API 要求。
+
+* Microsoft.Storage/storageAccounts/listkeys/action
+* Microsoft.Resources /訂閱/資源群組/讀取
+* Microsoft.Resources /訂閱/位置/讀取
+
+
+Connector會針對日常作業提出下列API要求。
+
+* Microsoft.Storage/storageAccounts/blobServices/contains/read
+* Microsoft.Storage/storageAccounts/blobServices/contains/write
+* Microsoft.Storage/storageAccounts/managementPolicys/read
+* Microsoft.Storage/storageAccounts/managementPolicys/write
+* Microsoft.Storage/storageAccounts/read
+
+
+
+
 == 變更記錄
 
 新增和移除權限時、我們會在下方各節中加以註記。
@@ -772,7 +772,7 @@ Connector會提出下列API要求、以探索及管理Azure Kubernetes Service�
 
 === 2023年3月23日
 
-Cloud Data Sense不再需要「Microsoft.Storage/storageAccounts/DELETE」權限。
+BlueXP 分類不再需要「 Microsoft.Storage/storageAccounts/delete 」權限。
 
 此權限仍為Cloud Volumes ONTAP 必填項目。
 
@@ -785,7 +785,7 @@ Cloud Data Sense不再需要「Microsoft.Storage/storageAccounts/DELETE」權限
 * Microsoft.Storage/storageAccounts/listAccountSas /行動
 * Microsoft.Synapse /工作區/私有端點連線核准/行動
 +
-雲端備份需要這些權限。
+BlueXP 備份與還原需要這些權限。
 
 * Microsoft.Network/loadBalancers/backendAddressPools/join/action
 +
@@ -801,11 +801,11 @@ Cloud Data Sense不再需要「Microsoft.Storage/storageAccounts/DELETE」權限
 
 * Microsoft.Storage/storageAccounts/blobServices/contains/write
 +
-雲端備份和雲端分層需要此權限。
+BlueXP 備份與還原及 BlueXP 分層需要此權限。
 
 * Microsoft.Network/publicIPAddresses/delete
 +
-雲端備份需要此權限。
+BlueXP 備份與還原需要此權限。
 
 
 

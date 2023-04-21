@@ -44,7 +44,7 @@ NOTE: 採用受限模式會取代啟用或停用 SaaS 平台的選項。您可�
 
 === 連接器3.9.28
 
-* 數位錢包現在支援電子郵件通知。
+* BlueXP 數位電子錢包現在支援電子郵件通知。
 +
 如果您設定通知設定、您可以在BYOL授權即將過期（「警告」通知）或已過期（「錯誤」通知）時收到電子郵件通知。
 
@@ -104,12 +104,12 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manag
 +
 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["檢視Connector的系統需求"]。
 
-* 現在、連接器可在完全隔離網際網路的任何雲端環境中獲得支援。然後您可以使用連接器上執行的BlueXP主控台、在Cloud Volumes ONTAP 同一個位置部署故障、並探索內部部署ONTAP 的故障叢集（如果您的雲端環境與內部部署環境之間有連線）。您也可以在Cloud Volumes ONTAP AWS和Azure商業區域使用Cloud Backup來備份各種不完整的資料。此類部署不支援其他BlueXP服務、數位錢包除外。
+* 現在、連接器可在完全隔離網際網路的任何雲端環境中獲得支援。然後您可以使用連接器上執行的BlueXP主控台、在Cloud Volumes ONTAP 同一個位置部署故障、並探索內部部署ONTAP 的故障叢集（如果您的雲端環境與內部部署環境之間有連線）。您也可以使用 BlueXP 備份與還原來備份 AWS 和 Azure 商業地區的 Cloud Volumes ONTAP 磁碟區。除了 BlueXP 數位錢包之外、此類部署不支援其他 BlueXP 服務。
 +
 雲端區域可以是美國安全機構的區域、例如AWS C2S/SC2S、Azure IL6或任何商業區域。
 
 +
-若要開始使用、請手動安裝Connector軟體、登入在Connector上執行的BlueXP主控台、將BYOL授權新增至Digital Wallet、然後再部署Cloud Volumes ONTAP 。
+若要開始使用、請手動安裝 Connector 軟體、登入 Connector 上執行的 BlueXP 主控台、將 BYOL 授權新增至 BlueXP 數位錢包、然後部署 Cloud Volumes ONTAP 。
 
 +
 ** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["將Connector安裝在沒有網際網路存取的位置"^]
@@ -214,7 +214,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#1
 
 === 連接器3.9.23
 
-* 您的PAYGO訂閱和BlueXP年度合約現已可供檢視及管理、請參閱Digital Wallet。
+* 您的 PAYGO 訂閱和 BlueXP 年度合約現在可從數位錢包中檢視及管理。
 +
 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-manage-subscriptions.html["瞭解如何管理您的訂閱"^]
 

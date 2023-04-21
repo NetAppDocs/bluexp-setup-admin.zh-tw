@@ -26,21 +26,21 @@ _Connector_ 是在您的雲端網路或內部部署網路中執行的 NetApp 軟
 
 * Amazon FSX for NetApp ONTAP 工作環境建立
 +
-雖然 Connector 不需要建立工作環境、但需要建立和管理磁碟區、複寫資料、並將適用於 ONTAP 的 FSX 與 BlueXP 服務整合、例如 Data Sense 和 Cloud Sync 。
+雖然 Connector 不需要建立工作環境、但需要建立和管理磁碟區、複寫資料、並將適用於 ONTAP 的 FSX 與 BlueXP 分類和 BlueXP 複製與同步等服務整合。
 
 * Azure NetApp Files
 +
-雖然不需要連接器來設定和管理Azure NetApp Files 功能、但如果您想要使用Cloud Data Sense來掃描Azure NetApp Files 支援資料、則需要連接器。
+雖然不需要連接器來設定和管理 Azure NetApp Files 、但如果您想使用 BlueXP 分類來掃描 Azure NetApp Files 資料、則需要連接器。
 
-* Cloud Sync
 * 適用於 Google Cloud Cloud Volumes Service
+* 複製與同步
 * 數位顧問
 * 數位錢包
 +
-在幾乎所有情況下、您都可以在沒有連接器的情況下、將授權新增至Digital Wallet。
+在幾乎所有情況下、您都可以在沒有 Connector 的情況下、將授權新增至數位錢包。
 
 +
-連接器新增授權至Digital Wallet所需的唯一時間、是Cloud Volumes ONTAP 針對以節點為基礎的_授權。在這種情況下需要連接器、因為資料是取自Cloud Volumes ONTAP 安裝在效益分析系統上的授權。
+只有在 Connector 需要將授權新增至數位錢包時、才需要使用 Cloud Volumes ONTAP 節點型授權。在這種情況下需要連接器、因為資料是取自Cloud Volumes ONTAP 安裝在效益分析系統上的授權。
 
 * 直接探索內部部署ONTAP 的叢集
 +
@@ -60,18 +60,18 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 * Amazon FSX提供ONTAP 功能完善的管理功能
 * Amazon S3探索
 * Azure Blob探索
-* 雲端備份
-* 雲端資料感測
-* 雲端分層
+* 備份與還原
+* 分類
 * Cloud Volumes ONTAP
 * E系列系統
 * 經濟效益 ^1^
-* 全域檔案快取
+* 邊緣快取
 * Google Cloud Storage探索
 * Kubernetes叢集
 * 內部部署ONTAP 的不支援叢集整合至BlueXP資料服務
 * 營運恢復能力 ^1^
-* StorageGRID
+* 系統StorageGRID
+* 分層
 
 
 ^1^ 雖然您可以在不使用 Connector 的情況下存取這些服務、但需要有 Connector 才能從服務啟動動作。
@@ -195,7 +195,7 @@ Connector可以在BlueXP中管理多個工作環境。單一Connector應管理�
 
 以下是幾個範例：
 
-* 您有一個多雲端環境（ AWS 和 Azure ）、偏好在 AWS 中安裝一個 Connector 、在 Azure 中安裝另一個 Connector 。每個系統都能管理 Cloud Volumes ONTAP 在這些環境中執行的不實系統。
+* 您擁有多雲端環境（例如 AWS 和 Azure ）、偏好在 AWS 中安裝一個 Connector 、在 Azure 中安裝另一個 Connector 。每個系統都能管理 Cloud Volumes ONTAP 在這些環境中執行的不實系統。
 * 服務供應商可能會使用一個 BlueXP 帳戶為客戶提供服務、而使用另一個帳戶為其中一個業務單位提供災難恢復。每個帳戶都會有個別的 Connectors 。
 
 

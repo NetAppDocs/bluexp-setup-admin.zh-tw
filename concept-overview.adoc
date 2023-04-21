@@ -40,33 +40,33 @@ BlueXP 平台提供四大資料管理支柱：儲存、行動力、保護、分�
 ** 系統StorageGRID
 
 
+* 協調與保護 https://bluexp.netapp.com/solutions/kubernetes["Kubernetes 持續資料"^]
 
 
 --
 行動力:: 透過同步、複製、分層及快取資料、將資料移至所需的位置。
 +
 --
-* https://bluexp.netapp.com/cloud-sync-service["Cloud Sync"^]
-* https://bluexp.netapp.com/cloud-tiering["雲端分層"^]
-* https://bluexp.netapp.com/global-file-cache["全域檔案快取"^]
+* https://bluexp.netapp.com/cloud-sync-service["複製與同步"^]
+* https://bluexp.netapp.com/global-file-cache["邊緣快取"^]
+* https://bluexp.netapp.com/cloud-tiering["分層"^]
 
 
 --
 保護:: 使用自動化保護機制來保護資料、避免資料遺失、非計畫性中斷、勒索軟體及其他網路威脅。
 +
 --
-* https://bluexp.netapp.com/cloud-backup["雲端備份"^]
+* https://bluexp.netapp.com/cloud-backup["備份與還原"^]
 * https://bluexp.netapp.com/replication["複寫"^]
-* https://bluexp.netapp.com/ransomware-protection["勒索軟體保護"^]
-* https://bluexp.netapp.com/k8s["Kubernetes"^]
 
 
 --
 分析與控制:: 使用工具來監控、對應及最佳化您的資料儲存與基礎架構。
 +
 --
-* https://bluexp.netapp.com/netapp-cloud-data-sense["雲端資料感測"^]
+* https://bluexp.netapp.com/netapp-cloud-data-sense["分類"^]
 * https://bluexp.netapp.com/digital-advisor["數位顧問"^]
+* https://bluexp.netapp.com/ransomware-protection["勒索軟體保護"^]
 
 
 --
@@ -126,6 +126,6 @@ link:concept-modes.html["深入瞭解 BlueXP 部署模式"]。
 
 == SOC 2類型2認證
 
-一家獨立認證的公共會計公司與服務稽核員、研究了BlueXP、Cloud Sync 整套技術、雲端分層、Cloud Data Sense和Cloud Backup（BlueXP平台）、並確認他們已根據適用的信任服務準則、達成SOC 2類報告。
+一家專業的執業會計師公司和服務稽核員審查了 BlueXP 、並確認它根據適用的信託服務標準、達成 SOC 2 類報告。
 
 https://www.netapp.com/company/trust-center/compliance/soc-2/["檢視NetApp的SOC 2報告"^]

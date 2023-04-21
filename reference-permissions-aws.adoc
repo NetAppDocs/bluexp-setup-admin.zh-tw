@@ -47,19 +47,19 @@ summary: 當BlueXP在AWS中啟動Connector執行個體時、它會將原則附�
 
 第一個原則提供下列服務的權限：
 
-* 雲端備份
-* 雲端資料感測
-* 雲端分層
+* Amazon S3 儲存區探索
+* 備份與還原
+* 分類
 * Cloud Volumes ONTAP
 * FSX ONTAP
-* S3儲存區探索
+* 分層
 
 
 第二個原則提供下列服務的權限：
 
-* 應用程式範本標記
-* 全域檔案快取
+* 邊緣快取
 * Kubernetes
+* 補救
 
 
 [role="tabbed-block"]
@@ -703,25 +703,53 @@ summary: 當BlueXP在AWS中啟動Connector執行個體時、它會將原則附�
 
 
 
-=== 應用程式範本標記
+=== Amazon FSX for ONTAP Sf
 
-當您使用應用程式範本標記服務時、Connector會發出下列API要求來管理AWS資源上的標記：
+Connector 會提出下列 API 要求、以管理 Amazon FSX for ONTAP ：
 
+* EC2：資料說明
+* EC2：取消訂閱即時狀態
+* EC2：取消訂閱實例屬性
+* EC2：取消功能表
+* EC2：取消影像
 * EC2：建立標記
-* EC2：刪除標記
+* EC2：減量磁碟區
+* EC2：取消安全性群組
+* EC2：網路介面
+* EC2：無資料子網路
+* EC2：取消功能Vpcs
+* EC2：取消功能DhcpOptions
+* EC2：取消快照
+* EC2：評量會議
+* EC2：取消註冊
 * EC2：取消標示
-* 標記：getResources
-* 標記：getTagKeys
-* 標記：getTagValues
-* 標記：TagResources
-* 標記：取消標記資源
+* EC2：解讀IamInstanceProfileAssociations
+* EC2：取消訂閱保留服務
+* EC2：取消資料VpcEndpoints
+* EC2：取消功能Vpcs
+* EC2：說明體積修改
+* EC2：取消目標位置群組
+* 公里：清單*
+* 公里：描述*
+* 公里：建立授予
+* kms：清單別名
+* FSX：說明*
+* FSX：清單*
 
 
 
 
-=== 雲端備份
+=== Amazon S3 儲存區探索
 
-Connector會提出下列API要求、以部署Cloud Backup的還原執行個體：
+Connector提出下列API要求以探索Amazon S3儲存區：
+
+S3：GetEncryptionConfiguration
+
+
+
+=== 備份與還原
+
+Connector 會發出下列 API 要求、以部署 BlueXP 備份與還原的還原執行個體：
 
 * EC2：啟動安裝
 * EC2：停止執行
@@ -825,9 +853,9 @@ Connector會提出下列API要求、以管理Amazon S3中的備份：
 
 
 
-=== 雲端資料感測
+=== 分類
 
-Connector會提出下列API要求來部署Cloud Data Sense執行個體：
+Connector 會提出下列 API 要求、以部署 BlueXP 分類執行個體：
 
 * EC2：資料說明
 * EC2：取消訂閱即時狀態
@@ -855,7 +883,7 @@ Connector會提出下列API要求來部署Cloud Data Sense執行個體：
 * EC2：解讀IamInstanceProfileAssociations
 
 
-使用Cloud Data Sense時、Connector會發出下列API要求來掃描S3儲存區：
+當您使用 BlueXP 分類時、 Connector 會發出下列 API 要求來掃描 S3 貯體：
 
 * IAM：AddRoleToInstanceProfile
 * EC2：Associate IamInstanceProfile
@@ -875,31 +903,6 @@ Connector會提出下列API要求來部署Cloud Data Sense執行個體：
 * STS: Assume勞力
 
 
-
-
-=== 雲端分層
-
-連接器會在您使用雲端分層時、提出下列API要求、將資料分層至Amazon S3。
-
-[cols="3*"]
-|===
-| 行動 | 用於設定？ | 用於日常營運？ 
-
-
-| S3：建立桶 | 是的 | 否 
-
-
-| S3：Putt升降 器組態 | 是的 | 否 
-
-
-| S3：Get生命 週期組態 | 是的 | 是的 
-
-
-| EC2：取消註冊 | 是的 | 否 
-
-
-| EC2：取消資料VpcEndpoints | 是的 | 否 
-|===
 
 
 === Cloud Volumes ONTAP
@@ -1173,49 +1176,13 @@ Connector會提出下列API要求、要求在Cloud Volumes ONTAP AWS中部署及
 |===
 
 
-=== 全域檔案快取
+=== 邊緣快取
 
-Connector會在部署期間提出下列API要求、以部署全域檔案快取執行個體：
+Connector 會在部署期間提出下列 API 要求、以部署 BlueXP 邊緣快取執行個體：
 
 * 雲端：無標準堆疊
 * cloudwatch：GetMetricStatistics
 * 雲端：清單堆疊
-
-
-
-
-=== FSX ONTAP
-
-Connector會提出下列API要求來管理FSXfor ONTAP Sfor the：
-
-* EC2：資料說明
-* EC2：取消訂閱即時狀態
-* EC2：取消訂閱實例屬性
-* EC2：取消功能表
-* EC2：取消影像
-* EC2：建立標記
-* EC2：減量磁碟區
-* EC2：取消安全性群組
-* EC2：網路介面
-* EC2：無資料子網路
-* EC2：取消功能Vpcs
-* EC2：取消功能DhcpOptions
-* EC2：取消快照
-* EC2：評量會議
-* EC2：取消註冊
-* EC2：取消標示
-* EC2：解讀IamInstanceProfileAssociations
-* EC2：取消訂閱保留服務
-* EC2：取消資料VpcEndpoints
-* EC2：取消功能Vpcs
-* EC2：說明體積修改
-* EC2：取消目標位置群組
-* 公里：清單*
-* 公里：描述*
-* 公里：建立授予
-* kms：清單別名
-* FSX：說明*
-* FSX：清單*
 
 
 
@@ -1232,11 +1199,19 @@ Connector會提出下列API要求、以探索及管理Amazon EKS叢集：
 
 
 
-=== S3儲存區探索
+=== 補救
 
-Connector提出下列API要求以探索Amazon S3儲存區：
+當您使用 BlueXP 補救措施時、 Connector 會發出下列 API 要求來管理 AWS 資源上的標記：
 
-S3：GetEncryptionConfiguration
+* EC2：建立標記
+* EC2：刪除標記
+* EC2：取消標示
+* 標記：getResources
+* 標記：getTagKeys
+* 標記：getTagValues
+* 標記：TagResources
+* 標記：取消標記資源
+
 
 
 
@@ -1248,6 +1223,6 @@ S3：GetEncryptionConfiguration
 
 === 2023年2月14日
 
-雲端分層現在需要下列權限：
+BlueXP 分層現在需要下列權限：
 
 EC2：取消資料VpcEndpoints

@@ -21,6 +21,6 @@ summary: 以私人模式使用 BlueXP 開始運作後、您可以開始使用受
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/index.html["建立 Cloud Volumes ONTAP 系統"^]
 * https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/index.html["探索內部部署ONTAP 的叢集"^]
 * https://docs.netapp.com/us-en/cloud-manager-replication/index.html["複寫資料"^]
-* https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html["使用ONTAP Cloud Data SENSE掃描內部的不全區資料"^]
-* https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html["使用Cloud Backup將ONTAP 內部的等量資料備份StorageGRID 至不實"^]
+* https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html["使用 BlueXP 分類掃描內部部署 ONTAP Volume 資料"^]
+* https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html["使用 BlueXP 備份與還原、將內部部署的 ONTAP Volume 資料備份至 StorageGRID"^]
 

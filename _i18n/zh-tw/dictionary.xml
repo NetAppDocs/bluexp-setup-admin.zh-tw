@@ -34,8 +34,6 @@
   <block id="3a580f142203677f1f0bc30898f63f53" category="cell">Azure</block>
   <block id="56ef2682280ac110060b881925a87b80" category="cell">Google Cloud</block>
   <block id="d0f1687c68ee0f0d9bac765716d18923" category="inline-link">內部 ONTAP 部署的叢集</block>
-  <block id="92d2b6aba6afa3f690540cf3dba9b633" category="inline-link">雲端分層</block>
-  <block id="dad57e95fc9a5390302ad830888cbdb9" category="inline-link">雲端備份</block>
   <block id="0d28acbceed906f52a206d0f3fb0add2" category="inline-image-macro">一組現有認證資料的動作功能表快照。</block>
   <block id="ea765af20d763fe16d94ba9ef03fd31b" category="paragraph"><block ref="ea765af20d763fe16d94ba9ef03fd31b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fff6f5125be05a94543d2e88dbd30b27" category="inline-image-macro">Google Cloud 專案的快照、以及 Google Cloud 認證的訂閱內容。</block>
@@ -166,9 +164,7 @@
   <block id="39c131bd8f90ef7749228972a6486162" category="section-title">第三方代理程式與擴充功能</block>
   <block id="c305e694f602a4913fd20d15e3508fcc" category="paragraph">Connector VM不支援協力廠商代理程式或VM擴充。</block>
   <block id="30136395f01879792198317c11831ea4" category="list-text">Kubernetes</block>
-  <block id="24e6e2f6171b43a847fe194a9a9b5cd0" category="list-text">全域檔案快取</block>
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="list-text">Cloud Volumes ONTAP</block>
-  <block id="d882bf73cd5caf1e5aa39edbf893ad74" category="list-text">雲端資料感測</block>
   <block id="9085e5686dfeb6405cc2917702710ed3" category="cell">通知中心</block>
   <block id="3d1f92a565d3b1a61880236e33c49bf3" category="cell">時間表</block>
   <block id="0486b07a3d352a89611f0005bff8bbd3" category="cell">顯示事件和行動的高層級狀態</block>
@@ -344,7 +340,6 @@
   <block id="6a9bc1ac566276782bd9d53b52b2f372" category="cell">服務帳戶Cloud Volumes ONTAP</block>
   <block id="1e88d77d48ab40f10d18398d6d56110a" category="list-text">儲存設備管理</block>
   <block id="382b0f5185773fa0f67a8ed8056c7759" category="cell">不適用</block>
-  <block id="9da64c05f602835b1e7e3c537166bbc1" category="cell">（選用）用於資料分層和雲端備份</block>
   <block id="386abe7036c62f0f27d3787e317b4aff" category="cell">Google API服務代理程式</block>
   <block id="f295764441aac0df9246f1a621487073" category="list-text">（預設）編輯器</block>
   <block id="786c13b749589e9a2a94540f24f240c3" category="cell">Google Compute Engine預設服務帳戶</block>
@@ -556,10 +551,6 @@
   <block id="234eb6bb27d592cbf06aa6537a33a380" category="list-text">Amazon FSX提供ONTAP 功能完善的管理功能</block>
   <block id="85eb427901278daf26f132cb3e076914" category="list-text">Kubernetes叢集</block>
   <block id="6c253a8aff5dfa835a77545b3006abc8" category="list-text">內部部署 ONTAP 的叢集</block>
-  <block id="d4f99f1852ac22c1cad9673e75e03dc1" category="paragraph">雖然不需要連接器來設定和管理Azure NetApp Files 功能、但如果您想要使用Cloud Data Sense來掃描Azure NetApp Files 支援資料、則需要連接器。</block>
-  <block id="e367efbc26bd12c0d6ae37dd6a55ef9b" category="list-text">Cloud Sync</block>
-  <block id="cbe129909ca1b56ccace7cbd5ffca407" category="paragraph">在幾乎所有情況下、您都可以在沒有連接器的情況下、將授權新增至Digital Wallet。</block>
-  <block id="1ab568c31a52b2095bb19460f2f7bac6" category="paragraph">連接器新增授權至Digital Wallet所需的唯一時間、是Cloud Volumes ONTAP 針對以節點為基礎的_授權。在這種情況下需要連接器、因為資料是取自Cloud Volumes ONTAP 安裝在效益分析系統上的授權。</block>
   <block id="ff0e00d64f60db5d99e55c6d706306cc" category="section-title">支援的位置</block>
   <block id="a92005953b68970af3654f93b3a572c1" category="paragraph">下列位置支援連接器：</block>
   <block id="6beccc67ff905f7da0b29dece26b0485" category="list-text">Amazon Web Services</block>
@@ -596,7 +587,6 @@
   <block id="7d033896524ebe16495f74d9f7202783" category="paragraph"><block ref="cf2050a2914e59a752ab48465ba00e16" category="inline-link-macro-rx"></block>。</block>
   <block id="1dc658529d6408dff5a6f0516b76a420" category="inline-link">檢視Tenancy API的端點</block>
   <block id="a2eed12a43b27297c587170e14b434f9" category="paragraph"><block ref="a2eed12a43b27297c587170e14b434f9" category="inline-link-rx"></block></block>
-  <block id="64eb307ccc4921e5984431f546f8ac36" category="list-text">*法規遵循檢視器*：只能檢視Cloud Data Sense法規遵循資訊、並針對有權存取的工作區產生報告。</block>
   <block id="cd300641cc6f26fb104a34058424d793" category="list-text">如果您選取「工作區管理」或「法規遵循檢視器」、請選取一個或多個工作區以與該使用者建立關聯。</block>
   <block id="8ecff25aa4ee2497099b60f83bd4dde7" category="paragraph">您可以隨時建立工作區管理員與工作區的關聯和取消關聯。建立使用者關聯可讓他們在該工作區中建立及檢視工作環境。</block>
   <block id="a6181f7eb68c3b9ae53c98621898ae4c" category="paragraph">建立所需數量的服務帳戶、以管理工作環境中的資源。</block>
@@ -653,7 +643,6 @@
   <block id="39c1f44dc3cf3d61f829ba697b33eaac" category="list-text">* 安全性群組 * ：選擇是建立新的安全性群組、還是選擇允許傳入 HTTP 、 HTTPS 及 SSH 存取的現有安全性群組。</block>
   <block id="cb11319a6aac10698937e0bc23986201" category="summary">「帳戶管理員」、「工作區管理員」、「法規遵循檢視器」及SnapCenter 「支援對象管理員」角色、可為使用者提供特定權限。</block>
   <block id="a5cd3ed116608dac017f14c046ea56bf" category="doc">角色</block>
-  <block id="e8620e3ad7e6d5204676f884b932b598" category="paragraph">Compliance Viewer角色適用於唯讀的Cloud Data Sense存取。</block>
   <block id="eaeb30f9f18e0c50b178676f3eaef45f" category="cell">工作</block>
   <block id="023bddc1580239bc605771883a09c8ff" category="cell">帳戶管理員</block>
   <block id="7088282dd5defa41ae1744ff713534b6" category="cell">工作區管理</block>
@@ -666,7 +655,6 @@
   <block id="e111db5964f3341f9a0b4794494aa9bf" category="cell">檢視資料複寫狀態</block>
   <block id="f8ed80d1b6ae9da0960249538d655425" category="cell">檢視時間表</block>
   <block id="39ac68e476b37c123efa68256cf31a7d" category="cell">在工作區之間切換</block>
-  <block id="a1a25779aa065eac4e0c23fa2f66bbb5" category="cell">檢視資料感應掃描結果</block>
   <block id="93b557fcf4dca896b9a77328a5ae0e92" category="cell">刪除工作環境</block>
   <block id="ff1717f17ee6eef1b2a1bb43f6547a36" category="cell">將 Kubernetes 叢集連接至工作環境</block>
   <block id="778cfbd8e3739e3af0e367072a92b2c3" category="cell">接收 Cloud Volumes ONTAP 此報告</block>
@@ -791,7 +779,6 @@
   <block id="ef53538ae41a651c7f72ab6cb1135d8c" category="section-title">成員</block>
   <block id="40b681a46714eeb24e21a893a14eac81" category="paragraph">當您建立使用者關聯時、您會指派一個角色給他們：</block>
   <block id="d67e41e5b96d2ab3e94f85f61f3e3591" category="list-text">_Workspace 管理 _ ：可在指派的工作區中建立及管理資源。</block>
-  <block id="e6a4828475cf518e1e053e7e425cf375" category="list-text">_Compliance Viewer_：只能檢視Cloud Data Sense法規遵循資訊、並針對擁有存取權限的系統產生報告。</block>
   <block id="e9b0a93b5b5cd95f3a2c544875c51ae3" category="inline-link-macro">深入瞭解這些角色</block>
   <block id="7895b348f81fb8e1118370d6314dfb51" category="paragraph"><block ref="a7cac0974b1a57b009ba128474746390" category="inline-link-macro-rx"></block>。</block>
   <block id="d5e92609cf510f5f97ac326e907a0540" category="section-title">工作區</block>
@@ -853,7 +840,6 @@
   <block id="47ba3a5c64279fe36c99fd745c770415" category="cell">- compute.instances.setServiceAccount - iam.serviceAccounts.actAs - iam.serviceAccounts.getIamPolicy - iam.serviceAccounts.list - 儲存空間 .objects.Get - 儲存空間 .objects.list</block>
   <block id="0e6cd912fcc55d354754239bbb3b910e" category="cell">在 Cloud Volumes ONTAP 整個過程中設定服務帳戶。此服務帳戶提供資料分層至 Google Cloud Storage 儲存庫的權限。</block>
   <block id="7ae509c8f6a49ea947573abf4cb9d134" category="cell">- compute.subnetworks.use - compute.subnetworks.useExternalIp - compute.instances.addAccessConfig</block>
-  <block id="cfce2399f4f36929c6a0ea17350ac8aa" category="cell">以實現Cloud Data Sense。</block>
   <block id="f85c74998244978e7f2016bbc795aea2" category="cell">- container。叢集。Get - container。叢集。清單</block>
   <block id="ddfb140a67cb8f801143468683f3e453" category="cell">探索在Google Kubernetes Engine中執行的Kubernetes叢集。</block>
   <block id="be541d1f37f2cc0c7ba1cfd7fcfbb4db" category="section-title">連線至目標網路</block>
@@ -869,7 +855,6 @@
   <block id="63b34d7f22329c0eb7915fca7a346007" category="cell">提供從用戶端 Web 瀏覽器到本機使用者介面的 HTTP 存取</block>
   <block id="0e8433f9a404f1f3ba601c14b026d321" category="cell">HTTPS</block>
   <block id="13f3cf8c531952d72e5847c4183e6910" category="cell">443..</block>
-  <block id="0c01b3b7191c43507ad9ca43d6443731" category="cell">提供HTTPS存取、從用戶端網頁瀏覽器存取本機使用者介面、以及從Cloud Data Sense執行個體連線</block>
   <block id="b136ef5f6a01d816991fe3cf7a6ac763" category="cell">TCP</block>
   <block id="dff8e9c2ac33381546d96deea9922999" category="cell">3128</block>
   <block id="7fcf8a20eb9257fce9235438893a7754" category="section-title">傳出規則</block>
@@ -887,7 +872,6 @@
   <block id="12007e1d59f4d09c87dbe2c438256244" category="cell">目的地</block>
   <block id="241b5fab8e737eaa79c543efe7307059" category="cell">API 呼叫與 AutoSupport 功能</block>
   <block id="096a28c32a85d3d48462b468a3700d9a" category="cell">傳出網際網路和 ONTAP 叢集管理 LIF</block>
-  <block id="a6a8d3a613b6b7ece18f688d168e5cda" category="cell">API會呼叫AWS和ONTAP VMware、Cloud Data Sense、勒索軟體服務、並將AutoSupport 這些訊息傳送給NetApp</block>
   <block id="22043367a89ddcf3eb99eec509a967ba" category="cell">API 呼叫</block>
   <block id="e93028bdc1aacdfb3687181f2031765d" category="cell">3000</block>
   <block id="e9ed822bdea417e9dfd79a2c81634ba4" category="cell">充當HA中介者ONTAP</block>
@@ -966,10 +950,6 @@
   <block id="2027473f3ca71543274163d3bb9dd8e1" category="list-text"><block ref="2027473f3ca71543274163d3bb9dd8e1" category="inline-link-rx"></block></block>
   <block id="6ff2a7981cc8a7efd758e8ffec4cc69e" category="inline-link">深入瞭ONTAP 解內部叢集增強功能</block>
   <block id="f0aff813a70ef2591adfbb6a1a06b553" category="list-text"><block ref="f0aff813a70ef2591adfbb6a1a06b553" category="inline-link-rx"></block></block>
-  <block id="89b945901df4999cfbb07b91df7f3e83" category="inline-link">使用Cloud Backup將ONTAP 內部的等量資料備份StorageGRID 至不實</block>
-  <block id="0ef5e09df96e6b4d97470a69c3a5bb03" category="list-text"><block ref="0ef5e09df96e6b4d97470a69c3a5bb03" category="inline-link-rx"></block></block>
-  <block id="c6e51205c48cc37a7cc66b973d442adf" category="inline-link">使用ONTAP Cloud Data SENSE掃描內部的不全區資料</block>
-  <block id="a2946220130b0d51ecc66e35f8a65cbe" category="list-text"><block ref="a2946220130b0d51ecc66e35f8a65cbe" category="inline-link-rx"></block></block>
   <block id="bf16d7909c891a5a760cab0ad77d53bc" category="list-text">輸入您的使用者名稱和密碼以登入。</block>
   <block id="38ce4e90f119b89b2fdf1f274431e262" category="section-title">2022年6月28日</block>
   <block id="47d69a1f17128c359904338c3502fe31" category="section-title">使用NetApp認證登入</block>
@@ -1029,7 +1009,6 @@
   <block id="c3d36b4a46dce16b3ad60eecabc87582" category="list-text">Amazon S3探索</block>
   <block id="bde43e83db72512f1aea47540264c8f0" category="list-text">Azure Blob探索</block>
   <block id="6060e8f925263dfdc63a751c294072e0" category="list-text">Google Cloud Storage探索</block>
-  <block id="0cae22bc84eb90b52cc86e22b140eb0c" category="paragraph">當您使用應用程式範本標記服務時、Connector會發出下列API要求來管理AWS資源上的標記：</block>
   <block id="693adfb773a054f1c9287da186e8ce5d" category="list-text">EC2：建立標記</block>
   <block id="3a2cbdfb7b022d729d851d5052148241" category="list-text">EC2：刪除標記</block>
   <block id="684a1bfe5fbc91f18d96de978a7df58a" category="list-text">EC2：取消標示</block>
@@ -1038,7 +1017,6 @@
   <block id="f624e5f75138eb92caddd44e1bc7342e" category="list-text">標記：getTagValues</block>
   <block id="5e665d8f5cf0c341dce9f3bd5e7f4cc0" category="list-text">標記：TagResources</block>
   <block id="5e10058ad3f07bfeca3eef81de09ce28" category="list-text">標記：取消標記資源</block>
-  <block id="ea6a60190611f087b7d1024fdd12f16c" category="paragraph">Connector會提出下列API要求、以部署Cloud Backup的還原執行個體：</block>
   <block id="027d28fab935de1ef9181da062feac6b" category="list-text">EC2：啟動安裝</block>
   <block id="68d58bcae13312f57154b0dc5bd5bee5" category="list-text">EC2：停止執行</block>
   <block id="c8e20ceabac2b519b4f4eb301166c9bd" category="list-text">EC2：資料說明</block>
@@ -1086,7 +1064,6 @@
   <block id="053eccd51ed9451171879091960925f5" category="list-text">黏著劑：建立資料庫</block>
   <block id="8aa289a776893bb855ec1aa9bed5209b" category="list-text">黏著劑：CreateTable</block>
   <block id="a269a322dce9f7dfa0a7cbd6c919eaf4" category="list-text">黏著劑：批字刪除分割區</block>
-  <block id="1ff2ee005f6ebf372516a77eb1822174" category="paragraph">Connector會提出下列API要求來部署Cloud Data Sense執行個體：</block>
   <block id="a5ea263b5c1fc9d98e3502347db5f38a" category="list-text">EC2：AttachVolume</block>
   <block id="5c1d3b82016ca9ba106bc6c28ab8c44a" category="list-text">EC2：刪除安全性群組</block>
   <block id="f81c1800b5bdeba91c623d2a3d6cd80b" category="list-text">EC2：取消安全性群組</block>
@@ -1098,13 +1075,11 @@
   <block id="d734a02593a16de307a6ba72b9e0a84f" category="list-text">IAM：AddRoleToInstanceProfile</block>
   <block id="5e56dcab5a3d5a272d5e0ea580b6ef9c" category="list-text">EC2：Associate IamInstanceProfile</block>
   <block id="878addcc09e93b6f03a1af8fb9aa5472" category="list-text">EC2：解讀IamInstanceProfileAssociations</block>
-  <block id="cf515733161bef5174a0b4727d3a287a" category="paragraph">使用Cloud Data Sense時、Connector會發出下列API要求來掃描S3儲存區：</block>
   <block id="70c72880a06cb649d8a568819cf5e5d1" category="list-text">S3：GetBucketting</block>
   <block id="e0c462b127c385a7109b2d96fee158ff" category="list-text">S3：GetBucketPolicyStatus</block>
   <block id="19c320aeee7c39747dcce0815428eea9" category="list-text">S3：GetBucketPolicy</block>
   <block id="9dcf380856979ca5b723d30e996e1f95" category="list-text">IAM：GetRole</block>
   <block id="60cfe31830d467874bb430da1683504e" category="list-text">STS: Assume勞力</block>
-  <block id="a5ee53db07b5874a6adfc974dafbbd58" category="paragraph">連接器會在您使用雲端分層時、提出下列API要求、將資料分層至Amazon S3。</block>
   <block id="004bf6c9a40003140292e97330236c53" category="cell">行動</block>
   <block id="271544c6feabf3364f5e9d9d71e81991" category="cell">用於設定？</block>
   <block id="536dc5b351662225d606f29978fb2842" category="cell">用於日常營運？</block>
@@ -1177,7 +1152,6 @@
   <block id="f3edb201fee35ccc535ef38207132cb5" category="cell">建立及管理可支援Amazon EBS彈性Volume功能的集合體</block>
   <block id="9708e121f9f5200cf3806e89c2633b16" category="cell">EC2：說明體積修改</block>
   <block id="a0343d4d10d8960a1347cc4819cae46b" category="cell">EC2：修改Volume</block>
-  <block id="fced0ebf1fcf946eb97f030a892b2b08" category="paragraph">Connector會在部署期間提出下列API要求、以部署全域檔案快取執行個體：</block>
   <block id="3a902f1e8a6db9861a0a7608e2c5f711" category="list-text">cloudwatch：GetMetricStatistics</block>
   <block id="1bad3fa525f7b2c60b554cc8a36a911c" category="list-text">雲端：清單堆疊</block>
   <block id="8e07bbd9f07bb93eda5ce53675e2dd26" category="paragraph">Connector會提出下列API要求、以探索及管理Amazon EKS叢集：</block>
@@ -1250,17 +1224,13 @@
   <block id="823b2e7894c2b52c1e9adc9ea10b9be5" category="section-title">如何使用Google Cloud權限</block>
   <block id="a4f605cd0aab29ee5fb50f28627cef5d" category="sidebar">權限摘要</block>
   <block id="abc9b009fdeb5b04ca7bcd60cdae2434" category="section-title">AWS權限的使用方式</block>
-  <block id="c6705240238244043d7e0d39f6ce1db1" category="section-title">應用程式範本標記</block>
-  <block id="8038b7f4543340933f0702ca9be2c9c5" category="paragraph">您可以查看Azure儲存帳戶的詳細資料、包括位置、資源群組、總容量和已用容量等。這些帳戶可做為雲端備份、雲端分層或Cloud Sync 還原作業的目的地。</block>
   <block id="4fa9fc9591ffa247eeef55070b3327a0" category="paragraph">您應該很快就會自動看到Azure Blob的工作環境。</block>
   <block id="2ed919302195764ff313fc8d75b59525" category="inline-image-macro">Azure Blob工作環境的快照。</block>
   <block id="33b5e081bfc2a4ff553d44178d68dda0" category="paragraph"><block ref="33b5e081bfc2a4ff553d44178d68dda0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ddf1211c4efc09073771de2cfb4c8add" category="inline-image-macro">在您選取Azure Blob工作環境之後顯示「行動」窗格的快照。窗格會顯示儲存帳戶總數、以及使用同步服務的動作。</block>
   <block id="ff6037c85b586250d2e3426572b132dc" category="paragraph"><block ref="ff6037c85b586250d2e3426572b132dc" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="2eb089b7bd4ffecd4fb1075d13738904" category="inline-link">關於此服務的總覽Cloud Sync</block>
   <block id="60c144c7df7b8788c579926f83c506f9" category="inline-image-macro">顯示Azure Blob工作環境詳細資料的快照：儲存帳戶總數、位置總數、資源群組、總容量和已用容量等。</block>
   <block id="b8fb2daac759c86243cf205eec39b222" category="paragraph"><block ref="b8fb2daac759c86243cf205eec39b222" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d7d3898c944de3ebf19acbb6fcf8c7c4" category="paragraph">您可以查看Google Cloud Storage儲存桶的詳細資料、包括位置、存取狀態、儲存設備類別、總容量和已用容量等。這些儲存庫可做為雲端備份、雲端分層或Cloud Sync 還原作業的目的地。</block>
   <block id="18fe44f15840f7116c5288c8e5b736da" category="paragraph">不久之後、您應該會自動看到Google Cloud Storage工作環境。</block>
   <block id="21b1bc909131728ad1b5d3d05c538f6b" category="inline-image-macro">Google Cloud Storage工作環境的快照。</block>
   <block id="94bd1056e53b5ba66af1269a83d9d853" category="paragraph"><block ref="94bd1056e53b5ba66af1269a83d9d853" category="inline-image-macro-rx" type="image"></block></block>
@@ -1293,7 +1263,6 @@
   <block id="efabd80ebdd217a47d9be936e5f0b8aa" category="list-text">預設的系統磁碟為100 GiB gp2磁碟。</block>
   <block id="98de57befcb39b412a8dac16a11d762e" category="list-text">符合上述 CPU 和 RAM 需求的執行個體類型。建議使用n2-Standard-4。</block>
   <block id="0964bfe0dd83b0d60f5d55fd4502a11b" category="list-text">VM執行個體為n2-Standard-4。</block>
-  <block id="d17764ffa4b2b993f35778d5e7c1f22e" category="cell">API將Azure和ONTAP VMware呼叫、Cloud Data Sense、勒索軟體服務、並將AutoSupport VMware訊息傳送給NetApp</block>
   <block id="256ab1840f1451e503e5f45aae6693e2" category="paragraph">當您使用DataLock和勒索軟體保護來進行Volume備份時、Connector會發出下列API要求：</block>
   <block id="f8a21cbcda6edc5ae1bf2008fc82b99d" category="list-text">S3：GetObjectVersion標記</block>
   <block id="bce339f31623f1dca1af841a36515224" category="list-text">S3：GetBucketObjectLockConfiguration</block>
@@ -1314,10 +1283,8 @@
   <block id="36df1b975561708b246ef1801ea416e5" category="section-title">FSX ONTAP</block>
   <block id="6c2169e32dbe273efb12c5de01180bd2" category="list-text">EC2：取消訂閱保留服務</block>
   <block id="c7d6e8e55ec100d2a5894fa3c2eaabd4" category="list-text">EC2：取消目標位置群組</block>
-  <block id="4e505c18a3df31a39f42336b9b57fa97" category="section-title">S3儲存區探索</block>
   <block id="1fd4dfa3fe95514f04e3ecdd7e8a001d" category="paragraph">Connector提出下列API要求以探索Amazon S3儲存區：</block>
   <block id="080045bf6ab788297df2820c007203af" category="paragraph">S3：GetEncryptionConfiguration</block>
-  <block id="2e0aa8db26606696ba7bb05ec89284a7" category="paragraph">Connector會提出下列API要求來管理FSXfor ONTAP Sfor the：</block>
   <block id="1b33affeaa41a09a9f3a99d38d14376f" category="inline-image-macro">概念性影像、說明Google和服務帳戶部署Cloud Volumes ONTAP 的權限要求。</block>
   <block id="61ed3f7479580c6ad0ce86e9e6f3dd8d" category="paragraph"><block ref="61ed3f7479580c6ad0ce86e9e6f3dd8d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c0c1fbd3a68059273f48a44be8f588e1" category="summary">連接器的Azure安全性群組需要傳入和傳出規則。</block>
@@ -1501,7 +1468,6 @@
   <block id="d63bf50426f4c712554faec55b30c548" category="list-text">*服務*：選取問題相關的服務。例如、特定於服務工作流程或功能的技術支援問題的BlueXP。</block>
   <block id="aa996e20900197b0ea41485ada083d8c" category="paragraph">工作環境清單位於您在服務的最上層橫幅中所選的BlueXP帳戶、工作區和Connector範圍內。</block>
   <block id="fa6b601b2fb4e3e5c7b466ecb8bd70ac" category="paragraph">此錯誤可能表示、與該帳戶相關聯的NSS帳戶及記錄公司與BlueXP帳戶序號的記錄公司不同（例如960xxxx)或工作環境序號。您可以在「建立案例*」表單頂端查看您的NSS帳戶清單、以找出最適合的項目、或使用下列其中一個選項尋求協助：</block>
-  <block id="f079f17b0940258743d34e7b771c715f" category="list-text">數位顧問</block>
   <block id="c568c61bf8e9e5a305fc06655cdac862" category="paragraph">我們通常每個月更新Connector軟體、以引進新功能並改善穩定性。雖然BlueXP平台的大部分服務與功能都是透過SaaS型軟體提供、但其中幾項功能與連接器的版本有何不同。其中包括Cloud Volumes ONTAP 支援內部的支援、ONTAP 內部的支援、叢集管理、設定及說明。</block>
   <block id="4102d173f8e2253a011fe9286a6db2a3" category="paragraph">Connector可以在BlueXP中管理多個工作環境。單一Connector應管理的工作環境數量上限各不相同。這取決於工作環境的類型、磁碟區數量、所管理的容量、以及使用者數量。</block>
   <block id="11eeac25dab3c53540d3f299755ecf62" category="inline-link">新增現有Cloud Volumes ONTAP 的元件系統至藍圖XP</block>
@@ -1616,7 +1582,6 @@
   <block id="9f0bb2acc3984bc2da2e5e566dd4bc0a" category="doc">深入瞭解BlueXP</block>
   <block id="0cf89ba9f6178dc91d18ec5c2aec1c61" category="paragraph">BlueXP可讓您管理雲端儲存設備、並在Amazon Web Services、Microsoft Azure及Google Cloud中使用雲端服務。</block>
   <block id="a2513e72ab3ae9830fac174977d58572" category="section-title">藍圖的運作方式</block>
-  <block id="def802d2deb64de5ee040ba416bab8f8" category="paragraph">一家獨立認證的公共會計公司與服務稽核員、研究了BlueXP、Cloud Sync 整套技術、雲端分層、Cloud Data Sense和Cloud Backup（BlueXP平台）、並確認他們已根據適用的信任服務準則、達成SOC 2類報告。</block>
   <block id="a8f8f08c9d91eeaecc31377113ddd27b" category="section-title">BlueXP的專案與權限</block>
   <block id="356334a26d74c400a5e0a69f237ba73e" category="paragraph">直接從BlueXP部署Connector之前、必須先設定兩組權限：</block>
   <block id="7e1224e2fd0f204a7cd31b8672f1b63d" category="list-text">您需要使用具有從BlueXP啟動Connector VM執行個體權限的Google帳戶來部署Connector。</block>
@@ -1691,7 +1656,6 @@
   <block id="a222de5f9a1db461954d4160797dfa76" category="sidebar">管理BlueXP</block>
   <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXP部落格</block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">所有BlueXP文件</block>
-  <block id="36403db09ed916406c9f181948f4d246" category="paragraph">當您使用應用程式範本標記服務時、Connector會發出下列API要求來管理Azure資源上的標記：</block>
   <block id="e53322337eb6e5958408340612abf40d" category="list-text">Microsoft.Resources /資源/讀取</block>
   <block id="5d5a38f96b2eb95a1bae225c6959a21b" category="list-text">Microsoft.Resources /訂閱/作業結果/讀取</block>
   <block id="ed53cedfd937c8697136ea80c8441bdf" category="list-text">Microsoft.Resources /訂閱/資源群組/讀取</block>
@@ -1704,7 +1668,6 @@
   <block id="d532d42cdca6427a0c94a0fe2b7724bf" category="list-text">Microsoft.NetApp/netAppAccounts/capacityPools/volumes/write</block>
   <block id="8a2ef2886600a50e48c7ea77de74ad9a" category="list-text">Microsoft.NetApp/netAppAccounts/capacityPools/volumes/read</block>
   <block id="c937da506293f901431e22784134365b" category="list-text">Microsoft.NetApp/netAppAccounts/capacityPools/volumes/delete</block>
-  <block id="88d71627ded79fcdc49d9c19d3af5b25" category="paragraph">Connector會針對備份與還原作業提出下列API要求：</block>
   <block id="134f51c649d847fb47aa19ce2c4e1169" category="list-text">Microsoft.Compute/virtualMachines/read</block>
   <block id="4497a0f6eec879d6bbc81dfce25df573" category="list-text">Microsoft.Compute/virtualMachines/start/action</block>
   <block id="b1de839ceaf94f5ba40464d57753cc0a" category="list-text">Microsoft.Compute/virtualMachines/deallocate/action</block>
@@ -1745,7 +1708,6 @@
   <block id="993e916f1302e857660bb8e0c6afb098" category="list-text">Microsoft.Synapse /工作區/防火牆規則/讀取</block>
   <block id="bb2b2f1cc8d96247f3ee60242af20fc2" category="list-text">Microsoft.Synapse /工作區/替代AllIpFiretallRules /行動</block>
   <block id="8f2699621ad2c9f04e098e13e8158e06" category="list-text">Microsoft.Synapse /工作區/作業結果/讀取</block>
-  <block id="6794a7ecd8e477b5ee60d4ca8d1e16b3" category="paragraph">使用Cloud Data Sense時、Connector會發出下列API要求。</block>
   <block id="eb2b4b1d8652939a0d566855f6486107" category="cell">Microsoft.Compute/locations/operations/read</block>
   <block id="c1201ad292c6053460598e5ef998d922" category="cell">Microsoft.Compute/locations/vmSizes/read</block>
   <block id="1ab19717892b79023b20f4b6d971482c" category="cell">Microsoft.Compute/operations/read</block>
@@ -1777,7 +1739,6 @@
   <block id="c5af106b19c135afd294afc60320be5c" category="cell">Microsoft.Resources /部署/讀取</block>
   <block id="54df0a2876eee919ba664e42f103b6ba" category="cell">Microsoft.Resources /部署/寫入</block>
   <block id="74dce501370cb2231ed37ef5776a5fff" category="cell">Microsoft.Resources /訂閱/資源群組/刪除</block>
-  <block id="02c5fd18db0663d9ef0e6c225f1cc7a7" category="paragraph">連接器會在您設定雲端分層時、發出下列API要求。</block>
   <block id="f786a140deb938ac21ab095b7c402176" category="paragraph">Connector會針對日常作業提出下列API要求。</block>
   <block id="47ddffc293a6a5748897c2f965fa7212" category="list-text">Microsoft.Storage/storageAccounts/managementPolicys/read</block>
   <block id="a2fd314f394dbb1eeb56c09e3cd9770f" category="list-text">Microsoft.Storage/storageAccounts/managementPolicys/write</block>
@@ -1832,7 +1793,6 @@
   <block id="3df37df274ecbc40a8b9e94b42cec4ce" category="cell">Microsoft.Network/networkSecurityGroups/securityRules/delete</block>
   <block id="66c0e418af8f4db80b2c543835e5ec08" category="cell">讀取、寫入及刪除Cloud Volumes ONTAP 與資源相關的標記</block>
   <block id="bcbc02e34d63373cb18f0b84bea918b2" category="cell">Microsoft.Resources /標記/刪除</block>
-  <block id="50b420e26df31f72aafe4415d5f0ea4c" category="paragraph">當您使用全域檔案快取時、Connector會發出下列API要求：</block>
   <block id="f4b5566a2cd5de876b361e9f7aaa2d92" category="list-text">Microsoft.Insights /指標/讀取</block>
   <block id="542e0e990e0a90f3111cc38f8fc96301" category="list-text">Microsoft.Compute/virtualMachines/extensions/write</block>
   <block id="027acd9694c335956d7cb35872c2d7f5" category="list-text">Microsoft.Compute/virtualMachines/extensions/read</block>
@@ -1847,7 +1807,6 @@
   <block id="c9c484fe908813be17fe13bbdeabfb1d" category="cell">在建立期間加密儲存帳戶</block>
   <block id="5a4346a01828d72104a6540080377b25" category="section-title">2022年11月6日</block>
   <block id="f658ebadeb22d41618c5222998030cb9" category="section-title">連接器3.9.23</block>
-  <block id="a7dad5ac7e311dedf2a82e4bb5a713dd" category="list-text">您的PAYGO訂閱和BlueXP年度合約現已可供檢視及管理、請參閱Digital Wallet。</block>
   <block id="949b19dd7e9f6496c1125f7166270450" category="inline-link">瞭解如何管理您的訂閱</block>
   <block id="9fcd0a1eb1b488b623812d42567ce2d8" category="paragraph"><block ref="9fcd0a1eb1b488b623812d42567ce2d8" category="inline-link-rx"></block></block>
   <block id="9683999221dec5e41e35756b2a8aee04" category="list-text">映像的作業系統為Red Hat Enterprise Linux 8.6.</block>
@@ -1869,7 +1828,6 @@
   <block id="481dd59686d42d2d6a74eae1a1d763ad" category="paragraph">對於標準區域、權限分佈在兩個原則之間。由於AWS中受管理原則的字元大小上限、因此需要兩個原則。</block>
   <block id="989bc9b22ba83d48ca30cdc4d2a0cbb8" category="paragraph">第一個原則提供下列服務的權限：</block>
   <block id="bf43596ea2ef9041f13ded2298cba686" category="paragraph">第二個原則提供下列服務的權限：</block>
-  <block id="6db3bf95be125a91f9ff9118d152f966" category="list-text">應用程式範本標記</block>
   <block id="995c7db8420cf7c1d22ec979a1f735ba" category="open-title">原則1</block>
   <block id="897099bfef7e48dc4adcaa1be92bf1a8" category="open-title">原則2</block>
   <block id="64a39273573e4fc2b712d51106db7a4e" category="section-title">變更記錄</block>
@@ -1884,8 +1842,6 @@
   <block id="50a1dc01b7312307c34a888071586955" category="list-text">複製上述步驟2的帳戶序號、完成安全性檢查、然後確認您已閱讀NetApp的全球資料隱私權政策。</block>
   <block id="cc8b0535948da368f832027c19b7f853" category="list-text">請務必複製上述序號欄位使用的帳戶序號（960xxxx）。這將加速帳戶處理。</block>
   <block id="0b4c13076b9b5e7ba5fa39333693ef77" category="paragraph">下列權限已新增至Json原則：</block>
-  <block id="e9c8bdcc91d25115e46e6c43d23fe563" category="paragraph">雲端備份和雲端分層需要此權限。</block>
-  <block id="175e0c32b0d1e82352dde70ca6ad31a2" category="paragraph">雲端備份需要此權限。</block>
   <block id="1ff61a19534f16f8c2b0aa752b13fb0a" category="paragraph">下列權限已從Json原則中移除、因為不再需要這些權限：</block>
   <block id="3a9d5bd356ec8e4fc31c11150128b7ac" category="list-text">開啟網頁瀏覽器、前往<block ref="a47e12f4350b725a128875f50f785a3b" category="inline-link-rx"></block></block>
   <block id="83ec139c80a3d5b2f11f1a94eed47cd2" category="section-title">2022年12月4日</block>
@@ -1947,15 +1903,6 @@
   <block id="f06223f9afc23bac523c7b9854772040" category="inline-link">內部部署儲存設備</block>
   <block id="3404cce75db90acf6a9d52860721a139" category="list-text">叢集 ONTAP</block>
   <block id="7fcb7f97cbc710b693fef37b5e86770f" category="list-text">系統StorageGRID</block>
-  <block id="0edddc509df3db4e8717d189e32db020" category="list-text"><block ref="0edddc509df3db4e8717d189e32db020" category="inline-link-rx"></block></block>
-  <block id="19e49e48b1b7dfb345807d478924695e" category="list-text"><block ref="19e49e48b1b7dfb345807d478924695e" category="inline-link-rx"></block></block>
-  <block id="c0daf6fd97668893647e484d22abfa87" category="list-text"><block ref="c0daf6fd97668893647e484d22abfa87" category="inline-link-rx"></block></block>
-  <block id="b53201308fec60a975760c1edb55b773" category="list-text"><block ref="b53201308fec60a975760c1edb55b773" category="inline-link-rx"></block></block>
-  <block id="b2b0ea38d4048b69c988dce66f1d0b1d" category="list-text"><block ref="b2b0ea38d4048b69c988dce66f1d0b1d" category="inline-link-rx"></block></block>
-  <block id="8a7565a3d3fd48c7fc9f1e196dfdca92" category="list-text"><block ref="8a7565a3d3fd48c7fc9f1e196dfdca92" category="inline-link-rx"></block></block>
-  <block id="fcb8e4813d92a80a1bbc9b8070ca196b" category="list-text"><block ref="fcb8e4813d92a80a1bbc9b8070ca196b" category="inline-link-rx"></block></block>
-  <block id="950604af87c30e09716e6d097eb491db" category="inline-link">勒索軟體保護</block>
-  <block id="a2caf1b1186133b845d3659ba1a714e8" category="list-text"><block ref="a2caf1b1186133b845d3659ba1a714e8" category="inline-link-rx"></block></block>
   <block id="8c340dc334134096f68b880b42a8692c" category="inline-link">複寫</block>
   <block id="e5335d776982e29d68ce5591f7857b38" category="list-text"><block ref="e5335d776982e29d68ce5591f7857b38" category="inline-link-rx"></block></block>
   <block id="902e65d33784bd8924eb05e622aa2dda" category="section-title">支援的雲端供應商</block>
@@ -1967,7 +1914,6 @@
   <block id="9efb399c3a128a79f4671ff959339e79" category="list-text">Microsoft.Storage/storageAccounts/listAccountSas /行動</block>
   <block id="a5b807c71b066c1d33685818cfa2806e" category="list-text">Microsoft.Synapse /工作區/私有端點連線核准/行動</block>
   <block id="176944a9db0702558233e827d21e2f80" category="section-title">2023年1月5日</block>
-  <block id="267cfa5c9c91dc1d99dc797e89903dfa" category="paragraph">雲端備份需要這些權限。</block>
   <block id="b73f51f05a3d7aca4e9b86bf6b66c214" category="paragraph">此權限是Cloud Volumes ONTAP 進行非必要部署所需的權限。</block>
   <block id="1d37387582eb7a955869d3991c1dab28" category="section-title">2022年12月1日</block>
   <block id="5847199ca78e66e581ccd10e8e88b057" category="list-text">使用Azure CLI建立自訂角色：</block>
@@ -1999,7 +1945,6 @@
   <block id="02efcbea18b9485a78a41871dce1e64d" category="list-text"><block ref="02efcbea18b9485a78a41871dce1e64d" category="inline-link-macro-rx"></block></block>
   <block id="d377a02fb22cec7bf850087d3c9a31fa" category="cell">管理Google Cloud中的資源。</block>
   <block id="4ce604ab4b6f3184f26713f30bde1bbe" category="cell">- cloudkms.cryptoKeys.Get - cloudkms.cryptoKeys.getIamPolicy - cloudkms.cryptoKeys.list - cloudkms.cryptoKeys.setIamPolicy - cloudkms.keyclings - cloudkms.getIamPolicy - cloudkms.keyclings - cloudkms.keyRings.setIamPolicy</block>
-  <block id="9e4edb2eed22d4c91a667b29567ee08d" category="cell">可在Cloud Backup啟動精靈中選取您自己的客戶管理金鑰、而非使用預設的Google管理加密金鑰。</block>
   <block id="8988a38ba3aaf6cb48e549dc3babd50e" category="section-title">2023年1月27日</block>
   <block id="6f3dd3aa6f04d6f98a881afe84a14828" category="paragraph">已將下列權限新增至原則：</block>
   <block id="d5b52c55f0ffe2752d39b0d85f9ad0ef" category="list-text">cloudkms.cryptoKeys.getIamPolicy</block>
@@ -2108,7 +2053,6 @@
   <block id="1c1c040e218e35ae634138db5c2055f4" category="list-text">按一下*檢視購買選項*。</block>
   <block id="8258ac0fb8b015087851de720e92f796" category="list-text">EC2：取消資料VpcEndpoints</block>
   <block id="1be1ae3d277ebf372ecefda4d444dbbb" category="section-title">2023年2月14日</block>
-  <block id="fae746653dec0583228106493b15ac1a" category="paragraph">雲端分層現在需要下列權限：</block>
   <block id="296337985ff5f0cc398e02f1aff0b176" category="paragraph">如果連接器安裝在內部部署環境中、您就無法使用此驗證方法。您必須使用AWS金鑰。</block>
   <block id="a4a42c8639c0aa2e10cb3a3eaaae664b" category="paragraph">如果連接器安裝在內部部署環境中、則必須使用此驗證方法。您無法使用IAM角色。</block>
   <block id="edd15fbeb7b2dffa163336ecd4f3e80c" category="section-title">使用自我支援選項</block>
@@ -2116,8 +2060,6 @@
   <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">在「*資源*」頁面上、選擇「技術支援」下的其中一個可用選項：</block>
   <block id="5be2e1dfe4bf215289731df45ec8157b" category="list-text">按一下*建立案例*、與NetApp支援專家一起開啟問題單：</block>
   <block id="d4a973e303ec37692cc8923e3148eef7" category="cell">8080</block>
-  <block id="0773be92494e9aa5f52a2d6834a7c90f" category="cell">資料感知</block>
-  <block id="f1ec925a41746bf6e895d454b6a6eddb" category="cell">在部署期間探查資料偵測執行個體</block>
   <block id="3cae1bb62504fde722824fee95046472" category="doc">管理Azure認證資料與BlueXP訂閱</block>
   <block id="ee7f5aec4e9ac5fecb93d224c17fcd43" category="list-text">CentOS 7.6、7.7、7.8及7.9</block>
   <block id="fe342f4d7fb16d9eddf02f4c613dfb19" category="list-text">Red Hat Enterprise Linux 7.6、7.7、7.8、7.9、8.6、 和8.7%</block>
@@ -2181,7 +2123,6 @@
   <block id="796ced97a72330e5ce3c0935b7b09f45" category="paragraph"><block ref="622b6e7f4143df2aca06b538ee1d864e" category="inline-link-rx"></block>。</block>
   <block id="dd9b32305d0c33f8845bee1cdfcfc85a" category="list-text">連接器現在支援執行Red Hat Enterprise Linux 8.7的主機。</block>
   <block id="9954c00cefacf69f28fa1994e949ff83" category="paragraph"><block ref="1c471069dafa2d25f3a632cea0250222" category="inline-link-rx"></block>。</block>
-  <block id="33b6f29ed1acfc0fbed883a6e1f44ef2" category="paragraph">若要開始使用、請手動安裝Connector軟體、登入在Connector上執行的BlueXP主控台、將BYOL授權新增至Digital Wallet、然後再部署Cloud Volumes ONTAP 。</block>
   <block id="376a158ceb7d344fa563cce2aa16018f" category="inline-link">將Connector安裝在沒有網際網路存取的位置</block>
   <block id="6bfdfb1d6b845d41edac4f1eb0065216" category="list-text"><block ref="6bfdfb1d6b845d41edac4f1eb0065216" category="inline-link-rx"></block></block>
   <block id="cbea6f8d2cd687c094438e0a7a38fedf" category="inline-link">存取Connector上的BlueXP主控台</block>
@@ -2201,7 +2142,6 @@
   <block id="fe4ddc4ad605bbd0c66fc946f65fb17c" category="cell">建立及管理網路安全群組</block>
   <block id="7b82c8bb5f712b74fd5cab9947ae81fb" category="cell">某些VM部署所需的資源、視基礎實體硬體而定</block>
   <block id="93850b8e1d97181700833dcae4c7e219" category="paragraph"><block ref="93850b8e1d97181700833dcae4c7e219" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ea59f5a18533f0723be7342656f4c831" category="paragraph">您可以檢視S3儲存區的詳細資料、包括地區、存取原則、帳戶、總容量和已用容量等。這些儲存庫可做為雲端備份、雲端分層或Cloud Sync 還原作業的目的地。此外、您也可以使用Cloud Data Sense來掃描這些儲存區。</block>
   <block id="d564f41f7e0ffa3f9e8bc7a809230f94" category="list-text">Connector現在可讓您新增及管理來自BlueXP的Amazon S3儲存區。</block>
   <block id="f19dd7eba16fe45d9a801001a9371842" category="inline-link">瞭解如何從BlueXP在AWS帳戶中新增Amazon S3儲存區</block>
   <block id="3fdb23ee61e644ed849519b472ba51ae" category="paragraph"><block ref="35aa20e861d3bf81209592fa160bd4e4" category="inline-link-rx"></block>。</block>
@@ -2209,7 +2149,6 @@
   <block id="6282017b43dee5b3762b81c0124c425c" category="paragraph">如果您將連接器設定為使用Proxy伺服器、則可在連接器上啟用直接API流量、以便直接將API呼叫傳送至雲端供應商服務、而無需透過Proxy。此選項受AWS、Azure或Google Cloud中執行的Connectors支援。</block>
   <block id="37bccc08c3c6cebbbf500cfe54775991" category="paragraph">如果您停用使用Azure私有連結Cloud Volumes ONTAP 搭配使用、並改用服務端點、則必須啟用直接API流量。否則、流量將無法正確路由傳送。</block>
   <block id="ac10c9401f16ed5ff0a029bce2712adc" category="inline-link">深入瞭解如何搭配Cloud Volumes ONTAP 使用Azure Private Link或服務端點搭配使用</block>
-  <block id="a8709880418b83b1477f57ddb74c84e3" category="list-text">現在、連接器可在完全隔離網際網路的任何雲端環境中獲得支援。然後您可以使用連接器上執行的BlueXP主控台、在Cloud Volumes ONTAP 同一個位置部署故障、並探索內部部署ONTAP 的故障叢集（如果您的雲端環境與內部部署環境之間有連線）。您也可以在Cloud Volumes ONTAP AWS和Azure商業區域使用Cloud Backup來備份各種不完整的資料。此類部署不支援其他BlueXP服務、數位錢包除外。</block>
   <block id="5bf7ac4937c946ab4eedfb091ffa67ab" category="section-title">連接器必須隨時正常運作</block>
   <block id="5e546ca24430fc2b79e0e409176438c9" category="paragraph">本文件受EULA規範。如果產品未依照文件操作、則產品的功能與操作、以及您在EULA下的權利、可能會受到不利影響。</block>
   <block id="65f052fa67c6645d7ad3edc14e47de13" category="paragraph">連接器是Cloud Volumes ONTAP 健全狀況和運作過程中的關鍵要素。如果連接器電源關閉、Cloud Volumes ONTAP 則在與連接器失去通訊超過14天之後、將停止使用以容量為基礎的BYOL系統。這是因為Connector每天都會在系統上重新整理授權。</block>
@@ -2307,7 +2246,6 @@
   <block id="5409221a62615b6b2cf0061a5376c983" category="inline-link">AWS文件：條件元素</block>
   <block id="7d6d11737dd3bca1243f4e22e7aeaec1" category="list-text">如果您是從AWS Marketplace部署Connector、在Linux主機上手動安裝Connector、或是想要新增額外的AWS認證到BlueXP、則必須自行設定原則。</block>
   <block id="0c511f4078f33be6ce46a7b4c4d64f3e" category="section-title">2023年3月23日</block>
-  <block id="43908e244f944d05ab87a4987453f7bc" category="paragraph">Cloud Data Sense不再需要「Microsoft.Storage/storageAccounts/DELETE」權限。</block>
   <block id="47e8280c2cd82cf2f49537bfd5661b15" category="paragraph">此權限仍為Cloud Volumes ONTAP 必填項目。</block>
   <block id="15f7c3376619ce497205d543fd1d7767" category="paragraph">如有需要、您可以使用IAM來限制IAM原則<block ref="9e2941b3c81256fac10392aaca4ccfde" prefix=" " category="inline-code"></block> 元素。<block ref="19ffef022087e160f1e54b9948795943" category="inline-link-rx"></block></block>
   <block id="81fa6885ef2dca44d4868d3d8ea203c9" category="summary">視您在BlueXP中採取的行動而定、ONTAP 您可能會在NetApp 支援網站 使用者登入BlueXP時、獲得相關的支援功能、包括相關的功能介紹、以及功能完善的支援服務。您可以在建立相關聯之後、在BlueXP中檢視及管理這些認證資料。例如、如果您變更這些認證資料的密碼、則需要更新BlueXP中的密碼。</block>
@@ -2336,10 +2274,8 @@
   <block id="8c79ce7ab82c8c7e3fb9c6e8a73f8960" category="doc">管理與BlueXP帳戶相關聯的NSS認證</block>
   <block id="3d41446101a1daf0639146f4555b623b" category="inline-link-macro">瞭解如何管理使用者層級認證</block>
   <block id="45b496845c319f5bc16fa44745aea5f0" category="admonition">BlueXP也支援為每個BlueXP使用者建立一個NSS帳戶的關聯。 <block ref="92ab4e1c25ae34810f6c6d2ede81f4ab" category="inline-link-macro-rx"></block>。</block>
-  <block id="05c6578f55ba6f40e6bb7dd1d07e0243" category="list-text">目前、系統會以電子郵件傳送下列BlueXP功能與服務的通知：連接器、Cloud Sync VMware、Cloud Backup、Digital Wallet及勒索軟體保護。未來版本將會新增其他服務。</block>
   <block id="102787ed6297b34a7504b527e91d01d3" category="section-title">2023年4月3日</block>
   <block id="a62f3b1b0c4abf78f5d81609e7bdd908" category="section-title">連接器3.9.28</block>
-  <block id="a08572617e25a61e8569807ac103ab07" category="list-text">數位錢包現在支援電子郵件通知。</block>
   <block id="380d0a0b2cec998dcd9f52b91b24304c" category="paragraph">如果您設定通知設定、您可以在BYOL授權即將過期（「警告」通知）或已過期（「錯誤」通知）時收到電子郵件通知。</block>
   <block id="335e7f21f0fdfecbe9c04540dcb8cdd6" category="inline-link">瞭解如何設定電子郵件通知</block>
   <block id="e16804d7658f4d3132a1170b8cec7c7e" category="paragraph"><block ref="9ce9eb475c326d02a5c224ef8589bc0a" category="inline-link-rx"></block>。</block>
@@ -2413,10 +2349,6 @@
   <block id="93c4b1c8038b5a62672e86507e821a44" category="list-text"><block ref="93c4b1c8038b5a62672e86507e821a44" category="inline-link-rx"></block></block>
   <block id="d75d347ae1d51e933d39fea688b0abf1" category="inline-link">文件Azure NetApp Files</block>
   <block id="35103f93972f18deb45061fb09cb2d8c" category="list-text"><block ref="35103f93972f18deb45061fb09cb2d8c" category="inline-link-rx"></block></block>
-  <block id="76cc4d7d39e779cc966a6cb01a3b17aa" category="inline-link">雲端備份文件</block>
-  <block id="ef649b10994a3a896e81d7db3f197141" category="list-text"><block ref="ef649b10994a3a896e81d7db3f197141" category="inline-link-rx"></block></block>
-  <block id="1a3dd42e7f140871b4724418e36e52fb" category="inline-link">Cloud Data Sense文件</block>
-  <block id="5534f1b9a14e4fa1da051d1058b5a27e" category="list-text"><block ref="5534f1b9a14e4fa1da051d1058b5a27e" category="inline-link-rx"></block></block>
   <block id="2971acb1ab572cfb61b7c86d49e2b300" category="inline-link">文件Cloud Volumes ONTAP</block>
   <block id="fb7763dbe5d55a79ba826c779c80f403" category="list-text"><block ref="fb7763dbe5d55a79ba826c779c80f403" category="inline-link-rx"></block></block>
   <block id="3014dc2d87cf02248e7abe6b8ac89106" category="inline-link">內部部署ONTAP 的叢集文件</block>
@@ -2599,7 +2531,6 @@
   <block id="dee8aad8e11608028ff3bcbb674cdcde" category="list-text">在您想要檢視 Azure 儲存帳戶的 Azure 帳戶中安裝 Connector 。</block>
   <block id="f0574ea9efbf61e3005311c1ed736537" category="list-text">選取工作環境、然後從右窗格中選取一個動作。</block>
   <block id="1b4dd0d5e9a98e510340de3c3938e7c5" category="list-text">選取 * 同步資料 * 以同步處理與 Azure Blob 儲存設備之間的資料。</block>
-  <block id="fff64362bc30daf97d5d1c62c6073918" category="paragraph">如需詳細資料、請參閱<block ref="9a75baacec67d9c9539ea0017722641e" category="inline-link-rx"></block></block>
   <block id="9e6c19e48717319b0b71ece6d5735a24" category="list-text">選取 * 輸入工作環境 * 以檢視 Azure Blobs 中 Azure 儲存帳戶的詳細資料。</block>
   <block id="111374538bcb0d5c90baaab097278e39" category="doc">設定內部網路</block>
   <block id="caf7fd71047bbc17e23e603d7a448234" category="paragraph">例如、如果您想要在雲端中啟動 Cloud Volumes ONTAP 、則必須設定 VPN 連線、從公司網路連線到您計畫啟動 Cloud Volumes ONTAP 的虛擬網路。</block>
@@ -2792,8 +2723,6 @@
   <block id="9bff93d1123789b473f27a881c3e00c6" category="paragraph">適用下列限制：</block>
   <block id="b3478a494adde25715314b14559dd6a4" category="list-text">無法掃描OneDrive帳戶、SharePoint帳戶和Google雲端硬碟帳戶。</block>
   <block id="d1f03114b8fef49b0f0cb0a28049ecdf" category="list-text">Microsoft Azure資訊保護（AIP）標籤功能無法整合。</block>
-  <block id="986e1f3279b4d74444bd32d4f833afbd" category="cell">數位錢包</block>
-  <block id="cc8064d3e1bb6b19068e502f8184cd13" category="cell">您可以使用數位錢包搭配下列受限模式支援的授權選項。</block>
   <block id="2bd6e3220a2a60e7217c63bc76d9f73c" category="cell">支援使用 Connector 進行探索、以及不使用 Connector （直接探索）進行探索。當您發現內部叢集有 Connector 時、就不支援進階檢視（ System Manager ）。</block>
   <block id="c26e19b0ab82c81e1df83e4f6d44e6af" category="list-text">受限模式支援下列授權選項：</block>
   <block id="b012b5d8eb383d0a82055699469c06d6" category="list-text">市場訂閱（每小時和每年合約）</block>
@@ -2829,7 +2758,6 @@
   <block id="5cab93e720177e480ed8d2fe603b87b8" category="inline-link">AWS C2S/SC2S</block>
   <block id="ed6f21c8b73c49053eac72fb867ecff6" category="cell">支援於 AWS 和 Azure 商業地區。Google Cloud 或中不支援<block ref="5388026a167091fc23180597ac85e174" category="inline-link-rx"></block> 或<block ref="360910fe60b5d1cf9b7056b9b6f46685" category="inline-link-rx"></block></block>
   <block id="2c4d2c4938d2e881355a7e09fe8b1993" category="cell">由於無法存取網際網路、因此無法使用下列功能：自動軟體升級、 AutoSupport 和 AWS 成本資訊。</block>
-  <block id="d03ae597cdf50a2b89f6e5251f47b120" category="cell">您可以將 Digital Wallet 與下列支援的授權選項一起用於私有模式。</block>
   <block id="71fa0def55e8ba28f8cea8204dcaaf4f" category="cell">需要從雲端（安裝 Connector 的位置）連線至內部環境。不支援不含 Connector 的探索（直接探索）。</block>
   <block id="99f9fe7adce4b6282eee924da977b6d4" category="list-text">內部部署中支援的 BlueXP 服務</block>
   <block id="614a24e7adcef9d83ca4454cd4443cbd" category="list-text">當 Connector 安裝在內部部署上時、 BlueXP 支援下列具有私有模式的儲存和資料服務：</block>
@@ -2843,9 +2771,6 @@
   <block id="99c122e20a5a32c6ec7f2ed80295f621" category="paragraph"><block ref="99c122e20a5a32c6ec7f2ed80295f621" category="inline-link-rx"></block></block>
   <block id="a1f7f260dba9f32dd3bfb503eb84c441" category="cell">不支援不含 Connector 的探索（直接探索）。</block>
   <block id="f4c24ff9a6eed35a6103620418728351" category="list-text">私有模式僅支援 BYOL 。</block>
-  <block id="d3bd60d6bdd0ac6233d73ffc756a0c8d" category="paragraph">對於 Cloud Volumes ONTAP BYOL 、僅支援節點型授權。不支援容量型授權。由於無法使用外傳網際網路連線、因此您必須在「數位錢包」中手動上傳 Cloud Volumes ONTAP 授權檔案。</block>
-  <block id="e0df5354301b91c962ce1097c0b84bf8" category="inline-link">瞭解如何將授權新增至 Digital Wallet</block>
-  <block id="b03cdf01875037d95adbbb6b58b3cc8f" category="paragraph"><block ref="b03cdf01875037d95adbbb6b58b3cc8f" category="inline-link-rx"></block></block>
   <block id="83e5d949613547f552890cbaf97a52db" category="list-text">如何開始使用私有模式</block>
   <block id="2ec8b0a0f85b8d5eb1e817dd692d490d" category="list-text">您可以從 NetApp 支援網站 下載「離線」安裝程式來使用私有模式。</block>
   <block id="fb45c34b4268797014451aa41c2ea38f" category="inline-link-macro">瞭解如何開始使用私有模式</block>
@@ -2855,9 +2780,7 @@
   <block id="b04b058acf83e4616c9312ab2b951050" category="paragraph">請注意、某些服務可能受到限制的支援。如需有關限制模式和私有模式如何支援這些服務的詳細資訊、請參閱上述各節。</block>
   <block id="7e4b1c5ec6c6adb1fa50f4ca17076845" category="cell">BlueXP 服務或功能</block>
   <block id="270fcb785810d0206945029bb05f4e97" category="cell">Amazon S3</block>
-  <block id="ca9106b8b82ff55b6fdce530ccb952a7" category="cell">應用程式範本</block>
   <block id="52745271323ee9ea30e3a37d0338d118" category="cell">Azure Blob</block>
-  <block id="a623a8d0366bf079411aa30be45b2d10" category="cell">運算</block>
   <block id="4a17f9505c41e2b9d2fdf8e21809e428" category="cell">E系列</block>
   <block id="723ffd15eb7b4453afd0fa0af42c04c3" category="cell">經濟效益</block>
   <block id="833c2c211a541e50ad94433664e4b5c1" category="cell">Google Cloud Storage</block>
@@ -2964,7 +2887,6 @@
   <block id="87c8bd0bab910ee42d9dcd76825a8518" category="paragraph">成員是與 BlueXP 帳戶相關聯的 BlueXP 使用者。將使用者與該帳戶中的帳戶和一或多個工作區建立關聯、可讓這些使用者在BlueXP中建立及管理工作環境。</block>
   <block id="7c7a58e5b2c203f9e3345dac2f055a34" category="paragraph">在 BlueXP 中、工作區會將任何數量的 _ 工作環境 _ 與帳戶中的其他使用者隔離。除非帳戶管理員將該管理員與該工作區建立關聯、否則 Workspace 系統管理員無法存取工作區中的工作環境。</block>
   <block id="fff317b16975fac3ed7dff38b2438221" category="paragraph">Connector 會執行 BlueXP 管理資料基礎架構所需執行的動作。Connector 會在您部署在雲端供應商或您設定的內部部署主機上的虛擬機器執行個體上執行。</block>
-  <block id="be694a56b8a2f7a27116411c11b24402" category="paragraph">您可以將 Connector 搭配多個 BlueXP 服務使用。例如、如果您使用Connector來管理Cloud Volumes ONTAP 功能、您可以使用相同的Connector搭配其他服務、例如Cloud Tiering。</block>
   <block id="55d306b0964facf3eec9eb4328a8f318" category="admonition">在隨後的兩個範例映像中、 Connector 和 Cloud Volumes ONTAP 系統實際上並未位於 BlueXP 帳戶中、而是在雲端供應商中執行。這是每個元件之間關係的概念呈現。</block>
   <block id="383125a3caa092f6d45708ef9ada6bf3" category="section-title">多個工作區</block>
   <block id="bd77fae89cd1084b07d3a302df90985c" category="inline-image-macro">顯示包含兩個工作區的單一 BlueXP 帳戶的圖表。每個工作區都與相同的 Connector 相關聯、而且每個工作區都有自己的 Workspace Admin</block>
@@ -3097,7 +3019,6 @@
   <block id="4d3fca1d2cf37433752c20e52858221f" category="paragraph">開始使用 BlueXP 並不需要 Connector 。您可以在 BlueXP 中使用多項功能和服務、而無需建立 Connector 。</block>
   <block id="224dffcf542a8351c726ceb793464d58" category="paragraph">您可以在沒有 Connector 的情況下使用下列 BlueXP 功能和服務：</block>
   <block id="9c4069a5e9e7edebdcc575a42ef2628d" category="list-text">Amazon FSX for NetApp ONTAP 工作環境建立</block>
-  <block id="b9b05c62c4e5b4ec378906abe5d103b4" category="paragraph">雖然 Connector 不需要建立工作環境、但需要建立和管理磁碟區、複寫資料、並將適用於 ONTAP 的 FSX 與 BlueXP 服務整合、例如 Data Sense 和 Cloud Sync 。</block>
   <block id="bf2f35a1367a7ddb519a7dd3cedacfdd" category="paragraph">在標準模式下使用 BlueXP 時、 BlueXP 中的下列功能和服務需要 Connector ：</block>
   <block id="dd42f0ca79b192af5e1f5734b490f194" category="paragraph">連接器是 BlueXP 服務架構的基本部分。您有責任確保相關的連接器隨時正常運作且可存取。雖然這項服務的設計是為了克服連接器可用度的短暫中斷、但您必須在必要時立即採取行動、以補救基礎架構故障。</block>
   <block id="5d5a04495ebcd46b843dcafaea428460" category="section-title">對 Cloud Volumes ONTAP 的影響</block>
@@ -3119,7 +3040,6 @@
   <block id="2162bc1fbb13d2539c146b3472921eb5" category="paragraph"><block ref="7270aabdb0c26b6b937d76a49fcda623" category="inline-xref-macro-rx"></block>。</block>
   <block id="3feb0795a14e1cc974940057fc75d0e7" category="section-title">多種工作環境</block>
   <block id="c6d129878583320db44cb10e4daa0ffc" category="section-title">多個連接器</block>
-  <block id="f15be64e48b25e22d44e20b016cb78f3" category="list-text">您有一個多雲端環境（ AWS 和 Azure ）、偏好在 AWS 中安裝一個 Connector 、在 Azure 中安裝另一個 Connector 。每個系統都能管理 Cloud Volumes ONTAP 在這些環境中執行的不實系統。</block>
   <block id="c76efa6c691a8c8806671433356c1493" category="list-text">服務供應商可能會使用一個 BlueXP 帳戶為客戶提供服務、而使用另一個帳戶為其中一個業務單位提供災難恢復。每個帳戶都會有個別的 Connectors 。</block>
   <block id="b7baf76babc410282d303dd810fc0a0e" category="section-title">切換時機</block>
   <block id="645a84975202e30700b572b49a5ee29d" category="section-title">災難恢復</block>
@@ -3237,7 +3157,6 @@
   <block id="c8b77e7a211a8e1bbb884962a105fc2f" category="paragraph"><block ref="c8b77e7a211a8e1bbb884962a105fc2f" category="inline-link-rx"></block></block>
   <block id="d2b9555443522ab868fc3d3de8b07657" category="list-text">如果您要在其他專案中部署 Cloud Volumes ONTAP 、請將具有 BlueXP 角色的服務帳戶新增至該專案、以授予存取權。您必須針對每個專案重複此步驟。</block>
   <block id="a6e38b80693d553a1debbba70e8974ef" category="paragraph">BlueXP 現在擁有代表您在 Google Cloud 中執行動作所需的權限。</block>
-  <block id="1a97d500b0ebbf49d9d9119231576127" category="cell">API 呼叫 Google Cloud 和 ONTAP 、雲端資料感應、勒索軟體服務、並傳送 AutoSupport 訊息給 NetApp</block>
   <block id="6e1fe4f37983acdfa6e1690c77b55704" category="list-text">在 * 驗證 * 下、選取符合您設定 Azure 權限方式的驗證選項：</block>
   <block id="ca5c14dd1767138ec0ae60d1c4d7a128" category="list-text">選取 * Azure 使用者帳戶 * 以登入您的 Microsoft 帳戶、該帳戶應具有必要的權限。</block>
   <block id="0a3420a284048b3146bfedfda39bc929" category="list-text">選取 * Active Directory 服務主體 * 以輸入有關授與必要權限的 Azure Active Directory 服務主體的資訊：</block>
@@ -3248,7 +3167,6 @@
   <block id="827aaa681f80dbd83d41241979226f5a" category="paragraph">此設定非常重要、因為託管身分識別可讓 Connector 虛擬機器在 Azure Active Directory 中識別自己、而無需提供任何認證。完成後、您需要指派您建立的自訂角色<block ref="f91ce7faef49711445322691b4d6ac64" category="inline-link-rx"></block>。</block>
   <block id="f6f67a41d5743f1fd41a2fb8b54fd85b" category="paragraph"><block ref="7e9e5669a04928e1ffa0a9abd020b87e" category="inline-link-macro-rx"></block>。</block>
   <block id="d6b9b2693793c8b69bb62289f0f20b06" category="list-text">Azure 中 VM 上啟用的託管身分識別、可讓您透過自訂角色提供所需的 Azure 權限。</block>
-  <block id="51669cca9ffbfee269cac3b36b36d8dc" category="cell">提供在政府地區啟用和使用 Cloud Data Sense 和 Cloud Backup 的能力。</block>
   <block id="037ab8e28d036e5a218a1692a62fd8b5" category="summary">在 AWS 中建立 Connector 、方法是選擇安裝選項、設定網路、準備權限等。</block>
   <block id="62114d729bedb37529f10ca13d76d0cc" category="doc">快速開始在 AWS 中建立 Connector</block>
   <block id="7e09fb77e206a242f3f06e7cc61dd58a" category="paragraph">在 AWS 中建立 Connector 的標準方法是直接從 BlueXP 建立、但您也可以從 AWS Marketplace 建立、或是手動將軟體安裝在現有的 Linux 主機上。</block>
@@ -3596,4 +3514,86 @@
   <block id="6de9f5682041f68bedd20c6f93964068" category="list-text"><block ref="6de9f5682041f68bedd20c6f93964068" category="inline-link-macro-rx"></block></block>
   <block id="554b8b833efd1a5f6c0982f18f3d0820" category="inline-link-macro">手動安裝 Connector 時聯絡的端點（標準模式）</block>
   <block id="5474364eb5af84ea9df4135b22224135" category="list-text"><block ref="5474364eb5af84ea9df4135b22224135" category="inline-link-macro-rx"></block></block>
+  <block id="6187e32203fd05e22e575166349f5b99" category="inline-link">備份與還原文件</block>
+  <block id="76d9a5dea95540afb28da7fa24268202" category="list-text"><block ref="76d9a5dea95540afb28da7fa24268202" category="inline-link-rx"></block></block>
+  <block id="e97ae785ddbd746339946844f92175e6" category="inline-link">分類文件</block>
+  <block id="6ace1bb8e25748132410e221b0e64ef6" category="list-text"><block ref="6ace1bb8e25748132410e221b0e64ef6" category="inline-link-rx"></block></block>
+  <block id="4a5a2cb37f05953f58468c7fed5af846" category="paragraph">您可以查看Google Cloud Storage儲存桶的詳細資料、包括位置、存取狀態、儲存設備類別、總容量和已用容量等。這些貯體可做為 BlueXP 備份與還原、 BlueXP 分層或 BlueXP 複製與同步作業的目的地。</block>
+  <block id="6beafc0ddd3d2d40e91fd1f10beca6f6" category="inline-link">BlueXP 複本與同步的總覽</block>
+  <block id="ee90cf76aa6a254e315cff26d976093f" category="paragraph">如需詳細資料、請參閱<block ref="8af593d4462fc8676f0e240f30c73049" category="inline-link-rx"></block></block>
+  <block id="2c125f3d8875ad209c20028d0cda71b1" category="cell">提供從用戶端網頁瀏覽器到本機使用者介面的 HTTPS 存取、以及 BlueXP 分類執行個體的連線</block>
+  <block id="32b02dfce56d1f6d0b5202b932316b0f" category="cell">提供在政府地區啟用和使用 BlueXP 分類及 BlueXP 備份與還原的能力。</block>
+  <block id="7863903e1b4b84391267ab5c4af6a68d" category="cell">API 呼叫 Google Cloud 和 ONTAP 、將 BlueXP 分類、 BlueXP 勒索軟體保護、並將 AutoSupport 訊息傳送給 NetApp</block>
+  <block id="4cc849f381058f76f6b72a1c4279393d" category="cell">BlueXP 分類</block>
+  <block id="7af87632248c69a759bc2d380248af61" category="cell">在部署期間探查至 BlueXP 分類執行個體</block>
+  <block id="df329246877a4bd1e46b66f9dd6845df" category="paragraph">您可以查看Azure儲存帳戶的詳細資料、包括位置、資源群組、總容量和已用容量等。這些帳戶可做為 BlueXP 備份與還原、 BlueXP 分層或 BlueXP 複製與同步作業的目的地。</block>
+  <block id="d9bef132ebdee987c9b28b5929df0f95" category="list-text">* 法規遵循檢視器 * ：只能檢視 BlueXP 分類的法規遵循資訊、並為擁有存取權限的工作區產生報告。</block>
+  <block id="be062cdcabbb3055334e8f19b4bdf378" category="cell">備份與還原</block>
+  <block id="5c9335b28e6277ddbe0137f04e5e58a7" category="cell">分類</block>
+  <block id="2049421a4e8e45e83cd7cf18ffc00a12" category="cell">數位錢包</block>
+  <block id="8adfa152daa2970174717fd5e24151b2" category="cell">您可以將數位錢包搭配下列受限模式的支援授權選項一起使用。</block>
+  <block id="5ddc4e154584048fc0f47939b47c7b63" category="cell">您可以將數位錢包與下列支援的授權選項一起用於私有模式。</block>
+  <block id="ea8570ee20c71345a250f37d7cf934d0" category="paragraph">對於 Cloud Volumes ONTAP BYOL 、僅支援節點型授權。不支援容量型授權。由於無法使用外傳網際網路連線、因此您需要手動上傳 BlueXP 數位錢包中的 Cloud Volumes ONTAP 授權檔案。</block>
+  <block id="f2a226835ff2494dede4925c14c2dd09" category="inline-link">瞭解如何新增授權至 BlueXP 數位錢包</block>
+  <block id="77b23cd504443833949223b951f576ce" category="paragraph"><block ref="77b23cd504443833949223b951f576ce" category="inline-link-rx"></block></block>
+  <block id="aa200c19289e5050e77edc0bccc67c2b" category="cell">產品領域</block>
+  <block id="4e74f624e4d0f3f558ca01aa93696658" category="cell">* 工作環境 *</block>
+  <block id="1376d64de9953f470f0708fc6e330334" category="cell">*服務*</block>
+  <block id="5b942e8f71976a7f4120006aa3ac54cc" category="cell">雲端作業</block>
+  <block id="e216b7a924341f796bca310d1d812baf" category="cell">複製與同步</block>
+  <block id="3d2e7e90fac12bab6a0d0736a593b5b4" category="cell">數位顧問</block>
+  <block id="ba695b3cf8b635f89946173735838948" category="cell">邊緣快取</block>
+  <block id="7478f8f98c41fc2f5747e6f31892fe6f" category="cell">勒索軟體保護</block>
+  <block id="282baca6aef56652f503adce6afa9f07" category="cell">補救</block>
+  <block id="337c62c6b6eb7319bae58701105e889c" category="cell">分層</block>
+  <block id="86d0f8f9c44b93c040cb35a58ca2f2ff" category="cell">* 功能 *</block>
+  <block id="46cbe9208ff114439409f262e659f93e" category="list-text">此時、系統會以電子郵件傳送通知、說明下列 BlueXP 功能與服務：連接器、 BlueXP 複製與同步、 BlueXP 備份與還原、 BlueXP 數位錢包、以及 BlueXP 勒索軟體保護。未來版本將會新增其他服務。</block>
+  <block id="04237c890a793096d11b1355ee22f62a" category="cell">以啟用 BlueXP 分類。</block>
+  <block id="9ea66326ca6d5092554050a37582c56a" category="cell">可在 BlueXP 備份和恢復激活嚮導中選擇您自己的客戶託管密鑰，而無需使用默認的 Google 託管加密密鑰。</block>
+  <block id="7c68c9240932ba8b284de266f9564faa" category="paragraph">BlueXP 備份與還原需要這些權限。</block>
+  <block id="056f501b387d3252fe17b9dbb4d42ad7" category="cell">（選用）用於資料分層和 BlueXP 備份與還原</block>
+  <block id="03b89967f5c54805ba0d4a833ad07e0b" category="paragraph">Connector 會針對 BlueXP 備份與還原提出下列 API 要求：</block>
+  <block id="aee1dcbe4ed716a099022329741eafb0" category="paragraph">當您使用 BlueXP 分類時、 Connector 會提出下列 API 要求。</block>
+  <block id="7608a34983244db8bcef26f95b5ca79a" category="paragraph">當您使用 BlueXP 邊緣快取時、 Connector 會發出下列 API 要求：</block>
+  <block id="92b5575604daffe3be8d9be7e9eea83d" category="paragraph">當您使用 BlueXP 補救措施時、 Connector 會發出下列 API 要求來管理 Azure 資源上的標記：</block>
+  <block id="826e9938777ea2a0280d06c76218f7c7" category="paragraph">當您設定 BlueXP 分層時、 Connector 會發出下列 API 要求。</block>
+  <block id="6bf8cf4546732effc9436b03e26fd3ab" category="paragraph">BlueXP 分類不再需要「 Microsoft.Storage/storageAccounts/delete 」權限。</block>
+  <block id="56e09b1406b08f4b77233f0e7ec35a49" category="paragraph">BlueXP 備份與還原及 BlueXP 分層需要此權限。</block>
+  <block id="82492651a82d98ca83599fcd9c536c5d" category="paragraph">BlueXP 備份與還原需要此權限。</block>
+  <block id="7cd82008ab5d353c3e33f87f49f92961" category="paragraph">雖然 Connector 不需要建立工作環境、但需要建立和管理磁碟區、複寫資料、並將適用於 ONTAP 的 FSX 與 BlueXP 分類和 BlueXP 複製與同步等服務整合。</block>
+  <block id="60404bf35ed1506b74cc9cfac99f0818" category="paragraph">雖然不需要連接器來設定和管理 Azure NetApp Files 、但如果您想使用 BlueXP 分類來掃描 Azure NetApp Files 資料、則需要連接器。</block>
+  <block id="dd37176246e6abf3e559086afcadce82" category="paragraph">在幾乎所有情況下、您都可以在沒有 Connector 的情況下、將授權新增至數位錢包。</block>
+  <block id="da48a166a29b8e248a3113d9bd6cba04" category="paragraph">只有在 Connector 需要將授權新增至數位錢包時、才需要使用 Cloud Volumes ONTAP 節點型授權。在這種情況下需要連接器、因為資料是取自Cloud Volumes ONTAP 安裝在效益分析系統上的授權。</block>
+  <block id="aa043b4c9a6fa32b0f3811520156579a" category="list-text">您擁有多雲端環境（例如 AWS 和 Azure ）、偏好在 AWS 中安裝一個 Connector 、在 Azure 中安裝另一個 Connector 。每個系統都能管理 Cloud Volumes ONTAP 在這些環境中執行的不實系統。</block>
+  <block id="36eb10a8720e9fc3cc595882ff021ccf" category="inline-link">使用 BlueXP 分類掃描內部部署 ONTAP Volume 資料</block>
+  <block id="91a5418c9d864303136bc2d6b75e3f8d" category="list-text"><block ref="91a5418c9d864303136bc2d6b75e3f8d" category="inline-link-rx"></block></block>
+  <block id="04b86b3e706875b04f815d45eb8e76ee" category="inline-link">使用 BlueXP 備份與還原、將內部部署的 ONTAP Volume 資料備份至 StorageGRID</block>
+  <block id="b3546a00b1f480b6adbc2f6acf6e7301" category="list-text"><block ref="b3546a00b1f480b6adbc2f6acf6e7301" category="inline-link-rx"></block></block>
+  <block id="d282481c14e6e7d0691f4297fb3551e1" category="list-text">_Compliance Viewer_ ：只能檢視 BlueXP 分類的法規遵循資訊、並為擁有存取權限的工作區產生報告。</block>
+  <block id="20dcfd7d53957cc7f9ffca8bea6d9956" category="paragraph">您可以將 Connector 搭配多個 BlueXP 服務使用。例如、如果您使用 Connector 來管理 Cloud Volumes ONTAP 、您可以將同一個 Connector 搭配另一個服務使用、例如 BlueXP 分層。</block>
+  <block id="d128bda2634e1051cc984231da065144" category="list-text">BlueXP 數位電子錢包現在支援電子郵件通知。</block>
+  <block id="d2792d178cbdf6c41f2b8f2ae64424ed" category="list-text">現在、連接器可在完全隔離網際網路的任何雲端環境中獲得支援。然後您可以使用連接器上執行的BlueXP主控台、在Cloud Volumes ONTAP 同一個位置部署故障、並探索內部部署ONTAP 的故障叢集（如果您的雲端環境與內部部署環境之間有連線）。您也可以使用 BlueXP 備份與還原來備份 AWS 和 Azure 商業地區的 Cloud Volumes ONTAP 磁碟區。除了 BlueXP 數位錢包之外、此類部署不支援其他 BlueXP 服務。</block>
+  <block id="75327cdc175eca204abf0a4aa66413b3" category="paragraph">若要開始使用、請手動安裝 Connector 軟體、登入 Connector 上執行的 BlueXP 主控台、將 BYOL 授權新增至 BlueXP 數位錢包、然後部署 Cloud Volumes ONTAP 。</block>
+  <block id="c35e844c4a277ceb06b238910d3b86e7" category="list-text">您的 PAYGO 訂閱和 BlueXP 年度合約現在可從數位錢包中檢視及管理。</block>
+  <block id="706c30f817a6d965f23bc2798759eb15" category="paragraph">Compliance Viewer 角色適用於唯讀 BlueXP 分類存取。</block>
+  <block id="838203d064fe980b5ae00097d667d9f4" category="cell">檢視 BlueXP 分類掃描結果</block>
+  <block id="7f346b4ef7825b27ccadbbf10f2d2cd0" category="inline-link">Kubernetes 持續資料</block>
+  <block id="bf51187e0e630c8bb2fbde7d3c4a5f69" category="list-text">協調與保護<block ref="17466ff7cb59071f2d4e860ff4e2c4e1" category="inline-link-rx"></block></block>
+  <block id="f74f0f0050569783e8c306d738c4d91e" category="list-text"><block ref="f74f0f0050569783e8c306d738c4d91e" category="inline-link-rx"></block></block>
+  <block id="a062a07503c91ac212c0a374cd04a732" category="list-text"><block ref="a062a07503c91ac212c0a374cd04a732" category="inline-link-rx"></block></block>
+  <block id="81bcb3e3c1a8f797192f8c3c33e62033" category="list-text"><block ref="81bcb3e3c1a8f797192f8c3c33e62033" category="inline-link-rx"></block></block>
+  <block id="118f003038811dac1d88399f8ad54969" category="list-text"><block ref="118f003038811dac1d88399f8ad54969" category="inline-link-rx"></block></block>
+  <block id="3e347fe716ab17eefd02acef8c0347bf" category="list-text"><block ref="3e347fe716ab17eefd02acef8c0347bf" category="inline-link-rx"></block></block>
+  <block id="86d4d1274a29106954740fc239a0af79" category="list-text"><block ref="86d4d1274a29106954740fc239a0af79" category="inline-link-rx"></block></block>
+  <block id="ecbf594bb3a0b1f21d5ca3e417aec924" category="list-text"><block ref="ecbf594bb3a0b1f21d5ca3e417aec924" category="inline-link-rx"></block></block>
+  <block id="7f275ad0568e7861b2f443f918043809" category="paragraph">一家專業的執業會計師公司和服務稽核員審查了 BlueXP 、並確認它根據適用的信託服務標準、達成 SOC 2 類報告。</block>
+  <block id="07ef1eb956a87b51e019643b6f5d73a5" category="list-text">Amazon S3 儲存區探索</block>
+  <block id="06be37baefaab50eae9f413a227fd74c" category="paragraph">Connector 會提出下列 API 要求、以管理 Amazon FSX for ONTAP ：</block>
+  <block id="c3e5a959900f5ea4a9038689fc120adf" category="paragraph">Connector 會發出下列 API 要求、以部署 BlueXP 備份與還原的還原執行個體：</block>
+  <block id="39d07ebcd5d124c58373130bccc9d9ed" category="paragraph">Connector 會提出下列 API 要求、以部署 BlueXP 分類執行個體：</block>
+  <block id="bd4943e8a78dece7069c2be53901fcd6" category="paragraph">當您使用 BlueXP 分類時、 Connector 會發出下列 API 要求來掃描 S3 貯體：</block>
+  <block id="ce8d47df551a9c3116f52b1c75165f0c" category="paragraph">Connector 會在部署期間提出下列 API 要求、以部署 BlueXP 邊緣快取執行個體：</block>
+  <block id="c8a11657cad4105099bd9eb0d4bdbaec" category="paragraph">當您使用 BlueXP 補救措施時、 Connector 會發出下列 API 要求來管理 AWS 資源上的標記：</block>
+  <block id="bf9c7c9727a11f040da47cdd589f7ea6" category="paragraph">BlueXP 分層現在需要下列權限：</block>
+  <block id="54301079e01fc865e928c6fe22deeeef" category="paragraph">您可以檢視S3儲存區的詳細資料、包括地區、存取原則、帳戶、總容量和已用容量等。這些貯體可做為 BlueXP 備份與還原、 BlueXP 分層或 BlueXP 複製與同步作業的目的地。此外、您也可以使用 BlueXP 分類來掃描這些貯體。</block>
 </blocks>

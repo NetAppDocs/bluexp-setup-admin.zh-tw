@@ -16,7 +16,7 @@ summary: 「帳戶管理員」、「工作區管理員」、「法規遵循檢�
 [role="lead"]
 「帳戶管理員」、「工作區管理員」、「法規遵循檢視器」及SnapCenter 「支援對象管理員」角色、可為使用者提供特定權限。
 
-Compliance Viewer角色適用於唯讀的Cloud Data Sense存取。
+Compliance Viewer 角色適用於唯讀 BlueXP 分類存取。
 
 [cols="24,19,19,19,19"]
 |===
@@ -38,7 +38,7 @@ Compliance Viewer角色適用於唯讀的Cloud Data Sense存取。
 | 在工作區之間切換 | 是的 | 是的 | 是的 | 否 
 
 
-| 檢視資料感應掃描結果 | 是的 | 是的 | 是的 | 否 
+| 檢視 BlueXP 分類掃描結果 | 是的 | 是的 | 是的 | 否 
 
 
 | 刪除工作環境 | 是的 | 否 | 否 | 否 

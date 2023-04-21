@@ -222,7 +222,7 @@ link:reference-permissions-gcp.html["Connector 服務帳戶原則"]
 * 儲存設備管理
 * 成員：serviceAccount.user的BlueXP服務帳戶
 
-| 不適用 | （選用）用於資料分層和雲端備份 
+| 不適用 | （選用）用於資料分層和 BlueXP 備份與還原 
 
 
 | Google API服務代理程式 | Google Cloud | 服務專案  a| 
