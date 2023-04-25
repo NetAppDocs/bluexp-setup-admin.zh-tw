@@ -76,7 +76,10 @@ link:task-set-up-permissions-azure.html["瞭解如何取得服務主體的這些
 請注意、您可以選擇與此角色相關的訂閱。您選擇的每個訂閱都會提供Connector權限、讓他們在Cloud Volumes ONTAP 這些訂閱中部署功能。
 
 ** * 網路 * ：選擇 Vnet 和子網路、是否啟用公用 IP 位址、以及是否指定 Proxy 組態（選用）。
-** * 安全性群組 * ：選擇是建立新的安全性群組、還是選擇允許傳入 HTTP 、 HTTPS 及 SSH 存取的現有安全性群組。
+** * 安全性群組 * ：選擇是否要建立新的安全性群組、或是選擇允許所需輸入和輸出規則的現有安全性群組。
++
+link:reference-ports-azure.html["檢視 Azure 的安全性群組規則"]。
+
 ** *審查*：請檢閱您的選擇、確認您的設定正確無誤。
 
 
@@ -108,9 +111,9 @@ https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-onco
 +
 link:reference-host-requirements-azure["檢閱 VM 需求"]。
 
-** 對於網路安全性群組、 Connector 需要使用 SSH 、 HTTP 和 HTTPS 的傳入連線。
+** 對於網路安全性群組、 Connector 需要使用 SSH 、 HTTP 和 HTTPS 的傳入連線。特定組態還需要一些規則。
 +
-link:reference-ports-azure.html["深入瞭解 Connector 的安全性群組規則"]。
+link:reference-ports-azure.html["檢視 Azure 的安全性群組規則"]。
 
 ** 在 * 管理 * 下、選取 * 開啟 * 、為 Connector VM 啟用 * 系統指派的託管識別 * 。
 +

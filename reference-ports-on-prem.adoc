@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-ports-on-prem.html 
 keywords: networking, network, requirements, ports, on-prem, linux, http, https 
-summary: 在內部部署的Linux主機上手動安裝Connector時、會使用下列傳入連接埠。 
+summary: 當 Connector 手動安裝在內部部署 Linux 主機上時、會使用傳入連接埠。您可能需要參考這些連接埠以進行規劃。 
 ---
 = 內部連接器的連接埠
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 在內部部署的Linux主機上手動安裝Connector時、會使用下
 
 
 [role="lead"]
-在內部部署的Linux主機上手動安裝Connector時、會使用下列_inbound連接埠。
+當 Connector 手動安裝在內部部署 Linux 主機上時、 Connector 會使用 _inbound 連接埠。您可能需要參考這些連接埠以進行規劃。
 
 這些輸入規則適用於所有 BlueXP 部署模式。
 

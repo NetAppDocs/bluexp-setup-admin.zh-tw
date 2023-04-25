@@ -14,7 +14,7 @@ summary: 提供NetApp 支援網站 您的支援（NSS）帳戶認證資料、以
 
 
 [role="lead"]
-提供NetApp 支援網站 您的支援（NSS）帳戶認證資料、以便註冊以取得支援、啟用Cloud Volumes ONTAP 適用於各種功能的關鍵工作流程。這些NSS認證資料會與整個BlueXP帳戶建立關聯。
+為 BlueXP 提供 NetApp 支援網站 （ NSS ）帳戶的認證、以便註冊支援、啟用 Cloud Volumes ONTAP 的重要工作流程等。這些NSS認證資料會與整個BlueXP帳戶建立關聯。
 
 
 NOTE: BlueXP也支援為每個BlueXP使用者建立一個NSS帳戶的關聯。 link:task-manage-user-credentials.html["瞭解如何管理使用者層級認證"]。

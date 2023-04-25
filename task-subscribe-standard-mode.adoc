@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-subscribe-standard-mode.html 
 keywords: subscribe, subscription, marketplace subscription, paygo, contract, annual contract 
-summary: 從雲端供應商的市場訂閱 BlueXP 、以每小時或每年合約的速度支付 BlueXP 服務費用。 
+summary: 從雲端供應商的市場訂閱 BlueXP 、以每小時或每年合約的速度支付 BlueXP 服務費用。如果您向 NetApp 購買授權、您也需要訂閱 PAYGO 產品。您的授權一律會先收費、但如果您超過授權容量或授權期限到期、則會以每小時費率收費。 
 ---
 = 訂閱 BlueXP （標準模式）
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 從雲端供應商的市場訂閱 BlueXP 、以每小時或每年合約
 
 
 [role="lead"]
-從雲端供應商的市場訂閱 BlueXP 、即可按每小時費率（ PAYGO ）或透過年度合約支付 BlueXP 服務費用。
+從雲端供應商的市場訂閱 BlueXP 、即可按每小時費率（ PAYGO ）或透過年度合約支付 BlueXP 服務費用。如果您向 NetApp （ BYOL ）購買授權、您也需要訂閱 PAYGO 產品。您的授權一律會先收費、但如果您超過授權容量或授權期限到期、則會以每小時費率收費。
 
 [role="tabbed-block"]
 ====

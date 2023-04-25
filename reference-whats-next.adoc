@@ -17,3 +17,6 @@ summary: 現在您已經以標準模式登入並設定 BlueXP 、使用者可以
 現在您已經以標準模式登入並設定 BlueXP 、使用者可以建立和探索工作環境、並使用 BlueXP 資料服務。
 
 如需協助、請前往 https://docs.netapp.com/us-en/cloud-manager-family/["BlueXP 文件首頁"^] 檢視所有 BlueXP 服務的文件。
+
+.相關連結
+link:concept-modes.html["BlueXP 部署模式"]

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-log-in-private-mode.html 
 keywords: logging in, log in, sign in, signing in, private mode, private mode log in, local log in, connector log in, log in connector 
-summary: 在私有模式下使用 BlueXP 時、您必須從本機在 Connector 上執行的使用者介面登入 BlueXP 主控台。 
+summary: 在私有模式下使用 BlueXP 時、您需要從本機在 Connector 上執行的使用者介面登入 BlueXP 主控台。 
 ---
 = 登入 BlueXP （私有模式）
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 在私有模式下使用 BlueXP 時、您必須從本機在 Connector �
 
 
 [role="lead"]
-在私有模式下使用 BlueXP 時、您必須從本機在 Connector 上執行的使用者介面登入 BlueXP 主控台。
+在私有模式下使用 BlueXP 時、您需要從本機在 Connector 上執行的使用者介面登入 BlueXP 主控台。
 
 .登入選項
 私有模式支援本機使用者管理與存取。驗證並非透過 BlueXP 的雲端服務提供。

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-provide-permissions-aws.html 
 keywords: aws permissions, set up aws permissions, iam role, json policy, bluexp policy, aws marketplace, aws access key, access key, iam policy, permissions 
-summary: 如果您在自己的 Linux 主機上手動安裝 Connector 軟體、則必須提供 BlueXP 先前設定的權限。 
+summary: 如果您在自己的 Linux 主機上手動安裝 Connector 軟體、則必須提供 BlueXP 先前設定的權限。提供權限可讓 BlueXP 在 AWS 中管理您的資料和儲存基礎架構。 
 ---
 = 提供 AWS 對 BlueXP 的權限
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 如果您在自己的 Linux 主機上手動安裝 Connector 軟體、�
 
 
 [role="lead"]
-如果您在自己的 Linux 主機上手動安裝 Connector 軟體、則必須提供 BlueXP 先前設定的權限。
+如果您在自己的 Linux 主機上手動安裝 Connector 軟體、則必須提供 BlueXP 先前設定的權限。提供權限可讓 BlueXP 在 AWS 中管理您的資料和儲存基礎架構。
 
 link:task-set-up-permissions-aws.html["瞭解如何設定這些權限"]。
 

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-accounts-gcp.html 
 keywords: cloud provider accounts, gcp, gcp accounts, google cloud platform, google accounts, google cloud platform accounts, permissions, project, google cloud project 
-summary: 您應該瞭解 BlueXP 如何使用 Google Cloud 認證和權限、以便管理一或多個 Google Cloud 專案的認證。 
+summary: 瞭解 BlueXP 如何使用 Google Cloud 認證和權限、以便您管理一或多個 Google Cloud 專案的認證。例如、您可能想要瞭解與 Connector VM 相關聯的服務帳戶。 
 ---
 = Google Cloud 專案、權限和帳戶
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 您應該瞭解 BlueXP 如何使用 Google Cloud 認證和權限、以�
 
 
 [role="lead"]
-您應該瞭解 BlueXP 如何使用 Google Cloud 認證和權限、以便管理一或多個 Google Cloud 專案的認證。
+瞭解 BlueXP 如何使用 Google Cloud 認證和權限、以便您管理一或多個 Google Cloud 專案的認證。例如、您可能想要瞭解與 Connector VM 相關聯的服務帳戶。
 
 
 
@@ -25,7 +25,7 @@ summary: 您應該瞭解 BlueXP 如何使用 Google Cloud 認證和權限、以�
 直接從BlueXP部署Connector之前、必須先設定兩組權限：
 
 . 您需要使用具有從BlueXP啟動Connector VM執行個體權限的Google帳戶來部署Connector。
-. 部署 Connector 時、系統會提示您選取 https://cloud.google.com/iam/docs/service-accounts["服務帳戶"^] 適用於 VM 執行個體。BlueXP會從服務帳戶取得權限Cloud Volumes ONTAP 、代表您建立及管理各種系統。將自訂角色附加至服務帳戶、即可提供權限。
+. 部署 Connector 時、系統會提示您選取 https://cloud.google.com/iam/docs/service-accounts["服務帳戶"^] 適用於 VM 執行個體。BlueXP 可從服務帳戶取得權限、代表您建立及管理 Cloud Volumes ONTAP 系統等。將自訂角色附加至服務帳戶、即可提供權限。
 
 
 下圖說明上述第 1 和第 2 項所述的權限要求：

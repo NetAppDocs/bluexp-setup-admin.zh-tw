@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-host-requirements-on-prem.html 
 keywords: cpu requirements, ram requirements, on prem requirements, on prem host requirements, connector host requirements 
-summary: Connector 軟體必須在符合特定作業系統需求、 RAM 需求、連接埠需求等的主機上執行。 
+summary: Connector 軟體必須在符合特定作業系統需求、 RAM 需求、連接埠需求等的主機上執行。安裝 Connector 之前、請先確定您的主機符合這些要求。 
 ---
 = 檢閱內部部署安裝的 Connector 主機需求
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Connector 軟體必須在符合特定作業系統需求、 RAM 需求�
 
 
 [role="lead"]
-Connector 軟體必須在符合特定作業系統需求、 RAM 需求、連接埠需求等的主機上執行。
+Connector 軟體必須在符合特定作業系統需求、 RAM 需求、連接埠需求等的主機上執行。安裝 Connector 之前、請先確定您的主機符合這些要求。
 
 專用主機:: 與其他應用程式共用的主機不支援 Connector 。主機必須是專屬主機。
 支援的作業系統::

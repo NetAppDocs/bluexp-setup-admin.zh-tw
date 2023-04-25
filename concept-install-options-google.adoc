@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-install-options-google.html 
 keywords: install connector google cloud, google cloud install connector, connector google cloud, google cloud connector, install connector gcp, gcp install connector, connector gcp, gcp connector, installation options, manual install 
-summary: 在 Google Cloud 中建立 Connector 有幾種不同的方法。直接從 BlueXP 開始是最常見的方法。 
+summary: 在 Google Cloud 中建立 Connector 有幾種不同的方法。直接從 BlueXP 開始是最常見的方法。您選擇的安裝選項會決定您準備部署的方式。 
 ---
 = Google Cloud 中的 Connector 安裝選項
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 在 Google Cloud 中建立 Connector 有幾種不同的方法。直接�
 
 
 [role="lead"]
-在 Google Cloud 中建立 Connector 有幾種不同的方法。直接從 BlueXP 開始是最常見的方法。
+在 Google Cloud 中建立 Connector 有幾種不同的方法。直接從 BlueXP 開始是最常見的方法。您選擇的安裝選項會決定您準備部署的方式。
 
 提供下列安裝選項：
 

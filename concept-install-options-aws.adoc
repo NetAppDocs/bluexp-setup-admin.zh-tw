@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-install-options-aws.html 
 keywords: install connector aws, aws install connector, connector aws, aws connector, installation options, aws marketplace, manual install 
-summary: 在 AWS 中建立 Connector 有幾種不同的方法。直接從 BlueXP 開始是最常見的方法。 
+summary: 在 AWS 中建立 Connector 有幾種不同的方法。直接從 BlueXP 開始是最常見的方法。您選擇的安裝選項會決定您準備部署的方式。 
 ---
 = AWS 中的連接器安裝選項
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 在 AWS 中建立 Connector 有幾種不同的方法。直接從 BlueXP
 
 
 [role="lead"]
-在 AWS 中建立 Connector 有幾種不同的方法。直接從 BlueXP 開始是最常見的方法。
+在 AWS 中建立 Connector 有幾種不同的方法。直接從 BlueXP 開始是最常見的方法。您選擇的安裝選項會決定您準備部署的方式。
 
 提供下列安裝選項：
 

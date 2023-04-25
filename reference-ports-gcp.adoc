@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-ports-gcp.html 
 keywords: ports, firewall rules, http, https, inbound, outbound 
-summary: Connector的Google Cloud防火牆規則需要傳入和傳出規則。 
+summary: Connector的Google Cloud防火牆規則需要傳入和傳出規則。當您從 BlueXP 建立 Connector 時、 BlueXP 會自動建立此安全性群組。您需要為所有其他安裝選項設定此安全性群組。 
 ---
 = Google Cloud中的防火牆規則
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Connector的Google Cloud防火牆規則需要傳入和傳出規則。
 
 
 [role="lead"]
-Connector的Google Cloud防火牆規則需要傳入和傳出規則。
+Connector的Google Cloud防火牆規則需要傳入和傳出規則。當您從 BlueXP 建立 Connector 時、 BlueXP 會自動建立此安全性群組。您需要為所有其他安裝選項設定此安全性群組。
 
 
 

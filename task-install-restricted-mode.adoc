@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-install-restricted-mode.html 
 keywords: government region, gov, govcloud, connector, sovereign cloud 
-summary: 若要在受限模式下使用 BlueXP 、您需要部署 Connector 、然後存取 Connector 上執行的使用者介面來設定 BlueXP 。 
+summary: 在受限模式下部署 Connector 、以便在與 BlueXP SaaS 層的輸出連線有限的情況下使用 BlueXP 。若要開始使用、請安裝 Connector 、存取 Connector 上執行的使用者介面來設定 BlueXP 、然後提供您先前設定的雲端權限。 
 ---
 = 以受限模式部署 Connector
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 若要在受限模式下使用 BlueXP 、您需要部署 Connector 、�
 
 
 [role="lead"]
-若要在受限模式下使用 BlueXP 、您需要安裝 Connector 、存取 Connector 上執行的使用者介面來設定 BlueXP 、然後提供雲端權限。
+在受限模式下部署 Connector 、以便在與 BlueXP SaaS 層的輸出連線有限的情況下使用 BlueXP 。若要開始使用、請安裝 Connector 、存取 Connector 上執行的使用者介面來設定 BlueXP 、然後提供您先前設定的雲端權限。
 
 
 

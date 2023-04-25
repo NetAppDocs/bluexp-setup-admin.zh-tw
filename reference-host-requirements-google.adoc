@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-host-requirements-google.html 
 keywords: cpu requirements, ram requirements, google cloud requirements, google cloud host requirements, connector host requirements, gcp machine type, machine type 
-summary: Connector 軟體必須在符合特定作業系統需求、 RAM 需求、連接埠需求等的主機上執行。如果您打算手動安裝 Connector 、則應確保主機符合這些需求。 
+summary: Connector 軟體必須在符合特定作業系統需求、 RAM 需求、連接埠需求等的主機上執行。如果您打算手動安裝 Connector 、則應確保主機符合這些需求。安裝 Connector 之前、請先確定您的主機符合這些要求。 
 ---
 = 檢閱 Connector 主機對 Google Cloud 安裝的需求
 :hardbreaks:

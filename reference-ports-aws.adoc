@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-ports-aws.html 
 keywords: ports, security group, http, https, inbound, outbound 
-summary: Connector的AWS安全性群組需要傳入和傳出規則。 
+summary: Connector的AWS安全性群組需要傳入和傳出規則。當您從 BlueXP 建立 Connector 時、 BlueXP 會自動建立此安全性群組。您需要為所有其他安裝選項設定此安全性群組。 
 ---
 = AWS中的安全群組規則
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Connector的AWS安全性群組需要傳入和傳出規則。
 
 
 [role="lead"]
-Connector的AWS安全性群組需要傳入和傳出規則。
+Connector的AWS安全性群組需要傳入和傳出規則。當您從 BlueXP 建立 Connector 時、 BlueXP 會自動建立此安全性群組。您需要為所有其他安裝選項設定此安全性群組。
 
 
 

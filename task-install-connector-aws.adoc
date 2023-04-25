@@ -65,7 +65,10 @@ TIP: 如果選擇*假定角色*、您可以從連接器部署精靈建立第一�
 +
 請確定您的金鑰配對正確、可與連接器搭配使用。如果沒有金鑰配對、您將無法存取Connector虛擬機器。
 
-** * 安全性群組 * ：選擇是建立新的安全性群組、還是選擇允許傳入 HTTP 、 HTTPS 及 SSH 存取的現有安全性群組。
+** * 安全性群組 * ：選擇是否要建立新的安全性群組、或是選擇允許所需輸入和輸出規則的現有安全性群組。
++
+link:reference-ports-aws.html["檢視 AWS 的安全性群組規則"]。
+
 ** *審查*：請檢閱您的選擇、確認您的設定正確無誤。
 
 
@@ -84,11 +87,11 @@ TIP: 如果選擇*假定角色*、您可以從連接器部署精靈建立第一�
 .您需要的產品
 * 符合網路需求的 VPC 和子網路。
 +
-link:task-set-up-networking-aws.html["深入瞭解網路需求"]
+link:task-set-up-networking-aws.html["深入瞭解網路需求"]。
 
 * 具有附加原則的 IAM 角色、其中包含 Connector 所需的權限。
 +
-link:task-set-up-permissions-aws.html["瞭解如何設定 AWS 權限"]
+link:task-set-up-permissions-aws.html["瞭解如何設定 AWS 權限"]。
 
 * 為您的 IAM 使用者訂閱及取消訂閱 AWS Marketplace 的權限。
 * EC2 執行個體的金鑰配對。
@@ -119,6 +122,12 @@ link:reference-host-requirements-aws.html["檢閱執行個體需求"]。
 *** 選擇所需的VPC和子網路。
 *** 指定執行個體是否應有公有IP位址。
 *** 指定防火牆設定、以啟用Connector執行個體所需的連線方法：SSH、HTTP和HTTPS。
++
+特定組態還需要一些規則。
+
++
+link:reference-ports-aws.html["檢視 AWS 的安全性群組規則"]。
+
 
 
 ** *設定儲存設備*：保留預設的儲存選項。

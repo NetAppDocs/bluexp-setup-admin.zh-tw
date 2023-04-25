@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-install-private-mode.html 
 keywords: install dark site, deploy dark site, install private mode, deploy private mode, install connector dark site, connector dark site, dark site, private mode, no internet 
-summary: 若要在私有模式中設定 BlueXP 、您需要安裝 Connector 、存取 Connector 上執行的使用者介面來設定 BlueXP 、然後提供雲端權限。 
+summary: 以私有模式部署 Connector 、讓您可以使用 BlueXP 、而不需外傳連線至 BlueXP SaaS 層。若要開始使用、請安裝 Connector 、存取 Connector 上執行的使用者介面來設定 BlueXP 、然後提供您先前設定的雲端權限。 
 ---
 = 以私有模式部署 Connector
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 若要在私有模式中設定 BlueXP 、您需要安裝 Connector 、�
 
 
 [role="lead"]
-若要在私有模式中設定 BlueXP 、您需要安裝 Connector 、存取 Connector 上執行的使用者介面來設定 BlueXP 、然後提供雲端權限。
+以私有模式部署 Connector 、讓您可以使用 BlueXP 、而不需外傳連線至 BlueXP SaaS 層。若要開始使用、請安裝 Connector 、存取 Connector 上執行的使用者介面來設定 BlueXP 、然後提供您先前設定的雲端權限。
 
 
 

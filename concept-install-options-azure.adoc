@@ -14,7 +14,7 @@ summary: 在 Azure 中建立 Connector 有幾種不同的方法。直接從 Blue
 
 
 [role="lead"]
-在 Azure 中建立 Connector 有幾種不同的方法。直接從 BlueXP 開始是最常見的方法。
+在 Azure 中建立 Connector 有幾種不同的方法。直接從 BlueXP 開始是最常見的方法。您選擇的安裝選項會決定您準備部署的方式。
 
 提供下列安裝選項：
 

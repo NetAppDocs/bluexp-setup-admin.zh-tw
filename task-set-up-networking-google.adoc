@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-set-up-networking-google.html 
 keywords: networking, on prem networking, endpoints, urls, ports, ip address, proxy, proxy server, connections 
-summary: 設定您的網路、讓 Connector 能夠管理混合雲環境中的資源和程序。 
+summary: 設定您的網路、讓 Connector 能夠管理混合雲環境中的資源和程序。例如、您需要確保目標網路可以使用連線、而且可以使用輸出網際網路存取。 
 ---
 = 設定 Google Cloud 網路
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 設定您的網路、讓 Connector 能夠管理混合雲環境中的資
 
 
 [role="lead"]
-設定您的網路、讓 Connector 能夠管理混合雲環境中的資源和程序。
+設定您的網路、讓 Connector 能夠管理混合雲環境中的資源和程序。例如、您需要確保目標網路可以使用連線、而且可以使用輸出網際網路存取。
 
 
 

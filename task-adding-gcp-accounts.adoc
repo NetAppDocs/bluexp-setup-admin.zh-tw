@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-adding-gcp-accounts.html 
 keywords: permissions, gcp, marketplace, gcp subscription, subscription, gcp marketplace, subscribe, data tiering, tiering, setup, requirements, account for data tiering, account for tiering, interoperable, interoperability, interoperable storage access keys, access keys 
-summary: 您可以管理與 Connector VM 執行個體相關聯的 Google Cloud 認證。 
+summary: 您可以建立與 Connector VM 執行個體相關聯的 Google Cloud 認證、方法是建立市場訂閱的關聯、並疑難排解訂閱程序。這兩項工作都能確保您可以使用市場訂閱來支付 BlueXP 服務費用。 
 ---
 = 管理 BlueXP 的 Google Cloud 認證和訂閱
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 您可以管理與 Connector VM 執行個體相關聯的 Google Cloud �
 
 
 [role="lead"]
-您可以管理與 Connector VM 執行個體相關聯的 Google Cloud 認證。
+您可以建立與 Connector VM 執行個體相關聯的 Google Cloud 認證、方法是建立市場訂閱的關聯、並疑難排解訂閱程序。這兩項工作都能確保您可以使用市場訂閱來支付 BlueXP 服務費用。
 
 
 

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-managing-connectors.html 
 keywords: managing connectors, uninstall connector, switch connectors, switch between connectors, local interface, local connector, local cloud manager 
-summary: 建立一或多個連接器之後、您可以在連接器之間切換、連線至連接器上執行的本機使用者介面等、來管理連接器。 
+summary: 建立 Connector 之後、您可能需要隨時加以管理。例如、如果有多個連接器、您可能會想要在連接器之間切換。或者、在私有模式下使用 BlueXP 時、您可能需要手動升級 Connector 。 
 ---
 = 管理現有的連接器
 :hardbreaks:
@@ -14,7 +14,9 @@ summary: 建立一或多個連接器之後、您可以在連接器之間切換�
 
 
 [role="lead"]
-建立一或多個連接器之後、您可以在連接器之間切換、升級軟體等方式來管理這些連接器。
+建立 Connector 之後、您可能需要隨時加以管理。例如、如果有多個連接器、您可能會想要在連接器之間切換。或者、在私有模式下使用 BlueXP 時、您可能需要手動升級 Connector 。
+
+link:concept-connectors.html["瞭解 Connectors 的運作方式"]。
 
 
 
