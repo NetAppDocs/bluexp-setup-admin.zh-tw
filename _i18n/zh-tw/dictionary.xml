@@ -3611,7 +3611,7 @@
   <block id="4453e7502515d4db1f3a4a1c28c48f13" category="summary">Connector 軟體必須在符合特定作業系統需求、 RAM 需求、連接埠需求等的主機上執行。如果您打算手動安裝 Connector 、則應確保主機符合這些需求。安裝 Connector 之前、請先確定您的主機符合這些要求。</block>
   <block id="47ca16329494467c539bde558f0ae632" category="list-text">部署 Connector 時、系統會提示您選取<block ref="98f22f2dda0728ebb39af9a8fe826c8e" category="inline-link-rx"></block> 適用於 VM 執行個體。BlueXP 可從服務帳戶取得權限、代表您建立及管理 Cloud Volumes ONTAP 系統等。將自訂角色附加至服務帳戶、即可提供權限。</block>
   <block id="52be9a779a7de2bea0867d1d993e7f07" category="summary">Connector 軟體必須在符合特定作業系統需求、 RAM 需求、連接埠需求等的主機上執行。安裝 Connector 之前、請先確定您的主機符合這些要求。</block>
-  <block id="467ab02e35d0adba413e3be72e9c49a8" category="summary">瞭解 BlueXP 如何使用 Azure 認證和權限、以便您管理一或多個 Azure 訂閱的認證。例如、您可能想要瞭解如何將額外的 Azure 認證新增至 BlueXP 。</block>
-  <block id="3c0eb878d2cb71d8ced9c8198a3d9f1d" category="summary">瞭解 BlueXP 如何使用 AWS 認證和權限、以便管理一或多個 AWS 帳戶的認證。例如、您可能想要瞭解如何將額外的 AWS 認證新增至 BlueXP 。</block>
-  <block id="8054ab9ced76d417f5267da91e77acb2" category="summary">瞭解 BlueXP 如何使用 Google Cloud 認證和權限、以便管理一或多個 Google Cloud 專案的認證。例如、您可能想要瞭解與 Connector VM 相關聯的服務帳戶。</block>
+  <block id="c01f728e9ef3359c6e9b452f47a9ca09" category="summary">瞭解 BlueXP 如何使用 Azure 認證和權限來代表您執行動作。瞭解這些詳細資料有助於您管理一或多個 Azure 訂閱的認證。例如、您可能想要瞭解何時將額外的 Azure 認證新增至 BlueXP 。</block>
+  <block id="ea5bc95c9558a374461d71a1d2f029ca" category="summary">瞭解 BlueXP 如何使用 AWS 認證和權限來代表您執行動作。在 BlueXP 中管理一或多個 AWS 帳戶的認證時、瞭解這些詳細資料可能很有幫助。例如、您可能想要瞭解何時將額外的 AWS 認證新增至 BlueXP 。</block>
+  <block id="1c498f9a6415c0ecd5728481eea5743b" category="summary">瞭解 BlueXP 如何使用 Google Cloud 認證和權限來代表您執行動作。瞭解這些詳細資料有助於您管理一或多個 Google Cloud 專案的認證。例如、您可能想要瞭解與 Connector VM 相關聯的服務帳戶。</block>
 </blocks>

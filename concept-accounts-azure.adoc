@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-accounts-azure.html 
 keywords: cloud provider accounts, azure, azure accounts, service principal, multiple accounts, permissions, policy, policies, subscriptions, credentials 
-summary: 瞭解 BlueXP 如何使用 Azure 認證和權限、以便您管理一或多個 Azure 訂閱的認證。例如、您可能想要瞭解如何將額外的 Azure 認證新增至 BlueXP 。 
+summary: 瞭解 BlueXP 如何使用 Azure 認證和權限來代表您執行動作。瞭解這些詳細資料有助於您管理一或多個 Azure 訂閱的認證。例如、您可能想要瞭解何時將額外的 Azure 認證新增至 BlueXP 。 
 ---
 = Azure 認證與權限
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 瞭解 BlueXP 如何使用 Azure 認證和權限、以便您管理一�
 
 
 [role="lead"]
-瞭解 BlueXP 如何使用 Azure 認證和權限、以便您管理一或多個 Azure 訂閱的認證。例如、您可能想要瞭解如何將額外的 Azure 認證新增至 BlueXP 。
+瞭解 BlueXP 如何使用 Azure 認證和權限來代表您執行動作。瞭解這些詳細資料有助於您管理一或多個 Azure 訂閱的認證。例如、您可能想要瞭解何時將額外的 Azure 認證新增至 BlueXP 。
 
 
 
