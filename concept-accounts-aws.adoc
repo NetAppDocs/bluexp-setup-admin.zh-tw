@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-accounts-aws.html 
 keywords: cloud provider accounts, aws, aws accounts, keys, multiple accounts, permissions, aws permissions, policy, policies, credentials 
-summary: 您應該瞭解 BlueXP 如何使用 AWS 認證和權限、以便管理一或多個 AWS 帳戶的認證。例如、您可能想要瞭解如何將額外的 AWS 認證新增至 BlueXP 。 
+summary: 瞭解 BlueXP 如何使用 AWS 認證和權限、以便管理一或多個 AWS 帳戶的認證。例如、您可能想要瞭解如何將額外的 AWS 認證新增至 BlueXP 。 
 ---
 = AWS 認證與權限
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 您應該瞭解 BlueXP 如何使用 AWS 認證和權限、以便管理�
 
 
 [role="lead"]
-您應該瞭解 BlueXP 如何使用 AWS 認證和權限、以便管理一或多個 AWS 帳戶的認證。例如、您可能想要瞭解如何將額外的 AWS 認證新增至 BlueXP 。
+瞭解 BlueXP 如何使用 AWS 認證和權限、以便管理一或多個 AWS 帳戶的認證。例如、您可能想要瞭解如何將額外的 AWS 認證新增至 BlueXP 。
 
 
 

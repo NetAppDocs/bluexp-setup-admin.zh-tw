@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-accounts-gcp.html 
 keywords: cloud provider accounts, gcp, gcp accounts, google cloud platform, google accounts, google cloud platform accounts, permissions, project, google cloud project 
-summary: 瞭解 BlueXP 如何使用 Google Cloud 認證和權限、以便您管理一或多個 Google Cloud 專案的認證。例如、您可能想要瞭解與 Connector VM 相關聯的服務帳戶。 
+summary: 瞭解 BlueXP 如何使用 Google Cloud 認證和權限、以便管理一或多個 Google Cloud 專案的認證。例如、您可能想要瞭解與 Connector VM 相關聯的服務帳戶。 
 ---
 = Google Cloud 專案、權限和帳戶
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 瞭解 BlueXP 如何使用 Google Cloud 認證和權限、以便您管�
 
 
 [role="lead"]
-瞭解 BlueXP 如何使用 Google Cloud 認證和權限、以便您管理一或多個 Google Cloud 專案的認證。例如、您可能想要瞭解與 Connector VM 相關聯的服務帳戶。
+瞭解 BlueXP 如何使用 Google Cloud 認證和權限、以便管理一或多個 Google Cloud 專案的認證。例如、您可能想要瞭解與 Connector VM 相關聯的服務帳戶。
 
 
 
