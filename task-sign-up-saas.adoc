@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-sign-up-saas.html 
 keywords: sign up, signing up, sign in, signing in, login with netapp, log in with netapp, create account, account, log in with nss, nss, nss login 
-summary: 當您開始使用 BlueXP 時、您的第一步是使用現有的 NetApp 支援網站 認證或建立 NetApp 雲端登入。 
+summary: BlueXP 可從網路型主控台存取。當您開始使用 BlueXP 時、您的第一步是使用現有的 NetApp 支援網站 認證或建立 NetApp 雲端登入。 
 ---
 = 註冊BlueXP
 :hardbreaks:
@@ -27,22 +27,14 @@ BlueXP 可從網路型主控台存取。當您開始使用 BlueXP 時、您的�
 
 .步驟
 . 開啟網頁瀏覽器、前往 https://console.bluexp.netapp.com["BlueXP主控台"^]
-. 在*登入*頁面上、選取*註冊*。
+. 如果您有 NetApp 支援網站 帳戶、請在 * 登入 * 頁面上直接輸入與您的 NSS 帳戶相關的電子郵件地址。
 +
+如果您有 NSS 帳戶、可以跳過註冊頁面。在此初次登入時、BlueXP會為您註冊。
 
-TIP: 如果您打算使用現有的NSS認證、可以跳過註冊頁面、直接在登入頁面中輸入您的電子郵件地址。在此初次登入時、BlueXP會為您註冊。
-
-. 在*註冊*頁面上、選擇其中一個登入選項：
-+
-** 如果您有現有NetApp 支援網站 的Sof（NSS）帳戶、請選取* NetApp 支援網站 用您的Sof the Sof the Sof Your Sof the Sof the Sof the Sof the Sof the
-+
-使用此選項時NetApp 支援網站 、您的支援儀表板不會將您的驗證（NSS）認證新增至BlueXP。 link:task-adding-nss-accounts.html["瞭解如何將您的NSS認證新增至支援儀表板、以啟用主要工作流程"]。
-
-** 如果您沒有NSS,但尚未建立NetApp雲端認證,請輸入必要資訊以建立NetApp雲端登入。
+. 如果您沒有 NSS 帳戶、但想要建立 NetApp 雲端登入來註冊、請選取 * 註冊 * 。
+. 在 * 註冊 * 頁面上、輸入建立 NetApp 雲端登入所需的資訊。
 +
 請注意、註冊表單中只允許英文字元。
-
-
 
 . 出現提示時、請檢閱終端使用者授權合約並接受條款。
 . 在*歡迎*頁面上、輸入您帳戶的名稱。

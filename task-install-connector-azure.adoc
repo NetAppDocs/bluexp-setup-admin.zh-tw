@@ -30,6 +30,10 @@ summary: 直接從 BlueXP 網路型主控台、 Azure Marketplace 或在您自�
 ** HTTPS憑證
 
 
+* SSH 公開金鑰、如果您想要將該驗證方法用於 Connector 虛擬機器。驗證方法的另一個選項是使用密碼。
++
+https://learn.microsoft.com/en-us/azure/virtual-machines/linux-vm-connect?tabs=Linux["瞭解如何在 Azure 中連線至 Linux VM"^]
+
 * 如果您不想讓BlueXP自動為Connector建立Azure角色、則需要自行建立 link:reference-permissions-azure.html["使用此頁面上的原則"]。
 +
 這些權限適用於Connector執行個體本身。這是一組不同於您先前設定的權限、只要部署Connector即可。
@@ -70,7 +74,13 @@ link:task-set-up-permissions-azure.html["瞭解如何取得服務主體的這些
 
 . 依照精靈中的步驟建立連接器：
 +
-** * VM驗證*：選擇Azure訂閱、位置、新資源群組或現有資源群組、然後選擇驗證方法。
+** * VM 驗證 * ：選擇 Azure 訂閱、位置、新資源群組或現有資源群組、然後為您正在建立的 Connector 虛擬機器選擇驗證方法。
++
+虛擬機器的驗證方法可以是密碼或 SSH 公開金鑰。
+
++
+https://learn.microsoft.com/en-us/azure/virtual-machines/linux-vm-connect?tabs=Linux["瞭解如何在 Azure 中連線至 Linux VM"^]
+
 ** *詳細資料*：輸入執行個體的名稱、指定標記、然後選擇是否要BlueXP建立具有所需權限的新角色、或是要選取所設定的現有角色 link:reference-permissions-azure.html["必要的權限"]。
 +
 請注意、您可以選擇與此角色相關的訂閱。您選擇的每個訂閱都會提供Connector權限、讓他們在Cloud Volumes ONTAP 這些訂閱中部署功能。

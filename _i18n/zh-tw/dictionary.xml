@@ -756,7 +756,6 @@
   <block id="bb0af45d6e9045bc2046c5f245006f7c" category="paragraph">這些權限適用於Connector執行個體本身。這是一組不同於您先前設定的權限、只要部署Connector即可。</block>
   <block id="02a8c4a4e553694e2236fd17bb20b197" category="list-text">選擇 * Microsoft Azure * 作為雲端供應商。</block>
   <block id="e0f74d06e87b3ad6fc9f3b3cfc573c38" category="paragraph">此表單由 Microsoft 擁有及託管。您的認證資料不會提供給 NetApp 。</block>
-  <block id="ec444652764a4ae69cee1fdb97fdab30" category="list-text">* VM驗證*：選擇Azure訂閱、位置、新資源群組或現有資源群組、然後選擇驗證方法。</block>
   <block id="e1ca9b0274808b9c445718fa4b9a5d26" category="paragraph">請注意、您可以選擇與此角色相關的訂閱。您選擇的每個訂閱都會提供Connector權限、讓他們在Cloud Volumes ONTAP 這些訂閱中部署功能。</block>
   <block id="316cce18546001b2f1149ed17a4d3900" category="list-text">* 網路 * ：選擇 Vnet 和子網路、是否啟用公用 IP 位址、以及是否指定 Proxy 組態（選用）。</block>
   <block id="a1630873c12a4c232f890d319c1b34a5" category="paragraph">虛擬機器應在約 7 分鐘內就緒。您應該留在頁面上、直到程序完成為止。</block>
@@ -1967,13 +1966,6 @@
   <block id="213954d7bdaa5b2d9eab4ee897a935d3" category="paragraph-title">註冊選項</block>
   <block id="4c6d74757138aa41d2d5f2b14bb05ad1" category="paragraph">您可以使用下列其中一個選項註冊至BlueXP：</block>
   <block id="d7330e52ac45b9d5a769aa9a5c244319" category="list-text">指定您的電子郵件地址和密碼、即可登入NetApp雲端</block>
-  <block id="9f1b84fa92d950a165d75ff20ea339ef" category="list-text">在*登入*頁面上、選取*註冊*。</block>
-  <block id="c838c41871c4f726a74cecb65930bcdd" category="admonition">如果您打算使用現有的NSS認證、可以跳過註冊頁面、直接在登入頁面中輸入您的電子郵件地址。在此初次登入時、BlueXP會為您註冊。</block>
-  <block id="9a076f8e1167c7f54e717f3312d9be22" category="list-text">在*註冊*頁面上、選擇其中一個登入選項：</block>
-  <block id="eb7dc3949c534285123f407b97df88ce" category="list-text">如果您有現有NetApp 支援網站 的Sof（NSS）帳戶、請選取* NetApp 支援網站 用您的Sof the Sof the Sof Your Sof the Sof the Sof the Sof the Sof the</block>
-  <block id="a67ec4292dbbae18fa7d903a5925529f" category="inline-link-macro">瞭解如何將您的NSS認證新增至支援儀表板、以啟用主要工作流程</block>
-  <block id="f36fff08cce9f284672696a03c3af986" category="paragraph">使用此選項時NetApp 支援網站 、您的支援儀表板不會將您的驗證（NSS）認證新增至BlueXP。 <block ref="6dd91a7e65a4b86508888798b6f600ec" category="inline-link-macro-rx"></block>。</block>
-  <block id="5185f2e203db6dcf60732c4adcccbd15" category="list-text">如果您沒有NSS,但尚未建立NetApp雲端認證,請輸入必要資訊以建立NetApp雲端登入。</block>
   <block id="b0844d01c75bb6b60219ee536f20aa15" category="list-text">出現提示時、請檢閱終端使用者授權合約並接受條款。</block>
   <block id="a2d1bd30e95a89c4ecb9d6a39da84e3a" category="list-text">在*歡迎*頁面上、輸入您帳戶的名稱。</block>
   <block id="efb45899558a953ff7d6578e89aa2c1c" category="inline-link-macro">瞭解如何將成員新增至現有帳戶</block>
@@ -3311,7 +3303,6 @@
   <block id="74a4ede1451c1e5d5746c24e1fc77924" category="paragraph"><block ref="7a5209a3744a7cace63a040ed3f3ce07" category="inline-link-macro-rx"></block>。</block>
   <block id="b7ffaf906b575603b3ec9613a0b6ea30" category="paragraph">您不需要 Connector 即可開始使用 BlueXP 、但您需要建立 Connector 才能解除鎖定所有 BlueXP 功能和服務。Connector 可在內部部署和雲端環境中管理資源和程序。需要使用 Cloud Volumes ONTAP 和其他資料服務。</block>
   <block id="0b2713c18a328b85808183d496d2d28c" category="paragraph">在安全性和連線能力受限的環境中、也支援 BlueXP 。您可以使用 _limit modity_ 或 _private modity_ 來限制與 BlueXP SaaS 層的輸出連線。</block>
-  <block id="ba2f0b6169ae38b10d24f0818c4c9d17" category="summary">當您開始使用 BlueXP 時、您的第一步是使用現有的 NetApp 支援網站 認證或建立 NetApp 雲端登入。</block>
   <block id="ae140c7a1104ac99f1a01b18e5dc3ed8" category="paragraph">BlueXP 可從網路型主控台存取。當您開始使用 BlueXP 時、您的第一步是使用現有的 NetApp 支援網站 認證或建立 NetApp 雲端登入。</block>
   <block id="b829f1a930ae603edd16b249b070f4c9" category="doc">以受限模式部署 Connector</block>
   <block id="5cadd29a69b0be5bc8b482cfc2e89adb" category="open-title">AWS 商業市場</block>
@@ -3614,4 +3605,13 @@
   <block id="c01f728e9ef3359c6e9b452f47a9ca09" category="summary">瞭解 BlueXP 如何使用 Azure 認證和權限來代表您執行動作。瞭解這些詳細資料有助於您管理一或多個 Azure 訂閱的認證。例如、您可能想要瞭解何時將額外的 Azure 認證新增至 BlueXP 。</block>
   <block id="ea5bc95c9558a374461d71a1d2f029ca" category="summary">瞭解 BlueXP 如何使用 AWS 認證和權限來代表您執行動作。在 BlueXP 中管理一或多個 AWS 帳戶的認證時、瞭解這些詳細資料可能很有幫助。例如、您可能想要瞭解何時將額外的 AWS 認證新增至 BlueXP 。</block>
   <block id="1c498f9a6415c0ecd5728481eea5743b" category="summary">瞭解 BlueXP 如何使用 Google Cloud 認證和權限來代表您執行動作。瞭解這些詳細資料有助於您管理一或多個 Google Cloud 專案的認證。例如、您可能想要瞭解與 Connector VM 相關聯的服務帳戶。</block>
+  <block id="647051cbb24da89d3b791c11978a8b90" category="list-text">SSH 公開金鑰、如果您想要將該驗證方法用於 Connector 虛擬機器。驗證方法的另一個選項是使用密碼。</block>
+  <block id="94fc3421a7ccbcb57366109daea19aed" category="inline-link">瞭解如何在 Azure 中連線至 Linux VM</block>
+  <block id="51efa34484491a2cd1e24f30b14fc68a" category="paragraph"><block ref="51efa34484491a2cd1e24f30b14fc68a" category="inline-link-rx"></block></block>
+  <block id="c3e1d8cd2a4fddc661ad823da98d5fa7" category="list-text">* VM 驗證 * ：選擇 Azure 訂閱、位置、新資源群組或現有資源群組、然後為您正在建立的 Connector 虛擬機器選擇驗證方法。</block>
+  <block id="52f3863b6256b8ae764628f74442ca5c" category="paragraph">虛擬機器的驗證方法可以是密碼或 SSH 公開金鑰。</block>
+  <block id="3587d9f2b48c4f0c9c40433731329a21" category="list-text">如果您有 NetApp 支援網站 帳戶、請在 * 登入 * 頁面上直接輸入與您的 NSS 帳戶相關的電子郵件地址。</block>
+  <block id="61bd9c463723beb495c6ca6a1a35e0eb" category="paragraph">如果您有 NSS 帳戶、可以跳過註冊頁面。在此初次登入時、BlueXP會為您註冊。</block>
+  <block id="7c74a9177ae92ae3e635c6ec91ce1d71" category="list-text">如果您沒有 NSS 帳戶、但想要建立 NetApp 雲端登入來註冊、請選取 * 註冊 * 。</block>
+  <block id="9c27b53d053eec29dd123f70f05c5d03" category="list-text">在 * 註冊 * 頁面上、輸入建立 NetApp 雲端登入所需的資訊。</block>
 </blocks>
