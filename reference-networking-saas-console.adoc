@@ -58,8 +58,8 @@ AWS 服務（ amazonaws.com):
 |===
 .相關連結
 * link:task-prepare-restricted-mode.html#prepare-networking-for-user-access-to-bluexp-console["準備網路以供使用者存取 BlueXP 主控台（受限模式）"]
-* link:task-set-up-networking-aws.html#endpoints-contacted-for-day-to-day-operations["Connector 在 AWS （標準模式）中所接觸的端點"]
-* link:task-set-up-networking-azure.html#endpoints-contacted-for-day-to-day-operations["Connector 在 Azure 中接觸的端點（標準模式）"]
-* link:task-set-up-networking-google.html#endpoints-contacted-for-day-to-day-operations["Connector 在 Google Cloud 中連絡的端點（標準模式）"]
+* link:task-set-up-networking-aws.html#endpoints-contacted-from-the-connector["Connector 在 AWS （標準模式）中所接觸的端點"]
+* link:task-set-up-networking-azure.html#endpoints-contacted-from-the-connector["Connector 在 Azure 中接觸的端點（標準模式）"]
+* link:task-set-up-networking-google.html#endpoints-contacted-from-the-connector["Connector 在 Google Cloud 中連絡的端點（標準模式）"]
 * link:task-set-up-networking-on-prem.html#endpoints-contacted-during-manual-installation["手動安裝 Connector 時聯絡的端點（標準模式）"]
 

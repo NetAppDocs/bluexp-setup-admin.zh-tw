@@ -21,7 +21,6 @@
   <block id="abc66ca669cfbd9be590874c67e8d7ef" category="cell">\https://widget.intercom.io</block>
   <block id="30fe214f0e8ecaf9b895a0137cad8ce9" category="cell">產品內對談可讓您與 NetApp 雲端專家交談。</block>
   <block id="9827c1dc4f901b9ac9340f0034c5a996" category="list-text">您部署Connector的網路位置必須具有傳出網際網路連線。</block>
-  <block id="ffcad347e7fbe5448bc3fabe48be2db8" category="paragraph">連接器需要存取傳出網際網路、才能連絡下列端點、以便管理公有雲環境中的資源和程序。</block>
   <block id="8963387394e2ee3e2a5a9ba160566a58" category="cell">\https://support.netapp.com</block>
   <block id="db9e137068a05efe5440105c2494b7f1" category="cell">以取得授權資訊、並將AutoSupport 資訊傳送給NetApp支援部門。</block>
   <block id="554841a7559bd190d883de523464d1d1" category="cell">\https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net</block>
@@ -2280,7 +2279,6 @@
   <block id="e977076f329f114f070ba24997d6ea89" category="paragraph">Connector 需要網路連線、才能連線到您計畫建立和管理工作環境的位置。</block>
   <block id="9d1c31fa96e155af1c5f2d21f024ae6b" category="section-title">手動安裝期間聯絡的端點</block>
   <block id="6017dcd09765a1c92a35f18a704f3fb7" category="paragraph">如果您打算在自己的 Linux 主機上手動安裝 Connector 、 Connector 的安裝程式會在安裝過程中要求存取下列 URL ：</block>
-  <block id="6b928849399b5939b51343f6c87ad310" category="section-title">已聯絡端點以進行日常營運</block>
   <block id="06afa66cf6eca938a45be835a47030e1" category="paragraph-title">相關連結</block>
   <block id="74f7ea1e969abd8d8ec017d333bead7e" category="inline-link-macro">準備網路以供使用者存取 BlueXP 主控台</block>
   <block id="8ae42ef1699b44390c771e4ea6cb78df" category="paragraph"><block ref="8ae42ef1699b44390c771e4ea6cb78df" category="inline-link-macro-rx"></block></block>
@@ -2650,11 +2648,8 @@
   <block id="7b0c55f247d6f53c6782615b53af4619" category="list-text">傳出通訊</block>
   <block id="b765b1f4695cc75eccd54629c696871c" category="list-text">從 Connector 到 BlueXP SaaS 層、雲端供應商的公開資源、以及其他日常營運所需的重要元件、都需要連線。</block>
   <block id="481967699cb23b1212553273ddd07956" category="inline-link-macro">連接器在 AWS 中所接觸的端點</block>
-  <block id="ab8177880a13f92d2c6c296fd85611c9" category="list-text"><block ref="ab8177880a13f92d2c6c296fd85611c9" category="inline-link-macro-rx"></block></block>
   <block id="bc9ca29d6605d1cf6f70076a23749d7d" category="inline-link-macro">Connector 在 Azure 中連絡的端點</block>
-  <block id="3f6e7a440a8cae86f238db2ca1da0175" category="list-text"><block ref="3f6e7a440a8cae86f238db2ca1da0175" category="inline-link-macro-rx"></block></block>
   <block id="b9ae7144d8994b521f00e7ea998af276" category="inline-link-macro">Connector 在 Google Cloud 中連絡的端點</block>
-  <block id="a0a5f0a2e1c920dc11829154cff84abd" category="list-text"><block ref="a0a5f0a2e1c920dc11829154cff84abd" category="inline-link-macro-rx"></block></block>
   <block id="3bf5c9324dc0745f8cad507c90fe86b2" category="list-text">Connector 支援的位置</block>
   <block id="916a2669af97d2f4130e6923cd637b3f" category="list-text">在標準模式中、 Connector 可在雲端或內部部署中獲得支援。</block>
   <block id="fd18b98fb0c01efb9ebdfe9d8aac583c" category="list-text">您可以從 BlueXP 的設定精靈、 AWS 或 Azure Marketplace 、或使用安裝程式、在資料中心或雲端的您自己的 Linux 主機上手動安裝 Connector 、來安裝 Connector 。</block>
@@ -3456,11 +3451,8 @@
   <block id="bfb1a8284652de834f7e5f10d70d1b28" category="inline-link-macro">準備網路以供使用者存取 BlueXP 主控台（受限模式）</block>
   <block id="bbeb91503e087c169e5b9723b8e20883" category="list-text"><block ref="bbeb91503e087c169e5b9723b8e20883" category="inline-link-macro-rx"></block></block>
   <block id="2860cec66f88d15f252631c132ac68ce" category="inline-link-macro">Connector 在 AWS （標準模式）中所接觸的端點</block>
-  <block id="c5671cdad008988d217498ffee18763f" category="list-text"><block ref="c5671cdad008988d217498ffee18763f" category="inline-link-macro-rx"></block></block>
   <block id="f30c2ab09bb92e952f9dc522c1d59a4b" category="inline-link-macro">Connector 在 Azure 中接觸的端點（標準模式）</block>
-  <block id="befb6b1b01e0761a5d0ce6f028c4edd2" category="list-text"><block ref="befb6b1b01e0761a5d0ce6f028c4edd2" category="inline-link-macro-rx"></block></block>
   <block id="51592248285ea432f62366d3bb873cd2" category="inline-link-macro">Connector 在 Google Cloud 中連絡的端點（標準模式）</block>
-  <block id="6de9f5682041f68bedd20c6f93964068" category="list-text"><block ref="6de9f5682041f68bedd20c6f93964068" category="inline-link-macro-rx"></block></block>
   <block id="554b8b833efd1a5f6c0982f18f3d0820" category="inline-link-macro">手動安裝 Connector 時聯絡的端點（標準模式）</block>
   <block id="5474364eb5af84ea9df4135b22224135" category="list-text"><block ref="5474364eb5af84ea9df4135b22224135" category="inline-link-macro-rx"></block></block>
   <block id="6187e32203fd05e22e575166349f5b99" category="inline-link">備份與還原文件</block>
@@ -3614,4 +3606,17 @@
   <block id="61bd9c463723beb495c6ca6a1a35e0eb" category="paragraph">如果您有 NSS 帳戶、可以跳過註冊頁面。在此初次登入時、BlueXP會為您註冊。</block>
   <block id="7c74a9177ae92ae3e635c6ec91ce1d71" category="list-text">如果您沒有 NSS 帳戶、但想要建立 NetApp 雲端登入來註冊、請選取 * 註冊 * 。</block>
   <block id="9c27b53d053eec29dd123f70f05c5d03" category="list-text">在 * 註冊 * 頁面上、輸入建立 NetApp 雲端登入所需的資訊。</block>
+  <block id="71afd6b2cb4c08d6d8f78d761345d34b" category="paragraph">您部署Connector的網路位置必須具有傳出網際網路連線。從 BlueXP 主控台部署 Connector 時、也需要從網頁瀏覽器進行輸出網際網路存取。</block>
+  <block id="6dffc69caefdf6586b8f4562e4f891ff" category="section-title">從 BlueXP 主控台連絡的端點</block>
+  <block id="7e793e0926dc898cd9fdf640dab8b7d2" category="paragraph">當您使用透過 SaaS 層提供的 BlueXP 網路型主控台時、它會與多個端點聯絡、以完成資料管理工作。這包括透過 BlueXP 主控台聯絡以部署 Connector 的端點。</block>
+  <block id="de3d7dbdd97c240a233066ad7479c6c2" category="inline-link-macro">檢視從 BlueXP 主控台連絡的端點清單</block>
+  <block id="638887c7fa101cc437e1eb7f6041b91e" category="paragraph"><block ref="7d376f679e4be0527c6e11d1cf760c68" category="inline-link-macro-rx"></block>。</block>
+  <block id="715f0347cb236dfb96b8932c5f17b0ea" category="section-title">已從 Connector 聯絡的端點</block>
+  <block id="5519fcf85b24bd3271825a502543232a" category="paragraph">Connector 需要外傳網際網路存取才能連絡下列端點、以便管理公有雲環境中的資源和程序、以進行日常營運。</block>
+  <block id="4904eb58ec6f09d17bea1bcb4209ac4b" category="list-text"><block ref="4904eb58ec6f09d17bea1bcb4209ac4b" category="inline-link-macro-rx"></block></block>
+  <block id="1a989b3502c194d5e9de1168533c7d28" category="list-text"><block ref="1a989b3502c194d5e9de1168533c7d28" category="inline-link-macro-rx"></block></block>
+  <block id="ef12cf012477b5ad02d81be8ada8b95c" category="list-text"><block ref="ef12cf012477b5ad02d81be8ada8b95c" category="inline-link-macro-rx"></block></block>
+  <block id="f4986cf63781254c431f585eade70914" category="list-text"><block ref="f4986cf63781254c431f585eade70914" category="inline-link-macro-rx"></block></block>
+  <block id="d4725a75fbee6904284f3109fa5e079a" category="list-text"><block ref="d4725a75fbee6904284f3109fa5e079a" category="inline-link-macro-rx"></block></block>
+  <block id="31dec7fbef975d09b76f499ef8abfb62" category="list-text"><block ref="31dec7fbef975d09b76f499ef8abfb62" category="inline-link-macro-rx"></block></block>
 </blocks>

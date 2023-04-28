@@ -32,7 +32,15 @@ Connector 需要網路連線、才能連線到您計畫建立和管理工作環�
 
 == 傳出網際網路存取
 
-您部署Connector的網路位置必須具有傳出網際網路連線。
+您部署Connector的網路位置必須具有傳出網際網路連線。從 BlueXP 主控台部署 Connector 時、也需要從網頁瀏覽器進行輸出網際網路存取。
+
+
+
+=== 從 BlueXP 主控台連絡的端點
+
+當您使用透過 SaaS 層提供的 BlueXP 網路型主控台時、它會與多個端點聯絡、以完成資料管理工作。這包括透過 BlueXP 主控台聯絡以部署 Connector 的端點。
+
+link:reference-networking-saas-console.html["檢視從 BlueXP 主控台連絡的端點清單"]。
 
 
 
@@ -53,9 +61,9 @@ Connector 需要網路連線、才能連線到您計畫建立和管理工作環�
 
 
 
-=== 已聯絡端點以進行日常營運
+=== 已從 Connector 聯絡的端點
 
-連接器需要存取傳出網際網路、才能連絡下列端點、以便管理公有雲環境中的資源和程序。
+Connector 需要外傳網際網路存取才能連絡下列端點、以便管理公有雲環境中的資源和程序、以進行日常營運。
 
 [cols="2*"]
 |===
@@ -96,9 +104,6 @@ NOTE: Connector目前正在聯絡「cloudmanager.cloud.netapp.com"」、但即�
 
 | \https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net | 升級Connector及其Docker元件。 
 |===
-.相關連結
-link:reference-networking-saas-console.html["準備網路以供使用者存取 BlueXP 主控台"]
-
 
 
 == Proxy伺服器

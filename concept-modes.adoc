@@ -94,9 +94,9 @@ BlueXP 在標準模式下的運作方式如下：
 傳出通訊:: 從 Connector 到 BlueXP SaaS 層、雲端供應商的公開資源、以及其他日常營運所需的重要元件、都需要連線。
 +
 --
-* link:task-set-up-networking-aws.html#endpoints-contacted-for-day-to-day-operations["連接器在 AWS 中所接觸的端點"]
-* link:task-set-up-networking-azure.html#endpoints-contacted-for-day-to-day-operations["Connector 在 Azure 中連絡的端點"]
-* link:task-set-up-networking-google.html#endpoints-contacted-for-day-to-day-operations["Connector 在 Google Cloud 中連絡的端點"]
+* link:task-set-up-networking-aws.html#endpoints-contacted-from-the-connector["連接器在 AWS 中所接觸的端點"]
+* link:task-set-up-networking-azure.html#endpoints-contacted-from-the-connector["Connector 在 Azure 中連絡的端點"]
+* link:task-set-up-networking-google.html#endpoints-contacted-from-the-connector["Connector 在 Google Cloud 中連絡的端點"]
 
 
 --
