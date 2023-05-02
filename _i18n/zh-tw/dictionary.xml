@@ -3619,4 +3619,6 @@
   <block id="f4986cf63781254c431f585eade70914" category="list-text"><block ref="f4986cf63781254c431f585eade70914" category="inline-link-macro-rx"></block></block>
   <block id="d4725a75fbee6904284f3109fa5e079a" category="list-text"><block ref="d4725a75fbee6904284f3109fa5e079a" category="inline-link-macro-rx"></block></block>
   <block id="31dec7fbef975d09b76f499ef8abfb62" category="list-text"><block ref="31dec7fbef975d09b76f499ef8abfb62" category="inline-link-macro-rx"></block></block>
+  <block id="b86699cce9d5045d0f0bc82298a74e55" category="list-text">雲端金鑰管理服務（ KMS ） API</block>
+  <block id="5cb2601217dd646515fe8e7cba8643b1" category="paragraph">（僅當您打算使用 BlueXP 備份與還原搭配客戶管理的加密金鑰（ CMEK ）時才需要）</block>
 </blocks>

@@ -76,6 +76,10 @@ link:task-set-up-permissions-google.html["請依照每個選項的逐步指示�
 * Cloud Resource Manager API
 * 運算引擎 API
 * 身分識別與存取管理（ IAM ） API
+* 雲端金鑰管理服務（ KMS ） API
++
+（僅當您打算使用 BlueXP 備份與還原搭配客戶管理的加密金鑰（ CMEK ）時才需要）
+
 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["六"] 建立連接器
