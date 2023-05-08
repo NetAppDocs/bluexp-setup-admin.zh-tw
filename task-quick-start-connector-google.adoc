@@ -39,16 +39,16 @@ link:task-set-up-networking-google.html["深入瞭解網路需求"]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 檢閱主機需求
 [role="quick-margin-para"]
-Connector 軟體必須在符合特定需求的主機上執行。如果您打算在自己的 Linux 主機上手動安裝 Connector 軟體、則應確保主機符合這些需求。如果您是從 BlueXP 或使用 gCloud 建立 Connector 、則這些需求將會妥善處理、因為軟體是從映像部署而來。
+如果您想要在自己的 Linux 主機上手動安裝 Connector 軟體、則應確保主機符合特定需求。如果您是從 BlueXP 或使用 gCloud 建立 Connector 、則這些需求將會妥善處理、因為軟體是從映像部署而來。
 
 [role="quick-margin-para"]
 主要需求如下：
 
 [role="quick-margin-list"]
-* 執行 CentOS 或 Red Hat Enterprise Linux 的專用主機
+* 執行 Ubuntu 22.04 、 CentOS 7.6 至 7.9 或 RHEL 7.6 至 7.9 的專用主機
 * 4個CPU
 * 14 GB RAM
-* Docker引擎
+* Docker Engine 19.3.1 或更新版本
 
 
 [role="quick-margin-para"]

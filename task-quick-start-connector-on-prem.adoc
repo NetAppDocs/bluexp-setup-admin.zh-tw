@@ -35,10 +35,10 @@ link:task-set-up-networking-on-prem.html["深入瞭解網路需求"]。
 Connector 軟體必須在符合特定需求的主機上執行。主要需求如下：
 
 [role="quick-margin-list"]
-* 執行 CentOS 或 Red Hat Enterprise Linux 的專用主機
+* 執行 Ubuntu 22.04 、 CentOS 7.6 至 7.9 或 RHEL 7.6 至 7.9 的專用主機
 * 4個CPU
 * 14 GB RAM
-* Docker引擎
+* Docker Engine 19.3.1 或更新版本
 
 
 [role="quick-margin-para"]

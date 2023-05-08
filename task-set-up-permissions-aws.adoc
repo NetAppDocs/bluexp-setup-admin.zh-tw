@@ -47,7 +47,7 @@ summary: 在 AWS 中設定權限、讓您可以使用管理資料和儲存基礎
 如有需要、您可以使用IAM來限制IAM原則 `Condition` 元素。 https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["AWS文件：條件元素"^]
 
 
-TIP: 當 BlueXP 建立 Connector 時、它會將一組新的權限套用至 Connector 執行個體、以啟用 Connector to AWS 資源。
+TIP: 當 BlueXP 建立 Connector 時、它會將一組新的權限套用至 Connector 執行個體、讓 Connector 能夠管理 AWS 資源。
 
 .步驟
 . 前往AWS IAM主控台。

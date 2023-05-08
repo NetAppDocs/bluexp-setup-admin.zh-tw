@@ -49,8 +49,9 @@ Connector 軟體必須在符合特定作業系統需求、 RAM 需求、連接�
 支援的作業系統::
 +
 --
+* Ubuntu 22.04
 * CentOS 7.6、7.7、7.8及7.9
-* Red Hat Enterprise Linux 7.6、7.7、7.8、7.9、8.6、 和8.7%
+* Red Hat Enterprise Linux 7.6 、 7.7 、 7.8 和 7.9
 +
 主機必須向 Red Hat Subscription Management 登錄。如果主機尚未登錄、則無法在 Connector 安裝期間存取儲存庫來更新所需的協力廠商軟體。
 
@@ -60,7 +61,12 @@ Connector 軟體必須在符合特定作業系統需求、 RAM 需求、連接�
 
 
 --
-Hypervisor:: 需要經認證可執行 CentOS 或 Red Hat Enterprise Linux 的裸機或託管 Hypervisor 。 https://access.redhat.com/certified-hypervisors["Red Hat 解決方案：哪些 Hypervisor 已通過認證、可執行 Red Hat Enterprise Linux ？"^]
+Hypervisor:: 需要經認證可執行 Ubuntu 、 CentOS 或 Red Hat Enterprise Linux 的裸機或託管 Hypervisor 。
++
+--
+https://access.redhat.com/certified-hypervisors["Red Hat 解決方案：哪些 Hypervisor 已通過認證、可執行 Red Hat Enterprise Linux ？"^]
+
+--
 CPU:: 4 個核心或 4 個 vCPU
 RAM:: 14 GB
 AWS EC2 執行個體類型:: 符合上述 CPU 和 RAM 需求的執行個體類型。建議使用T3.xLarge。
