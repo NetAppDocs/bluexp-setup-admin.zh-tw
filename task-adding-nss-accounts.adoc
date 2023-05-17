@@ -91,10 +91,10 @@ NetApp使用Microsoft Azure Active Directory做為身分識別供應商、提供
 .接下來呢？
 現在、使用者可以在建立新Cloud Volumes ONTAP 的支援系統、註冊現有Cloud Volumes ONTAP 的支援系統、以及註冊支援時、選擇帳戶。
 
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html["在 Cloud Volumes ONTAP AWS 中啟動"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html["在 Cloud Volumes ONTAP Azure 中啟動"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-gcp.html["在Cloud Volumes ONTAP Google Cloud上啟動"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-registering.html["註冊隨用隨付系統"^]
+* https://["在 Cloud Volumes ONTAP AWS 中啟動"^]
+* https://["在 Cloud Volumes ONTAP Azure 中啟動"^]
+* https://["在Cloud Volumes ONTAP Google Cloud上啟動"^]
+* https://["註冊隨用隨付系統"^]
 
 
 
@@ -104,7 +104,7 @@ NetApp使用Microsoft Azure Active Directory做為身分識別供應商、提供
 自2021年11月起、NetApp現在使用Microsoft Azure Active Directory做為身分識別供應商、提供專為支援與授權所設計的驗證服務。此更新之後、BlueXP會提示您更新先前新增之任何現有帳戶的認證資料。
 
 .步驟
-. 如果您尚未這麼做、 https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/FAQs_for_NetApp_adoption_of_MS_Azure_AD_B2C_for_login["建立將連結至您目前 BlueXP 帳戶的 Microsoft Azure Active Directory B2C 帳戶"^]。
+. 如果您尚未這麼做、 https://["建立將連結至您目前 BlueXP 帳戶的 Microsoft Azure Active Directory B2C 帳戶"^]。
 . 在 BlueXP 主控台的右上角、選取「說明」圖示、然後選取 * 「支援 * 」。
 . 選取 * NSS 管理 * 。
 . 對於您要更新的 NSS 帳戶、請選取 * 更新帳戶 * 。

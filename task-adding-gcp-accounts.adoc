@@ -38,7 +38,7 @@ image:screenshot_gcp_associate.gif["Google Cloud 專案的快照、以及 Google
 NOTE: 在您完成下列步驟之前、請先確認您的Google Cloud帳戶擁有「帳單管理」權限、以及BlueXP登入權限。
 
 +
-.. 重新導向至之後 https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Google Cloud Marketplace上的NetApp BlueXP頁面"^]下、請確定在頂端導覽功能表中選取正確的專案。
+.. 重新導向至之後 https://["Google Cloud Marketplace上的NetApp BlueXP頁面"^]下、請確定在頂端導覽功能表中選取正確的專案。
 +
 image:screenshot_gcp_cvo_marketplace.png["Google Cloud 中 Cloud Volumes ONTAP 市場頁面的螢幕擷取畫面。"]
 
@@ -58,7 +58,7 @@ image:screenshot_gcp_marketplace_register.png["註冊快顯畫面。"]
 .. 完成「*訂閱指派*」頁面上的步驟：
 +
 
-NOTE: 如果貴組織的人員已從您的帳單帳戶訂閱NetApp BlueXP訂閱、您將會被重新導向至 https://bluexp.netapp.com/ontap-cloud?x-gcp-marketplace-token=["BlueXP網站上的「支持」頁面Cloud Volumes ONTAP"^] 而是。如果這是意外情況、請聯絡您的NetApp銷售團隊。Google每個Google帳單帳戶只能啟用一次訂閱。
+NOTE: 如果貴組織的人員已從您的帳單帳戶訂閱NetApp BlueXP訂閱、您將會被重新導向至 https://["BlueXP網站上的「支持」頁面Cloud Volumes ONTAP"^] 而是。如果這是意外情況、請聯絡您的NetApp銷售團隊。Google每個Google帳單帳戶只能啟用一次訂閱。
 
 +
 *** 選取您要與此訂閱建立關聯的 BlueXP 帳戶。
@@ -92,7 +92,7 @@ image:screenshot_gcp_associate.gif["訂閱指派頁面的快照。"]
 有時透過 Google Cloud Marketplace 訂閱 BlueXP 可能會因為權限不正確或不小心轉寄至 BlueXP 網站而變得零散。如果發生這種情況、請使用下列步驟完成訂購程序。
 
 .步驟
-. 瀏覽至 https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Google Cloud Marketplace上的NetApp BlueXP頁面"^] 檢查訂單狀態。如果頁面顯示 * 管理供應商 * 、請向下捲動並選取 * 管理訂單 * 。
+. 瀏覽至 https://["Google Cloud Marketplace上的NetApp BlueXP頁面"^] 檢查訂單狀態。如果頁面顯示 * 管理供應商 * 、請向下捲動並選取 * 管理訂單 * 。
 +
 image:screenshot_gcp_manage_orders.png["市場頁面訂閱後的快照。"]
 

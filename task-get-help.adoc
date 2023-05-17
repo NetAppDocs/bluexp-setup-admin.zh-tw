@@ -18,11 +18,11 @@ NetApp以多種方式支援BlueXP及其雲端服務。我們全年無休提供�
 
 這些選項可供免費使用、一天24小時、一週7天：
 
-* https://kb.netapp.com/Cloud/BlueXP["知識庫"^]
+* https://["知識庫"^]
 +
 請搜尋BlueXP知識庫、找出有助於疑難排解問題的文章。
 
-* http://community.netapp.com/["社群"^]
+* http://["社群"^]
 +
 歡迎加入BlueXP社群、以追蹤後續討論或建立新討論。
 
@@ -92,7 +92,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 此錯誤可能表示、與該帳戶相關聯的NSS帳戶及記錄公司與BlueXP帳戶序號的記錄公司不同（例如960xxxx)或工作環境序號。您可以在「建立案例*」表單頂端查看您的NSS帳戶清單、以找出最適合的項目、或使用下列其中一個選項尋求協助：
 
 * 使用產品內對談
-* 請至提交非技術案例 https://mysupport.netapp.com/site/help[]
+* 請至提交非技術案例 https://[]
 
 
 

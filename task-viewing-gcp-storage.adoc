@@ -33,7 +33,7 @@ image:screenshot-gcp-cloud-storage-actions.png["在您選取Google Cloud Storage
 
 . 選取 * 同步資料 * 、將資料同步至 Google Cloud Storage 貯體或從其中同步。
 +
-如需詳細資料、請參閱 https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["BlueXP 複本與同步的總覽"^]
+如需詳細資料、請參閱 https://["BlueXP 複本與同步的總覽"^]
 
 . 選取 * 輸入工作環境 * 以檢視 Google 帳戶中的儲存庫詳細資料。
 +

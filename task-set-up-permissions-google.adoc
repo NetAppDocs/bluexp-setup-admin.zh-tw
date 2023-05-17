@@ -115,13 +115,13 @@ includedPermissions:
 gCloud iam 角色會建立 connectorDeployment --project=MyProject --file=connector-deployment.yaml
 
 +
-https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Google Cloud 文件：建立及管理自訂角色"^]
+https://["Google Cloud 文件：建立及管理自訂角色"^]
 
 
 
 . 將此自訂角色指派給將從 BlueXP 或使用 gCloud 部署 Connector 的使用者。
 +
-https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role["Google Cloud 文件：授予單一角色"^]
+https://["Google Cloud 文件：授予單一角色"^]
 
 
 
@@ -148,7 +148,7 @@ Google Cloud使用者現在擁有建立Connector所需的權限。
 gCloud iam 角色會建立連接器 --project=MyProject --file=connector
 
 +
-https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Google Cloud 文件：建立及管理自訂角色"^]
+https://["Google Cloud 文件：建立及管理自訂角色"^]
 
 
 
@@ -159,7 +159,7 @@ https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-
 .. 選取您剛建立的角色。
 .. 完成剩餘步驟以建立角色。
 +
-https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account["Google Cloud 文件：建立服務帳戶"^]
+https://["Google Cloud 文件：建立服務帳戶"^]
 
 
 
@@ -187,7 +187,7 @@ https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_
 
 
 
-如需詳細資料、請參閱 https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role["Google Cloud文件"^]
+如需詳細資料、請參閱 https://["Google Cloud文件"^]
 
 
 

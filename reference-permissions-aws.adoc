@@ -27,7 +27,7 @@ summary: 當BlueXP在AWS中啟動Connector執行個體時、它會將原則附�
 * 如果您直接從BlueXP在標準AWS區域中建立連接器、則BlueXP會自動將原則套用至連接器。在這種情況下、您不需要執行任何動作。
 * 如果您是從AWS Marketplace部署Connector、在Linux主機上手動安裝Connector、或是想要新增額外的AWS認證到BlueXP、則必須自行設定原則。
 * 您也必須確保原則在後續版本中新增權限時保持最新狀態。
-* 如有需要、您可以使用IAM來限制IAM原則 `Condition` 元素。 https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["AWS文件：條件元素"^]
+* 如有需要、您可以使用IAM來限制IAM原則 `Condition` 元素。 https://["AWS文件：條件元素"^]
 * 若要檢視使用這些原則的逐步指示、請參閱下列頁面：
 +
 ** link:task-set-up-permissions-aws.html["在 AWS （標準模式）中設定 Connector 安裝權限"]

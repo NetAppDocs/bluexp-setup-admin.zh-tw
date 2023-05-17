@@ -32,7 +32,7 @@ summary: 新增及管理 Azure 認證、讓 BlueXP 擁有在 Azure 訂閱中部�
 
 == 將額外的 Azure 訂閱與託管身分識別建立關聯
 
-BlueXP可讓您選擇要部署Cloud Volumes ONTAP 的Azure認證和Azure訂閱。除非您建立關聯、否則您無法為託管身分識別設定檔選取不同的 Azure 訂閱 https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["託管身分識別"^] 這些訂閱。
+BlueXP可讓您選擇要部署Cloud Volumes ONTAP 的Azure認證和Azure訂閱。除非您建立關聯、否則您無法為託管身分識別設定檔選取不同的 Azure 訂閱 https://["託管身分識別"^] 這些訂閱。
 
 .關於這項工作
 託管身分識別是 link:concept-accounts-azure.html["初始 Azure 帳戶"] 當您從BlueXP部署連接器時。部署Connector時、BlueXP會建立BlueXP運算子角色、並將其指派給Connector虛擬機器。
@@ -102,7 +102,7 @@ image:diagram_azure_authentication.png["顯示BlueXP在Azure Active Directory進
 建立Azure Active Directory（AD）應用程式與服務主體、以便BlueXP用於角色型存取控制。
 
 .開始之前
-您必須在 Azure 中擁有適當權限、才能建立 Active Directory 應用程式、並將應用程式指派給角色。如需詳細資訊、請參閱 https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure 說明文件：必要權限"^]。
+您必須在 Azure 中擁有適當權限、才能建立 Active Directory 應用程式、並將應用程式指派給角色。如需詳細資訊、請參閱 https://["Microsoft Azure 說明文件：必要權限"^]。
 
 .步驟
 . 從 Azure 入口網站開啟 * Azure Active Directory * 服務。
@@ -154,7 +154,7 @@ image:screenshot_azure_ad.gif["顯示 Microsoft Azure 中的 Active Directory �
 下列步驟說明如何在Azure Cloud Shell中使用Bash建立角色。
 
 +
-*** 開始 https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Azure Cloud Shell"^] 並選擇Bash環境。
+*** 開始 https://["Azure Cloud Shell"^] 並選擇Bash環境。
 *** 上傳Json檔案。
 +
 image:screenshot_azure_shell_upload.png["Azure Cloud Shell的快照、您可在其中選擇上傳檔案的選項。"]
@@ -298,7 +298,7 @@ image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」�
 
 
 .結果
-您現在可以從「詳細資料與認證」頁面切換至不同的認證集合 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html["在建立新的工作環境時"^]
+您現在可以從「詳細資料與認證」頁面切換至不同的認證集合 https://["在建立新的工作環境時"^]
 
 image:screenshot_accounts_switch_azure.gif["在「詳細資料擴大機；認證」頁面中選取「編輯認證」之後、會顯示在認證之間選取的螢幕擷取畫面。"]
 

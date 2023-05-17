@@ -17,7 +17,7 @@ summary:
 
 == 版權
 
-http://www.netapp.com/us/legal/copyright.aspx[]
+http://[]
 
 
 
@@ -25,7 +25,7 @@ http://www.netapp.com/us/legal/copyright.aspx[]
 
 NetApp 、 NetApp 標誌及 NetApp 商標頁面上列出的標章均為 NetApp 、 Inc. 的商標。其他公司與產品名稱可能為其各自所有者的商標。
 
-http://www.netapp.com/us/legal/netapptmlist.aspx[]
+http://[]
 
 
 
@@ -33,13 +33,13 @@ http://www.netapp.com/us/legal/netapptmlist.aspx[]
 
 如需最新的 NetApp 擁有專利清單、請參閱：
 
-https://www.netapp.com/us/media/patents-page.pdf[]
+https://[]
 
 
 
 == 隱私權政策
 
-https://www.netapp.com/us/legal/privacypolicy/index.aspx[]
+https://[]
 
 
 

@@ -22,7 +22,7 @@ summary: 以私有模式部署 Connector 、讓您可以使用 BlueXP 、而不�
 
 從 NetApp 支援網站 下載產品安裝程式、然後在您自己的 Linux 主機上手動安裝 Connector 。
 
-如果您想在中使用 BlueXP https://aws.amazon.com/federal/us-intelligence-community/["AWS 商業雲端服務（ C2S ）環境"^] 接著、您應該遵循個別指示、開始使用該環境。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-aws-c2s.html["瞭解如何在 AWS C2S 環境中開始使用 Cloud Volumes ONTAP"^]
+如果您想在中使用 BlueXP https://["AWS 商業雲端服務（ C2S ）環境"^] 接著、您應該遵循個別指示、開始使用該環境。 https://["瞭解如何在 AWS C2S 環境中開始使用 Cloud Volumes ONTAP"^]
 
 .必要權限
 需要root權限才能安裝Connector。
@@ -34,7 +34,7 @@ summary: 以私有模式部署 Connector 、讓您可以使用 BlueXP 、而不�
 ----
 sudo systemctl enable docker && sudo systemctl start docker
 ----
-. 從下載Connector軟體 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支援網站"^]
+. 從下載Connector軟體 https://["NetApp 支援網站"^]
 +
 請務必下載無網際網路存取的受限網路安裝程式。
 
@@ -69,7 +69,7 @@ sudo /path/cloud-manager-connector-offline-<version>
 第一次存取 BlueXP 主控台時、系統會提示您設定 BlueXP 。
 
 .步驟
-. 開啟網頁瀏覽器並輸入 https://_ipaddress_[] 其中 _ipaddress_ 是您安裝 Connector 的 Linux 主機的 IP 位址。
+. 開啟網頁瀏覽器並輸入 https://[] 其中 _ipaddress_ 是您安裝 Connector 的 Linux 主機的 IP 位址。
 +
 您應該會看到下列畫面。
 
@@ -213,7 +213,7 @@ BlueXP 現在擁有代表您在 Azure 中執行動作所需的權限。
 .步驟
 . 前往 Google Cloud 入口網站、將服務帳戶指派給 Connector VM 執行個體。
 +
-https://cloud.google.com/compute/docs/access/create-enable-service-accounts-for-instances#changeserviceaccountandscopes["Google Cloud 文件：變更執行個體的服務帳戶和存取範圍"^]
+https://["Google Cloud 文件：變更執行個體的服務帳戶和存取範圍"^]
 
 . 如果您要在其他專案中部署 Cloud Volumes ONTAP 、請將具有 BlueXP 角色的服務帳戶新增至該專案、以授予存取權。您必須針對每個專案重複此步驟。
 

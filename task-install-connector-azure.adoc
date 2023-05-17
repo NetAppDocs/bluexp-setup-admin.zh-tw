@@ -32,7 +32,7 @@ summary: 直接從 BlueXP 網路型主控台、 Azure Marketplace 或在您自�
 
 * SSH 公開金鑰、如果您想要將該驗證方法用於 Connector 虛擬機器。驗證方法的另一個選項是使用密碼。
 +
-https://learn.microsoft.com/en-us/azure/virtual-machines/linux-vm-connect?tabs=Linux["瞭解如何在 Azure 中連線至 Linux VM"^]
+https://["瞭解如何在 Azure 中連線至 Linux VM"^]
 
 * 如果您不想讓BlueXP自動為Connector建立Azure角色、則需要自行建立 link:reference-permissions-azure.html["使用此頁面上的原則"]。
 +
@@ -79,7 +79,7 @@ link:task-set-up-permissions-azure.html["瞭解如何取得服務主體的這些
 虛擬機器的驗證方法可以是密碼或 SSH 公開金鑰。
 
 +
-https://learn.microsoft.com/en-us/azure/virtual-machines/linux-vm-connect?tabs=Linux["瞭解如何在 Azure 中連線至 Linux VM"^]
+https://["瞭解如何在 Azure 中連線至 Linux VM"^]
 
 ** *詳細資料*：輸入執行個體的名稱、指定標記、然後選擇是否要BlueXP建立具有所需權限的新角色、或是要選取所設定的現有角色 link:reference-permissions-azure.html["必要的權限"]。
 +
@@ -108,7 +108,7 @@ link:reference-ports-azure.html["檢視 Azure 的安全性群組規則"]。
 .步驟
 . 前往Azure Marketplace的NetApp Connector VM頁面。
 +
-https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-oncommand-cloud-manager["適用於商業區域的Azure Marketplace頁面"^]
+https://["適用於商業區域的Azure Marketplace頁面"^]
 
 . 按一下「 * 立即取得 * 」、然後按一下「 * 繼續 * 」。
 . 從 Azure 入口網站按一下 * 「 Create 」（建立） * 、然後依照步驟設定虛擬機器。
@@ -127,7 +127,7 @@ link:reference-ports-azure.html["檢視 Azure 的安全性群組規則"]。
 
 ** 在 * 管理 * 下、選取 * 開啟 * 、為 Connector VM 啟用 * 系統指派的託管識別 * 。
 +
-此設定非常重要、因為託管身分識別可讓 Connector 虛擬機器在 Azure Active Directory 中識別自己、而無需提供任何認證。完成後、您需要指派您建立的自訂角色 https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["深入瞭解 Azure 資源的託管身分識別"^]。
+此設定非常重要、因為託管身分識別可讓 Connector 虛擬機器在 Azure Active Directory 中識別自己、而無需提供任何認證。完成後、您需要指派您建立的自訂角色 https://["深入瞭解 Azure 資源的託管身分識別"^]。
 
 
 
@@ -137,7 +137,7 @@ Azure 以指定的設定部署虛擬機器。虛擬機器和 Connector 軟體應
 
 . 從連線至 Connector 虛擬機器的主機開啟網頁瀏覽器、然後輸入下列 URL ：
 +
-https://_ipaddress_[]
+https://[]
 
 . 登入後、設定 Connector ：
 +
@@ -169,7 +169,7 @@ link:task-provide-permissions-azure.html["提供 BlueXP 先前設定的權限"]�
 * CA 簽署的憑證（如果 Proxy 伺服器使用 HTTPS 或 Proxy 是攔截 Proxy ）。
 * Azure 中 VM 上啟用的託管身分識別、可讓您透過自訂角色提供所需的 Azure 權限。
 +
-https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm["Microsoft Azure 文件：使用 Azure 入口網站、在 VM 上設定 Azure 資源的託管身分識別"^]
+https://["Microsoft Azure 文件：使用 Azure 入口網站、在 VM 上設定 Azure 資源的託管身分識別"^]
 
 
 
@@ -198,7 +198,7 @@ unset https_proxy
 +
 如果您未移除這些系統變數、安裝將會失敗。
 
-. 從下載Connector軟體 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支援網站"^]，然後將其複製到 Linux 主機。
+. 從下載Connector軟體 https://["NetApp 支援網站"^]，然後將其複製到 Linux 主機。
 +
 您應該下載「線上」 Connector 安裝程式、以供您的網路或雲端使用。Connector 有獨立的「離線」安裝程式、但僅支援私有模式部署。
 
@@ -247,7 +247,7 @@ chmod +x OnCommandCloudManager-<version>
 
 . 從連線至 Connector 虛擬機器的主機開啟網頁瀏覽器、然後輸入下列 URL ：
 +
-https://_ipaddress_[]
+https://[]
 
 . 登入後、設定 Connector ：
 +

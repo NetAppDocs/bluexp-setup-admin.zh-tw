@@ -31,7 +31,7 @@ summary: 為了使用BlueXP中的功能和服務、您必須提供權限、以�
 | 連接器操作 | 當BlueXP啟動Connector時、它會將原則附加至執行個體、以提供管理AWS帳戶中資源和處理程序所需的權限。如果您是從市場啟動 Connector 、手動安裝 Connector 、或是您需要自行設定原則 link:task-adding-aws-accounts.html#add-credentials-to-a-connector["將更多AWS認證資料新增至Connector"]。您也必須確保在後續版本中新增權限時、原則保持在最新狀態。 | link:reference-permissions-aws.html["Connector的AWS權限"] 
 
 
-| 作業系統Cloud Volumes ONTAP | 必須將IAM角色附加至Cloud Volumes ONTAP AWS中的每個節點。HA中介者也是如此。預設選項是讓BlueXP為您建立IAM角色、但您可以使用自己的角色。 | https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-set-up-iam-roles.html["瞭解如何自行設定IAM角色"^] 
+| 作業系統Cloud Volumes ONTAP | 必須將IAM角色附加至Cloud Volumes ONTAP AWS中的每個節點。HA中介者也是如此。預設選項是讓BlueXP為您建立IAM角色、但您可以使用自己的角色。 | https://["瞭解如何自行設定IAM角色"^] 
 |===
 
 

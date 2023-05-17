@@ -25,7 +25,7 @@ summary: 瞭解 BlueXP 如何使用 Google Cloud 認證和權限來代表您執�
 直接從BlueXP部署Connector之前、必須先設定兩組權限：
 
 . 您需要使用具有從BlueXP啟動Connector VM執行個體權限的Google帳戶來部署Connector。
-. 部署 Connector 時、系統會提示您選取 https://cloud.google.com/iam/docs/service-accounts["服務帳戶"^] 適用於 VM 執行個體。BlueXP 可從服務帳戶取得權限、代表您建立及管理 Cloud Volumes ONTAP 系統等。將自訂角色附加至服務帳戶、即可提供權限。
+. 部署 Connector 時、系統會提示您選取 https://["服務帳戶"^] 適用於 VM 執行個體。BlueXP 可從服務帳戶取得權限、代表您建立及管理 Cloud Volumes ONTAP 系統等。將自訂角色附加至服務帳戶、即可提供權限。
 
 
 下圖說明上述第 1 和第 2 項所述的權限要求：
@@ -46,5 +46,5 @@ image:diagram_permissions_gcp.png["概念性影像、說明Google和服務帳戶
 可與 Connector 位於同一個專案中、或位於不同的專案中。 Cloud Volumes ONTAP若要在 Cloud Volumes ONTAP 不同的專案中部署功能、您必須先將 Connector 服務帳戶和角色新增至該專案。
 
 * link:task-creating-connectors-gcp.html#setting-up-gcp-permissions-to-create-a-connector["瞭解如何設定服務帳戶"]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-gcp.html["瞭解如何在 Google Cloud 中部署 Cloud Volumes ONTAP 、並選擇專案"^]
+* https://["瞭解如何在 Google Cloud 中部署 Cloud Volumes ONTAP 、並選擇專案"^]
 

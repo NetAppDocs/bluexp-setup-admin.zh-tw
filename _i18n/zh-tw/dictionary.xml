@@ -1811,7 +1811,6 @@
   <block id="ac692d638162a1dc479fa6a76fb4e114" category="list-text">Microsoft.Compute/images/write</block>
   <block id="61d40b12dddcd9e571bbe7a89b0fbae8" category="list-text">Microsoft.Network/loadBalancers/backendAddressPools/join/action</block>
   <block id="7c90682779ddf616c80c90bad703eddd" category="list-text">Microsoft.Network/loadBalancers/frontendIPConfigurations/read</block>
-  <block id="3af64a9cb34f4b06a9e496f1f6a05879" category="list-text">Microsoft儲存設備/儲存帳戶/重新產生金鑰/動作</block>
   <block id="f2575f6d19024f7288cf78d7dc5b3db9" category="paragraph">「支援儀表板」可讓您新增及管理NetApp 支援網站 搭配BlueXP使用的支援帳戶。</block>
   <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">如果您有合作夥伴或經銷商帳戶、您可以新增一或多個NSS帳戶、但這些帳戶無法與客戶層級帳戶一起新增。</block>
   <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">從「Support Registration（支援註冊）」頁面找到您的帳戶ID序號。</block>
@@ -1891,7 +1890,6 @@
   <block id="a5b807c71b066c1d33685818cfa2806e" category="list-text">Microsoft.Synapse /工作區/私有端點連線核准/行動</block>
   <block id="176944a9db0702558233e827d21e2f80" category="section-title">2023年1月5日</block>
   <block id="b73f51f05a3d7aca4e9b86bf6b66c214" category="paragraph">此權限是Cloud Volumes ONTAP 進行非必要部署所需的權限。</block>
-  <block id="1d37387582eb7a955869d3991c1dab28" category="section-title">2022年12月1日</block>
   <block id="5847199ca78e66e581ccd10e8e88b057" category="list-text">使用Azure CLI建立自訂角色：</block>
   <block id="9fc1f8c97e791c3c5fa11f21f2c02740" category="list-text">內部部署ONTAP 的不支援叢集整合至BlueXP資料服務</block>
   <block id="184e70c253a2ad370c338775e7482497" category="list-text">直接探索內部部署ONTAP 的叢集</block>
@@ -3478,8 +3476,6 @@
   <block id="92b5575604daffe3be8d9be7e9eea83d" category="paragraph">當您使用 BlueXP 補救措施時、 Connector 會發出下列 API 要求來管理 Azure 資源上的標記：</block>
   <block id="826e9938777ea2a0280d06c76218f7c7" category="paragraph">當您設定 BlueXP 分層時、 Connector 會發出下列 API 要求。</block>
   <block id="6bf8cf4546732effc9436b03e26fd3ab" category="paragraph">BlueXP 分類不再需要「 Microsoft.Storage/storageAccounts/delete 」權限。</block>
-  <block id="56e09b1406b08f4b77233f0e7ec35a49" category="paragraph">BlueXP 備份與還原及 BlueXP 分層需要此權限。</block>
-  <block id="82492651a82d98ca83599fcd9c536c5d" category="paragraph">BlueXP 備份與還原需要此權限。</block>
   <block id="7cd82008ab5d353c3e33f87f49f92961" category="paragraph">雖然 Connector 不需要建立工作環境、但需要建立和管理磁碟區、複寫資料、並將適用於 ONTAP 的 FSX 與 BlueXP 分類和 BlueXP 複製與同步等服務整合。</block>
   <block id="60404bf35ed1506b74cc9cfac99f0818" category="paragraph">雖然不需要連接器來設定和管理 Azure NetApp Files 、但如果您想使用 BlueXP 分類來掃描 Azure NetApp Files 資料、則需要連接器。</block>
   <block id="dd37176246e6abf3e559086afcadce82" category="paragraph">在幾乎所有情況下、您都可以在沒有 Connector 的情況下、將授權新增至數位錢包。</block>
@@ -3535,8 +3531,6 @@
   <block id="9345f603d48306b04203c8a77bc1ec43" category="summary">建立 BlueXP 帳戶時、只會包含單一管理員使用者和工作區。您可以透過新增使用者、建立自動化服務帳戶、新增工作區等方式來管理帳戶、以符合組織的需求。</block>
   <block id="c695b69dfd48e2e642e9cf48a8d3e483" category="inline-link-macro">瞭解 BlueXP 帳戶的運作方式</block>
   <block id="401598fa995f1173bd8b6d805a3761d0" category="paragraph"><block ref="5fbf8d815c8a85b58ff259c4d5123e15" category="inline-link-macro-rx"></block>。</block>
-  <block id="30f0924c2b9792580922ba2bb932268a" category="summary">從雲端供應商的市場訂閱 BlueXP 、以每小時或每年合約的速度支付 BlueXP 服務費用。如果您向 NetApp 購買授權、您也需要訂閱 PAYGO 產品。您的授權一律會先收費、但如果您超過授權容量或授權期限到期、則會以每小時費率收費。</block>
-  <block id="28737e110ddfecf7a0ee4cf74dc11735" category="paragraph">從雲端供應商的市場訂閱 BlueXP 、即可按每小時費率（ PAYGO ）或透過年度合約支付 BlueXP 服務費用。如果您向 NetApp （ BYOL ）購買授權、您也需要訂閱 PAYGO 產品。您的授權一律會先收費、但如果您超過授權容量或授權期限到期、則會以每小時費率收費。</block>
   <block id="771e18f961335c5b2ae045b3fefc3e80" category="summary">Connector的AWS安全性群組需要傳入和傳出規則。當您從 BlueXP 建立 Connector 時、 BlueXP 會自動建立此安全性群組。您需要為所有其他安裝選項設定此安全性群組。</block>
   <block id="5dba83ec70c57d2bf0180e542772a92f" category="summary">註冊 BlueXP 之後、您可以從網路型主控台登入、開始管理資料和儲存基礎架構。</block>
   <block id="ee88a6eb4f7c0c45ebac21244e471cac" category="summary">設定您的網路、讓 Connector 能夠管理混合雲環境中的資源和程序。例如、您需要確保目標網路可以使用連線、而且可以使用輸出網際網路存取。</block>
@@ -3622,4 +3616,22 @@
   <block id="eebb9a8111d1623667243e7e41ed0e71" category="list-text">映像的作業系統為 Ubuntu 22.04 。</block>
   <block id="ba5aa0edf5aca9e505ac70fc6e55851d" category="paragraph">如果您是從 BlueXP 部署 Connector 、請注意下列事項：</block>
   <block id="09eadec3a9869ab363e913c06ab259a3" category="admonition">當 BlueXP 建立 Connector 時、它會將一組新的權限套用至 Connector 執行個體、讓 Connector 能夠管理 AWS 資源。</block>
+  <block id="60a24477cd4bc1d96c88b21629d8cd7c" category="summary">從雲端供應商的市場訂閱 BlueXP 、以每小時或每年合約的速度支付 BlueXP 服務費用。如果您向 NetApp 購買授權、您也需要訂閱市場方案。您的授權一律會先收費、但如果您超過授權容量或授權期限到期、則會以每小時費率收費。</block>
+  <block id="f4abcc0682712b312b347ed2a4b32165" category="paragraph">從雲端供應商的市場訂閱 BlueXP 、即可按每小時費率（ PAYGO ）或透過年度合約支付 BlueXP 服務費用。如果您向 NetApp （ BYOL ）購買授權、您也需要訂閱市場方案。您的授權一律會先收費、但如果您超過授權容量或授權期限到期、則會以每小時費率收費。</block>
+  <block id="56246b5433f690a35c74ed45a296e993" category="paragraph">市場訂閱可為下列 BlueXP 服務收費：</block>
+  <block id="8219b1ea282823d830f661117796ac3d" category="paragraph">訂閱 BlueXP 涉及將市場訂閱與與 Connector 相關的雲端認證建立關聯。如果您遵循「標準模式入門」工作流程、則應該已經有 Connector 。若要深入瞭解、請檢視 <block ref="ce6d43255d920acadadb7e3862aee0b0" category="inline-link-macro-rx"></block>。</block>
+  <block id="7561d35e392b638f4fb5bc5f72459710" category="paragraph">您必須選取與 Connector 相關聯的認證。您無法將市場訂閱與 BlueXP 相關的認證建立關聯。</block>
+  <block id="53043f0a6d597ccfe179296cc8ded9c0" category="inline-link">管理 Cloud Volumes ONTAP 的 BYOL 容量型授權</block>
+  <block id="fe58f6b68f2391f47e7f19d45735226a" category="list-text"><block ref="fe58f6b68f2391f47e7f19d45735226a" category="inline-link-rx"></block></block>
+  <block id="fe661ee4e3dd2d796b000bdbe116c002" category="inline-link">管理 BlueXP 資料服務的 BYOL 授權</block>
+  <block id="49056b2966eae66ee0345bbf80d6b8d6" category="list-text"><block ref="49056b2966eae66ee0345bbf80d6b8d6" category="inline-link-rx"></block></block>
+  <block id="a4821774f3941403655492bb82c492ca" category="list-text"><block ref="a4821774f3941403655492bb82c492ca" category="inline-link-rx"></block></block>
+  <block id="75c14ab09fd89f95714034d50258a6cc" category="list-text"><block ref="75c14ab09fd89f95714034d50258a6cc" category="inline-link-rx"></block></block>
+  <block id="95c435337a307137f163f5eb04ac01ad" category="list-text"><block ref="95c435337a307137f163f5eb04ac01ad" category="inline-link-rx"></block></block>
+  <block id="ba66b75d479f2289bcf99d989de6e0b1" category="paragraph">市場訂閱可在受限模式下為下列 BlueXP 服務收費：</block>
+  <block id="d639d0a55c1a57a909ac7ffab5f941c6" category="paragraph">訂閱 BlueXP 涉及將市場訂閱與與 Connector 相關的雲端認證建立關聯。如果您遵循「開始使用受限模式」工作流程、則您應該已經擁有 Connector 。若要深入瞭解、請檢視 <block ref="2d9421fac12c9ac9462f27b55d118c68" category="inline-link-macro-rx"></block>。</block>
+  <block id="c9d7cb56a51bc183eea92ab6ecce2997" category="section-title">2023 年 5 月 12 日</block>
+  <block id="c8e8c3b324197dbdad9e21df5a435a35" category="paragraph">下列權限已新增至 JSON 原則、因為 Cloud Volumes ONTAP 管理需要這些權限：</block>
+  <block id="c7e8dc746d7263609202186d1ac75c65" category="inline-link-macro">檢視 Connector 執行個體所需的權限</block>
+  <block id="5a25157670ec0b889a34ec2b3905bc26" category="paragraph">提醒您、此原則僅包含從 BlueXP 在 AWS 中啟動 Connector 執行個體所需的權限。 <block ref="e99a10e3be28ba86573878700d04f6c5" category="inline-link-macro-rx"></block>。</block>
 </blocks>

@@ -33,7 +33,7 @@ image:screenshot-azure-actions.png["在您選取Azure Blob工作環境之後顯�
 
 . 選取 * 同步資料 * 以同步處理與 Azure Blob 儲存設備之間的資料。
 +
-如需詳細資料、請參閱 https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["BlueXP 複本與同步的總覽"^]
+如需詳細資料、請參閱 https://["BlueXP 複本與同步的總覽"^]
 
 . 選取 * 輸入工作環境 * 以檢視 Azure Blobs 中 Azure 儲存帳戶的詳細資料。
 +

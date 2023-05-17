@@ -22,7 +22,7 @@ _Identity Federation®啟用單一登入BlueXP、讓使用者可以使用公司�
 
 如果您使用 NetApp 支援網站 （ NSS ）認證登入 BlueXP 、則不應遵循本頁的指示來設定身分識別聯盟。您應該改為執行下列動作：
 
-* 下載並完成 https://kb.netapp.com/@api/deki/files/98382/NetApp-B2C-Federation-Request-Form-April-2022.docx?revision=1["NetApp 聯盟申請表"^]
+* 下載並完成 https://["NetApp 聯盟申請表"^]
 * 將表單提交至表單中指定的電子郵件地址
 
 
@@ -87,16 +87,16 @@ BlueXP僅支援服務供應商啟動（SP啟動）SSO。不支援身分識別供
 
 檢視SAML身分識別供應商的指示：
 
-* https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-adfs-saml-connections["ADFS"^]
-* https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-okta-as-saml-identity-provider["奧塔"^]
-* https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-onelogin-as-saml-identity-provider["OneLogin"^]
-* https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-pingfederate-as-saml-identity-provider["PingFedate"^]
-* https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-salesforce-as-saml-identity-provider["Salesforce"^]
-* https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-siteminder-as-saml-identity-provider["產品型資料夾"^]
-* https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-ssocircle-as-saml-identity-provider["SSOCircle"^]
+* https://["ADFS"^]
+* https://["奧塔"^]
+* https://["OneLogin"^]
+* https://["PingFedate"^]
+* https://["Salesforce"^]
+* https://["產品型資料夾"^]
+* https://["SSOCircle"^]
 
 
-如果您的身分識別供應商未出現在上方清單中、 https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider["請遵循下列一般指示"^]
+如果您的身分識別供應商未出現在上方清單中、 https://["請遵循下列一般指示"^]
 
 
 TIP: 請勿完成介紹如何在驗證0中建立連線的步驟。您將在下一步建立該連線。
@@ -104,7 +104,7 @@ TIP: 請勿完成介紹如何在驗證0中建立連線的步驟。您將在下�
 
 
 | 2. | BlueXP管理  a| 
-前往 https://services.cloud.netapp.com/federation-setup["NetApp聯盟設定頁面"^] 並建立與BlueXP的連線。
+前往 https://["NetApp聯盟設定頁面"^] 並建立與BlueXP的連線。
 
 若要完成此步驟、您必須向AD管理員取得身分識別供應商的下列資訊：
 
@@ -120,7 +120,7 @@ TIP: 請勿完成介紹如何在驗證0中建立連線的步驟。您將在下�
 | 3. | 廣告管理員 | 完成步驟2之後、請使用「聯盟設定」頁面上顯示的參數、在身分識別供應商上完成組態設定。 
 
 
-| 4. | BlueXP管理 | 從測試並啟用連線 https://services.cloud.netapp.com/federation-setup["NetApp聯盟設定頁面"^]請注意、測試連線和啟用連線之間的頁面會重新整理。 
+| 4. | BlueXP管理 | 從測試並啟用連線 https://["NetApp聯盟設定頁面"^]請注意、測試連線和啟用連線之間的頁面會重新整理。 
 |===
 
 
@@ -136,7 +136,7 @@ TIP: 請勿完成介紹如何在驗證0中建立連線的步驟。您將在下�
 | 1. | 廣告管理員  a| 
 設定Azure Active Directory以啟用與BlueXP的身分識別聯盟。
 
-https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/azure-active-directory/v2["檢視向Azure AD註冊應用程式的說明"^]
+https://["檢視向Azure AD註冊應用程式的說明"^]
 
 
 TIP: 請勿完成介紹如何在驗證0中建立連線的步驟。您將在下一步建立該連線。
@@ -144,7 +144,7 @@ TIP: 請勿完成介紹如何在驗證0中建立連線的步驟。您將在下�
 
 
 | 2. | BlueXP管理  a| 
-前往 https://services.cloud.netapp.com/federation-setup["NetApp聯盟設定頁面"^] 並建立與BlueXP的連線。
+前往 https://["NetApp聯盟設定頁面"^] 並建立與BlueXP的連線。
 
 若要完成此步驟、您必須向AD管理員取得下列資訊：
 
@@ -160,7 +160,7 @@ TIP: 請勿完成介紹如何在驗證0中建立連線的步驟。您將在下�
 | 3. | 廣告管理員 | 完成步驟2之後、請使用「聯盟設定」頁面上顯示的參數、在Azure AD中完成組態設定。 
 
 
-| 4. | BlueXP管理 | 從測試並啟用連線 https://services.cloud.netapp.com/federation-setup["NetApp聯盟設定頁面"^]請注意、測試連線和啟用連線之間的頁面會重新整理。 
+| 4. | BlueXP管理 | 從測試並啟用連線 https://["NetApp聯盟設定頁面"^]請注意、測試連線和啟用連線之間的頁面會重新整理。 
 |===
 
 
@@ -176,12 +176,12 @@ TIP: 請勿完成介紹如何在驗證0中建立連線的步驟。您將在下�
 | 1. | 廣告管理員  a| 
 設定ADFS伺服器以啟用與BluetXP的身分識別聯盟。
 
-https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/adfs["檢視使用auth0設定ADFS伺服器的指示"^]
+https://["檢視使用auth0設定ADFS伺服器的指示"^]
 
 
 
 | 2. | BlueXP管理  a| 
-前往 https://services.cloud.netapp.com/federation-setup["NetApp聯盟設定頁面"^] 並建立與BlueXP的連線。
+前往 https://["NetApp聯盟設定頁面"^] 並建立與BlueXP的連線。
 
 若要完成此步驟、您必須向AD管理員取得下列資訊：ADFS伺服器的URL或同盟中繼資料檔案。
 
@@ -192,7 +192,7 @@ https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-provi
 | 3. | 廣告管理員 | 完成步驟2後、使用「Federation Setup」（聯盟設定）頁面上顯示的參數、完成ADFS伺服器上的組態。 
 
 
-| 4. | BlueXP管理 | 從測試並啟用連線 https://services.cloud.netapp.com/federation-setup["NetApp聯盟設定頁面"^]請注意、測試連線和啟用連線之間的頁面會重新整理。 
+| 4. | BlueXP管理 | 從測試並啟用連線 https://["NetApp聯盟設定頁面"^]請注意、測試連線和啟用連線之間的頁面會重新整理。 
 |===
 
 
@@ -208,7 +208,7 @@ https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-provi
 | 1. | 廣告管理員  a| 
 設定您的PingFederation伺服器、以啟用與BluedXP的身分識別聯盟。
 
-https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/ping-federate["檢視建立連線的指示"^]
+https://["檢視建立連線的指示"^]
 
 
 TIP: 請勿完成介紹如何在驗證0中建立連線的步驟。您將在下一步建立該連線。
@@ -216,7 +216,7 @@ TIP: 請勿完成介紹如何在驗證0中建立連線的步驟。您將在下�
 
 
 | 2. | BlueXP管理  a| 
-前往 https://services.cloud.netapp.com/federation-setup["NetApp聯盟設定頁面"^] 並建立與BlueXP的連線。
+前往 https://["NetApp聯盟設定頁面"^] 並建立與BlueXP的連線。
 
 若要完成此步驟、您必須向AD管理員取得下列資訊：
 
@@ -231,13 +231,13 @@ TIP: 請勿完成介紹如何在驗證0中建立連線的步驟。您將在下�
 | 3. | 廣告管理員 | 完成步驟2之後、請使用「聯盟設定」頁面上顯示的參數、在PingFederation伺服器上完成設定。 
 
 
-| 4. | BlueXP管理 | 從測試並啟用連線 https://services.cloud.netapp.com/federation-setup["NetApp聯盟設定頁面"^]請注意、測試連線和啟用連線之間的頁面會重新整理。 
+| 4. | BlueXP管理 | 從測試並啟用連線 https://["NetApp聯盟設定頁面"^]請注意、測試連線和啟用連線之間的頁面會重新整理。 
 |===
 
 
 == 正在更新聯盟連線
 
-在BlueXP管理員啟用連線之後、管理員可以隨時從更新連線 https://services.cloud.netapp.com/federation-setup["NetApp聯盟設定頁面"^]
+在BlueXP管理員啟用連線之後、管理員可以隨時從更新連線 https://["NetApp聯盟設定頁面"^]
 
 例如、您可能需要上傳新的憑證來更新連線。
 

@@ -43,8 +43,8 @@ TIP: 為何不選擇 Google Cloud ？當 Connector 安裝在您的內部環境�
 
 . 將原則附加至 IAM 使用者。
 +
-** https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["AWS 文件：建立 IAM 角色"^]
-** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["AWS 文件：新增和移除 IAM 原則"^]
+** https://["AWS 文件：建立 IAM 角色"^]
+** https://["AWS 文件：新增和移除 IAM 原則"^]
 
 
 . 安裝 Connector 之後、請確定使用者擁有可新增至 BlueXP 的存取金鑰。
@@ -63,7 +63,7 @@ link:task-provide-permissions-on-prem.html["瞭解如何將這些權限提供給
 .建立 Azure Active Directory 應用程式以進行角色型存取控制
 . 確保您在 Azure 中擁有建立 Active Directory 應用程式及將應用程式指派給角色的權限。
 +
-如需詳細資訊、請參閱 https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure 說明文件：必要權限"^]。
+如需詳細資訊、請參閱 https://["Microsoft Azure 說明文件：必要權限"^]。
 
 . 從 Azure 入口網站開啟 * Azure Active Directory * 服務。
 +
@@ -108,7 +108,7 @@ image:screenshot_azure_ad.gif["顯示 Microsoft Azure 中的 Active Directory �
 下列步驟說明如何在Azure Cloud Shell中使用Bash建立角色。
 
 +
-*** 開始 https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Azure Cloud Shell"^] 並選擇Bash環境。
+*** 開始 https://["Azure Cloud Shell"^] 並選擇Bash環境。
 *** 上傳Json檔案。
 +
 image:screenshot_azure_shell_upload.png["Azure Cloud Shell的快照、您可在其中選擇上傳檔案的選項。"]

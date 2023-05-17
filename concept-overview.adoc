@@ -25,54 +25,54 @@ BlueXP 平台提供四大資料管理支柱：儲存、行動力、保護、分�
 儲存設備:: 探索、部署及管理儲存設備、無論是在 AWS 、 Azure 、 Google Cloud 或內部部署。
 +
 --
-* 設定與使用 https://bluexp.netapp.com/ontap-cloud["Cloud Volumes ONTAP"^] 實現跨雲端的高效率多重傳輸協定資料管理。
+* 設定與使用 https://["Cloud Volumes ONTAP"^] 實現跨雲端的高效率多重傳輸協定資料管理。
 * 設定及使用雲端檔案儲存服務：
 +
-** https://bluexp.netapp.com/azure-netapp-files["Azure NetApp Files"^]
-** https://bluexp.netapp.com/fsx-for-ontap["Amazon FSX for ONTAP Sf"^]
-** https://bluexp.netapp.com/cloud-volumes-service-for-gcp["適用於 Google Cloud Cloud Volumes Service"^]
+** https://["Azure NetApp Files"^]
+** https://["Amazon FSX for ONTAP Sf"^]
+** https://["適用於 Google Cloud Cloud Volumes Service"^]
 
 
-* 探索與管理 https://bluexp.netapp.com/netapp-on-premises["內部部署儲存設備"^]：
+* 探索與管理 https://["內部部署儲存設備"^]：
 +
 ** E系列系統
 ** 叢集 ONTAP
 ** 系統StorageGRID
 
 
-* 協調與保護 https://bluexp.netapp.com/solutions/kubernetes["Kubernetes 持續資料"^]
+* 協調與保護 https://["Kubernetes 持續資料"^]
 
 
 --
 行動力:: 透過同步、複製、分層及快取資料、將資料移至所需的位置。
 +
 --
-* https://bluexp.netapp.com/cloud-sync-service["複製與同步"^]
-* https://bluexp.netapp.com/global-file-cache["邊緣快取"^]
-* https://bluexp.netapp.com/cloud-tiering["分層"^]
+* https://["複製與同步"^]
+* https://["邊緣快取"^]
+* https://["分層"^]
 
 
 --
 保護:: 使用自動化保護機制來保護資料、避免資料遺失、非計畫性中斷、勒索軟體及其他網路威脅。
 +
 --
-* https://bluexp.netapp.com/cloud-backup["備份與還原"^]
-* https://bluexp.netapp.com/replication["複寫"^]
+* https://["備份與還原"^]
+* https://["複寫"^]
 
 
 --
 分析與控制:: 使用工具來監控、對應及最佳化您的資料儲存與基礎架構。
 +
 --
-* https://bluexp.netapp.com/netapp-cloud-data-sense["分類"^]
-* https://bluexp.netapp.com/digital-advisor["數位顧問"^]
-* https://bluexp.netapp.com/ransomware-protection["勒索軟體保護"^]
+* https://["分類"^]
+* https://["數位顧問"^]
+* https://["勒索軟體保護"^]
 
 
 --
 
 
-https://bluexp.netapp.com/["深入瞭解如何使用 BlueXP 協助貴組織"^]
+https://["深入瞭解如何使用 BlueXP 協助貴組織"^]
 
 
 
@@ -84,7 +84,7 @@ BlueXP可讓您管理雲端儲存設備、並在Amazon Web Services、Microsoft 
 
 == 成本
 
-BlueXP的定價取決於您計畫使用的服務。 https://bluexp.netapp.com/pricing["瞭解BlueXP定價"^]
+BlueXP的定價取決於您計畫使用的服務。 https://["瞭解BlueXP定價"^]
 
 
 
@@ -96,7 +96,7 @@ BlueXP 包括透過 SaaS 層提供的網路型主控台、提供多租戶服務�
 
 === 軟體即服務
 
-可透過存取BlueXP https://console.bluexp.netapp.com["網路型主控台"^] 和 API 。這項 SaaS 體驗可讓您在推出時自動存取最新功能、並在 BlueXP 帳戶和 Connector 之間輕鬆切換。
+可透過存取BlueXP https://["網路型主控台"^] 和 API 。這項 SaaS 體驗可讓您在推出時自動存取最新功能、並在 BlueXP 帳戶和 Connector 之間輕鬆切換。
 
 
 
@@ -128,4 +128,4 @@ link:concept-modes.html["深入瞭解 BlueXP 部署模式"]。
 
 一家專業的執業會計師公司和服務稽核員審查了 BlueXP 、並確認它根據適用的信託服務標準、達成 SOC 2 類報告。
 
-https://www.netapp.com/company/trust-center/compliance/soc-2/["檢視NetApp的SOC 2報告"^]
+https://["檢視NetApp的SOC 2報告"^]

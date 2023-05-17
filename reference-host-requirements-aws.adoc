@@ -37,7 +37,7 @@ Connector 軟體必須在符合特定作業系統需求、 RAM 需求、連接�
 Hypervisor:: 需要經認證可執行 Ubuntu 、 CentOS 或 Red Hat Enterprise Linux 的裸機或託管 Hypervisor 。
 +
 --
-https://access.redhat.com/certified-hypervisors["Red Hat 解決方案：哪些 Hypervisor 已通過認證、可執行 Red Hat Enterprise Linux ？"^]
+https://["Red Hat 解決方案：哪些 Hypervisor 已通過認證、可執行 Red Hat Enterprise Linux ？"^]
 
 --
 CPU:: 4 個核心或 4 個 vCPU
@@ -46,5 +46,5 @@ AWS EC2 執行個體類型:: 符合上述 CPU 和 RAM 需求的執行個體類�
 金鑰配對:: 當您從 BlueXP 或 AWS Marketplace 建立 Connector 時、您需要選取 EC2 金鑰配對來搭配執行個體使用。
 /opt 中的磁碟空間:: 必須有100 GiB的可用空間
 /var.中的磁碟空間:: 必須提供20 GiB的空間
-Docker引擎:: 安裝Connector之前、主機上必須安裝Docker Engine 19.3.1版或更新版本。 https://docs.docker.com/engine/install/["檢視安裝指示"^]
+Docker引擎:: 安裝Connector之前、主機上必須安裝Docker Engine 19.3.1版或更新版本。 https://["檢視安裝指示"^]
 
