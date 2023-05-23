@@ -29,7 +29,7 @@ summary: 在受限模式下使用 BlueXP 時、您必須從本機在 Connector �
 .步驟
 . 開啟網頁瀏覽器並輸入下列 URL ：
 +
-https://[]
+https://_ipaddress_[]
 
 +
 _ipaddress_ 可以是 localhost 、私有 IP 位址或公有 IP 位址、視您安裝 Connector 的主機組態而定。例如、您可能需要從連線至 Connector 主機的主機輸入私有 IP 位址。

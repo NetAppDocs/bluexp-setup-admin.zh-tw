@@ -32,7 +32,7 @@ summary: 新增及管理AWS認證資料、讓BlueXP擁有在AWS帳戶中部署�
 
 * 將AWS認證資料新增至適用於FSX ONTAP for Sf更新 的BlueXP
 +
-新增AWS認證資料至藍圖XP、可讓藍圖XP擁有建立及管理FSXfor ONTAP Sfor的必要權限。 https://["瞭解如何設定FSX for ONTAP Sfor Sfor Sfor的權限"^]
+新增AWS認證資料至藍圖XP、可讓藍圖XP擁有建立及管理FSXfor ONTAP Sfor的必要權限。 https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["瞭解如何設定FSX for ONTAP Sfor Sfor Sfor的權限"^]
 
 
 
@@ -106,12 +106,12 @@ NOTE: 如果您從BlueXP部署Connector、則BlueXP會自動為您部署Connecto
 .步驟
 . 從IAM主控台複製並貼上的內容、以建立原則 link:reference-permissions-aws.html["連接器的IAM原則"]。
 +
-https://["AWS 文件：建立 IAM 原則"^]
+https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html["AWS 文件：建立 IAM 原則"^]
 
 . 將原則附加至IAM角色或IAM使用者。
 +
-** https://["AWS 文件：建立 IAM 角色"^]
-** https://["AWS 文件：新增和移除 IAM 原則"^]
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["AWS 文件：建立 IAM 角色"^]
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["AWS 文件：新增和移除 IAM 原則"^]
 
 
 
@@ -175,7 +175,7 @@ image:screenshot_accounts_switch_aws.png["螢幕快照、顯示在「詳細資�
 ** 選取*其他AWS帳戶*、然後輸入BlueXP SaaS的ID：952013314444.
 ** 建立包含建立Connector所需權限的原則。
 +
-*** https://["檢視FSXfor ONTAP Sfor Sf哪些 權限"^]
+*** https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["檢視FSXfor ONTAP Sfor Sf哪些 權限"^]
 *** link:task-set-up-permissions-aws.html["檢視Connector部署原則"]
 
 
@@ -217,7 +217,7 @@ image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」�
 
 == 將認證新增至適用於 Amazon FSX for ONTAP 的 BlueXP
 
-如需詳細資訊、請參閱 https://["適用於 Amazon FSX for ONTAP 的 BlueXP 文件"^]
+如需詳細資訊、請參閱 https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["適用於 Amazon FSX for ONTAP 的 BlueXP 文件"^]
 
 
 

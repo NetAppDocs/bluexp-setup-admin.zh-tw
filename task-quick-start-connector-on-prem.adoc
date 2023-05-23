@@ -61,7 +61,7 @@ link:task-set-up-permissions-on-prem.html["請依照每個選項的逐步指示�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"] 安裝 Connector 軟體
 [role="quick-margin-para"]
-從下載Connector軟體 https://["NetApp 支援網站"] 並執行安裝指令碼。
+從下載Connector軟體 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支援網站"] 並執行安裝指令碼。
 
 [role="quick-margin-para"]
 link:task-install-connector-on-prem.html["請依照逐步指示操作"]。

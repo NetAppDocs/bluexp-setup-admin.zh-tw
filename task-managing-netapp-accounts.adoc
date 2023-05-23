@@ -24,7 +24,7 @@ link:concept-netapp-accounts.html["瞭解 BlueXP 帳戶的運作方式"]。
 
 如果您想要透過傳送API要求來管理帳戶設定、則必須使用_Tenancy API。此API與您用來建立及管理Cloud Volumes ONTAP 各種運作環境的BlueXP API不同。
 
-https://["檢視Tenancy API的端點"^]
+https://docs.netapp.com/us-en/cloud-manager-automation/tenancy/overview.html["檢視Tenancy API的端點"^]
 
 
 
@@ -39,7 +39,7 @@ https://["檢視Tenancy API的端點"^]
 將使用者與您的 BlueXP 帳戶建立關聯、讓這些使用者能夠在 BlueXP 中建立及管理工作環境。
 
 .步驟
-. 如果使用者尚未這麼做、請要求使用者前往 https://["NetApp BlueXP網站"^] 並註冊。
+. 如果使用者尚未這麼做、請要求使用者前往 https://bluexp.netapp.com/["NetApp BlueXP網站"^] 並註冊。
 . 從 BlueXP 頂端、選取 * 帳戶 * 下拉式清單。
 +
 image:screenshot-account-settings-menu.png["在BlueXP上方橫幅中顯示「帳戶設定」選項的快照。"]
@@ -148,9 +148,9 @@ image:screenshot-manage-account-settings.png["顯示「帳戶」下拉式清單�
 
 === 取得服務帳戶的承載權杖
 
-以便對進行API呼叫 https://["租戶API"^]、您需要取得服務帳戶的承載權杖。
+以便對進行API呼叫 https://docs.netapp.com/us-en/cloud-manager-automation/tenancy/overview.html["租戶API"^]、您需要取得服務帳戶的承載權杖。
 
-https://["瞭解如何建立服務帳戶權杖"^]
+https://docs.netapp.com/us-en/cloud-manager-automation/platform/create_service_token.html["瞭解如何建立服務帳戶權杖"^]
 
 
 

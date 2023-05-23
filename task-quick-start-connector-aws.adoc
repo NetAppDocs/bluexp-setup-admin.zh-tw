@@ -73,8 +73,8 @@ link:task-set-up-permissions-aws.html["請依照逐步指示操作"]。
 
 [role="quick-margin-list"]
 * * 從 BlueXP* ：按一下「 Connector 」下拉式清單、選取 * 「 Add Connector* 」、然後依照提示進行。
-* * 從 AWS Marketplace * ：前往 https://["AWS Marketplace上的BlueXP頁面"^] 並依照提示透過 EC2 啟動、以便附加 IAM 角色。
-* * 手動安裝 * ：從下載 Connector 軟體 https://["NetApp 支援網站"] 並執行安裝指令碼。
+* * 從 AWS Marketplace * ：前往 https://aws.amazon.com/marketplace/pp/B018REK8QG["AWS Marketplace上的BlueXP頁面"^] 並依照提示透過 EC2 啟動、以便附加 IAM 角色。
+* * 手動安裝 * ：從下載 Connector 軟體 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支援網站"] 並執行安裝指令碼。
 
 
 [role="quick-margin-para"]

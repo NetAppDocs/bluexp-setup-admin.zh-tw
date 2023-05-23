@@ -26,7 +26,7 @@ BlueXP 可從網路型主控台存取。當您開始使用 BlueXP 時、您的�
 這兩種選項都支援聯盟連線、可讓您使用公司目錄（聯盟身分識別）的認證單一登入。您可以在註冊之後設定聯盟連線。 link:concept-federation.html["瞭解如何將身分識別聯盟與BlueXP搭配使用"]。
 
 .步驟
-. 開啟網頁瀏覽器、前往 https://["BlueXP主控台"^]
+. 開啟網頁瀏覽器、前往 https://console.bluexp.netapp.com["BlueXP主控台"^]
 . 如果您有 NetApp 支援網站 帳戶、請在 * 登入 * 頁面上直接輸入與您的 NSS 帳戶相關的電子郵件地址。
 +
 如果您有 NSS 帳戶、可以跳過註冊頁面。在此初次登入時、BlueXP會為您註冊。

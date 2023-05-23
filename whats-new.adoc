@@ -38,11 +38,11 @@ summary: 瞭解 BlueXP 管理功能的新功能： BlueXP 帳戶、連接器、�
 * 現在、 Google Cloud 中的卡塔爾地區支援 Connector 。
 * Microsoft Azure 的瑞典中部地區也支援 Connector 。
 +
-https://["檢視支援區域的完整清單"^]
+https://cloud.netapp.com/cloud-volumes-global-regions["檢視支援區域的完整清單"^]
 
 * 此版本的Connector包含Cloud Volumes ONTAP 一些功能強化功能。
 +
-https://["深入瞭Cloud Volumes ONTAP 解功能強化功能"^]
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#7-may-2023["深入瞭Cloud Volumes ONTAP 解功能強化功能"^]
 
 
 
@@ -61,7 +61,7 @@ BlueXP _ 部署模式 _ 可讓您以符合業務與安全需求的方式使用 B
 * 私有模式
 
 
-https://["深入瞭解這些部署模式"]。
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-modes.html["深入瞭解這些部署模式"]。
 
 
 NOTE: 採用受限模式會取代啟用或停用 SaaS 平台的選項。您可以在建立帳戶時啟用限制模式。稍後無法啟用或停用。
@@ -79,27 +79,27 @@ NOTE: 採用受限模式會取代啟用或停用 SaaS 平台的選項。您可�
 如果您設定通知設定、您可以在BYOL授權即將過期（「警告」通知）或已過期（「錯誤」通知）時收到電子郵件通知。
 
 +
-https://["瞭解如何設定電子郵件通知"]。
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html["瞭解如何設定電子郵件通知"]。
 
 * Google Cloud Turin地區現在支援Connector。
 +
-https://["檢視支援區域的完整清單"^]
+https://cloud.netapp.com/cloud-volumes-global-regions["檢視支援區域的完整清單"^]
 
 * 您現在可以管理與您的BlueXP登入相關的使用者認證：ONTAP 功能驗證和NetApp 支援網站 支援（NSS）認證。
 +
 當您移至*「設定」>「認證資料」*時、您可以檢視認證資料、更新認證資料並加以刪除。例如、如果您變更這些認證資料的密碼、則需要更新BlueXP中的密碼。
 
 +
-https://["瞭解如何管理使用者認證"]。
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-manage-user-credentials.html["瞭解如何管理使用者認證"]。
 
 * 您現在可以在建立支援案例或更新現有支援案例的案例備註時上傳附件。
 +
-https://["瞭解如何建立及管理支援案例"]。
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manage-your-support-cases["瞭解如何建立及管理支援案例"]。
 
 * 此版本的Connector也包含Cloud Volumes ONTAP 了加強功能的功能、以及內部ONTAP 的叢集增強功能。
 +
-** https://["深入瞭Cloud Volumes ONTAP 解功能強化功能"^]
-** https://["深入瞭ONTAP 解內部叢集增強功能"^]
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#3-april-2023["深入瞭Cloud Volumes ONTAP 解功能強化功能"^]
+** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/whats-new.html#3-april-2023["深入瞭ONTAP 解內部叢集增強功能"^]
 
 
 
@@ -118,7 +118,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/mai
 
 * 您可以直接從BlueXP檢視及管理作用中和已解決的支援案例。您可以管理與您的NSS帳戶和貴公司相關的個案。
 +
-https://["瞭解如何管理您的支援案例"]。
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manage-your-support-cases["瞭解如何管理您的支援案例"]。
 
 * 現在、連接器可在完全隔離網際網路的任何雲端環境中獲得支援。然後您可以使用連接器上執行的BlueXP主控台、在Cloud Volumes ONTAP 同一個位置部署故障、並探索內部部署ONTAP 的故障叢集（如果您的雲端環境與內部部署環境之間有連線）。您也可以使用 BlueXP 備份與還原來備份 AWS 和 Azure 商業地區的 Cloud Volumes ONTAP 磁碟區。除了 BlueXP 數位錢包之外、此類部署不支援其他 BlueXP 服務。
 +
@@ -128,19 +128,19 @@ https://["瞭解如何管理您的支援案例"]。
 若要開始使用、請手動安裝 Connector 軟體、登入 Connector 上執行的 BlueXP 主控台、將 BYOL 授權新增至 BlueXP 數位錢包、然後部署 Cloud Volumes ONTAP 。
 
 +
-** https://["將Connector安裝在沒有網際網路存取的位置"^]
-** https://["存取Connector上的BlueXP主控台"^]
-** https://["新增未指派的授權"^]
-** https://["立即開始Cloud Volumes ONTAP 使用"^]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["將Connector安裝在沒有網際網路存取的位置"^]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#access-the-local-ui["存取Connector上的BlueXP主控台"^]
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#manage-byol-licenses["新增未指派的授權"^]
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-overview-cvo.html["立即開始Cloud Volumes ONTAP 使用"^]
 
 
 * Connector現在可讓您新增及管理來自BlueXP的Amazon S3儲存區。
 +
-https://["瞭解如何從BlueXP在AWS帳戶中新增Amazon S3儲存區"^]。
+https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html["瞭解如何從BlueXP在AWS帳戶中新增Amazon S3儲存區"^]。
 
 * 此版本的Connector包含Cloud Volumes ONTAP 一些功能強化功能。
 +
-https://["深入瞭Cloud Volumes ONTAP 解功能強化功能"^]
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#5-march-2023["深入瞭Cloud Volumes ONTAP 解功能強化功能"^]
 
 
 
@@ -168,15 +168,15 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/mai
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-aws-subscription.png["顯示藍圖XP帳戶訂閱指派的快照。"]
 
 +
-** https://["瞭解如何建立AWS訂閱的關聯"]
-** https://["瞭解如何建立Azure訂閱的關聯"]
-** https://["瞭解如何建立Google Cloud訂閱的關聯"]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html#associate-an-aws-subscription["瞭解如何建立AWS訂閱的關聯"]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-azure-accounts.html#associating-an-azure-marketplace-subscription-to-credentials["瞭解如何建立Azure訂閱的關聯"]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["瞭解如何建立Google Cloud訂閱的關聯"]
 
 
 * 如果您的Connector已關機14天或更久、BlueXP現在會通知您。
 +
-** https://["深入瞭解BlueXP通知"]
-** https://["瞭解為何連接器應該繼續執行"]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html["深入瞭解BlueXP通知"]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#connectors-should-remain-running["瞭解為何連接器應該繼續執行"]
 
 
 * 我們更新了Connector for Google Cloud政策、加入在Cloud Volumes ONTAP 以各種方式建立及管理儲存VM的權限：
@@ -184,11 +184,11 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/mai
 compute.instances.updateNetworkInterface
 
 +
-https://["檢視Connector的Google Cloud權限"]。
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["檢視Connector的Google Cloud權限"]。
 
 * 此版本的Connector包含Cloud Volumes ONTAP 一些功能強化功能。
 +
-https://["深入瞭Cloud Volumes ONTAP 解功能強化功能"^]
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#5-february-2023["深入瞭Cloud Volumes ONTAP 解功能強化功能"^]
 
 
 
@@ -202,7 +202,7 @@ https://["深入瞭Cloud Volumes ONTAP 解功能強化功能"^]
 
 此版本的Connector包含Cloud Volumes ONTAP 了一些強化功能和錯誤修正。
 
-https://["深入瞭Cloud Volumes ONTAP 解功能強化功能"^]
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#1-january-2023["深入瞭Cloud Volumes ONTAP 解功能強化功能"^]
 
 
 
@@ -212,12 +212,12 @@ https://["深入瞭Cloud Volumes ONTAP 解功能強化功能"^]
 
 === 連接器3.9.24
 
-* 我們已將BlueXP主控台的URL更新為 https://[]
+* 我們已將BlueXP主控台的URL更新為 https://console.bluexp.netapp.com[]
 * Google Cloud Israel地區現在支援Connector。
 * 此版本的Connector也包含Cloud Volumes ONTAP 了加強功能的功能、以及內部ONTAP 的叢集增強功能。
 +
-** https://["深入瞭Cloud Volumes ONTAP 解功能強化功能"^]
-** https://["深入瞭ONTAP 解內部叢集增強功能"^]
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#4-december-2022["深入瞭Cloud Volumes ONTAP 解功能強化功能"^]
+** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/whats-new.html#4-december-2022["深入瞭ONTAP 解內部叢集增強功能"^]
 
 
 
@@ -232,11 +232,11 @@ https://["深入瞭Cloud Volumes ONTAP 解功能強化功能"^]
 
 * 您的 PAYGO 訂閱和 BlueXP 年度合約現在可從數位錢包中檢視及管理。
 +
-https://["瞭解如何管理您的訂閱"^]
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-manage-subscriptions.html["瞭解如何管理您的訂閱"^]
 
 * 此版本的Connector也包含Cloud Volumes ONTAP 了一些功能強化功能。
 +
-https://["深入瞭Cloud Volumes ONTAP 解功能強化功能"^]
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#6-november-2022["深入瞭Cloud Volumes ONTAP 解功能強化功能"^]
 
 
 
@@ -244,7 +244,7 @@ https://["深入瞭Cloud Volumes ONTAP 解功能強化功能"^]
 
 == 2022年11月1日
 
-Cloud Manager現在會在NetApp 支援網站 與您帳戶相關的更新權杖在3個月後過期時、提示您更新與您的候用帳戶相關的認證資料。 https://["瞭解如何管理NSS帳戶"^]
+Cloud Manager現在會在NetApp 支援網站 與您帳戶相關的更新權杖在3個月後過期時、提示您更新與您的候用帳戶相關的認證資料。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html#update-nss-credentials["瞭解如何管理NSS帳戶"^]
 
 
 
@@ -257,11 +257,11 @@ Cloud Manager現在會在NetApp 支援網站 與您帳戶相關的更新權杖�
 * 我們新增_產品內建指南_來強化連接器部署精靈、提供符合Connector安裝最低需求的步驟：權限、驗證和網路。
 * 您現在可以直接從*支援儀表板*的Cloud Manager建立NetApp支援案例。
 +
-https://["瞭解如何建立案例"]。
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-get-help.html#netapp-support["瞭解如何建立案例"]。
 
 * 此版本的Connector也包含Cloud Volumes ONTAP 了一些功能強化功能。
 +
-https://["深入瞭Cloud Volumes ONTAP 解功能強化功能"^]
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#18-september-2022["深入瞭Cloud Volumes ONTAP 解功能強化功能"^]
 
 
 
@@ -281,11 +281,11 @@ https://["深入瞭Cloud Volumes ONTAP 解功能強化功能"^]
 在此初始版本中、「我的商機」可讓您在ONTAP AWS帳戶中探索現有的FSX for Solidffile系統。
 
 +
-https://["瞭解如何利用ONTAP My Opportunity探索FSXfor Sfor"^]
+https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#discover-using-my-opportunities["瞭解如何利用ONTAP My Opportunity探索FSXfor Sfor"^]
 
 * 此版本的Connector也包含Cloud Volumes ONTAP 了一些功能強化功能。
 +
-https://["深入瞭Cloud Volumes ONTAP 解功能強化功能"^]
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#31-july-2022["深入瞭Cloud Volumes ONTAP 解功能強化功能"^]
 
 
 
@@ -299,9 +299,9 @@ https://["深入瞭Cloud Volumes ONTAP 解功能強化功能"^]
 
 我們在文件中直接新增Cloud Manager原則、以更新文件內容。這表示您現在可以在Cloud Volumes ONTAP 說明如何設定的步驟旁、檢視連接器和右側的必要權限。這些原則先前可從NetApp支援網站的頁面存取。
 
-https://["以下範例顯示用來建立連接器的AWS IAM角色權限"]。
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html#create-an-iam-policy["以下範例顯示用來建立連接器的AWS IAM角色權限"]。
 
-我們也建立了一個頁面、提供每個原則的連結。 https://["檢視Cloud Manager的權限摘要"]。
+我們也建立了一個頁面、提供每個原則的連結。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions.html["檢視Cloud Manager的權限摘要"]。
 
 
 
@@ -317,7 +317,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/mai
 
 * 您現在可以設定Cloud Manager以電子郵件傳送通知、即使您尚未登入系統、也能得知重要的系統活動。
 +
-https://["深入瞭解監控帳戶運作的相關資訊"]。
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html["深入瞭解監控帳戶運作的相關資訊"]。
 
 * Cloud Manager現在支援Azure Blob儲存設備和Google Cloud Storage做為工作環境、類似於Amazon S3支援。
 +
@@ -339,11 +339,11 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/mai
 
 * 現在Azure West US 3區域支援Connector。
 +
-https://["檢視支援區域的完整清單"^]
+https://bluexp.netapp.com/cloud-volumes-global-regions["檢視支援區域的完整清單"^]
 
 * 此版本的Connector也包含Cloud Volumes ONTAP 了一些功能強化功能。
 +
-https://["深入瞭Cloud Volumes ONTAP 解功能強化功能"^]
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#2-july-2022["深入瞭Cloud Volumes ONTAP 解功能強化功能"^]
 
 
 
@@ -371,12 +371,12 @@ NOTE: 使用電子郵件地址和密碼的現有登入必須持續使用該登�
 * 現在AWS雅加達地區（ap東南3區）支援Connector。
 * 現在Azure Brazil東南地區支援Connector。
 +
-https://["檢視支援區域的完整清單"^]
+https://bluexp.netapp.com/cloud-volumes-global-regions["檢視支援區域的完整清單"^]
 
 * 此版本的Connector也包含Cloud Volumes ONTAP 了加強功能的功能、以及內部ONTAP 的叢集增強功能。
 +
-** https://["深入瞭Cloud Volumes ONTAP 解功能強化功能"^]
-** https://["深入瞭ONTAP 解內部叢集增強功能"^]
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#7-june-2022["深入瞭Cloud Volumes ONTAP 解功能強化功能"^]
+** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/whats-new.html#7-june-2022["深入瞭ONTAP 解內部叢集增強功能"^]
 
 
 
@@ -408,14 +408,14 @@ https://["檢視支援區域的完整清單"^]
 
 
 +
-https://["檢視支援區域的完整清單"^]
+https://bluexp.netapp.com/cloud-volumes-global-regions["檢視支援區域的完整清單"^]
 
 * 當您選取要搭配Connector使用的Google Cloud服務帳戶時、Cloud Manager現在會顯示與每個服務帳戶相關聯的電子郵件地址。檢視電子郵件地址可讓您更容易區分共用相同名稱的服務帳戶。
 +
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-google-cloud-service-account.png["服務帳戶欄位的快照"]
 
-* 我們已在支援的OS上、在VM執行個體上、在Google Cloud上認證Connector https://["防護VM功能"^]
-* 此版本的Connector也包含Cloud Volumes ONTAP 了一些功能強化功能。 https://["瞭解這些增強功能"^]
+* 我們已在支援的OS上、在VM執行個體上、在Google Cloud上認證Connector https://cloud.google.com/compute/shielded-vm/docs/shielded-vm["防護VM功能"^]
+* 此版本的Connector也包含Cloud Volumes ONTAP 了一些功能強化功能。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#2-may-2022["瞭解這些增強功能"^]
 * Connector需要新的AWS權限才能部署Cloud Volumes ONTAP 功能。
 +
 在單一可用度區域（AZ）中部署HA配對時、現在需要下列權限才能建立AWS分散配置群組：
@@ -444,9 +444,9 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/mai
 
 * 您現在可以透過讓Cloud Manager承擔您在環境中設定的IAM角色來建立Connector。這種驗證方法比共用AWS存取金鑰和秘密金鑰更安全。
 +
-https://["瞭解如何使用IAM角色建立連接器"]。
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["瞭解如何使用IAM角色建立連接器"]。
 
-* 此版本的Connector也包含Cloud Volumes ONTAP 了一些功能強化功能。 https://["瞭解這些增強功能"^]
+* 此版本的Connector也包含Cloud Volumes ONTAP 了一些功能強化功能。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#3-april-2022["瞭解這些增強功能"^]
 
 
 
@@ -458,7 +458,7 @@ https://["瞭解如何使用IAM角色建立連接器"]。
 === 連接器3.9.16
 
 * 當您在Google Cloud中建立新的Connector時、Cloud Manager現在會顯示所有現有的防火牆原則。之前Cloud Manager不會顯示任何沒有目標標記的原則。
-* 此版本的Connector也包含Cloud Volumes ONTAP 了一些功能強化功能。 https://["瞭解這些增強功能"^]
+* 此版本的Connector也包含Cloud Volumes ONTAP 了一些功能強化功能。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#27-february-2022["瞭解這些增強功能"^]
 
 
 
@@ -469,7 +469,7 @@ https://["瞭解如何使用IAM角色建立連接器"]。
 
 === 連接器3.9.15
 
-此版本的Connector包含Cloud Volumes ONTAP 一些功能強化功能。 https://["瞭解這些增強功能"^]
+此版本的Connector包含Cloud Volumes ONTAP 一些功能強化功能。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#30-january-2022["瞭解這些增強功能"^]
 
 
 
@@ -481,7 +481,7 @@ https://["瞭解如何使用IAM角色建立連接器"]。
 
 為了管理公有雲環境中的資源和程序、我們減少了Connector需要聯絡的端點數量。
 
-https://["檢視所需端點的清單"]
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["檢視所需端點的清單"]
 
 
 
@@ -512,7 +512,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/mai
 如果您尚未將您的NSS帳戶移轉至IDaaas、首先需要移轉帳戶、然後在Cloud Manager中更新您的認證資料。
 
 * link:task-adding-nss-accounts.html#update-an-nss-account-for-the-new-authentication-method["瞭解如何將新的驗證方法更新至新的NSS帳戶"]。
-* https://["深入瞭解NetApp使用Microsoft Azure AD進行身分識別管理的相關資訊"^]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/FAQs_for_NetApp_adoption_of_MS_Azure_AD_B2C_for_login["深入瞭解NetApp使用Microsoft Azure AD進行身分識別管理的相關資訊"^]
 
 
 
@@ -533,7 +533,7 @@ link:task-adding-nss-accounts.html#attach-a-working-environment-to-a-different-n
 
 一家獨立認證的公共會計公司和服務稽核員、負責審查Cloud Manager Cloud Sync 、NetApp、Cloud Tiering、Cloud Data Sense和Cloud Backup（Cloud Manager平台）、並確認他們已根據適用的信任服務條件、達成SOC 2類報告。
 
-https://["檢視NetApp的SOC 2報告"^]。
+https://www.netapp.com/company/trust-center/compliance/soc-2/["檢視NetApp的SOC 2報告"^]。
 
 
 
@@ -541,7 +541,7 @@ https://["檢視NetApp的SOC 2報告"^]。
 
 您無法再使用Cloud Manager Connector做為Proxy伺服器、從AutoSupport 停止傳送消息Cloud Volumes ONTAP 。此功能已移除、不再受支援。您必須AutoSupport 透過NAT執行個體或環境的Proxy服務提供不必要的連線功能。
 
-https://["深入瞭解驗證AutoSupport 使用Cloud Volumes ONTAP 效益的方法"^]
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-verify-autosupport.html["深入瞭解驗證AutoSupport 使用Cloud Volumes ONTAP 效益的方法"^]
 
 
 

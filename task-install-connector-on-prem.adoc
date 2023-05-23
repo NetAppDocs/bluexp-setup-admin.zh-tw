@@ -56,7 +56,7 @@ unset https_proxy
 +
 如果您未移除這些系統變數、安裝將會失敗。
 
-. 從下載Connector軟體 https://["NetApp 支援網站"^]，然後將其複製到 Linux 主機。
+. 從下載Connector軟體 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支援網站"^]，然後將其複製到 Linux 主機。
 +
 您應該下載「線上」 Connector 安裝程式、以供您的網路或雲端使用。Connector 有獨立的「離線」安裝程式、但僅支援私有模式部署。
 
@@ -113,7 +113,7 @@ chmod +x OnCommandCloudManager-<version>
 .步驟
 . 開啟網頁瀏覽器並輸入下列 URL ：
 +
-https://[]
+https://_ipaddress_[]
 
 +
 _ipaddress_ 可以是 localhost 、私有 IP 位址或公有 IP 位址、視主機的組態而定。例如、如果連接器位於沒有公有 IP 位址的公有雲中、您必須輸入連接至連接器主機之主機的私有 IP 位址。

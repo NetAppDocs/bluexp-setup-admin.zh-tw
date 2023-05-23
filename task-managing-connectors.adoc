@@ -80,19 +80,19 @@ image:screenshot-connector-autosupport.png["「支援儀表板」的螢幕擷取
 AWS:: 在AWS中建立Connector執行個體時、您提供了AWS存取金鑰和秘密金鑰。您可以將此金鑰配對用於執行個體的SSH。
 +
 --
-https://["AWS文件：連線至您的Linux執行個體"^]
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html["AWS文件：連線至您的Linux執行個體"^]
 
 --
 Azure:: 在Azure中建立Connector VM時、您選擇使用密碼或SSH公開金鑰進行驗證。使用您選擇的驗證方法來連線至VM。
 +
 --
-https://["Azure文件：SSH進入VM"^]
+https://docs.microsoft.com/en-us/azure/virtual-machines/linux/mac-create-ssh-keys#ssh-into-your-vm["Azure文件：SSH進入VM"^]
 
 --
 Google Cloud:: 在Google Cloud中建立Connector時、您無法指定驗證方法。不過、您可以使用Google Cloud Console或Google Cloud CLI（gclCloud）連線至Linux VM執行個體。
 +
 --
-https://["Google Cloud Docs：連線至Linux VM"^]
+https://cloud.google.com/compute/docs/instances/connecting-to-instance["Google Cloud Docs：連線至Linux VM"^]
 
 --
 
@@ -109,7 +109,7 @@ Connector 需要在升級過程中重新啟動、以便在升級期間無法使�
 NOTE: 在可存取網際網路的主機上、只要 Connector 有外送網際網路存取權來取得軟體更新、 Connector 就會自動將其軟體更新至最新版本。
 
 .步驟
-. 從下載Connector軟體 https://["NetApp 支援網站"^]。
+. 從下載Connector軟體 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支援網站"^]。
 . 將安裝程式複製到Linux主機。
 . 指派執行指令碼的權限。
 +
@@ -192,7 +192,7 @@ _MaxDownloadSseds_的值可以是1或任何大於1的整數。如果值為1、�
 
 
 
-https://["深入瞭解/occm/config API呼叫"^]
+https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#occmconfig["深入瞭解/occm/config API呼叫"^]
 
 
 

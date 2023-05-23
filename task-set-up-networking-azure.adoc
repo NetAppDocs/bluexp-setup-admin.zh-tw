@@ -26,9 +26,9 @@ summary: 設定您的網路、讓 Connector 能夠管理混合雲環境中的資
 
 == Azure地區
 
-連接器應部署在Cloud Volumes ONTAP 其所管理的或所管理的各個系統所在的Azure區域 https://["Azure區域配對"^] 適用於整個系統。Cloud Volumes ONTAP這項需求可確保Cloud Volumes ONTAP Azure Private Link連線可用於連接至相關的儲存帳戶。
+連接器應部署在Cloud Volumes ONTAP 其所管理的或所管理的各個系統所在的Azure區域 https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure區域配對"^] 適用於整個系統。Cloud Volumes ONTAP這項需求可確保Cloud Volumes ONTAP Azure Private Link連線可用於連接至相關的儲存帳戶。
 
-https://["瞭Cloud Volumes ONTAP 解如何使用Azure Private Link"^]
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html["瞭Cloud Volumes ONTAP 解如何使用Azure Private Link"^]
 
 
 
@@ -131,4 +131,4 @@ NOTE: Connector目前正在聯絡「cloudmanager.cloud.netapp.com"」、但即�
 
 == IP位址限制
 
-可能與172範圍內的IP位址發生衝突。 https://["深入瞭解此限制"]。
+可能與172範圍內的IP位址發生衝突。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-limitations.html["深入瞭解此限制"]。

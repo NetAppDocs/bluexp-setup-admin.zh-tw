@@ -138,7 +138,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 如果您是現有的NetApp客戶、擁有現有授權和序號、但_否_ nss_帳戶、您只需要建立一個nss.帳戶。
 
 .步驟
-. 完成建立NetApp 支援網站 一個不完善的帳戶 https://["《使用者登錄表》NetApp 支援網站"^]
+. 完成建立NetApp 支援網站 一個不完善的帳戶 https://mysupport.netapp.com/site/user/registration["《使用者登錄表》NetApp 支援網站"^]
 +
 .. 請務必選擇適當的使用者層級、通常為* NetApp客戶/終端使用者*。
 .. 請務必複製上述序號欄位使用的BlueXP帳戶序號（960xxxx）。這將加速帳戶處理。
@@ -161,7 +161,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 +
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-serial-number.png["「說明」功能表的快照、其中「支援」是第一個列出的選項"]
 
-. 瀏覽至 https://["NetApp的支援註冊網站"^] 並選擇*我不是NetApp註冊客戶*。
+. 瀏覽至 https://register.netapp.com["NetApp的支援註冊網站"^] 並選擇*我不是NetApp註冊客戶*。
 . 填寫必填欄位（紅色星號）。
 . 在*產品系列*欄位中、選取* Cloud Manager*、然後選取適用的帳單供應商。
 . 複製上述步驟2的帳戶序號、完成安全性檢查、然後確認您已閱讀NetApp的全球資料隱私權政策。
@@ -172,7 +172,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 +
 確認將您的申請提交給NetApp、並建議您建立NetApp 支援網站 一個申請表。
 
-. 完成建立NetApp 支援網站 一個不完善的帳戶 https://["《使用者登錄表》NetApp 支援網站"^]
+. 完成建立NetApp 支援網站 一個不完善的帳戶 https://mysupport.netapp.com/site/user/registration["《使用者登錄表》NetApp 支援網站"^]
 +
 .. 請務必選擇適當的使用者層級、通常為* NetApp客戶/終端使用者*。
 .. 請務必複製上述序號欄位使用的帳戶序號（960xxxx）。這將加速帳戶處理。

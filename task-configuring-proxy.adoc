@@ -39,7 +39,7 @@ image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」�
 . 設定Proxy：
 +
 .. 選取 * 啟用 Proxy* 。
-.. 使用語法指定伺服器 http://[] 或 https://[]
+.. 使用語法指定伺服器 http://_address:port_[] 或 https://_address:port_[]
 .. 如果伺服器需要基本驗證、請指定使用者名稱和密碼
 .. 選擇*保存*。
 +
@@ -58,7 +58,7 @@ NOTE: BlueXP不支援包含@字元的密碼。
 
 如果您停用使用Azure私有連結Cloud Volumes ONTAP 搭配使用、並改用服務端點、則必須啟用直接API流量。否則、流量將無法正確路由傳送。
 
-https://["深入瞭解如何搭配Cloud Volumes ONTAP 使用Azure Private Link或服務端點搭配使用"^]
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html["深入瞭解如何搭配Cloud Volumes ONTAP 使用Azure Private Link或服務端點搭配使用"^]
 
 .步驟
 . 在 BlueXP 主控台的右上角、選取設定圖示、然後選取 * 連接器設定 * 。

@@ -40,7 +40,7 @@ link:task-prepare-restricted-mode.html#prepare-cloud-permissions["瞭解如何�
 
 
 .步驟
-. 前往 https://["AWS Marketplace上的BlueXP頁面"^]
+. 前往 https://aws.amazon.com/marketplace/pp/B018REK8QG["AWS Marketplace上的BlueXP頁面"^]
 . 在 Marketplace 頁面上、按一下 * 繼續訂閱 * 、然後按一下 * 繼續進行組態 * 。
 +
 image:screenshot-subscribe-aws.png["螢幕快照顯示 AWS Marketplace 上的「繼續訂閱並繼續設定」按鈕。"]
@@ -151,8 +151,8 @@ link:task-prepare-restricted-mode.html#prepare-cloud-permissions["瞭解如何�
 .步驟
 . 前往Azure Marketplace的NetApp Connector VM頁面。
 +
-** https://["適用於商業區域的Azure Marketplace頁面"^]
-** https://["Azure政府區域的Azure Marketplace頁面"^]
+** https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-oncommand-cloud-manager["適用於商業區域的Azure Marketplace頁面"^]
+** https://portal.azure.us/#create/netapp.netapp-oncommand-cloud-manageroccm-byol["Azure政府區域的Azure Marketplace頁面"^]
 
 
 . 按一下「 * 立即取得 * 」、然後按一下「 * 繼續 * 」。
@@ -171,7 +171,7 @@ image:screenshot-azure-sku.png["在 Azure 中建立新 IP 位址的螢幕擷取�
 如果您改用標準 SKU IP 位址、則 BlueXP 會使用 Connector 的 _private IP 位址、而非公有 IP 。如果您用來存取 BlueXP 主控台的機器無法存取該私有 IP 位址、則 BlueXP 主控台的動作將會失敗。
 
 +
-https://["Azure 文件：公有 IP SKU"^]
+https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses#sku["Azure 文件：公有 IP SKU"^]
 
 ** * 網路安全群組 * ： Connector 需要使用 SSH 、 HTTP 和 HTTPS 的傳入連線。
 +
@@ -179,7 +179,7 @@ link:task-prepare-restricted-mode.html["深入瞭解網路需求"]。
 
 ** * 識別 * ：在 * 管理 * 下、選取 * 啟用系統指派的託管識別 * 。
 +
-此設定非常重要、因為託管身分識別可讓 Connector 虛擬機器在 Azure Active Directory 中識別自己、而無需提供任何認證。 https://["深入瞭解 Azure 資源的託管身分識別"^]。
+此設定非常重要、因為託管身分識別可讓 Connector 虛擬機器在 Azure Active Directory 中識別自己、而無需提供任何認證。 https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["深入瞭解 Azure 資源的託管身分識別"^]。
 
 
 
@@ -229,7 +229,7 @@ unset https_proxy
 +
 如果您未移除這些系統變數、安裝將會失敗。
 
-. 從下載Connector軟體 https://["NetApp 支援網站"^]，然後將其複製到 Linux 主機。
+. 從下載Connector軟體 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支援網站"^]，然後將其複製到 Linux 主機。
 +
 您應該下載「線上」 Connector 安裝程式、以供您的網路或雲端使用。Connector 有獨立的「離線」安裝程式、但僅支援私有模式部署。
 
@@ -294,7 +294,7 @@ NOTE: 如果您已經有帳戶、而且想要建立另一個帳戶、則需要�
 .步驟
 . 從連線至 Connector 執行個體的主機開啟網頁瀏覽器、然後輸入下列 URL ：
 +
-https://[]
+https://_ipaddress_[]
 
 . 註冊或登入 BlueXP 。
 . 登入後、請設定 BlueXP ：
@@ -413,7 +413,7 @@ BlueXP 現在擁有代表您在 Azure 中執行動作所需的權限。
 為 BlueXP 提供您先前設定的 Azure 服務主體認證。
 
 .步驟
-. 前往 https://["BlueXP主控台"^] 並登入。
+. 前往 https://console.bluexp.netapp.com["BlueXP主控台"^] 並登入。
 . 在BlueXP主控台右上角、按一下「設定」圖示、然後選取*認證*。
 +
 image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」圖示的快照。"]
@@ -445,7 +445,7 @@ BlueXP 現在擁有代表您在 Azure 中執行動作所需的權限。
 .步驟
 . 前往 Google Cloud 入口網站、將服務帳戶指派給 Connector VM 執行個體。
 +
-https://["Google Cloud 文件：變更執行個體的服務帳戶和存取範圍"^]
+https://cloud.google.com/compute/docs/access/create-enable-service-accounts-for-instances#changeserviceaccountandscopes["Google Cloud 文件：變更執行個體的服務帳戶和存取範圍"^]
 
 . 如果您要在其他專案中部署 Cloud Volumes ONTAP 、請將具有 BlueXP 角色的服務帳戶新增至該專案、以授予存取權。您必須針對每個專案重複此步驟。
 

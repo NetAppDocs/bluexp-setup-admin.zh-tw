@@ -18,13 +18,13 @@ summary: 在受限模式下以 BlueXP 啟動並執行之後、您可以開始使
 
 如需協助、請參閱以下服務的文件：
 
-* https://["Amazon FSX for ONTAP Sfedocs"^]
-* https://["文件Azure NetApp Files"^]
-* https://["備份與還原文件"^]
-* https://["分類文件"^]
-* https://["文件Cloud Volumes ONTAP"^]
-* https://["內部部署ONTAP 的叢集文件"^]
-* https://["複寫文件"^]
+* https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/index.html["Amazon FSX for ONTAP Sfedocs"^]
+* https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/index.html["文件Azure NetApp Files"^]
+* https://docs.netapp.com/us-en/cloud-manager-backup-restore/index.html["備份與還原文件"^]
+* https://docs.netapp.com/us-en/cloud-manager-data-sense/index.html["分類文件"^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/index.html["文件Cloud Volumes ONTAP"^]
+* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/index.html["內部部署ONTAP 的叢集文件"^]
+* https://docs.netapp.com/us-en/cloud-manager-replication/index.html["複寫文件"^]
 
 
 .相關連結

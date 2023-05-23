@@ -22,7 +22,7 @@ summary: 瞭解 BlueXP 如何使用 Azure 認證和權限來代表您執行動�
 
 從BlueXP部署Connector時、您需要使用具備部署Connector虛擬機器權限的Azure帳戶或服務主體。所需權限列於 link:task-set-up-permissions-azure.html["Azure 的連接器部署原則"]。
 
-當BlueXP在Azure中部署Connector虛擬機器時、它會啟用 https://["系統指派的託管身分識別"^] 在虛擬機器上建立自訂角色、然後將其指派給虛擬機器。此角色可為BlueXP提供所需的權限、以管理該Azure訂閱中的資源和程序。 link:reference-permissions-azure.html["檢閱BlueXP如何使用權限"]。
+當BlueXP在Azure中部署Connector虛擬機器時、它會啟用 https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["系統指派的託管身分識別"^] 在虛擬機器上建立自訂角色、然後將其指派給虛擬機器。此角色可為BlueXP提供所需的權限、以管理該Azure訂閱中的資源和程序。 link:reference-permissions-azure.html["檢閱BlueXP如何使用權限"]。
 
 image:diagram_permissions_initial_azure.png["顯示在Azure帳戶和訂閱中部署Connector的BlueXP概念性映像。系統指派的託管身分識別已啟用、並將自訂角色指派給Connector虛擬機器。"]
 
