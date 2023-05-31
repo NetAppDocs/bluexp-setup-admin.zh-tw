@@ -47,7 +47,7 @@ _Connector_ 是在您的雲端網路或內部部署網路中執行的 NetApp 軟
 雖然不需要連接器即可直接探索內部部署ONTAP 的叢集、但如果您想要使用更多的BlueXP功能、則需要連接器。
 
 +
-https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["深入瞭解內部ONTAP 部署的叢集探索與管理選項"^]
+https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["深入瞭解內部ONTAP 部署的叢集探索與管理選項"^]
 
 
 
@@ -101,7 +101,7 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 * Amazon Web Services
 * Microsoft Azure
 +
-Azure 中的 Connector 應部署在與其管理的 Cloud Volumes ONTAP 系統所在的同一個 Azure 區域、或部署在中 https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure區域配對"^] 適用於整個系統。Cloud Volumes ONTAP這項需求可確保Cloud Volumes ONTAP Azure Private Link連線可用於連接至相關的儲存帳戶。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html["瞭Cloud Volumes ONTAP 解如何使用Azure Private Link"^]
+Azure 中的 Connector 應部署在與其管理的 Cloud Volumes ONTAP 系統所在的同一個 Azure 區域、或部署在中 https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure區域配對"^] 適用於整個系統。Cloud Volumes ONTAP這項需求可確保Cloud Volumes ONTAP Azure Private Link連線可用於連接至相關的儲存帳戶。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html["瞭Cloud Volumes ONTAP 解如何使用Azure Private Link"^]
 
 * Google Cloud
 +
@@ -218,11 +218,11 @@ link:task-managing-connectors.html["瞭解如何在連接器之間切換"]。
 . link:task-managing-connectors.html["切換至另一個連接器"]。
 . 探索現有的工作環境。
 +
-** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-adding-systems.html["新增現有Cloud Volumes ONTAP 的元件系統至藍圖XP"^]
-** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["探索 ONTAP 叢集"^]
+** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-adding-systems.html["新增現有Cloud Volumes ONTAP 的元件系統至藍圖XP"^]
+** https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["探索 ONTAP 叢集"^]
 
 
-. 設定 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-storage-management.html["容量管理模式"^]
+. 設定 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-storage-management.html["容量管理模式"^]
 +
 只有主連接器應設定為*自動模式*。如果您切換至另一個連接器以進行DR、則可視需要變更容量管理模式。
 

@@ -298,7 +298,7 @@ image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」�
 
 
 .結果
-您現在可以從「詳細資料與認證」頁面切換至不同的認證集合 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html["在建立新的工作環境時"^]
+您現在可以從「詳細資料與認證」頁面切換至不同的認證集合 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-azure.html["在建立新的工作環境時"^]
 
 image:screenshot_accounts_switch_azure.gif["在「詳細資料擴大機；認證」頁面中選取「編輯認證」之後、會顯示在認證之間選取的螢幕擷取畫面。"]
 

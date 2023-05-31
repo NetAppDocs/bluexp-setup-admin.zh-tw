@@ -58,7 +58,7 @@ NOTE: BlueXP不支援包含@字元的密碼。
 
 如果您停用使用Azure私有連結Cloud Volumes ONTAP 搭配使用、並改用服務端點、則必須啟用直接API流量。否則、流量將無法正確路由傳送。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html["深入瞭解如何搭配Cloud Volumes ONTAP 使用Azure Private Link或服務端點搭配使用"^]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html["深入瞭解如何搭配Cloud Volumes ONTAP 使用Azure Private Link或服務端點搭配使用"^]
 
 .步驟
 . 在 BlueXP 主控台的右上角、選取設定圖示、然後選取 * 連接器設定 * 。

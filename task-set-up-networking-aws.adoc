@@ -130,4 +130,4 @@ NOTE: Connector目前正在聯絡「cloudmanager.cloud.netapp.com"」、但即�
 
 == IP位址限制
 
-可能與172範圍內的IP位址發生衝突。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-limitations.html["深入瞭解此限制"]。
+可能與172範圍內的IP位址發生衝突。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-limitations.html["深入瞭解此限制"]。

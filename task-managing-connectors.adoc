@@ -192,7 +192,7 @@ _MaxDownloadSseds_的值可以是1或任何大於1的整數。如果值為1、�
 
 
 
-https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#occmconfig["深入瞭解/occm/config API呼叫"^]
+https://docs.netapp.com/us-en/bluexp-automation/cm/api_ref_resources.html#occmconfig["深入瞭解/occm/config API呼叫"^]
 
 
 

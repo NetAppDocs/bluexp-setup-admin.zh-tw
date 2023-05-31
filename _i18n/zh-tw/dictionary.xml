@@ -146,7 +146,6 @@
   <block id="4276b916b690158619b1af5fba643f85" category="paragraph">若要以Cloud Volumes ONTAP 每小時費率（PAYGO）支付給__LW_Y1_Y1_Y1_YGO_Y1_Y1_Y1_Y1_Y1_Y1_Y1_Y1_Y1_Y1_</block>
   <block id="cc993521b8909c4085841bf25067d9c0" category="list-text">*審查*：確認新認證資料的詳細資料、然後按一下*新增*。</block>
   <block id="f9e1290b868bffdf198b52e0ebc715f0" category="inline-link">在建立新的工作環境時</block>
-  <block id="0f4a89433022f7aefc9108874cf04362" category="paragraph">您現在可以從「詳細資料與認證」頁面切換至不同的認證集合<block ref="38f90b6303ee9bda631bda03c5a2d711" category="inline-link-rx"></block></block>
   <block id="1fff95e017b67247702c9253bdce789b" category="section-title">管理現有認證資料</block>
   <block id="086754afbe30b09d7f6a643dd6e05800" category="list-text">您想要以新的訂閱取代現有的 Azure Marketplace 訂閱。</block>
   <block id="20a8a479e52579cf8f1fe773676218bc" category="paragraph"><block ref="20a8a479e52579cf8f1fe773676218bc" category="inline-image-macro-rx" type="image"></block></block>
@@ -201,11 +200,8 @@
   <block id="19d089db572ee6a1e154a0c9c9e57bfd" category="paragraph">NetApp使用Microsoft Azure Active Directory做為身分識別供應商、提供專為支援與授權所設計的驗證服務。</block>
   <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">在登入頁面上、提供您的NetApp支援網站註冊電子郵件地址和密碼、以執行驗證程序。</block>
   <block id="6602afb860a6cca23c3b75bf601365eb" category="inline-link">在 Cloud Volumes ONTAP AWS 中啟動</block>
-  <block id="3e33b81f05bb640dee79c5aa4e351c91" category="list-text"><block ref="3e33b81f05bb640dee79c5aa4e351c91" category="inline-link-rx"></block></block>
   <block id="7ca1af679f0ba86814f2ad58a578cb7c" category="inline-link">在 Cloud Volumes ONTAP Azure 中啟動</block>
-  <block id="0be0836bc69799b792b188dfc8c7fe7e" category="list-text"><block ref="0be0836bc69799b792b188dfc8c7fe7e" category="inline-link-rx"></block></block>
   <block id="a37ea04c3e1568f7c0e8e6abc9104d40" category="inline-link">註冊隨用隨付系統</block>
-  <block id="69f122e1a85cbf2a3c5f848d032664e3" category="list-text"><block ref="69f122e1a85cbf2a3c5f848d032664e3" category="inline-link-rx"></block></block>
   <block id="bdc3d022de69262bc7cb126fddac2df3" category="section-title">更新新驗證方法的NSS帳戶</block>
   <block id="d351b79158a130fb8ea25841a60a3d92" category="inline-image-macro">顯示「更新帳戶」選項的快照</block>
   <block id="8c513892354d080911596538a0a8e779" category="paragraph"><block ref="8c513892354d080911596538a0a8e779" category="inline-image-macro-rx" type="image"></block></block>
@@ -417,10 +413,8 @@
   <block id="0ec2b2e4840acfd3f21b50b176ec45f1" category="paragraph"><block ref="0ec2b2e4840acfd3f21b50b176ec45f1" category="inline-link-rx"></block></block>
   <block id="5750adecdd8602aee9e0d7052b8cd392" category="list-text">當您選取要搭配Connector使用的Google Cloud服務帳戶時、Cloud Manager現在會顯示與每個服務帳戶相關聯的電子郵件地址。檢視電子郵件地址可讓您更容易區分共用相同名稱的服務帳戶。</block>
   <block id="898d465c80c6b6783418f6fa71db0946" category="inline-image-macro">服務帳戶欄位的快照</block>
-  <block id="506e06ca3e996f21913a49d1f4920902" category="paragraph"><block ref="506e06ca3e996f21913a49d1f4920902" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2e0bddfca809f95cf3d5d7adfccca0e2" category="list-text">我們已在支援的OS上、在VM執行個體上、在Google Cloud上認證Connector<block ref="bd10301ee2e8f0cb38112a71d2b6920c" category="inline-link-rx"></block></block>
   <block id="561748ecfe4fd0bd9f15c851d5de4d29" category="inline-link">瞭解這些增強功能</block>
-  <block id="d2b88fcff484dc7cae448a7e8c287a1f" category="list-text">此版本的Connector也包含Cloud Volumes ONTAP 了一些功能強化功能。<block ref="60a968f5f71ebaff72f2727ce31f8e5b" category="inline-link-rx"></block></block>
   <block id="5e9d36e4528c82da2b7294c252e52427" category="list-text">Connector需要新的AWS權限才能部署Cloud Volumes ONTAP 功能。</block>
   <block id="bfd761a70b5f9cd277ef7c878344df38" category="paragraph">在單一可用度區域（AZ）中部署HA配對時、現在需要下列權限才能建立AWS分散配置群組：</block>
   <block id="0080f4096e51a12d4256890c125c5c46" category="paragraph">現在需要這些權限、才能最佳化Cloud Manager建立放置群組的方式。</block>
@@ -428,15 +422,11 @@
   <block id="5dc3495f29e6f1332d6d809ba30cbf83" category="section-title">連接器3.9.17</block>
   <block id="dc45cdfe41bbcfa7f2d8bf1ed54a89ed" category="list-text">您現在可以透過讓Cloud Manager承擔您在環境中設定的IAM角色來建立Connector。這種驗證方法比共用AWS存取金鑰和秘密金鑰更安全。</block>
   <block id="c1ef500163b033b0cacf87c830339c6e" category="inline-link">瞭解如何使用IAM角色建立連接器</block>
-  <block id="1d74a995b1a421dcb50976efb8094b21" category="paragraph"><block ref="f92b2fbbcca658498705715523d67bd6" category="inline-link-rx"></block>。</block>
-  <block id="1d99a1c8fadd3f9a537fec830e9791e0" category="list-text">此版本的Connector也包含Cloud Volumes ONTAP 了一些功能強化功能。<block ref="66c4cd7232189d67ede2231e4ccd26ce" category="inline-link-rx"></block></block>
   <block id="ba26e4556a0f160834687982b0479336" category="section-title">2022年2月27日</block>
   <block id="8c4a1103eeca70528bc946c2246ec6f1" category="section-title">連接器3.9.16</block>
   <block id="23ea931bf11f885e1a49e6970b0aa60a" category="list-text">當您在Google Cloud中建立新的Connector時、Cloud Manager現在會顯示所有現有的防火牆原則。之前Cloud Manager不會顯示任何沒有目標標記的原則。</block>
-  <block id="8452efafcd305c048b35a9ac1eaa0a58" category="list-text">此版本的Connector也包含Cloud Volumes ONTAP 了一些功能強化功能。<block ref="f53661746a388d6e170677167c0cb4ac" category="inline-link-rx"></block></block>
   <block id="3ac47455b10c6fb4061a70a91fdbfde2" category="section-title">2022年1月30日</block>
   <block id="1bb66afbb0f9c20ad9ce021a7051d622" category="section-title">連接器3.9.15</block>
-  <block id="3934da05a8696f0f2771f6794b16d0fe" category="paragraph">此版本的Connector包含Cloud Volumes ONTAP 一些功能強化功能。<block ref="56b0b409fd26975ec3a06e3bfbb1d0c5" category="inline-link-rx"></block></block>
   <block id="586301717819197e24001cac47efdaaa" category="section-title">2022年1月2日</block>
   <block id="3eb3c5317b96f11c0338c5ff2b831a15" category="section-title">減少連接器的端點數量</block>
   <block id="3ea953e33860f2fb58e83ea9f9842e28" category="paragraph">為了管理公有雲環境中的資源和程序、我們減少了Connector需要聯絡的端點數量。</block>
@@ -444,10 +434,8 @@
   <block id="cdacfba529ee299ab36d1cdf539f519d" category="section-title">連接器的EBS磁碟加密</block>
   <block id="dcf92cfff3fdb05a27221d7e0f407165" category="paragraph">當您從Cloud Manager在AWS中部署新的Connector時、您現在可以選擇使用預設的主要金鑰或管理金鑰來加密Connector的EBS磁碟。</block>
   <block id="e47c7d2e2b0dfe5aea5df23ca3dc5523" category="inline-image-macro">在AWS中建立連接器時顯示磁碟加密選項的快照。</block>
-  <block id="1a3140f260afcdb189bbb444b89966c4" category="paragraph"><block ref="1a3140f260afcdb189bbb444b89966c4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c9ace35ceff752453d1b0f7978e94417" category="section-title">適用於NSS帳戶的電子郵件地址</block>
   <block id="09a67f36e39e8933808ee04f43addc27" category="paragraph">Cloud Manager現在可以顯示與NetApp支援網站帳戶相關的電子郵件地址。</block>
-  <block id="e07973e7f57415cf8c19fe68b62a728c" category="paragraph"><block ref="e07973e7f57415cf8c19fe68b62a728c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f61163b681442ac500a8018c87241770" category="section-title">2021年11月28日</block>
   <block id="afd82a1708e69d4da8a44f0cbee4ae9c" category="section-title">NetApp支援網站帳戶所需的更新</block>
   <block id="cd9cf4a2a1c115f8da1d3cd4b0b783dd" category="paragraph">自2021年12月起、NetApp現在使用Microsoft Azure Active Directory做為身分識別供應商、提供專為支援與授權所設計的驗證服務。此更新之後、Cloud Manager會提示您更新先前新增之任何現有NetApp Support網站帳戶的認證資料。</block>
@@ -468,7 +456,6 @@
   <block id="28d0f6acaa631c64f65938cc5be01ffc" category="section-title">連接器不再支援做為Proxy</block>
   <block id="5c8306d9be4948716015bb2f9e79b2c6" category="paragraph">您無法再使用Cloud Manager Connector做為Proxy伺服器、從AutoSupport 停止傳送消息Cloud Volumes ONTAP 。此功能已移除、不再受支援。您必須AutoSupport 透過NAT執行個體或環境的Proxy服務提供不必要的連線功能。</block>
   <block id="52fc1a06d2ae446b85445e7fc0cf985d" category="inline-link">深入瞭解驗證AutoSupport 使用Cloud Volumes ONTAP 效益的方法</block>
-  <block id="0cee696240caf705fad7f17ef37c4a7b" category="paragraph"><block ref="0cee696240caf705fad7f17ef37c4a7b" category="inline-link-rx"></block></block>
   <block id="784044bd2af30d58bbb0dbcea3adbad6" category="section-title">2021年10月31日</block>
   <block id="67b68df6bafe01dd2b7c0f5e85ec62ff" category="section-title">使用服務主體進行驗證</block>
   <block id="8c14c862f5a121ac56cd7c2e45b59e09" category="paragraph">當您在Microsoft Azure中建立新的Connector時、現在可以使用Azure服務主體進行驗證、而非使用Azure帳戶認證。</block>
@@ -560,9 +547,7 @@
   <block id="61f2b058abe88a54489dc8da55cb7b80" category="inline-link-macro">切換至另一個連接器</block>
   <block id="fc08f20f6fe5ef74616fbc4c310758ef" category="list-text">探索現有的工作環境。</block>
   <block id="a1ebf612d281c8e7fb16bbfa253b9627" category="inline-link">探索 ONTAP 叢集</block>
-  <block id="49aaf65c31a811a37b2627a951f6f6d2" category="list-text"><block ref="49aaf65c31a811a37b2627a951f6f6d2" category="inline-link-rx"></block></block>
   <block id="35e1526d677f2c5c412538ff39eaacd5" category="inline-link">容量管理模式</block>
-  <block id="2912f64d50f01f1720b495c53d60d750" category="list-text">設定<block ref="5699ef8bbb3c7a4316537ebbe6b948b3" category="inline-link-rx"></block></block>
   <block id="7e869bece5c75f9fb7d53abbc36e200f" category="paragraph">只有主連接器應設定為*自動模式*。如果您切換至另一個連接器以進行DR、則可視需要變更容量管理模式。</block>
   <block id="b42a4e8606c4d9b6c9a1f695e362a72a" category="inline-link-macro">瞭解如何在連接器之間切換</block>
   <block id="8cace447f88df36aff1b15d754f25f8b" category="paragraph"><block ref="34c92eb0b80eb3e0fe9fb66053c42d9e" category="inline-link-macro-rx"></block>。</block>
@@ -577,14 +562,12 @@
   <block id="b7f7a48c60012c23b8adb659da31b71a" category="inline-link-macro">深入瞭解使用者、工作區和連接器</block>
   <block id="7d033896524ebe16495f74d9f7202783" category="paragraph"><block ref="cf2050a2914e59a752ab48465ba00e16" category="inline-link-macro-rx"></block>。</block>
   <block id="1dc658529d6408dff5a6f0516b76a420" category="inline-link">檢視Tenancy API的端點</block>
-  <block id="a2eed12a43b27297c587170e14b434f9" category="paragraph"><block ref="a2eed12a43b27297c587170e14b434f9" category="inline-link-rx"></block></block>
   <block id="cd300641cc6f26fb104a34058424d793" category="list-text">如果您選取「工作區管理」或「法規遵循檢視器」、請選取一個或多個工作區以與該使用者建立關聯。</block>
   <block id="8ecff25aa4ee2497099b60f83bd4dde7" category="paragraph">您可以隨時建立工作區管理員與工作區的關聯和取消關聯。建立使用者關聯可讓他們在該工作區中建立及檢視工作環境。</block>
   <block id="a6181f7eb68c3b9ae53c98621898ae4c" category="paragraph">建立所需數量的服務帳戶、以管理工作環境中的資源。</block>
   <block id="0c507d64182f3bdd3fef1c4ccfad6af5" category="list-text">輸入名稱並選取角色。如果您選擇帳戶管理員以外的角色、請選擇要與此服務帳戶建立關聯的工作區。</block>
   <block id="a708a553b3abfac9aade748b9d27bc4e" category="list-text">複製或下載用戶端ID和用戶端密碼。</block>
   <block id="a26ec20a342fbeb7521184dd4d8f09dc" category="inline-link">租戶API</block>
-  <block id="a7e6fc82578d6f351e4586bc0f56dc89" category="paragraph">以便對進行API呼叫<block ref="d3536a0b736463421e171a3f9784ebcf" category="inline-link-rx"></block>、您需要取得服務帳戶的承載權杖。</block>
   <block id="354974b8854006a145e63d10ee2342e4" category="paragraph">您可以隨時複製服務帳戶的用戶端ID。</block>
   <block id="b34075aded04510df363d492f4ae0191" category="paragraph"><block ref="b34075aded04510df363d492f4ae0191" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a59c428dfaf34cac48f2f98a39d73d8d" category="list-text">ID會複製到剪貼簿。</block>
@@ -877,7 +860,6 @@
   <block id="c5eb6c02a9d49411a265d5ddf6527796" category="inline-link-macro">瞭解如何設定服務帳戶</block>
   <block id="b2a3116602dffae5ec2500e053b897f2" category="list-text"><block ref="b2a3116602dffae5ec2500e053b897f2" category="inline-link-macro-rx"></block></block>
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">註冊以取得支援</block>
-  <block id="868d9aa88f16ea923af1d15eac5d2647" category="paragraph"><block ref="868d9aa88f16ea923af1d15eac5d2647" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">版本資訊</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
   <block id="e646e16bee8b32e6ea29e30d01970a6c" category="sidebar">限制</block>
@@ -930,9 +912,7 @@
   <block id="49ed7ab586a5135eae3ee7b3aea2ae20" category="list-text">現在Azure Brazil東南地區支援Connector。</block>
   <block id="1765dff10197df4bf080f41e5537f2a5" category="list-text">此版本的Connector也包含Cloud Volumes ONTAP 了加強功能的功能、以及內部ONTAP 的叢集增強功能。</block>
   <block id="03e6ae21f561049c3e8010740c63aab3" category="inline-link">深入瞭Cloud Volumes ONTAP 解功能強化功能</block>
-  <block id="2027473f3ca71543274163d3bb9dd8e1" category="list-text"><block ref="2027473f3ca71543274163d3bb9dd8e1" category="inline-link-rx"></block></block>
   <block id="6ff2a7981cc8a7efd758e8ffec4cc69e" category="inline-link">深入瞭ONTAP 解內部叢集增強功能</block>
-  <block id="f0aff813a70ef2591adfbb6a1a06b553" category="list-text"><block ref="f0aff813a70ef2591adfbb6a1a06b553" category="inline-link-rx"></block></block>
   <block id="bf16d7909c891a5a760cab0ad77d53bc" category="list-text">輸入您的使用者名稱和密碼以登入。</block>
   <block id="38ce4e90f119b89b2fdf1f274431e262" category="section-title">2022年6月28日</block>
   <block id="47d69a1f17128c359904338c3502fe31" category="section-title">使用NetApp認證登入</block>
@@ -954,7 +934,6 @@
   <block id="eb4cae07e62b958e999eaa4c0d9b254b" category="list-text">華沙（歐洲中心2）</block>
   <block id="05f08f9410eed79855c8ade92149a276" category="list-text">現在Azure West US 3區域支援Connector。</block>
   <block id="e8249b4253d6a921188373a80621c098" category="list-text">此版本的Connector也包含Cloud Volumes ONTAP 了一些功能強化功能。</block>
-  <block id="6ccb5320771ae7d28e23216dda7e303f" category="paragraph"><block ref="6ccb5320771ae7d28e23216dda7e303f" category="inline-link-rx"></block></block>
   <block id="c04c08fe80b97e132e0d3900955bcba0" category="paragraph"><block ref="c04c08fe80b97e132e0d3900955bcba0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2fe85263c62b0b870277c30652459354" category="cell">保留上個月的狀態</block>
   <block id="5c61dbbb22810fcf5149eb1192885607" category="cell">可將通知以電子郵件傳送給帳戶使用者和其他人</block>
@@ -1141,8 +1120,6 @@
   <block id="b272876bb8d27e636bb70f2dce15cb34" category="list-text">EKS：清單叢集</block>
   <block id="457a1b6178515d282232753f808e8cf5" category="list-text">EKS：取消叢集</block>
   <block id="53ac904630fdbb4d62f208e001934c7c" category="list-text">IAM：GetInstanceProfile</block>
-  <block id="1da5b30af8a0c5d1ce771dde6d9be98e" category="paragraph"><block ref="1da5b30af8a0c5d1ce771dde6d9be98e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="991b7c6e5c5e3b71cf64a28ea679cff0" category="paragraph"><block ref="8b6b603d70c42ac6b5c1db56412efc72" category="inline-link-rx"></block>。</block>
   <block id="6534ae3540891eec0e4feef8e844bf94" category="list-text">建立自訂角色：</block>
   <block id="94e19270110a66c15c7d6d1718fb017f" category="inline-link-macro">Connector的自訂角色權限</block>
   <block id="3e75f6bb25578c951967e7bdcb93a618" category="list-text">複製的內容 <block ref="e41800fb708ad5eec4d221bf716e5746" category="inline-link-macro-rx"></block> 並將它們儲存在Json檔案中。</block>
@@ -1160,7 +1137,6 @@
   <block id="f8a3b3003a624ccf880a2b952a5d299a" category="cell"><block ref="f8a3b3003a624ccf880a2b952a5d299a" category="inline-link-macro-rx"></block></block>
   <block id="0b7fc44a4fc16ca2deedd18213df11d0" category="cell">作業系統Cloud Volumes ONTAP</block>
   <block id="421a1f316880c0380ff3114c3bf34f83" category="inline-link">瞭解如何自行設定IAM角色</block>
-  <block id="ffbe386f72014cdbd78c6829e58132e4" category="cell"><block ref="ffbe386f72014cdbd78c6829e58132e4" category="inline-link-rx"></block></block>
   <block id="bf689424a4d3a62d9c0d40a07107c3d2" category="section-title">Azure權限</block>
   <block id="652a30691608448a6f2f15a1d2bb02f5" category="inline-link-macro">將更多Azure認證資料新增至Connector</block>
   <block id="bcfaa2da0752134728f286af2b223842" category="paragraph">您也必須確保在後續版本中新增權限時、原則保持在最新狀態。</block>
@@ -1177,7 +1153,6 @@
   <block id="1411debdb32e6b128ca27ec92a708cbd" category="open-title">GovCloud（美國）地區</block>
   <block id="a8416eae2db8c97eb943559351fab358" category="open-title">C2S環境</block>
   <block id="3d35bba2e5ea6e739fb94736dc402017" category="inline-link">檢視FSXfor ONTAP Sfor Sf哪些 權限</block>
-  <block id="df00618b6e4c6f7fcb9a7fbb4c65b54e" category="list-text"><block ref="df00618b6e4c6f7fcb9a7fbb4c65b54e" category="inline-link-rx"></block></block>
   <block id="d2ec6bce44b6da11cd78a79db47dd385" category="inline-link-macro">檢視Connector部署原則</block>
   <block id="4964e9eef6df2fe316a2618afd8cd963" category="list-text">為具有所需權限的IAM使用者提供AWS存取金鑰和秘密金鑰</block>
   <block id="1e71ce7defc90d8f5a2c46c08ba968df" category="list-text">前往AWS IAM主控台。</block>
@@ -1229,20 +1204,15 @@
   <block id="4c2e66937d2d8ba8680502b29c20f843" category="paragraph">我們在文件中直接新增Cloud Manager原則、以更新文件內容。這表示您現在可以在Cloud Volumes ONTAP 說明如何設定的步驟旁、檢視連接器和右側的必要權限。這些原則先前可從NetApp支援網站的頁面存取。</block>
   <block id="28f37fc0eb4fe20ff92020d4d8d46b8d" category="inline-link-macro">以下範例顯示用來建立連接器的AWS IAM角色權限</block>
   <block id="49056d93dd3cd3fc9129ebadcf6877e0" category="inline-link-macro">檢視Cloud Manager的權限摘要</block>
-  <block id="75c4b088a92b16dc79074e212617e6c6" category="paragraph"><block ref="75c4b088a92b16dc79074e212617e6c6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="54f877a36cc65a39f4c972facb5d5a3d" category="cell">-監控.timeSeries.list -儲存區.buckes.getIamPolicy</block>
   <block id="884e026d3505b2b3847b25f6cecb4de7" category="cell">探索Google Cloud Storage儲存桶的相關資訊。</block>
-  <block id="2c6996f5a98ca1cbcfa64873c18f13e9" category="paragraph"><block ref="077586b4338f7fc9c66e0ae0e2365a30" category="inline-link-rx"></block>。</block>
-  <block id="2533820d9e3e679d169b5decdbf29c60" category="paragraph">我們也建立了一個頁面、提供每個原則的連結。<block ref="3bc30da5781f88e99acbb8ce33011928" category="inline-link-rx"></block>。</block>
   <block id="155ccfd3578c4b827fbaaa1208c5c86a" category="paragraph">在畫版上、「*我的商機*」索引標籤提供集中位置、可讓您探索現有資源、並將這些資源新增至Cloud Manager、以便在混合式多雲端上提供一致的資料服務與作業。</block>
   <block id="0023c752677bd572df55463d76cf9b90" category="inline-link">瞭解如何利用ONTAP My Opportunity探索FSXfor Sfor</block>
-  <block id="b8aac0d7b730cae52d7fa6174da69a85" category="paragraph"><block ref="b8aac0d7b730cae52d7fa6174da69a85" category="inline-link-rx"></block></block>
   <block id="9998984c95caccce61e49ca25de1c99f" category="paragraph">請注意、註冊表單中只允許英文字元。</block>
   <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">2022年7月31日</block>
   <block id="01f2c0e19d8bbd614814f0651e7feec1" category="section-title">連接器3.9.21</block>
   <block id="1beb197487d0f07564b924071751aa36" category="list-text">我們推出新方法、探索您尚未在Cloud Manager中管理的現有雲端資源。</block>
   <block id="586c381704849af8eb925f1bb3c1cc89" category="paragraph">在此初始版本中、「我的商機」可讓您在ONTAP AWS帳戶中探索現有的FSX for Solidffile系統。</block>
-  <block id="56148e3a5b597bf775527bf28e119033" category="paragraph"><block ref="56148e3a5b597bf775527bf28e119033" category="inline-link-rx"></block></block>
   <block id="efabd80ebdd217a47d9be936e5f0b8aa" category="list-text">預設的系統磁碟為100 GiB gp2磁碟。</block>
   <block id="98de57befcb39b412a8dac16a11d762e" category="list-text">符合上述 CPU 和 RAM 需求的執行個體類型。建議使用n2-Standard-4。</block>
   <block id="0964bfe0dd83b0d60f5d55fd4502a11b" category="list-text">VM執行個體為n2-Standard-4。</block>
@@ -1291,8 +1261,6 @@
   <block id="567aae3125fb3d0d81322caa575a9843" category="section-title">連接器3.9.22</block>
   <block id="e9da1b86eba52d6822a9d7c294a3641c" category="list-text">我們新增_產品內建指南_來強化連接器部署精靈、提供符合Connector安裝最低需求的步驟：權限、驗證和網路。</block>
   <block id="871cd14deee4188642f0f5e041d9e0bd" category="list-text">您現在可以直接從*支援儀表板*的Cloud Manager建立NetApp支援案例。</block>
-  <block id="b657064056ea8bf270b50939fb0c9bfe" category="paragraph"><block ref="b657064056ea8bf270b50939fb0c9bfe" category="inline-link-rx"></block></block>
-  <block id="9329698e280db3b309a02e9cb9e73a75" category="paragraph"><block ref="9329698e280db3b309a02e9cb9e73a75" category="inline-link-rx"></block></block>
   <block id="60f0453bf0393ab630be6aa37dc20180" category="doc">AWS中的安全群組規則</block>
   <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">除了上述的自我支援選項、您也可以在啟動支援之後、與NetApp支援專家合作解決任何問題。</block>
   <block id="e2a733504c4088b809813bbb35a3ddfd" category="inline-link-macro">瞭解如何註冊以取得支援</block>
@@ -1304,7 +1272,6 @@
   <block id="0f7d9319c95a8be1492e74601c4b3259" category="list-text">*問題說明*：提供問題的詳細說明、包括任何適用的錯誤訊息或您執行的疑難排解步驟。</block>
   <block id="002c6f26fb01affb37b8cf3cef7a1fb0" category="list-text">*其他電子郵件地址*：如果您想讓其他人知道此問題、請輸入其他電子郵件地址。</block>
   <block id="baaf0e61add7d12cf8d12e023d5aef18" category="inline-image-macro">「建立案例」表單的快照、可讓您使用NetApp支援建立案例。</block>
-  <block id="a2ff30886e1baf1e7d5045b5fc24f5b9" category="paragraph"><block ref="a2ff30886e1baf1e7d5045b5fc24f5b9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="18f487556417bb6d9721a7005ae097c9" category="paragraph">您的支援案例編號會出現快顯視窗。NetApp支援專家將會審查您的案例、並盡快回覆您。</block>
   <block id="04e15da1deae9568b4dcda64fbb0c8d5" category="paragraph">如需支援案例的記錄、請按一下*設定&gt;時間軸*、然後尋找名為「create support case」的行動。 最右側的按鈕可讓您展開動作以查看詳細資料。</block>
   <block id="5c56753585e89a84941bb3a78bc681af" category="paragraph">嘗試建立案例時、可能會遇到下列錯誤訊息：</block>
@@ -1315,10 +1282,8 @@
   <block id="3824876226172edfe0f17e8022b60fda" category="section-title">啟用 Google Cloud API</block>
   <block id="abfd76b9567ca082322504a092e076c7" category="list-text">*詳細資料*：輸入虛擬機器執行個體的名稱、指定標籤、選取專案、然後選取具有必要權限的服務帳戶（詳細資料請參閱上節）。</block>
   <block id="0e4b0391e50169d97fc505f0c73a94ba" category="paragraph">連接器應部署在Cloud Volumes ONTAP 其所管理的或所管理的各個系統所在的Azure區域<block ref="71e0e9a7366955554f0600c5ea8cfc7f" category="inline-link-rx"></block> 適用於整個系統。Cloud Volumes ONTAP這項需求可確保Cloud Volumes ONTAP Azure Private Link連線可用於連接至相關的儲存帳戶。</block>
-  <block id="07a7f9f6c28c927482b86d1b2710f6a3" category="paragraph"><block ref="07a7f9f6c28c927482b86d1b2710f6a3" category="inline-link-rx"></block></block>
   <block id="1086659fbba9a8aed49e109adc659d56" category="list-text">在*部署連接器*頁面上：</block>
   <block id="59c4ba689ab2a5e1f09df561f47e0d6c" category="inline-link">瞭解如何建立案例</block>
-  <block id="55fc63d7111caa2a4badd753983607c4" category="paragraph"><block ref="45512476d85432fc18c9be020e976fed" category="inline-link-rx"></block>。</block>
   <block id="d062afbb0dab008c992fc7630e6e5b1d" category="list-text">*名稱和標記*：輸入執行個體的名稱和標記。</block>
   <block id="2ddbec48a3825e36a3669e60058351a9" category="list-text">*執行個體類型*：視區域可用度而定、請選擇其中一種支援的執行個體類型（建議使用T3.xlge）。</block>
   <block id="a2edeeec0c237aa79e3b1f0eb87b07e4" category="list-text">*金鑰配對（登入）*：選取您要用來安全連線至執行個體的金鑰配對。</block>
@@ -1349,7 +1314,6 @@
   <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">現有的客戶、擁有一個新服務客戶帳戶</block>
   <block id="819aff12752b7e6a1828e755c7664de7" category="list-text">在*資源*頁面上、按一下*註冊以取得支援*。</block>
   <block id="e8a3d9970b8fc1d92caaf33d9e116bd4" category="inline-image-macro">顯示帳戶序號和「Register for Support」（註冊支援）選項的快照</block>
-  <block id="113f9cd7bac6f4faa6b8d58e3e099a8e" category="paragraph"><block ref="113f9cd7bac6f4faa6b8d58e3e099a8e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1ff5aefce774ec72a211f2b3bb10b950" category="section-title">現有客戶、但無NSS.帳戶</block>
   <block id="cc1d3c161bcf25e6445c2fc771647849" category="paragraph">如果您是現有的NetApp客戶、擁有現有授權和序號、但_否_ nss_帳戶、您只需要建立一個nss.帳戶。</block>
   <block id="5b2b7f628f804bcb786a097c7e45aa41" category="inline-link">《使用者登錄表》NetApp 支援網站</block>
@@ -1357,7 +1321,6 @@
   <block id="d61c9f72493817776f392db42ac446a2" category="list-text">請務必選擇適當的使用者層級、通常為* NetApp客戶/終端使用者*。</block>
   <block id="e9b1f53d6cabb3394833a4e102eb6a69" category="section-title">NetApp全新推出</block>
   <block id="c20c107d0d4eef6351660f3590324232" category="paragraph">如果您是NetApp的新客戶、而且您沒有新的NSS帳戶、請依照下列每個步驟操作。</block>
-  <block id="ef5e63bb6b6827440a13cc2ec7e9cf56" category="paragraph"><block ref="ef5e63bb6b6827440a13cc2ec7e9cf56" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dd50e314c18933734174c1156dd9237f" category="inline-link">NetApp的支援註冊網站</block>
   <block id="78f94e749b89d69dcbf3baff21ccb958" category="list-text">瀏覽至<block ref="e1c4be66250fd76d5c52bfe2cb7daee2" category="inline-link-rx"></block> 並選擇*我不是NetApp註冊客戶*。</block>
   <block id="d4f633ef130727b2776fa7f45024ca7d" category="list-text">填寫必填欄位（紅色星號）。</block>
@@ -1449,7 +1412,6 @@
   <block id="c568c61bf8e9e5a305fc06655cdac862" category="paragraph">我們通常每個月更新Connector軟體、以引進新功能並改善穩定性。雖然BlueXP平台的大部分服務與功能都是透過SaaS型軟體提供、但其中幾項功能與連接器的版本有何不同。其中包括Cloud Volumes ONTAP 支援內部的支援、ONTAP 內部的支援、叢集管理、設定及說明。</block>
   <block id="4102d173f8e2253a011fe9286a6db2a3" category="paragraph">Connector可以在BlueXP中管理多個工作環境。單一Connector應管理的工作環境數量上限各不相同。這取決於工作環境的類型、磁碟區數量、所管理的容量、以及使用者數量。</block>
   <block id="11eeac25dab3c53540d3f299755ecf62" category="inline-link">新增現有Cloud Volumes ONTAP 的元件系統至藍圖XP</block>
-  <block id="c80bec846d41a65d3d86eae721cef56b" category="list-text"><block ref="c80bec846d41a65d3d86eae721cef56b" category="inline-link-rx"></block></block>
   <block id="ff0cce8c3f3c48a3ff695c2c92a5b053" category="paragraph">建立第一個Connector時、BlueXP會自動將該Connector用於您所建立的每個額外工作環境。建立額外的 Connector 之後、您必須在兩者之間切換、以查看每個 Connector 專屬的工作環境。</block>
   <block id="dd62e3749858cdd06ba5e069b42df256" category="summary">新增及管理AWS認證資料、讓BlueXP擁有在AWS帳戶中部署及管理雲端資源所需的權限。如果您管理多個 AWS 訂閱、您可以從「認證」頁面將每個訂閱指派給不同的 AWS 認證資料。</block>
   <block id="ad600f8720689154e64338aee6489d7f" category="doc">管理適用於BlueXP的AWS認證與訂閱</block>
@@ -1458,7 +1420,6 @@
   <block id="7c45fb9face239cc4b78e899305dee96" category="inline-xref">瞭解如何將AWS認證資料新增至藍圖XP</block>
   <block id="3ec77266ee6a41b1747d294029bbd73e" category="paragraph">將新的AWS認證資料新增至藍圖XP、即可賦予藍圖XP建立Connector所需的權限。 <block ref="45675543b86ad867a67fe4ac8024c9ea" category="inline-xref-macro-rx"></block>。</block>
   <block id="8ffdbf0875a4576da2a2c172b8174b71" category="list-text">將AWS認證資料新增至適用於FSX ONTAP for Sf更新 的BlueXP</block>
-  <block id="ea651a5902c77b7a88069fe56d706a4f" category="paragraph">新增AWS認證資料至藍圖XP、可讓藍圖XP擁有建立及管理FSXfor ONTAP Sfor的必要權限。<block ref="47d6cf2cfadcdba49cba9314ed556d4e" category="inline-link-rx"></block></block>
   <block id="9c92b299186eaf0673a98ba9b40f21d8" category="paragraph">BlueXP可讓您以幾種方式提供AWS認證資料：與Connector執行個體相關的IAM角色、在信任的帳戶中擔任IAM角色、或提供AWS存取金鑰。 <block ref="327ad200be450c94b449dea92a32b142" category="inline-link-macro-rx"></block>。</block>
   <block id="dac708f9ff7b3626ce8ac5a2ec42c9cf" category="paragraph">在前兩個選項中、BlueXP會使用AWS安全性權杖服務來取得持續循環的暫用認證資料。此程序是最佳實務做法、因為它是自動且安全的。</block>
   <block id="f265ab1711375ae7a7a4e8594c5e1395" category="paragraph">如果您為BlueXP提供AWS存取金鑰、您應該定期在BlueXP中更新金鑰、以旋轉金鑰。這是完全手動的程序。</block>
@@ -1621,7 +1582,6 @@
   <block id="a93a66fe6d6d648adde8457a60af5942" category="inline-image-macro">在AWS Marketplace中搜尋之後顯示BlueXP產品的快照</block>
   <block id="8782d52b41ea9b735c120df8ccab4f47" category="paragraph"><block ref="8782d52b41ea9b735c120df8ccab4f47" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c642de9f40ee79267e2e62e3ebed032e" category="section-title">2022年11月1日</block>
-  <block id="929fa09ef9d24654b353f312638ca6e6" category="paragraph">Cloud Manager現在會在NetApp 支援網站 與您帳戶相關的更新權杖在3個月後過期時、提示您更新與您的候用帳戶相關的認證資料。<block ref="abba285888ca54da9f89054b7e57f270" category="inline-link-rx"></block></block>
   <block id="c95623cd0395d5a6bb6105b9d32f197b" category="inline-link-macro">藍圖XP注意事項</block>
   <block id="98a041bbcf45b807a22068084127e26d" category="list-text"><block ref="98a041bbcf45b807a22068084127e26d" category="inline-link-macro-rx"></block></block>
   <block id="f681629287f9315842951d38d04b1eda" category="list-text">按一下*「設定新的藍圖XP」*、然後依照提示設定系統。</block>
@@ -1777,7 +1737,6 @@
   <block id="42f3fa961e42affb80862a782c9341af" category="list-text">Microsoft.ContainerService/管理叢集/讀取</block>
   <block id="317850f59220c738a6550c8cc0fbd9c5" category="list-text">Microsoft.ContainerService/managedClusters/listClusterUserCredentials/action</block>
   <block id="7df73b4d45ae40b78f71890397153a90" category="inline-link">瞭解如何建立服務帳戶權杖</block>
-  <block id="60b28f10e8222a1f3de55253077c373d" category="paragraph"><block ref="60b28f10e8222a1f3de55253077c373d" category="inline-link-rx"></block></block>
   <block id="c188f3200de41a855c54a31c5e486db6" category="paragraph">如果Cloud Volumes ONTAP 您使用不同的AWS帳戶來進行還原備份、而非用於來源磁碟區、Connector會發出下列API要求：</block>
   <block id="4b9c42bf1853fa25d534302dbc43f035" category="list-text">S3：PuttBucketPolicy</block>
   <block id="fa4d7248969f7582be82c5aa4b15e08b" category="list-text">S3：PuttBucketOwnershipControl</block>
@@ -1785,8 +1744,6 @@
   <block id="5a4346a01828d72104a6540080377b25" category="section-title">2022年11月6日</block>
   <block id="f658ebadeb22d41618c5222998030cb9" category="section-title">連接器3.9.23</block>
   <block id="949b19dd7e9f6496c1125f7166270450" category="inline-link">瞭解如何管理您的訂閱</block>
-  <block id="9fcd0a1eb1b488b623812d42567ce2d8" category="paragraph"><block ref="9fcd0a1eb1b488b623812d42567ce2d8" category="inline-link-rx"></block></block>
-  <block id="efa03f1c1a0f03001f1680681d9ac8a7" category="paragraph"><block ref="efa03f1c1a0f03001f1680681d9ac8a7" category="inline-link-rx"></block></block>
   <block id="cc337b5a93c54f8a59d4731866297bf2" category="list-text"><block ref="cc337b5a93c54f8a59d4731866297bf2" category="inline-link-rx"></block></block>
   <block id="2e5620a6569fc852b94b7e03a147a125" category="paragraph">將AWS認證資料新增至現有的Connector、可提供必要的權限、以管理公有雲環境中的資源和程序。 <block ref="568ce14d3cdae759e790bc127b222228" category="inline-xref-macro-rx"></block>。</block>
   <block id="c482e377fe0af4cde6c8150a691978b5" category="paragraph">將AWS認證資料新增至Connector之前、您必須先提供必要的權限。這些權限可讓BlueXP管理該AWS帳戶內的資源和程序。您提供權限的方式取決於您是否要為BlueXP提供信任帳戶或AWS金鑰中角色的ARN。</block>
@@ -1823,8 +1780,6 @@
   <block id="9a37fbeb5352e14f2a53fe349c60ad58" category="section-title">連接器3.9.24</block>
   <block id="609db1dbd04bb2ee742cb4078546018c" category="list-text">我們已將BlueXP主控台的URL更新為<block ref="d4d03fd3c2a1ab003ebd5cf52ee8df58" category="inline-link-rx"></block></block>
   <block id="4a11791a9bd4070a9cb5e2e709d06351" category="list-text">Google Cloud Israel地區現在支援Connector。</block>
-  <block id="242cf97b6ce4408dde25722d6b0e37f9" category="list-text"><block ref="242cf97b6ce4408dde25722d6b0e37f9" category="inline-link-rx"></block></block>
-  <block id="4703fae8488338a7ad69a5cd4347caf3" category="list-text"><block ref="4703fae8488338a7ad69a5cd4347caf3" category="inline-link-rx"></block></block>
   <block id="37ba276f010f4ea07f1196b487811443" category="paragraph">\https://*.api.bluexp.netapp.com</block>
   <block id="e1095ff19466581c5274f67123c95036" category="paragraph">\https://api.bluexp.netapp.com</block>
   <block id="9e434ddc2ad4b9de005368b77254223d" category="paragraph">\https://*.cloudmanager.cloud.netapp.com</block>
@@ -1869,8 +1824,6 @@
   <block id="df290139b26527b2473b1e82a36386d4" category="paragraph">設定您的網路、讓 Connector 能夠管理公有雲環境中的資源和程序。除了連接器的虛擬網路和子網路之外、您還需要確保符合下列需求。</block>
   <block id="2f03f8dd45cb031f8f3cce95fd4acefc" category="paragraph">連接器需要網路連線至您所建立的工作環境類型、以及您計畫啟用的服務。</block>
   <block id="3f92e0c134aea90b900c9d9fb8728adc" category="paragraph">例如、如果您在公司網路中安裝Connector、則必須設定VPN連線至虛擬網路、以便在其中啟動Cloud Volumes ONTAP 效益管理功能。</block>
-  <block id="4f85ea1fc2337ca87ea3957b6ed0f523" category="paragraph">連接器沒有傳入流量、除非您啟動連接器、或連接器是AutoSupport 作為Proxy來接收資訊、否則連接器不會傳入。HTTP 和 HTTPS 可存取<block ref="b66a5441ef03e9f48be36352f5f78769" category="inline-link-rx"></block>、在極少數情況下使用。只有當您需要連線至主機進行疑難排解時、才需要 SSH 。</block>
-  <block id="9b1f033bcac0595326d8acd1ef89e52c" category="paragraph">可能與172範圍內的IP位址發生衝突。<block ref="120cc620882c590412757bc531a4f583" category="inline-link-rx"></block>。</block>
   <block id="17a28f89a71d8bcba39452a2fd7343db" category="list-text">設定及使用雲端檔案儲存服務：</block>
   <block id="d03fba385c4e1320cb0846a9690ea3db" category="list-text"><block ref="d03fba385c4e1320cb0846a9690ea3db" category="inline-link-rx"></block></block>
   <block id="a24bba36cb4a314e2d49f3de7731e9af" category="list-text"><block ref="a24bba36cb4a314e2d49f3de7731e9af" category="inline-link-rx"></block></block>
@@ -1885,7 +1838,6 @@
   <block id="1f7138998459804601fc351f8d442e29" category="section-title">2023年1月1日</block>
   <block id="e139aa454163ce195b3669d769c3f1c8" category="section-title">連接器3.9.25</block>
   <block id="ab010f0ae1d3cb2043f9513a1f81beea" category="paragraph">此版本的Connector包含Cloud Volumes ONTAP 了一些強化功能和錯誤修正。</block>
-  <block id="826d1d89ec2a521e40a7a91c2ee8f024" category="paragraph"><block ref="826d1d89ec2a521e40a7a91c2ee8f024" category="inline-link-rx"></block></block>
   <block id="9efb399c3a128a79f4671ff959339e79" category="list-text">Microsoft.Storage/storageAccounts/listAccountSas /行動</block>
   <block id="a5b807c71b066c1d33685818cfa2806e" category="list-text">Microsoft.Synapse /工作區/私有端點連線核准/行動</block>
   <block id="176944a9db0702558233e827d21e2f80" category="section-title">2023年1月5日</block>
@@ -1895,7 +1847,6 @@
   <block id="184e70c253a2ad370c338775e7482497" category="list-text">直接探索內部部署ONTAP 的叢集</block>
   <block id="ef67c5eab6f3bfee1596c3f8734a88c7" category="paragraph">雖然不需要連接器即可直接探索內部部署ONTAP 的叢集、但如果您想要使用更多的BlueXP功能、則需要連接器。</block>
   <block id="eec3baeb5aa60415324495790bc2f136" category="inline-link">深入瞭解內部ONTAP 部署的叢集探索與管理選項</block>
-  <block id="7a5dd38f95e02bff17a0b6c794d9ce2b" category="paragraph"><block ref="7a5dd38f95e02bff17a0b6c794d9ce2b" category="inline-link-rx"></block></block>
   <block id="8e791012319a6cc33e02b9f65f0eb71d" category="paragraph">視組態而定、您可能也需要完成下列步驟：</block>
   <block id="f78e7e80b2f4d00362b5fcc2740c2408" category="list-text">設定跨專案的權限</block>
   <block id="f25346a7c8bf8795443396442b179238" category="list-text">設定共用VPC的權限</block>
@@ -1913,9 +1864,6 @@
   <block id="232055d452a21264f8d549e50d695b18" category="cell">管理Azure中國地區的資源。</block>
   <block id="0375f4855be072c7d856a0233cc21de9" category="section-title">支援雲端供應商解決方案</block>
   <block id="be845c219bb74b14349ffa6e27e7aef3" category="paragraph">如需您已整合至BlueXP的下列雲端供應商解決方案的技術支援、請參閱該產品的藍圖XP文件中的「取得協助」。</block>
-  <block id="5bf5309465f91318228a7f956b826348" category="list-text"><block ref="5bf5309465f91318228a7f956b826348" category="inline-link-macro-rx"></block></block>
-  <block id="0e2bc9c853e0af52ead12823c025e58b" category="list-text"><block ref="0e2bc9c853e0af52ead12823c025e58b" category="inline-link-macro-rx"></block></block>
-  <block id="02efcbea18b9485a78a41871dce1e64d" category="list-text"><block ref="02efcbea18b9485a78a41871dce1e64d" category="inline-link-macro-rx"></block></block>
   <block id="d377a02fb22cec7bf850087d3c9a31fa" category="cell">管理Google Cloud中的資源。</block>
   <block id="4ce604ab4b6f3184f26713f30bde1bbe" category="cell">- cloudkms.cryptoKeys.Get - cloudkms.cryptoKeys.getIamPolicy - cloudkms.cryptoKeys.list - cloudkms.cryptoKeys.setIamPolicy - cloudkms.keyclings - cloudkms.getIamPolicy - cloudkms.keyclings - cloudkms.keyRings.setIamPolicy</block>
   <block id="8988a38ba3aaf6cb48e549dc3babd50e" category="section-title">2023年1月27日</block>
@@ -1978,26 +1926,17 @@
   <block id="1dca7678a1041ed05b6071c24454dfde" category="list-text">您的聯盟身分認證資料</block>
   <block id="9ec04e5ecf7230969f472cb3ba28f9d5" category="list-text">您的需求NetApp 支援網站</block>
   <block id="95161959ea62121420b9e6e6553c5afa" category="inline-image-macro">BlueXP登入頁面的快照、會提示您輸入電子郵件地址。</block>
-  <block id="7fef862357cf2face17cb8062b1f051f" category="paragraph"><block ref="7fef862357cf2face17cb8062b1f051f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9cb7486a7e7f24abb51cfcc8bb6085db" category="list-text">如果您是BlueXP新手、而且您擁有NetApp 支援網站 現有的支援（NSS）認證、則可以跳過註冊頁面、直接在登入頁面中輸入您的電子郵件地址。在此初次登入時、BlueXP會為您註冊。</block>
   <block id="845c6364e1c82b67190dc691538533e1" category="list-text">當您從雲端供應商的市場訂閱BlueXP時、您現在可以選擇以新的訂閱取代現有的單一帳戶訂閱。</block>
   <block id="79ee9d46f0018b3cb493ecfda60ffa4b" category="inline-image-macro">顯示藍圖XP帳戶訂閱指派的快照。</block>
-  <block id="cd56a207e786d73d9abfd43dd2202acd" category="paragraph"><block ref="cd56a207e786d73d9abfd43dd2202acd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f1b38e057f0b3e3f883f386f412fd0a9" category="inline-link">瞭解如何建立AWS訂閱的關聯</block>
-  <block id="73f01c2e56cdb9b30f4fe33ce5bbdc20" category="list-text"><block ref="73f01c2e56cdb9b30f4fe33ce5bbdc20" category="inline-link-rx"></block></block>
   <block id="72bfd3f607087d94f12332f83b700ab8" category="inline-link">瞭解如何建立Azure訂閱的關聯</block>
-  <block id="58b7b647775bc09b6b8a9f45df71775b" category="list-text"><block ref="58b7b647775bc09b6b8a9f45df71775b" category="inline-link-rx"></block></block>
   <block id="1c74f0a5753f74c783e970c346408b4a" category="inline-link">瞭解如何建立Google Cloud訂閱的關聯</block>
-  <block id="896471f03a9a1e209bebabb5923d2b3e" category="list-text"><block ref="896471f03a9a1e209bebabb5923d2b3e" category="inline-link-rx"></block></block>
   <block id="f906d086ca70101dd1f218ea0786aee8" category="list-text">如果您的Connector已關機14天或更久、BlueXP現在會通知您。</block>
-  <block id="68f34edaf3c796f179fbe80b3df89f0c" category="list-text"><block ref="68f34edaf3c796f179fbe80b3df89f0c" category="inline-link-rx"></block></block>
   <block id="752697882fd7ee73f8d5f60a6f8c02f5" category="inline-link">瞭解為何連接器應該繼續執行</block>
-  <block id="23f4e22cbf061f84ba77fd79e423d90f" category="list-text"><block ref="23f4e22cbf061f84ba77fd79e423d90f" category="inline-link-rx"></block></block>
   <block id="1c8a63199471322e5b0fe67deb835f4b" category="list-text">我們更新了Connector for Google Cloud政策、加入在Cloud Volumes ONTAP 以各種方式建立及管理儲存VM的權限：</block>
   <block id="67d29883f03468dc44eefc494f37473e" category="inline-link">檢視Connector的Google Cloud權限</block>
-  <block id="cad0970fb2c4e3d28b046315bb4b7f02" category="paragraph"><block ref="ac22e421263f6f828d096313fa20e6a8" category="inline-link-rx"></block>。</block>
   <block id="fdfef50a14b07533a8bab908a66de10c" category="list-text">此版本的Connector包含Cloud Volumes ONTAP 一些功能強化功能。</block>
-  <block id="e5fa209a01e6f968295b098866e0fcf5" category="paragraph"><block ref="e5fa209a01e6f968295b098866e0fcf5" category="inline-link-rx"></block></block>
   <block id="61130fb01406e968937613de0add552f" category="inline-image-macro">具有三個垂直點的圖示</block>
   <block id="0da34741c0fedd26eb889170d87be2c7" category="list-text">若要將認證資料與新訂閱建立關聯、請按一下*新增訂閱&gt;繼續*、然後依照AWS Marketplace中的步驟進行：</block>
   <block id="c75b8cac68776a239e8da30928fbc723" category="list-text">按一下*設定您的帳戶*。</block>
@@ -2046,8 +1985,6 @@
   <block id="d926847e4634e19a1aa7358becc0fa27" category="paragraph">「此帳戶不允許使用新增服務客戶類型、因為已經有不同類型的新增服務使用者。」</block>
   <block id="a04a3a5322782e8c18d0d64be7e1ccbc" category="paragraph">如果您擁有預先存在的客戶層級的NSS帳戶、並嘗試新增合作夥伴層級的帳戶、情況也是如此。</block>
   <block id="1afe8a81cfddc9fa9559e272bb6b9496" category="list-text">成功登入後、NetApp會儲存NSS.使用者名稱。</block>
-  <block id="452cd4df7b0d5eb1156519a2f3b0206b" category="paragraph">這是系統產生的ID、會對應至您的電子郵件。在「* nssn*管理*」頁面上、您可以從顯示電子郵件 <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> 功能表。</block>
-  <block id="fd02e84624a2fdfd58787131aa2820b5" category="list-text">如果您需要重新整理登入認證憑證權杖、也可以在中使用*更新認證*選項 <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> 功能表。</block>
   <block id="b14d512a3c64fb5df16f6721b0603c63" category="paragraph">使用此選項會提示您重新登入。請注意、這些帳戶的權杖會在90天後過期。系統會張貼通知、提醒您注意此點。</block>
   <block id="898e35e1a4bf4b025c3edec879439b08" category="section-title">管理支援案例（預覽）</block>
   <block id="8b74b053fbeeff5c3b6f4991cb1d028d" category="paragraph">您可以直接從BlueXP檢視及管理作用中和已解決的支援案例。您可以管理與您的NSS帳戶和貴公司相關的個案。</block>
@@ -2065,36 +2002,23 @@
   <block id="27635a52fe4c34c39ffc6430f4244ec6" category="list-text">在*組織案例*下、按一下*檢視*以檢視與貴公司相關的所有案例。</block>
   <block id="059e856250b59be3069246887b74a23c" category="list-text">選擇確切的日期範圍或選擇不同的時間範圍、以修改日期範圍。</block>
   <block id="dfb3764bce2548df4e06357403f9c7d0" category="inline-image-macro">案例管理頁面上方表格上方選項的快照、可讓您選擇確切的日期範圍或過去7天、30天或3個月。</block>
-  <block id="7fcba8aeefa9960d3fc3fa08b360ba2e" category="paragraph"><block ref="7fcba8aeefa9960d3fc3fa08b360ba2e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a1bb576be9e5a356290f231efb51b3f5" category="list-text">篩選欄的內容。</block>
   <block id="3753f10a59e21f58b30e3e67d416453e" category="inline-image-macro">「狀態」欄中篩選選項的快照、可讓您篩選出符合特定狀態（例如「作用中」或「已關閉」）的個案。</block>
-  <block id="37709be3a43df07d5975287545d0ba12" category="paragraph"><block ref="37709be3a43df07d5975287545d0ba12" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1c6ea5ef583389e18e7d7bda70beaa71" category="inline-image-macro">出現在表格中的加號圖示</block>
-  <block id="1614dc8e47c0492434152c990d6c1040" category="list-text">按一下以變更表格中顯示的欄 <block ref="effeab06130cddc8360822b2b706805b" category="inline-image-macro-rx" type="image"></block> 然後選擇您要顯示的欄。</block>
   <block id="370b44009f1b82d0b6b178bb80cc62fa" category="inline-image-macro">顯示可在表格中顯示之欄的快照。</block>
-  <block id="5de408d7cbad49634fb25f9047498132" category="paragraph"><block ref="5de408d7cbad49634fb25f9047498132" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ad0ae9ea1f2e8d973a9a0f6bb169f494" category="inline-image-macro">表格最後一欄中出現三個點的圖示</block>
-  <block id="98efef1c8a47ed5791b41944e8ff4ec2" category="list-text">按一下即可管理現有案例 <block ref="a0b152b50a56901a75affebabc26ed61" category="inline-image-macro-rx" type="image"></block> 並選擇其中一個可用選項：</block>
   <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">*檢視案例*：檢視特定案例的完整詳細資料。</block>
   <block id="f791bc685c526af8296381acff10f6a0" category="list-text">*結案案例*：提供結案原因的詳細資料、然後按一下*結案案例*。</block>
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">螢幕擷取畫面、顯示您在表格最後一欄選取功能表後可以採取的動作。</block>
-  <block id="e9a5c374fb47ed2ae5cc6108fb36d829" category="paragraph"><block ref="e9a5c374fb47ed2ae5cc6108fb36d829" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d0693e7bf28b7bbc94287cee0e4b0768" category="section-title">2023年3月5日</block>
   <block id="ba5bb99eb6a04798c8ccd3f156db75a5" category="section-title">連接器3.9.27</block>
   <block id="ce47c670900f3fe8347a2fc95ff710d8" category="list-text">現在可在BlueXP主控台中搜尋。此時、您可以使用搜尋來尋找BlueXP服務和功能。</block>
   <block id="73984711a5ba4c8d6f613d3ef2426680" category="inline-image-macro">主控台頂端提供的BlueXP搜尋快照。</block>
-  <block id="4be68bdee3a27bc0218c6188d192fc95" category="paragraph"><block ref="4be68bdee3a27bc0218c6188d192fc95" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a48a6aaa99b4cf4a4e641c293de897fa" category="inline-link">瞭解如何管理您的支援案例</block>
-  <block id="796ced97a72330e5ce3c0935b7b09f45" category="paragraph"><block ref="622b6e7f4143df2aca06b538ee1d864e" category="inline-link-rx"></block>。</block>
   <block id="376a158ceb7d344fa563cce2aa16018f" category="inline-link">將Connector安裝在沒有網際網路存取的位置</block>
-  <block id="6bfdfb1d6b845d41edac4f1eb0065216" category="list-text"><block ref="6bfdfb1d6b845d41edac4f1eb0065216" category="inline-link-rx"></block></block>
   <block id="cbea6f8d2cd687c094438e0a7a38fedf" category="inline-link">存取Connector上的BlueXP主控台</block>
-  <block id="b620510a7b9198825896459898b7bc08" category="list-text"><block ref="b620510a7b9198825896459898b7bc08" category="inline-link-rx"></block></block>
   <block id="c09d91817b6017a3572898b867b22e36" category="inline-link">新增未指派的授權</block>
-  <block id="587a8286d2e3b61d9f250d807b34983c" category="list-text"><block ref="587a8286d2e3b61d9f250d807b34983c" category="inline-link-rx"></block></block>
   <block id="a8ed015209d62d3ffd9042f8a01b9725" category="inline-link">立即開始Cloud Volumes ONTAP 使用</block>
-  <block id="d66686137674e9cdef6070dbe4ce01c6" category="list-text"><block ref="d66686137674e9cdef6070dbe4ce01c6" category="inline-link-rx"></block></block>
-  <block id="37e16775c1bede9551f227ccaca87974" category="paragraph"><block ref="37e16775c1bede9551f227ccaca87974" category="inline-link-rx"></block></block>
   <block id="aec651d37f6f533a4066a1ac8774d6b0" category="inline-link">如需詳細資料、請參閱AWS文件</block>
   <block id="c908f2a3ba166fdf32de7eba53bd7156" category="cell">管理AWS中的資源。確切的端點取決於部署Connector的區域。<block ref="04572646466baf6f86d09965eb5c3c86" category="inline-link-rx"></block></block>
   <block id="7dfb843f052469a3cc66d13554feb0f4" category="cell">\https://management.azure.com \https://login.microsoftonline.com \https://blob.core.windows.net \https://core.windows.net</block>
@@ -2241,15 +2165,11 @@
   <block id="a62f3b1b0c4abf78f5d81609e7bdd908" category="section-title">連接器3.9.28</block>
   <block id="380d0a0b2cec998dcd9f52b91b24304c" category="paragraph">如果您設定通知設定、您可以在BYOL授權即將過期（「警告」通知）或已過期（「錯誤」通知）時收到電子郵件通知。</block>
   <block id="335e7f21f0fdfecbe9c04540dcb8cdd6" category="inline-link">瞭解如何設定電子郵件通知</block>
-  <block id="e16804d7658f4d3132a1170b8cec7c7e" category="paragraph"><block ref="9ce9eb475c326d02a5c224ef8589bc0a" category="inline-link-rx"></block>。</block>
   <block id="1ba259cc1a092c9c30c1a18ccc612c75" category="list-text">Google Cloud Turin地區現在支援Connector。</block>
   <block id="fb378d84e11ead1b2c8c57bfabde81de" category="list-text">您現在可以管理與您的BlueXP登入相關的使用者認證：ONTAP 功能驗證和NetApp 支援網站 支援（NSS）認證。</block>
   <block id="f06293a36a992a2a1b8c6f6572b6caf8" category="paragraph">當您移至*「設定」&gt;「認證資料」*時、您可以檢視認證資料、更新認證資料並加以刪除。例如、如果您變更這些認證資料的密碼、則需要更新BlueXP中的密碼。</block>
   <block id="4e46804b204e02c9bd12cc6d7232cca6" category="list-text">您現在可以在建立支援案例或更新現有支援案例的案例備註時上傳附件。</block>
   <block id="72c3a2be47cc6617cea246e89af67993" category="inline-link">瞭解如何建立及管理支援案例</block>
-  <block id="6d69140f9b878e098eb9bfcd623c9dbd" category="paragraph"><block ref="7f3b2cbcf14ed0f5a85962e6b9e3eba8" category="inline-link-rx"></block>。</block>
-  <block id="e19c064fcb68059e563bb5bfdd31cac1" category="list-text"><block ref="e19c064fcb68059e563bb5bfdd31cac1" category="inline-link-rx"></block></block>
-  <block id="9e8ad418161e776fb398db9af34585c3" category="list-text"><block ref="9e8ad418161e776fb398db9af34585c3" category="inline-link-rx"></block></block>
   <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">* 附件（選填） * ：上傳最多五個附件、一次上傳一個。</block>
   <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">每個檔案的附件上限為 25 MB 。支援下列副檔名： txt 、 log 、 pdf 、 jpg/jpeg 、 rtf 、 doc/dox 、 xls/xlsx 和 csv 。</block>
   <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">* 更新案例附註 * ：提供問題的其他詳細資料、或選擇 * 上傳檔案 * 最多附加五個檔案。</block>
@@ -2302,15 +2222,10 @@
   <block id="d279ef9d3fa427882e45e653bc7b1949" category="doc">下一步操作（受限模式）</block>
   <block id="9ed3d93e6149b9255047c4f345ace3ed" category="paragraph">如需協助、請參閱以下服務的文件：</block>
   <block id="69f7f21f4fc680b59f6e889bf9547523" category="inline-link">Amazon FSX for ONTAP Sfedocs</block>
-  <block id="93c4b1c8038b5a62672e86507e821a44" category="list-text"><block ref="93c4b1c8038b5a62672e86507e821a44" category="inline-link-rx"></block></block>
   <block id="d75d347ae1d51e933d39fea688b0abf1" category="inline-link">文件Azure NetApp Files</block>
-  <block id="35103f93972f18deb45061fb09cb2d8c" category="list-text"><block ref="35103f93972f18deb45061fb09cb2d8c" category="inline-link-rx"></block></block>
   <block id="2971acb1ab572cfb61b7c86d49e2b300" category="inline-link">文件Cloud Volumes ONTAP</block>
-  <block id="fb7763dbe5d55a79ba826c779c80f403" category="list-text"><block ref="fb7763dbe5d55a79ba826c779c80f403" category="inline-link-rx"></block></block>
   <block id="3014dc2d87cf02248e7abe6b8ac89106" category="inline-link">內部部署ONTAP 的叢集文件</block>
-  <block id="1bb889ed8ef22596858f14e6373d120a" category="list-text"><block ref="1bb889ed8ef22596858f14e6373d120a" category="inline-link-rx"></block></block>
   <block id="7596270426e8c5f92be308ff330e0e64" category="inline-link">複寫文件</block>
-  <block id="d63867576c52b9369fa8be02e5b2492f" category="list-text"><block ref="d63867576c52b9369fa8be02e5b2492f" category="inline-link-rx"></block></block>
   <block id="edfd6cc0ab18dc2313501be4396f011a" category="summary">選擇安裝選項、設定網路、準備權限等、在 Azure 中建立 Connector 。</block>
   <block id="1dcc6e23d41671c3a6f96a8f61e57f18" category="doc">在 Azure 中建立 Connector 的快速入門</block>
   <block id="4336b5fcde6519e0ad7cfc03d406b725" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 瞭解您的安裝選項</block>
@@ -2353,7 +2268,6 @@
   <block id="c0e0b7ff0de9558404e9b77ece42948a" category="list-text">選取 *NSS Management &gt; Add NSS Account* 。</block>
   <block id="85b9386ed443776127e099931d73448a" category="list-text">系統提示時、請選取 * 繼續 * 以重新導向至 Microsoft 登入頁面。</block>
   <block id="254d5c87d5ab437395f866390ea49cd0" category="inline-link">在Cloud Volumes ONTAP Google Cloud上啟動</block>
-  <block id="22113986c035dbadc96db01d006caa97" category="list-text"><block ref="22113986c035dbadc96db01d006caa97" category="inline-link-rx"></block></block>
   <block id="a8ee828dbf9ffbba52ad9d7c1d04242a" category="inline-link">建立將連結至您目前 BlueXP 帳戶的 Microsoft Azure Active Directory B2C 帳戶</block>
   <block id="4ca24677e66997a22608e9d0d222f780" category="list-text">如果您尚未這麼做、<block ref="7a8e518e973906b81bf65d6cae725be0" category="inline-link-rx"></block>。</block>
   <block id="b7d544e19d5b26255a1df1dd3e33d678" category="list-text">選取 * NSS 管理 * 。</block>
@@ -2399,7 +2313,6 @@
   <block id="9cf3804bed44acd4f31054cd5804edd6" category="list-text">選取 * 管理連接器 * 。</block>
   <block id="330b38a06abadd478b0e03585b3789a5" category="list-text">選取 Connector 的動作功能表、然後選取 * 編輯 URI* 。</block>
   <block id="fb9b59364e346ccfcbfc4636f13644b5" category="list-text">新增並移除 URI 、然後選取 * 套用 * 。</block>
-  <block id="4c1ec6626d4216a927415f20603af4bb" category="paragraph"><block ref="4c1ec6626d4216a927415f20603af4bb" category="inline-link-rx"></block></block>
   <block id="95e83874561fb06821b167969ba4c957" category="list-text">此動作無法還原、只要從 BlueXP 移除 Connector 、就無法重新新增。</block>
   <block id="07923345a32e557b356f33061f3adb7a" category="list-text">選取非作用中 Connector 的動作功能表、然後選取 * 移除 Connector* 。</block>
   <block id="ec2047192779921dd8c042d6555c8cd8" category="list-text">輸入 Connector 的名稱以確認、然後選取 * 移除 * 。</block>
@@ -2559,11 +2472,8 @@
   <block id="299e0f249c257857628a7f5786b1b039" category="doc">下一步操作（私有模式）</block>
   <block id="fced466a309d5f02b614e19af9c50a3a" category="paragraph">如需協助、請參閱下列文件：</block>
   <block id="535581d758075804b4cc52814e262a35" category="inline-link">建立 Cloud Volumes ONTAP 系統</block>
-  <block id="79cc5a5d4ea81eee5014b951d7fd359f" category="list-text"><block ref="79cc5a5d4ea81eee5014b951d7fd359f" category="inline-link-rx"></block></block>
   <block id="c5fbee6586294d81141f8dd158707985" category="inline-link">探索內部部署ONTAP 的叢集</block>
-  <block id="be6fdee559c77506f6687c470cbc2466" category="list-text"><block ref="be6fdee559c77506f6687c470cbc2466" category="inline-link-rx"></block></block>
   <block id="37fa21b7ca602fd8fe055b26a1de7d8b" category="inline-link">複寫資料</block>
-  <block id="dbc6efdcaf426b0e1665fbc974f86510" category="list-text"><block ref="dbc6efdcaf426b0e1665fbc974f86510" category="inline-link-rx"></block></block>
   <block id="beabea313ffb3a9482595dfdd092b6c6" category="list-text">在 BlueXP 主控台的右上角、選取「說明」圖示。</block>
   <block id="ee2045d2e396ef6520817ecf395d1155" category="list-text">選擇 * Support &gt; Connector* 。</block>
   <block id="d0158e5fcbfd28e34c4ef5775896911d" category="doc">提供 Azure 對 BlueXP 的權限</block>
@@ -2706,13 +2616,10 @@
   <block id="99f9fe7adce4b6282eee924da977b6d4" category="list-text">內部部署中支援的 BlueXP 服務</block>
   <block id="614a24e7adcef9d83ca4454cd4443cbd" category="list-text">當 Connector 安裝在內部部署上時、 BlueXP 支援下列具有私有模式的儲存和資料服務：</block>
   <block id="1a1c1a2053d87746c09321c96ffee577" category="inline-link">瞭解如何將內部部署 ONTAP 資料備份至 StorageGRID</block>
-  <block id="39ab7fd806838f320d367f7ea35192d5" category="cell">僅支援將內部部署 ONTAP 磁碟區備份及還原至 StorageGRID 系統。<block ref="7df33af39c50bfeb3f03629c54d01b0e" category="inline-link-rx"></block></block>
   <block id="53a7caecec393fdcc143318b6a21f701" category="list-text">唯一支援的資料來源是您可以在本機探索的資料來源。</block>
   <block id="ad85db404f0dfc2267b348299aa513b9" category="inline-link">檢視您可以在本機探索的來源</block>
-  <block id="e9aa9c53b7cb39e10479a7a50fca161b" category="paragraph"><block ref="e9aa9c53b7cb39e10479a7a50fca161b" category="inline-link-rx"></block></block>
   <block id="a41122638def13935f34aea24423bacd" category="list-text">不支援需要輸出網際網路存取的功能。</block>
   <block id="dfe34e1a4e0a8333f70854479803cb1f" category="inline-link">檢視功能限制</block>
-  <block id="99c122e20a5a32c6ec7f2ed80295f621" category="paragraph"><block ref="99c122e20a5a32c6ec7f2ed80295f621" category="inline-link-rx"></block></block>
   <block id="a1f7f260dba9f32dd3bfb503eb84c441" category="cell">不支援不含 Connector 的探索（直接探索）。</block>
   <block id="f4c24ff9a6eed35a6103620418728351" category="list-text">私有模式僅支援 BYOL 。</block>
   <block id="83e5d949613547f552890cbaf97a52db" category="list-text">如何開始使用私有模式</block>
@@ -2901,7 +2808,6 @@
   <block id="35083c8541bb2de95fd92715b18737cb" category="paragraph">如果您想要啟用受限模式、則需要在要求本文中包含下列項目：</block>
   <block id="69a442aca267a323cb2e19a768758f93" category="admonition">BlueXP 建立帳戶後、您無法變更限制模式設定。您稍後無法啟用受限模式、之後也無法停用。必須在建立帳戶時設定。</block>
   <block id="82ed80a9e9141ee7778aeb10a225c2fc" category="inline-link">瞭解如何使用此 API 呼叫</block>
-  <block id="b5f74e1e71546011ec7163120f242550" category="paragraph"><block ref="b5f74e1e71546011ec7163120f242550" category="inline-link-rx"></block></block>
   <block id="07999df8a3fec91dcf6daa7e52777cc7" category="list-text"><block ref="07999df8a3fec91dcf6daa7e52777cc7" category="inline-link-macro-rx"></block></block>
   <block id="62bd7572081df25dd3f1f52151883c4a" category="inline-link-macro">瞭解 BlueXP 部署模式</block>
   <block id="d8c1ee023ea7a4705048e3464cfcb854" category="list-text"><block ref="d8c1ee023ea7a4705048e3464cfcb854" category="inline-link-macro-rx"></block></block>
@@ -2963,7 +2869,6 @@
   <block id="bf2f35a1367a7ddb519a7dd3cedacfdd" category="paragraph">在標準模式下使用 BlueXP 時、 BlueXP 中的下列功能和服務需要 Connector ：</block>
   <block id="dd42f0ca79b192af5e1f5734b490f194" category="paragraph">連接器是 BlueXP 服務架構的基本部分。您有責任確保相關的連接器隨時正常運作且可存取。雖然這項服務的設計是為了克服連接器可用度的短暫中斷、但您必須在必要時立即採取行動、以補救基礎架構故障。</block>
   <block id="5d5a04495ebcd46b843dcafaea428460" category="section-title">對 Cloud Volumes ONTAP 的影響</block>
-  <block id="f13eb171c26fdadd350692f3ad408568" category="paragraph">Azure 中的 Connector 應部署在與其管理的 Cloud Volumes ONTAP 系統所在的同一個 Azure 區域、或部署在中<block ref="71e0e9a7366955554f0600c5ea8cfc7f" category="inline-link-rx"></block> 適用於整個系統。Cloud Volumes ONTAP這項需求可確保Cloud Volumes ONTAP Azure Private Link連線可用於連接至相關的儲存帳戶。<block ref="8fd2062cae8df3766c9ddefca48991a5" category="inline-link-rx"></block></block>
   <block id="51b7d7d3bc9e2a3d4986191018c447ab" category="paragraph">如果您想要搭配 Google Cloud 使用 BlueXP 服務、則必須使用在 Google Cloud 中執行的 Connector 。</block>
   <block id="b8af0c827fddecff5686f66caf50fc37" category="section-title">受限模式和私有模式</block>
   <block id="11cac4cf4114aafe53015559291d52ce" category="paragraph">若要在受限模式或私有模式下使用 BlueXP 、請先安裝 Connector 、然後存取在 Connector 本機上執行的使用者介面、以開始使用 BlueXP 。</block>
@@ -2997,7 +2902,6 @@
   <block id="06b2dd1ec7bb512ccd3b1b77d7c931b5" category="list-text"><block ref="06b2dd1ec7bb512ccd3b1b77d7c931b5" category="inline-link-macro-rx"></block></block>
   <block id="3fa57b54a57f48366778b5343dad7a48" category="section-title">將認證新增至適用於 Amazon FSX for ONTAP 的 BlueXP</block>
   <block id="0919fa8ef252f518174a76feefbed72b" category="inline-link">適用於 Amazon FSX for ONTAP 的 BlueXP 文件</block>
-  <block id="1d0b90d48fa434513061226e6fe1f566" category="paragraph">如需詳細資訊、請參閱<block ref="40314d0b879d1a56eb00347b168cbc5f" category="inline-link-rx"></block></block>
   <block id="490ff557e203933a15d8fe5bc6dad106" category="paragraph">將AWS認證資料新增至BlueXP之後、您可以將AWS Marketplace訂閱與這些認證資料建立關聯。訂閱可讓您以每小時費率（ PAYGO ）或使用年度合約支付 Cloud Volumes ONTAP 費用、並使用其他 BlueXP 服務。</block>
   <block id="6d2d5c49a26a8339a26911674ee69f80" category="list-text">若要將認證與新訂閱建立關聯、請選取 * 新增訂閱 &gt; 繼續 * 、然後依照 AWS Marketplace 中的步驟進行：</block>
   <block id="cc5b03fa4f937c63363767c812feeb34" category="list-text">選取 * 檢視購買選項 * 。</block>
@@ -3006,7 +2910,6 @@
   <block id="1ba8304c99952e6f64861018bbefcdd0" category="list-text">在 BlueXP 主控台的右上角、選取設定圖示、然後選取 * 連接器設定 * 。</block>
   <block id="861d390100edeb52d8f385f026c72049" category="list-text">在 * 一般 * 下、選取 * HTTP Proxy 組態 * 。</block>
   <block id="dabc8d2c79f6529ca393b4b3d4f75805" category="list-text">選取 * 啟用 Proxy* 。</block>
-  <block id="c7f340765e65732a79e5ddd98e87f7e3" category="paragraph"><block ref="c7f340765e65732a79e5ddd98e87f7e3" category="inline-link-rx"></block></block>
   <block id="73918d630dd9a657f3442a2c1231fd74" category="list-text">在 * 一般 * 下、選取 * 支援直接 API 流量 * 。</block>
   <block id="c569dd49f93a05d537d61130ed43e6e9" category="list-text">選取核取方塊以啟用選項、然後選取 * 儲存 * 。</block>
   <block id="430c29468d032364c0f94cffe3c8a10b" category="paragraph">在內部部署的現有 Linux 主機上下載並安裝 Connector 軟體。</block>
@@ -3131,7 +3034,6 @@
   <block id="377655366b79df746cc3d0c01596ba86" category="paragraph">從 NetApp 支援網站 下載產品安裝程式、然後在您自己的 Linux 主機上手動安裝 Connector 。</block>
   <block id="c9ce61bb8ba26b9e777140e6bd34ee95" category="inline-link">AWS 商業雲端服務（ C2S ）環境</block>
   <block id="76dc45fc0f678a65bdd98f708893456c" category="inline-link">瞭解如何在 AWS C2S 環境中開始使用 Cloud Volumes ONTAP</block>
-  <block id="278f1d8141aacdc6c67c41bdf3896e96" category="paragraph">如果您想在中使用 BlueXP<block ref="1b4ed82e65ec10a29151660f200db39a" category="inline-link-rx"></block> 接著、您應該遵循個別指示、開始使用該環境。<block ref="af3c6d88775c5985ef75fe2df9d7afab" category="inline-link-rx"></block></block>
   <block id="2ba7eb945a77498b8342e4be53a3761e" category="list-text">從下載Connector軟體<block ref="99637e01fa8caa34a544049093cac68c" category="inline-link-rx"></block></block>
   <block id="21ecc51e06ea55adef72442730b0d5cf" category="paragraph">請務必下載無網際網路存取的受限網路安裝程式。</block>
   <block id="d932ef50072ac5f51fe3242771618f19" category="paragraph">已安裝 Connector 軟體。您現在可以設定 BlueXP 。</block>
@@ -3165,7 +3067,6 @@
   <block id="ca83ece344c546b0ad90a9cad77da291" category="doc">下一步操作（標準模式）</block>
   <block id="46bf370081d2da83a6ee9a9727083e5b" category="paragraph">現在您已經以標準模式登入並設定 BlueXP 、使用者可以建立和探索工作環境、並使用 BlueXP 資料服務。</block>
   <block id="7a1a2603f867b3ab4f911914771995c7" category="inline-link">BlueXP 文件首頁</block>
-  <block id="fd5317ca28a4f3c3fd3f01ba76015068" category="paragraph">如需協助、請前往<block ref="222c733e0a756e1421286d314be409a3" category="inline-link-rx"></block> 檢視所有 BlueXP 服務的文件。</block>
   <block id="c13f593278192af77f7116c61b4f1828" category="summary">選擇安裝選項、設定網路、準備權限等、在 Google Cloud 中建立 Connector 。</block>
   <block id="a24b77cc28692ab3f067a53b8d87977f" category="doc">在 Google Cloud 中快速建立 Connector</block>
   <block id="7a396f953e409fc4113a3eeb3714978c" category="paragraph">在 Google Cloud 中建立 Connector 的標準方法是直接從 BlueXP 建立、但您也可以使用 gCloud 建立 Connector 、或是在現有的 Linux 主機上手動安裝軟體。</block>
@@ -3191,7 +3092,6 @@
   <block id="acb3a31b8e79039416f86dfe140a002a" category="section-title">VPC 和子網路</block>
   <block id="2ece2735ee78ce884898c747bead2708" category="paragraph">當您建立 Connector 時、您需要指定 Connector 所在的 VPC 和子網路。</block>
   <block id="5f1067df496bfafd5eb793369b955e41" category="doc">準備以私有模式進行部署</block>
-  <block id="5bfade695c6f66f22429ab3f7864435b" category="admonition">如果您想在中使用 BlueXP<block ref="1b4ed82e65ec10a29151660f200db39a" category="inline-link-rx"></block> 接著、您應遵循說明如何準備、安裝 Connector 及啟動 Cloud Volumes ONTAP 的個別指示。<block ref="af3c6d88775c5985ef75fe2df9d7afab" category="inline-link-rx"></block></block>
   <block id="3008fdb762c351e807eb6f1a46786992" category="section-title">瞭解私有模式的運作方式</block>
   <block id="cd9866f3dfe1445bb49e9984aef06565" category="paragraph">開始之前、您應該先瞭解 BlueXP 在私有模式下的運作方式。</block>
   <block id="b55621a1719dba9e40d841c865c267ac" category="inline-link-macro">瞭解私有模式的運作方式</block>
@@ -3323,7 +3223,6 @@
   <block id="392cce9be5aaba5ccc4ab6924ab91b7b" category="inline-link-macro">設定標準模式的 Google Cloud 權限</block>
   <block id="33ff027b08c4a47957d518ff558c2a6a" category="list-text"><block ref="33ff027b08c4a47957d518ff558c2a6a" category="inline-link-macro-rx"></block></block>
   <block id="4ec920ccbe2fc417ccd7dcd957eb9653" category="inline-link">瞭解如何在 Google Cloud 中部署 Cloud Volumes ONTAP 、並選擇專案</block>
-  <block id="54734e6be0f1d9f801cde95d5b4a71d9" category="list-text"><block ref="54734e6be0f1d9f801cde95d5b4a71d9" category="inline-link-rx"></block></block>
   <block id="c476ad33fb1b26ddb19ee3a220d86c1d" category="summary">如果您想在 AWS 或 Azure 中搭配內部部署 Connector 使用 BlueXP 服務、則需要在雲端供應商中設定權限、以便在安裝之後將認證新增至 Connector 。</block>
   <block id="e1ef579b405a3d1b9ab7d84e56f110d3" category="paragraph">當 Connector 安裝在內部部署時、您需要為具有必要權限的 IAM 使用者新增存取金鑰、以提供 BlueXP AWS 權限。</block>
   <block id="c6a2a62c2d06a1633aadd355cae5e2d6" category="paragraph">您現在應該擁有具有必要權限的 IAM 使用者存取金鑰。安裝 Connector 之後、您需要將這些認證與 BlueXP 的 Connector 建立關聯。</block>
@@ -3383,9 +3282,7 @@
   <block id="bd684dd31e369444b29047e57d56ff19" category="sidebar">瞭解部署模式</block>
   <block id="84b297044f3a3c5d5e62a0dca0957998" category="list-text">如果您在無法使用輸出網際網路連線的子網路中部署 Cloud Volumes ONTAP 系統、則需要透過連接埠 3128 進行輸入連線。如果Cloud Volumes ONTAP 無法透過外部網際網路連線來傳送AutoSupport 各種消息、則BlueXP會自動將這些Cloud Volumes ONTAP 系統設定為使用連接器隨附的Proxy伺服器。唯一的需求是確保連接器的安全群組允許透過連接埠3128進行傳入連線。部署Connector之後、您需要開啟此連接埠。</block>
   <block id="4fd45d0ebe27698075cfa2d13f41913e" category="paragraph">HTTP （ 80 ）和 HTTPS （ 443 ）可讓您存取 BlueXP 主控台。只有在需要連線至主機進行疑難排解時、才需要SSH（22）。</block>
-  <block id="830d9c74b9a0266753efa0c38f11ba15" category="paragraph"><block ref="b3303746b1f0c3c97f0d5584351ddef9" category="inline-link-rx"></block>。</block>
   <block id="b26ec0454a2259b015367bd3e232bd73" category="inline-link">瞭解 Connector 如何用作 AutoSupport 訊息的 Proxy</block>
-  <block id="452bb1fa479e1a4722dca450d1ca1c28" category="cell">提供可存取網際網路的功能、將資訊傳送給NetApp支援部門。Cloud Volumes ONTAP AutoSupport您必須在部署後手動開啟此連接埠。<block ref="529b3c8e9eb588f2d0ba5bb7d504d0b0" category="inline-link-rx"></block></block>
   <block id="cbfb15b83383719b2c85d236f8e414bb" category="summary">直接從 BlueXP 網路型主控台、 AWS Marketplace 或在您自己的 Linux 主機上安裝軟體、建立 Connector 。</block>
   <block id="0cbc2cd2912b2d177ad6561f8eecd314" category="summary">直接從 BlueXP 網路型主控台、使用 gCloud 或在您自己的 Linux 主機上安裝軟體來建立 Connector 。</block>
   <block id="b6bbae5bdf4c539603a70f4db19e6b04" category="summary">在內部部署安裝 Connector 、然後登入並設定以搭配 BlueXP 帳戶使用。</block>
@@ -3397,7 +3294,6 @@
   <block id="a80c3e3d3461039581490c3b665e6c55" category="sidebar">在內部部署建立連接器（標準模式）</block>
   <block id="5287995c403f34c9ff0e79af4e8e7c9d" category="sidebar">管理您帳戶的 NSS 認證</block>
   <block id="4c3260e1174dd82ea2e496ac6f39fc4a" category="paragraph">如有需要、您可以使用IAM來限制IAM原則<block ref="9e2941b3c81256fac10392aaca4ccfde" prefix=" " category="inline-code"></block> 元素。<block ref="19ffef022087e160f1e54b9948795943" category="inline-link-rx"></block></block>
-  <block id="10b9ce0cb6b2f607e0c7df6e246cfe67" category="paragraph"><block ref="8a7bc1e5ebe0f732b7f8c57cc7b088b6" category="inline-link-rx"></block>。</block>
   <block id="7390f55a27add10ddc1a6c765b8a67c7" category="doc">BlueXP 安裝與管理文件</block>
   <block id="942c9249796cf6b78c981ebf15195809" category="list-text"><block ref="942c9249796cf6b78c981ebf15195809" category="inline-link-rx"></block></block>
   <block id="11fde693c59aa81cdd27bb562b84f44b" category="paragraph">直接從 BlueXP 建立 Connector 需要特定權限、而 Connector 執行個體本身則需要另一組權限。如果您直接從 BlueXP 在 AWS 或 Azure 中建立 Connector 、則 BlueXP 會建立具有所需權限的 Connector 。</block>
@@ -3433,12 +3329,9 @@
   <block id="554b8b833efd1a5f6c0982f18f3d0820" category="inline-link-macro">手動安裝 Connector 時聯絡的端點（標準模式）</block>
   <block id="5474364eb5af84ea9df4135b22224135" category="list-text"><block ref="5474364eb5af84ea9df4135b22224135" category="inline-link-macro-rx"></block></block>
   <block id="6187e32203fd05e22e575166349f5b99" category="inline-link">備份與還原文件</block>
-  <block id="76d9a5dea95540afb28da7fa24268202" category="list-text"><block ref="76d9a5dea95540afb28da7fa24268202" category="inline-link-rx"></block></block>
   <block id="e97ae785ddbd746339946844f92175e6" category="inline-link">分類文件</block>
-  <block id="6ace1bb8e25748132410e221b0e64ef6" category="list-text"><block ref="6ace1bb8e25748132410e221b0e64ef6" category="inline-link-rx"></block></block>
   <block id="4a5a2cb37f05953f58468c7fed5af846" category="paragraph">您可以查看Google Cloud Storage儲存桶的詳細資料、包括位置、存取狀態、儲存設備類別、總容量和已用容量等。這些貯體可做為 BlueXP 備份與還原、 BlueXP 分層或 BlueXP 複製與同步作業的目的地。</block>
   <block id="6beafc0ddd3d2d40e91fd1f10beca6f6" category="inline-link">BlueXP 複本與同步的總覽</block>
-  <block id="ee90cf76aa6a254e315cff26d976093f" category="paragraph">如需詳細資料、請參閱<block ref="8af593d4462fc8676f0e240f30c73049" category="inline-link-rx"></block></block>
   <block id="2c125f3d8875ad209c20028d0cda71b1" category="cell">提供從用戶端網頁瀏覽器到本機使用者介面的 HTTPS 存取、以及 BlueXP 分類執行個體的連線</block>
   <block id="32b02dfce56d1f6d0b5202b932316b0f" category="cell">提供在政府地區啟用和使用 BlueXP 分類及 BlueXP 備份與還原的能力。</block>
   <block id="7863903e1b4b84391267ab5c4af6a68d" category="cell">API 呼叫 Google Cloud 和 ONTAP 、將 BlueXP 分類、 BlueXP 勒索軟體保護、並將 AutoSupport 訊息傳送給 NetApp</block>
@@ -3453,7 +3346,6 @@
   <block id="5ddc4e154584048fc0f47939b47c7b63" category="cell">您可以將數位錢包與下列支援的授權選項一起用於私有模式。</block>
   <block id="ea8570ee20c71345a250f37d7cf934d0" category="paragraph">對於 Cloud Volumes ONTAP BYOL 、僅支援節點型授權。不支援容量型授權。由於無法使用外傳網際網路連線、因此您需要手動上傳 BlueXP 數位錢包中的 Cloud Volumes ONTAP 授權檔案。</block>
   <block id="f2a226835ff2494dede4925c14c2dd09" category="inline-link">瞭解如何新增授權至 BlueXP 數位錢包</block>
-  <block id="77b23cd504443833949223b951f576ce" category="paragraph"><block ref="77b23cd504443833949223b951f576ce" category="inline-link-rx"></block></block>
   <block id="aa200c19289e5050e77edc0bccc67c2b" category="cell">產品領域</block>
   <block id="4e74f624e4d0f3f558ca01aa93696658" category="cell">* 工作環境 *</block>
   <block id="1376d64de9953f470f0708fc6e330334" category="cell">*服務*</block>
@@ -3482,9 +3374,7 @@
   <block id="da48a166a29b8e248a3113d9bd6cba04" category="paragraph">只有在 Connector 需要將授權新增至數位錢包時、才需要使用 Cloud Volumes ONTAP 節點型授權。在這種情況下需要連接器、因為資料是取自Cloud Volumes ONTAP 安裝在效益分析系統上的授權。</block>
   <block id="aa043b4c9a6fa32b0f3811520156579a" category="list-text">您擁有多雲端環境（例如 AWS 和 Azure ）、偏好在 AWS 中安裝一個 Connector 、在 Azure 中安裝另一個 Connector 。每個系統都能管理 Cloud Volumes ONTAP 在這些環境中執行的不實系統。</block>
   <block id="36eb10a8720e9fc3cc595882ff021ccf" category="inline-link">使用 BlueXP 分類掃描內部部署 ONTAP Volume 資料</block>
-  <block id="91a5418c9d864303136bc2d6b75e3f8d" category="list-text"><block ref="91a5418c9d864303136bc2d6b75e3f8d" category="inline-link-rx"></block></block>
   <block id="04b86b3e706875b04f815d45eb8e76ee" category="inline-link">使用 BlueXP 備份與還原、將內部部署的 ONTAP Volume 資料備份至 StorageGRID</block>
-  <block id="b3546a00b1f480b6adbc2f6acf6e7301" category="list-text"><block ref="b3546a00b1f480b6adbc2f6acf6e7301" category="inline-link-rx"></block></block>
   <block id="d282481c14e6e7d0691f4297fb3551e1" category="list-text">_Compliance Viewer_ ：只能檢視 BlueXP 分類的法規遵循資訊、並為擁有存取權限的工作區產生報告。</block>
   <block id="20dcfd7d53957cc7f9ffca8bea6d9956" category="paragraph">您可以將 Connector 搭配多個 BlueXP 服務使用。例如、如果您使用 Connector 來管理 Cloud Volumes ONTAP 、您可以將同一個 Connector 搭配另一個服務使用、例如 BlueXP 分層。</block>
   <block id="d128bda2634e1051cc984231da065144" category="list-text">BlueXP 數位電子錢包現在支援電子郵件通知。</block>
@@ -3610,7 +3500,6 @@
   <block id="470821fb08a53bb45ecda66d23c58d6f" category="paragraph">新的和現有的連接器仍支援 Red Hat 7.6 、 7.7 、 7.8 和 7.9 。</block>
   <block id="a2619f6db1e9fa217b857129c75384ab" category="list-text">現在、 Google Cloud 中的卡塔爾地區支援 Connector 。</block>
   <block id="368c64d1828dfb51f85a6ad8427db46c" category="list-text">Microsoft Azure 的瑞典中部地區也支援 Connector 。</block>
-  <block id="cff120b14e79d2501e83070f59bb2387" category="paragraph"><block ref="cff120b14e79d2501e83070f59bb2387" category="inline-link-rx"></block></block>
   <block id="a12b9d09313df9b379fff76f6080b543" category="paragraph">如果您想要在自己的 Linux 主機上手動安裝 Connector 軟體、則應確保主機符合特定需求。如果您是從 BlueXP 或 AWS Marketplace 建立 Connector 、則這些需求會由映像部署軟體來滿足。</block>
   <block id="8a9983b753881349972a7c0a24378110" category="paragraph">如果您想要在自己的 Linux 主機上手動安裝 Connector 軟體、則應確保主機符合特定需求。如果您是從 BlueXP 或使用 gCloud 建立 Connector 、則這些需求將會妥善處理、因為軟體是從映像部署而來。</block>
   <block id="eebb9a8111d1623667243e7e41ed0e71" category="list-text">映像的作業系統為 Ubuntu 22.04 。</block>
@@ -3629,9 +3518,122 @@
   <block id="fe58f6b68f2391f47e7f19d45735226a" category="list-text"><block ref="fe58f6b68f2391f47e7f19d45735226a" category="inline-link-rx"></block></block>
   <block id="fe661ee4e3dd2d796b000bdbe116c002" category="inline-link">管理 BlueXP 資料服務的 BYOL 授權</block>
   <block id="49056b2966eae66ee0345bbf80d6b8d6" category="list-text"><block ref="49056b2966eae66ee0345bbf80d6b8d6" category="inline-link-rx"></block></block>
-  <block id="a4821774f3941403655492bb82c492ca" category="list-text"><block ref="a4821774f3941403655492bb82c492ca" category="inline-link-rx"></block></block>
-  <block id="75c14ab09fd89f95714034d50258a6cc" category="list-text"><block ref="75c14ab09fd89f95714034d50258a6cc" category="inline-link-rx"></block></block>
-  <block id="95c435337a307137f163f5eb04ac01ad" category="list-text"><block ref="95c435337a307137f163f5eb04ac01ad" category="inline-link-rx"></block></block>
   <block id="ba66b75d479f2289bcf99d989de6e0b1" category="paragraph">市場訂閱可在受限模式下為下列 BlueXP 服務收費：</block>
   <block id="d639d0a55c1a57a909ac7ffab5f941c6" category="paragraph">訂閱 BlueXP 涉及將市場訂閱與與 Connector 相關的雲端認證建立關聯。如果您遵循「開始使用受限模式」工作流程、則您應該已經擁有 Connector 。若要深入瞭解、請檢視 <block ref="2d9421fac12c9ac9462f27b55d118c68" category="inline-link-macro-rx"></block>。</block>
+  <block id="486db18d2aa67b603506d28b5425dc88" category="list-text"><block ref="486db18d2aa67b603506d28b5425dc88" category="inline-link-rx"></block></block>
+  <block id="e0e6f4b8b0641d976b8e099c1fe32756" category="paragraph">如需詳細資料、請參閱<block ref="fb520091925060688384bbe43ee465fa" category="inline-link-rx"></block></block>
+  <block id="4b2d116ffff1d0b3943a8369ed15f92e" category="cell">僅支援將內部部署 ONTAP 磁碟區備份及還原至 StorageGRID 系統。
+
+<block ref="06335b9f199e896c8eeed49a6ea11aae" category="inline-link-rx"></block></block>
+  <block id="c31f6ba921f50b9fdf957e9653b25a96" category="paragraph"><block ref="c31f6ba921f50b9fdf957e9653b25a96" category="inline-link-rx"></block></block>
+  <block id="c52ebea378cba4888741686cb3f79a65" category="paragraph"><block ref="c52ebea378cba4888741686cb3f79a65" category="inline-link-rx"></block></block>
+  <block id="01287dcca44e1171b083179ac87b7277" category="paragraph"><block ref="01287dcca44e1171b083179ac87b7277" category="inline-link-rx"></block></block>
+  <block id="e3fd5027f5754ca33b0f205f3239ffbf" category="list-text"><block ref="e3fd5027f5754ca33b0f205f3239ffbf" category="inline-link-rx"></block></block>
+  <block id="2bd1bfde12dacc81686c7c76ab937dbc" category="list-text"><block ref="2bd1bfde12dacc81686c7c76ab937dbc" category="inline-link-rx"></block></block>
+  <block id="1ec77dbe2fe8675dd025e595535feb02" category="list-text"><block ref="1ec77dbe2fe8675dd025e595535feb02" category="inline-link-rx"></block></block>
+  <block id="c7353b14a4a7612afd3864b6595a72b7" category="paragraph">可能與172範圍內的IP位址發生衝突。<block ref="a310fc31ed10a191d1bb25f21e014658" category="inline-link-rx"></block>。</block>
+  <block id="9d06990508d25d367d9158c6558eb9c8" category="list-text"><block ref="9d06990508d25d367d9158c6558eb9c8" category="inline-link-macro-rx"></block></block>
+  <block id="2e0c742f4616eb27b5b7646aa790edfe" category="list-text"><block ref="2e0c742f4616eb27b5b7646aa790edfe" category="inline-link-macro-rx"></block></block>
+  <block id="cf14bff66a8b72d3675db8ffe0f02ee3" category="list-text"><block ref="cf14bff66a8b72d3675db8ffe0f02ee3" category="inline-link-macro-rx"></block></block>
+  <block id="e8d4092baef6680c6a35d5228ae31de2" category="paragraph"><block ref="e8d4092baef6680c6a35d5228ae31de2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0dfcbbbe02d3e96f8ad78782e8772587" category="paragraph">這是系統產生的ID、會對應至您的電子郵件。在「* nssn*管理*」頁面上、您可以從顯示電子郵件 <block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block> 功能表。</block>
+  <block id="fc79de85a483938f72fbcb9822ec0ae3" category="list-text">如果您需要重新整理登入認證憑證權杖、也可以在中使用*更新認證*選項 <block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block> 功能表。</block>
+  <block id="1bb5620ed3998fd776980cad36e22c9a" category="paragraph"><block ref="1bb5620ed3998fd776980cad36e22c9a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="379f9cd57d97013f3f7fdd24f692a0b1" category="paragraph"><block ref="379f9cd57d97013f3f7fdd24f692a0b1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4adf4d16c2d6834c1fd4e6d734491457" category="cell">提供可存取網際網路的功能、將資訊傳送給NetApp支援部門。Cloud Volumes ONTAP AutoSupport您必須在部署後手動開啟此連接埠。<block ref="87dc2640943962c980325d425ed3a75b" category="inline-link-rx"></block></block>
+  <block id="cdaa40a72c6d3044b5345516c0e4e251" category="paragraph">連接器沒有傳入流量、除非您啟動連接器、或連接器是AutoSupport 作為Proxy來接收資訊、否則連接器不會傳入。HTTP 和 HTTPS 可存取<block ref="cf3f5d195cacf9f3415f4c81082e9d29" category="inline-link-rx"></block>、在極少數情況下使用。只有當您需要連線至主機進行疑難排解時、才需要 SSH 。</block>
+  <block id="e3e0240f9114319771ec689f3164fd64" category="paragraph">新增AWS認證資料至藍圖XP、可讓藍圖XP擁有建立及管理FSXfor ONTAP Sfor的必要權限。<block ref="07664dcf2b17e9e9636df6c1a5a6f557" category="inline-link-rx"></block></block>
+  <block id="f36b248a3e4e722bcc9292d2e5151abc" category="list-text"><block ref="f36b248a3e4e722bcc9292d2e5151abc" category="inline-link-rx"></block></block>
+  <block id="4f75e9590de3cece316768ef4b82f1ed" category="paragraph">如需詳細資訊、請參閱<block ref="c186ea5d7dffe196818c2e5a7f99ad62" category="inline-link-rx"></block></block>
+  <block id="f09d4eba567a9e2b031517b472055a69" category="paragraph"><block ref="f09d4eba567a9e2b031517b472055a69" category="inline-link-rx"></block></block>
+  <block id="ffd6a883d5c5e0f954b2db441bf455a2" category="admonition">如果您想在中使用 BlueXP<block ref="1b4ed82e65ec10a29151660f200db39a" category="inline-link-rx"></block> 接著、您應遵循說明如何準備、安裝 Connector 及啟動 Cloud Volumes ONTAP 的個別指示。<block ref="dfa4c15285d83794371ed5577a9f85e7" category="inline-link-rx"></block></block>
+  <block id="73d53f23610cc3c7f3876a7e295ff03f" category="paragraph">您現在可以從「詳細資料與認證」頁面切換至不同的認證集合<block ref="b755550aa4c4ad31a42757f4fc357592" category="inline-link-rx"></block></block>
+  <block id="fc5eb4d28cae2cd561af57ba685dd8d3" category="list-text"><block ref="fc5eb4d28cae2cd561af57ba685dd8d3" category="inline-link-rx"></block></block>
+  <block id="d65407cebf6d2e36f3f922a3e220c70d" category="list-text"><block ref="d65407cebf6d2e36f3f922a3e220c70d" category="inline-link-rx"></block></block>
+  <block id="bca13516ef3cfec79ff01148d8045101" category="list-text"><block ref="bca13516ef3cfec79ff01148d8045101" category="inline-link-rx"></block></block>
+  <block id="7c28b52095b10154ef9a5a9b2d86d181" category="list-text"><block ref="7c28b52095b10154ef9a5a9b2d86d181" category="inline-link-rx"></block></block>
+  <block id="e45aa572e4fc463c8b2aa0b4bb010689" category="list-text"><block ref="e45aa572e4fc463c8b2aa0b4bb010689" category="inline-link-rx"></block></block>
+  <block id="3c2636f752222ce604af87906e481f03" category="list-text"><block ref="3c2636f752222ce604af87906e481f03" category="inline-link-rx"></block></block>
+  <block id="17ba1853097c1b83e5a82753f8133c2e" category="list-text"><block ref="17ba1853097c1b83e5a82753f8133c2e" category="inline-link-rx"></block></block>
+  <block id="6cfeb8c907e4b67e454993b95d8b4c8b" category="list-text"><block ref="6cfeb8c907e4b67e454993b95d8b4c8b" category="inline-link-rx"></block></block>
+  <block id="27a3e4e8b80492209761738784b770d5" category="list-text"><block ref="27a3e4e8b80492209761738784b770d5" category="inline-link-rx"></block></block>
+  <block id="f8c7ce78aaf937671ef25c9c931e368e" category="list-text"><block ref="f8c7ce78aaf937671ef25c9c931e368e" category="inline-link-rx"></block></block>
+  <block id="b973035f0b680495b14f344d6beef53c" category="list-text"><block ref="b973035f0b680495b14f344d6beef53c" category="inline-link-rx"></block></block>
+  <block id="5091509329e4947abb15d886a22552f1" category="paragraph">如果您想在中使用 BlueXP<block ref="1b4ed82e65ec10a29151660f200db39a" category="inline-link-rx"></block> 接著、您應該遵循個別指示、開始使用該環境。<block ref="dfa4c15285d83794371ed5577a9f85e7" category="inline-link-rx"></block></block>
+  <block id="1dde058782233339aff261555be71a1e" category="cell"><block ref="1dde058782233339aff261555be71a1e" category="inline-link-rx"></block></block>
+  <block id="48073a193e8d0854b9bf3ba1031439d1" category="paragraph"><block ref="48073a193e8d0854b9bf3ba1031439d1" category="inline-link-rx"></block></block>
+  <block id="9f76d151af09dea1fb007195b97b8fb8" category="paragraph">以便對進行API呼叫<block ref="e6759502837666764bf32b5b15a9b491" category="inline-link-rx"></block>、您需要取得服務帳戶的承載權杖。</block>
+  <block id="e0074a6546e39d8d3001c8be00489b2a" category="paragraph"><block ref="e0074a6546e39d8d3001c8be00489b2a" category="inline-link-rx"></block></block>
+  <block id="4d5f6e2e2b72482865cac1c14f3d2d3d" category="paragraph"><block ref="4d5f6e2e2b72482865cac1c14f3d2d3d" category="inline-link-rx"></block></block>
+  <block id="0e243030d4d37c15e7b806556f21cdc3" category="paragraph"><block ref="07b6d38a8467f077daba3577bc2ba852" category="inline-link-rx"></block>。</block>
+  <block id="68dcffa7a1f20520450fc9a1fe7431e0" category="paragraph"><block ref="44a545209b596546dde53c0efadb310a" category="inline-link-rx"></block>。</block>
+  <block id="9676038d34e063194a28e72d0b24ba2b" category="paragraph"><block ref="3f659f48f22c3b837f26de72ef4f6428" category="inline-link-rx"></block>。</block>
+  <block id="e076d1de7062df2857bf544f4a4aa82d" category="paragraph"><block ref="c7a2ab7c05c0b984c7e95e609cb46e34" category="inline-link-rx"></block>。</block>
+  <block id="55a6750574b4447541f67bb4e01cab9a" category="list-text"><block ref="55a6750574b4447541f67bb4e01cab9a" category="inline-link-rx"></block></block>
+  <block id="6ee17626d7e1b5c782c10c267de6f85c" category="list-text"><block ref="6ee17626d7e1b5c782c10c267de6f85c" category="inline-link-rx"></block></block>
+  <block id="da1115c120e230094c1f271ddc8b2faa" category="paragraph"><block ref="da1115c120e230094c1f271ddc8b2faa" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="84b67e035ee851e17fd4010870ec0a29" category="paragraph"><block ref="f0098b5aeef401e4baf694b939b219f4" category="inline-link-rx"></block>。</block>
+  <block id="148472786b9015b5f19ac843e8bc0f31" category="list-text"><block ref="148472786b9015b5f19ac843e8bc0f31" category="inline-link-rx"></block></block>
+  <block id="c90756fe60d5b7e957a6726a33ac7a77" category="list-text"><block ref="c90756fe60d5b7e957a6726a33ac7a77" category="inline-link-rx"></block></block>
+  <block id="94fe554eb0f60c68e4d46024baeef975" category="list-text"><block ref="94fe554eb0f60c68e4d46024baeef975" category="inline-link-rx"></block></block>
+  <block id="ca94b1aadc568190d875409d8370033f" category="list-text"><block ref="ca94b1aadc568190d875409d8370033f" category="inline-link-rx"></block></block>
+  <block id="98a589e7baa6e35fa2a8b5710c9f3908" category="paragraph"><block ref="98a589e7baa6e35fa2a8b5710c9f3908" category="inline-link-rx"></block></block>
+  <block id="15cec4d72b9a22aa49ad5d0b9e169bd4" category="paragraph"><block ref="15cec4d72b9a22aa49ad5d0b9e169bd4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="801e1c7f75d3ff9451e9184c28498903" category="paragraph"><block ref="801e1c7f75d3ff9451e9184c28498903" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="828834d826a027abf4dde8b1d7ec5cd0" category="list-text"><block ref="828834d826a027abf4dde8b1d7ec5cd0" category="inline-link-rx"></block></block>
+  <block id="2da7a025e0e428017db728d893b96b9a" category="list-text"><block ref="2da7a025e0e428017db728d893b96b9a" category="inline-link-rx"></block></block>
+  <block id="65f4ae26731a75eb7ddcdde2725e7606" category="list-text"><block ref="65f4ae26731a75eb7ddcdde2725e7606" category="inline-link-rx"></block></block>
+  <block id="5dd9d7726b2aa753dd804802730ff831" category="list-text"><block ref="5dd9d7726b2aa753dd804802730ff831" category="inline-link-rx"></block></block>
+  <block id="2918c9a727e794fff7fce479626af4fb" category="list-text"><block ref="2918c9a727e794fff7fce479626af4fb" category="inline-link-rx"></block></block>
+  <block id="bc8eecd65f39947b42bdec4a565aee14" category="paragraph"><block ref="3a8bfb7187fb3fb54b749c274662351f" category="inline-link-rx"></block>。</block>
+  <block id="9c5e093bf7de6f191f4ed6fb5788faf1" category="paragraph"><block ref="9c5e093bf7de6f191f4ed6fb5788faf1" category="inline-link-rx"></block></block>
+  <block id="babe9b67734a993940360f5907bd1420" category="paragraph"><block ref="babe9b67734a993940360f5907bd1420" category="inline-link-rx"></block></block>
+  <block id="b48a790ba42e24d7c2c6394ead9c61e4" category="list-text"><block ref="b48a790ba42e24d7c2c6394ead9c61e4" category="inline-link-rx"></block></block>
+  <block id="e88218c7954191edd5ee25a2260fe7c2" category="list-text"><block ref="e88218c7954191edd5ee25a2260fe7c2" category="inline-link-rx"></block></block>
+  <block id="a36a7ffe5c1160531a9a2bc1012be15f" category="paragraph"><block ref="a36a7ffe5c1160531a9a2bc1012be15f" category="inline-link-rx"></block></block>
+  <block id="6524b30e2d34e6852c60c79bb9d67c29" category="paragraph"><block ref="6524b30e2d34e6852c60c79bb9d67c29" category="inline-link-rx"></block></block>
+  <block id="bc3b6ce11bc131cddf59507a7187bfbc" category="paragraph">Cloud Manager現在會在NetApp 支援網站 與您帳戶相關的更新權杖在3個月後過期時、提示您更新與您的候用帳戶相關的認證資料。<block ref="b5aca352b3ac5d4c653cd51f399b48e6" category="inline-link-rx"></block></block>
+  <block id="f7bc2ed8f1653bdae4ed33e135b933fa" category="paragraph"><block ref="1c4e2cbcc125deda8a1f9448e89a249c" category="inline-link-rx"></block>。</block>
+  <block id="f7a745eee26de3b09a57038d4d6f94a7" category="paragraph"><block ref="f7a745eee26de3b09a57038d4d6f94a7" category="inline-link-rx"></block></block>
+  <block id="dbf8be04ee9b9497c4f7beac27323eeb" category="paragraph"><block ref="dbf8be04ee9b9497c4f7beac27323eeb" category="inline-link-rx"></block></block>
+  <block id="a76dc10e8aea3ac33b469f1f4d1b205e" category="paragraph"><block ref="a76dc10e8aea3ac33b469f1f4d1b205e" category="inline-link-rx"></block></block>
+  <block id="099c2f45c6328b262e8d5da1618fec9b" category="paragraph"><block ref="f70d5a4ad5c8fe20f2b360d971a18930" category="inline-link-rx"></block>。</block>
+  <block id="f6ffbcd57505ff07c352c6a7e1d00866" category="paragraph">我們也建立了一個頁面、提供每個原則的連結。<block ref="8572a9016022bfa78d3a8c5f3218a764" category="inline-link-rx"></block>。</block>
+  <block id="3b7c35b218804d1e919a0e6912230bad" category="paragraph"><block ref="3b7c35b218804d1e919a0e6912230bad" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8e2987aa8b0083ae3ca22fee45e2fa2a" category="paragraph"><block ref="97f848d2636075bfc874fdc9f7bf05b5" category="inline-link-rx"></block>。</block>
+  <block id="b525a4073c31891a9a1602d77b40655d" category="paragraph"><block ref="b525a4073c31891a9a1602d77b40655d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d9815601b56ec3084872748d000734dd" category="paragraph"><block ref="d9815601b56ec3084872748d000734dd" category="inline-link-rx"></block></block>
+  <block id="046fc05000d85b784cc7466da1c65e32" category="list-text"><block ref="046fc05000d85b784cc7466da1c65e32" category="inline-link-rx"></block></block>
+  <block id="e9917715e557501b320f321479432f1b" category="list-text"><block ref="e9917715e557501b320f321479432f1b" category="inline-link-rx"></block></block>
+  <block id="a48728160435b936fb4605731410d8eb" category="paragraph"><block ref="a48728160435b936fb4605731410d8eb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8ff045b580dad588f94172a79314dc6d" category="list-text">此版本的Connector也包含Cloud Volumes ONTAP 了一些功能強化功能。<block ref="fef8e60d1a5c861a0a5d6feeede741cf" category="inline-link-rx"></block></block>
+  <block id="ed3ab201d61a32b83ced6fa1b246aa09" category="paragraph"><block ref="c3443234c58f728fd298c85cd8d82362" category="inline-link-rx"></block>。</block>
+  <block id="083fb54a2c12a01865494f9eb4787b79" category="list-text">此版本的Connector也包含Cloud Volumes ONTAP 了一些功能強化功能。<block ref="59d6f0d19109fca55e6311099497ddc1" category="inline-link-rx"></block></block>
+  <block id="5c12e90820b2bd6edf6f35e22754cc6a" category="list-text">此版本的Connector也包含Cloud Volumes ONTAP 了一些功能強化功能。<block ref="5929cea9f40a354c605f108001043659" category="inline-link-rx"></block></block>
+  <block id="1890045039c9b689a989ddeed52a35b2" category="paragraph">此版本的Connector包含Cloud Volumes ONTAP 一些功能強化功能。<block ref="a470e47cfb4b58628c6adb8bf11e8d1b" category="inline-link-rx"></block></block>
+  <block id="7b9d4f51a2aafa446c6306500b5e250f" category="paragraph"><block ref="7b9d4f51a2aafa446c6306500b5e250f" category="inline-link-rx"></block></block>
+  <block id="a91afa6fb41cab23d456769cc6adc832" category="paragraph"><block ref="a91afa6fb41cab23d456769cc6adc832" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0e6019dd7421286538155e3cea252d8a" category="paragraph"><block ref="0e6019dd7421286538155e3cea252d8a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="082ecd74d4bf71395df6986a8098fad0" category="paragraph"><block ref="082ecd74d4bf71395df6986a8098fad0" category="inline-link-rx"></block></block>
+  <block id="dc4523bb6eb17a07ae9db37489829969" category="paragraph"><block ref="dc4523bb6eb17a07ae9db37489829969" category="inline-link-rx"></block></block>
+  <block id="c6c3b56410517700ef27e6cfa0cae38d" category="paragraph">Azure 中的 Connector 應部署在與其管理的 Cloud Volumes ONTAP 系統所在的同一個 Azure 區域、或部署在中<block ref="71e0e9a7366955554f0600c5ea8cfc7f" category="inline-link-rx"></block> 適用於整個系統。Cloud Volumes ONTAP這項需求可確保Cloud Volumes ONTAP Azure Private Link連線可用於連接至相關的儲存帳戶。<block ref="ebdf8919a4d90c512f0e43f5b0739281" category="inline-link-rx"></block></block>
+  <block id="16d095355b2a308649665d5768df8693" category="list-text"><block ref="16d095355b2a308649665d5768df8693" category="inline-link-rx"></block></block>
+  <block id="c42ed38279c50e4c5755f93ea09a9661" category="list-text"><block ref="c42ed38279c50e4c5755f93ea09a9661" category="inline-link-rx"></block></block>
+  <block id="e735c0a7fc94ed3c915640c39daf9299" category="list-text">設定<block ref="dc37ab94c751c0e5b427451fa56e921c" category="inline-link-rx"></block></block>
+  <block id="6143580a5ae490efe32d3c566650ad6c" category="paragraph"><block ref="6143580a5ae490efe32d3c566650ad6c" category="inline-link-rx"></block></block>
+  <block id="119ea98564cae99d8f3083158d800124" category="paragraph">如需協助、請前往<block ref="fcad168018b4f932b8d61fdac1ba9c7f" category="inline-link-rx"></block> 檢視所有 BlueXP 服務的文件。</block>
+  <block id="a003b98e4140542975c2369f893345c7" category="paragraph"><block ref="a003b98e4140542975c2369f893345c7" category="inline-link-rx"></block></block>
+  <block id="ffcea1f0cafb5afdb99327d5e41340ea" category="paragraph"><block ref="ffcea1f0cafb5afdb99327d5e41340ea" category="inline-link-rx"></block></block>
+  <block id="509259be6d5e15d8959f705cbe0cbcc1" category="paragraph"><block ref="509259be6d5e15d8959f705cbe0cbcc1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0972db30d942fdb65d1732e6e84bde99" category="paragraph"><block ref="0972db30d942fdb65d1732e6e84bde99" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cb6a777dd3c6e43b0dc441d38519d219" category="paragraph"><block ref="cb6a777dd3c6e43b0dc441d38519d219" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0f6cac2f77150840994f84044fc1b12b" category="list-text">按一下以變更表格中顯示的欄 <block ref="b574dd55d604ddb721d869a0fc302007" category="inline-image-macro-rx" type="image"></block> 然後選擇您要顯示的欄。</block>
+  <block id="e65065c4fd326b9f3a1eeb9453c30d73" category="paragraph"><block ref="e65065c4fd326b9f3a1eeb9453c30d73" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6ba7d68d8b3ef0f3398afb9d3ea96172" category="list-text">按一下即可管理現有案例 <block ref="566c029d89e7d5421080767a37bf443e" category="inline-image-macro-rx" type="image"></block> 並選擇其中一個可用選項：</block>
+  <block id="2ea260929e27ffcb623c8aa35689bd18" category="paragraph"><block ref="2ea260929e27ffcb623c8aa35689bd18" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="dabdf1a1811b65cabed1b8e76ccae920" category="list-text"><block ref="dabdf1a1811b65cabed1b8e76ccae920" category="inline-link-rx"></block></block>
+  <block id="f19b6baefd30f42b716828a3ce67d843" category="list-text"><block ref="f19b6baefd30f42b716828a3ce67d843" category="inline-link-rx"></block></block>
+  <block id="634c5d39383447a348842c01b2483754" category="list-text"><block ref="634c5d39383447a348842c01b2483754" category="inline-link-rx"></block></block>
+  <block id="eb14ba8446024f1dd902949682a561b2" category="list-text"><block ref="eb14ba8446024f1dd902949682a561b2" category="inline-link-rx"></block></block>
+  <block id="c60a13b5352c81dedc5a2bed03d2f76a" category="list-text"><block ref="c60a13b5352c81dedc5a2bed03d2f76a" category="inline-link-rx"></block></block>
 </blocks>

@@ -18,9 +18,9 @@ summary: 在您透過NetApp技術支援開啟支援案例之前、您必須先�
 
 如需您已整合至BlueXP的下列雲端供應商解決方案的技術支援、請參閱該產品的藍圖XP文件中的「取得協助」。
 
-* link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/start/concept-fsx-aws.html#getting-help["Amazon FSX for ONTAP Sf"^]
-* link:https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/concept-azure-netapp-files.html#getting-help["Azure NetApp Files"^]
-* link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-service-gcp/concept-cvs-gcp.html#getting-help["適用於 Google Cloud Cloud Volumes Service"^]
+* link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html#getting-help["Amazon FSX for ONTAP Sf"^]
+* link:https://docs.netapp.com/us-en/bluexp-azure-netapp-files/concept-azure-netapp-files.html#getting-help["Azure NetApp Files"^]
+* link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-service-gcp/concept-cvs-gcp.html#getting-help["適用於 Google Cloud Cloud Volumes Service"^]
 
 
 
@@ -72,7 +72,7 @@ summary: 在您透過NetApp技術支援開啟支援案例之前、您必須先�
 .步驟
 . 在BlueXP主控台右上角、按一下「說明」圖示、然後選取「*支援*」。
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-help-support.png["「說明」功能表的快照、其中「支援」是第一個列出的選項"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-help-support.png["「說明」功能表的快照、其中「支援」是第一個列出的選項"]
 
 . 按一下「*」「nss管理」>「新增nssAccount」*。
 . 出現提示時、按一下*繼續*以重新導向至Microsoft登入頁面。
@@ -97,9 +97,9 @@ NetApp使用Microsoft Azure Active Directory做為身分識別供應商、提供
 
 ** 成功登入後、NetApp會儲存NSS.使用者名稱。
 +
-這是系統產生的ID、會對應至您的電子郵件。在「* nssn*管理*」頁面上、您可以從顯示電子郵件 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-nss-menu.png["三個橫點的圖示"] 功能表。
+這是系統產生的ID、會對應至您的電子郵件。在「* nssn*管理*」頁面上、您可以從顯示電子郵件 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/icon-nss-menu.png["三個橫點的圖示"] 功能表。
 
-** 如果您需要重新整理登入認證憑證權杖、也可以在中使用*更新認證*選項 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-nss-menu.png["三個橫點的圖示"] 功能表。
+** 如果您需要重新整理登入認證憑證權杖、也可以在中使用*更新認證*選項 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/icon-nss-menu.png["三個橫點的圖示"] 功能表。
 +
 使用此選項會提示您重新登入。請注意、這些帳戶的權杖會在90天後過期。系統會張貼通知、提醒您注意此點。
 
@@ -122,12 +122,12 @@ NetApp使用Microsoft Azure Active Directory做為身分識別供應商、提供
 .步驟
 . 在BlueXP主控台右上角、按一下「說明」圖示、然後選取「*支援*」。
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-help-support.png["「說明」功能表的快照、其中「支援」是第一個列出的選項"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-help-support.png["「說明」功能表的快照、其中「支援」是第一個列出的選項"]
 
 . 如果您尚未這麼做、請將您的NSS帳戶新增至藍圖XP。
 . 在*資源*頁面上、按一下*註冊以取得支援*。
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-register-support.png["顯示帳戶序號和「Register for Support」（註冊支援）選項的快照"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-register-support.png["顯示帳戶序號和「Register for Support」（註冊支援）選項的快照"]
 
 
 
@@ -155,11 +155,11 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 .步驟
 . 在BlueXP主控台右上角、按一下「說明」圖示、然後選取「*支援*」。
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-help-support.png["「說明」功能表的快照、其中「支援」是第一個列出的選項"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-help-support.png["「說明」功能表的快照、其中「支援」是第一個列出的選項"]
 
 . 從「Support Registration（支援註冊）」頁面找到您的帳戶ID序號。
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-serial-number.png["「說明」功能表的快照、其中「支援」是第一個列出的選項"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-serial-number.png["「說明」功能表的快照、其中「支援」是第一個列出的選項"]
 
 . 瀏覽至 https://register.netapp.com["NetApp的支援註冊網站"^] 並選擇*我不是NetApp註冊客戶*。
 . 填寫必填欄位（紅色星號）。

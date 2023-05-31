@@ -1,1 +1,1 @@
-# cloud-manager-setup-admin
+# bluexp-setup-admin

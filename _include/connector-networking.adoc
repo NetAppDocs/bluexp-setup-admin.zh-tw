@@ -86,10 +86,10 @@ AWS 服務（ amazonaws.com):
 
 === 安全性群組
 
-連接器沒有傳入流量、除非您啟動連接器、或連接器是AutoSupport 作為Proxy來接收資訊、否則連接器不會傳入。HTTP 和 HTTPS 可存取 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#the-local-user-interface["本機 UI"]、在極少數情況下使用。只有當您需要連線至主機進行疑難排解時、才需要 SSH 。
+連接器沒有傳入流量、除非您啟動連接器、或連接器是AutoSupport 作為Proxy來接收資訊、否則連接器不會傳入。HTTP 和 HTTPS 可存取 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#the-local-user-interface["本機 UI"]、在極少數情況下使用。只有當您需要連線至主機進行疑難排解時、才需要 SSH 。
 
 
 
 === IP位址限制
 
-可能與172範圍內的IP位址發生衝突。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-limitations.html["深入瞭解此限制"]。
+可能與172範圍內的IP位址發生衝突。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-limitations.html["深入瞭解此限制"]。

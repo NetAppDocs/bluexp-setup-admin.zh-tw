@@ -76,7 +76,7 @@ NetApp以多種方式支援BlueXP及其雲端服務。我們全年無休提供�
 
 
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-create-case.png["「建立案例」表單的快照、可讓您使用NetApp支援建立案例。"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-create-case.png["「建立案例」表單的快照、可讓您使用NetApp支援建立案例。"]
 
 
 
@@ -132,19 +132,19 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 ** 在*組織案例*下、按一下*檢視*以檢視與貴公司相關的所有案例。
 ** 選擇確切的日期範圍或選擇不同的時間範圍、以修改日期範圍。
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-case-management-date-range.png["案例管理頁面上方表格上方選項的快照、可讓您選擇確切的日期範圍或過去7天、30天或3個月。"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-case-management-date-range.png["案例管理頁面上方表格上方選項的快照、可讓您選擇確切的日期範圍或過去7天、30天或3個月。"]
 
 ** 篩選欄的內容。
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-case-management-filter.png["「狀態」欄中篩選選項的快照、可讓您篩選出符合特定狀態（例如「作用中」或「已關閉」）的個案。"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-case-management-filter.png["「狀態」欄中篩選選項的快照、可讓您篩選出符合特定狀態（例如「作用中」或「已關閉」）的個案。"]
 
-** 按一下以變更表格中顯示的欄 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-table-columns.png["出現在表格中的加號圖示"] 然後選擇您要顯示的欄。
+** 按一下以變更表格中顯示的欄 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/icon-table-columns.png["出現在表格中的加號圖示"] 然後選擇您要顯示的欄。
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-case-management-columns.png["顯示可在表格中顯示之欄的快照。"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-case-management-columns.png["顯示可在表格中顯示之欄的快照。"]
 
 
 
-. 按一下即可管理現有案例 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-table-action.png["表格最後一欄中出現三個點的圖示"] 並選擇其中一個可用選項：
+. 按一下即可管理現有案例 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/icon-table-action.png["表格最後一欄中出現三個點的圖示"] 並選擇其中一個可用選項：
 +
 ** *檢視案例*：檢視特定案例的完整詳細資料。
 ** * 更新案例附註 * ：提供問題的其他詳細資料、或選擇 * 上傳檔案 * 最多附加五個檔案。
@@ -155,6 +155,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 
 
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-case-management-actions.png["螢幕擷取畫面、顯示您在表格最後一欄選取功能表後可以採取的動作。"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-case-management-actions.png["螢幕擷取畫面、顯示您在表格最後一欄選取功能表後可以採取的動作。"]
 
 

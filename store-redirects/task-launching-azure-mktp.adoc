@@ -1,6 +1,6 @@
 ---
 permalink: task-launching-azure-mktp.html 
-redirect: cloud-manager-setup-admin/task-install-connector-azure.html 
+redirect: bluexp-setup-admin/task-install-connector-azure.html 
 ---
 = 
 :allow-uri-read: 

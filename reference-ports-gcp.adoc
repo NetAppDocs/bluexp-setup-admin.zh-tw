@@ -34,7 +34,7 @@ Connector的Google Cloud防火牆規則需要傳入和傳出規則。當您從 B
 | HTTPS | 443.. | 提供 HTTPS 存取、從用戶端網頁瀏覽器存取本機使用者介面 
 
 
-| TCP | 3128 | 提供可存取網際網路的功能、將資訊傳送給NetApp支援部門。Cloud Volumes ONTAP AutoSupport您必須在部署後手動開啟此連接埠。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-verify-autosupport.html["瞭解 Connector 如何用作 AutoSupport 訊息的 Proxy"^] 
+| TCP | 3128 | 提供可存取網際網路的功能、將資訊傳送給NetApp支援部門。Cloud Volumes ONTAP AutoSupport您必須在部署後手動開啟此連接埠。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-verify-autosupport.html["瞭解 Connector 如何用作 AutoSupport 訊息的 Proxy"^] 
 |===
 
 

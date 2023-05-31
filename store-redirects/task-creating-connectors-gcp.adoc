@@ -1,6 +1,6 @@
 ---
 permalink: task-creating-connectors-gcp.html 
-redirect: cloud-manager-setup-admin/task-quick-start-connector-google.html 
+redirect: bluexp-setup-admin/task-quick-start-connector-google.html 
 ---
 = 
 :allow-uri-read: 

@@ -266,17 +266,19 @@ API 端點:: API 呼叫是針對 Connector 虛擬機器進行的。
 | 支援的服務 | 附註 
 
 
-| 備份與還原 | 僅支援將內部部署 ONTAP 磁碟區備份及還原至 StorageGRID 系統。https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html["瞭解如何將內部部署 ONTAP 資料備份至 StorageGRID"^] 
+| 備份與還原 | 僅支援將內部部署 ONTAP 磁碟區備份及還原至 StorageGRID 系統。
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html["瞭解如何將內部部署 ONTAP 資料備份至 StorageGRID"^] 
 
 
 | 分類  a| 
 * 唯一支援的資料來源是您可以在本機探索的資料來源。
 +
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html#supported-data-sources["檢視您可以在本機探索的來源"^]
+https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-dark-site.html#supported-data-sources["檢視您可以在本機探索的來源"^]
 
 * 不支援需要輸出網際網路存取的功能。
 +
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html#limitations["檢視功能限制"^]
+https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-dark-site.html#limitations["檢視功能限制"^]
 
 
 
@@ -296,7 +298,7 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-da
 --
 對於 Cloud Volumes ONTAP BYOL 、僅支援節點型授權。不支援容量型授權。由於無法使用外傳網際網路連線、因此您需要手動上傳 BlueXP 數位錢包中的 Cloud Volumes ONTAP 授權檔案。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#add-unassigned-licenses["瞭解如何新增授權至 BlueXP 數位錢包"^]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html#add-unassigned-licenses["瞭解如何新增授權至 BlueXP 數位錢包"^]
 
 --
 如何開始使用私有模式:: 您可以從 NetApp 支援網站 下載「離線」安裝程式來使用私有模式。
