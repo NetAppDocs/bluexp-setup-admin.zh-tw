@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-adding-nss-accounts.html 
 keywords: adding, creating, netapp support site account, nss, update account, update nss account, update nss credentials, delete nss account, remove nss account, change working environment, working environment nss 
-summary: 提供NetApp 支援網站 您的支援（NSS）帳戶認證資料、以便註冊以取得支援、啟用Cloud Volumes ONTAP 適用於各種功能的關鍵工作流程。這些NSS認證資料會與整個BlueXP帳戶建立關聯。 
+summary: 將 NetApp 支援網站 帳戶與 BlueXP 帳戶建立關聯、以啟用 Cloud Volumes ONTAP 的關鍵工作流程。這些NSS認證資料會與整個BlueXP帳戶建立關聯。 
 ---
 = 管理與BlueXP帳戶相關聯的NSS認證
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 提供NetApp 支援網站 您的支援（NSS）帳戶認證資料、以
 
 
 [role="lead"]
-為 BlueXP 提供 NetApp 支援網站 （ NSS ）帳戶的認證、以便註冊支援、啟用 Cloud Volumes ONTAP 的重要工作流程等。這些NSS認證資料會與整個BlueXP帳戶建立關聯。
+將 NetApp 支援網站 帳戶與 BlueXP 帳戶建立關聯、以啟用 Cloud Volumes ONTAP 的關鍵工作流程。這些NSS認證資料會與整個BlueXP帳戶建立關聯。
 
 
 NOTE: BlueXP也支援為每個BlueXP使用者建立一個NSS帳戶的關聯。 link:task-manage-user-credentials.html["瞭解如何管理使用者層級認證"]。
@@ -25,8 +25,6 @@ NOTE: BlueXP也支援為每個BlueXP使用者建立一個NSS帳戶的關聯。 l
 
 若要在BlueXP中啟用下列工作、需要將NetApp 支援網站 此認證與您的特定BlueXP帳戶ID建立關聯：
 
-* 註冊以取得支援
-* 建立支援案例
 * 自帶授權（Cloud Volumes ONTAP BYOL）即可部署
 +
 您必須提供您的NSS帳戶、才能讓BlueXP上傳授權金鑰、並啟用您所購買期間的訂閱。這包括定期續約的自動更新。
@@ -89,7 +87,7 @@ NetApp使用Microsoft Azure Active Directory做為身分識別供應商、提供
 
 
 .接下來呢？
-現在、使用者可以在建立新Cloud Volumes ONTAP 的支援系統、註冊現有Cloud Volumes ONTAP 的支援系統、以及註冊支援時、選擇帳戶。
+現在、使用者可以在建立新的 Cloud Volumes ONTAP 系統和註冊現有 Cloud Volumes ONTAP 系統時、選擇帳戶。
 
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-aws.html["在 Cloud Volumes ONTAP AWS 中啟動"^]
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-azure.html["在 Cloud Volumes ONTAP Azure 中啟動"^]
