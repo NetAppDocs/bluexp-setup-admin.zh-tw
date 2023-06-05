@@ -3667,4 +3667,8 @@
 如果您是從市場啟動 Connector 、手動安裝 Connector 、或是您需要自行設定原則 <block ref="c5a34c273ba791769e2c0edbb9c79dc0" category="inline-link-macro-rx"></block>。
 
 您也必須確保在後續版本中新增權限時、原則保持在最新狀態。</block>
+  <block id="b9a11b90960ff803269429887ab4cff3" category="paragraph">使用者必須是本機使用者。不支援網域使用者。</block>
+  <block id="8773d2d5904a6b33e1f92e729d81f86b" category="cell">KMS ： GenerateDataKeyWithoutPlaintext</block>
+  <block id="a05b5ce37ea267c22e70da731bcc3494" category="section-title">2023 年 6 月 6 日</block>
+  <block id="14cbfe27bd7092d1b2ab4502adbdd584" category="paragraph">Cloud Volumes ONTAP 現在需要下列權限：</block>
 </blocks>

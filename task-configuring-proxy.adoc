@@ -41,6 +41,9 @@ image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」�
 .. 選取 * 啟用 Proxy* 。
 .. 使用語法指定伺服器 http://_address:port_[] 或 https://_address:port_[]
 .. 如果伺服器需要基本驗證、請指定使用者名稱和密碼
++
+使用者必須是本機使用者。不支援網域使用者。
+
 .. 選擇*保存*。
 +
 

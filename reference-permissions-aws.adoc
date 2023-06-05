@@ -167,7 +167,8 @@ summary: 當BlueXP在AWS中啟動Connector執行個體時、它會將原則附�
                 "ce:GetCostAndUsage",
                 "ce:GetTags",
                 "fsx:Describe*",
-                "fsx:List*"
+                "fsx:List*",
+                "kms:GenerateDataKeyWithoutPlaintext"
             ],
             "Resource": "*",
             "Effect": "Allow",
@@ -1133,7 +1134,7 @@ Connector會提出下列API要求、要求在Cloud Volumes ONTAP AWS中部署及
 | S3：清單庫 | 否 | 是的 | 否 
 
 
-.4+| 使用Cloud Volumes ONTAP AWS金鑰管理服務（KMS）啟用資料加密功能 | 公里：清單* | 是的 | 是的 | 否 
+.5+| 使用Cloud Volumes ONTAP AWS金鑰管理服務（KMS）啟用資料加密功能 | 公里：清單* | 是的 | 是的 | 否 
 
 
 | 公里：ReEncrypt * | 是的 | 否 | 否 
@@ -1143,6 +1144,9 @@ Connector會提出下列API要求、要求在Cloud Volumes ONTAP AWS中部署及
 
 
 | 公里：建立授予 | 是的 | 是的 | 否 
+
+
+| KMS ： GenerateDataKeyWithoutPlaintext | 是的 | 是的 | 否 
 
 
 .4+| 取得AWS成本資料Cloud Volumes ONTAP 以供使用 | CE：GetReservationUtilization | 否 | 是的 | 否 
@@ -1218,6 +1222,14 @@ Connector會提出下列API要求、以探索及管理Amazon EKS叢集：
 == 變更記錄
 
 新增和移除權限時、我們會在下方各節中加以註記。
+
+
+
+=== 2023 年 6 月 6 日
+
+Cloud Volumes ONTAP 現在需要下列權限：
+
+KMS ： GenerateDataKeyWithoutPlaintext
 
 
 

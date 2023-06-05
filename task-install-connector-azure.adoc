@@ -236,6 +236,9 @@ chmod +x OnCommandCloudManager-<version>
 ** \http://username:password@address:port
 ** \https://address:port
 ** \https://username:password@address:port
++
+使用者必須是本機使用者。不支援網域使用者。
+
 
 
 +
