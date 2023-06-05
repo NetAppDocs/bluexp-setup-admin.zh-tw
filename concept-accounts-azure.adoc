@@ -36,7 +36,7 @@ image:screenshot_accounts_select_azure.gif["顯示「詳細資料  認證」頁�
 
 == 額外的 Azure 訂閱、提供託管身分識別
 
-指派給 Connector VM 的系統指派託管身分識別與您啟動 Connector 的訂閱相關聯。如果您想要選擇不同的 Azure 訂閱、則需要 link:task-adding-azure-accounts.html#associating-additional-azure-subscriptions-with-a-managed-identity["將託管身分識別與這些訂閱建立關聯"]。
+指派給 Connector VM 的系統指派託管身分識別與您啟動 Connector 的訂閱相關聯。如果您想要選擇不同的 Azure 訂閱、則需要 link:task-adding-azure-accounts.html#associate-additional-azure-subscriptions-with-a-managed-identity["將託管身分識別與這些訂閱建立關聯"]。
 
 
 
@@ -46,7 +46,7 @@ image:screenshot_accounts_select_azure.gif["顯示「詳細資料  認證」頁�
 
 image:diagram_permissions_multiple_azure.png["顯示初始 Azure 帳戶（透過自訂角色和託管身分識別接收權限）的概念性映像、以及透過自訂角色和服務主體接收權限的兩個額外帳戶。"]
 
-您可以 link:task-adding-azure-accounts.html#adding-azure-accounts-to-cloud-manager["將帳戶認證新增至BlueXP"] 提供 AD 服務主體的詳細資料。
+您可以 link:task-adding-azure-accounts.html#add-additional-azure-credentials-to-bluexp["將帳戶認證新增至BlueXP"] 提供 AD 服務主體的詳細資料。
 
 例如、您可以在建立新的 Cloud Volumes ONTAP 工作環境時、在認證之間切換：
 

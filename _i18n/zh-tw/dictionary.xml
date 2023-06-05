@@ -857,8 +857,6 @@
   <block id="fee2d29ad57ecb4f5309060016b4495c" category="paragraph">下圖說明上述第 1 和第 2 項所述的權限要求：</block>
   <block id="ebd7d1e81a9a2891e260eecaa709adbf" category="section-title">適用於此產品的專案 Cloud Volumes ONTAP</block>
   <block id="a4ccd00c9229d2a8510153f89f2a576a" category="paragraph">可與 Connector 位於同一個專案中、或位於不同的專案中。 Cloud Volumes ONTAP若要在 Cloud Volumes ONTAP 不同的專案中部署功能、您必須先將 Connector 服務帳戶和角色新增至該專案。</block>
-  <block id="c5eb6c02a9d49411a265d5ddf6527796" category="inline-link-macro">瞭解如何設定服務帳戶</block>
-  <block id="b2a3116602dffae5ec2500e053b897f2" category="list-text"><block ref="b2a3116602dffae5ec2500e053b897f2" category="inline-link-macro-rx"></block></block>
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">註冊以取得支援</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">版本資訊</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
@@ -1533,7 +1531,6 @@
   <block id="825a028e49bfdd88d5c17500e011aaf5" category="inline-image-macro">顯示在Azure帳戶和訂閱中部署Connector的BlueXP概念性映像。系統指派的託管身分識別已啟用、並將自訂角色指派給Connector虛擬機器。</block>
   <block id="4ba8970a06f2fd9f7ce2b5459745a3f0" category="paragraph"><block ref="4ba8970a06f2fd9f7ce2b5459745a3f0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4b8d6d1554d22a2bda6470094c227037" category="paragraph">當您為Cloud Volumes ONTAP 下列項目建立新的工作環境時、BlueXP預設會選取這些Azure認證資料：</block>
-  <block id="79f0e2a1f0b9a07786aae7969fdf941c" category="paragraph">您可以 <block ref="fdb068e0f25207f010bf6b52e6d7dd53" category="inline-link-macro-rx"></block> 提供 AD 服務主體的詳細資料。</block>
   <block id="2ebfeabed40c2270d9fa8325080a4b3e" category="paragraph">您必須提供您的NSS帳戶、才能讓BlueXP上傳授權金鑰、並啟用您所購買期間的訂閱。這包括定期續約的自動更新。</block>
   <block id="37cb0cdf24a1597d838bc5f1699b9e5a" category="list-text">帳戶是在使用者層級管理、這表示登入的其他使用者無法檢視。</block>
   <block id="759f5e4f5dca6e6753e9254efed21ea1" category="paragraph">自2021年11月起、NetApp現在使用Microsoft Azure Active Directory做為身分識別供應商、提供專為支援與授權所設計的驗證服務。此更新之後、BlueXP會提示您更新先前新增之任何現有帳戶的認證資料。</block>
@@ -2158,7 +2155,6 @@
   <block id="a72a43431413f493c5087ab72327a680" category="list-text">只有在需要連線至主機進行疑難排解時、才需要SSH（22）。</block>
   <block id="3944b94e332ebaaeeb1f75ea267f7687" category="paragraph">從BlueXP部署Connector時、您需要使用具備部署Connector虛擬機器權限的Azure帳戶或服務主體。所需權限列於 <block ref="215c62f8f7b8f0001687c60d93a1178c" category="inline-link-macro-rx"></block>。</block>
   <block id="61d31e18d80b565c39bc938c02808e6f" category="paragraph">您可以 Cloud Volumes ONTAP 使用初始 Azure 認證來部署所有的整套系統、也可以新增其他認證資料。</block>
-  <block id="75904d63b29699480eda8c85929c78ee" category="paragraph">指派給 Connector VM 的系統指派託管身分識別與您啟動 Connector 的訂閱相關聯。如果您想要選擇不同的 Azure 訂閱、則需要 <block ref="fde23217a3c87d38cc57946a4ba7d7b4" category="inline-link-macro-rx"></block>。</block>
   <block id="008c03a90ac1fbf6c15706a19f919f3b" category="paragraph">如果您想要將不同的 Azure 認證搭配 BlueXP 使用、則必須將必要的權限授予 <block ref="551303c9f711674f6fbd417b1f488bc0" category="inline-link-macro-rx"></block> 針對每個 Azure 帳戶。下圖顯示兩個額外的帳戶、每個帳戶都設有提供權限的服務主體和自訂角色：</block>
   <block id="eb99e348d38c212372a6e836f66f7356" category="paragraph">例如、您可以在建立新的 Cloud Volumes ONTAP 工作環境時、在認證之間切換：</block>
   <block id="018f02432b76c440f6d0c2a5da5a1a5d" category="paragraph">以上各節說明建議的連接器部署方法、該方法來自於BlueXP。您也可以從 Azure Marketplace 在 Azure 中部署 Connector 、也可以在自己的 Linux 主機上安裝 Connector 軟體。</block>
@@ -2321,7 +2317,6 @@
   <block id="eec108a26c2c4c3392174c931352146b" category="cell">BlueXP 的連接器部署</block>
   <block id="2d3fc94cd0898448a15e6e05f4098b6f" category="inline-link-macro">設定 AWS 權限</block>
   <block id="5e32b9a1412a74f0635b487d41937c4a" category="cell"><block ref="5e32b9a1412a74f0635b487d41937c4a" category="inline-link-macro-rx"></block></block>
-  <block id="d7977db2bcddda7e6cbf6cfc23b6278b" category="cell">當BlueXP啟動Connector時、它會將原則附加至執行個體、以提供管理AWS帳戶中資源和處理程序所需的權限。如果您是從市場啟動 Connector 、手動安裝 Connector 、或是您需要自行設定原則 <block ref="aec3821661a331ee5026b7ddbb2bcb98" category="inline-link-macro-rx"></block>。您也必須確保在後續版本中新增權限時、原則保持在最新狀態。</block>
   <block id="8ff08eb12a4bed8d94e8682a89020c56" category="paragraph">如果您是從市場啟動 Connector 、手動安裝 Connector 、或是您需要自行設定自訂角色 <block ref="3a714b4b67994f94abb2f77ce85a395b" category="inline-link-macro-rx"></block>。</block>
   <block id="cf94f172dc39ef92ca49e3c869407357" category="cell"><block ref="cf94f172dc39ef92ca49e3c869407357" category="inline-link-macro-rx"></block></block>
   <block id="8e83b819241a1bf1d918adcc453afeab" category="cell"><block ref="8e83b819241a1bf1d918adcc453afeab" category="inline-link-macro-rx"></block></block>
@@ -2430,10 +2425,8 @@
   <block id="c0f31a85c681cbd2946d5195b382308e" category="paragraph">如果您想要在不同的 AWS 帳戶中啟動 Cloud Volumes ONTAP 、則可以為 IAM 使用者提供 AWS 金鑰、或是在信任的帳戶中提供角色的 ARN 。下圖顯示兩個額外的帳戶、一個透過信任帳戶中的 IAM 角色提供權限、另一個則透過 IAM 使用者的 AWS 金鑰提供權限：</block>
   <block id="48c7f5d184d27ef640370421d3317ba5" category="paragraph">然後您可以指定 IAM 角色的 Amazon 資源名稱（ ARN ）或 IAM 使用者的 AWS 金鑰、將帳戶認證新增至 BlueXP 。</block>
   <block id="a6856ad65a90d33bc83bd78362d9bfce" category="inline-link-macro">瞭解如何將 AWS 認證新增至現有的 Connector 。</block>
-  <block id="51c8ce8bb23533cdcf692a4e99f34896" category="paragraph"><block ref="51c8ce8bb23533cdcf692a4e99f34896" category="inline-link-macro-rx"></block></block>
   <block id="a3d00aa90b48860260586c7be1bec2e8" category="inline-link-macro">瞭解如何將 AWS 認證新增至 BlueXP for Amazon FSX for ONTAP</block>
   <block id="3e9d4cd6e63ede4decfd24e1cd55b4f5" category="inline-link-macro">瞭解如何將 AWS 認證新增至 BlueXP 以建立 Connector</block>
-  <block id="d53482083698aad0c56365a4b9848a94" category="list-text"><block ref="d53482083698aad0c56365a4b9848a94" category="inline-link-macro-rx"></block></block>
   <block id="3551bffff472d33de9e274227109232f" category="paragraph">以上各節說明建議的連接器部署方法、該方法來自於BlueXP。您也可以從 AWS Marketplace 在 AWS 中部署 Connector 、然後在自己的 Linux 主機上手動安裝 Connector 軟體。</block>
   <block id="c369edb322a8885a983610e18f932d0c" category="paragraph">對於內部部署、您無法為 BlueXP 系統設定 IAM 角色、但可以使用 AWS 存取金鑰提供權限。</block>
   <block id="b8c45dd3fc7b806721f81b6d91964231" category="summary">以私人模式使用 BlueXP 開始運作後、您可以開始使用受私有模式支援的 BlueXP 服務。</block>
@@ -2970,7 +2963,6 @@
   <block id="0a3420a284048b3146bfedfda39bc929" category="list-text">選取 * Active Directory 服務主體 * 以輸入有關授與必要權限的 Azure Active Directory 服務主體的資訊：</block>
   <block id="37653ce036b712cbc8dcc5b189d94b80" category="inline-link-macro">瞭解如何取得服務主體的這些值</block>
   <block id="283459c094a8c0f9ef857a405f711530" category="paragraph"><block ref="82e5cd1190c32cd925829227067e3312" category="inline-link-macro-rx"></block>。</block>
-  <block id="870a297127d1f7e2fafbc700250f7ba7" category="paragraph"><block ref="3596f994dc1277abac9bff5ff853fb6f" category="inline-link-macro-rx"></block>。</block>
   <block id="2ad12e29d6b612d0df73a715eb04038a" category="list-text">在 * 管理 * 下、選取 * 開啟 * 、為 Connector VM 啟用 * 系統指派的託管識別 * 。</block>
   <block id="827aaa681f80dbd83d41241979226f5a" category="paragraph">此設定非常重要、因為託管身分識別可讓 Connector 虛擬機器在 Azure Active Directory 中識別自己、而無需提供任何認證。完成後、您需要指派您建立的自訂角色<block ref="f91ce7faef49711445322691b4d6ac64" category="inline-link-rx"></block>。</block>
   <block id="f6f67a41d5743f1fd41a2fb8b54fd85b" category="paragraph"><block ref="7e9e5669a04928e1ffa0a9abd020b87e" category="inline-link-macro-rx"></block>。</block>
@@ -3659,4 +3651,20 @@
   <block id="39f382b97080640c75604b5890f3a5d3" category="paragraph">將 NSS 認證與 BlueXP 帳戶建立關聯、與 BlueXP 使用者登入相關的 NSS 帳戶不同。</block>
   <block id="e3bc6d35311568d55f1c8ea11984b964" category="paragraph">這些 NSS 認證會與您的特定 BlueXP 帳戶 ID 相關聯。屬於BlueXP帳戶的使用者可以從*支援&gt; nss管理*存取這些認證資料。</block>
   <block id="13348442cc6a27032d2b4aa28b75a5d3" category="cell">搜尋</block>
+  <block id="41f10588fd19d4ce9160a06b3b02b971" category="paragraph"><block ref="a42750006c41b7be8d7d74e88b9209f7" category="inline-link-macro-rx"></block>。</block>
+  <block id="8bee474fd085c11334ab13b9c1a78d9e" category="inline-link-macro">瞭解如何設定服務帳戶</block>
+  <block id="2846d36d7005f43bc3cc15749f932ff7" category="list-text"><block ref="2846d36d7005f43bc3cc15749f932ff7" category="inline-link-macro-rx"></block></block>
+  <block id="e9449a821e5687d61739e39e9c79898a" category="paragraph">指派給 Connector VM 的系統指派託管身分識別與您啟動 Connector 的訂閱相關聯。如果您想要選擇不同的 Azure 訂閱、則需要 <block ref="f01caac2e85764bbee287cdcbf568231" category="inline-link-macro-rx"></block>。</block>
+  <block id="f25b2b221edfa2bdf4fb0df0c1b2c9d5" category="paragraph">您可以 <block ref="d81a76d92186f9ebef738a7789fc0680" category="inline-link-macro-rx"></block> 提供 AD 服務主體的詳細資料。</block>
+  <block id="affef63146feae005315127173a28aa9" category="paragraph"><block ref="affef63146feae005315127173a28aa9" category="inline-link-macro-rx"></block></block>
+  <block id="7a3f65e5f9d581964ce0fcd660ba7130" category="list-text"><block ref="7a3f65e5f9d581964ce0fcd660ba7130" category="inline-link-macro-rx"></block></block>
+  <block id="37c1762f10d4fe7f0bd3dd2820e543c3" category="section-title">網域使用者的 Proxy 組態</block>
+  <block id="2ced7e677ffb2b0b579ea765f328f9d9" category="paragraph">在設定 Connector 的 Proxy 伺服器時、 BlueXP 不支援網域使用者。當您輸入 Proxy 伺服器的使用者名稱時、它必須是本機使用者。</block>
+  <block id="0964ada151a483bdbffce0cc395edecc" category="admonition">請記下憑證到期日。您需要返回「聯盟設定」頁面、並在憑證過期前更新憑證。這是您的責任。BlueXP 不會追蹤到期日。最好與您的 AD 團隊合作、準時收到警示。</block>
+  <block id="5b70b2d98b345016c9e69390ea296277" category="admonition">請記下秘密金鑰到期日。您需要返回「聯盟設定」頁面、並在憑證過期前更新憑證。這是您的責任。BlueXP 不會追蹤到期日。最好與您的 AD 團隊合作、準時收到警示。</block>
+  <block id="ec2a26203d1e704fea5fe65b3298f175" category="cell">當BlueXP啟動Connector時、它會將原則附加至執行個體、以提供管理AWS帳戶中資源和處理程序所需的權限。
+
+如果您是從市場啟動 Connector 、手動安裝 Connector 、或是您需要自行設定原則 <block ref="c5a34c273ba791769e2c0edbb9c79dc0" category="inline-link-macro-rx"></block>。
+
+您也必須確保在後續版本中新增權限時、原則保持在最新狀態。</block>
 </blocks>

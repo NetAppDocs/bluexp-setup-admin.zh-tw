@@ -45,6 +45,6 @@ image:diagram_permissions_gcp.png["概念性影像、說明Google和服務帳戶
 
 可與 Connector 位於同一個專案中、或位於不同的專案中。 Cloud Volumes ONTAP若要在 Cloud Volumes ONTAP 不同的專案中部署功能、您必須先將 Connector 服務帳戶和角色新增至該專案。
 
-* link:task-creating-connectors-gcp.html#setting-up-gcp-permissions-to-create-a-connector["瞭解如何設定服務帳戶"]
+* link:task-set-up-permissions-google.html["瞭解如何設定服務帳戶"]
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html["瞭解如何在 Google Cloud 中部署 Cloud Volumes ONTAP 、並選擇專案"^]
 

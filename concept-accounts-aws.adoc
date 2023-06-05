@@ -58,7 +58,7 @@ image:diagram_permissions_multiple_aws.png["顯示兩個額外帳戶的概念性
 
 image:screenshot_accounts_switch_aws.png["在詳細資料  認證頁面中按一下「切換帳戶」之後、顯示在雲端供應商帳戶之間選取的快照。"]
 
-link:task-adding-aws-accounts.html#add-credentials-to-a-connector["瞭解如何將 AWS 認證新增至現有的 Connector 。"]
+link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector["瞭解如何將 AWS 認證新增至現有的 Connector 。"]
 
 
 
@@ -67,7 +67,7 @@ link:task-adding-aws-accounts.html#add-credentials-to-a-connector["瞭解如何�
 新增AWS認證資料至藍圖XP、可提供必要的權限來建立及管理適用於ONTAP 整個作業環境的FSX、或是建立Connector。
 
 * link:task-adding-aws-accounts.html#add-credentials-to-bluexp-for-creating-a-connector["瞭解如何將 AWS 認證新增至 BlueXP for Amazon FSX for ONTAP"^]
-* link:task-adding-aws-accounts.html#add-credentials-to-a-connector["瞭解如何將 AWS 認證新增至 BlueXP 以建立 Connector"]
+* link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector["瞭解如何將 AWS 認證新增至 BlueXP 以建立 Connector"]
 
 
 
