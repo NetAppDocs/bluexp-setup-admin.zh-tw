@@ -966,9 +966,6 @@
   <block id="f63d604edef29843d35ad367e0d82814" category="inline-link">瞭解如何設定FSX for ONTAP Sfor Sfor Sfor的權限</block>
   <block id="875232e8c1abaa42024ddc396bcef6da" category="list-text">建立包含建立Connector所需權限的原則。</block>
   <block id="8dbc816059e1b421ecb65c693d5f2171" category="paragraph">您現在可以在建立新的Connector時使用認證資料。</block>
-  <block id="c3d36b4a46dce16b3ad60eecabc87582" category="list-text">Amazon S3探索</block>
-  <block id="bde43e83db72512f1aea47540264c8f0" category="list-text">Azure Blob探索</block>
-  <block id="6060e8f925263dfdc63a751c294072e0" category="list-text">Google Cloud Storage探索</block>
   <block id="693adfb773a054f1c9287da186e8ce5d" category="list-text">EC2：建立標記</block>
   <block id="3a2cbdfb7b022d729d851d5052148241" category="list-text">EC2：刪除標記</block>
   <block id="684a1bfe5fbc91f18d96de978a7df58a" category="list-text">EC2：取消標示</block>
@@ -3671,4 +3668,9 @@
   <block id="8773d2d5904a6b33e1f92e729d81f86b" category="cell">KMS ： GenerateDataKeyWithoutPlaintext</block>
   <block id="a05b5ce37ea267c22e70da731bcc3494" category="section-title">2023 年 6 月 6 日</block>
   <block id="14cbfe27bd7092d1b2ab4502adbdd584" category="paragraph">Cloud Volumes ONTAP 現在需要下列權限：</block>
+  <block id="d79294e72dc3584cc12c98a7a931315d" category="list-text">Amazon S3儲存設備</block>
+  <block id="2b3e8f910d66604cd77f93b333670468" category="list-text">Azure Blob 儲存設備</block>
+  <block id="390e388eccc77b388b4d54d73b76f902" category="list-text">Google Cloud Storage 貯體</block>
+  <block id="ac7b3cf10ea08c788a374e0291742517" category="list-text">移轉報告</block>
+  <block id="ff45d71e69fb5930de79de7c94326d7b" category="list-text">Volume 快取</block>
 </blocks>
