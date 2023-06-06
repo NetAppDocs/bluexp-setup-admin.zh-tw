@@ -313,8 +313,6 @@
   <block id="7c521ef00b3568ffec78f7d18b3f23a1" category="section-title">安裝Connector</block>
   <block id="7bc3966adb932d8b546fbfa4ef7113d7" category="paragraph">需要root權限才能安裝Connector。</block>
   <block id="bbe48fb854ea022537208eeeff822f91" category="list-title">關於這項工作</block>
-  <block id="3a0381e5879eb05d4447518a0fe21601" category="list-text">安裝會安裝 AWS 命令列工具（ awscli ）、以啟用 NetApp 支援的還原程序。</block>
-  <block id="c421e739c1e3aa36da0456d7f369e45f" category="paragraph">如果您收到安裝 awscli 失敗的訊息、您可以放心忽略該訊息。無需使用工具、連接器即可順利運作。</block>
   <block id="aad3dfdc62f79a4c10e86004046d9509" category="list-text">NetApp 支援網站上提供的安裝程式可能是較早的版本。安裝後、如果有新版本可用、 Connector 會自動自行更新。</block>
   <block id="325740f998865be7879e32048d406868" category="list-text">執行安裝指令碼。</block>
   <block id="8dae847f59a6afd8d7e49b7b7654d0eb" category="list-text">開啟網頁瀏覽器並輸入下列 URL ：</block>
@@ -1942,8 +1940,6 @@
   <block id="a3b3ed2f72536d95b268a4a67722c55d" category="list-text">註冊隨用隨付Cloud Volumes ONTAP 的功能系統</block>
   <block id="f5135b68b75a8404803a1eb438e40c5e" category="list-text">升級Cloud Volumes ONTAP 更新版的更新版</block>
   <block id="a86ad85ddb4228477c624e47ab659180" category="paragraph">這些認證資料會與您的特定BlueXP帳戶ID建立關聯。屬於BlueXP帳戶的使用者可以從*支援&gt; nss管理*存取這些認證資料。</block>
-  <block id="d4b8ea0f438d980b900fa0c72d88710f" category="list-text">此帳戶無法搭配任何其他BlueXP功能使用：不適用於Cloud Volumes ONTAP 建立、授權或建立支援案例。</block>
-  <block id="37ab7585b9575599c51022bd3b09813a" category="list-text">每位使用者只能有一個與數位顧問和案例管理相關的NSS帳戶。</block>
   <block id="9a030ad8abbc9b1e402feade38bdec50" category="paragraph">「支援儀表板」可讓您新增及管理NetApp 支援網站 適用於BlueXP帳戶層級的功能。</block>
   <block id="ec084bb25ed5b934c09b361069c246b2" category="list-text">NSS-帳戶必須是客戶層級的帳戶（而非來賓帳戶或暫存帳戶）。您可以擁有多個客戶層級的NSS帳戶。</block>
   <block id="27387009488fe78dcc7cb7e3e432792f" category="list-text">如果該帳戶是合作夥伴層級帳戶、則只能有一個NSS帳戶。如果您嘗試新增客戶層級的NSS帳戶、但有合作夥伴層級的帳戶存在、您會收到下列錯誤訊息：</block>
@@ -3598,7 +3594,6 @@
   <block id="b5d4819a4e8d73d085630d52e025ce10" category="paragraph">此動作會登錄 BlueXP 帳戶以取得支援、並啟動支援權利。BlueXP 帳戶中只有一位使用者必須將 NetApp 支援網站 帳戶與其 BlueXP 登入建立關聯、才能註冊支援並啟動支援權利。完成後、「 * 資源 * 」頁面會顯示您的帳戶已註冊以取得支援。</block>
   <block id="aefc4dbe9b72d17b676f3fa6cb3d70e1" category="paragraph"><block ref="aefc4dbe9b72d17b676f3fa6cb3d70e1" category="inline-link-rx"></block></block>
   <block id="1f41c927d23b7f472c07e8cefaaa4155" category="list-text">當您存取*支援&gt;個案管理*時、系統會提示您輸入您的NSS認證（如果您尚未輸入）。此頁面可讓您建立及管理與您的 NSS 帳戶和貴公司相關的支援案例。</block>
-  <block id="455362b49d80ddf5f9cd87d0f39e81ab" category="paragraph">支援的資訊也會與您所屬的BlueXP帳戶建立關聯NetApp 支援網站 。NSS 帳戶層級認證可讓您在攜帶自己的授權（ BYOL ）及其他項目時、部署 Cloud Volumes ONTAP 。</block>
   <block id="920fe1428c19533eda6222fe7e58efbe" category="inline-link">瞭解如何管理與 BlueXP 登入相關的認證</block>
   <block id="e1d2e1a634647fd631081bc4f6f8e523" category="list-text">若要使用 * 建立案例 * 功能、您必須先將 NetApp 支援網站 認證與 BlueXP 登入建立關聯。<block ref="2a0d8b66ca9e99d023b48cf25f40fb12" category="inline-link-rx"></block>。</block>
   <block id="e49aa971c20ec071f1b5bbc3c7266769" category="list-text">如果您要為具有序號的 ONTAP 系統開啟案例、則您的 NSS 帳戶必須與該系統的序號相關聯。</block>
@@ -3673,4 +3668,7 @@
   <block id="390e388eccc77b388b4d54d73b76f902" category="list-text">Google Cloud Storage 貯體</block>
   <block id="ac7b3cf10ea08c788a374e0291742517" category="list-text">移轉報告</block>
   <block id="ff45d71e69fb5930de79de7c94326d7b" category="list-text">Volume 快取</block>
+  <block id="816a41c8cb7108ca970b7fdff9e2b798" category="list-text">此帳戶無法與 Cloud Volumes ONTAP 授權搭配使用。</block>
+  <block id="fcaf3921e62bfc728003fed248ffa3f9" category="list-text">每位使用者只能有一個與 Digital Advisor 相關聯的 NSS 帳戶、以及支援案例管理。</block>
+  <block id="2c0e4e5466a7db131a747ad4e195dc2c" category="paragraph">您也可以將 NetApp 支援網站 認證與您所屬的 BlueXP 帳戶建立關聯。NSS 帳戶層級認證可讓您在攜帶自己的授權（ BYOL ）、註冊 PAYGO 系統、以及升級 Cloud Volumes ONTAP 軟體時、部署 Cloud Volumes ONTAP 。</block>
 </blocks>
