@@ -3668,7 +3668,7 @@
   <block id="390e388eccc77b388b4d54d73b76f902" category="list-text">Google Cloud Storage 貯體</block>
   <block id="ac7b3cf10ea08c788a374e0291742517" category="list-text">移轉報告</block>
   <block id="ff45d71e69fb5930de79de7c94326d7b" category="list-text">Volume 快取</block>
-  <block id="816a41c8cb7108ca970b7fdff9e2b798" category="list-text">此帳戶無法與 Cloud Volumes ONTAP 授權搭配使用。</block>
   <block id="fcaf3921e62bfc728003fed248ffa3f9" category="list-text">每位使用者只能有一個與 Digital Advisor 相關聯的 NSS 帳戶、以及支援案例管理。</block>
-  <block id="2c0e4e5466a7db131a747ad4e195dc2c" category="paragraph">您也可以將 NetApp 支援網站 認證與您所屬的 BlueXP 帳戶建立關聯。NSS 帳戶層級認證可讓您在攜帶自己的授權（ BYOL ）、註冊 PAYGO 系統、以及升級 Cloud Volumes ONTAP 軟體時、部署 Cloud Volumes ONTAP 。</block>
+  <block id="a90e2fd00c8dae4d2fb187ce1b69fa09" category="list-text">帳戶無法與 Cloud Volumes ONTAP 授權搭配使用。</block>
+  <block id="49dd7d8a4c2b90d52580a51718450534" category="paragraph">如果您使用的是 Cloud Volumes ONTAP 、您可以將 NetApp 支援網站 認證與您所屬的 BlueXP 帳戶建立關聯。NSS 帳戶層級認證可讓您在攜帶自己的授權（ BYOL ）、註冊 PAYGO 系統、以及升級 Cloud Volumes ONTAP 軟體時、部署 Cloud Volumes ONTAP 。</block>
 </blocks>
