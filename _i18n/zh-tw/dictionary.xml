@@ -2103,7 +2103,6 @@
   <block id="b82af7a7b96d34942cadb7921514f408" category="paragraph">當您直接探索內部部署ONTAP 的無線叢集而不使用Connector時、系統會提示您輸入ONTAP 叢集的憑據。這些認證資料是在使用者層級進行管理、這表示登入的其他使用者無法檢視這些認證資料。</block>
   <block id="4cdcf6b8fd95bbaa7cf27e4443c7681b" category="section-title">NSS.認證資料</block>
   <block id="fb81cc600c8251372b08f0797c3abdd7" category="list-text">當您在BlueXP中存取Digital Advisor時、系統會提示您輸入您的NSS認證、以登入Digital Advisor。</block>
-  <block id="276e2bd44117ba4b3317de4a352235b2" category="paragraph">請注意以下關於NSS帳戶的資訊：</block>
   <block id="db0f1f3e531a1a1c690b42c9a6daae35" category="inline-link-macro">深入瞭解如何搭配您的BlueXP帳戶使用NSS認證</block>
   <block id="dacf2f246c2efb276c3709c141985f7c" category="paragraph"><block ref="4734e8f3bab5a9c00aebb286a2f16deb" category="inline-link-macro-rx"></block>。</block>
   <block id="cc96a4cc30e50577aa6671b076af72e1" category="section-title">管理您的使用者認證資料</block>
@@ -3589,7 +3588,6 @@
   <block id="c60a13b5352c81dedc5a2bed03d2f76a" category="list-text"><block ref="c60a13b5352c81dedc5a2bed03d2f76a" category="inline-link-rx"></block></block>
   <block id="8b2f4a40ac1aa19f2dc2b3da3efe4ffc" category="summary">將 NetApp 支援網站 帳戶與 BlueXP 帳戶建立關聯、以啟用 Cloud Volumes ONTAP 的關鍵工作流程。這些NSS認證資料會與整個BlueXP帳戶建立關聯。</block>
   <block id="71e32bbdd672e63bea65d67ecaa9f394" category="paragraph">現在、使用者可以在建立新的 Cloud Volumes ONTAP 系統和註冊現有 Cloud Volumes ONTAP 系統時、選擇帳戶。</block>
-  <block id="282252a29e0d06c01483bbd34c2304a0" category="paragraph">與 BlueXP 登入相關的 NSS 認證資料可讓您存取 Digital Advisor 、並支援註冊與個案管理功能。</block>
   <block id="f57a365a74c463e64fe68cc99fbed5f5" category="list-text">當您存取 * 支援 &gt; 資源 * 並註冊支援時、系統會提示您將 NSS 認證與 BlueXP 登入建立關聯。</block>
   <block id="b5d4819a4e8d73d085630d52e025ce10" category="paragraph">此動作會登錄 BlueXP 帳戶以取得支援、並啟動支援權利。BlueXP 帳戶中只有一位使用者必須將 NetApp 支援網站 帳戶與其 BlueXP 登入建立關聯、才能註冊支援並啟動支援權利。完成後、「 * 資源 * 」頁面會顯示您的帳戶已註冊以取得支援。</block>
   <block id="aefc4dbe9b72d17b676f3fa6cb3d70e1" category="paragraph"><block ref="aefc4dbe9b72d17b676f3fa6cb3d70e1" category="inline-link-rx"></block></block>
@@ -3669,6 +3667,8 @@
   <block id="ac7b3cf10ea08c788a374e0291742517" category="list-text">移轉報告</block>
   <block id="ff45d71e69fb5930de79de7c94326d7b" category="list-text">Volume 快取</block>
   <block id="fcaf3921e62bfc728003fed248ffa3f9" category="list-text">每位使用者只能有一個與 Digital Advisor 相關聯的 NSS 帳戶、以及支援案例管理。</block>
-  <block id="a90e2fd00c8dae4d2fb187ce1b69fa09" category="list-text">帳戶無法與 Cloud Volumes ONTAP 授權搭配使用。</block>
-  <block id="49dd7d8a4c2b90d52580a51718450534" category="paragraph">如果您使用的是 Cloud Volumes ONTAP 、您可以將 NetApp 支援網站 認證與您所屬的 BlueXP 帳戶建立關聯。NSS 帳戶層級認證可讓您在攜帶自己的授權（ BYOL ）、註冊 PAYGO 系統、以及升級 Cloud Volumes ONTAP 軟體時、部署 Cloud Volumes ONTAP 。</block>
+  <block id="9b7ea233ab4085c74e7506949f6c1a49" category="paragraph">與 BlueXP 登入相關的 NSS 認證資料可支援註冊、案例管理及存取 Digital Advisor 。</block>
+  <block id="bff35f79163f07f1c3724cc46b19c1f3" category="paragraph">請注意下列與 BlueXP 登入相關的 NSS 帳戶：</block>
+  <block id="7919f3886eb3f79725465a41663fb32e" category="list-text">如果您嘗試將 NetApp 支援網站 帳戶與 Cloud Volumes ONTAP 工作環境建立關聯、則只能從新增至您所屬 BlueXP 帳戶的 NSS 帳戶中進行選擇。</block>
+  <block id="a91658662405c5ec223c95cc1036afce" category="paragraph">NSS 帳戶層級的認證與與 BlueXP 登入相關的 NSS 帳戶不同。NSS 帳戶層級認證可讓您在攜帶自己的授權（ BYOL ）、註冊 PAYGO 系統、以及升級 Cloud Volumes ONTAP 軟體時、部署 Cloud Volumes ONTAP 。</block>
 </blocks>
