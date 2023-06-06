@@ -4,7 +4,7 @@ permalink: task-viewing-azure-blob.html
 keywords: blob storage, blob working environment, azure blob storage accounts, azure blob working environment 
 summary: 在Azure中安裝Connector之後、BlueXP會自動探索安裝Connector之Azure訂閱所在Azure中的Azure儲存體帳戶相關資訊。Azure Blob工作環境會新增至Canvased、以便您檢視此資訊。 
 ---
-= 檢視您的Azure Blob帳戶
+= 管理 Azure Blob 帳戶
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,27 +16,8 @@ summary: 在Azure中安裝Connector之後、BlueXP會自動探索安裝Connector
 [role="lead"]
 在Azure中安裝Connector之後、BlueXP會自動探索安裝Connector之Azure訂閱所在Azure中的Azure儲存體帳戶相關資訊。Azure Blob工作環境會新增至Canvased、以便您檢視此資訊。
 
-您可以查看Azure儲存帳戶的詳細資料、包括位置、資源群組、總容量和已用容量等。這些帳戶可做為 BlueXP 備份與還原、 BlueXP 分層或 BlueXP 複製與同步作業的目的地。
-
-.步驟
-. 在您想要檢視 Azure 儲存帳戶的 Azure 帳戶中安裝 Connector 。
-. 從導覽功能表中、選取*儲存設備> Canvas*。
-+
-您應該很快就會自動看到Azure Blob的工作環境。
-
-+
 image:screenshot-azure-blob-we.png["Azure Blob工作環境的快照。"]
 
-. 選取工作環境、然後從右窗格中選取一個動作。
-+
-image:screenshot-azure-actions.png["在您選取Azure Blob工作環境之後顯示「行動」窗格的快照。窗格會顯示儲存帳戶總數、以及使用同步服務的動作。"]
+您可以查看Azure儲存帳戶的詳細資料、包括位置、資源群組、總容量和已用容量等。這些帳戶可做為 BlueXP 備份與還原、 BlueXP 分層或 BlueXP 複製與同步作業的目的地。
 
-. 選取 * 同步資料 * 以同步處理與 Azure Blob 儲存設備之間的資料。
-+
-如需詳細資料、請參閱 https://docs.netapp.com/us-en/bluexp-copy-sync/concept-cloud-sync.html["BlueXP 複本與同步的總覽"^]
-
-. 選取 * 輸入工作環境 * 以檢視 Azure Blobs 中 Azure 儲存帳戶的詳細資料。
-+
-image:screenshot-azure-blob-details.png["顯示Azure Blob工作環境詳細資料的快照：儲存帳戶總數、位置總數、資源群組、總容量和已用容量等。"]
-
-
+新增的功能現在可讓您建立及編輯 Azure 儲存帳戶。 https://docs.netapp.com/us-en/bluexp-blob-storage/index.html["請移至此處、瞭解如何使用 BlueXP 檢視、建立及管理 Azure 儲存帳戶"^]。

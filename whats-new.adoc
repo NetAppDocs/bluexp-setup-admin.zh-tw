@@ -38,6 +38,10 @@ summary: 瞭解 BlueXP 管理功能的新功能： BlueXP 帳戶、連接器、�
 +
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-search-docs.png["主控台頂端提供的BlueXP搜尋快照。"]
 
+* Connector 現在可讓您從 BlueXP 新增及管理 Azure 儲存帳戶。
++
+https://docs.netapp.com/us-en/bluexp-blob-storage/task-add-blob-storage.html["瞭解如何在 BlueXP 的 Azure Subscriptions 中新增 Azure 儲存帳戶"^]。
+
 * 連接器現在支援下列 AWS 區域：
 +
 ** 海德拉巴（ ap-south - 2 ）
