@@ -750,27 +750,6 @@ S3：GetEncryptionConfiguration
 
 === 備份與還原
 
-Connector 會發出下列 API 要求、以部署 BlueXP 備份與還原的還原執行個體：
-
-* EC2：啟動安裝
-* EC2：停止執行
-* EC2：資料說明
-* EC2：取消訂閱即時狀態
-* EC2：RunInstances
-* EC2：終端安裝
-* EC2：取消訂閱實例屬性
-* EC2：取消影像
-* EC2：建立標記
-* EC2：建立磁碟區
-* EC2：建立安全性群組
-* EC2：無資料子網路
-* EC2：取消功能Vpcs
-* EC2：取消註冊
-* 雲端：建立堆疊
-* 雲端：刪除堆疊
-* 雲端：無標準堆疊
-
-
 Connector會提出下列API要求、以管理Amazon S3中的備份：
 
 * S3：GetBucketLocation
