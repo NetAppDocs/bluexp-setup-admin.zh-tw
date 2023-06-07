@@ -24,7 +24,7 @@ summary: 您可能想要在部署連接器之前、或是需要疑難排解任�
 
 
 
-=== AWS詳細資料
+=== AWS 詳細資料
 
 如果您是從BlueXP或雲端供應商的市場部署Connector、請注意下列事項：
 
@@ -34,7 +34,7 @@ summary: 您可能想要在部署連接器之前、或是需要疑難排解任�
 作業系統不含 GUI 。您必須使用終端機來存取系統。
 
 * EC2 Linux執行個體的使用者名稱為EC2使用者。
-* 預設的系統磁碟為100 GiB gp2磁碟。
+* 預設系統磁碟為 100 GiB gp2 磁碟。
 
 
 
@@ -57,7 +57,7 @@ summary: 您可能想要在部署連接器之前、或是需要疑難排解任�
 
 如果您是從 BlueXP 部署 Connector 、請注意下列事項：
 
-* VM執行個體為n2-Standard-4。
+* VM 執行個體為 n2-Standard-4 。
 * 映像的作業系統為 Ubuntu 22.04 。
 +
 作業系統不含 GUI 。您必須使用終端機來存取系統。
@@ -79,7 +79,8 @@ Connector 安裝資料夾位於下列位置：
 
 記錄檔包含在下列資料夾中：
 
-* /opp/application/NetApp/cloudmanager/log or
+* /opp/application/NetApp/cloudmanager/log
+或
 * /opp/application/NetApp/service-manager-2/logs（從全新3.9.23安裝開始）
 +
 這些資料夾中的記錄提供有關Connector和Docker影像的詳細資料。

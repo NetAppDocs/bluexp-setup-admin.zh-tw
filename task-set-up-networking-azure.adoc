@@ -78,10 +78,16 @@ Connector 需要外傳網際網路存取才能連絡下列端點、以便管理�
 | 端點 | 目的 
 
 
-| \https://management.azure.com \https://login.microsoftonline.com \https://blob.core.windows.net \https://core.windows.net | 管理Azure公共區域的資源。 
+| \https://management.azure.com
+\https://login.microsoftonline.com
+\https://blob.core.windows.net
+\https://core.windows.net | 管理Azure公共區域的資源。 
 
 
-| \https://management.chinacloudapi.cn \https://login.chinacloudapi.cn \https://blob.core.chinacloudapi.cn \https://core.chinacloudapi.cn | 管理Azure中國地區的資源。 
+| \https://management.chinacloudapi.cn
+\https://login.chinacloudapi.cn
+\https://blob.core.chinacloudapi.cn
+\https://core.chinacloudapi.cn | 管理Azure中國地區的資源。 
 
 
 | \https://support.netapp.com | 以取得授權資訊、並將AutoSupport 資訊傳送給NetApp支援部門。 
@@ -103,7 +109,9 @@ NOTE: Connector目前正在聯絡「cloudmanager.cloud.netapp.com"」、但即�
 
 
 
-| \https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net | 升級Connector及其Docker元件。 
+| \https://cloudmanagerinfraprod.azurecr.io
+
+\https://*.blob.core.windows.net | 升級Connector及其Docker元件。 
 |===
 
 

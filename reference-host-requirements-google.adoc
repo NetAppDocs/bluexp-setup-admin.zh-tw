@@ -42,7 +42,7 @@ https://access.redhat.com/certified-hypervisors["Red Hat 解決方案：哪些 H
 --
 CPU:: 4 個核心或 4 個 vCPU
 RAM:: 14 GB
-Google Cloud 機器類型:: 符合上述 CPU 和 RAM 需求的執行個體類型。建議使用n2-Standard-4。
+Google Cloud 機器類型:: 符合上述 CPU 和 RAM 需求的執行個體類型。我們建議使用 n2 標準 4 。
 +
 --
 Google Cloud支援Connector的VM執行個體、其作業系統可支援此連接器 https://cloud.google.com/compute/shielded-vm/docs/shielded-vm["防護VM功能"^]

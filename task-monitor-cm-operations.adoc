@@ -143,9 +143,11 @@ image:screenshot-add-email-recipient.png["顯示如何新增電子郵件收件�
 
 如果您不再需要查看通知、可以從頁面移除通知。您可以一次關閉所有通知、也可以關閉個別通知。
 
-若要關閉所有通知、請在通知中心中選取 image:button_3_vert_dots.png["具有三個垂直點的圖示"] 並選擇*全部關閉*。image:screenshot_notification_menu.png["顯示「通知」功能表的快照、可選取設定並關閉所有選項。"]
+若要關閉所有通知、請在通知中心中選取 image:button_3_vert_dots.png["具有三個垂直點的圖示"] 並選擇*全部關閉*。
+image:screenshot_notification_menu.png["顯示「通知」功能表的快照、可選取設定並關閉所有選項。"]
 
-若要關閉個別通知、請將游標移至通知上方、然後選取 * 關閉 * 。image:screenshot_notification_dismiss1.png["顯示如何關閉單一通知的螢幕快照。"]
+若要關閉個別通知、請將游標移至通知上方、然後選取 * 關閉 * 。
+image:screenshot_notification_dismiss1.png["顯示如何關閉單一通知的螢幕快照。"]
 
 
 

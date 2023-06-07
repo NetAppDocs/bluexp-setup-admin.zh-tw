@@ -18,7 +18,7 @@ summary: 為了使用BlueXP中的功能和服務、您必須提供權限、以�
 
 
 
-== AWS權限
+== AWS 權限
 
 [cols="25,60,40"]
 |===
@@ -71,5 +71,7 @@ link:reference-permissions-azure.html["連接器的Azure權限"]
 | 連接器部署 | 從BlueXP部署Connector的Google Cloud使用者需要特定權限、才能在Google Cloud中部署Connector。 | link:task-set-up-permissions-google.html#set-up-permissions-to-create-the-connector-from-bluexp-or-gcloud["設定部署Connector的權限"] 
 
 
-| 連接器操作 | Connector VM執行個體的服務帳戶必須具有特定的日常作業權限。從BlueXP部署時、您需要將服務帳戶與Connector建立關聯。您也必須確保在後續版本中新增權限時、原則保持在最新狀態。 | link:reference-permissions-gcp.html["Connector的Google Cloud權限"] 
+| 連接器操作 | Connector VM執行個體的服務帳戶必須具有特定的日常作業權限。從BlueXP部署時、您需要將服務帳戶與Connector建立關聯。
+
+您也必須確保在後續版本中新增權限時、原則保持在最新狀態。 | link:reference-permissions-gcp.html["Connector的Google Cloud權限"] 
 |===

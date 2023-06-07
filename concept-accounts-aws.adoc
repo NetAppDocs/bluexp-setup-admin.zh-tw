@@ -20,7 +20,7 @@ summary: 瞭解 BlueXP 如何使用 AWS 認證和權限來代表您執行動作�
 
 == 初始 AWS 認證資料
 
-從BlueXP部署連接器時、您需要為IAM使用者提供IAM角色或存取金鑰的ARN。您使用的驗證方法必須具有必要的權限、才能在AWS中部署Connector執行個體。所需權限列於 link:task-set-up-permissions-aws.html["AWS 的連接器部署原則"]。
+從BlueXP部署連接器時、您需要為IAM使用者提供IAM角色或存取金鑰的ARN。您使用的驗證方法必須具有必要的權限、才能在AWS中部署Connector執行個體。所需權限列於 link:task-set-up-permissions-aws.html["AWS 的 Connector 部署原則"]。
 
 當BlueXP在AWS中啟動Connector執行個體時、會為執行個體建立IAM角色和執行個體設定檔。它也附加原則、讓Connector有權限管理該AWS帳戶內的資源和程序。 link:reference-permissions-aws.html["檢閱BlueXP如何使用權限"]。
 
@@ -28,7 +28,7 @@ image:diagram_permissions_initial_aws.png["顯示在AWS帳戶中部署Connector�
 
 當您為Cloud Volumes ONTAP 下列項目建立新的工作環境時、BlueXP預設會選取這些AWS認證資料：
 
-image:screenshot_accounts_select_aws.gif["顯示「詳細資料  認證」頁面中「切換帳戶」選項的快照。"]
+image:screenshot_accounts_select_aws.gif["在「詳細資料擴大機；認證」頁面中顯示「切換帳戶」選項的螢幕擷取畫面。"]
 
 您可以 Cloud Volumes ONTAP 使用初始 AWS 認證來部署所有的資訊系統、也可以新增其他認證資料。
 
@@ -56,7 +56,7 @@ image:diagram_permissions_multiple_aws.png["顯示兩個額外帳戶的概念性
 
 新增一組認證資料之後、您可以在建立新的工作環境時切換至這些認證資料：
 
-image:screenshot_accounts_switch_aws.png["在詳細資料  認證頁面中按一下「切換帳戶」之後、顯示在雲端供應商帳戶之間選取的快照。"]
+image:screenshot_accounts_switch_aws.png["螢幕快照、顯示按一下「詳細資料  擴大機；認證」頁面中的「切換帳戶」後、在雲端供應商帳戶之間進行選擇。"]
 
 link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector["瞭解如何將 AWS 認證新增至現有的 Connector 。"]
 

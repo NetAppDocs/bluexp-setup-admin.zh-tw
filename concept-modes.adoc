@@ -104,7 +104,8 @@ Connector 支援的位置:: 在標準模式中、 Connector 可在雲端或內�
 連接器安裝:: 您可以從 BlueXP 的設定精靈、 AWS 或 Azure Marketplace 、或使用安裝程式、在資料中心或雲端的您自己的 Linux 主機上手動安裝 Connector 、來安裝 Connector 。
 連接器升級:: BlueXP 提供 Connector 軟體的自動升級、每月更新一次。
 使用者介面存取:: 使用者介面可從透過 SaaS 層提供的網路型主控台存取。
-API 端點:: API 呼叫會撥打至下列端點： \https://cloudmanager.cloud.netapp.com
+API 端點:: API 呼叫會撥打至下列端點：
+\https://cloudmanager.cloud.netapp.com
 驗證:: 驗證是透過 BlueXP 的雲端服務使用驗證 0 或透過 NetApp 支援網站 （ NSS ）登入來提供。可使用身分識別聯盟。
 支援的 BlueXP 服務:: 所有 BlueXP 服務均可供使用者使用。
 支援的授權選項:: 標準模式支援市場訂閱和 BYOL ；不過、支援的授權選項取決於您使用的 BlueXP 服務。檢閱每項服務的文件、以深入瞭解可用的授權選項。
@@ -138,7 +139,8 @@ Connector 支援的位置:: 在受限模式下、 Connector 在雲端中受到�
 連接器安裝:: 您可以從 AWS 或 Azure Marketplace 安裝 Connector 、或在您自己的 Linux 主機上手動安裝 Connector 。
 連接器升級:: BlueXP 提供 Connector 軟體的自動升級、每月更新一次。
 使用者介面存取:: 使用者介面可從部署於雲端區域的 Connector 存取。
-API 端點:: API 呼叫會撥打至下列端點： \https://cloudmanager.cloud.netapp.com
+API 端點:: API 呼叫會撥打至下列端點：
+\https://cloudmanager.cloud.netapp.com
 驗證:: 驗證是透過 BlueXP 的雲端服務使用驗證 0 提供。也提供身分識別聯盟功能。
 支援的 BlueXP 服務:: BlueXP 支援下列受限模式的儲存和資料服務：
 +
@@ -154,7 +156,9 @@ API 端點:: API 呼叫會撥打至下列端點： \https://cloudmanager.cloud.n
 | Azure NetApp Files | 完全支援 
 
 
-| 備份與還原 | 受限於政府區域和商業區域、模式受限。受限模式的主權區域不支援。不支援下列功能：應用程式、虛擬機器和 Kubernetes 。 
+| 備份與還原 | 受限於政府區域和商業區域、模式受限。受限模式的主權區域不支援。
+
+不支援下列功能：應用程式、虛擬機器和 Kubernetes 。 
 
 
 | 分類  a| 
@@ -174,7 +178,9 @@ API 端點:: API 呼叫會撥打至下列端點： \https://cloudmanager.cloud.n
 | 數位錢包 | 您可以將數位錢包搭配下列受限模式的支援授權選項一起使用。 
 
 
-| 內部部署 ONTAP 的叢集 | 支援使用 Connector 進行探索、以及不使用 Connector （直接探索）進行探索。當您發現內部叢集有 Connector 時、就不支援進階檢視（ System Manager ）。 
+| 內部部署 ONTAP 的叢集 | 支援使用 Connector 進行探索、以及不使用 Connector （直接探索）進行探索。
+
+當您發現內部叢集有 Connector 時、就不支援進階檢視（ System Manager ）。 
 
 
 | 複寫 | 受限模式的政府地區支援。不支援商業區域或採用限制模式的主權區域。 
@@ -246,7 +252,9 @@ API 端點:: API 呼叫是針對 Connector 虛擬機器進行的。
 | 支援的服務 | 附註 
 
 
-| 備份與還原 | 支援於 AWS 和 Azure 商業地區。Google Cloud 或中不支援 https://aws.amazon.com/federal/us-intelligence-community/["AWS C2S/SC2S"^] 或 https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6."^] 
+| 備份與還原 | 支援於 AWS 和 Azure 商業地區。
+
+Google Cloud 或中不支援 https://aws.amazon.com/federal/us-intelligence-community/["AWS C2S/SC2S"^] 或 https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6."^] 
 
 
 | Cloud Volumes ONTAP | 由於無法存取網際網路、因此無法使用下列功能：自動軟體升級、 AutoSupport 和 AWS 成本資訊。 
@@ -255,7 +263,9 @@ API 端點:: API 呼叫是針對 Connector 虛擬機器進行的。
 | 數位錢包 | 您可以將數位錢包與下列支援的授權選項一起用於私有模式。 
 
 
-| 內部部署 ONTAP 的叢集 | 需要從雲端（安裝 Connector 的位置）連線至內部環境。不支援不含 Connector 的探索（直接探索）。 
+| 內部部署 ONTAP 的叢集 | 需要從雲端（安裝 Connector 的位置）連線至內部環境。
+
+不支援不含 Connector 的探索（直接探索）。 
 |===
 --
 內部部署中支援的 BlueXP 服務:: 當 Connector 安裝在內部部署上時、 BlueXP 支援下列具有私有模式的儲存和資料服務：

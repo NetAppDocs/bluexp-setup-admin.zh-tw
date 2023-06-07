@@ -18,7 +18,7 @@ summary: 當BlueXP在AWS中啟動Connector執行個體時、它會將原則附�
 
 
 
-== IAM原則
+== IAM 原則
 
 以下提供的IAM原則提供Connector所需的權限、可讓您根據AWS區域來管理公有雲環境中的資源和程序。
 
@@ -348,7 +348,7 @@ summary: 當BlueXP在AWS中啟動Connector執行個體時、它會將原則附�
 }
 ----
 --
-.原則2
+.原則 #2
 --
 [source, json]
 ----
@@ -1212,7 +1212,7 @@ KMS ： GenerateDataKeyWithoutPlaintext
 
 
 
-=== 2023年2月14日
+=== 2023 年 2 月 14 日
 
 BlueXP 分層現在需要下列權限：
 

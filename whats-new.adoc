@@ -128,7 +128,7 @@ NOTE: 採用受限模式會取代啟用或停用 SaaS 平台的選項。您可�
 
 
 
-=== 連接器3.9.28
+=== 連接器 3.9.28
 
 * BlueXP 數位電子錢包現在支援電子郵件通知。
 +
@@ -166,7 +166,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html#manage-your-
 
 
 
-=== 連接器3.9.27
+=== 連接器 3.9.27
 
 * 現在可在BlueXP主控台中搜尋。此時、您可以使用搜尋來尋找BlueXP服務和功能。
 +
@@ -206,7 +206,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#5-march-
 
 
 
-=== 連接器3.9.26
+=== 連接器 3.9.26
 
 * 在*登入*頁面上、系統現在會提示您輸入與登入相關的電子郵件地址。按一下*下一步*之後、BlueXP會提示您使用與登入相關的驗證方法進行驗證：
 +
@@ -254,7 +254,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#5-februa
 
 
 
-=== 連接器3.9.25
+=== 連接器 3.9.25
 
 此版本的Connector包含Cloud Volumes ONTAP 了一些強化功能和錯誤修正。
 
@@ -266,7 +266,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#1-januar
 
 
 
-=== 連接器3.9.24
+=== 連接器 3.9.24
 
 * 我們已將BlueXP主控台的URL更新為 https://console.bluexp.netapp.com[]
 * Google Cloud Israel地區現在支援Connector。
@@ -284,7 +284,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#1-januar
 
 
 
-=== 連接器3.9.23
+=== 連接器 3.9.23
 
 * 您的 PAYGO 訂閱和 BlueXP 年度合約現在可從數位錢包中檢視及管理。
 +
@@ -308,7 +308,7 @@ Cloud Manager現在會在NetApp 支援網站 與您帳戶相關的更新權杖�
 
 
 
-=== 連接器3.9.22
+=== 連接器 3.9.22
 
 * 我們新增_產品內建指南_來強化連接器部署精靈、提供符合Connector安裝最低需求的步驟：權限、驗證和網路。
 * 您現在可以直接從*支援儀表板*的Cloud Manager建立NetApp支援案例。
@@ -327,7 +327,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#18-septe
 
 
 
-=== 連接器3.9.21
+=== 連接器 3.9.21
 
 * 我們推出新方法、探索您尚未在Cloud Manager中管理的現有雲端資源。
 +
@@ -353,7 +353,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#31-july-
 
 === 原則變更
 
-我們在文件中直接新增Cloud Manager原則、以更新文件內容。這表示您現在可以在Cloud Volumes ONTAP 說明如何設定的步驟旁、檢視連接器和右側的必要權限。這些原則先前可從NetApp支援網站的頁面存取。
+我們在文件中直接新增Cloud Manager原則、以更新文件內容。這表示您現在可以在Cloud Volumes ONTAP 說明如何設定的步驟旁、檢視連接器和右側的必要權限。這些原則先前可從 NetApp 支援網站頁面存取。
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-creating-connectors-aws.html#create-an-iam-policy["以下範例顯示用來建立連接器的AWS IAM角色權限"]。
 
@@ -365,7 +365,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-creating-connectors-aws.ht
 
 
 
-=== 連接器3.9.20
+=== 連接器 3.9.20
 
 * 我們推出新的方法、可導覽至Cloud Manager介面不斷增加的功能清單。現在只要將游標放在左側面板上、即可輕鬆找到所有熟悉的Cloud Manager功能。
 +
@@ -411,7 +411,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#2-july-2
 
 === 使用NetApp認證登入
 
-當新使用者註冊Cloud Central時、他們現在可以選擇*登入NetApp*選項、以NetApp支援網站認證登入。這是輸入電子郵件地址和密碼的替代方法。
+當新使用者註冊 Cloud Central 時，他們現在可以選擇「*Log in with NetApp（登入 NetApp）*」選項，以 NetApp 支援網站認證資料登入。這是輸入電子郵件地址和密碼的替代方法。
 
 
 NOTE: 使用電子郵件地址和密碼的現有登入必須持續使用該登入方法。「以NetApp登入」選項適用於註冊的新使用者。
@@ -422,7 +422,7 @@ NOTE: 使用電子郵件地址和密碼的現有登入必須持續使用該登�
 
 
 
-=== 連接器3.9.19
+=== 連接器 3.9.19
 
 * 現在AWS雅加達地區（ap東南3區）支援Connector。
 * 現在Azure Brazil東南地區支援Connector。
@@ -496,7 +496,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 
 
 
-=== 連接器3.9.17
+=== 連接器 3.9.17
 
 * 您現在可以透過讓Cloud Manager承擔您在環境中設定的IAM角色來建立Connector。這種驗證方法比共用AWS存取金鑰和秘密金鑰更安全。
 +
@@ -511,7 +511,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-creating-connectors-aws.ht
 
 
 
-=== 連接器3.9.16
+=== 連接器 3.9.16
 
 * 當您在Google Cloud中建立新的Connector時、Cloud Manager現在會顯示所有現有的防火牆原則。之前Cloud Manager不會顯示任何沒有目標標記的原則。
 * 此版本的Connector也包含Cloud Volumes ONTAP 了一些功能強化功能。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#27-february-2022["瞭解這些增強功能"^]
@@ -523,7 +523,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-creating-connectors-aws.ht
 
 
 
-=== 連接器3.9.15
+=== 連接器 3.9.15
 
 此版本的Connector包含Cloud Volumes ONTAP 一些功能強化功能。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#30-january-2022["瞭解這些增強功能"^]
 
@@ -551,9 +551,9 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 
 === 適用於NSS帳戶的電子郵件地址
 
-Cloud Manager現在可以顯示與NetApp支援網站帳戶相關的電子郵件地址。
+Cloud Manager 現在可以顯示與 NetApp 支援網站帳戶相關聯的電子郵件地址。
 
-image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-nss-display-email.png["顯示NetApp支援網站帳戶動作功能表的快照、其中包含顯示電子郵件地址的功能。"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-nss-display-email.png["螢幕截圖顯示 NetApp 支援網站帳戶動作選單，其中能夠顯示電子郵件地址。"]
 
 
 
@@ -561,9 +561,9 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 
 
 
-=== NetApp支援網站帳戶所需的更新
+=== NetApp 支援網站帳戶所需的更新
 
-自2021年12月起、NetApp現在使用Microsoft Azure Active Directory做為身分識別供應商、提供專為支援與授權所設計的驗證服務。此更新之後、Cloud Manager會提示您更新先前新增之任何現有NetApp Support網站帳戶的認證資料。
+自2021年12月起、NetApp現在使用Microsoft Azure Active Directory做為身分識別供應商、提供專為支援與授權所設計的驗證服務。完成此更新之後，Cloud Manager 會提示您更新先前已新增的任何現有 NetApp 支援網站帳戶認證資料。
 
 如果您尚未將您的NSS帳戶移轉至IDaaas、首先需要移轉帳戶、然後在Cloud Manager中更新您的認證資料。
 
@@ -575,7 +575,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 
 === 變更NSS帳戶Cloud Volumes ONTAP 以供使用
 
-如果您的組織有多個NetApp Support Site帳戶、您現在可以變更Cloud Volumes ONTAP 哪個帳戶與某個系統相關聯。
+如果貴組織有多個 NetApp 支援網站帳戶，您現在可以變更哪個帳戶要與哪個 Cloud Volumes ONTAP 系統相關聯。
 
 link:task-adding-nss-accounts.html#attach-a-working-environment-to-a-different-nss-account["瞭解如何將工作環境附加至不同的NSS帳戶"]。
 
@@ -646,7 +646,7 @@ link:task-creating-connectors-azure.html#create-a-connector-using-a-service-prin
 
 === 支援儀表板的NSS帳戶管理
 
-NetApp支援網站（NSS）帳戶現在可從支援儀表板進行管理、而非從「設定」功能表進行管理。這項變更可讓您更輕鬆地從單一位置尋找及管理所有支援相關資訊。
+NetApp 支援網站（NSS）帳戶現在改從支援儀表板進行管理，而非從「Settings（設定）」功能表。這項變更可讓您更輕鬆地從單一位置尋找及管理所有支援相關資訊。
 
 link:task-adding-nss-accounts.html["瞭解如何管理NSS帳戶"]。
 
@@ -710,4 +710,4 @@ link:task-managing-netapp-accounts.html#allowing-third-party-services["深入瞭
 
 === 支援儀表板改良功能
 
-我們已更新「支援儀表板」、讓您新增NetApp支援網站認證資料、以註冊您的支援。您也可以直接從儀表板啟動NetApp支援案例。只要按一下「說明」圖示、然後按*「支援」*即可。
+我們已更新「支援儀表板」，讓您可以新增 NetApp 支援網站認證資料，以登錄您的支援方案。您也可以直接從儀表板啟動NetApp支援案例。只要按一下「說明」圖示、然後按*「支援」*即可。

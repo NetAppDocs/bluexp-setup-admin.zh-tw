@@ -95,7 +95,7 @@ image:screenshot-onprem-darksite-details.png["系統詳細資料頁面的快照�
 .結果
 現在已安裝並設定 Connector 。
 
-當新版Connector軟體推出時、這些軟體將發佈至NetApp支援網站。 link:task-managing-connectors.html#upgrade-the-connector-on-prem-without-internet-access["瞭解如何升級Connector"]。
+當有新版 Connector 軟體推出時，這些軟體都會發佈至 NetApp 支援網站。 link:task-managing-connectors.html#upgrade-the-connector-on-prem-without-internet-access["瞭解如何升級Connector"]。
 
 .接下來呢？
 提供 BlueXP 先前設定的權限。

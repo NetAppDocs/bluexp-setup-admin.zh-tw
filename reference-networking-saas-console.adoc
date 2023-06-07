@@ -21,7 +21,8 @@ summary: 當您使用透過 SaaS 層提供的 BlueXP 網路型主控台時、它
 | 端點 | 目的 
 
 
-| https://console.bluexp.netapp.com \https://*.console.bluexp.netapp.com | 當您使用 BlueXP 網路型主控台時、您的網路瀏覽器會連絡這些 URL 。 
+| \https://console.bluexp.netapp.com
+\https://*.console.bluexp.netapp.com | 當您使用 BlueXP 網路型主控台時、您的網路瀏覽器會連絡這些 URL 。 
 
 
  a| 
@@ -36,13 +37,19 @@ AWS 服務（ amazonaws.com):
 | 需要在AWS中部署從BlueXP部署連接器。確切的端點取決於部署Connector的區域。 https://docs.aws.amazon.com/general/latest/gr/rande.html["如需詳細資料、請參閱 AWS 文件。"^] 
 
 
-| \https://management.azure.com \https://login.microsoftonline.com | 在大多數Azure地區中部署來自BlueXP的Connector。 
+| \https://management.azure.com
+
+\https://login.microsoftonline.com | 在大多數Azure地區中部署來自BlueXP的Connector。 
 
 
-| \https://management.microsoftazure.de \https://login.microsoftonline.de | 需要在Azure Germany地區部署來自BlueXP的Connector。 
+| \https://management.microsoftazure.de
+
+\https://login.microsoftonline.de | 需要在Azure Germany地區部署來自BlueXP的Connector。 
 
 
-| \https://management.usgovcloudapi.net \https://login.microsoftonline.com | 需要在Azure US Gov地區部署來自BlueXP的Connector。 
+| \https://management.usgovcloudapi.net
+
+\https://login.microsoftonline.com | 需要在Azure US Gov地區部署來自BlueXP的Connector。 
 
 
 | \https://www.googleapis.com | 需要在Google Cloud中部署來自BlueXP的Connector。 
@@ -51,7 +58,11 @@ AWS 服務（ amazonaws.com):
 | \https://signin.b2c.netapp.com | 需要更新NetApp 支援網站 驗證（NSS）認證或新增新的NSS認證至BlueXP。 
 
 
-| \https://netapp-cloud-account.auth0.com \https://cdn.auth0.com \https://services.cloud.netapp.com | 您的網頁瀏覽器會連線至這些端點、以便透過BlueXP進行集中式使用者驗證。 
+| \https://netapp-cloud-account.auth0.com
+
+\https://cdn.auth0.com
+
+\https://services.cloud.netapp.com | 您的網頁瀏覽器會連線至這些端點、以便透過BlueXP進行集中式使用者驗證。 
 
 
 | \https://widget.intercom.io | 產品內對談可讓您與 NetApp 雲端專家交談。 

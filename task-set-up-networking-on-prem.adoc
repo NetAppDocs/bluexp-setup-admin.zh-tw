@@ -71,13 +71,23 @@ AWS 服務（ amazonaws.com):
 | 管理AWS中的資源。確切的端點取決於部署Connector的區域。 https://docs.aws.amazon.com/general/latest/gr/rande.html["如需詳細資料、請參閱AWS文件"^] 
 
 
-| \https://management.azure.com \https://login.microsoftonline.com | 管理Azure公共區域的資源。 
+| \https://management.azure.com
+\https://login.microsoftonline.com | 管理Azure公共區域的資源。 
 
 
-| \https://management.chinacloudapi.cn \https://login.chinacloudapi.cn | 管理Azure中國地區的資源。 
+| \https://management.chinacloudapi.cn
+\https://login.chinacloudapi.cn | 管理Azure中國地區的資源。 
 
 
-| https://www.googleapis.com/compute/v1/ \https://compute.googleapis.com/compute/v1 \https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects | 管理Google Cloud中的資源。 
+| \https://www.googleapis.com/compute/v1/
+\https://compute.googleapis.com/compute/v1
+\https://cloudresourcemanager.googleapis.com/v1/projects
+\https://www.googleapis.com/compute/beta
+\https://storage.googleapis.com/storage/v1
+\https://www.googleapis.com/storage/v1
+\https://iam.googleapis.com/v1
+\https://cloudkms.googleapis.com/v1
+\https://www.googleapis.com/deploymentmanager/v2/projects | 管理Google Cloud中的資源。 
 
 
 | \https://support.netapp.com | 以取得授權資訊、並將AutoSupport 資訊傳送給NetApp支援部門。 
@@ -99,7 +109,9 @@ NOTE: Connector目前正在聯絡「cloudmanager.cloud.netapp.com"」、但即�
 
 
 
-| \https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net | 升級Connector及其Docker元件。 
+| \https://cloudmanagerinfraprod.azurecr.io
+
+\https://*.blob.core.windows.net | 升級Connector及其Docker元件。 
 |===
 .相關連結
 link:reference-networking-saas-console.html["準備網路以供使用者存取 BlueXP 主控台"]

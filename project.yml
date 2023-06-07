@@ -281,7 +281,7 @@ homepage:
       url: task-adding-gcp-accounts.html
     - title: 管理您帳戶的 NSS 認證
       url: task-adding-nss-accounts.html
-  - title: 部落格社群
+  - title: 部落格與社群
     links:
     - title: NetApp社群
       url: https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS

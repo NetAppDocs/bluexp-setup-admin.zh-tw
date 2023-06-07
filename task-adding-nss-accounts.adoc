@@ -58,7 +58,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/scre
 +
 NetApp使用Microsoft Azure Active Directory做為身分識別供應商、提供專為支援與授權所設計的驗證服務。
 
-. 在登入頁面上、提供您的NetApp支援網站註冊電子郵件地址和密碼、以執行驗證程序。
+. 在登入頁面上，提供您的 NetApp 支援網站註冊電子郵件地址和密碼，以執行身分驗證程序。
 +
 這些行動可讓BlueXP將您的nssa帳戶用於授權下載、軟體升級驗證、以及未來的支援註冊等項目。
 
@@ -113,7 +113,7 @@ image:screenshot-nss-update-account.png["顯示「更新帳戶」選項的快照
 +
 NetApp使用Microsoft Azure Active Directory做為身分識別供應商、提供專為支援與授權所設計的驗證服務。
 
-. 在登入頁面上、提供您的NetApp支援網站註冊電子郵件地址和密碼、以執行驗證程序。
+. 在登入頁面上，提供您的 NetApp 支援網站註冊電子郵件地址和密碼，以執行身分驗證程序。
 +
 完成此程序之後、您更新的帳戶現在應該會在表格中列為_new帳戶。此表中仍會列出_舊版_帳戶、以及任何現有的工作環境關聯。
 
@@ -123,7 +123,7 @@ NetApp使用Microsoft Azure Active Directory做為身分識別供應商、提供
 
 
 
-== 更新NSS認證資料
+== 更新 NSS 認證
 
 發生下列任一情況時、您必須更新BlueXP中的NSS帳戶認證：
 
@@ -136,20 +136,20 @@ NetApp使用Microsoft Azure Active Directory做為身分識別供應商、提供
 . 選取 * NSS 管理 * 。
 . 針對您要更新的 NSS 帳戶、選取 image:icon-action.png["這是三個並排點的圖示"] 然後選取*更新認證*。
 +
-image:screenshot-nss-update-credentials.png["顯示NetApp支援網站帳戶動作功能表的快照、其中包含選擇「刪除」選項的功能。"]
+image:screenshot-nss-update-credentials.png["螢幕截圖顯示 NetApp 支援網站帳戶的動作選單，其中能夠選擇「Delete（刪除）」選項。"]
 
 . 系統提示時、請選取 * 繼續 * 以重新導向至 Microsoft 登入頁面。
 +
 NetApp使用Microsoft Azure Active Directory做為身分識別供應商、提供專為支援與授權所設計的驗證服務。
 
-. 在登入頁面上、提供您的NetApp支援網站註冊電子郵件地址和密碼、以執行驗證程序。
+. 在登入頁面上，提供您的 NetApp 支援網站註冊電子郵件地址和密碼，以執行身分驗證程序。
 
 
 
 
 == 將工作環境附加至不同的NSS帳戶
 
-如果您的組織有多個NetApp Support Site帳戶、您可以變更Cloud Volumes ONTAP 哪個帳戶與某個支援系統相關聯。
+如果貴組織有多個 NetApp 支援網站帳戶，您可以變更哪個帳戶要與哪個 Cloud Volumes ONTAP 系統相關聯。
 
 此功能僅適用於設定為使用NetApp採用的Microsoft Azure AD進行身分識別管理的NSS帳戶。在使用此功能之前、您需要選取 * 新增 NSS 帳戶 * 或 * 更新帳戶 * 。
 
@@ -158,11 +158,11 @@ NetApp使用Microsoft Azure Active Directory做為身分識別供應商、提供
 . 選取 * NSS 管理 * 。
 . 完成下列步驟以變更NSS帳戶：
 +
-.. 展開工作環境目前關聯的NetApp支援網站帳戶列。
+.. 展開目前與工作環境相關聯的 NetApp 支援網站帳戶列。
 .. 針對您要變更關聯的工作環境、選取 image:icon-action.png["這是三個並排點的圖示"]
 .. 選擇*變更為不同的nss*帳戶。
 +
-image:screenshot-nss-change-account.png["螢幕擷取畫面顯示與NetApp Support Site帳戶相關之工作環境的動作功能表。"]
+image:screenshot-nss-change-account.png["螢幕截圖顯示與 NetApp 支援網站帳戶相關聯的工作環境動作選單。"]
 
 .. 選取帳戶、然後選取 * 儲存 * 。
 
@@ -183,7 +183,7 @@ TIP: 當您移至「NSS管理」頁面時、BlueXP會為表格中的每個帳戶
 . 選取 * NSS 管理 * 。
 . 針對您要更新的 NSS 帳戶、選取 image:icon-action.png["這是三個並排點的圖示"] 然後選取*顯示電子郵件地址*。
 +
-image:screenshot-nss-display-email.png["顯示NetApp支援網站帳戶動作功能表的快照、其中包含顯示電子郵件地址的功能。"]
+image:screenshot-nss-display-email.png["螢幕截圖顯示 NetApp 支援網站帳戶動作選單，其中能夠顯示電子郵件地址。"]
 
 
 
@@ -203,7 +203,7 @@ BlueXP會顯示NetApp 支援網站 不完整的使用者名稱及相關的電子
 . 選取 * NSS 管理 * 。
 . 針對您要刪除的 NSS 帳戶、選取 image:icon-action.png["這是三個並排點的圖示"] 然後選取*刪除*。
 +
-image:screenshot-nss-delete.png["顯示NetApp支援網站帳戶動作功能表的快照、其中包含選擇「刪除」選項的功能。"]
+image:screenshot-nss-delete.png["螢幕截圖顯示 NetApp 支援網站帳戶的動作選單，其中能夠選擇「Delete（刪除）」選項。"]
 
 . 選擇 * 刪除 * 進行確認。
 

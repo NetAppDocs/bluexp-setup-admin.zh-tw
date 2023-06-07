@@ -73,7 +73,7 @@ CPU:: 4 個核心或 4 個 vCPU
 RAM:: 14 GB
 AWS EC2 執行個體類型:: 符合上述 CPU 和 RAM 需求的執行個體類型。建議使用T3.xLarge。
 Azure VM 大小:: 符合上述 CPU 和 RAM 需求的執行個體類型。我們建議使用 DS3 v2 。
-Google Cloud 機器類型:: 符合上述 CPU 和 RAM 需求的執行個體類型。建議使用n2-Standard-4。
+Google Cloud 機器類型:: 符合上述 CPU 和 RAM 需求的執行個體類型。我們建議使用 n2 標準 4 。
 +
 --
 Google Cloud支援Connector的VM執行個體、其作業系統可支援此連接器 https://cloud.google.com/compute/shielded-vm/docs/shielded-vm["防護VM功能"^]
@@ -137,16 +137,33 @@ AWS 服務（ amazonaws.com):
 | 管理AWS中的資源。確切的端點取決於部署Connector的區域。 https://docs.aws.amazon.com/general/latest/gr/rande.html["如需詳細資料、請參閱AWS文件"^] 
 
 
-| \https://management.azure.com \https://login.microsoftonline.com \https://blob.core.windows.net \https://core.windows.net | 管理Azure公共區域的資源。 
+| \https://management.azure.com
+\https://login.microsoftonline.com
+\https://blob.core.windows.net
+\https://core.windows.net | 管理Azure公共區域的資源。 
 
 
-| \https://management.usgovcloudapi.net \https://login.microsoftonline.us \https://blob.core.usgovcloudapi.net \https://core.usgovcloudapi.net | 管理Azure政府區域的資源。 
+| \https://management.usgovcloudapi.net
+\https://login.microsoftonline.us
+\https://blob.core.usgovcloudapi.net
+\https://core.usgovcloudapi.net | 管理Azure政府區域的資源。 
 
 
-| \https://management.chinacloudapi.cn \https://login.chinacloudapi.cn \https://blob.core.chinacloudapi.cn \https://core.chinacloudapi.cn | 管理Azure中國地區的資源。 
+| \https://management.chinacloudapi.cn
+\https://login.chinacloudapi.cn
+\https://blob.core.chinacloudapi.cn
+\https://core.chinacloudapi.cn | 管理Azure中國地區的資源。 
 
 
-| https://www.googleapis.com/compute/v1/ \https://compute.googleapis.com/compute/v1 \https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects | 管理Google Cloud中的資源。 
+| \https://www.googleapis.com/compute/v1/
+\https://compute.googleapis.com/compute/v1
+\https://cloudresourcemanager.googleapis.com/v1/projects
+\https://www.googleapis.com/compute/beta
+\https://storage.googleapis.com/storage/v1
+\https://www.googleapis.com/storage/v1
+\https://iam.googleapis.com/v1
+\https://cloudkms.googleapis.com/v1
+\https://www.googleapis.com/deploymentmanager/v2/projects | 管理Google Cloud中的資源。 
 
 
 | \https://support.netapp.com | 以取得授權資訊、並將AutoSupport 資訊傳送給NetApp支援部門。 
@@ -168,7 +185,9 @@ NOTE: Connector目前正在聯絡「cloudmanager.cloud.netapp.com"」、但即�
 
 
 
-| \https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net | 升級Connector及其Docker元件。 
+| \https://cloudmanagerinfraprod.azurecr.io
+
+\https://*.blob.core.windows.net | 升級Connector及其Docker元件。 
 |===
 
 
@@ -217,7 +236,11 @@ HTTP （ 80 ）和 HTTPS （ 443 ）可讓您存取 BlueXP 主控台。只有在
 | \https://signin.b2c.netapp.com | 需要更新NetApp 支援網站 驗證（NSS）認證或新增新的NSS認證至BlueXP。 
 
 
-| \https://netapp-cloud-account.auth0.com \https://cdn.auth0.com \https://services.cloud.netapp.com | 您的網頁瀏覽器會連線至這些端點、以便透過BlueXP進行集中式使用者驗證。 
+| \https://netapp-cloud-account.auth0.com
+
+\https://cdn.auth0.com
+
+\https://services.cloud.netapp.com | 您的網頁瀏覽器會連線至這些端點、以便透過BlueXP進行集中式使用者驗證。 
 
 
 | \https://widget.intercom.io | 產品內對談可讓您與 NetApp 雲端專家交談。 

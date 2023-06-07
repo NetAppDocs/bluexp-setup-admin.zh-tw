@@ -113,7 +113,7 @@ Updates are available for some Cloud SDK components. To install them,
 please run:
 $ gcloud components update
 ----
-. 執行「gCloud運算執行個體create（gCloud compute instances create））”命令：
+. 執行 `gcloud compute instances create` 命令：
 +
 [source, bash]
 ----
@@ -184,7 +184,7 @@ Connector 現在已安裝、並使用您的 BlueXP 帳戶進行設定。
 
 
 .關於這項工作
-NetApp 支援網站上提供的安裝程式可能是較早的版本。安裝後、如果有新版本可用、 Connector 會自動自行更新。
+NetApp 支援網站上提供的安裝程式可能是舊版。安裝後、如果有新版本可用、 Connector 會自動自行更新。
 
 .步驟
 . 確認已啟用並執行Docker。

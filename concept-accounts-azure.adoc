@@ -28,7 +28,7 @@ image:diagram_permissions_initial_azure.png["顯示在Azure帳戶和訂閱中部
 
 當您為Cloud Volumes ONTAP 下列項目建立新的工作環境時、BlueXP預設會選取這些Azure認證資料：
 
-image:screenshot_accounts_select_azure.gif["顯示「詳細資料  認證」頁面中「切換帳戶」選項的快照。"]
+image:screenshot_accounts_select_azure.gif["在「詳細資料擴大機；認證」頁面中顯示「切換帳戶」選項的螢幕擷取畫面。"]
 
 您可以 Cloud Volumes ONTAP 使用初始 Azure 認證來部署所有的整套系統、也可以新增其他認證資料。
 
@@ -50,7 +50,7 @@ image:diagram_permissions_multiple_azure.png["顯示初始 Azure 帳戶（透過
 
 例如、您可以在建立新的 Cloud Volumes ONTAP 工作環境時、在認證之間切換：
 
-image:screenshot_accounts_switch_azure.gif["在詳細資料  認證頁面中按一下「切換帳戶」之後、顯示在雲端供應商帳戶之間選取的快照。"]
+image:screenshot_accounts_switch_azure.gif["螢幕快照、顯示按一下「詳細資料  擴大機；認證」頁面中的「切換帳戶」後、在雲端供應商帳戶之間進行選擇。"]
 
 
 

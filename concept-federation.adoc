@@ -123,7 +123,9 @@ NOTE: 請記下憑證到期日。您需要返回「聯盟設定」頁面、並�
 | 3. | 廣告管理員 | 完成步驟2之後、請使用「聯盟設定」頁面上顯示的參數、在身分識別供應商上完成組態設定。 
 
 
-| 4. | BlueXP管理 | 從測試並啟用連線 https://services.cloud.netapp.com/federation-setup["NetApp聯盟設定頁面"^]請注意、測試連線和啟用連線之間的頁面會重新整理。 
+| 4. | BlueXP管理 | 從測試並啟用連線 https://services.cloud.netapp.com/federation-setup["NetApp聯盟設定頁面"^]
+
+請注意、測試連線和啟用連線之間的頁面會重新整理。 
 |===
 
 
@@ -166,7 +168,9 @@ NOTE: 請記下秘密金鑰到期日。您需要返回「聯盟設定」頁面�
 | 3. | 廣告管理員 | 完成步驟2之後、請使用「聯盟設定」頁面上顯示的參數、在Azure AD中完成組態設定。 
 
 
-| 4. | BlueXP管理 | 從測試並啟用連線 https://services.cloud.netapp.com/federation-setup["NetApp聯盟設定頁面"^]請注意、測試連線和啟用連線之間的頁面會重新整理。 
+| 4. | BlueXP管理 | 從測試並啟用連線 https://services.cloud.netapp.com/federation-setup["NetApp聯盟設定頁面"^]
+
+請注意、測試連線和啟用連線之間的頁面會重新整理。 
 |===
 
 
@@ -201,7 +205,9 @@ NOTE: 請記下憑證到期日。您需要返回「聯盟設定」頁面、並�
 | 3. | 廣告管理員 | 完成步驟2後、使用「Federation Setup」（聯盟設定）頁面上顯示的參數、完成ADFS伺服器上的組態。 
 
 
-| 4. | BlueXP管理 | 從測試並啟用連線 https://services.cloud.netapp.com/federation-setup["NetApp聯盟設定頁面"^]請注意、測試連線和啟用連線之間的頁面會重新整理。 
+| 4. | BlueXP管理 | 從測試並啟用連線 https://services.cloud.netapp.com/federation-setup["NetApp聯盟設定頁面"^]
+
+請注意、測試連線和啟用連線之間的頁面會重新整理。 
 |===
 
 
@@ -243,7 +249,9 @@ NOTE: 請記下憑證到期日。您需要返回「聯盟設定」頁面、並�
 | 3. | 廣告管理員 | 完成步驟2之後、請使用「聯盟設定」頁面上顯示的參數、在PingFederation伺服器上完成設定。 
 
 
-| 4. | BlueXP管理 | 從測試並啟用連線 https://services.cloud.netapp.com/federation-setup["NetApp聯盟設定頁面"^]請注意、測試連線和啟用連線之間的頁面會重新整理。 
+| 4. | BlueXP管理 | 從測試並啟用連線 https://services.cloud.netapp.com/federation-setup["NetApp聯盟設定頁面"^]
+
+請注意、測試連線和啟用連線之間的頁面會重新整理。 
 |===
 
 
