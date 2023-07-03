@@ -106,9 +106,16 @@ Connector 必須與您計畫管理儲存設備的位置建立網路連線。例�
 * \https://mysupport.netapp.com
 * \https://cloudmanager.cloud.netapp.com/tenancy
 * \https://stream.cloudmanager.cloud.netapp.com
-* \https://cloudmanagerinfraprod.azurecr.io
 * \https://production-artifacts.cloudmanager.cloud.netapp.com
 * \https://*.blob.core.windows.net
+* \https://cloudmanagerinfraprod.azurecr.io
++
+Azure 政府地區不需要此端點。
+
+* \https://occmclientinfragov.azurecr.us
++
+此端點僅在 Azure 政府地區需要使用。
+
 
 
 主機可能會在安裝期間嘗試更新作業系統套件。主機可聯絡不同的鏡射站台、以取得這些 OS 套件。
@@ -185,9 +192,13 @@ NOTE: Connector目前正在聯絡「cloudmanager.cloud.netapp.com"」、但即�
 
 
 
-| \https://cloudmanagerinfraprod.azurecr.io
+| \https://*.blob.core.windows.net
 
-\https://*.blob.core.windows.net | 升級Connector及其Docker元件。 
+\https://cloudmanagerinfraprod.azurecr.io
+Azure 政府地區不需要此端點。
+
+\https://occmclientinfragov.azurecr.us
+此端點僅在 Azure 政府地區需要使用。 | 升級Connector及其Docker元件。 
 |===
 
 

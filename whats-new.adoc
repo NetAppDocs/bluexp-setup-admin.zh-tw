@@ -18,6 +18,36 @@ summary: 瞭解 BlueXP 管理功能的新功能： BlueXP 帳戶、連接器、�
 
 
 
+== 2023 年 7 月 2 日
+
+
+
+=== 連接器 3.9.31
+
+* 您現在可以從「 * 我的資產 * 」標籤（之前的 * 我的商機 * ）探索內部部署的 ONTAP 叢集
++
+https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html#add-a-pre-discovered-cluster["從「我的資產」頁面瞭解如何探索叢集"]。
+
+* 如果您在 Azure 政府地區使用 Connector 、則應確保 Connector 能夠聯絡下列端點：
++
+\https://occmclientinfragov.azurecr.us
+
++
+此端點是手動安裝 Connector 及升級 Connector 及其 Docker 元件所必需的。
+
++
+由於此變更、 Azure 政府區域的 Connector 不再與下列端點連線：
+
++
+\https://cloudmanagerinfraprod.azurecr.io
+
++
+請注意、所有其他受限模式組態和標準模式仍需要此端點。
+
+
+
+
+
 == 2023 年 6 月 4 日
 
 
