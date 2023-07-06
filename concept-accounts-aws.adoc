@@ -26,7 +26,7 @@ summary: 瞭解 BlueXP 如何使用 AWS 認證和權限來代表您執行動作�
 
 image:diagram_permissions_initial_aws.png["顯示在AWS帳戶中部署Connector的BlueXP概念性映像。IAM原則會指派給附加至BlueXP執行個體的IAM角色。"]
 
-當您為Cloud Volumes ONTAP 下列項目建立新的工作環境時、BlueXP預設會選取這些AWS認證資料：
+如果您為 Cloud Volumes ONTAP 建立新的工作環境、 BlueXP 預設會選取這些 AWS 認證：
 
 image:screenshot_accounts_select_aws.gif["在「詳細資料擴大機；認證」頁面中顯示「切換帳戶」選項的螢幕擷取畫面。"]
 

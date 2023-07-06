@@ -140,7 +140,7 @@ image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」�
 .. *定義認證資料*：提供可信IAM角色的ARN（Amazon資源名稱）、或輸入AWS存取金鑰和秘密金鑰。
 .. *市場訂閱*：立即訂閱或選取現有的訂閱、以建立Marketplace訂閱與這些認證的關聯。
 +
-若要以Cloud Volumes ONTAP 每小時費率（PAYGO）或是以年度合約支付、AWS認證資料必須與Cloud Volumes ONTAP 從AWS Marketplace訂閱的功能相關聯。
+若要以每小時費率（ PAYGO ）或每年合約來支付 BlueXP 服務、 AWS 認證必須與 AWS Marketplace 訂閱相關聯。
 
 .. * 審查 * ：確認新認證的詳細資料、然後選取 * 新增 * 。
 

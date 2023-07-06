@@ -252,7 +252,7 @@ image:screenshot_azure_service_principal_role.png["Azure入口網站的快照、
 服務主體現在擁有部署Connector所需的Azure權限。
 
 +
-如果您想要從 Cloud Volumes ONTAP 多個 Azure 訂閱中部署支援功能、則必須將服務授權對象繫結至每個訂閱項目。BlueXP可讓您選擇部署Cloud Volumes ONTAP 時要使用的訂閱內容。
+如果您想要在多個 Azure 訂閱中管理資源、則必須將服務主體繫結至每個訂閱。例如、 BlueXP 可讓您選取部署 Cloud Volumes ONTAP 時要使用的訂閱。
 
 
 
@@ -322,7 +322,7 @@ https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azur
 . 複製的內容 link:reference-permissions-azure.html["Connector的自訂角色權限"] 並將它們儲存在Json檔案中。
 . 將 Azure 訂閱 ID 新增至可指派的範圍、以修改 Json 檔案。
 +
-您應該為使用者建立 Cloud Volumes ONTAP 的各個 Azure 訂閱新增 ID 。
+您應該為每個想要搭配 BlueXP 使用的 Azure 訂閱新增 ID 。
 
 +
 * 範例 *
@@ -417,7 +417,7 @@ image:screenshot_azure_service_principal_role.png["Azure入口網站的快照、
 服務主體現在擁有部署Connector所需的Azure權限。
 
 +
-如果您想要從 Cloud Volumes ONTAP 多個 Azure 訂閱中部署支援功能、則必須將服務授權對象繫結至每個訂閱項目。BlueXP可讓您選擇部署Cloud Volumes ONTAP 時要使用的訂閱內容。
+如果您想要在多個 Azure 訂閱中管理資源、則必須將服務主體繫結至每個訂閱。例如、 BlueXP 可讓您選取部署 Cloud Volumes ONTAP 時要使用的訂閱。
 
 
 

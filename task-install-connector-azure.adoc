@@ -83,7 +83,7 @@ https://learn.microsoft.com/en-us/azure/virtual-machines/linux-vm-connect?tabs=L
 
 ** *詳細資料*：輸入執行個體的名稱、指定標記、然後選擇是否要BlueXP建立具有所需權限的新角色、或是要選取所設定的現有角色 link:reference-permissions-azure.html["必要的權限"]。
 +
-請注意、您可以選擇與此角色相關的訂閱。您選擇的每個訂閱都會提供Connector權限、讓他們在Cloud Volumes ONTAP 這些訂閱中部署功能。
+請注意、您可以選擇與此角色相關的 Azure 訂閱。您選擇的每個訂閱都會提供 Connector 權限、以管理該訂閱中的資源（例如 Cloud Volumes ONTAP ）。
 
 ** * 網路 * ：選擇 Vnet 和子網路、是否啟用公用 IP 位址、以及是否指定 Proxy 組態（選用）。
 ** * 安全性群組 * ：選擇是否要建立新的安全性群組、或是選擇允許所需輸入和輸出規則的現有安全性群組。

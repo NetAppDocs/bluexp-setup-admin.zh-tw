@@ -25,7 +25,7 @@ link:task-set-up-permissions-google.html["瞭解如何設定這些權限"]。
 +
 https://cloud.google.com/compute/docs/access/create-enable-service-accounts-for-instances#changeserviceaccountandscopes["Google Cloud 文件：變更執行個體的服務帳戶和存取範圍"^]
 
-. 如果您要在其他專案中部署 Cloud Volumes ONTAP 、請將具有 BlueXP 角色的服務帳戶新增至該專案、以授予存取權。您必須針對每個專案重複此步驟。
+. 如果您想要管理其他 Google Cloud 專案中的資源、請將具有 BlueXP 角色的服務帳戶新增至該專案、以授予存取權。您必須針對每個專案重複此步驟。
 
 
 .結果

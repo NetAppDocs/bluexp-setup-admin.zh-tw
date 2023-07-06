@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-netapp-accounts.html 
 keywords: accounts, workspaces, Connector, users, BlueXP website, admin, Account Admin, Workspace Admin, account settings, workspaces, users, members, connector, service connector, user accounts, what are users, what is a workspace, users and workspaces, bluexp account, netapp account 
-summary: BlueXP 帳戶可為您的組織提供多租戶服務、讓您能夠在隔離的工作空間中組織使用者和資源。例如、一群使用者可以在其他使用者看不見的工作區中部署及管理 Cloud Volumes ONTAP 系統。 
+summary: BlueXP 帳戶可為您的組織提供多租戶服務、讓您能夠在隔離的工作空間中組織使用者和資源。例如、一群使用者可以在工作區中部署及管理 Cloud Volumes ONTAP 系統、而其他使用者則無法在不同的工作區中管理不同類型的工作環境。 
 ---
 = 瞭解 BlueXP 帳戶
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: BlueXP 帳戶可為您的組織提供多租戶服務、讓您能夠在�
 
 
 [role="lead"]
-_BlueXP 帳戶 _ 為您的組織提供多租戶服務、可讓您在隔離的 _stuonustr_stustronustr_stustraled 中組織使用者和資源。例如、一群使用者可以在其他使用者看不見的工作區中部署及管理 Cloud Volumes ONTAP 系統。
+_BlueXP 帳戶 _ 為您的組織提供多租戶服務、可讓您在隔離的 _stuonustr_stustronustr_stustraled 中組織使用者和資源。例如、一群使用者可以在工作區中部署及管理 Cloud Volumes ONTAP 系統、而其他使用者則無法在不同的工作區中管理不同類型的工作環境。
 
 當您第一次存取 BlueXP 時、系統會提示您選取或建立帳戶。例如、如果您還沒有帳戶、您會看到下列畫面：
 

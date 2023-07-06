@@ -26,7 +26,7 @@ summary: 瞭解 BlueXP 如何使用 Azure 認證和權限來代表您執行動�
 
 image:diagram_permissions_initial_azure.png["顯示在Azure帳戶和訂閱中部署Connector的BlueXP概念性映像。系統指派的託管身分識別已啟用、並將自訂角色指派給Connector虛擬機器。"]
 
-當您為Cloud Volumes ONTAP 下列項目建立新的工作環境時、BlueXP預設會選取這些Azure認證資料：
+如果您為 Cloud Volumes ONTAP 建立新的工作環境、 BlueXP 預設會選取以下 Azure 認證：
 
 image:screenshot_accounts_select_azure.gif["在「詳細資料擴大機；認證」頁面中顯示「切換帳戶」選項的螢幕擷取畫面。"]
 

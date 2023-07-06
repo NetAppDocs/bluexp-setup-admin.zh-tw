@@ -397,7 +397,7 @@ NOTE: BlueXP運算子是在BlueXP原則中提供的預設名稱。如果您為�
 .. 按一下*選取*。
 .. 單擊 * 下一步 * 。
 .. 按一下「*檢閱+指派*」。
-.. 如果您想要從 Cloud Volumes ONTAP 其他訂閱中部署、請切換至該訂閱、然後重複這些步驟。
+.. 如果您想要在其他訂閱中管理資源、請切換至該訂閱、然後重複這些步驟。
 
 
 
@@ -445,7 +445,7 @@ BlueXP 現在擁有代表您在 Azure 中執行動作所需的權限。
 +
 https://cloud.google.com/compute/docs/access/create-enable-service-accounts-for-instances#changeserviceaccountandscopes["Google Cloud 文件：變更執行個體的服務帳戶和存取範圍"^]
 
-. 如果您要在其他專案中部署 Cloud Volumes ONTAP 、請將具有 BlueXP 角色的服務帳戶新增至該專案、以授予存取權。您必須針對每個專案重複此步驟。
+. 如果您想要管理其他專案中的資源、請將具有 BlueXP 角色的服務帳戶新增至該專案、以授予存取權。您必須針對每個專案重複此步驟。
 
 
 .結果
