@@ -3034,13 +3034,10 @@
   <block id="5c61dbbb22810fcf5149eb1192885607" category="cell">可將通知以電子郵件傳送給帳戶使用者和其他人</block>
   <block id="e92861fef775acb8c5a64f8d282a8b80" category="cell">無電子郵件功能</block>
   <block id="d1e2d8530c09fe28c2a817289491bd01" category="section-title">使用通知中心監控活動</block>
-  <block id="1e687a002fd0b9a542bf652069246ebb" category="paragraph">通知會追蹤您在BlueXP中啟動的作業進度、以便您確認作業是否成功。這些功能可讓您檢視您在目前登入工作階段期間所啟動的許多BlueXP動作狀態。目前並非所有服務都會將資訊報告至通知中心。</block>
   <block id="40da6f1400e45d080a97992a6a539894" category="inline-image-macro">通知鈴聲</block>
   <block id="5cf9ecbcae765efe1cb17d1c802e39cb" category="paragraph">您可以按一下通知鈴聲（<block ref="df7c8a71ca3da4359e40e121f18f87b9" category="inline-image-macro-rx" type="image"></block>）。警示中的小球型罩顏色代表作用中的最高層級嚴重性通知。因此、如果您看到紅色的球型罩、就表示您應該查看重要通知。</block>
   <block id="d59387ab05a2cbd005866b74628417a0" category="inline-image-macro">顯示通知中心目前通知清單的快照。</block>
   <block id="e24c5199eee665d8e879dc72dc56c667" category="paragraph"><block ref="e24c5199eee665d8e879dc72dc56c667" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6c836fac6db418cb1aa7dbc3dbd8ff62" category="inline-xref">設定電子郵件通知設定</block>
-  <block id="4d45f6ca89e32d46a11c304cf274697c" category="paragraph">您也可以設定BluefXP以電子郵件傳送通知、即使您尚未登入系統、也能得知重要的系統活動。您可以將電子郵件傳送給任何屬於 BlueXP 帳戶的使用者、或是任何其他需要注意特定類型系統活動的收件者。請參閱 <block ref="2fb0285882e9333d924eb054161cd903" category="inline-xref-macro-rx"></block> 以下。</block>
   <block id="2a4be390687f80c7cdf976afca0fe778" category="section-title">通知類型</block>
   <block id="0ebfeb3212b9bb4b152ea82a5877a33b" category="paragraph">通知分為下列類別：</block>
   <block id="9e89e978c220a2a733d027866cb12907" category="cell">通知類型</block>
@@ -3057,15 +3054,12 @@
   <block id="505a83f220c02df2f85c3810cd9ceb38" category="cell">成功</block>
   <block id="ae75ef51af35154ca4a9e6d19fb16774" category="cell">已成功完成行動或程序。</block>
   <block id="e457faf451b04c78c6b2c6bc25491ad1" category="section-title">篩選通知</block>
-  <block id="f3ac04608c1c767bc38258edb6feb320" category="paragraph">依預設、您會看到所有通知。您可以篩選在「通知中心」中看到的通知、只顯示對您重要的通知。您可以依BlueXP「服務」和通知「類型」進行篩選。</block>
   <block id="3ad97ba753a3f0d27266b3d174a47648" category="inline-image-macro">顯示「通知中心」中兩種可用篩選器類型的螢幕快照。</block>
   <block id="86a2197cbddea56be1e7cc24be3d4916" category="paragraph"><block ref="86a2197cbddea56be1e7cc24be3d4916" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4815e02c8d3314e19dd0c9f88070f95e" category="paragraph">例如、如果您只想查看BluefXP作業的「錯誤」和「警告」通知、請選取這些項目、您只會看到這些類型的通知。</block>
   <block id="def7f3eac7eed1dada5cdcd2951ede36" category="section-title">設定電子郵件通知設定</block>
   <block id="f8e2d638417ba643bd67781e67c8ff5f" category="paragraph">您可以透過電子郵件傳送特定類型的通知、即使您尚未登入BluefXP、也能得知重要的系統活動。您可以將電子郵件傳送給任何屬於 BlueXP 帳戶的使用者、或是任何其他需要注意特定類型系統活動的收件者。</block>
-  <block id="46cbe9208ff114439409f262e659f93e" category="list-text">此時、系統會以電子郵件傳送通知、說明下列 BlueXP 功能與服務：連接器、 BlueXP 複製與同步、 BlueXP 備份與還原、 BlueXP 數位錢包、以及 BlueXP 勒索軟體保護。未來版本將會新增其他服務。</block>
   <block id="5fd245f2aeee830efb92d081af6a0e22" category="list-text">如果Connector安裝在沒有網際網路存取的網站上、則不支援傳送電子郵件通知。</block>
-  <block id="95542c2d2bb8f536e459ea1a4e6e77b7" category="paragraph">根據預設、BlueXP帳戶管理員會收到所有「重大」和「建議」通知的電子郵件。根據預設、所有其他使用者和收件者都會設定為不接收任何通知電子郵件。</block>
   <block id="f6cf378d25bc2bcaeedbdbd322fec41b" category="paragraph">您必須是帳戶管理員、才能自訂通知設定。</block>
   <block id="8d7a9434573819ca2918a0be28a97671" category="list-text">從 BlueXP 功能表列中、選取 * 設定 &gt; 警示與通知設定 * 。</block>
   <block id="dffb0ae952f619b638efb5dbc37b121a" category="inline-image-macro">顯示如何顯示「警示與通知設定」頁面的快照。</block>
@@ -3817,4 +3811,11 @@ Azure 政府地區不需要此端點。
   <block id="cb4a26e3cea7ec3938d93961d212ef39" category="list-text">如果您想要管理其他專案中的資源、請將具有 BlueXP 角色的服務帳戶新增至該專案、以授予存取權。您必須針對每個專案重複此步驟。</block>
   <block id="c063b725387c641804ed10699362a645" category="list-text">部署 Connector 時、系統會提示您選取<block ref="98f22f2dda0728ebb39af9a8fe826c8e" category="inline-link-rx"></block> 適用於 VM 執行個體。BlueXP 可從服務帳戶取得權限來建立和管理 Cloud Volumes ONTAP 系統、使用 BlueXP 備份和還原來管理備份等。將自訂角色附加至服務帳戶、即可提供權限。</block>
   <block id="4196d70b52fef46e6943a70842908897" category="paragraph">如果您為 Cloud Volumes ONTAP 建立新的工作環境、 BlueXP 預設會選取以下 Azure 認證：</block>
+  <block id="9704e328148ed91b7f98eb143244edd7" category="paragraph">通知會追蹤您在BlueXP中啟動的作業進度、以便您確認作業是否成功。這些功能可讓您檢視您在目前登入工作階段期間所啟動的許多BlueXP動作狀態。目前並非所有 BlueXP 服務都會將資訊回報至通知中心。</block>
+  <block id="8efb4a247c34c0ca71ba217009352182" category="inline-xref">設定電子郵件通知設定</block>
+  <block id="5e703ffd4a02b69f95fc98818e5f3919" category="paragraph">您也可以將 BlueXP 設定為透過電子郵件傳送特定類型的通知、以便即使您未登入系統、也能得知重要的系統活動。您可以將電子郵件傳送給任何屬於 BlueXP 帳戶的使用者、或是任何其他需要注意特定類型系統活動的收件者。瞭解如何操作 <block ref="a148e670707e0255b9681ed2a38729bc" category="inline-xref-macro-rx"></block>。</block>
+  <block id="b0689737e83154357ff9ef36053bda4f" category="paragraph">依預設、您會在通知中心看到所有作用中的通知。您可以篩選看到的通知、僅顯示對您很重要的通知。您可以依BlueXP「服務」和通知「類型」進行篩選。</block>
+  <block id="9a4a8fa1cd4f878ff0d3a810b77cddd2" category="list-text">此時、系統會以電子郵件傳送通知、說明下列 BlueXP 功能與服務： Connector 、 BlueXP 複製與同步、 BlueXP 備份與還原、 BlueXP 數位錢包、以及 BlueXP 勒索軟體保護。未來版本將會新增其他服務。</block>
+  <block id="2ad68125d72949aee5ac56974ac53849" category="paragraph">您在通知中心中設定的篩選條件並不會決定您將透過電子郵件收到的通知類型。根據預設、BlueXP帳戶管理員會收到所有「重大」和「建議」通知的電子郵件。這些通知涵蓋所有服務、您無法選擇僅接收特定服務的通知、例如 Connectors 或 BlueXP 備份與還原。</block>
+  <block id="7fcffcce675dad706dbf53d68f1f86f2" category="paragraph">所有其他使用者和收件者均設定為不接收任何通知電子郵件、因此您需要為任何其他使用者設定通知設定。</block>
 </blocks>
