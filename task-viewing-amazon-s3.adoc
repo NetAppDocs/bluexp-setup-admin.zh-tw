@@ -20,4 +20,4 @@ image:screenshot-amazon-s3-we.png["Amazon S3 工作環境的快照。"]
 
 您可以檢視S3儲存區的詳細資料、包括地區、存取原則、帳戶、總容量和已用容量等。這些貯體可做為 BlueXP 備份與還原、 BlueXP 分層或 BlueXP 複製與同步作業的目的地。此外、您也可以使用 BlueXP 分類來掃描這些貯體。
 
-新增的功能現在可讓您建立及編輯S3儲存區。 https://docs.netapp.com/us-en/bluexp-s3-storage/index.html["請前往此處、瞭解如何使用 BlueXP 檢視、建立及管理 S3 儲存區"^]
+新增的功能現在可讓您建立及編輯S3儲存區。 https://docs.netapp.com/us-en/bluexp-s3-storage/index.html["請前往此處、瞭解如何使用 BlueXP 檢視、建立及管理 S3 儲存區"^]。
