@@ -1,0 +1,42 @@
+= 
+:allow-uri-read: 
+
+
+. 複製的內容 link:reference-permissions-azure.html["Connector的自訂角色權限"] 並將它們儲存在Json檔案中。
+. 將 Azure 訂閱 ID 新增至可指派的範圍、以修改 Json 檔案。
++
+您應該為每個想要搭配 BlueXP 使用的 Azure 訂閱新增 ID 。
+
++
+* 範例 *
+
++
+[source, json]
+----
+"AssignableScopes": [
+"/subscriptions/d333af45-0d07-4154-943d-c25fbzzzzzzz",
+"/subscriptions/54b91999-b3e6-4599-908e-416e0zzzzzzz",
+"/subscriptions/398e471c-3b42-4ae7-9b59-ce5bbzzzzzzz"
+----
+. 使用 Json 檔案在 Azure 中建立自訂角色。
++
+下列步驟說明如何在Azure Cloud Shell中使用Bash建立角色。
+
++
+.. 開始 https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Azure Cloud Shell"^] 並選擇Bash環境。
+.. 上傳Json檔案。
++
+image:screenshot_azure_shell_upload.png["Azure Cloud Shell的快照、您可在其中選擇上傳檔案的選項。"]
+
+.. 使用Azure CLI建立自訂角色：
++
+[source, azurecli]
+----
+az role definition create --role-definition Connector_Policy.json
+----
+
+
+
+
+.結果
+現在您應該有一個名為BlueXP運算子的自訂角色、可以指派給連接器虛擬機器。

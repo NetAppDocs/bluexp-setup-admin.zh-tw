@@ -1,0 +1,13 @@
+= 
+:allow-uri-read: 
+
+
+除非您啟動連接器、或使用連接器做為 Proxy 、將 AutoSupport 訊息從 Cloud Volumes ONTAP 傳送至 NetApp 支援、否則不會有傳入的流量傳入連接器。
+
+* HTTP（80）和HTTPS（443）可存取本機UI、在極少數情況下使用。
+* 只有在需要連線至主機進行疑難排解時、才需要SSH（22）。
+* 如果您在無法使用輸出網際網路連線的子網路中部署 Cloud Volumes ONTAP 系統、則需要透過連接埠 3128 進行輸入連線。
++
+如果Cloud Volumes ONTAP 無法透過外部網際網路連線來傳送AutoSupport 各種消息、則BlueXP會自動將這些Cloud Volumes ONTAP 系統設定為使用連接器隨附的Proxy伺服器。唯一的需求是確保連接器的安全群組允許透過連接埠3128進行傳入連線。部署Connector之後、您需要開啟此連接埠。
+
+

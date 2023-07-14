@@ -1,0 +1,32 @@
+= 
+:allow-uri-read: 
+
+
+. 登入 AWS 主控台並瀏覽至 IAM 服務。
+. 建立原則：
++
+.. 按一下*原則>建立原則*。
+.. 選取 * JSON* 、然後複製並貼上的內容 link:reference-permissions-aws.html["Connector 的 IAM 原則"]。
+.. 完成其餘步驟以建立原則。
+
+
+
+
+. 建立 IAM 角色：
++
+.. 按一下 * 角色 > 建立角色 * 。
+.. 選取 * AWS 服務 > EC2* 。
+.. 附加您剛建立的原則來新增權限。
+.. 完成剩餘步驟以建立角色。
+
+
+
+
+. 將原則附加至 IAM 使用者。
++
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["AWS 文件：建立 IAM 角色"^]
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["AWS 文件：新增和移除 IAM 原則"^]
+
+
+. 請確定使用者擁有存取金鑰、您可以在安裝 Connector 之後新增至 BlueXP 。
+

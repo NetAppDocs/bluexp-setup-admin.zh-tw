@@ -20,7 +20,9 @@ summary: 直接從 BlueXP 網路型主控台、使用 gCloud 或在您自己的 
 ====
 .藍圖
 --
-.您需要的產品
+.開始之前
+您應該擁有下列項目：
+
 * 建立 Connector 和 Connector VM 服務帳戶所需的 Google Cloud 權限。
 +
 link:task-set-up-permissions-google.html["瞭解如何設定 Google Cloud 權限"]
@@ -72,7 +74,9 @@ link:reference-ports-gcp.html["Google Cloud中的防火牆規則"]
 --
 .gCloud
 --
-.您需要的產品
+.開始之前
+您應該擁有下列項目：
+
 * 建立 Connector 和 Connector VM 服務帳戶所需的 Google Cloud 權限。
 +
 link:task-set-up-permissions-google.html["瞭解如何設定 Google Cloud 權限"]
@@ -174,7 +178,9 @@ Connector 現在已安裝、並使用您的 BlueXP 帳戶進行設定。
 --
 .手動安裝
 --
-.您需要的產品
+.開始之前
+您應該擁有下列項目：
+
 * 安裝Connector的root權限。
 * Proxy伺服器的詳細資料、如果需要Proxy才能從Connector存取網際網路。
 +

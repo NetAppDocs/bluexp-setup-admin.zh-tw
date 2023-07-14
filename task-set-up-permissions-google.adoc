@@ -145,7 +145,7 @@ Google Cloud使用者現在擁有建立Connector所需的權限。
 以下範例在專案層級建立名為「 Connector 」的角色：
 
 +
-gCloud iam 角色會建立連接器 --project=MyProject --file=connector
+`gcloud iam roles create connector --project=myproject --file=connector.yaml`
 
 +
 https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Google Cloud 文件：建立及管理自訂角色"^]

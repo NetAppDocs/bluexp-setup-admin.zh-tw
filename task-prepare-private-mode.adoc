@@ -100,7 +100,7 @@ Connector 必須與您計畫管理儲存設備的位置建立網路連線。例�
 
 Connector 會聯絡下列端點、以管理公有雲環境中的資源和程序。
 
-[cols="2*"]
+[cols="2a,1a"]
 |===
 | 端點 | 目的 
 
@@ -115,28 +115,43 @@ AWS 服務（ amazonaws.com):
 * 安全性權杖服務（ STOS ）
 * 簡易儲存服務（ S3 ）
 
-| 管理AWS中的資源。確切的端點取決於部署Connector的區域。 https://docs.aws.amazon.com/general/latest/gr/rande.html["如需詳細資料、請參閱AWS文件"^] 
+ a| 
+管理AWS中的資源。確切的端點取決於部署Connector的區域。 https://docs.aws.amazon.com/general/latest/gr/rande.html["如需詳細資料、請參閱AWS文件"^]
 
 
-| \https://management.azure.com
+
+ a| 
+\https://management.azure.com
 \https://login.microsoftonline.com
 \https://blob.core.windows.net
-\https://core.windows.net | 管理Azure公共區域的資源。 
+\https://core.windows.net
+ a| 
+管理Azure公共區域的資源。
 
 
-| \https://management.azure.microsoft.scloud
+
+ a| 
+\https://management.azure.microsoft.scloud
 \https://login.microsoftonline.microsoft.scloud
 \https://blob.core.microsoft.scloud
-\https://core.microsoft.scloud | 管理Azure IL6區域的資源。 
+\https://core.microsoft.scloud
+ a| 
+管理Azure IL6區域的資源。
 
 
-| \https://management.chinacloudapi.cn
+
+ a| 
+\https://management.chinacloudapi.cn
 \https://login.chinacloudapi.cn
 \https://blob.core.chinacloudapi.cn
-\https://core.chinacloudapi.cn | 管理Azure中國地區的資源。 
+\https://core.chinacloudapi.cn
+ a| 
+管理Azure中國地區的資源。
 
 
-| \https://www.googleapis.com/compute/v1/
+
+ a| 
+\https://www.googleapis.com/compute/v1/
 \https://compute.googleapis.com/compute/v1
 \https://cloudresourcemanager.googleapis.com/v1/projects
 \https://www.googleapis.com/compute/beta
@@ -144,18 +159,23 @@ AWS 服務（ amazonaws.com):
 \https://www.googleapis.com/storage/v1
 \https://iam.googleapis.com/v1
 \https://cloudkms.googleapis.com/v1
-\https://www.googleapis.com/deploymentmanager/v2/projects | 管理Google Cloud中的資源。 
+\https://www.googleapis.com/deploymentmanager/v2/projects
+ a| 
+管理Google Cloud中的資源。
+
 |===
 
 
 === Proxy伺服器
 
-如果您的組織需要部署 Proxy 伺服器來處理傳出的網際網路流量、請取得下列關於 HTTP 或 HTTPS Proxy 的資訊：
+如果您的組織需要為所有傳出的網際網路流量部署Proxy伺服器、請取得下列有關HTTP或HTTPS Proxy的資訊：
 
 * IP 位址
 * 認證資料
 * HTTPS憑證
 
+
+您必須在安裝期間提供此資訊。
 
 在私有模式下、 BlueXP 傳送輸出流量的唯一時間是傳送給雲端供應商、以便建立 Cloud Volumes ONTAP 系統。
 
@@ -223,7 +243,8 @@ HTTP （ 80 ）和 HTTPS （ 443 ）可讓您存取 BlueXP 主控台。只有在
 為 IAM 使用者設定權限和存取金鑰。安裝 Connector 並設定 BlueXP 之後、您需要為 BlueXP 提供 AWS 存取金鑰。
 
 .步驟
-. 從 IAM 主控台建立原則：
+. 登入 AWS 主控台並瀏覽至 IAM 服務。
+. 建立原則：
 +
 .. 按一下*原則>建立原則*。
 .. 選取 * JSON* 、然後複製並貼上的內容 link:reference-permissions-aws.html["Connector 的 IAM 原則"]。
@@ -242,7 +263,7 @@ HTTP （ 80 ）和 HTTPS （ 443 ）可讓您存取 BlueXP 主控台。只有在
 ** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["AWS 文件：新增和移除 IAM 原則"^]
 
 
-. 安裝 Connector 之後、請確定使用者擁有可新增至 BlueXP 的存取金鑰。
+. 請確定使用者擁有存取金鑰、您可以在安裝 Connector 之後新增至 BlueXP 。
 
 
 .結果
@@ -261,7 +282,7 @@ https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azur
 . 複製的內容 link:reference-permissions-azure.html["Connector的自訂角色權限"] 並將它們儲存在Json檔案中。
 . 將 Azure 訂閱 ID 新增至可指派的範圍、以修改 Json 檔案。
 +
-您應該為使用者建立 Cloud Volumes ONTAP 的各個 Azure 訂閱新增 ID 。
+您應該為每個想要搭配 BlueXP 使用的 Azure 訂閱新增 ID 。
 
 +
 * 範例 *
@@ -305,7 +326,7 @@ az role definition create --role-definition Connector_Policy.json
 .建立 Azure Active Directory 應用程式以進行角色型存取控制
 . 確保您在 Azure 中擁有建立 Active Directory 應用程式及將應用程式指派給角色的權限。
 +
-如需詳細資訊、請參閱 https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure 說明文件：必要權限"^]。
+如需詳細資訊、請參閱 https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure 說明文件：必要權限"^]
 
 . 從 Azure 入口網站開啟 * Azure Active Directory * 服務。
 +
@@ -326,35 +347,80 @@ image:screenshot_azure_ad.gif["顯示 Microsoft Azure 中的 Active Directory �
 
 
 
-.將自訂角色指派給應用程式
-. 從 Azure 入口網站開啟 * 訂閱 * 服務。
-. 選取訂閱。
-. 按一下 * 存取控制（ IAM ） > 新增 > 新增角色指派 * 。
-. 在「*角色*」索引標籤中、選取「*藍圖XP操作員*」角色、然後按一下「*下一步*」。
-. 在「*成員*」索引標籤中、完成下列步驟：
+.將應用程式指派給角色
+. 建立自訂角色：
 +
-.. 保留*選取「使用者」、「群組」或「服務主體」*。
-.. 按一下*選取成員*。
+.. 複製的內容 link:reference-permissions-azure.html["Connector的自訂角色權限"] 並將它們儲存在Json檔案中。
+.. 將 Azure 訂閱 ID 新增至可指派的範圍、以修改 Json 檔案。
++
+您應該為使用者建立 Cloud Volumes ONTAP 的各個 Azure 訂閱新增 ID 。
+
++
+* 範例 *
+
++
+[source, json]
+----
+"AssignableScopes": [
+"/subscriptions/d333af45-0d07-4154-943d-c25fbzzzzzzz",
+"/subscriptions/54b91999-b3e6-4599-908e-416e0zzzzzzz",
+"/subscriptions/398e471c-3b42-4ae7-9b59-ce5bbzzzzzzz"
+----
+.. 使用 Json 檔案在 Azure 中建立自訂角色。
++
+下列步驟說明如何在Azure Cloud Shell中使用Bash建立角色。
+
++
+*** 開始 https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Azure Cloud Shell"^] 並選擇Bash環境。
+*** 上傳Json檔案。
++
+image:screenshot_azure_shell_upload.png["Azure Cloud Shell的快照、您可在其中選擇上傳檔案的選項。"]
+
+*** 使用Azure CLI建立自訂角色：
++
+[source, azurecli]
+----
+az role definition create --role-definition Connector_Policy.json
+----
++
+現在您應該有一個名為BlueXP運算子的自訂角色、可以指派給連接器虛擬機器。
+
+
+
+
+
+. 將應用程式指派給角色：
++
+.. 從 Azure 入口網站開啟 * 訂閱 * 服務。
+.. 選取訂閱。
+.. 按一下 * 存取控制（ IAM ） > 新增 > 新增角色指派 * 。
+.. 在「*角色*」索引標籤中、選取「*藍圖XP操作員*」角色、然後按一下「*下一步*」。
+.. 在「*成員*」索引標籤中、完成下列步驟：
++
+*** 保留*選取「使用者」、「群組」或「服務主體」*。
+*** 按一下*選取成員*。
 +
 image:screenshot-azure-service-principal-role.png["Azure入口網站的快照、會在新增角色至應用程式時顯示「成員」索引標籤。"]
 
-.. 搜尋應用程式名稱。
+*** 搜尋應用程式名稱。
 +
 範例如下：
 
 +
 image:screenshot_azure_service_principal_role.png["Azure入口網站的快照、顯示Azure入口網站中的「新增角色指派」表單。"]
 
-.. 選取應用程式、然後按一下*選取*。
-.. 單擊 * 下一步 * 。
+*** 選取應用程式、然後按一下*選取*。
+*** 單擊 * 下一步 * 。
 
 
-. 按一下「*檢閱+指派*」。
+.. 按一下「*檢閱+指派*」。
 +
 服務主體現在擁有部署Connector所需的Azure權限。
 
 +
 如果您想要從 Cloud Volumes ONTAP 多個 Azure 訂閱中部署支援功能、則必須將服務授權對象繫結至每個訂閱項目。BlueXP可讓您選擇部署Cloud Volumes ONTAP 時要使用的訂閱內容。
+
+
 
 
 

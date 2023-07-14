@@ -26,7 +26,9 @@ summary: 在受限模式下部署 Connector 、以便在與 BlueXP SaaS 層的�
 ====
 .AWS 商業市場
 --
-.您需要的產品
+.開始之前
+您應該擁有下列項目：
+
 * 符合網路需求的 VPC 和子網路。
 +
 link:task-prepare-restricted-mode.html["深入瞭解網路需求"]
@@ -36,6 +38,10 @@ link:task-prepare-restricted-mode.html["深入瞭解網路需求"]
 link:task-prepare-restricted-mode.html#prepare-cloud-permissions["瞭解如何設定 AWS 權限"]
 
 * 為您的 IAM 使用者訂閱及取消訂閱 AWS Marketplace 的權限。
+* 瞭解執行個體的 CPU 和 RAM 需求。
++
+link:task-prepare-restricted-mode.html#review-host-requirements["檢閱執行個體需求"]。
+
 * EC2 執行個體的金鑰配對。
 
 
@@ -54,23 +60,23 @@ image:screenshot-subscribe-aws.png["螢幕快照顯示 AWS Marketplace 上的「
 +
 ** *名稱和標記*：輸入執行個體的名稱和標記。
 ** *應用程式與作業系統映像*：跳過本節。已選取連接器AMI。
-** *執行個體類型*：視區域可用度而定、請選擇其中一種支援的執行個體類型（建議使用T3.xlge）。
-+
-link:task-prepare-restricted-mode.html["檢閱執行個體需求"]。
-
+** * 執行個體類型 * ：根據區域可用度、選擇符合 RAM 和 CPU 需求的執行個體類型（建議使用 T3.x 大型）。
 ** *金鑰配對（登入）*：選取您要用來安全連線至執行個體的金鑰配對。
 ** *網路設定*：視需要編輯網路設定：
 +
 *** 選擇所需的VPC和子網路。
 *** 指定執行個體是否應有公有IP位址。
 *** 指定防火牆設定、以啟用Connector執行個體所需的連線方法：SSH、HTTP和HTTPS。
++
+特定組態還需要一些規則。
+
++
+link:reference-ports-aws.html["檢視 AWS 的安全性群組規則"]。
+
 
 
 ** *設定儲存設備*：保留預設的儲存選項。
 ** * 進階詳細資料 * ：在 * IAM 執行個體設定檔 * 下、選擇包含 Connector 所需權限的 IAM 角色。
-+
-link:task-prepare-restricted-mode.html["瞭解如何設定 AWS 權限"]。
-
 ** *摘要*：檢閱摘要、然後按一下*啟動執行個體*。
 
 
@@ -85,7 +91,9 @@ AWS 會以指定的設定啟動軟體。Connector 執行個體和軟體應在大
 --
 .AWS Gov Marketplace
 --
-.您需要的產品
+.開始之前
+您應該擁有下列項目：
+
 * 符合網路需求的 VPC 和子網路。
 +
 link:task-prepare-restricted-mode.html["深入瞭解網路需求"]
@@ -137,7 +145,9 @@ AWS 會以指定的設定啟動軟體。Connector 執行個體和軟體應在大
 --
 .Azure Marketplace
 --
-.您需要的產品
+.開始之前
+您應該擁有下列項目：
+
 * 符合網路需求的 vnet 和子網路。
 +
 link:task-prepare-restricted-mode.html["深入瞭解網路需求"]
@@ -175,7 +185,7 @@ https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-ad
 
 ** * 網路安全群組 * ： Connector 需要使用 SSH 、 HTTP 和 HTTPS 的傳入連線。
 +
-link:task-prepare-restricted-mode.html["深入瞭解網路需求"]。
+link:reference-ports-azure.html["檢視 Azure 的安全性群組規則"]。
 
 ** * 識別 * ：在 * 管理 * 下、選取 * 啟用系統指派的託管識別 * 。
 +
@@ -195,7 +205,9 @@ Azure 以指定的設定部署虛擬機器。虛擬機器和 Connector 軟體應
 --
 .手動安裝
 --
-.您需要的產品
+.開始之前
+您應該擁有下列項目：
+
 * 安裝Connector的root權限。
 * Proxy伺服器的詳細資料、如果需要Proxy才能從Connector存取網際網路。
 +
@@ -268,7 +280,7 @@ chmod +x OnCommandCloudManager-<version>
 
 
 +
--cacert指定用於連接器與Proxy伺服器之間HTTPS存取的CA簽署憑證。h
+-cacert指定用於連接器與Proxy伺服器之間HTTPS存取的CA簽署憑證。只有當您指定 HTTPS Proxy 伺服器或 Proxy 是攔截 Proxy 時、才需要此參數。
 
 
 
@@ -359,7 +371,6 @@ BlueXP 現在擁有代表您在 AWS 中執行動作所需的權限。
 為具有必要權限的 IAM 使用者提供 BlueXP AWS 存取金鑰。
 
 .步驟
-. 確定目前在BlueXP中選取正確的連接器。
 . 在BlueXP主控台右上角、按一下「設定」圖示、然後選取*認證*。
 +
 image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」圖示的快照。"]
@@ -397,7 +408,7 @@ NOTE: BlueXP運算子是在BlueXP原則中提供的預設名稱。如果您為�
 .. 按一下*選取*。
 .. 單擊 * 下一步 * 。
 .. 按一下「*檢閱+指派*」。
-.. 如果您想要在其他訂閱中管理資源、請切換至該訂閱、然後重複這些步驟。
+.. 如果您想要在其他 Azure 訂閱中管理資源、請切換至該訂閱、然後重複這些步驟。
 
 
 
@@ -411,7 +422,6 @@ BlueXP 現在擁有代表您在 Azure 中執行動作所需的權限。
 為 BlueXP 提供您先前設定的 Azure 服務主體認證。
 
 .步驟
-. 前往 https://console.bluexp.netapp.com["BlueXP主控台"^] 並登入。
 . 在BlueXP主控台右上角、按一下「設定」圖示、然後選取*認證*。
 +
 image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」圖示的快照。"]

@@ -56,7 +56,6 @@ BlueXP 現在擁有代表您在 Azure 中執行動作所需的權限。
 .服務主體
 --
 .步驟
-. 前往 https://console.bluexp.netapp.com["BlueXP主控台"^] 並登入。
 . 在BlueXP主控台右上角、按一下「設定」圖示、然後選取*認證*。
 +
 image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」圖示的快照。"]

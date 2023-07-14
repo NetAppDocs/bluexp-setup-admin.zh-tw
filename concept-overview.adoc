@@ -66,6 +66,8 @@ BlueXP 平台提供四大資料管理支柱：儲存、行動力、保護、分�
 --
 * https://bluexp.netapp.com/netapp-cloud-data-sense["分類"^]
 * https://bluexp.netapp.com/digital-advisor["數位顧問"^]
+* https://bluexp.netapp.com/digital-advisor["經濟效益"^]
+* https://bluexp.netapp.com/digital-advisor["營運恢復能力"^]
 * https://bluexp.netapp.com/ransomware-protection["勒索軟體保護"^]
 
 
@@ -90,7 +92,7 @@ BlueXP的定價取決於您計畫使用的服務。 https://bluexp.netapp.com/pr
 
 == 藍圖的運作方式
 
-BlueXP 包括透過 SaaS 層提供的網路型主控台、提供多租戶服務的帳戶、以及管理 Cloud Volumes ONTAP 和其他雲端服務的 Connectors 。
+BlueXP 包括透過 SaaS 層提供的網路型主控台、提供多租戶服務的帳戶、以及可管理工作環境並啟用 BlueXP 雲端服務的 Connectors 。
 
 
 
@@ -110,7 +112,7 @@ link:concept-netapp-accounts.html["深入瞭解客戶"]。
 
 === 連接器
 
-您不需要 Connector 即可開始使用 BlueXP 、但您需要建立 Connector 才能解除鎖定所有 BlueXP 功能和服務。Connector 可在內部部署和雲端環境中管理資源和程序。需要使用 Cloud Volumes ONTAP 和其他資料服務。
+您不需要 Connector 即可開始使用 BlueXP 、但您需要建立 Connector 才能解除鎖定所有 BlueXP 功能和服務。Connector 可在內部部署和雲端環境中管理資源和程序。需要管理工作環境（例如 Cloud Volumes ONTAP 和內部部署 ONTAP 叢集）、並使用許多 BlueXP 資料服務。
 
 link:concept-connectors.html["深入瞭解連接器"]。
 

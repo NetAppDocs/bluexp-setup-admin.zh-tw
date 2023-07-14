@@ -1,0 +1,87 @@
+= 
+:allow-uri-read: 
+
+
+| AWS 服務（ amazonaws.com):
+
+* CloudForation
+* 彈性運算雲端（ EC2 ）
+* 身分識別與存取管理（ IAM ）
+* 金鑰管理服務（ KMS ）
+* 安全性權杖服務（ STOS ）
+* 簡易儲存服務（ S3 ）
+
+
+| 管理 AWS 中的資源。確切的端點取決於部署Connector的區域。 https://docs.aws.amazon.com/general/latest/gr/rande.html["如需詳細資料、請參閱AWS文件"^]
+
+| \https://management.azure.com
+\https://login.microsoftonline.com
+\https://blob.core.windows.net
+\https://core.windows.net
+
+| 管理 Azure 公共區域的資源。
+
+|
+\https://management.azure.microsoft.scloud
+\https://login.microsoftonline.microsoft.scloud
+\https://blob.core.microsoft.scloud
+\https://core.microsoft.scloud
+
+| 管理 Azure IL6 區域的資源。
+
+| \https://management.usgovcloudapi.net
+\https://login.microsoftonline.us
+\https://blob.core.usgovcloudapi.net
+\https://core.usgovcloudapi.net
+
+| 管理 Azure 政府區域的資源。
+
+| \https://management.chinacloudapi.cn
+\https://login.chinacloudapi.cn
+\https://blob.core.chinacloudapi.cn
+\https://core.chinacloudapi.cn
+
+| 管理 Azure 中國地區的資源。
+
+| \https://www.googleapis.com/compute/v1/
+\https://compute.googleapis.com/compute/v1
+\https://cloudresourcemanager.googleapis.com/v1/projects
+\https://www.googleapis.com/compute/beta
+\https://storage.googleapis.com/storage/v1
+\https://www.googleapis.com/storage/v1
+\https://iam.googleapis.com/v1
+\https://cloudkms.googleapis.com/v1
+\https://www.googleapis.com/deploymentmanager/v2/projects
+
+| 管理 Google Cloud 中的資源。
+
+| \https://support.netapp.com | 以取得授權資訊、並將 AutoSupport 訊息傳送至 NetApp 支援。
+
+| \https://*.api.bluexp.netapp.com
+
+\https://api.bluexp.netapp.com
+
+\https://*.cloudmanager.cloud.netapp.com
+
+\https://cloudmanager.cloud.netapp.com
+
+| 在 BlueXP 中提供 SaaS 功能與服務。
+
+
+NOTE: Connector目前正在聯絡「cloudmanager.cloud.netapp.com"」、但即將推出的版本將會開始聯絡「api.bluexp.netapp.com"」。
+
+| \https://*.blob.core.windows.net
+
+\https://cloudmanagerinfraprod.azurecr.io
+
+| 升級 Connector 及其 Docker 元件。
+
+| \https://*.blob.core.windows.net
+
+\https://cloudmanagerinfraprod.azurecr.io
+Azure 政府地區不需要此端點。
+
+\https://occmclientinfragov.azurecr.us
+此端點僅在 Azure 政府地區需要使用。
+
+| 升級 Connector 及其 Docker 元件。

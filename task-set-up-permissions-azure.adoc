@@ -203,7 +203,7 @@ Azure使用者現在擁有從BlueXP部署Connector所需的權限。
 .建立 Azure Active Directory 應用程式以進行角色型存取控制
 . 確保您在 Azure 中擁有建立 Active Directory 應用程式及將應用程式指派給角色的權限。
 +
-如需詳細資訊、請參閱 https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure 說明文件：必要權限"^]。
+如需詳細資訊、請參閱 https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure 說明文件：必要權限"^]
 
 . 從 Azure 入口網站開啟 * Azure Active Directory * 服務。
 +
@@ -368,7 +368,7 @@ link:task-provide-permissions-azure.html["瞭解如何將這些權限提供給 B
 .建立 Azure Active Directory 應用程式以進行角色型存取控制
 . 確保您在 Azure 中擁有建立 Active Directory 應用程式及將應用程式指派給角色的權限。
 +
-如需詳細資訊、請參閱 https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure 說明文件：必要權限"^]。
+如需詳細資訊、請參閱 https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure 說明文件：必要權限"^]
 
 . 從 Azure 入口網站開啟 * Azure Active Directory * 服務。
 +
@@ -389,35 +389,80 @@ image:screenshot_azure_ad.gif["顯示 Microsoft Azure 中的 Active Directory �
 
 
 
-.將自訂角色指派給應用程式
-. 從 Azure 入口網站開啟 * 訂閱 * 服務。
-. 選取訂閱。
-. 按一下 * 存取控制（ IAM ） > 新增 > 新增角色指派 * 。
-. 在「*角色*」索引標籤中、選取「*藍圖XP操作員*」角色、然後按一下「*下一步*」。
-. 在「*成員*」索引標籤中、完成下列步驟：
+.將應用程式指派給角色
+. 建立自訂角色：
 +
-.. 保留*選取「使用者」、「群組」或「服務主體」*。
-.. 按一下*選取成員*。
+.. 複製的內容 link:reference-permissions-azure.html["Connector的自訂角色權限"] 並將它們儲存在Json檔案中。
+.. 將 Azure 訂閱 ID 新增至可指派的範圍、以修改 Json 檔案。
++
+您應該為使用者建立 Cloud Volumes ONTAP 的各個 Azure 訂閱新增 ID 。
+
++
+* 範例 *
+
++
+[source, json]
+----
+"AssignableScopes": [
+"/subscriptions/d333af45-0d07-4154-943d-c25fbzzzzzzz",
+"/subscriptions/54b91999-b3e6-4599-908e-416e0zzzzzzz",
+"/subscriptions/398e471c-3b42-4ae7-9b59-ce5bbzzzzzzz"
+----
+.. 使用 Json 檔案在 Azure 中建立自訂角色。
++
+下列步驟說明如何在Azure Cloud Shell中使用Bash建立角色。
+
++
+*** 開始 https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Azure Cloud Shell"^] 並選擇Bash環境。
+*** 上傳Json檔案。
++
+image:screenshot_azure_shell_upload.png["Azure Cloud Shell的快照、您可在其中選擇上傳檔案的選項。"]
+
+*** 使用Azure CLI建立自訂角色：
++
+[source, azurecli]
+----
+az role definition create --role-definition Connector_Policy.json
+----
++
+現在您應該有一個名為BlueXP運算子的自訂角色、可以指派給連接器虛擬機器。
+
+
+
+
+
+. 將應用程式指派給角色：
++
+.. 從 Azure 入口網站開啟 * 訂閱 * 服務。
+.. 選取訂閱。
+.. 按一下 * 存取控制（ IAM ） > 新增 > 新增角色指派 * 。
+.. 在「*角色*」索引標籤中、選取「*藍圖XP操作員*」角色、然後按一下「*下一步*」。
+.. 在「*成員*」索引標籤中、完成下列步驟：
++
+*** 保留*選取「使用者」、「群組」或「服務主體」*。
+*** 按一下*選取成員*。
 +
 image:screenshot-azure-service-principal-role.png["Azure入口網站的快照、會在新增角色至應用程式時顯示「成員」索引標籤。"]
 
-.. 搜尋應用程式名稱。
+*** 搜尋應用程式名稱。
 +
 範例如下：
 
 +
 image:screenshot_azure_service_principal_role.png["Azure入口網站的快照、顯示Azure入口網站中的「新增角色指派」表單。"]
 
-.. 選取應用程式、然後按一下*選取*。
-.. 單擊 * 下一步 * 。
+*** 選取應用程式、然後按一下*選取*。
+*** 單擊 * 下一步 * 。
 
 
-. 按一下「*檢閱+指派*」。
+.. 按一下「*檢閱+指派*」。
 +
 服務主體現在擁有部署Connector所需的Azure權限。
 
 +
-如果您想要在多個 Azure 訂閱中管理資源、則必須將服務主體繫結至每個訂閱。例如、 BlueXP 可讓您選取部署 Cloud Volumes ONTAP 時要使用的訂閱。
+如果您想要從 Cloud Volumes ONTAP 多個 Azure 訂閱中部署支援功能、則必須將服務授權對象繫結至每個訂閱項目。BlueXP可讓您選擇部署Cloud Volumes ONTAP 時要使用的訂閱內容。
+
+
 
 
 

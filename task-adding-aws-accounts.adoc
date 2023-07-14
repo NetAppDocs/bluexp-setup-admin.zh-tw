@@ -231,21 +231,24 @@ image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」�
 * 您想要以新的訂閱取代現有的 AWS Marketplace 訂閱。
 
 
-.您需要的產品
+.開始之前
 您必須先建立連接器、才能變更BlueXP設定。 link:concept-connectors.html#how-to-create-a-connector["瞭解如何建立連接器"]。
 
 .步驟
-. 在 BlueXP 主控台的右上角、選取「設定」圖示、然後選取 * 認證 * 。
-. 在 * 帳戶認證 * 頁面上、選取一組認證的動作功能表、然後選取 * 關聯訂閱 * 。
+. 在BlueXP主控台右上角、按一下「設定」圖示、然後選取*認證*。
+. 按一下動作功能表以取得一組認證資料、然後選取「*建立訂閱關聯*」。
++
+您必須選取與 Connector 相關聯的認證。您無法將市場訂閱與 BlueXP 相關的認證建立關聯。
+
 +
 image:screenshot_associate_subscription.png["一組現有認證資料的動作功能表快照。"]
 
-. 若要將認證與現有訂閱建立關聯、請從下拉式清單中選取訂閱、然後選取 * 關聯 * 。
-. 若要將認證與新訂閱建立關聯、請選取 * 新增訂閱 > 繼續 * 、然後依照 AWS Marketplace 中的步驟進行：
+. 若要將認證資料與現有訂閱建立關聯、請從下拉式清單中選取訂閱、然後按一下「*關聯*」。
+. 若要將認證資料與新訂閱建立關聯、請按一下*新增訂閱>繼續*、然後依照AWS Marketplace中的步驟進行：
 +
-.. 選取 * 檢視購買選項 * 。
-.. 選取 * 訂閱 * 。
-.. 選取 * 設定您的帳戶 * 。
+.. 按一下*檢視購買選項*。
+.. 按一下*訂閱*。
+.. 按一下*設定您的帳戶*。
 +
 您將被重新導向至BlueXP網站。
 
@@ -259,9 +262,9 @@ image:screenshot_associate_subscription.png["一組現有認證資料的動作�
 +
 對於所有其他帳戶、您必須重複這些步驟、手動建立訂閱的關聯。
 
-*** 選擇*保存*。
+*** 按一下「 * 儲存 * 」。
 +
-下列影片顯示從Google Cloud Marketplace訂閱的步驟：
+下列影片顯示從 AWS Marketplace 訂閱的步驟：
 
 +
 video::video_subscribing_aws.mp4[width=848,height=480]

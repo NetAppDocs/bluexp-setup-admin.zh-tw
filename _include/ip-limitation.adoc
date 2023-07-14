@@ -1,0 +1,5 @@
+= 
+:allow-uri-read: 
+
+
+可能與172範圍內的IP位址發生衝突。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-limitations.html["深入瞭解此限制"]。

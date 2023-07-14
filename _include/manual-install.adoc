@@ -1,26 +1,6 @@
----
-sidebar: sidebar 
-permalink: task-install-connector-on-prem.html 
-keywords: install connector, on prem connector installation, on prem connector, install connector on prem, manual install 
-summary: 在內部部署安裝 Connector 、然後登入並設定以搭配 BlueXP 帳戶使用。 
----
-= 在內部部署安裝並設定 Connector
-:hardbreaks:
+= 
 :allow-uri-read: 
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
 
-
-[role="lead"]
-在內部部署安裝 Connector 、然後登入並設定以搭配 BlueXP 帳戶使用。
-
-
-
-== 安裝Connector
-
-在內部部署的現有 Linux 主機上下載並安裝 Connector 軟體。
 
 .開始之前
 您應該擁有下列項目：
@@ -101,31 +81,21 @@ chmod +x OnCommandCloudManager-<version>
 
 
 
-.結果
-現在已安裝Connector。安裝結束時、如果您指定Proxy伺服器、Connector服務（occm）會重新啟動兩次。
+. 等待安裝完成。
++
+安裝結束時、如果您指定Proxy伺服器、Connector服務（occm）會重新啟動兩次。
 
-
-
-== 設定Connector
-
-註冊或登入、然後設定Connector以使用您的帳戶。
-
-.步驟
-. 開啟網頁瀏覽器並輸入下列 URL ：
+. 從連線至 Connector 虛擬機器的主機開啟網頁瀏覽器、然後輸入下列 URL ：
 +
 https://_ipaddress_[]
 
-+
-_ipaddress_ 可以是 localhost 、私有 IP 位址或公有 IP 位址、視主機的組態而定。例如、如果連接器位於沒有公有 IP 位址的公有雲中、您必須輸入連接至連接器主機之主機的私有 IP 位址。
-
-. 註冊或登入。
-. 登入之後、請設定BlueXP：
+. 登入後、設定 Connector ：
 +
 .. 指定與 Connector 相關聯的 BlueXP 帳戶。
 .. 輸入系統名稱。
 .. 在 * 您是在安全的環境中執行？ * 保持停用限制模式。
 +
-您應該保持停用受限模式、因為這些步驟說明如何在標準模式中使用 BlueXP 。（此外、當 Connector 安裝在內部部署時、不支援受限模式。）
+您應該保持停用受限模式、因為這些步驟說明如何在標準模式中使用 BlueXP 。只有當您擁有安全的環境、而且想要中斷此帳戶與 BlueXP 後端服務的連線時、才應啟用受限模式。如果是這樣、 link:task-quick-start-restricted-mode.html["請依照步驟、以受限模式開始使用 BlueXP"]。
 
 .. 按一下 * 開始 * 。
 
@@ -133,7 +103,4 @@ _ipaddress_ 可以是 localhost 、私有 IP 位址或公有 IP 位址、視主�
 
 
 .結果
-BlueXP 現在已設定好您剛安裝的 Connector 。
-
-.接下來呢？
-link:task-provide-permissions-on-prem.html["提供 BlueXP 先前設定的權限"]。
+Connector 現已安裝、並已使用您的 BlueXP 帳戶進行設定。

@@ -42,7 +42,9 @@ image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」�
 
 
 .結果
-BlueXP 現在擁有代表您在 AWS 中執行動作所需的權限。您現在可以前往 https://console.bluexp.netapp.com["BlueXP主控台"^] 開始使用Connector with BlueXP。
+BlueXP 現在擁有代表您在 AWS 中執行動作所需的權限。
+
+您現在可以前往 https://console.bluexp.netapp.com["BlueXP主控台"^] 開始使用Connector with BlueXP。
 
 --
 .Azure

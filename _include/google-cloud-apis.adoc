@@ -1,0 +1,14 @@
+= 
+:allow-uri-read: 
+
+
+* Cloud Deployment Manager V2 API
+* 雲端記錄 API
+* Cloud Resource Manager API
+* 運算引擎 API
+* 身分識別與存取管理（ IAM ） API
+* 雲端金鑰管理服務（ KMS ） API
++
+（僅當您打算使用 BlueXP 備份與還原搭配客戶管理的加密金鑰（ CMEK ）時才需要）
+
+

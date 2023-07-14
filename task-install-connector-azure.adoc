@@ -20,7 +20,9 @@ summary: 直接從 BlueXP 網路型主控台、 Azure Marketplace 或在您自�
 ====
 .藍圖
 --
-.您需要的產品
+.開始之前
+您應該擁有下列項目：
+
 * Azure 訂閱。
 * 您所選擇的 Azure 區域中的 Vnet 和子網路。
 * 若貴組織需要代理處理所有傳出的網際網路流量、請參閱Proxy伺服器的詳細資料：
@@ -116,18 +118,15 @@ https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-onco
 設定 VM 時請注意下列事項：
 
 +
-** 連接器可搭配HDD或SSD磁碟以最佳方式執行。
-** 選擇符合 CPU 和 RAM 需求的 VM 大小。我們建議使用 DS3 v2 。
-+
-link:reference-host-requirements-azure.html["檢閱 VM 需求"]。
-
-** 對於網路安全性群組、 Connector 需要使用 SSH 、 HTTP 和 HTTPS 的傳入連線。特定組態還需要一些規則。
+** * VM 大小 * ：選擇符合 CPU 和 RAM 需求的 VM 大小。我們建議使用 DS3 v2 。
+** * 磁碟 * ：連接器可在 HDD 或 SSD 磁碟上以最佳方式執行。
+** * 網路安全群組 * ： Connector 需要使用 SSH 、 HTTP 和 HTTPS 的傳入連線。
 +
 link:reference-ports-azure.html["檢視 Azure 的安全性群組規則"]。
 
-** 在 * 管理 * 下、選取 * 開啟 * 、為 Connector VM 啟用 * 系統指派的託管識別 * 。
+** * 識別 * ：在 * 管理 * 下、選取 * 啟用系統指派的託管識別 * 。
 +
-此設定非常重要、因為託管身分識別可讓 Connector 虛擬機器在 Azure Active Directory 中識別自己、而無需提供任何認證。完成後、您需要指派您建立的自訂角色 https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["深入瞭解 Azure 資源的託管身分識別"^]。
+此設定非常重要、因為託管身分識別可讓 Connector 虛擬機器在 Azure Active Directory 中識別自己、而無需提供任何認證。 https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["深入瞭解 Azure 資源的託管身分識別"^]。
 
 
 
@@ -160,7 +159,9 @@ link:task-provide-permissions-azure.html["提供 BlueXP 先前設定的權限"]�
 --
 .手動安裝
 --
-.您需要的產品
+.開始之前
+您應該擁有下列項目：
+
 * 安裝Connector的root權限。
 * Proxy伺服器的詳細資料、如果需要Proxy才能從Connector存取網際網路。
 +

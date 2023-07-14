@@ -54,15 +54,15 @@ link:reference-networking-saas-console.html["檢視從 BlueXP 主控台連絡的
 
 === 手動安裝期間聯絡的端點
 
-如果您打算在自己的 Linux 主機上手動安裝 Connector 、 Connector 的安裝程式會在安裝過程中要求存取下列 URL ：
+當您在自己的 Linux 主機上手動安裝 Connector 時、 Connector 的安裝程式需要在安裝過程中存取下列 URL ：
 
 * \https://support.netapp.com
 * \https://mysupport.netapp.com
 * \https://cloudmanager.cloud.netapp.com/tenancy
 * \https://stream.cloudmanager.cloud.netapp.com
-* \https://cloudmanagerinfraprod.azurecr.io
 * \https://production-artifacts.cloudmanager.cloud.netapp.com
 * \https://*.blob.core.windows.net
+* \https://cloudmanagerinfraprod.azurecr.io
 
 
 主機可能會在安裝期間嘗試更新作業系統套件。主機可聯絡不同的鏡射站台、以取得這些 OS 套件。
@@ -73,24 +73,36 @@ link:reference-networking-saas-console.html["檢視從 BlueXP 主控台連絡的
 
 Connector 需要外傳網際網路存取才能連絡下列端點、以便管理公有雲環境中的資源和程序、以進行日常營運。
 
-[cols="2*"]
+[cols="2a,1a"]
 |===
 | 端點 | 目的 
 
 
-| \https://management.azure.com
+ a| 
+\https://management.azure.com
 \https://login.microsoftonline.com
 \https://blob.core.windows.net
-\https://core.windows.net | 管理Azure公共區域的資源。 
+\https://core.windows.net
+ a| 
+管理Azure公共區域的資源。
 
 
-| \https://management.chinacloudapi.cn
+
+ a| 
+\https://management.chinacloudapi.cn
 \https://login.chinacloudapi.cn
 \https://blob.core.chinacloudapi.cn
-\https://core.chinacloudapi.cn | 管理Azure中國地區的資源。 
+\https://core.chinacloudapi.cn
+ a| 
+管理Azure中國地區的資源。
 
 
-| \https://support.netapp.com | 以取得授權資訊、並將AutoSupport 資訊傳送給NetApp支援部門。 
+
+ a| 
+\https://support.netapp.com
+ a| 
+以取得授權資訊、並將AutoSupport 資訊傳送給NetApp支援部門。
+
 
 
  a| 
@@ -109,9 +121,13 @@ NOTE: Connector目前正在聯絡「cloudmanager.cloud.netapp.com"」、但即�
 
 
 
-| \https://cloudmanagerinfraprod.azurecr.io
+ a| 
+\https://*.blob.core.windows.net
 
-\https://*.blob.core.windows.net | 升級Connector及其Docker元件。 
+\https://cloudmanagerinfraprod.azurecr.io
+ a| 
+升級Connector及其Docker元件。
+
 |===
 
 
@@ -124,15 +140,20 @@ NOTE: Connector目前正在聯絡「cloudmanager.cloud.netapp.com"」、但即�
 * HTTPS憑證
 
 
+您必須在安裝期間提供此資訊。
+
 
 
 == 連接埠
 
-連接器沒有傳入流量、除非您啟動連接器、或連接器是AutoSupport 作為Proxy來接收資訊、否則連接器不會傳入。
+除非您啟動連接器、或使用連接器做為 Proxy 、將 AutoSupport 訊息從 Cloud Volumes ONTAP 傳送至 NetApp 支援、否則不會有傳入的流量傳入連接器。
 
 * HTTP（80）和HTTPS（443）可存取本機UI、在極少數情況下使用。
 * 只有在需要連線至主機進行疑難排解時、才需要SSH（22）。
-* 如果您在無法使用輸出網際網路連線的子網路中部署 Cloud Volumes ONTAP 系統、則需要透過連接埠 3128 進行輸入連線。如果Cloud Volumes ONTAP 無法透過外部網際網路連線來傳送AutoSupport 各種消息、則BlueXP會自動將這些Cloud Volumes ONTAP 系統設定為使用連接器隨附的Proxy伺服器。唯一的需求是確保連接器的安全群組允許透過連接埠3128進行傳入連線。部署Connector之後、您需要開啟此連接埠。
+* 如果您在無法使用輸出網際網路連線的子網路中部署 Cloud Volumes ONTAP 系統、則需要透過連接埠 3128 進行輸入連線。
++
+如果Cloud Volumes ONTAP 無法透過外部網際網路連線來傳送AutoSupport 各種消息、則BlueXP會自動將這些Cloud Volumes ONTAP 系統設定為使用連接器隨附的Proxy伺服器。唯一的需求是確保連接器的安全群組允許透過連接埠3128進行傳入連線。部署Connector之後、您需要開啟此連接埠。
+
 
 
 
