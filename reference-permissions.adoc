@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-permissions.html 
 keywords: permissions, actions 
-summary: 為了使用BlueXP中的功能和服務、您必須提供權限、以便BlueXP能在雲端環境中執行作業。請使用此頁面上的連結、快速存取BlueXP所需的權限。 
+summary: 若要使用 BlueXP 功能和服務、您必須提供權限、讓 BlueXP 能夠在雲端環境中執行作業。使用此頁面上的連結、根據您的目標快速存取所需的權限。 
 ---
 = BlueXP的權限摘要
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 為了使用BlueXP中的功能和服務、您必須提供權限、以�
 
 
 [role="lead"]
-為了使用BlueXP中的功能和服務、您必須提供權限、以便BlueXP能在雲端環境中執行作業。使用此頁面上的連結、根據您的目標快速存取所需的權限。
+若要使用 BlueXP 功能和服務、您必須提供權限、讓 BlueXP 能夠在雲端環境中執行作業。使用此頁面上的連結、根據您的目標快速存取所需的權限。
 
 
 
@@ -41,13 +41,7 @@ summary: 為了使用BlueXP中的功能和服務、您必須提供權限、以�
 | 將內部部署 ONTAP 叢集備份至 Amazon S3 | 在 ONTAP 磁碟區上啟動備份時、 BlueXP 備份與還原會提示您為具有特定權限的 IAM 使用者輸入存取金鑰與密碼。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-aws.html#set-up-s3-permissions["設定 S3 備份權限"^] 
 
 
-| 將內部部署 ONTAP 叢集備份至 StorageGRID | 當您準備將 StorageGRID 做為 ONTAP 叢集的備份目標時、 BlueXP 備份與還原會提示您輸入具有特定權限的 IAM 使用者的存取金鑰和密碼。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target["準備 StorageGRID 做為備份目標"^] 
-
-
-| 將內部部署的 ONTAP 叢集分層至 AWS | 當您啟用 BlueXP 分層至 AWS 時、精靈會提示您輸入存取金鑰和秘密金鑰。這些認證資料會傳遞ONTAP 到S庫 叢集、ONTAP 以便讓S庫 將資料分層傳送到S3儲存庫。 | https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#set-up-s3-permissions["設定 S3 分層權限"^] 
-
-
-| 將內部部署的 ONTAP 叢集分層至 StorageGRID | 當您設定 BlueXP 分層到 StorageGRID 時、您需要提供 BlueXP 分層、並提供 S3 存取金鑰和秘密金鑰。BlueXP 分層使用金鑰來存取您的貯體。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target["準備分層至 StorageGRID"^] 
+| 將內部部署的 ONTAP 叢集分層至 Amazon S3 | 當您啟用 BlueXP 分層至 AWS 時、精靈會提示您輸入存取金鑰和秘密金鑰。這些認證資料會傳遞ONTAP 到S庫 叢集、ONTAP 以便讓S庫 將資料分層傳送到S3儲存庫。 | https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#set-up-s3-permissions["設定 S3 分層權限"^] 
 |===
 
 
@@ -102,4 +96,18 @@ link:reference-permissions-azure.html["連接器的Azure權限"]
 
 
 | 將內部部署的 ONTAP 叢集備份至 Google Cloud | 使用 BlueXP 備份與還原備份內部部署 ONTAP 叢集時、您需要新增 Connector 的權限、才能使用「搜尋與還原」功能。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-gcp.html#verify-or-add-permissions-to-the-connector["搜尋擴大機的權限；還原功能"^] 
+|===
+
+
+== StorageGRID 權限
+
+[cols="25,60,40"]
+|===
+| 目的 | 說明 | 連結 
+
+
+| 將內部部署 ONTAP 叢集備份至 StorageGRID | 當您準備將 StorageGRID 做為 ONTAP 叢集的備份目標時、 BlueXP 備份與還原會提示您輸入具有特定權限的 IAM 使用者的存取金鑰和密碼。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target["準備 StorageGRID 做為備份目標"^] 
+
+
+| 將內部部署的 ONTAP 叢集分層至 StorageGRID | 當您設定 BlueXP 分層到 StorageGRID 時、您需要提供 BlueXP 分層、並提供 S3 存取金鑰和秘密金鑰。BlueXP 分層使用金鑰來存取您的貯體。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target["準備分層至 StorageGRID"^] 
 |===

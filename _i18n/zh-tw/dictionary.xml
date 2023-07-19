@@ -2906,9 +2906,7 @@
   <block id="be01cd1242a81da984b776c6a5aacb83" category="section-title">允許第三方服務</block>
   <block id="0d36dab0ce71c33a40b8ea4c8c773291" category="paragraph">允許您帳戶中的第三方服務存取BlueXP中提供的第三方服務。第三方服務是類似NetApp所提供服務的雲端服務、但由第三方公司管理及支援。</block>
   <block id="90837faa596ab1d28c90a381b6997722" category="list-text">在「*總覽*」標籤中、啟用「*允許協力廠商服務*」設定。</block>
-  <block id="84dddaa8f7ae88c549f969e61659e03a" category="summary">為了使用BlueXP中的功能和服務、您必須提供權限、以便BlueXP能在雲端環境中執行作業。請使用此頁面上的連結、快速存取BlueXP所需的權限。</block>
   <block id="f664478fbdfbd15104b014e41c35e88c" category="doc">BlueXP的權限摘要</block>
-  <block id="b26840ebf08ae862c7d257c1229a3091" category="paragraph">為了使用BlueXP中的功能和服務、您必須提供權限、以便BlueXP能在雲端環境中執行作業。使用此頁面上的連結、根據您的目標快速存取所需的權限。</block>
   <block id="d2c0c7feb18d0e89bab9d23b6ec4c042" category="section-title">AWS 權限</block>
   <block id="97e7c9a7d06eac006a28bf05467fcc8b" category="cell">連結</block>
   <block id="eec108a26c2c4c3392174c931352146b" category="cell">BlueXP 的連接器部署</block>
@@ -3780,7 +3778,6 @@ Azure 政府地區不需要此端點。</block>
   <block id="649c5239d0163afb3411e36c5e857809" category="cell">當您準備將 StorageGRID 做為 ONTAP 叢集的備份目標時、 BlueXP 備份與還原會提示您輸入具有特定權限的 IAM 使用者的存取金鑰和密碼。</block>
   <block id="08cdeb7ce64fda06111111c8fea66510" category="inline-link">準備 StorageGRID 做為備份目標</block>
   <block id="62d09ae20af8b1a53c08a95792d3bdb1" category="cell"><block ref="62d09ae20af8b1a53c08a95792d3bdb1" category="inline-link-rx"></block></block>
-  <block id="746562efc5b1b0667c7d322c1bda9554" category="cell">將內部部署的 ONTAP 叢集分層至 AWS</block>
   <block id="e6b202bba8f7c7c067b2137e58a41397" category="cell">當您啟用 BlueXP 分層至 AWS 時、精靈會提示您輸入存取金鑰和秘密金鑰。這些認證資料會傳遞ONTAP 到S庫 叢集、ONTAP 以便讓S庫 將資料分層傳送到S3儲存庫。</block>
   <block id="827bb82562627531a1105788bd9826e6" category="inline-link">設定 S3 分層權限</block>
   <block id="5f2c172dbfc6022aa5027029dc114852" category="cell"><block ref="5f2c172dbfc6022aa5027029dc114852" category="inline-link-rx"></block></block>
@@ -3815,4 +3812,7 @@ Azure 政府地區不需要此端點。</block>
   <block id="d1c50736002ef3676d1c143a04d4cc59" category="list-text">Athena ： StartQueryExecution</block>
   <block id="e7a0ee2f9390b4213bbeb8838f2d3896" category="list-text">BlueXP SaaS 層不需要外傳連線。所有套件、相依性和基本元件都會隨附於 Connector 、並從本機機器提供服務。只有在部署 Cloud Volumes ONTAP 時、才需要連線至雲端供應商的公開可用資源。</block>
   <block id="75dbd7f878d584e6e9f033b3806519ac" category="sidebar">準備網路</block>
+  <block id="48f169efc2b522ea6ab10451a2a28cd8" category="summary">若要使用 BlueXP 功能和服務、您必須提供權限、讓 BlueXP 能夠在雲端環境中執行作業。使用此頁面上的連結、根據您的目標快速存取所需的權限。</block>
+  <block id="6bc8bd282f003afcaaf88391550efbaf" category="cell">將內部部署的 ONTAP 叢集分層至 Amazon S3</block>
+  <block id="23c27147b4e0e766d76ac0f6e872424e" category="section-title">StorageGRID 權限</block>
 </blocks>
