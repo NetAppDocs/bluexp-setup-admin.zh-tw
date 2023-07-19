@@ -237,7 +237,7 @@ image:diagram-private-mode-onprem.png["這是一個概念性影像、顯示內�
 
 BlueXP 在私有模式下的運作方式如下：
 
-傳出通訊:: 不需要輸出連線。所有套件、相依性和基本元件都會隨附於 Connector 、並從本機機器提供服務。只有在部署 Cloud Volumes ONTAP 時、才需要連線至雲端供應商的公開可用資源。
+傳出通訊:: BlueXP SaaS 層不需要外傳連線。所有套件、相依性和基本元件都會隨附於 Connector 、並從本機機器提供服務。只有在部署 Cloud Volumes ONTAP 時、才需要連線至雲端供應商的公開可用資源。
 Connector 支援的位置:: 在私有模式中、 Connector 可在雲端或內部部署中獲得支援。
 連接器安裝:: 您可以在雲端或內部部署的 Linux 主機上、手動安裝 Connector 。
 連接器升級:: 您需要手動升級 Connector 軟體。Connector 軟體會以未定義的時間間隔發佈至 NetApp 支援網站 。

@@ -50,6 +50,8 @@ summary: 設定 Azure 權限、讓您可以使用 BlueXP 來管理 Azure 中的�
 
 建立您可以指派給 Azure 帳戶或服務主體的自訂角色。
 
+請注意、您可以使用 Azure 入口網站、 Azure PowerShell 、 Azure CLI 或 REST API 來建立 Azure 自訂角色。下列步驟說明如何使用 Azure CLI 建立角色。如果您想要使用不同的方法、請參閱 https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Azure文件"^]
+
 .步驟
 . 複製Azure中新自訂角色所需的權限、並將其儲存在Json檔案中。
 +
@@ -314,6 +316,8 @@ image:screenshot_azure_client_secret.gif["Azure 入口網站的快照、顯示 A
 ====
 .自訂角色
 --
+請注意、您可以使用 Azure 入口網站、 Azure PowerShell 、 Azure CLI 或 REST API 來建立 Azure 自訂角色。下列步驟說明如何使用 Azure CLI 建立角色。如果您想要使用不同的方法、請參閱 https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Azure文件"^]
+
 .步驟
 . 如果您打算在自己的主機上手動安裝軟體、請在 VM 上啟用系統指派的託管身分識別、以便透過自訂角色提供必要的 Azure 權限。
 +
@@ -391,6 +395,9 @@ image:screenshot_azure_ad.gif["顯示 Microsoft Azure 中的 Active Directory �
 
 .將應用程式指派給角色
 . 建立自訂角色：
++
+請注意、您可以使用 Azure 入口網站、 Azure PowerShell 、 Azure CLI 或 REST API 來建立 Azure 自訂角色。下列步驟說明如何使用 Azure CLI 建立角色。如果您想要使用不同的方法、請參閱 https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Azure文件"^]
+
 +
 .. 複製的內容 link:reference-permissions-azure.html["Connector的自訂角色權限"] 並將它們儲存在Json檔案中。
 .. 將 Azure 訂閱 ID 新增至可指派的範圍、以修改 Json 檔案。

@@ -35,7 +35,7 @@ sidebar:
       entries:
       - title: 快速入門
         url: "/task-quick-start-standard-mode.html"
-      - title: 用於主控台存取的網路
+      - title: 準備網路
         url: "/reference-networking-saas-console.html"
       - title: 註冊BlueXP
         url: "/task-sign-up-saas.html"

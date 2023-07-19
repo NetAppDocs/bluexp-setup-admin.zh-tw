@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: reference-networking-saas-console.html 
-keywords: networking, urls, endpoints, web browser, console 
-summary: 當您使用透過 SaaS 層提供的 BlueXP 網路型主控台時、它會與多個端點聯絡、以完成資料管理工作。執行 Web 瀏覽器的機器必須連線至這些端點。 
+keywords: networking, urls, endpoints, web browser, console, network, set up networking 
+summary: 開始使用 BlueXP 時、請確定您的網路允許從 BlueXP 主控台存取特定端點。視您打算如何使用 BlueXP 而定、您可能也需要為 Connector 和特定 BlueXP 服務設定網路。 
 ---
-= 準備網路以供使用者存取 BlueXP 主控台
+= 準備好您的網路
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,6 +14,12 @@ summary: 當您使用透過 SaaS 層提供的 BlueXP 網路型主控台時、它
 
 
 [role="lead"]
+開始使用 BlueXP 時、請確定您的網路允許從 BlueXP 主控台存取特定端點。視您打算如何使用 BlueXP 而定、您可能也需要為 Connector 和特定 BlueXP 服務設定網路。
+
+
+
+== 準備網路以供使用者存取 BlueXP 主控台
+
 當您使用透過 SaaS 層提供的 BlueXP 網路型主控台時、它會與多個端點聯絡、以完成資料管理工作。執行 Web 瀏覽器的機器必須連線至這些端點。
 
 [cols="2*"]
@@ -67,10 +73,24 @@ AWS 服務（ amazonaws.com):
 
 | \https://widget.intercom.io | 產品內對談可讓您與 NetApp 雲端專家交談。 
 |===
-.相關連結
-* link:task-prepare-restricted-mode.html#prepare-networking-for-user-access-to-bluexp-console["準備網路以供使用者存取 BlueXP 主控台（受限模式）"]
-* link:task-set-up-networking-aws.html#endpoints-contacted-from-the-connector["Connector 在 AWS （標準模式）中所接觸的端點"]
-* link:task-set-up-networking-azure.html#endpoints-contacted-from-the-connector["Connector 在 Azure 中接觸的端點（標準模式）"]
-* link:task-set-up-networking-google.html#endpoints-contacted-from-the-connector["Connector 在 Google Cloud 中連絡的端點（標準模式）"]
-* link:task-set-up-networking-on-prem.html#endpoints-contacted-during-manual-installation["手動安裝 Connector 時聯絡的端點（標準模式）"]
+除了這些端點之外、您還需要確保 Connector 具備對外網際網路存取權、以便聯絡特定端點、以進行日常作業。您可以依照下一節中的連結、找到這些端點的清單。
 
+
+
+== 準備連接器的網路連線
+
+您如何為 Connector 準備網路、取決於您打算在雲端或內部部署安裝 Connector 的位置。如需 Connector 網路連線需求的詳細資訊、請參閱下列頁面：
+
+* link:task-set-up-networking-aws.html["設定 AWS 網路"]
+* link:task-set-up-networking-azure.html["設定 Azure 網路"]
+* link:task-set-up-networking-google.html["設定 Google Cloud 網路"]
+* link:task-set-up-networking-on-prem.html["設定內部網路"]
+
+
+
+
+== 為 BlueXP 服務做好網路準備
+
+開始使用 BlueXP 時、您應確保已符合您計畫使用的 BlueXP 服務的網路需求。如需詳細資訊、請參閱每項服務的文件。
+
+https://docs.netapp.com/us-en/bluexp-family/["BlueXP文件"^]

@@ -785,7 +785,7 @@ Connector會提出下列API要求、以管理Amazon S3中的備份：
 * S3：PuttBucketPublicAccessBlock
 * S3：中止多重角色上傳
 * S3：列出多個零件上傳零件
-* Athena：StartQueryExecutionc
+* Athena ： StartQueryExecution
 * Athena：GetQueryResults
 * Athena：GetQueryExecution
 * Athena：停止查詢執行
