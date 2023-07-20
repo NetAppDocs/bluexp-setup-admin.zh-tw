@@ -1828,7 +1828,6 @@
   <block id="12007e1d59f4d09c87dbe2c438256244" category="cell">目的地</block>
   <block id="241b5fab8e737eaa79c543efe7307059" category="cell">API 呼叫與 AutoSupport 功能</block>
   <block id="096a28c32a85d3d48462b468a3700d9a" category="cell">傳出網際網路和 ONTAP 叢集管理 LIF</block>
-  <block id="7863903e1b4b84391267ab5c4af6a68d" category="cell">API 呼叫 Google Cloud 和 ONTAP 、將 BlueXP 分類、 BlueXP 勒索軟體保護、並將 AutoSupport 訊息傳送給 NetApp</block>
   <block id="22043367a89ddcf3eb99eec509a967ba" category="cell">API 呼叫</block>
   <block id="e93028bdc1aacdfb3687181f2031765d" category="cell">3000</block>
   <block id="e9ed822bdea417e9dfd79a2c81634ba4" category="cell">充當HA中介者ONTAP</block>
@@ -3815,4 +3814,7 @@ Azure 政府地區不需要此端點。</block>
   <block id="48f169efc2b522ea6ab10451a2a28cd8" category="summary">若要使用 BlueXP 功能和服務、您必須提供權限、讓 BlueXP 能夠在雲端環境中執行作業。使用此頁面上的連結、根據您的目標快速存取所需的權限。</block>
   <block id="6bc8bd282f003afcaaf88391550efbaf" category="cell">將內部部署的 ONTAP 叢集分層至 Amazon S3</block>
   <block id="23c27147b4e0e766d76ac0f6e872424e" category="section-title">StorageGRID 權限</block>
+  <block id="eb44d47feda5532d1121c79d84128d2e" category="cell">API 呼叫 AWS 、 ONTAP 、 BlueXP 分類、 BlueXP 勒索軟體保護、並將 AutoSupport 訊息傳送至 NetApp</block>
+  <block id="e671b39f5fdb18b38eb5c968b368b3aa" category="cell">API 將 Azure 、 ONTAP 、 BlueXP 分類、 BlueXP 勒索軟體保護、以及傳送 AutoSupport 訊息至 NetApp</block>
+  <block id="8150638aa57d2b5755445cf3ab8eac20" category="cell">API 呼叫 Google Cloud 、 ONTAP 、 BlueXP 分類、 BlueXP 勒索軟體保護、並將 AutoSupport 訊息傳送至 NetApp</block>
 </blocks>
