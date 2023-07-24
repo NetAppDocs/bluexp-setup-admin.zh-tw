@@ -1239,7 +1239,6 @@
   <block id="35083c8541bb2de95fd92715b18737cb" category="paragraph">如果您想要啟用受限模式、則需要在要求本文中包含下列項目：</block>
   <block id="69a442aca267a323cb2e19a768758f93" category="admonition">BlueXP 建立帳戶後、您無法變更限制模式設定。您稍後無法啟用受限模式、之後也無法停用。必須在建立帳戶時設定。</block>
   <block id="82ed80a9e9141ee7778aeb10a225c2fc" category="inline-link">瞭解如何使用此 API 呼叫</block>
-  <block id="ffcea1f0cafb5afdb99327d5e41340ea" category="paragraph"><block ref="ffcea1f0cafb5afdb99327d5e41340ea" category="inline-link-rx"></block></block>
   <block id="07999df8a3fec91dcf6daa7e52777cc7" category="list-text"><block ref="07999df8a3fec91dcf6daa7e52777cc7" category="inline-link-macro-rx"></block></block>
   <block id="62bd7572081df25dd3f1f52151883c4a" category="inline-link-macro">瞭解 BlueXP 部署模式</block>
   <block id="d8c1ee023ea7a4705048e3464cfcb854" category="list-text"><block ref="d8c1ee023ea7a4705048e3464cfcb854" category="inline-link-macro-rx"></block></block>
@@ -3817,4 +3816,5 @@ Azure 政府地區不需要此端點。</block>
   <block id="eb44d47feda5532d1121c79d84128d2e" category="cell">API 呼叫 AWS 、 ONTAP 、 BlueXP 分類、 BlueXP 勒索軟體保護、並將 AutoSupport 訊息傳送至 NetApp</block>
   <block id="e671b39f5fdb18b38eb5c968b368b3aa" category="cell">API 將 Azure 、 ONTAP 、 BlueXP 分類、 BlueXP 勒索軟體保護、以及傳送 AutoSupport 訊息至 NetApp</block>
   <block id="8150638aa57d2b5755445cf3ab8eac20" category="cell">API 呼叫 Google Cloud 、 ONTAP 、 BlueXP 分類、 BlueXP 勒索軟體保護、並將 AutoSupport 訊息傳送至 NetApp</block>
+  <block id="6d349a0af72df500a21b7660d8e471b2" category="paragraph"><block ref="6d349a0af72df500a21b7660d8e471b2" category="inline-link-rx"></block></block>
 </blocks>
