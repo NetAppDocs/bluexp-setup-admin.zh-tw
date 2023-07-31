@@ -18,6 +18,32 @@ summary: 瞭解 BlueXP 管理功能的新功能： BlueXP 帳戶、連接器、�
 
 
 
+== 7 月 30 日
+
+
+
+=== 連接器 3.9.32
+
+* 您現在可以使用 BlueXP 稽核服務 API 來匯出稽核記錄。
++
+稽核服務會記錄 BlueXP 服務所執行作業的相關資訊。這包括來源 IP 位址、工作區、使用的連接器和其他遙測資料。您可以使用此資料來判斷執行的動作、執行者及執行時間。
+
++
+https://docs.netapp.com/us-en/bluexp-automation/audit/overview.html["深入瞭解如何使用稽核服務 API"^]
+
++
+請注意、您也可以從時間軸頁面上的 BlueXP 使用者介面存取此連結。
+
+* 此版本的Connector也包含Cloud Volumes ONTAP 了加強功能的功能、以及內部ONTAP 的叢集增強功能。
++
+** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#30-july-2023["深入瞭Cloud Volumes ONTAP 解功能強化功能"^]
+** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#30-july-2023["深入瞭ONTAP 解內部叢集增強功能"^]
+
+
+
+
+
+
 == 2023 年 7 月 2 日
 
 
@@ -238,7 +264,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#5-march-
 
 === 連接器 3.9.26
 
-* 在*登入*頁面上、系統現在會提示您輸入與登入相關的電子郵件地址。按一下*下一步*之後、BlueXP會提示您使用與登入相關的驗證方法進行驗證：
+* 在*登入*頁面上、系統現在會提示您輸入與登入相關的電子郵件地址。選擇 * 下一步 * 後、 BlueXP 會提示您使用與登入相關的驗證方法進行驗證：
 +
 ** NetApp雲端認證的密碼
 ** 您的聯盟身分認證資料

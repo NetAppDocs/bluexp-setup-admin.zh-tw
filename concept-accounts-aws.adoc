@@ -56,7 +56,7 @@ image:diagram_permissions_multiple_aws.png["顯示兩個額外帳戶的概念性
 
 新增一組認證資料之後、您可以在建立新的工作環境時切換至這些認證資料：
 
-image:screenshot_accounts_switch_aws.png["螢幕快照、顯示按一下「詳細資料  擴大機；認證」頁面中的「切換帳戶」後、在雲端供應商帳戶之間進行選擇。"]
+image:screenshot_accounts_switch_aws.png["螢幕快照、顯示在「詳細資料  擴大機；認證」頁面中選取「切換帳戶」之後、在雲端供應商帳戶之間進行選擇。"]
 
 link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector["瞭解如何將 AWS 認證新增至現有的 Connector 。"]
 

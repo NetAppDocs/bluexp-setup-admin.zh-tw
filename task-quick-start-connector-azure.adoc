@@ -72,7 +72,7 @@ link:task-set-up-permissions-azure.html["請依照每個選項的逐步指示操
 使用其中一個可用的安裝選項來建立 Connector ：
 
 [role="quick-margin-list"]
-* * 從 BlueXP* ：按一下「 Connector 」下拉式清單、選取 * 「 Add Connector* 」、然後依照提示進行。
+* * 從 BlueXP* ：選取 Connector 下拉式清單、選取 * Add Connector* 、然後依照提示進行。
 * * 從 Azure Marketplace * ：前往 https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-oncommand-cloud-manager["Azure Marketplace 中的 NetApp Connector VM 頁面"^] 並依照提示建立 Connector VM 。
 * * 手動安裝 * ：從下載 Connector 軟體 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支援網站"] 並執行安裝指令碼。
 

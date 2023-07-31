@@ -37,7 +37,6 @@
   <block id="e5d9de39f7ca1ba2637e5640af3ae8aa" category="inline-image-macro">五</block>
   <block id="0db7fae0cbffb2606b92943c020175f6" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> 建立連接器</block>
   <block id="58dfb3b98f86ab56e2908a35ae6b090f" category="paragraph">使用其中一個可用的安裝選項來建立 Connector ：</block>
-  <block id="c74633a8da806f7e37e5c3ff44c2e479" category="list-text">* 從 BlueXP* ：按一下「 Connector 」下拉式清單、選取 * 「 Add Connector* 」、然後依照提示進行。</block>
   <block id="5be6bb31e75b1dd8bd94a7ae6af3e755" category="inline-link">Azure Marketplace 中的 NetApp Connector VM 頁面</block>
   <block id="29e1a7cf06605bf888586cc76182b640" category="list-text">* 從 Azure Marketplace * ：前往<block ref="ed0d2d9c900d50a83f742250d29abeec" category="inline-link-rx"></block> 並依照提示建立 Connector VM 。</block>
   <block id="9d2169c1c2855b78a7aeaa4f42d27dc7" category="inline-link">NetApp 支援網站</block>
@@ -77,19 +76,15 @@
   <block id="18387052a5adf3d55c9d07f70f3141e7" category="list-text">選取 * 執行個體 * 。</block>
   <block id="e09de68bcf89e3f1adb5c29284597f34" category="list-text">選取 Connector 執行個體。</block>
   <block id="87116be258b420bc3c65682ee8c3c80b" category="list-text">選取 * 「動作」 &gt; 「安全性」 &gt; 「修改 IAM 角色」 * 。</block>
-  <block id="0608ae08455224c5aa2037a0505848e7" category="list-text">選取 IAM 角色、然後按一下 * 更新 IAM 角色 * 。</block>
   <block id="5975f7e9036c78e6217b16f295f0ca75" category="inline-link">BlueXP主控台</block>
   <block id="1f2b7de34bbdaf655d7cd7c95b1bbd93" category="open-title">AWS 存取金鑰</block>
   <block id="fcfd4daeb24b4db3bb89c89c8f03c50e" category="paragraph">為具有必要權限的 IAM 使用者提供 BlueXP AWS 存取金鑰。</block>
   <block id="8ee9f4a3034e4f87e8571e2c3b43e9a2" category="list-text">確定目前在BlueXP中選取正確的連接器。</block>
-  <block id="b019ab068deba8494415cbd226ca0c4e" category="list-text">在BlueXP主控台右上角、按一下「設定」圖示、然後選取*認證*。</block>
   <block id="be9d7b7687f0c55f7e65f14cd2b0f530" category="inline-image-macro">顯示BlueXP主控台右上角「設定」圖示的快照。</block>
   <block id="cb9e3791dcb67c8a699c104be6a1c49c" category="paragraph"><block ref="cb9e3791dcb67c8a699c104be6a1c49c" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="11832df968cbb4cdb8e45984c11a77d0" category="list-text">按一下*「Add Credential*（新增認證*）」、然後依照精靈中的步驟進行。</block>
   <block id="5e15e451ab1dcb5e3bfae55f8b58e524" category="list-text">*認證資料位置*：選取* Amazon Web Services &gt; Connector*。</block>
   <block id="8117407a9689d4f991904d5739091c47" category="list-text">* 定義認證 * ：輸入 AWS 存取金鑰和秘密金鑰。</block>
   <block id="dc6e318a413899b5467eabc5f69ad366" category="list-text">*市場訂閱*：立即訂閱或選取現有的訂閱、以建立Marketplace訂閱與這些認證的關聯。</block>
-  <block id="cc993521b8909c4085841bf25067d9c0" category="list-text">*審查*：確認新認證資料的詳細資料、然後按一下*新增*。</block>
   <block id="3747d8dfb456f8cefbe5ea8eed8a4289" category="summary">在Azure中安裝Connector之後、BlueXP會自動探索安裝Connector之Azure訂閱所在Azure中的Azure儲存體帳戶相關資訊。Azure Blob工作環境會新增至Canvased、以便您檢視此資訊。</block>
   <block id="70c85793f0a33ef534a67f193287a992" category="doc">管理 Azure Blob 帳戶</block>
   <block id="2ed919302195764ff313fc8d75b59525" category="inline-image-macro">Azure Blob工作環境的快照。</block>
@@ -123,7 +118,6 @@
   <block id="bc3d26f932a03033b70d3ed650139a18" category="inline-link-macro">使用此頁面上的原則</block>
   <block id="578821444383a169c989590dba162c8a" category="list-text">如果您不想讓BlueXP自動為Connector建立Azure角色、則需要自行建立 <block ref="7706b04266d0a3d170ef3034140acd41" category="inline-link-macro-rx"></block>。</block>
   <block id="bb0af45d6e9045bc2046c5f245006f7c" category="paragraph">這些權限適用於Connector執行個體本身。這是一組不同於您先前設定的權限、只要部署Connector即可。</block>
-  <block id="d2b74161d054c69894469355bb22cb63" category="list-text">如果您要建立第一個工作環境、請按一下 * 新增工作環境 * 、然後依照提示進行。否則、請按一下「 * Connector* 」下拉式清單、然後選取「 * 新增 Connector* 」。</block>
   <block id="df5b4e7d7b6a4648ec54c1e80de11594" category="inline-image-macro">螢幕擷取畫面、會在標題和「新增連接器」動作中顯示「連接器」圖示。</block>
   <block id="6afef7f4017876f5216334b8130f14fb" category="paragraph"><block ref="6afef7f4017876f5216334b8130f14fb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="02a8c4a4e553694e2236fd17bb20b197" category="list-text">選擇 * Microsoft Azure * 作為雲端供應商。</block>
@@ -148,18 +142,14 @@
   <block id="ffcf64d34f1dcc41900c7060705863c1" category="inline-link-macro">檢視 Azure 的安全性群組規則</block>
   <block id="27d00e27487104fffbc6a7d63cbf6baf" category="paragraph"><block ref="bfc1f993753d234d09b3194b930d1b96" category="inline-link-macro-rx"></block>。</block>
   <block id="77c0c575c550fbbb80de7e5c1eda4fbc" category="list-text">*審查*：請檢閱您的選擇、確認您的設定正確無誤。</block>
-  <block id="7dee7e783d13b6d5d415926ce0bfc306" category="list-text">按一下「 * 新增 * 」。</block>
   <block id="a1630873c12a4c232f890d319c1b34a5" category="paragraph">虛擬機器應在約 7 分鐘內就緒。您應該留在頁面上、直到程序完成為止。</block>
   <block id="06a2a1a9babe72982d387f96f2be2014" category="paragraph">程序完成後、即可從 BlueXP 使用 Connector 。</block>
   <block id="21e74b3c28d006317f38a2bc8eb1da3b" category="open-title">Azure Marketplace</block>
   <block id="40ca3108b6381f9eda9574daf00c3b01" category="list-text">前往Azure Marketplace的NetApp Connector VM頁面。</block>
   <block id="0c5f74a83e5cbc5c6c230dd0caf096f7" category="inline-link">適用於商業區域的Azure Marketplace頁面</block>
   <block id="5fb9ace1b2fee444b848b1ad1c5d886c" category="paragraph"><block ref="5fb9ace1b2fee444b848b1ad1c5d886c" category="inline-link-rx"></block></block>
-  <block id="225df19c00186b6ea3e256ba18a0a186" category="list-text">按一下「 * 立即取得 * 」、然後按一下「 * 繼續 * 」。</block>
-  <block id="74056a9be421d18494e08827c2a4c7f6" category="list-text">從 Azure 入口網站按一下 * 「 Create 」（建立） * 、然後依照步驟設定虛擬機器。</block>
   <block id="d110361593d3c3b635cec5b83db5e311" category="paragraph">設定 VM 時請注意下列事項：</block>
   <block id="089f373f5f48b55cde8c8de1db96243c" category="inline-link">深入瞭解 Azure 資源的託管身分識別</block>
-  <block id="cf4a06fce4c7b1055a372af2e026d54e" category="list-text">在「 * 檢閱 + 建立 * 」頁面上、檢閱您的選擇、然後按一下「 * 建立 * 」開始部署。</block>
   <block id="764960e87b4fddf3ade9ee834c310b2b" category="paragraph">Azure 以指定的設定部署虛擬機器。虛擬機器和 Connector 軟體應在大約五分鐘內執行。</block>
   <block id="f8cccaed0b932ef662605b0a2cef04df" category="list-text">從連線至 Connector 虛擬機器的主機開啟網頁瀏覽器、然後輸入下列 URL ：</block>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="inline-link"></block>
@@ -170,7 +160,6 @@
   <block id="bc2db05002588dce0afea6db153376bc" category="list-text">在 * 您是在安全的環境中執行？ * 保持停用限制模式。</block>
   <block id="443d63c9ee87e9dac12aa2216b54f52d" category="inline-link-macro">請依照步驟、以受限模式開始使用 BlueXP</block>
   <block id="47b475ce8fffd929f1fc89967e693fe0" category="paragraph">您應該保持停用受限模式、因為這些步驟說明如何在標準模式中使用 BlueXP 。只有當您擁有安全的環境、而且想要中斷此帳戶與 BlueXP 後端服務的連線時、才應啟用受限模式。如果是這樣、 <block ref="d4230e2957fd67694fbeb2d4cebbd012" category="inline-link-macro-rx"></block>。</block>
-  <block id="78d81209f9229f459cb7adc59599a9f9" category="list-text">按一下 * 開始 * 。</block>
   <block id="e48cc2b8b425580d8ee1508fd8a29ab2" category="paragraph">Connector 現已安裝、並已使用您的 BlueXP 帳戶進行設定。</block>
   <block id="58eaebf972358f1cf03d386a4ade1a0f" category="paragraph-title">接下來呢？</block>
   <block id="ba997697bddbedc57faeb5fdc16c15a6" category="inline-link-macro">提供 BlueXP 先前設定的權限</block>
@@ -815,7 +804,6 @@
   <block id="dacf2f246c2efb276c3709c141985f7c" category="paragraph"><block ref="4734e8f3bab5a9c00aebb286a2f16deb" category="inline-link-macro-rx"></block>。</block>
   <block id="cc96a4cc30e50577aa6671b076af72e1" category="section-title">管理您的使用者認證資料</block>
   <block id="fa6e9e9d0c238d856c9d80111986b0b1" category="paragraph">更新使用者名稱和密碼、或刪除認證資料、以管理您的使用者認證資料。</block>
-  <block id="41e1e3cff4a07ce2ecc08e6c09f11092" category="list-text">按一下*使用者認證*。</block>
   <block id="9afc8b6b41174c0836030fc8ac89ce5a" category="list-text">如果您還沒有任何使用者認證資料、您可以選取*新增NSS帳 戶認證*來新增NetApp 支援網站 您的帳戶。</block>
   <block id="f89f00feaba2fad2b55607ff15acc121" category="list-text">選擇下列選項來管理現有認證：</block>
   <block id="73877140c9191100114cf829d4df1aa5" category="list-text">*更新認證資料*：更新帳戶的使用者名稱和密碼。</block>
@@ -862,7 +850,6 @@
   <block id="d9027b224a5d127be0b2843b650e4806" category="list-text"><block ref="d9027b224a5d127be0b2843b650e4806" category="inline-link-macro-rx"></block></block>
   <block id="92ec95b8916ebc493b6546010073c81f" category="section-title">Azure權限的使用方式</block>
   <block id="815957003313e5f9581718376c2c472f" category="paragraph">下列各節說明如何將權限用於每項 BlueXP 服務。如果您的企業原則規定只有在需要時才提供權限、此資訊就很有幫助。</block>
-  <block id="cff963a7ee056005e400757f5bb06556" category="paragraph">Connector會提出下列API要求來管理Azure NetApp Files 功能完善的環境：</block>
   <block id="e400a17015f6033633700b6ba11625ba" category="list-text">Microsoft.NetApp/netAppAccounts/read</block>
   <block id="6db1cf4cd8e4d2dd21411cc7d81bfe62" category="list-text">Microsoft.NetApp/netAppAccounts/capacityPools/read</block>
   <block id="d532d42cdca6427a0c94a0fe2b7724bf" category="list-text">Microsoft.NetApp/netAppAccounts/capacityPools/volumes/write</block>
@@ -1046,11 +1033,8 @@
   <block id="482049a2c27830202c448327d329f378" category="list-text">符合網路需求的 VPC 和子網路。</block>
   <block id="b66539d8d1c1e3f97e751ce32b201932" category="inline-link-macro">深入瞭解網路需求</block>
   <block id="1e2c4b5ca22d40c55b8d98ccd5e1ba09" category="paragraph"><block ref="1e2c4b5ca22d40c55b8d98ccd5e1ba09" category="inline-link-macro-rx"></block></block>
-  <block id="18e6b8699d1a4d091a3257edbd45153c" category="list-text">單擊 *Connector* 下拉列表並選擇 *Add Connector* 。</block>
   <block id="5ec1fdc717a09349991e1304c5bd757a" category="list-text">選擇 * Google Cloud Platform * 做為雲端供應商。</block>
   <block id="1fbc47392baedd9a8a771f5372aa43d4" category="list-text">在「*部署連接器*」頁面上、檢閱您需要的詳細資料。您有兩種選擇：</block>
-  <block id="639c5d452ac23b93fb028a8d3101d2c2" category="list-text">按一下*繼續*、使用產品內建指南準備部署。產品內建指南中的每個步驟都包含文件本頁所含的資訊。</block>
-  <block id="ce670b5c6b0b9f0203bdb18071265645" category="list-text">如果您已依照本頁的步驟準備好、請按一下*跳至部署*。</block>
   <block id="12e9d88275170959cb7167c4c85f6c77" category="list-text">如果出現提示、請登入您的 Google 帳戶、該帳戶應有建立虛擬機器執行個體所需的權限。</block>
   <block id="29b28ad1793cec26548948fbe79ebfd5" category="paragraph">這份表單由 Google 擁有及託管。您的認證資料不會提供給 NetApp 。</block>
   <block id="abfd76b9567ca082322504a092e076c7" category="list-text">*詳細資料*：輸入虛擬機器執行個體的名稱、指定標籤、選取專案、然後選取具有必要權限的服務帳戶（詳細資料請參閱上節）。</block>
@@ -1136,10 +1120,7 @@
   <block id="920fe1428c19533eda6222fe7e58efbe" category="inline-link">瞭解如何管理與 BlueXP 登入相關的認證</block>
   <block id="e1d2e1a634647fd631081bc4f6f8e523" category="list-text">若要使用 * 建立案例 * 功能、您必須先將 NetApp 支援網站 認證與 BlueXP 登入建立關聯。<block ref="2a0d8b66ca9e99d023b48cf25f40fb12" category="inline-link-rx"></block>。</block>
   <block id="e49aa971c20ec071f1b5bbc3c7266769" category="list-text">如果您要為具有序號的 ONTAP 系統開啟案例、則您的 NSS 帳戶必須與該系統的序號相關聯。</block>
-  <block id="6254a4afeeb76765a127fe74d31c1b3d" category="list-text">在BlueXP中、按一下*「說明」&gt;「支援」*。</block>
   <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">在「*資源*」頁面上、選擇「技術支援」下的其中一個可用選項：</block>
-  <block id="383133cb6f7207b1c65c3ace94aa5e95" category="list-text">如果您想與電話上的其他人通話、請按一下*「呼叫我們*」。您將會被導向netapp.com上的頁面、其中列出您可以撥打的電話號碼。</block>
-  <block id="5be2e1dfe4bf215289731df45ec8157b" category="list-text">按一下*建立案例*、與NetApp支援專家一起開啟問題單：</block>
   <block id="d63bf50426f4c712554faec55b30c548" category="list-text">*服務*：選取問題相關的服務。例如、特定於服務工作流程或功能的技術支援問題的BlueXP。</block>
   <block id="2e50c5f85523f0aba9ff2db10f18279c" category="list-text">*工作環境*：如果適用於儲存設備、請選取* Cloud Volumes ONTAP 《*》或*《內部部署*》、然後選取相關的工作環境。</block>
   <block id="aa996e20900197b0ea41485ada083d8c" category="paragraph">工作環境清單位於您在服務的最上層橫幅中所選的BlueXP帳戶、工作區和Connector範圍內。</block>
@@ -1153,7 +1134,6 @@
   <block id="509259be6d5e15d8959f705cbe0cbcc1" category="paragraph"><block ref="509259be6d5e15d8959f705cbe0cbcc1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bd965e38a0c9cf27aa1bde099308e23f" category="paragraph-title">完成後</block>
   <block id="18f487556417bb6d9721a7005ae097c9" category="paragraph">您的支援案例編號會出現快顯視窗。NetApp支援專家將會審查您的案例、並盡快回覆您。</block>
-  <block id="04e15da1deae9568b4dcda64fbb0c8d5" category="paragraph">如需支援案例的記錄、請按一下*設定&gt;時間軸*、然後尋找名為「create support case」的行動。 最右側的按鈕可讓您展開動作以查看詳細資料。</block>
   <block id="5c56753585e89a84941bb3a78bc681af" category="paragraph">嘗試建立案例時、可能會遇到下列錯誤訊息：</block>
   <block id="a30f69ab0ec85d427a3e8835713525bd" category="paragraph">"您無權針對所選服務建立案例"</block>
   <block id="c7b7a5ae9f37fd7d24e4d641b9186fe9" category="paragraph">此錯誤可能表示、與該帳戶相關聯的NSS帳戶及記錄公司與BlueXP帳戶序號的記錄公司不同（例如960xxxx)或工作環境序號。您可以使用下列其中一個選項尋求協助：</block>
@@ -1169,10 +1149,8 @@
   <block id="56dcadeee6b0e5c47a52673f9b5a0bb3" category="list-text">您可以新增或移除感興趣的欄、也可以篩選優先順序和狀態等欄的內容。其他欄則只提供排序功能。</block>
   <block id="6f936762e1223311f031685422fcd3a4" category="paragraph">如需詳細資料、請參閱下列步驟。</block>
   <block id="b14929795a61440e9b4ec9f8a4885ae3" category="list-text">在個別案例層級、我們提供更新案例附註或關閉尚未處於「已結案」或「待結案」狀態的案例的功能。</block>
-  <block id="34b1296d31cefa72dae9b3a364b1f444" category="list-text">按一下*個案管理*、如果出現提示、請將您的NSS帳戶新增至藍圖XP。</block>
   <block id="d8ce1865cf1fe3cffd60300b4b86ad63" category="paragraph">「*個案管理*」頁面會顯示與您的BlueXP使用者帳戶相關聯的與NSS帳戶相關的未決個案。這是顯示在「* nssnmanagement *」頁面頂端的相同nss.帳戶。</block>
   <block id="2ae5ae78bdb2d222f15fd8e89248709c" category="list-text">（可選）修改表格中顯示的資訊：</block>
-  <block id="27635a52fe4c34c39ffc6430f4244ec6" category="list-text">在*組織案例*下、按一下*檢視*以檢視與貴公司相關的所有案例。</block>
   <block id="059e856250b59be3069246887b74a23c" category="list-text">選擇確切的日期範圍或選擇不同的時間範圍、以修改日期範圍。</block>
   <block id="dfb3764bce2548df4e06357403f9c7d0" category="inline-image-macro">案例管理頁面上方表格上方選項的快照、可讓您選擇確切的日期範圍或過去7天、30天或3個月。</block>
   <block id="0972db30d942fdb65d1732e6e84bde99" category="paragraph"><block ref="0972db30d942fdb65d1732e6e84bde99" category="inline-image-macro-rx" type="image"></block></block>
@@ -1180,14 +1158,11 @@
   <block id="3753f10a59e21f58b30e3e67d416453e" category="inline-image-macro">「狀態」欄中篩選選項的快照、可讓您篩選出符合特定狀態（例如「作用中」或「已關閉」）的個案。</block>
   <block id="cb6a777dd3c6e43b0dc441d38519d219" category="paragraph"><block ref="cb6a777dd3c6e43b0dc441d38519d219" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1c6ea5ef583389e18e7d7bda70beaa71" category="inline-image-macro">出現在表格中的加號圖示</block>
-  <block id="0f6cac2f77150840994f84044fc1b12b" category="list-text">按一下以變更表格中顯示的欄 <block ref="b574dd55d604ddb721d869a0fc302007" category="inline-image-macro-rx" type="image"></block> 然後選擇您要顯示的欄。</block>
   <block id="370b44009f1b82d0b6b178bb80cc62fa" category="inline-image-macro">顯示可在表格中顯示之欄的快照。</block>
   <block id="e65065c4fd326b9f3a1eeb9453c30d73" category="paragraph"><block ref="e65065c4fd326b9f3a1eeb9453c30d73" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ad0ae9ea1f2e8d973a9a0f6bb169f494" category="inline-image-macro">表格最後一欄中出現三個點的圖示</block>
-  <block id="6ba7d68d8b3ef0f3398afb9d3ea96172" category="list-text">按一下即可管理現有案例 <block ref="566c029d89e7d5421080767a37bf443e" category="inline-image-macro-rx" type="image"></block> 並選擇其中一個可用選項：</block>
   <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">*檢視案例*：檢視特定案例的完整詳細資料。</block>
   <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">* 更新案例附註 * ：提供問題的其他詳細資料、或選擇 * 上傳檔案 * 最多附加五個檔案。</block>
-  <block id="f791bc685c526af8296381acff10f6a0" category="list-text">*結案案例*：提供結案原因的詳細資料、然後按一下*結案案例*。</block>
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">螢幕擷取畫面、顯示您在表格最後一欄選取功能表後可以採取的動作。</block>
   <block id="2ea260929e27ffcb623c8aa35689bd18" category="paragraph"><block ref="2ea260929e27ffcb623c8aa35689bd18" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4453e7502515d4db1f3a4a1c28c48f13" category="summary">Connector 軟體必須在符合特定作業系統需求、 RAM 需求、連接埠需求等的主機上執行。如果您打算手動安裝 Connector 、則應確保主機符合這些需求。安裝 Connector 之前、請先確定您的主機符合這些要求。</block>
@@ -1221,8 +1196,6 @@
   <block id="9d28e4868b7fcb2d0b7ab54f9d7f7b3c" category="inline-link-macro">將帳戶認證新增至BlueXP</block>
   <block id="f25b2b221edfa2bdf4fb0df0c1b2c9d5" category="paragraph">您可以 <block ref="d81a76d92186f9ebef738a7789fc0680" category="inline-link-macro-rx"></block> 提供 AD 服務主體的詳細資料。</block>
   <block id="eb99e348d38c212372a6e836f66f7356" category="paragraph">例如、您可以在建立新的 Cloud Volumes ONTAP 工作環境時、在認證之間切換：</block>
-  <block id="22b179015545d216826bf3c224079c70" category="inline-image-macro">螢幕快照、顯示按一下「詳細資料 &amp; 擴大機；認證」頁面中的「切換帳戶」後、在雲端供應商帳戶之間進行選擇。</block>
-  <block id="920013a5de0f78687797397a6c0ee0d8" category="paragraph"><block ref="96ae547f4f3f25ad031b61cef1d8f2b8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="baa9dd166d2a7f1d62e78a829f4b35a6" category="section-title">Marketplace 部署和內部部署呢？</block>
   <block id="018f02432b76c440f6d0c2a5da5a1a5d" category="paragraph">以上各節說明建議的連接器部署方法、該方法來自於BlueXP。您也可以從 Azure Marketplace 在 Azure 中部署 Connector 、也可以在自己的 Linux 主機上安裝 Connector 軟體。</block>
   <block id="f0e36fc8cdf840530f36b60220f9185b" category="paragraph">如果您使用 Marketplace 、您可以將自訂角色指派給 Connector VM 和系統指派的託管身分識別、以提供權限、或是使用 Azure AD 服務主體。</block>
@@ -1261,32 +1234,22 @@
   <block id="15f7c3376619ce497205d543fd1d7767" category="paragraph">如有需要、您可以使用IAM來限制IAM原則<block ref="9e2941b3c81256fac10392aaca4ccfde" prefix=" " category="inline-code"></block> 元素。<block ref="19ffef022087e160f1e54b9948795943" category="inline-link-rx"></block></block>
   <block id="09eadec3a9869ab363e913c06ab259a3" category="admonition">當 BlueXP 建立 Connector 時、它會將一組新的權限套用至 Connector 執行個體、讓 Connector 能夠管理 AWS 資源。</block>
   <block id="1e71ce7defc90d8f5a2c46c08ba968df" category="list-text">前往AWS IAM主控台。</block>
-  <block id="cda6184a38ec01634b0cabf02341cb56" category="list-text">按一下*原則&gt;建立原則*。</block>
-  <block id="b52a6ab6cdcb340c9e1189b56821ffd8" category="list-text">按一下「* JSON*」。</block>
   <block id="26d4a7a50dfbae842d907e3b8000633e" category="list-text">複製並貼上下列原則：</block>
-  <block id="e46847d94dd6255ac0cabcdc93eed31f" category="list-text">如有需要、請按* Next*並新增標記。</block>
-  <block id="83f97720ed2c284e94fe989612d7ae1a" category="list-text">單擊*下一步*並輸入名稱和說明。</block>
-  <block id="ab899735d36938b4c6cb8edd18a222e5" category="list-text">按一下「*建立原則*」。</block>
   <block id="1bd08699c526c66f71094b5ff54dc839" category="list-text">將原則附加至 BlueXP 可以承擔的 IAM 角色、或附加至 IAM 使用者、以便提供 BlueXP 存取金鑰：</block>
   <block id="87b8ba43578311804ba14d80f6c8cb89" category="list-text">（選項 1 ）設定 BlueXP 可承擔的 IAM 角色：</block>
   <block id="0e78dc7220ea8b6abafe6ef7aaad9998" category="list-text">前往目標帳戶中的AWS IAM主控台。</block>
-  <block id="7f4640b00b5df83a54d4aaaa51f7d6ab" category="list-text">在「存取管理」下、按一下*「角色」&gt;「建立角色」*、然後依照步驟建立角色。</block>
   <block id="e506de832b98c2693eb3f400ef0722c0" category="list-text">在*信任的實體類型*下、選取* AWS帳戶*。</block>
   <block id="b3c7a22f0973e84651078c58ec8c36f6" category="list-text">選取*其他AWS帳戶*、然後輸入BlueXP SaaS帳戶的ID：95201331444</block>
   <block id="dbab690717fb052924566c13e8768748" category="list-text">選取您在上一節中建立的原則。</block>
   <block id="b132a51c84b6101c058abbb40225f87d" category="list-text">建立角色之後、請複製角色ARN、以便在建立Connector時將其貼到BlueXP中。</block>
   <block id="bf10cb047f4db72713407e74d30df1e9" category="list-text">（選項 2 ）設定 IAM 使用者的權限、以便提供 BlueXP 存取金鑰：</block>
-  <block id="380aef99fa69053a3675c5cd0a2aaee2" category="list-text">從AWS IAM主控台按一下*使用者*、然後選取使用者名稱。</block>
-  <block id="91ae93d60d63596e2482a109b23c1290" category="list-text">按一下*「新增權限」&gt;「直接附加現有原則」*。</block>
   <block id="8bcbf62e98416780ffe2095559aba87a" category="list-text">選取您建立的原則。</block>
-  <block id="7480dbf3472d377494469f75467b8989" category="list-text">按一下「*下一步*」、然後按一下「*新增權限*」。</block>
   <block id="c34ab4140439856fda51871a0f20b53c" category="list-text">確保您擁有 IAM 使用者的存取金鑰和秘密金鑰。</block>
   <block id="faeb6083a2ae4785925222b65d1d968f" category="paragraph">您現在應該擁有具有所需權限的 IAM 角色、或是擁有所需權限的 IAM 使用者。從 BlueXP 建立 Connector 時、您可以提供角色或存取金鑰的相關資訊。</block>
   <block id="59d21ffd9004e044bf10a41bde94377c" category="section-title">從 AWS Marketplace 部署時、請設定 Connector 的權限</block>
   <block id="c0b444d12ee4e633b23b686f19a32aaa" category="list-text">完成其餘步驟以建立原則。</block>
   <block id="b905fd344340f966488111072eda83d7" category="paragraph">視您打算使用的 BlueXP 服務而定、您可能需要建立第二個原則。</block>
   <block id="481dd59686d42d2d6a74eae1a1d763ad" category="paragraph">對於標準區域、權限分佈在兩個原則之間。由於AWS中受管理原則的字元大小上限、因此需要兩個原則。</block>
-  <block id="d570f412d2674b04019b74531c43fed8" category="list-text">按一下 * 角色 &gt; 建立角色 * 。</block>
   <block id="caab423eeeabf261321ce00d10ad838a" category="list-text">選取 * AWS 服務 &gt; EC2* 。</block>
   <block id="0543e6140cb57d05d778d01c055f1dc0" category="list-text">完成剩餘步驟以建立角色。</block>
   <block id="97f503ba18358d479d025475ba069bec" category="paragraph">您現在擁有 IAM 角色、可在 AWS Marketplace 部署期間與 EC2 執行個體建立關聯。</block>
@@ -1349,13 +1312,10 @@
   <block id="c9bae6707a626ab71ed3b97345b5becf" category="list-text">從 Azure 入口網站開啟 * Azure Active Directory * 服務。</block>
   <block id="2edcc284e8171b76333ca90d4cda988f" category="inline-image-macro">顯示 Microsoft Azure 中的 Active Directory 服務。</block>
   <block id="2947c6ef91b5c925ae2fcec9d7750590" category="paragraph"><block ref="2947c6ef91b5c925ae2fcec9d7750590" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="af88b24a1b0f5294f806d8d9f2744f27" category="list-text">在功能表中、按一下 * 應用程式註冊 * 。</block>
-  <block id="0e1ac21d4b9ed97a0c89007cafe6b733" category="list-text">按一下「 * 新登錄 * 」。</block>
   <block id="c9034af778b085a9440ffcb8389cc4db" category="list-text">指定應用程式的詳細資料：</block>
   <block id="46beecb01aa2327ae1886dfc53955977" category="list-text">* 名稱 * ：輸入應用程式的名稱。</block>
   <block id="c1433d2b36933dc034014d989542d7e9" category="list-text">*帳戶類型*：選取帳戶類型（任何帳戶類型均可用於BlueXP）。</block>
   <block id="47a80925db7f7667c76a27c384c35793" category="list-text">*重新導向URI*：您可以將此欄位保留空白。</block>
-  <block id="9909e23ede42f2318acada35ac10bd3e" category="list-text">按一下 * 註冊 * 。</block>
   <block id="07429b136ade673e85f1a27e25a0239c" category="paragraph">您已建立 AD 應用程式和服務主體。</block>
   <block id="705ea5b8b9077bcdc0aedb01e5cc4c58" category="list-title">將應用程式指派給角色</block>
   <block id="6534ae3540891eec0e4feef8e844bf94" category="list-text">建立自訂角色：</block>
@@ -1375,29 +1335,20 @@
   <block id="1efe3dd87fa14ed122c5ea4f702755d8" category="list-text">將應用程式指派給角色：</block>
   <block id="973ddd4ad0d28fecb4f9f0a53ca5ab21" category="list-text">從 Azure 入口網站開啟 * 訂閱 * 服務。</block>
   <block id="9d13605979e591928497f3c94aa907c2" category="list-text">選取訂閱。</block>
-  <block id="8174c4d89029818113468594f8347c70" category="list-text">按一下 * 存取控制（ IAM ） &gt; 新增 &gt; 新增角色指派 * 。</block>
-  <block id="54b14f07c36bed41295c2086ea238332" category="list-text">在「*角色*」索引標籤中、選取「*藍圖XP操作員*」角色、然後按一下「*下一步*」。</block>
   <block id="0a6c621aa17fc5940d876eaadda3bb73" category="list-text">在「*成員*」索引標籤中、完成下列步驟：</block>
   <block id="8663f7025266bcb72c4429db8da6c602" category="list-text">保留*選取「使用者」、「群組」或「服務主體」*。</block>
-  <block id="e567d156455b03053b50302bf4ff266e" category="list-text">按一下*選取成員*。</block>
   <block id="0972e60de3c49ba718e1aa6c9313eebc" category="inline-image-macro">Azure入口網站的快照、會在新增角色至應用程式時顯示「成員」索引標籤。</block>
   <block id="4156bc2d0a73e1d63625fa6f09d010d4" category="paragraph"><block ref="4156bc2d0a73e1d63625fa6f09d010d4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="33aa57c696b6d88350adf8cda157f866" category="list-text">搜尋應用程式名稱。</block>
   <block id="4d947fe0b5c4693f487f4fd1a4295c99" category="paragraph">範例如下：</block>
   <block id="f6f55020a29188338bc94800ac249ad7" category="inline-image-macro">Azure入口網站的快照、顯示Azure入口網站中的「新增角色指派」表單。</block>
   <block id="14c3fe204bce9316486ab448ad8a4874" category="paragraph"><block ref="14c3fe204bce9316486ab448ad8a4874" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e33ca9bd2b94654f882a0e0ed82dec19" category="list-text">選取應用程式、然後按一下*選取*。</block>
-  <block id="5a378b18f7bf0c4cabc6c655cd2f535e" category="list-text">單擊 * 下一步 * 。</block>
-  <block id="e3bbb08034982e47da96f9df0529c14b" category="list-text">按一下「*檢閱+指派*」。</block>
   <block id="868bd2cfec146290fe12785061d21aff" category="paragraph">服務主體現在擁有部署Connector所需的Azure權限。</block>
   <block id="b95f8b6a159c207e3d8204b8b1c4f172" category="paragraph">如果您想要從 Cloud Volumes ONTAP 多個 Azure 訂閱中部署支援功能、則必須將服務授權對象繫結至每個訂閱項目。BlueXP可讓您選擇部署Cloud Volumes ONTAP 時要使用的訂閱內容。</block>
   <block id="45cd180c1610798f49999ab014a177fa" category="list-title">新增 Windows Azure Service Management API 權限</block>
-  <block id="bd77e589abdaf3d4c3901b4aa35638e1" category="list-text">在 * Azure Active Directory * 服務中、按一下 * 應用程式註冊 * 、然後選取應用程式。</block>
-  <block id="4c8edaa7cd1534af6a107fe9b79e805b" category="list-text">按一下「 * API 權限 &gt; 新增權限 * 」。</block>
   <block id="121258133fb4072956407593231a70d2" category="list-text">在「 * Microsoft API* 」下、選取「 * Azure 服務管理 * 」。</block>
   <block id="0f208ec7c0ee2f540820aa9624359349" category="inline-image-macro">Azure 入口網站的快照、顯示 Azure 服務管理 API 權限。</block>
   <block id="44ec446c110f865aefee64ec02e6dfe6" category="paragraph"><block ref="44ec446c110f865aefee64ec02e6dfe6" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="397f8e229dc6a378e7b85f319690a7fd" category="list-text">按一下「 * 以組織使用者身分存取 Azure 服務管理 * 」、然後按一下「 * 新增權限 * 」。</block>
   <block id="09ac154e6995039c28007bd218615b7e" category="inline-image-macro">Azure 入口網站的快照、顯示新增 Azure 服務管理 API 。</block>
   <block id="1e957f13620bb4b87171f37fc42387b1" category="paragraph"><block ref="1e957f13620bb4b87171f37fc42387b1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f7cb8eeaecd418d11a034c2be7337f33" category="list-title">取得應用程式的應用程式 ID 和目錄 ID</block>
@@ -1407,8 +1358,6 @@
   <block id="6f49aa80c50bf9d897f387113aee3a15" category="paragraph">將Azure帳戶新增至BlueXP時、您必須提供應用程式的應用程式（用戶端）ID和目錄（租戶）ID。BlueXP使用ID以程式設計方式登入。</block>
   <block id="3a1ecf20407e16f0524dacb991fefae3" category="list-title">建立用戶端機密</block>
   <block id="eeae8e1dd73b92b26863247fdba559d5" category="list-text">開啟 * Azure Active Directory * 服務。</block>
-  <block id="5f4efbf7cfcfcc9f45c4a3b9ea4dd3a2" category="list-text">按一下 * 應用程式註冊 * 、然後選取您的應用程式。</block>
-  <block id="814ab761b05ac26a224a99eac97f2f4d" category="list-text">按一下 * 「憑證與機密」 &gt; 「新用戶端機密」 * 。</block>
   <block id="56c696c4118c8dc3d2947c159fdbbb7c" category="list-text">提供機密與持續時間的說明。</block>
   <block id="a91d60261e2974b6b9f5d3d3d0abacdd" category="list-text">複製用戶端機密的值。</block>
   <block id="5a3a4c596a95b6a9851a1c7b6539b0ea" category="inline-image-macro">Azure 入口網站的快照、顯示 Azure AD 服務主體的用戶端機密。</block>
@@ -1717,13 +1666,11 @@
   <block id="31f7ed39632ba5f8fbafe2e78de61213" category="paragraph">您應該會看到下列畫面。</block>
   <block id="87c4a866519ae557380141f0da21e74f" category="inline-image-macro">在網頁瀏覽器中輸入Connector的IP位址之後、會出現歡迎頁面的快照。</block>
   <block id="baae31039a43d31e57f9e5c0c7262afc" category="paragraph"><block ref="baae31039a43d31e57f9e5c0c7262afc" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f681629287f9315842951d38d04b1eda" category="list-text">按一下*「設定新的藍圖XP」*、然後依照提示設定系統。</block>
   <block id="9f390f684f634b575bf8d3a2e73f760c" category="list-text">*系統詳細資料*：輸入Connector的名稱及您的公司名稱。</block>
   <block id="ed55d4951cd784cfacedc42b26d251dd" category="inline-image-macro">系統詳細資料頁面的快照、會提示您輸入BlueXP名稱和公司名稱。</block>
   <block id="c630091323c70c3e08081e625ae63da9" category="paragraph"><block ref="c630091323c70c3e08081e625ae63da9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="43601154a054554dd57207148a15b7b1" category="list-text">*建立管理使用者*：建立系統的管理使用者。</block>
   <block id="0e5308fba9cc92e9ff80d599c7e865ca" category="paragraph">此使用者帳戶在本機系統上執行。無法透過BlueXP連線至驗證0服務。</block>
-  <block id="b530111cab51b765877bc100b0a43e1f" category="list-text">*審查*：檢閱詳細資料、接受授權合約、然後按一下*設定*。</block>
   <block id="d847fd38c43b77f685712342ed5f2a9a" category="list-text">使用您剛建立的管理使用者登入BlueXP。</block>
   <block id="2fdca5f14e2fdf34df61ef1c2e18eae5" category="paragraph">現在已安裝並設定 Connector 。</block>
   <block id="c4d9d6c8e652595e9d46970f56499783" category="inline-link-macro">瞭解如何升級Connector</block>
@@ -1737,11 +1684,8 @@
   <block id="0c8a608ccb6d8462e37f1062502116c5" category="open-title">Azure 角色</block>
   <block id="493607fb28e81f13b01e27634c0e7e57" category="paragraph">前往 Azure 入口網站、將 Azure 自訂角色指派給 Connector 虛擬機器、以進行一或多個訂閱。</block>
   <block id="01022a7caafe0f95bc1085bb13d5f9ec" category="list-text">從 Azure Portal 開啟 * Subscriptions * 服務、然後選取您的訂閱。</block>
-  <block id="1b8e19500b0a199435651fe8ade7df74" category="list-text">按一下*存取控制（IAM）*&gt;*新增*&gt;*新增角色指派*。</block>
   <block id="6f27dbb1253286305377b6e14973a99a" category="admonition">BlueXP運算子是在BlueXP原則中提供的預設名稱。如果您為角色選擇不同的名稱、請改為選取該名稱。</block>
   <block id="490ec1422ed033ebd41a56ee1a3d7bca" category="list-text">指派*託管身分識別*的存取權。</block>
-  <block id="f3c300467d5973dfb4bb4ac50c1635b4" category="list-text">按一下*選取成員*、選取建立連接器虛擬機器的訂閱、選擇*虛擬機器*、然後選取連接器虛擬機器。</block>
-  <block id="a2396693254d9ec35f0b6faa885e8f58" category="list-text">按一下*選取*。</block>
   <block id="8dca68d83a53837ae38b833a53560cb9" category="paragraph">BlueXP 現在擁有代表您在 Azure 中執行動作所需的權限。</block>
   <block id="201a0e8a9a7e1b007b99b4e4c24c017d" category="open-title">Azure 服務主體</block>
   <block id="e326875367720b38c29c8fa0afd491be" category="paragraph">為 BlueXP 提供您先前設定的 Azure 服務主體認證。</block>
@@ -1770,7 +1714,6 @@
   <block id="49a11e441cb19dc0d43b1d3a3794d033" category="paragraph"><block ref="49a11e441cb19dc0d43b1d3a3794d033" category="inline-image-macro-rx" type="image"></block></block>
   <block id="48c7f5d184d27ef640370421d3317ba5" category="paragraph">然後您可以指定 IAM 角色的 Amazon 資源名稱（ ARN ）或 IAM 使用者的 AWS 金鑰、將帳戶認證新增至 BlueXP 。</block>
   <block id="bc84b27c0d74f906857d6c1a83c368a0" category="paragraph">新增一組認證資料之後、您可以在建立新的工作環境時切換至這些認證資料：</block>
-  <block id="2cc5711a45ceecaf1f22f2aac5f47fe0" category="paragraph"><block ref="9e05e85c54c3c5144a41ef38daf9be1d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a6856ad65a90d33bc83bd78362d9bfce" category="inline-link-macro">瞭解如何將 AWS 認證新增至現有的 Connector 。</block>
   <block id="affef63146feae005315127173a28aa9" category="paragraph"><block ref="affef63146feae005315127173a28aa9" category="inline-link-macro-rx"></block></block>
   <block id="a923d2e65283c489ad78d9cdfa9bad74" category="section-title">直接將AWS認證資料新增至BlueXP</block>
@@ -1959,7 +1902,6 @@
   <block id="98a589e7baa6e35fa2a8b5710c9f3908" category="paragraph"><block ref="98a589e7baa6e35fa2a8b5710c9f3908" category="inline-link-rx"></block></block>
   <block id="e1bc7b26155063f1ce71b76f655669ef" category="section-title">2023年2月5日</block>
   <block id="d2ab99e3c8406089dca863337debb121" category="section-title">連接器 3.9.26</block>
-  <block id="330ddcd0a3779c8729cfb2c56aeb33f5" category="list-text">在*登入*頁面上、系統現在會提示您輸入與登入相關的電子郵件地址。按一下*下一步*之後、BlueXP會提示您使用與登入相關的驗證方法進行驗證：</block>
   <block id="1baec3621cd37cfb63c78d95c414ca61" category="list-text">NetApp雲端認證的密碼</block>
   <block id="1dca7678a1041ed05b6071c24454dfde" category="list-text">您的聯盟身分認證資料</block>
   <block id="9ec04e5ecf7230969f472cb3ba28f9d5" category="list-text">您的需求NetApp 支援網站</block>
@@ -2199,8 +2141,6 @@
   <block id="89c19793fa4fd34426a128c4ebe03948" category="list-text">建立包含的內容的 YAML 檔案 <block ref="16c885f571f66caafdba8f3cb6f880e3" category="inline-link-macro-rx"></block>。</block>
   <block id="60696c8c3376d314543ef1f6c5dd3364" category="paragraph">以下範例在專案層級建立名為「 Connector 」的角色：</block>
   <block id="bd67573655874b669c5ced800e8181a2" category="list-text">在 Google Cloud 中建立服務帳戶：</block>
-  <block id="e81e4e7ef7043b471a5f895cfe2932ff" category="list-text">在 IAM &amp; Admin 服務中、按一下 * 服務帳戶 &gt; 建立服務帳戶 * 。</block>
-  <block id="4335cd428e49ade89c004cb921b74ae5" category="list-text">輸入服務帳戶詳細資料、然後按一下 * 建立並繼續 * 。</block>
   <block id="2806d36a02ea6ae3c55b65ffb3f9138d" category="list-text">選取您剛建立的角色。</block>
   <block id="18853fd6b8b6bc9f150dcd5bfc2d0d12" category="inline-link">Google Cloud 文件：建立服務帳戶</block>
   <block id="f4aac271a6b2fa84b18b0131c75d5efd" category="paragraph"><block ref="f4aac271a6b2fa84b18b0131c75d5efd" category="inline-link-rx"></block></block>
@@ -2211,7 +2151,6 @@
   <block id="e2b43bc6eddd7c5ec2c7104bd42e0e6e" category="list-text">在「* IAM *」頁面上、選取「*授予存取權*」、並提供所需的詳細資料。</block>
   <block id="eacb1b3758ebd1aa03b4f1b86b49bd53" category="list-text">輸入Connector服務帳戶的電子郵件。</block>
   <block id="8f3118254324aa503647a0f0a4cd34cc" category="list-text">選取Connector的自訂角色。</block>
-  <block id="4cc186df234138a57b2e8c5d8e5f7f8d" category="list-text">按一下「 * 儲存 * 」。</block>
   <block id="b0cd7667098b2a3439c52ba1f9334faa" category="inline-link">Google Cloud文件</block>
   <block id="ece59c09a5f78f29903e8e1daac67577" category="paragraph">如需詳細資料、請參閱<block ref="eb023f41fbcdd6f661c855770356f2dc" category="inline-link-rx"></block></block>
   <block id="893b6747ffabae1d7bbd6d266f24c4ab" category="section-title">設定共享VPC權限</block>
@@ -2570,7 +2509,6 @@
   <block id="f911544c9d1c454bbad50b12be4649a1" category="paragraph"><block ref="f911544c9d1c454bbad50b12be4649a1" category="inline-link-macro-rx"></block></block>
   <block id="a2678c8f1e6c4ef6102f9e3e10a87ecc" category="paragraph"><block ref="a2678c8f1e6c4ef6102f9e3e10a87ecc" category="inline-link-macro-rx"></block></block>
   <block id="b16e9971e18d4e63cd90cc2dc398c39e" category="list-text">EC2 執行個體的金鑰配對。</block>
-  <block id="7cddf1ab764729128f3c7130203d73a0" category="list-text">選擇* Amazon Web Services*做為您的雲端供應商、然後按一下*繼續*。</block>
   <block id="af9010f3e11d7efceb7ba88d02e92d39" category="list-text">*準備好*：檢視您需要的內容。</block>
   <block id="694fc44336d7d79e22d661cd3051861e" category="list-text">* AWS認證資料*：指定您的AWS區域、然後選擇驗證方法、這是BlueXP可以承擔的IAM角色、或是AWS存取金鑰和秘密金鑰。</block>
   <block id="8b8f36850755c4ac43a0df238add8748" category="inline-link-macro">瞭解如何新增其他認證資料</block>
@@ -2591,11 +2529,8 @@
   <block id="dfcbfa4ce7dbf520f2b737359dfbc591" category="list-text">為您的 IAM 使用者訂閱及取消訂閱 AWS Marketplace 的權限。</block>
   <block id="7c9b14f6116e140202c359bff8bc86c2" category="inline-link">AWS Marketplace上的BlueXP頁面</block>
   <block id="3a1757ca714434ada3988895ed0a0fab" category="list-text">前往<block ref="aa1bf3a3349706e28315b07c47668a91" category="inline-link-rx"></block></block>
-  <block id="b748cb0f2ad325f27d30850a71d55e6d" category="list-text">在 Marketplace 頁面上、按一下 * 繼續訂閱 * 、然後按一下 * 繼續進行組態 * 。</block>
   <block id="648fca9db3d7e8e554a59d3519d8b0f6" category="inline-image-macro">螢幕快照顯示 AWS Marketplace 上的「繼續訂閱並繼續設定」按鈕。</block>
   <block id="973e3a2a390bb57ce9d9e16ac0145023" category="paragraph"><block ref="973e3a2a390bb57ce9d9e16ac0145023" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6901834c9ae604b653768895509f4303" category="list-text">變更任何預設選項、然後按一下 * 繼續啟動 * 。</block>
-  <block id="197769c5244e448b93746c973eb17b81" category="list-text">在「 * 選擇行動 * 」下、選取「 * 透過 EC2* 啟動」、然後按一下「 * 啟動 * 」。</block>
   <block id="7c36ac5a8d104c08bd1c9905b4e5d437" category="paragraph">這些步驟說明如何從EC2主控台啟動執行個體、因為主控台可讓您將IAM角色附加至連接器執行個體。這無法使用 * 從網站啟動 * 動作。</block>
   <block id="b3472ff32fca13e95a664d2516fabc9d" category="list-text">依照提示設定及部署執行個體：</block>
   <block id="d062afbb0dab008c992fc7630e6e5b1d" category="list-text">*名稱和標記*：輸入執行個體的名稱和標記。</block>
@@ -2609,7 +2544,6 @@
   <block id="2cff93ab04445d2412fc49f1670cf749" category="paragraph">特定組態還需要一些規則。</block>
   <block id="79b8b9ad9bf89b0b494ac4c62694d70f" category="list-text">*設定儲存設備*：保留預設的儲存選項。</block>
   <block id="752330cdb2fab31ec29aaa286269a882" category="list-text">* 進階詳細資料 * ：在 * IAM 執行個體設定檔 * 下、選擇包含 Connector 所需權限的 IAM 角色。</block>
-  <block id="00e3e218776ebf2123cac5b55d575b53" category="list-text">*摘要*：檢閱摘要、然後按一下*啟動執行個體*。</block>
   <block id="10a3df02c55e733eca6fef076545645a" category="paragraph">AWS 會以指定的設定啟動軟體。Connector 執行個體和軟體應在大約五分鐘內執行。</block>
   <block id="263bf141eee327cfdfe08fdc96fb32bc" category="paragraph"><block ref="53f6e9b699374851a8086ab8319c48f4" category="inline-link-macro-rx"></block>。</block>
   <block id="037ab8e28d036e5a218a1692a62fd8b5" category="summary">在 AWS 中建立 Connector 、方法是選擇安裝選項、設定網路、準備權限等。</block>
@@ -2746,7 +2680,6 @@
   <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">現有的客戶、擁有一個新服務客戶帳戶</block>
   <block id="7e177185e7eddff33dd8f3aeb7551132" category="paragraph">如果您是擁有NSS帳戶的NetApp客戶、您只需透過BlueXP註冊即可獲得支援。</block>
   <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">選取 * 新增 NSS 認證 * 、然後遵循 NetApp 支援網站 （ NSS ）驗證提示。</block>
-  <block id="8c916e828e9e5a3592c8cac4e25928be" category="list-text">若要確認註冊程序是否成功、請按一下「說明」圖示、然後選取 * 「支援 * 」。</block>
   <block id="8add4eb0d3f6ce61d374f3df3ee4eadf" category="paragraph">「 * 資源 * 」頁面應顯示您的帳戶已註冊以取得支援。</block>
   <block id="10c56875db7a47f791d653e5d5bff0e9" category="inline-image-macro">螢幕擷取畫面會顯示帳戶序號和綠色核取方塊、以及註冊支援的文字。</block>
   <block id="3d183819a15163ef2e2e7d9d764254a9" category="paragraph"><block ref="3d183819a15163ef2e2e7d9d764254a9" category="inline-image-macro-rx" type="image"></block></block>
@@ -2760,7 +2693,6 @@
   <block id="0499bba105f8a891a2c671f1ba99dd34" category="list-text">完成下的步驟、將新的 NSS 帳戶與 BlueXP 登入建立關聯 <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>。</block>
   <block id="e9b1f53d6cabb3394833a4e102eb6a69" category="section-title">NetApp全新推出</block>
   <block id="c20c107d0d4eef6351660f3590324232" category="paragraph">如果您是NetApp的新客戶、而且您沒有新的NSS帳戶、請依照下列每個步驟操作。</block>
-  <block id="1afe19576f77bb0073c93359ed2cbb18" category="list-text">在BlueXP主控台右上角、按一下「說明」圖示、然後選取「*支援*」。</block>
   <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">從「Support Registration（支援註冊）」頁面找到您的帳戶ID序號。</block>
   <block id="379f9cd57d97013f3f7fdd24f692a0b1" category="paragraph"><block ref="379f9cd57d97013f3f7fdd24f692a0b1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dd50e314c18933734174c1156dd9237f" category="inline-link">NetApp的支援註冊網站</block>
@@ -2779,8 +2711,6 @@
   <block id="a0518a10626dc11fd00e2d20265ad240" category="list-text">註冊隨用隨付 Cloud Volumes ONTAP 系統以取得支援</block>
   <block id="39f382b97080640c75604b5890f3a5d3" category="paragraph">將 NSS 認證與 BlueXP 帳戶建立關聯、與 BlueXP 使用者登入相關的 NSS 帳戶不同。</block>
   <block id="e3bc6d35311568d55f1c8ea11984b964" category="paragraph">這些 NSS 認證會與您的特定 BlueXP 帳戶 ID 相關聯。屬於BlueXP帳戶的使用者可以從*支援&gt; nss管理*存取這些認證資料。</block>
-  <block id="d17d6b5dafebab6b7659da8850737e70" category="list-text">按一下「*」「nss管理」&gt;「新增nssAccount」*。</block>
-  <block id="8aaf101e623c543c7eef3c65f6233366" category="list-text">出現提示時、按一下*繼續*以重新導向至Microsoft登入頁面。</block>
   <block id="a046fbde0a8e04968445555624e37a69" category="summary">如果您的企業原則要求您使用Proxy伺服器來進行所有網際網路通訊、則您必須設定連接器以使用該Proxy伺服器。如果在安裝期間未將Connector設定為使用Proxy伺服器、則可將Connector設定為隨時使用該Proxy伺服器。</block>
   <block id="146adb7944757e88795676b780c31811" category="doc">設定連接器以使用Proxy伺服器</block>
   <block id="9d8704731bd068bd3be5ad98b7941cba" category="paragraph">BlueXP支援HTTP和HTTPS。Proxy 伺服器可以位於雲端或網路中。</block>
@@ -2871,7 +2801,6 @@
   <block id="a1af18fd60a9b7bf856838a0a7ada673" category="list-text">選取 * 用戶端 ID* 。</block>
   <block id="a59c428dfaf34cac48f2f98a39d73d8d" category="list-text">ID會複製到剪貼簿。</block>
   <block id="1ca3bf189dbc7ec926b42edad60ee61d" category="section-title">重新建立金鑰</block>
-  <block id="f787b2b98aa352927c5b610979ee1e62" category="paragraph">重新建立金鑰會刪除此服務帳戶的現有金鑰、然後建立新金鑰。您將無法使用上一個金鑰。</block>
   <block id="a09d0aef708d0fd918ab67fd89c82210" category="list-text">選取 * 重新建立金鑰 * 。</block>
   <block id="e2ce6c698f201abf2e0cc354c1f6d75f" category="list-text">選取 * 重新建立 * 以確認。</block>
   <block id="30b299e9cb0ca616520dfdc739caa685" category="section-title">刪除服務帳戶</block>
@@ -2963,7 +2892,6 @@
   <block id="e92861fef775acb8c5a64f8d282a8b80" category="cell">無電子郵件功能</block>
   <block id="d1e2d8530c09fe28c2a817289491bd01" category="section-title">使用通知中心監控活動</block>
   <block id="40da6f1400e45d080a97992a6a539894" category="inline-image-macro">通知鈴聲</block>
-  <block id="5cf9ecbcae765efe1cb17d1c802e39cb" category="paragraph">您可以按一下通知鈴聲（<block ref="df7c8a71ca3da4359e40e121f18f87b9" category="inline-image-macro-rx" type="image"></block>）。警示中的小球型罩顏色代表作用中的最高層級嚴重性通知。因此、如果您看到紅色的球型罩、就表示您應該查看重要通知。</block>
   <block id="d59387ab05a2cbd005866b74628417a0" category="inline-image-macro">顯示通知中心目前通知清單的快照。</block>
   <block id="e24c5199eee665d8e879dc72dc56c667" category="paragraph"><block ref="e24c5199eee665d8e879dc72dc56c667" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2a4be390687f80c7cdf976afca0fe778" category="section-title">通知類型</block>
@@ -3120,7 +3048,6 @@
   <block id="19afccead98b1836658110442ef9c5e6" category="list-text">搜尋BlueXP並選取產品項目。</block>
   <block id="a93a66fe6d6d648adde8457a60af5942" category="inline-image-macro">在AWS Marketplace中搜尋之後顯示BlueXP產品的快照</block>
   <block id="8782d52b41ea9b735c120df8ccab4f47" category="paragraph"><block ref="8782d52b41ea9b735c120df8ccab4f47" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="26983a904e0717c520032a2178795368" category="list-text">按一下 * 繼續 * 。</block>
   <block id="07910e9ec98e7a02ee5b24f85cc660d2" category="list-text">*選擇執行個體類型*：視區域可用度而定、請選擇其中一種支援的執行個體類型（建議使用T3.xlge）。</block>
   <block id="7de969f5ec8b28cd7687e32ca5c245bc" category="list-text">*設定執行個體詳細資料*：選取VPC和子網路、選擇您在步驟1中建立的IAM角色、啟用終止保護（建議）、並選擇符合您需求的任何其他組態選項。</block>
   <block id="f1e012a5b5a981694252d85992469fd7" category="inline-image-macro">在 AWS 的「設定執行個體」頁面上顯示欄位的快照。您應該在步驟 1 中建立的 IAM 角色已選取。</block>
@@ -3128,7 +3055,6 @@
   <block id="05c4d183e8bff44df2e6ac91133757fd" category="list-text">* 新增儲存設備 * ：保留預設的儲存選項。</block>
   <block id="ff821e6be3aec0bf40cb1012dad2089f" category="list-text">* 新增標記 * ：視需要輸入執行個體的標記。</block>
   <block id="704a96694410db036940a9b758b475ac" category="list-text">* 設定安全性群組 * ：指定連接器執行個體所需的連線方法： SSH 、 HTTP 和 HTTPS 。</block>
-  <block id="3dcd3a438eecbdd8bc716a93dbc7adf7" category="list-text">* 審查 * ：檢閱您的選擇、然後按一下 * 啟動 * 。</block>
   <block id="36f12b5d2f30503ac36305c4f494f280" category="list-text">符合網路需求的 vnet 和子網路。</block>
   <block id="e055afdf7d35580a49ddc59582adcf3b" category="list-text">Azure 自訂角色、包含 Connector 所需的權限。</block>
   <block id="fd5738f5f42540888241b6b51480ad14" category="inline-link-macro">瞭解如何設定 Azure 權限</block>
@@ -3541,20 +3467,8 @@ Google Cloud 或中不支援<block ref="5388026a167091fc23180597ac85e174" catego
   <block id="f4abcc0682712b312b347ed2a4b32165" category="paragraph">從雲端供應商的市場訂閱 BlueXP 、即可按每小時費率（ PAYGO ）或透過年度合約支付 BlueXP 服務費用。如果您向 NetApp （ BYOL ）購買授權、您也需要訂閱市場方案。您的授權一律會先收費、但如果您超過授權容量或授權期限到期、則會以每小時費率收費。</block>
   <block id="56246b5433f690a35c74ed45a296e993" category="paragraph">市場訂閱可為下列 BlueXP 服務收費：</block>
   <block id="8219b1ea282823d830f661117796ac3d" category="paragraph">訂閱 BlueXP 涉及將市場訂閱與與 Connector 相關的雲端認證建立關聯。如果您遵循「標準模式入門」工作流程、則應該已經有 Connector 。若要深入瞭解、請檢視 <block ref="ce6d43255d920acadadb7e3862aee0b0" category="inline-link-macro-rx"></block>。</block>
-  <block id="fe001b474268cb9300af19ba4c12edd8" category="list-text">按一下動作功能表以取得一組認證資料、然後選取「*建立訂閱關聯*」。</block>
   <block id="7561d35e392b638f4fb5bc5f72459710" category="paragraph">您必須選取與 Connector 相關聯的認證。您無法將市場訂閱與 BlueXP 相關的認證建立關聯。</block>
-  <block id="35189ab5714b42941b6c22320f395243" category="list-text">若要將認證資料與現有訂閱建立關聯、請從下拉式清單中選取訂閱、然後按一下「*關聯*」。</block>
-  <block id="0da34741c0fedd26eb889170d87be2c7" category="list-text">若要將認證資料與新訂閱建立關聯、請按一下*新增訂閱&gt;繼續*、然後依照AWS Marketplace中的步驟進行：</block>
-  <block id="1c1c040e218e35ae634138db5c2055f4" category="list-text">按一下*檢視購買選項*。</block>
-  <block id="85bb97cf1fc6a37ea1a5e97e0e2e1a8b" category="list-text">按一下*訂閱*。</block>
-  <block id="c75b8cac68776a239e8da30928fbc723" category="list-text">按一下*設定您的帳戶*。</block>
   <block id="20dc3df4cdf91b4bd876009a415c2cec" category="paragraph">下列影片顯示從 AWS Marketplace 訂閱的步驟：</block>
-  <block id="7f024bcfe9b965209454c94e48004d5d" category="list-text">若要將認證資料與新訂閱建立關聯、請按一下*新增訂閱&gt;繼續*、然後依照Azure Marketplace中的步驟進行：</block>
-  <block id="078d62005d56b885b14c45dcfcd16082" category="list-text">填寫表單、然後按一下*訂閱*。</block>
-  <block id="ac66d82c89aefbe9c31ed8fe6308233a" category="list-text">訂購程序完成後、按一下*立即設定帳戶*。</block>
-  <block id="978deed4db0f89cc0f25e6998d8c5ede" category="list-text">若要將認證資料與現有訂閱建立關聯、請從下拉式清單中選取Google Cloud專案和訂閱、然後按一下* Associat*。</block>
-  <block id="b46cc5bd37bd52a5b31b40b8ff054c3d" category="list-text">如果您尚未訂閱、請按一下*新增訂閱&gt;繼續*、然後依照Google Cloud Marketplace中的步驟進行。</block>
-  <block id="8e43471beda7327a078697a498a253ca" category="list-text">在快顯對話方塊中、按一下*向NetApp、Inc.*註冊</block>
   <block id="53043f0a6d597ccfe179296cc8ded9c0" category="inline-link">管理 Cloud Volumes ONTAP 的 BYOL 容量型授權</block>
   <block id="fe58f6b68f2391f47e7f19d45735226a" category="list-text"><block ref="fe58f6b68f2391f47e7f19d45735226a" category="inline-link-rx"></block></block>
   <block id="fe661ee4e3dd2d796b000bdbe116c002" category="inline-link">管理 BlueXP 資料服務的 BYOL 授權</block>
@@ -3598,11 +3512,7 @@ Google Cloud 或中不支援<block ref="5388026a167091fc23180597ac85e174" catego
   <block id="f9ae909c9f8845215c3524f51ff1ed97" category="open-title">Azure 使用者帳戶</block>
   <block id="0c5e0cb46ed59511e60fcbc8e0e423c2" category="paragraph">將自訂角色指派給將從 BlueXP 部署 Connector 的使用者。</block>
   <block id="69f03931f7dda53f08365d3254d0ce78" category="list-text">在 Azure 入口網站中、開啟 * 訂閱 * 服務、然後選取使用者的訂閱。</block>
-  <block id="6dc4f3e9aa2dada18f0a17189fa7d079" category="list-text">按一下 * 存取控制（ IAM ） * 。</block>
-  <block id="761218505548d0e5a2977bd7c31de50a" category="list-text">按一下「 * 新增 * &gt; * 新增角色指派 * 」、然後新增權限：</block>
-  <block id="407df91196b1a54a89a9911a8ac6a332" category="list-text">選取「* Azure Setup AsService*」角色、然後按一下「* Next*」。</block>
   <block id="4cca684df8c889c784e30e6f0215cff5" category="admonition">Azure Setup AsService是Azure的Connector部署原則中提供的預設名稱。如果您為角色選擇不同的名稱、請改為選取該名稱。</block>
-  <block id="42cffe053a918fe3b27cd3bef2758b91" category="list-text">按一下*選取成員*、選擇您的使用者帳戶、然後按一下*選取*。</block>
   <block id="f6d4189bf00021bb75f4f2f5b11507bf" category="paragraph">Azure使用者現在擁有從BlueXP部署Connector所需的權限。</block>
   <block id="d9a4ebb1284c84465eac2a20b8331523" category="paragraph">您可以為 BlueXP 提供具有必要權限的 Azure 服務主體認證、而非使用 Azure 帳戶登入。</block>
   <block id="f7f4921534d4730228a1def336cce565" category="paragraph">在 Azure Active Directory 中建立及設定服務主體、並取得 BlueXP 所需的 Azure 認證。</block>
@@ -3817,4 +3727,95 @@ Azure 政府地區不需要此端點。</block>
   <block id="e671b39f5fdb18b38eb5c968b368b3aa" category="cell">API 將 Azure 、 ONTAP 、 BlueXP 分類、 BlueXP 勒索軟體保護、以及傳送 AutoSupport 訊息至 NetApp</block>
   <block id="8150638aa57d2b5755445cf3ab8eac20" category="cell">API 呼叫 Google Cloud 、 ONTAP 、 BlueXP 分類、 BlueXP 勒索軟體保護、並將 AutoSupport 訊息傳送至 NetApp</block>
   <block id="6d349a0af72df500a21b7660d8e471b2" category="paragraph"><block ref="6d349a0af72df500a21b7660d8e471b2" category="inline-link-rx"></block></block>
+  <block id="f19ab635e6d5f884a22ee4ce067fdbfd" category="list-text">選取 * 使用者認證 * 。</block>
+  <block id="cfc5506589d5a4d055e721267d5f0732" category="list-text">若要確認註冊程序是否成功、請選取「說明」圖示、然後選取 * 「支援 * 」。</block>
+  <block id="8281d32bb775e644bd52916734e16bef" category="paragraph">當您使用 BlueXP 分類來掃描 Azure NetApp Files 資料時、 Connector 會提出下列 API 要求：</block>
+  <block id="b6903fcc348dc2286adda5751418a7f9" category="list-text">在功能表中、選取 * 應用程式註冊 * 。</block>
+  <block id="6d730ff41d50e6c38331a70a20a46df3" category="list-text">選取 * 新登錄 * 。</block>
+  <block id="b5249314aff5fae6b6de54ce7f13f16b" category="list-text">選擇*註冊*。</block>
+  <block id="4373f2885ec5493eabb4edec6b9422e4" category="list-text">選取 * 存取控制（ IAM ） &gt; 新增 &gt; 新增角色指派 * 。</block>
+  <block id="ac594ce6138d4938493333dec80544b8" category="list-text">在 * 角色 * 索引標籤中、選取 * BlueXP 操作員 * 角色、然後選取 * 下一步 * 。</block>
+  <block id="049d14d05ca9e7adafff9e17ed48736e" category="list-text">選取 * 選取成員 * 。</block>
+  <block id="ce2590ec8b406b42ba7a670543c8ab81" category="list-text">選取應用程式、然後選取 * 選取 * 。</block>
+  <block id="e6cd86d61f4639c8a27006c6c29b3e9f" category="list-text">選擇*下一步*。</block>
+  <block id="85b8cec39bdb05ec73cd076b2359cfd1" category="list-text">選取 * 檢閱 + 指派 * 。</block>
+  <block id="9993d6f6284200668a6f4c51df9812da" category="list-text">在 * Azure Active Directory* 服務中、選取 * 應用程式登錄 * 、然後選取應用程式。</block>
+  <block id="69dc2d1327bf480b016b4aed7cd7d900" category="list-text">選取 * API 權限 &gt; 新增權限 * 。</block>
+  <block id="4477be44a064848adbf1b5f50428e0cd" category="list-text">選取 * 以組織使用者身分存取 Azure 服務管理 * 、然後選取 * 新增權限 * 。</block>
+  <block id="39ec83d3cc8c12b784bf30f64700b168" category="list-text">選取 * 應用程式註冊 * 、然後選取您的應用程式。</block>
+  <block id="05498c836fbd4349a752efbb54e8949c" category="list-text">選取 * 「憑證與機密」 &gt; 「新用戶端機密」 * 。</block>
+  <block id="fa12509cfb8e8ccded16e2a254e988c4" category="list-text">選取*「Add*」。</block>
+  <block id="c6233dcd0500982eabc73e85f42efc41" category="list-text">選取 * 新增認證 * 、然後依照精靈中的步驟進行。</block>
+  <block id="6372aab032a410c40af497b1755aa8b2" category="list-text">選取一組認證的動作功能表、然後選取 * 關聯訂閱 * 。</block>
+  <block id="5aa5ca3c4ae1419b335323e6ee592b93" category="list-text">若要將認證與現有訂閱建立關聯、請從下拉式清單中選取訂閱、然後選取 * 關聯 * 。</block>
+  <block id="875d095c260fa8c96e0e69a41dd336b7" category="list-text">若要將認證與新訂閱建立關聯、請選取 * 新增訂閱 &gt; 繼續 * 、然後依照 Azure Marketplace 中的步驟進行：</block>
+  <block id="12975d5f412a47bef9db3c7a4d365814" category="list-text">選取 * 訂閱 * 。</block>
+  <block id="9dc9a5b2f23fe90a0fd71125f3034dfd" category="list-text">填寫表單並選擇 * 訂閱 * 。</block>
+  <block id="3221538307211e131f96e1a83b1a5235" category="list-text">訂閱程序完成後、請選取 * 立即設定帳戶 * 。</block>
+  <block id="6887254b5f03610818b55891a5db48ef" category="list-text">選取 * Azure SetupAsService* 角色、然後選取 * 下一步 * 。</block>
+  <block id="53b4a11766155c5b179df42cfaced80f" category="list-text">選取 * 選取成員 * 、選擇您的使用者帳戶、然後選取 * 選取 * 。</block>
+  <block id="497002c594b6f249087bf6b22381ee4d" category="list-text">若要將認證與現有訂閱建立關聯、請從下拉式清單中選取 Google Cloud 專案和訂閱、然後選取 * Associate* 。</block>
+  <block id="ba192d211ab8fe6aceb98f59e685d1bb" category="list-text">如果您尚未訂閱、請選取 * 新增訂閱 &gt; 繼續 * 、然後依照 Google Cloud Marketplace 中的步驟進行。</block>
+  <block id="375b5c037ddde62b74d4b30381271828" category="list-text">在快顯對話方塊中、選取 * 註冊 NetApp 、 Inc.*</block>
+  <block id="dcb058618377cff08193ee6990096f07" category="list-text">選取 * 存取控制（ IAM ） * &gt; * 新增 * &gt; * 新增角色指派 * 。</block>
+  <block id="51c9db5527a197748c924f3777b04b5d" category="list-text">選取 * 選取成員 * 、選取建立 Connector 虛擬機器的訂閱、選擇 * 虛擬機器 * 、然後選取 Connector 虛擬機器。</block>
+  <block id="a907c3ee93defa4e7eb326edec72fa3d" category="list-text">選取 * 選取 * 。</block>
+  <block id="6d2d5c49a26a8339a26911674ee69f80" category="list-text">若要將認證與新訂閱建立關聯、請選取 * 新增訂閱 &gt; 繼續 * 、然後依照 AWS Marketplace 中的步驟進行：</block>
+  <block id="cc5b03fa4f937c63363767c812feeb34" category="list-text">選取 * 檢視購買選項 * 。</block>
+  <block id="0b45e429b84384fa541446c3364409c9" category="list-text">選取 * 設定您的帳戶 * 。</block>
+  <block id="9d5f9909bec8cf71910a31c50878914c" category="section-title">7 月 30 日</block>
+  <block id="167693b239be0e2939d61376cd3a5487" category="section-title">連接器 3.9.32</block>
+  <block id="7af14628b780746da1b2b7396f10a07e" category="list-text">您現在可以使用 BlueXP 稽核服務 API 來匯出稽核記錄。</block>
+  <block id="f7cc7ff5799b515f0c19fb83e0dd5098" category="paragraph">稽核服務會記錄 BlueXP 服務所執行作業的相關資訊。這包括來源 IP 位址、工作區、使用的連接器和其他遙測資料。您可以使用此資料來判斷執行的動作、執行者及執行時間。</block>
+  <block id="5a97fe4fe664c9e98d8ad88cdbf44d98" category="inline-link">深入瞭解如何使用稽核服務 API</block>
+  <block id="23822bdcf5039c31a637229d8ca51ffa" category="paragraph"><block ref="23822bdcf5039c31a637229d8ca51ffa" category="inline-link-rx"></block></block>
+  <block id="d00604985bd7a191952bde8a0cec39fd" category="paragraph">請注意、您也可以從時間軸頁面上的 BlueXP 使用者介面存取此連結。</block>
+  <block id="23c565330e0f5d82619b18108f5a32ca" category="list-text"><block ref="23c565330e0f5d82619b18108f5a32ca" category="inline-link-rx"></block></block>
+  <block id="405527e38d3c42926031f86b50d381d4" category="list-text"><block ref="405527e38d3c42926031f86b50d381d4" category="inline-link-rx"></block></block>
+  <block id="b5163cd43881e34d9478fc7e00e66e62" category="list-text">在*登入*頁面上、系統現在會提示您輸入與登入相關的電子郵件地址。選擇 * 下一步 * 後、 BlueXP 會提示您使用與登入相關的驗證方法進行驗證：</block>
+  <block id="3de985fb980dfcce5f5196709e3e62ce" category="list-text">選取 * 原則 &gt; 建立原則 * 。</block>
+  <block id="d36ec2dc8acd5ade1fda1b4397ccc99a" category="list-text">選取 * JSON* 。</block>
+  <block id="cedfddf2dfb74aa203be428f7657457c" category="list-text">選擇 * 下一步 * 並視需要新增標記。</block>
+  <block id="01de2e1a7f136c3eeda419bfb07814da" category="list-text">選擇 * 下一步 * 並輸入名稱和說明。</block>
+  <block id="db92c743d97601150bbdfa11bf3cf66b" category="list-text">選取 * 建立原則 * 。</block>
+  <block id="ab9ad001a35a833243a30f3acf6417eb" category="list-text">從 AWS IAM 主控台選取 * 使用者 * 、然後選取使用者名稱。</block>
+  <block id="93583a9b95fb527997b95ba8db57df14" category="list-text">選取 * 新增權限 &gt; 直接附加現有原則 * 。</block>
+  <block id="0a6bca3addac2684ad319713b9fb22ed" category="list-text">選取 * 下一步 * 、然後選取 * 新增權限 * 。</block>
+  <block id="2f1197d590dc982e571ad76ed9962122" category="list-text">選取 * 角色 &gt; 建立角色 * 。</block>
+  <block id="cd22a7243285b0197650652e956f0870" category="list-text">* 從 BlueXP* ：選取 Connector 下拉式清單、選取 * Add Connector* 、然後依照提示進行。</block>
+  <block id="a383b5c1d32b2c38a7dcfa44af208c71" category="list-text">選取 IAM 角色、然後選取 * 更新 IAM 角色 * 。</block>
+  <block id="03c5d9363dbf1b3b05f46e5d41ec0266" category="list-text">選取 * Connector * 下拉式清單、然後選取 * 新增 Connector * 。</block>
+  <block id="0447e5af15c21fbb6eee1972d30cef83" category="list-text">選擇 * Amazon Web Services* 作為您的雲端供應商、然後選擇 * 繼續 * 。</block>
+  <block id="15de410cab5b286c0cff40620cbbc2f8" category="list-text">選擇 * 繼續 * 、使用產品內建指南準備部署。產品內建指南中的每個步驟都包含文件本頁所含的資訊。</block>
+  <block id="43c314e15e760781773285daf91c0ad5" category="list-text">如果您已按照本頁的步驟做好準備、請選取 * 跳至部署 * 。</block>
+  <block id="21d86ad4e09aa752397558f2a4a4d776" category="list-text">在 Marketplace 頁面上，選擇 * 繼續訂閱 * ，然後選擇 * 繼續至組態 * 。</block>
+  <block id="62e122f28cedb83482c8d975a0ebbc6b" category="list-text">變更任何預設選項、然後選取 * 繼續啟動 * 。</block>
+  <block id="b5db57dbb4b1fc339bfbf2e32844ab33" category="list-text">在「 * 選擇行動 * 」下、選取 * 透過 EC2* 啟動、然後選取 * 啟動 * 。</block>
+  <block id="a77947bca5ad1214f93361073cfddb0a" category="list-text">* 摘要 * ：檢閱摘要並選取 * 啟動執行個體 * 。</block>
+  <block id="6cd4b1aeb7ee91ddbd1d37ee958a2b58" category="list-text">選取 * 開始 * 。</block>
+  <block id="74fea2a07b811e755565557990612058" category="list-text">如果您要建立第一個工作環境、請選取 * 新增工作環境 * 、然後依照提示進行。否則、請選取 * Connector* 下拉式清單、然後選取 * 新增 Connector* 。</block>
+  <block id="1ce857b02028095dcbdb6522daf11862" category="list-text">選擇 * 立即取得 * 、然後選擇 * 繼續 * 。</block>
+  <block id="36cfedae32501cb288f9aa908aadb288" category="list-text">從 Azure 入口網站選取 * Create * 、然後依照步驟設定虛擬機器。</block>
+  <block id="6b18581fd807739e0d0c13a503a419de" category="list-text">在 *Review + create* 頁面上、檢閱您的選擇、然後選取 * Create* 開始部署。</block>
+  <block id="cda446e0619e283b785d96b7c48bde3e" category="list-text">從 IAM &amp; Admin 服務中、選取 * 服務帳戶 &gt; 建立服務帳戶 * 。</block>
+  <block id="b401764de6903f86e7de99c18b91b1e9" category="list-text">輸入服務帳戶詳細資料、然後選取 * 建立並繼續 * 。</block>
+  <block id="2a8d5c29022382dfb4cb321383f29d88" category="paragraph">您可以選取通知鈴（<block ref="df7c8a71ca3da4359e40e121f18f87b9" category="inline-image-macro-rx" type="image"></block>）。警示中的小球型罩顏色代表作用中的最高層級嚴重性通知。因此、如果您看到紅色的球型罩、就表示您應該查看重要通知。</block>
+  <block id="7fe6981833e8fe7fd89e0a99a55573da" category="list-text">在 BlueXP 中、選取 * 說明 &gt; 支援 * 。</block>
+  <block id="6a1b74969231967ed071d465206b15c7" category="list-text">如果您想與電話上的某人通話、請選取 * 致電 * 。您將會被導向netapp.com上的頁面、其中列出您可以撥打的電話號碼。</block>
+  <block id="d65a2a6fc9caad1867728d4382eeb989" category="list-text">選擇 * 建立案例 * 、與 NetApp 支援專家一起開啟 Ticket ：</block>
+  <block id="0ff9b4b8684b9e03c9c1e1320935eae3" category="paragraph">如需支援案例的記錄、您可以選取 * 設定 &gt; 時間軸 * 、然後尋找名為「建立支援案例」的動作。 最右側的按鈕可讓您展開動作以查看詳細資料。</block>
+  <block id="0a4050ac39772e9281a9aba225254bf8" category="list-text">選取 * 個案管理 * 、如果出現提示、請將您的 NSS 帳戶新增至 BlueXP 。</block>
+  <block id="1d39d3ab518e1e3f16cbafb2a56e1fd9" category="list-text">在 * 組織案例 * 下、選取 * 檢視 * 以檢視與貴公司相關的所有案例。</block>
+  <block id="cdf14d2156528231a5dbd12ad5c95d3f" category="list-text">選取以變更表格中顯示的欄 <block ref="b574dd55d604ddb721d869a0fc302007" category="inline-image-macro-rx" type="image"></block> 然後選擇您要顯示的欄。</block>
+  <block id="348552521b849746260fe8d296d34c15" category="list-text">選取以管理現有案例 <block ref="566c029d89e7d5421080767a37bf443e" category="inline-image-macro-rx" type="image"></block> 並選擇其中一個可用選項：</block>
+  <block id="bb6d5d351525342dd6b3cf4d15b6f298" category="list-text">* 結案案例 * ：提供結案原因的詳細資料、並選取 * 結案案例 * 。</block>
+  <block id="57ab38f0801cd04e83411dd83b30729f" category="inline-link-macro">瞭解如何管理 Connector 的工作區</block>
+  <block id="bb9f1b247d229038dd3e314bd90af7da" category="admonition">您也需要將 Connector 與工作區建立關聯、讓 Workspace 管理員可以從 BlueXP 存取這些工作區。 <block ref="1e9768478c545fd11a6bc38c853aa6cd" category="inline-link-macro-rx"></block>。</block>
+  <block id="aaa1dcd03bd1289bed9f95d54940df48" category="paragraph">重新建立金鑰會刪除此服務帳戶的現有金鑰、然後建立新金鑰。您將無法使用上一個按鍵。</block>
+  <block id="28d4bc1715fb315a1134ddb9ce9b69ef" category="paragraph">如果您建立了新的工作區、也必須將 Connector 新增至該工作區。如果您未新增 Connector 、則 Workspace 管理員將無法存取工作區中的任何資源。如需詳細資訊、請參閱下一節。</block>
+  <block id="136dc09835924029e4299fa28f17233d" category="list-text">選擇*繼續*。</block>
+  <block id="b7d7e6e6aa05f7913906689b7f1e583a" category="list-text">* 審查 * ：檢閱您的選擇並選擇 * 發表 * 。</block>
+  <block id="ecbc764762d64c7a0728c929154e75f5" category="list-text">選取 * 設定新的 BlueXP* 、然後依照提示設定系統。</block>
+  <block id="22cb2add8f3bffef4e749ab0af395ded" category="list-text">* 審查 * ：檢閱詳細資料、接受授權合約、然後選取 * 設定 * 。</block>
+  <block id="451c5548be4e9e7bdee0e30d3122050a" category="paragraph"><block ref="5df7abb03e9cd39c0665b677aaa45ef4" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

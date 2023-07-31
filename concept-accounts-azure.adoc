@@ -50,7 +50,7 @@ image:diagram_permissions_multiple_azure.png["顯示初始 Azure 帳戶（透過
 
 例如、您可以在建立新的 Cloud Volumes ONTAP 工作環境時、在認證之間切換：
 
-image:screenshot_accounts_switch_azure.gif["螢幕快照、顯示按一下「詳細資料  擴大機；認證」頁面中的「切換帳戶」後、在雲端供應商帳戶之間進行選擇。"]
+image:screenshot_accounts_switch_azure.gif["螢幕快照、顯示在「詳細資料  擴大機；認證」頁面中選取「切換帳戶」之後、在雲端供應商帳戶之間進行選擇。"]
 
 
 

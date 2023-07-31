@@ -10,8 +10,8 @@
 +
 image:screenshot_azure_ad.gif["顯示 Microsoft Azure 中的 Active Directory 服務。"]
 
-. 在功能表中、按一下 * 應用程式註冊 * 。
-. 按一下「 * 新登錄 * 」。
+. 在功能表中、選取 * 應用程式註冊 * 。
+. 選取 * 新登錄 * 。
 . 指定應用程式的詳細資料：
 +
 ** * 名稱 * ：輸入應用程式的名稱。
@@ -19,7 +19,7 @@ image:screenshot_azure_ad.gif["顯示 Microsoft Azure 中的 Active Directory �
 ** *重新導向URI*：您可以將此欄位保留空白。
 
 
-. 按一下 * 註冊 * 。
+. 選擇*註冊*。
 +
 您已建立 AD 應用程式和服務主體。
 
@@ -73,12 +73,12 @@ az role definition create --role-definition Connector_Policy.json
 +
 .. 從 Azure 入口網站開啟 * 訂閱 * 服務。
 .. 選取訂閱。
-.. 按一下 * 存取控制（ IAM ） > 新增 > 新增角色指派 * 。
-.. 在「*角色*」索引標籤中、選取「*藍圖XP操作員*」角色、然後按一下「*下一步*」。
+.. 選取 * 存取控制（ IAM ） > 新增 > 新增角色指派 * 。
+.. 在 * 角色 * 索引標籤中、選取 * BlueXP 操作員 * 角色、然後選取 * 下一步 * 。
 .. 在「*成員*」索引標籤中、完成下列步驟：
 +
 *** 保留*選取「使用者」、「群組」或「服務主體」*。
-*** 按一下*選取成員*。
+*** 選取 * 選取成員 * 。
 +
 image:screenshot-azure-service-principal-role.png["Azure入口網站的快照、會在新增角色至應用程式時顯示「成員」索引標籤。"]
 
@@ -89,11 +89,11 @@ image:screenshot-azure-service-principal-role.png["Azure入口網站的快照、
 +
 image:screenshot_azure_service_principal_role.png["Azure入口網站的快照、顯示Azure入口網站中的「新增角色指派」表單。"]
 
-*** 選取應用程式、然後按一下*選取*。
-*** 單擊 * 下一步 * 。
+*** 選取應用程式、然後選取 * 選取 * 。
+*** 選擇*下一步*。
 
 
-.. 按一下「*檢閱+指派*」。
+.. 選取 * 檢閱 + 指派 * 。
 +
 服務主體現在擁有部署Connector所需的Azure權限。
 
@@ -104,19 +104,19 @@ image:screenshot_azure_service_principal_role.png["Azure入口網站的快照、
 
 
 
-. 在 * Azure Active Directory * 服務中、按一下 * 應用程式註冊 * 、然後選取應用程式。
-. 按一下「 * API 權限 > 新增權限 * 」。
+. 在 * Azure Active Directory* 服務中、選取 * 應用程式登錄 * 、然後選取應用程式。
+. 選取 * API 權限 > 新增權限 * 。
 . 在「 * Microsoft API* 」下、選取「 * Azure 服務管理 * 」。
 +
 image:screenshot_azure_service_mgmt_apis.gif["Azure 入口網站的快照、顯示 Azure 服務管理 API 權限。"]
 
-. 按一下「 * 以組織使用者身分存取 Azure 服務管理 * 」、然後按一下「 * 新增權限 * 」。
+. 選取 * 以組織使用者身分存取 Azure 服務管理 * 、然後選取 * 新增權限 * 。
 +
 image:screenshot_azure_service_mgmt_apis_add.gif["Azure 入口網站的快照、顯示新增 Azure 服務管理 API 。"]
 
 
 
-. 在 * Azure Active Directory * 服務中、按一下 * 應用程式註冊 * 、然後選取應用程式。
+. 在 * Azure Active Directory* 服務中、選取 * 應用程式登錄 * 、然後選取應用程式。
 . 複製 * 應用程式（用戶端） ID* 和 * 目錄（租戶） ID* 。
 +
 image:screenshot_azure_app_ids.gif["顯示 Azure Active Directory 中應用程式的應用程式（用戶端） ID 和目錄（租戶） ID 的快照。"]
@@ -127,10 +127,10 @@ image:screenshot_azure_app_ids.gif["顯示 Azure Active Directory 中應用程�
 
 
 . 開啟 * Azure Active Directory * 服務。
-. 按一下 * 應用程式註冊 * 、然後選取您的應用程式。
-. 按一下 * 「憑證與機密」 > 「新用戶端機密」 * 。
+. 選取 * 應用程式註冊 * 、然後選取您的應用程式。
+. 選取 * 「憑證與機密」 > 「新用戶端機密」 * 。
 . 提供機密與持續時間的說明。
-. 按一下「 * 新增 * 」。
+. 選取*「Add*」。
 . 複製用戶端機密的值。
 +
 image:screenshot_azure_client_secret.gif["Azure 入口網站的快照、顯示 Azure AD 服務主體的用戶端機密。"]

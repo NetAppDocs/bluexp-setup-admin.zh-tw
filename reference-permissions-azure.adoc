@@ -181,7 +181,7 @@ summary: 當BlueXP在Azure中啟動Connector VM時、它會將自訂角色附加
 
 === Azure NetApp Files
 
-Connector會提出下列API要求來管理Azure NetApp Files 功能完善的環境：
+當您使用 BlueXP 分類來掃描 Azure NetApp Files 資料時、 Connector 會提出下列 API 要求：
 
 * Microsoft.NetApp/netAppAccounts/read
 * Microsoft.NetApp/netAppAccounts/capacityPools/read

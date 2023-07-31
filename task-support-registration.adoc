@@ -54,10 +54,10 @@ summary: 在您透過NetApp技術支援開啟支援案例之前、您必須先�
 如果您是擁有NSS帳戶的NetApp客戶、您只需透過BlueXP註冊即可獲得支援。
 
 .步驟
-. 在BlueXP主控台右上角、按一下「設定」圖示、然後選取*認證*。
-. 按一下*使用者認證*。
+. 在 BlueXP 主控台的右上角、選取「設定」圖示、然後選取 * 認證 * 。
+. 選取 * 使用者認證 * 。
 . 選取 * 新增 NSS 認證 * 、然後遵循 NetApp 支援網站 （ NSS ）驗證提示。
-. 若要確認註冊程序是否成功、請按一下「說明」圖示、然後選取 * 「支援 * 」。
+. 若要確認註冊程序是否成功、請選取「說明」圖示、然後選取 * 「支援 * 」。
 +
 「 * 資源 * 」頁面應顯示您的帳戶已註冊以取得支援。
 
@@ -92,7 +92,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/scre
 如果您是NetApp的新客戶、而且您沒有新的NSS帳戶、請依照下列每個步驟操作。
 
 .步驟
-. 在BlueXP主控台右上角、按一下「說明」圖示、然後選取「*支援*」。
+. 在 BlueXP 主控台的右上角、選取「說明」圖示、然後選取 * 「支援 * 」。
 +
 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-help-support.png["「說明」功能表的快照、其中「支援」是第一個列出的選項"]
 
@@ -150,12 +150,12 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/scre
 
 
 .步驟
-. 在BlueXP主控台右上角、按一下「說明」圖示、然後選取「*支援*」。
+. 在 BlueXP 主控台的右上角、選取「說明」圖示、然後選取 * 「支援 * 」。
 +
 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-help-support.png["「說明」功能表的快照、其中「支援」是第一個列出的選項"]
 
-. 按一下「*」「nss管理」>「新增nssAccount」*。
-. 出現提示時、按一下*繼續*以重新導向至Microsoft登入頁面。
+. 選取 *NSS Management > Add NSS Account* 。
+. 系統提示時、請選取 * 繼續 * 以重新導向至 Microsoft 登入頁面。
 +
 NetApp使用Microsoft Azure Active Directory做為身分識別供應商、提供專為支援與授權所設計的驗證服務。
 

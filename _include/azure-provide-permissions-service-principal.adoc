@@ -2,11 +2,11 @@
 :allow-uri-read: 
 
 
-. 在BlueXP主控台右上角、按一下「設定」圖示、然後選取*認證*。
+. 在 BlueXP 主控台的右上角、選取「設定」圖示、然後選取 * 認證 * 。
 +
 image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」圖示的快照。"]
 
-. 按一下*「Add Credential*（新增認證*）」、然後依照精靈中的步驟進行。
+. 選取 * 新增認證 * 、然後依照精靈中的步驟進行。
 +
 .. *認證位置*：選擇* Microsoft Azure > Connector*。
 .. *定義認證*：輸入Azure Active Directory服務主體的相關資訊、以授予必要的權限：
@@ -17,7 +17,7 @@ image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」�
 
 
 .. *市場訂閱*：立即訂閱或選取現有的訂閱、以建立Marketplace訂閱與這些認證的關聯。
-.. *審查*：確認新認證資料的詳細資料、然後按一下*新增*。
+.. * 審查 * ：確認新認證的詳細資料、然後選取 * 新增 * 。
 
 
 

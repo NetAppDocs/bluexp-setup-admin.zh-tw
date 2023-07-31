@@ -154,8 +154,8 @@ https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-
 
 . 在 Google Cloud 中建立服務帳戶：
 +
-.. 在 IAM & Admin 服務中、按一下 * 服務帳戶 > 建立服務帳戶 * 。
-.. 輸入服務帳戶詳細資料、然後按一下 * 建立並繼續 * 。
+.. 從 IAM & Admin 服務中、選取 * 服務帳戶 > 建立服務帳戶 * 。
+.. 輸入服務帳戶詳細資料、然後選取 * 建立並繼續 * 。
 .. 選取您剛建立的角色。
 .. 完成剩餘步驟以建立角色。
 +
@@ -182,7 +182,7 @@ https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_
 +
 ** 輸入Connector服務帳戶的電子郵件。
 ** 選取Connector的自訂角色。
-** 按一下「 * 儲存 * 」。
+** 選擇*保存*。
 
 
 

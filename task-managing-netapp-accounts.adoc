@@ -93,6 +93,9 @@ image:screenshot_associate_user_workspace.png["快照顯示將游標移到「使
 
 您可以隨時建立工作區管理員與工作區的關聯和取消關聯。建立使用者關聯可讓他們在該工作區中建立及檢視工作環境。
 
+
+NOTE: 您也需要將 Connector 與工作區建立關聯、讓 Workspace 管理員可以從 BlueXP 存取這些工作區。 link:task-managing-netapp-accounts.html#manage-a-connectors-workspaces["瞭解如何管理 Connector 的工作區"]。
+
 .步驟
 . 從 BlueXP 頂端、選取 * 帳戶 * 下拉式清單、然後選取 * 管理帳戶 * 。
 +
@@ -171,7 +174,7 @@ image:screenshot_service_account_actions.gif["快照顯示將游標移到「使�
 
 === 重新建立金鑰
 
-重新建立金鑰會刪除此服務帳戶的現有金鑰、然後建立新金鑰。您將無法使用上一個金鑰。
+重新建立金鑰會刪除此服務帳戶的現有金鑰、然後建立新金鑰。您將無法使用上一個按鍵。
 
 .步驟
 . 從「成員」索引標籤中、選取與服務帳戶對應的列中的動作功能表。
@@ -217,6 +220,9 @@ image:screenshot_service_account_actions.gif["快照顯示將游標移到「使�
 ** 選取 * 重新命名 * 以重新命名工作區。
 ** 選取 * 刪除 * 以刪除工作區。
 
+
++
+如果您建立了新的工作區、也必須將 Connector 新增至該工作區。如果您未新增 Connector 、則 Workspace 管理員將無法存取工作區中的任何資源。如需詳細資訊、請參閱下一節。
 
 
 
