@@ -273,10 +273,8 @@
   <block id="9e434ddc2ad4b9de005368b77254223d" category="paragraph">\https://*.cloudmanager.cloud.netapp.com</block>
   <block id="115781a0043a85f8707c5c99fd02dc75" category="paragraph">\https://cloudmanager.cloud.netapp.com</block>
   <block id="23486ca53d499245ebae5460cf6d10ad" category="paragraph">在BlueXP中提供SaaS功能與服務。</block>
-  <block id="7eea1027ea51763c57b7b5965f1ba900" category="admonition">Connector目前正在聯絡「cloudmanager.cloud.netapp.com"」、但即將推出的版本將會開始聯絡「api.bluexp.netapp.com"」。</block>
   <block id="065880318484084e9bfe33ea9c6a8702" category="cell">升級Connector及其Docker元件。</block>
   <block id="824f455afa0ae197e5e7156988b6dc50" category="section-title">Proxy伺服器</block>
-  <block id="dae5521ccadea1321150f5f74aad0a58" category="paragraph">如果您的組織需要為所有傳出的網際網路流量部署Proxy伺服器、請取得下列有關HTTP或HTTPS Proxy的資訊：</block>
   <block id="407c4e9fac86b98147da49acd4fa0d01" category="section-title">連接埠</block>
   <block id="b68600c18c6dd9598d4518bc4a3f2c90" category="list-text">HTTP（80）和HTTPS（443）可存取本機UI、在極少數情況下使用。</block>
   <block id="a72a43431413f493c5087ab72327a680" category="list-text">只有在需要連線至主機進行疑難排解時、才需要SSH（22）。</block>
@@ -3614,7 +3612,6 @@ Google Cloud 或中不支援<block ref="5388026a167091fc23180597ac85e174" catego
   <block id="19b587cc77ce4b8566975983ec907303" category="sidebar">管理您的 Google Cloud Storage 貯體</block>
   <block id="161fbe930f63fa83671b46be2b2b3d58" category="paragraph">您應該擁有下列項目：</block>
   <block id="7e0b6f72a006c5db4d352632364cae2a" category="paragraph">如需詳細資訊、請參閱<block ref="f85f976c363ea77b8f2232a1ebbc4d2d" category="inline-link-rx"></block></block>
-  <block id="d6feb2cb4605dd3d35a1cfeb944fe219" category="paragraph">您必須在安裝期間提供此資訊。</block>
   <block id="1b6d3b3a89f4e066eb8bb8d481156cbb" category="list-text">* 執行個體類型 * ：根據區域可用度、選擇符合 RAM 和 CPU 需求的執行個體類型（建議使用 T3.x 大型）。</block>
   <block id="2ad37577d6b48e75deace7b9df85fa0f" category="paragraph">除非您啟動連接器、或使用連接器做為 Proxy 、將 AutoSupport 訊息從 Cloud Volumes ONTAP 傳送至 NetApp 支援、否則不會有傳入的流量傳入連接器。</block>
   <block id="46b7ac383833d40797a3c63596b781a1" category="list-text">如果您在無法使用輸出網際網路連線的子網路中部署 Cloud Volumes ONTAP 系統、則需要透過連接埠 3128 進行輸入連線。</block>
@@ -3818,4 +3815,41 @@ Azure 政府地區不需要此端點。</block>
   <block id="ecbc764762d64c7a0728c929154e75f5" category="list-text">選取 * 設定新的 BlueXP* 、然後依照提示設定系統。</block>
   <block id="22cb2add8f3bffef4e749ab0af395ded" category="list-text">* 審查 * ：檢閱詳細資料、接受授權合約、然後選取 * 設定 * 。</block>
   <block id="451c5548be4e9e7bdee0e30d3122050a" category="paragraph"><block ref="5df7abb03e9cd39c0665b677aaa45ef4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6a60f29cdbb848f0645646b0cceee422" category="paragraph">請注意、 Connector 目前正在聯絡「 cloudmanager.cloud.netapp.com" 」、但在即將推出的版本中、會開始聯絡「 api.bluexp.netapp.com" 」。</block>
+  <block id="2da6f1af030756bb235fd83baa6abd7b" category="paragraph">如果您的組織需要為所有傳出的網際網路流量部署 Proxy 伺服器、請取得下列關於 HTTP 或 HTTPS Proxy 的資訊。您必須在安裝期間提供此資訊。</block>
+  <block id="f68132eadaa2c37170b842a86fa6955d" category="paragraph">如果 Cloud Volumes ONTAP 系統沒有輸出網際網路連線來傳送 AutoSupport 訊息、 BlueXP 會自動將這些系統設定為使用 Connector 隨附的 Proxy 伺服器。唯一的需求是確保連接器的安全群組允許透過連接埠3128進行傳入連線。部署Connector之後、您需要開啟此連接埠。</block>
+  <block id="e12fb4f30abef516bf6f5e0e9a5b72b7" category="doc">從BlueXP在Azure中建立連接器</block>
+  <block id="5b943b0498231c38714aca470c3c0dab" category="paragraph">設定您的網路、準備 Azure 權限、然後從 BlueXP 在 Azure 中建立 Connector 。</block>
+  <block id="42f8643eb52a942747937327c72c8361" category="section-title">部署總覽</block>
+  <block id="ac5d5b7ded11cc7f8b4df462f961d2e8" category="paragraph">下列步驟提供本頁所要完成工作的高階摘要。以下各節提供這些步驟的其他詳細資料。</block>
+  <block id="2ef15946081a8510366177e6ee7e5111" category="paragraph">設定您的網路、讓 Connector 能夠管理混合雲環境中的資源和程序。例如、您需要一個具有輸出網際網路存取和網路連線至目標網路的虛擬網路。</block>
+  <block id="c794110cfe04873f3ea19458fb48df3c" category="inline-xref">檢視網路需求</block>
+  <block id="582b3a879115844ed6c92eedc860c81a" category="paragraph"><block ref="01fbc73f2f4d3ada99434a64c61d271f" category="inline-xref-macro-rx"></block>。</block>
+  <block id="3cf3b3a2d331d9973e9029f5ee423d59" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> 設定 Azure 權限</block>
+  <block id="1503a9f546164361607faf57c69eae56" category="paragraph">建立自訂角色、然後將其套用至 Azure 帳戶或 Azure AD 服務主體。BlueXP 會驗證 Azure 、並使用這些權限代表您建立 Connector 執行個體。</block>
+  <block id="e82d7f6d0b7a997d6eac1814ff1c2863" category="paragraph"><block ref="74b20113240190c7a71403f57a3cd8fc" category="inline-xref-macro-rx"></block>。</block>
+  <block id="aea46324800b152c6a50caff1d14e2fc" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 建立連接器</block>
+  <block id="985afe15de341c249321c6704172a4ea" category="paragraph">在 BlueXP 中、按一下 Connector 下拉式清單、選取 * Add Connector* 、然後依照提示進行。</block>
+  <block id="1dc565e14b0401db0c6aee5f8e24ef79" category="paragraph"><block ref="450d1cb8d9a0a316433d14e18974a979" category="inline-xref-macro-rx"></block>。</block>
+  <block id="95643ce42bab17c218d7c19a0c0040bb" category="paragraph">請確定您計畫安裝 Connector 的網路位置支援下列需求。</block>
+  <block id="83bb814dc9552aa2612588ab7ce9f0e9" category="list-text">Connector 需要網路連線、才能連線到您計畫建立和管理工作環境的位置。例如、您計畫在內部部署環境中建立 Cloud Volumes ONTAP 系統或儲存設備的 vnet 。</block>
+  <block id="8e97b7d14c907dc59419c53c5e813e4d" category="list-text">您部署 Connector 的網路位置必須具備傳出網際網路連線、才能連絡特定端點、如下列各節所述。</block>
+  <block id="864fadbab69859b77befd9c5a1c37c61" category="paragraph">從 BlueXP 建立 Connector 時、您需要提供登入資訊、讓 BlueXP 能夠與 Azure 驗證並部署 VM 。您有兩種選擇：</block>
+  <block id="79a9c2b8e447685125856ec6046d8128" category="admonition">此自訂角色僅包含從 BlueXP 在 Azure 中啟動 Connector VM 所需的權限。請勿在其他情況下使用此原則。當BlueXP建立Connector時、它會套用一組新的權限至Connector VM、讓Connector能夠管理公有雲環境中的資源。</block>
+  <block id="00e80b4b164dd96954a27ed3236c9728" category="paragraph">若要部署 Connector 、 BlueXP 需要驗證 Azure 。您可以選擇兩種 Azure 驗證方法。</block>
+  <block id="6dc4f3e9aa2dada18f0a17189fa7d079" category="list-text">按一下 * 存取控制（ IAM ） * 。</block>
+  <block id="761218505548d0e5a2977bd7c31de50a" category="list-text">按一下「 * 新增 * &gt; * 新增角色指派 * 」、然後新增權限：</block>
+  <block id="407df91196b1a54a89a9911a8ac6a332" category="list-text">選取「* Azure Setup AsService*」角色、然後按一下「* Next*」。</block>
+  <block id="42cffe053a918fe3b27cd3bef2758b91" category="list-text">按一下*選取成員*、選擇您的使用者帳戶、然後按一下*選取*。</block>
+  <block id="5a378b18f7bf0c4cabc6c655cd2f535e" category="list-text">單擊 * 下一步 * 。</block>
+  <block id="e3bbb08034982e47da96f9df0529c14b" category="list-text">按一下「*檢閱+指派*」。</block>
+  <block id="8174c4d89029818113468594f8347c70" category="list-text">按一下 * 存取控制（ IAM ） &gt; 新增 &gt; 新增角色指派 * 。</block>
+  <block id="54b14f07c36bed41295c2086ea238332" category="list-text">在「*角色*」索引標籤中、選取「*藍圖XP操作員*」角色、然後按一下「*下一步*」。</block>
+  <block id="e567d156455b03053b50302bf4ff266e" category="list-text">按一下*選取成員*。</block>
+  <block id="e33ca9bd2b94654f882a0e0ed82dec19" category="list-text">選取應用程式、然後按一下*選取*。</block>
+  <block id="16d491a352eff99aff3a3090f243e9a7" category="paragraph">直接從 BlueXP 網路型主控台建立 Connector 。</block>
+  <block id="38c0deaf9ce4435ad8d471fc04a21ac0" category="paragraph">這些權限適用於Connector執行個體本身。這是一組不同於您先前設定的權限、可用來部署 Connector VM 。</block>
+  <block id="d2b74161d054c69894469355bb22cb63" category="list-text">如果您要建立第一個工作環境、請按一下 * 新增工作環境 * 、然後依照提示進行。否則、請按一下「 * Connector* 」下拉式清單、然後選取「 * 新增 Connector* 」。</block>
+  <block id="7dafa3d9179efddb7b70ff753d853a0e" category="paragraph"><block ref="29949bbccf251af183678449a2465f09" category="inline-xref-macro-rx"></block>。</block>
+  <block id="7dee7e783d13b6d5d415926ce0bfc306" category="list-text">按一下「 * 新增 * 」。</block>
 </blocks>
