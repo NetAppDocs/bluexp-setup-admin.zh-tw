@@ -1429,7 +1429,6 @@
   <block id="23d838dbd51becc56367e6d9358b446e" category="paragraph">此新訂閱取代現有的帳戶所有認證訂閱。如果一組認證資料從未與訂閱建立關聯、則此新訂閱將不會與這些認證資料建立關聯。</block>
   <block id="b4676b03cb1388f474b207b449af0dc2" category="paragraph">對於所有其他帳戶、您必須重複這些步驟、手動建立訂閱的關聯。</block>
   <block id="10492389e94efdebbb66f7b0cd8a1324" category="list-text">選擇*保存*。</block>
-  <block id="a6b7d96f53186edb463f8f8611f97cd9" category="paragraph">下列影片顯示從Google Cloud Marketplace訂閱的步驟：</block>
   <block id="5894b1931d65e9796cc25db1bb6fd566" category="list-text">完成此程序後、請瀏覽至BlueXP中的「認證」頁面、然後選取此新的訂閱。</block>
   <block id="467e5d6bbcd0ea531c8f7285b69e29ee" category="inline-image-macro">訂閱指派頁面的快照。</block>
   <block id="60d2ed6f6e1774535b6e69274800381d" category="paragraph"><block ref="60d2ed6f6e1774535b6e69274800381d" category="inline-image-macro-rx" type="image"></block></block>
@@ -3011,7 +3010,6 @@
   <block id="7dffa6296286b12f66d638f53340316c" category="list-text">出現提示時、請登入您的Azure帳戶。</block>
   <block id="344ece1ef43a9e3bbb281e15f3df6442" category="paragraph">您將被重新導向至BlueXP網站。</block>
   <block id="cb735ebf950ed5c7902b507f70582bd3" category="list-text">從*訂閱指派*頁面：</block>
-  <block id="89d8b3b4c08395fc5dbef0d35cb50529" category="paragraph">下列影片顯示從Azure Marketplace訂閱的步驟：</block>
   <block id="c98f8dfd7e317cb87d057d9e065d71d4" category="section-title">編輯認證資料</block>
   <block id="bf6a5b9863bb599dd7d76e43de882036" category="paragraph">修改Azure服務認證資料的詳細資料、即可在BlueXP中編輯Azure認證資料。例如、如果為服務主體應用程式建立新的密碼、您可能需要更新用戶端密碼。</block>
   <block id="c042156941649b9112145dc552484165" category="list-text">在 * 帳戶認證 * 頁面上、選取一組認證的動作功能表、然後選取 * 編輯認證 * 。</block>
@@ -3466,7 +3464,6 @@ Google Cloud 或中不支援<block ref="5388026a167091fc23180597ac85e174" catego
   <block id="56246b5433f690a35c74ed45a296e993" category="paragraph">市場訂閱可為下列 BlueXP 服務收費：</block>
   <block id="8219b1ea282823d830f661117796ac3d" category="paragraph">訂閱 BlueXP 涉及將市場訂閱與與 Connector 相關的雲端認證建立關聯。如果您遵循「標準模式入門」工作流程、則應該已經有 Connector 。若要深入瞭解、請檢視 <block ref="ce6d43255d920acadadb7e3862aee0b0" category="inline-link-macro-rx"></block>。</block>
   <block id="7561d35e392b638f4fb5bc5f72459710" category="paragraph">您必須選取與 Connector 相關聯的認證。您無法將市場訂閱與 BlueXP 相關的認證建立關聯。</block>
-  <block id="20dc3df4cdf91b4bd876009a415c2cec" category="paragraph">下列影片顯示從 AWS Marketplace 訂閱的步驟：</block>
   <block id="53043f0a6d597ccfe179296cc8ded9c0" category="inline-link">管理 Cloud Volumes ONTAP 的 BYOL 容量型授權</block>
   <block id="fe58f6b68f2391f47e7f19d45735226a" category="list-text"><block ref="fe58f6b68f2391f47e7f19d45735226a" category="inline-link-rx"></block></block>
   <block id="fe661ee4e3dd2d796b000bdbe116c002" category="inline-link">管理 BlueXP 資料服務的 BYOL 授權</block>
@@ -3879,4 +3876,8 @@ Azure 政府地區不需要此端點。</block>
   <block id="ff61d6606967c3f8b0dfa41b1fd7bfa0" category="paragraph">以下是範例。</block>
   <block id="91bff69789722fff2c4a5649d3493da5" category="inline-image-macro">BlueXP 帳戶認證頁面的螢幕擷取畫面、其中顯示 AWS 認證、其中包含一個訂閱欄位、可識別與認證相關的訂閱名稱。</block>
   <block id="57ed1d98795cc2b599a80064fd2b2bbf" category="paragraph"><block ref="57ed1d98795cc2b599a80064fd2b2bbf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a19fbbab905f444316acc463c35da764" category="paragraph">下列影片說明如何將認證與新訂閱建立關聯。</block>
+  <block id="040832c90148c5bba767901a4a55ebe4" category="video-title">從 Azure Marketplace 訂閱 BlueXP</block>
+  <block id="c6e17aa071476599f5e5fc5b8bc42431" category="video-title">從 Google Cloud Marketplace 訂閱 BlueXP</block>
+  <block id="8ddd07f4c199accad92d619cc396eaef" category="video-title">從 AWS Marketplace 訂閱 BlueXP</block>
 </blocks>
