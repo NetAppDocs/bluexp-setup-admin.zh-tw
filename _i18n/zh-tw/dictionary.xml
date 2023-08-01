@@ -3876,8 +3876,7 @@ Azure 政府地區不需要此端點。</block>
   <block id="ff61d6606967c3f8b0dfa41b1fd7bfa0" category="paragraph">以下是範例。</block>
   <block id="91bff69789722fff2c4a5649d3493da5" category="inline-image-macro">BlueXP 帳戶認證頁面的螢幕擷取畫面、其中顯示 AWS 認證、其中包含一個訂閱欄位、可識別與認證相關的訂閱名稱。</block>
   <block id="57ed1d98795cc2b599a80064fd2b2bbf" category="paragraph"><block ref="57ed1d98795cc2b599a80064fd2b2bbf" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="a19fbbab905f444316acc463c35da764" category="paragraph">下列影片說明如何將認證與新訂閱建立關聯。</block>
-  <block id="040832c90148c5bba767901a4a55ebe4" category="video-title">從 Azure Marketplace 訂閱 BlueXP</block>
-  <block id="c6e17aa071476599f5e5fc5b8bc42431" category="video-title">從 Google Cloud Marketplace 訂閱 BlueXP</block>
-  <block id="8ddd07f4c199accad92d619cc396eaef" category="video-title">從 AWS Marketplace 訂閱 BlueXP</block>
+  <block id="89d8b3b4c08395fc5dbef0d35cb50529" category="paragraph">下列影片顯示從Azure Marketplace訂閱的步驟：</block>
+  <block id="a6b7d96f53186edb463f8f8611f97cd9" category="paragraph">下列影片顯示從Google Cloud Marketplace訂閱的步驟：</block>
+  <block id="20dc3df4cdf91b4bd876009a415c2cec" category="paragraph">下列影片顯示從 AWS Marketplace 訂閱的步驟：</block>
 </blocks>

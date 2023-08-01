@@ -61,11 +61,10 @@ image:screenshot_associate_subscription.png["一組現有認證資料的動作�
 
 *** 選擇*保存*。
 +
-下列影片說明如何將認證與新訂閱建立關聯。
+下列影片顯示從 AWS Marketplace 訂閱的步驟：
 
 +
-.從 AWS Marketplace 訂閱 BlueXP
-video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
+video::video_subscribing_aws.mp4[width=848,height=480]
 
 
 
@@ -106,11 +105,10 @@ image:screenshot_azure_add_subscription.png["一組現有認證資料的動作�
 
 *** 選擇*保存*。
 +
-下列影片說明如何將認證與新訂閱建立關聯。
+下列影片顯示從Azure Marketplace訂閱的步驟：
 
 +
-.從 Azure Marketplace 訂閱 BlueXP
-video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
+video::video_subscribing_azure.mp4[width=848,height=480]
 
 
 
@@ -169,11 +167,10 @@ NOTE: 如果貴組織的人員已從您的帳單帳戶訂閱NetApp BlueXP訂閱�
 
 *** 選擇*保存*。
 +
-下列影片說明如何將認證與新訂閱建立關聯。
+下列影片顯示從Google Cloud Marketplace訂閱的步驟：
 
 +
-.從 Google Cloud Marketplace 訂閱 BlueXP
-video::373b96de-3691-4d84-b3f3-b05101161638[panopto]
+video::video-subscribing-google-cloud.mp4[width=848,height=480]
 
 
 .. 完成此程序後、請瀏覽至BlueXP中的「認證」頁面、然後選取此新的訂閱。
