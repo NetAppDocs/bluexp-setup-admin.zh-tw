@@ -3852,4 +3852,31 @@ Azure 政府地區不需要此端點。</block>
   <block id="d2b74161d054c69894469355bb22cb63" category="list-text">如果您要建立第一個工作環境、請按一下 * 新增工作環境 * 、然後依照提示進行。否則、請按一下「 * Connector* 」下拉式清單、然後選取「 * 新增 Connector* 」。</block>
   <block id="7dafa3d9179efddb7b70ff753d853a0e" category="paragraph"><block ref="29949bbccf251af183678449a2465f09" category="inline-xref-macro-rx"></block>。</block>
   <block id="7dee7e783d13b6d5d415926ce0bfc306" category="list-text">按一下「 * 新增 * 」。</block>
+  <block id="6f634a99f964ad704af4d4f3aaf6d261" category="section-title">將現有訂閱與您的帳戶建立關聯</block>
+  <block id="18fdf9616b567e691b5890f032e3bba7" category="paragraph">當您從 AWS Marketplace 訂閱 BlueXP 時、程序的最後一個步驟是從 BlueXP 網站將訂閱與您的 BlueXP 帳戶建立關聯。如果您未完成此步驟、則無法將訂閱與 BlueXP 帳戶搭配使用。</block>
+  <block id="6fb458ce426e7a3b13d1d111785c2d01" category="paragraph">如果您是從 AWS Marketplace 訂閱 BlueXP 、但您錯過了將訂閱與帳戶關聯的步驟、請遵循下列步驟。</block>
+  <block id="bb2c89244641e4e9b00203476e12f0fa" category="list-text">請前往 BlueXP 數位錢包、確認您的訂閱並未與 BlueXP 帳戶建立關聯。</block>
+  <block id="43bfd35e9b57eaace0eafa6750af5ff7" category="list-text">從BlueXP導覽功能表中、選取*管理&gt;數位錢包*。</block>
+  <block id="8c3682e85d7f4dbe8a46485082335dec" category="list-text">選擇*訂閱*。</block>
+  <block id="ed6b397e0118acc4ce6973d71f8bf52b" category="list-text">確認您的 BlueXP 訂閱未出現。</block>
+  <block id="0b63efe724268bea77154f68b732287f" category="paragraph">您只會看到與您目前檢視的帳戶相關聯的訂閱內容。如果您沒有看到您的訂閱、請繼續執行下列步驟。</block>
+  <block id="f059d36774fc7cb0f68cf549634c6649" category="list-text">登入 AWS 主控台並瀏覽至 * AWS Marketplace Subscriptions * 。</block>
+  <block id="f8c6f0be8abb9f25513e90fc59a8022a" category="list-text">尋找 NetApp BlueXP 訂閱。</block>
+  <block id="a33c6ab064752da11797cc3fcb72c16c" category="inline-image-macro">AWS Marketplace 的螢幕快照、顯示 NetApp BlueXP 訂閱。</block>
+  <block id="cd0345f5cc6a1039b0fb0404342bcf95" category="paragraph"><block ref="cd0345f5cc6a1039b0fb0404342bcf95" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5df82b79e0671efbca7c878a5dc6ff0c" category="list-text">選取 * 設定產品 * 。</block>
+  <block id="d322d34d737802e42885dcb924b50296" category="paragraph">訂閱優惠頁面應載入新的瀏覽器索引標籤或視窗。</block>
+  <block id="49ff8f7962f9a965de7b3ac21b54fa0c" category="inline-image-macro">AWS Marketplace 的螢幕擷取畫面顯示 NetApp BlueXP 訂閱、以及頁面右上角顯示的「設定您的帳戶」選項。</block>
+  <block id="ed95a7891978e2cf8bdd5f3a968fadf8" category="paragraph"><block ref="ed95a7891978e2cf8bdd5f3a968fadf8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3973d17448cb9fb34230d9497124e62e" category="paragraph">netapp.com 上的 * 訂閱指派 * 頁面應載入新的瀏覽器索引標籤或視窗。</block>
+  <block id="2bd91e2097a924ebf8ed96f27e0e014b" category="paragraph">請注意、系統可能會提示您先登入 BlueXP 。</block>
+  <block id="ad06dac7d3f75caabc6bbf1ee222b5b1" category="inline-image-macro">訂閱指派頁面的螢幕擷取畫面、可讓您選擇與此訂閱相關的確切 BlueXP 帳戶。</block>
+  <block id="f08dbbf2dcc1aaacd389964d9e1720e9" category="paragraph"><block ref="f08dbbf2dcc1aaacd389964d9e1720e9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ab7f683bf33e15557d8b8c755ab6925d" category="list-text">請前往 BlueXP 數位錢包、確認訂閱內容已與您的 BlueXP 帳戶建立關聯。</block>
+  <block id="3d202823d7d9b23ecb538a9e600a47f9" category="list-text">確認您的 BlueXP 訂閱已出現。</block>
+  <block id="b37f51b57881b03b6c52e06acb6edd87" category="list-text">確認訂閱已與您的 AWS 認證建立關聯。</block>
+  <block id="be7152363bc92639c82fcab79b823266" category="list-text">在 * 帳戶認證 * 頁面上、確認訂閱與 AWS 認證相關聯。</block>
+  <block id="ff61d6606967c3f8b0dfa41b1fd7bfa0" category="paragraph">以下是範例。</block>
+  <block id="91bff69789722fff2c4a5649d3493da5" category="inline-image-macro">BlueXP 帳戶認證頁面的螢幕擷取畫面、其中顯示 AWS 認證、其中包含一個訂閱欄位、可識別與認證相關的訂閱名稱。</block>
+  <block id="57ed1d98795cc2b599a80064fd2b2bbf" category="paragraph"><block ref="57ed1d98795cc2b599a80064fd2b2bbf" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

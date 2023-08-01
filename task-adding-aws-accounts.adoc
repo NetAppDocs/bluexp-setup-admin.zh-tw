@@ -276,6 +276,80 @@ video::video_subscribing_aws.mp4[width=848,height=480]
 
 
 
+== 將現有訂閱與您的帳戶建立關聯
+
+當您從 AWS Marketplace 訂閱 BlueXP 時、程序的最後一個步驟是從 BlueXP 網站將訂閱與您的 BlueXP 帳戶建立關聯。如果您未完成此步驟、則無法將訂閱與 BlueXP 帳戶搭配使用。
+
+如果您是從 AWS Marketplace 訂閱 BlueXP 、但您錯過了將訂閱與帳戶關聯的步驟、請遵循下列步驟。
+
+.步驟
+. 請前往 BlueXP 數位錢包、確認您的訂閱並未與 BlueXP 帳戶建立關聯。
++
+.. 從BlueXP導覽功能表中、選取*管理>數位錢包*。
+.. 選擇*訂閱*。
+.. 確認您的 BlueXP 訂閱未出現。
++
+您只會看到與您目前檢視的帳戶相關聯的訂閱內容。如果您沒有看到您的訂閱、請繼續執行下列步驟。
+
+
+
+. 登入 AWS 主控台並瀏覽至 * AWS Marketplace Subscriptions * 。
+. 尋找 NetApp BlueXP 訂閱。
++
+image:screenshot-aws-marketplace-bluexp-subscription.png["AWS Marketplace 的螢幕快照、顯示 NetApp BlueXP 訂閱。"]
+
+. 選取 * 設定產品 * 。
++
+訂閱優惠頁面應載入新的瀏覽器索引標籤或視窗。
+
+. 選取 * 設定您的帳戶 * 。
++
+image:screenshot-aws-marketplace-set-up-account.png["AWS Marketplace 的螢幕擷取畫面顯示 NetApp BlueXP 訂閱、以及頁面右上角顯示的「設定您的帳戶」選項。"]
+
++
+netapp.com 上的 * 訂閱指派 * 頁面應載入新的瀏覽器索引標籤或視窗。
+
++
+請注意、系統可能會提示您先登入 BlueXP 。
+
+. 從*訂閱指派*頁面：
++
+** 選取您要與此訂閱建立關聯的 BlueXP 帳戶。
+** 在「*取代現有訂閱*」欄位中、選擇您是否要使用此新訂閱來自動取代現有的單一帳戶訂閱。
++
+此新訂閱取代現有的帳戶所有認證訂閱。如果一組認證資料從未與訂閱建立關聯、則此新訂閱將不會與這些認證資料建立關聯。
+
++
+對於所有其他帳戶、您必須重複這些步驟、手動建立訂閱的關聯。
+
++
+image:screenshot-subscription-assignment.png["訂閱指派頁面的螢幕擷取畫面、可讓您選擇與此訂閱相關的確切 BlueXP 帳戶。"]
+
+
+
+. 請前往 BlueXP 數位錢包、確認訂閱內容已與您的 BlueXP 帳戶建立關聯。
++
+.. 從BlueXP導覽功能表中、選取*管理>數位錢包*。
+.. 選擇*訂閱*。
+.. 確認您的 BlueXP 訂閱已出現。
+
+
+. 確認訂閱已與您的 AWS 認證建立關聯。
++
+.. 在 BlueXP 主控台的右上角、選取「設定」圖示、然後選取 * 認證 * 。
+.. 在 * 帳戶認證 * 頁面上、確認訂閱與 AWS 認證相關聯。
++
+以下是範例。
+
++
+image:screenshot-credentials-with-subscription.png["BlueXP 帳戶認證頁面的螢幕擷取畫面、其中顯示 AWS 認證、其中包含一個訂閱欄位、可識別與認證相關的訂閱名稱。"]
+
+
+
+
+
+
+
 == 編輯認證資料
 
 在BlueXP中編輯AWS認證資料、方法是變更帳戶類型（AWS金鑰或承擔角色）、編輯名稱、或自行更新認證資料（金鑰或角色ARN）。
