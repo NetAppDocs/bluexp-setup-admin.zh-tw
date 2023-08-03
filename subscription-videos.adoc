@@ -1,0 +1,42 @@
+---
+sidebar: sidebar 
+permalink: subscription-videos.html 
+keywords: install connector aws, aws install connector, connector aws, aws connector, installation options, aws marketplace, manual install 
+summary: 這些影片說明如何從雲端供應商的市場訂閱 BlueXP 。 
+---
+= AWS 中的連接器安裝選項
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+這些影片說明如何從雲端供應商的市場訂閱 BlueXP 。
+
+
+
+== AWS
+
+.從 AWS Marketplace 訂閱 BlueXP
+video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
+
+
+== Azure
+
+.從 Azure Marketplace 訂閱 BlueXP
+video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
+
+
+== Google Cloud
+
+.從 Google Cloud Marketplace 訂閱 BlueXP
+video::373b96de-3691-4d84-b3f3-b05101161638[panopto]
+
+
+== My 資料夾
+
+.從 Google Cloud Marketplace 訂閱 BlueXP
+video::8d5e054b-f40b-451f-a0e7-870454f1376e[panopto]
