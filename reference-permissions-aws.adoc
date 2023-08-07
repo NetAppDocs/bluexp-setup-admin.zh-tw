@@ -162,10 +162,6 @@ summary: 當BlueXP在AWS中啟動Connector執行個體時、它會將原則附�
                 "kms:ReEncrypt*",
                 "kms:Describe*",
                 "kms:CreateGrant",
-                "ce:GetReservationUtilization",
-                "ce:GetDimensionValues",
-                "ce:GetCostAndUsage",
-                "ce:GetTags",
                 "fsx:Describe*",
                 "fsx:List*",
                 "kms:GenerateDataKeyWithoutPlaintext"
@@ -493,10 +489,6 @@ summary: 當BlueXP在AWS中啟動Connector執行個體時、它會將原則附�
                 "ec2:DescribeIamInstanceProfileAssociations",
                 "ec2:DisassociateIamInstanceProfile",
                 "ec2:DescribeInstanceAttribute",
-                "ce:GetReservationUtilization",
-                "ce:GetDimensionValues",
-                "ce:GetCostAndUsage",
-                "ce:GetTags",
                 "ec2:CreatePlacementGroup",
                 "ec2:DeletePlacementGroup"
             ],
@@ -1126,18 +1118,6 @@ Connector會提出下列API要求、要求在Cloud Volumes ONTAP AWS中部署及
 
 
 | KMS ： GenerateDataKeyWithoutPlaintext | 是的 | 是的 | 否 
-
-
-.4+| 取得AWS成本資料Cloud Volumes ONTAP 以供使用 | CE：GetReservationUtilization | 否 | 是的 | 否 
-
-
-| CE：GetDimensionValues | 否 | 是的 | 否 
-
-
-| CE：GetCostAndusage | 否 | 是的 | 否 
-
-
-| CE：GetTags | 否 | 是的 | 否 
 
 
 .2+| 在單一AWS可用性區域中、為兩個HA節點建立並管理AWS分散放置群組、以及協調器 | EC2：建立位置群組 | 是的 | 否 | 否 

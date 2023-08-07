@@ -196,15 +196,11 @@
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律聲明</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">法律聲明提供版權聲明、商標、專利等存取權限。</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">版權</block>
-  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
   <block id="126a02652da6de02962cf1b654fd6376" category="section-title">商標</block>
   <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp 、 NetApp 標誌及 NetApp 商標頁面上列出的標章均為 NetApp 、 Inc. 的商標。其他公司與產品名稱可能為其各自所有者的商標。</block>
-  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
   <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">專利</block>
   <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">如需最新的 NetApp 擁有專利清單、請參閱：</block>
-  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">隱私權政策</block>
-  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">開放原始碼</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知檔案提供有關 NetApp 軟體所使用之協力廠商版權與授權的資訊。</block>
   <block id="c95623cd0395d5a6bb6105b9d32f197b" category="inline-link-macro">藍圖XP注意事項</block>
@@ -1616,11 +1612,6 @@
   <block id="17b712134bd1e93b6948a0a5c9373e79" category="cell">使用Cloud Volumes ONTAP AWS金鑰管理服務（KMS）啟用資料加密功能</block>
   <block id="d5ef88abafcd6e55acdf43a7b5e4413a" category="cell">公里：ReEncrypt *</block>
   <block id="8773d2d5904a6b33e1f92e729d81f86b" category="cell">KMS ： GenerateDataKeyWithoutPlaintext</block>
-  <block id="c56dde60b28c88e27c4c3174cfc998e5" category="cell">取得AWS成本資料Cloud Volumes ONTAP 以供使用</block>
-  <block id="7ece0980451e018d7766b0e5f1ac02bb" category="cell">CE：GetReservationUtilization</block>
-  <block id="fb039d4fc4119ba105aab9fac87b7f37" category="cell">CE：GetDimensionValues</block>
-  <block id="bba6542a0e46014b21a818003b1e41d2" category="cell">CE：GetCostAndusage</block>
-  <block id="f74e5982a82afd7d2755b24355dd08c6" category="cell">CE：GetTags</block>
   <block id="369aad6f89489e3292ff7cc6ee60488a" category="cell">在單一AWS可用性區域中、為兩個HA節點建立並管理AWS分散放置群組、以及協調器</block>
   <block id="742d1c396005fec9d48163ebc8b0cbf7" category="cell">EC2：建立位置群組</block>
   <block id="1a68c5f9c662699cb823586b38edef0b" category="cell">EC2：刪除位置群組</block>
@@ -3879,9 +3870,12 @@ Azure 政府地區不需要此端點。</block>
   <block id="89d8b3b4c08395fc5dbef0d35cb50529" category="paragraph">下列影片顯示從Azure Marketplace訂閱的步驟：</block>
   <block id="a6b7d96f53186edb463f8f8611f97cd9" category="paragraph">下列影片顯示從Google Cloud Marketplace訂閱的步驟：</block>
   <block id="20dc3df4cdf91b4bd876009a415c2cec" category="paragraph">下列影片顯示從 AWS Marketplace 訂閱的步驟：</block>
-  <block id="1250d880683e535bd4bbd8267aa3e5a1" category="summary">這些影片說明如何從雲端供應商的市場訂閱 BlueXP 。</block>
-  <block id="8ddd07f4c199accad92d619cc396eaef" category="video-title">從 AWS Marketplace 訂閱 BlueXP</block>
-  <block id="040832c90148c5bba767901a4a55ebe4" category="video-title">從 Azure Marketplace 訂閱 BlueXP</block>
-  <block id="c6e17aa071476599f5e5fc5b8bc42431" category="video-title">從 Google Cloud Marketplace 訂閱 BlueXP</block>
-  <block id="4112588d5a54a8d1c620a772527cb267" category="section-title">My 資料夾</block>
+  <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
+  <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
+  <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
+  <block id="5d545fe5152641e2ebe654e336e520e5" category="paragraph"><block ref="5d545fe5152641e2ebe654e336e520e5" category="inline-link-macro-rx"></block></block>
+  <block id="88e5eabd3917048b6927c42496b98f86" category="inline-link-macro"><block ref="88e5eabd3917048b6927c42496b98f86" category="inline-link-rx"></block></block>
+  <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
+  <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
+  <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
 </blocks>
