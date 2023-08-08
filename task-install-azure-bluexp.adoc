@@ -104,9 +104,13 @@ link:reference-networking-saas-console.html["檢視從 BlueXP 主控台連絡的
 
 \https://api.bluexp.netapp.com
 
+\https://api.cloud.netapp.com
+
 \https://*.cloudmanager.cloud.netapp.com
 
 \https://cloudmanager.cloud.netapp.com
+
+\https://netapp-cloud-account.auth0.com/userinfo
  a| 
 在BlueXP中提供SaaS功能與服務。
 

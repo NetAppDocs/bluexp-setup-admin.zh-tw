@@ -10,6 +10,7 @@ summary: 在您透過NetApp技術支援開啟支援案例之前、您必須先�
 :imagesdir: ../media/
 
 
+[role="lead"]
 您的 BlueXP 帳戶和個別 Cloud Volumes ONTAP 系統都需要註冊支援。
 
 
