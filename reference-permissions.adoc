@@ -58,7 +58,7 @@ summary: 若要使用 BlueXP 功能和服務、您必須提供權限、讓 BlueX
 | 連接器操作  a| 
 當BlueXP在Azure中部署Connector VM時、它會建立自訂角色、提供必要的權限來管理該Azure訂閱中的資源和程序。
 
-如果您是從市場啟動 Connector 、手動安裝 Connector 、或是您需要自行設定自訂角色 link:task-adding-azure-accounts.html#adding-additional-azure-credentials-to-cloud-manager["將更多Azure認證資料新增至Connector"]。
+如果您是從市場啟動 Connector 、手動安裝 Connector 、或是您需要自行設定自訂角色 link:task-adding-azure-accounts.html#add-additional-azure-credentials-to-bluexp["將更多Azure認證資料新增至Connector"]。
 
 您也必須確保在後續版本中新增權限時、原則保持在最新狀態。
  a| 

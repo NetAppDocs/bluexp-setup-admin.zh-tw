@@ -141,7 +141,7 @@ image:screenshot-change-notifications.png["顯示如何變更多位使用者通�
 
 === 新增其他電子郵件收件者
 
-出現在 _Account Users_ 標籤中的使用者會自動從 BlueXP 帳戶中的使用者（從 link:task-managing-netapp-accounts.html#creating-and-managing-users["管理帳戶頁面"]）。您可以在「_其他收件者_」索引標籤中新增電子郵件地址、以供無權存取BlueXP但需要收到特定警示和通知類型通知的其他人員或群組使用。
+出現在 _Account Users_ 標籤中的使用者會自動從 BlueXP 帳戶中的使用者（從 link:task-managing-netapp-accounts.html#create-and-manage-users["管理帳戶頁面"]）。您可以在「_其他收件者_」索引標籤中新增電子郵件地址、以供無權存取BlueXP但需要收到特定警示和通知類型通知的其他人員或群組使用。
 
 .步驟
 . 從「警示與通知設定」頁面中、選取 * 新增收件者 * 。

@@ -24,7 +24,7 @@ summary: 新增及管理AWS認證資料、讓BlueXP擁有在AWS帳戶中部署�
 
 * 將額外的AWS認證資料新增至現有的Connector
 +
-將AWS認證資料新增至現有的Connector、可提供必要的權限、以管理公有雲環境中的資源和程序。 <<Add credentials to a Connector,瞭解如何將AWS認證資料新增至Connector>>。
+將AWS認證資料新增至現有的Connector、可提供必要的權限、以管理公有雲環境中的資源和程序。 <<新增其他認證資料至Connector,瞭解如何將AWS認證資料新增至Connector>>。
 
 * 將AWS認證資料新增至BlueXP以建立連接器
 +

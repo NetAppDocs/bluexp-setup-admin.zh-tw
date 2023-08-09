@@ -234,7 +234,7 @@ image:screenshot_service_account_actions.gif["快照顯示將游標移到「使�
 
 如果您只有帳戶管理員、則不需要將 Connector 與工作區建立關聯。帳戶管理員預設能夠存取BlueXP中的所有工作區。
 
-link:concept-netapp-accounts.html#users-workspaces-and-service-connectors["深入瞭解使用者、工作區和連接器"]。
+link:concept-netapp-accounts.html["深入瞭解使用者、工作區和連接器"]。
 
 .步驟
 . 從 BlueXP 頂端、選取 * 帳戶 * 下拉式清單、然後選取 * 管理帳戶 * 。

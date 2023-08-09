@@ -826,7 +826,6 @@
   <block id="b0844d01c75bb6b60219ee536f20aa15" category="list-text">出現提示時、請檢閱終端使用者授權合約並接受條款。</block>
   <block id="a2d1bd30e95a89c4ecb9d6a39da84e3a" category="list-text">在*歡迎*頁面上、輸入您帳戶的名稱。</block>
   <block id="efb45899558a953ff7d6578e89aa2c1c" category="inline-link-macro">瞭解如何將成員新增至現有帳戶</block>
-  <block id="816dc8c932a8afbdb9361ede8774b3d0" category="paragraph">如果您的企業已經有帳戶、而您想要加入帳戶、則應關閉BluXP、並請擁有者將您與帳戶建立關聯。擁有者新增您之後、您就可以登入、而且您可以存取該帳戶。 <block ref="3b04849a18b87204738aa991e5f8575e" category="inline-link-macro-rx"></block>。</block>
   <block id="ecbca8245155432067c380b55b5146bb" category="paragraph">帳戶是NetApp身分識別平台的最上層元素。它可讓您新增及管理使用者、角色、權限及工作環境。</block>
   <block id="a860f226d10bcd54ab238e5189d94747" category="inline-image-macro">當您以不屬於帳戶的新帳戶登入時、會出現歡迎頁面的快照。</block>
   <block id="e079acaa326ddf3b1cb6ee167cce08f4" category="paragraph"><block ref="e079acaa326ddf3b1cb6ee167cce08f4" category="inline-image-macro-rx" type="image"></block></block>
@@ -1662,7 +1661,6 @@
   <block id="d847fd38c43b77f685712342ed5f2a9a" category="list-text">使用您剛建立的管理使用者登入BlueXP。</block>
   <block id="2fdca5f14e2fdf34df61ef1c2e18eae5" category="paragraph">現在已安裝並設定 Connector 。</block>
   <block id="c4d9d6c8e652595e9d46970f56499783" category="inline-link-macro">瞭解如何升級Connector</block>
-  <block id="ab75cfa6ae53348a737404e49985eb65" category="paragraph">當有新版 Connector 軟體推出時，這些軟體都會發佈至 NetApp 支援網站。 <block ref="f17f7484922764d58b748b63a8956073" category="inline-link-macro-rx"></block>。</block>
   <block id="4f63de4c96383f078fb74fced1187f1d" category="section-title">提供 BlueXP 的權限</block>
   <block id="fc0a94ce93071b9e22ad0f0a9d4c266d" category="paragraph">如果您想要建立 Cloud Volumes ONTAP 工作環境、您必須提供 BlueXP 先前設定的雲端權限。</block>
   <block id="d8325912caeaba85aaefdb17eacaea8d" category="inline-link-macro">瞭解如何準備雲端權限</block>
@@ -2054,7 +2052,6 @@
   <block id="67b68df6bafe01dd2b7c0f5e85ec62ff" category="section-title">使用服務主體進行驗證</block>
   <block id="8c14c862f5a121ac56cd7c2e45b59e09" category="paragraph">當您在Microsoft Azure中建立新的Connector時、現在可以使用Azure服務主體進行驗證、而非使用Azure帳戶認證。</block>
   <block id="2b5f7271b3a292c88ce5b4850153c1f4" category="inline-link-macro">瞭解如何與Azure服務主體進行驗證</block>
-  <block id="051567b32d3e33a05e8a851cf866c6ce" category="paragraph"><block ref="8cd32335430c25ac68d0cf69c4942ed3" category="inline-link-macro-rx"></block>。</block>
   <block id="c4f5f37a3eac48a6747104e3821bdfc7" category="section-title">認證增強</block>
   <block id="927ebf0b3ebac11b90b010cce510f149" category="paragraph">我們重新設計了「認證」頁面、以方便使用、並符合Cloud Manager介面的目前外觀與風格。</block>
   <block id="d798cbf5a08fbeb9fdd3652e5b00bb4c" category="section-title">2021年9月2日</block>
@@ -2077,7 +2074,6 @@
   <block id="d818c001b3cfbc2033e278823ec2a52a" category="section-title">時間軸中的帳戶</block>
   <block id="9b67e1ec262493b1df3ec41cc4fbd4a0" category="paragraph">Cloud Manager中的時間表現在顯示與帳戶管理相關的行動和事件。這些動作包括建立使用者關聯、建立工作區及建立連接器等項目。如果您需要識別執行特定行動的人員、或是需要識別行動的狀態、檢查時間表會很有幫助。</block>
   <block id="2355c6490a09de53516a5be37a0fe654" category="inline-link-macro">瞭解如何將時間表篩選為「租賃」服務</block>
-  <block id="42719a12f66c2c272af903550dd96abe" category="paragraph"><block ref="3d5e26c44503b9c3759d0014c33a4b1a" category="inline-link-macro-rx"></block>。</block>
   <block id="29c251ed5a57bbffe470654ccbbe714c" category="section-title">2021年4月11日</block>
   <block id="a751a999298090bf2562492d1817e583" category="section-title">API直接呼叫Cloud Manager</block>
   <block id="c22052aa83aad03ab1340970700a2c27" category="paragraph">如果您已設定Proxy伺服器、現在可以啟用選項、將API呼叫直接傳送至Cloud Manager、而無需透過Proxy。此選項受AWS或Google Cloud中執行的Connectors支援。</block>
@@ -2087,14 +2083,11 @@
   <block id="e6a71362eab01fb017f9ece8e67215b8" category="paragraph">您現在可以建立服務帳戶使用者。</block>
   <block id="83510fd4a5d6f463975ffcf1a28079a3" category="paragraph">服務帳戶扮演「使用者」的角色、可撥打授權API呼叫至Cloud Manager進行自動化。如此一來、您就不需要根據實際使用者帳戶建置自動化指令碼、也能隨時離開公司、因此更容易管理自動化作業。如果您使用同盟、則可以建立權杖、而不需從雲端產生更新權杖。</block>
   <block id="f172ba98380ffa94100632430ae9c805" category="inline-link-macro">深入瞭解如何使用服務帳戶</block>
-  <block id="49b62302ac4a1f507a909dae3aaa2449" category="paragraph"><block ref="8b912a6501daee7a624ed28b2417cf57" category="inline-link-macro-rx"></block>。</block>
   <block id="a214c30250196bf3a7430f258daa1c0a" category="section-title">私有預覽</block>
   <block id="18da70587f043904939613fa4c43ba6d" category="paragraph">您現在可以允許帳戶中的私有預覽、以在Cloud Manager中預覽新的NetApp雲端服務。</block>
   <block id="50ea4e8dccd315b387c3720bf218560a" category="inline-link-macro">深入瞭解此選項</block>
-  <block id="66580d43a3e141cd0f7973122dee9318" category="paragraph"><block ref="6051fdb20fc6a92af957c64f87fc9e45" category="inline-link-macro-rx"></block>。</block>
   <block id="e4be032a3be0dcfffde1cc853ce81a9f" category="section-title">第三方服務</block>
   <block id="4823145b3655f45dcb57edeef856c1a9" category="paragraph">您也可以允許帳戶中的第三方服務存取Cloud Manager中提供的第三方服務。</block>
-  <block id="55e1f633897fc0a0ce5b8e8e0fb09370" category="paragraph"><block ref="9a04b22be906f506f76b327c13da5a90" category="inline-link-macro-rx"></block>。</block>
   <block id="d42fa6c698bffd937b50724aa035c2cb" category="section-title">2021年2月9日</block>
   <block id="094be1dbadd11ed5e81a249dfb9a643a" category="section-title">支援儀表板改良功能</block>
   <block id="2a42bd1b25c8685af4b1b1d1ca8e4805" category="paragraph">我們已更新「支援儀表板」，讓您可以新增 NetApp 支援網站認證資料，以登錄您的支援方案。您也可以直接從儀表板啟動NetApp支援案例。只要按一下「說明」圖示、然後按*「支援」*即可。</block>
@@ -2806,7 +2799,6 @@
   <block id="e98ed4965158505163fc6b7ffa9ba9b0" category="paragraph">您需要將Connector與工作區建立關聯、讓Workspace Admins能夠從BlueXP存取這些工作區。</block>
   <block id="acff4181fbf10d78defb836baab72c8d" category="paragraph">如果您只有帳戶管理員、則不需要將 Connector 與工作區建立關聯。帳戶管理員預設能夠存取BlueXP中的所有工作區。</block>
   <block id="b7f7a48c60012c23b8adb659da31b71a" category="inline-link-macro">深入瞭解使用者、工作區和連接器</block>
-  <block id="7d033896524ebe16495f74d9f7202783" category="paragraph"><block ref="cf2050a2914e59a752ab48465ba00e16" category="inline-link-macro-rx"></block>。</block>
   <block id="e75928b1dc1ca3932b7aca29ff283aa4" category="list-text">選取 * Connector * 。</block>
   <block id="36a0e8f51d7a9a76f77fc1b370f8c049" category="list-text">為您要關聯的 Connector 選取 * 管理 Workspace* 。</block>
   <block id="13a89cea3d139c1997539c3cc4d05ec3" category="list-text">選取要與 Connector 建立關聯的工作區、然後選取 * 套用 * 。</block>
@@ -2842,7 +2834,6 @@
   <block id="bd39c8654fa47d44bbd01a5d81c6197e" category="cell">從BlueXP部署Connector時、您需要使用Azure帳戶或服務主體、該用戶必須具有在Azure中部署Connector VM的權限。</block>
   <block id="80487192abab0ee504d52b82c771727f" category="paragraph">當BlueXP在Azure中部署Connector VM時、它會建立自訂角色、提供必要的權限來管理該Azure訂閱中的資源和程序。</block>
   <block id="652a30691608448a6f2f15a1d2bb02f5" category="inline-link-macro">將更多Azure認證資料新增至Connector</block>
-  <block id="8ff08eb12a4bed8d94e8682a89020c56" category="paragraph">如果您是從市場啟動 Connector 、手動安裝 Connector 、或是您需要自行設定自訂角色 <block ref="3a714b4b67994f94abb2f77ce85a395b" category="inline-link-macro-rx"></block>。</block>
   <block id="bcfaa2da0752134728f286af2b223842" category="paragraph">您也必須確保在後續版本中新增權限時、原則保持在最新狀態。</block>
   <block id="24cce65a483e1205b8ca7bc0bf14c6c9" category="paragraph"><block ref="24cce65a483e1205b8ca7bc0bf14c6c9" category="inline-link-macro-rx"></block></block>
   <block id="d3846482b7a5f3467b05518965422219" category="section-title">Google Cloud權限</block>
@@ -2915,7 +2906,6 @@
   <block id="ba47221b59f846f383b80e1123a79d45" category="paragraph"><block ref="ba47221b59f846f383b80e1123a79d45" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4420a19e2fb911632ceb20db9bff5d6a" category="section-title">新增其他電子郵件收件者</block>
   <block id="da69d368769f4f71d80717684f0fae51" category="inline-link-macro">管理帳戶頁面</block>
-  <block id="7e3e224d3901e0bbd70dd518a48dba67" category="paragraph">出現在 _Account Users_ 標籤中的使用者會自動從 BlueXP 帳戶中的使用者（從 <block ref="7ec5341aa06784128979f04caa0eaf74" category="inline-link-macro-rx"></block>）。您可以在「_其他收件者_」索引標籤中新增電子郵件地址、以供無權存取BlueXP但需要收到特定警示和通知類型通知的其他人員或群組使用。</block>
   <block id="9c3d653ca7995e59299fb7641e61895f" category="list-text">從「警示與通知設定」頁面中、選取 * 新增收件者 * 。</block>
   <block id="acd827f1422fd31386324c56e2be6d81" category="inline-image-macro">顯示如何新增電子郵件收件者以接收警示和通知的螢幕快照。</block>
   <block id="5e56842d0cfbf695522e945a01570eba" category="paragraph"><block ref="5e56842d0cfbf695522e945a01570eba" category="inline-image-macro-rx" type="image"></block></block>
@@ -3170,7 +3160,6 @@
   <block id="2289c95473cffd95de217b1b675483e0" category="paragraph">您可以將AWS認證資料新增至現有的Connector、或直接新增至BlueXP：</block>
   <block id="19d38e2a40bebb64998474cbec167167" category="list-text">將額外的AWS認證資料新增至現有的Connector</block>
   <block id="86ae9eb7648ce9574603dd22de833a70" category="inline-xref">瞭解如何將AWS認證資料新增至Connector</block>
-  <block id="2e5620a6569fc852b94b7e03a147a125" category="paragraph">將AWS認證資料新增至現有的Connector、可提供必要的權限、以管理公有雲環境中的資源和程序。 <block ref="568ce14d3cdae759e790bc127b222228" category="inline-xref-macro-rx"></block>。</block>
   <block id="a6390625ed7305318bb287641e3ea65f" category="list-text">將AWS認證資料新增至BlueXP以建立連接器</block>
   <block id="7c45fb9face239cc4b78e899305dee96" category="inline-xref">瞭解如何將AWS認證資料新增至藍圖XP</block>
   <block id="3ec77266ee6a41b1747d294029bbd73e" category="paragraph">將新的AWS認證資料新增至藍圖XP、即可賦予藍圖XP建立Connector所需的權限。 <block ref="45675543b86ad867a67fe4ac8024c9ea" category="inline-xref-macro-rx"></block>。</block>
@@ -3880,4 +3869,15 @@ Azure 政府地區不需要此端點。</block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
   <block id="25c1d94d9b5ddfa1e59f39dc9cc2a66c" category="paragraph">\https://api.cloud.netapp.com</block>
   <block id="78429c89c33011bf4e7173ce7e0a7d38" category="paragraph">\https://netapp-cloud-account.auth0.com/userinfo</block>
+  <block id="2274fc3b815748857736944118caafcb" category="paragraph">當有新版 Connector 軟體推出時，這些軟體都會發佈至 NetApp 支援網站。 <block ref="6573e3614f2b2c9574b675c6e2dabc80" category="inline-link-macro-rx"></block>。</block>
+  <block id="fe7f6ce20f8de3b21c991518b42d29c7" category="paragraph">如果您是從市場啟動 Connector 、手動安裝 Connector 、或是您需要自行設定自訂角色 <block ref="cc20e8be88e79fa30534d9044d86d641" category="inline-link-macro-rx"></block>。</block>
+  <block id="ea472a728fa8ea8a9d957dafbf3b3c56" category="paragraph"><block ref="4bafa1fce0633bbc25f458d6925369da" category="inline-link-macro-rx"></block>。</block>
+  <block id="880b965f9cabc8a09dc307835b0c1c44" category="paragraph">如果您的企業已經有帳戶、而您想要加入帳戶、則應關閉BluXP、並請擁有者將您與帳戶建立關聯。擁有者新增您之後、您就可以登入、而且您可以存取該帳戶。 <block ref="221ad62081662624d5ad46e4eb019f63" category="inline-link-macro-rx"></block>。</block>
+  <block id="51a7ac19cbf0f9d074132cf117ad2e0c" category="paragraph">將AWS認證資料新增至現有的Connector、可提供必要的權限、以管理公有雲環境中的資源和程序。 <block ref="c25c39db29c727f1578fc8385e3c589b" category="inline-xref-macro-rx"></block>。</block>
+  <block id="e5858eca10506e717b009052b0640e5d" category="paragraph">出現在 _Account Users_ 標籤中的使用者會自動從 BlueXP 帳戶中的使用者（從 <block ref="bce79e838594aa867c34fc02622c1a7f" category="inline-link-macro-rx"></block>）。您可以在「_其他收件者_」索引標籤中新增電子郵件地址、以供無權存取BlueXP但需要收到特定警示和通知類型通知的其他人員或群組使用。</block>
+  <block id="fb2327495633231db53b83b63281ec59" category="paragraph"><block ref="ba792a8f94fc4fa1d6890491a6d3ca88" category="inline-link-macro-rx"></block>。</block>
+  <block id="546da6116b7feb3e2f6bc76e15679ce5" category="paragraph"><block ref="b046bb32939806f90ece83bf6f045fc2" category="inline-link-macro-rx"></block>。</block>
+  <block id="785c09ae237878056a26f76d752f9655" category="paragraph"><block ref="d681f410de8bf56d0591b119af19b91f" category="inline-link-macro-rx"></block>。</block>
+  <block id="819bbc17eab62ac696bc204d9864298c" category="paragraph"><block ref="317e81beacf8b3184ba06b75c8cba7f0" category="inline-link-macro-rx"></block>。</block>
+  <block id="d5a6b4dc8861625dfe113504ac0e255e" category="paragraph"><block ref="fdc7ca711ae67c971d281a756b555324" category="inline-link-macro-rx"></block>。</block>
 </blocks>
