@@ -2816,18 +2816,9 @@
   <block id="f664478fbdfbd15104b014e41c35e88c" category="doc">BlueXP的權限摘要</block>
   <block id="d2c0c7feb18d0e89bab9d23b6ec4c042" category="section-title">AWS 權限</block>
   <block id="97e7c9a7d06eac006a28bf05467fcc8b" category="cell">連結</block>
-  <block id="eec108a26c2c4c3392174c931352146b" category="cell">BlueXP 的連接器部署</block>
   <block id="1570052dc3548215211726a63fbaaf7a" category="cell">從BlueXP建立Connector的使用者需要特定權限、才能在AWS中部署執行個體。</block>
-  <block id="9d79131734042a17283af57f76b63c58" category="cell">連接器操作</block>
   <block id="00232842735eab80a07d1168667e8d7f" category="inline-link-macro">將更多AWS認證資料新增至Connector</block>
-  <block id="ec2a26203d1e704fea5fe65b3298f175" category="cell">當BlueXP啟動Connector時、它會將原則附加至執行個體、以提供管理AWS帳戶中資源和處理程序所需的權限。
-
-如果您是從市場啟動 Connector 、手動安裝 Connector 、或是您需要自行設定原則 <block ref="c5a34c273ba791769e2c0edbb9c79dc0" category="inline-link-macro-rx"></block>。
-
-您也必須確保在後續版本中新增權限時、原則保持在最新狀態。</block>
   <block id="f8a3b3003a624ccf880a2b952a5d299a" category="cell"><block ref="f8a3b3003a624ccf880a2b952a5d299a" category="inline-link-macro-rx"></block></block>
-  <block id="0b7fc44a4fc16ca2deedd18213df11d0" category="cell">作業系統Cloud Volumes ONTAP</block>
-  <block id="ed36c10a45b6f1c2c5b5a23a54e905dd" category="cell">必須將IAM角色附加至Cloud Volumes ONTAP AWS中的每個節點。HA中介者也是如此。預設選項是讓BlueXP為您建立IAM角色、但您可以使用自己的角色。</block>
   <block id="421a1f316880c0380ff3114c3bf34f83" category="inline-link">瞭解如何自行設定IAM角色</block>
   <block id="1dde058782233339aff261555be71a1e" category="cell"><block ref="1dde058782233339aff261555be71a1e" category="inline-link-rx"></block></block>
   <block id="bf689424a4d3a62d9c0d40a07107c3d2" category="section-title">Azure權限</block>
@@ -2837,13 +2828,9 @@
   <block id="bcfaa2da0752134728f286af2b223842" category="paragraph">您也必須確保在後續版本中新增權限時、原則保持在最新狀態。</block>
   <block id="24cce65a483e1205b8ca7bc0bf14c6c9" category="paragraph"><block ref="24cce65a483e1205b8ca7bc0bf14c6c9" category="inline-link-macro-rx"></block></block>
   <block id="d3846482b7a5f3467b05518965422219" category="section-title">Google Cloud權限</block>
-  <block id="f56912566696fa3cc8524bcac5febbeb" category="cell">連接器部署</block>
   <block id="891af1225ba19aa10048241aff61f420" category="cell">從BlueXP部署Connector的Google Cloud使用者需要特定權限、才能在Google Cloud中部署Connector。</block>
   <block id="8bbd308345d88bc23fd26357cd36b8d9" category="inline-link-macro">設定部署Connector的權限</block>
   <block id="cf94f172dc39ef92ca49e3c869407357" category="cell"><block ref="cf94f172dc39ef92ca49e3c869407357" category="inline-link-macro-rx"></block></block>
-  <block id="4f3c3c35c132b98b7f7a6e950dee69ce" category="cell">Connector VM執行個體的服務帳戶必須具有特定的日常作業權限。從BlueXP部署時、您需要將服務帳戶與Connector建立關聯。
-
-您也必須確保在後續版本中新增權限時、原則保持在最新狀態。</block>
   <block id="8e83b819241a1bf1d918adcc453afeab" category="cell"><block ref="8e83b819241a1bf1d918adcc453afeab" category="inline-link-macro-rx"></block></block>
   <block id="56e1e624f64034081fc607cc1b1f8f79" category="summary">如果您是從 Azure Marketplace 建立 Connector 、或是手動安裝軟體、則必須提供 BlueXP 先前設定的權限。提供權限可讓 BlueXP 管理 Azure 中的資料和儲存基礎架構。</block>
   <block id="d0158e5fcbfd28e34c4ef5775896911d" category="doc">提供 Azure 對 BlueXP 的權限</block>
@@ -3740,7 +3727,6 @@ Azure 政府地區不需要此端點。</block>
   <block id="9d5f9909bec8cf71910a31c50878914c" category="section-title">7 月 30 日</block>
   <block id="167693b239be0e2939d61376cd3a5487" category="section-title">連接器 3.9.32</block>
   <block id="7af14628b780746da1b2b7396f10a07e" category="list-text">您現在可以使用 BlueXP 稽核服務 API 來匯出稽核記錄。</block>
-  <block id="f7cc7ff5799b515f0c19fb83e0dd5098" category="paragraph">稽核服務會記錄 BlueXP 服務所執行作業的相關資訊。這包括來源 IP 位址、工作區、使用的連接器和其他遙測資料。您可以使用此資料來判斷執行的動作、執行者及執行時間。</block>
   <block id="5a97fe4fe664c9e98d8ad88cdbf44d98" category="inline-link">深入瞭解如何使用稽核服務 API</block>
   <block id="23822bdcf5039c31a637229d8ca51ffa" category="paragraph"><block ref="23822bdcf5039c31a637229d8ca51ffa" category="inline-link-rx"></block></block>
   <block id="d00604985bd7a191952bde8a0cec39fd" category="paragraph">請注意、您也可以從時間軸頁面上的 BlueXP 使用者介面存取此連結。</block>
@@ -3870,7 +3856,6 @@ Azure 政府地區不需要此端點。</block>
   <block id="25c1d94d9b5ddfa1e59f39dc9cc2a66c" category="paragraph">\https://api.cloud.netapp.com</block>
   <block id="78429c89c33011bf4e7173ce7e0a7d38" category="paragraph">\https://netapp-cloud-account.auth0.com/userinfo</block>
   <block id="2274fc3b815748857736944118caafcb" category="paragraph">當有新版 Connector 軟體推出時，這些軟體都會發佈至 NetApp 支援網站。 <block ref="6573e3614f2b2c9574b675c6e2dabc80" category="inline-link-macro-rx"></block>。</block>
-  <block id="fe7f6ce20f8de3b21c991518b42d29c7" category="paragraph">如果您是從市場啟動 Connector 、手動安裝 Connector 、或是您需要自行設定自訂角色 <block ref="cc20e8be88e79fa30534d9044d86d641" category="inline-link-macro-rx"></block>。</block>
   <block id="ea472a728fa8ea8a9d957dafbf3b3c56" category="paragraph"><block ref="4bafa1fce0633bbc25f458d6925369da" category="inline-link-macro-rx"></block>。</block>
   <block id="880b965f9cabc8a09dc307835b0c1c44" category="paragraph">如果您的企業已經有帳戶、而您想要加入帳戶、則應關閉BluXP、並請擁有者將您與帳戶建立關聯。擁有者新增您之後、您就可以登入、而且您可以存取該帳戶。 <block ref="221ad62081662624d5ad46e4eb019f63" category="inline-link-macro-rx"></block>。</block>
   <block id="51a7ac19cbf0f9d074132cf117ad2e0c" category="paragraph">將AWS認證資料新增至現有的Connector、可提供必要的權限、以管理公有雲環境中的資源和程序。 <block ref="c25c39db29c727f1578fc8385e3c589b" category="inline-xref-macro-rx"></block>。</block>
@@ -3880,4 +3865,56 @@ Azure 政府地區不需要此端點。</block>
   <block id="785c09ae237878056a26f76d752f9655" category="paragraph"><block ref="d681f410de8bf56d0591b119af19b91f" category="inline-link-macro-rx"></block>。</block>
   <block id="819bbc17eab62ac696bc204d9864298c" category="paragraph"><block ref="317e81beacf8b3184ba06b75c8cba7f0" category="inline-link-macro-rx"></block>。</block>
   <block id="d5a6b4dc8861625dfe113504ac0e255e" category="paragraph"><block ref="fdc7ca711ae67c971d281a756b555324" category="inline-link-macro-rx"></block>。</block>
+  <block id="ae74a3a0435bedb1f051b5b083969faa" category="paragraph">BlueXP 需要連接器和個別服務的 AWS 權限。</block>
+  <block id="12c74214cb4c18cf36d885303d6aa2e1" category="cell">目標</block>
+  <block id="4afbf095518e3a60998aad1ce6f249ce" category="cell">從 BlueXP 部署 Connector</block>
+  <block id="236126e6a3c1a1d09b8182f67882c801" category="cell">提供 Connector 的權限</block>
+  <block id="c6d0e2abed82fca958366c2fcda89a77" category="cell">當BlueXP啟動Connector時、它會將原則附加至執行個體、以提供管理AWS帳戶中資源和處理程序所需的權限。
+
+如果您是從 AWS Marketplace 啟動 Connector 、手動安裝 Connector 、或是您需要自行設定原則 <block ref="c5a34c273ba791769e2c0edbb9c79dc0" category="inline-link-macro-rx"></block>。
+
+您也必須確保在後續版本中新增權限時、原則保持在最新狀態。</block>
+  <block id="2bd154f3e1528430624d1980f1fe12c2" category="cell">提供 Cloud Volumes ONTAP 節點的權限</block>
+  <block id="2584b7afa455c935a90917055396e327" category="cell">必須將IAM角色附加至Cloud Volumes ONTAP AWS中的每個節點。HA中介者也是如此。預設選項是讓 BlueXP 為您建立 IAM 角色、但您可以在建立工作環境時使用自己的角色。</block>
+  <block id="07914074e8936595a39fa14377c5047c" category="cell">在 AWS 中部署資料代理程式</block>
+  <block id="18a3707b00c2a06ba4d52fc010e2ac0e" category="cell">您用來部署資料代理的 AWS 使用者帳戶必須具有特定權限。</block>
+  <block id="572539efea3b8fc37d4d9f01097ce1b1" category="inline-link">在 AWS 中部署資料代理程式所需的權限</block>
+  <block id="81a564d7b4e8b4dee115ac457361e17e" category="cell"><block ref="81a564d7b4e8b4dee115ac457361e17e" category="inline-link-rx"></block></block>
+  <block id="5a4538181503849bbcd06a951c8a8e2d" category="cell">提供資料代理程式的權限</block>
+  <block id="3dfd0f786aab78ee1bfb08af94cb59ef" category="cell">當 BlueXP 複製與同步部署資料代理程式時、它會為資料代理程式執行個體建立 IAM 角色。您可以視需要使用自己的 IAM 角色來部署資料代理程式。</block>
+  <block id="9b99759f27fdd4623c9ea015c92207fd" category="inline-link">將您自己的 IAM 角色用於 AWS 資料代理程式的要求</block>
+  <block id="10f1c56c57fc53ad92122681abc21632" category="cell"><block ref="10f1c56c57fc53ad92122681abc21632" category="inline-link-rx"></block></block>
+  <block id="ee62d3f2099b104d52eb4e2fe59eb860" category="cell">為手動安裝的資料代理程式啟用 AWS 存取</block>
+  <block id="18f5ca31365bcff8913658163e306178" category="cell">如果您使用的資料代理程式具有包含 S3 儲存區的同步關係、則應準備 Linux 主機以供 AWS 存取。安裝資料代理程式時、您需要為具有程式化存取權和特定權限的 IAM 使用者提供 AWS 金鑰。</block>
+  <block id="c9e33dfa8b5904f2c5eeefbab35a3d9b" category="inline-link">可存取 AWS</block>
+  <block id="fcf846fa24de23410cb4903a97ac9f0d" category="cell"><block ref="fcf846fa24de23410cb4903a97ac9f0d" category="inline-link-rx"></block></block>
+  <block id="71a673e1aed38a0f77d59612fb124b6b" category="cell">建立及管理 ONTAP 的 FSX</block>
+  <block id="c896aff3890756b5b5617815b60fa045" category="cell">若要建立或管理適用於 NetApp ONTAP 工作環境的 Amazon FSX 、您需要將 AWS 認證新增至 BlueXP 、方法是提供 IAM 角色的 ARN 、讓 BlueXP 擁有建立工作環境所需的權限。</block>
+  <block id="8d5c6b0c966cc9b5f51ab3ebb991e7ec" category="inline-link">瞭解如何設定適用於 FSX 的 AWS 認證</block>
+  <block id="c52aa019132bc05b5d90dee260d8fb6a" category="cell"><block ref="c52aa019132bc05b5d90dee260d8fb6a" category="inline-link-rx"></block></block>
+  <block id="459077578e6bfda6360917f5762cecbd" category="paragraph">BlueXP 需要連接器和個別服務的 Azure 權限。</block>
+  <block id="edf21d7ecb364e8210ddd3dfaeca6fbf" category="section-title">連接器</block>
+  <block id="19be7d05557bac8d8c8cdcd69e418046" category="paragraph">如果您是從市場啟動 Connector 、手動安裝 Connector 、或是您需要自行設定自訂角色 <block ref="cc20e8be88e79fa30534d9044d86d641" category="inline-link-macro-rx"></block>。</block>
+  <block id="c3cccd9ce135f450a9619b57dba5e5f1" category="cell">在 Azure 中部署資料代理程式</block>
+  <block id="05f8fb1bf008e214609328fb34b7e532" category="cell">您用來部署資料代理的 Azure 使用者帳戶必須具有必要的權限。</block>
+  <block id="c658fd4f091c10877f154fbf84fbee89" category="inline-link">在Azure中部署資料代理程式所需的權限</block>
+  <block id="fe6b9c6ed5d8a08b2dbc8fc0c9f1b1e1" category="cell"><block ref="fe6b9c6ed5d8a08b2dbc8fc0c9f1b1e1" category="inline-link-rx"></block></block>
+  <block id="abc6c653a66385c7d89c7c9b11146695" category="paragraph">BlueXP 需要 Google Cloud 權限才能使用 Connector 和個別服務。</block>
+  <block id="ccdd7e208a0a423c2c21b0cf2b9c9cf9" category="cell">Connector VM執行個體的服務帳戶必須具有特定的日常作業權限。在部署期間、您需要將服務帳戶與 Connector 建立關聯。
+
+您也必須確保在後續版本中新增權限時、原則保持在最新狀態。</block>
+  <block id="2ffc85864a3bde535e5f41ca5ceb963e" category="cell">探索 Cloud Volumes Service for Google Cloud</block>
+  <block id="fb40390dc5f9af56c8a05dba3f355101" category="cell">BlueXP需要透過Cloud Volumes Service Google Cloud服務帳戶存取功能、以及適當的權限。</block>
+  <block id="ec8725380aa2f688c9b9d45557c44600" category="inline-link">設定服務帳戶</block>
+  <block id="71ff910f19cd22c3817e69aefe990dc8" category="cell"><block ref="71ff910f19cd22c3817e69aefe990dc8" category="inline-link-rx"></block></block>
+  <block id="326383c715f7d58418eab62449d7e6b5" category="cell">在 Google Cloud 中部署資料代理程式</block>
+  <block id="6f0cd56d775c80607dc578326e3840bd" category="cell">確保部署資料代理程式的 Google Cloud 使用者擁有必要的權限。</block>
+  <block id="23c5a36a4e18015e399e97b3a48f2255" category="inline-link">在Google Cloud中部署資料代理商所需的權限</block>
+  <block id="958a0d8cd16ff833279695f251ff3807" category="cell"><block ref="958a0d8cd16ff833279695f251ff3807" category="inline-link-rx"></block></block>
+  <block id="835763cb29b6af444564b2a25239e51b" category="cell">為手動安裝的資料代理程式啟用 Google Cloud 存取</block>
+  <block id="9bb2d547aba26d64f54ee705473214d6" category="cell">如果您計畫使用資料代理商的同步關係、包括Google Cloud Storage儲存庫、則應準備Linux主機以進行Google Cloud存取。安裝資料代理程式時、您必須提供具有特定權限的服務帳戶金鑰。</block>
+  <block id="71921838fce69c9d045aeb2ad30c1eb5" category="inline-link">可存取 Google Cloud</block>
+  <block id="9b9b58eacf6390de371391672ac7e8ec" category="cell"><block ref="9b9b58eacf6390de371391672ac7e8ec" category="inline-link-rx"></block></block>
+  <block id="8aa2111995c967fbe71b3943dcfa40e7" category="paragraph">BlueXP 需要兩項服務的 StorageGRID 權限。</block>
+  <block id="857c228cf033cf46c4d3b643ed4db3a6" category="paragraph">稽核服務會記錄 BlueXP 服務所執行作業的相關資訊。這包括工作區、使用的連接器和其他遙測資料。您可以使用此資料來判斷執行的動作、執行者及執行時間。</block>
 </blocks>

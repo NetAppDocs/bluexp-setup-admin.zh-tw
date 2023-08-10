@@ -26,7 +26,7 @@ summary: 瞭解 BlueXP 管理功能的新功能： BlueXP 帳戶、連接器、�
 
 * 您現在可以使用 BlueXP 稽核服務 API 來匯出稽核記錄。
 +
-稽核服務會記錄 BlueXP 服務所執行作業的相關資訊。這包括來源 IP 位址、工作區、使用的連接器和其他遙測資料。您可以使用此資料來判斷執行的動作、執行者及執行時間。
+稽核服務會記錄 BlueXP 服務所執行作業的相關資訊。這包括工作區、使用的連接器和其他遙測資料。您可以使用此資料來判斷執行的動作、執行者及執行時間。
 
 +
 https://docs.netapp.com/us-en/bluexp-automation/audit/overview.html["深入瞭解如何使用稽核服務 API"^]
