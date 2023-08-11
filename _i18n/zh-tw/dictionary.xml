@@ -2231,7 +2231,6 @@
   <block id="6b3a1b41a32e70a38db42e8ec15a6fba" category="list-text">EC2執行個體類型為T3.xLarge。</block>
   <block id="eebb9a8111d1623667243e7e41ed0e71" category="list-text">映像的作業系統為 Ubuntu 22.04 。</block>
   <block id="953e61420be6157aa122dfd3475d4070" category="paragraph">作業系統不含 GUI 。您必須使用終端機來存取系統。</block>
-  <block id="09572768e7bd2d34b2a051ebb8774173" category="list-text">EC2 Linux執行個體的使用者名稱為EC2使用者。</block>
   <block id="efabd80ebdd217a47d9be936e5f0b8aa" category="list-text">預設系統磁碟為 100 GiB gp2 磁碟。</block>
   <block id="b8c4a5bd8ed4eb470e80955a542dd4bf" category="section-title">Azure詳細資料</block>
   <block id="82e44dd5e94a855110f9dea154fed0ed" category="list-text">VM類型為DS3 v2。</block>
@@ -2306,10 +2305,8 @@
   <block id="57b564b7cdbbd6b2996637851363ceb4" category="paragraph"><block ref="57b564b7cdbbd6b2996637851363ceb4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="92ca244e2f6af5665f270d0017a9ee62" category="section-title">連線至Linux VM</block>
   <block id="e55bb4f4a0a85c49aa386bbab887b86f" category="paragraph">如果您需要連線至執行Connector的Linux VM、可以使用雲端供應商提供的連線選項來執行。</block>
-  <block id="cf13d388949fc1d11bc6f3a402d09a9c" category="list-text">在AWS中建立Connector執行個體時、您提供了AWS存取金鑰和秘密金鑰。您可以將此金鑰配對用於執行個體的SSH。</block>
   <block id="7c3610671a51e36a9f66ca2d589e4dcc" category="inline-link">AWS文件：連線至您的Linux執行個體</block>
   <block id="b896b04d3ed40d78b8156bd1e4d04d62" category="paragraph"><block ref="b896b04d3ed40d78b8156bd1e4d04d62" category="inline-link-rx"></block></block>
-  <block id="23e7db7d65e19a89dba9047655e6efd6" category="list-text">在Azure中建立Connector VM時、您選擇使用密碼或SSH公開金鑰進行驗證。使用您選擇的驗證方法來連線至VM。</block>
   <block id="3325909046e4a3d354f7ad1305df7390" category="inline-link">Azure文件：SSH進入VM</block>
   <block id="6021ceed2da20669f44ef94b5804186f" category="paragraph"><block ref="6021ceed2da20669f44ef94b5804186f" category="inline-link-rx"></block></block>
   <block id="fa25ff644bc82c03a613715d969f788d" category="list-text">在Google Cloud中建立Connector時、您無法指定驗證方法。不過、您可以使用Google Cloud Console或Google Cloud CLI（gclCloud）連線至Linux VM執行個體。</block>
@@ -3893,7 +3890,6 @@ Azure 政府地區不需要此端點。</block>
   <block id="8d5c6b0c966cc9b5f51ab3ebb991e7ec" category="inline-link">瞭解如何設定適用於 FSX 的 AWS 認證</block>
   <block id="c52aa019132bc05b5d90dee260d8fb6a" category="cell"><block ref="c52aa019132bc05b5d90dee260d8fb6a" category="inline-link-rx"></block></block>
   <block id="459077578e6bfda6360917f5762cecbd" category="paragraph">BlueXP 需要連接器和個別服務的 Azure 權限。</block>
-  <block id="edf21d7ecb364e8210ddd3dfaeca6fbf" category="section-title">連接器</block>
   <block id="19be7d05557bac8d8c8cdcd69e418046" category="paragraph">如果您是從市場啟動 Connector 、手動安裝 Connector 、或是您需要自行設定自訂角色 <block ref="cc20e8be88e79fa30534d9044d86d641" category="inline-link-macro-rx"></block>。</block>
   <block id="c3cccd9ce135f450a9619b57dba5e5f1" category="cell">在 Azure 中部署資料代理程式</block>
   <block id="05f8fb1bf008e214609328fb34b7e532" category="cell">您用來部署資料代理的 Azure 使用者帳戶必須具有必要的權限。</block>
@@ -3917,4 +3913,7 @@ Azure 政府地區不需要此端點。</block>
   <block id="9b9b58eacf6390de371391672ac7e8ec" category="cell"><block ref="9b9b58eacf6390de371391672ac7e8ec" category="inline-link-rx"></block></block>
   <block id="8aa2111995c967fbe71b3943dcfa40e7" category="paragraph">BlueXP 需要兩項服務的 StorageGRID 權限。</block>
   <block id="857c228cf033cf46c4d3b643ed4db3a6" category="paragraph">稽核服務會記錄 BlueXP 服務所執行作業的相關資訊。這包括工作區、使用的連接器和其他遙測資料。您可以使用此資料來判斷執行的動作、執行者及執行時間。</block>
+  <block id="60c6ee9a22a8a9d78e90e7b6417781b1" category="list-text">EC2 Linux 執行個體的使用者名稱為 Ubuntu （對於在 2023 年 5 月之前建立的 Connectors 、使用者名稱為 EC2-user ）。</block>
+  <block id="2a3be610e29cddb2c56aa61b555b895a" category="list-text">在AWS中建立Connector執行個體時、您提供了AWS存取金鑰和秘密金鑰。您可以將此金鑰配對用於執行個體的SSH。EC2 Linux 執行個體的使用者名稱為 Ubuntu （對於在 2023 年 5 月之前建立的 Connectors 、使用者名稱為 EC2-user ）。</block>
+  <block id="04e4cf5594e5bdae569d4fdcee8b46a6" category="list-text">在 Azure 中建立 Connector VM 時、您指定了使用者名稱、並選擇使用密碼或 SSH 公開金鑰進行驗證。使用您選擇的驗證方法來連線至VM。</block>
 </blocks>
