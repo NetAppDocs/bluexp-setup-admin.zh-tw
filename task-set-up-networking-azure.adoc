@@ -110,13 +110,11 @@ Connector 需要外傳網際網路存取才能連絡下列端點、以便管理�
 
 \https://api.bluexp.netapp.com
 
-\https://api.cloud.netapp.com
-
 \https://*.cloudmanager.cloud.netapp.com
 
 \https://cloudmanager.cloud.netapp.com
 
-\https://netapp-cloud-account.auth0.com/userinfo
+\https://netapp-cloud-account.auth0.com
  a| 
 在BlueXP中提供SaaS功能與服務。
 

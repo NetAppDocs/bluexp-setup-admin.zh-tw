@@ -3564,7 +3564,6 @@ Google Cloud 或中不支援<block ref="5388026a167091fc23180597ac85e174" catego
   <block id="8efb4a247c34c0ca71ba217009352182" category="inline-xref">設定電子郵件通知設定</block>
   <block id="5e703ffd4a02b69f95fc98818e5f3919" category="paragraph">您也可以將 BlueXP 設定為透過電子郵件傳送特定類型的通知、以便即使您未登入系統、也能得知重要的系統活動。您可以將電子郵件傳送給任何屬於 BlueXP 帳戶的使用者、或是任何其他需要注意特定類型系統活動的收件者。瞭解如何操作 <block ref="a148e670707e0255b9681ed2a38729bc" category="inline-xref-macro-rx"></block>。</block>
   <block id="b0689737e83154357ff9ef36053bda4f" category="paragraph">依預設、您會在通知中心看到所有作用中的通知。您可以篩選看到的通知、僅顯示對您很重要的通知。您可以依BlueXP「服務」和通知「類型」進行篩選。</block>
-  <block id="9a4a8fa1cd4f878ff0d3a810b77cddd2" category="list-text">此時、系統會以電子郵件傳送通知、說明下列 BlueXP 功能與服務： Connector 、 BlueXP 複製與同步、 BlueXP 備份與還原、 BlueXP 數位錢包、以及 BlueXP 勒索軟體保護。未來版本將會新增其他服務。</block>
   <block id="2ad68125d72949aee5ac56974ac53849" category="paragraph">您在通知中心中設定的篩選條件並不會決定您將透過電子郵件收到的通知類型。根據預設、BlueXP帳戶管理員會收到所有「重大」和「建議」通知的電子郵件。這些通知涵蓋所有服務、您無法選擇僅接收特定服務的通知、例如 Connectors 或 BlueXP 備份與還原。</block>
   <block id="7fcffcce675dad706dbf53d68f1f86f2" category="paragraph">所有其他使用者和收件者均設定為不接收任何通知電子郵件、因此您需要為任何其他使用者設定通知設定。</block>
   <block id="00fba3f8242dff426927884c6521757a" category="paragraph">新增的功能現在可讓您建立及編輯S3儲存區。<block ref="c4481f66e0558788424eb34d61e736ff" category="inline-link-rx"></block>。</block>
@@ -3850,8 +3849,6 @@ Azure 政府地區不需要此端點。</block>
   <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
-  <block id="25c1d94d9b5ddfa1e59f39dc9cc2a66c" category="paragraph">\https://api.cloud.netapp.com</block>
-  <block id="78429c89c33011bf4e7173ce7e0a7d38" category="paragraph">\https://netapp-cloud-account.auth0.com/userinfo</block>
   <block id="2274fc3b815748857736944118caafcb" category="paragraph">當有新版 Connector 軟體推出時，這些軟體都會發佈至 NetApp 支援網站。 <block ref="6573e3614f2b2c9574b675c6e2dabc80" category="inline-link-macro-rx"></block>。</block>
   <block id="ea472a728fa8ea8a9d957dafbf3b3c56" category="paragraph"><block ref="4bafa1fce0633bbc25f458d6925369da" category="inline-link-macro-rx"></block>。</block>
   <block id="880b965f9cabc8a09dc307835b0c1c44" category="paragraph">如果您的企業已經有帳戶、而您想要加入帳戶、則應關閉BluXP、並請擁有者將您與帳戶建立關聯。擁有者新增您之後、您就可以登入、而且您可以存取該帳戶。 <block ref="221ad62081662624d5ad46e4eb019f63" category="inline-link-macro-rx"></block>。</block>
@@ -3916,4 +3913,6 @@ Azure 政府地區不需要此端點。</block>
   <block id="60c6ee9a22a8a9d78e90e7b6417781b1" category="list-text">EC2 Linux 執行個體的使用者名稱為 Ubuntu （對於在 2023 年 5 月之前建立的 Connectors 、使用者名稱為 EC2-user ）。</block>
   <block id="2a3be610e29cddb2c56aa61b555b895a" category="list-text">在AWS中建立Connector執行個體時、您提供了AWS存取金鑰和秘密金鑰。您可以將此金鑰配對用於執行個體的SSH。EC2 Linux 執行個體的使用者名稱為 Ubuntu （對於在 2023 年 5 月之前建立的 Connectors 、使用者名稱為 EC2-user ）。</block>
   <block id="04e4cf5594e5bdae569d4fdcee8b46a6" category="list-text">在 Azure 中建立 Connector VM 時、您指定了使用者名稱、並選擇使用密碼或 SSH 公開金鑰進行驗證。使用您選擇的驗證方法來連線至VM。</block>
+  <block id="300f031c227ed1b4448a8bb51abec2bb" category="paragraph">\https://netapp-cloud-account.auth0.com</block>
+  <block id="80a43f3cb5826b8218d88da517c1e84b" category="list-text">此時、系統會以電子郵件傳送通知、說明下列 BlueXP 功能與服務： Connector 、 BlueXP 數位錢包、 BlueXP 複本與同步、 BlueXP 備份與還原、 BlueXP 分層、 BlueXP 移轉報告、以及 BlueXP 勒索軟體保護。未來版本將會新增其他服務。</block>
 </blocks>

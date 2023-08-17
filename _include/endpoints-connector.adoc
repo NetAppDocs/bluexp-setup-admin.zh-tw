@@ -61,13 +61,11 @@
 
 \https://api.bluexp.netapp.com
 
-\https://api.cloud.netapp.com
-
 \https://*.cloudmanager.cloud.netapp.com
 
 \https://cloudmanager.cloud.netapp.com
 
-\https://netapp-cloud-account.auth0.com/userinfo
+\https://netapp-cloud-account.auth0.com
 
 | 在 BlueXP 中提供 SaaS 功能與服務。
 
