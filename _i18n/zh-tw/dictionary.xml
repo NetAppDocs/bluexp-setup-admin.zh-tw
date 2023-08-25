@@ -3915,4 +3915,7 @@ Azure 政府地區不需要此端點。</block>
   <block id="04e4cf5594e5bdae569d4fdcee8b46a6" category="list-text">在 Azure 中建立 Connector VM 時、您指定了使用者名稱、並選擇使用密碼或 SSH 公開金鑰進行驗證。使用您選擇的驗證方法來連線至VM。</block>
   <block id="300f031c227ed1b4448a8bb51abec2bb" category="paragraph">\https://netapp-cloud-account.auth0.com</block>
   <block id="80a43f3cb5826b8218d88da517c1e84b" category="list-text">此時、系統會以電子郵件傳送通知、說明下列 BlueXP 功能與服務： Connector 、 BlueXP 數位錢包、 BlueXP 複本與同步、 BlueXP 備份與還原、 BlueXP 分層、 BlueXP 移轉報告、以及 BlueXP 勒索軟體保護。未來版本將會新增其他服務。</block>
+  <block id="8ddd07f4c199accad92d619cc396eaef" category="video-title">從 AWS Marketplace 訂閱 BlueXP</block>
+  <block id="040832c90148c5bba767901a4a55ebe4" category="video-title">從 Azure Marketplace 訂閱 BlueXP</block>
+  <block id="c6e17aa071476599f5e5fc5b8bc42431" category="video-title">從 Google Cloud Marketplace 訂閱 BlueXP</block>
 </blocks>

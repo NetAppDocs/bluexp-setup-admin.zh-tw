@@ -54,7 +54,8 @@ NOTE: 如果貴組織的人員已從您的帳單帳戶訂閱NetApp BlueXP訂閱�
 下列影片顯示從Google Cloud Marketplace訂閱的步驟：
 
 +
-video::video-subscribing-google-cloud.mp4[width=848,height=480]
+.從 Google Cloud Marketplace 訂閱 BlueXP
+video::373b96de-3691-4d84-b3f3-b05101161638[panopto]
 
 
 .. 完成此程序後、請瀏覽至BlueXP中的「認證」頁面、然後選取此新的訂閱。

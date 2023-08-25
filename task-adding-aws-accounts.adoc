@@ -267,7 +267,8 @@ image:screenshot_associate_subscription.png["一組現有認證資料的動作�
 下列影片顯示從 AWS Marketplace 訂閱的步驟：
 
 +
-video::video_subscribing_aws.mp4[width=848,height=480]
+.從 AWS Marketplace 訂閱 BlueXP
+video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 
 
 
