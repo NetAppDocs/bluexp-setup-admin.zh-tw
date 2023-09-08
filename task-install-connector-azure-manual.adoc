@@ -1,0 +1,576 @@
+---
+sidebar: sidebar 
+permalink: task-install-connector-azure-manual.html 
+keywords: install connector, azure connector installation, azure connector, install connector in azure, manual install 
+summary: 若要在您自己的 Linux 主機上手動安裝 Connector 、您必須檢閱主機需求、設定網路、準備 Azure 權限、安裝 Connector 、然後提供您準備的權限。 
+---
+= 在 Azure 中手動安裝 Connector
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+若要在您自己的 Linux 主機上手動安裝 Connector 、您必須檢閱主機需求、設定網路、準備 Azure 權限、安裝 Connector 、然後提供您準備的權限。
+
+.開始之前
+您應該檢閱 link:reference-limitations.html["連接器限制"]。
+
+
+
+== 步驟 1 ：檢閱主機需求
+
+Connector 軟體必須在符合特定作業系統需求、 RAM 需求、連接埠需求等的主機上執行。
+
+專用主機:: 與其他應用程式共用的主機不支援 Connector 。主機必須是專屬主機。
+支援的作業系統::
++
+--
+* Ubuntu 22.04
+* CentOS 7.6、7.7、7.8及7.9
+* Red Hat Enterprise Linux 7.6 、 7.7 、 7.8 和 7.9
++
+主機必須向 Red Hat Subscription Management 登錄。如果主機尚未登錄、則無法在 Connector 安裝期間存取儲存庫來更新所需的協力廠商軟體。
+
++
+這些作業系統的英文版本支援 Connector 。
+
+
+
+--
+Hypervisor:: 需要經認證可執行 Ubuntu 、 CentOS 或 Red Hat Enterprise Linux 的裸機或託管 Hypervisor 。
++
+--
+https://access.redhat.com/certified-hypervisors["Red Hat 解決方案：哪些 Hypervisor 已通過認證、可執行 Red Hat Enterprise Linux ？"^]
+
+--
+CPU:: 4 個核心或 4 個 vCPU
+RAM:: 14 GB
+Azure VM 大小:: 符合上述 CPU 和 RAM 需求的執行個體類型。我們建議使用 DS3 v2 。
+/opt 中的磁碟空間:: 必須有100 GiB的可用空間
+/var.中的磁碟空間:: 必須提供20 GiB的空間
+Docker引擎:: 安裝Connector之前、主機上必須安裝Docker Engine 19.3.1版或更新版本。 https://docs.docker.com/engine/install/["檢視安裝指示"^]
+
+
+
+
+== 步驟 2 ：設定網路
+
+請確定您計畫安裝 Connector 的網路位置支援下列需求。滿足這些需求後、 Connector 便能在混合雲環境中管理資源和程序。
+
+Azure地區:: 如果您使用 Cloud Volumes ONTAP 、 Connector 應部署在與其管理的 Cloud Volumes ONTAP 系統所在的同一個 Azure 區域、或部署在中 https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure區域配對"^] 適用於整個系統。Cloud Volumes ONTAP這項需求可確保Cloud Volumes ONTAP Azure Private Link連線可用於連接至相關的儲存帳戶。
++
+--
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html["瞭Cloud Volumes ONTAP 解如何使用Azure Private Link"^]
+
+--
+
+
+連線至目標網路:: Connector 需要網路連線、才能連線到您計畫建立和管理工作環境的位置。例如、您計畫在內部部署環境中建立 Cloud Volumes ONTAP 系統或儲存系統的網路。
+
+
+傳出網際網路存取:: 您部署 Connector 的網路位置必須具有傳出網際網路連線、才能連絡特定端點。
+
+
+手動安裝期間聯絡的端點:: 當您在自己的 Linux 主機上手動安裝 Connector 時、 Connector 的安裝程式需要在安裝過程中存取下列 URL ：
++
+--
+* \https://support.netapp.com
+* \https://mysupport.netapp.com
+* \https://cloudmanager.cloud.netapp.com/tenancy
+* \https://stream.cloudmanager.cloud.netapp.com
+* \https://production-artifacts.cloudmanager.cloud.netapp.com
+* \https://*.blob.core.windows.net
+* \https://cloudmanagerinfraprod.azurecr.io
++
+主機可能會在安裝期間嘗試更新作業系統套件。主機可聯絡不同的鏡射站台、以取得這些 OS 套件。
+
+
+
+--
+
+
+已從 Connector 聯絡的端點:: Connector 需要外傳網際網路存取才能連絡下列端點、以便管理公有雲環境中的資源和程序、以進行日常營運。
++
+--
+[cols="2a,1a"]
+|===
+| 端點 | 目的 
+
+
+ a| 
+\https://management.azure.com
+\https://login.microsoftonline.com
+\https://blob.core.windows.net
+\https://core.windows.net
+ a| 
+管理Azure公共區域的資源。
+
+
+
+ a| 
+\https://management.chinacloudapi.cn
+\https://login.chinacloudapi.cn
+\https://blob.core.chinacloudapi.cn
+\https://core.chinacloudapi.cn
+ a| 
+管理Azure中國地區的資源。
+
+
+
+ a| 
+\https://support.netapp.com
+ a| 
+以取得授權資訊、並將AutoSupport 資訊傳送給NetApp支援部門。
+
+
+
+ a| 
+\https://*.api.bluexp.netapp.com
+
+\https://api.bluexp.netapp.com
+
+\https://*.cloudmanager.cloud.netapp.com
+
+\https://cloudmanager.cloud.netapp.com
+
+\https://netapp-cloud-account.auth0.com
+ a| 
+在BlueXP中提供SaaS功能與服務。
+
+請注意、 Connector 目前正在聯絡「 cloudmanager.cloud.netapp.com" 」、但在即將推出的版本中、會開始聯絡「 api.bluexp.netapp.com" 」。
+
+
+
+ a| 
+\https://*.blob.core.windows.net
+
+\https://cloudmanagerinfraprod.azurecr.io
+ a| 
+升級Connector及其Docker元件。
+
+|===
+--
+
+
+Proxy伺服器:: 如果您的組織需要為所有傳出的網際網路流量部署 Proxy 伺服器、請取得下列關於 HTTP 或 HTTPS Proxy 的資訊。您必須在安裝期間提供此資訊。
++
+--
+* IP 位址
+* 認證資料
+* HTTPS憑證
+
+
+--
+
+
+連接埠:: 除非您啟動連接器、或使用連接器做為 Proxy 、將 AutoSupport 訊息從 Cloud Volumes ONTAP 傳送至 NetApp 支援、否則不會有傳入的流量傳入連接器。
++
+--
+* HTTP（80）和HTTPS（443）可存取本機UI、在極少數情況下使用。
+* 只有在需要連線至主機進行疑難排解時、才需要SSH（22）。
+* 如果您在無法使用輸出網際網路連線的子網路中部署 Cloud Volumes ONTAP 系統、則需要透過連接埠 3128 進行輸入連線。
++
+如果 Cloud Volumes ONTAP 系統沒有輸出網際網路連線來傳送 AutoSupport 訊息、 BlueXP 會自動將這些系統設定為使用 Connector 隨附的 Proxy 伺服器。唯一的需求是確保連接器的安全群組允許透過連接埠3128進行傳入連線。部署Connector之後、您需要開啟此連接埠。
+
+
+
+--
+
+
+
+
+== 步驟 3 ：設定權限
+
+您必須使用下列其中一個選項、提供 Azure BlueXP 權限：
+
+* 選項 1 ：使用系統指派的託管身分識別、將自訂角色指派給 Azure VM 。
+* 選項 2 ：為 BlueXP 提供具有必要權限的 Azure 服務主體認證。
+
+
+請依照步驟準備 BlueXP 的權限。
+
+[role="tabbed-block"]
+====
+.自訂角色
+--
+請注意、您可以使用 Azure 入口網站、 Azure PowerShell 、 Azure CLI 或 REST API 來建立 Azure 自訂角色。下列步驟說明如何使用 Azure CLI 建立角色。如果您想要使用不同的方法、請參閱 https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Azure文件"^]
+
+.步驟
+. 如果您打算在自己的主機上手動安裝軟體、請在 VM 上啟用系統指派的託管身分識別、以便透過自訂角色提供必要的 Azure 權限。
++
+https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm["Microsoft Azure 文件：使用 Azure 入口網站、在 VM 上設定 Azure 資源的託管身分識別"^]
+
+. 複製的內容 link:reference-permissions-azure.html["Connector的自訂角色權限"] 並將它們儲存在Json檔案中。
+. 將 Azure 訂閱 ID 新增至可指派的範圍、以修改 Json 檔案。
++
+您應該為每個想要搭配 BlueXP 使用的 Azure 訂閱新增 ID 。
+
++
+* 範例 *
+
++
+[source, json]
+----
+"AssignableScopes": [
+"/subscriptions/d333af45-0d07-4154-943d-c25fbzzzzzzz",
+"/subscriptions/54b91999-b3e6-4599-908e-416e0zzzzzzz",
+"/subscriptions/398e471c-3b42-4ae7-9b59-ce5bbzzzzzzz"
+----
+. 使用 Json 檔案在 Azure 中建立自訂角色。
++
+下列步驟說明如何在Azure Cloud Shell中使用Bash建立角色。
+
++
+.. 開始 https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Azure Cloud Shell"^] 並選擇Bash環境。
+.. 上傳Json檔案。
++
+image:screenshot_azure_shell_upload.png["Azure Cloud Shell的快照、您可在其中選擇上傳檔案的選項。"]
+
+.. 使用Azure CLI建立自訂角色：
++
+[source, azurecli]
+----
+az role definition create --role-definition Connector_Policy.json
+----
+
+
+
+
+.結果
+現在您應該有一個名為BlueXP運算子的自訂角色、可以指派給連接器虛擬機器。
+
+--
+.服務主體
+--
+在 Azure Active Directory 中建立及設定服務主體、並取得 BlueXP 所需的 Azure 認證。
+
+.建立 Azure Active Directory 應用程式以進行角色型存取控制
+. 確保您在 Azure 中擁有建立 Active Directory 應用程式及將應用程式指派給角色的權限。
++
+如需詳細資訊、請參閱 https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure 說明文件：必要權限"^]
+
+. 從 Azure 入口網站開啟 * Azure Active Directory * 服務。
++
+image:screenshot_azure_ad.gif["顯示 Microsoft Azure 中的 Active Directory 服務。"]
+
+. 在功能表中、選取 * 應用程式註冊 * 。
+. 選取 * 新登錄 * 。
+. 指定應用程式的詳細資料：
++
+** * 名稱 * ：輸入應用程式的名稱。
+** *帳戶類型*：選取帳戶類型（任何帳戶類型均可用於BlueXP）。
+** *重新導向URI*：您可以將此欄位保留空白。
+
+
+. 選擇*註冊*。
++
+您已建立 AD 應用程式和服務主體。
+
+
+
+.將應用程式指派給角色
+. 建立自訂角色：
++
+請注意、您可以使用 Azure 入口網站、 Azure PowerShell 、 Azure CLI 或 REST API 來建立 Azure 自訂角色。下列步驟說明如何使用 Azure CLI 建立角色。如果您想要使用不同的方法、請參閱 https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Azure文件"^]
+
++
+.. 複製的內容 link:reference-permissions-azure.html["Connector的自訂角色權限"] 並將它們儲存在Json檔案中。
+.. 將 Azure 訂閱 ID 新增至可指派的範圍、以修改 Json 檔案。
++
+您應該為使用者建立 Cloud Volumes ONTAP 的各個 Azure 訂閱新增 ID 。
+
++
+* 範例 *
+
++
+[source, json]
+----
+"AssignableScopes": [
+"/subscriptions/d333af45-0d07-4154-943d-c25fbzzzzzzz",
+"/subscriptions/54b91999-b3e6-4599-908e-416e0zzzzzzz",
+"/subscriptions/398e471c-3b42-4ae7-9b59-ce5bbzzzzzzz"
+----
+.. 使用 Json 檔案在 Azure 中建立自訂角色。
++
+下列步驟說明如何在Azure Cloud Shell中使用Bash建立角色。
+
++
+*** 開始 https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Azure Cloud Shell"^] 並選擇Bash環境。
+*** 上傳Json檔案。
++
+image:screenshot_azure_shell_upload.png["Azure Cloud Shell的快照、您可在其中選擇上傳檔案的選項。"]
+
+*** 使用Azure CLI建立自訂角色：
++
+[source, azurecli]
+----
+az role definition create --role-definition Connector_Policy.json
+----
++
+現在您應該有一個名為BlueXP運算子的自訂角色、可以指派給連接器虛擬機器。
+
+
+
+
+
+. 將應用程式指派給角色：
++
+.. 從 Azure 入口網站開啟 * 訂閱 * 服務。
+.. 選取訂閱。
+.. 選取 * 存取控制（ IAM ） > 新增 > 新增角色指派 * 。
+.. 在 * 角色 * 索引標籤中、選取 * BlueXP 操作員 * 角色、然後選取 * 下一步 * 。
+.. 在「*成員*」索引標籤中、完成下列步驟：
++
+*** 保留*選取「使用者」、「群組」或「服務主體」*。
+*** 選取 * 選取成員 * 。
++
+image:screenshot-azure-service-principal-role.png["Azure入口網站的快照、會在新增角色至應用程式時顯示「成員」索引標籤。"]
+
+*** 搜尋應用程式名稱。
++
+範例如下：
+
++
+image:screenshot_azure_service_principal_role.png["Azure入口網站的快照、顯示Azure入口網站中的「新增角色指派」表單。"]
+
+*** 選取應用程式、然後選取 * 選取 * 。
+*** 選擇*下一步*。
+
+
+.. 選取 * 檢閱 + 指派 * 。
++
+服務主體現在擁有部署Connector所需的Azure權限。
+
++
+如果您想要從 Cloud Volumes ONTAP 多個 Azure 訂閱中部署支援功能、則必須將服務授權對象繫結至每個訂閱項目。BlueXP可讓您選擇部署Cloud Volumes ONTAP 時要使用的訂閱內容。
+
+
+
+
+
+.新增 Windows Azure Service Management API 權限
+. 在 * Azure Active Directory* 服務中、選取 * 應用程式登錄 * 、然後選取應用程式。
+. 選取 * API 權限 > 新增權限 * 。
+. 在「 * Microsoft API* 」下、選取「 * Azure 服務管理 * 」。
++
+image:screenshot_azure_service_mgmt_apis.gif["Azure 入口網站的快照、顯示 Azure 服務管理 API 權限。"]
+
+. 選取 * 以組織使用者身分存取 Azure 服務管理 * 、然後選取 * 新增權限 * 。
++
+image:screenshot_azure_service_mgmt_apis_add.gif["Azure 入口網站的快照、顯示新增 Azure 服務管理 API 。"]
+
+
+
+.取得應用程式的應用程式 ID 和目錄 ID
+. 在 * Azure Active Directory* 服務中、選取 * 應用程式登錄 * 、然後選取應用程式。
+. 複製 * 應用程式（用戶端） ID* 和 * 目錄（租戶） ID* 。
++
+image:screenshot_azure_app_ids.gif["顯示 Azure Active Directory 中應用程式的應用程式（用戶端） ID 和目錄（租戶） ID 的快照。"]
+
++
+將Azure帳戶新增至BlueXP時、您必須提供應用程式的應用程式（用戶端）ID和目錄（租戶）ID。BlueXP使用ID以程式設計方式登入。
+
+
+
+.建立用戶端機密
+. 開啟 * Azure Active Directory * 服務。
+. 選取 * 應用程式註冊 * 、然後選取您的應用程式。
+. 選取 * 「憑證與機密」 > 「新用戶端機密」 * 。
+. 提供機密與持續時間的說明。
+. 選取*「Add*」。
+. 複製用戶端機密的值。
++
+image:screenshot_azure_client_secret.gif["Azure 入口網站的快照、顯示 Azure AD 服務主體的用戶端機密。"]
+
++
+您現在有一個用戶端秘密、 BlueXP 可以用來驗證 Azure AD 。
+
+
+
+.結果
+您的服務主體現在已設定完成、您應該已經複製應用程式（用戶端） ID 、目錄（租戶） ID 、以及用戶端機密的值。新增Azure帳戶時、您必須在BlueXP中輸入此資訊。
+
+--
+====
+
+
+== 步驟 4 ：安裝 Connector
+
+完成先決條件後、您可以在自己的 Linux 主機上手動安裝軟體。
+
+.開始之前
+您應該擁有下列項目：
+
+* 安裝Connector的root權限。
+* Proxy伺服器的詳細資料、如果需要Proxy才能從Connector存取網際網路。
++
+您可以選擇在安裝後設定Proxy伺服器、但需要重新啟動Connector。
+
+* CA 簽署的憑證（如果 Proxy 伺服器使用 HTTPS 或 Proxy 是攔截 Proxy ）。
+* Azure 中 VM 上啟用的託管身分識別、可讓您透過自訂角色提供所需的 Azure 權限。
++
+https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm["Microsoft Azure 文件：使用 Azure 入口網站、在 VM 上設定 Azure 資源的託管身分識別"^]
+
+
+
+.關於這項工作
+NetApp 支援網站上提供的安裝程式可能是舊版。安裝後、如果有新版本可用、 Connector 會自動自行更新。
+
+.步驟
+. 確認已啟用並執行Docker。
++
+[source, cli]
+----
+sudo systemctl enable docker && sudo systemctl start docker
+----
+. 如果主機上已設定_http或_https或proxy_系統變數、請將其移除：
++
+[source, cli]
+----
+unset http_proxy
+unset https_proxy
+----
++
+如果您未移除這些系統變數、安裝將會失敗。
+
+. 從下載Connector軟體 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支援網站"^]，然後將其複製到 Linux 主機。
++
+您應該下載「線上」 Connector 安裝程式、以供您的網路或雲端使用。Connector 有獨立的「離線」安裝程式、但僅支援私有模式部署。
+
+. 指派執行指令碼的權限。
++
+[source, cli]
+----
+chmod +x OnCommandCloudManager-<version>
+----
++
+其中、就是您下載的Connector版本<version> 。
+
+. 執行安裝指令碼。
++
+[source, cli]
+----
+ ./OnCommandCloudManager-<version> --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
+----
++
+-Proxy和--cacert參數是可選的。如果您有Proxy伺服器、則必須輸入所示的參數。安裝程式不會提示您提供Proxy的相關資訊。
+
++
+以下是使用兩個選用參數的命令範例：
+
++
+[source, cli]
+----
+ ./OnCommandCloudManager-V3.9.26 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+----
++
+-Proxy會使用下列其中一種格式、將Connector設定為使用HTTP或HTTPS Proxy伺服器：
+
++
+** \http://address:port
+** \http://username:password@address:port
+** \https://address:port
+** \https://username:password@address:port
++
+使用者必須是本機使用者。不支援網域使用者。
+
+
+
++
+-cacert指定用於連接器與Proxy伺服器之間HTTPS存取的CA簽署憑證。只有當您指定 HTTPS Proxy 伺服器或 Proxy 是攔截 Proxy 時、才需要此參數。
+
+. 等待安裝完成。
++
+安裝結束時、如果您指定Proxy伺服器、Connector服務（occm）會重新啟動兩次。
+
+. 從連線至 Connector 虛擬機器的主機開啟網頁瀏覽器、然後輸入下列 URL ：
++
+https://_ipaddress_[]
+
+. 登入後、設定 Connector ：
++
+.. 指定與 Connector 相關聯的 BlueXP 帳戶。
+.. 輸入系統名稱。
+.. 在 * 您是在安全的環境中執行？ * 保持停用限制模式。
++
+您應該保持停用受限模式、因為這些步驟說明如何在標準模式中使用 BlueXP 。只有當您擁有安全的環境、而且想要中斷此帳戶與 BlueXP 後端服務的連線時、才應啟用受限模式。如果是這樣、 link:task-quick-start-restricted-mode.html["請依照步驟、以受限模式開始使用 BlueXP"]。
+
+.. 選取 * 開始 * 。
+
+
+
+
+.結果
+Connector 現已安裝、並已使用您的 BlueXP 帳戶進行設定。
+
+
+
+== 步驟 5 ：提供 BlueXP 的權限
+
+安裝 Connector 之後、您必須提供 BlueXP 先前設定的 Azure 權限。提供權限可讓 BlueXP 管理 Azure 中的資料和儲存基礎架構。
+
+[role="tabbed-block"]
+====
+.自訂角色
+--
+前往 Azure 入口網站、將 Azure 自訂角色指派給 Connector 虛擬機器、以進行一或多個訂閱。
+
+.步驟
+. 從 Azure Portal 開啟 * Subscriptions * 服務、然後選取您的訂閱。
+. 選取 * 存取控制（ IAM ） * > * 新增 * > * 新增角色指派 * 。
+. 在 * 角色 * 索引標籤中、選取 * BlueXP 操作員 * 角色、然後選取 * 下一步 * 。
++
+
+NOTE: BlueXP運算子是在BlueXP原則中提供的預設名稱。如果您為角色選擇不同的名稱、請改為選取該名稱。
+
+. 在「*成員*」索引標籤中、完成下列步驟：
++
+.. 指派*託管身分識別*的存取權。
+.. 選取 * 選取成員 * 、選取建立 Connector 虛擬機器的訂閱、選擇 * 虛擬機器 * 、然後選取 Connector 虛擬機器。
+.. 選取 * 選取 * 。
+.. 選擇*下一步*。
+.. 選取 * 檢閱 + 指派 * 。
+.. 如果您想要在其他 Azure 訂閱中管理資源、請切換至該訂閱、然後重複這些步驟。
+
+
+
+
+.結果
+BlueXP 現在擁有代表您在 Azure 中執行動作所需的權限。
+
+.接下來呢？
+前往 https://console.bluexp.netapp.com["BlueXP主控台"^] 開始使用Connector with BlueXP。
+
+--
+.服務主體
+--
+.步驟
+. 在 BlueXP 主控台的右上角、選取「設定」圖示、然後選取 * 認證 * 。
++
+image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」圖示的快照。"]
+
+. 選取 * 新增認證 * 、然後依照精靈中的步驟進行。
++
+.. *認證位置*：選擇* Microsoft Azure > Connector*。
+.. *定義認證*：輸入Azure Active Directory服務主體的相關資訊、以授予必要的權限：
++
+*** 應用程式（用戶端）ID
+*** 目錄（租戶）ID
+*** 用戶端機密
+
+
+.. *市場訂閱*：立即訂閱或選取現有的訂閱、以建立Marketplace訂閱與這些認證的關聯。
+.. * 審查 * ：確認新認證的詳細資料、然後選取 * 新增 * 。
+
+
+
+
+.結果
+BlueXP 現在擁有代表您在 Azure 中執行動作所需的權限。
+
+--
+====

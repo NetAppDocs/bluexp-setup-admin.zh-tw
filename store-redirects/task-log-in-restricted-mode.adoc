@@ -1,0 +1,8 @@
+---
+permalink: task-log-in-restricted-mode.html 
+redirect: bluexp-setup-admin/task-logging-in.html 
+---
+= 
+:allow-uri-read: 
+
+

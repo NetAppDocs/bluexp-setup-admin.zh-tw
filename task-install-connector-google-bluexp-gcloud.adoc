@@ -1,0 +1,530 @@
+---
+sidebar: sidebar 
+permalink: task-install-connector-google-bluexp-gcloud.html 
+keywords: install connector, google cloud connector installation, google cloud connector, install connector in google cloud, bluexp, gcloud, create connector, gcp installation, gcp connector 
+summary: 若要從 BlueXP 或使用 gCloud 在 Google Cloud 中建立 Connector 、您必須設定網路、準備 Google Cloud 權限、啟用 Google Cloud API 、然後建立 Connector 。 
+---
+= 從 BlueXP 或 gCloud 在 Google Cloud 中建立 Connector
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+若要從 BlueXP 或使用 gCloud 在 Google Cloud 中建立 Connector 、您必須設定網路、準備 Google Cloud 權限、啟用 Google Cloud API 、然後建立 Connector 。
+
+.開始之前
+您應該檢閱 link:reference-limitations.html["連接器限制"]。
+
+
+
+== 步驟 1 ：設定網路
+
+設定您的網路、讓 Connector 能夠管理混合雲環境中的資源和程序。例如、您需要確保目標網路可以使用連線、而且可以使用輸出網際網路存取。
+
+VPC 和子網路:: 當您建立 Connector 時、您需要指定 Connector 所在的 VPC 和子網路。
+
+
+連線至目標網路:: Connector 需要網路連線、才能連線到您計畫建立和管理工作環境的位置。例如、您計畫在內部部署環境中建立 Cloud Volumes ONTAP 系統或儲存系統的網路。
+
+
+傳出網際網路存取:: 您部署 Connector 的網路位置必須具有傳出網際網路連線、才能連絡特定端點。
+
+
+已從 Connector 聯絡的端點:: Connector 需要外傳網際網路存取才能連絡下列端點、以便管理公有雲環境中的資源和程序、以進行日常營運。
++
+--
+[cols="2a,1a"]
+|===
+| 端點 | 目的 
+
+
+ a| 
+\https://www.googleapis.com/compute/v1/
+\https://compute.googleapis.com/compute/v1
+\https://cloudresourcemanager.googleapis.com/v1/projects
+\https://www.googleapis.com/compute/beta
+\https://storage.googleapis.com/storage/v1
+\https://www.googleapis.com/storage/v1
+\https://iam.googleapis.com/v1
+\https://cloudkms.googleapis.com/v1
+\https://www.googleapis.com/deploymentmanager/v2/projects
+ a| 
+管理Google Cloud中的資源。
+
+
+
+ a| 
+\https://support.netapp.com
+ a| 
+以取得授權資訊、並將AutoSupport 資訊傳送給NetApp支援部門。
+
+
+
+ a| 
+\https://*.api.bluexp.netapp.com
+
+\https://api.bluexp.netapp.com
+
+\https://*.cloudmanager.cloud.netapp.com
+
+\https://cloudmanager.cloud.netapp.com
+
+\https://netapp-cloud-account.auth0.com
+ a| 
+在BlueXP中提供SaaS功能與服務。
+
+請注意、 Connector 目前正在聯絡「 cloudmanager.cloud.netapp.com" 」、但在即將推出的版本中、會開始聯絡「 api.bluexp.netapp.com" 」。
+
+
+
+ a| 
+\https://*.blob.core.windows.net
+
+\https://cloudmanagerinfraprod.azurecr.io
+ a| 
+升級Connector及其Docker元件。
+
+|===
+--
+
+
+從 BlueXP 主控台連絡的端點:: 當您使用透過 SaaS 層提供的 BlueXP 網路型主控台時、它會與多個端點聯絡、以完成資料管理工作。這包括透過 BlueXP 主控台聯絡以部署 Connector 的端點。
++
+--
+link:reference-networking-saas-console.html["檢視從 BlueXP 主控台連絡的端點清單"]。
+
+--
+
+
+Proxy伺服器:: 如果您的組織需要為所有傳出的網際網路流量部署 Proxy 伺服器、請取得下列關於 HTTP 或 HTTPS Proxy 的資訊。您必須在安裝期間提供此資訊。
++
+--
+* IP 位址
+* 認證資料
+* HTTPS憑證
+
+
+--
+
+
+連接埠:: 除非您啟動連接器、或使用連接器做為 Proxy 、將 AutoSupport 訊息從 Cloud Volumes ONTAP 傳送至 NetApp 支援、否則不會有傳入的流量傳入連接器。
++
+--
+* HTTP（80）和HTTPS（443）可存取本機UI、在極少數情況下使用。
+* 只有在需要連線至主機進行疑難排解時、才需要SSH（22）。
+* 如果您在無法使用輸出網際網路連線的子網路中部署 Cloud Volumes ONTAP 系統、則需要透過連接埠 3128 進行輸入連線。
++
+如果 Cloud Volumes ONTAP 系統沒有輸出網際網路連線來傳送 AutoSupport 訊息、 BlueXP 會自動將這些系統設定為使用 Connector 隨附的 Proxy 伺服器。唯一的需求是確保連接器的安全群組允許透過連接埠3128進行傳入連線。部署Connector之後、您需要開啟此連接埠。
+
+
+
+--
+
+
+
+
+== 步驟 2 ：設定建立 Connector 的權限
+
+您必須先為部署 Connector VM 的 Google Cloud 使用者設定權限、才能從 BlueXP 或使用 gCloud 部署 Connector 。
+
+.步驟
+. 在 Google Cloud 中建立自訂角色：
++
+.. 建立包含下列權限的 YAML 檔案：
++
+[source, yaml]
+----
+title: Connector deployment policy
+description: Permissions for the user who deploys the Connector from BlueXP
+stage: GA
+includedPermissions:
+- compute.disks.create
+- compute.disks.get
+- compute.disks.list
+- compute.disks.setLabels
+- compute.disks.use
+- compute.firewalls.create
+- compute.firewalls.delete
+- compute.firewalls.get
+- compute.firewalls.list
+- compute.globalOperations.get
+- compute.images.get
+- compute.images.getFromFamily
+- compute.images.list
+- compute.images.useReadOnly
+- compute.instances.attachDisk
+- compute.instances.create
+- compute.instances.get
+- compute.instances.list
+- compute.instances.setDeletionProtection
+- compute.instances.setLabels
+- compute.instances.setMachineType
+- compute.instances.setMetadata
+- compute.instances.setTags
+- compute.instances.start
+- compute.instances.updateDisplayDevice
+- compute.machineTypes.get
+- compute.networks.get
+- compute.networks.list
+- compute.networks.updatePolicy
+- compute.projects.get
+- compute.regions.get
+- compute.regions.list
+- compute.subnetworks.get
+- compute.subnetworks.list
+- compute.zoneOperations.get
+- compute.zones.get
+- compute.zones.list
+- deploymentmanager.compositeTypes.get
+- deploymentmanager.compositeTypes.list
+- deploymentmanager.deployments.create
+- deploymentmanager.deployments.delete
+- deploymentmanager.deployments.get
+- deploymentmanager.deployments.list
+- deploymentmanager.manifests.get
+- deploymentmanager.manifests.list
+- deploymentmanager.operations.get
+- deploymentmanager.operations.list
+- deploymentmanager.resources.get
+- deploymentmanager.resources.list
+- deploymentmanager.typeProviders.get
+- deploymentmanager.typeProviders.list
+- deploymentmanager.types.get
+- deploymentmanager.types.list
+- resourcemanager.projects.get
+- compute.instances.setServiceAccount
+- iam.serviceAccounts.list
+----
+.. 從 Google Cloud 啟動 Cloud Shell 。
+.. 上傳包含必要權限的 YAML 檔案。
+.. 使用建立自訂角色 `gcloud iam roles create` 命令。
++
+以下範例在專案層級建立名為「 connectorDeployment 」的角色：
+
++
+gCloud iam 角色會建立 connectorDeployment --project=MyProject --file=connector-deployment.yaml
+
++
+https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Google Cloud 文件：建立及管理自訂角色"^]
+
+
+
+. 將此自訂角色指派給將從 BlueXP 或使用 gCloud 部署 Connector 的使用者。
++
+https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role["Google Cloud 文件：授予單一角色"^]
+
+
+
+.結果
+Google Cloud使用者現在擁有建立Connector所需的權限。
+
+
+
+== 步驟 3 ：設定 Connector 的權限
+
+需要 Google Cloud 服務帳戶、才能為 Connector 提供 BlueXP 在 Google Cloud 中管理資源所需的權限。建立 Connector 時、您需要將此服務帳戶與 Connector VM 建立關聯。
+
+.步驟
+. 在 Google Cloud 中建立自訂角色：
++
+.. 建立包含的內容的 YAML 檔案 link:reference-permissions-gcp.html["Connector 的服務帳戶權限"]。
+.. 從 Google Cloud 啟動 Cloud Shell 。
+.. 上傳包含必要權限的 YAML 檔案。
+.. 使用建立自訂角色 `gcloud iam roles create` 命令。
++
+以下範例在專案層級建立名為「 Connector 」的角色：
+
++
+`gcloud iam roles create connector --project=myproject --file=connector.yaml`
+
++
+https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Google Cloud 文件：建立及管理自訂角色"^]
+
+
+
+. 在 Google Cloud 中建立服務帳戶、並將角色指派給服務帳戶：
++
+.. 從 IAM & Admin 服務中、選取 * 服務帳戶 > 建立服務帳戶 * 。
+.. 輸入服務帳戶詳細資料、然後選取 * 建立並繼續 * 。
+.. 選取您剛建立的角色。
+.. 完成剩餘步驟以建立角色。
++
+https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account["Google Cloud 文件：建立服務帳戶"^]
+
+
+
+. 如果您計畫在Cloud Volumes ONTAP Connector所在專案的不同專案中部署支援功能、則需要提供Connector的服務帳戶、以便存取這些專案。
++
+例如、假設Connector在專案1中、您想在Cloud Volumes ONTAP 專案2中建立一套支援系統。您必須在專案2中授予服務帳戶存取權。
+
++
+.. 從 IAM & Admin 服務中、選取您要建立 Cloud Volumes ONTAP 系統的 Google Cloud 專案。
+.. 在「* IAM *」頁面上、選取「*授予存取權*」、並提供所需的詳細資料。
++
+*** 輸入Connector服務帳戶的電子郵件。
+*** 選取Connector的自訂角色。
+*** 選擇*保存*。
+
+
+
+
++
+如需詳細資料、請參閱 https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role["Google Cloud文件"^]
+
+
+
+.結果
+已設定Connector VM的服務帳戶。
+
+
+
+== 步驟 4 ：設定共用 VPC 權限
+
+如果您使用共享 VPC 將資源部署到服務專案中、則需要準備權限。
+
+此表供參考、當IAM組態完成時、您的環境應反映權限表。
+
+.檢視共享的 VPC 權限
+[%collapsible]
+====
+[cols="10,10,10,18,18,34"]
+|===
+| 身分識別 | 建立者 | 裝載於 | 服務專案權限 | 主機專案權限 | 目的 
+
+
+| Google 帳戶以部署 Connector | 自訂 | 服務專案  a| 
+link:task-install-connector-google-bluexp-gcloud.html#step-2-set-up-permissions-to-create-the-connector["Connector 部署原則"]
+ a| 
+compute.networkUser
+| 在服務專案中部署Connector 
+
+
+| 連接器服務帳戶 | 自訂 | 服務專案  a| 
+link:reference-permissions-gcp.html["Connector 服務帳戶原則"]
+| compute.networkUser
+
+部署manager.manager | 在Cloud Volumes ONTAP 服務專案中部署及維護功能與服務 
+
+
+| 服務帳戶Cloud Volumes ONTAP | 自訂 | 服務專案 | 儲存設備管理
+
+成員：serviceAccount.user的BlueXP服務帳戶 | 不適用 | （選用）用於資料分層和 BlueXP 備份與還原 
+
+
+| Google API服務代理程式 | Google Cloud | 服務專案  a| 
+（預設）編輯器
+ a| 
+compute.networkUser
+| 代表部署與Google Cloud API互動。允許BlueXP使用共享網路。 
+
+
+| Google Compute Engine預設服務帳戶 | Google Cloud | 服務專案  a| 
+（預設）編輯器
+ a| 
+compute.networkUser
+| 代表部署部署部署部署Google Cloud執行個體和運算基礎架構。允許BlueXP使用共享網路。 
+|===
+附註：
+
+. 只有當您未將防火牆規則傳遞給部署、並選擇讓BlueXP為您建立時、才需要在主機專案中部署manager.manager。如果未指定任何規則、則BlueXP會在主機專案中建立包含VPC0防火牆規則的部署。
+. 只有當您未將防火牆規則傳遞至部署、並選擇讓BlueXP為您建立防火牆規則時、才需要使用Firewall.create和firewall.delete。這些權限位於BlueXP帳戶.yaml檔案中。如果您使用共用VPC部署HA配對、這些權限將用於建立VPC1、2和3的防火牆規則。對於所有其他部署、這些權限也會用於建立VPC0的規則。
+. 對於資料分層、分層服務帳戶必須在服務帳戶上具有serviceAccount.user角色、而不只是在專案層級。目前、如果您在專案層級指派serviceAccount.user、則當您使用getIAMPolicy查詢服務帳戶時、不會顯示權限。
+
+
+====
+
+
+== 步驟 5 ：啟用 Google Cloud API
+
+您必須先啟用數個 Google Cloud API 、才能在 Google Cloud 中部署 Connector 和 Cloud Volumes ONTAP 。
+
+.步驟
+. 在專案中啟用下列 Google Cloud API ：
++
+** Cloud Deployment Manager V2 API
+** 雲端記錄 API
+** Cloud Resource Manager API
+** 運算引擎 API
+** 身分識別與存取管理（ IAM ） API
+** 雲端金鑰管理服務（ KMS ） API
++
+（僅當您打算使用 BlueXP 備份與還原搭配客戶管理的加密金鑰（ CMEK ）時才需要）
+
+
+
+
+
+https://cloud.google.com/apis/docs/getting-started#enabling_apis["Google Cloud 文件：啟用 API"^]
+
+
+
+== 步驟 6 ：建立 Connector
+
+直接從 BlueXP 網路型主控台或使用 gCloud 建立 Connector 。
+
+.關於這項工作
+建立 Connector 會使用預設組態、在 Google Cloud 中部署虛擬機器執行個體。 link:reference-connector-default-config.html["瞭解連接器的預設組態"]。
+
+[role="tabbed-block"]
+====
+.藍圖
+--
+.開始之前
+您應該擁有下列項目：
+
+* 建立 Connector 和 Connector VM 服務帳戶所需的 Google Cloud 權限。
+* 符合網路需求的 VPC 和子網路。
+* Proxy伺服器的詳細資料、如果需要Proxy才能從Connector存取網際網路。
+
+
+.步驟
+. 選取 * Connector * 下拉式清單、然後選取 * 新增 Connector * 。
++
+image:screenshot_connector_add.gif["螢幕擷取畫面、會在標題和「新增連接器」動作中顯示「連接器」圖示。"]
+
+. 選擇 * Google Cloud Platform * 做為雲端供應商。
+. 在「*部署連接器*」頁面上、檢閱您需要的詳細資料。您有兩種選擇：
++
+.. 選擇 * 繼續 * 、使用產品內建指南準備部署。產品內建指南中的每個步驟都包含文件本頁所含的資訊。
+.. 如果您已按照本頁的步驟做好準備、請選取 * 跳至部署 * 。
+
+
+. 依照精靈中的步驟建立連接器：
++
+** 如果出現提示、請登入您的 Google 帳戶、該帳戶應有建立虛擬機器執行個體所需的權限。
++
+這份表單由 Google 擁有及託管。您的認證資料不會提供給 NetApp 。
+
+** *詳細資料*：輸入虛擬機器執行個體的名稱、指定標籤、選取專案、然後選取具有必要權限的服務帳戶（詳細資料請參閱上節）。
+** * 位置 * ：指定執行個體的區域、區域、 VPC 和子網路。
+** * 網路 * ：選擇是否啟用公用 IP 位址、並選擇性地指定 Proxy 組態。
+** * 防火牆原則 * ：選擇是否要建立新的防火牆原則，或是選擇允許所需輸入和輸出規則的現有防火牆原則。
++
+link:reference-ports-gcp.html["Google Cloud中的防火牆規則"]
+
+** *審查*：請檢閱您的選擇、確認您的設定正確無誤。
+
+
+. 選取*「Add*」。
++
+執行個體應在 7 分鐘內就緒。您應該留在頁面上、直到程序完成為止。
+
+
+
+.結果
+程序完成後、即可從 BlueXP 使用 Connector 。
+
+--
+.gCloud
+--
+.開始之前
+您應該擁有下列項目：
+
+* 建立 Connector 和 Connector VM 服務帳戶所需的 Google Cloud 權限。
+* 符合網路需求的 VPC 和子網路。
+* 瞭解 VM 執行個體需求。
++
+** * CPU* ： 4 核心或 4 個 vCPU
+** * RAM* ： 14 GB
+** * 機器類型 * ：建議使用 n2-Standard-4 。
++
+在支援 Shieled VM 功能的 VM 執行個體上、 Google Cloud 支援 Connector 。
+
+
+
+
+
+.步驟
+. 使用您偏好的方法登入gCloud SDK。
++
+在我們的範例中、我們會使用已安裝gCloud SDK的本機Shell、但您可以在Google Cloud主控台使用原生Google Cloud Shell。
+
++
+如需Google Cloud SDK的詳細資訊、請參閱 link:https://cloud.google.com/sdk["Google Cloud SDK文件頁面"^]。
+
+. 請確認您以具有上述區段所定義之必要權限的使用者身分登入：
++
+[source, bash]
+----
+gcloud auth list
+----
++
+輸出應顯示下列項目、其中*使用者帳戶是所需的使用者帳戶、以下列身分登入：
+
++
+[listing]
+----
+Credentialed Accounts
+ACTIVE  ACCOUNT
+     some_user_account@domain.com
+*    desired_user_account@domain.com
+To set the active account, run:
+ $ gcloud config set account `ACCOUNT`
+Updates are available for some Cloud SDK components. To install them,
+please run:
+$ gcloud components update
+----
+. 執行 `gcloud compute instances create` 命令：
++
+[source, bash]
+----
+gcloud compute instances create <instance-name>
+  --machine-type=n2-standard-4
+  --image-project=netapp-cloudmanager
+  --image-family=cloudmanager
+  --scopes=cloud-platform
+  --project=<project>
+  --service-account=<service-account>
+  --zone=<zone>
+  --no-address
+  --tags <network-tag>
+  --network <network-path>
+  --subnet <subnet-path>
+  --boot-disk-kms-key <kms-key-path>
+----
++
+執行個體名稱:: VM執行個體所需的執行個體名稱。
+專案:: （選用）您要部署VM的專案。
+服務帳戶:: 步驟2輸出中指定的服務帳戶。
+區域:: 您要部署VM的區域
+無位址:: （選用）不使用外部IP位址（您需要雲端NAT或Proxy才能將流量路由至公有網際網路）
+網路標籤:: （選用）新增網路標記、使用標記將防火牆規則連結至連接器執行個體
+網路路徑:: （選用）新增要部署連接器的網路名稱（若為共享VPC、您需要完整路徑）
+子網路路徑:: （選用）新增要部署連接器的子網路名稱（對於共享VPC、您需要完整路徑）
+kms-key-path:: （選用）新增KMS金鑰以加密連接器的磁碟（也需要套用IAM權限）
++
+--
+如需這些旗標的詳細資訊、請參閱 link:https://cloud.google.com/sdk/gcloud/reference/compute/instances/create["Google Cloud Compute SDK文件"^]。
+
+--
+
+
++
+執行命令會使用NetApp黃金映像部署Connector。Connector 執行個體和軟體應在大約五分鐘內執行。
+
+. 從連線至 Connector 執行個體的主機開啟網頁瀏覽器、然後輸入下列 URL ：
++
+https://_ipaddress_[]
+
+. 登入後、設定 Connector ：
++
+.. 指定與 Connector 相關聯的 BlueXP 帳戶。
++
+link:concept-netapp-accounts.html["瞭解 BlueXP 帳戶"]。
+
+.. 輸入系統名稱。
+
+
+
+
+.結果
+Connector 現在已安裝、並使用您的 BlueXP 帳戶進行設定。
+
+開啟網頁瀏覽器、前往 https://console.bluexp.netapp.com["BlueXP主控台"^] 開始使用Connector with BlueXP。
+
+--
+====

@@ -1,0 +1,8 @@
+---
+permalink: reference-host-requirements-azure.html 
+redirect: bluexp-setup-admin/task-install-connector-azure-manual.html 
+---
+= 
+:allow-uri-read: 
+
+

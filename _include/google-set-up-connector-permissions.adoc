@@ -1,0 +1,57 @@
+= 
+:allow-uri-read: 
+
+
+需要 Google Cloud 服務帳戶、才能為 Connector 提供 BlueXP 在 Google Cloud 中管理資源所需的權限。建立 Connector 時、您需要將此服務帳戶與 Connector VM 建立關聯。
+
+.步驟
+. 在 Google Cloud 中建立自訂角色：
++
+.. 建立包含的內容的 YAML 檔案 link:reference-permissions-gcp.html["Connector 的服務帳戶權限"]。
+.. 從 Google Cloud 啟動 Cloud Shell 。
+.. 上傳包含必要權限的 YAML 檔案。
+.. 使用建立自訂角色 `gcloud iam roles create` 命令。
++
+以下範例在專案層級建立名為「 Connector 」的角色：
+
++
+`gcloud iam roles create connector --project=myproject --file=connector.yaml`
+
++
+https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Google Cloud 文件：建立及管理自訂角色"^]
+
+
+
+. 在 Google Cloud 中建立服務帳戶、並將角色指派給服務帳戶：
++
+.. 從 IAM & Admin 服務中、選取 * 服務帳戶 > 建立服務帳戶 * 。
+.. 輸入服務帳戶詳細資料、然後選取 * 建立並繼續 * 。
+.. 選取您剛建立的角色。
+.. 完成剩餘步驟以建立角色。
++
+https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account["Google Cloud 文件：建立服務帳戶"^]
+
+
+
+. 如果您計畫在Cloud Volumes ONTAP Connector所在專案的不同專案中部署支援功能、則需要提供Connector的服務帳戶、以便存取這些專案。
++
+例如、假設Connector在專案1中、您想在Cloud Volumes ONTAP 專案2中建立一套支援系統。您必須在專案2中授予服務帳戶存取權。
+
++
+.. 從 IAM & Admin 服務中、選取您要建立 Cloud Volumes ONTAP 系統的 Google Cloud 專案。
+.. 在「* IAM *」頁面上、選取「*授予存取權*」、並提供所需的詳細資料。
++
+*** 輸入Connector服務帳戶的電子郵件。
+*** 選取Connector的自訂角色。
+*** 選擇*保存*。
+
+
+
+
++
+如需詳細資料、請參閱 https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role["Google Cloud文件"^]
+
+
+
+.結果
+已設定Connector VM的服務帳戶。

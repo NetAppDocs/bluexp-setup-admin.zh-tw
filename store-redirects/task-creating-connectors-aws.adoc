@@ -1,6 +1,6 @@
 ---
 permalink: task-creating-connectors-aws.html 
-redirect: bluexp-setup-admin/task-quick-start-connector-aws.html 
+redirect: bluexp-setup-admin/concept-install-options-aws.html 
 ---
 = 
 :allow-uri-read: 

@@ -176,7 +176,7 @@ image:screenshot_accounts_switch_aws.png["螢幕快照、顯示在「詳細資�
 ** 建立包含建立Connector所需權限的原則。
 +
 *** https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["檢視FSXfor ONTAP Sfor Sf哪些 權限"^]
-*** link:task-set-up-permissions-aws.html["檢視Connector部署原則"]
+*** link:task-install-connector-aws-bluexp.html#step-2-set-up-aws-permissions["檢視Connector部署原則"]
 
 
 

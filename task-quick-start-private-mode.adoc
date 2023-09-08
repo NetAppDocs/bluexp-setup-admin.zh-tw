@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-quick-start-private-mode.html 
 keywords: private mode quick start, quick start 
-summary: 以私有模式開始使用 BlueXP 只需幾個步驟。 
+summary: 準備您的環境並部署 Connector 、以私有模式開始使用 BlueXP 。 
 ---
-= 以私有模式快速啟動 BlueXP
+= 入門工作流程（私有模式）
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,22 +16,18 @@ summary: 以私有模式開始使用 BlueXP 只需幾個步驟。
 [role="lead"]
 準備您的環境並部署 Connector 、以私有模式開始使用 BlueXP 。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] 準備部署
+開始之前、您應該先瞭解 link:concept-netapp-accounts.html["BlueXP 帳戶"]、 link:concept-connectors.html["連接器"]和 link:concept-modes.html["部署模式"]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] link:task-prepare-private-mode.html["準備部署"]
 [role="quick-margin-list"]
 . 準備符合 CPU 、 RAM 、磁碟空間、 Docker Engine 等需求的專用 Linux 主機。
 . 設定可存取目標網路的網路。
 . 對於雲端部署、請在雲端供應商中設定權限、以便在安裝軟體之後、將這些權限與 Connector 建立關聯。
 
 
-[role="quick-margin-para"]
-link:task-prepare-private-mode.html["瞭解如何準備部署"]。
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 部署 Connector
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] link:task-install-private-mode.html["部署 Connector"]
 [role="quick-margin-list"]
 . 在您自己的 Linux 主機上安裝 Connector 軟體。
 . 開啟網頁瀏覽器並輸入 Linux 主機的 IP 位址、即可設定 BlueXP 。
 . 對於雲端部署、請提供 BlueXP 先前設定的權限。
 
-
-[role="quick-margin-para"]
-link:task-install-private-mode.html["瞭解如何部署 Connector"]。

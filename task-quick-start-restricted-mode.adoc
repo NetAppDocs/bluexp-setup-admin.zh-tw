@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-quick-start-restricted-mode.html 
 keywords: quick start, restricted mode quick start 
-summary: 以受限模式開始使用 BlueXP 只需幾個步驟。 
+summary: 準備您的環境、部署 Connector 及訂閱 BlueXP 、以受限模式開始使用 BlueXP 。 
 ---
-= 以受限模式快速啟動 BlueXP
+= 入門工作流程（受限模式）
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,29 +16,22 @@ summary: 以受限模式開始使用 BlueXP 只需幾個步驟。
 [role="lead"]
 準備您的環境、部署 Connector 及訂閱 BlueXP 、以受限模式開始使用 BlueXP 。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] 準備部署
+開始之前、您應該先瞭解 link:concept-netapp-accounts.html["BlueXP 帳戶"]、 link:concept-connectors.html["連接器"]和 link:concept-modes.html["部署模式"]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] link:task-prepare-restricted-mode.html["準備部署"]
 [role="quick-margin-list"]
 . 準備符合 CPU 、 RAM 、磁碟空間、 Docker Engine 等需求的專用 Linux 主機。
 . 設定網路以提供目標網路的存取、手動安裝的輸出網際網路存取、以及用於日常存取的輸出網際網路。
 . 在雲端供應商中設定權限、以便在部署這些權限之後、將其與 Connector 執行個體建立關聯。
 
 
-[role="quick-margin-para"]
-link:task-prepare-restricted-mode.html["瞭解如何準備部署"]。
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 部署 Connector
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] link:task-install-restricted-mode.html["部署 Connector"]
 [role="quick-margin-list"]
 . 從雲端供應商的市場安裝 Connector 、或是在您自己的 Linux 主機上手動安裝軟體。
 . 開啟網頁瀏覽器並輸入 Linux 主機的 IP 位址、即可設定 BlueXP 。
 . 提供 BlueXP 先前設定的權限。
 
 
-[role="quick-margin-para"]
-link:task-install-restricted-mode.html["瞭解如何部署 Connector"]。
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 訂閱 BlueXP
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] link:task-subscribe-restricted-mode.html["訂閱 BlueXP"]
 [role="quick-margin-para"]
 從雲端供應商的市場訂閱 BlueXP 、即可按每小時費率（ PAYGO ）或透過年度合約支付 BlueXP 服務費用。
-
-[role="quick-margin-para"]
-link:task-subscribe-restricted-mode.html["瞭解如何訂閱 BlueXP"]。

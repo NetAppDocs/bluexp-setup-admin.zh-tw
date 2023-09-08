@@ -1,0 +1,8 @@
+---
+permalink: task-enable-apis-google.html 
+redirect: bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html 
+---
+= 
+:allow-uri-read: 
+
+

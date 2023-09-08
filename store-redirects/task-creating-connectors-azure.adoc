@@ -1,6 +1,6 @@
 ---
 permalink: task-creating-connectors-azure.html 
-redirect: bluexp-setup-admin/task-quick-start-connector-azure.html 
+redirect: bluexp-setup-admin/concept-install-options-azure.html 
 ---
 = 
 :allow-uri-read: 

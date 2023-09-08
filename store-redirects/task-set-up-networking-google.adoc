@@ -1,0 +1,8 @@
+---
+permalink: task-set-up-networking-google.html 
+redirect: bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html 
+---
+= 
+:allow-uri-read: 
+
+

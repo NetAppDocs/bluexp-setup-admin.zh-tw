@@ -1,0 +1,8 @@
+---
+permalink: task-quick-start-connector-on-prem.html 
+redirect: bluexp-setup-admin/task-install-connector-on-prem.html 
+---
+= 
+:allow-uri-read: 
+
+

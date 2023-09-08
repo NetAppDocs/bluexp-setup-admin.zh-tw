@@ -16,7 +16,7 @@ summary: BlueXP 可從網路型主控台存取。當您開始使用 BlueXP 時�
 [role="lead"]
 BlueXP 可從網路型主控台存取。當您開始使用 BlueXP 時、您的第一步是使用現有的 NetApp 支援網站 認證或建立 NetApp 雲端登入。
 
-.註冊選項
+.關於這項工作
 您可以使用下列其中一個選項註冊至BlueXP：
 
 * 您現有NetApp 支援網站 的功能驗證（NSS）認證

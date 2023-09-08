@@ -18,7 +18,7 @@ summary: 以私有模式部署 Connector 、讓您可以使用 BlueXP 、而不�
 
 
 
-== 安裝Connector
+== 步驟 1 ：安裝 Connector
 
 從 NetApp 支援網站 下載產品安裝程式、然後在您自己的 Linux 主機上手動安裝 Connector 。
 
@@ -64,7 +64,7 @@ sudo /path/cloud-manager-connector-offline-<version>
 
 
 
-== 設定 BlueXP
+== 步驟 2 ：設定 BlueXP
 
 第一次存取 BlueXP 主控台時、系統會提示您設定 BlueXP 。
 
@@ -102,11 +102,11 @@ image:screenshot-onprem-darksite-details.png["系統詳細資料頁面的快照�
 
 
 
-== 提供 BlueXP 的權限
+== 步驟 3 ：提供 BlueXP 的權限
 
 如果您想要建立 Cloud Volumes ONTAP 工作環境、您必須提供 BlueXP 先前設定的雲端權限。
 
-link:task-prepare-private-mode.html#prepare-cloud-permissions["瞭解如何準備雲端權限"]。
+link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["瞭解如何準備雲端權限"]。
 
 [role="tabbed-block"]
 ====

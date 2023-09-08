@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-install-options-google.html 
 keywords: install connector google cloud, google cloud install connector, connector google cloud, google cloud connector, install connector gcp, gcp install connector, connector gcp, gcp connector, installation options, manual install 
-summary: 在 Google Cloud 中建立 Connector 有幾種不同的方法。直接從 BlueXP 開始是最常見的方法。您選擇的安裝選項會決定您準備部署的方式。 
+summary: 在 Google Cloud 中建立 Connector 有幾種不同的方法。直接從 BlueXP 開始是最常見的方法。 
 ---
 = Google Cloud 中的 Connector 安裝選項
 :hardbreaks:
@@ -14,21 +14,19 @@ summary: 在 Google Cloud 中建立 Connector 有幾種不同的方法。直接�
 
 
 [role="lead"]
-在 Google Cloud 中建立 Connector 有幾種不同的方法。直接從 BlueXP 開始是最常見的方法。您選擇的安裝選項會決定您準備部署的方式。
+在 Google Cloud 中建立 Connector 有幾種不同的方法。直接從 BlueXP 開始是最常見的方法。
 
 提供下列安裝選項：
 
-* 直接從 BlueXP 建立 Connector （這是標準選項）
+* link:task-install-connector-google-bluexp-gcloud.html["直接從 BlueXP 建立 Connector"] （這是標準選項）
 +
 此動作會在您選擇的 VPC 中啟動執行 Linux 的 VM 執行個體和 Connector 軟體。
 
-* 使用 gCloud 建立 Connector
+* link:task-install-connector-google-bluexp-gcloud.html["使用 gCloud 建立 Connector"]
 +
-此動作也會啟動執行 Linux 和 Connector 軟體的 VM 執行個體。
+此動作也會啟動執行 Linux 和 Connector 軟體的 VM 執行個體、但部署是直接從 Google Cloud 啟動、而非從 BlueXP 啟動。
 
-* 在您自己的 Linux 主機上下載並手動安裝軟體
+* link:task-install-connector-google-manual.html["在您自己的 Linux 主機上下載並手動安裝軟體"]
 
 
 您選擇的安裝選項會影響您準備安裝的方式。其中包括如何為 BlueXP 提供必要的權限、讓它能夠在 Google Cloud 中驗證及管理資源。
-
-link:task-install-connector-google.html["瞭解如何在 Google Cloud 中安裝 Connector"]。

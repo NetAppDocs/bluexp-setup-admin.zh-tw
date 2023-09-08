@@ -1,0 +1,8 @@
+---
+permalink: task-provide-permissions-azure.html 
+redirect: bluexp-setup-admin/task-install-connector-azure-marketplace.html 
+---
+= 
+:allow-uri-read: 
+
+

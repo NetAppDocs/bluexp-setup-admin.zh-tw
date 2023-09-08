@@ -1,0 +1,71 @@
+= 
+:allow-uri-read: 
+
+
+專用主機:: 與其他應用程式共用的主機不支援 Connector 。主機必須是專屬主機。
+
+
+VPC 和子網路:: 當您建立 Connector 時、您需要指定 Connector 所在的 VPC 和子網路。
+
+
+vnet 和子網路:: 建立 Connector 時、您需要指定 Connector 應位於的 vnet 和子網路。
+
+
+連線至目標網路:: Connector 需要網路連線、才能連線到您計畫建立和管理工作環境的位置。例如、您計畫在內部部署環境中建立 Cloud Volumes ONTAP 系統或儲存系統的網路。
+
+
+傳出網際網路存取:: 您部署 Connector 的網路位置必須具有傳出網際網路連線、才能連絡特定端點。
+
+
+從 BlueXP 主控台連絡的端點:: 當您使用透過 SaaS 層提供的 BlueXP 網路型主控台時、它會與多個端點聯絡、以完成資料管理工作。這包括透過 BlueXP 主控台聯絡以部署 Connector 的端點。
++
+--
+link:reference-networking-saas-console.html["檢視從 BlueXP 主控台連絡的端點清單"]。
+
+--
+
+
+Azure地區:: 如果您使用 Cloud Volumes ONTAP 、 Connector 應部署在與其管理的 Cloud Volumes ONTAP 系統所在的同一個 Azure 區域、或部署在中 https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure區域配對"^] 適用於整個系統。Cloud Volumes ONTAP這項需求可確保Cloud Volumes ONTAP Azure Private Link連線可用於連接至相關的儲存帳戶。
++
+--
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html["瞭Cloud Volumes ONTAP 解如何使用Azure Private Link"^]
+
+--
+
+
+連接埠:: 除非您啟動連接器、或使用連接器做為 Proxy 、將 AutoSupport 訊息從 Cloud Volumes ONTAP 傳送至 NetApp 支援、否則不會有傳入的流量傳入連接器。
++
+--
+* HTTP（80）和HTTPS（443）可存取本機UI、在極少數情況下使用。
+* 只有在需要連線至主機進行疑難排解時、才需要SSH（22）。
+* 如果您在無法使用輸出網際網路連線的子網路中部署 Cloud Volumes ONTAP 系統、則需要透過連接埠 3128 進行輸入連線。
++
+如果 Cloud Volumes ONTAP 系統沒有輸出網際網路連線來傳送 AutoSupport 訊息、 BlueXP 會自動將這些系統設定為使用 Connector 隨附的 Proxy 伺服器。唯一的需求是確保連接器的安全群組允許透過連接埠3128進行傳入連線。部署Connector之後、您需要開啟此連接埠。
+
+
+
+--
+
+
+Proxy伺服器:: 如果您的組織需要為所有傳出的網際網路流量部署 Proxy 伺服器、請取得下列關於 HTTP 或 HTTPS Proxy 的資訊。您必須在安裝期間提供此資訊。
++
+--
+* IP 位址
+* 認證資料
+* HTTPS憑證
+
+
+--
+
+
+Azure 中的公有 IP 位址:: 如果您想在 Azure 中的 Connector VM 使用公有 IP 位址、則 IP 位址必須使用基本 SKU 、以確保 BlueXP 使用此公有 IP 位址。
++
+--
+image:screenshot-azure-sku.png["在 Azure 中建立新 IP 位址的螢幕擷取畫面、可讓您在 SKU 欄位中選擇「基本」。"]
+
+如果您改用標準 SKU IP 位址、則 BlueXP 會使用 Connector 的 _private IP 位址、而非公有 IP 。如果您用來存取 BlueXP 主控台的機器無法存取該私有 IP 位址、則 BlueXP 主控台的動作將會失敗。
+
+https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses#sku["Azure 文件：公有 IP SKU"^]
+
+--
+

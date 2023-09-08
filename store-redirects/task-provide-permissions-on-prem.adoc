@@ -1,0 +1,8 @@
+---
+permalink: task-provide-permissions-on-prem.html 
+redirect: bluexp-setup-admin/task-install-connector-on-prem.html 
+---
+= 
+:allow-uri-read: 
+
+

@@ -18,7 +18,7 @@ summary: 在受限模式下部署 Connector 、以便在與 BlueXP SaaS 層的�
 
 
 
-== 安裝Connector
+== 步驟 1 ：安裝 Connector
 
 從雲端供應商的市場安裝 Connector 、或是在您自己的 Linux 主機上手動安裝軟體。
 
@@ -35,12 +35,12 @@ link:task-prepare-restricted-mode.html["深入瞭解網路需求"]
 
 * 具有附加原則的 IAM 角色、其中包含 Connector 所需的權限。
 +
-link:task-prepare-restricted-mode.html#prepare-cloud-permissions["瞭解如何設定 AWS 權限"]
+link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["瞭解如何設定 AWS 權限"]
 
 * 為您的 IAM 使用者訂閱及取消訂閱 AWS Marketplace 的權限。
 * 瞭解執行個體的 CPU 和 RAM 需求。
 +
-link:task-prepare-restricted-mode.html#review-host-requirements["檢閱執行個體需求"]。
+link:task-prepare-restricted-mode.html#step-3-review-host-requirements["檢閱執行個體需求"]。
 
 * EC2 執行個體的金鑰配對。
 
@@ -100,7 +100,7 @@ link:task-prepare-restricted-mode.html["深入瞭解網路需求"]
 
 * 具有附加原則的 IAM 角色、其中包含 Connector 所需的權限。
 +
-link:task-prepare-restricted-mode.html#prepare-cloud-permissions["瞭解如何設定 AWS 權限"]
+link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["瞭解如何設定 AWS 權限"]
 
 * 為您的 IAM 使用者訂閱及取消訂閱 AWS Marketplace 的權限。
 * EC2 執行個體的金鑰配對。
@@ -154,7 +154,7 @@ link:task-prepare-restricted-mode.html["深入瞭解網路需求"]
 
 * Azure 自訂角色、包含 Connector 所需的權限。
 +
-link:task-prepare-restricted-mode.html#prepare-cloud-permissions["瞭解如何設定 Azure 權限"]
+link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["瞭解如何設定 Azure 權限"]
 
 
 
@@ -294,7 +294,7 @@ chmod +x OnCommandCloudManager-<version>
 ====
 
 
-== 設定 BlueXP
+== 步驟 2 ：設定 BlueXP
 
 當您第一次存取 BlueXP 主控台時、系統會提示您選擇要與 Connector 建立關聯的帳戶、您需要啟用受限模式。
 
@@ -338,13 +338,13 @@ Connector 現在已安裝、並使用您的 BlueXP 帳戶進行設定。所有�
 
 
 
-== 提供 BlueXP 的權限
+== 步驟 3 ：提供 BlueXP 的權限
 
 如果您是從 Azure Marketplace 部署 Connector 、或是手動安裝 Connector 軟體、則必須提供先前設定的權限、才能使用 BlueXP 服務。
 
 如果您從 AWS Marketplace 部署 Connector 、則這些步驟不適用、因為您在部署期間選擇了所需的 IAM 角色。
 
-link:task-prepare-restricted-mode.html#prepare-cloud-permissions["瞭解如何準備雲端權限"]。
+link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["瞭解如何準備雲端權限"]。
 
 [role="tabbed-block"]
 ====

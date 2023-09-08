@@ -1,52 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blocks>
-  <block id="edfd6cc0ab18dc2313501be4396f011a" category="summary">選擇安裝選項、設定網路、準備權限等、在 Azure 中建立 Connector 。</block>
-  <block id="1dcc6e23d41671c3a6f96a8f61e57f18" category="doc">在 Azure 中建立 Connector 的快速入門</block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">一</block>
-  <block id="4336b5fcde6519e0ad7cfc03d406b725" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 瞭解您的安裝選項</block>
-  <block id="170cf282453bc5bb842416e25c05a3d3" category="paragraph">在 Azure 中建立 Connector 的標準方法是直接從 BlueXP 建立、但您也可以從 Azure Marketplace 建立 Connector 、或是在現有的 Linux 主機上手動安裝軟體。</block>
-  <block id="274b145c4a281502f19b58adaeb570c1" category="inline-link-macro">深入瞭解您的安裝選項</block>
-  <block id="2437c72bf3beb4e33bdd041dbc0b94be" category="paragraph"><block ref="811b0992788616fced956f5adf8830f6" category="inline-link-macro-rx"></block>。</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">二</block>
-  <block id="0acd6f364c67bcef47587e5727525116" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> 設定網路</block>
-  <block id="8ffcde9d7d78e59a747c9316b70a6fd2" category="paragraph">為 Connector 準備下列項目：</block>
-  <block id="2432a6cc5cea8aeb7389c0baa7ea2111" category="list-text">vnet 和子網路</block>
   <block id="e93e3d03906a0e994e8ba9816cbb23fc" category="list-text">網路連線至您計畫建立及管理工作環境的網路</block>
   <block id="1ec4bfd50771e936db6abbdaef3326d4" category="list-text">透過網際網路連線至特定端點、進行日常營運</block>
   <block id="a2054dcca627b3e50f6202fe6c39774e" category="list-text">Proxy 伺服器的 IP 位址、認證和 HTTPS 憑證（如果傳出網際網路需要 Proxy 伺服器）</block>
-  <block id="a5ee79c4e6a740f92d76e4ae26f7efd9" category="inline-link-macro">深入瞭解網路需求</block>
-  <block id="587b8633f80536ad1f87ba680eaf93e0" category="paragraph"><block ref="48e0e005bc28fbf668fbd01539cd6de0" category="inline-link-macro-rx"></block>。</block>
   <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">三</block>
-  <block id="41c4e1e04e36e331e0bc8306e8c462e4" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 檢閱主機需求</block>
-  <block id="c1e102579945406fac37126823f71dd7" category="paragraph">如果您想要在自己的 Linux 主機上手動安裝 Connector 軟體、則應確保主機符合特定需求。如果您是從 BlueXP 或 Azure Marketplace 建立 Connector 、則這些需求將會由映像部署軟體來滿足。</block>
-  <block id="c0cf348e555529bd637208dfcf54a870" category="paragraph">主要需求如下：</block>
-  <block id="458ff6a54977b54b851374a784615658" category="list-text">執行 Ubuntu 22.04 、 CentOS 7.6 至 7.9 或 RHEL 7.6 至 7.9 的專用主機</block>
-  <block id="fd7f01f6e4333c9d37efa65b264ff2a2" category="list-text">4個CPU</block>
-  <block id="ccdc6c134c96d6c386d088a2301d4f2b" category="list-text">14 GB RAM</block>
-  <block id="3140bd3be2a4f9fe830514ff5b18be1f" category="list-text">Docker Engine 19.3.1 或更新版本</block>
-  <block id="6cfd8f6d3354ebd55131c33afd96d4f1" category="inline-link-macro">深入瞭解這些主機需求</block>
-  <block id="369d0911111271cdfbd7e9f063757d98" category="paragraph"><block ref="09ee71e6486c9f0c61a1b5246e297fcd" category="inline-link-macro-rx"></block>。</block>
   <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">四</block>
-  <block id="027797cbe98f6b158461ff3f6dbbd334" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 設定 Azure 權限</block>
-  <block id="8a9d95375b8491f874d5d1c6562f7343" category="paragraph">針對您打算使用的安裝選項設定 Azure 權限：</block>
-  <block id="89f985c75e332d6c094a98b24d581939" category="list-text">* 從 BlueXP* 安裝：建立自訂角色、然後將其套用至 Azure 帳戶或 Azure AD 服務主體。BlueXP 會驗證 Azure 、並使用這些權限代表您建立 Connector 執行個體。</block>
-  <block id="5f017c24568392f62aaaf81a69f822c9" category="list-text">* 從 Azure Marketplace* 安裝：建立自訂角色、讓您可以與 Connector VM 執行個體或 Azure AD 服務主體建立關聯。</block>
-  <block id="6d3e288af786920eccf5b0674c17d867" category="list-text">* 手動安裝 * ：建立可與 Connector VM 執行個體或 Azure AD 服務主體建立關聯的自訂角色。</block>
-  <block id="2cc898b389bc13b579859b0326ebed29" category="inline-link-macro">請依照每個選項的逐步指示操作</block>
-  <block id="8d49ecb044426618c455059729628e16" category="paragraph"><block ref="d41b7abb287ddfad558a942020d8e305" category="inline-link-macro-rx"></block>。</block>
-  <block id="e5d9de39f7ca1ba2637e5640af3ae8aa" category="inline-image-macro">五</block>
-  <block id="0db7fae0cbffb2606b92943c020175f6" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> 建立連接器</block>
-  <block id="58dfb3b98f86ab56e2908a35ae6b090f" category="paragraph">使用其中一個可用的安裝選項來建立 Connector ：</block>
-  <block id="5be6bb31e75b1dd8bd94a7ae6af3e755" category="inline-link">Azure Marketplace 中的 NetApp Connector VM 頁面</block>
-  <block id="29e1a7cf06605bf888586cc76182b640" category="list-text">* 從 Azure Marketplace * ：前往<block ref="ed0d2d9c900d50a83f742250d29abeec" category="inline-link-rx"></block> 並依照提示建立 Connector VM 。</block>
   <block id="9d2169c1c2855b78a7aeaa4f42d27dc7" category="inline-link">NetApp 支援網站</block>
-  <block id="55fb00cdacc84bfb11ed9412e3d3008a" category="list-text">* 手動安裝 * ：從下載 Connector 軟體<block ref="ecafab118b2af7ac4f48713d9a2b867a" category="inline-link-rx"></block> 並執行安裝指令碼。</block>
-  <block id="ce00f49241e683facb54cd0cecee53ba" category="paragraph"><block ref="55bc339bc66105bf0446573c2bad29e3" category="inline-link-macro-rx"></block>。</block>
-  <block id="e6fbc0b9673f8c86726688d7607fc8f5" category="inline-image-macro">六</block>
-  <block id="f1a5593ecb291eabe452f93e18ebdb9e" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block> 提供 BlueXP 權限</block>
-  <block id="715c6e7d85ad7699a0e7ed3bcb50873c" category="paragraph">如果您是從 Azure Marketplace 建立 Connector 、或是手動安裝軟體、則必須提供 BlueXP 先前設定的權限。</block>
-  <block id="cd444a79f98ccbe383b146279f3bb526" category="inline-link-macro">請依照逐步指示操作</block>
-  <block id="ace0bda3409885d45bea1ac3342128a0" category="paragraph"><block ref="00f070cb4c9b58b2b2a64202b6b8c1d5" category="inline-link-macro-rx"></block>。</block>
   <block id="834c88c0bca4a9bc1dfadd5390b4c388" category="summary">為了協助您開始使用、您的 NetApp 代表可能會要求您提供 Connector 的系統 ID 。此 ID 通常用於授權和疑難排解。</block>
   <block id="4d23d12ce4b0de2019310ec73c45d09b" category="doc">尋找連接器的系統ID</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">步驟</block>
@@ -56,20 +17,11 @@
   <block id="938f1047c15f00fdd0cbfc8e4cfa15e1" category="paragraph">* 範例 *</block>
   <block id="2529cf627b3e8b4f850e5b8e7998dea3" category="inline-image-macro">顯示「支援儀表板」中所顯示之BlueXP系統ID的螢幕快照。</block>
   <block id="dd452be96917f1c62ed3d40b11c4ebf2" category="paragraph"><block ref="dd452be96917f1c62ed3d40b11c4ebf2" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b1bf8e5320cdd219124de4b848049533" category="summary">如果您在自己的 Linux 主機上手動安裝 Connector 軟體、則必須提供 BlueXP 先前設定的權限。提供權限可讓 BlueXP 在 Google Cloud 中管理您的資料和儲存基礎架構。</block>
-  <block id="279f8e6e654bd6c88df8e11849e24092" category="doc">提供 Google Cloud 權限給 BlueXP</block>
-  <block id="cb561ef187f15b32ac2db4331dfe81b2" category="inline-link-macro">瞭解如何設定這些權限</block>
-  <block id="37fe5449f83c33dc3e71363c3a81b812" category="paragraph"><block ref="f04b15cc9682df5da57238201635ffcf" category="inline-link-macro-rx"></block>。</block>
-  <block id="49df401f9192c85c7f39cfdf646fb06e" category="paragraph">如果您直接從 BlueXP 或使用 gCloud 部署 Connector 、則不適用這些步驟。</block>
   <block id="a31342596e31d918d08c0417177a8f77" category="list-text">前往 Google Cloud 入口網站、將服務帳戶指派給 Connector VM 執行個體。</block>
   <block id="81c722be01f6c1251ced26ff2ff9dd3f" category="inline-link">Google Cloud 文件：變更執行個體的服務帳戶和存取範圍</block>
   <block id="c8b77e7a211a8e1bbb884962a105fc2f" category="paragraph"><block ref="c8b77e7a211a8e1bbb884962a105fc2f" category="inline-link-rx"></block></block>
   <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">結果</block>
   <block id="a6e38b80693d553a1debbba70e8974ef" category="paragraph">BlueXP 現在擁有代表您在 Google Cloud 中執行動作所需的權限。</block>
-  <block id="9a4eb6738f043a9d449205f3ee2089f1" category="summary">如果您在自己的 Linux 主機上手動安裝 Connector 軟體、則必須提供 BlueXP 先前設定的權限。提供權限可讓 BlueXP 在 AWS 中管理您的資料和儲存基礎架構。</block>
-  <block id="d06b951ea3d21ec4231361092444f706" category="doc">提供 AWS 對 BlueXP 的權限</block>
-  <block id="d4e987c1265b2bb249040ab078e28f18" category="paragraph"><block ref="336de8ca27e92ccb4d3177edc6a05ab3" category="inline-link-macro-rx"></block>。</block>
-  <block id="d98b0751af7f55733b470dfd645ab395" category="paragraph">如果您直接從 BlueXP 或 AWS Marketplace 部署 Connector 、則這些步驟不適用、因為部署期間會提供必要的權限。</block>
   <block id="759d9f0fdbf1b3fe124b8de48be0485b" category="open-title">IAM 角色</block>
   <block id="0aa789abd24dd033c311721c01ab26d8" category="paragraph">將您先前建立的 IAM 角色附加至 Connector EC2 執行個體。</block>
   <block id="7f8c174d588ebe0dadcdeb4a63202e4b" category="list-text">前往 Amazon EC2 主控台。</block>
@@ -92,18 +44,12 @@
   <block id="df329246877a4bd1e46b66f9dd6845df" category="paragraph">您可以查看Azure儲存帳戶的詳細資料、包括位置、資源群組、總容量和已用容量等。這些帳戶可做為 BlueXP 備份與還原、 BlueXP 分層或 BlueXP 複製與同步作業的目的地。</block>
   <block id="bbea79834217efc10b46f4ce874042e0" category="inline-link">請移至此處、瞭解如何使用 BlueXP 檢視、建立及管理 Azure 儲存帳戶</block>
   <block id="925b4bfac5efe2fd0e529d00b71f77ab" category="paragraph">新增的功能現在可讓您建立及編輯 Azure 儲存帳戶。<block ref="3ed7f712e1a5045237f8df14106ff39a" category="inline-link-rx"></block>。</block>
-  <block id="8b0d5260f5fba5a6140e3eef4180dfb7" category="summary">在 Google Cloud 中建立 Connector 有幾種不同的方法。直接從 BlueXP 開始是最常見的方法。您選擇的安裝選項會決定您準備部署的方式。</block>
   <block id="f9a2f8eef1df12108fd0c6b9b6b7fe6a" category="doc">Google Cloud 中的 Connector 安裝選項</block>
   <block id="b5afc81c4f24b143224e304b939a3f6c" category="paragraph">提供下列安裝選項：</block>
-  <block id="2be5713550453beeb95920945caf9edb" category="list-text">直接從 BlueXP 建立 Connector （這是標準選項）</block>
   <block id="b584cbf8cb993e5b450384402639e3c4" category="paragraph">此動作會在您選擇的 VPC 中啟動執行 Linux 的 VM 執行個體和 Connector 軟體。</block>
   <block id="aeb0fd93533d2abe16a0c3de7ac30243" category="list-text">使用 gCloud 建立 Connector</block>
-  <block id="faa8e4e3b060fca7e7dcae6df874bbe8" category="paragraph">此動作也會啟動執行 Linux 和 Connector 軟體的 VM 執行個體。</block>
   <block id="7ec389ef03b4378689ec8afd5b977499" category="list-text">在您自己的 Linux 主機上下載並手動安裝軟體</block>
   <block id="aad2c066ffe748669f0919517c62b920" category="paragraph">您選擇的安裝選項會影響您準備安裝的方式。其中包括如何為 BlueXP 提供必要的權限、讓它能夠在 Google Cloud 中驗證及管理資源。</block>
-  <block id="0e729c7047b6724051cd3075125ee033" category="inline-link-macro">瞭解如何在 Google Cloud 中安裝 Connector</block>
-  <block id="e125fc89afb4e1df4139d1d590ddb886" category="paragraph"><block ref="f10aea6a309f24e3b383a3596f8a82db" category="inline-link-macro-rx"></block>。</block>
-  <block id="b03fc4422539272712e207a8d897a72c" category="summary">直接從 BlueXP 網路型主控台、 Azure Marketplace 或在您自己的 Linux 主機上安裝軟體、建立 Connector 。</block>
   <block id="09b97c28476d2fd5c125ffc638225bae" category="doc">在 Azure 中建立 Connector</block>
   <block id="9b9477e579c3b44dd623d5a6e1ea8d78" category="open-title">藍圖</block>
   <block id="cec61994be2c9633fc4acb202e4b9c41" category="list-text">Azure 訂閱。</block>
@@ -117,7 +63,6 @@
   <block id="51efa34484491a2cd1e24f30b14fc68a" category="paragraph"><block ref="51efa34484491a2cd1e24f30b14fc68a" category="inline-link-rx"></block></block>
   <block id="bc3d26f932a03033b70d3ed650139a18" category="inline-link-macro">使用此頁面上的原則</block>
   <block id="578821444383a169c989590dba162c8a" category="list-text">如果您不想讓BlueXP自動為Connector建立Azure角色、則需要自行建立 <block ref="7706b04266d0a3d170ef3034140acd41" category="inline-link-macro-rx"></block>。</block>
-  <block id="bb0af45d6e9045bc2046c5f245006f7c" category="paragraph">這些權限適用於Connector執行個體本身。這是一組不同於您先前設定的權限、只要部署Connector即可。</block>
   <block id="df5b4e7d7b6a4648ec54c1e80de11594" category="inline-image-macro">螢幕擷取畫面、會在標題和「新增連接器」動作中顯示「連接器」圖示。</block>
   <block id="6afef7f4017876f5216334b8130f14fb" category="paragraph"><block ref="6afef7f4017876f5216334b8130f14fb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="02a8c4a4e553694e2236fd17bb20b197" category="list-text">選擇 * Microsoft Azure * 作為雲端供應商。</block>
@@ -131,7 +76,6 @@
   <block id="ac1fdeeca5975112ea2d53b754a4c94f" category="list-text">目錄（租戶）ID</block>
   <block id="734082edf44417dd19cc65943aa65c36" category="list-text">用戶端機密</block>
   <block id="37653ce036b712cbc8dcc5b189d94b80" category="inline-link-macro">瞭解如何取得服務主體的這些值</block>
-  <block id="283459c094a8c0f9ef857a405f711530" category="paragraph"><block ref="82e5cd1190c32cd925829227067e3312" category="inline-link-macro-rx"></block>。</block>
   <block id="b0e1a0461b32155d621f46d8d6f39569" category="list-text">依照精靈中的步驟建立連接器：</block>
   <block id="c3e1d8cd2a4fddc661ad823da98d5fa7" category="list-text">* VM 驗證 * ：選擇 Azure 訂閱、位置、新資源群組或現有資源群組、然後為您正在建立的 Connector 虛擬機器選擇驗證方法。</block>
   <block id="52f3863b6256b8ae764628f74442ca5c" category="paragraph">虛擬機器的驗證方法可以是密碼或 SSH 公開金鑰。</block>
@@ -162,8 +106,6 @@
   <block id="47b475ce8fffd929f1fc89967e693fe0" category="paragraph">您應該保持停用受限模式、因為這些步驟說明如何在標準模式中使用 BlueXP 。只有當您擁有安全的環境、而且想要中斷此帳戶與 BlueXP 後端服務的連線時、才應啟用受限模式。如果是這樣、 <block ref="d4230e2957fd67694fbeb2d4cebbd012" category="inline-link-macro-rx"></block>。</block>
   <block id="e48cc2b8b425580d8ee1508fd8a29ab2" category="paragraph">Connector 現已安裝、並已使用您的 BlueXP 帳戶進行設定。</block>
   <block id="58eaebf972358f1cf03d386a4ade1a0f" category="paragraph-title">接下來呢？</block>
-  <block id="ba997697bddbedc57faeb5fdc16c15a6" category="inline-link-macro">提供 BlueXP 先前設定的權限</block>
-  <block id="f6f67a41d5743f1fd41a2fb8b54fd85b" category="paragraph"><block ref="7e9e5669a04928e1ffa0a9abd020b87e" category="inline-link-macro-rx"></block>。</block>
   <block id="8f40f6b9cda905fc9a83217435e6b940" category="open-title">手動安裝</block>
   <block id="4212008c2b937ee581ff9e530b8440f8" category="list-text">安裝Connector的root權限。</block>
   <block id="f39873ba3fdf2dff72b117d1ccc0a3f8" category="list-text">Proxy伺服器的詳細資料、如果需要Proxy才能從Connector存取網際網路。</block>
@@ -205,38 +147,25 @@
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知檔案提供有關 NetApp 軟體所使用之協力廠商版權與授權的資訊。</block>
   <block id="c95623cd0395d5a6bb6105b9d32f197b" category="inline-link-macro">藍圖XP注意事項</block>
   <block id="98a041bbcf45b807a22068084127e26d" category="paragraph"><block ref="98a041bbcf45b807a22068084127e26d" category="inline-link-macro-rx"></block></block>
-  <block id="15af3353861266e80ed9b6c8329ad94a" category="summary">以私有模式開始使用 BlueXP 只需幾個步驟。</block>
   <block id="60f3c104288fca2aca24db064cb7c7c1" category="doc">以私有模式快速啟動 BlueXP</block>
   <block id="077d70acc6fcd0e9c32a626a8ef8e416" category="paragraph">準備您的環境並部署 Connector 、以私有模式開始使用 BlueXP 。</block>
-  <block id="9a830cd64ab9d78a17a34ed14d95cf1f" category="list-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 準備部署</block>
   <block id="19b89452bb4e16dbfc6dc9d3fbbf8fc1" category="list-text">準備符合 CPU 、 RAM 、磁碟空間、 Docker Engine 等需求的專用 Linux 主機。</block>
   <block id="8cb1247d6f1cd796c983b5b1cfbbd285" category="list-text">設定可存取目標網路的網路。</block>
   <block id="31b22ac218f817003d8419ad3518a02a" category="list-text">對於雲端部署、請在雲端供應商中設定權限、以便在安裝軟體之後、將這些權限與 Connector 建立關聯。</block>
-  <block id="9e27fe6e4ca179cef3f90054a66df85c" category="inline-link-macro">瞭解如何準備部署</block>
-  <block id="f2ff49c4d0833a9eadcae84f7b90b2ff" category="paragraph"><block ref="9b726f214629b15f98bfde2cb9073835" category="inline-link-macro-rx"></block>。</block>
-  <block id="87f8bea3409ee5873c4bbf977d8c3362" category="list-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> 部署 Connector</block>
   <block id="817e58b984e5e3e7eeaf7dcb9b540fed" category="list-text">在您自己的 Linux 主機上安裝 Connector 軟體。</block>
   <block id="a70d4bbf703f0bb183929b0ec4430ef4" category="list-text">開啟網頁瀏覽器並輸入 Linux 主機的 IP 位址、即可設定 BlueXP 。</block>
   <block id="3ec2d3c7ef4c8979b57d4f2b01b79999" category="list-text">對於雲端部署、請提供 BlueXP 先前設定的權限。</block>
-  <block id="7a2c74a09879a62515ffe13d1f8f0b37" category="inline-link-macro">瞭解如何部署 Connector</block>
-  <block id="6ba235be33f84a7d443965c370e7c288" category="paragraph"><block ref="ffb771e5072e98ecc21c33fef82a5bf5" category="inline-link-macro-rx"></block>。</block>
   <block id="7b31e3388ea034b121ff61f2d58ae897" category="summary">在 Azure 中建立 Connector 有幾種不同的方法。直接從 BlueXP 開始是最常見的方法。</block>
   <block id="c7e9b1fa8d8f650fb40f0b5f30493666" category="doc">Azure 中的連接器安裝選項</block>
-  <block id="88b0d99fc50504eb1e90039166a7405e" category="paragraph">在 Azure 中建立 Connector 有幾種不同的方法。直接從 BlueXP 開始是最常見的方法。您選擇的安裝選項會決定您準備部署的方式。</block>
   <block id="dd1f4ed694cfbe13a6ccad3403ea1728" category="paragraph">此動作會在您選擇的 vnet 中啟動執行 Linux 的 VM 和 Connector 軟體。</block>
   <block id="6505fd7495c0d65d3dcf8a473c69ddcf" category="list-text">從Azure Marketplace建立連接器</block>
-  <block id="272e4bff4d50ea43c92ce8c4e0416844" category="paragraph">此動作也會啟動執行 Linux 的 VM 和 Connector 軟體。</block>
   <block id="144abf22f67a9e7bd34e83012cfa59ec" category="paragraph">您選擇的安裝選項會影響您準備安裝的方式。其中包括如何為 BlueXP 提供驗證和管理 Azure 資源所需的必要權限。</block>
-  <block id="aa5036f5148517c6eef77af4d087a1eb" category="inline-link-macro">瞭解如何在 Azure 中安裝 Connector</block>
-  <block id="50b740bfe5133abfa358935d9447cf0b" category="paragraph"><block ref="5235875f7052c9f6ed27d95c848dbea1" category="inline-link-macro-rx"></block>。</block>
   <block id="ee88a6eb4f7c0c45ebac21244e471cac" category="summary">設定您的網路、讓 Connector 能夠管理混合雲環境中的資源和程序。例如、您需要確保目標網路可以使用連線、而且可以使用輸出網際網路存取。</block>
   <block id="eccf4730c0054498e1b7d5cab926e79f" category="doc">設定 AWS 網路</block>
   <block id="acb3a31b8e79039416f86dfe140a002a" category="section-title">VPC 和子網路</block>
   <block id="2ece2735ee78ce884898c747bead2708" category="paragraph">當您建立 Connector 時、您需要指定 Connector 所在的 VPC 和子網路。</block>
   <block id="8f83d4a2626dac354314d5394d1f9d21" category="section-title">連線至目標網路</block>
-  <block id="e977076f329f114f070ba24997d6ea89" category="paragraph">Connector 需要網路連線、才能連線到您計畫建立和管理工作環境的位置。</block>
   <block id="c8f224037ea295aeec347c94779d9932" category="section-title">傳出網際網路存取</block>
-  <block id="71afd6b2cb4c08d6d8f78d761345d34b" category="paragraph">您部署Connector的網路位置必須具有傳出網際網路連線。從 BlueXP 主控台部署 Connector 時、也需要從網頁瀏覽器進行輸出網際網路存取。</block>
   <block id="6dffc69caefdf6586b8f4562e4f891ff" category="section-title">從 BlueXP 主控台連絡的端點</block>
   <block id="7e793e0926dc898cd9fdf640dab8b7d2" category="paragraph">當您使用透過 SaaS 層提供的 BlueXP 網路型主控台時、它會與多個端點聯絡、以完成資料管理工作。這包括透過 BlueXP 主控台聯絡以部署 Connector 的端點。</block>
   <block id="de3d7dbdd97c240a233066ad7479c6c2" category="inline-link-macro">檢視從 BlueXP 主控台連絡的端點清單</block>
@@ -262,7 +191,6 @@
   <block id="5ea79461f4d299dc0735dc824ffeb854" category="list-text">安全性權杖服務（ STOS ）</block>
   <block id="ec646b7b2f70895a68ca206afb2d6108" category="list-text">簡易儲存服務（ S3 ）</block>
   <block id="aec651d37f6f533a4066a1ac8774d6b0" category="inline-link">如需詳細資料、請參閱AWS文件</block>
-  <block id="c908f2a3ba166fdf32de7eba53bd7156" category="cell">管理AWS中的資源。確切的端點取決於部署Connector的區域。<block ref="04572646466baf6f86d09965eb5c3c86" category="inline-link-rx"></block></block>
   <block id="db9e137068a05efe5440105c2494b7f1" category="cell">以取得授權資訊、並將AutoSupport 資訊傳送給NetApp支援部門。</block>
   <block id="37ba276f010f4ea07f1196b487811443" category="paragraph">\https://*.api.bluexp.netapp.com</block>
   <block id="e1095ff19466581c5274f67123c95036" category="paragraph">\https://api.bluexp.netapp.com</block>
@@ -274,9 +202,6 @@
   <block id="407c4e9fac86b98147da49acd4fa0d01" category="section-title">連接埠</block>
   <block id="b68600c18c6dd9598d4518bc4a3f2c90" category="list-text">HTTP（80）和HTTPS（443）可存取本機UI、在極少數情況下使用。</block>
   <block id="a72a43431413f493c5087ab72327a680" category="list-text">只有在需要連線至主機進行疑難排解時、才需要SSH（22）。</block>
-  <block id="d72a801b2f49d6a4ed170ebdf3cf0efc" category="section-title">IP位址限制</block>
-  <block id="65d425afa00c3ead65e6a786e55b60bc" category="inline-link">深入瞭解此限制</block>
-  <block id="c7353b14a4a7612afd3864b6595a72b7" category="paragraph">可能與172範圍內的IP位址發生衝突。<block ref="a310fc31ed10a191d1bb25f21e014658" category="inline-link-rx"></block>。</block>
   <block id="288bb352dffecbb16aa463067359ba15" category="summary">根據預設、BlueXP會使用自我簽署的憑證來存取Web主控台的HTTPS。您可以安裝由憑證授權單位（ CA ）簽署的憑證、以提供比自我簽署憑證更好的安全保護。</block>
   <block id="5df0e72b51c6390f3f3b21f402ba3612" category="doc">安裝 HTTPS 憑證以進行安全存取</block>
   <block id="094e745d52cd94c819bfa88386ee94b4" category="paragraph">根據預設、BlueXP會使用自我簽署的憑證來存取Web主控台的HTTPS。如果貴企業有需要、您可以安裝由憑證授權單位（ CA ）簽署的憑證、以提供比自我簽署的憑證更好的安全保護。</block>
@@ -306,26 +231,18 @@
   <block id="35d75b7721b3a7b85f83f9a22b971a9e" category="paragraph">顯示有關BlueXP憑證的詳細資料、包括到期日。</block>
   <block id="56c47e4865091b4cf1fdfddb1fa57b51" category="list-text">選取 * 變更憑證 * 、然後依照步驟產生 CSR 或安裝您自己的 CA 簽署憑證。</block>
   <block id="a87a73cb3d313039fff4125360dd6090" category="paragraph">BlueXP使用新的CA簽署憑證來提供安全的HTTPS存取。</block>
-  <block id="2001c0016712a9564e9b186bd9242a59" category="summary">在 AWS 中建立 Connector 有幾種不同的方法。直接從 BlueXP 開始是最常見的方法。您選擇的安裝選項會決定您準備部署的方式。</block>
   <block id="eca3237a9ea860ef946ba4cdd489bc59" category="doc">AWS 中的連接器安裝選項</block>
   <block id="9f2d2da10225389a78d31f33f8d7c7be" category="paragraph">此動作會在您選擇的 VPC 中啟動執行 Linux 的 EC2 執行個體和 Connector 軟體。</block>
   <block id="e96bc5b1e40abf07ff070b96c65057db" category="list-text">從AWS Marketplace建立連接器</block>
-  <block id="75568875dcefc1b684ae42256d7e4964" category="paragraph">此動作也會啟動執行 Linux 和 Connector 軟體的 EC2 執行個體。</block>
   <block id="34fdddcdcabc8edce8bcbc1e23965cca" category="paragraph">您選擇的安裝選項會影響您準備安裝的方式。其中包括如何為 BlueXP 提供必要的權限、讓它能夠在 AWS 中驗證和管理資源。</block>
-  <block id="62deb419f07c89883fdbfaad105678b2" category="inline-link-macro">瞭解如何在 AWS 中安裝 Connector</block>
-  <block id="e9dcfa14808514bcb8e00b78ce2233e6" category="paragraph"><block ref="475058c00c821d06aaaa09a93292b192" category="inline-link-macro-rx"></block>。</block>
   <block id="6e0db9379e3434e931d198d00617cbd6" category="summary">BlueXP需要權限才能在雲端供應商中執行動作。這些權限包含在 NetApp 提供的原則中。您可能想要瞭解BlueXP使用這些權限的功能。</block>
   <block id="9451bddd2cec3e9489f79e90187bcc6a" category="doc">Connector的Google Cloud權限</block>
   <block id="f4c4efc5241f9f82576eec23d40da3e3" category="paragraph">BlueXP需要權限才能在Google Cloud中執行動作。這些權限包含在NetApp提供的自訂角色中。您可能想要瞭解BlueXP使用這些權限的功能。</block>
   <block id="6b45b097205607d8631a7d487a76da98" category="section-title">服務帳戶權限</block>
   <block id="7ed95920f3d958d414a782a8af607000" category="paragraph">下方顯示的自訂角色提供Connector在Google Cloud網路中管理資源和程序所需的權限。</block>
   <block id="12c7029287280adb69871787fa604772" category="paragraph">您必須將此自訂角色套用至連接器VM的服務帳戶。</block>
-  <block id="dbca94da801805282b46468db90d84ea" category="inline-link-macro">設定標準模式的權限</block>
-  <block id="79d7130cf3d4b073bce7c34d3a9f9ebf" category="list-text"><block ref="79d7130cf3d4b073bce7c34d3a9f9ebf" category="inline-link-macro-rx"></block></block>
   <block id="cb3ffce0d4b8f43b3d9f183b558cca41" category="inline-link-macro">設定受限模式的權限</block>
-  <block id="df4564942ae0e0bd6f202d613e944ba1" category="list-text"><block ref="df4564942ae0e0bd6f202d613e944ba1" category="inline-link-macro-rx"></block></block>
   <block id="fad45f664f0478b74c9485a0b1f6d781" category="inline-link-macro">設定私有模式的權限</block>
-  <block id="22e332a6ecd5f345a3f720b11f7cf805" category="list-text"><block ref="22e332a6ecd5f345a3f720b11f7cf805" category="inline-link-macro-rx"></block></block>
   <block id="c5078b96055d6b776ee265ca4c7650c2" category="paragraph">您也必須確保在後續版本中新增權限時、該角色是最新的。</block>
   <block id="823b2e7894c2b52c1e9adc9ea10b9be5" category="section-title">如何使用Google Cloud權限</block>
   <block id="06df33001c1d7187fdd81ea1f5b277aa" category="cell">行動</block>
@@ -493,15 +410,9 @@
   <block id="61ed3f7479580c6ad0ce86e9e6f3dd8d" category="paragraph"><block ref="61ed3f7479580c6ad0ce86e9e6f3dd8d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="796c918f0fce99224fa4a1b54f518f96" category="paragraph">若要瞭解如何設定權限、請參閱下列頁面：</block>
   <block id="392cce9be5aaba5ccc4ab6924ab91b7b" category="inline-link-macro">設定標準模式的 Google Cloud 權限</block>
-  <block id="33ff027b08c4a47957d518ff558c2a6a" category="list-text"><block ref="33ff027b08c4a47957d518ff558c2a6a" category="inline-link-macro-rx"></block></block>
-  <block id="5d32f055b25a05b4a5de4b696ce25add" category="inline-link-macro">設定受限模式的雲端權限</block>
-  <block id="bff57419f890b7401599d0d01c006651" category="list-text"><block ref="bff57419f890b7401599d0d01c006651" category="inline-link-macro-rx"></block></block>
-  <block id="9831540247cdea4b68486aa957754535" category="inline-link-macro">設定私有模式的雲端權限</block>
-  <block id="1727091b0fa7a23ab1ee837811a3080c" category="list-text"><block ref="1727091b0fa7a23ab1ee837811a3080c" category="inline-link-macro-rx"></block></block>
   <block id="ebd7d1e81a9a2891e260eecaa709adbf" category="section-title">適用於此產品的專案 Cloud Volumes ONTAP</block>
   <block id="a4ccd00c9229d2a8510153f89f2a576a" category="paragraph">可與 Connector 位於同一個專案中、或位於不同的專案中。 Cloud Volumes ONTAP若要在 Cloud Volumes ONTAP 不同的專案中部署功能、您必須先將 Connector 服務帳戶和角色新增至該專案。</block>
   <block id="8bee474fd085c11334ab13b9c1a78d9e" category="inline-link-macro">瞭解如何設定服務帳戶</block>
-  <block id="2846d36d7005f43bc3cc15749f932ff7" category="list-text"><block ref="2846d36d7005f43bc3cc15749f932ff7" category="inline-link-macro-rx"></block></block>
   <block id="4ec920ccbe2fc417ccd7dcd957eb9653" category="inline-link">瞭解如何在 Google Cloud 中部署 Cloud Volumes ONTAP 、並選擇專案</block>
   <block id="486db18d2aa67b603506d28b5425dc88" category="list-text"><block ref="486db18d2aa67b603506d28b5425dc88" category="inline-link-rx"></block></block>
   <block id="389368f5d98ef09e3dca047f7f72f270" category="doc">瞭解 BlueXP 帳戶</block>
@@ -550,21 +461,13 @@
   <block id="895677275494125470d7cc56c3ce30f8" category="paragraph">請注意、帳戶 2 包含兩個獨立的連接器。如果您的系統位於不同的地區、或是位於不同的雲端供應商、就可能發生這種情況。</block>
   <block id="95a00cde96c8528d426e00f8e01264a4" category="inline-image-macro">顯示兩個 BlueXP 帳戶的圖表、每個帳戶都有多個工作區及其相關的 Workspace 管理員。</block>
   <block id="27ce19ec81ea0efd6efd2acc34163a86" category="paragraph"><block ref="27ce19ec81ea0efd6efd2acc34163a86" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5fe4634900cc0854715c8b51db1cab99" category="summary">以受限模式開始使用 BlueXP 只需幾個步驟。</block>
   <block id="7fc084d4fa6d37ac9aaea34d698aece0" category="doc">以受限模式快速啟動 BlueXP</block>
   <block id="d82a01de8fc043d47b50211e2437d663" category="paragraph">準備您的環境、部署 Connector 及訂閱 BlueXP 、以受限模式開始使用 BlueXP 。</block>
   <block id="b6ff2c8bfe1c4f67a13521ec6fe0231d" category="list-text">設定網路以提供目標網路的存取、手動安裝的輸出網際網路存取、以及用於日常存取的輸出網際網路。</block>
   <block id="78ea35a287bddf52a43cb9034e7c3ebf" category="list-text">在雲端供應商中設定權限、以便在部署這些權限之後、將其與 Connector 執行個體建立關聯。</block>
-  <block id="b2d5845a39e791f67d4f1e2a2bd6826c" category="paragraph"><block ref="5af38a4dbfddabab478874ff5528e9ce" category="inline-link-macro-rx"></block>。</block>
   <block id="54b3702a411bfa4eec461cd069266198" category="list-text">從雲端供應商的市場安裝 Connector 、或是在您自己的 Linux 主機上手動安裝軟體。</block>
   <block id="93447552f0f8eecf9f81fb372861ee85" category="list-text">提供 BlueXP 先前設定的權限。</block>
-  <block id="6b1e2b09a276e7dcffea8c19d9185610" category="paragraph"><block ref="fcdd4a186ae0bbc3cd105bf54cbd32ef" category="inline-link-macro-rx"></block>。</block>
-  <block id="1d8ac4f2ff6fdebc68cac1152b79c0e9" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 訂閱 BlueXP</block>
   <block id="870a261de0f18a65c1ce93a292943250" category="paragraph">從雲端供應商的市場訂閱 BlueXP 、即可按每小時費率（ PAYGO ）或透過年度合約支付 BlueXP 服務費用。</block>
-  <block id="26cb38ef7d9165cb6c60daa782ddf448" category="inline-link-macro">瞭解如何訂閱 BlueXP</block>
-  <block id="81c3313ea95d8c6400b4938a484d7c52" category="paragraph"><block ref="6def5e6c9f414f70f3dcb72b211d5120" category="inline-link-macro-rx"></block>。</block>
-  <block id="26b956db62dfb9e45d6132f9e41a9d73" category="summary">當您使用透過 SaaS 層提供的 BlueXP 網路型主控台時、它會與多個端點聯絡、以完成資料管理工作。執行 Web 瀏覽器的機器必須連線至這些端點。</block>
-  <block id="74f7ea1e969abd8d8ec017d333bead7e" category="doc">準備網路以供使用者存取 BlueXP 主控台</block>
   <block id="ca514cc7f92949257244bf6c32d47ea3" category="cell">\https://console.bluexp.netapp.com
 \https://*.console.bluexp.netapp.com</block>
   <block id="7926588c37032e15e3fdc15831f4bbb5" category="cell">當您使用 BlueXP 網路型主控台時、您的網路瀏覽器會連絡這些 URL 。</block>
@@ -595,9 +498,6 @@
   <block id="abc66ca669cfbd9be590874c67e8d7ef" category="cell">\https://widget.intercom.io</block>
   <block id="30fe214f0e8ecaf9b895a0137cad8ce9" category="cell">產品內對談可讓您與 NetApp 雲端專家交談。</block>
   <block id="f6bd0d7447ff66cc6b859603a88fbde9" category="list-title">相關連結</block>
-  <block id="96b84799107df797728622ab026d748b" category="summary">Connector 軟體必須在符合特定作業系統需求、 RAM 需求、連接埠需求等的主機上執行。如果您打算手動安裝 Connector 、則應確保主機符合這些需求。</block>
-  <block id="d5512feab068baeeddb3ea0cf10f8cca" category="doc">檢閱連接器主機安裝 AWS 的需求</block>
-  <block id="512bfa3bd93d6398b4e5010a77b6b397" category="paragraph">當您從 BlueXP 或 AWS Marketplace 部署 Connector 時、映像會包含所需的作業系統和軟體元件。</block>
   <block id="9cf68904e16d6d689d242f4868ec6c3f" category="list-text">專用主機</block>
   <block id="3e54bf758f50b15d709edd166d8bf82b" category="list-text">與其他應用程式共用的主機不支援 Connector 。主機必須是專屬主機。</block>
   <block id="bbf3330385f894cd7bd34b34e4c36d6c" category="list-text">支援的作業系統</block>
@@ -617,7 +517,6 @@
   <block id="38522fbf43585538a7a55ea25460e779" category="list-text">AWS EC2 執行個體類型</block>
   <block id="3cdc0b8cb855b1fb9c206c3d696b6c9e" category="list-text">符合上述 CPU 和 RAM 需求的執行個體類型。建議使用T3.xLarge。</block>
   <block id="6cd56a4cc4ddbbfd2bc9d57de5d788aa" category="list-text">金鑰配對</block>
-  <block id="58b11c8ddf3d2ba8e39859b658696729" category="list-text">當您從 BlueXP 或 AWS Marketplace 建立 Connector 時、您需要選取 EC2 金鑰配對來搭配執行個體使用。</block>
   <block id="0a772cdeecb207bdf7ffd5850a8d59bd" category="list-text">/opt 中的磁碟空間</block>
   <block id="ad1a9191fe9f7641b2a07a347aa78359" category="list-text">必須有100 GiB的可用空間</block>
   <block id="12e2060dbbd01e288c66757f239fb192" category="list-text">/var.中的磁碟空間</block>
@@ -805,13 +704,10 @@
   <block id="9d7731be7d930a1152dbf528e9a20972" category="inline-image-macro">這是一張螢幕快照、顯示了NSS認證資料和ONTAP 驗證資料、以及從動作功能表中選取「更新認證資料」和「刪除認證資料」的功能</block>
   <block id="a4ecb2be579cb0376c3938220c6db5bf" category="paragraph"><block ref="a4ecb2be579cb0376c3938220c6db5bf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="64286300f4b2d20b21751b700c210a03" category="paragraph">BlueXP會更新您的認證資料。當您存取ONTAP 「叢集」、「數位顧問」或「案例管理」頁面時、這些變更將會反映出來。</block>
-  <block id="3830e9d547eafbb28fff654404e029b8" category="doc">檢閱 Connector 主機對於 Azure 安裝的需求</block>
-  <block id="d76ad2e59fd7508a5cd6b41d8471a6a5" category="paragraph">當您從 BlueXP 或 Azure Marketplace 部署 Connector 時、映像會包含所需的作業系統和軟體元件。</block>
   <block id="893ba5865a015de9dc77765cdf7184e3" category="list-text">Azure VM 大小</block>
   <block id="a6daae7da601d04e5cdb89d612a8d9b1" category="list-text">符合上述 CPU 和 RAM 需求的執行個體類型。我們建議使用 DS3 v2 。</block>
   <block id="ae140c7a1104ac99f1a01b18e5dc3ed8" category="summary">BlueXP 可從網路型主控台存取。當您開始使用 BlueXP 時、您的第一步是使用現有的 NetApp 支援網站 認證或建立 NetApp 雲端登入。</block>
   <block id="156c302d186fc36d9d944c5d74b971af" category="doc">註冊BlueXP</block>
-  <block id="213954d7bdaa5b2d9eab4ee897a935d3" category="paragraph-title">註冊選項</block>
   <block id="4c6d74757138aa41d2d5f2b14bb05ad1" category="paragraph">您可以使用下列其中一個選項註冊至BlueXP：</block>
   <block id="19df8bb4b5a805b23aeac731605bdf21" category="list-text">您現有NetApp 支援網站 的功能驗證（NSS）認證</block>
   <block id="d7330e52ac45b9d5a769aa9a5c244319" category="list-text">指定您的電子郵件地址和密碼、即可登入NetApp雲端</block>
@@ -837,10 +733,6 @@
   <block id="35065a906fcb04c8b9fad94c74ed75b6" category="paragraph">下列自訂角色提供Connector管理Azure網路中資源與程序所需的權限。</block>
   <block id="770735bf1cfd4e882dd9ac93b90271d3" category="paragraph">直接從BlueXP建立連接器時、BlueXP會自動將此自訂角色套用至連接器。</block>
   <block id="83b9ca4036ac15d5479b1b6947eb5d6b" category="paragraph">如果您從Azure Marketplace部署Connector、或是在Linux主機上手動安裝Connector、則必須自行設定自訂角色。</block>
-  <block id="30f6a1baa5718e2bd568d32242a032a4" category="inline-link-macro">在 Azure 中設定 Connector 安裝權限（標準模式）</block>
-  <block id="f836e26148c902c19370157a7a01cb05" category="list-text"><block ref="f836e26148c902c19370157a7a01cb05" category="inline-link-macro-rx"></block></block>
-  <block id="590dd9fb05ebafe0979b2dc3256d95d2" category="inline-link-macro">設定內部部署 Connector 安裝的權限（標準模式）</block>
-  <block id="d9027b224a5d127be0b2843b650e4806" category="list-text"><block ref="d9027b224a5d127be0b2843b650e4806" category="inline-link-macro-rx"></block></block>
   <block id="92ec95b8916ebc493b6546010073c81f" category="section-title">Azure權限的使用方式</block>
   <block id="815957003313e5f9581718376c2c472f" category="paragraph">下列各節說明如何將權限用於每項 BlueXP 服務。如果您的企業原則規定只有在需要時才提供權限、此資訊就很有幫助。</block>
   <block id="e400a17015f6033633700b6ba11625ba" category="list-text">Microsoft.NetApp/netAppAccounts/read</block>
@@ -1018,14 +910,10 @@
   <block id="176944a9db0702558233e827d21e2f80" category="section-title">2023年1月5日</block>
   <block id="0b4c13076b9b5e7ba5fa39333693ef77" category="paragraph">下列權限已新增至Json原則：</block>
   <block id="b73f51f05a3d7aca4e9b86bf6b66c214" category="paragraph">此權限是Cloud Volumes ONTAP 進行非必要部署所需的權限。</block>
-  <block id="0cbc2cd2912b2d177ad6561f8eecd314" category="summary">直接從 BlueXP 網路型主控台、使用 gCloud 或在您自己的 Linux 主機上安裝軟體來建立 Connector 。</block>
   <block id="0876dbe9a324b66ea7ac9a411751f1e7" category="doc">在Google Cloud中建立Connector</block>
   <block id="d239ca21252855f4ecd1674b876a53d5" category="list-text">建立 Connector 和 Connector VM 服務帳戶所需的 Google Cloud 權限。</block>
-  <block id="5720169312f71a133a573e04d4adffa5" category="inline-link-macro">瞭解如何設定 Google Cloud 權限</block>
-  <block id="d6995c4749dad4283009bf997f8c6591" category="paragraph"><block ref="d6995c4749dad4283009bf997f8c6591" category="inline-link-macro-rx"></block></block>
   <block id="482049a2c27830202c448327d329f378" category="list-text">符合網路需求的 VPC 和子網路。</block>
   <block id="b66539d8d1c1e3f97e751ce32b201932" category="inline-link-macro">深入瞭解網路需求</block>
-  <block id="1e2c4b5ca22d40c55b8d98ccd5e1ba09" category="paragraph"><block ref="1e2c4b5ca22d40c55b8d98ccd5e1ba09" category="inline-link-macro-rx"></block></block>
   <block id="5ec1fdc717a09349991e1304c5bd757a" category="list-text">選擇 * Google Cloud Platform * 做為雲端供應商。</block>
   <block id="1fbc47392baedd9a8a771f5372aa43d4" category="list-text">在「*部署連接器*」頁面上、檢閱您需要的詳細資料。您有兩種選擇：</block>
   <block id="12e9d88275170959cb7167c4c85f6c77" category="list-text">如果出現提示、請登入您的 Google 帳戶、該帳戶應有建立虛擬機器執行個體所需的權限。</block>
@@ -1070,29 +958,8 @@
   <block id="4d342acc2474b2bd9afcbf4cc2be732e" category="paragraph"><block ref="07999df8a3fec91dcf6daa7e52777cc7" category="inline-link-macro-rx"></block>。</block>
   <block id="aeb47633d22edfd2e068571b631d2d5e" category="paragraph">Connector 現在已安裝、並使用您的 BlueXP 帳戶進行設定。</block>
   <block id="31b69cff9901ca80c50a1d680a9b258a" category="paragraph">開啟網頁瀏覽器、前往<block ref="a47e12f4350b725a128875f50f785a3b" category="inline-link-rx"></block> 開始使用Connector with BlueXP。</block>
-  <block id="85f6ae158ca09afed76462ea1cc6c83a" category="paragraph"><block ref="11212461cb0b46a76db0f4428a0c264d" category="inline-link-macro-rx"></block>。</block>
   <block id="b630649167e22ae03b6b2263ca0a2200" category="summary">開始使用 NetApp BlueXP 、讓您開始在內部部署和雲端環境中建置、保護及管理資料。完成設定後、您可以管理 BlueXP 帳戶、 Connectors 、雲端供應商帳戶等。</block>
   <block id="7390f55a27add10ddc1a6c765b8a67c7" category="doc">BlueXP 安裝與管理文件</block>
-  <block id="d27c20ffdc2a86f7372d5fe1b59e028f" category="summary">透過設定網路、準備主機、準備雲端權限等方式、在內部環境中建立 Connector 。</block>
-  <block id="98d9ada7707df3ce65e62a758c63ad03" category="doc">快速開始在內部部署建立 Connector</block>
-  <block id="e071ab81a4783f903994f78f7a641a70" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 設定網路</block>
-  <block id="f50c4ba17348a5e0542232d8d75e1596" category="list-text">您計畫安裝 Connector 的網路位置</block>
-  <block id="c14a3c27c9b99c1e6025fb5f221fbafb" category="paragraph"><block ref="aa525e3e69894e1f6b676c167a2560ba" category="inline-link-macro-rx"></block>。</block>
-  <block id="a07cb7fb5ce9135a8773e8bea7482805" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> 檢閱主機需求</block>
-  <block id="00d715a985d0831f7e7d597720d762bd" category="paragraph">Connector 軟體必須在符合特定需求的主機上執行。主要需求如下：</block>
-  <block id="8c50cd4574263791cd459fcd335396e6" category="paragraph"><block ref="15bac65475627557eec572f482a43236" category="inline-link-macro-rx"></block>。</block>
-  <block id="5c0c84fefcd4417cfbedf9fbf4562eed" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 設定雲端權限</block>
-  <block id="4a47d3779eb0597214517a7843412f90" category="paragraph">為雲端供應商設定權限、以便使用 BlueXP 管理雲端儲存設備：</block>
-  <block id="fbb72fb8d60e4d1c40aae004e0fda275" category="list-text">* AWS * ：建立 IAM 原則、並將原則附加至 IAM 使用者。安裝後、您需要為 BlueXP 提供該 IAM 使用者的存取金鑰。</block>
-  <block id="a77ba34b0a2055dcde170a463c81ed45" category="list-text">* Azure * ：在 Azure Active Directory 中設定包含必要權限的服務主體。安裝後、您需要為 BlueXP 提供服務主體的認證。</block>
-  <block id="b45b5e59066b1e0ed7a2e8bc64451585" category="paragraph">當 Connector 安裝在您的內部環境中時、就無法管理 Google Cloud 中的儲存或資料。Connector 必須安裝在 Google Cloud 中、才能管理任何儲存設備或位於該處的資料。</block>
-  <block id="b9522c30c371a6f71fa863a0ba65a525" category="paragraph"><block ref="39f16d528eb496008e05d456b0ec0f27" category="inline-link-macro-rx"></block>。</block>
-  <block id="8d24d74cf26c152a4e13d16c63d70d11" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 安裝 Connector 軟體</block>
-  <block id="d8c00445d6ad97aca54ad8782abe7b31" category="paragraph">從下載Connector軟體<block ref="ecafab118b2af7ac4f48713d9a2b867a" category="inline-link-rx"></block> 並執行安裝指令碼。</block>
-  <block id="86d9b1db9e7d84920c7d3da427153240" category="paragraph"><block ref="5c707091415a38351716e02387f1f80a" category="inline-link-macro-rx"></block>。</block>
-  <block id="b8f9d14087253cebc31c83b42a72cbc3" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> 提供 BlueXP 權限</block>
-  <block id="a7b114f476970595307dd92a3e0f6be2" category="paragraph">安裝並設定 Connector 之後、您需要新增雲端認證、以便 BlueXP 具有必要的權限、可在 AWS 或 Azure 中執行動作。</block>
-  <block id="cf2d38112597f0d44d97de0c4cca9f4c" category="paragraph"><block ref="4c365cb758b6ce5a87327aef44778443" category="inline-link-macro-rx"></block>。</block>
   <block id="c9df4195a305212ffd7b56d24f67129d" category="summary">NetApp以多種方式提供對BlueXP的支援。我們全年無休提供豐富的免費自助支援選項、例如知識庫（KB）文章和社群論壇。您的支援註冊包括透過網路票證提供遠端技術支援。</block>
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">取得協助</block>
   <block id="7c5661ab6b39ee901cea00a6e7020a49" category="paragraph">NetApp以多種方式支援BlueXP及其雲端服務。我們全年無休提供豐富的免費自助支援選項、例如知識庫（KB）文章和社群論壇。您的支援註冊包括透過網路票證提供遠端技術支援。</block>
@@ -1158,9 +1025,6 @@
   <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">* 更新案例附註 * ：提供問題的其他詳細資料、或選擇 * 上傳檔案 * 最多附加五個檔案。</block>
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">螢幕擷取畫面、顯示您在表格最後一欄選取功能表後可以採取的動作。</block>
   <block id="2ea260929e27ffcb623c8aa35689bd18" category="paragraph"><block ref="2ea260929e27ffcb623c8aa35689bd18" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="4453e7502515d4db1f3a4a1c28c48f13" category="summary">Connector 軟體必須在符合特定作業系統需求、 RAM 需求、連接埠需求等的主機上執行。如果您打算手動安裝 Connector 、則應確保主機符合這些需求。安裝 Connector 之前、請先確定您的主機符合這些要求。</block>
-  <block id="eb85167d5f66600c122d2c7e42c7ce1e" category="doc">檢閱 Connector 主機對 Google Cloud 安裝的需求</block>
-  <block id="5382927625de2bb1d09d5cd54f9c0363" category="paragraph">當您從 BlueXP 或使用 glcud 部署 Connector 時、映像會包含所需的作業系統和軟體元件。</block>
   <block id="35ba60210572b9248078c07c4079b9ab" category="list-text">Google Cloud 機器類型</block>
   <block id="98de57befcb39b412a8dac16a11d762e" category="list-text">符合上述 CPU 和 RAM 需求的執行個體類型。我們建議使用 n2 標準 4 。</block>
   <block id="984ca77a9a51746d3dd5a855a71d3493" category="inline-link">防護VM功能</block>
@@ -1169,7 +1033,6 @@
   <block id="1ab5193f89cf79df51fd4138318923ac" category="doc">Azure 認證與權限</block>
   <block id="08a6159f6d9d986210470d2ab6dff166" category="section-title">Azure 初始認證</block>
   <block id="25b6fc1a8ebb7aa3a82a611b3dc7cc8d" category="inline-link-macro">Azure 的連接器部署原則</block>
-  <block id="3944b94e332ebaaeeb1f75ea267f7687" category="paragraph">從BlueXP部署Connector時、您需要使用具備部署Connector虛擬機器權限的Azure帳戶或服務主體。所需權限列於 <block ref="215c62f8f7b8f0001687c60d93a1178c" category="inline-link-macro-rx"></block>。</block>
   <block id="9cbe008fc71c240a16ab125b2873fe44" category="inline-link-macro">檢閱BlueXP如何使用權限</block>
   <block id="1985b326c07cdcb2a260ae0c0c6fde8d" category="inline-link">系統指派的託管身分識別</block>
   <block id="d47be244f383106c84a24b1e4ba4fea6" category="paragraph">當BlueXP在Azure中部署Connector虛擬機器時、它會啟用<block ref="3b529d5441a4ea26741352247ca08bac" category="inline-link-rx"></block> 在虛擬機器上建立自訂角色、然後將其指派給虛擬機器。此角色可為BlueXP提供所需的權限、以管理該Azure訂閱中的資源和程序。 <block ref="daf58003d5227a43b6fbea1d165f6f7b" category="inline-link-macro-rx"></block>。</block>
@@ -1195,9 +1058,7 @@
   <block id="a5cd95b551d8bf545c63c76c6fb91786" category="paragraph">對於內部部署、您無法設定 Connector 的託管身分識別、但可以使用服務主體來提供權限。</block>
   <block id="53c512e9599c71e1a585d636a5229820" category="list-text">標準模式</block>
   <block id="4275ae61422c34253a59329bd20a0449" category="inline-link-macro">設定 Azure 權限</block>
-  <block id="c088522f0e4ffe177c00c48412e66bc7" category="list-text"><block ref="c088522f0e4ffe177c00c48412e66bc7" category="inline-link-macro-rx"></block></block>
   <block id="12f7970cff397ea2f0846f3904f8e00f" category="inline-link-macro">設定內部部署的雲端權限</block>
-  <block id="252d22e530897961c08d91b185bf8a2a" category="list-text"><block ref="252d22e530897961c08d91b185bf8a2a" category="inline-link-macro-rx"></block></block>
   <block id="b3a595111956cd206b5fcd5e77bee895" category="summary">當您註冊 BlueXP 時、系統會提示您為組織建立帳戶。您可能只需要這個帳戶、但如果您的企業需要多個帳戶、則需要使用 Tenancy API 來建立其他帳戶。</block>
   <block id="6c45b1e5876b4865e0208a9ade3da041" category="doc">建立另一個 BlueXP 帳戶</block>
   <block id="6eb6b03d63d198bc73be4828f333e30e" category="paragraph">使用下列 API 呼叫建立其他 BlueXP 帳戶：</block>
@@ -1208,17 +1069,7 @@
   <block id="07999df8a3fec91dcf6daa7e52777cc7" category="list-text"><block ref="07999df8a3fec91dcf6daa7e52777cc7" category="inline-link-macro-rx"></block></block>
   <block id="62bd7572081df25dd3f1f52151883c4a" category="inline-link-macro">瞭解 BlueXP 部署模式</block>
   <block id="d8c1ee023ea7a4705048e3464cfcb854" category="list-text"><block ref="d8c1ee023ea7a4705048e3464cfcb854" category="inline-link-macro-rx"></block></block>
-  <block id="a8c09a74cb45bd11998b4a98f8f88973" category="summary">在 AWS 中設定權限、讓您可以使用管理資料和儲存基礎架構所需的權限來部署 Connector 。您如何設定及提供權限取決於您打算使用的安裝選項。</block>
   <block id="2d3fc94cd0898448a15e6e05f4098b6f" category="doc">設定 AWS 權限</block>
-  <block id="e683a5094eb71367e8a15ad324b46379" category="paragraph">您可以選擇下列安裝選項：</block>
-  <block id="c937fc05f2955ef401888c1c0bf5bd2d" category="list-text">* 從 BlueXP* 安裝：設定權限、讓 BlueXP 能夠使用 AWS 進行驗證並部署執行個體。BlueXP 會在部署期間自動設定 Connector 執行個體的權限。</block>
-  <block id="60b59d59647a26f17a4decb8cfe7b702" category="inline-xref">檢視逐步指示</block>
-  <block id="d5786d083ce98b15ceef7f3c58f9e8a9" category="paragraph"><block ref="849ef99058f6e57ce49b431e7af82013" category="inline-xref-macro-rx"></block>。</block>
-  <block id="cf640a92a906bcdb78162c5786b4d3de" category="list-text">* 從 AWS Marketplace 安裝 * ：設定您可以與 Connector 執行個體建立關聯的 IAM 角色。</block>
-  <block id="56571bd386deaec7f43f209bd0df0766" category="paragraph"><block ref="cc26fd4b83c69a3c3917b2a2a6c3f380" category="inline-xref-macro-rx"></block>。</block>
-  <block id="df7114b91c38b799f7e55c741aae2b74" category="list-text">* 手動安裝 * ：建立 IAM 原則、並將其附加至 IAM 角色或 IAM 使用者。</block>
-  <block id="d427acae4bc956af9fed6c72fb68b12a" category="paragraph"><block ref="b2113e9e3a9e0e0062402d34fe3bdc2d" category="inline-xref-macro-rx"></block>。</block>
-  <block id="8fa94e457ddf7ae7a3491158af3228e0" category="section-title">設定從 BlueXP 建立 Connector 的權限</block>
   <block id="92c5959c8282fd63c3afcbd1c9b13f51" category="paragraph">在您的VPC中部署Connector執行個體之前、BlueXP必須先與AWS進行驗證。您可以選擇下列其中一種驗證方法：</block>
   <block id="61f21c125c1220d8643bea1729345e36" category="list-text">讓BlueXP承擔具有所需權限的IAM角色</block>
   <block id="4964e9eef6df2fe316a2618afd8cd963" category="list-text">為具有所需權限的IAM使用者提供AWS存取金鑰和秘密金鑰</block>
@@ -1239,29 +1090,23 @@
   <block id="8bcbf62e98416780ffe2095559aba87a" category="list-text">選取您建立的原則。</block>
   <block id="c34ab4140439856fda51871a0f20b53c" category="list-text">確保您擁有 IAM 使用者的存取金鑰和秘密金鑰。</block>
   <block id="faeb6083a2ae4785925222b65d1d968f" category="paragraph">您現在應該擁有具有所需權限的 IAM 角色、或是擁有所需權限的 IAM 使用者。從 BlueXP 建立 Connector 時、您可以提供角色或存取金鑰的相關資訊。</block>
-  <block id="59d21ffd9004e044bf10a41bde94377c" category="section-title">從 AWS Marketplace 部署時、請設定 Connector 的權限</block>
   <block id="c0b444d12ee4e633b23b686f19a32aaa" category="list-text">完成其餘步驟以建立原則。</block>
   <block id="b905fd344340f966488111072eda83d7" category="paragraph">視您打算使用的 BlueXP 服務而定、您可能需要建立第二個原則。</block>
   <block id="481dd59686d42d2d6a74eae1a1d763ad" category="paragraph">對於標準區域、權限分佈在兩個原則之間。由於AWS中受管理原則的字元大小上限、因此需要兩個原則。</block>
   <block id="caab423eeeabf261321ce00d10ad838a" category="list-text">選取 * AWS 服務 &gt; EC2* 。</block>
   <block id="0543e6140cb57d05d778d01c055f1dc0" category="list-text">完成剩餘步驟以建立角色。</block>
   <block id="97f503ba18358d479d025475ba069bec" category="paragraph">您現在擁有 IAM 角色、可在 AWS Marketplace 部署期間與 EC2 執行個體建立關聯。</block>
-  <block id="4d2d01568f9b93e826d4d27986238904" category="section-title">設定手動安裝後指派的權限</block>
   <block id="168b098cb315f9dde326e5fcaa738ac3" category="list-text">選項 1 ：建立 IAM 原則、並將原則附加至您可以與 EC2 執行個體建立關聯的 IAM 角色。</block>
-  <block id="330d1c128dd39c2609ba6f24835a6934" category="list-text">選項 2 ：為具有必要權限的 IAM 使用者提供 BlueXP AWS 存取金鑰。</block>
   <block id="09c9c82c723e5b567f845ec916d3a4d3" category="inline-link-macro">Connector 的 IAM 原則</block>
   <block id="79227a5098f7cf00b9628d1590ac3d54" category="list-text">選取 * JSON* 、然後複製並貼上的內容 <block ref="d0403cae0524415841c71c1fdc91e454" category="inline-link-macro-rx"></block>。</block>
   <block id="683ec591d5df56209a71ab6f5bd3f041" category="inline-link-macro">深入瞭解 Connector 的 IAM 原則</block>
   <block id="43f377176ce45b78586869d6392c609c" category="paragraph">對於標準區域、權限分佈在兩個原則之間。由於AWS中受管理原則的字元大小上限、因此需要兩個原則。 <block ref="60507836418f54f0b2b646fcefa2cf2c" category="inline-link-macro-rx"></block>。</block>
-  <block id="c0675f0ac53a37bf3be2b775afed6c26" category="inline-link-macro">瞭解如何將這些權限提供給 BlueXP</block>
-  <block id="85a77afe8b3078d236de8d253372d1c2" category="paragraph">現在您有一個 IAM 角色、可以在安裝 Connector 之後與 EC2 執行個體建立關聯。 <block ref="8a294bb0a6b1478a82e1cbe37e4b7e40" category="inline-link-macro-rx"></block>。</block>
   <block id="cc8a9437947f6931749101ef3ca06072" category="list-text">將原則附加至 IAM 使用者。</block>
   <block id="001eb8189b805b3dbf012a0955d8682f" category="inline-link">AWS 文件：建立 IAM 角色</block>
   <block id="f470dc03b4486f269b32bef6a5d721d1" category="list-text"><block ref="f470dc03b4486f269b32bef6a5d721d1" category="inline-link-rx"></block></block>
   <block id="ae447524ca7a094fbd322687e0154e93" category="inline-link">AWS 文件：新增和移除 IAM 原則</block>
   <block id="7c04a15d03a827f3e932f6ea885fb875" category="list-text"><block ref="7c04a15d03a827f3e932f6ea885fb875" category="inline-link-rx"></block></block>
   <block id="59c8a7b2e005ee251a6301c0ca1f23b3" category="list-text">請確定使用者擁有存取金鑰、您可以在安裝 Connector 之後新增至 BlueXP 。</block>
-  <block id="b320bf58ccfe757487e62843428e1bc2" category="paragraph">您現在擁有一個 IAM 使用者、該使用者擁有必要的權限、以及您可以提供給 BlueXP 的存取金鑰。 <block ref="8a294bb0a6b1478a82e1cbe37e4b7e40" category="inline-link-macro-rx"></block>。</block>
   <block id="9370643895ad52c4da3ddf50c1e24a82" category="summary">「帳戶管理員」、「工作區管理員」、「法規遵循檢視器」及SnapCenter 「支援對象管理員」角色、可為使用者提供特定權限。當您將新使用者與 BlueXP 帳戶建立關聯時、您可以指派其中一個角色。</block>
   <block id="a5cd3ed116608dac017f14c046ea56bf" category="doc">角色</block>
   <block id="706c30f817a6d965f23bc2798759eb15" category="paragraph">Compliance Viewer 角色適用於唯讀 BlueXP 分類存取。</block>
@@ -1289,14 +1134,11 @@
   <block id="efb23fed841e93229b5eba2d12143dd0" category="list-text"><block ref="efb23fed841e93229b5eba2d12143dd0" category="inline-link-macro-rx"></block></block>
   <block id="5cc33db7bd831802e558ae70eb573d98" category="inline-link-macro">管理 BlueXP 帳戶中的工作區和使用者</block>
   <block id="9eda901ca4a8d939f48fdc3e1139b8d2" category="list-text"><block ref="9eda901ca4a8d939f48fdc3e1139b8d2" category="inline-link-macro-rx"></block></block>
-  <block id="c476ad33fb1b26ddb19ee3a220d86c1d" category="summary">如果您想在 AWS 或 Azure 中搭配內部部署 Connector 使用 BlueXP 服務、則需要在雲端供應商中設定權限、以便在安裝之後將認證新增至 Connector 。</block>
   <block id="45f5c7b6248438f849cf619c647c63e4" category="paragraph">如果您想在 AWS 或 Azure 中搭配內部部署 Connector 使用 BlueXP 服務、則需要在雲端供應商中設定權限、以便在安裝之後將認證新增至 Connector 。</block>
-  <block id="7a058a34f23a2bf7156c66de4e989624" category="admonition">為何不選擇 Google Cloud ？當 Connector 安裝在您的內部環境中時、就無法在 Google Cloud 中管理您的資源。Connector 必須安裝在 Google Cloud 中、才能管理位於該處的任何資源。</block>
   <block id="4847e034bb0a55fcbc8a3380d6a3ab80" category="open-title">AWS</block>
   <block id="e1ef579b405a3d1b9ab7d84e56f110d3" category="paragraph">當 Connector 安裝在內部部署時、您需要為具有必要權限的 IAM 使用者新增存取金鑰、以提供 BlueXP AWS 權限。</block>
   <block id="a4a42c8639c0aa2e10cb3a3eaaae664b" category="paragraph">如果連接器安裝在內部部署環境中、則必須使用此驗證方法。您無法使用IAM角色。</block>
   <block id="c6a2a62c2d06a1633aadd355cae5e2d6" category="paragraph">您現在應該擁有具有必要權限的 IAM 使用者存取金鑰。安裝 Connector 之後、您需要將這些認證與 BlueXP 的 Connector 建立關聯。</block>
-  <block id="46c117d35b7e35d840f713eed7c57cba" category="paragraph"><block ref="4d598d4763799d9bfff84dccd242be80" category="inline-link-macro-rx"></block>。</block>
   <block id="3a580f142203677f1f0bc30898f63f53" category="open-title">Azure</block>
   <block id="0180cc84ac01ea354335e5e4c42027db" category="paragraph">當 Connector 安裝在內部部署時、您需要在 Azure Active Directory 中設定服務主體、並取得 BlueXP 所需的 Azure 認證、以提供 BlueXP 的 Azure 權限。</block>
   <block id="ac572c9e1fee2fbf598102a8524251e8" category="list-title">建立 Azure Active Directory 應用程式以進行角色型存取控制</block>
@@ -1359,18 +1201,14 @@
   <block id="62089e33eb517da2e77f2dbae303746e" category="paragraph">您的服務主體現在已設定完成、您應該已經複製應用程式（用戶端） ID 、目錄（租戶） ID 、以及用戶端機密的值。安裝 Connector 之後、您需要將這些認證與 BlueXP 的 Connector 建立關聯。</block>
   <block id="b6bbae5bdf4c539603a70f4db19e6b04" category="summary">在內部部署安裝 Connector 、然後登入並設定以搭配 BlueXP 帳戶使用。</block>
   <block id="1fb392a56edc456b1bc3eddb57b0906b" category="doc">在內部部署安裝並設定 Connector</block>
-  <block id="7c521ef00b3568ffec78f7d18b3f23a1" category="section-title">安裝Connector</block>
   <block id="430c29468d032364c0f94cffe3c8a10b" category="paragraph">在內部部署的現有 Linux 主機上下載並安裝 Connector 軟體。</block>
   <block id="e832abccfbda1e1df2db47f59705c74c" category="paragraph">現在已安裝Connector。安裝結束時、如果您指定Proxy伺服器、Connector服務（occm）會重新啟動兩次。</block>
-  <block id="32a79a3da73e9b7dab502ea9e60bf1a5" category="section-title">設定Connector</block>
-  <block id="9679c37d1ece85e4705ecd886aca356e" category="paragraph">註冊或登入、然後設定Connector以使用您的帳戶。</block>
   <block id="8dae847f59a6afd8d7e49b7b7654d0eb" category="list-text">開啟網頁瀏覽器並輸入下列 URL ：</block>
   <block id="a28c11d82be2375d6506ed209153e0c1" category="paragraph">_ipaddress_ 可以是 localhost 、私有 IP 位址或公有 IP 位址、視主機的組態而定。例如、如果連接器位於沒有公有 IP 位址的公有雲中、您必須輸入連接至連接器主機之主機的私有 IP 位址。</block>
   <block id="2b7648ae4507d851df87a08114c2876e" category="list-text">註冊或登入。</block>
   <block id="41adb69bcb6f24f8432b590170f61d23" category="list-text">登入之後、請設定BlueXP：</block>
   <block id="c0112364e46bcec7ed4460a6be7ead53" category="paragraph">您應該保持停用受限模式、因為這些步驟說明如何在標準模式中使用 BlueXP 。（此外、當 Connector 安裝在內部部署時、不支援受限模式。）</block>
   <block id="dcdd03125bee39fb6c8e9aa5e0bfcc7f" category="paragraph">BlueXP 現在已設定好您剛安裝的 Connector 。</block>
-  <block id="a2d7243b3053c6c5842cf1d530d3a09f" category="paragraph"><block ref="fbbff0e39cb3f5e5617a1207bee6d992" category="inline-link-macro-rx"></block>。</block>
   <block id="773752fa8722d25b5cb88d771e3c6459" category="summary">在Google Cloud中安裝Connector之後、BlueXP會自動探索有關Google Cloud儲存區的資訊、這些儲存區位於安裝Connector的Google帳戶中。此時會將Google Cloud Storage工作環境新增至CanvasTM、以便您檢視此資訊。</block>
   <block id="82f74539a8232efa9fe9d44fbb820377" category="doc">檢視您的Google Cloud Storage儲存桶</block>
   <block id="e952b1c060b2dc1be5663131351e06a5" category="paragraph">在Google Cloud中安裝Connector之後、BlueXP會自動探索有關Google Cloud Storage儲存桶的資訊、這些儲存桶位於安裝Connector的Google帳戶中。此時會將Google Cloud Storage工作環境新增至CanvasTM、以便您檢視此資訊。</block>
@@ -1448,8 +1286,6 @@
   <block id="b8502b99c36d378968d3d20a7561e523" category="list-text">您也必須確保原則在後續版本中新增權限時保持最新狀態。</block>
   <block id="4c3260e1174dd82ea2e496ac6f39fc4a" category="list-text">如有需要、您可以使用IAM來限制IAM原則<block ref="9e2941b3c81256fac10392aaca4ccfde" prefix=" " category="inline-code"></block> 元素。<block ref="19ffef022087e160f1e54b9948795943" category="inline-link-rx"></block></block>
   <block id="5e7e2fc7d83311cfc7311fe5dec48480" category="list-text">若要檢視使用這些原則的逐步指示、請參閱下列頁面：</block>
-  <block id="0e056226cf0c491e9f8541fa39bd442d" category="inline-link-macro">在 AWS （標準模式）中設定 Connector 安裝權限</block>
-  <block id="ba958418e2417e3848579844570a221c" category="list-text"><block ref="ba958418e2417e3848579844570a221c" category="inline-link-macro-rx"></block></block>
   <block id="de16d176ab7c6c01a7ce45f2e7213194" category="paragraph">選取您所在的地區以檢視所需的原則：</block>
   <block id="222ddb2f355a49f64fb3858123f2b97b" category="example-title">標準區域</block>
   <block id="989bc9b22ba83d48ca30cdc4d2a0cbb8" category="paragraph">第一個原則提供下列服務的權限：</block>
@@ -1647,7 +1483,6 @@
   <block id="0d5d3e78379f182967772aab096aa6ac" category="list-text">將安裝程式複製到Linux主機。</block>
   <block id="482c8088b93a78c2682279e88617ca7f" category="list-text">執行安裝指令碼：</block>
   <block id="d932ef50072ac5f51fe3242771618f19" category="paragraph">已安裝 Connector 軟體。您現在可以設定 BlueXP 。</block>
-  <block id="83a65995d5bbf52cd29819d6f528a030" category="section-title">設定 BlueXP</block>
   <block id="45895bc4a56853b37f659008812720d2" category="paragraph">第一次存取 BlueXP 主控台時、系統會提示您設定 BlueXP 。</block>
   <block id="0f35cbc7e00034a2864005fe2859c834" category="list-text">開啟網頁瀏覽器並輸入<block ref="e3a51e84cbbae6e45a585984f3be3fd0" category="inline-link-rx"></block> 其中 _ipaddress_ 是您安裝 Connector 的 Linux 主機的 IP 位址。</block>
   <block id="31f7ed39632ba5f8fbafe2e78de61213" category="paragraph">您應該會看到下列畫面。</block>
@@ -1661,10 +1496,8 @@
   <block id="d847fd38c43b77f685712342ed5f2a9a" category="list-text">使用您剛建立的管理使用者登入BlueXP。</block>
   <block id="2fdca5f14e2fdf34df61ef1c2e18eae5" category="paragraph">現在已安裝並設定 Connector 。</block>
   <block id="c4d9d6c8e652595e9d46970f56499783" category="inline-link-macro">瞭解如何升級Connector</block>
-  <block id="4f63de4c96383f078fb74fced1187f1d" category="section-title">提供 BlueXP 的權限</block>
   <block id="fc0a94ce93071b9e22ad0f0a9d4c266d" category="paragraph">如果您想要建立 Cloud Volumes ONTAP 工作環境、您必須提供 BlueXP 先前設定的雲端權限。</block>
   <block id="d8325912caeaba85aaefdb17eacaea8d" category="inline-link-macro">瞭解如何準備雲端權限</block>
-  <block id="e4d92181a6b9e1e349eaf5a0a240c377" category="paragraph"><block ref="4ea10232c8418831e5c00dd7cd9f8a4a" category="inline-link-macro-rx"></block>。</block>
   <block id="29a14a9c6a2abcb61244f5ae4ef77363" category="open-title">AWS IAM 角色</block>
   <block id="946bcf9e2dc7073d2ef1eb38d4046b2d" category="paragraph">BlueXP 現在擁有代表您在 AWS 中執行動作所需的權限。</block>
   <block id="0c8a608ccb6d8462e37f1062502116c5" category="open-title">Azure 角色</block>
@@ -1683,7 +1516,6 @@
   <block id="97911b3c54a4e826b34c1f79026316c5" category="doc">AWS 認證與權限</block>
   <block id="9ef43b020d41cab5808d78fdf855c429" category="section-title">初始 AWS 認證資料</block>
   <block id="09c2333ff15fa85698d91a366cce26dd" category="inline-link-macro">AWS 的 Connector 部署原則</block>
-  <block id="a581b6951e2b88c90d61a623574f78a4" category="paragraph">從BlueXP部署連接器時、您需要為IAM使用者提供IAM角色或存取金鑰的ARN。您使用的驗證方法必須具有必要的權限、才能在AWS中部署Connector執行個體。所需權限列於 <block ref="bf48510c601c5b66c7e07c07a7613cba" category="inline-link-macro-rx"></block>。</block>
   <block id="858c852a1a4696d4e56295d4b4b0ea20" category="paragraph">當BlueXP在AWS中啟動Connector執行個體時、會為執行個體建立IAM角色和執行個體設定檔。它也附加原則、讓Connector有權限管理該AWS帳戶內的資源和程序。 <block ref="9d2ef148313eb953f656b8efd4016e8c" category="inline-link-macro-rx"></block>。</block>
   <block id="87905dffb8ffacc115ce029071ecc843" category="inline-image-macro">顯示在AWS帳戶中部署Connector的BlueXP概念性映像。IAM原則會指派給附加至BlueXP執行個體的IAM角色。</block>
   <block id="c234f29a81f1d5eb1c1e71c54ce5a0e7" category="paragraph"><block ref="c234f29a81f1d5eb1c1e71c54ce5a0e7" category="inline-image-macro-rx" type="image"></block></block>
@@ -1711,7 +1543,6 @@
   <block id="3551bffff472d33de9e274227109232f" category="paragraph">以上各節說明建議的連接器部署方法、該方法來自於BlueXP。您也可以從 AWS Marketplace 在 AWS 中部署 Connector 、然後在自己的 Linux 主機上手動安裝 Connector 軟體。</block>
   <block id="a4542ce435b67066671321f478dce8cc" category="paragraph">如果您使用 Marketplace 、則會以相同方式提供權限。您只需要手動建立和設定 IAM 角色、然後為任何其他帳戶提供權限。</block>
   <block id="c369edb322a8885a983610e18f932d0c" category="paragraph">對於內部部署、您無法為 BlueXP 系統設定 IAM 角色、但可以使用 AWS 存取金鑰提供權限。</block>
-  <block id="5e32b9a1412a74f0635b487d41937c4a" category="list-text"><block ref="5e32b9a1412a74f0635b487d41937c4a" category="inline-link-macro-rx"></block></block>
   <block id="70bfaa19a89e29bf0fc2b34b8f3150ba" category="section-title">我該如何安全地旋轉 AWS 認證資料？</block>
   <block id="ee0f653772b33fb034bc7001a0c5e7a3" category="paragraph">如上所述、BlueXP可讓您以幾種方式提供AWS認證資料：與連接器執行個體相關的IAM角色、在信任的帳戶中擔任IAM角色、或提供AWS存取金鑰。</block>
   <block id="025a22cb479bbf0e83048a4ae6ffaaa0" category="paragraph">在前兩個選項中、BlueXP會使用AWS安全性權杖服務來取得持續循環的暫用認證資料。此程序是最佳實務做法、它是自動且安全的。</block>
@@ -2091,18 +1922,6 @@
   <block id="d42fa6c698bffd937b50724aa035c2cb" category="section-title">2021年2月9日</block>
   <block id="094be1dbadd11ed5e81a249dfb9a643a" category="section-title">支援儀表板改良功能</block>
   <block id="2a42bd1b25c8685af4b1b1d1ca8e4805" category="paragraph">我們已更新「支援儀表板」，讓您可以新增 NetApp 支援網站認證資料，以登錄您的支援方案。您也可以直接從儀表板啟動NetApp支援案例。只要按一下「說明」圖示、然後按*「支援」*即可。</block>
-  <block id="dd6d1a7ee88d575527e2bf81d4c7c6df" category="summary">設定 Google Cloud 權限、以便您使用 BlueXP 在 Google Cloud 中管理資料和儲存基礎架構。</block>
-  <block id="e914e731bb669784ea88e9ad697407fb" category="doc">設定 Google Cloud 權限</block>
-  <block id="f00f3911e8c8254ce1ec4c23f1062879" category="paragraph">在 Google Cloud 中設定權限、讓您能夠以管理資料和儲存基礎架構所需的權限來部署 Connector 。</block>
-  <block id="53e6a36c2135867f33ff9540dc3277c2" category="paragraph">您必須依照下列方式設定 Google Cloud 權限：</block>
-  <block id="89033d28e17545a21aadcebd8bcf792d" category="list-text">如果您打算從 BlueXP 或使用 gCloud 建立 Connector 、則需要為將部署 Connector VM 的 Google Cloud 使用者設定權限。</block>
-  <block id="61291d12552dccc5c384a1daeedf5c51" category="list-text">建立角色並將角色授予服務帳戶、以設定 Connector 的權限。</block>
-  <block id="18db51c98524cca1980881946553937b" category="paragraph">您將此服務帳戶與 Connector VM 建立關聯、以便 BlueXP 具有必要的權限。</block>
-  <block id="8e791012319a6cc33e02b9f65f0eb71d" category="paragraph">視組態而定、您可能也需要完成下列步驟：</block>
-  <block id="f78e7e80b2f4d00362b5fcc2740c2408" category="list-text">設定跨專案的權限</block>
-  <block id="f25346a7c8bf8795443396442b179238" category="list-text">設定共用VPC的權限</block>
-  <block id="f511b131df5742575d4143124dccaf53" category="section-title">設定從 BlueXP 或 gCloud 建立 Connector 的權限</block>
-  <block id="7c449783ef2d182bbc6b55e101fb3196" category="paragraph">在您可以從 BlueXP 或使用 gCloud 部署 Connector 之前、您必須確保 Google Cloud 帳戶擁有正確的權限。</block>
   <block id="eb13228b7d3a81ef5fba30ba79924b80" category="list-text">在 Google Cloud 中建立自訂角色：</block>
   <block id="98b95b176d8b51112c2de8e58e9caf10" category="list-text">建立包含下列權限的 YAML 檔案：</block>
   <block id="49cfb78048f1f3515483265f3346abf2" category="list-text">從 Google Cloud 啟動 Cloud Shell 。</block>
@@ -2117,7 +1936,6 @@
   <block id="3570a09ca6fe90de537293b162a08dac" category="paragraph"><block ref="3570a09ca6fe90de537293b162a08dac" category="inline-link-rx"></block></block>
   <block id="5da55b582cbca296c8d85616607ef88b" category="paragraph">Google Cloud使用者現在擁有建立Connector所需的權限。</block>
   <block id="969649bfc72cfeb92f696e30256b4152" category="section-title">設定 Connector 的權限</block>
-  <block id="891271639b7eb98f69885ebc6f4f6e6d" category="paragraph">必須有服務帳戶、才能為 Connector 提供 BlueXP 在 Google Cloud 中管理資源所需的權限。您需要將此服務帳戶與 Connector VM 建立關聯。</block>
   <block id="d3f43fed60f0a507e6418503d2e5133b" category="inline-link-macro">Connector 的服務帳戶權限</block>
   <block id="89c19793fa4fd34426a128c4ebe03948" category="list-text">建立包含的內容的 YAML 檔案 <block ref="16c885f571f66caafdba8f3cb6f880e3" category="inline-link-macro-rx"></block>。</block>
   <block id="60696c8c3376d314543ef1f6c5dd3364" category="paragraph">以下範例在專案層級建立名為「 Connector 」的角色：</block>
@@ -2128,13 +1946,11 @@
   <block id="a4b90b417735642fce23ce0ce7441ca3" category="paragraph">已設定Connector VM的服務帳戶。</block>
   <block id="b54026f2d69ec7f7219507fafb9892a7" category="paragraph">如果您計畫在Cloud Volumes ONTAP Connector所在專案的不同專案中部署支援功能、則需要提供Connector的服務帳戶、以便存取這些專案。</block>
   <block id="cf4f902f986fa557d6c9a367c5fc98aa" category="paragraph">例如、假設Connector在專案1中、您想在Cloud Volumes ONTAP 專案2中建立一套支援系統。您必須在專案2中授予服務帳戶存取權。</block>
-  <block id="c2e0d7b38c035030529af19f9203dd9b" category="list-text">在Google Cloud主控台中、前往IAM服務、然後選取您要建立Cloud Volumes ONTAP 的項目。</block>
   <block id="e2b43bc6eddd7c5ec2c7104bd42e0e6e" category="list-text">在「* IAM *」頁面上、選取「*授予存取權*」、並提供所需的詳細資料。</block>
   <block id="eacb1b3758ebd1aa03b4f1b86b49bd53" category="list-text">輸入Connector服務帳戶的電子郵件。</block>
   <block id="8f3118254324aa503647a0f0a4cd34cc" category="list-text">選取Connector的自訂角色。</block>
   <block id="b0cd7667098b2a3439c52ba1f9334faa" category="inline-link">Google Cloud文件</block>
   <block id="ece59c09a5f78f29903e8e1daac67577" category="paragraph">如需詳細資料、請參閱<block ref="eb023f41fbcdd6f661c855770356f2dc" category="inline-link-rx"></block></block>
-  <block id="893b6747ffabae1d7bbd6d266f24c4ab" category="section-title">設定共享VPC權限</block>
   <block id="258ec60588311e40d9028ecd4b015f8a" category="paragraph">如果您使用共享 VPC 將資源部署到服務專案中、則需要準備權限。</block>
   <block id="d723567d50507549f1f0eed5e785438e" category="paragraph">此表供參考、當IAM組態完成時、您的環境應反映權限表。</block>
   <block id="c9c5c65fb4af9cf90eb99b3b84424189" category="cell">身分識別</block>
@@ -2146,18 +1962,14 @@
   <block id="90589c47f06eb971d548591f23c285af" category="cell">自訂</block>
   <block id="a546c9049428d60032b181f2f82657b4" category="cell">服務專案</block>
   <block id="ea281005ae69ae95f892a81823170250" category="inline-link-macro">Connector 部署原則</block>
-  <block id="68eb3aa41437f8303a2bd1119e48c4d2" category="paragraph"><block ref="68eb3aa41437f8303a2bd1119e48c4d2" category="inline-link-macro-rx"></block></block>
   <block id="40f49838c90873745fc1b1382a2c4b68" category="paragraph">compute.networkUser</block>
   <block id="0739a8d84cae34de0d2732632c0d3e8e" category="cell">在服務專案中部署Connector</block>
   <block id="483a6486004960ab28236293d3cf2bce" category="cell">連接器服務帳戶</block>
   <block id="6021eec4920c52f3a4df07a5381d9fb0" category="cell">服務專案</block>
   <block id="ace9c0d9f74f3b31d738cbc15a6e4799" category="inline-link-macro">Connector 服務帳戶原則</block>
   <block id="c84e9dfc0322e7d45c5c04fb1936a321" category="paragraph"><block ref="c84e9dfc0322e7d45c5c04fb1936a321" category="inline-link-macro-rx"></block></block>
-  <block id="d9dae3e5d95c5ba752d5beb73a01f9f0" category="list-text">部署manager.manager</block>
   <block id="06ca5d86ca92fe80348aec87cb3071db" category="cell">在Cloud Volumes ONTAP 服務專案中部署及維護功能與服務</block>
   <block id="6a9bc1ac566276782bd9d53b52b2f372" category="cell">服務帳戶Cloud Volumes ONTAP</block>
-  <block id="1e88d77d48ab40f10d18398d6d56110a" category="list-text">儲存設備管理</block>
-  <block id="6596ec425be852d6a717fb02e701c2b2" category="list-text">成員：serviceAccount.user的BlueXP服務帳戶</block>
   <block id="382b0f5185773fa0f67a8ed8056c7759" category="cell">不適用</block>
   <block id="056f501b387d3252fe17b9dbb4d42ad7" category="cell">（選用）用於資料分層和 BlueXP 備份與還原</block>
   <block id="386abe7036c62f0f27d3787e317b4aff" category="cell">Google API服務代理程式</block>
@@ -2171,29 +1983,11 @@
   <block id="4b32545acb84a8a99e56ccc813199881" category="list-text">只有當您未將防火牆規則傳遞至部署、並選擇讓BlueXP為您建立防火牆規則時、才需要使用Firewall.create和firewall.delete。這些權限位於BlueXP帳戶.yaml檔案中。如果您使用共用VPC部署HA配對、這些權限將用於建立VPC1、2和3的防火牆規則。對於所有其他部署、這些權限也會用於建立VPC0的規則。</block>
   <block id="770b8b43613e5c706e2c10ec7bcc3ec7" category="list-text">對於資料分層、分層服務帳戶必須在服務帳戶上具有serviceAccount.user角色、而不只是在專案層級。目前、如果您在專案層級指派serviceAccount.user、則當您使用getIAMPolicy查詢服務帳戶時、不會顯示權限。</block>
   <block id="0e73a4809ffc38dd69c7199f7f3b9bf2" category="summary">在私有模式下使用 BlueXP 時、您需要從本機在 Connector 上執行的使用者介面登入 BlueXP 主控台。</block>
-  <block id="1c42e5a3e07db1a9b4f218a40f5f6019" category="doc">登入 BlueXP （私有模式）</block>
-  <block id="0994880ff67f7251649b7fab82f0a166" category="paragraph-title">登入選項</block>
   <block id="516e43b3e75e3babe4495cf821a204d3" category="paragraph">私有模式支援本機使用者管理與存取。驗證並非透過 BlueXP 的雲端服務提供。</block>
   <block id="7771e98a4d3c7e9baf33b576bbae8a46" category="paragraph">_ipaddress_ 可以是 localhost 、私有 IP 位址或公有 IP 位址、視您安裝 Connector 的主機組態而定。例如、您可能需要從連線至 Connector 主機的主機輸入私有 IP 位址。</block>
   <block id="bf16d7909c891a5a760cab0ad77d53bc" category="list-text">輸入您的使用者名稱和密碼以登入。</block>
   <block id="0cdc0aaedcc5278681de9de08217447f" category="paragraph">您現在已經登入、可以開始使用BlueXP來管理混合式多雲端基礎架構。</block>
   <block id="52be9a779a7de2bea0867d1d993e7f07" category="summary">Connector 軟體必須在符合特定作業系統需求、 RAM 需求、連接埠需求等的主機上執行。安裝 Connector 之前、請先確定您的主機符合這些要求。</block>
-  <block id="a47008d27aa59757cb746310837a7335" category="doc">檢閱內部部署安裝的 Connector 主機需求</block>
-  <block id="c13f593278192af77f7116c61b4f1828" category="summary">選擇安裝選項、設定網路、準備權限等、在 Google Cloud 中建立 Connector 。</block>
-  <block id="a24b77cc28692ab3f067a53b8d87977f" category="doc">在 Google Cloud 中快速建立 Connector</block>
-  <block id="7a396f953e409fc4113a3eeb3714978c" category="paragraph">在 Google Cloud 中建立 Connector 的標準方法是直接從 BlueXP 建立、但您也可以使用 gCloud 建立 Connector 、或是在現有的 Linux 主機上手動安裝軟體。</block>
-  <block id="d6b2edc88b04bf885cb72e8cf0bdb02e" category="paragraph"><block ref="7faab28792959edccdd5bb629174a43b" category="inline-link-macro-rx"></block>。</block>
-  <block id="bcbc9fff8d4487788c2d9340f7d3f30a" category="list-text">VPC 和子網路</block>
-  <block id="6d117b41618cb9d361db392dd6ff151b" category="paragraph"><block ref="10b8794b5b9549957094545036a01876" category="inline-link-macro-rx"></block>。</block>
-  <block id="8a9983b753881349972a7c0a24378110" category="paragraph">如果您想要在自己的 Linux 主機上手動安裝 Connector 軟體、則應確保主機符合特定需求。如果您是從 BlueXP 或使用 gCloud 建立 Connector 、則這些需求將會妥善處理、因為軟體是從映像部署而來。</block>
-  <block id="3633aaf72e18b72ee7d2e915e82be0c6" category="paragraph"><block ref="2d4899440637ad0f9b80e78751923630" category="inline-link-macro-rx"></block>。</block>
-  <block id="7a48e91302c9dc7f85920f518f25f1d7" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 設定 Google Cloud 權限</block>
-  <block id="f7b1947038df0eb1bf72eca001af4938" category="paragraph">針對您打算使用的安裝選項設定 Google Cloud 權限：</block>
-  <block id="dbcdf972a32875d3f398fb9aba2b4388" category="list-text">* 從 BlueXP 或 gCloud 安裝 * ：建立自訂角色、並將其附加至將部署 Connector 的使用者。建立另一個自訂角色、並將其指派給 Connector VM 執行個體的服務帳戶。</block>
-  <block id="654db1d0d96e02d38f2fad1950efd71e" category="list-text">* 手動安裝 * ：建立自訂角色、並將其指派給 Connector VM 執行個體的服務帳戶。</block>
-  <block id="604a45edec07589c2eecacd5c58317a0" category="paragraph"><block ref="dd67bca9f69a03dd0e30c3ded8433217" category="inline-link-macro-rx"></block>。</block>
-  <block id="91f5721735e87c3888022376ff4ee935" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> 啟用 Google Cloud API</block>
-  <block id="246e2c0006b42f54df383af22960ca34" category="paragraph">在 Google Cloud 中部署 Connector 和 Cloud Volumes ONTAP 需要幾個 API 。</block>
   <block id="d82c8fcef9b6dd8fb6808c96dcbc5bb5" category="list-text">Cloud Deployment Manager V2 API</block>
   <block id="1439ef482dee1b1e4b2daac93de36c44" category="list-text">雲端記錄 API</block>
   <block id="9e636409b20980fb5089c87705851b4d" category="list-text">Cloud Resource Manager API</block>
@@ -2201,13 +1995,6 @@
   <block id="71660685d00034957db3f9a31c160978" category="list-text">身分識別與存取管理（ IAM ） API</block>
   <block id="b86699cce9d5045d0f0bc82298a74e55" category="list-text">雲端金鑰管理服務（ KMS ） API</block>
   <block id="5cb2601217dd646515fe8e7cba8643b1" category="paragraph">（僅當您打算使用 BlueXP 備份與還原搭配客戶管理的加密金鑰（ CMEK ）時才需要）</block>
-  <block id="015e23fbc94e55a6c0dfa26af68fa935" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block> 建立連接器</block>
-  <block id="ec5ceaf74aec9d86564e0b833a487119" category="list-text">* 使用 gloud * ：使用<block ref="0617854bbddee9be6e27611fd546a125" prefix=" " category="inline-code"></block> 命令。</block>
-  <block id="1485a5e640d49dbdcd1ad3668e2fe00d" category="paragraph"><block ref="de0c65faa3b7dfffd98d54f0a5e91e87" category="inline-link-macro-rx"></block>。</block>
-  <block id="12e67aac3e7f9227cc35f8f047d7dc74" category="inline-image-macro">七</block>
-  <block id="19c8e8f30ab12df07d230374892d7826" category="paragraph-title"><block ref="36915574c413876eaa75cbd48f69fd00" category="inline-image-macro-rx" type="image"></block> 提供 BlueXP 權限</block>
-  <block id="7e9fd0e0d40d3d730e869463494ded64" category="paragraph">如果您在自己的 Linux 主機上手動安裝 Connector 軟體、則必須提供 BlueXP 先前設定的權限。</block>
-  <block id="1a4c1164aacaef15956ea55374b8630f" category="paragraph"><block ref="c60cae4b61906dc194e18ec5beb2b243" category="inline-link-macro-rx"></block>。</block>
   <block id="b8c45dd3fc7b806721f81b6d91964231" category="summary">以私人模式使用 BlueXP 開始運作後、您可以開始使用受私有模式支援的 BlueXP 服務。</block>
   <block id="299e0f249c257857628a7f5786b1b039" category="doc">下一步操作（私有模式）</block>
   <block id="fced466a309d5f02b614e19af9c50a3a" category="paragraph">如需協助、請參閱下列文件：</block>
@@ -2266,13 +2053,11 @@
   <block id="590b2ea5933ad8ead3c9a15a914f1a9c" category="list-text">所有服務都在Docker容器內執行</block>
   <block id="f76b4c57c56377745199382d59cdeed3" category="paragraph">這些服務取決於執行的Docker執行時間服務</block>
   <block id="2ba2174aabffe3eb7a1b296e02063736" category="summary">在受限模式下使用 BlueXP 時、您必須從本機在 Connector 上執行的使用者介面登入 BlueXP 主控台。</block>
-  <block id="31225c8edfd852af80a6a97e73367de2" category="doc">登入 BlueXP （受限模式）</block>
   <block id="2f9c17fd9cee8c55ea6b3cf6e0358440" category="paragraph">當您的帳戶設定為受限模式時、 BlueXP 支援使用下列其中一個選項登入：</block>
   <block id="691be8e1993c2535e4afe5834afe3b01" category="list-text">使用您的電子郵件地址和密碼登入NetApp雲端</block>
   <block id="029351726760b5e014b1e49ec512b591" category="list-text">聯盟連線</block>
   <block id="22978e6bb3ddae7f86434764bd5d9415" category="paragraph">您可以使用單一登入、從公司目錄（聯盟身分識別）使用認證登入。 <block ref="428e058a0b96c0f6b163e3a51b92bb16" category="inline-link-macro-rx"></block>。</block>
   <block id="c68ce7f660a6741b838bea908ac88f81" category="summary">您必須先啟用數個 Google Cloud API 、才能在 Google Cloud 中部署 Connector 和 Cloud Volumes ONTAP 。</block>
-  <block id="3824876226172edfe0f17e8022b60fda" category="doc">啟用 Google Cloud API</block>
   <block id="48c7c41b72e1d678923ce3571aa65b2d" category="list-title">步驟</block>
   <block id="e6db33ee282f55f359f9274b3cb1f285" category="list-text">在專案中啟用下列 Google Cloud API ：</block>
   <block id="8626ee05ff51b6a467bb5d1ee81047b8" category="inline-link">Google Cloud 文件：啟用 API</block>
@@ -2360,9 +2145,6 @@
   <block id="aa03c0a49ae5be9aa71931d934887122" category="paragraph">如果您已從 NetApp 支援網站下載 Connector 軟體，並將其安裝在無法存取網際網路的管制網路中，則請使用這些命令。</block>
   <block id="c89064bda3f1ae133a231f5b1f44c3b0" category="list-text">從Linux主機執行下列命令：</block>
   <block id="111374538bcb0d5c90baaab097278e39" category="doc">設定內部網路</block>
-  <block id="2f03f8dd45cb031f8f3cce95fd4acefc" category="paragraph">連接器需要網路連線至您所建立的工作環境類型、以及您計畫啟用的服務。</block>
-  <block id="caf7fd71047bbc17e23e603d7a448234" category="paragraph">例如、如果您想要在雲端中啟動 Cloud Volumes ONTAP 、則必須設定 VPN 連線、從公司網路連線到您計畫啟動 Cloud Volumes ONTAP 的虛擬網路。</block>
-  <block id="9827c1dc4f901b9ac9340f0034c5a996" category="paragraph">您部署Connector的網路位置必須具有傳出網際網路連線。</block>
   <block id="8efafb8ae5af62e571308cca0bdcb4f0" category="paragraph">當您在自己的 Linux 主機上手動安裝 Connector 時、 Connector 的安裝程式需要在安裝過程中存取下列 URL ：</block>
   <block id="068395f3cd26ca40ad905de3790c9435" category="cell">管理Azure公共區域的資源。</block>
   <block id="232055d452a21264f8d549e50d695b18" category="cell">管理Azure中國地區的資源。</block>
@@ -2376,27 +2158,22 @@
 \https://cloudkms.googleapis.com/v1
 \https://www.googleapis.com/deploymentmanager/v2/projects</block>
   <block id="d377a02fb22cec7bf850087d3c9a31fa" category="cell">管理Google Cloud中的資源。</block>
-  <block id="8ae42ef1699b44390c771e4ea6cb78df" category="paragraph"><block ref="8ae42ef1699b44390c771e4ea6cb78df" category="inline-link-macro-rx"></block></block>
   <block id="6c669918d3fd007e30860acf8f0b3634" category="summary">在受限模式下部署 BlueXP 之前、請先準備好您的環境。例如、您需要檢閱主機需求、準備網路、設定權限等。</block>
   <block id="6df5369b59a40f64ce1869a0d4d405ea" category="doc">準備以受限模式進行部署</block>
-  <block id="bc27549db271a31b155a1f54549518c7" category="section-title">瞭解受限模式的運作方式</block>
   <block id="1b59f23b137c9cc38862c3922293bb00" category="paragraph">開始之前、您應該先瞭解 BlueXP 在受限模式下的運作方式。</block>
   <block id="f9dfb70dcd93f4238ee5d913a31bf6e8" category="paragraph">例如、您應該瞭解、您必須使用本機可從 BlueXP Connector 取得的瀏覽器型介面來安裝。您無法從透過 SaaS 層提供的網路型主控台存取 BlueXP 。</block>
   <block id="f85cdd28eb786d1065030e252d80a98f" category="paragraph">此外、並非所有 BlueXP 服務都可用。</block>
   <block id="969e5e6dbdd922439410c5eb57bc3c2e" category="inline-link-macro">瞭解受限模式的運作方式</block>
   <block id="b2036e1cefe79fc164d2eaaa419935c9" category="paragraph"><block ref="f4da007470370a47030c086e797197e9" category="inline-link-macro-rx"></block>。</block>
-  <block id="d64f43d78b1ecaf146784dac38039517" category="section-title">檢閱安裝選項</block>
   <block id="806d57f398a8a5483fc85ddef0e6e02b" category="paragraph">在受限模式中、您只能在雲端安裝 Connector 。提供下列安裝選項：</block>
   <block id="d86cb0922d867e490dcef6964036e4fd" category="list-text">從 AWS Marketplace 取得</block>
   <block id="298f129fdb30fe24b9eecd86a61f1440" category="list-text">來自 Azure Marketplace</block>
   <block id="87d04b298d766a1fd5fe8d102bd7a241" category="list-text">在您自己的 Linux 主機上手動安裝 Connector 、該主機在 AWS 、 Azure 或 Google Cloud 中執行</block>
-  <block id="0b83acc0f3acc5df3c9680b942f63fad" category="section-title">檢閱主機需求</block>
   <block id="f6c634614114f28ad6651cf4345c81a6" category="paragraph">Connector 軟體必須在符合特定作業系統需求、 RAM 需求、連接埠需求等的主機上執行。</block>
   <block id="d644a17aca08fb8104aa91cad3587621" category="paragraph">當您從 AWS 或 Azure Marketplace 部署 Connector 時、映像會包含所需的作業系統和軟體元件。您只需選擇符合 CPU 和 RAM 需求的執行個體類型即可。</block>
   <block id="ec8c369d41bbd1648282c6ae81d4053a" category="section-title">準備連接器的網路連線</block>
   <block id="df290139b26527b2473b1e82a36386d4" category="paragraph">設定您的網路、讓 Connector 能夠管理公有雲環境中的資源和程序。除了連接器的虛擬網路和子網路之外、您還需要確保符合下列需求。</block>
   <block id="9c4f61930fc3d0e8fcdc4fc034aa30e9" category="paragraph">Connector 必須與您計畫管理儲存設備的位置建立網路連線。例如、您計畫部署 Cloud Volumes ONTAP 的 VPC 或 vnet 、或內部部署 ONTAP 叢集所在的資料中心。</block>
-  <block id="c12c7a94ee242ba689520e046d5f18fe" category="section-title">用於手動安裝的外送網際網路存取</block>
   <block id="fa5cc2cb386581601ffd1b12fb1e1e4f" category="section-title">用於日常營運的外傳網際網路存取</block>
   <block id="ba12ed831d0f3c55f2691461b5995db5" category="paragraph">您部署Connector的網路位置必須具有傳出網際網路連線。連接器需要存取傳出網際網路、才能連絡下列端點、以便管理公有雲環境中的資源和程序。</block>
   <block id="7dfb843f052469a3cc66d13554feb0f4" category="cell">\https://management.azure.com
@@ -2422,8 +2199,6 @@
   <block id="11ffd2b7817530008f4bc1916d79b3d7" category="paragraph">除非您啟動連接器、否則不會有傳入流量進入連接器。</block>
   <block id="4fd45d0ebe27698075cfa2d13f41913e" category="paragraph">HTTP （ 80 ）和 HTTPS （ 443 ）可讓您存取 BlueXP 主控台。只有在需要連線至主機進行疑難排解時、才需要SSH（22）。</block>
   <block id="65c06ded772ceb4963d08fe97b164419" category="section-title">準備網路以供使用者存取 BlueXP 主控台</block>
-  <block id="201391f03ceb3ff56054b6793246b8fe" category="paragraph">在受限模式下、可從 Connector 存取 BlueXP 使用者介面。當您使用 BlueXP 使用者介面時、它會聯絡幾個端點來完成資料管理工作。執行網頁瀏覽器的機器必須連線至下列端點。</block>
-  <block id="9d05d3f0e6b6c76ecd11e19cde8e2714" category="section-title">準備雲端權限</block>
   <block id="1bbc21ea62577425a75c703ea171ec1b" category="paragraph">BlueXP 需要雲端供應商的權限、才能在虛擬網路中部署 Cloud Volumes ONTAP 並使用 BlueXP 資料服務。您需要在雲端供應商中設定權限、然後將這些權限與 Connector 建立關聯。</block>
   <block id="0db5b81cf6db397c0165b2a6678ee87e" category="paragraph">若要檢視必要步驟、請選取您想要用於雲端供應商的驗證選項。</block>
   <block id="186140c2ad20e30aa2a80665d7e02c6c" category="paragraph">使用 IAM 角色為 Connector 提供權限。</block>
@@ -2453,39 +2228,25 @@
   <block id="46bf370081d2da83a6ee9a9727083e5b" category="paragraph">現在您已經以標準模式登入並設定 BlueXP 、使用者可以建立和探索工作環境、並使用 BlueXP 資料服務。</block>
   <block id="7a1a2603f867b3ab4f911914771995c7" category="inline-link">BlueXP 文件首頁</block>
   <block id="119ea98564cae99d8f3083158d800124" category="paragraph">如需協助、請前往<block ref="fcad168018b4f932b8d61fdac1ba9c7f" category="inline-link-rx"></block> 檢視所有 BlueXP 服務的文件。</block>
-  <block id="250b0cf2e6c1131d20df693fd390488e" category="doc">提供 BlueXP 的內部安裝權限</block>
   <block id="d22e9ad90e63b8313cb68883a39b3a99" category="paragraph">如果您剛在 AWS 中建立這些認證、可能需要幾分鐘的時間才能使用。請稍候幾分鐘、再將認證資料新增至BlueXP。</block>
   <block id="6a5cc7195e9c182dffb225cfc25d01e7" category="paragraph">如果您剛在 Azure 中建立這些認證、可能需要幾分鐘的時間才能使用。請稍候幾分鐘、再將認證資料新增至BlueXP。</block>
   <block id="ffb0fc074900d8a4132e4776f5a4f956" category="paragraph">BlueXP 現在擁有代表您在 Azure 中執行動作所需的權限。您現在可以前往<block ref="a47e12f4350b725a128875f50f785a3b" category="inline-link-rx"></block> 開始使用Connector with BlueXP。</block>
   <block id="b7afeec70319496f1e3eb3a317ae30c3" category="doc">設定 Google Cloud 網路</block>
-  <block id="0065d8b9887fdaed0fbcaa888218a2ef" category="summary">從 BlueXP 主控台註冊、選擇性地建立 Connector 、以及訂閱 BlueXP 、以標準模式開始使用 BlueXP 。</block>
   <block id="b48e4ef862d4262f2d1bbbde89d8e48c" category="doc">以標準模式快速啟動 BlueXP</block>
-  <block id="0876e0a47d86eee44886009e6fdae6e5" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 註冊並建立帳戶</block>
   <block id="d592a53baa7083e5ab7b0bc72eee19ef" category="paragraph">前往<block ref="a47e12f4350b725a128875f50f785a3b" category="inline-link-rx"></block> 並註冊。系統會提供您建立帳戶的選項、但如果您被邀請加入現有帳戶、則可以跳過該步驟。</block>
   <block id="885c0a0c266c904878925a2adb8ad8e3" category="inline-link-macro">瞭解如何在沒有 Connector 的情況下執行</block>
   <block id="6c8debb34ebc3c407a812ccc72251f69" category="paragraph">此時、您已登入、可以開始使用數位顧問、 Amazon FSX for ONTAP 、 Azure NetApp Files 等多項 BlueXP 服務。 <block ref="8851d71f122770c4a322caec0247d10a" category="inline-link-macro-rx"></block>。</block>
-  <block id="996a84421252d4a7c2db622831369066" category="inline-link-macro">瞭解如何註冊及建立帳戶</block>
-  <block id="c174f3b881f40db0891af0da161c1ebf" category="paragraph"><block ref="e9f714cbe528d0ccf7168d118c24dc26" category="inline-link-macro-rx"></block>。</block>
-  <block id="70629c795585a51cd2dd42e29eb9110a" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> 建立連接器</block>
   <block id="82c153b2414dc18b6be5abc5e6109200" category="paragraph">您不需要 Connector 即可開始使用 BlueXP 、但您可以建立 Connector 來解除鎖定所有 BlueXP 功能和服務。Connector 是 NetApp 軟體、可讓 BlueXP 在混合雲環境中管理資源和程序。</block>
   <block id="8b4a0a506b72094247801bd21678206e" category="paragraph">BlueXP 帳戶管理員可以在雲端或內部部署網路中建立 Connector 。</block>
   <block id="249345af661bafcf4f8bd3a0b9d6e949" category="inline-link-macro">深入瞭解何時需要連接器及其運作方式</block>
   <block id="850c1601f372329538aba5fe3f86430c" category="list-text"><block ref="850c1601f372329538aba5fe3f86430c" category="inline-link-macro-rx"></block></block>
   <block id="74d2f2a8ee613c321072e364f7ed33b2" category="inline-link-macro">瞭解如何在 AWS 中建立 Connector</block>
-  <block id="6d294229282ac87bee8091b71318371f" category="list-text"><block ref="6d294229282ac87bee8091b71318371f" category="inline-link-macro-rx"></block></block>
   <block id="019fd7c8c6395aedf9e4d8fe995febee" category="inline-link-macro">瞭解如何在 Azure 中建立 Connector</block>
-  <block id="bb81c8a12c65cb6417152ea245fc0d08" category="list-text"><block ref="bb81c8a12c65cb6417152ea245fc0d08" category="inline-link-macro-rx"></block></block>
   <block id="aa5c1c092b41ba183b34ea75815e55a2" category="inline-link-macro">瞭解如何在Google Cloud中建立Connector</block>
-  <block id="ce2d90cab8e80102030b82f69af64659" category="list-text"><block ref="ce2d90cab8e80102030b82f69af64659" category="inline-link-macro-rx"></block></block>
   <block id="b279d324941aabfaed1bf558f37a98bc" category="inline-link-macro">瞭解如何在內部部署上建立 Connector</block>
-  <block id="3a02d9e1c20028d65ffc412d36f140d0" category="list-text"><block ref="3a02d9e1c20028d65ffc412d36f140d0" category="inline-link-macro-rx"></block></block>
   <block id="11f541a08afbd320cd13f0c88b417a4b" category="paragraph">請注意、如果您想要使用 BlueXP 服務來管理 Google Cloud 中的儲存和資料、則 Connector 必須在 Google Cloud 中執行。</block>
-  <block id="f2a22a629f9bad85f41243962f9380fb" category="paragraph"><block ref="8e1057d16cd60d5c0c31b6f13c293038" category="inline-link-macro-rx"></block>。</block>
-  <block id="cbfb15b83383719b2c85d236f8e414bb" category="summary">直接從 BlueXP 網路型主控台、 AWS Marketplace 或在您自己的 Linux 主機上安裝軟體、建立 Connector 。</block>
   <block id="aca02eea323174e41d57225a762eb959" category="list-text">AWS 驗證方法：為具有必要權限的 IAM 使用者提供 IAM 角色或存取金鑰。</block>
   <block id="3f4713c771af26689845a2dfeec86b37" category="inline-link-macro">瞭解如何設定 AWS 權限</block>
-  <block id="f911544c9d1c454bbad50b12be4649a1" category="paragraph"><block ref="f911544c9d1c454bbad50b12be4649a1" category="inline-link-macro-rx"></block></block>
-  <block id="a2678c8f1e6c4ef6102f9e3e10a87ecc" category="paragraph"><block ref="a2678c8f1e6c4ef6102f9e3e10a87ecc" category="inline-link-macro-rx"></block></block>
   <block id="b16e9971e18d4e63cd90cc2dc398c39e" category="list-text">EC2 執行個體的金鑰配對。</block>
   <block id="af9010f3e11d7efceb7ba88d02e92d39" category="list-text">*準備好*：檢視您需要的內容。</block>
   <block id="694fc44336d7d79e22d661cd3051861e" category="list-text">* AWS認證資料*：指定您的AWS區域、然後選擇驗證方法、這是BlueXP可以承擔的IAM角色、或是AWS存取金鑰和秘密金鑰。</block>
@@ -2500,10 +2261,7 @@
   <block id="10d640974ffe6a13a9a3a5b33c7610d6" category="paragraph">請確定您的金鑰配對正確、可與連接器搭配使用。如果沒有金鑰配對、您將無法存取Connector虛擬機器。</block>
   <block id="461008ea76e4abfc7758a2885f6cdf98" category="inline-link-macro">檢視 AWS 的安全性群組規則</block>
   <block id="801fb8cfbc6e3ffd99fcb50ae87133bd" category="paragraph"><block ref="cd13f88aaa57bb10606ac0df26b2eb23" category="inline-link-macro-rx"></block>。</block>
-  <block id="cab27dc53edb571cac663ce2e16450dc" category="open-title">AWS Marketplace</block>
-  <block id="31d6851e8b182fb375e0edc42727cd0c" category="paragraph"><block ref="a2678c8f1e6c4ef6102f9e3e10a87ecc" category="inline-link-macro-rx"></block>。</block>
   <block id="b5599f9f352b1fa4cb2153ba99bdb13c" category="list-text">具有附加原則的 IAM 角色、其中包含 Connector 所需的權限。</block>
-  <block id="ef3d43411b20fb9ad0bca0d540679a94" category="paragraph"><block ref="f911544c9d1c454bbad50b12be4649a1" category="inline-link-macro-rx"></block>。</block>
   <block id="dfcbfa4ce7dbf520f2b737359dfbc591" category="list-text">為您的 IAM 使用者訂閱及取消訂閱 AWS Marketplace 的權限。</block>
   <block id="7c9b14f6116e140202c359bff8bc86c2" category="inline-link">AWS Marketplace上的BlueXP頁面</block>
   <block id="3a1757ca714434ada3988895ed0a0fab" category="list-text">前往<block ref="aa1bf3a3349706e28315b07c47668a91" category="inline-link-rx"></block></block>
@@ -2523,23 +2281,6 @@
   <block id="79b8b9ad9bf89b0b494ac4c62694d70f" category="list-text">*設定儲存設備*：保留預設的儲存選項。</block>
   <block id="752330cdb2fab31ec29aaa286269a882" category="list-text">* 進階詳細資料 * ：在 * IAM 執行個體設定檔 * 下、選擇包含 Connector 所需權限的 IAM 角色。</block>
   <block id="10a3df02c55e733eca6fef076545645a" category="paragraph">AWS 會以指定的設定啟動軟體。Connector 執行個體和軟體應在大約五分鐘內執行。</block>
-  <block id="263bf141eee327cfdfe08fdc96fb32bc" category="paragraph"><block ref="53f6e9b699374851a8086ab8319c48f4" category="inline-link-macro-rx"></block>。</block>
-  <block id="037ab8e28d036e5a218a1692a62fd8b5" category="summary">在 AWS 中建立 Connector 、方法是選擇安裝選項、設定網路、準備權限等。</block>
-  <block id="62114d729bedb37529f10ca13d76d0cc" category="doc">快速開始在 AWS 中建立 Connector</block>
-  <block id="7e09fb77e206a242f3f06e7cc61dd58a" category="paragraph">在 AWS 中建立 Connector 的標準方法是直接從 BlueXP 建立、但您也可以從 AWS Marketplace 建立、或是手動將軟體安裝在現有的 Linux 主機上。</block>
-  <block id="a56be8fcf9cdfe04c839d8381b610ad9" category="paragraph"><block ref="ade0887db526f72ed0d1d6c5708f3e13" category="inline-link-macro-rx"></block>。</block>
-  <block id="b2f11e007fbc7abca64e5c1d6c2b7128" category="paragraph"><block ref="8e7b3f5f067e9282c1888d205cec32d1" category="inline-link-macro-rx"></block>。</block>
-  <block id="a12b9d09313df9b379fff76f6080b543" category="paragraph">如果您想要在自己的 Linux 主機上手動安裝 Connector 軟體、則應確保主機符合特定需求。如果您是從 BlueXP 或 AWS Marketplace 建立 Connector 、則這些需求會由映像部署軟體來滿足。</block>
-  <block id="a210968d517dd722bb07b30a19848aba" category="paragraph"><block ref="a0def2bb90da07c3ee565e52d86737eb" category="inline-link-macro-rx"></block>。</block>
-  <block id="9b2016503a2a16403edd8e4505d62007" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 設定 AWS 權限</block>
-  <block id="c405be6f63207e29490377f138661fe6" category="paragraph">根據您計畫使用的安裝選項來設定 AWS 權限：</block>
-  <block id="d028c4961d6731ef19885db0fa301a85" category="list-text">* 從 BlueXP* 安裝：建立 IAM 原則、並將其附加至 BlueXP 可以承擔的 IAM 角色、或是您可以提供存取金鑰的 IAM 使用者。BlueXP 使用 AWS 進行驗證、並使用這些權限代表您建立 Connector 執行個體。</block>
-  <block id="e49e5a1d08464cf832459ee413ed0c27" category="list-text">* 從 AWS Marketplace 安裝 * ：建立 IAM 原則並將其附加至 IAM 角色。您將在安裝期間將此角色與 Connector 執行個體建立關聯。</block>
-  <block id="bdc97c9d6a82f1b98a6433492922d317" category="list-text">* 手動安裝 * ：建立 IAM 原則、並將其附加至 IAM 角色或 IAM 使用者。您可以將角色與 Connector 執行個體建立關聯、或為 BlueXP 提供 IAM 使用者的存取金鑰。</block>
-  <block id="813d66b9aa6504eb0393fe8f18e410ab" category="paragraph"><block ref="fb50b593341db1d567c02844e3107b31" category="inline-link-macro-rx"></block>。</block>
-  <block id="cc6a83ff79652e7af2e1e46f74ee1d83" category="list-text">* 從 AWS Marketplace * ：前往<block ref="aa1bf3a3349706e28315b07c47668a91" category="inline-link-rx"></block> 並依照提示透過 EC2 啟動、以便附加 IAM 角色。</block>
-  <block id="6b4846918ec5562f3ce11157869d4957" category="paragraph"><block ref="91b0e29fcfb2a92bef28fd818c1df87d" category="inline-link-macro-rx"></block>。</block>
-  <block id="eda37b84b461f4ae9020cc011c2ab682" category="paragraph"><block ref="a9d55e0cad45616cf17e8568ca899ca4" category="inline-link-macro-rx"></block>。</block>
   <block id="a187fbf78abfcf26b0ccf604029629e6" category="summary">身分識別聯盟可透過BlueXP進行單一登入、讓使用者使用公司身分的認證登入。若要開始使用、請瞭解身分識別聯盟如何與BlueXP搭配運作、然後檢閱設定程序的總覽。</block>
   <block id="5a94ee93b1a4f42d5f889b53b576b4f0" category="doc">使用與BlueXP的身分識別聯盟</block>
   <block id="dca3cd1676cfe384fbb50f39c2e26eb4" category="paragraph">_Identity Federation®啟用單一登入BlueXP、讓使用者可以使用公司身分的認證登入。若要開始使用、請瞭解身分識別聯盟如何與BlueXP搭配運作、然後檢閱設定程序的總覽。</block>
@@ -2826,13 +2567,6 @@
   <block id="24cce65a483e1205b8ca7bc0bf14c6c9" category="paragraph"><block ref="24cce65a483e1205b8ca7bc0bf14c6c9" category="inline-link-macro-rx"></block></block>
   <block id="d3846482b7a5f3467b05518965422219" category="section-title">Google Cloud權限</block>
   <block id="891af1225ba19aa10048241aff61f420" category="cell">從BlueXP部署Connector的Google Cloud使用者需要特定權限、才能在Google Cloud中部署Connector。</block>
-  <block id="8bbd308345d88bc23fd26357cd36b8d9" category="inline-link-macro">設定部署Connector的權限</block>
-  <block id="cf94f172dc39ef92ca49e3c869407357" category="cell"><block ref="cf94f172dc39ef92ca49e3c869407357" category="inline-link-macro-rx"></block></block>
-  <block id="8e83b819241a1bf1d918adcc453afeab" category="cell"><block ref="8e83b819241a1bf1d918adcc453afeab" category="inline-link-macro-rx"></block></block>
-  <block id="56e1e624f64034081fc607cc1b1f8f79" category="summary">如果您是從 Azure Marketplace 建立 Connector 、或是手動安裝軟體、則必須提供 BlueXP 先前設定的權限。提供權限可讓 BlueXP 管理 Azure 中的資料和儲存基礎架構。</block>
-  <block id="d0158e5fcbfd28e34c4ef5775896911d" category="doc">提供 Azure 對 BlueXP 的權限</block>
-  <block id="9b65fc0ae202a6e95605a59099ddd4f2" category="paragraph"><block ref="3834385bc683b7254cee45e1f0337870" category="inline-link-macro-rx"></block>。</block>
-  <block id="5fdfce3740c9425406c353e591925386" category="paragraph">如果您直接從 BlueXP 部署 Connector 、則這些步驟不適用、因為 BlueXP 會在部署期間指派必要的權限。</block>
   <block id="dd5f2c116815cb1eac2ffe4f6e18517f" category="open-title">自訂角色</block>
   <block id="ec09b900c630334c74f96f6faf3eee8e" category="paragraph">前往<block ref="a47e12f4350b725a128875f50f785a3b" category="inline-link-rx"></block> 開始使用Connector with BlueXP。</block>
   <block id="6019d7a828098995320847394d1a9a09" category="open-title">服務主體</block>
@@ -2999,7 +2733,6 @@
   <block id="b829f1a930ae603edd16b249b070f4c9" category="doc">以受限模式部署 Connector</block>
   <block id="5cadd29a69b0be5bc8b482cfc2e89adb" category="open-title">AWS 商業市場</block>
   <block id="278a1d20d474323c7730eb5c88c86df3" category="paragraph"><block ref="278a1d20d474323c7730eb5c88c86df3" category="inline-link-macro-rx"></block></block>
-  <block id="438ce182950c9739961cbff47dcf19b1" category="paragraph"><block ref="438ce182950c9739961cbff47dcf19b1" category="inline-link-macro-rx"></block></block>
   <block id="bf240a359c3f187f19fe389d739230dc" category="paragraph"><block ref="3b2280c8dd3c1825b88cbc43ff0a1ace" category="inline-link-macro-rx"></block>。</block>
   <block id="8a13274378538e70b1d8db3110b13a90" category="paragraph">設定 BlueXP 。</block>
   <block id="d919f0caf7e85368ea2bd20d82569c6b" category="open-title">AWS Gov Marketplace</block>
@@ -3019,7 +2752,6 @@
   <block id="36f12b5d2f30503ac36305c4f494f280" category="list-text">符合網路需求的 vnet 和子網路。</block>
   <block id="e055afdf7d35580a49ddc59582adcf3b" category="list-text">Azure 自訂角色、包含 Connector 所需的權限。</block>
   <block id="fd5738f5f42540888241b6b51480ad14" category="inline-link-macro">瞭解如何設定 Azure 權限</block>
-  <block id="8207e660ad4680e73479d143400652db" category="paragraph"><block ref="8207e660ad4680e73479d143400652db" category="inline-link-macro-rx"></block></block>
   <block id="8ac340f924d72696326df51a32dbdee5" category="inline-link">Azure政府區域的Azure Marketplace頁面</block>
   <block id="cc337b5a93c54f8a59d4731866297bf2" category="list-text"><block ref="cc337b5a93c54f8a59d4731866297bf2" category="inline-link-rx"></block></block>
   <block id="b5171064f2a0a87a764aa82511ee57e4" category="list-text">* VM 大小 * ：選擇符合 CPU 和 RAM 需求的 VM 大小。我們建議使用 DS3 v2 。</block>
@@ -3045,7 +2777,6 @@
   <block id="2a098ccba4af3c2f56db9cda96a29d3c" category="paragraph">Connector 現在已安裝、並使用您的 BlueXP 帳戶進行設定。所有使用者都需要使用 Connector 執行個體的 IP 位址來存取 BlueXP 。</block>
   <block id="51ee17d7a8d2b4c9bc36b4ac4b191f84" category="paragraph">如果您是從 Azure Marketplace 部署 Connector 、或是手動安裝 Connector 軟體、則必須提供先前設定的權限、才能使用 BlueXP 服務。</block>
   <block id="b8d0315300ac2427136acd2d1db19ef8" category="paragraph">如果您從 AWS Marketplace 部署 Connector 、則這些步驟不適用、因為您在部署期間選擇了所需的 IAM 角色。</block>
-  <block id="f643c6bb7284d8ad22546f8b5424984d" category="paragraph"><block ref="6a34c60d674019133bf42537b18417eb" category="inline-link-macro-rx"></block>。</block>
   <block id="2537b48fc15a099f9c795e464f0e7b70" category="paragraph">將您先前建立的 IAM 角色附加至您安裝 Connector 的 EC2 執行個體。</block>
   <block id="bff15ca70c1ae31932f904ffda23250d" category="paragraph">只有在 AWS 中手動安裝 Connector 時、才適用這些步驟。對於 AWS Marketplace 部署、您已將 Connector 執行個體與包含必要權限的 IAM 角色建立關聯。</block>
   <block id="cdc80f7691441e19b9937f7e3719514f" category="summary">Connector 是指在雲端網路或內部部署網路中執行的 NetApp 軟體。它會執行 BlueXP 管理資料基礎架構所需執行的動作。Connector 會持續輪詢 BlueXP SaaS 層、以找出需要採取的任何行動。您不需要 Connector 即可開始使用 BlueXP 、但您需要建立 Connector 才能解除鎖定所有 BlueXP 功能和服務。</block>
@@ -3099,7 +2830,6 @@
   <block id="ba356dfc51631fb5a0371fea940de345" category="list-text"><block ref="ba356dfc51631fb5a0371fea940de345" category="inline-link-macro-rx"></block></block>
   <block id="d08ccf52b4cdd08e41cfb99ec42e0b29" category="section-title">權限</block>
   <block id="11fde693c59aa81cdd27bb562b84f44b" category="paragraph">直接從 BlueXP 建立 Connector 需要特定權限、而 Connector 執行個體本身則需要另一組權限。如果您直接從 BlueXP 在 AWS 或 Azure 中建立 Connector 、則 BlueXP 會建立具有所需權限的 Connector 。</block>
-  <block id="f068c113e0f68966d3264976bff4de1a" category="list-text"><block ref="f068c113e0f68966d3264976bff4de1a" category="inline-link-macro-rx"></block></block>
   <block id="1e419112f48a13d6b30178e127d0a445" category="paragraph">若要檢視 Connector 所需的確切權限、請參閱下列頁面：</block>
   <block id="338a6f193e9988b8f40b3128d5e4ffb7" category="inline-link-macro">瞭解Connector如何使用AWS權限</block>
   <block id="0e4f7db7cba89c0c2240f4376d660bcd" category="list-text"><block ref="0e4f7db7cba89c0c2240f4376d660bcd" category="inline-link-macro-rx"></block></block>
@@ -3199,7 +2929,6 @@
   <block id="3d35bba2e5ea6e739fb94736dc402017" category="inline-link">檢視FSXfor ONTAP Sfor Sf哪些 權限</block>
   <block id="f36b248a3e4e722bcc9292d2e5151abc" category="list-text"><block ref="f36b248a3e4e722bcc9292d2e5151abc" category="inline-link-rx"></block></block>
   <block id="d2ec6bce44b6da11cd78a79db47dd385" category="inline-link-macro">檢視Connector部署原則</block>
-  <block id="06b2dd1ec7bb512ccd3b1b77d7c931b5" category="list-text"><block ref="06b2dd1ec7bb512ccd3b1b77d7c931b5" category="inline-link-macro-rx"></block></block>
   <block id="fa9df323148192800073dd2a78c81f73" category="list-text">複製IAM角色的角色ARN、以便在下一步將其貼到BlueXP中。</block>
   <block id="9d0d48ea751e3c71dff57d8fbf894fd5" category="inline-xref">您現在可以將它新增至藍圖XP</block>
   <block id="a53b0d2774799d5bb8ecfc08bf8fa10c" category="paragraph">IAM角色現在擁有所需的權限。 <block ref="4c349b03912d051c7b948580d66e06a2" category="inline-xref-macro-rx"></block>。</block>
@@ -3224,7 +2953,6 @@
   <block id="9ba678561b5c8922fc9983fcb89e1752" category="summary">在以私有模式部署 BlueXP 之前、請先準備好您的環境。例如、您需要檢閱主機需求、準備網路、設定權限等。</block>
   <block id="5f1067df496bfafd5eb793369b955e41" category="doc">準備以私有模式進行部署</block>
   <block id="ffd6a883d5c5e0f954b2db441bf455a2" category="admonition">如果您想在中使用 BlueXP<block ref="1b4ed82e65ec10a29151660f200db39a" category="inline-link-rx"></block> 接著、您應遵循說明如何準備、安裝 Connector 及啟動 Cloud Volumes ONTAP 的個別指示。<block ref="dfa4c15285d83794371ed5577a9f85e7" category="inline-link-rx"></block></block>
-  <block id="3008fdb762c351e807eb6f1a46786992" category="section-title">瞭解私有模式的運作方式</block>
   <block id="cd9866f3dfe1445bb49e9984aef06565" category="paragraph">開始之前、您應該先瞭解 BlueXP 在私有模式下的運作方式。</block>
   <block id="b55621a1719dba9e40d841c865c267ac" category="inline-link-macro">瞭解私有模式的運作方式</block>
   <block id="e7e043e1590b443c8520402279e7ac44" category="paragraph"><block ref="7d2115a84914cfa6792d7d3921dc8e33" category="inline-link-macro-rx"></block>。</block>
@@ -3291,11 +3019,8 @@
   <block id="7b0c55f247d6f53c6782615b53af4619" category="list-text">傳出通訊</block>
   <block id="b765b1f4695cc75eccd54629c696871c" category="list-text">從 Connector 到 BlueXP SaaS 層、雲端供應商的公開資源、以及其他日常營運所需的重要元件、都需要連線。</block>
   <block id="481967699cb23b1212553273ddd07956" category="inline-link-macro">連接器在 AWS 中所接觸的端點</block>
-  <block id="f4986cf63781254c431f585eade70914" category="list-text"><block ref="f4986cf63781254c431f585eade70914" category="inline-link-macro-rx"></block></block>
   <block id="bc9ca29d6605d1cf6f70076a23749d7d" category="inline-link-macro">Connector 在 Azure 中連絡的端點</block>
-  <block id="d4725a75fbee6904284f3109fa5e079a" category="list-text"><block ref="d4725a75fbee6904284f3109fa5e079a" category="inline-link-macro-rx"></block></block>
   <block id="b9ae7144d8994b521f00e7ea998af276" category="inline-link-macro">Connector 在 Google Cloud 中連絡的端點</block>
-  <block id="31dec7fbef975d09b76f499ef8abfb62" category="list-text"><block ref="31dec7fbef975d09b76f499ef8abfb62" category="inline-link-macro-rx"></block></block>
   <block id="3bf5c9324dc0745f8cad507c90fe86b2" category="list-text">Connector 支援的位置</block>
   <block id="916a2669af97d2f4130e6923cd637b3f" category="list-text">在標準模式中、 Connector 可在雲端或內部部署中獲得支援。</block>
   <block id="fd18b98fb0c01efb9ebdfe9d8aac583c" category="list-text">您可以從 BlueXP 的設定精靈、 AWS 或 Azure Marketplace 、或使用安裝程式、在資料中心或雲端的您自己的 Linux 主機上手動安裝 Connector 、來安裝 Connector 。</block>
@@ -3442,33 +3167,17 @@ Google Cloud 或中不支援<block ref="5388026a167091fc23180597ac85e174" catego
   <block id="aa414a57d6f1347fc5212beb06655a8e" category="paragraph">連接器的預先定義防火牆規則會開啟所有傳出流量。如果可以接受、請遵循基本的傳出規則。如果您需要更嚴格的規則、請使用進階的傳出規則。</block>
   <block id="bd83f7d2350eb6b777b2622dfd275ab6" category="paragraph">Connector 的預先定義防火牆規則包括下列傳出規則。</block>
   <block id="5dba83ec70c57d2bf0180e542772a92f" category="summary">註冊 BlueXP 之後、您可以從網路型主控台登入、開始管理資料和儲存基礎架構。</block>
-  <block id="8ccd00d958a4b1c81d6eb1a97c4cc8b6" category="doc">登入 BlueXP （標準模式）</block>
   <block id="ba4b1c8da80214fd24d3e708e6d5a43e" category="paragraph">您可以使用下列其中一個選項、登入 BlueXP 網路型主控台：</block>
   <block id="03eb7e8aedd1ad900f6996ff1a9cf8dd" category="list-text">在*登入*頁面上、輸入與您登入相關的電子郵件地址。</block>
   <block id="784d4eeca11deaf4ee3f37735e4d0334" category="list-text">視您登入的相關驗證方法而定、系統會提示您輸入認證資料：</block>
   <block id="8a7c8d2028930eaef2c3f44925994051" category="list-text">NetApp雲端認證：輸入您的密碼</block>
   <block id="a02705346febd77df5680fe2f12343a9" category="list-text">聯盟使用者：輸入您的聯盟身分認證資料</block>
   <block id="24bdc2b22d38abff9ff97a9c5b5e7966" category="list-text">系統驗證：輸入您的資料不驗證資料NetApp 支援網站 NetApp 支援網站</block>
-  <block id="311c494ac0cd96eb59ad27baf29e8829" category="summary">設定 Azure 權限、讓您可以使用 BlueXP 來管理 Azure 中的資料和儲存基礎架構。設定權限的方式取決於您打算使用的安裝選項。</block>
-  <block id="b986898f3a07eb4cea995cd0e9b6547b" category="paragraph">在 Azure 中設定權限、讓您能夠以管理資料和儲存基礎架構所需的權限來部署 Connector 。設定權限的方式取決於您打算使用的安裝選項。</block>
-  <block id="cb3d973e014adc5d984d3ed23e4406ad" category="list-text">* 從 BlueXP* 安裝：設定權限、讓 BlueXP 能夠驗證 Azure 並部署 VM 。BlueXP 會在部署期間自動設定 Connector VM 的權限。</block>
-  <block id="877d95ef1c143078eed1fed2fcee7fe8" category="list-text">* 從 Azure Marketplace* 安裝：設定 Azure 自訂角色以與 Connector VM 或 Azure AD 服務主體建立關聯。</block>
-  <block id="7a55eba76dd8a091c711cfadb930b146" category="paragraph"><block ref="fbeb752d20896168ed7fb897301fa65c" category="inline-xref-macro-rx"></block>。</block>
-  <block id="d9003614ea07db66c9d68827f29fc043" category="list-text">* 手動安裝 * ：設定 Azure 自訂角色以與 Connector VM 或 Azure AD 服務主體建立關聯。</block>
-  <block id="bc956e0b0a70bced55db387f9721c4fa" category="paragraph">若要從 BlueXP 建立 Connector 、您必須提供 BlueXP 登入權限、讓 BlueXP 具備在 Azure 中建立 Connector VM 所需的權限。您有兩種選擇：</block>
-  <block id="6b45a3b66e73e4f30a6e6c4974d404b4" category="list-text">出現提示時、請使用您的Microsoft帳戶登入。此帳戶必須具有特定的Azure權限。這是預設選項。</block>
   <block id="e3e02b70df514c22082124328763d018" category="list-text">提供Azure AD服務負責人的詳細資料。此服務主體也需要特定權限。</block>
-  <block id="82d6ac02ddffa27fd293c37542ef52a2" category="paragraph">有了這兩個選項、第一步就是建立自訂角色。</block>
-  <block id="ba705115117b5dcb31d65899295aecf9" category="section-title">建立自訂角色</block>
-  <block id="92331395e6b319e8c3899fe57e0662a4" category="paragraph">建立您可以指派給 Azure 帳戶或服務主體的自訂角色。</block>
   <block id="fdf818accfe04434a4c9fd9ccfe6d56c" category="list-text">複製Azure中新自訂角色所需的權限、並將其儲存在Json檔案中。</block>
-  <block id="8747c846ccf20f1b6f26f06f38406ffa" category="admonition">此原則僅包含從BlueXP在Azure中啟動Connector VM所需的權限。請勿在其他情況下使用此原則。當BlueXP建立Connector時、它會套用一組新的權限至Connector VM、讓Connector能夠管理公有雲環境中的資源。</block>
   <block id="6beeae0bdc78c57583db2029e3f5c09d" category="list-text">將您的Azure訂閱ID新增至可指派的範圍、以修改Json。</block>
   <block id="6d3e63abb9fe9c98dbe6a99d8a196043" category="list-text">輸入下列Azure CLI命令：</block>
   <block id="00c71d78fe3c7e32c523588f83a6a685" category="paragraph">您現在應該擁有名為 _Azure Setup AsService_ 的自訂角色。您現在可以將此自訂角色套用至您的使用者帳戶或服務主體。</block>
-  <block id="8776144e5038669b29b050b669704134" category="section-title">設定驗證方法</block>
-  <block id="354220022c6be4143484439507df500d" category="paragraph">若要部署 BlueXP Connector 、 BlueXP 需要驗證 Azure 。您可以選擇兩種 Azure 驗證方法。</block>
-  <block id="f9ae909c9f8845215c3524f51ff1ed97" category="open-title">Azure 使用者帳戶</block>
   <block id="0c5e0cb46ed59511e60fcbc8e0e423c2" category="paragraph">將自訂角色指派給將從 BlueXP 部署 Connector 的使用者。</block>
   <block id="69f03931f7dda53f08365d3254d0ce78" category="list-text">在 Azure 入口網站中、開啟 * 訂閱 * 服務、然後選取使用者的訂閱。</block>
   <block id="4cca684df8c889c784e30e6f0215cff5" category="admonition">Azure Setup AsService是Azure的Connector部署原則中提供的預設名稱。如果您為角色選擇不同的名稱、請改為選取該名稱。</block>
@@ -3476,12 +3185,9 @@ Google Cloud 或中不支援<block ref="5388026a167091fc23180597ac85e174" catego
   <block id="d9a4ebb1284c84465eac2a20b8331523" category="paragraph">您可以為 BlueXP 提供具有必要權限的 Azure 服務主體認證、而非使用 Azure 帳戶登入。</block>
   <block id="f7f4921534d4730228a1def336cce565" category="paragraph">在 Azure Active Directory 中建立及設定服務主體、並取得 BlueXP 所需的 Azure 認證。</block>
   <block id="26f0c6c76fbc2f0b096a4ff32489120c" category="paragraph">您的服務主體現在已設定完成、您應該已經複製應用程式（用戶端） ID 、目錄（租戶） ID 、以及用戶端機密的值。建立Connector時、您必須在BlueXP中輸入此資訊。</block>
-  <block id="44f495c0504d8e7c2c470b12eaf37456" category="section-title">設定權限、以便在 Azure Marketplace 部署或手動安裝之後指派</block>
-  <block id="d62cb3591be3e66b0fa2798f4f9ee116" category="paragraph">如果您是從 Azure Marketplace 部署 Connector 、或是手動在自己的 Linux 主機上安裝 Connector 軟體、您可以透過下列方式提供權限：</block>
   <block id="0d1f9ac2ac0f76a6809ba58855ffa7f5" category="list-text">選項 1 ：使用系統指派的託管身分識別、將自訂角色指派給 Azure VM 。</block>
   <block id="d31f2fb13b2fed83440a04d526a6ca7d" category="list-text">選項 2 ：為 BlueXP 提供具有必要權限的 Azure 服務主體認證。</block>
   <block id="c4da032e0a3943e2f3a51ca860a71925" category="list-text">如果您打算在自己的主機上手動安裝軟體、請在 VM 上啟用系統指派的託管身分識別、以便透過自訂角色提供必要的 Azure 權限。</block>
-  <block id="3dbb225ba0c1c164a61cefbc1cdb0d06" category="paragraph"><block ref="8e4894668aa66afea4219822edca2e80" category="inline-link-macro-rx"></block>。</block>
   <block id="f53835e0f369158c476f99fda577e700" category="sidebar">設定與管理文件</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">版本資訊</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
@@ -3491,14 +3197,10 @@ Google Cloud 或中不支援<block ref="5388026a167091fc23180597ac85e174" catego
   <block id="de2a909827c9bf0f62effae09a746963" category="sidebar">藍圖XP總覽</block>
   <block id="9b945efebb006547a94415eadaa12921" category="sidebar">帳戶</block>
   <block id="7e99ea34b714387479c29a20b4a89752" category="sidebar">開始使用標準模式</block>
-  <block id="06ad314b340900d226b1196e1fe289e9" category="sidebar">快速入門</block>
   <block id="55553d1b65f45713caedcf9f0b1a6042" category="sidebar">登入BlueXP</block>
   <block id="94ee7072c2750da1997438a715efb7d4" category="sidebar">建立連接器</block>
   <block id="ea206a7167c7e693d778525a7c87c869" category="sidebar">安裝選項</block>
-  <block id="ab316a3ccbad97726269c9705958262a" category="sidebar">設定網路</block>
-  <block id="6f298a0fdcb94b318444467462bb0e4e" category="sidebar">建立連接器</block>
   <block id="4df40e141b0559f15db8f84f78aed013" category="sidebar">內部部署</block>
-  <block id="1583a00dbf57782d8675d5222845f901" category="sidebar">設定雲端權限</block>
   <block id="f559abff8763b27adc86fdb8b373f2c7" category="sidebar">訂閱 BlueXP</block>
   <block id="d0a7edff5cd82c23f3d1c18e0779ccbc" category="sidebar">接下來您可以做什麼</block>
   <block id="2e765525323590e2ff4d6c84d224de36" category="sidebar">開始使用受限模式</block>
@@ -3576,7 +3278,6 @@ Google Cloud 或中不支援<block ref="5388026a167091fc23180597ac85e174" catego
   <block id="2ad37577d6b48e75deace7b9df85fa0f" category="paragraph">除非您啟動連接器、或使用連接器做為 Proxy 、將 AutoSupport 訊息從 Cloud Volumes ONTAP 傳送至 NetApp 支援、否則不會有傳入的流量傳入連接器。</block>
   <block id="46b7ac383833d40797a3c63596b781a1" category="list-text">如果您在無法使用輸出網際網路連線的子網路中部署 Cloud Volumes ONTAP 系統、則需要透過連接埠 3128 進行輸入連線。</block>
   <block id="b9ea60abcff3cae1e1a8e213a053504b" category="paragraph">| AWS 服務（ amazonaws.com):</block>
-  <block id="29181ef9f282c2bfcd708d63d5d8f305" category="paragraph">| 管理 AWS 中的資源。確切的端點取決於部署Connector的區域。<block ref="04572646466baf6f86d09965eb5c3c86" category="inline-link-rx"></block></block>
   <block id="37602e8df38580064bdd885f0963ea8e" category="paragraph">| \https://management.azure.com
 \https://login.microsoftonline.com
 \https://blob.core.windows.net
@@ -3622,15 +3323,12 @@ Azure 政府地區不需要此端點。</block>
   <block id="9c7ace21b2c703b0c1706b0f405490ae" category="paragraph">提醒您、此原則僅包含從 BlueXP 在 AWS 中啟動 Connector 執行個體所需的權限。 <block ref="1803651c0d8d31da6be94aca23bd6fb9" category="inline-link-macro-rx"></block>。</block>
   <block id="ee0f5d3d76febb57f0cd8c307401026c" category="paragraph">若要準備進行市場部署、請在 AWS 中建立 IAM 原則、並將其附加至 IAM 角色。當您從 AWS Marketplace 建立 Connector 時、系統會提示您選取該 IAM 角色。</block>
   <block id="b8173d0c4669ed6158a49dda320b1515" category="paragraph">視您打算使用的 BlueXP 服務而定、您可能需要建立第二個原則。對於標準區域、權限分佈在兩個原則之間。由於AWS中受管理原則的字元大小上限、因此需要兩個原則。 <block ref="60507836418f54f0b2b646fcefa2cf2c" category="inline-link-macro-rx"></block>。</block>
-  <block id="4150e60305a134c529d4dd6e3ef8fd36" category="paragraph">如果您打算在 AWS 中的 Linux 主機上手動安裝 Connector 軟體、您可以使用下列方式提供權限：</block>
   <block id="ad76b7ae56285d87ab9015cde946bbf4" category="list-text"><block ref="ad76b7ae56285d87ab9015cde946bbf4" category="inline-link-rx"></block></block>
   <block id="89db269549ff807cf08533caabe7fa9b" category="list-text"><block ref="89db269549ff807cf08533caabe7fa9b" category="inline-link-rx"></block></block>
   <block id="c1278cf8c27b19d3b52a16894e40dc28" category="paragraph">BlueXP 包括透過 SaaS 層提供的網路型主控台、提供多租戶服務的帳戶、以及可管理工作環境並啟用 BlueXP 雲端服務的 Connectors 。</block>
   <block id="d9e04d29678e517946d6cb6e93b9d025" category="paragraph">您不需要 Connector 即可開始使用 BlueXP 、但您需要建立 Connector 才能解除鎖定所有 BlueXP 功能和服務。Connector 可在內部部署和雲端環境中管理資源和程序。需要管理工作環境（例如 Cloud Volumes ONTAP 和內部部署 ONTAP 叢集）、並使用許多 BlueXP 資料服務。</block>
   <block id="64f210f4d96dcba2f41cec7b537055f7" category="list-text">瞭解執行個體的 CPU 和 RAM 需求。</block>
   <block id="fbeff5cf304fefe21e93306905a53be6" category="inline-link-macro">檢閱執行個體需求</block>
-  <block id="beb06263e55dbf1e5b833f9e70adbd3b" category="paragraph"><block ref="56d1d87d56f0c6205965b459b10a28f6" category="inline-link-macro-rx"></block>。</block>
-  <block id="06b41e54acce796724e94edceaa8bd8c" category="paragraph"><block ref="172f848c0eaf289ec1091e3eb6e7272a" category="inline-link-macro-rx"></block>。</block>
   <block id="faa2f324a4d310b356e12aa82056254e" category="paragraph"><block ref="c95ec05c4ecf0f3a1ae9ac9ed3381eba" prefix="" category="inline-code"></block></block>
   <block id="9a29204f81d065ca790be5e05be49951" category="paragraph">您現在可以前往<block ref="a47e12f4350b725a128875f50f785a3b" category="inline-link-rx"></block> 開始使用Connector with BlueXP。</block>
   <block id="3cedfb797d3e1bc073ba2b0b4d2502cf" category="inline-link">Azure文件</block>
@@ -3661,22 +3359,12 @@ Azure 政府地區不需要此端點。</block>
   <block id="6e9436752850e460930666efdaf1e025" category="cell">將內部部署的 ONTAP 叢集備份至 Google Cloud</block>
   <block id="c37ee52df9a55f654f757f6a622c2ab8" category="cell">使用 BlueXP 備份與還原備份內部部署 ONTAP 叢集時、您需要新增 Connector 的權限、才能使用「搜尋與還原」功能。</block>
   <block id="072b4c796b4a06820f943c41d4da3162" category="cell"><block ref="6a045f48523c0716d40c678a68c87636" category="inline-link-rx"></block></block>
-  <block id="7ffe8e26fad260dce8ed03b3e7fc57c8" category="summary">開始使用 BlueXP 時、請確定您的網路允許從 BlueXP 主控台存取特定端點。視您打算如何使用 BlueXP 而定、您可能也需要為 Connector 和特定 BlueXP 服務設定網路。</block>
-  <block id="26ea1904ce9dbe48d4e4700d1357e591" category="doc">準備好您的網路</block>
   <block id="045416b62d2dbcb0a3156290bfb14bc5" category="paragraph">除了這些端點之外、您還需要確保 Connector 具備對外網際網路存取權、以便聯絡特定端點、以進行日常作業。您可以依照下一節中的連結、找到這些端點的清單。</block>
-  <block id="1227c418a40b8840e4c8a82551fe4b79" category="section-title">準備連接器的網路連線</block>
-  <block id="3f946e1b2eb47723c4cdafa491ff55a8" category="paragraph">您如何為 Connector 準備網路、取決於您打算在雲端或內部部署安裝 Connector 的位置。如需 Connector 網路連線需求的詳細資訊、請參閱下列頁面：</block>
-  <block id="8ba51ecb80ef097f62d41ff21811facd" category="list-text"><block ref="8ba51ecb80ef097f62d41ff21811facd" category="inline-link-macro-rx"></block></block>
-  <block id="caa5e6c77b861f1924e25b728934c86c" category="list-text"><block ref="caa5e6c77b861f1924e25b728934c86c" category="inline-link-macro-rx"></block></block>
-  <block id="e10d8dd0770b58818461a0254486dc85" category="list-text"><block ref="e10d8dd0770b58818461a0254486dc85" category="inline-link-macro-rx"></block></block>
-  <block id="b0922574fc254af5af9ea76293d3103a" category="list-text"><block ref="b0922574fc254af5af9ea76293d3103a" category="inline-link-macro-rx"></block></block>
   <block id="33afe8d49ba0b54b76d44e7f5b190b53" category="section-title">為 BlueXP 服務做好網路準備</block>
-  <block id="e9b3a40645009b297636fbacdb5f7e76" category="paragraph">開始使用 BlueXP 時、您應確保已符合您計畫使用的 BlueXP 服務的網路需求。如需詳細資訊、請參閱每項服務的文件。</block>
   <block id="eeb8e055593f1709925a03e2ebb13265" category="inline-link">BlueXP文件</block>
   <block id="1c74bcfdef9917ce07420aafab8bce83" category="paragraph"><block ref="1c74bcfdef9917ce07420aafab8bce83" category="inline-link-rx"></block></block>
   <block id="d1c50736002ef3676d1c143a04d4cc59" category="list-text">Athena ： StartQueryExecution</block>
   <block id="e7a0ee2f9390b4213bbeb8838f2d3896" category="list-text">BlueXP SaaS 層不需要外傳連線。所有套件、相依性和基本元件都會隨附於 Connector 、並從本機機器提供服務。只有在部署 Cloud Volumes ONTAP 時、才需要連線至雲端供應商的公開可用資源。</block>
-  <block id="75dbd7f878d584e6e9f033b3806519ac" category="sidebar">準備網路</block>
   <block id="48f169efc2b522ea6ab10451a2a28cd8" category="summary">若要使用 BlueXP 功能和服務、您必須提供權限、讓 BlueXP 能夠在雲端環境中執行作業。使用此頁面上的連結、根據您的目標快速存取所需的權限。</block>
   <block id="6bc8bd282f003afcaaf88391550efbaf" category="cell">將內部部署的 ONTAP 叢集分層至 Amazon S3</block>
   <block id="23c27147b4e0e766d76ac0f6e872424e" category="section-title">StorageGRID 權限</block>
@@ -3709,8 +3397,6 @@ Azure 政府地區不需要此端點。</block>
   <block id="12975d5f412a47bef9db3c7a4d365814" category="list-text">選取 * 訂閱 * 。</block>
   <block id="9dc9a5b2f23fe90a0fd71125f3034dfd" category="list-text">填寫表單並選擇 * 訂閱 * 。</block>
   <block id="3221538307211e131f96e1a83b1a5235" category="list-text">訂閱程序完成後、請選取 * 立即設定帳戶 * 。</block>
-  <block id="6887254b5f03610818b55891a5db48ef" category="list-text">選取 * Azure SetupAsService* 角色、然後選取 * 下一步 * 。</block>
-  <block id="53b4a11766155c5b179df42cfaced80f" category="list-text">選取 * 選取成員 * 、選擇您的使用者帳戶、然後選取 * 選取 * 。</block>
   <block id="497002c594b6f249087bf6b22381ee4d" category="list-text">若要將認證與現有訂閱建立關聯、請從下拉式清單中選取 Google Cloud 專案和訂閱、然後選取 * Associate* 。</block>
   <block id="ba192d211ab8fe6aceb98f59e685d1bb" category="list-text">如果您尚未訂閱、請選取 * 新增訂閱 &gt; 繼續 * 、然後依照 Google Cloud Marketplace 中的步驟進行。</block>
   <block id="375b5c037ddde62b74d4b30381271828" category="list-text">在快顯對話方塊中、選取 * 註冊 NetApp 、 Inc.*</block>
@@ -3738,7 +3424,6 @@ Azure 政府地區不需要此端點。</block>
   <block id="93583a9b95fb527997b95ba8db57df14" category="list-text">選取 * 新增權限 &gt; 直接附加現有原則 * 。</block>
   <block id="0a6bca3addac2684ad319713b9fb22ed" category="list-text">選取 * 下一步 * 、然後選取 * 新增權限 * 。</block>
   <block id="2f1197d590dc982e571ad76ed9962122" category="list-text">選取 * 角色 &gt; 建立角色 * 。</block>
-  <block id="cd22a7243285b0197650652e956f0870" category="list-text">* 從 BlueXP* ：選取 Connector 下拉式清單、選取 * Add Connector* 、然後依照提示進行。</block>
   <block id="a383b5c1d32b2c38a7dcfa44af208c71" category="list-text">選取 IAM 角色、然後選取 * 更新 IAM 角色 * 。</block>
   <block id="03c5d9363dbf1b3b05f46e5d41ec0266" category="list-text">選取 * Connector * 下拉式清單、然後選取 * 新增 Connector * 。</block>
   <block id="0447e5af15c21fbb6eee1972d30cef83" category="list-text">選擇 * Amazon Web Services* 作為您的雲端供應商、然後選擇 * 繼續 * 。</block>
@@ -3749,7 +3434,6 @@ Azure 政府地區不需要此端點。</block>
   <block id="b5db57dbb4b1fc339bfbf2e32844ab33" category="list-text">在「 * 選擇行動 * 」下、選取 * 透過 EC2* 啟動、然後選取 * 啟動 * 。</block>
   <block id="a77947bca5ad1214f93361073cfddb0a" category="list-text">* 摘要 * ：檢閱摘要並選取 * 啟動執行個體 * 。</block>
   <block id="6cd4b1aeb7ee91ddbd1d37ee958a2b58" category="list-text">選取 * 開始 * 。</block>
-  <block id="74fea2a07b811e755565557990612058" category="list-text">如果您要建立第一個工作環境、請選取 * 新增工作環境 * 、然後依照提示進行。否則、請選取 * Connector* 下拉式清單、然後選取 * 新增 Connector* 。</block>
   <block id="1ce857b02028095dcbdb6522daf11862" category="list-text">選擇 * 立即取得 * 、然後選擇 * 繼續 * 。</block>
   <block id="36cfedae32501cb288f9aa908aadb288" category="list-text">從 Azure 入口網站選取 * Create * 、然後依照步驟設定虛擬機器。</block>
   <block id="6b18581fd807739e0d0c13a503a419de" category="list-text">在 *Review + create* 頁面上、檢閱您的選擇、然後選取 * Create* 開始部署。</block>
@@ -3778,24 +3462,8 @@ Azure 政府地區不需要此端點。</block>
   <block id="2da6f1af030756bb235fd83baa6abd7b" category="paragraph">如果您的組織需要為所有傳出的網際網路流量部署 Proxy 伺服器、請取得下列關於 HTTP 或 HTTPS Proxy 的資訊。您必須在安裝期間提供此資訊。</block>
   <block id="f68132eadaa2c37170b842a86fa6955d" category="paragraph">如果 Cloud Volumes ONTAP 系統沒有輸出網際網路連線來傳送 AutoSupport 訊息、 BlueXP 會自動將這些系統設定為使用 Connector 隨附的 Proxy 伺服器。唯一的需求是確保連接器的安全群組允許透過連接埠3128進行傳入連線。部署Connector之後、您需要開啟此連接埠。</block>
   <block id="e12fb4f30abef516bf6f5e0e9a5b72b7" category="doc">從BlueXP在Azure中建立連接器</block>
-  <block id="5b943b0498231c38714aca470c3c0dab" category="paragraph">設定您的網路、準備 Azure 權限、然後從 BlueXP 在 Azure 中建立 Connector 。</block>
-  <block id="42f8643eb52a942747937327c72c8361" category="section-title">部署總覽</block>
-  <block id="ac5d5b7ded11cc7f8b4df462f961d2e8" category="paragraph">下列步驟提供本頁所要完成工作的高階摘要。以下各節提供這些步驟的其他詳細資料。</block>
-  <block id="2ef15946081a8510366177e6ee7e5111" category="paragraph">設定您的網路、讓 Connector 能夠管理混合雲環境中的資源和程序。例如、您需要一個具有輸出網際網路存取和網路連線至目標網路的虛擬網路。</block>
-  <block id="c794110cfe04873f3ea19458fb48df3c" category="inline-xref">檢視網路需求</block>
-  <block id="582b3a879115844ed6c92eedc860c81a" category="paragraph"><block ref="01fbc73f2f4d3ada99434a64c61d271f" category="inline-xref-macro-rx"></block>。</block>
-  <block id="3cf3b3a2d331d9973e9029f5ee423d59" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> 設定 Azure 權限</block>
-  <block id="1503a9f546164361607faf57c69eae56" category="paragraph">建立自訂角色、然後將其套用至 Azure 帳戶或 Azure AD 服務主體。BlueXP 會驗證 Azure 、並使用這些權限代表您建立 Connector 執行個體。</block>
-  <block id="e82d7f6d0b7a997d6eac1814ff1c2863" category="paragraph"><block ref="74b20113240190c7a71403f57a3cd8fc" category="inline-xref-macro-rx"></block>。</block>
-  <block id="aea46324800b152c6a50caff1d14e2fc" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 建立連接器</block>
-  <block id="985afe15de341c249321c6704172a4ea" category="paragraph">在 BlueXP 中、按一下 Connector 下拉式清單、選取 * Add Connector* 、然後依照提示進行。</block>
-  <block id="1dc565e14b0401db0c6aee5f8e24ef79" category="paragraph"><block ref="450d1cb8d9a0a316433d14e18974a979" category="inline-xref-macro-rx"></block>。</block>
-  <block id="95643ce42bab17c218d7c19a0c0040bb" category="paragraph">請確定您計畫安裝 Connector 的網路位置支援下列需求。</block>
-  <block id="83bb814dc9552aa2612588ab7ce9f0e9" category="list-text">Connector 需要網路連線、才能連線到您計畫建立和管理工作環境的位置。例如、您計畫在內部部署環境中建立 Cloud Volumes ONTAP 系統或儲存設備的 vnet 。</block>
-  <block id="8e97b7d14c907dc59419c53c5e813e4d" category="list-text">您部署 Connector 的網路位置必須具備傳出網際網路連線、才能連絡特定端點、如下列各節所述。</block>
   <block id="864fadbab69859b77befd9c5a1c37c61" category="paragraph">從 BlueXP 建立 Connector 時、您需要提供登入資訊、讓 BlueXP 能夠與 Azure 驗證並部署 VM 。您有兩種選擇：</block>
   <block id="79a9c2b8e447685125856ec6046d8128" category="admonition">此自訂角色僅包含從 BlueXP 在 Azure 中啟動 Connector VM 所需的權限。請勿在其他情況下使用此原則。當BlueXP建立Connector時、它會套用一組新的權限至Connector VM、讓Connector能夠管理公有雲環境中的資源。</block>
-  <block id="00e80b4b164dd96954a27ed3236c9728" category="paragraph">若要部署 Connector 、 BlueXP 需要驗證 Azure 。您可以選擇兩種 Azure 驗證方法。</block>
   <block id="6dc4f3e9aa2dada18f0a17189fa7d079" category="list-text">按一下 * 存取控制（ IAM ） * 。</block>
   <block id="761218505548d0e5a2977bd7c31de50a" category="list-text">按一下「 * 新增 * &gt; * 新增角色指派 * 」、然後新增權限：</block>
   <block id="407df91196b1a54a89a9911a8ac6a332" category="list-text">選取「* Azure Setup AsService*」角色、然後按一下「* Next*」。</block>
@@ -3808,8 +3476,6 @@ Azure 政府地區不需要此端點。</block>
   <block id="e33ca9bd2b94654f882a0e0ed82dec19" category="list-text">選取應用程式、然後按一下*選取*。</block>
   <block id="16d491a352eff99aff3a3090f243e9a7" category="paragraph">直接從 BlueXP 網路型主控台建立 Connector 。</block>
   <block id="38c0deaf9ce4435ad8d471fc04a21ac0" category="paragraph">這些權限適用於Connector執行個體本身。這是一組不同於您先前設定的權限、可用來部署 Connector VM 。</block>
-  <block id="d2b74161d054c69894469355bb22cb63" category="list-text">如果您要建立第一個工作環境、請按一下 * 新增工作環境 * 、然後依照提示進行。否則、請按一下「 * Connector* 」下拉式清單、然後選取「 * 新增 Connector* 」。</block>
-  <block id="7dafa3d9179efddb7b70ff753d853a0e" category="paragraph"><block ref="29949bbccf251af183678449a2465f09" category="inline-xref-macro-rx"></block>。</block>
   <block id="7dee7e783d13b6d5d415926ce0bfc306" category="list-text">按一下「 * 新增 * 」。</block>
   <block id="6f634a99f964ad704af4d4f3aaf6d261" category="section-title">將現有訂閱與您的帳戶建立關聯</block>
   <block id="18fdf9616b567e691b5890f032e3bba7" category="paragraph">當您從 AWS Marketplace 訂閱 BlueXP 時、程序的最後一個步驟是從 BlueXP 網站將訂閱與您的 BlueXP 帳戶建立關聯。如果您未完成此步驟、則無法將訂閱與 BlueXP 帳戶搭配使用。</block>
@@ -3918,4 +3584,193 @@ Azure 政府地區不需要此端點。</block>
   <block id="8ddd07f4c199accad92d619cc396eaef" category="video-title">從 AWS Marketplace 訂閱 BlueXP</block>
   <block id="040832c90148c5bba767901a4a55ebe4" category="video-title">從 Azure Marketplace 訂閱 BlueXP</block>
   <block id="c6e17aa071476599f5e5fc5b8bc42431" category="video-title">從 Google Cloud Marketplace 訂閱 BlueXP</block>
+  <block id="9f1bd247464191c700cb44116139a226" category="section-title">步驟 1 ：安裝 Connector</block>
+  <block id="0c636bde157e77551496ec8461e40dcc" category="section-title">步驟 2 ：設定 BlueXP</block>
+  <block id="60a2819d83a7d683770230c16623234f" category="section-title">步驟 3 ：提供 BlueXP 的權限</block>
+  <block id="33df6c8bf79bb883818929fadd08fde2" category="paragraph"><block ref="c830bbf16033728edff10270fb2e90fe" category="inline-link-macro-rx"></block>。</block>
+  <block id="895abbd8e532d17f2ca587c540bce83a" category="list-text"><block ref="895abbd8e532d17f2ca587c540bce83a" category="inline-link-macro-rx"></block></block>
+  <block id="72323525d86fb9af6692c45c5d227ba4" category="list-text"><block ref="72323525d86fb9af6692c45c5d227ba4" category="inline-link-macro-rx"></block></block>
+  <block id="6aae497466fed2612ac006372d018332" category="list-text"><block ref="6aae497466fed2612ac006372d018332" category="inline-link-macro-rx"></block></block>
+  <block id="9a1ba924530ef064e3af892730568dd2" category="list-text"><block ref="9a1ba924530ef064e3af892730568dd2" category="inline-link-macro-rx"></block></block>
+  <block id="dcaf9d9995c1cce5dfb4399e2434754e" category="summary">若要在您自己的 Linux 主機上手動安裝 Connector 、您必須檢閱主機需求、設定網路、準備 Azure 權限、安裝 Connector 、然後提供您準備的權限。</block>
+  <block id="4a121ca6348602c8e2772e9488d338a9" category="doc">在 Azure 中手動安裝 Connector</block>
+  <block id="38c977ce808382575da9f341bee1d199" category="paragraph">您應該檢閱 <block ref="a2e83c328c5fe53a1b055bac582f41f6" category="inline-link-macro-rx"></block>。</block>
+  <block id="5b6c8baef296a0ee0c5ff5b25d3b43fd" category="section-title">步驟 1 ：檢閱主機需求</block>
+  <block id="50368de37e44f114e14bdf383d655041" category="section-title">步驟 2 ：設定網路</block>
+  <block id="777217f0ae54cd380d40c78b43240a00" category="paragraph">請確定您計畫安裝 Connector 的網路位置支援下列需求。滿足這些需求後、 Connector 便能在混合雲環境中管理資源和程序。</block>
+  <block id="7f18b4acc8a5bd4dc5f43cf0deb8c2d8" category="list-text">Connector 需要網路連線、才能連線到您計畫建立和管理工作環境的位置。例如、您計畫在內部部署環境中建立 Cloud Volumes ONTAP 系統或儲存系統的網路。</block>
+  <block id="3551629b0e37f203b25270d0dfdc1f39" category="list-text">您部署 Connector 的網路位置必須具有傳出網際網路連線、才能連絡特定端點。</block>
+  <block id="5761fa91677853434e4537aeda21de63" category="section-title">步驟 3 ：設定權限</block>
+  <block id="98fbfc7b90b1537be74af9a49772f49a" category="paragraph">您必須使用下列其中一個選項、提供 Azure BlueXP 權限：</block>
+  <block id="477e9f08d03102e04ead3de4b2f8b69e" category="paragraph">請依照步驟準備 BlueXP 的權限。</block>
+  <block id="d10eb1d2e85fdd829a66c3fc142d80ad" category="section-title">步驟 4 ：安裝 Connector</block>
+  <block id="f20df450b1161c347a5e7eba9538eeb3" category="paragraph">完成先決條件後、您可以在自己的 Linux 主機上手動安裝軟體。</block>
+  <block id="15daaea4d03b83616f3ad0b69cf782d4" category="section-title">步驟 5 ：提供 BlueXP 的權限</block>
+  <block id="d0fb5ed733cfc3e5faf9cd5d96f676a9" category="paragraph">安裝 Connector 之後、您必須提供 BlueXP 先前設定的 Azure 權限。提供權限可讓 BlueXP 管理 Azure 中的資料和儲存基礎架構。</block>
+  <block id="72a8b95c961c5befe0da974b494bd112" category="paragraph"><block ref="72a8b95c961c5befe0da974b494bd112" category="inline-link-macro-rx"></block></block>
+  <block id="3841f44681bf2f357b9d0af73693bfe7" category="paragraph"><block ref="fd1bb5492ba75369497408ab8d3a2621" category="inline-link-macro-rx"></block>。</block>
+  <block id="36e6f8681cc34503cfb0480443d76ab6" category="paragraph"><block ref="36e6f8681cc34503cfb0480443d76ab6" category="inline-link-macro-rx"></block></block>
+  <block id="04db9667b9afd4fbbbb994922ad2f7c1" category="paragraph"><block ref="f578423c9de0a6574109b1d8ac8175ae" category="inline-link-macro-rx"></block>。</block>
+  <block id="d03606e722be163f18ffb05fb7f6b8ad" category="summary">準備 BlueXP 主控台的網路、註冊並建立帳戶、選擇性建立 Connector 、以及訂閱 BlueXP 、以標準模式開始使用 BlueXP 。</block>
+  <block id="2c4bc70d5e888213a3bca35048028c96" category="doc">入門工作流程（標準模式）</block>
+  <block id="c31816e89acef282910453c5620f26f4" category="inline-link-macro">部署模式</block>
+  <block id="63cdcb539602141cbfe5c9301a4015d5" category="paragraph">開始之前、您應該先瞭解 <block ref="ad4b275d9dc1eba2c344335cef84161e" category="inline-link-macro-rx"></block>、 <block ref="939be5a52f87f3be4e9cee0e0efdb78e" category="inline-link-macro-rx"></block>和 <block ref="dd9572e43b86cdf1b1d508e121fd732e" category="inline-link-macro-rx"></block>。</block>
+  <block id="13ba2efb4fd4a349dae9e57188cc7124" category="inline-link-macro">準備使用 BlueXP 主控台的網路連線</block>
+  <block id="d8d95c6e255d7fd2ce0e575678de25b2" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> <block ref="1bc96baa170355729e3a1a71e3c69ee7" category="inline-link-macro-rx"></block></block>
+  <block id="5e9f2d9ffcf828e9073641fd51d9dd96" category="paragraph">存取 BlueXP 主控台的電腦應連線至特定端點、以完成一些管理工作。如果您的網路限制了傳出存取、您應該確定允許這些端點。</block>
+  <block id="666211ddfad69f0316f1b85953aa081f" category="inline-link-macro">註冊並建立帳戶</block>
+  <block id="e8ae36985bee1decac54881ccee2fd0b" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> <block ref="5b9edf9589bc47960079bd9eebd68511" category="inline-link-macro-rx"></block></block>
+  <block id="825dba606043da7ef954a9b12c9f7d3b" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 建立連接器</block>
+  <block id="df29cf5b19d5f16c92a7f553f92e9d4a" category="list-text"><block ref="df29cf5b19d5f16c92a7f553f92e9d4a" category="inline-link-macro-rx"></block></block>
+  <block id="57e58ed1cb42b3b5aaba112bc48563a6" category="list-text"><block ref="57e58ed1cb42b3b5aaba112bc48563a6" category="inline-link-macro-rx"></block></block>
+  <block id="6563bdfaccc3983704cae5a10067fc4e" category="list-text"><block ref="6563bdfaccc3983704cae5a10067fc4e" category="inline-link-macro-rx"></block></block>
+  <block id="7f80da371418dd1762f659141a966f43" category="list-text"><block ref="7f80da371418dd1762f659141a966f43" category="inline-link-macro-rx"></block></block>
+  <block id="6400bfdbde707064e9b4e7768b35a3f9" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> <block ref="fa53da48b043041a5a8508c7d2d93104" category="inline-link-macro-rx"></block></block>
+  <block id="e5d3b66eefdb2ac002721447f12c550c" category="summary">當您使用透過 SaaS 層提供的 BlueXP 網路型主控台時、它會在完成一些管理工作時與多個端點連絡。存取 BlueXP 主控台的電腦應與這些端點建立連線。</block>
+  <block id="2ae779b46b9a3564f7c1c2e6ccea2296" category="paragraph">從 BlueXP 主控台完成特定動作時、會從使用者的電腦聯絡這些端點。您也應該參閱 Connector 的網路需求、以及特定的 BlueXP 服務。如需詳細資訊、請參閱本頁結尾的相關連結。</block>
+  <block id="0754f1969636526eac38034bd1419234" category="list-text"><block ref="0754f1969636526eac38034bd1419234" category="inline-link-macro-rx"></block></block>
+  <block id="2c23813ca1d467902b4a5cbc8a878232" category="list-text"><block ref="2c23813ca1d467902b4a5cbc8a878232" category="inline-link-macro-rx"></block></block>
+  <block id="f0c3f7365e880532f402961957bd549e" category="list-text"><block ref="f0c3f7365e880532f402961957bd549e" category="inline-link-macro-rx"></block></block>
+  <block id="8f62fdc4eba7cbec71350a9ad0375485" category="list-text"><block ref="8f62fdc4eba7cbec71350a9ad0375485" category="inline-link-macro-rx"></block></block>
+  <block id="e076f6c74577c43033001756a3886ddc" category="paragraph">請參閱每項 BlueXP 服務的文件。</block>
+  <block id="0b849731882fd6505b78e31e7c6793e0" category="doc">入門工作流程（私有模式）</block>
+  <block id="86324dc19986cf024d27996fe0699e06" category="list-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> <block ref="0be36da6d7a1ea4d94468b72475c7e35" category="inline-link-macro-rx"></block></block>
+  <block id="99b431ba0bae952794b186c1e8ca969f" category="list-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> <block ref="f4c0bdac7b3aa5cf7bf7f433238f96a2" category="inline-link-macro-rx"></block></block>
+  <block id="e80d828d2459b04d1fa1c01c4becbe8b" category="paragraph">從BlueXP部署Connector時、您需要使用具備部署Connector虛擬機器權限的Azure帳戶或服務主體。所需權限列於 <block ref="87670d19e81a277edefeb1f9eed2acf4" category="inline-link-macro-rx"></block>。</block>
+  <block id="f4426e4062930abb33465fb5b79b35dc" category="inline-link-macro">設定 Azure Marketplace 部署的權限</block>
+  <block id="d16dc391acdc52d611958fdd5ca48d52" category="list-text"><block ref="d16dc391acdc52d611958fdd5ca48d52" category="inline-link-macro-rx"></block></block>
+  <block id="8790c01539f52b3b7d7f0f32b6631813" category="inline-link-macro">設定內部部署的權限</block>
+  <block id="88a6f26465fef463007526defecd01d8" category="list-text"><block ref="88a6f26465fef463007526defecd01d8" category="inline-link-macro-rx"></block></block>
+  <block id="643063b79f29bba54b69c5a3d47a8da5" category="summary">若要從 BlueXP 在 AWS 中建立 Connector 、您需要設定網路、準備 AWS 權限、然後建立 Connector 。</block>
+  <block id="a9b34414733cf4871ed4d1f23b7438dd" category="doc">在AWS中從BlueXP建立連接器</block>
+  <block id="70d8bd725ea77c6a4b800edb3d5b9f5f" category="section-title">步驟 1 ：設定網路</block>
+  <block id="49436e703f28a7e02a6fa78f445122ab" category="paragraph">管理AWS中的資源。確切的端點取決於您使用的 AWS 區域。<block ref="04572646466baf6f86d09965eb5c3c86" category="inline-link-rx"></block></block>
+  <block id="bbc8741d5b8cb60c926722b934bec008" category="section-title">步驟 2 ：設定 AWS 權限</block>
+  <block id="76fc03e9ac56ec6623a5f3fd59761d4b" category="section-title">步驟 3 ：建立 Connector</block>
+  <block id="da14ee4a8100ac08980150bcda1e397d" category="inline-link-macro">瞭解連接器的預設組態</block>
+  <block id="f1620bf756a71002318f3eb8b1277d2f" category="paragraph">從 BlueXP 建立 Connector 會使用預設組態、在 AWS 中部署 EC2 執行個體。 <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
+  <block id="26b0998fe035211b8097187e431e16b9" category="summary">若要在您自己的 Linux 主機上手動安裝 Connector 、您必須檢閱主機需求、設定網路、準備 AWS 權限、安裝 Connector 、然後提供您準備的權限。</block>
+  <block id="eb44c1bbcb138bd8d43dab2a2d5dd798" category="doc">在 AWS 中手動安裝 Connector</block>
+  <block id="2cdec4e0f473161523115d9e1cc50257" category="list-text">建立 Connector 時、您需要選取 EC2 金鑰配對以搭配執行個體使用。</block>
+  <block id="5a91621ccd300e88166b91a0b665aac4" category="paragraph">您需要使用下列其中一個選項、提供 AWS 對 BlueXP 的權限：</block>
+  <block id="6228648e5d6d15ae3dbe8697a0cac46b" category="list-text">選項 2 ：為具有必要權限的 IAM 使用者提供 BlueXP AWS 存取金鑰。</block>
+  <block id="d09b59b3c361894c6a2979054b0ad2d7" category="paragraph">現在您有一個 IAM 角色、可以在安裝 Connector 之後與 EC2 執行個體建立關聯。</block>
+  <block id="0ab11996db5879cc1a003c58677711c7" category="paragraph">您現在擁有一個 IAM 使用者、該使用者擁有必要的權限、以及您可以提供給 BlueXP 的存取金鑰。</block>
+  <block id="d2d1ceed8d98a24134a28e02c516e866" category="paragraph">安裝 Connector 之後、您必須提供 BlueXP 先前設定的 AWS 權限。提供權限可讓 BlueXP 在 AWS 中管理您的資料和儲存基礎架構。</block>
+  <block id="0b535291ac12ed2971b8f6dd20077b57" category="paragraph">需要 Google Cloud 服務帳戶、才能為 Connector 提供 BlueXP 在 Google Cloud 中管理資源所需的權限。建立 Connector 時、您需要將此服務帳戶與 Connector VM 建立關聯。</block>
+  <block id="2afbc6cdafdfd50d0796ff7ccdc0fd3e" category="list-text">在 Google Cloud 中建立服務帳戶、並將角色指派給服務帳戶：</block>
+  <block id="3d6b59e9fbd2e4d484133fea08ac4428" category="list-text">從 IAM &amp; Admin 服務中、選取您要建立 Cloud Volumes ONTAP 系統的 Google Cloud 專案。</block>
+  <block id="658340d0aa3e36a759f733841569dc13" category="example-title">檢視共享的 VPC 權限</block>
+  <block id="b326fc983a5df57abde362e9d50b49c0" category="paragraph"><block ref="b326fc983a5df57abde362e9d50b49c0" category="inline-link-macro-rx"></block></block>
+  <block id="570229b9947a1227993037f3d9ddc76e" category="cell">compute.networkUser
+
+部署manager.manager</block>
+  <block id="392b1caa909a73660b60354854bfae80" category="cell">儲存設備管理
+
+成員：serviceAccount.user的BlueXP服務帳戶</block>
+  <block id="5dede1d84f3762484d5f82034b108c8d" category="paragraph">| 管理 AWS 中的資源。確切的端點取決於您使用的 AWS 區域。<block ref="04572646466baf6f86d09965eb5c3c86" category="inline-link-rx"></block></block>
+  <block id="3f85a7bdf40074d6d7c5e25de7a35f3a" category="inline-link-macro">設定 AWS Marketplace 部署的權限</block>
+  <block id="cd2bf2a9ec0f834a404adb2dff0bbe33" category="list-text"><block ref="cd2bf2a9ec0f834a404adb2dff0bbe33" category="inline-link-macro-rx"></block></block>
+  <block id="7670b3e7fd0d9b5404a8ab86daf87444" category="section-title">步驟 1 ：瞭解私有模式的運作方式</block>
+  <block id="6a0acc770010231bcc42930780e10a7e" category="section-title">步驟 2 ：檢閱安裝選項</block>
+  <block id="50c4903873872ea1d14776db2fb74652" category="section-title">步驟 3 ：檢閱主機需求</block>
+  <block id="ba9523b755dd436b9804d56f2425702a" category="section-title">步驟 4 ：為 Connector 準備網路</block>
+  <block id="4a34940e5f45b6eb76dabb3e23de10f0" category="section-title">步驟 5 ：準備雲端權限</block>
+  <block id="ed699bb1e56dba725718c6f093e80619" category="section-title">步驟 6 ：啟用 Google Cloud API</block>
+  <block id="755bdc98f2ba455bba23e5d86a671294" category="section-title">步驟 1 ：瞭解受限模式的運作方式</block>
+  <block id="b5437b8a5eafec074529299c6dc47771" category="section-title">步驟 4 ：準備網路</block>
+  <block id="62e5d1121361ae6a6b8f2f35c9e1b534" category="list-text">在受限模式下、可從 Connector 存取 BlueXP 使用者介面。當您使用 BlueXP 使用者介面時、它會聯絡幾個端點來完成資料管理工作。從 BlueXP 主控台完成特定動作時、會從使用者的電腦聯絡這些端點。</block>
+  <block id="d9d13e4310493bbbe9137b8f0bff73c0" category="section-title">步驟： 5 準備雲端權限</block>
+  <block id="d33385b3989ad7c0d0d5068246d54b96" category="summary">在 Google Cloud 中建立 Connector 有幾種不同的方法。直接從 BlueXP 開始是最常見的方法。</block>
+  <block id="01936da377bd77271790dab55ad9996f" category="inline-link-macro">直接從 BlueXP 建立 Connector</block>
+  <block id="81bfdce77d2f02aa0110ac77ab7d117d" category="list-text"><block ref="4e9cbb4f1c74952959ded57fc23d598b" category="inline-link-macro-rx"></block> （這是標準選項）</block>
+  <block id="a56140a16ae4fdd6e26238122f72fd1e" category="list-text"><block ref="a56140a16ae4fdd6e26238122f72fd1e" category="inline-link-macro-rx"></block></block>
+  <block id="5310f96a897370524550567753357d0f" category="paragraph">此動作也會啟動執行 Linux 和 Connector 軟體的 VM 執行個體、但部署是直接從 Google Cloud 啟動、而非從 BlueXP 啟動。</block>
+  <block id="ab98f632a22cf265a09e9110157eba1f" category="list-text"><block ref="ab98f632a22cf265a09e9110157eba1f" category="inline-link-macro-rx"></block></block>
+  <block id="c121381dfee8c4adbd097f5195fa047c" category="summary">在 AWS 中建立 Connector 有幾種不同的方法。直接從 BlueXP 開始是最常見的方法。</block>
+  <block id="ac5b4fc4d9960ee08b623a5d7e02c723" category="list-text"><block ref="8877e2d58a4afcedb515951b2c2e2822" category="inline-link-macro-rx"></block> （這是標準選項）</block>
+  <block id="bfbf33ee365f77b15c3357d7de535a2c" category="list-text"><block ref="bfbf33ee365f77b15c3357d7de535a2c" category="inline-link-macro-rx"></block></block>
+  <block id="b4ddd02a1c9dee7fdc6802111fb3cc25" category="paragraph">此動作也會啟動執行 Linux 和 Connector 軟體的 EC2 執行個體、但部署會直接從 AWS Marketplace 啟動、而非從 BlueXP 啟動。</block>
+  <block id="a0d5fffa896034a79c127d53a34685b7" category="list-text"><block ref="a0d5fffa896034a79c127d53a34685b7" category="inline-link-macro-rx"></block></block>
+  <block id="8ce9c61f5e14fb093fdb6cc132fb3103" category="summary">若要從 BlueXP 在 Azure 中建立 Connector 、您必須設定網路、準備 Azure 權限、然後建立 Connector 。</block>
+  <block id="383a4f176227e611b43fffaef447cf94" category="section-title">步驟 2 ：建立自訂角色</block>
+  <block id="568a7904f89eda5a0e1ad00f19631224" category="paragraph">建立可指派給 Azure 帳戶或 Azure AD 服務主體的 Azure 自訂角色。BlueXP 會驗證 Azure 、並使用這些權限代表您建立 Connector 執行個體。</block>
+  <block id="93017c2ae371dc5a19be6e0cce08ab5a" category="section-title">步驟 3 ：設定驗證</block>
+  <block id="a29efb5754bb36ee62d4a2e17c5e5717" category="list-text">收到提示時、請使用 Azure 帳戶登入。此帳戶必須具有特定的Azure權限。這是預設選項。</block>
+  <block id="fbb7d70eda793afc4159d1bd8f3c3814" category="paragraph">請依照下列步驟準備其中一種驗證方法、以搭配 BlueXP 使用。</block>
+  <block id="a9242e0bd7c37f9c26c954ae4eff29b3" category="open-title">Azure 帳戶</block>
+  <block id="d1ff9355f81257b2c8a7693e702ba3f7" category="section-title">步驟 4 ：建立 Connector</block>
+  <block id="f23ed1e499f82b7b35d463ccef21eed1" category="paragraph">從 BlueXP 建立 Connector 會使用預設組態、在 Azure 中部署虛擬機器。 <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
+  <block id="2f44f891a2e61a894ccc4f30dfd7b4be" category="paragraph"><block ref="8d330a1f00fb06fce7867e682fb9a351" category="inline-xref-macro-rx"></block>。</block>
+  <block id="234849cccf32785a20387f435fbc1665" category="paragraph">在標準模式下使用 BlueXP 時、您提供權限的方式取決於您規劃建立 Connector 的方式。</block>
+  <block id="235df19fd66aa61dd8174f1a6480f822" category="paragraph">若要瞭解如何設定權限、請參閱下列內容：</block>
+  <block id="2309e95f128f15afe4bdf21a377f9d87" category="list-text"><block ref="2309e95f128f15afe4bdf21a377f9d87" category="inline-link-macro-rx"></block></block>
+  <block id="c53f978d2c0ef8c78c62cdf0fc803526" category="list-text"><block ref="c53f978d2c0ef8c78c62cdf0fc803526" category="inline-link-macro-rx"></block></block>
+  <block id="412d134b731f1d8c5a5b0a427966703d" category="list-text"><block ref="412d134b731f1d8c5a5b0a427966703d" category="inline-link-macro-rx"></block></block>
+  <block id="ed3271e15717ab8332c1de24eba514e0" category="list-text"><block ref="ed3271e15717ab8332c1de24eba514e0" category="inline-link-macro-rx"></block></block>
+  <block id="2b27af8d5932753265ba5607c4aca373" category="summary">若要從 Azure Marketplace 建立 Connector 、您必須設定網路、準備 Azure 權限、檢閱執行個體需求、然後建立 Connector 。</block>
+  <block id="08162f5d2875618589001f4ce951b82d" category="section-title">步驟 2 ：檢閱 VM 需求</block>
+  <block id="67e296817a0a6c22fc1ef6d510785c4d" category="paragraph">建立 Connector 時、您需要選擇符合下列需求的虛擬機器類型。</block>
+  <block id="2e8efb5a4d803004aa2f7b52e98e57e6" category="paragraph">您可以使用下列方式提供權限：</block>
+  <block id="4038d2f08625a8689610b527df3b8ded" category="paragraph">請依照下列步驟設定 BlueXP 的權限。</block>
+  <block id="4ce58aed62ea94c374a38864c0fb4252" category="paragraph">直接從 Azure Marketplace 啟動 Connector 。</block>
+  <block id="d07ea60173f1265837ca53e342739d45" category="paragraph">從 Azure Marketplace 建立 Connector 會使用預設組態、在 Azure 中部署虛擬機器。 <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
+  <block id="a2832b4d1493aef5e7b104eee31696c2" category="paragraph">建立 Connector 之後、您必須提供 BlueXP 先前設定的權限。提供權限可讓 BlueXP 管理 Azure 中的資料和儲存基礎架構。</block>
+  <block id="333a6174ed6d7c0a901714986b18ffe4" category="summary">若要在您自己的 Linux 主機上手動安裝 Connector 、您必須檢閱主機需求、設定網路、準備 Google Cloud 權限、啟用 Google Cloud API 、安裝 Connector 、然後提供您準備的權限。</block>
+  <block id="2752969f9e640eeece13dd03965d62d0" category="doc">在 Google Cloud 中手動安裝 Connector</block>
+  <block id="ee6518a606731df759329c957c614bd7" category="section-title">步驟 3 ：設定 Connector 的權限</block>
+  <block id="47c702e5703c00c15a7f10ffe5bb3fdd" category="section-title">步驟 4 ：設定共用 VPC 權限</block>
+  <block id="fa48079a29f8b87d7d08f79f359feb76" category="section-title">步驟 5 ：啟用 Google Cloud API</block>
+  <block id="69f380f2398b7565bd53d007caa73472" category="paragraph">您必須先啟用數個 Google Cloud API 、才能在 Google Cloud 中部署 Cloud Volumes ONTAP 系統。</block>
+  <block id="da93ca4b1142128f1472b9a3e7c7548c" category="section-title">步驟 6 ：安裝 Connector</block>
+  <block id="23f1991165d981fbfc14ff4a1b567d22" category="section-title">步驟 7 ：提供 BlueXP 的權限</block>
+  <block id="77c49575039cf84b53e2e3bf39a8a007" category="paragraph">您必須提供 BlueXP 先前設定的 Google Cloud 權限。提供權限可讓 BlueXP 在 Google Cloud 中管理您的資料和儲存基礎架構。</block>
+  <block id="af2c4df7e8660cdabd8fc59a2aa0aaf1" category="doc">入門工作流程（受限模式）</block>
+  <block id="1308ae14263d9629eb12e11bd10db155" category="list-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> <block ref="f826f61970c0735d0b0624264426b512" category="inline-link-macro-rx"></block></block>
+  <block id="4e23722878b94665fc99da5155740983" category="list-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> <block ref="91952275075ecc9b8aebe16ba6271f44" category="inline-link-macro-rx"></block></block>
+  <block id="4da4136996a5693cce37cbf2f0593ca8" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> <block ref="b6ac9571373b405609dca7f8bd1d8d17" category="inline-link-macro-rx"></block></block>
+  <block id="f27478da3d45a7fb911169376cc097a3" category="list-text"><block ref="f27478da3d45a7fb911169376cc097a3" category="inline-link-macro-rx"></block></block>
+  <block id="fd7bdffe2c7880247dba3b22064b4662" category="list-text"><block ref="fd7bdffe2c7880247dba3b22064b4662" category="inline-link-macro-rx"></block></block>
+  <block id="46eb19bc7ffa54dcdb1974eae5e15a55" category="list-text"><block ref="46eb19bc7ffa54dcdb1974eae5e15a55" category="inline-link-macro-rx"></block></block>
+  <block id="9f1b173da34454dc5496d8e7c6489b76" category="summary">您登入 BlueXP 的方式取決於您帳戶使用的 BlueXP 部署模式。</block>
+  <block id="2c3621f7119a3af3ff21d4dabe12e9b8" category="summary">若要從 BlueXP 或使用 gCloud 在 Google Cloud 中建立 Connector 、您必須設定網路、準備 Google Cloud 權限、啟用 Google Cloud API 、然後建立 Connector 。</block>
+  <block id="fc9383e01decd56a18836fe085765bd8" category="doc">從 BlueXP 或 gCloud 在 Google Cloud 中建立 Connector</block>
+  <block id="a936481c7c1d5494203a4520626ac2b2" category="section-title">步驟 2 ：設定建立 Connector 的權限</block>
+  <block id="4d55aaa36c67fd980b8ca20ca5db6ef9" category="paragraph">您必須先為部署 Connector VM 的 Google Cloud 使用者設定權限、才能從 BlueXP 或使用 gCloud 部署 Connector 。</block>
+  <block id="8456ad5c97fd1db8b43fc61d8ea03799" category="section-title">步驟 6 ：建立 Connector</block>
+  <block id="bb919bb919074dbe6c69b05695d0a1aa" category="paragraph">直接從 BlueXP 網路型主控台或使用 gCloud 建立 Connector 。</block>
+  <block id="b03261236b57a26202438940439ee786" category="paragraph">建立 Connector 會使用預設組態、在 Google Cloud 中部署虛擬機器執行個體。 <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
+  <block id="ec2ce152b3b60e3721ae091911de473d" category="list-text">瞭解 VM 執行個體需求。</block>
+  <block id="aab924c92611ee11b49b8687e53ec943" category="list-text">* CPU* ： 4 核心或 4 個 vCPU</block>
+  <block id="3f8517f6b0146fc27e0a5144098713fb" category="list-text">* RAM* ： 14 GB</block>
+  <block id="12214f717d223f4e629e799bb92aa784" category="list-text">* 機器類型 * ：建議使用 n2-Standard-4 。</block>
+  <block id="c46c07de3509c2f428511938b99c482c" category="paragraph">在支援 Shieled VM 功能的 VM 執行個體上、 Google Cloud 支援 Connector 。</block>
+  <block id="b4b2faa64fa527010fe06cf8daebba0d" category="inline-link-macro">直接從 BlueXP 建立 Connector</block>
+  <block id="034ffed90c6cbf22b9ac08da3eed1583" category="list-text"><block ref="8a82d6caaf4bb0d15c7ad83c8f8f22c1" category="inline-link-macro-rx"></block> （這是標準選項）</block>
+  <block id="f620c8829c45a571ef79c7113979e722" category="list-text"><block ref="f620c8829c45a571ef79c7113979e722" category="inline-link-macro-rx"></block></block>
+  <block id="5d2f88742fa055307c09a80d0773bb7f" category="paragraph">此動作也會啟動執行 Linux 和 Connector 軟體的 VM 、但部署是直接從 Azure Marketplace 啟動、而非從 BlueXP 啟動。</block>
+  <block id="152e6840a2911cc120f143ff657bdc7e" category="list-text"><block ref="152e6840a2911cc120f143ff657bdc7e" category="inline-link-macro-rx"></block></block>
+  <block id="6a47e87d123961d13235f32c19e7042d" category="section-title">步驟 3 ：設定雲端權限</block>
+  <block id="b393abc2831fb45cf9e5b73489057bcc" category="admonition">為何不選擇 Google Cloud ？當 Connector 安裝在您的內部環境中時、就無法在 Google Cloud 中管理您的資源。Connector 必須安裝在 Google Cloud 中、才能管理任何位於該處的資源。</block>
+  <block id="7380491555cdaf40fdcbfe5baeb961c4" category="section-title">步驟 5 ：設定 Connector</block>
+  <block id="b8312cd81869d608f8aa6c172b1efa56" category="paragraph">註冊或登入、然後設定 Connector 以搭配 BlueXP 帳戶使用。</block>
+  <block id="63833bed9bf25b857c994cd51a878896" category="section-title">步驟 6 ：提供 BlueXP 的權限</block>
+  <block id="ccbf44ea31f64041eb3e02bf2d4f1003" category="paragraph">安裝並設定 Connector 之後、請新增您的雲端認證、以便 BlueXP 具有必要的權限、可在 AWS 或 Azure 中執行動作。</block>
+  <block id="1afdeeb91955c8912691275e3b9c68c4" category="paragraph">從BlueXP部署連接器時、您需要為IAM使用者提供IAM角色或存取金鑰的ARN。您使用的驗證方法必須具有必要的權限、才能在AWS中部署Connector執行個體。所需權限列於 <block ref="c368ad024408b872d841d80ba747ea9c" category="inline-link-macro-rx"></block>。</block>
+  <block id="22212781592f02202c8c844bb4a04932" category="cell"><block ref="22212781592f02202c8c844bb4a04932" category="inline-link-macro-rx"></block></block>
+  <block id="fce0a0b0a267cd8305c849b06f175b89" category="cell"><block ref="fce0a0b0a267cd8305c849b06f175b89" category="inline-link-macro-rx"></block></block>
+  <block id="5a67de31666dbed1b084c8f0ca78f388" category="inline-link-macro">設定建立 Connector 的權限</block>
+  <block id="a0452faa68d5d4a71a8b9513c9b786dc" category="cell"><block ref="a0452faa68d5d4a71a8b9513c9b786dc" category="inline-link-macro-rx"></block></block>
+  <block id="fad6ca384c3ce615d6e92009f691fe31" category="cell"><block ref="fad6ca384c3ce615d6e92009f691fe31" category="inline-link-macro-rx"></block></block>
+  <block id="16110a6364a30618ae3faccd08462846" category="list-text"><block ref="16110a6364a30618ae3faccd08462846" category="inline-link-macro-rx"></block></block>
+  <block id="027fc0f63a53618941a525d7db26960b" category="summary">若要從 AWS Marketplace 建立 Connector 、您需要設定網路、準備 AWS 權限、檢閱執行個體需求、然後建立 Connector 。</block>
+  <block id="1fa4b84064fd1694da61ac2d0778532e" category="section-title">步驟 3 ：審查執行個體需求</block>
+  <block id="22eed080ddd28e5a07bee6511daf36b3" category="paragraph">建立 Connector 時、您需要選擇符合下列需求的 EC2 執行個體類型。</block>
+  <block id="9cc4c3a223d9b6def6feaec3c11d5585" category="paragraph">直接從 AWS Marketplace 建立 Connector 。</block>
+  <block id="0d8dcd0440293645b17304e6ec7f0b44" category="paragraph">從 AWS Marketplace 建立 Connector 會使用預設組態、在 AWS 中部署 EC2 執行個體。 <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
+  <block id="65ce4dce26160be29539699c6623e379" category="sidebar">快速入門工作流程</block>
+  <block id="4cb8580dcb7bdd5753758d2029cf5760" category="sidebar">從 BlueXP 建立</block>
+  <block id="490065fa675522d3a515cadb526d26f6" category="sidebar">從市場中建立</block>
+  <block id="655a3c90b399118b5d073277c90e6b0f" category="sidebar">手動安裝</block>
+  <block id="054df94b323e23fce659cffe65ef10ef" category="sidebar">從 BlueXP 或使用 gCloud 建立</block>
 </blocks>

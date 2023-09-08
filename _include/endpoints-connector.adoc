@@ -2,6 +2,9 @@
 :allow-uri-read: 
 
 
+已從 Connector 聯絡的端點:: Connector 需要外傳網際網路存取才能連絡下列端點、以便管理公有雲環境中的資源和程序、以進行日常營運。
+
+
 | AWS 服務（ amazonaws.com):
 
 * CloudForation
@@ -12,7 +15,7 @@
 * 簡易儲存服務（ S3 ）
 
 
-| 管理 AWS 中的資源。確切的端點取決於部署Connector的區域。 https://docs.aws.amazon.com/general/latest/gr/rande.html["如需詳細資料、請參閱AWS文件"^]
+| 管理 AWS 中的資源。確切的端點取決於您使用的 AWS 區域。 https://docs.aws.amazon.com/general/latest/gr/rande.html["如需詳細資料、請參閱AWS文件"^]
 
 | \https://management.azure.com
 \https://login.microsoftonline.com

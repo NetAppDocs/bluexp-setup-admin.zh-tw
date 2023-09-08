@@ -31,7 +31,7 @@ BlueXP 需要連接器和個別服務的 AWS 權限。
 | 目標 | 說明 | 連結 
 
 
-| 從 BlueXP 部署 Connector | 從BlueXP建立Connector的使用者需要特定權限、才能在AWS中部署執行個體。 | link:task-set-up-permissions-aws.html["設定 AWS 權限"] 
+| 從 BlueXP 部署 Connector | 從BlueXP建立Connector的使用者需要特定權限、才能在AWS中部署執行個體。 | link:task-install-connector-aws-bluexp.html#step-2-set-up-aws-permissions["設定 AWS 權限"] 
 
 
 | 提供 Connector 的權限 | 當BlueXP啟動Connector時、它會將原則附加至執行個體、以提供管理AWS帳戶中資源和處理程序所需的權限。
@@ -116,7 +116,7 @@ BlueXP 需要連接器和個別服務的 Azure 權限。
 | 目標 | 說明 | 連結 
 
 
-| 從 BlueXP 部署 Connector | 從BlueXP部署Connector時、您需要使用Azure帳戶或服務主體、該用戶必須具有在Azure中部署Connector VM的權限。 | link:task-set-up-permissions-azure.html["設定 Azure 權限"] 
+| 從 BlueXP 部署 Connector | 從BlueXP部署Connector時、您需要使用Azure帳戶或服務主體、該用戶必須具有在Azure中部署Connector VM的權限。 | link:task-install-connector-azure-bluexp.html#step-2-create-a-custom-role["設定 Azure 權限"] 
 
 
 | 提供 Connector 的權限  a| 
@@ -155,12 +155,12 @@ BlueXP 需要 Google Cloud 權限才能使用 Connector 和個別服務。
 | 目標 | 說明 | 連結 
 
 
-| 從 BlueXP 部署 Connector | 從BlueXP部署Connector的Google Cloud使用者需要特定權限、才能在Google Cloud中部署Connector。 | link:task-set-up-permissions-google.html#set-up-permissions-to-create-the-connector-from-bluexp-or-gcloud["設定部署Connector的權限"] 
+| 從 BlueXP 部署 Connector | 從BlueXP部署Connector的Google Cloud使用者需要特定權限、才能在Google Cloud中部署Connector。 | link:task-install-connector-google-bluexp-gcloud.html#step-2-set-up-permissions-to-create-the-connector["設定建立 Connector 的權限"] 
 
 
 | 提供 Connector 的權限 | Connector VM執行個體的服務帳戶必須具有特定的日常作業權限。在部署期間、您需要將服務帳戶與 Connector 建立關聯。
 
-您也必須確保在後續版本中新增權限時、原則保持在最新狀態。 | link:reference-permissions-gcp.html["Connector的Google Cloud權限"] 
+您也必須確保在後續版本中新增權限時、原則保持在最新狀態。 | link:task-install-connector-google-bluexp-gcloud.html#step-3-set-up-permissions-for-the-connector["設定 Connector 的權限"] 
 |===
 
 

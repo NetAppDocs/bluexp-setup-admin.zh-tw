@@ -1,6 +1,6 @@
 ---
 permalink: task-creating-connectors-gcp.html 
-redirect: bluexp-setup-admin/task-quick-start-connector-google.html 
+redirect: bluexp-setup-admin/concept-install-options-google.html 
 ---
 = 
 :allow-uri-read: 

@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-logging-in.html 
 keywords: logging in, log in, sign in, signing in, cloud central, netapp cloud central, user account, federated, federation, federated login, federation login, login with netapp, log in with netapp, sign up, create account 
-summary: 註冊 BlueXP 之後、您可以從網路型主控台登入、開始管理資料和儲存基礎架構。 
+summary: 您登入 BlueXP 的方式取決於您帳戶使用的 BlueXP 部署模式。 
 ---
-= 登入 BlueXP （標準模式）
+= 登入BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,9 +14,15 @@ summary: 註冊 BlueXP 之後、您可以從網路型主控台登入、開始管
 
 
 [role="lead"]
+您登入 BlueXP 的方式取決於您帳戶使用的 BlueXP 部署模式。
+
+[role="tabbed-block"]
+====
+.標準模式
+--
 註冊 BlueXP 之後、您可以從網路型主控台登入、開始管理資料和儲存基礎架構。
 
-.登入選項
+.關於這項工作
 您可以使用下列其中一個選項、登入 BlueXP 網路型主控台：
 
 * 您現有NetApp 支援網站 的功能驗證（NSS）認證
@@ -41,3 +47,57 @@ summary: 註冊 BlueXP 之後、您可以從網路型主控台登入、開始管
 
 .結果
 您現在已經登入、可以開始使用BlueXP來管理混合式多雲端基礎架構。
+
+--
+.受限模式
+--
+在受限模式下使用 BlueXP 時、您必須從本機在 Connector 上執行的使用者介面登入 BlueXP 主控台。
+
+.關於這項工作
+當您的帳戶設定為受限模式時、 BlueXP 支援使用下列其中一個選項登入：
+
+* 使用您的電子郵件地址和密碼登入NetApp雲端
+* 聯盟連線
++
+您可以使用單一登入、從公司目錄（聯盟身分識別）使用認證登入。 link:concept-federation.html["瞭解如何將身分識別聯盟與BlueXP搭配使用"]。
+
+
+
+.步驟
+. 開啟網頁瀏覽器並輸入下列 URL ：
++
+https://_ipaddress_[]
+
++
+_ipaddress_ 可以是 localhost 、私有 IP 位址或公有 IP 位址、視您安裝 Connector 的主機組態而定。例如、您可能需要從連線至 Connector 主機的主機輸入私有 IP 位址。
+
+. 輸入您的使用者名稱和密碼以登入。
+
+
+.結果
+您現在已經登入、可以開始使用BlueXP來管理混合式多雲端基礎架構。
+
+--
+.私有模式
+--
+在私有模式下使用 BlueXP 時、您需要從本機在 Connector 上執行的使用者介面登入 BlueXP 主控台。
+
+.關於這項工作
+私有模式支援本機使用者管理與存取。驗證並非透過 BlueXP 的雲端服務提供。
+
+.步驟
+. 開啟網頁瀏覽器並輸入下列 URL ：
++
+https://_ipaddress_[]
+
++
+_ipaddress_ 可以是 localhost 、私有 IP 位址或公有 IP 位址、視您安裝 Connector 的主機組態而定。例如、您可能需要從連線至 Connector 主機的主機輸入私有 IP 位址。
+
+. 輸入您的使用者名稱和密碼以登入。
+
+
+.結果
+您現在已經登入、可以開始使用BlueXP來管理混合式多雲端基礎架構。
+
+--
+====

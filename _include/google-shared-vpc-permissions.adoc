@@ -1,0 +1,56 @@
+= 
+:allow-uri-read: 
+
+
+如果您使用共享 VPC 將資源部署到服務專案中、則需要準備權限。
+
+此表供參考、當IAM組態完成時、您的環境應反映權限表。
+
+.檢視共享的 VPC 權限
+[%collapsible]
+====
+[cols="10,10,10,18,18,34"]
+|===
+| 身分識別 | 建立者 | 裝載於 | 服務專案權限 | 主機專案權限 | 目的 
+
+
+| Google 帳戶以部署 Connector | 自訂 | 服務專案  a| 
+link:task-install-connector-google-bluexp-gcloud.html#step-2-set-up-permissions-to-create-the-connector["Connector 部署原則"]
+ a| 
+compute.networkUser
+| 在服務專案中部署Connector 
+
+
+| 連接器服務帳戶 | 自訂 | 服務專案  a| 
+link:reference-permissions-gcp.html["Connector 服務帳戶原則"]
+| compute.networkUser
+
+部署manager.manager | 在Cloud Volumes ONTAP 服務專案中部署及維護功能與服務 
+
+
+| 服務帳戶Cloud Volumes ONTAP | 自訂 | 服務專案 | 儲存設備管理
+
+成員：serviceAccount.user的BlueXP服務帳戶 | 不適用 | （選用）用於資料分層和 BlueXP 備份與還原 
+
+
+| Google API服務代理程式 | Google Cloud | 服務專案  a| 
+（預設）編輯器
+ a| 
+compute.networkUser
+| 代表部署與Google Cloud API互動。允許BlueXP使用共享網路。 
+
+
+| Google Compute Engine預設服務帳戶 | Google Cloud | 服務專案  a| 
+（預設）編輯器
+ a| 
+compute.networkUser
+| 代表部署部署部署部署Google Cloud執行個體和運算基礎架構。允許BlueXP使用共享網路。 
+|===
+附註：
+
+. 只有當您未將防火牆規則傳遞給部署、並選擇讓BlueXP為您建立時、才需要在主機專案中部署manager.manager。如果未指定任何規則、則BlueXP會在主機專案中建立包含VPC0防火牆規則的部署。
+. 只有當您未將防火牆規則傳遞至部署、並選擇讓BlueXP為您建立防火牆規則時、才需要使用Firewall.create和firewall.delete。這些權限位於BlueXP帳戶.yaml檔案中。如果您使用共用VPC部署HA配對、這些權限將用於建立VPC1、2和3的防火牆規則。對於所有其他部署、這些權限也會用於建立VPC0的規則。
+. 對於資料分層、分層服務帳戶必須在服務帳戶上具有serviceAccount.user角色、而不只是在專案層級。目前、如果您在專案層級指派serviceAccount.user、則當您使用getIAMPolicy查詢服務帳戶時、不會顯示權限。
+
+
+====

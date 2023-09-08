@@ -1,0 +1,8 @@
+---
+permalink: task-provide-permissions-aws.html 
+redirect: bluexp-setup-admin/task-install-connector-aws-manual.html 
+---
+= 
+:allow-uri-read: 
+
+

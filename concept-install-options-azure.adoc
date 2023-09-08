@@ -14,21 +14,19 @@ summary: 在 Azure 中建立 Connector 有幾種不同的方法。直接從 Blue
 
 
 [role="lead"]
-在 Azure 中建立 Connector 有幾種不同的方法。直接從 BlueXP 開始是最常見的方法。您選擇的安裝選項會決定您準備部署的方式。
+在 Azure 中建立 Connector 有幾種不同的方法。直接從 BlueXP 開始是最常見的方法。
 
 提供下列安裝選項：
 
-* 直接從 BlueXP 建立 Connector （這是標準選項）
+* link:task-install-connector-azure-bluexp.html["直接從 BlueXP 建立 Connector"] （這是標準選項）
 +
 此動作會在您選擇的 vnet 中啟動執行 Linux 的 VM 和 Connector 軟體。
 
-* 從Azure Marketplace建立連接器
+* link:task-install-connector-azure-marketplace.html["從Azure Marketplace建立連接器"]
 +
-此動作也會啟動執行 Linux 的 VM 和 Connector 軟體。
+此動作也會啟動執行 Linux 和 Connector 軟體的 VM 、但部署是直接從 Azure Marketplace 啟動、而非從 BlueXP 啟動。
 
-* 在您自己的 Linux 主機上下載並手動安裝軟體
+* link:task-install-connector-azure-manual.html["在您自己的 Linux 主機上下載並手動安裝軟體"]
 
 
 您選擇的安裝選項會影響您準備安裝的方式。其中包括如何為 BlueXP 提供驗證和管理 Azure 資源所需的必要權限。
-
-link:task-install-connector-azure.html["瞭解如何在 Azure 中安裝 Connector"]。

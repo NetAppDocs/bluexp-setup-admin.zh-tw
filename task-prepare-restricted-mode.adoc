@@ -18,7 +18,7 @@ summary: 在受限模式下部署 BlueXP 之前、請先準備好您的環境。
 
 
 
-== 瞭解受限模式的運作方式
+== 步驟 1 ：瞭解受限模式的運作方式
 
 開始之前、您應該先瞭解 BlueXP 在受限模式下的運作方式。
 
@@ -30,7 +30,7 @@ link:concept-modes.html["瞭解受限模式的運作方式"]。
 
 
 
-== 檢閱安裝選項
+== 步驟 2 ：檢閱安裝選項
 
 在受限模式中、您只能在雲端安裝 Connector 。提供下列安裝選項：
 
@@ -41,7 +41,7 @@ link:concept-modes.html["瞭解受限模式的運作方式"]。
 
 
 
-== 檢閱主機需求
+== 步驟 3 ：檢閱主機需求
 
 Connector 軟體必須在符合特定作業系統需求、 RAM 需求、連接埠需求等的主機上執行。
 
@@ -86,22 +86,37 @@ Docker引擎:: 安裝Connector之前、主機上必須安裝Docker Engine 19.3.1
 
 
 
-== 準備連接器的網路連線
+== 步驟 4 ：準備網路
 
 設定您的網路、讓 Connector 能夠管理公有雲環境中的資源和程序。除了連接器的虛擬網路和子網路之外、您還需要確保符合下列需求。
 
+連線至目標網路:: Connector 必須與您計畫管理儲存設備的位置建立網路連線。例如、您計畫部署 Cloud Volumes ONTAP 的 VPC 或 vnet 、或內部部署 ONTAP 叢集所在的資料中心。
+準備網路以供使用者存取 BlueXP 主控台:: 在受限模式下、可從 Connector 存取 BlueXP 使用者介面。當您使用 BlueXP 使用者介面時、它會聯絡幾個端點來完成資料管理工作。從 BlueXP 主控台完成特定動作時、會從使用者的電腦聯絡這些端點。
++
+--
+[cols="2*"]
+|===
+| 端點 | 目的 
 
 
-=== 連線至目標網路
-
-Connector 必須與您計畫管理儲存設備的位置建立網路連線。例如、您計畫部署 Cloud Volumes ONTAP 的 VPC 或 vnet 、或內部部署 ONTAP 叢集所在的資料中心。
+| \https://signin.b2c.netapp.com | 需要更新NetApp 支援網站 驗證（NSS）認證或新增新的NSS認證至BlueXP。 
 
 
+| \https://netapp-cloud-account.auth0.com
 
-=== 用於手動安裝的外送網際網路存取
+\https://cdn.auth0.com
 
-當您在自己的 Linux 主機上手動安裝 Connector 時、 Connector 的安裝程式需要在安裝過程中存取下列 URL ：
+\https://services.cloud.netapp.com | 您的網頁瀏覽器會連線至這些端點、以便透過BlueXP進行集中式使用者驗證。 
 
+
+| \https://widget.intercom.io | 產品內對談可讓您與 NetApp 雲端專家交談。 
+|===
+--
+
+
+手動安裝期間聯絡的端點:: 當您在自己的 Linux 主機上手動安裝 Connector 時、 Connector 的安裝程式需要在安裝過程中存取下列 URL ：
++
+--
 * \https://support.netapp.com
 * \https://mysupport.netapp.com
 * \https://cloudmanager.cloud.netapp.com/tenancy
@@ -120,12 +135,10 @@ Azure 政府地區不需要此端點。
 
 主機可能會在安裝期間嘗試更新作業系統套件。主機可聯絡不同的鏡射站台、以取得這些 OS 套件。
 
-
-
-=== 用於日常營運的外傳網際網路存取
-
-您部署Connector的網路位置必須具有傳出網際網路連線。連接器需要存取傳出網際網路、才能連絡下列端點、以便管理公有雲環境中的資源和程序。
-
+--
+用於日常營運的外傳網際網路存取:: 您部署Connector的網路位置必須具有傳出網際網路連線。連接器需要存取傳出網際網路、才能連絡下列端點、以便管理公有雲環境中的資源和程序。
++
+--
 [cols="2a,1a"]
 |===
 | 端點 | 目的 
@@ -142,7 +155,7 @@ AWS 服務（ amazonaws.com):
 * 簡易儲存服務（ S3 ）
 
  a| 
-管理AWS中的資源。確切的端點取決於部署Connector的區域。 https://docs.aws.amazon.com/general/latest/gr/rande.html["如需詳細資料、請參閱AWS文件"^]
+管理AWS中的資源。確切的端點取決於您使用的 AWS 區域。 https://docs.aws.amazon.com/general/latest/gr/rande.html["如需詳細資料、請參閱AWS文件"^]
 
 
 
@@ -227,35 +240,35 @@ Azure 政府地區不需要此端點。
 升級Connector及其Docker元件。
 
 |===
+--
 
 
-=== Proxy伺服器
-
-如果您的組織需要為所有傳出的網際網路流量部署 Proxy 伺服器、請取得下列關於 HTTP 或 HTTPS Proxy 的資訊。您必須在安裝期間提供此資訊。
-
-* IP 位址
-* 認證資料
-* HTTPS憑證
-
-
-
-
-=== Azure 中的公有 IP 位址
-
-如果您想在 Azure 中的 Connector VM 使用公有 IP 位址、則 IP 位址必須使用基本 SKU 、以確保 BlueXP 使用此公有 IP 位址。
-
+Azure 中的公有 IP 位址:: 如果您想在 Azure 中的 Connector VM 使用公有 IP 位址、則 IP 位址必須使用基本 SKU 、以確保 BlueXP 使用此公有 IP 位址。
++
+--
 image:screenshot-azure-sku.png["在 Azure 中建立新 IP 位址的螢幕擷取畫面、可讓您在 SKU 欄位中選擇「基本」。"]
 
 如果您改用標準 SKU IP 位址、則 BlueXP 會使用 Connector 的 _private IP 位址、而非公有 IP 。如果您用來存取 BlueXP 主控台的機器無法存取該私有 IP 位址、則 BlueXP 主控台的動作將會失敗。
 
 https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses#sku["Azure 文件：公有 IP SKU"^]
 
+--
 
 
-=== 連接埠
+Proxy伺服器:: 如果您的組織需要為所有傳出的網際網路流量部署 Proxy 伺服器、請取得下列關於 HTTP 或 HTTPS Proxy 的資訊。您必須在安裝期間提供此資訊。
++
+--
+* IP 位址
+* 認證資料
+* HTTPS憑證
 
-除非您啟動連接器、或使用連接器做為 Proxy 、將 AutoSupport 訊息從 Cloud Volumes ONTAP 傳送至 NetApp 支援、否則不會有傳入的流量傳入連接器。
 
+--
+
+
+連接埠:: 除非您啟動連接器、或使用連接器做為 Proxy 、將 AutoSupport 訊息從 Cloud Volumes ONTAP 傳送至 NetApp 支援、否則不會有傳入的流量傳入連接器。
++
+--
 * HTTP（80）和HTTPS（443）可存取本機UI、在極少數情況下使用。
 * 只有在需要連線至主機進行疑難排解時、才需要SSH（22）。
 * 如果您在無法使用輸出網際網路連線的子網路中部署 Cloud Volumes ONTAP 系統、則需要透過連接埠 3128 進行輸入連線。
@@ -264,32 +277,12 @@ https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-ad
 
 
 
+--
 
 
-== 準備網路以供使用者存取 BlueXP 主控台
-
-在受限模式下、可從 Connector 存取 BlueXP 使用者介面。當您使用 BlueXP 使用者介面時、它會聯絡幾個端點來完成資料管理工作。執行網頁瀏覽器的機器必須連線至下列端點。
-
-[cols="2*"]
-|===
-| 端點 | 目的 
 
 
-| \https://signin.b2c.netapp.com | 需要更新NetApp 支援網站 驗證（NSS）認證或新增新的NSS認證至BlueXP。 
-
-
-| \https://netapp-cloud-account.auth0.com
-
-\https://cdn.auth0.com
-
-\https://services.cloud.netapp.com | 您的網頁瀏覽器會連線至這些端點、以便透過BlueXP進行集中式使用者驗證。 
-
-
-| \https://widget.intercom.io | 產品內對談可讓您與 NetApp 雲端專家交談。 
-|===
-
-
-== 準備雲端權限
+== 步驟： 5 準備雲端權限
 
 BlueXP 需要雲端供應商的權限、才能在虛擬網路中部署 Cloud Volumes ONTAP 並使用 BlueXP 資料服務。您需要在雲端供應商中設定權限、然後將這些權限與 Connector 建立關聯。
 
@@ -606,7 +599,7 @@ https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_
 ====
 
 
-== 啟用 Google Cloud API
+== 步驟 6 ：啟用 Google Cloud API
 
 在 Google Cloud 中部署 Cloud Volumes ONTAP 需要幾個 API 。
 

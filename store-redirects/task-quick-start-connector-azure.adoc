@@ -1,0 +1,8 @@
+---
+permalink: task-quick-start-connector-azure.html 
+redirect: bluexp-setup-admin/concept-install-options-azure.html 
+---
+= 
+:allow-uri-read: 
+
+

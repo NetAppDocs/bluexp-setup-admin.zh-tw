@@ -1,0 +1,8 @@
+---
+permalink: task-provide-permissions-google.html 
+redirect: bluexp-setup-admin/task-install-connector-google-manual.html 
+---
+= 
+:allow-uri-read: 
+
+

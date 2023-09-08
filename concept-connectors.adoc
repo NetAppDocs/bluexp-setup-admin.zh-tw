@@ -141,18 +141,20 @@ BlueXP 帳戶管理員可以直接從 BlueXP 、雲端供應商的市場、或�
 
 直接從 BlueXP 建立 Connector 需要特定權限、而 Connector 執行個體本身則需要另一組權限。如果您直接從 BlueXP 在 AWS 或 Azure 中建立 Connector 、則 BlueXP 會建立具有所需權限的 Connector 。
 
-若要瞭解如何設定權限、請參閱下列頁面：
+在標準模式下使用 BlueXP 時、您提供權限的方式取決於您規劃建立 Connector 的方式。
+
+若要瞭解如何設定權限、請參閱下列內容：
 
 * 標準模式
 +
-** link:task-set-up-permissions-aws.html["設定 AWS 權限"]
-** link:task-set-up-permissions-azure.html["設定 Azure 權限"]
-** link:task-set-up-permissions-google.html["設定 Google Cloud 權限"]
-** link:task-set-up-permissions-on-prem.html["設定內部部署的雲端權限"]
+** link:concept-install-options-aws.html["AWS 中的連接器安裝選項"]
+** link:concept-install-options-azure.html["Azure 中的連接器安裝選項"]
+** link:concept-install-options-google.html["Google Cloud 中的 Connector 安裝選項"]
+** link:task-install-connector-on-prem.html#step-3-set-up-cloud-permissions["設定內部部署的雲端權限"]
 
 
-* link:task-prepare-restricted-mode.html#prepare-cloud-permissions["設定受限模式的雲端權限"]
-* link:task-prepare-private-mode.html#prepare-cloud-permissions["設定私有模式的雲端權限"]
+* link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["設定受限模式的權限"]
+* link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["設定私有模式的權限"]
 
 
 若要檢視 Connector 所需的確切權限、請參閱下列頁面：

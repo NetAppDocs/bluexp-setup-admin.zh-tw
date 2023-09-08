@@ -20,7 +20,7 @@ summary: 瞭解 BlueXP 如何使用 Azure 認證和權限來代表您執行動�
 
 == Azure 初始認證
 
-從BlueXP部署Connector時、您需要使用具備部署Connector虛擬機器權限的Azure帳戶或服務主體。所需權限列於 link:task-set-up-permissions-azure.html["Azure 的連接器部署原則"]。
+從BlueXP部署Connector時、您需要使用具備部署Connector虛擬機器權限的Azure帳戶或服務主體。所需權限列於 link:task-install-connector-azure-bluexp.html#step-2-create-a-custom-role["Azure 的連接器部署原則"]。
 
 當BlueXP在Azure中部署Connector虛擬機器時、它會啟用 https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["系統指派的託管身分識別"^] 在虛擬機器上建立自訂角色、然後將其指派給虛擬機器。此角色可為BlueXP提供所需的權限、以管理該Azure訂閱中的資源和程序。 link:reference-permissions-azure.html["檢閱BlueXP如何使用權限"]。
 
@@ -66,10 +66,10 @@ image:screenshot_accounts_switch_azure.gif["螢幕快照、顯示在「詳細資
 
 * 標準模式
 +
-** link:task-set-up-permissions-azure.html["設定 Azure 權限"]
-** link:task-set-up-permissions-on-prem.html["設定內部部署的雲端權限"]
+** link:task-install-connector-azure-marketplace.html#step-3-set-up-permissions["設定 Azure Marketplace 部署的權限"]
+** link:task-install-connector-on-prem.html#step-3-set-up-cloud-permissions["設定內部部署的權限"]
 
 
-* link:task-prepare-restricted-mode.html#prepare-cloud-permissions["設定受限模式的雲端權限"]
-* link:task-prepare-private-mode.html#prepare-cloud-permissions["設定私有模式的雲端權限"]
+* link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["設定受限模式的權限"]
+* link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["設定私有模式的權限"]
 

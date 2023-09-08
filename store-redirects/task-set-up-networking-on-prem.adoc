@@ -1,0 +1,8 @@
+---
+permalink: task-set-up-networking-on-prem.html 
+redirect: bluexp-setup-admin/task-install-connector-on-prem.html 
+---
+= 
+:allow-uri-read: 
+
+
