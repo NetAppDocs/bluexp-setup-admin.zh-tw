@@ -18,7 +18,22 @@ summary: 瞭解 BlueXP 管理功能的新功能： BlueXP 帳戶、連接器、�
 
 
 
-== 7 月 30 日
+== 2023 年 9 月 10 日
+
+
+
+=== 連接器 3.9.33
+
+* 當您從 BlueXP 在 AWS 中建立 Connector 時、現在可以在金鑰配對欄位中搜尋、以便更輕鬆地找到您要與 Connector 執行個體搭配使用的金鑰配對。
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-connector-aws-key-pair.png["從 BlueXP 在 AWS 中建立連接器時、會出現在「網路」頁面上的「金鑰配對」欄位中搜尋選項的螢幕擷取畫面。"]
+
+* 此更新也包含錯誤修正。
+
+
+
+
+== 2023 年 7 月 30 日
 
 
 

@@ -3406,7 +3406,6 @@ Azure 政府地區不需要此端點。</block>
   <block id="6d2d5c49a26a8339a26911674ee69f80" category="list-text">若要將認證與新訂閱建立關聯、請選取 * 新增訂閱 &gt; 繼續 * 、然後依照 AWS Marketplace 中的步驟進行：</block>
   <block id="cc5b03fa4f937c63363767c812feeb34" category="list-text">選取 * 檢視購買選項 * 。</block>
   <block id="0b45e429b84384fa541446c3364409c9" category="list-text">選取 * 設定您的帳戶 * 。</block>
-  <block id="9d5f9909bec8cf71910a31c50878914c" category="section-title">7 月 30 日</block>
   <block id="167693b239be0e2939d61376cd3a5487" category="section-title">連接器 3.9.32</block>
   <block id="7af14628b780746da1b2b7396f10a07e" category="list-text">您現在可以使用 BlueXP 稽核服務 API 來匯出稽核記錄。</block>
   <block id="5a97fe4fe664c9e98d8ad88cdbf44d98" category="inline-link">深入瞭解如何使用稽核服務 API</block>
@@ -3773,4 +3772,11 @@ Azure 政府地區不需要此端點。</block>
   <block id="490065fa675522d3a515cadb526d26f6" category="sidebar">從市場中建立</block>
   <block id="655a3c90b399118b5d073277c90e6b0f" category="sidebar">手動安裝</block>
   <block id="054df94b323e23fce659cffe65ef10ef" category="sidebar">從 BlueXP 或使用 gCloud 建立</block>
+  <block id="200c9dcd65b566ab41bf3c1946647dce" category="section-title">2023 年 9 月 10 日</block>
+  <block id="f2d77c003fbfd61002c06e73a629086c" category="section-title">連接器 3.9.33</block>
+  <block id="d8465669650730f887acd3754f3dea9f" category="list-text">當您從 BlueXP 在 AWS 中建立 Connector 時、現在可以在金鑰配對欄位中搜尋、以便更輕鬆地找到您要與 Connector 執行個體搭配使用的金鑰配對。</block>
+  <block id="5fa35188b7dd9c428afc77ce84eeb10b" category="inline-image-macro">從 BlueXP 在 AWS 中建立連接器時、會出現在「網路」頁面上的「金鑰配對」欄位中搜尋選項的螢幕擷取畫面。</block>
+  <block id="37570078060157a3624ff806701689b8" category="paragraph"><block ref="37570078060157a3624ff806701689b8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="90641719c2018ef19f0a8140a88f5fee" category="list-text">此更新也包含錯誤修正。</block>
+  <block id="c94e28d852ce517312825c9ed339fc1d" category="section-title">2023 年 7 月 30 日</block>
 </blocks>
