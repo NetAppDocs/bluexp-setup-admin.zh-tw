@@ -249,7 +249,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html#manage-your-
 
 * 現在、連接器可在完全隔離網際網路的任何雲端環境中獲得支援。然後您可以使用連接器上執行的BlueXP主控台、在Cloud Volumes ONTAP 同一個位置部署故障、並探索內部部署ONTAP 的故障叢集（如果您的雲端環境與內部部署環境之間有連線）。您也可以使用 BlueXP 備份與還原來備份 AWS 和 Azure 商業地區的 Cloud Volumes ONTAP 磁碟區。除了 BlueXP 數位錢包之外、此類部署不支援其他 BlueXP 服務。
 +
-雲端區域可以是美國安全機構的區域、例如AWS C2S/SC2S、Azure IL6或任何商業區域。
+雲端區域可以是 AWS Top Secret Cloud 、 AWS Secret Cloud 、 Azure IL6 或任何商業區域等美國安全機構的區域。
 
 +
 若要開始使用、請手動安裝 Connector 軟體、登入 Connector 上執行的 BlueXP 主控台、將 BYOL 授權新增至 BlueXP 數位錢包、然後部署 Cloud Volumes ONTAP 。

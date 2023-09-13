@@ -1295,7 +1295,6 @@
   <block id="995c7db8420cf7c1d22ec979a1f735ba" category="open-title">原則1</block>
   <block id="897099bfef7e48dc4adcaa1be92bf1a8" category="open-title">原則 #2</block>
   <block id="1411debdb32e6b128ca27ec92a708cbd" category="example-title">GovCloud（美國）地區</block>
-  <block id="a8416eae2db8c97eb943559351fab358" category="example-title">C2S環境</block>
   <block id="abc9b009fdeb5b04ca7bcd60cdae2434" category="section-title">AWS權限的使用方式</block>
   <block id="06be37baefaab50eae9f413a227fd74c" category="paragraph">Connector 會提出下列 API 要求、以管理 Amazon FSX for ONTAP ：</block>
   <block id="c8e20ceabac2b519b4f4eb301166c9bd" category="list-text">EC2：資料說明</block>
@@ -1473,9 +1472,6 @@
   <block id="b2cc56e18c7250863c6c74a223137e16" category="summary">以私有模式部署 Connector 、讓您可以使用 BlueXP 、而不需外傳連線至 BlueXP SaaS 層。若要開始使用、請安裝 Connector 、存取 Connector 上執行的使用者介面來設定 BlueXP 、然後提供您先前設定的雲端權限。</block>
   <block id="2f549fb867eb9c0be636782d32264aa6" category="doc">以私有模式部署 Connector</block>
   <block id="377655366b79df746cc3d0c01596ba86" category="paragraph">從 NetApp 支援網站 下載產品安裝程式、然後在您自己的 Linux 主機上手動安裝 Connector 。</block>
-  <block id="c9ce61bb8ba26b9e777140e6bd34ee95" category="inline-link">AWS 商業雲端服務（ C2S ）環境</block>
-  <block id="76dc45fc0f678a65bdd98f708893456c" category="inline-link">瞭解如何在 AWS C2S 環境中開始使用 Cloud Volumes ONTAP</block>
-  <block id="5091509329e4947abb15d886a22552f1" category="paragraph">如果您想在中使用 BlueXP<block ref="1b4ed82e65ec10a29151660f200db39a" category="inline-link-rx"></block> 接著、您應該遵循個別指示、開始使用該環境。<block ref="dfa4c15285d83794371ed5577a9f85e7" category="inline-link-rx"></block></block>
   <block id="ffe7522d9ea3d134eb0a945275d454d7" category="paragraph-title">必要權限</block>
   <block id="7bc3966adb932d8b546fbfa4ef7113d7" category="paragraph">需要root權限才能安裝Connector。</block>
   <block id="2ba7eb945a77498b8342e4be53a3761e" category="list-text">從下載Connector軟體<block ref="99637e01fa8caa34a544049093cac68c" category="inline-link-rx"></block></block>
@@ -1703,7 +1699,6 @@
   <block id="a48a6aaa99b4cf4a4e641c293de897fa" category="inline-link">瞭解如何管理您的支援案例</block>
   <block id="84b67e035ee851e17fd4010870ec0a29" category="paragraph"><block ref="f0098b5aeef401e4baf694b939b219f4" category="inline-link-rx"></block>。</block>
   <block id="d2792d178cbdf6c41f2b8f2ae64424ed" category="list-text">現在、連接器可在完全隔離網際網路的任何雲端環境中獲得支援。然後您可以使用連接器上執行的BlueXP主控台、在Cloud Volumes ONTAP 同一個位置部署故障、並探索內部部署ONTAP 的故障叢集（如果您的雲端環境與內部部署環境之間有連線）。您也可以使用 BlueXP 備份與還原來備份 AWS 和 Azure 商業地區的 Cloud Volumes ONTAP 磁碟區。除了 BlueXP 數位錢包之外、此類部署不支援其他 BlueXP 服務。</block>
-  <block id="4965002502fb4ea58d2f984e3fe0a110" category="paragraph">雲端區域可以是美國安全機構的區域、例如AWS C2S/SC2S、Azure IL6或任何商業區域。</block>
   <block id="75327cdc175eca204abf0a4aa66413b3" category="paragraph">若要開始使用、請手動安裝 Connector 軟體、登入 Connector 上執行的 BlueXP 主控台、將 BYOL 授權新增至 BlueXP 數位錢包、然後部署 Cloud Volumes ONTAP 。</block>
   <block id="376a158ceb7d344fa563cce2aa16018f" category="inline-link">將Connector安裝在沒有網際網路存取的位置</block>
   <block id="148472786b9015b5f19ac843e8bc0f31" category="list-text"><block ref="148472786b9015b5f19ac843e8bc0f31" category="inline-link-rx"></block></block>
@@ -2952,7 +2947,6 @@
   <block id="a53da898c0e5410eb934bcf693e8290e" category="admonition">您無法刪除與連接器執行個體相關聯之執行個體設定檔的認證。</block>
   <block id="9ba678561b5c8922fc9983fcb89e1752" category="summary">在以私有模式部署 BlueXP 之前、請先準備好您的環境。例如、您需要檢閱主機需求、準備網路、設定權限等。</block>
   <block id="5f1067df496bfafd5eb793369b955e41" category="doc">準備以私有模式進行部署</block>
-  <block id="ffd6a883d5c5e0f954b2db441bf455a2" category="admonition">如果您想在中使用 BlueXP<block ref="1b4ed82e65ec10a29151660f200db39a" category="inline-link-rx"></block> 接著、您應遵循說明如何準備、安裝 Connector 及啟動 Cloud Volumes ONTAP 的個別指示。<block ref="dfa4c15285d83794371ed5577a9f85e7" category="inline-link-rx"></block></block>
   <block id="cd9866f3dfe1445bb49e9984aef06565" category="paragraph">開始之前、您應該先瞭解 BlueXP 在私有模式下的運作方式。</block>
   <block id="b55621a1719dba9e40d841c865c267ac" category="inline-link-macro">瞭解私有模式的運作方式</block>
   <block id="e7e043e1590b443c8520402279e7ac44" category="paragraph"><block ref="7d2115a84914cfa6792d7d3921dc8e33" category="inline-link-macro-rx"></block>。</block>
@@ -2980,9 +2974,7 @@
   <block id="5120a32615b91a5de80fd01e90d53677" category="inline-xref">深入瞭解 SaaS 層的輸出連線能力</block>
   <block id="26791add2e44035ab424c178d3f4c61f" category="paragraph"><block ref="4a9f480c757559738dc0bf80da949e99" category="inline-xref-macro-rx"></block>。</block>
   <block id="9c39d5b8fd0bf20212456c9aceeaea5b" category="list-text">BlueXP Connector 安裝在內部部署或雲端（位於安全區域、主權雲端區域或商業區域）、而且與 BlueXP SaaS 層之間沒有連線。使用者可從 Connector 提供的網路型主控台、而非從 SaaS 層、在本機存取 BlueXP 。</block>
-  <block id="43ff95fff31da6098dc2104a2b9903cd" category="inline-link">AWS C2S 和 SC2S</block>
   <block id="f7a5a85e5651d269f8be77a9a2e84792" category="inline-link">Azure IL6.</block>
-  <block id="f4ffd6793bd6a15bb751635d36738fa2" category="paragraph">安全區域包括<block ref="f61a6c487032eb3fbf14a041d1a80535" category="inline-link-rx"></block> 和<block ref="360910fe60b5d1cf9b7056b9b6f46685" category="inline-link-rx"></block></block>
   <block id="55fbab9267d4e9aae7daef26b314226f" category="paragraph">下表提供這些模式的比較。</block>
   <block id="2113372caa2625fc2eac79b5c72bd737" category="cell">需要連線至 BlueXP SaaS 層？</block>
   <block id="6a4fdae8165172d715565269b5d6eb0b" category="cell">僅限外傳</block>
@@ -3095,11 +3087,6 @@
   <block id="9ebc1b25e2041947b9103da47cd1c08a" category="list-text">驗證是透過本機使用者管理與存取來提供。驗證並非透過 BlueXP 的雲端服務提供。</block>
   <block id="9155ed0ad2860f7dbb98e01dbb6fa42d" category="list-text">雲端部署中支援的 BlueXP 服務</block>
   <block id="8a4d4c53b0a8fbc638ca47e5e362f9e3" category="list-text">當 Connector 安裝在雲端時、 BlueXP 支援下列私有模式的儲存和資料服務：</block>
-  <block id="5cab93e720177e480ed8d2fe603b87b8" category="inline-link">AWS C2S/SC2S</block>
-  <block id="ed6f21c8b73c49053eac72fb867ecff6" category="cell">支援於 AWS 和 Azure 商業地區。
-
-Google Cloud 或中不支援<block ref="5388026a167091fc23180597ac85e174" category="inline-link-rx"></block> 或<block ref="360910fe60b5d1cf9b7056b9b6f46685" category="inline-link-rx"></block></block>
-  <block id="2c4d2c4938d2e881355a7e09fe8b1993" category="cell">由於無法存取網際網路、因此無法使用下列功能：自動軟體升級、 AutoSupport 和 AWS 成本資訊。</block>
   <block id="5ddc4e154584048fc0f47939b47c7b63" category="cell">您可以將數位錢包與下列支援的授權選項一起用於私有模式。</block>
   <block id="71fa0def55e8ba28f8cea8204dcaaf4f" category="cell">需要從雲端（安裝 Connector 的位置）連線至內部環境。
 
@@ -3779,4 +3766,16 @@ Azure 政府地區不需要此端點。</block>
   <block id="37570078060157a3624ff806701689b8" category="paragraph"><block ref="37570078060157a3624ff806701689b8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="90641719c2018ef19f0a8140a88f5fee" category="list-text">此更新也包含錯誤修正。</block>
   <block id="c94e28d852ce517312825c9ed339fc1d" category="section-title">2023 年 7 月 30 日</block>
+  <block id="e22252cf3c711c916163d727b6261500" category="paragraph">雲端區域可以是 AWS Top Secret Cloud 、 AWS Secret Cloud 、 Azure IL6 或任何商業區域等美國安全機構的區域。</block>
+  <block id="ff2c9914d275ee17c3f22e89e7ca1ef7" category="inline-link">AWS Secret Cloud</block>
+  <block id="a864a931bf30f7ad758b78e4a2cb264c" category="inline-link">AWS Top Secret Cloud</block>
+  <block id="958949b356b2f90081cbb745321e2bf3" category="inline-link">瞭解如何在 AWS Secret Cloud 或 Top Secret Cloud 中開始使用 Cloud Volumes ONTAP</block>
+  <block id="d6d8d91e7b96dd482dc74f45a4f14045" category="paragraph">如果您想在中使用 BlueXP<block ref="da2732e6e9a1be4ab82a1194533aac59" category="inline-link-rx"></block> 或<block ref="6f5217ea8a3f93cd9532863eb844647b" category="inline-link-rx"></block>然後，您應該按照單獨的說明在這些環境中開始使用。<block ref="4d25824b3e9e7473eac5e4c3e5c39cc3" category="inline-link-rx"></block></block>
+  <block id="026951b63281b53e88087e2423613cad" category="example-title">秘密區域</block>
+  <block id="76187385115cd00f6a1ec1ff426ad7b5" category="example-title">最高機密區域</block>
+  <block id="5327be2346849398acb42586361c3fa1" category="paragraph">安全區域包括<block ref="da2732e6e9a1be4ab82a1194533aac59" category="inline-link-rx"></block>、<block ref="6f5217ea8a3f93cd9532863eb844647b" category="inline-link-rx"></block>和<block ref="360910fe60b5d1cf9b7056b9b6f46685" category="inline-link-rx"></block></block>
+  <block id="1b46f73bf231e8eefaf1347b4383cc0a" category="cell">支援於 AWS 和 Azure 商業地區。
+
+Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" category="inline-link-rx"></block>、<block ref="6f5217ea8a3f93cd9532863eb844647b" category="inline-link-rx"></block>或<block ref="360910fe60b5d1cf9b7056b9b6f46685" category="inline-link-rx"></block></block>
+  <block id="fcbe8b204f3332d68f1b0f5f05c998db" category="cell">由於無法存取網際網路、因此無法使用下列功能：自動軟體升級和 AutoSupport 。</block>
 </blocks>
