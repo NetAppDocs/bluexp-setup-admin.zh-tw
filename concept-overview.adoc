@@ -68,7 +68,6 @@ BlueXP 平台提供四大資料管理支柱：儲存、行動力、保護、分�
 * https://bluexp.netapp.com/digital-advisor["數位顧問"^]
 * https://bluexp.netapp.com/digital-advisor["經濟效益"^]
 * https://bluexp.netapp.com/digital-advisor["營運恢復能力"^]
-* https://bluexp.netapp.com/ransomware-protection["勒索軟體保護"^]
 
 
 --

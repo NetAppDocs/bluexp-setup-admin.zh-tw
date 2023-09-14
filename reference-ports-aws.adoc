@@ -75,7 +75,7 @@ NOTE: 來源 IP 位址為 Connector 主機。
 | 服務 | 傳輸協定 | 連接埠 | 目的地 | 目的 
 
 
-| API 呼叫與 AutoSupport 功能 | HTTPS | 443.. | 傳出網際網路和 ONTAP 叢集管理 LIF | API 呼叫 AWS 、 ONTAP 、 BlueXP 分類、 BlueXP 勒索軟體保護、並將 AutoSupport 訊息傳送至 NetApp 
+| API 呼叫與 AutoSupport 功能 | HTTPS | 443.. | 傳出網際網路和 ONTAP 叢集管理 LIF | API 會呼叫 AWS 、 ONTAP 、 BlueXP 分類、並將 AutoSupport 訊息傳送至 NetApp 
 
 
 .2+| API 呼叫 | TCP | 3000 | 充當HA中介者ONTAP | 與ONTAP NetApp HA中介人通訊 
