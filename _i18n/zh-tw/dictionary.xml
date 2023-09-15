@@ -2271,7 +2271,6 @@
   <block id="f851630c999713801d4adbdaeecfc902" category="list-text">指定執行個體是否應有公有IP位址。</block>
   <block id="d0bf1fb8b3ea2c1aed553c11fcfc2431" category="list-text">指定防火牆設定、以啟用Connector執行個體所需的連線方法：SSH、HTTP和HTTPS。</block>
   <block id="2cff93ab04445d2412fc49f1670cf749" category="paragraph">特定組態還需要一些規則。</block>
-  <block id="79b8b9ad9bf89b0b494ac4c62694d70f" category="list-text">*設定儲存設備*：保留預設的儲存選項。</block>
   <block id="752330cdb2fab31ec29aaa286269a882" category="list-text">* 進階詳細資料 * ：在 * IAM 執行個體設定檔 * 下、選擇包含 Connector 所需權限的 IAM 角色。</block>
   <block id="10a3df02c55e733eca6fef076545645a" category="paragraph">AWS 會以指定的設定啟動軟體。Connector 執行個體和軟體應在大約五分鐘內執行。</block>
   <block id="a187fbf78abfcf26b0ccf604029629e6" category="summary">身分識別聯盟可透過BlueXP進行單一登入、讓使用者使用公司身分的認證登入。若要開始使用、請瞭解身分識別聯盟如何與BlueXP搭配運作、然後檢閱設定程序的總覽。</block>
@@ -3776,4 +3775,6 @@ Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" catego
   <block id="d80bf17e105d87b4295cb2e090a28117" category="list-text">目前、系統會以電子郵件傳送通知、說明下列 BlueXP 功能與服務： Connector 、 BlueXP 數位錢包、 BlueXP 複本與同步、 BlueXP 備份與還原、 BlueXP 分層和 BlueXP 移轉報告。未來版本將會新增其他服務。</block>
   <block id="2cc0b2404e9976abc7bb1156519a654c" category="cell">API 會呼叫 AWS 、 ONTAP 、 BlueXP 分類、並將 AutoSupport 訊息傳送至 NetApp</block>
   <block id="5f16447aef2a6c01e852292f98e5a67d" category="cell">API 呼叫 Google Cloud 、 ONTAP 、 BlueXP 分類、並傳送 AutoSupport 訊息至 NetApp</block>
+  <block id="3bb1e2709fa189f2a1cf46aadeab3b46" category="list-text">* 設定儲存設備 * ：保留根磁碟區的預設大小和磁碟類型。</block>
+  <block id="4aed728875c28373d48d9ac6dc115722" category="paragraph">如果您要在根磁碟區上啟用 Amazon EBS 加密、請選取 * 進階 * 、展開 * Volume 1* 、選取 * 加密 * 、然後選擇 KMS 金鑰。</block>
 </blocks>
