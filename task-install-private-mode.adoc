@@ -76,13 +76,13 @@ sudo /path/cloud-manager-connector-offline-<version>
 +
 image:screenshot-onprem-darksite-welcome.png["在網頁瀏覽器中輸入Connector的IP位址之後、會出現歡迎頁面的快照。"]
 
-. 選取 * 設定新的 BlueXP* 、然後依照提示設定系統。
+. 選取 * 設定新的 BlueXP Connector* 、然後依照提示設定系統。
 +
 ** *系統詳細資料*：輸入Connector的名稱及您的公司名稱。
 +
 image:screenshot-onprem-darksite-details.png["系統詳細資料頁面的快照、會提示您輸入BlueXP名稱和公司名稱。"]
 
-** *建立管理使用者*：建立系統的管理使用者。
+** * 建立管理員使用者 * ：為系統建立管理員使用者。
 +
 此使用者帳戶在本機系統上執行。無法透過BlueXP連線至驗證0服務。
 

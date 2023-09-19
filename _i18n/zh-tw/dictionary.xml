@@ -1485,7 +1485,6 @@
   <block id="9f390f684f634b575bf8d3a2e73f760c" category="list-text">*系統詳細資料*：輸入Connector的名稱及您的公司名稱。</block>
   <block id="ed55d4951cd784cfacedc42b26d251dd" category="inline-image-macro">系統詳細資料頁面的快照、會提示您輸入BlueXP名稱和公司名稱。</block>
   <block id="c630091323c70c3e08081e625ae63da9" category="paragraph"><block ref="c630091323c70c3e08081e625ae63da9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="43601154a054554dd57207148a15b7b1" category="list-text">*建立管理使用者*：建立系統的管理使用者。</block>
   <block id="0e5308fba9cc92e9ff80d599c7e865ca" category="paragraph">此使用者帳戶在本機系統上執行。無法透過BlueXP連線至驗證0服務。</block>
   <block id="d847fd38c43b77f685712342ed5f2a9a" category="list-text">使用您剛建立的管理使用者登入BlueXP。</block>
   <block id="2fdca5f14e2fdf34df61ef1c2e18eae5" category="paragraph">現在已安裝並設定 Connector 。</block>
@@ -3435,7 +3434,6 @@ Azure 政府地區不需要此端點。</block>
   <block id="28d4bc1715fb315a1134ddb9ce9b69ef" category="paragraph">如果您建立了新的工作區、也必須將 Connector 新增至該工作區。如果您未新增 Connector 、則 Workspace 管理員將無法存取工作區中的任何資源。如需詳細資訊、請參閱下一節。</block>
   <block id="136dc09835924029e4299fa28f17233d" category="list-text">選擇*繼續*。</block>
   <block id="b7d7e6e6aa05f7913906689b7f1e583a" category="list-text">* 審查 * ：檢閱您的選擇並選擇 * 發表 * 。</block>
-  <block id="ecbc764762d64c7a0728c929154e75f5" category="list-text">選取 * 設定新的 BlueXP* 、然後依照提示設定系統。</block>
   <block id="22cb2add8f3bffef4e749ab0af395ded" category="list-text">* 審查 * ：檢閱詳細資料、接受授權合約、然後選取 * 設定 * 。</block>
   <block id="451c5548be4e9e7bdee0e30d3122050a" category="paragraph"><block ref="5df7abb03e9cd39c0665b677aaa45ef4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6a60f29cdbb848f0645646b0cceee422" category="paragraph">請注意、 Connector 目前正在聯絡「 cloudmanager.cloud.netapp.com" 」、但在即將推出的版本中、會開始聯絡「 api.bluexp.netapp.com" 」。</block>
@@ -3777,4 +3775,6 @@ Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" catego
   <block id="5f16447aef2a6c01e852292f98e5a67d" category="cell">API 呼叫 Google Cloud 、 ONTAP 、 BlueXP 分類、並傳送 AutoSupport 訊息至 NetApp</block>
   <block id="3bb1e2709fa189f2a1cf46aadeab3b46" category="list-text">* 設定儲存設備 * ：保留根磁碟區的預設大小和磁碟類型。</block>
   <block id="4aed728875c28373d48d9ac6dc115722" category="paragraph">如果您要在根磁碟區上啟用 Amazon EBS 加密、請選取 * 進階 * 、展開 * Volume 1* 、選取 * 加密 * 、然後選擇 KMS 金鑰。</block>
+  <block id="cf5973f42a5c4e31665e41b2ec75f8a0" category="list-text">選取 * 設定新的 BlueXP Connector* 、然後依照提示設定系統。</block>
+  <block id="1759129089da3c0c000cb4c2196a2fd0" category="list-text">* 建立管理員使用者 * ：為系統建立管理員使用者。</block>
 </blocks>
