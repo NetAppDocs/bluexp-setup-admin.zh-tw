@@ -3778,4 +3778,7 @@ Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" catego
   <block id="522cbb900314aeb84eb5a961c5f94672" category="section-title">取得雲端供應商檔案服務的支援</block>
   <block id="f6185bb12f5e53c800be8cda7fbca65b" category="paragraph">如需雲端供應商檔案服務、其基礎架構或任何使用服務的解決方案的相關技術支援、請參閱該產品的 BlueXP 文件中的「取得說明」。</block>
   <block id="3880ae5df9fdc4d0fc4a6d00a2239530" category="paragraph">若要獲得 BlueXP 及其儲存解決方案與服務的專屬技術支援、請使用下列支援選項。</block>
+  <block id="69483d973a063c873a5a66f6edcc241c" category="section-title">2023 年 10 月 6 日</block>
+  <block id="ce408175c3b7eaf6c3dfc910f3547833" category="section-title">連接器 3.9.34</block>
+  <block id="0b440ac3de48c7d11ee5fad31e6b4f12" category="paragraph">此版本包含一些小改進和錯誤修復。</block>
 </blocks>
