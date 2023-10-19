@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-overview.html 
 keywords: overview, concepts, features, use case, cloud manager, bluexp, how bluexp works, supported cloud providers, cloud providers, hyperscalers 
-summary: NetApp BlueXP 為您的組織提供單一控制面板、協助您在內部部署和雲端環境中建置、保護及管理資料。BlueXP SaaS 平台包含儲存與資料服務、可提供儲存管理、資料移動性、資料保護、以及資料分析與控制。管理功能是透過網路型主控台和 API 提供。 
+summary: NetApp BlueXP 為您的組織提供單一控制面板、協助您在內部部署和雲端環境中建置、保護及管理資料。BlueXP SaaS 平台包括提供儲存管理、資料移動性、資料保護、以及資料分析與控制的服務。管理功能是透過網路型主控台和 API 提供。 
 ---
 = 深入瞭解BlueXP
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: NetApp BlueXP 為您的組織提供單一控制面板、協助您在內
 
 
 [role="lead"]
-NetApp BlueXP 為您的組織提供單一控制面板、協助您在內部部署和雲端環境中建置、保護及管理資料。BlueXP SaaS 平台包含儲存與資料服務、可提供儲存管理、資料移動性、資料保護、以及資料分析與控制。管理功能是透過網路型主控台和 API 提供。
+NetApp BlueXP 為您的組織提供單一控制面板、協助您在內部部署和雲端環境中建置、保護及管理資料。BlueXP SaaS 平台包括提供儲存管理、資料移動性、資料保護、以及資料分析與控制的服務。管理功能是透過網路型主控台和 API 提供。
 
 
 
@@ -40,7 +40,6 @@ BlueXP 平台提供四大資料管理支柱：儲存、行動力、保護、分�
 ** 系統StorageGRID
 
 
-* 協調與保護 https://bluexp.netapp.com/solutions/kubernetes["Kubernetes 持續資料"^]
 
 
 --
@@ -58,10 +57,11 @@ BlueXP 平台提供四大資料管理支柱：儲存、行動力、保護、分�
 --
 * https://bluexp.netapp.com/cloud-backup["備份與還原"^]
 * https://bluexp.netapp.com/replication["複寫"^]
+* https://bluexp.netapp.com/solutions/kubernetes["Kubernetes 工作負載的資料保護"^]
 
 
 --
-分析與控制:: 使用工具來監控、對應及最佳化您的資料儲存與基礎架構。
+分析與控制:: 使用工具來監控、對應及最佳化您的資料儲存與基礎架構。取得可據以行動的情報、以最佳化儲存健全狀況、恢復能力和經濟效益。
 +
 --
 * https://bluexp.netapp.com/netapp-cloud-data-sense["分類"^]

@@ -81,6 +81,8 @@ https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["�
 
 ^1^ 雖然您可以在不使用 Connector 的情況下存取這些服務、但需要有 Connector 才能從服務啟動動作。
 
+在受限模式或私有模式下、需要 Connector 才能使用 BlueXP 。
+
 
 
 == 連接器必須隨時正常運作
@@ -130,9 +132,9 @@ link:concept-modes.html["瞭解 BlueXP 部署模式"]。
 BlueXP 帳戶管理員可以直接從 BlueXP 、雲端供應商的市場、或手動在自己的 Linux 主機上安裝軟體、來建立 Connector 。開始使用的方式取決於您是在標準模式、受限模式或私人模式下使用 BlueXP 。
 
 * link:concept-modes.html["瞭解 BlueXP 部署模式"]
-* link:task-quick-start-standard-mode.html["以標準模式快速啟動 BlueXP"]
-* link:task-quick-start-restricted-mode.html["以受限模式快速啟動 BlueXP"]
-* link:task-quick-start-private-mode.html["以私有模式快速啟動 BlueXP"]
+* link:task-quick-start-standard-mode.html["以標準模式開始使用 BlueXP"]
+* link:task-quick-start-restricted-mode.html["以受限模式開始使用 BlueXP"]
+* link:task-quick-start-private-mode.html["以私有模式開始使用 BlueXP"]
 
 
 
@@ -157,7 +159,7 @@ BlueXP 帳戶管理員可以直接從 BlueXP 、雲端供應商的市場、或�
 * link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["設定私有模式的權限"]
 
 
-若要檢視 Connector 所需的確切權限、請參閱下列頁面：
+若要檢視 Connector 日常作業所需的確切權限、請參閱下列頁面：
 
 * link:reference-permissions-aws.html["瞭解Connector如何使用AWS權限"]
 * link:reference-permissions-azure.html["瞭解Connector如何使用Azure權限"]
