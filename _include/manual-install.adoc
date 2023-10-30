@@ -53,7 +53,7 @@ chmod +x OnCommandCloudManager-<version>
  ./OnCommandCloudManager-<version> --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
 ----
 +
--Proxy和--cacert參數是可選的。如果您有Proxy伺服器、則必須輸入所示的參數。安裝程式不會提示您提供Proxy的相關資訊。
+-Proxy和--cacert參數是可選的。如果您有 Proxy 伺服器、則需要輸入如圖所示的參數。安裝程式不會提示您提供Proxy的相關資訊。
 
 +
 以下是使用兩個選用參數的命令範例：
@@ -61,18 +61,26 @@ chmod +x OnCommandCloudManager-<version>
 +
 [source, cli]
 ----
- ./OnCommandCloudManager-V3.9.26 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+ ./OnCommandCloudManager-V3.9.32 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
 ----
 +
 -Proxy會使用下列其中一種格式、將Connector設定為使用HTTP或HTTPS Proxy伺服器：
 
 +
 ** \http://address:port
-** \http://username:password@address:port
+** \http://user-name:password@address:port
+** \http://domain-name%92user-name:password@address:port
 ** \https://address:port
-** \https://username:password@address:port
+** \https://user-name:password@address:port
+** \https://domain-name%92user-name:password@address:port
 +
-使用者必須是本機使用者。不支援網域使用者。
+請注意下列事項：
+
++
+*** 使用者可以是本機使用者或網域使用者。
+*** 對於網域使用者、您必須使用上方所示的 \ 的 ASCII 碼。
+*** BlueXP不支援包含@字元的密碼。
+
 
 
 
