@@ -59,6 +59,7 @@ VPC 和子網路:: 當您建立 Connector 時、您需要指定 Connector 所在
 
  a| 
 \https://support.netapp.com
+\https://mysupport.netapp.com
  a| 
 以取得授權資訊、並將AutoSupport 資訊傳送給NetApp支援部門。
 

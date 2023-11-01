@@ -206,6 +206,7 @@ AWS 服務（ amazonaws.com):
 
  a| 
 \https://support.netapp.com
+\https://mysupport.netapp.com
  a| 
 以取得授權資訊、並將AutoSupport 資訊傳送給NetApp支援部門。
 

@@ -3270,7 +3270,6 @@
 \https://cloudkms.googleapis.com/v1
 \https://www.googleapis.com/deploymentmanager/v2/projects</block>
   <block id="641d1f191c2b819061a8e9b6046fdbeb" category="paragraph">| 管理 Google Cloud 中的資源。</block>
-  <block id="a6587e3625a6fa744cab6741d34f5a2b" category="paragraph">| \https://support.netapp.com | 以取得授權資訊、並將 AutoSupport 訊息傳送至 NetApp 支援。</block>
   <block id="cbb0e5cc736eaf87107f863bf695f576" category="paragraph">| \https://*.api.bluexp.netapp.com</block>
   <block id="6032f72586d36689e65d40f24d6a282a" category="paragraph">| 在 BlueXP 中提供 SaaS 功能與服務。</block>
   <block id="315cc875789c13a43c4e0c550413aeb3" category="paragraph">| \https://*.blob.core.windows.net</block>
@@ -3787,4 +3786,9 @@ Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" catego
   <block id="2fc62556a3d8d2f1a8b9dc5e4e4ba9ca" category="list-text">如果伺服器需要基本驗證、請指定使用者名稱和密碼。</block>
   <block id="80bba58d673fb4fcbcf926f928bf80c7" category="list-text">對於網域使用者、您必須輸入 \ 的 ASCII 碼、如下所示： domain-name%92user-name</block>
   <block id="5596775e1e7017bff2ae389af56efd57" category="paragraph">例如： NetApp%92Proxy</block>
+  <block id="e4790a0da59cd51d8f46272b21b89870" category="paragraph">\https://support.netapp.com
+\https://mysupport.netapp.com</block>
+  <block id="e3f6d97d14c949f7b5db051894f11c57" category="paragraph">|
+\https://support.netapp.com
+\https://mysupport.netapp.com | 取得授權資訊、並將 AutoSupport 訊息傳送至 NetApp 支援。</block>
 </blocks>

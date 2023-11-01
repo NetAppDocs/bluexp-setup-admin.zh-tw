@@ -72,6 +72,7 @@ vnet 和子網路:: 建立 Connector 時、您需要指定 Connector 應位於�
 
  a| 
 \https://support.netapp.com
+\https://mysupport.netapp.com
  a| 
 以取得授權資訊、並將AutoSupport 資訊傳送給NetApp支援部門。
 

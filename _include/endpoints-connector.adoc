@@ -58,7 +58,9 @@
 
 | 管理 Google Cloud 中的資源。
 
-| \https://support.netapp.com | 以取得授權資訊、並將 AutoSupport 訊息傳送至 NetApp 支援。
+|
+\https://support.netapp.com
+\https://mysupport.netapp.com | 取得授權資訊、並將 AutoSupport 訊息傳送至 NetApp 支援。
 
 | \https://*.api.bluexp.netapp.com
 

@@ -123,6 +123,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-l
 
  a| 
 \https://support.netapp.com
+\https://mysupport.netapp.com
  a| 
 以取得授權資訊、並將AutoSupport 資訊傳送給NetApp支援部門。
 
