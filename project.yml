@@ -17,13 +17,13 @@ sidebar:
     entries:
     - title: 新增功能
       url: "/whats-new.html"
-    - title: 限制
+    - title: 已知限制
       url: "/reference-limitations.html"
   - title: 開始使用
     entries:
     - title: 瞭解基礎知識
       entries:
-      - title: 藍圖XP總覽
+      - title: 藍圖
         url: "/concept-overview.html"
       - title: 帳戶
         url: "/concept-netapp-accounts.html"
@@ -43,31 +43,31 @@ sidebar:
         entries:
         - title: AWS
           entries:
-          - title: 安裝選項
+          - title: 連接器安裝選項
             url: "/concept-install-options-aws.html"
-          - title: 從 BlueXP 建立
+          - title: 從BlueXP建立連接器
             url: "/task-install-connector-aws-bluexp.html"
-          - title: 從市場中建立
+          - title: 從市場建立 Connector
             url: "/task-install-connector-aws-marketplace.html"
-          - title: 手動安裝
+          - title: 手動安裝 Connector
             url: "/task-install-connector-aws-manual.html"
         - title: Azure
           entries:
-          - title: 安裝選項
+          - title: 連接器安裝選項
             url: "/concept-install-options-azure.html"
-          - title: 從 BlueXP 建立
+          - title: 從BlueXP建立連接器
             url: "/task-install-connector-azure-bluexp.html"
-          - title: 從市場中建立
+          - title: 從市場建立 Connector
             url: "/task-install-connector-azure-marketplace.html"
-          - title: 手動安裝
+          - title: 手動安裝 Connector
             url: "/task-install-connector-azure-manual.html"
         - title: Google Cloud
           entries:
-          - title: 安裝選項
+          - title: 連接器安裝選項
             url: "/concept-install-options-google.html"
-          - title: 從 BlueXP 或使用 gCloud 建立
+          - title: 從 BlueXP 或 gCloud 建立 Connector
             url: "/task-install-connector-google-bluexp-gcloud.html"
-          - title: 手動安裝
+          - title: 手動安裝 Connector
             url: "/task-install-connector-google-manual.html"
         - title: 內部部署
           url: "/task-install-connector-on-prem.html"
@@ -105,11 +105,11 @@ sidebar:
       url: "/concept-federation.html"
     - title: BlueXP 帳戶
       entries:
-      - title: 管理您的帳戶
+      - title: 管理 BlueXP 帳戶
         url: "/task-managing-netapp-accounts.html"
       - title: 監控您帳戶中的作業
         url: "/task-monitor-cm-operations.html"
-      - title: 建立另一個帳戶
+      - title: 建立另一個 BlueXP 帳戶
         url: "/task-create-account.html"
       - title: 使用者角色
         url: "/reference-user-roles.html"
@@ -119,29 +119,29 @@ sidebar:
         url: "/task-finding-system-id.html"
       - title: 管理現有的連接器
         url: "/task-managing-connectors.html"
-      - title: 安裝 HTTPS 憑證
+      - title: 安裝 HTTPS 憑證以進行安全存取
         url: "/task-installing-https-cert.html"
-      - title: 設定 Proxy 設定
+      - title: 設定連接器以使用Proxy伺服器
         url: "/task-configuring-proxy.html"
-      - title: 預設組態
+      - title: Connector 的預設組態
         url: "/reference-connector-default-config.html"
-    - title: 認證資料
+    - title: 認證與訂閱
       entries:
-      - title: 管理 AWS 認證資料
+      - title: AWS
         entries:
-        - title: 總覽
+        - title: 瞭解認證和權限
           url: "/concept-accounts-aws.html"
         - title: 管理認證與訂閱
           url: "/task-adding-aws-accounts.html"
-      - title: 管理 Azure 認證資料
+      - title: Azure
         entries:
-        - title: 總覽
+        - title: 瞭解認證和權限
           url: "/concept-accounts-azure.html"
         - title: 管理認證與訂閱
           url: "/task-adding-azure-accounts.html"
-      - title: 管理Google Cloud認證資料
+      - title: Google Cloud
         entries:
-        - title: 總覽
+        - title: 瞭解專案和權限
           url: "/concept-accounts-gcp.html"
         - title: 管理認證與訂閱
           url: "/task-adding-gcp-accounts.html"
@@ -171,11 +171,11 @@ sidebar:
         url: "/reference-permissions-gcp.html"
     - title: 連接埠
       entries:
-      - title: AWS中的安全群組規則
+      - title: AWS 中的 Connector 安全性群組規則
         url: "/reference-ports-aws.html"
-      - title: Azure中的安全性群組規則
+      - title: Azure 中的 Connector 安全性群組規則
         url: "/reference-ports-azure.html"
-      - title: Google Cloud中的防火牆規則
+      - title: Google Cloud 中的連接器防火牆規則
         url: "/reference-ports-gcp.html"
       - title: 內部連接器的連接埠
         url: "/reference-ports-on-prem.html"

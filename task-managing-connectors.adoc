@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-managing-connectors.html 
-keywords: managing connectors, uninstall connector, switch connectors, switch between connectors, local interface, local connector, local cloud manager 
+keywords: managing connectors, uninstall connector, switch connectors, switch between connectors, local interface, local connector, local cloud manager, local ui, go to local ui 
 summary: 建立 Connector 之後、您可能需要隨時加以管理。例如、如果有多個連接器、您可能會想要在連接器之間切換。或者、在私有模式下使用 BlueXP 時、您可能需要手動升級 Connector 。 
 ---
 = 管理現有的連接器
@@ -18,6 +18,13 @@ summary: 建立 Connector 之後、您可能需要隨時加以管理。例如、
 
 link:concept-connectors.html["瞭解 Connectors 的運作方式"]。
 
+[NOTE]
+====
+Connector 包含可從 Connector 主機存取的本機 UI 。此使用者介面適用於以受限模式或私人模式使用 BlueXP 的客戶。在標準模式下使用 BlueXP 時、您應該從存取使用者介面 https://console.bluexp.netapp.com/["BlueXP SaaS 主控台"^]
+
+link:concept-modes.html["瞭解 BlueXP 部署模式"]。
+
+====
 
 
 == 作業系統與 VM 維護
@@ -106,7 +113,7 @@ https://cloud.google.com/compute/docs/instances/connecting-to-instance["Google C
 Connector 需要在升級過程中重新啟動、以便在升級期間無法使用網路型主控台。
 
 
-NOTE: 在可存取網際網路的主機上、只要 Connector 有外送網際網路存取權來取得軟體更新、 Connector 就會自動將其軟體更新至最新版本。
+NOTE: 當您在標準模式或受限模式下使用 BlueXP 時、只要 Connector 有外送網際網路存取權來取得軟體更新、它就會自動將其軟體更新至最新版本。
 
 .步驟
 . 從下載Connector軟體 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支援網站"^]。

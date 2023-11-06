@@ -24,7 +24,7 @@ summary: 以私有模式部署 Connector 、讓您可以使用 BlueXP 、而不�
 
 如果您想在中使用 BlueXP https://aws.amazon.com/federal/secret-cloud/["AWS Secret Cloud"^] 或 https://aws.amazon.com/federal/top-secret-cloud/["AWS Top Secret Cloud"^]然後，您應該按照單獨的說明在這些環境中開始使用。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-aws-c2s.html["瞭解如何在 AWS Secret Cloud 或 Top Secret Cloud 中開始使用 Cloud Volumes ONTAP"^]
 
-.必要權限
+.開始之前
 需要root權限才能安裝Connector。
 
 .步驟

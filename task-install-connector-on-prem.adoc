@@ -87,6 +87,8 @@ Docker引擎:: 安裝Connector之前、主機上必須安裝Docker Engine 19.3.1
 已從 Connector 聯絡的端點:: Connector 需要外傳網際網路存取才能連絡下列端點、以便管理公有雲環境中的資源和程序、以進行日常營運。
 +
 --
+請注意、下列端點均為所有的 CNAME 項目。
+
 [cols="2a,1a"]
 |===
 | 端點 | 目的 

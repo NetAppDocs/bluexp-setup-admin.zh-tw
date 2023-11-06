@@ -1,0 +1,8 @@
+---
+permalink: task-viewing-azure-blob.html 
+redirect: bluexp-blob-storage/task-view-azure-blob-storage.html 
+---
+= 
+:allow-uri-read: 
+
+

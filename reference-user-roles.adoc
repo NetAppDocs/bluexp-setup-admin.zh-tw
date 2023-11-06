@@ -4,7 +4,7 @@ permalink: reference-user-roles.html
 keywords: user, users, roles, role, task, permission, permissions, tasks, admin, Account Admin, Workspace Admin, Cloud Compliance Viewer, Cloud Data Sense, SnapCenter Admin 
 summary: 「帳戶管理員」、「工作區管理員」、「法規遵循檢視器」及SnapCenter 「支援對象管理員」角色、可為使用者提供特定權限。當您將新使用者與 BlueXP 帳戶建立關聯時、您可以指派其中一個角色。 
 ---
-= 角色
+= 使用者角色
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

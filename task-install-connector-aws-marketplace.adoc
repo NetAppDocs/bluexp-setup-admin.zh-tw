@@ -37,6 +37,8 @@ VPC 和子網路:: 當您建立 Connector 時、您需要指定 Connector 所在
 已從 Connector 聯絡的端點:: Connector 需要外傳網際網路存取才能連絡下列端點、以便管理公有雲環境中的資源和程序、以進行日常營運。
 +
 --
+請注意、下列端點均為所有的 CNAME 項目。
+
 [cols="2a,1a"]
 |===
 | 端點 | 目的 
@@ -241,3 +243,5 @@ https://_ipaddress_[]
 Connector 現在已安裝、並使用您的 BlueXP 帳戶進行設定。
 
 開啟網頁瀏覽器、前往 https://console.bluexp.netapp.com["BlueXP主控台"^] 開始使用Connector with BlueXP。
+
+如果您在建立 Connector 的同一個 AWS 帳戶中有 Amazon S3 工作區、則 BlueXP 畫布上會自動出現 Amazon S3 工作環境。 https://docs.netapp.com/us-en/bluexp-s3-storage/index.html["瞭解如何從 BlueXP 管理 S3 儲存區"^]

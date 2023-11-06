@@ -96,6 +96,8 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-l
 已從 Connector 聯絡的端點:: Connector 需要外傳網際網路存取才能連絡下列端點、以便管理公有雲環境中的資源和程序、以進行日常營運。
 +
 --
+請注意、下列端點均為所有的 CNAME 項目。
+
 [cols="2a,1a"]
 |===
 | 端點 | 目的 
@@ -515,6 +517,8 @@ https://_ipaddress_[]
 
 .結果
 Connector 現已安裝、並已使用您的 BlueXP 帳戶進行設定。
+
+如果您在建立 Connector 的同一個 Azure 訂閱中擁有 Azure Blob 儲存設備、則會在 BlueXP 畫布上自動顯示 Azure Blob 儲存設備工作環境。 https://docs.netapp.com/us-en/bluexp-blob-storage/index.html["瞭解如何從 BlueXP 管理 Azure Blob 儲存設備"^]
 
 
 
