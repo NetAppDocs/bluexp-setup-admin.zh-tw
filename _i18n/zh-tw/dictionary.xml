@@ -3146,21 +3146,13 @@
   <block id="eed7d7eea79968152bcb0157d198eeea" category="sidebar">身分識別聯盟</block>
   <block id="b02d6a4d5c11f6d94cd3e2e249d6dec1" category="sidebar">BlueXP 帳戶</block>
   <block id="f4040f71a7d553f2519487070892b115" category="sidebar">使用者角色</block>
-  <block id="6dc6b060b761d145366b9ed041137917" category="sidebar">管理 AWS 認證資料</block>
   <block id="8d855a86408ade086a4d47d808971acd" category="sidebar">管理認證與訂閱</block>
-  <block id="c135c603177e58023474a65f829c0fd3" category="sidebar">管理 Azure 認證資料</block>
-  <block id="15f599d5c4282f662b38657a0b5c5739" category="sidebar">管理Google Cloud認證資料</block>
   <block id="fbfa85280a8f29e21ca92f023121f1b2" category="sidebar">探索雲端儲存設備</block>
   <block id="63d5049791d9d79d86e9a108b0a999ca" category="sidebar">參考資料</block>
   <block id="a4f605cd0aab29ee5fb50f28627cef5d" category="sidebar">權限摘要</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識與支援</block>
   <block id="bd684dd31e369444b29047e57d56ff19" category="sidebar">瞭解部署模式</block>
-  <block id="761d871e89c5ad68ac5c2de768bb7fc4" category="sidebar">在 AWS 中建立連接器（標準模式）</block>
-  <block id="1df187938f50cb0ec2035714e29f9008" category="sidebar">在 Azure 中建立 Connector （標準模式）</block>
-  <block id="421e0ee20fb73cf162f2c03955c94f24" category="sidebar">在 Google Cloud 中建立 Connector （標準模式）</block>
-  <block id="a80c3e3d3461039581490c3b665e6c55" category="sidebar">在內部部署建立連接器（標準模式）</block>
   <block id="c8aded93abddb2318a41b08cba739012" category="sidebar">管理連接器</block>
-  <block id="5287995c403f34c9ff0e79af4e8e7c9d" category="sidebar">管理您帳戶的 NSS 認證</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">部落格與社群</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp社群</block>
   <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXP部落格</block>
@@ -3778,4 +3770,23 @@ Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" catego
   <block id="d64cd771f2e77e7c0e4209d28afed019" category="section-title">2023 年 11 月 8 日</block>
   <block id="82a9cd2bfcf44ef6090c93dcb2ee0451" category="section-title">連接器 3.9.35</block>
   <block id="77fe99ef9ead4490d30142892f6b5fec" category="paragraph">此版本包含較小的安全性改善和錯誤修正。</block>
+  <block id="ee06369b39630f4fbf14829266d40a91" category="paragraph">私有模式通常用於沒有網際網路連線的內部環境、以及安全的雲端區域、包括<block ref="da2732e6e9a1be4ab82a1194533aac59" category="inline-link-rx"></block>、<block ref="6f5217ea8a3f93cd9532863eb844647b" category="inline-link-rx"></block>和<block ref="360910fe60b5d1cf9b7056b9b6f46685" category="inline-link-rx"></block></block>
+  <block id="a95e947d8a886ad72a7cea0e895006fd" category="paragraph">受限模式通常由州政府和地方政府及受管制公司使用、包括在 AWS GovCloud 和 Azure 政府地區部署。開始之前、您應該先瞭解 <block ref="ad4b275d9dc1eba2c344335cef84161e" category="inline-link-macro-rx"></block>、 <block ref="939be5a52f87f3be4e9cee0e0efdb78e" category="inline-link-macro-rx"></block>和 <block ref="dd9572e43b86cdf1b1d508e121fd732e" category="inline-link-macro-rx"></block>。</block>
+  <block id="c2a3212cb98f382140fb5a23af1c6063" category="paragraph">在標準模式中、使用者可從網路型主控台以雲端服務的形式存取 BlueXP 。開始之前、您應該先瞭解 <block ref="ad4b275d9dc1eba2c344335cef84161e" category="inline-link-macro-rx"></block>、 <block ref="939be5a52f87f3be4e9cee0e0efdb78e" category="inline-link-macro-rx"></block>和 <block ref="dd9572e43b86cdf1b1d508e121fd732e" category="inline-link-macro-rx"></block>。</block>
+  <block id="a620abb16506a8da5f6b8dcbc0073466" category="sidebar">檢視 AWS 權限</block>
+  <block id="b7053c5f835c45d38cf071449c74fd56" category="sidebar">檢視 Azure 權限</block>
+  <block id="7050d365baa220c42a688cbf36a7e997" category="sidebar">檢視 Google Cloud 權限</block>
+  <block id="891c5b2cea54480f0e1abb74959457a6" category="sidebar">開始使用標準 AWS 區域</block>
+  <block id="e766f31fe70a68c11b8631144211d0f7" category="sidebar">開始使用 AWS GovCloud 區域</block>
+  <block id="9722aa95875a94430d4569d2e8bd2382" category="sidebar">開始使用 AWS Secret 或 Top Secret Cloud</block>
+  <block id="e55aba8c57180a56450db886ecd8232e" category="sidebar">檢視 Connector 的 IAM 原則</block>
+  <block id="27c705176bc1f05cf50771b1f8fe182a" category="sidebar">開始使用標準 Azure 區域</block>
+  <block id="60563f8b2620e88ac71d1a98ee73e2e5" category="sidebar">在 Azure 政府區域開始使用</block>
+  <block id="31b63be41ae4657f9e340188aa268589" category="sidebar">開始使用 Azure IL6</block>
+  <block id="3dbdf7d7951b212ca0000f0027184bb8" category="sidebar">檢視 Connector 的自訂角色</block>
+  <block id="6c3328ab0a2ccaa273efaec9a88e2751" category="sidebar">開始使用標準 Google Cloud 區域</block>
+  <block id="6844a754c2b209da7ac4949824ac467d" category="sidebar">檢視 Connector 的服務帳戶</block>
+  <block id="917f62b5224eebe3d212f654f1273e57" category="sidebar">以標準模式安裝並設定 Connector</block>
+  <block id="f6bf5d3da1d67288a149ab832d6401d0" category="sidebar">以私有模式安裝及設定 Connector</block>
+  <block id="6596e863cf1d0baa0dbccff0e9088e4a" category="sidebar">登入</block>
 </blocks>

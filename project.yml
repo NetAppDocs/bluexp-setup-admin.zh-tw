@@ -213,36 +213,58 @@ homepage:
     links:
     - title: 深入瞭解連接器
       url: concept-connectors.html
-    - title: 在 AWS 中建立連接器（標準模式）
-      url: task-install-connector-aws-bluexp.html
-    - title: 在 Azure 中建立 Connector （標準模式）
-      url: task-install-connector-azure-bluexp.html
-    - title: 在 Google Cloud 中建立 Connector （標準模式）
-      url: task-install-connector-google-bluexp-gcloud.html
-    - title: 在內部部署建立連接器（標準模式）
-      url: task-install-connector-on-prem.html
     - title: 管理連接器
       url: task-managing-connectors.html
-  - title: 權限
-    links:
-    - title: 權限摘要
-      url: reference-permissions.html
-    - title: Connector的AWS權限
+    - title: 檢視 AWS 權限
       url: reference-permissions-aws.html
-    - title: 連接器的Azure權限
+    - title: 檢視 Azure 權限
       url: reference-permissions-azure.html
-    - title: Connector的Google Cloud權限
+    - title: 檢視 Google Cloud 權限
       url: reference-permissions-gcp.html
-  - title: 認證資料
+  - title: AWS
     links:
-    - title: 管理 AWS 認證資料
+    - title: 開始使用標準 AWS 區域
+      url: task-quick-start-standard-mode.html
+    - title: 開始使用 AWS GovCloud 區域
+      url: task-quick-start-restricted-mode.html
+    - title: 開始使用 AWS Secret 或 Top Secret Cloud
+      url: https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-aws-c2s.html
+    - title: 檢視 Connector 的 IAM 原則
+      url: reference-permissions-aws.html
+    - title: 管理認證與訂閱
       url: task-adding-aws-accounts.html
-    - title: 管理 Azure 認證資料
+  - title: Azure
+    links:
+    - title: 開始使用標準 Azure 區域
+      url: task-quick-start-standard-mode.html
+    - title: 在 Azure 政府區域開始使用
+      url: task-quick-start-restricted-mode.html
+    - title: 開始使用 Azure IL6
+      url: task-quick-start-private-mode.html
+    - title: 檢視 Connector 的自訂角色
+      url: reference-permissions-azure.html
+    - title: 管理認證與訂閱
       url: task-adding-azure-accounts.html
-    - title: 管理Google Cloud認證資料
+  - title: Google Cloud
+    links:
+    - title: 開始使用標準 Google Cloud 區域
+      url: task-quick-start-standard-mode.html
+    - title: 檢視 Connector 的服務帳戶
+      url: reference-permissions-gcp.html
+    - title: 管理認證與訂閱
       url: task-adding-gcp-accounts.html
-    - title: 管理您帳戶的 NSS 認證
-      url: task-adding-nss-accounts.html
+  - title: 內部部署
+    links:
+    - title: 以標準模式安裝並設定 Connector
+      url: task-install-connector-on-prem.html
+    - title: 以私有模式安裝及設定 Connector
+      url: task-quick-start-private-mode.html
+  - title: 登入
+    links:
+    - title: 登入BlueXP
+      url: task-logging-in.html
+    - title: 使用與BlueXP的身分識別聯盟
+      url: concept-federation.html
   - title: 部落格與社群
     links:
     - title: NetApp社群

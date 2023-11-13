@@ -16,7 +16,7 @@ summary: 準備 BlueXP 主控台的網路、註冊並建立帳戶、選擇性建
 [role="lead"]
 準備 BlueXP 主控台的網路、註冊並建立帳戶、選擇性建立 Connector 、以及訂閱 BlueXP 、以標準模式開始使用 BlueXP 。
 
-開始之前、您應該先瞭解 link:concept-netapp-accounts.html["BlueXP 帳戶"]、 link:concept-connectors.html["連接器"]和 link:concept-modes.html["部署模式"]。
+在標準模式中、使用者可從網路型主控台以雲端服務的形式存取 BlueXP 。開始之前、您應該先瞭解 link:concept-netapp-accounts.html["BlueXP 帳戶"]、 link:concept-connectors.html["連接器"]和 link:concept-modes.html["部署模式"]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] link:reference-networking-saas-console.html["準備使用 BlueXP 主控台的網路連線"]
 [role="quick-margin-para"]
