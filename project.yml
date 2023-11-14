@@ -149,14 +149,6 @@ sidebar:
         url: "/task-adding-nss-accounts.html"
       - title: 管理與您的BlueXP登入相關的認證資料
         url: "/task-manage-user-credentials.html"
-    - title: 探索雲端儲存設備
-      entries:
-      - title: 管理您的Amazon S3儲存庫
-        url: "/task-viewing-amazon-s3.html"
-      - title: 管理 Azure Blob 帳戶
-        url: "/task-viewing-azure-blob.html"
-      - title: 管理您的 Google Cloud Storage 貯體
-        url: "/task-viewing-gcp-storage.html"
   - title: 參考資料
     entries:
     - title: 權限
