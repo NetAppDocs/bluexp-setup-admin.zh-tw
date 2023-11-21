@@ -4,7 +4,7 @@ permalink: task-adding-aws-accounts.html
 keywords: permissions, aws, policy, iam, iam role, role, granting, policy, iam policy, iam user, access keys, arn, cloud provider accounts, aws, cloud provider profile, json, iam, credentials, adding credentials, add credentials 
 summary: 新增及管理AWS認證資料、讓BlueXP擁有在AWS帳戶中部署及管理雲端資源所需的權限。如果您管理多個 AWS 訂閱、您可以從「認證」頁面將每個訂閱指派給不同的 AWS 認證資料。 
 ---
-= 管理適用於BlueXP的AWS認證與訂閱
+= 管理 BlueXP 的 AWS 認證和市場訂閱
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -228,7 +228,10 @@ image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」�
 您可能會在將認證新增至BlueXP之後、在兩種情況下建立AWS Marketplace訂閱的關聯：
 
 * 當您初次將認證新增至BlueXP時、並未建立訂閱關聯。
-* 您想要以新的訂閱取代現有的 AWS Marketplace 訂閱。
+* 您想要變更與 AWS 認證相關的 AWS Marketplace 訂閱。
++
+以新訂閱取代目前的市場訂閱、可變更任何現有 Cloud Volumes ONTAP 工作環境和所有新工作環境的市場訂閱。
+
 
 
 .開始之前

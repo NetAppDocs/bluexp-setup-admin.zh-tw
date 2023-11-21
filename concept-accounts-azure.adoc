@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: concept-accounts-azure.html 
-keywords: cloud provider accounts, azure, azure accounts, service principal, multiple accounts, permissions, policy, policies, subscriptions, credentials 
-summary: 瞭解 BlueXP 如何使用 Azure 認證和權限來代表您執行動作。瞭解這些詳細資料有助於您管理一或多個 Azure 訂閱的認證。例如、您可能想要瞭解何時將額外的 Azure 認證新增至 BlueXP 。 
+keywords: cloud provider accounts, azure, azure accounts, service principal, multiple accounts, permissions, policy, policies, subscriptions, credentials, marketplace subscription, replace subscription, subscription 
+summary: 瞭解 BlueXP 如何使用 Azure 認證來代表您執行動作、以及這些認證如何與市場訂閱相關聯。瞭解這些詳細資料有助於您管理一或多個 Azure 訂閱的認證。例如、您可能想要瞭解何時將額外的 Azure 認證新增至 BlueXP 。 
 ---
 = 瞭解Azure認證與權限
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 瞭解 BlueXP 如何使用 Azure 認證和權限來代表您執行動�
 
 
 [role="lead"]
-瞭解 BlueXP 如何使用 Azure 認證和權限來代表您執行動作。瞭解這些詳細資料有助於您管理一或多個 Azure 訂閱的認證。例如、您可能想要瞭解何時將額外的 Azure 認證新增至 BlueXP 。
+瞭解 BlueXP 如何使用 Azure 認證來代表您執行動作、以及這些認證如何與市場訂閱相關聯。瞭解這些詳細資料有助於您管理一或多個 Azure 訂閱的認證。例如、您可能想要瞭解何時將額外的 Azure 認證新增至 BlueXP 。
 
 
 
@@ -54,7 +54,49 @@ image:screenshot_accounts_switch_azure.gif["螢幕快照、顯示在「詳細資
 
 
 
-== Marketplace 部署和內部部署呢？
+== 認證與市場訂閱
+
+您新增至 Connector 的認證必須與 Azure Marketplace 訂閱相關聯、才能以每小時費率（ PAYGO ）或每年合約支付 Cloud Volumes ONTAP 費用、以及使用其他 BlueXP 服務。
+
+link:task-adding-azure-accounts.html#subscribe["瞭解如何建立Azure訂閱的關聯"]。
+
+請注意以下關於 Azure 認證與市場訂閱的資訊：
+
+* 您只能將一項 Azure Marketplace 訂閱與一組 Azure 認證建立關聯
+* 您可以使用新訂閱來取代現有的市場訂閱
+
+
+
+
+== 常見問題集
+
+下列問題與認證和訂閱有關。
+
+
+
+=== 我可以變更適用於 Cloud Volumes ONTAP 工作環境的 Azure Marketplace 訂閱嗎？
+
+是的、您可以。當您變更與一組 Azure 認證相關聯的 Azure Marketplace 訂閱時、所有現有和新的 Cloud Volumes ONTAP 工作環境都將從新訂閱中扣除費用。
+
+link:task-adding-azure-accounts.html#subscribe["瞭解如何建立Azure訂閱的關聯"]。
+
+
+
+=== 我是否可以新增多個 Azure 認證、每個認證都有不同的市場訂閱？
+
+屬於同一 Azure 訂閱的所有 Azure 認證資料將與同一 Azure Marketplace 訂閱相關聯。
+
+如果您有多個 Azure 認證屬於不同的 Azure 訂閱、則這些認證可以與相同的 Azure Marketplace 訂閱或不同的市場訂閱相關聯。
+
+
+
+=== 我可以將現有的 Cloud Volumes ONTAP 工作環境移轉至不同的 Azure 訂閱嗎？
+
+否、您無法將與 Cloud Volumes ONTAP 工作環境相關的 Azure 資源移轉至不同的 Azure 訂閱。
+
+
+
+=== 認證如何適用於市場部署和內部部署？
 
 以上各節說明建議的連接器部署方法、該方法來自於BlueXP。您也可以從 Azure Marketplace 在 Azure 中部署 Connector 、也可以在自己的 Linux 主機上安裝 Connector 軟體。
 

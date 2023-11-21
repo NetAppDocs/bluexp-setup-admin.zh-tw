@@ -4,7 +4,7 @@ permalink: task-adding-azure-accounts.html
 keywords: permissions, microsoft, azure, permissions, custom role, role, json, active directory, ad, service principal, key, tenant id, application key, application id, operator role, managed identity, iam, operator, role, virtual machine, create custom role, create azure custom role, azure custom role 
 summary: 新增及管理 Azure 認證、讓 BlueXP 擁有在 Azure 訂閱中部署及管理雲端資源所需的權限。如果您管理多個 Azure Marketplace 訂閱、您可以從「認證」頁面將每個訂閱指派給不同的 Azure 認證。 
 ---
-= 管理Azure認證資料與BlueXP訂閱
+= 管理 BlueXP 的 Azure 認證和市場訂閱
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -327,7 +327,10 @@ image:screenshot_accounts_switch_azure.gif["在「詳細資料擴大機；認證
 您可能會在將認證新增至BlueXP之後、在兩種情況下建立Azure Marketplace訂閱的關聯：
 
 * 當您初次將認證新增至BlueXP時、並未建立訂閱關聯。
-* 您想要以新的訂閱取代現有的 Azure Marketplace 訂閱。
+* 您想要變更與 Azure 認證相關的 Azure Marketplace 訂閱。
++
+以新訂閱取代目前的市場訂閱、可變更任何現有 Cloud Volumes ONTAP 工作環境和所有新工作環境的市場訂閱。
+
 
 
 .開始之前

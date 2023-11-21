@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-accounts-gcp.html 
 keywords: cloud provider accounts, gcp, gcp accounts, google cloud platform, google accounts, google cloud platform accounts, permissions, project, google cloud project 
-summary: 瞭解 BlueXP 如何使用 Google Cloud 認證和權限來代表您執行動作。瞭解這些詳細資料有助於您管理一或多個 Google Cloud 專案的認證。例如、您可能想要瞭解與 Connector VM 相關聯的服務帳戶。 
+summary: 瞭解 BlueXP 如何使用 Google Cloud 認證來代表您執行行動、以及這些認證如何與市場訂閱相關聯。瞭解這些詳細資料有助於您管理一或多個 Google Cloud 專案的認證。例如、您可能想要瞭解與 Connector VM 相關聯的服務帳戶。 
 ---
 = 瞭解 Google Cloud 專案和權限
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 瞭解 BlueXP 如何使用 Google Cloud 認證和權限來代表您執�
 
 
 [role="lead"]
-瞭解 BlueXP 如何使用 Google Cloud 認證和權限來代表您執行動作。瞭解這些詳細資料有助於您管理一或多個 Google Cloud 專案的認證。例如、您可能想要瞭解與 Connector VM 相關聯的服務帳戶。
+瞭解 BlueXP 如何使用 Google Cloud 認證來代表您執行行動、以及這些認證如何與市場訂閱相關聯。瞭解這些詳細資料有助於您管理一或多個 Google Cloud 專案的認證。例如、您可能想要瞭解與 Connector VM 相關聯的服務帳戶。
 
 
 
@@ -37,6 +37,21 @@ image:diagram_permissions_gcp.png["概念性影像、說明Google和服務帳戶
 * link:task-install-connector-google-bluexp-gcloud.html#step-2-set-up-permissions-to-create-the-connector["設定標準模式的 Google Cloud 權限"]
 * link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["設定受限模式的權限"]
 * link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["設定私有模式的權限"]
+
+
+
+
+== 認證與市場訂閱
+
+當您在 Google Cloud 中部署 Connector 時、 BlueXP 會在 Connector 所在的專案中、為 Google Cloud 服務帳戶建立一組預設認證。這些認證必須與 Google Cloud Marketplace 訂閱相關聯、以便您可以按小時費率（ PAYGO ）支付 Cloud Volumes ONTAP 費用、並使用其他 BlueXP 服務。
+
+link:task-adding-gcp-accounts.html["瞭解如何建立 Google Cloud Marketplace 訂閱的關聯"]。
+
+請注意下列關於 Google Cloud 認證和市場訂閱的資訊：
+
+* 只能將一組 Google Cloud 認證與 Connector 建立關聯
+* 您只能將一個 Google Cloud Marketplace 訂閱與認證建立關聯
+* 您可以使用新訂閱來取代現有的市場訂閱
 
 
 

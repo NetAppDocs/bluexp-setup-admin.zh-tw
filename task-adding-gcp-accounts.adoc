@@ -20,7 +20,9 @@ summary: 您可以建立與 Connector VM 執行個體相關聯的 Google Cloud �
 
 == 將 Marketplace 訂閱與 Google Cloud 認證建立關聯
 
-在Google Cloud中部署Connector時、BlueXP會建立一組與Connector VM執行個體相關的預設認證資料。您可以隨時變更與這些認證資料相關的 Marketplace 訂閱。訂閱可讓您建立隨用隨付的 Cloud Volumes ONTAP 系統、並使用其他 BlueXP 服務。
+在Google Cloud中部署Connector時、BlueXP會建立一組與Connector VM執行個體相關的預設認證資料。您可以隨時變更與這些認證相關的 Google Cloud Marketplace 訂閱。訂閱可讓您建立隨用隨付的 Cloud Volumes ONTAP 系統、並使用其他 BlueXP 服務。
+
+以新訂閱取代目前的市場訂閱、可變更任何現有 Cloud Volumes ONTAP 工作環境和所有新工作環境的市場訂閱。
 
 .步驟
 . 在 BlueXP 主控台的右上角、選取「設定」圖示、然後選取 * 認證 * 。

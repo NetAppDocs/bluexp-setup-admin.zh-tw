@@ -37,7 +37,6 @@
   <block id="5e15e451ab1dcb5e3bfae55f8b58e524" category="list-text">*認證資料位置*：選取* Amazon Web Services &gt; Connector*。</block>
   <block id="8117407a9689d4f991904d5739091c47" category="list-text">* 定義認證 * ：輸入 AWS 存取金鑰和秘密金鑰。</block>
   <block id="dc6e318a413899b5467eabc5f69ad366" category="list-text">*市場訂閱*：立即訂閱或選取現有的訂閱、以建立Marketplace訂閱與這些認證的關聯。</block>
-  <block id="70c85793f0a33ef534a67f193287a992" category="doc">管理 Azure Blob 帳戶</block>
   <block id="f9a2f8eef1df12108fd0c6b9b6b7fe6a" category="doc">Google Cloud 中的 Connector 安裝選項</block>
   <block id="b5afc81c4f24b143224e304b939a3f6c" category="paragraph">提供下列安裝選項：</block>
   <block id="b584cbf8cb993e5b450384402639e3c4" category="paragraph">此動作會在您選擇的 VPC 中啟動執行 Linux 的 VM 執行個體和 Connector 軟體。</block>
@@ -387,7 +386,6 @@
   <block id="9df83ab1f3ab5fb0d62768dd3ff406e6" category="list-text">cloudkms.keyclas.getIamPolicy</block>
   <block id="e7456e97941e04b31434ba6dcce10d88" category="list-text">cloudkms.keyRings.setIamPolicy</block>
   <block id="7c68c9240932ba8b284de266f9564faa" category="paragraph">BlueXP 備份與還原需要這些權限。</block>
-  <block id="1c498f9a6415c0ecd5728481eea5743b" category="summary">瞭解 BlueXP 如何使用 Google Cloud 認證和權限來代表您執行動作。瞭解這些詳細資料有助於您管理一或多個 Google Cloud 專案的認證。例如、您可能想要瞭解與 Connector VM 相關聯的服務帳戶。</block>
   <block id="a8f8f08c9d91eeaecc31377113ddd27b" category="section-title">BlueXP的專案與權限</block>
   <block id="627c5def4348066ddd5e7a1664e1079b" category="paragraph">您必須先部署 Connector 、才能使用 BlueXP 管理 Google Cloud 專案中的資源。Connector 無法在您的內部環境或其他雲端供應商中執行。</block>
   <block id="356334a26d74c400a5e0a69f237ba73e" category="paragraph">直接從BlueXP部署Connector之前、必須先設定兩組權限：</block>
@@ -1011,7 +1009,6 @@
   <block id="98de57befcb39b412a8dac16a11d762e" category="list-text">符合上述 CPU 和 RAM 需求的執行個體類型。我們建議使用 n2 標準 4 。</block>
   <block id="984ca77a9a51746d3dd5a855a71d3493" category="inline-link">防護VM功能</block>
   <block id="5e59673ea4dc0650f587413c4848c02c" category="paragraph">Google Cloud支援Connector的VM執行個體、其作業系統可支援此連接器<block ref="bd10301ee2e8f0cb38112a71d2b6920c" category="inline-link-rx"></block></block>
-  <block id="c01f728e9ef3359c6e9b452f47a9ca09" category="summary">瞭解 BlueXP 如何使用 Azure 認證和權限來代表您執行動作。瞭解這些詳細資料有助於您管理一或多個 Azure 訂閱的認證。例如、您可能想要瞭解何時將額外的 Azure 認證新增至 BlueXP 。</block>
   <block id="08a6159f6d9d986210470d2ab6dff166" category="section-title">Azure 初始認證</block>
   <block id="25b6fc1a8ebb7aa3a82a611b3dc7cc8d" category="inline-link-macro">Azure 的連接器部署原則</block>
   <block id="9cbe008fc71c240a16ab125b2873fe44" category="inline-link-macro">檢閱BlueXP如何使用權限</block>
@@ -1033,7 +1030,6 @@
   <block id="9d28e4868b7fcb2d0b7ab54f9d7f7b3c" category="inline-link-macro">將帳戶認證新增至BlueXP</block>
   <block id="f25b2b221edfa2bdf4fb0df0c1b2c9d5" category="paragraph">您可以 <block ref="d81a76d92186f9ebef738a7789fc0680" category="inline-link-macro-rx"></block> 提供 AD 服務主體的詳細資料。</block>
   <block id="eb99e348d38c212372a6e836f66f7356" category="paragraph">例如、您可以在建立新的 Cloud Volumes ONTAP 工作環境時、在認證之間切換：</block>
-  <block id="baa9dd166d2a7f1d62e78a829f4b35a6" category="section-title">Marketplace 部署和內部部署呢？</block>
   <block id="018f02432b76c440f6d0c2a5da5a1a5d" category="paragraph">以上各節說明建議的連接器部署方法、該方法來自於BlueXP。您也可以從 Azure Marketplace 在 Azure 中部署 Connector 、也可以在自己的 Linux 主機上安裝 Connector 軟體。</block>
   <block id="f0e36fc8cdf840530f36b60220f9185b" category="paragraph">如果您使用 Marketplace 、您可以將自訂角色指派給 Connector VM 和系統指派的託管身分識別、以提供權限、或是使用 Azure AD 服務主體。</block>
   <block id="a5cd95b551d8bf545c63c76c6fb91786" category="paragraph">對於內部部署、您無法設定 Connector 的託管身分識別、但可以使用服務主體來提供權限。</block>
@@ -1212,7 +1208,6 @@
   <block id="01da112af45ab74fbf33e58033fbd785" category="summary">您可以建立與 Connector VM 執行個體相關聯的 Google Cloud 認證、方法是建立市場訂閱的關聯、並疑難排解訂閱程序。這兩項工作都能確保您可以使用市場訂閱來支付 BlueXP 服務費用。</block>
   <block id="f691281f53b81c9f5d73a97dc7c334fd" category="doc">管理 BlueXP 的 Google Cloud 認證和訂閱</block>
   <block id="209e33f8aa50ade8c82e5bc82a8c023d" category="section-title">將 Marketplace 訂閱與 Google Cloud 認證建立關聯</block>
-  <block id="e6bd6cdf191b4526ecbd9326bd7b5c24" category="paragraph">在Google Cloud中部署Connector時、BlueXP會建立一組與Connector VM執行個體相關的預設認證資料。您可以隨時變更與這些認證資料相關的 Marketplace 訂閱。訂閱可讓您建立隨用隨付的 Cloud Volumes ONTAP 系統、並使用其他 BlueXP 服務。</block>
   <block id="0307a12e5749f8dd930472ee78f69d2c" category="list-text">在 BlueXP 主控台的右上角、選取「設定」圖示、然後選取 * 認證 * 。</block>
   <block id="0d28acbceed906f52a206d0f3fb0add2" category="inline-image-macro">一組現有認證資料的動作功能表快照。</block>
   <block id="ea765af20d763fe16d94ba9ef03fd31b" category="paragraph"><block ref="ea765af20d763fe16d94ba9ef03fd31b" category="inline-image-macro-rx" type="image"></block></block>
@@ -1480,7 +1475,6 @@
   <block id="5d1285233566f1379ef88c010de06abc" category="list-text">*定義認證*：輸入Azure Active Directory服務主體的相關資訊、以授予必要的權限：</block>
   <block id="3612e0e7a44ec38da1e226c618526f91" category="open-title">Google Cloud 服務帳戶</block>
   <block id="4b6fbf3b382ce342b57bbdb4fe0d6baf" category="paragraph">將服務帳戶與 Connector VM 建立關聯。</block>
-  <block id="ea5bc95c9558a374461d71a1d2f029ca" category="summary">瞭解 BlueXP 如何使用 AWS 認證和權限來代表您執行動作。在 BlueXP 中管理一或多個 AWS 帳戶的認證時、瞭解這些詳細資料可能很有幫助。例如、您可能想要瞭解何時將額外的 AWS 認證新增至 BlueXP 。</block>
   <block id="9ef43b020d41cab5808d78fdf855c429" category="section-title">初始 AWS 認證資料</block>
   <block id="09c2333ff15fa85698d91a366cce26dd" category="inline-link-macro">AWS 的 Connector 部署原則</block>
   <block id="858c852a1a4696d4e56295d4b4b0ea20" category="paragraph">當BlueXP在AWS中啟動Connector執行個體時、會為執行個體建立IAM角色和執行個體設定檔。它也附加原則、讓Connector有權限管理該AWS帳戶內的資源和程序。 <block ref="9d2ef148313eb953f656b8efd4016e8c" category="inline-link-macro-rx"></block>。</block>
@@ -1494,11 +1488,9 @@
   <block id="d366b2fda179ae88058b546b6cd89726" category="list-text">您可以直接將 AWS 認證新增至 BlueXP</block>
   <block id="1fba93959336f34e08c6d34d0ca68230" category="paragraph">請參閱以下各節以取得更多詳細資料。</block>
   <block id="a456be184fc96fef017630ede092b15d" category="section-title">將AWS認證資料新增至現有的Connector</block>
-  <block id="c0f31a85c681cbd2946d5195b382308e" category="paragraph">如果您想要在不同的 AWS 帳戶中啟動 Cloud Volumes ONTAP 、則可以為 IAM 使用者提供 AWS 金鑰、或是在信任的帳戶中提供角色的 ARN 。下圖顯示兩個額外的帳戶、一個透過信任帳戶中的 IAM 角色提供權限、另一個則透過 IAM 使用者的 AWS 金鑰提供權限：</block>
   <block id="25743d3dcac2dfe95c6e899571bfccc3" category="inline-image-macro">顯示兩個額外帳戶的概念性映像。每個都有 IAM 原則、一個附加到 IAM 使用者、另一個附加到 IAM 角色。</block>
   <block id="49a11e441cb19dc0d43b1d3a3794d033" category="paragraph"><block ref="49a11e441cb19dc0d43b1d3a3794d033" category="inline-image-macro-rx" type="image"></block></block>
   <block id="48c7f5d184d27ef640370421d3317ba5" category="paragraph">然後您可以指定 IAM 角色的 Amazon 資源名稱（ ARN ）或 IAM 使用者的 AWS 金鑰、將帳戶認證新增至 BlueXP 。</block>
-  <block id="bc84b27c0d74f906857d6c1a83c368a0" category="paragraph">新增一組認證資料之後、您可以在建立新的工作環境時切換至這些認證資料：</block>
   <block id="a6856ad65a90d33bc83bd78362d9bfce" category="inline-link-macro">瞭解如何將 AWS 認證新增至現有的 Connector 。</block>
   <block id="affef63146feae005315127173a28aa9" category="paragraph"><block ref="affef63146feae005315127173a28aa9" category="inline-link-macro-rx"></block></block>
   <block id="a923d2e65283c489ad78d9cdfa9bad74" category="section-title">直接將AWS認證資料新增至BlueXP</block>
@@ -1511,7 +1503,6 @@
   <block id="a4542ce435b67066671321f478dce8cc" category="paragraph">如果您使用 Marketplace 、則會以相同方式提供權限。您只需要手動建立和設定 IAM 角色、然後為任何其他帳戶提供權限。</block>
   <block id="c369edb322a8885a983610e18f932d0c" category="paragraph">對於內部部署、您無法為 BlueXP 系統設定 IAM 角色、但可以使用 AWS 存取金鑰提供權限。</block>
   <block id="70bfaa19a89e29bf0fc2b34b8f3150ba" category="section-title">我該如何安全地旋轉 AWS 認證資料？</block>
-  <block id="ee0f653772b33fb034bc7001a0c5e7a3" category="paragraph">如上所述、BlueXP可讓您以幾種方式提供AWS認證資料：與連接器執行個體相關的IAM角色、在信任的帳戶中擔任IAM角色、或提供AWS存取金鑰。</block>
   <block id="025a22cb479bbf0e83048a4ae6ffaaa0" category="paragraph">在前兩個選項中、BlueXP會使用AWS安全性權杖服務來取得持續循環的暫用認證資料。此程序是最佳實務做法、它是自動且安全的。</block>
   <block id="f265ab1711375ae7a7a4e8594c5e1395" category="paragraph">如果您為BlueXP提供AWS存取金鑰、您應該定期在BlueXP中更新金鑰、以旋轉金鑰。這是完全手動的程序。</block>
   <block id="ccd2fd61b259ee660f0c8a22d4d70882" category="summary">當 Connector 手動安裝在內部部署 Linux 主機上時、會使用傳入連接埠。您可能需要參考這些連接埠以進行規劃。</block>
@@ -2661,7 +2652,6 @@
   <block id="ef21f4467b6f56b5c04a15d016e654a2" category="paragraph">將Azure認證資料新增至BlueXP之後、您就可以將Azure Marketplace訂閱與這些認證資料建立關聯。訂閱可讓您建立隨用隨付的 Cloud Volumes ONTAP 系統、並使用其他 BlueXP 服務。</block>
   <block id="2e6aa15d4609a29d86e5e9f886599c4c" category="paragraph">您可能會在將認證新增至BlueXP之後、在兩種情況下建立Azure Marketplace訂閱的關聯：</block>
   <block id="20e15acf80fa51f5de6b9e96c9c64fde" category="list-text">當您初次將認證新增至BlueXP時、並未建立訂閱關聯。</block>
-  <block id="086754afbe30b09d7f6a643dd6e05800" category="list-text">您想要以新的訂閱取代現有的 Azure Marketplace 訂閱。</block>
   <block id="20a8a479e52579cf8f1fe773676218bc" category="paragraph"><block ref="20a8a479e52579cf8f1fe773676218bc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7dffa6296286b12f66d638f53340316c" category="list-text">出現提示時、請登入您的Azure帳戶。</block>
   <block id="344ece1ef43a9e3bbb281e15f3df6442" category="paragraph">您將被重新導向至BlueXP網站。</block>
@@ -2673,7 +2663,6 @@
   <block id="7132b07cc411f1ad7091b34cfe32d739" category="section-title">刪除認證</block>
   <block id="a16b0bbea9ed6a7a22d41efc21ec1cef" category="paragraph">如果您不再需要一組認證資料、可以從BlueXP中刪除。您只能刪除與工作環境無關的認證資料。</block>
   <block id="79c33710e10337a79e50227860ebf59a" category="list-text">在 * 帳戶認證 * 頁面上、選取一組認證的動作功能表、然後選取 * 刪除認證 * 。</block>
-  <block id="a4f513306c1a0ead14679ffb7c282460" category="doc">管理您的Amazon S3儲存庫</block>
   <block id="08533087d95fb07c92ed0773080a65d4" category="doc">設定 Azure 網路</block>
   <block id="1387f52f9e1a700036780a5bf567fab3" category="section-title">vnet 和子網路</block>
   <block id="b26bf0de9fb68038a5f4e2e2a13c5811" category="paragraph">建立 Connector 時、您需要指定 Connector 應位於的 vnet 和子網路。</block>
@@ -2890,7 +2879,6 @@
   <block id="94935dba78b982df4dbaaf55737f4d0b" category="section-title">建立AWS訂閱的關聯</block>
   <block id="490ff557e203933a15d8fe5bc6dad106" category="paragraph">將AWS認證資料新增至BlueXP之後、您可以將AWS Marketplace訂閱與這些認證資料建立關聯。訂閱可讓您以每小時費率（ PAYGO ）或使用年度合約支付 Cloud Volumes ONTAP 費用、並使用其他 BlueXP 服務。</block>
   <block id="5eae6608f40144c94d96a8f0a1602c97" category="paragraph">您可能會在將認證新增至BlueXP之後、在兩種情況下建立AWS Marketplace訂閱的關聯：</block>
-  <block id="dbaf1a33cea4faeebcb91c3b7d479cc9" category="list-text">您想要以新的訂閱取代現有的 AWS Marketplace 訂閱。</block>
   <block id="7061e8aac5780f13c42d7f3d3010b5c2" category="inline-link-macro">瞭解如何建立連接器</block>
   <block id="4affaad75ff37743ed549d6641de07e8" category="paragraph">您必須先建立連接器、才能變更BlueXP設定。 <block ref="ffb61fe647da5972e7e78ecadafdfb45" category="inline-link-macro-rx"></block>。</block>
   <block id="583059f51a0b347f747db9f8d2421392" category="paragraph"><block ref="583059f51a0b347f747db9f8d2421392" category="inline-image-macro-rx" type="image"></block></block>
@@ -3147,7 +3135,6 @@
   <block id="b02d6a4d5c11f6d94cd3e2e249d6dec1" category="sidebar">BlueXP 帳戶</block>
   <block id="f4040f71a7d553f2519487070892b115" category="sidebar">使用者角色</block>
   <block id="8d855a86408ade086a4d47d808971acd" category="sidebar">管理認證與訂閱</block>
-  <block id="fbfa85280a8f29e21ca92f023121f1b2" category="sidebar">探索雲端儲存設備</block>
   <block id="63d5049791d9d79d86e9a108b0a999ca" category="sidebar">參考資料</block>
   <block id="a4f605cd0aab29ee5fb50f28627cef5d" category="sidebar">權限摘要</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識與支援</block>
@@ -3188,7 +3175,6 @@
   <block id="b0689737e83154357ff9ef36053bda4f" category="paragraph">依預設、您會在通知中心看到所有作用中的通知。您可以篩選看到的通知、僅顯示對您很重要的通知。您可以依BlueXP「服務」和通知「類型」進行篩選。</block>
   <block id="2ad68125d72949aee5ac56974ac53849" category="paragraph">您在通知中心中設定的篩選條件並不會決定您將透過電子郵件收到的通知類型。根據預設、BlueXP帳戶管理員會收到所有「重大」和「建議」通知的電子郵件。這些通知涵蓋所有服務、您無法選擇僅接收特定服務的通知、例如 Connectors 或 BlueXP 備份與還原。</block>
   <block id="7fcffcce675dad706dbf53d68f1f86f2" category="paragraph">所有其他使用者和收件者均設定為不接收任何通知電子郵件、因此您需要為任何其他使用者設定通知設定。</block>
-  <block id="19b587cc77ce4b8566975983ec907303" category="sidebar">管理您的 Google Cloud Storage 貯體</block>
   <block id="161fbe930f63fa83671b46be2b2b3d58" category="paragraph">您應該擁有下列項目：</block>
   <block id="7e0b6f72a006c5db4d352632364cae2a" category="paragraph">如需詳細資訊、請參閱<block ref="f85f976c363ea77b8f2232a1ebbc4d2d" category="inline-link-rx"></block></block>
   <block id="1b6d3b3a89f4e066eb8bb8d481156cbb" category="list-text">* 執行個體類型 * ：根據區域可用度、選擇符合 RAM 和 CPU 需求的執行個體類型（建議使用 T3.x 大型）。</block>
@@ -3789,4 +3775,49 @@ Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" catego
   <block id="917f62b5224eebe3d212f654f1273e57" category="sidebar">以標準模式安裝並設定 Connector</block>
   <block id="f6bf5d3da1d67288a149ab832d6401d0" category="sidebar">以私有模式安裝及設定 Connector</block>
   <block id="6596e863cf1d0baa0dbccff0e9088e4a" category="sidebar">登入</block>
+  <block id="337e8febb8ac96133c86a51cd7bc0240" category="summary">瞭解 BlueXP 如何使用 Azure 認證來代表您執行動作、以及這些認證如何與市場訂閱相關聯。瞭解這些詳細資料有助於您管理一或多個 Azure 訂閱的認證。例如、您可能想要瞭解何時將額外的 Azure 認證新增至 BlueXP 。</block>
+  <block id="3bf21bdc87a8f6ebde5b75e8cb0d5138" category="section-title">認證與市場訂閱</block>
+  <block id="b1e32c999d336fb505915de8a8ffca55" category="paragraph">您新增至 Connector 的認證必須與 Azure Marketplace 訂閱相關聯、才能以每小時費率（ PAYGO ）或每年合約支付 Cloud Volumes ONTAP 費用、以及使用其他 BlueXP 服務。</block>
+  <block id="fb84f4e33822ea62702acf73a6936590" category="paragraph"><block ref="1203dc0bfed75eb2f240871bcc177fc9" category="inline-link-macro-rx"></block>。</block>
+  <block id="699a4563fbdfb82a77a96312a9c5b942" category="paragraph">請注意以下關於 Azure 認證與市場訂閱的資訊：</block>
+  <block id="394fe3b41aaabcee1c8575842cbb5c99" category="list-text">您只能將一項 Azure Marketplace 訂閱與一組 Azure 認證建立關聯</block>
+  <block id="d9fbcede0b5dd54b1e4b6bd98ebd3fff" category="list-text">您可以使用新訂閱來取代現有的市場訂閱</block>
+  <block id="1fe917b01f9a3f87fa2d7d3b7643fac1" category="section-title">常見問題集</block>
+  <block id="c304c6eb88f5bb91ab96ba559c3124d2" category="paragraph">下列問題與認證和訂閱有關。</block>
+  <block id="d1498a931fa5f0af32115f36f233018b" category="section-title">我可以變更適用於 Cloud Volumes ONTAP 工作環境的 Azure Marketplace 訂閱嗎？</block>
+  <block id="eb61c2cc62653045f5374d6c02b9cb28" category="paragraph">是的、您可以。當您變更與一組 Azure 認證相關聯的 Azure Marketplace 訂閱時、所有現有和新的 Cloud Volumes ONTAP 工作環境都將從新訂閱中扣除費用。</block>
+  <block id="9da47999e254d317c9c5eadda7df30b7" category="section-title">我是否可以新增多個 Azure 認證、每個認證都有不同的市場訂閱？</block>
+  <block id="c0e1571fee7bc6b756a9626664ca06e8" category="paragraph">屬於同一 Azure 訂閱的所有 Azure 認證資料將與同一 Azure Marketplace 訂閱相關聯。</block>
+  <block id="0fa4c0b97cc5b7972696a2ba8c38b9c8" category="paragraph">如果您有多個 Azure 認證屬於不同的 Azure 訂閱、則這些認證可以與相同的 Azure Marketplace 訂閱或不同的市場訂閱相關聯。</block>
+  <block id="4666e56ab2715e92af8b4dbb7fc97357" category="section-title">我可以將現有的 Cloud Volumes ONTAP 工作環境移轉至不同的 Azure 訂閱嗎？</block>
+  <block id="cd0af57faab800d64dbc9b6686539495" category="paragraph">否、您無法將與 Cloud Volumes ONTAP 工作環境相關的 Azure 資源移轉至不同的 Azure 訂閱。</block>
+  <block id="94db8f0d9e472465df4f4a2373f34e15" category="section-title">認證如何適用於市場部署和內部部署？</block>
+  <block id="459f61ebe7bde01cca8ed21d42e836ca" category="paragraph">在Google Cloud中部署Connector時、BlueXP會建立一組與Connector VM執行個體相關的預設認證資料。您可以隨時變更與這些認證相關的 Google Cloud Marketplace 訂閱。訂閱可讓您建立隨用隨付的 Cloud Volumes ONTAP 系統、並使用其他 BlueXP 服務。</block>
+  <block id="9e2bbef36ac6bd075f201eb1ac82fddb" category="paragraph">以新訂閱取代目前的市場訂閱、可變更任何現有 Cloud Volumes ONTAP 工作環境和所有新工作環境的市場訂閱。</block>
+  <block id="6f3c919771c405c0014ee0f6d72d3149" category="summary">瞭解 BlueXP 如何使用 Google Cloud 認證來代表您執行行動、以及這些認證如何與市場訂閱相關聯。瞭解這些詳細資料有助於您管理一或多個 Google Cloud 專案的認證。例如、您可能想要瞭解與 Connector VM 相關聯的服務帳戶。</block>
+  <block id="2b28187ebaea3b39a76735548553c017" category="paragraph">當您在 Google Cloud 中部署 Connector 時、 BlueXP 會在 Connector 所在的專案中、為 Google Cloud 服務帳戶建立一組預設認證。這些認證必須與 Google Cloud Marketplace 訂閱相關聯、以便您可以按小時費率（ PAYGO ）支付 Cloud Volumes ONTAP 費用、並使用其他 BlueXP 服務。</block>
+  <block id="09287a1087bc09afb8b07a6d1a5eae1e" category="inline-link-macro">瞭解如何建立 Google Cloud Marketplace 訂閱的關聯</block>
+  <block id="7acdafee5614d2da4affd478462c535e" category="paragraph"><block ref="4394d3ef2937eb47839ebd4e9350c4a7" category="inline-link-macro-rx"></block>。</block>
+  <block id="ebb6d853fd57e1782a582fe71ada39d8" category="paragraph">請注意下列關於 Google Cloud 認證和市場訂閱的資訊：</block>
+  <block id="4d1b7e7c166bf4ed32fa5d56516fa083" category="list-text">只能將一組 Google Cloud 認證與 Connector 建立關聯</block>
+  <block id="6d399b7b3ed393068765f55064547297" category="list-text">您只能將一個 Google Cloud Marketplace 訂閱與認證建立關聯</block>
+  <block id="239d1b40f08bc1656a0d7e74a463506d" category="summary">瞭解 BlueXP 如何使用 AWS 認證來代表您執行動作、以及這些認證如何與市場訂閱相關聯。在 BlueXP 中管理一或多個 AWS 帳戶的認證時、瞭解這些詳細資料可能很有幫助。例如、您可能想要瞭解何時將額外的 AWS 認證新增至 BlueXP 。</block>
+  <block id="83c8c6a596b650f7a3d797d7ca610eec" category="paragraph">如果您想要將 BlueXP 與其他 AWS 帳戶搭配使用、則可以為 IAM 使用者提供 AWS 金鑰、或是在信任的帳戶中提供角色的 ARN 。下圖顯示兩個額外的帳戶、一個透過信任帳戶中的 IAM 角色提供權限、另一個則透過 IAM 使用者的 AWS 金鑰提供權限：</block>
+  <block id="69989e90b246317e0163189ff8d059e9" category="paragraph">您新增至 Connector 的認證必須與 AWS Marketplace 訂閱相關聯、以便您可以按小時費率（ PAYGO ）或透過年度合約支付 Cloud Volumes ONTAP 費用、以及使用其他 BlueXP 服務。</block>
+  <block id="121abc14ff73ca8b4e21d30028c17399" category="paragraph"><block ref="ec04a55c38de32bb88fa7b4155061e7c" category="inline-link-macro-rx"></block>。</block>
+  <block id="76561e64ef8af12896c02fcfaddaf89e" category="paragraph">請注意下列關於 AWS 認證和市場訂閱的資訊：</block>
+  <block id="7b0c974aab7fa6523b2e4aa45c818464" category="list-text">您只能將一項 AWS Marketplace 訂閱與一組 AWS 認證建立關聯</block>
+  <block id="d33d86c6f3f99b3b9b1b988bde0679bd" category="paragraph">下列問題與認證和訂閱有關。</block>
+  <block id="f4ccd042e43557d6dcec2b8d243b7662" category="paragraph">如前節所述、 BlueXP 可讓您以幾種方式提供 AWS 認證：與 Connector 執行個體相關聯的 IAM 角色、在信任的帳戶中擔任 IAM 角色、或提供 AWS 存取金鑰。</block>
+  <block id="c9195aa1791c4bdbc03156535bd27fc0" category="section-title">我可以變更適用於 Cloud Volumes ONTAP 工作環境的 AWS Marketplace 訂閱嗎？</block>
+  <block id="2fde9464009be43ef57f1ae03915ce1b" category="paragraph">是的、您可以。當您變更與一組認證相關聯的 AWS Marketplace 訂閱時、所有現有和新的 Cloud Volumes ONTAP 工作環境都會被收取新訂閱的費用。</block>
+  <block id="5f40627f2e8501cf250f4cc37e129f5c" category="section-title">我是否可以新增多個 AWS 認證、每個認證都有不同的市場訂閱？</block>
+  <block id="f3d5116dad7634904c5a0daad024b77d" category="paragraph">屬於同一個 AWS 帳戶的所有 AWS 認證都會與相同的 AWS Marketplace 訂閱相關聯。</block>
+  <block id="941c9eda62bf4e57d449bdcf28810b26" category="paragraph">如果您有多個 AWS 認證屬於不同的 AWS 帳戶、則這些認證可以與相同的 AWS Marketplace 訂閱或不同的訂閱相關聯。</block>
+  <block id="240d9c0eecb88b98c7fc253d7a1ea3e9" category="section-title">我可以將現有的 Cloud Volumes ONTAP 工作環境移至不同的 AWS 帳戶嗎？</block>
+  <block id="48fee81c8905ac5f4a12516fa379b0f7" category="paragraph">否、您無法將與 Cloud Volumes ONTAP 工作環境相關的 AWS 資源移至不同的 AWS 帳戶。</block>
+  <block id="a0b5de080d56bb71b1a6a7c72fd88757" category="doc">管理 BlueXP 的 AWS 認證和市場訂閱</block>
+  <block id="8fda5ebe3faa8194a970ad5e0645d8c7" category="list-text">您想要變更與 AWS 認證相關的 AWS Marketplace 訂閱。</block>
+  <block id="0b3b411ceb545e69a73eeeea9e0f4812" category="doc">管理 BlueXP 的 Azure 認證和市場訂閱</block>
+  <block id="f2427bd8db58aeac7d862aab97ae63df" category="list-text">您想要變更與 Azure 認證相關的 Azure Marketplace 訂閱。</block>
 </blocks>
