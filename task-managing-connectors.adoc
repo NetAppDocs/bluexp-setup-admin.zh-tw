@@ -230,21 +230,20 @@ BlueXP會將Connector從記錄中移除。
 
 == 解除安裝Connector軟體
 
-解除安裝Connector軟體以疑難排解問題、或從主機上永久移除軟體。您需要使用的步驟取決於連接器是安裝在可存取網際網路的主機上、還是安裝在無法存取網際網路的受限網路中。
+解除安裝Connector軟體以疑難排解問題、或從主機上永久移除軟體。您需要使用的步驟取決於您是在具有網際網路存取（標準模式或限制模式）的主機上安裝 Connector 、還是在沒有網際網路存取（私有模式）的網路中安裝 Connector 。
 
 
 
-=== 從可存取網際網路的主機解除安裝
+=== 使用標準模式或受限模式時解除安裝
 
-線上連接器包含一個解除安裝指令碼、可用來解除安裝軟體。
+下列步驟可讓您在標準模式或受限模式下使用 BlueXP 時、解除安裝 Connector 軟體。
 
 .步驟
+. 連接至 Linux VM for the Connector 。
 . 從 Linux 主機執行解除安裝指令碼：
 +
-[source, cli]
-----
-/opt/application/netapp/service-manager-2/uninstall.sh [silent]
-----
+`/opt/application/netapp/service-manager-2/uninstall.sh [silent]`
+
 +
 _silon_ 執行指令碼時不會提示您確認。
 
@@ -252,16 +251,15 @@ _silon_ 執行指令碼時不會提示您確認。
 
 
 
-=== 從無法存取網際網路的主機解除安裝
+=== 使用私有模式時解除安裝
 
-如果您已從 NetApp 支援網站下載 Connector 軟體，並將其安裝在無法存取網際網路的管制網路中，則請使用這些命令。
+下列步驟可讓您在無法存取網際網路的私人模式下使用 BlueXP 時、解除安裝 Connector 軟體。
 
 .步驟
+. 連接至 Linux VM for the Connector 。
 . 從Linux主機執行下列命令：
 +
-[source, cli]
-----
-docker-compose -f /opt/application/netapp/ds/docker-compose.yml down -v
-rm -rf /opt/application/netapp/ds
-----
+`./opt/application/netapp/ds/cleanup.sh`
+`rm -rf /opt/application/netapp/ds`
+
 
