@@ -198,9 +198,6 @@ summary: 當BlueXP在Azure中啟動Connector VM時、它會將自訂角色附加
 
 Connector 會針對 BlueXP 備份與還原提出下列 API 要求：
 
-* Microsoft.Compute/virtualMachines/read
-* Microsoft.Compute/virtualMachines/start/action
-* Microsoft.Compute/virtualMachines/deallocate/action
 * Microsoft.Storage/storageAccounts/listkeys/action
 * Microsoft.Storage/storageAccounts/read
 * Microsoft.Storage/storageAccounts/write
@@ -223,8 +220,6 @@ Connector 會針對 BlueXP 備份與還原提出下列 API 要求：
 * Microsoft.Network/privateDnsZones/A/write
 * Microsoft.Network/privateDnsZones/read
 * Microsoft.Network/privateDnsZones/virtualNetworkLinks/read
-* Microsoft.Compute/virtualMachines/extensions/delete
-* Microsoft.Compute/virtualMachines/delete
 * Microsoft.Network/networkInterfaces/delete
 * Microsoft.Network/networkSecurityGroups/delete
 * Microsoft資源/部署/刪除
@@ -772,6 +767,21 @@ Connector會針對日常作業提出下列API要求。
 == 變更記錄
 
 新增和移除權限時、我們會在下方各節中加以註記。
+
+
+
+=== 2023 年 12 月 5 日
+
+將 Volume 資料備份至 Azure Blob 儲存設備時、 BlueXP 備份與還原不再需要下列權限：
+
+* Microsoft.Compute/virtualMachines/read
+* Microsoft.Compute/virtualMachines/start/action
+* Microsoft.Compute/virtualMachines/deallocate/action
+* Microsoft.Compute/virtualMachines/extensions/delete
+* Microsoft.Compute/virtualMachines/delete
+
+
+其他 BlueXP 儲存服務需要這些權限、因此如果您使用其他儲存服務、這些權限仍會保留在 Connector 的自訂角色中。
 
 
 
