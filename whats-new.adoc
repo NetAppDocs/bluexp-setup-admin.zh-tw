@@ -18,6 +18,23 @@ summary: 瞭解 BlueXP 管理功能的新功能： BlueXP 帳戶、連接器、�
 
 
 
+== 2023 年 12 月 5 日
+
+
+
+=== 私用模式版本
+
+BlueXP 現已推出新的私有模式版本。此版本包含 3.9.35 版的 Connector 、以及自 2023 年 10 月起以私有模式支援的 BlueXP 服務版本。
+
+此新版本可從 NetApp 支援網站 下載。
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html#private-mode["瞭解隨附於私有模式的 BlueXP 服務"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["瞭解如何以私有模式開始使用 BlueXP"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["瞭解如何在使用私有模式時升級 Connector"]
+
+
+
+
 == 2023 年 11 月 8 日
 
 

@@ -290,7 +290,7 @@ unset https_proxy
 +
 [source, cli]
 ----
-chmod +x Cloud-Manager-Connector-Cloud-<version>
+chmod +x BlueXP-Connector-Cloud-<version>
 ----
 +
 其中、就是您下載的Connector版本<version> 。
@@ -299,7 +299,7 @@ chmod +x Cloud-Manager-Connector-Cloud-<version>
 +
 [source, cli]
 ----
- ./Cloud-Manager-Connector-Cloud-<version> --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
+ ./BlueXP-Connector-Cloud-<version> --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
 ----
 +
 -Proxy和--cacert參數是可選的。如果您有 Proxy 伺服器、則需要輸入如圖所示的參數。安裝程式不會提示您提供Proxy的相關資訊。
@@ -310,7 +310,7 @@ chmod +x Cloud-Manager-Connector-Cloud-<version>
 +
 [source, cli]
 ----
- ./Cloud-Manager-Connector-Cloud-V3.9.32 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+ ./BlueXP-Connector-Cloud-v3.9.35 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
 ----
 +
 -Proxy會使用下列其中一種格式、將Connector設定為使用HTTP或HTTPS Proxy伺服器：

@@ -36,14 +36,14 @@ sudo systemctl enable docker && sudo systemctl start docker
 ----
 . 從下載Connector軟體 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支援網站"^]
 +
-請務必下載無網際網路存取的受限網路安裝程式。
+請務必下載無網際網路存取的私有網路離線安裝程式。
 
 . 將安裝程式複製到Linux主機。
 . 指派執行指令碼的權限。
 +
 [source, cli]
 ----
-chmod +x /path/cloud-manager-connector-offline-<version>
+chmod +x /path/BlueXP-Connector-offline-<version>
 ----
 +
 其中、就是您下載的Connector版本<version> 。
@@ -52,7 +52,7 @@ chmod +x /path/cloud-manager-connector-offline-<version>
 +
 [source, cli]
 ----
-sudo /path/cloud-manager-connector-offline-<version>
+sudo /path/BlueXP-Connector-offline-<version>
 ----
 +
 其中、就是您下載的Connector版本<version> 。

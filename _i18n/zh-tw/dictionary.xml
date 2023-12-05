@@ -1442,7 +1442,6 @@
   <block id="377655366b79df746cc3d0c01596ba86" category="paragraph">從 NetApp 支援網站 下載產品安裝程式、然後在您自己的 Linux 主機上手動安裝 Connector 。</block>
   <block id="7bc3966adb932d8b546fbfa4ef7113d7" category="paragraph">需要root權限才能安裝Connector。</block>
   <block id="2ba7eb945a77498b8342e4be53a3761e" category="list-text">從下載Connector軟體<block ref="99637e01fa8caa34a544049093cac68c" category="inline-link-rx"></block></block>
-  <block id="21ecc51e06ea55adef72442730b0d5cf" category="paragraph">請務必下載無網際網路存取的受限網路安裝程式。</block>
   <block id="0d5d3e78379f182967772aab096aa6ac" category="list-text">將安裝程式複製到Linux主機。</block>
   <block id="482c8088b93a78c2682279e88617ca7f" category="list-text">執行安裝指令碼：</block>
   <block id="d932ef50072ac5f51fe3242771618f19" category="paragraph">已安裝 Connector 軟體。您現在可以設定 BlueXP 。</block>
@@ -3026,9 +3025,6 @@
   <block id="99f9fe7adce4b6282eee924da977b6d4" category="list-text">內部部署中支援的 BlueXP 服務</block>
   <block id="614a24e7adcef9d83ca4454cd4443cbd" category="list-text">當 Connector 安裝在內部部署上時、 BlueXP 支援下列具有私有模式的儲存和資料服務：</block>
   <block id="1a1c1a2053d87746c09321c96ffee577" category="inline-link">瞭解如何將內部部署 ONTAP 資料備份至 StorageGRID</block>
-  <block id="4b2d116ffff1d0b3943a8369ed15f92e" category="cell">僅支援將內部部署 ONTAP 磁碟區備份及還原至 StorageGRID 系統。
-
-<block ref="06335b9f199e896c8eeed49a6ea11aae" category="inline-link-rx"></block></block>
   <block id="53a7caecec393fdcc143318b6a21f701" category="list-text">唯一支援的資料來源是您可以在本機探索的資料來源。</block>
   <block id="ad85db404f0dfc2267b348299aa513b9" category="inline-link">檢視您可以在本機探索的來源</block>
   <block id="c31f6ba921f50b9fdf957e9653b25a96" category="paragraph"><block ref="c31f6ba921f50b9fdf957e9653b25a96" category="inline-link-rx"></block></block>
@@ -3827,4 +3823,20 @@ Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" catego
   <block id="f48ee857175ccdfbd5ae5d5354c32c08" category="inline-link">瞭解重新整理權杖</block>
   <block id="713b059ba47ab000812d3dd15273cee6" category="paragraph">請注意、使用服務帳戶時、 API 作業不需要重新整理權杖。<block ref="cc919b62f11a25e2d8c9fb23b34ada32" category="inline-link-rx"></block></block>
   <block id="7c42c6e2f8295dada12f50f825327ddf" category="list-text">映像的作業系統為 Ubuntu 22.04 LTS 。</block>
+  <block id="e8a0c291b754a75e0e91ecf69d567912" category="section-title">2023 年 12 月 5 日</block>
+  <block id="1771e2f4014c6ccd829b84cf9e8c7d27" category="section-title">私用模式版本</block>
+  <block id="5a78b457c661dc3d01c5125da794f0ed" category="paragraph">BlueXP 現已推出新的私有模式版本。此版本包含 3.9.35 版的 Connector 、以及自 2023 年 10 月起以私有模式支援的 BlueXP 服務版本。</block>
+  <block id="ec34e91164e39c9df1bfb906cff07162" category="paragraph">此新版本可從 NetApp 支援網站 下載。</block>
+  <block id="2e57b160bcd31ccd527a6670d94879de" category="inline-link">瞭解隨附於私有模式的 BlueXP 服務</block>
+  <block id="d51183b71ba843f2f97d0b54a084f7e8" category="list-text"><block ref="d51183b71ba843f2f97d0b54a084f7e8" category="inline-link-rx"></block></block>
+  <block id="8156defa13b44a36e67cab400c3b8bd4" category="inline-link">瞭解如何以私有模式開始使用 BlueXP</block>
+  <block id="1183e1b8915696495b308d0bdfa59bd4" category="list-text"><block ref="1183e1b8915696495b308d0bdfa59bd4" category="inline-link-rx"></block></block>
+  <block id="b29a186d936b198dcafa3a0308485e2c" category="inline-link">瞭解如何在使用私有模式時升級 Connector</block>
+  <block id="4e208e7f54024bf731fae02025ce34d9" category="list-text"><block ref="4e208e7f54024bf731fae02025ce34d9" category="inline-link-rx"></block></block>
+  <block id="a6c2003199e95310a83aa40a67058bd8" category="paragraph">請務必下載無網際網路存取的私有網路離線安裝程式。</block>
+  <block id="592f630e8b69cd90cac093e1bdbd9dbb" category="list-text">支援將內部部署的 ONTAP 磁碟區備份及還原至 StorageGRID 系統。</block>
+  <block id="06335b9f199e896c8eeed49a6ea11aae" category="paragraph"><block ref="06335b9f199e896c8eeed49a6ea11aae" category="inline-link-rx"></block></block>
+  <block id="74456640d8afbf406f720d7bd598b445" category="list-text">也支援將內部部署的 ONTAP 磁碟區備份及還原至 ONTAP S3 。</block>
+  <block id="18bb302ce6a2bf46e1beed1133756fb6" category="inline-link">瞭解如何將內部部署 ONTAP 資料備份至 ONTAP S3</block>
+  <block id="4befb86902877ee4e8c0bab35f4c9850" category="paragraph"><block ref="4befb86902877ee4e8c0bab35f4c9850" category="inline-link-rx"></block></block>
 </blocks>

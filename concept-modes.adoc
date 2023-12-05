@@ -276,9 +276,17 @@ Google Cloud 或中不支援 https://aws.amazon.com/federal/secret-cloud/["AWS S
 | 支援的服務 | 附註 
 
 
-| 備份與還原 | 僅支援將內部部署 ONTAP 磁碟區備份及還原至 StorageGRID 系統。
+| 備份與還原  a| 
+* 支援將內部部署的 ONTAP 磁碟區備份及還原至 StorageGRID 系統。
++
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html["瞭解如何將內部部署 ONTAP 資料備份至 StorageGRID"^]
 
-https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html["瞭解如何將內部部署 ONTAP 資料備份至 StorageGRID"^] 
+* 也支援將內部部署的 ONTAP 磁碟區備份及還原至 ONTAP S3 。
++
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-ontap-s3.html["瞭解如何將內部部署 ONTAP 資料備份至 ONTAP S3"^]
+
+
+
 
 
 | 分類  a| 
