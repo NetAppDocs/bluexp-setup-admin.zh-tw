@@ -39,6 +39,23 @@ link:concept-connectors.html#connectors-must-be-operational-at-all-times["請注
 
 
 
+== 檢視 Connector 的版本
+
+您可以檢視 Connector 的版本、以確認 Connector 已自動升級至最新版本、或是您需要與 NetApp 代表分享。
+
+.步驟
+. 在 BlueXP 主控台的右上角、選取「說明」圖示。
+. 選取 * 支援 > BlueXP Connector* 。
++
+版本會顯示在頁面頂端。
+
++
+image:screenshot-connector-version.png["顯示 Support Dashboard 中 Connector 版本的螢幕快照。"]
+
+
+
+
+
 == 在連接器之間切換
 
 如果您有多個連接器、可以在它們之間切換、以查看與特定連接器相關聯的工作環境。

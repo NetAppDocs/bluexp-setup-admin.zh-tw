@@ -44,10 +44,6 @@ NetApp以多種方式支援BlueXP及其雲端服務。我們全年無休提供�
 +
 歡迎加入BlueXP社群、以追蹤後續討論或建立新討論。
 
-* mailto：ng-cloudmanager-feedback@netapp.com [意見反應電子郵件]
-+
-我們非常重視您的意見。提交意見反應、協助我們改善藍圖。
-
 
 
 

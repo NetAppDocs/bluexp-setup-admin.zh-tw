@@ -18,14 +18,14 @@ summary: 為了協助您開始使用、您的 NetApp 代表可能會要求您提
 
 .步驟
 . 在 BlueXP 主控台的右上角、選取「說明」圖示。
-. 選擇 * Support > Connector* 。
+. 選取 * 支援 > BlueXP Connector* 。
 +
-系統ID會顯示在頂端。
+系統 ID 會顯示在頁面頂端。
 
 +
 * 範例 *
 
 +
-image:screenshot_system_id.gif["顯示「支援儀表板」中所顯示之BlueXP系統ID的螢幕快照。"]
+image:screenshot-system-id.png["顯示「支援儀表板」中所顯示之BlueXP系統ID的螢幕快照。"]
 
 
