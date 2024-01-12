@@ -2972,9 +2972,6 @@
   <block id="ea22f9957523103248d84695e98b17ba" category="cell">支援的服務</block>
   <block id="f4c6f851b00d5518bf888815de279aba" category="cell">附註</block>
   <block id="34678ee868eeabce720fc4a0fd60c17a" category="cell">完全支援</block>
-  <block id="c9a7d35c9d99037b4d9d587cc87ddf09" category="cell">受限於政府區域和商業區域、模式受限。受限模式的主權區域不支援。
-
-不支援下列功能：應用程式、虛擬機器和 Kubernetes 。</block>
   <block id="0a44fe605745a017fde35750e5fae36a" category="paragraph">受限模式的政府地區支援。不支援商業區域或採用限制模式的主權區域。</block>
   <block id="9bff93d1123789b473f27a881c3e00c6" category="paragraph">適用下列限制：</block>
   <block id="b3478a494adde25715314b14559dd6a4" category="list-text">無法掃描OneDrive帳戶、SharePoint帳戶和Google雲端硬碟帳戶。</block>
@@ -3019,7 +3016,6 @@
 不支援不含 Connector 的探索（直接探索）。</block>
   <block id="99f9fe7adce4b6282eee924da977b6d4" category="list-text">內部部署中支援的 BlueXP 服務</block>
   <block id="614a24e7adcef9d83ca4454cd4443cbd" category="list-text">當 Connector 安裝在內部部署上時、 BlueXP 支援下列具有私有模式的儲存和資料服務：</block>
-  <block id="1a1c1a2053d87746c09321c96ffee577" category="inline-link">瞭解如何將內部部署 ONTAP 資料備份至 StorageGRID</block>
   <block id="53a7caecec393fdcc143318b6a21f701" category="list-text">唯一支援的資料來源是您可以在本機探索的資料來源。</block>
   <block id="ad85db404f0dfc2267b348299aa513b9" category="inline-link">檢視您可以在本機探索的來源</block>
   <block id="c31f6ba921f50b9fdf957e9653b25a96" category="paragraph"><block ref="c31f6ba921f50b9fdf957e9653b25a96" category="inline-link-rx"></block></block>
@@ -3040,7 +3036,6 @@
   <block id="b04b058acf83e4616c9312ab2b951050" category="paragraph">請注意、某些服務可能受到限制的支援。如需有關限制模式和私有模式如何支援這些服務的詳細資訊、請參閱上述各節。</block>
   <block id="aa200c19289e5050e77edc0bccc67c2b" category="cell">產品領域</block>
   <block id="7e4b1c5ec6c6adb1fa50f4ca17076845" category="cell">BlueXP 服務或功能</block>
-  <block id="4e74f624e4d0f3f558ca01aa93696658" category="cell">* 工作環境 *</block>
   <block id="270fcb785810d0206945029bb05f4e97" category="cell">Amazon S3</block>
   <block id="52745271323ee9ea30e3a37d0338d118" category="cell">Azure Blob</block>
   <block id="833c2c211a541e50ad94433664e4b5c1" category="cell">Google Cloud Storage</block>
@@ -3663,9 +3658,6 @@ Azure 政府地區不需要此端點。</block>
   <block id="026951b63281b53e88087e2423613cad" category="example-title">秘密區域</block>
   <block id="76187385115cd00f6a1ec1ff426ad7b5" category="example-title">最高機密區域</block>
   <block id="5327be2346849398acb42586361c3fa1" category="paragraph">安全區域包括<block ref="da2732e6e9a1be4ab82a1194533aac59" category="inline-link-rx"></block>、<block ref="6f5217ea8a3f93cd9532863eb844647b" category="inline-link-rx"></block>和<block ref="360910fe60b5d1cf9b7056b9b6f46685" category="inline-link-rx"></block></block>
-  <block id="1b46f73bf231e8eefaf1347b4383cc0a" category="cell">支援於 AWS 和 Azure 商業地區。
-
-Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" category="inline-link-rx"></block>、<block ref="6f5217ea8a3f93cd9532863eb844647b" category="inline-link-rx"></block>或<block ref="360910fe60b5d1cf9b7056b9b6f46685" category="inline-link-rx"></block></block>
   <block id="fcbe8b204f3332d68f1b0f5f05c998db" category="cell">由於無法存取網際網路、因此無法使用下列功能：自動軟體升級和 AutoSupport 。</block>
   <block id="8bb35bd6add2b83baee34c828e6acacf" category="cell">API 會將 Azure 、 ONTAP 、 BlueXP 分類及 AutoSupport 訊息傳送至 NetApp</block>
   <block id="d80bf17e105d87b4295cb2e090a28117" category="list-text">目前、系統會以電子郵件傳送通知、說明下列 BlueXP 功能與服務： Connector 、 BlueXP 數位錢包、 BlueXP 複本與同步、 BlueXP 備份與還原、 BlueXP 分層和 BlueXP 移轉報告。未來版本將會新增其他服務。</block>
@@ -3829,11 +3821,6 @@ Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" catego
   <block id="b29a186d936b198dcafa3a0308485e2c" category="inline-link">瞭解如何在使用私有模式時升級 Connector</block>
   <block id="4e208e7f54024bf731fae02025ce34d9" category="list-text"><block ref="4e208e7f54024bf731fae02025ce34d9" category="inline-link-rx"></block></block>
   <block id="a6c2003199e95310a83aa40a67058bd8" category="paragraph">請務必下載無網際網路存取的私有網路離線安裝程式。</block>
-  <block id="592f630e8b69cd90cac093e1bdbd9dbb" category="list-text">支援將內部部署的 ONTAP 磁碟區備份及還原至 StorageGRID 系統。</block>
-  <block id="06335b9f199e896c8eeed49a6ea11aae" category="paragraph"><block ref="06335b9f199e896c8eeed49a6ea11aae" category="inline-link-rx"></block></block>
-  <block id="74456640d8afbf406f720d7bd598b445" category="list-text">也支援將內部部署的 ONTAP 磁碟區備份及還原至 ONTAP S3 。</block>
-  <block id="18bb302ce6a2bf46e1beed1133756fb6" category="inline-link">瞭解如何將內部部署 ONTAP 資料備份至 ONTAP S3</block>
-  <block id="4befb86902877ee4e8c0bab35f4c9850" category="paragraph"><block ref="4befb86902877ee4e8c0bab35f4c9850" category="inline-link-rx"></block></block>
   <block id="d22d5d645d5b80561936fd406bec2118" category="section-title">2023 年 12 月 5 日</block>
   <block id="f729237ece11d2ac3f651452a87ead32" category="paragraph">將 Volume 資料備份至 Azure Blob 儲存設備時、 BlueXP 備份與還原不再需要下列權限：</block>
   <block id="fe3f6158e2c4c966c8642056658d69e0" category="paragraph">其他 BlueXP 儲存服務需要這些權限、因此如果您使用其他儲存服務、這些權限仍會保留在 Connector 的自訂角色中。</block>
@@ -3850,4 +3837,29 @@ Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" catego
   <block id="eb59fa7ccae5cea6d510c55c15078ce1" category="paragraph">版本會顯示在頁面頂端。</block>
   <block id="a2f380016f769a1938d51415013af95a" category="inline-image-macro">顯示 Support Dashboard 中 Connector 版本的螢幕快照。</block>
   <block id="da65ca9f7cc579e3fad52951fe45cdb6" category="paragraph"><block ref="da65ca9f7cc579e3fad52951fe45cdb6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="34c6561859a3a97caa0248fbb4372124" category="inline-link">檢視 ONTAP 資料支援的備份目的地清單</block>
+  <block id="b78582359876713ba71594c58c688056" category="cell">受限於政府區域和商業區域、模式受限。受限模式的主權區域不支援。
+
+在受限模式下、 BlueXP 備份與還原僅支援 ONTAP Volume 資料的備份與還原。<block ref="db0a18d2a99588054f71bf6c0bd14abb" category="inline-link-rx"></block>
+
+不支援應用程式資料、虛擬機器資料和 Kubernetes 資料的備份與還原。</block>
+  <block id="daf7166d96d9be504340c5f0fca638a4" category="cell">支援於 AWS 和 Azure 商業地區。
+
+Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" category="inline-link-rx"></block>、<block ref="6f5217ea8a3f93cd9532863eb844647b" category="inline-link-rx"></block>或<block ref="360910fe60b5d1cf9b7056b9b6f46685" category="inline-link-rx"></block>
+
+在私有模式中、 BlueXP 備份與還原僅支援 ONTAP Volume 資料的備份與還原。<block ref="178bedf5671592d86ab011b6af0333e7" category="inline-link-rx"></block>
+
+不支援應用程式資料、虛擬機器資料和 Kubernetes 資料的備份與還原。</block>
+  <block id="b17e900e063883a32cc6ff0df77599bf" category="inline-link">檢視 ONTAP Volume 資料支援的備份目的地清單</block>
+  <block id="652dc029a5083b41e38c79d0e4d16733" category="paragraph">在私有模式中、 BlueXP 備份與還原僅支援 ONTAP Volume 資料的備份與還原。<block ref="eebf709c38a40036acede282fbe8b80c" category="inline-link-rx"></block></block>
+  <block id="f85eecb0561afa9ea5f5e20833e958c3" category="paragraph">不支援應用程式資料、虛擬機器資料和 Kubernetes 資料的備份與還原。</block>
+  <block id="d0622c7af7b2cc2435986b2d005d8fc3" category="cell">* 工作環境 *
+
+此部分表列出了 BlueXP 畫布對工作環境管理的支援。它並不表示 BlueXP 備份與還原支援的備份目的地。</block>
+  <block id="156b68e03278a01a3d2781f8c900caac" category="cell">是的
+
+<block ref="14c876cb6a245f558ae78bae571d2b6e" category="inline-link-rx"></block></block>
+  <block id="fa0738e12b2324073fa9b5f91af71e48" category="cell">是的
+
+<block ref="42dbd2df9d57eeeb664cce05b5a35bf1" category="inline-link-rx"></block></block>
 </blocks>
