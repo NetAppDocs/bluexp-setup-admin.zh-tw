@@ -689,9 +689,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 
 如果您尚未將您的NSS帳戶移轉至IDaaas、首先需要移轉帳戶、然後在Cloud Manager中更新您的認證資料。
 
-* link:task-adding-nss-accounts.html#update-an-nss-account-for-the-new-authentication-method["瞭解如何將新的驗證方法更新至新的NSS帳戶"]。
-* https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/FAQs_for_NetApp_adoption_of_MS_Azure_AD_B2C_for_login["深入瞭解NetApp使用Microsoft Azure AD進行身分識別管理的相關資訊"^]
-
+https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/FAQs_for_NetApp_adoption_of_MS_Azure_AD_B2C_for_login["深入瞭解 NetApp 如何使用 Microsoft Azure Active Directory 進行身分識別管理"^]
 
 
 

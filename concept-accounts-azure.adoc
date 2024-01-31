@@ -42,7 +42,7 @@ image:screenshot_accounts_select_azure.gif["在「詳細資料擴大機；認證
 
 == 其他 Azure 認證資料
 
-如果您想要將不同的 Azure 認證搭配 BlueXP 使用、則必須將必要的權限授予 link:task-adding-azure-accounts.html["在 Azure Active Directory 中建立及設定服務主體"] 針對每個 Azure 帳戶。下圖顯示兩個額外的帳戶、每個帳戶都設有提供權限的服務主體和自訂角色：
+如果您想要將不同的 Azure 認證搭配 BlueXP 使用、則必須將必要的權限授予 link:task-adding-azure-accounts.html["在 Microsoft Entra ID 中建立及設定服務主體"] 針對每個 Azure 帳戶。下圖顯示兩個額外的帳戶、每個帳戶都設有提供權限的服務主體和自訂角色：
 
 image:diagram_permissions_multiple_azure.png["顯示初始 Azure 帳戶（透過自訂角色和託管身分識別接收權限）的概念性映像、以及透過自訂角色和服務主體接收權限的兩個額外帳戶。"]
 
@@ -100,7 +100,7 @@ link:task-adding-azure-accounts.html#subscribe["瞭解如何建立Azure訂閱的
 
 以上各節說明建議的連接器部署方法、該方法來自於BlueXP。您也可以從 Azure Marketplace 在 Azure 中部署 Connector 、也可以在自己的 Linux 主機上安裝 Connector 軟體。
 
-如果您使用 Marketplace 、您可以將自訂角色指派給 Connector VM 和系統指派的託管身分識別、以提供權限、或是使用 Azure AD 服務主體。
+如果您使用 Marketplace 、您可以將自訂角色指派給 Connector VM 和系統指派的託管身分識別、以提供權限、或是使用 Microsoft Entra 服務主體。
 
 對於內部部署、您無法設定 Connector 的託管身分識別、但可以使用服務主體來提供權限。
 

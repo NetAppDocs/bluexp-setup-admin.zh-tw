@@ -74,21 +74,21 @@ image:screenshot_accounts_switch_azure_subscription.gif["此螢幕快照顯示�
 
 TIP: 如果您在現有系統上手動安裝Connector軟體、則不會新增一組初始認證資料。 link:concept-accounts-azure.html["瞭解Azure認證與權限"]。
 
-如果您要使用Cloud Volumes ONTAP _different _ Azure認證來部署功能、則必須在Azure Active Directory中為每個Azure帳戶建立及設定服務主體、以授予必要的權限。然後您可以將新認證新增至藍圖XP。
+如果您想要使用 _different 的 Azure 認證來部署 Cloud Volumes ONTAP 、則必須在每個 Azure 帳戶的 Microsoft Entra ID 中建立及設定服務主體、以授予必要的權限。然後您可以將新認證新增至藍圖XP。
 
 
 
 === 使用服務主體授與 Azure 權限
 
-BlueXP需要權限才能在Azure中執行動作。您可以在Azure Active Directory中建立及設定服務主體、並取得BlueXP所需的Azure認證資料、將必要的權限授予Azure帳戶。
+BlueXP需要權限才能在Azure中執行動作。您可以在 Microsoft Entra ID 中建立及設定服務主體、並取得 BlueXP 所需的 Azure 認證、將必要權限授予 Azure 帳戶。
 
 .關於這項工作
-下圖說明BlueXP如何取得權限在Azure中執行作業。與一或多個Azure訂閱相關聯的服務主體物件、代表Azure Active Directory中的BlueXP、並指派給允許必要權限的自訂角色。
+下圖說明BlueXP如何取得權限在Azure中執行作業。服務主體物件與一或多個 Azure 訂閱相關、代表 Microsoft Entra ID 中的 BlueXP 、並指派給允許必要權限的自訂角色。
 
-image:diagram_azure_authentication.png["顯示BlueXP在Azure Active Directory進行API呼叫之前、先取得驗證與授權的概念性映像。在Active Directory中、BlueXP角色定義權限。它與一或多個 Azure 訂閱以及代表 Cloud Manger 應用程式的服務主要物件相關聯。"]
+image:diagram_azure_authentication.png["概念性影像、顯示 BlueXP 在進行 API 呼叫之前、先從 Microsoft Entra ID 取得驗證和授權。在Active Directory中、BlueXP角色定義權限。它與一或多個 Azure 訂閱以及代表 Cloud Manger 應用程式的服務主要物件相關聯。"]
 
 .步驟
-. <<建立 Azure Active Directory 應用程式>>。
+. <<建立 Microsoft Entra 應用程式>>。
 . <<將應用程式指派給角色>>。
 . <<新增 Windows Azure Service Management API 權限>>。
 . <<取得應用程式 ID 和目錄 ID>>。
@@ -97,18 +97,18 @@ image:diagram_azure_authentication.png["顯示BlueXP在Azure Active Directory進
 
 
 
-==== 建立 Azure Active Directory 應用程式
+==== 建立 Microsoft Entra 應用程式
 
-建立Azure Active Directory（AD）應用程式與服務主體、以便BlueXP用於角色型存取控制。
+建立 Microsoft Entra 應用程式和服務主體、讓 BlueXP 用於角色型存取控制。
 
 .步驟
 . 確保您在 Azure 中擁有建立 Active Directory 應用程式及將應用程式指派給角色的權限。
 +
 如需詳細資訊、請參閱 https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure 說明文件：必要權限"^]
 
-. 從 Azure 入口網站開啟 * Azure Active Directory * 服務。
+. 從 Azure 入口網站開啟 * Microsoft Entra ID* 服務。
 +
-image:screenshot_azure_ad.gif["顯示 Microsoft Azure 中的 Active Directory 服務。"]
+image:screenshot_azure_ad.png["顯示 Microsoft Azure 中的 Active Directory 服務。"]
 
 . 在功能表中、選取 * 應用程式註冊 * 。
 . 選取 * 新登錄 * 。
@@ -221,7 +221,7 @@ image:screenshot_azure_service_principal_role.png["Azure入口網站的快照、
 服務主體必須具有「 Windows Azure Service Management API 」權限。
 
 .步驟
-. 在 * Azure Active Directory* 服務中、選取 * 應用程式登錄 * 、然後選取應用程式。
+. 在 * Microsoft Entra ID* 服務中、選取 * 應用程式登錄 * 、然後選取應用程式。
 . 選取 * API 權限 > 新增權限 * 。
 . 在「 * Microsoft API* 」下、選取「 * Azure 服務管理 * 」。
 +
@@ -240,10 +240,10 @@ image:screenshot_azure_service_mgmt_apis_add.gif["Azure 入口網站的快照、
 將Azure帳戶新增至BlueXP時、您必須提供應用程式的應用程式（用戶端）ID和目錄（租戶）ID。BlueXP使用ID以程式設計方式登入。
 
 .步驟
-. 在 * Azure Active Directory* 服務中、選取 * 應用程式登錄 * 、然後選取應用程式。
+. 在 * Microsoft Entra ID* 服務中、選取 * 應用程式登錄 * 、然後選取應用程式。
 . 複製 * 應用程式（用戶端） ID* 和 * 目錄（租戶） ID* 。
 +
-image:screenshot_azure_app_ids.gif["顯示 Azure Active Directory 中應用程式的應用程式（用戶端） ID 和目錄（租戶） ID 的快照。"]
+image:screenshot_azure_app_ids.gif["螢幕擷取畫面、顯示 Microsoft Entra Idy 中應用程式的應用程式（用戶端） ID 和目錄（租戶） ID 。"]
 
 +
 將Azure帳戶新增至BlueXP時、您必須提供應用程式的應用程式（用戶端）ID和目錄（租戶）ID。BlueXP使用ID以程式設計方式登入。
@@ -254,20 +254,20 @@ image:screenshot_azure_app_ids.gif["顯示 Azure Active Directory 中應用程�
 
 ==== 建立用戶端機密
 
-您需要建立用戶端機密、然後為BlueXP提供機密的價值、以便BlueXP使用它來驗證Azure AD。
+您需要建立用戶端機密、然後提供 BlueXP 的機密值、以便 BlueXP 使用它來驗證 Microsoft Entra ID 。
 
 .步驟
-. 開啟 * Azure Active Directory * 服務。
+. 開啟 * Microsoft Entra ID* 服務。
 . 選取 * 應用程式註冊 * 、然後選取您的應用程式。
 . 選取 * 「憑證與機密」 > 「新用戶端機密」 * 。
 . 提供機密與持續時間的說明。
 . 選取*「Add*」。
 . 複製用戶端機密的值。
 +
-image:screenshot_azure_client_secret.gif["Azure 入口網站的快照、顯示 Azure AD 服務主體的用戶端機密。"]
+image:screenshot_azure_client_secret.gif["Azure 入口網站的螢幕擷取畫面、顯示 Microsoft Entra 服務主體的用戶端機密。"]
 
 +
-您現在有一個用戶端秘密、 BlueXP 可以用來驗證 Azure AD 。
+您現在擁有一個客戶機密、 BlueXP 可以使用它來驗證 Microsoft Entra ID 。
 
 
 
@@ -294,7 +294,7 @@ image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」�
 . 選取 * 新增認證 * 、然後依照精靈中的步驟進行。
 +
 .. *認證位置*：選擇* Microsoft Azure > Connector*。
-.. *定義認證*：輸入Azure Active Directory服務主體的相關資訊、以授予必要的權限：
+.. * 定義認證 * ：輸入 Microsoft Entra 服務授權者的相關資訊、以授予必要的權限：
 +
 *** 應用程式（用戶端）ID
 *** 目錄（租戶）ID

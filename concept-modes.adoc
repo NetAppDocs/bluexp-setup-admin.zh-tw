@@ -68,7 +68,7 @@ BlueXP 為您的帳戶提供下列部署模式。每種模式的輸出連線需�
 | UI 存取 | 來自 BlueXP SaaS 層 | 從 Connector VM 本機執行 | 從 Connector VM 本機執行 
 
 
-| API 端點 | BlueXP SaaS 層 | BlueXP SaaS 層 | 連接器 
+| API 端點 | BlueXP SaaS 層 | 連接器 | 連接器 
 
 
 | 驗證 | 透過 SaaS 使用驗證 0 、 NSS 登入或身分識別聯盟 | 透過 SaaS 使用驗證 0 或身分識別聯盟 | 本機使用者驗證 
@@ -138,9 +138,8 @@ BlueXP SaaS 層不會啟動與 Connector 的通訊。所有通訊都是由 Conne
 Connector 支援的位置:: 在受限模式下、 Connector 在雲端中受到支援：在政府區域、主權區域或商業區域中。
 連接器安裝:: 您可以從 AWS 或 Azure Marketplace 安裝 Connector 、或在您自己的 Linux 主機上手動安裝 Connector 。
 連接器升級:: BlueXP 提供 Connector 軟體的自動升級、每月更新一次。
-使用者介面存取:: 使用者介面可從部署於雲端區域的 Connector 存取。
-API 端點:: API 呼叫會撥打至下列端點：
-\https://cloudmanager.cloud.netapp.com
+使用者介面存取:: 使用者介面可從部署於雲端區域的 Connector 虛擬機器存取。
+API 端點:: API 呼叫是針對 Connector 虛擬機器進行的。
 驗證:: 驗證是透過 BlueXP 的雲端服務使用驗證 0 提供。也提供身分識別聯盟功能。
 支援的 BlueXP 服務:: BlueXP 支援下列受限模式的儲存和資料服務：
 +

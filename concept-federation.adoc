@@ -56,7 +56,7 @@ image:diagram-identity-federation.png["顯示使用者使用BlueXP進行驗證�
 BlueXP支援下列身分識別供應商：
 
 * 安全聲明標記語言（SAML）身分識別供應商
-* Microsoft Azure Active Directory（AD）
+* Microsoft Entra ID
 * Active Directory Federation Services（ADFS）
 * PingFedate
 
@@ -129,9 +129,9 @@ NOTE: 請記下憑證到期日。您需要返回「聯盟設定」頁面、並�
 |===
 
 
-=== Microsoft Azure AD
+=== Microsoft Entra ID
 
-在高層級上、在BlueXP和Azure AD之間設定聯盟連線包括下列步驟：
+在高層級上、設定 BlueXP 與 Microsoft Entra ID 之間的聯盟連線包括下列步驟：
 
 [cols="10,15,75"]
 |===
@@ -139,9 +139,9 @@ NOTE: 請記下憑證到期日。您需要返回「聯盟設定」頁面、並�
 
 
 | 1. | 廣告管理員  a| 
-設定Azure Active Directory以啟用與BlueXP的身分識別聯盟。
+設定 Microsoft Entra ID 以啟用與 BlueXP 的身分識別聯盟。
 
-https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/azure-active-directory/v2["檢視向Azure AD註冊應用程式的說明"^]
+https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/azure-active-directory/v2["檢視使用 Microsoft Entra ID 登錄應用程式的指示"^]
 
 
 TIP: 請勿完成介紹如何在驗證0中建立連線的步驟。您將在下一步建立該連線。
@@ -155,7 +155,7 @@ TIP: 請勿完成介紹如何在驗證0中建立連線的步驟。您將在下�
 
 * 用戶端ID
 * 用戶端機密值
-* Microsoft Azure AD網域
+* Microsoft Entra ID 網域
 
 
 使用此資訊建立連線之後、「Federation Setup」頁面會列出可傳送給AD管理員的參數、以便在下一步完成組態設定。
@@ -165,7 +165,7 @@ NOTE: 請記下秘密金鑰到期日。您需要返回「聯盟設定」頁面�
 
 
 
-| 3. | 廣告管理員 | 完成步驟2之後、請使用「聯盟設定」頁面上顯示的參數、在Azure AD中完成組態設定。 
+| 3. | 廣告管理員 | 完成步驟 2 之後、請使用「聯盟設定」頁面上顯示的參數、完成 Microsoft Entra ID 的組態設定。 
 
 
 | 4. | BlueXP管理 | 從測試並啟用連線 https://services.cloud.netapp.com/federation-setup["NetApp聯盟設定頁面"^]

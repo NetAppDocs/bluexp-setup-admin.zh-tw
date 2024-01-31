@@ -189,7 +189,7 @@ image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」�
 . 選取 * 新增認證 * 、然後依照精靈中的步驟進行。
 +
 .. *認證位置*：選擇* Microsoft Azure > Connector*。
-.. *定義認證*：輸入Azure Active Directory服務主體的相關資訊、以授予必要的權限：
+.. * 定義認證 * ：輸入 Microsoft Entra 服務授權者的相關資訊、以授予必要的權限：
 +
 *** 應用程式（用戶端）ID
 *** 目錄（租戶）ID

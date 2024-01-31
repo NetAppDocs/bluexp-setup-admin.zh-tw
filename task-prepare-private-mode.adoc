@@ -191,6 +191,9 @@ HTTP （ 80 ）和 HTTPS （ 443 ）可讓您存取 BlueXP 主控台。只有在
 --
 
 
+啟用 NTP:: 如果您打算使用 BlueXP 分類來掃描公司資料來源、則應該在 BlueXP Connector 系統和 BlueXP 分類系統上啟用網路時間傳輸協定（ NTP ）服務、以便在系統之間同步時間。 https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["深入瞭解 BlueXP 分類"^]
+
+
 
 
 == 步驟 5 ：準備雲端權限
@@ -315,16 +318,16 @@ az role definition create --role-definition Connector_Policy.json
 --
 .Azure 服務主體
 --
-在 Azure Active Directory 中建立及設定服務主體、並取得 BlueXP 所需的 Azure 認證。安裝 Connector 並設定 BlueXP 之後、您必須提供 BlueXP 的這些認證。
+在 Microsoft Entra ID 中建立並設定服務主體、並取得 BlueXP 所需的 Azure 認證。安裝 Connector 並設定 BlueXP 之後、您必須提供 BlueXP 的這些認證。
 
-.建立 Azure Active Directory 應用程式以進行角色型存取控制
+.建立 Microsoft Entra 應用程式以進行角色型存取控制
 . 確保您在 Azure 中擁有建立 Active Directory 應用程式及將應用程式指派給角色的權限。
 +
 如需詳細資訊、請參閱 https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure 說明文件：必要權限"^]
 
-. 從 Azure 入口網站開啟 * Azure Active Directory * 服務。
+. 從 Azure 入口網站開啟 * Microsoft Entra ID* 服務。
 +
-image:screenshot_azure_ad.gif["顯示 Microsoft Azure 中的 Active Directory 服務。"]
+image:screenshot_azure_ad.png["顯示 Microsoft Azure 中的 Active Directory 服務。"]
 
 . 在功能表中、選取 * 應用程式註冊 * 。
 . 選取 * 新登錄 * 。
@@ -422,7 +425,7 @@ image:screenshot_azure_service_principal_role.png["Azure入口網站的快照、
 
 
 .新增 Windows Azure Service Management API 權限
-. 在 * Azure Active Directory* 服務中、選取 * 應用程式登錄 * 、然後選取應用程式。
+. 在 * Microsoft Entra ID* 服務中、選取 * 應用程式登錄 * 、然後選取應用程式。
 . 選取 * API 權限 > 新增權限 * 。
 . 在「 * Microsoft API* 」下、選取「 * Azure 服務管理 * 」。
 +
@@ -435,10 +438,10 @@ image:screenshot_azure_service_mgmt_apis_add.gif["Azure 入口網站的快照、
 
 
 .取得應用程式的應用程式 ID 和目錄 ID
-. 在 * Azure Active Directory* 服務中、選取 * 應用程式登錄 * 、然後選取應用程式。
+. 在 * Microsoft Entra ID* 服務中、選取 * 應用程式登錄 * 、然後選取應用程式。
 . 複製 * 應用程式（用戶端） ID* 和 * 目錄（租戶） ID* 。
 +
-image:screenshot_azure_app_ids.gif["顯示 Azure Active Directory 中應用程式的應用程式（用戶端） ID 和目錄（租戶） ID 的快照。"]
+image:screenshot_azure_app_ids.gif["螢幕擷取畫面、顯示 Microsoft Entra Idy 中應用程式的應用程式（用戶端） ID 和目錄（租戶） ID 。"]
 
 +
 將Azure帳戶新增至BlueXP時、您必須提供應用程式的應用程式（用戶端）ID和目錄（租戶）ID。BlueXP使用ID以程式設計方式登入。
@@ -446,17 +449,17 @@ image:screenshot_azure_app_ids.gif["顯示 Azure Active Directory 中應用程�
 
 
 .建立用戶端機密
-. 開啟 * Azure Active Directory * 服務。
+. 開啟 * Microsoft Entra ID* 服務。
 . 選取 * 應用程式註冊 * 、然後選取您的應用程式。
 . 選取 * 「憑證與機密」 > 「新用戶端機密」 * 。
 . 提供機密與持續時間的說明。
 . 選取*「Add*」。
 . 複製用戶端機密的值。
 +
-image:screenshot_azure_client_secret.gif["Azure 入口網站的快照、顯示 Azure AD 服務主體的用戶端機密。"]
+image:screenshot_azure_client_secret.gif["Azure 入口網站的螢幕擷取畫面、顯示 Microsoft Entra 服務主體的用戶端機密。"]
 
 +
-您現在有一個用戶端秘密、 BlueXP 可以用來驗證 Azure AD 。
+您現在擁有一個客戶機密、 BlueXP 可以使用它來驗證 Microsoft Entra ID 。
 
 
 

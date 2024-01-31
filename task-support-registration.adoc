@@ -154,7 +154,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/scre
 . 選取 *NSS Management > Add NSS Account* 。
 . 系統提示時、請選取 * 繼續 * 以重新導向至 Microsoft 登入頁面。
 +
-NetApp使用Microsoft Azure Active Directory做為身分識別供應商、提供專為支援與授權所設計的驗證服務。
+NetApp 使用 Microsoft Entra ID 做為身分識別提供者、提供專為支援與授權所設計的驗證服務。
 
 . 在登入頁面上，提供您的 NetApp 支援網站註冊電子郵件地址和密碼，以執行身分驗證程序。
 +

@@ -172,6 +172,9 @@ Proxy伺服器:: 如果您的組織需要為所有傳出的網際網路流量部
 --
 
 
+啟用 NTP:: 如果您打算使用 BlueXP 分類來掃描公司資料來源、則應該在 BlueXP Connector 系統和 BlueXP 分類系統上啟用網路時間傳輸協定（ NTP ）服務、以便在系統之間同步時間。 https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["深入瞭解 BlueXP 分類"^]
+
+
 
 
 == 步驟 3 ：設定權限
