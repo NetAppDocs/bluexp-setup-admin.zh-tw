@@ -422,6 +422,51 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#6-novemb
 
 == 2022年11月1日
 
+
+
+=== 介紹BlueXP
+
+NetApp BlueXP 可擴充並強化雲端管理程式所提供的功能。BlueXP 是統一化的控制平台、可為內部部署和雲端環境的儲存和資料服務提供混合式多雲端體驗。
+
+統一化管理體驗:: BlueXP可讓您從單一介面管理所有的儲存與資料資產。
++
+--
+您可以使用 BlueXP 來建立和管理雲端儲存設備（例如 Cloud Volumes ONTAP 和 Azure NetApp Files ）、移動、保護和分析資料、以及控制許多內部部署和邊緣儲存設備。
+
+https://bluexp.netapp.com["請至BlueXP網站深入瞭解"^]
+
+--
+新的導覽功能表:: 在 BlueXP 的導覽功能表中、服務現在會依類別進行組織、並根據其功能來命名。例如、您可以從 * 保護 * 類別存取 BlueXP 備份與還原。
++
+--
+image:screenshot-navigation-menu.png["BlueXP導覽功能表的快照、顯示儲存與健全狀況等類別。"]
+
+--
+新產品整合::
++
+--
+* 您現在可以在安裝Connector的AWS帳戶中管理Amazon S3儲存區。
+* 您現在可以管理更多內部儲存系統、例如E系列和StorageGRID E原地 儲存系統。
+* 您現在可以使用先前僅以獨立式服務形式提供的資料服務、使用獨立的 UI 、例如 BlueXP 數位顧問（ Active IQ ）。
+
+
+--
+深入瞭解::
++
+--
+* https://docs.netapp.com/us-en/bluexp-s3-storage/index.html["管理Amazon S3儲存區"^]
+* https://docs.netapp.com/us-en/bluexp-e-series/index.html["管理E系列儲存系統"^]
+* https://docs.netapp.com/us-en/bluexp-storagegrid/index.html["管理StorageGRID 功能"^]
+* https://docs.netapp.com/us-en/active-iq/digital-advisor-integration-with-bluexp.html["深入瞭解數位顧問整合"^]
+
+
+--
+
+
+
+
+=== 提示更新 NSS 認證
+
 Cloud Manager現在會在NetApp 支援網站 與您帳戶相關的更新權杖在3個月後過期時、提示您更新與您的候用帳戶相關的認證資料。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html#update-nss-credentials["瞭解如何管理NSS帳戶"^]
 
 

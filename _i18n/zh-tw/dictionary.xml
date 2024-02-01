@@ -3832,4 +3832,29 @@ Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" catego
   <block id="b63eb36e7e2e258bb1104cee2cd67c79" category="inline-link-macro">在 Microsoft Entra ID 中建立及設定服務主體</block>
   <block id="3c648c2bdafb5df126cd7d0e3dfcad8a" category="paragraph">如果您想要將不同的 Azure 認證搭配 BlueXP 使用、則必須將必要的權限授予 <block ref="45c7e71be639d18293cd100d389b6dc3" category="inline-link-macro-rx"></block> 針對每個 Azure 帳戶。下圖顯示兩個額外的帳戶、每個帳戶都設有提供權限的服務主體和自訂角色：</block>
   <block id="66106267dde1c941a1fde19110f5e949" category="paragraph">如果您使用 Marketplace 、您可以將自訂角色指派給 Connector VM 和系統指派的託管身分識別、以提供權限、或是使用 Microsoft Entra 服務主體。</block>
+  <block id="560c5ee7b92d80b3ef198362d8323824" category="section-title">介紹BlueXP</block>
+  <block id="6cc6d549680ee5bae0375022aa7c117c" category="paragraph">NetApp BlueXP 可擴充並強化雲端管理程式所提供的功能。BlueXP 是統一化的控制平台、可為內部部署和雲端環境的儲存和資料服務提供混合式多雲端體驗。</block>
+  <block id="4860911c5c67c5e04987564884e8b85e" category="list-text">統一化管理體驗</block>
+  <block id="c3eb39b445a75ad05505fe32c6f061df" category="list-text">BlueXP可讓您從單一介面管理所有的儲存與資料資產。</block>
+  <block id="a28e6578744ceeb545878235d414e497" category="paragraph">您可以使用 BlueXP 來建立和管理雲端儲存設備（例如 Cloud Volumes ONTAP 和 Azure NetApp Files ）、移動、保護和分析資料、以及控制許多內部部署和邊緣儲存設備。</block>
+  <block id="fc8ff23d0bf81d0f8427b5c75023f80e" category="inline-link">請至BlueXP網站深入瞭解</block>
+  <block id="6680bbdbd7bdd3c542020121df4cb264" category="paragraph"><block ref="6680bbdbd7bdd3c542020121df4cb264" category="inline-link-rx"></block></block>
+  <block id="31f0834695d820dc381e57397e466d12" category="list-text">新的導覽功能表</block>
+  <block id="e6481c5ec5346aeaf59c7bacad0a735a" category="list-text">在 BlueXP 的導覽功能表中、服務現在會依類別進行組織、並根據其功能來命名。例如、您可以從 * 保護 * 類別存取 BlueXP 備份與還原。</block>
+  <block id="7cb04a79785e33be744a126127319a35" category="inline-image-macro">BlueXP導覽功能表的快照、顯示儲存與健全狀況等類別。</block>
+  <block id="e3a2069a256a46b571b57fe46324f5c0" category="paragraph"><block ref="e3a2069a256a46b571b57fe46324f5c0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="68d4f3d7366b4ea59a65f0c44540e368" category="list-text">新產品整合</block>
+  <block id="cf6a3994dac804af910024cf740e14ac" category="list-text">您現在可以在安裝Connector的AWS帳戶中管理Amazon S3儲存區。</block>
+  <block id="054332983ba253fe4573945dcdbc8109" category="list-text">您現在可以管理更多內部儲存系統、例如E系列和StorageGRID E原地 儲存系統。</block>
+  <block id="bcaa38b35b3f595027217ec10755368a" category="list-text">您現在可以使用先前僅以獨立式服務形式提供的資料服務、使用獨立的 UI 、例如 BlueXP 數位顧問（ Active IQ ）。</block>
+  <block id="d59048f21fd887ad520398ce677be586" category="list-text">深入瞭解</block>
+  <block id="72098f7f145b12a125b92539edd37f4a" category="inline-link">管理Amazon S3儲存區</block>
+  <block id="8a4a49cb4536baac7f58e0eb6e2dac29" category="list-text"><block ref="8a4a49cb4536baac7f58e0eb6e2dac29" category="inline-link-rx"></block></block>
+  <block id="23c19e9851a45bd1a62c97b5c51e16ab" category="inline-link">管理E系列儲存系統</block>
+  <block id="120b07a98eececd322e53cecc2102f44" category="list-text"><block ref="120b07a98eececd322e53cecc2102f44" category="inline-link-rx"></block></block>
+  <block id="280f0ea2e556e240b5f15b51047b45b8" category="inline-link">管理StorageGRID 功能</block>
+  <block id="e85444ee57c2061143502fa15b083bcc" category="list-text"><block ref="e85444ee57c2061143502fa15b083bcc" category="inline-link-rx"></block></block>
+  <block id="f3bb3ec21babd88d81e5f7aefe69cced" category="inline-link">深入瞭解數位顧問整合</block>
+  <block id="fd93e0ac3cede5691afd22e4d95042e3" category="list-text"><block ref="fd93e0ac3cede5691afd22e4d95042e3" category="inline-link-rx"></block></block>
+  <block id="ba1f7346b31e12566f94dd10dbca2587" category="section-title">提示更新 NSS 認證</block>
 </blocks>
