@@ -24,9 +24,19 @@ summary: 已知限制指出本產品版本不支援的平台、裝置或功能�
 
 
 
+=== EC2 執行個體需要 IMDSv1
+
+在使用標準模式或受限模式時、在 AWS 中的 EC2 執行個體上手動安裝 Connector 軟體之前、您必須確保 EC2 執行個體使用 Instance 中繼資料服務版本 1 （ IMDSv1 ）。IMSv2 不支援 Connector 。
+
+由於 IMDSv2 現在是新 EC2 執行個體的預設版本、因此您必須修改執行個體中繼資料選項、才能還原 IMDSv1 的使用。
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-IMDS-existing-instances.html#modify-restore-IMDSv1["AWS 文件：還原 IMDSv1 的使用"^]
+
+
+
 === 不應變更預設 EC2 執行個體設定
 
-在 AWS 中部署 Connector 時、預設會設定下列 EC2 執行個體設定：
+當您從 BlueXP 或 AWS Marketplace 在 AWS 中部署 Connector 時、依預設會設定下列 EC2 執行個體設定：
 
 * IMDSv2 設為選用
 * 已將 HttpToken 設定為選用

@@ -40,6 +40,14 @@ image:screenshot-edit-name.png["螢幕擷取畫面、顯示在使用者設定下
 
 
 
+=== Amazon EC2 執行個體中繼資料服務需求
+
+您應該知道、在 AWS 中手動安裝 Connector 軟體之前、 EC2 執行個體需要 IMDSv1 。
+
+link:reference-limitations.html["深入瞭解 AWS 中的 IMDSv1 需求"]。
+
+
+
 == 2024 年 1 月 11 日
 
 
