@@ -34,17 +34,17 @@ summary: 瞭解 BlueXP 管理功能的新功能： BlueXP 帳戶、連接器、�
 
 如果您使用 NetApp 雲端認證登入 BlueXP 、現在您可以在 * 使用者設定 * 中編輯您的名稱。
 
-image:screenshot-edit-name.png["螢幕擷取畫面、顯示在使用者設定下編輯您的姓名的能力。"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-edit-name.png["螢幕擷取畫面、顯示在使用者設定下編輯您的姓名的能力。"]
 
 如果您以同盟連線或 NetApp 支援網站 帳戶登入、則不支援編輯您的名稱。
 
 
 
-=== Amazon EC2 執行個體中繼資料服務需求
+=== EC2 執行個體的 IMDSv1 需求
 
-您應該知道、在 AWS 中手動安裝 Connector 軟體之前、 EC2 執行個體需要 IMDSv1 。
+請注意、在 Amazon EC2 執行個體上、必須先使用執行個體中繼資料服務版本 1 （ IMDSv1 ）、才能在 AWS 中手動安裝 Connector 軟體。
 
-link:reference-limitations.html["深入瞭解 AWS 中的 IMDSv1 需求"]。
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-limitations.html["深入瞭解 AWS 中的 IMDSv1 需求"]。
 
 
 
@@ -107,7 +107,7 @@ BlueXP 現已推出新的私有模式版本。此版本包含 3.9.35 版的 Conn
 
 * 當您從 BlueXP 在 AWS 中建立 Connector 時、現在可以在金鑰配對欄位中搜尋、以便更輕鬆地找到您要與 Connector 執行個體搭配使用的金鑰配對。
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-connector-aws-key-pair.png["從 BlueXP 在 AWS 中建立連接器時、會出現在「網路」頁面上的「金鑰配對」欄位中搜尋選項的螢幕擷取畫面。"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-connector-aws-key-pair.png["從 BlueXP 在 AWS 中建立連接器時、會出現在「網路」頁面上的「金鑰配對」欄位中搜尋選項的螢幕擷取畫面。"]
 
 * 此更新也包含錯誤修正。
 
