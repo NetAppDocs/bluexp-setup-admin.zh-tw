@@ -170,15 +170,21 @@ sudo /path/BlueXP-Connector-offline-<version>
 . 如果您變更了公用IP位址、而且需要連線至連接器上執行的本機使用者介面、請重新啟動連接器執行個體、以使用BlueXP登錄新的IP位址。
 . 如果您變更了私有IP位址、請更新Cloud Volumes ONTAP 支援的還原組態檔案備份位置、以便將備份傳送到Connector上的新私有IP位址。
 +
-.. 從Cloud Volumes ONTAP 支援的CLI執行下列命令、以移除目前的備份目標：
+您需要更新每個 Cloud Volumes ONTAP 系統的備份位置。
+
++
+.. 從 Cloud Volumes ONTAP CLI 執行下列命令以顯示目前的備份目標：
 +
 [source, cli]
 ----
-system configuration backup settings modify -destination ""
+system configuration backup show
 ----
-.. 移至BlueXP並開啟工作環境。
-.. 選取功能表、然後選取 * 進階 > 組態備份 * 。
-.. 選取 * 設定備份目標 * 。
+.. 執行下列命令以更新備份目標的 IP 位址：
++
+[source, cli]
+----
+system configuration backup settings modify -destination <target-location>
+----
 
 
 

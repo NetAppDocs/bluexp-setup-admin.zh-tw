@@ -2021,10 +2021,6 @@
   <block id="bfe6d8b96fb30d923a8089019f265d6b" category="list-text">依照雲端供應商的指示、變更連接器執行個體的本機IP位址或公有IP位址（或兩者）。</block>
   <block id="db56ea1b582b55a06a12a4267a2c8d20" category="list-text">如果您變更了公用IP位址、而且需要連線至連接器上執行的本機使用者介面、請重新啟動連接器執行個體、以使用BlueXP登錄新的IP位址。</block>
   <block id="c2b41de08c51bfb56dcd23e174ea8788" category="list-text">如果您變更了私有IP位址、請更新Cloud Volumes ONTAP 支援的還原組態檔案備份位置、以便將備份傳送到Connector上的新私有IP位址。</block>
-  <block id="a6a2880e12afb78f4820f1aaf905127c" category="list-text">從Cloud Volumes ONTAP 支援的CLI執行下列命令、以移除目前的備份目標：</block>
-  <block id="62d4c1187f5c26c9b533034e1decce4b" category="list-text">移至BlueXP並開啟工作環境。</block>
-  <block id="4ca9c62606d1c97138981cac6d8eff5f" category="list-text">選取功能表、然後選取 * 進階 &gt; 組態備份 * 。</block>
-  <block id="eb65e51e9fa3b9b54ae0d3622c7f3d2c" category="list-text">選取 * 設定備份目標 * 。</block>
   <block id="eb9bb09a006b6e7bcc7d0b9525344bcf" category="section-title">編輯連接器的URI</block>
   <block id="c160cffd96a1bb98161a7add244e274f" category="paragraph">新增及移除 Connector 的統一資源識別元（ URI ）。</block>
   <block id="f98b44043815b68b5ba8272fb252dafd" category="list-text">從 BlueXP 標頭中選取 * Connector* 下拉式清單。</block>
@@ -3857,4 +3853,16 @@ Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" catego
   <block id="f3bb3ec21babd88d81e5f7aefe69cced" category="inline-link">深入瞭解數位顧問整合</block>
   <block id="fd93e0ac3cede5691afd22e4d95042e3" category="list-text"><block ref="fd93e0ac3cede5691afd22e4d95042e3" category="inline-link-rx"></block></block>
   <block id="ba1f7346b31e12566f94dd10dbca2587" category="section-title">提示更新 NSS 認證</block>
+  <block id="5985540cd0cc5c0e58eaebe95659534e" category="section-title">2024 年 2 月 15 日</block>
+  <block id="875cabf7fcb6d8f631b842029efd2117" category="section-title">連接器 3.9.37</block>
+  <block id="33596391cf2ec8b74b76bf635ea4c6e2" category="paragraph">此版本的 BlueXP Connector 包括少量的安全性改善和錯誤修正。</block>
+  <block id="937efe0b961bcb892e05e19e0c147973" category="paragraph">目前、 3.9.37 版本適用於標準模式和受限模式。</block>
+  <block id="f1c2261d89d52febeed15edf1f34a5b7" category="section-title">編輯名稱</block>
+  <block id="c42458c54134318669b685ee8730a478" category="paragraph">如果您使用 NetApp 雲端認證登入 BlueXP 、現在您可以在 * 使用者設定 * 中編輯您的名稱。</block>
+  <block id="ab15c21485050b3b0c09a3b7b31d97d7" category="inline-image-macro">螢幕擷取畫面、顯示在使用者設定下編輯您的姓名的能力。</block>
+  <block id="19f8b99a1063fac466ee71dbd38b8447" category="paragraph"><block ref="19f8b99a1063fac466ee71dbd38b8447" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4a784443543a41df794122c52fae1df7" category="paragraph">如果您以同盟連線或 NetApp 支援網站 帳戶登入、則不支援編輯您的名稱。</block>
+  <block id="bf032cb5bcb45fec81b7b5b993ebabe4" category="paragraph">您需要更新每個 Cloud Volumes ONTAP 系統的備份位置。</block>
+  <block id="2a066cad1fef063fff0ca56b5d416b10" category="list-text">從 Cloud Volumes ONTAP CLI 執行下列命令以顯示目前的備份目標：</block>
+  <block id="78cae36205d703274f695ea4e85f6ffe" category="list-text">執行下列命令以更新備份目標的 IP 位址：</block>
 </blocks>
