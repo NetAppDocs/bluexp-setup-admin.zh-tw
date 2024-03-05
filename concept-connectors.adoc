@@ -74,6 +74,7 @@ https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["�
 * 移轉報告
 * 內部部署ONTAP 的不支援叢集整合至BlueXP資料服務
 * 營運恢復能力 ^1^
+* 勒索軟體保護
 * 系統StorageGRID
 * 分層
 * Volume 快取
