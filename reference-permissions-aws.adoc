@@ -73,6 +73,7 @@ summary: 當BlueXP在AWS中啟動Connector執行個體時、它會將原則附�
     "Statement": [
         {
             "Action": [
+                "ec2:DescribeAvailabilityZones",
                 "ec2:DescribeInstances",
                 "ec2:DescribeInstanceStatus",
                 "ec2:RunInstances",
@@ -1301,6 +1302,16 @@ Connector會提出下列API要求、以探索及管理Amazon EKS叢集：
 == 變更記錄
 
 新增和移除權限時、我們會在下方各節中加以註記。
+
+
+
+=== 2024 年 3 月 8 日
+
+Connector 原則現在包含下列權限：
+
+EC2 ：去除可用性區域
+
+即將發行的版本需要此權限。我們會在發行版本推出時更新版本資訊、提供更多詳細資料。
 
 
 

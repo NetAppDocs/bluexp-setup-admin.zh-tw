@@ -18,6 +18,54 @@ summary: 瞭解 BlueXP 管理功能的新功能： BlueXP 帳戶、連接器、�
 
 
 
+== 2024 年 3 月 8 日
+
+
+
+=== 連接器 3.9.38
+
+目前、 3.9.38 版本適用於標準模式和受限模式。此版本包括 AWS 中的 IMDSv2 支援和 AWS 權限更新。
+
+
+
+==== 支援 IMDSv2
+
+BlueXP 現在支援 Amazon EC2 執行個體中繼資料服務版本 2 （ IMDSv2 ）與 Connector 執行個體及 Cloud Volumes ONTAP 執行個體。IMDSv2 提供更強大的保護功能、防範弱點。之前僅支援 IMDSv1 。
+
+https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/["從 AWS 安全性部落格深入瞭解 IMDSv2"^]
+
+在 EC2 執行個體上、執行個體中繼資料服務（ IMDS ）的啟用方式如下：
+
+* 適用於 BlueXP 、 AWS Marketplace 或使用的新 Connector 部署 https://docs.netapp.com/us-en/bluexp-automation/automate/overview.html["Terraform 指令碼"^]、根據預設、 EC2 執行個體上會啟用 IMDSv2 。
+* 如果您在 AWS 中啟動新的 EC2 執行個體、然後手動安裝 Connector 軟體、則預設也會啟用 IMDSv2 。
+* 對於現有的 Connectors 、仍支援 IMDSv1 、但您可以視需要在 EC2 執行個體上手動設定 IMDSv2 。
+* 對於 Cloud Volumes ONTAP 、根據預設、會在新的和現有的執行個體上啟用 IMDSv1 。您可以視需要在 EC2 執行個體上手動設定 IMDSv2 。
+
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html["瞭解如何在現有執行個體上設定 IMDSv2"]。
+
+
+
+==== AWS 權限更新
+
+我們更新了 AWS 的 Connector 原則、以納入「 EC2 ： DescrubeAvailabilityZones 」權限。即將發行的版本需要此權限。我們會在發行版本推出時更新版本資訊、提供更多詳細資料。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["檢視 Connector 的 AWS 權限"]。
+
+
+
+=== Proxy 設定和 Cloud Volumes ONTAP 設定
+
+Connector 的 Proxy 伺服器設定現在可從「 * 管理連接器 * 」頁面（標準模式）或「 * 編輯連接器 * 」頁面（限制模式和私有模式）取得。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html["瞭解如何設定 Connector 以使用 Proxy 伺服器"]。
+
+此外、我們將 * 連接器設定 * 頁面重新命名為 * Cloud Volumes ONTAP 設定 * 。
+
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-cvo-settings.png["螢幕擷取畫面、顯示「設定」功能表中可用的「 Cloud Volumes ONTAP 設定」選項。"]
+
+
+
 == 2024 年 2 月 15 日
 
 
@@ -37,14 +85,6 @@ summary: 瞭解 BlueXP 管理功能的新功能： BlueXP 帳戶、連接器、�
 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-edit-name.png["螢幕擷取畫面、顯示在使用者設定下編輯您的姓名的能力。"]
 
 如果您以同盟連線或 NetApp 支援網站 帳戶登入、則不支援編輯您的名稱。
-
-
-
-=== EC2 執行個體的 IMDSv1 需求
-
-請注意、在 Amazon EC2 執行個體上、必須先使用執行個體中繼資料服務版本 1 （ IMDSv1 ）、才能在 AWS 中手動安裝 Connector 軟體。
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/reference-limitations.html["深入瞭解 AWS 中的 IMDSv1 需求"]。
 
 
 

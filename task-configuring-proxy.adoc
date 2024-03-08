@@ -31,11 +31,39 @@ BlueXP支援HTTP和HTTPS。Proxy 伺服器可以位於雲端或網路中。
 請注意、此作業會重新啟動Connector。請先確定 Connector 未執行任何作業、然後再繼續。
 
 .步驟
-. 在 BlueXP 主控台的右上角、選取設定圖示、然後選取 * 連接器設定 * 。
+. 瀏覽至 * 編輯 BlueXP Connector* 頁面。
 +
-image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」圖示的快照。"]
+導覽方式取決於您是以標準模式使用 BlueXP （從 SaaS 網站存取 BlueXP 介面）、還是以受限模式或私有模式使用 BlueXP （從 Connector 主機本機存取 BlueXP 介面）。
 
-. 在 * 一般 * 下、選取 * HTTP Proxy 組態 * 。
++
+[role="tabbed-block"]
+====
+.標準模式
+--
+.. 從 BlueXP 標頭中選取 * Connector* 下拉式清單。
+.. 選取 * 管理連接器 * 。
++
+image:screenshot-manage-connectors.png["螢幕擷取畫面、顯示選取 Connector 之後可用的「管理連接器」頁面。"]
+
+.. 選取 Connector 的動作功能表、然後選取 * 編輯 Connector* 。
++
+image:screenshot-edit-connector-standard.png["螢幕擷取畫面顯示動作功能表中可用的編輯連接器選項。"]
+
+
+
+--
+.受限或私人模式
+--
+.. 從 BlueXP 標頭中選取 * Connector* 下拉式清單。
+.. 選擇 * 編輯 Connector* 。
++
+image:screenshot-edit-connector.png["螢幕擷取畫面顯示 [ 編輯連接器 ] 選項，您可以在展開 [ 連接器 ] 功能表之後使用此選項。"]
+
+
+
+--
+====
+. 選擇 * HTTP Proxy 組態 * 。
 . 設定Proxy：
 +
 .. 選取 * 啟用 Proxy* 。
@@ -69,10 +97,38 @@ image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」�
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html["深入瞭解如何搭配Cloud Volumes ONTAP 使用Azure Private Link或服務端點搭配使用"^]
 
 .步驟
-. 在 BlueXP 主控台的右上角、選取設定圖示、然後選取 * 連接器設定 * 。
+. 瀏覽 * 編輯 BlueXP Connector* 頁面：
 +
-image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」圖示的快照。"]
+導覽方式取決於您是以標準模式使用 BlueXP （從 SaaS 網站存取 BlueXP 介面）、還是以受限模式或私有模式使用 BlueXP （從 Connector 主機本機存取 BlueXP 介面）。
 
-. 在 * 一般 * 下、選取 * 支援直接 API 流量 * 。
++
+[role="tabbed-block"]
+====
+.標準模式
+--
+.. 從 BlueXP 標頭中選取 * Connector* 下拉式清單。
+.. 選取 * 管理連接器 * 。
++
+image:screenshot-manage-connectors.png["螢幕擷取畫面、顯示選取 Connector 之後可用的「管理連接器」頁面。"]
+
+.. 選取 Connector 的動作功能表、然後選取 * 編輯 Connector* 。
++
+image:screenshot-edit-connector-standard.png["螢幕擷取畫面顯示動作功能表中可用的編輯連接器選項。"]
+
+
+
+--
+.受限或私人模式
+--
+.. 從 BlueXP 標頭中選取 * Connector* 下拉式清單。
+.. 選擇 * 編輯 Connector* 。
++
+image:screenshot-edit-connector.png["螢幕擷取畫面顯示 [ 編輯連接器 ] 選項，您可以在展開 [ 連接器 ] 功能表之後使用此選項。"]
+
+
+
+--
+====
+. 選取 * 支援直接 API 流量 * 。
 . 選取核取方塊以啟用選項、然後選取 * 儲存 * 。
 

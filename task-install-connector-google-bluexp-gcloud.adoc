@@ -378,7 +378,7 @@ https://cloud.google.com/apis/docs/getting-started#enabling_apis["Google Cloud �
 直接從 BlueXP 網路型主控台或使用 gCloud 建立 Connector 。
 
 .關於這項工作
-建立 Connector 會使用預設組態、在 Google Cloud 中部署虛擬機器執行個體。 link:reference-connector-default-config.html["瞭解連接器的預設組態"]。
+建立 Connector 會使用預設組態、在 Google Cloud 中部署虛擬機器執行個體。建立 Connector 之後、不應變更為 CPU 或 RAM 較少的較小 VM 執行個體。 link:reference-connector-default-config.html["瞭解連接器的預設組態"]。
 
 [role="tabbed-block"]
 ====

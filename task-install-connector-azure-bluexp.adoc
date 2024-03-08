@@ -420,7 +420,7 @@ image:screenshot_azure_client_secret.gif["Azure 入口網站的螢幕擷取畫�
 直接從 BlueXP 網路型主控台建立 Connector 。
 
 .關於這項工作
-從 BlueXP 建立 Connector 會使用預設組態、在 Azure 中部署虛擬機器。 link:reference-connector-default-config.html["瞭解連接器的預設組態"]。
+從 BlueXP 建立 Connector 會使用預設組態、在 Azure 中部署虛擬機器。建立 Connector 之後、不應變更為 CPU 或 RAM 較少的較小 VM 類型。 link:reference-connector-default-config.html["瞭解連接器的預設組態"]。
 
 .開始之前
 您應該擁有下列項目：

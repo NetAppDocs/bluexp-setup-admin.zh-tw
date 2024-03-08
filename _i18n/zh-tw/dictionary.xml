@@ -1401,9 +1401,7 @@
   <block id="f624e5f75138eb92caddd44e1bc7342e" category="list-text">標記：getTagValues</block>
   <block id="5e665d8f5cf0c341dce9f3bd5e7f4cc0" category="list-text">標記：TagResources</block>
   <block id="5e10058ad3f07bfeca3eef81de09ce28" category="list-text">標記：取消標記資源</block>
-  <block id="a05b5ce37ea267c22e70da731bcc3494" category="section-title">2023 年 6 月 6 日</block>
   <block id="14cbfe27bd7092d1b2ab4502adbdd584" category="paragraph">Cloud Volumes ONTAP 現在需要下列權限：</block>
-  <block id="1be1ae3d277ebf372ecefda4d444dbbb" category="section-title">2023 年 2 月 14 日</block>
   <block id="bf9c7c9727a11f040da47cdd589f7ea6" category="paragraph">BlueXP 分層現在需要下列權限：</block>
   <block id="b2cc56e18c7250863c6c74a223137e16" category="summary">以私有模式部署 Connector 、讓您可以使用 BlueXP 、而不需外傳連線至 BlueXP SaaS 層。若要開始使用、請安裝 Connector 、存取 Connector 上執行的使用者介面來設定 BlueXP 、然後提供您先前設定的雲端權限。</block>
   <block id="2f549fb867eb9c0be636782d32264aa6" category="doc">以私有模式部署 Connector</block>
@@ -1524,10 +1522,6 @@
   <block id="482723983a4f2af954e36ff41e567451" category="doc">已知限制</block>
   <block id="6802f2d551252ff38d10cfab7b7735b3" category="paragraph">這些限制僅適用於BlueXP的設定與管理：Connector、SaaS平台等。</block>
   <block id="83e566847d42782b3343e108150d7f57" category="section-title">連接器限制</block>
-  <block id="cf4525e15b866700f10e91573643ba54" category="section-title">不應變更預設 EC2 執行個體設定</block>
-  <block id="b6c588d5cb8cbc221e66a15877aed30a" category="list-text">IMDSv2 設為選用</block>
-  <block id="b29d18da75a3c01939275500a8fc2e70" category="list-text">已將 HttpToken 設定為選用</block>
-  <block id="a91c1c121088ffbd72985e0bf2459f87" category="paragraph">這些設定不應變更為必要。將這些設定變更為「必要」會影響 Connector 和 Cloud Volumes ONTAP 的可用度。</block>
   <block id="911d15b7ac55478d2b567e8488658687" category="section-title">可能與172範圍內的IP位址發生衝突</block>
   <block id="efdb2123102821583a0af000d2fa9040" category="paragraph">BlueXP部署連接器時、會有兩個介面、其中IP位址介於172.17.0.0/16和172.18.0.0/16範圍內。</block>
   <block id="5646658d58bb92ba775a6c2cd024ef17" category="paragraph">如果您的網路已設定具有上述任一範圍的子網路、則可能會遇到來自BlueXP的連線故障。例如ONTAP 、在BlueXP中探索內部的功能不全的叢集可能會失敗。</block>
@@ -2328,8 +2322,6 @@
   <block id="58dcadbd8de2066b4071d6ed4e0b4baf" category="section-title">在連接器上啟用Proxy</block>
   <block id="a211e8f0d908dfd70d36364b3fbd91b0" category="paragraph">當您將連接器設定為使用 Proxy 伺服器、連接器及 Cloud Volumes ONTAP 其所管理的各種系統（包括任何 HA 協調器）時、都會使用 Proxy 伺服器。</block>
   <block id="f5cfd333047dfa220ee8666d14286034" category="paragraph">請注意、此作業會重新啟動Connector。請先確定 Connector 未執行任何作業、然後再繼續。</block>
-  <block id="1ba8304c99952e6f64861018bbefcdd0" category="list-text">在 BlueXP 主控台的右上角、選取設定圖示、然後選取 * 連接器設定 * 。</block>
-  <block id="861d390100edeb52d8f385f026c72049" category="list-text">在 * 一般 * 下、選取 * HTTP Proxy 組態 * 。</block>
   <block id="2c451caa323474f558c4e4065578647d" category="list-text">設定Proxy：</block>
   <block id="dabc8d2c79f6529ca393b4b3d4f75805" category="list-text">選取 * 啟用 Proxy* 。</block>
   <block id="25e8eb6a683e97e04e337e061a18205c" category="list-text">使用語法指定伺服器<block ref="f8f3e404ad5e32f60f55bb48e6395ae6" category="inline-link-rx"></block> 或<block ref="9ab29a9097f3907435367cc314192885" category="inline-link-rx"></block></block>
@@ -2339,7 +2331,6 @@
   <block id="37bccc08c3c6cebbbf500cfe54775991" category="paragraph">如果您停用使用Azure私有連結Cloud Volumes ONTAP 搭配使用、並改用服務端點、則必須啟用直接API流量。否則、流量將無法正確路由傳送。</block>
   <block id="ac10c9401f16ed5ff0a029bce2712adc" category="inline-link">深入瞭解如何搭配Cloud Volumes ONTAP 使用Azure Private Link或服務端點搭配使用</block>
   <block id="6143580a5ae490efe32d3c566650ad6c" category="paragraph"><block ref="6143580a5ae490efe32d3c566650ad6c" category="inline-link-rx"></block></block>
-  <block id="73918d630dd9a657f3442a2c1231fd74" category="list-text">在 * 一般 * 下、選取 * 支援直接 API 流量 * 。</block>
   <block id="c569dd49f93a05d537d61130ed43e6e9" category="list-text">選取核取方塊以啟用選項、然後選取 * 儲存 * 。</block>
   <block id="9345f603d48306b04203c8a77bc1ec43" category="summary">建立 BlueXP 帳戶時、只會包含單一管理員使用者和工作區。您可以透過新增使用者、建立自動化服務帳戶、新增工作區等方式來管理帳戶、以符合組織的需求。</block>
   <block id="f2b686d839a94b2d7f1e0a55d1c7c302" category="doc">管理 BlueXP 帳戶</block>
@@ -3456,7 +3447,6 @@ Azure 政府地區不需要此端點。</block>
   <block id="bbc8741d5b8cb60c926722b934bec008" category="section-title">步驟 2 ：設定 AWS 權限</block>
   <block id="76fc03e9ac56ec6623a5f3fd59761d4b" category="section-title">步驟 3 ：建立 Connector</block>
   <block id="da14ee4a8100ac08980150bcda1e397d" category="inline-link-macro">瞭解連接器的預設組態</block>
-  <block id="f1620bf756a71002318f3eb8b1277d2f" category="paragraph">從 BlueXP 建立 Connector 會使用預設組態、在 AWS 中部署 EC2 執行個體。 <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
   <block id="26b0998fe035211b8097187e431e16b9" category="summary">若要在您自己的 Linux 主機上手動安裝 Connector 、您必須檢閱主機需求、設定網路、準備 AWS 權限、安裝 Connector 、然後提供您準備的權限。</block>
   <block id="eb44c1bbcb138bd8d43dab2a2d5dd798" category="doc">在 AWS 中手動安裝 Connector</block>
   <block id="2cdec4e0f473161523115d9e1cc50257" category="list-text">建立 Connector 時、您需要選取 EC2 金鑰配對以搭配執行個體使用。</block>
@@ -3507,7 +3497,6 @@ Azure 政府地區不需要此端點。</block>
   <block id="fbb7d70eda793afc4159d1bd8f3c3814" category="paragraph">請依照下列步驟準備其中一種驗證方法、以搭配 BlueXP 使用。</block>
   <block id="a9242e0bd7c37f9c26c954ae4eff29b3" category="open-title">Azure 帳戶</block>
   <block id="d1ff9355f81257b2c8a7693e702ba3f7" category="section-title">步驟 4 ：建立 Connector</block>
-  <block id="f23ed1e499f82b7b35d463ccef21eed1" category="paragraph">從 BlueXP 建立 Connector 會使用預設組態、在 Azure 中部署虛擬機器。 <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
   <block id="2f44f891a2e61a894ccc4f30dfd7b4be" category="paragraph"><block ref="8d330a1f00fb06fce7867e682fb9a351" category="inline-xref-macro-rx"></block>。</block>
   <block id="234849cccf32785a20387f435fbc1665" category="paragraph">在標準模式下使用 BlueXP 時、您提供權限的方式取決於您規劃建立 Connector 的方式。</block>
   <block id="235df19fd66aa61dd8174f1a6480f822" category="paragraph">若要瞭解如何設定權限、請參閱下列內容：</block>
@@ -3546,7 +3535,6 @@ Azure 政府地區不需要此端點。</block>
   <block id="4d55aaa36c67fd980b8ca20ca5db6ef9" category="paragraph">您必須先為部署 Connector VM 的 Google Cloud 使用者設定權限、才能從 BlueXP 或使用 gCloud 部署 Connector 。</block>
   <block id="8456ad5c97fd1db8b43fc61d8ea03799" category="section-title">步驟 6 ：建立 Connector</block>
   <block id="bb919bb919074dbe6c69b05695d0a1aa" category="paragraph">直接從 BlueXP 網路型主控台或使用 gCloud 建立 Connector 。</block>
-  <block id="b03261236b57a26202438940439ee786" category="paragraph">建立 Connector 會使用預設組態、在 Google Cloud 中部署虛擬機器執行個體。 <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
   <block id="ec2ce152b3b60e3721ae091911de473d" category="list-text">瞭解 VM 執行個體需求。</block>
   <block id="aab924c92611ee11b49b8687e53ec943" category="list-text">* CPU* ： 4 核心或 4 個 vCPU</block>
   <block id="3f8517f6b0146fc27e0a5144098713fb" category="list-text">* RAM* ： 14 GB</block>
@@ -3862,19 +3850,91 @@ Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" catego
   <block id="bf032cb5bcb45fec81b7b5b993ebabe4" category="paragraph">您需要更新每個 Cloud Volumes ONTAP 系統的備份位置。</block>
   <block id="2a066cad1fef063fff0ca56b5d416b10" category="list-text">從 Cloud Volumes ONTAP CLI 執行下列命令以顯示目前的備份目標：</block>
   <block id="78cae36205d703274f695ea4e85f6ffe" category="list-text">執行下列命令以更新備份目標的 IP 位址：</block>
-  <block id="375a8301ce4caf38298dba148206d69c" category="section-title">EC2 執行個體需要 IMDSv1</block>
-  <block id="997791080d6fcd216110fbfe145cef98" category="paragraph">在使用標準模式或受限模式時、在 AWS 中的 EC2 執行個體上手動安裝 Connector 軟體之前、您必須確保 EC2 執行個體使用 Instance 中繼資料服務版本 1 （ IMDSv1 ）。IMSv2 不支援 Connector 。</block>
   <block id="95371958414dbd4f614d7ff8348b9b31" category="paragraph">由於 IMDSv2 現在是新 EC2 執行個體的預設版本、因此您必須修改執行個體中繼資料選項、才能還原 IMDSv1 的使用。</block>
   <block id="c637448044ff305c64a7c1cd8b77b196" category="inline-link">AWS 文件：還原 IMDSv1 的使用</block>
   <block id="dd3ddc1f5982d8946100b097e7993378" category="paragraph"><block ref="dd3ddc1f5982d8946100b097e7993378" category="inline-link-rx"></block></block>
-  <block id="1dd4f77b0b91e0fcf80bc700a9a86fd6" category="paragraph">當您從 BlueXP 或 AWS Marketplace 在 AWS 中部署 Connector 時、依預設會設定下列 EC2 執行個體設定：</block>
   <block id="a781cb38c0c2c5288c02850fcd3cda7d" category="list-text">IMDSv1</block>
   <block id="1b863f7993d117f5ab767043f7a0bcdb" category="list-text">EC2 執行個體需要執行個體中繼資料服務版本 1 （ IMDSv1 ）。IMSv2 不支援 Connector 。</block>
-  <block id="f8197842b4e7ad7b7b15ef36dcb4ae78" category="inline-link-macro">深入瞭解 AWS 中的 IMDSv1 需求</block>
   <block id="daf15a33710ed6188d035a01c084bee9" category="paragraph"><block ref="daf15a33710ed6188d035a01c084bee9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c7f67b21e0c8d093756f7b3a59e8d2e8" category="section-title">EC2 執行個體的 IMDSv1 需求</block>
-  <block id="09477b433fb18272d0d3ee6b7a7e23ad" category="paragraph">請注意、在 Amazon EC2 執行個體上、必須先使用執行個體中繼資料服務版本 1 （ IMDSv1 ）、才能在 AWS 中手動安裝 Connector 軟體。</block>
-  <block id="ae1d4316f9a8104fa910e65fd2096cb3" category="paragraph"><block ref="3fb75bc46ec80b0989f43707450cda37" category="inline-link-rx"></block>。</block>
   <block id="bbd3f8aeec942b5e418da40a3101ed3e" category="paragraph"><block ref="bbd3f8aeec942b5e418da40a3101ed3e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7478f8f98c41fc2f5747e6f31892fe6f" category="list-text">勒索軟體保護</block>
+  <block id="4a1a05ee22994e328d9ec0402052b926" category="section-title">2024 年 3 月 8 日</block>
+  <block id="e95eef6ba2551f885847cc2b51459994" category="paragraph">Connector 原則現在包含下列權限：</block>
+  <block id="33e595f0fd43192e3f1d28a291860881" category="paragraph">EC2 ：去除可用性區域</block>
+  <block id="b12f2c2fee8ccdb3cad2171b53ed3cfd" category="paragraph">即將發行的版本需要此權限。我們會在發行版本推出時更新版本資訊、提供更多詳細資料。</block>
+  <block id="6a7140fd5370f297d9a834d30e26ffde" category="section-title">2023 年 6 月 6 日</block>
+  <block id="5fc531b28735a6e141b39c2b5e2f1dcc" category="section-title">2023 年 2 月 14 日</block>
+  <block id="d1b9e6a9e660eac14ba251761cf89e4b" category="paragraph">從 BlueXP 建立 Connector 會使用預設組態、在 Azure 中部署虛擬機器。建立 Connector 之後、不應變更為 CPU 或 RAM 較少的較小 VM 類型。 <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
+  <block id="d54ab8a1d5dd0b1066137c76d5021844" category="section-title">VM 或執行個體類型</block>
+  <block id="c371dc405db8facc84986c93c1618d1e" category="paragraph">如果您直接從 BlueXP 建立 Connector 、 BlueXP 會使用預設組態、在雲端供應商中部署虛擬機器執行個體。建立 Connector 之後、不應變更為 CPU 或 RAM 較少的較小 VM 執行個體。</block>
+  <block id="bdfd85d15fc6c7ed4e5a19af0a8f1999" category="paragraph">CPU 和 RAM 需求如下：</block>
+  <block id="84fc34721c0c912a148a70d22ac7cd5a" category="paragraph"><block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
+  <block id="98dddf7eafbbdfa88756d62945237473" category="section-title">需要在 Amazon EC2 執行個體上使用 IMDSv2</block>
+  <block id="824e7fae55f361d08bb9bd5bdf494ff0" category="inline-link">從 AWS 安全性部落格深入瞭解 IMDSv2</block>
+  <block id="c49009b6f155acc311d4014abe19ec98" category="paragraph">從 2024 年 3 月開始、 BlueXP 現在支援 Amazon EC2 執行個體中繼資料服務版本 2 （ IMDSv2 ）搭配 Connector 和 Cloud Volumes ONTAP （包括 HA 部署的協調器）。IMDSv2 提供更強大的保護功能、防範弱點。<block ref="cb4336eb4a08d88f663206e070c9e1af" category="inline-link-rx"></block></block>
+  <block id="4166379ba80de4be17a81c04ec7819c4" category="list-text">在所有新的 Connector EC2 執行個體上、 IMSv2 預設為啟用。IMDSv1 在 2024 年 3 月之前啟用。</block>
+  <block id="6f218fd0d06a9a2564453a73bc05ee13" category="list-text">根據預設、所有新的和現有的 Cloud Volumes ONTAP EC2 執行個體都會啟用 IMDSv1 。</block>
+  <block id="7e6c98db93605459a9b69da423ef4684" category="paragraph">如果您的安全性原則要求、您可以將 EC2 執行個體設定為使用 IMDSv2 。</block>
+  <block id="b2f60e6f194d16e1bf9deaa367cd9eae" category="list-text">Connector 版本必須為 3.9.38 或更新版本。</block>
+  <block id="177aac65c5f4518e1a35eb1479fac1a1" category="list-text">此變更需要重新啟動 Cloud Volumes ONTAP 執行個體。</block>
+  <block id="5024434a1308ae5aff26ba15a55bce13" category="paragraph">這些步驟需要使用 AWS CLI 、因為您必須將回應躍點限制變更為 3 。</block>
+  <block id="674bc63ff5794e51146ad842329f5afd" category="list-text">需要在 Connector 執行個體上使用 IMDSv2 ：</block>
+  <block id="7c08236138358b7a6e12dcdf43b92969" category="list-text">安裝 AWS CLI 。</block>
+  <block id="97b647a1aeead85f7ff9e6660cadfd49" category="inline-link">AWS 文件：安裝或更新至 AWS CLI 的最新版本</block>
+  <block id="0eccbc3e7cb345786a9c69cf32e0b410" category="paragraph"><block ref="0eccbc3e7cb345786a9c69cf32e0b410" category="inline-link-rx"></block></block>
+  <block id="fdedd16440c0c883dfc66fe8ef510c62" category="list-text">使用<block ref="163406f31b4a352573543db4a8b761b7" prefix=" " category="inline-code"></block> 命令要求使用 IMDSv2 、並將「輸入回應躍點」限制變更為 3 。</block>
+  <block id="d83ec76d50b3bda1cf13e81a46048f91" category="admonition">。<block ref="b14a1de55f9953d856d03b1230916191" prefix=" " category="inline-code"></block> 參數會將 IMDSv2 設為必要。何時<block ref="b14a1de55f9953d856d03b1230916191" prefix=" " category="inline-code"></block> 為必填、您也必須設定<block ref="075040dbadfe9a123d2621d11f01b0a6" prefix=" " category="inline-code"></block> 至啟用。</block>
+  <block id="e3562f747ad313da62190f86bb64dc87" category="list-text">需要在 Cloud Volumes ONTAP 執行個體上使用 IMDSv2 ：</block>
+  <block id="e813184f980902e482da371f4c1635a3" category="inline-link">Amazon EC2 主控台</block>
+  <block id="a3c1ab8ea16cbc440d74ed1810e1ea29" category="list-text">前往<block ref="a979ef0662428242021a3b937a5a7bf7" category="inline-link-rx"></block></block>
+  <block id="0923d272646612aa7fcac06ded4f9775" category="list-text">從導覽窗格中、選取 * 執行個體 * 。</block>
+  <block id="bd669926126507d7fbfbbb50bfafba24" category="list-text">選取 Cloud Volumes ONTAP 執行個體。</block>
+  <block id="1c9db3e842584a909d28ae8882a8e58a" category="list-text">選取 * 「動作」 &gt; 「執行個體設定」 &gt; 「修改執行個體中繼資料選項」 * 。</block>
+  <block id="dee3242d9f387f850469315724ac6c27" category="list-text">在 * 修改執行個體中繼資料選項 * 對話方塊中、選取下列項目：</block>
+  <block id="e24b7163a4dc37a3db7eb4e01db5a81f" category="list-text">對於 * 執行個體中繼資料服務 * 、請選取 * 啟用 * 。</block>
+  <block id="2c239daef1a43ddd2011dfa4a307c157" category="list-text">對於 *IMDSv2* ，請選擇 * 必要 * 。</block>
+  <block id="5cf803d4e6ce3c1fc67e7320dcd440b1" category="list-text">對其他 Cloud Volumes ONTAP 執行個體（包括 HA 協調器）重複這些步驟。</block>
+  <block id="0694adc8bc882f236f606e1c56eebe94" category="inline-link">停止並啟動 Cloud Volumes ONTAP 執行個體</block>
+  <block id="96afcc62a59c68b277c1a37c2254e239" category="list-text"><block ref="96afcc62a59c68b277c1a37c2254e239" category="inline-link-rx"></block></block>
+  <block id="1bf094b9d6f1b1c1ae5e745beefb3ff7" category="paragraph">Connector 執行個體和 Cloud Volumes ONTAP 執行個體現在已設定為使用 IMDSv2 。</block>
+  <block id="00d14f718aca7db50368d8fc7008b41a" category="section-title">連接器 3.9.38</block>
+  <block id="d39d3f642c13ecde9b0fc02889aa6386" category="paragraph">目前、 3.9.38 版本適用於標準模式和受限模式。此版本包括 AWS 中的 IMDSv2 支援和 AWS 權限更新。</block>
+  <block id="b8048e9aa508d6c9379607c39c84e904" category="section-title">支援 IMDSv2</block>
+  <block id="727615b8adbd72d276572a4469f7c09d" category="paragraph">BlueXP 現在支援 Amazon EC2 執行個體中繼資料服務版本 2 （ IMDSv2 ）與 Connector 執行個體及 Cloud Volumes ONTAP 執行個體。IMDSv2 提供更強大的保護功能、防範弱點。之前僅支援 IMDSv1 。</block>
+  <block id="8035ec6377ab933cc4bc2a70b5416a29" category="paragraph"><block ref="8035ec6377ab933cc4bc2a70b5416a29" category="inline-link-rx"></block></block>
+  <block id="89f5243637c4f72512944130a95ee3e5" category="paragraph">在 EC2 執行個體上、執行個體中繼資料服務（ IMDS ）的啟用方式如下：</block>
+  <block id="baebea4bbd59d6c8efcae96586b2e199" category="inline-link">Terraform 指令碼</block>
+  <block id="0b18bb2eadaff9912e9bbefb3accbc90" category="list-text">適用於 BlueXP 、 AWS Marketplace 或使用的新 Connector 部署<block ref="d5789cbcfe02eb67db017173bcddbe49" category="inline-link-rx"></block>、根據預設、 EC2 執行個體上會啟用 IMDSv2 。</block>
+  <block id="0319f9ec57f9eeb8250ac949896c30fd" category="list-text">如果您在 AWS 中啟動新的 EC2 執行個體、然後手動安裝 Connector 軟體、則預設也會啟用 IMDSv2 。</block>
+  <block id="1fac08ada9902743d92641fbbd32d13f" category="list-text">對於現有的 Connectors 、仍支援 IMDSv1 、但您可以視需要在 EC2 執行個體上手動設定 IMDSv2 。</block>
+  <block id="d0371cc329d08bb54c28e8881cc93db7" category="list-text">對於 Cloud Volumes ONTAP 、根據預設、會在新的和現有的執行個體上啟用 IMDSv1 。您可以視需要在 EC2 執行個體上手動設定 IMDSv2 。</block>
+  <block id="e064a507c52bd5a195428edf98b8aecb" category="inline-link">瞭解如何在現有執行個體上設定 IMDSv2</block>
+  <block id="35caf9a212e382e214a82a5d75099530" category="paragraph"><block ref="2136f09eaf84594e894a08f345e725b8" category="inline-link-rx"></block>。</block>
+  <block id="4cc078461f1763cdb13efec9da8a6a3f" category="section-title">AWS 權限更新</block>
+  <block id="5b208d0b88475ec99f06a7e55104a566" category="paragraph">我們更新了 AWS 的 Connector 原則、以納入「 EC2 ： DescrubeAvailabilityZones 」權限。即將發行的版本需要此權限。我們會在發行版本推出時更新版本資訊、提供更多詳細資料。</block>
+  <block id="7595af352964f2b06057ab6310fdff44" category="inline-link">檢視 Connector 的 AWS 權限</block>
+  <block id="bad85d32b5f3e46e956809c13b502817" category="paragraph"><block ref="7e42187d6259f740c2e1915df5429efc" category="inline-link-rx"></block>。</block>
+  <block id="9796f4649a0c963c7b6019196c7f14f0" category="section-title">Proxy 設定和 Cloud Volumes ONTAP 設定</block>
+  <block id="1697d0f8a0936757a7bb28b4fa2eacd1" category="paragraph">Connector 的 Proxy 伺服器設定現在可從「 * 管理連接器 * 」頁面（標準模式）或「 * 編輯連接器 * 」頁面（限制模式和私有模式）取得。</block>
+  <block id="50770490f832c2b93de5aff17e5102b5" category="inline-link">瞭解如何設定 Connector 以使用 Proxy 伺服器</block>
+  <block id="d58ba1e11f305c91632d6e86e3515966" category="paragraph"><block ref="f2fec40748e9e912170fdd2984d9b989" category="inline-link-rx"></block>。</block>
+  <block id="d560347c8aaf0de44ab17132b9923b1c" category="paragraph">此外、我們將 * 連接器設定 * 頁面重新命名為 * Cloud Volumes ONTAP 設定 * 。</block>
+  <block id="79c73187c699b08002880f70fb88a0a8" category="inline-image-macro">螢幕擷取畫面、顯示「設定」功能表中可用的「 Cloud Volumes ONTAP 設定」選項。</block>
+  <block id="1a1ed66dc9bfcad0fc9c0c7fa6b4f0ca" category="paragraph"><block ref="1a1ed66dc9bfcad0fc9c0c7fa6b4f0ca" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="03c012ec036bd77d62ef64e67f7dbc5a" category="list-text">瀏覽至 * 編輯 BlueXP Connector* 頁面。</block>
+  <block id="5682fb3f3dc6955b7e9d4b14adc8daa0" category="paragraph">導覽方式取決於您是以標準模式使用 BlueXP （從 SaaS 網站存取 BlueXP 介面）、還是以受限模式或私有模式使用 BlueXP （從 Connector 主機本機存取 BlueXP 介面）。</block>
+  <block id="75effefc9fa992948e167a31a7b2c21e" category="inline-image-macro">螢幕擷取畫面、顯示選取 Connector 之後可用的「管理連接器」頁面。</block>
+  <block id="e929efc0ae3c20b98faca1bce939c39f" category="paragraph"><block ref="e929efc0ae3c20b98faca1bce939c39f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d7cd2871be8edef469dbc0a8331b2ea1" category="list-text">選取 Connector 的動作功能表、然後選取 * 編輯 Connector* 。</block>
+  <block id="51061648a222d2e9cfc0c81e3936b2ed" category="inline-image-macro">螢幕擷取畫面顯示動作功能表中可用的編輯連接器選項。</block>
+  <block id="b56348249fcdfb1d99adf3c4aed569de" category="paragraph"><block ref="b56348249fcdfb1d99adf3c4aed569de" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c2e1602403c9ad1e0a65c8bcd78343f0" category="open-title">受限或私人模式</block>
+  <block id="58254850bdb77fd29a5e690737b3b38e" category="list-text">選擇 * 編輯 Connector* 。</block>
+  <block id="52151b08532438e354a67736d7f485dd" category="inline-image-macro">螢幕擷取畫面顯示 [ 編輯連接器 ] 選項，您可以在展開 [ 連接器 ] 功能表之後使用此選項。</block>
+  <block id="00f7462bbd72cb5b8ec9621909b3ebb1" category="paragraph"><block ref="00f7462bbd72cb5b8ec9621909b3ebb1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3a71443a0764cf544fb5e2055be2d744" category="list-text">選擇 * HTTP Proxy 組態 * 。</block>
+  <block id="7562ce5f768e11625bc10a4b9ebb71b0" category="list-text">瀏覽 * 編輯 BlueXP Connector* 頁面：</block>
+  <block id="f5d22e387d3dd91dbc45f16de7949a06" category="list-text">選取 * 支援直接 API 流量 * 。</block>
+  <block id="0515ac140ab701cd78614b76c8296d4f" category="paragraph">從 BlueXP 建立 Connector 會使用預設組態、在 AWS 中部署 EC2 執行個體。建立 Connector 之後、不應變更為 CPU 或 RAM 較少的較小 EC2 執行個體類型。 <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
+  <block id="b1f8391bb8c209468262aa239bef0d41" category="paragraph">建立 Connector 會使用預設組態、在 Google Cloud 中部署虛擬機器執行個體。建立 Connector 之後、不應變更為 CPU 或 RAM 較少的較小 VM 執行個體。 <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
 </blocks>
