@@ -939,6 +939,116 @@ link:task-managing-netapp-accounts.html#allow-third-party-services["深入瞭解
 
 
 
+== 2021年3月8日
+
+此更新包括多項功能與服務的增強功能。
+
+
+
+=== 更新功能 Cloud Volumes ONTAP
+
+此版本的 Cloud Manager 包含 Cloud Volumes ONTAP 管理功能的增強功能。
+
+
+
+==== 所有雲端供應商均提供增強功能
+
+Cloud Manager現在可以部署及管理Cloud Volumes ONTAP
+
+https://docs.netapp.com/us-en/cloud-volumes-ontap/reference_new_990.html["深入瞭Cloud Volumes ONTAP 解本版的更新功能"^]。
+
+
+
+==== AWS 提供的增強功能
+
+* 您現在可以在Cloud Volumes ONTAP AWS商業雲端服務（C2S）環境中部署S效能 指數9.8。
++
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-aws-c2s.html["瞭解如何開始使用C2S"^]
+
+* Cloud Manager一向能讓您Cloud Volumes ONTAP 使用AWS金鑰管理服務（KMS）來加密各項資料。從Cloud Volumes ONTAP 供應支援支援支援的9.9到0開始、如果您選擇客戶管理的CMK、EBS磁碟上的資料和階層至S3的資料都會加密。以前只會加密EBS資料。
++
+請注意Cloud Volumes ONTAP 、您必須提供使用CMK的權限給IAM角色。
+
++
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-setting-up-kms.html["深入瞭解如何設定AWS KMS Cloud Volumes ONTAP 搭配功能"^]
+
+
+
+
+
+==== Azure 提供增強功能
+
+您現在可以在Cloud Volumes ONTAP Azure Department of Defence（DoD）Impact Level 6（IL6）中部署整套功能。
+
+
+
+==== Google Cloud 提供的增強功能
+
+* 我們已經減少Cloud Volumes ONTAP 了在Google Cloud中使用NetApp 9.8及更新版本所需的IP位址數量。根據預設、需要少一個IP位址（我們將叢集間LIF與節點管理LIF統一化）。您也可以選擇在使用API時跳過SVM管理LIF的建立、如此可減少額外IP位址的需求。
++
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html["深入瞭解Google Cloud的IP位址需求"^]
+
+* 當您在Cloud Volumes ONTAP Google Cloud中部署一組「叢集式HA」配對時、現在您可以選擇VPC-1、VPC-2和VPC-3的「共享式VPC」。以前只有VPC-0可以是共享VPC。支援此變更Cloud Volumes ONTAP 的更新版本為支援。
++
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html["深入瞭解Google Cloud網路需求"^]
+
+
+
+
+
+=== 連接器增強功能
+
+* 當 Connector 未執行時、 Cloud Manager 現在會透過電子郵件通知管理使用者。
++
+讓您的 Connectors 正常運作、有助於確保 Cloud Volumes ONTAP 和其他 NetApp 雲端服務的最佳管理。
+
+* 如果您需要變更 Connector 的執行個體類型、 Cloud Manager 現在會顯示通知。
++
+變更執行個體類型可確保您可以使用目前遺失的新功能。
+
+
+
+
+
+=== 更新功能 Cloud Sync
+
+* Cloud Sync 現在支援 ONTAP S3 儲存設備與 SMB 伺服器之間的同步關係：
++
+** 將 ONTAP S3 儲存設備移轉至 SMB 伺服器
+** 連接至 ONTAP S3 儲存設備的 SMB 伺服器
++
+https://docs.netapp.com/us-en/bluexp-copy-sync/reference-supported-relationships.html["檢視支援的同步關係"^]
+
+
+
+* Cloud Sync 現在可讓您直接從使用者介面統一資料代理群組的組態。
++
+我們不建議您自行變更組態。您應諮詢NetApp、瞭解何時變更組態及如何變更組態。
+
++
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-managing-data-brokers.html#set-up-a-unified-configuration["深入瞭解如何定義統一化組態"^]
+
+
+
+
+
+=== 雲端分層增強功能
+
+* 分層至Google Cloud Storage時、您可以套用生命週期規則、以便在30天後、將階層式資料從標準儲存類別轉換為成本較低的Nearline、Coldline或歸檔儲存設備。
+* 現在、如果您有任何內部部署 ONTAP 叢集未探索到、則會顯示雲端分層、以便將它們新增至 Cloud Manager 、以便在這些叢集上啟用分層或其他服務。
++
+https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#discovering-additional-clusters-from-bluexp-tiering["瞭解如何探索這些額外的叢集"^]
+
+
+
+
+
+=== 更新功能Azure NetApp Files
+
+現在您可以動態變更磁碟區的服務層級、以滿足工作負載需求並最佳化成本。該磁碟區會移至其他容量集區、而不會影響該磁碟區。 https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-manage-volumes.html#change-the-volumes-service-level["深入瞭解"^]
+
+
+
 == 2021年2月9日
 
 

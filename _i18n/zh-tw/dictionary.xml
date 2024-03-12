@@ -3937,4 +3937,51 @@ Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" catego
   <block id="0515ac140ab701cd78614b76c8296d4f" category="paragraph">從 BlueXP 建立 Connector 會使用預設組態、在 AWS 中部署 EC2 執行個體。建立 Connector 之後、不應變更為 CPU 或 RAM 較少的較小 EC2 執行個體類型。 <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
   <block id="b1f8391bb8c209468262aa239bef0d41" category="paragraph">建立 Connector 會使用預設組態、在 Google Cloud 中部署虛擬機器執行個體。建立 Connector 之後、不應變更為 CPU 或 RAM 較少的較小 VM 執行個體。 <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
   <block id="7c3d026f5f0bf0d01848d386f69159eb" category="paragraph"><block ref="7295f02a3c546b103864aa8261ac9cab" category="inline-link-rx"></block>。</block>
+  <block id="dbbd746e2d2c019dcb0c3c40b74f4f75" category="section-title">2021年3月8日</block>
+  <block id="7b2a09e0d726d9a52333a0ecb6df6812" category="paragraph">此更新包括多項功能與服務的增強功能。</block>
+  <block id="f4eb7f69c035214da13ca0f958ab2c5a" category="section-title">更新功能 Cloud Volumes ONTAP</block>
+  <block id="e2c75aece78307cc6efce80e0fc6a89f" category="paragraph">此版本的 Cloud Manager 包含 Cloud Volumes ONTAP 管理功能的增強功能。</block>
+  <block id="cedfa4114a856d26f8fcf723a5b4cb7a" category="section-title">所有雲端供應商均提供增強功能</block>
+  <block id="ab2fea55ae9697fcfeae223bb8d1a161" category="paragraph">Cloud Manager現在可以部署及管理Cloud Volumes ONTAP</block>
+  <block id="9f97c3125a701942b4e6e648146819fc" category="inline-link">深入瞭Cloud Volumes ONTAP 解本版的更新功能</block>
+  <block id="41671c8c2787c6b4ae4a7430aaed25a5" category="paragraph"><block ref="1d003678f7aeecaa48a9a55ee79dfa0c" category="inline-link-rx"></block>。</block>
+  <block id="7b73adc87602305d19eea3376846e09c" category="section-title">AWS 提供的增強功能</block>
+  <block id="360907953d19dad6cd45833cc14167e2" category="list-text">您現在可以在Cloud Volumes ONTAP AWS商業雲端服務（C2S）環境中部署S效能 指數9.8。</block>
+  <block id="3e45f0a61d57f2e3257d5825fe5a7c94" category="inline-link">瞭解如何開始使用C2S</block>
+  <block id="b2d82b2661ffd005fd69b6dbe8cd323c" category="paragraph"><block ref="b2d82b2661ffd005fd69b6dbe8cd323c" category="inline-link-rx"></block></block>
+  <block id="acaa3f0ba647338374e9aa5717e4b179" category="list-text">Cloud Manager一向能讓您Cloud Volumes ONTAP 使用AWS金鑰管理服務（KMS）來加密各項資料。從Cloud Volumes ONTAP 供應支援支援支援的9.9到0開始、如果您選擇客戶管理的CMK、EBS磁碟上的資料和階層至S3的資料都會加密。以前只會加密EBS資料。</block>
+  <block id="dcbf930e1a349b31dc68e26e5227c6d0" category="paragraph">請注意Cloud Volumes ONTAP 、您必須提供使用CMK的權限給IAM角色。</block>
+  <block id="b2eca227b653383cc96f103eeeeaf77a" category="inline-link">深入瞭解如何設定AWS KMS Cloud Volumes ONTAP 搭配功能</block>
+  <block id="97e8e04f21dce84bbdc17d9128f42a47" category="paragraph"><block ref="97e8e04f21dce84bbdc17d9128f42a47" category="inline-link-rx"></block></block>
+  <block id="0ac19842b01b2e595d367d49d3a2f512" category="section-title">Azure 提供增強功能</block>
+  <block id="f4ddf81019b69d6e9ec665b8c011944c" category="paragraph">您現在可以在Cloud Volumes ONTAP Azure Department of Defence（DoD）Impact Level 6（IL6）中部署整套功能。</block>
+  <block id="b1f9439900369929f00410057598c853" category="section-title">Google Cloud 提供的增強功能</block>
+  <block id="235712a00d7d49281addbc1384cc33f2" category="list-text">我們已經減少Cloud Volumes ONTAP 了在Google Cloud中使用NetApp 9.8及更新版本所需的IP位址數量。根據預設、需要少一個IP位址（我們將叢集間LIF與節點管理LIF統一化）。您也可以選擇在使用API時跳過SVM管理LIF的建立、如此可減少額外IP位址的需求。</block>
+  <block id="4d75268045c1a28e17697720e7f27123" category="inline-link">深入瞭解Google Cloud的IP位址需求</block>
+  <block id="d28733663a4e51b540df89210de1322c" category="paragraph"><block ref="d28733663a4e51b540df89210de1322c" category="inline-link-rx"></block></block>
+  <block id="933d399c3cb0f03992675d49630ab818" category="list-text">當您在Cloud Volumes ONTAP Google Cloud中部署一組「叢集式HA」配對時、現在您可以選擇VPC-1、VPC-2和VPC-3的「共享式VPC」。以前只有VPC-0可以是共享VPC。支援此變更Cloud Volumes ONTAP 的更新版本為支援。</block>
+  <block id="fcc0572bd798a75498f99e20a8093f04" category="inline-link">深入瞭解Google Cloud網路需求</block>
+  <block id="0007fc2f224950d7146482dd816d045a" category="paragraph"><block ref="0007fc2f224950d7146482dd816d045a" category="inline-link-rx"></block></block>
+  <block id="36758ba57a2ee81dcda1cf690cba345c" category="section-title">連接器增強功能</block>
+  <block id="c620fdcd127f42421f0ebb82ca0160b3" category="list-text">當 Connector 未執行時、 Cloud Manager 現在會透過電子郵件通知管理使用者。</block>
+  <block id="f4923be5b51cdac20509609eb07ce1aa" category="paragraph">讓您的 Connectors 正常運作、有助於確保 Cloud Volumes ONTAP 和其他 NetApp 雲端服務的最佳管理。</block>
+  <block id="fbbb26e1a604e4bb843aa5158a56bf75" category="list-text">如果您需要變更 Connector 的執行個體類型、 Cloud Manager 現在會顯示通知。</block>
+  <block id="07a7156f8ae2953eb97fcedc0f846001" category="paragraph">變更執行個體類型可確保您可以使用目前遺失的新功能。</block>
+  <block id="bd10f9ff269639d7e4902e8c79d702a6" category="section-title">更新功能 Cloud Sync</block>
+  <block id="dd7348bf6510a0f506ab7acf9e645e94" category="list-text">Cloud Sync 現在支援 ONTAP S3 儲存設備與 SMB 伺服器之間的同步關係：</block>
+  <block id="eb6261f1bc2ebf45d278c1fde4d7cfc4" category="list-text">將 ONTAP S3 儲存設備移轉至 SMB 伺服器</block>
+  <block id="cc619045f8d284993e15378035fbf631" category="list-text">連接至 ONTAP S3 儲存設備的 SMB 伺服器</block>
+  <block id="3d9c61bbb0656b8a470cbe7bd67859f7" category="inline-link">檢視支援的同步關係</block>
+  <block id="a75cec21dd4fd0bc8a57fdafde743e02" category="paragraph"><block ref="a75cec21dd4fd0bc8a57fdafde743e02" category="inline-link-rx"></block></block>
+  <block id="0957e4e6271f0a8785ac7980f9561e4e" category="list-text">Cloud Sync 現在可讓您直接從使用者介面統一資料代理群組的組態。</block>
+  <block id="e0341128a5853714165581951816b70b" category="paragraph">我們不建議您自行變更組態。您應諮詢NetApp、瞭解何時變更組態及如何變更組態。</block>
+  <block id="a51f8f17029baacb9ec578d529b96fc1" category="inline-link">深入瞭解如何定義統一化組態</block>
+  <block id="ba6ad1a8a7ff7fed9858ae1a6056a044" category="paragraph"><block ref="ba6ad1a8a7ff7fed9858ae1a6056a044" category="inline-link-rx"></block></block>
+  <block id="af8de564f8a6452ff0926ac0d084a2a0" category="section-title">雲端分層增強功能</block>
+  <block id="b4baef0a3a494382cb3865753733f031" category="list-text">分層至Google Cloud Storage時、您可以套用生命週期規則、以便在30天後、將階層式資料從標準儲存類別轉換為成本較低的Nearline、Coldline或歸檔儲存設備。</block>
+  <block id="d85e79234e503ba2929218e38d0c7268" category="list-text">現在、如果您有任何內部部署 ONTAP 叢集未探索到、則會顯示雲端分層、以便將它們新增至 Cloud Manager 、以便在這些叢集上啟用分層或其他服務。</block>
+  <block id="da79c9a9c81722678ed4139ebb8929d9" category="inline-link">瞭解如何探索這些額外的叢集</block>
+  <block id="b29f8ca8f9e48d5b3100564f6829e5f6" category="paragraph"><block ref="b29f8ca8f9e48d5b3100564f6829e5f6" category="inline-link-rx"></block></block>
+  <block id="86a6fd8c0323b87db34eb287a461c194" category="section-title">更新功能Azure NetApp Files</block>
+  <block id="d63816bce1f68b3d99c6b101eb23f900" category="paragraph">現在您可以動態變更磁碟區的服務層級、以滿足工作負載需求並最佳化成本。該磁碟區會移至其他容量集區、而不會影響該磁碟區。<block ref="1c1fc3f10579c2dcdaafa6f121b73c03" category="inline-link-rx"></block></block>
 </blocks>
