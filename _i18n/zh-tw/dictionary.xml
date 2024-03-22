@@ -1075,14 +1075,12 @@
   <block id="39ac68e476b37c123efa68256cf31a7d" category="cell">在工作區之間切換</block>
   <block id="838203d064fe980b5ae00097d667d9f4" category="cell">檢視 BlueXP 分類掃描結果</block>
   <block id="93b557fcf4dca896b9a77328a5ae0e92" category="cell">刪除工作環境</block>
-  <block id="ff1717f17ee6eef1b2a1bb43f6547a36" category="cell">將 Kubernetes 叢集連接至工作環境</block>
   <block id="778cfbd8e3739e3af0e367072a92b2c3" category="cell">接收 Cloud Volumes ONTAP 此報告</block>
   <block id="91ddd20c84fc1e8ded7b005f805d8705" category="cell">建立連接器</block>
   <block id="044b77b68a82998776d7f4dc9b550bee" category="cell">管理 BlueXP 帳戶</block>
   <block id="1eda8b1f4dfa35b119f2a579170d4546" category="cell">管理認證資料</block>
   <block id="d7cea5f953c31662cd13f98b3b7d8608" category="cell">修改BlueXP設定</block>
   <block id="59d212e47ec92d175a35d52f6c448d89" category="cell">檢視及管理支援儀表板</block>
-  <block id="309a17e5c03cbe61700c1e46eb38532f" category="cell">從BlueXP移除工作環境</block>
   <block id="768acef28167e99aae88f7c6d5d9322a" category="inline-link-macro">在 BlueXP 帳戶中設定工作區和使用者</block>
   <block id="efb23fed841e93229b5eba2d12143dd0" category="list-text"><block ref="efb23fed841e93229b5eba2d12143dd0" category="inline-link-macro-rx"></block></block>
   <block id="5cc33db7bd831802e558ae70eb573d98" category="inline-link-macro">管理 BlueXP 帳戶中的工作區和使用者</block>
@@ -3984,4 +3982,5 @@ Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" catego
   <block id="b29f8ca8f9e48d5b3100564f6829e5f6" category="paragraph"><block ref="b29f8ca8f9e48d5b3100564f6829e5f6" category="inline-link-rx"></block></block>
   <block id="86a6fd8c0323b87db34eb287a461c194" category="section-title">更新功能Azure NetApp Files</block>
   <block id="d63816bce1f68b3d99c6b101eb23f900" category="paragraph">現在您可以動態變更磁碟區的服務層級、以滿足工作負載需求並最佳化成本。該磁碟區會移至其他容量集區、而不會影響該磁碟區。<block ref="1c1fc3f10579c2dcdaafa6f121b73c03" category="inline-link-rx"></block></block>
+  <block id="849f31cbd6498a40e853e0172989edd1" category="cell">從工作區移除工作環境</block>
 </blocks>
