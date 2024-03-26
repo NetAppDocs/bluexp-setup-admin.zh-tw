@@ -3713,7 +3713,6 @@ Azure 政府地區不需要此端點。</block>
   <block id="713b059ba47ab000812d3dd15273cee6" category="paragraph">請注意、使用服務帳戶時、 API 作業不需要重新整理權杖。<block ref="cc919b62f11a25e2d8c9fb23b34ada32" category="inline-link-rx"></block></block>
   <block id="7c42c6e2f8295dada12f50f825327ddf" category="list-text">映像的作業系統為 Ubuntu 22.04 LTS 。</block>
   <block id="e8a0c291b754a75e0e91ecf69d567912" category="section-title">2023 年 12 月 5 日</block>
-  <block id="1771e2f4014c6ccd829b84cf9e8c7d27" category="section-title">私用模式版本</block>
   <block id="5a78b457c661dc3d01c5125da794f0ed" category="paragraph">BlueXP 現已推出新的私有模式版本。此版本包含 3.9.35 版的 Connector 、以及自 2023 年 10 月起以私有模式支援的 BlueXP 服務版本。</block>
   <block id="ec34e91164e39c9df1bfb906cff07162" category="paragraph">此新版本可從 NetApp 支援網站 下載。</block>
   <block id="2e57b160bcd31ccd527a6670d94879de" category="inline-link">瞭解隨附於私有模式的 BlueXP 服務</block>
@@ -3983,4 +3982,18 @@ Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" catego
   <block id="86a6fd8c0323b87db34eb287a461c194" category="section-title">更新功能Azure NetApp Files</block>
   <block id="d63816bce1f68b3d99c6b101eb23f900" category="paragraph">現在您可以動態變更磁碟區的服務層級、以滿足工作負載需求並最佳化成本。該磁碟區會移至其他容量集區、而不會影響該磁碟區。<block ref="1c1fc3f10579c2dcdaafa6f121b73c03" category="inline-link-rx"></block></block>
   <block id="849f31cbd6498a40e853e0172989edd1" category="cell">從工作區移除工作環境</block>
+  <block id="fe8fcef9d0fdb328fbc812d42b4ca2e7" category="section-title">2024 年 3 月 26 日</block>
+  <block id="3c16167b6c091087d9151aee3f52b379" category="section-title">私有模式版本（ 3.9.38 ）</block>
+  <block id="b7070cb9b31e0d402b92f5c1d4efa401" category="paragraph">BlueXP 現已推出新的私有模式版本。此版本包含下列支援私有模式的 BlueXP 服務版本。</block>
+  <block id="b742a03d26cdd3a73daedbab8ce0898b" category="cell">隨附版本</block>
+  <block id="edf21d7ecb364e8210ddd3dfaeca6fbf" category="cell">連接器</block>
+  <block id="0eff5e73304fb938a09633bd1b0cec70" category="cell">3.9.38.</block>
+  <block id="2d67cd05b64a3416bc8bae12b4ef5685" category="cell">2024 年 3 月 12 日</block>
+  <block id="9ee51d75827fcf6a985ed40e7418fea6" category="cell">2024 年 3 月 4 日</block>
+  <block id="20f71c84b5a0e44a35f3a8c4207c85a9" category="cell">Cloud Volumes ONTAP 管理</block>
+  <block id="900dd8f50d2294930a102034524e26b7" category="cell">內部部署 ONTAP 叢集管理</block>
+  <block id="638be56d4cf930b576e6dc1300c7c33b" category="cell">2022年9月18日</block>
+  <block id="a52b83d1b32a42f8a6aff3771048ba3c" category="inline-link">瞭解私有模式</block>
+  <block id="cdeb608610a882c24cefcb7daa878a1d" category="list-text"><block ref="cdeb608610a882c24cefcb7daa878a1d" category="inline-link-rx"></block></block>
+  <block id="de945439c2ef8db914ae9a056d6763b1" category="section-title">私有模式版本（ 3.9.35 ）</block>
 </blocks>
