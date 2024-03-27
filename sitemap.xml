@@ -1,0 +1,927 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  
+    
+    
+  
+
+  
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/concept-accounts-aws.html</loc>
+        
+      
+      <lastmod>2023-11-21T21:01:22+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/concept-accounts-azure.html</loc>
+        
+      
+      <lastmod>2024-01-31T21:54:17+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/concept-accounts-gcp.html</loc>
+        
+      
+      <lastmod>2023-11-21T21:01:22+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/concept-connectors.html</loc>
+        
+      
+      <lastmod>2024-03-07T05:50:44+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/concept-federation.html</loc>
+        
+      
+      <lastmod>2024-01-31T21:54:17+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/concept-install-options-aws.html</loc>
+        
+      
+      <lastmod>2023-09-08T12:46:40+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/concept-install-options-azure.html</loc>
+        
+      
+      <lastmod>2023-09-08T12:46:40+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/concept-install-options-google.html</loc>
+        
+      
+      <lastmod>2023-09-08T12:46:40+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/concept-modes.html</loc>
+        
+      
+      <lastmod>2024-03-07T05:50:44+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/concept-netapp-accounts.html</loc>
+        
+      
+      <lastmod>2023-10-19T19:25:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/concept-overview.html</loc>
+        
+      
+      <lastmod>2023-10-19T19:25:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/</loc>
+        
+      
+      <lastmod>2023-11-15T18:05:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/legal-notices.html</loc>
+        
+      
+      <lastmod>2023-08-07T15:37:28+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/reference-checklist-cm.html</loc>
+        
+      
+      <lastmod>2023-05-31T13:53:43+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/reference-connector-default-config.html</loc>
+        
+      
+      <lastmod>2023-11-30T15:54:30+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/reference-host-requirements-aws.html</loc>
+        
+      
+      <lastmod>2023-09-08T12:46:40+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/reference-host-requirements-azure.html</loc>
+        
+      
+      <lastmod>2023-09-08T12:46:40+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/reference-host-requirements-google.html</loc>
+        
+      
+      <lastmod>2023-09-08T12:46:40+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/reference-host-requirements-on-prem.html</loc>
+        
+      
+      <lastmod>2023-09-08T12:46:40+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/reference-limitations.html</loc>
+        
+      
+      <lastmod>2024-03-27T18:26:11+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/reference-networking-saas-console.html</loc>
+        
+      
+      <lastmod>2023-11-30T15:54:30+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/reference-permissions-aws.html</loc>
+        
+      
+      <lastmod>2024-03-08T17:54:18+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/reference-permissions-azure.html</loc>
+        
+      
+      <lastmod>2023-12-05T21:26:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/reference-permissions-gcp.html</loc>
+        
+      
+      <lastmod>2023-09-08T12:46:40+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/reference-permissions.html</loc>
+        
+      
+      <lastmod>2023-09-08T12:46:40+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/reference-ports-aws.html</loc>
+        
+      
+      <lastmod>2023-11-06T18:49:37+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/reference-ports-azure.html</loc>
+        
+      
+      <lastmod>2023-11-06T18:49:37+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/reference-ports-gcp.html</loc>
+        
+      
+      <lastmod>2023-11-06T18:49:37+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/reference-ports-on-prem.html</loc>
+        
+      
+      <lastmod>2023-04-25T16:21:52+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/reference-user-roles.html</loc>
+        
+      
+      <lastmod>2024-03-22T12:30:58+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/reference-whats-next-private-mode.html</loc>
+        
+      
+      <lastmod>2023-05-31T13:53:43+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/reference-whats-next-restricted-mode.html</loc>
+        
+      
+      <lastmod>2023-05-31T13:53:43+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/reference-whats-next.html</loc>
+        
+      
+      <lastmod>2023-11-06T18:49:37+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin//search.html</loc>
+        
+      
+      <lastmod>2024-03-27T18:26:25+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-adding-aws-accounts.html</loc>
+        
+      
+      <lastmod>2023-11-21T21:01:22+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-adding-azure-accounts.html</loc>
+        
+      
+      <lastmod>2024-01-31T21:54:17+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-adding-gcp-accounts.html</loc>
+        
+      
+      <lastmod>2023-11-21T21:01:22+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-adding-nss-accounts.html</loc>
+        
+      
+      <lastmod>2024-01-31T21:54:17+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-configuring-proxy.html</loc>
+        
+      
+      <lastmod>2024-03-27T18:26:11+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-create-account.html</loc>
+        
+      
+      <lastmod>2023-07-24T12:54:17+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-create-connectors-gov.html</loc>
+        
+      
+      <lastmod>2023-05-31T13:53:43+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-creating-connectors-aws.html</loc>
+        
+      
+      <lastmod>2023-09-08T12:46:40+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-creating-connectors-azure.html</loc>
+        
+      
+      <lastmod>2023-09-08T12:46:40+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-creating-connectors-gcp.html</loc>
+        
+      
+      <lastmod>2023-09-08T12:46:40+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-enable-apis-google.html</loc>
+        
+      
+      <lastmod>2023-09-08T12:46:40+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-finding-system-id.html</loc>
+        
+      
+      <lastmod>2024-01-11T17:23:11+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-get-help.html</loc>
+        
+      
+      <lastmod>2024-01-11T17:23:11+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-install-connector-aws-bluexp.html</loc>
+        
+      
+      <lastmod>2024-03-27T18:26:11+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-install-connector-aws-manual.html</loc>
+        
+      
+      <lastmod>2024-03-27T18:26:11+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-install-connector-aws-marketplace.html</loc>
+        
+      
+      <lastmod>2024-03-27T18:26:11+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-install-connector-azure-bluexp.html</loc>
+        
+      
+      <lastmod>2024-03-27T18:26:11+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-install-connector-azure-manual.html</loc>
+        
+      
+      <lastmod>2024-03-27T18:26:11+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-install-connector-azure-marketplace.html</loc>
+        
+      
+      <lastmod>2024-03-27T18:26:11+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html</loc>
+        
+      
+      <lastmod>2024-03-27T18:26:11+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-install-connector-google-manual.html</loc>
+        
+      
+      <lastmod>2024-03-27T18:26:11+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-install-connector-on-prem.html</loc>
+        
+      
+      <lastmod>2024-03-27T18:26:11+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-install-connector-onprem-no-internet.html</loc>
+        
+      
+      <lastmod>2023-05-31T13:53:43+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-install-private-mode.html</loc>
+        
+      
+      <lastmod>2024-01-31T21:54:17+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-install-restricted-mode.html</loc>
+        
+      
+      <lastmod>2024-03-27T18:26:11+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-installing-https-cert.html</loc>
+        
+      
+      <lastmod>2023-04-25T16:21:52+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-installing-linux.html</loc>
+        
+      
+      <lastmod>2023-05-31T13:53:43+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-launching-aws-mktp.html</loc>
+        
+      
+      <lastmod>2023-05-31T13:53:43+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-launching-azure-mktp.html</loc>
+        
+      
+      <lastmod>2023-05-31T13:53:43+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-log-in-private-mode.html</loc>
+        
+      
+      <lastmod>2023-09-08T12:46:40+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-log-in-restricted-mode.html</loc>
+        
+      
+      <lastmod>2023-09-08T12:46:40+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-logging-in.html</loc>
+        
+      
+      <lastmod>2023-09-08T12:46:40+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-manage-subscriptions.html</loc>
+        
+      
+      <lastmod>2023-04-13T18:10:50+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-manage-user-credentials.html</loc>
+        
+      
+      <lastmod>2023-07-31T18:27:08+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-managing-connectors.html</loc>
+        
+      
+      <lastmod>2024-03-08T17:54:18+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-managing-netapp-accounts.html</loc>
+        
+      
+      <lastmod>2023-11-30T15:54:30+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-monitor-cm-operations.html</loc>
+        
+      
+      <lastmod>2023-09-14T17:37:31+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-prepare-private-mode.html</loc>
+        
+      
+      <lastmod>2024-03-27T18:26:11+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-prepare-restricted-mode.html</loc>
+        
+      
+      <lastmod>2024-03-27T18:26:11+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-provide-permissions-aws.html</loc>
+        
+      
+      <lastmod>2023-09-08T12:46:40+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-provide-permissions-azure.html</loc>
+        
+      
+      <lastmod>2023-09-08T12:46:40+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-provide-permissions-google.html</loc>
+        
+      
+      <lastmod>2023-09-08T12:46:40+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-provide-permissions-on-prem.html</loc>
+        
+      
+      <lastmod>2023-09-08T12:46:40+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-quick-start-connector-aws.html</loc>
+        
+      
+      <lastmod>2023-09-08T12:46:40+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-quick-start-connector-azure.html</loc>
+        
+      
+      <lastmod>2023-09-08T12:46:40+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-quick-start-connector-google.html</loc>
+        
+      
+      <lastmod>2023-09-08T12:46:40+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-quick-start-connector-on-prem.html</loc>
+        
+      
+      <lastmod>2023-09-08T12:46:40+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-quick-start-private-mode.html</loc>
+        
+      
+      <lastmod>2023-11-13T19:44:37+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-quick-start-restricted-mode.html</loc>
+        
+      
+      <lastmod>2023-11-13T19:44:37+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-quick-start-standard-mode.html</loc>
+        
+      
+      <lastmod>2023-11-13T19:44:37+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-set-up-networking-aws.html</loc>
+        
+      
+      <lastmod>2023-09-08T12:46:40+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-set-up-networking-azure.html</loc>
+        
+      
+      <lastmod>2023-09-08T12:46:40+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-set-up-networking-google.html</loc>
+        
+      
+      <lastmod>2023-09-08T12:46:40+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-set-up-networking-on-prem.html</loc>
+        
+      
+      <lastmod>2023-09-08T12:46:40+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-set-up-permissions-aws.html</loc>
+        
+      
+      <lastmod>2023-09-08T12:46:40+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-set-up-permissions-azure.html</loc>
+        
+      
+      <lastmod>2023-09-08T12:46:40+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-set-up-permissions-google.html</loc>
+        
+      
+      <lastmod>2023-09-08T12:46:40+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-set-up-permissions-on-prem.html</loc>
+        
+      
+      <lastmod>2023-09-08T12:46:40+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-setting-up-netapp-accounts.html</loc>
+        
+      
+      <lastmod>2023-05-31T13:53:43+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-sign-up-saas.html</loc>
+        
+      
+      <lastmod>2023-09-08T12:46:40+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-subscribe-restricted-mode.html</loc>
+        
+      
+      <lastmod>2023-08-25T17:36:14+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-subscribe-standard-mode.html</loc>
+        
+      
+      <lastmod>2023-08-25T17:36:14+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-support-registration.html</loc>
+        
+      
+      <lastmod>2024-01-31T21:54:17+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-viewing-amazon-s3.html</loc>
+        
+      
+      <lastmod>2023-11-06T18:49:37+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-viewing-azure-blob.html</loc>
+        
+      
+      <lastmod>2023-11-06T18:49:37+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-viewing-gcp-storage.html</loc>
+        
+      
+      <lastmod>2023-11-06T18:49:37+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/bluexp-setup-admin/whats-new.html</loc>
+        
+      
+      <lastmod>2024-03-26T16:05:59+00:00</lastmod>
+      
+    </url>
+  
+
+  
+  
+</urlset>

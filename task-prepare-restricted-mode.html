@@ -1,0 +1,3351 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head class="at-element-marker">
+  <title>準備以受限模式進行部署 | NetApp Documentation</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="準備以受限模式進行部署 | NetApp Documentation" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-prepare-restricted-mode.html" />
+	<meta property="og:description" content="在受限模式下部署 BlueXP 之前、請先準備好您的環境。例如、您需要檢閱主機需求、準備網路、設定權限等。" />
+  <meta property="og:image" content="https://docs.netapp.com/zh-tw/bluexp-setup-admin/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="在受限模式下部署 BlueXP 之前、請先準備好您的環境。例如、您需要檢閱主機需求、準備網路、設定權限等。">
+  <meta name="keywords" content=" restricted mode requirements, requirements, install options, restricted mode networking, dark site, restricted mode permissions, permissions for restricted mode, networking for restricted mode"><!-- Icons -->
+  <link rel="icon" href="/zh-tw/bluexp-setup-admin/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/zh-tw/bluexp-setup-admin/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/zh-tw/bluexp-setup-admin/css/ie-netappdocs.css">
+
+  
+  <link rel="stylesheet" href="/zh-tw/bluexp-setup-admin/css/ie-landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/zh-tw/bluexp-setup-admin/css/ie-tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel="canonical" href="https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-prepare-restricted-mode.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-restricted-mode.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-prepare-restricted-mode.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-restricted-mode.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/bluexp-setup-admin/task-prepare-restricted-mode.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/bluexp-setup-admin/task-prepare-restricted-mode.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/bluexp-setup-admin/task-prepare-restricted-mode.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/bluexp-setup-admin/task-prepare-restricted-mode.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/bluexp-setup-admin/task-prepare-restricted-mode.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/bluexp-setup-admin/task-prepare-restricted-mode.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/bluexp-setup-admin/task-prepare-restricted-mode.html" />
+  <!-- Top level site integrations -->
+<script type="text/javascript" src="https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js"></script>
+    <script type="text/javascript" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" charset="UTF-8" data-document-language="true" data-domain-script="72570c5c-fe30-465f-b0e0-b77f7fb4ae34"></script>
+    <script type="text/javascript">function OptanonWrapper() { }</script>
+    <script type="text/plain" class="optanon-category-C0002" src="https://assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js"></script>
+    <script class="optanon-category-C0001">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.setAttributeNode(d.createAttribute('data-ot-ignore'));j.setAttribute('class','optanon-category-C0001');j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MD73T9M');</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      const MASTHEAD_OFFSET = 65;
+      const SECTIONS = $("main h2, main h3");
+      // PAGE NAV - Init
+      if (SECTIONS.length == 0) {
+        // remove if there is no elements
+        /*
+        $("#ie-right-navbar").remove();
+        $("#ie-right-navbar-collapse").remove();
+        */
+      } else {
+        $(".page-nav-title").css('display', 'block');
+        for (var i = 0; i < SECTIONS.length; i++) {
+          var sectionId = $(SECTIONS[i]).attr('id');
+          var sectionName = $(SECTIONS[i]).text();
+          var subClass = $(SECTIONS[i]).is("h3") ? ' page-nav__sublink' : '';
+          $("#page-menu").append('<li class="page-nav-item"><a href="#' + sectionId + '" class="page-nav__link' + subClass + '">' + sectionName + '</a></li>');
+        }
+      }
+    });
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/zh-tw/bluexp-setup-admin/js/na-search.js'></script><script src='/zh-tw/bluexp-setup-admin/js/ie-clouddocs.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script>
+    /*
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+      */
+  </script>
+  <script src='/zh-tw/bluexp-setup-admin/js/custom-dropdown.js'></script>
+  <script src='/zh-tw/bluexp-setup-admin/js/FileSaver.min.js'></script>
+  <script src='/zh-tw/bluexp-setup-admin/js/jszip-utils.min.js'></script>
+  <script src='/zh-tw/bluexp-setup-admin/js/jszip.min.js'></script><script src='/zh-tw/bluexp-setup-admin/js/ie-pdf-ux.js'></script></head>
+
+
+  <body class role="document" data-flavor="">
+    <div class="skip-to-main">
+      <a href="#main" >Skip to main content</a>
+    </div><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD73T9M"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="page" class="">
+      <div id="ie-phone-menu" class=""></div>
+      <div id="ie-content-wrap" class="">
+        <nav id="ie-new-header">
+    <ul>
+        <li id="ie-phone-menu-button">
+            <a href="#">
+                <image id="" src="/zh-tw/bluexp-setup-admin/images/hamburger.svg" alt="menu" />
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.netapp.com/tw">
+                <image id="ie-header-logo" src="/zh-tw/bluexp-setup-admin/images/netapp_logo.svg" alt="netapp" />
+            </a>
+        </li>
+        <li id="ie-header-docs">
+            <a href="https://www.netapp.com/support-and-training/documentation/">文件</a>
+        </li>
+
+        <!-- Empty container to push header left with or without lang selector -->
+        <li id="empty-container" style="margin-left: auto">
+        </li>
+        <!-- Start Language Selector --><li id="ie-language-dropdown">
+            <div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+                <div class="custom-dropdown-select custom-dropdown-select-lang">
+                    <img src="/zh-tw/bluexp-setup-admin/images/language_white_24dp.svg" class="n-globe__icon" />
+                    <span class="lang-name">繁體中文</span>
+                    <img src="/zh-tw/bluexp-setup-admin/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/zh-tw/bluexp-setup-admin/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu"><li>
+                        <a href="https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-prepare-restricted-mode.html"
+                            target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-restricted-mode.html"
+                            target="_self"><span translate="no" class="notranslate">English</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ja-jp/bluexp-setup-admin/task-prepare-restricted-mode.html"
+                            target="_self"><span translate="no" class="notranslate">日本語</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ko-kr/bluexp-setup-admin/task-prepare-restricted-mode.html"
+                            target="_self"><span translate="no" class="notranslate">한국어</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-cn/bluexp-setup-admin/task-prepare-restricted-mode.html"
+                            target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/de-de/bluexp-setup-admin/task-prepare-restricted-mode.html"
+                            target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/es-es/bluexp-setup-admin/task-prepare-restricted-mode.html"
+                            target="_self"><span translate="no" class="notranslate">Español</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/fr-fr/bluexp-setup-admin/task-prepare-restricted-mode.html"
+                            target="_self"><span translate="no" class="notranslate">Français</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/it-it/bluexp-setup-admin/task-prepare-restricted-mode.html"
+                            target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+                    </li></ul>
+            </div>
+            </li>
+        <!-- End Language Selector -->
+
+
+        <li id="ie-allnetapp">
+            <div id="allnetapp-dropdown" class="custom-dropdown custom-dropdown-allnetapp">
+                <div class="custom-dropdown-select custom-dropdown-select-allnetapp">
+                    <img src="/zh-tw/bluexp-setup-admin/images/apps_white_24dp.svg" alt="" class="allnetapp-icon" />
+                    <span class="allnetapp-name">所有 NetApp</span>
+                    <img src="/zh-tw/bluexp-setup-admin/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/zh-tw/bluexp-setup-admin/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu allnetapp-dropdown">
+                    <li>
+                        <a href="https://bluexp.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">BlueXP</span></a>
+                    </li>
+                    <li>
+                        <a href="https://mysupport.netapp.com/site/"
+                            target="_self"><span translate="no" class="notranslate">支援</span></a>
+                    </li>
+                    <li>
+                        <a href="https://kb.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">知識庫</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.netapp.com/support-and-training/netapp-learning-services/"
+                            target="_self"><span translate="no" class="notranslate">訓練</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </li>
+
+    </ul>
+</nav>
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+
+<div id="ie-new-sidebar-collapse" style="display: none">
+    <img id="sidebar-expand" class="ie-searchbox-icon" src="/zh-tw/bluexp-setup-admin/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-new-sidebar">
+    <div id="ie-product-identity-lockup">
+        <div id="sidebar-collapse" class="">
+            <img src="/zh-tw/bluexp-setup-admin/images/double_arrow.svg" alt="" />
+        </div>
+        <div id="ie-breadcrumb" class="">
+  <ul class="ie-breadcrumb">
+    <li class="">
+      <a href="https://docs.netapp.com">所有文件</a>
+    </li>
+    
+    
+    <li class="">
+      <a href="https://docs.netapp.com/us-en/cloud/">雲端文件</a>
+    </li>
+    
+
+    
+    <li class="">
+      <a href="https://docs.netapp.com/zh-tw/bluexp-family/">
+        BlueXP
+      </a>
+    </li>
+    
+  </ul>
+  
+  <div class="ie-product-name" >
+    <!--<a href="/zh-tw/bluexp-setup-admin/">-->
+      Setup and administration
+    <!--</a>-->
+  </div>
+</div>
+
+            
+
+        
+        
+
+<div id="ie-searchbox" class="ie-searchbox-sidebar ">
+    <img class="ie-searchbox-icon" src="/zh-tw/bluexp-setup-admin/images/loupe.svg" alt=""/>
+    <div id="react-search" 
+        data-search-html="/zh-tw/bluexp-setup-admin/search.html" 
+        data-type="widget"
+        data-placeholder="搜尋說明文件"
+        data-no-results-found="找不到 {query} 的結果"
+        data-did-you-mean="搜尋 {suggestion}。"
+        data-no-results-found-did-you-mean="找不到 {query} 的結果。您的意思是 {suggestion} 嗎？"
+        data-results-found="找到 {hitCount} 個結果"
+        data-error-message="發生錯誤。請再試一次。"
+        data-error-reset="重設搜尋"
+        data-sk-es-pf-indexes="" 
+        data-flavor="">
+    </div>
+</div>
+        
+    </div>
+    <div id="ie-new-toc"><script>
+  let sidebarAccordion = true;
+
+  /* specific css rules for Mac */
+  if(navigator.platform.match('Mac') !== null) {
+    document.body.setAttribute('class', 'OSX');
+  }
+
+</script>
+
+<div id="ie-sidebar-container">
+  <ul id="ie-sidebar-list" ><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="設定與管理文件"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/index.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-tw/bluexp-setup-admin/index.html">
+        設定與管理文件
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="版本資訊"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 版本資訊</div>-->
+         版本資訊
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="新增功能"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/whats-new.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-setup-admin/whats-new.html">
+        新增功能
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="已知限制"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/reference-limitations.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-setup-admin/reference-limitations.html">
+        已知限制
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="開始使用"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 開始使用</div>-->
+         開始使用
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="瞭解基礎知識"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 瞭解基礎知識</div>-->
+         瞭解基礎知識
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="藍圖"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/concept-overview.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-setup-admin/concept-overview.html">
+        藍圖
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="帳戶"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/concept-netapp-accounts.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-setup-admin/concept-netapp-accounts.html">
+        帳戶
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="連接器"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/concept-connectors.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-setup-admin/concept-connectors.html">
+        連接器
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="部署模式"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/concept-modes.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-setup-admin/concept-modes.html">
+        部署模式
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="開始使用標準模式"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 開始使用標準模式</div>-->
+         開始使用標準模式
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="快速入門工作流程"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/task-quick-start-standard-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-setup-admin/task-quick-start-standard-mode.html">
+        快速入門工作流程
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="準備使用 BlueXP 主控台的網路連線"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/reference-networking-saas-console.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-setup-admin/reference-networking-saas-console.html">
+        準備使用 BlueXP 主控台的網路連線
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="註冊BlueXP"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/task-sign-up-saas.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-setup-admin/task-sign-up-saas.html">
+        註冊BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="建立連接器"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 建立連接器</div>-->
+         建立連接器
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="AWS"
+      data-li-level="4" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-4  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> AWS</div>-->
+         AWS
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="連接器安裝選項"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/concept-install-options-aws.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/zh-tw/bluexp-setup-admin/concept-install-options-aws.html">
+        連接器安裝選項
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="從BlueXP建立連接器"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/task-install-connector-aws-bluexp.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/zh-tw/bluexp-setup-admin/task-install-connector-aws-bluexp.html">
+        從BlueXP建立連接器
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="從市場建立 Connector"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/task-install-connector-aws-marketplace.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/zh-tw/bluexp-setup-admin/task-install-connector-aws-marketplace.html">
+        從市場建立 Connector
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="手動安裝 Connector"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/task-install-connector-aws-manual.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/zh-tw/bluexp-setup-admin/task-install-connector-aws-manual.html">
+        手動安裝 Connector
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azure"
+      data-li-level="4" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-4  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Azure</div>-->
+         Azure
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="連接器安裝選項"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/concept-install-options-azure.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/zh-tw/bluexp-setup-admin/concept-install-options-azure.html">
+        連接器安裝選項
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="從BlueXP建立連接器"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/task-install-connector-azure-bluexp.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/zh-tw/bluexp-setup-admin/task-install-connector-azure-bluexp.html">
+        從BlueXP建立連接器
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="從市場建立 Connector"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/task-install-connector-azure-marketplace.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/zh-tw/bluexp-setup-admin/task-install-connector-azure-marketplace.html">
+        從市場建立 Connector
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="手動安裝 Connector"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/task-install-connector-azure-manual.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/zh-tw/bluexp-setup-admin/task-install-connector-azure-manual.html">
+        手動安裝 Connector
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Google Cloud"
+      data-li-level="4" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-4  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Google Cloud</div>-->
+         Google Cloud
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="連接器安裝選項"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/concept-install-options-google.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/zh-tw/bluexp-setup-admin/concept-install-options-google.html">
+        連接器安裝選項
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="從 BlueXP 或 gCloud 建立 Connector"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/task-install-connector-google-bluexp-gcloud.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/zh-tw/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html">
+        從 BlueXP 或 gCloud 建立 Connector
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="手動安裝 Connector"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/task-install-connector-google-manual.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/zh-tw/bluexp-setup-admin/task-install-connector-google-manual.html">
+        手動安裝 Connector
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="內部部署"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/task-install-connector-on-prem.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/bluexp-setup-admin/task-install-connector-on-prem.html">
+        內部部署
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="訂閱 BlueXP"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/task-subscribe-standard-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-setup-admin/task-subscribe-standard-mode.html">
+        訂閱 BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="接下來您可以做什麼"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/reference-whats-next.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-setup-admin/reference-whats-next.html">
+        接下來您可以做什麼
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="開始使用受限模式"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 開始使用受限模式</div>-->
+         開始使用受限模式
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="快速入門工作流程"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/task-quick-start-restricted-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-setup-admin/task-quick-start-restricted-mode.html">
+        快速入門工作流程
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="準備部署"
+      data-li-level="3#" 
+      class="  ie-sidebar-selected    "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/task-prepare-restricted-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-setup-admin/task-prepare-restricted-mode.html">
+        準備部署
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="部署 Connector"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/task-install-restricted-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-setup-admin/task-install-restricted-mode.html">
+        部署 Connector
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="訂閱 BlueXP"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/task-subscribe-restricted-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-setup-admin/task-subscribe-restricted-mode.html">
+        訂閱 BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="接下來您可以做什麼"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/reference-whats-next-restricted-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-setup-admin/reference-whats-next-restricted-mode.html">
+        接下來您可以做什麼
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="開始使用私有模式"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 開始使用私有模式</div>-->
+         開始使用私有模式
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="快速入門工作流程"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/task-quick-start-private-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-setup-admin/task-quick-start-private-mode.html">
+        快速入門工作流程
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="準備部署"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/task-prepare-private-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-setup-admin/task-prepare-private-mode.html">
+        準備部署
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="部署 Connector"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/task-install-private-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-setup-admin/task-install-private-mode.html">
+        部署 Connector
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="接下來您可以做什麼"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/reference-whats-next-private-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-setup-admin/reference-whats-next-private-mode.html">
+        接下來您可以做什麼
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="登入BlueXP"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/task-logging-in.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-setup-admin/task-logging-in.html">
+        登入BlueXP
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="管理BlueXP"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 管理BlueXP</div>-->
+         管理BlueXP
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="身分識別聯盟"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/concept-federation.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-setup-admin/concept-federation.html">
+        身分識別聯盟
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXP 帳戶"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> BlueXP 帳戶</div>-->
+         BlueXP 帳戶
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="管理 BlueXP 帳戶"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/task-managing-netapp-accounts.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-setup-admin/task-managing-netapp-accounts.html">
+        管理 BlueXP 帳戶
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="監控您帳戶中的作業"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/task-monitor-cm-operations.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-setup-admin/task-monitor-cm-operations.html">
+        監控您帳戶中的作業
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="建立另一個 BlueXP 帳戶"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/task-create-account.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-setup-admin/task-create-account.html">
+        建立另一個 BlueXP 帳戶
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="使用者角色"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/reference-user-roles.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-setup-admin/reference-user-roles.html">
+        使用者角色
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="連接器"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 連接器</div>-->
+         連接器
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="尋找連接器的系統ID"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/task-finding-system-id.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-setup-admin/task-finding-system-id.html">
+        尋找連接器的系統ID
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="管理現有的連接器"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/task-managing-connectors.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-setup-admin/task-managing-connectors.html">
+        管理現有的連接器
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="安裝 HTTPS 憑證以進行安全存取"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/task-installing-https-cert.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-setup-admin/task-installing-https-cert.html">
+        安裝 HTTPS 憑證以進行安全存取
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="設定連接器以使用Proxy伺服器"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/task-configuring-proxy.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-setup-admin/task-configuring-proxy.html">
+        設定連接器以使用Proxy伺服器
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Connector 的預設組態"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/reference-connector-default-config.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-setup-admin/reference-connector-default-config.html">
+        Connector 的預設組態
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="認證與訂閱"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 認證與訂閱</div>-->
+         認證與訂閱
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="AWS"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> AWS</div>-->
+         AWS
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="瞭解認證和權限"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/concept-accounts-aws.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/bluexp-setup-admin/concept-accounts-aws.html">
+        瞭解認證和權限
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="管理認證與訂閱"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/task-adding-aws-accounts.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/bluexp-setup-admin/task-adding-aws-accounts.html">
+        管理認證與訂閱
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azure"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Azure</div>-->
+         Azure
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="瞭解認證和權限"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/concept-accounts-azure.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/bluexp-setup-admin/concept-accounts-azure.html">
+        瞭解認證和權限
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="管理認證與訂閱"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/task-adding-azure-accounts.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/bluexp-setup-admin/task-adding-azure-accounts.html">
+        管理認證與訂閱
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Google Cloud"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Google Cloud</div>-->
+         Google Cloud
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="瞭解專案和權限"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/concept-accounts-gcp.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/bluexp-setup-admin/concept-accounts-gcp.html">
+        瞭解專案和權限
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="管理認證與訂閱"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/task-adding-gcp-accounts.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/bluexp-setup-admin/task-adding-gcp-accounts.html">
+        管理認證與訂閱
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="管理與BlueXP帳戶相關聯的NSS認證"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/task-adding-nss-accounts.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-setup-admin/task-adding-nss-accounts.html">
+        管理與BlueXP帳戶相關聯的NSS認證
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="管理與您的BlueXP登入相關的認證資料"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/task-manage-user-credentials.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-setup-admin/task-manage-user-credentials.html">
+        管理與您的BlueXP登入相關的認證資料
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="參考資料"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 參考資料</div>-->
+         參考資料
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="權限"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 權限</div>-->
+         權限
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="權限摘要"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/reference-permissions.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-setup-admin/reference-permissions.html">
+        權限摘要
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Connector的AWS權限"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/reference-permissions-aws.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-setup-admin/reference-permissions-aws.html">
+        Connector的AWS權限
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="連接器的Azure權限"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/reference-permissions-azure.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-setup-admin/reference-permissions-azure.html">
+        連接器的Azure權限
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Connector的Google Cloud權限"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/reference-permissions-gcp.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-setup-admin/reference-permissions-gcp.html">
+        Connector的Google Cloud權限
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="連接埠"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 連接埠</div>-->
+         連接埠
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="AWS 中的 Connector 安全性群組規則"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/reference-ports-aws.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-setup-admin/reference-ports-aws.html">
+        AWS 中的 Connector 安全性群組規則
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azure 中的 Connector 安全性群組規則"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/reference-ports-azure.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-setup-admin/reference-ports-azure.html">
+        Azure 中的 Connector 安全性群組規則
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Google Cloud 中的連接器防火牆規則"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/reference-ports-gcp.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-setup-admin/reference-ports-gcp.html">
+        Google Cloud 中的連接器防火牆規則
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="內部連接器的連接埠"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/reference-ports-on-prem.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/bluexp-setup-admin/reference-ports-on-prem.html">
+        內部連接器的連接埠
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="知識與支援"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 知識與支援</div>-->
+         知識與支援
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="註冊以取得支援"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/task-support-registration.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-setup-admin/task-support-registration.html">
+        註冊以取得支援
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="取得協助"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/task-get-help.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-setup-admin/task-get-help.html">
+        取得協助
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="法律聲明"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task-prepare-restricted-mode.html" 
+      dale-entry-url="/legal-notices.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-tw/bluexp-setup-admin/legal-notices.html">
+        法律聲明
+      </a></li></ul>
+</div>
+<script>
+
+  $(".ie-sidebar-button").click(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    expandedLI = $('li.ie-sidebar-expand')
+
+    const li = $(this).closest("li");
+
+    const parentsLI = $(li).parents('li');
+
+    expandedLI.map(element => {
+      if (sidebarAccordion && !li.hasClass('ie-sidebar-expand') && jQuery.inArray(expandedLI[element], parentsLI) == -1) {
+        $(expandedLI[element]).toggleClass('ie-sidebar-expand');
+        $(expandedLI[element]).children("ul").animate({ height: 'toggle' }, 400, function () {
+          $(li).children("ul").toggleClass('ie-sidebar-open');
+
+        })
+      }
+
+    })
+
+    $(li).toggleClass('ie-sidebar-expand');
+    $(li).children("ul").animate({ height: 'toggle' }, 400, function () {
+      $(li).children("ul").toggleClass('ie-sidebar-open');
+    })
+  });
+
+
+  
+    $("li.ie-sidebar-selected").parents('ul').toggleClass("ie-sidebar-open");
+    $("li.ie-sidebar-selected").toggleClass("ie-sidebar-expand")
+    $("ul.ie-sidebar-open").parent().toggleClass("ie-sidebar-expand");
+    $("li.ie-sidebar-selected").children('ul').toggleClass("ie-sidebar-open")
+  
+  
+</script>
+    </div>
+</div>
+<script>
+
+    
+    let sidebarScrollTopPosition = 0;
+    $("#ie-new-toc").on("scroll", function () {
+        if (sidebarScrollTopPosition == 0) {
+            $.cookie("sidebarScroll", $("#ie-new-toc").scrollTop(), {
+                path: "/zh-tw/bluexp-setup-admin"
+            });
+        }
+
+        if ($("#ie-new-toc").scrollTop() > 0) {
+            $('#ie-product-identity-lockup').addClass('ie-addShadow');
+        } else {
+            $('#ie-product-identity-lockup').removeClass('ie-addShadow');
+        }
+    });
+
+    $(function () {
+        if ($.cookie("sidebarScroll")) {
+            $("#ie-new-toc").scrollTop($.cookie("sidebarScroll"));
+        }
+    });
+
+    function setSidebarBottom() {
+        const footerGap = PXinViewport($(".n-footer"));
+        document.getElementById("ie-new-sidebar").style.bottom = Math.max(0, footerGap) + "px";
+    }
+
+    window.onscroll = () => {
+        setSidebarBottom();
+    };
+
+    $("#sidebar-collapse").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        if ($.cookie("sidebarScroll")) {
+            sidebarScrollTopPosition = $.cookie("sidebarScroll");
+        }
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 350, function () {
+            $("#ie-new-sidebar-collapse").show();
+            $("#ie-new-sidebar").removeClass("open")
+            $("#ie-new-sidebar").addClass("close")
+            $("#ie-new-sidebar").removeAttr("style")
+        });
+        $(".ie-content-pane").animate({ width: (width + sidebarWidth), marginLeft: (marginLeft - sidebarWidth) }, 350, function () {
+            resizeContent()
+        })
+
+    });
+    $("#sidebar-expand").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 250, function () {
+            $('#ie-new-sidebar').css('display', 'flex');
+            $("#ie-new-sidebar-collapse").hide();
+            $("#ie-new-sidebar").removeClass("close")
+            $("#ie-new-sidebar").addClass("open")
+            setSidebarBottom();
+
+            if (sidebarScrollTopPosition != 0) {
+                $.cookie("sidebarScroll", sidebarScrollTopPosition, {
+                    path: "/zh-tw/bluexp-setup-admin"
+                })
+                $("#ie-new-toc").scrollTop(sidebarScrollTopPosition);
+                sidebarScrollTopPosition = 0;
+            }
+        });
+        $(".ie-content-pane").animate({ width: (width - sidebarWidth), 'marginLeft': (marginLeft + sidebarWidth) }, 250, function () {
+            resizeContent()
+        })
+    });
+    function resizeContent() {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        const rightNavbarVisible =  $("#ie-right-navbar").css('display') && $("#ie-right-navbar").css('display') != 'none';
+        const sidebarVisible = $("#ie-new-sidebar").css('display') != 'none';
+        const rightNavbarWidth = $("#ie-right-navbar").width();
+        const rightNavbarCollapseWidth = $("#ie-right-navbar-collapse").width();
+        const rightNavbarCollapseVisible = $("#ie-right-navbar-collapse").css('display') && $("#ie-right-navbar-collapse").css('display') != 'none';
+        
+        if (rightNavbarVisible && sidebarVisible) {
+            $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarWidth}px)`)
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+        } else if (sidebarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarCollapseWidth}px)`)
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar").width()}px)`)
+            }
+
+        } else if (rightNavbarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            $(".ie-content-pane").width(`calc(100% - ${rightNavbarWidth}px)`)
+        } else {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${rightNavbarCollapseWidth}px)`);
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar-collapse").width()}px) `);
+            }
+            
+        }
+    }
+    $(window).on("resize load", function () {
+        setSidebarBottom();
+        resizeContent()
+    });
+
+
+</script>
+
+<div class="ie-content-pane ie-component-detail-content ie-component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content" id="main">
+      <!-- include utility.html -->
+      <div class="ie-info-disclaimer">
+    <span>
+      <div class="ie-info-disclaimer-container">
+        <div class="ie-info-disclaimer-icon">
+          <img src="/zh-tw/bluexp-setup-admin/images/notification-icons.svg" class="luci-icon" alt="" />
+        </div>
+        <div class="ie-info-disclaimer-content">
+          <span> 本繁體中文版使用機器翻譯，譯文僅供參考，若與英文版本牴觸，應以英文版本為準。 </span>
+        </div>
+        <div style="clear:both;"></div>
+      </div>
+    </span>
+  </div><div class="ie-component-detail-heading-wrap">
+  <h1 class="ie-component-detail-heading">準備以受限模式進行部署</h1>
+</div>
+
+<div id="ie-byline">
+  
+<div class="page-details">
+    
+        
+            <time datetime="2024-03-27 18:26:11 +0000">03/27/2024</time>
+        
+    
+    
+        <span>貢獻者
+        </span>
+    
+    
+</div>
+<div class="page-controls">
+    <div id="contribute-dropdown" class="custom-dropdown custom-dropdown-contrib" >
+        <div class="custom-dropdown-select custom-dropdown-select-contrib">
+        <span class="contrib-name"><img src="/zh-tw/bluexp-setup-admin/images/discuss-sm.svg" alt="" class="github-icon" />建議變更</span>
+        <img src="/zh-tw/bluexp-setup-admin/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown invisible" />
+        <img src="/zh-tw/bluexp-setup-admin/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup" />
+        </div>
+        <ul class="custom-dropdown-menu suggested-changes-dropdown"><li>
+                <a target="_blank" href="https://github.com/NetAppDocs/bluexp-setup-admin.zh-tw/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-prepare-restricted-mode.html&page-title=準備以受限模式進行部署" class="page-nav-contribute-link" role="button">請求文件變更</a>
+            </li><li> 
+                <a target="_blank" href="https://github.com/NetAppDocs/bluexp-setup-admin/blob/main/task-prepare-restricted-mode.adoc" class="page-nav-contribute-link" role="button">編輯本頁</a>
+            </li><li><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  >瞭解如何貢獻</a></li>
+        </ul>
+    </div>
+    <div id="pdf-control-container">
+        <div class="n-pdf-header">
+            <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+                <img class="adobe-icon" src="/zh-tw/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>PDF<img src="/zh-tw/bluexp-setup-admin/images/dropdown-arrow.svg" class="custom-icon" alt="" />
+            </a>
+        </div>
+        <div class="n-pdf-body-container">
+            <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+                    
+                    
+                    
+                    <a target="_blank" class="pdf-download-link" href="/zh-tw/bluexp-setup-admin/pdfs/fullsite-sidebar/BlueXP_安裝與管理文件.pdf" >
+                    <img src="/zh-tw/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>此文件 PDF 的網站</a>
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-setup-admin/pdfs/sidebar/版本資訊.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            版本資訊
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-setup-admin/pdfs/sidebar/開始使用.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            開始使用
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-setup-admin/pdfs/sidebar/瞭解基礎知識.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            瞭解基礎知識
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-setup-admin/pdfs/sidebar/開始使用標準模式.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            開始使用標準模式
+          </a>
+          
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-setup-admin/pdfs/sidebar/建立連接器.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            建立連接器
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-setup-admin/pdfs/sidebar/AWS.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            AWS
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-setup-admin/pdfs/sidebar/Azure.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Azure
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-setup-admin/pdfs/sidebar/Google_Cloud.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Google Cloud
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-setup-admin/pdfs/sidebar/開始使用受限模式.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            開始使用受限模式
+          </a>
+          
+
+
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-setup-admin/pdfs/sidebar/開始使用私有模式.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            開始使用私有模式
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-setup-admin/pdfs/sidebar/管理BlueXP.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            管理BlueXP
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-setup-admin/pdfs/sidebar/BlueXP_帳戶.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            BlueXP 帳戶
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-setup-admin/pdfs/sidebar/連接器.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            連接器
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-setup-admin/pdfs/sidebar/認證與訂閱.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            認證與訂閱
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-setup-admin/pdfs/sidebar/AWS.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            AWS
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-setup-admin/pdfs/sidebar/Azure.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Azure
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-setup-admin/pdfs/sidebar/Google_Cloud.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Google Cloud
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-setup-admin/pdfs/sidebar/參考資料.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            參考資料
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-setup-admin/pdfs/sidebar/權限.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            權限
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-setup-admin/pdfs/sidebar/連接埠.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            連接埠
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-setup-admin/pdfs/sidebar/知識與支援.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            知識與支援
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+</li></ul>
+            <div class="zip-pdf-link-container" style="display: none;">   
+                <a href="#" id="zipPdf">
+                <img src="/zh-tw/bluexp-setup-admin/images/pdf-zip.png" alt="" width="16" height="16"/>
+                <pre>個別的 PDF 文件集合<span class="zip-size"></span></pre>
+                </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+        </div>
+    </div>        
+<script>
+$("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+$("#toggleButtonPdf").on('click', function(e){ 
+    e.stopPropagation();
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+});
+
+//hide is by clicking outside pdfcontainer
+$(document).on('click', function (e) {
+    if ($('#toggleContainerPdf').is(':visible') && !$('.n-pdf-body-container').is(e.target) && !$('.n-pdf-body-container').has(e.target).length)  {
+        
+        $("#toggleContainerPdf").toggle('display');
+        $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+        $("#toggleButtonPdf").removeClass("active");
+    }
+});
+</script>
+<script>
+    function getPdfLocation() {
+        const pdfLocation = window.scrollX + document.querySelector('#pdf-control-container').getBoundingClientRect().left
+        if (pdfLocation < 450) {
+            $(".n-pdf-body-container").addClass("block")
+        } else {
+            $(".n-pdf-body-container").removeClass("block")
+        }
+    
+    }
+    $( window ).on( "resize", function() {
+        getPdfLocation()
+} );
+</script>
+<script>
+    const pdfButtonWidth =  $(".n-pdf-header").width();
+    const pdfMenuWidth = $(".n-pdf-body-container").width();
+    $(".n-pdf-body-container").css('margin-left', `calc(${pdfButtonWidth - pdfMenuWidth}px)`);
+</script>
+</div>
+
+    
+
+</div>
+
+
+
+
+<div class="content-to-index">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>在受限模式下部署 BlueXP 之前、請先準備好您的環境。例如、您需要檢閱主機需求、準備網路、設定權限等。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="步驟-1-瞭解受限模式的運作方式">步驟 1 ：瞭解受限模式的運作方式</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>開始之前、您應該先瞭解 BlueXP 在受限模式下的運作方式。</p>
+</div>
+<div class="paragraph">
+<p>例如、您應該瞭解、您必須使用本機可從 BlueXP Connector 取得的瀏覽器型介面來安裝。您無法從透過 SaaS 層提供的網路型主控台存取 BlueXP 。</p>
+</div>
+<div class="paragraph">
+<p>此外、並非所有 BlueXP 服務都可用。</p>
+</div>
+<div class="paragraph">
+<p><a href="concept-modes.html">"瞭解受限模式的運作方式"</a>。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="步驟-2-檢閱安裝選項">步驟 2 ：檢閱安裝選項</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>在受限模式中、您只能在雲端安裝 Connector 。提供下列安裝選項：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>從 AWS Marketplace 取得</p>
+</li>
+<li>
+<p>來自 Azure Marketplace</p>
+</li>
+<li>
+<p>在您自己的 Linux 主機上手動安裝 Connector 、該主機在 AWS 、 Azure 或 Google Cloud 中執行</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="步驟-3-檢閱主機需求">步驟 3 ：檢閱主機需求</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Connector 軟體必須在符合特定作業系統需求、 RAM 需求、連接埠需求等的主機上執行。</p>
+</div>
+<div class="paragraph">
+<p>當您從 AWS 或 Azure Marketplace 部署 Connector 時、映像會包含所需的作業系統和軟體元件。您只需選擇符合 CPU 和 RAM 需求的執行個體類型即可。</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">專用主機</dt>
+<dd>
+<p>與其他應用程式共用的主機不支援 Connector 。主機必須是專屬主機。</p>
+</dd>
+<dt class="hdlist1">支援的作業系統</dt>
+<dd>
+<div class="openblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Ubuntu 22.04 LTS</p>
+</li>
+<li>
+<p>CentOS 7.6、7.7、7.8及7.9</p>
+</li>
+<li>
+<p>Red Hat Enterprise Linux 7.6 、 7.7 、 7.8 和 7.9</p>
+<div class="paragraph">
+<p>主機必須向 Red Hat Subscription Management 登錄。如果主機尚未登錄、則無法在 Connector 安裝期間存取儲存庫來更新所需的協力廠商軟體。</p>
+</div>
+<div class="paragraph">
+<p>這些作業系統的英文版本支援 Connector 。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Hypervisor</dt>
+<dd>
+<p>需要經認證可執行 Ubuntu 、 CentOS 或 Red Hat Enterprise Linux 的裸機或託管 Hypervisor 。</p>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p><a href="https://access.redhat.com/certified-hypervisors" target="_blank" rel="noopener">"Red Hat 解決方案：哪些 Hypervisor 已通過認證、可執行 Red Hat Enterprise Linux ？"</a></p>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">CPU</dt>
+<dd>
+<p>4 個核心或 4 個 vCPU</p>
+</dd>
+<dt class="hdlist1">RAM</dt>
+<dd>
+<p>14 GB</p>
+</dd>
+<dt class="hdlist1">AWS EC2 執行個體類型</dt>
+<dd>
+<p>符合上述 CPU 和 RAM 需求的執行個體類型。建議使用T3.xLarge。</p>
+</dd>
+<dt class="hdlist1">Azure VM 大小</dt>
+<dd>
+<p>符合上述 CPU 和 RAM 需求的執行個體類型。我們建議使用 DS3 v2 。</p>
+</dd>
+<dt class="hdlist1">Google Cloud 機器類型</dt>
+<dd>
+<p>符合上述 CPU 和 RAM 需求的執行個體類型。我們建議使用 n2 標準 4 。</p>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p>Google Cloud支援Connector的VM執行個體、其作業系統可支援此連接器 <a href="https://cloud.google.com/compute/shielded-vm/docs/shielded-vm" target="_blank" rel="noopener">"防護VM功能"</a></p>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">/opt 中的磁碟空間</dt>
+<dd>
+<p>必須有100 GiB的可用空間</p>
+</dd>
+<dt class="hdlist1">/var.中的磁碟空間</dt>
+<dd>
+<p>必須提供20 GiB的空間</p>
+</dd>
+<dt class="hdlist1">Docker引擎</dt>
+<dd>
+<p>安裝Connector之前、主機上必須安裝Docker Engine 19.3.1版或更新版本。 <a href="https://docs.docker.com/engine/install/" target="_blank" rel="noopener">"檢視安裝指示"</a></p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="步驟-4-準備網路">步驟 4 ：準備網路</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>設定您的網路、讓 Connector 能夠管理公有雲環境中的資源和程序。除了連接器的虛擬網路和子網路之外、您還需要確保符合下列需求。</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">連線至目標網路</dt>
+<dd>
+<p>Connector 必須與您計畫管理儲存設備的位置建立網路連線。例如、您計畫部署 Cloud Volumes ONTAP 的 VPC 或 vnet 、或內部部署 ONTAP 叢集所在的資料中心。</p>
+</dd>
+<dt class="hdlist1">準備網路以供使用者存取 BlueXP 主控台</dt>
+<dd>
+<p>在受限模式下、可從 Connector 存取 BlueXP 使用者介面。當您使用 BlueXP 使用者介面時、它會聯絡幾個端點來完成資料管理工作。從 BlueXP 主控台完成特定動作時、會從使用者的電腦聯絡這些端點。</p>
+<div class="openblock">
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">端點</th>
+<th class="tableblock halign-left valign-top">目的</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">https://signin.b2c.netapp.com</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">需要更新NetApp 支援網站 驗證（NSS）認證或新增新的NSS認證至BlueXP。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">https://netapp-cloud-account.auth0.com<br>
+<br>
+https://cdn.auth0.com<br>
+<br>
+https://services.cloud.netapp.com</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">您的網頁瀏覽器會連線至這些端點、以便透過BlueXP進行集中式使用者驗證。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">https://widget.intercom.io</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">產品內對談可讓您與 NetApp 雲端專家交談。</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">手動安裝期間聯絡的端點</dt>
+<dd>
+<p>當您在自己的 Linux 主機上手動安裝 Connector 時、 Connector 的安裝程式需要在安裝過程中存取下列 URL ：</p>
+<div class="openblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>https://support.netapp.com</p>
+</li>
+<li>
+<p>https://mysupport.netapp.com</p>
+</li>
+<li>
+<p>https://cloudmanager.cloud.netapp.com/tenancy</p>
+</li>
+<li>
+<p>https://stream.cloudmanager.cloud.netapp.com</p>
+</li>
+<li>
+<p>https://production-artifacts.cloudmanager.cloud.netapp.com</p>
+</li>
+<li>
+<p>https://*.blob.core.windows.net</p>
+</li>
+<li>
+<p>https://cloudmanagerinfraprod.azurecr.io</p>
+<div class="paragraph">
+<p>Azure 政府地區不需要此端點。</p>
+</div>
+</li>
+<li>
+<p>https://occmclientinfragov.azurecr.us</p>
+<div class="paragraph">
+<p>此端點僅在 Azure 政府地區需要使用。</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>主機可能會在安裝期間嘗試更新作業系統套件。主機可聯絡不同的鏡射站台、以取得這些 OS 套件。</p>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">用於日常營運的外傳網際網路存取</dt>
+<dd>
+<p>您部署Connector的網路位置必須具有傳出網際網路連線。連接器需要存取傳出網際網路、才能連絡下列端點、以便管理公有雲環境中的資源和程序。</p>
+<div class="openblock">
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 66.6666%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">端點</th>
+<th class="tableblock halign-left valign-top">目的</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>AWS 服務（ amazonaws.com):</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>CloudForation</p>
+</li>
+<li>
+<p>彈性運算雲端（ EC2 ）</p>
+</li>
+<li>
+<p>身分識別與存取管理（ IAM ）</p>
+</li>
+<li>
+<p>金鑰管理服務（ KMS ）</p>
+</li>
+<li>
+<p>安全性權杖服務（ STOS ）</p>
+</li>
+<li>
+<p>簡易儲存服務（ S3 ）</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>管理AWS中的資源。確切的端點取決於您使用的 AWS 區域。 <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html" target="_blank" rel="noopener">"如需詳細資料、請參閱AWS文件"</a></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>https://management.azure.com<br>
+https://login.microsoftonline.com<br>
+https://blob.core.windows.net<br>
+https://core.windows.net</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>管理Azure公共區域的資源。</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>https://management.usgovcloudapi.net<br>
+https://login.microsoftonline.us<br>
+https://blob.core.usgovcloudapi.net<br>
+https://core.usgovcloudapi.net</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>管理Azure政府區域的資源。</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>https://management.chinacloudapi.cn<br>
+https://login.chinacloudapi.cn<br>
+https://blob.core.chinacloudapi.cn<br>
+https://core.chinacloudapi.cn</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>管理Azure中國地區的資源。</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>https://www.googleapis.com/compute/v1/<br>
+https://compute.googleapis.com/compute/v1<br>
+https://cloudresourcemanager.googleapis.com/v1/projects<br>
+https://www.googleapis.com/compute/beta<br>
+https://storage.googleapis.com/storage/v1<br>
+https://www.googleapis.com/storage/v1<br>
+https://iam.googleapis.com/v1<br>
+https://cloudkms.googleapis.com/v1<br>
+https://www.googleapis.com/deploymentmanager/v2/projects</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>管理Google Cloud中的資源。</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>https://support.netapp.com<br>
+https://mysupport.netapp.com</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>以取得授權資訊、並將AutoSupport 資訊傳送給NetApp支援部門。</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>https://*.api.bluexp.netapp.com</p>
+</div>
+<div class="paragraph">
+<p>https://api.bluexp.netapp.com</p>
+</div>
+<div class="paragraph">
+<p>https://*.cloudmanager.cloud.netapp.com</p>
+</div>
+<div class="paragraph">
+<p>https://cloudmanager.cloud.netapp.com</p>
+</div>
+<div class="paragraph">
+<p>https://netapp-cloud-account.auth0.com</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>在BlueXP中提供SaaS功能與服務。</p>
+</div>
+<div class="paragraph">
+<p>請注意、 Connector 目前正在聯絡「 cloudmanager.cloud.netapp.com" 」、但在即將推出的版本中、會開始聯絡「 api.bluexp.netapp.com" 」。</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>https://*.blob.core.windows.net</p>
+</div>
+<div class="paragraph">
+<p>https://cloudmanagerinfraprod.azurecr.io<br>
+Azure 政府地區不需要此端點。</p>
+</div>
+<div class="paragraph">
+<p>https://occmclientinfragov.azurecr.us<br>
+此端點僅在 Azure 政府地區需要使用。</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>升級Connector及其Docker元件。</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Azure 中的公有 IP 位址</dt>
+<dd>
+<p>如果您想在 Azure 中的 Connector VM 使用公有 IP 位址、則 IP 位址必須使用基本 SKU 、以確保 BlueXP 使用此公有 IP 位址。</p>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot-azure-sku.png" alt="在 Azure 中建立新 IP 位址的螢幕擷取畫面、可讓您在 SKU 欄位中選擇「基本」。"></span></p>
+</div>
+<div class="paragraph">
+<p>如果您改用標準 SKU IP 位址、則 BlueXP 會使用 Connector 的 _private IP 位址、而非公有 IP 。如果您用來存取 BlueXP 主控台的機器無法存取該私有 IP 位址、則 BlueXP 主控台的動作將會失敗。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses#sku" target="_blank" rel="noopener">"Azure 文件：公有 IP SKU"</a></p>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Proxy伺服器</dt>
+<dd>
+<p>如果您的組織需要為所有傳出的網際網路流量部署 Proxy 伺服器、請取得下列關於 HTTP 或 HTTPS Proxy 的資訊。您必須在安裝期間提供此資訊。</p>
+<div class="openblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>IP 位址</p>
+</li>
+<li>
+<p>認證資料</p>
+</li>
+<li>
+<p>HTTPS憑證</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>請注意、 BlueXP 不支援透明 Proxy 伺服器。</p>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">連接埠</dt>
+<dd>
+<p>除非您啟動連接器、或使用連接器做為 Proxy 、將 AutoSupport 訊息從 Cloud Volumes ONTAP 傳送至 NetApp 支援、否則不會有傳入的流量傳入連接器。</p>
+<div class="openblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>HTTP（80）和HTTPS（443）可存取本機UI、在極少數情況下使用。</p>
+</li>
+<li>
+<p>只有在需要連線至主機進行疑難排解時、才需要SSH（22）。</p>
+</li>
+<li>
+<p>如果您在無法使用輸出網際網路連線的子網路中部署 Cloud Volumes ONTAP 系統、則需要透過連接埠 3128 進行輸入連線。</p>
+<div class="paragraph">
+<p>如果 Cloud Volumes ONTAP 系統沒有輸出網際網路連線來傳送 AutoSupport 訊息、 BlueXP 會自動將這些系統設定為使用 Connector 隨附的 Proxy 伺服器。唯一的需求是確保連接器的安全群組允許透過連接埠3128進行傳入連線。部署Connector之後、您需要開啟此連接埠。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">啟用 NTP</dt>
+<dd>
+<p>如果您打算使用 BlueXP 分類來掃描公司資料來源、則應該在 BlueXP Connector 系統和 BlueXP 分類系統上啟用網路時間傳輸協定（ NTP ）服務、以便在系統之間同步時間。 <a href="https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html" target="_blank" rel="noopener">"深入瞭解 BlueXP 分類"</a></p>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p>如果您計畫從雲端供應商的市場建立 Connector 、則在建立 Connector 之後、您必須實作這項網路需求。</p>
+</div>
+</div>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="步驟-5-準備雲端權限">步驟： 5 準備雲端權限</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>BlueXP 需要雲端供應商的權限、才能在虛擬網路中部署 Cloud Volumes ONTAP 並使用 BlueXP 資料服務。您需要在雲端供應商中設定權限、然後將這些權限與 Connector 建立關聯。</p>
+</div>
+<div class="paragraph">
+<p>若要檢視必要步驟、請選取您想要用於雲端供應商的驗證選項。</p>
+</div>
+<div class="exampleblock tabbed-block">
+<div class="content">
+<div class="openblock">
+<div class="title">AWS IAM 角色</div>
+<div class="content">
+<div class="paragraph">
+<p>使用 IAM 角色為 Connector 提供權限。</p>
+</div>
+<div class="paragraph">
+<p>如果您是從 AWS Marketplace 建立 Connector 、當您啟動 EC2 執行個體時、系統會提示您選取該 IAM 角色。</p>
+</div>
+<div class="paragraph">
+<p>如果您是在自己的 Linux 主機上手動安裝 Connector 、則必須將該角色附加至 EC2 執行個體。</p>
+</div>
+<div class="olist arabic">
+<div class="title">步驟</div>
+<ol class="arabic">
+<li>
+<p>登入 AWS 主控台並瀏覽至 IAM 服務。</p>
+</li>
+<li>
+<p>建立原則：</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>選取 * 原則 &gt; 建立原則 * 。</p>
+</li>
+<li>
+<p>選取 * JSON* 、然後複製並貼上的內容 <a href="reference-permissions-aws.html">"Connector 的 IAM 原則"</a>。</p>
+</li>
+<li>
+<p>完成其餘步驟以建立原則。</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>建立 IAM 角色：</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>選取 * 角色 &gt; 建立角色 * 。</p>
+</li>
+<li>
+<p>選取 * AWS 服務 &gt; EC2* 。</p>
+</li>
+<li>
+<p>附加您剛建立的原則來新增權限。</p>
+</li>
+<li>
+<p>完成剩餘步驟以建立角色。</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">結果</div>
+<p>您現在擁有 Connector EC2 執行個體的 IAM 角色。</p>
+</div>
+</div>
+</div>
+<div class="openblock">
+<div class="title">AWS 存取金鑰</div>
+<div class="content">
+<div class="paragraph">
+<p>為 IAM 使用者設定權限和存取金鑰。安裝 Connector 並設定 BlueXP 之後、您需要為 BlueXP 提供 AWS 存取金鑰。</p>
+</div>
+<div class="olist arabic">
+<div class="title">步驟</div>
+<ol class="arabic">
+<li>
+<p>登入 AWS 主控台並瀏覽至 IAM 服務。</p>
+</li>
+<li>
+<p>建立原則：</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>選取 * 原則 &gt; 建立原則 * 。</p>
+</li>
+<li>
+<p>選取 * JSON* 、然後複製並貼上的內容 <a href="reference-permissions-aws.html">"Connector 的 IAM 原則"</a>。</p>
+</li>
+<li>
+<p>完成其餘步驟以建立原則。</p>
+<div class="paragraph">
+<p>視您打算使用的 BlueXP 服務而定、您可能需要建立第二個原則。</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>對於標準區域、權限分佈在兩個原則之間。由於AWS中受管理原則的字元大小上限、因此需要兩個原則。 <a href="reference-permissions-aws.html">"深入瞭解 Connector 的 IAM 原則"</a>。</p>
+</div>
+</li>
+<li>
+<p>將原則附加至 IAM 使用者。</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html" target="_blank" rel="noopener">"AWS 文件：建立 IAM 角色"</a></p>
+</li>
+<li>
+<p><a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html" target="_blank" rel="noopener">"AWS 文件：新增和移除 IAM 原則"</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>請確定使用者擁有存取金鑰、您可以在安裝 Connector 之後新增至 BlueXP 。</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">結果</div>
+<p>帳戶現在擁有必要的權限。</p>
+</div>
+</div>
+</div>
+<div class="openblock">
+<div class="title">Azure 角色</div>
+<div class="content">
+<div class="paragraph">
+<p>建立具有必要權限的 Azure 自訂角色。您將會將此角色指派給 Connector VM 。</p>
+</div>
+<div class="paragraph">
+<p>請注意、您可以使用 Azure 入口網站、 Azure PowerShell 、 Azure CLI 或 REST API 來建立 Azure 自訂角色。下列步驟說明如何使用 Azure CLI 建立角色。如果您想要使用不同的方法、請參閱 <a href="https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role" target="_blank" rel="noopener">"Azure文件"</a></p>
+</div>
+<div class="olist arabic">
+<div class="title">步驟</div>
+<ol class="arabic">
+<li>
+<p>如果您打算在自己的主機上手動安裝軟體、請在 VM 上啟用系統指派的託管身分識別、以便透過自訂角色提供必要的 Azure 權限。</p>
+<div class="paragraph">
+<p><a href="https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm" target="_blank" rel="noopener">"Microsoft Azure 文件：使用 Azure 入口網站、在 VM 上設定 Azure 資源的託管身分識別"</a></p>
+</div>
+</li>
+<li>
+<p>複製的內容 <a href="reference-permissions-azure.html">"Connector的自訂角色權限"</a> 並將它們儲存在Json檔案中。</p>
+</li>
+<li>
+<p>將 Azure 訂閱 ID 新增至可指派的範圍、以修改 Json 檔案。</p>
+<div class="paragraph">
+<p>您應該為每個想要搭配 BlueXP 使用的 Azure 訂閱新增 ID 。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>範例 *</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">"AssignableScopes": [
+"/subscriptions/d333af45-0d07-4154-943d-c25fbzzzzzzz",
+"/subscriptions/54b91999-b3e6-4599-908e-416e0zzzzzzz",
+"/subscriptions/398e471c-3b42-4ae7-9b59-ce5bbzzzzzzz"</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>使用 Json 檔案在 Azure 中建立自訂角色。</p>
+<div class="paragraph">
+<p>下列步驟說明如何在Azure Cloud Shell中使用Bash建立角色。</p>
+</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>開始 <a href="https://docs.microsoft.com/en-us/azure/cloud-shell/overview" target="_blank" rel="noopener">"Azure Cloud Shell"</a> 並選擇Bash環境。</p>
+</li>
+<li>
+<p>上傳Json檔案。</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_azure_shell_upload.png" alt="Azure Cloud Shell的快照、您可在其中選擇上傳檔案的選項。"></span></p>
+</div>
+</li>
+<li>
+<p>使用Azure CLI建立自訂角色：</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-azurecli" data-lang="azurecli">az role definition create --role-definition Connector_Policy.json</code></pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">結果</div>
+<p>現在您應該有一個名為BlueXP運算子的自訂角色、可以指派給連接器虛擬機器。</p>
+</div>
+</div>
+</div>
+<div class="openblock">
+<div class="title">Azure 服務主體</div>
+<div class="content">
+<div class="paragraph">
+<p>在 Microsoft Entra ID 中建立並設定服務主體、並取得 BlueXP 所需的 Azure 認證。安裝 Connector 並設定 BlueXP 之後、您必須提供 BlueXP 的這些認證。</p>
+</div>
+<div class="olist arabic">
+<div class="title">建立 Microsoft Entra 應用程式以進行角色型存取控制</div>
+<ol class="arabic">
+<li>
+<p>確保您在 Azure 中擁有建立 Active Directory 應用程式及將應用程式指派給角色的權限。</p>
+<div class="paragraph">
+<p>如需詳細資訊、請參閱 <a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/" target="_blank" rel="noopener">"Microsoft Azure 說明文件：必要權限"</a></p>
+</div>
+</li>
+<li>
+<p>從 Azure 入口網站開啟 * Microsoft Entra ID* 服務。</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_azure_ad.png" alt="顯示 Microsoft Azure 中的 Active Directory 服務。"></span></p>
+</div>
+</li>
+<li>
+<p>在功能表中、選取 * 應用程式註冊 * 。</p>
+</li>
+<li>
+<p>選取 * 新登錄 * 。</p>
+</li>
+<li>
+<p>指定應用程式的詳細資料：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>* 名稱 * ：輸入應用程式的名稱。</p>
+</li>
+<li>
+<p><strong>帳戶類型</strong>：選取帳戶類型（任何帳戶類型均可用於BlueXP）。</p>
+</li>
+<li>
+<p><strong>重新導向URI</strong>：您可以將此欄位保留空白。</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>選擇*註冊*。</p>
+<div class="paragraph">
+<p>您已建立 AD 應用程式和服務主體。</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="olist arabic">
+<div class="title">將應用程式指派給角色</div>
+<ol class="arabic">
+<li>
+<p>建立自訂角色：</p>
+<div class="paragraph">
+<p>請注意、您可以使用 Azure 入口網站、 Azure PowerShell 、 Azure CLI 或 REST API 來建立 Azure 自訂角色。下列步驟說明如何使用 Azure CLI 建立角色。如果您想要使用不同的方法、請參閱 <a href="https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role" target="_blank" rel="noopener">"Azure文件"</a></p>
+</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>複製的內容 <a href="reference-permissions-azure.html">"Connector的自訂角色權限"</a> 並將它們儲存在Json檔案中。</p>
+</li>
+<li>
+<p>將 Azure 訂閱 ID 新增至可指派的範圍、以修改 Json 檔案。</p>
+<div class="paragraph">
+<p>您應該為使用者建立 Cloud Volumes ONTAP 的各個 Azure 訂閱新增 ID 。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>範例 *</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">"AssignableScopes": [
+"/subscriptions/d333af45-0d07-4154-943d-c25fbzzzzzzz",
+"/subscriptions/54b91999-b3e6-4599-908e-416e0zzzzzzz",
+"/subscriptions/398e471c-3b42-4ae7-9b59-ce5bbzzzzzzz"</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>使用 Json 檔案在 Azure 中建立自訂角色。</p>
+<div class="paragraph">
+<p>下列步驟說明如何在Azure Cloud Shell中使用Bash建立角色。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>開始 <a href="https://docs.microsoft.com/en-us/azure/cloud-shell/overview" target="_blank" rel="noopener">"Azure Cloud Shell"</a> 並選擇Bash環境。</p>
+</li>
+<li>
+<p>上傳Json檔案。</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_azure_shell_upload.png" alt="Azure Cloud Shell的快照、您可在其中選擇上傳檔案的選項。"></span></p>
+</div>
+</li>
+<li>
+<p>使用Azure CLI建立自訂角色：</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-azurecli" data-lang="azurecli">az role definition create --role-definition Connector_Policy.json</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>現在您應該有一個名為BlueXP運算子的自訂角色、可以指派給連接器虛擬機器。</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>將應用程式指派給角色：</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>從 Azure 入口網站開啟 * 訂閱 * 服務。</p>
+</li>
+<li>
+<p>選取訂閱。</p>
+</li>
+<li>
+<p>選取 * 存取控制（ IAM ） &gt; 新增 &gt; 新增角色指派 * 。</p>
+</li>
+<li>
+<p>在 * 角色 * 索引標籤中、選取 * BlueXP 操作員 * 角色、然後選取 * 下一步 * 。</p>
+</li>
+<li>
+<p>在「<strong>成員</strong>」索引標籤中、完成下列步驟：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>保留*選取「使用者」、「群組」或「服務主體」*。</p>
+</li>
+<li>
+<p>選取 * 選取成員 * 。</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot-azure-service-principal-role.png" alt="Azure入口網站的快照、會在新增角色至應用程式時顯示「成員」索引標籤。"></span></p>
+</div>
+</li>
+<li>
+<p>搜尋應用程式名稱。</p>
+<div class="paragraph">
+<p>範例如下：</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_azure_service_principal_role.png" alt="Azure入口網站的快照、顯示Azure入口網站中的「新增角色指派」表單。"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>選取應用程式、然後選取 * 選取 * 。</p>
+</li>
+<li>
+<p>選擇*下一步*。</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>選取 * 檢閱 + 指派 * 。</p>
+<div class="paragraph">
+<p>服務主體現在擁有部署Connector所需的Azure權限。</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>如果您想要從 Cloud Volumes ONTAP 多個 Azure 訂閱中部署支援功能、則必須將服務授權對象繫結至每個訂閱項目。BlueXP可讓您選擇部署Cloud Volumes ONTAP 時要使用的訂閱內容。</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="olist arabic">
+<div class="title">新增 Windows Azure Service Management API 權限</div>
+<ol class="arabic">
+<li>
+<p>在 * Microsoft Entra ID* 服務中、選取 * 應用程式登錄 * 、然後選取應用程式。</p>
+</li>
+<li>
+<p>選取 * API 權限 &gt; 新增權限 * 。</p>
+</li>
+<li>
+<p>在「 * Microsoft API* 」下、選取「 * Azure 服務管理 * 」。</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_azure_service_mgmt_apis.gif" alt="Azure 入口網站的快照、顯示 Azure 服務管理 API 權限。"></span></p>
+</div>
+</li>
+<li>
+<p>選取 * 以組織使用者身分存取 Azure 服務管理 * 、然後選取 * 新增權限 * 。</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_azure_service_mgmt_apis_add.gif" alt="Azure 入口網站的快照、顯示新增 Azure 服務管理 API 。"></span></p>
+</div>
+</li>
+</ol>
+</div>
+<div class="olist arabic">
+<div class="title">取得應用程式的應用程式 ID 和目錄 ID</div>
+<ol class="arabic">
+<li>
+<p>在 * Microsoft Entra ID* 服務中、選取 * 應用程式登錄 * 、然後選取應用程式。</p>
+</li>
+<li>
+<p>複製 * 應用程式（用戶端） ID* 和 * 目錄（租戶） ID* 。</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_azure_app_ids.gif" alt="螢幕擷取畫面、顯示 Microsoft Entra Idy 中應用程式的應用程式（用戶端） ID 和目錄（租戶） ID 。"></span></p>
+</div>
+<div class="paragraph">
+<p>將Azure帳戶新增至BlueXP時、您必須提供應用程式的應用程式（用戶端）ID和目錄（租戶）ID。BlueXP使用ID以程式設計方式登入。</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="olist arabic">
+<div class="title">建立用戶端機密</div>
+<ol class="arabic">
+<li>
+<p>開啟 * Microsoft Entra ID* 服務。</p>
+</li>
+<li>
+<p>選取 * 應用程式註冊 * 、然後選取您的應用程式。</p>
+</li>
+<li>
+<p>選取 * 「憑證與機密」 &gt; 「新用戶端機密」 * 。</p>
+</li>
+<li>
+<p>提供機密與持續時間的說明。</p>
+</li>
+<li>
+<p>選取*「Add*」。</p>
+</li>
+<li>
+<p>複製用戶端機密的值。</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_azure_client_secret.gif" alt="Azure 入口網站的螢幕擷取畫面、顯示 Microsoft Entra 服務主體的用戶端機密。"></span></p>
+</div>
+<div class="paragraph">
+<p>您現在擁有一個客戶機密、 BlueXP 可以使用它來驗證 Microsoft Entra ID 。</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">結果</div>
+<p>您的服務主體現在已設定完成、您應該已經複製應用程式（用戶端） ID 、目錄（租戶） ID 、以及用戶端機密的值。新增Azure帳戶時、您必須在BlueXP中輸入此資訊。</p>
+</div>
+</div>
+</div>
+<div class="openblock">
+<div class="title">Google Cloud 服務帳戶</div>
+<div class="content">
+<div class="paragraph">
+<p>建立角色、並將其套用至將用於 Connector VM 執行個體的服務帳戶。</p>
+</div>
+<div class="olist arabic">
+<div class="title">步驟</div>
+<ol class="arabic">
+<li>
+<p>在 Google Cloud 中建立自訂角色：</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>建立包含中定義權限的 YAML 檔案 <a href="reference-permissions-gcp.html">"Google Cloud 的 Connector 原則"</a>。</p>
+</li>
+<li>
+<p>從 Google Cloud 啟動 Cloud Shell 。</p>
+</li>
+<li>
+<p>上傳包含 Connector 必要權限的 YAML 檔案。</p>
+</li>
+<li>
+<p>使用建立自訂角色 <code>gcloud iam roles create</code> 命令。</p>
+<div class="paragraph">
+<p>以下範例在專案層級建立名為「 Connector 」的角色：</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-gcloud" data-lang="gcloud">gcloud iam roles create connector --project=myproject --file=connector.yaml</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>+<br>
+<a href="https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud" target="_blank" rel="noopener">"Google Cloud 文件：建立及管理自訂角色"</a></p>
+</div>
+</li>
+<li>
+<p>在 Google Cloud 中建立服務帳戶：</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>從 IAM &amp; Admin 服務中、選取 * 服務帳戶 &gt; 建立服務帳戶 * 。</p>
+</li>
+<li>
+<p>輸入服務帳戶詳細資料、然後選取 * 建立並繼續 * 。</p>
+</li>
+<li>
+<p>選取您剛建立的角色。</p>
+</li>
+<li>
+<p>完成剩餘步驟以建立角色。</p>
+<div class="paragraph">
+<p><a href="https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account" target="_blank" rel="noopener">"Google Cloud 文件：建立服務帳戶"</a></p>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">結果</div>
+<p>現在您有一個服務帳戶、可以指派給 Connector VM 執行個體。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="步驟-6-啟用-google-cloud-api">步驟 6 ：啟用 Google Cloud API</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>在 Google Cloud 中部署 Cloud Volumes ONTAP 需要幾個 API 。</p>
+</div>
+<div class="olist arabic">
+<div class="title">步驟</div>
+<ol class="arabic">
+<li>
+<p><a href="https://cloud.google.com/apis/docs/getting-started#enabling_apis" target="_blank" rel="noopener">"在專案中啟用下列 Google Cloud API"</a></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Cloud Deployment Manager V2 API</p>
+</li>
+<li>
+<p>雲端記錄 API</p>
+</li>
+<li>
+<p>Cloud Resource Manager API</p>
+</li>
+<li>
+<p>運算引擎 API</p>
+</li>
+<li>
+<p>身分識別與存取管理（ IAM ） API</p>
+</li>
+<li>
+<p>雲端金鑰管理服務（ KMS ） API</p>
+<div class="paragraph">
+<p>（僅當您打算使用 BlueXP 備份與還原搭配客戶管理的加密金鑰（ CMEK ）時才需要）</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+<div id="ie-right-navbar-collapse" class="close">
+  <img id="navbar-expand" class="ie-searchbox-icon" src="/zh-tw/bluexp-setup-admin/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-right-navbar" class="open">
+  <div id="right-navbar-collapse">
+    <img src="/zh-tw/bluexp-setup-admin/images/double_arrow.svg" alt="" />
+  </div>
+  <div class="page-nav-container">
+    <nav class="page-nav-fixed">
+      <div class="page-nav-title">在本頁</div>
+      <div class="page-nav-links">
+        <ul class="page-nav-inner" id="page-menu"></ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+
+<script>
+  resizeContent();
+  function setRightBarHeight() {
+    var h = 0;
+
+    // header 1
+    h += PXinViewport($('.n-footer'));
+    h += PXinViewport($('#ie-new-header'));
+
+    if ($('#ie-right-navbar').length) {
+      $('#ie-right-navbar').css({ height: `calc(100vh - ${h}px)` });
+    }
+    if ($('.page-nav-links').length) {
+      h += 98;
+      $('.page-nav-links').css({ height: `calc(100vh - ${h}px)` });
+    }
+  }
+
+  $(document).ready(function () {
+    // PAGE NAV - Click
+    const MASTHEAD_OFFSET = 65;
+    const SECTIONS = $("main h2, main h3");
+    let calculateActiveSection = false;
+    setTimeout(() => {
+      calculateActiveSection = true;
+    }, 100)
+
+    $(".page-nav__link").click(function (event) {
+      calculateActiveSection = false;
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      var target = $(event.target);
+      target.addClass('page-nav__link--active');
+      location.hash = event.target.hash;
+      setTimeout(() => {
+        calculateActiveSection = true;
+      }, 100)
+
+    });
+
+    // PAGE NAV - Scroll
+    $(window).on('resize scroll', function () {
+      if (calculateActiveSection) {
+        var activeSection = getActiveSection(SECTIONS, MASTHEAD_OFFSET);
+        if (activeSection) {
+          var activeHref = $(activeSection).attr('id');
+          $(".page-nav__link").removeClass('page-nav__link--active');
+          $("#page-menu a[href=#" + activeHref + "]").addClass('page-nav__link--active');
+          if (location.hash != "#" + activeHref) {
+            if (history.replaceState) {
+              history.replaceState(null, null, "#" + activeHref);
+            }
+          }
+        }
+      }
+    });
+
+    $(".n-pdf-button").click(function () {
+      $(this).toggleClass("active");
+    });
+
+    $.fn.isVisibleAndInViewport = function () {
+      var elementTop = $(this).offset().top;
+      var elementBottom = elementTop + $(this).outerHeight();
+
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
+
+      return elementBottom > viewportTop && elementTop < viewportBottom && $(this).is(":visible");
+    };
+
+
+    $(window).on('resize scroll', function () {
+      setRightBarHeight();
+    });
+
+    $(window).trigger('resize');
+
+
+  });
+
+  $("#right-navbar-collapse").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 350, function () {
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+    });
+    $(".ie-content-pane").animate({ width: (width + rightNavbarWidth) }, 350, function () {
+      resizeContent()
+      setSidebarBottom();
+    })
+
+  });
+  $("#navbar-expand").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 250, function () {
+      $("#ie-right-navbar-collapse").removeClass("open")
+      $("#ie-right-navbar-collapse").addClass("close")
+      $("#ie-right-navbar").removeClass("close")
+      $("#ie-right-navbar").addClass("open")
+      setRightBarHeight();
+      setSidebarBottom();
+    });
+    $(".ie-content-pane").animate({ width: (width - rightNavbarWidth) }, 250, function () {
+      resizeContent()
+    })
+  });
+
+  function navbarResize() {
+    const rightNavbarResized = $("#ie-right-navbar-collapse").hasClass('resized');
+    if (window.innerWidth < 1024) {
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+      $("#ie-right-navbar").removeAttr("style")
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar-collapse").addClass("resized")
+    } else {
+      if (rightNavbarResized) {
+        $('#ie-right-navbar').removeClass('close');
+        $('#ie-right-navbar').addClass('open');
+        $("#ie-right-navbar-collapse").removeClass("resized")
+        $("#ie-right-navbar-collapse").removeClass("open")
+        $("#ie-right-navbar-collapse").addClass("close")
+      }
+    }
+    resizeContent()
+  }
+  navbarResize();
+  $(window).on('resize load', function () {
+    navbarResize()
+  });
+
+  function getActiveSection(sections, offset) {
+    var scrollPosition = $(window).scrollTop() + offset + 5;
+    var activeSection;
+    for (var i = 0; i < sections.length; i++) {
+      var el = $(sections[i]);
+      var activePosition = el.offset().top;
+      if (activePosition > scrollPosition) {
+        break;
+      }
+
+      activeSection = sections[i];
+    }
+
+    return activeSection;
+  }
+
+  $("a[href*=#]:not([href=#])").click(function () {
+    setTimeout(() => {
+      $(window).trigger('scroll');
+    }, 105)
+  })
+
+  const hashOnLoad = location.href.split("#")[1];
+  setTimeout(function () {
+    if (hashOnLoad) {
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      $("#page-menu a[href=#" + hashOnLoad + "]").addClass('page-nav__link--active');
+    }
+  }, 100)
+
+</script>
+
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+        <div class="n-footer__left">
+          <li class="n-footer__copyright-link">
+                    <a href="https://www.netapp.com/company/legal/copyright/">© 2024 NetApp, Inc.</a>
+          </li>
+        </div>
+        <div class="n-footer__center">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">使用條款</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">隱私權政策</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Cookie 政策</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">Cookie 設定</a>
+            </li>
+          </ul>
+       </div>
+        <div class="n-footer__right">
+              <li class="n-footer__copyright-link">
+                <a target="_self" href="javascript:netapp_mailto()">傳送有關本網頁的意見反應</a>
+              </li>
+        </div>
+     </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/zh-tw/bluexp-setup-admin/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/zh-tw/bluexp-setup-admin/js/prism.js'></script>
+      <script type="text/javascript" src='/zh-tw/bluexp-setup-admin/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/zh-tw/bluexp-setup-admin/js/ie-tabbed-blocks.js'></script>
+    <script src='/zh-tw/bluexp-setup-admin/js/ie-sidebar.js'></script>
+  </body>
+
+</html>
