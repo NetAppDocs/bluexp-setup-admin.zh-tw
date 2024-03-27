@@ -24,6 +24,14 @@ summary: 已知限制指出本產品版本不支援的平台、裝置或功能�
 
 
 
+=== 不支援透明 Proxy 伺服器
+
+BlueXP 不支援使用 Connector 的透明 Proxy 伺服器。
+
+link:task-configuring-proxy.html["深入瞭解如何搭配 Connector 使用 Proxy 伺服器"]。
+
+
+
 === 可能與172範圍內的IP位址發生衝突
 
 BlueXP部署連接器時、會有兩個介面、其中IP位址介於172.17.0.0/16和172.18.0.0/16範圍內。

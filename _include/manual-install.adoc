@@ -10,6 +10,9 @@
 +
 您可以選擇在安裝後設定Proxy伺服器、但需要重新啟動Connector。
 
++
+請注意、 BlueXP 不支援透明 Proxy 伺服器。
+
 * CA 簽署的憑證（如果 Proxy 伺服器使用 HTTPS 或 Proxy 是攔截 Proxy ）。
 
 

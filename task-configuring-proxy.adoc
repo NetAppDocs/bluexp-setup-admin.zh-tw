@@ -16,11 +16,18 @@ summary: 如果您的企業原則要求您使用Proxy伺服器來進行所有網
 [role="lead"]
 如果您的企業原則要求您使用Proxy伺服器來進行所有網際網路通訊、則您必須設定連接器以使用該Proxy伺服器。如果在安裝期間未將Connector設定為使用Proxy伺服器、則可將Connector設定為隨時使用該Proxy伺服器。
 
-BlueXP支援HTTP和HTTPS。Proxy 伺服器可以位於雲端或網路中。
-
 如果無法使用公用IP位址或NAT閘道、設定連接器使用Proxy伺服器可提供傳出網際網路存取。此Proxy伺服器僅提供連接器與傳出連線。它不提供Cloud Volumes ONTAP 任何連接功能給不適用的系統。
 
 如果Cloud Volumes ONTAP 無法透過外部網際網路連線來傳送AutoSupport 各種消息、則BlueXP會自動將這些Cloud Volumes ONTAP 系統設定為使用連接器隨附的Proxy伺服器。唯一的需求是確保連接器的安全群組允許透過連接埠3128進行傳入連線。部署Connector之後、您需要開啟此連接埠。
+
+
+
+== 支援的組態
+
+* BlueXP支援HTTP和HTTPS。
+* Proxy 伺服器可以位於雲端或網路中。
+* BlueXP 不支援透明 Proxy 伺服器。
+
 
 
 

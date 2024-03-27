@@ -82,14 +82,6 @@ Google Cloud支援Connector的VM執行個體、其作業系統可支援此連接
 /opt 中的磁碟空間:: 必須有100 GiB的可用空間
 /var.中的磁碟空間:: 必須提供20 GiB的空間
 Docker引擎:: 安裝Connector之前、主機上必須安裝Docker Engine 19.3.1版或更新版本。 https://docs.docker.com/engine/install/["檢視安裝指示"^]
-IMDSv1:: EC2 執行個體需要執行個體中繼資料服務版本 1 （ IMDSv1 ）。IMSv2 不支援 Connector 。
-+
---
-由於 IMDSv2 現在是新 EC2 執行個體的預設版本、因此您必須修改執行個體中繼資料選項、才能還原 IMDSv1 的使用。
-
-https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-IMDS-existing-instances.html#modify-restore-IMDSv1["AWS 文件：還原 IMDSv1 的使用"^]
-
---
 
 
 
@@ -271,6 +263,8 @@ Proxy伺服器:: 如果您的組織需要為所有傳出的網際網路流量部
 * 認證資料
 * HTTPS憑證
 
+
+請注意、 BlueXP 不支援透明 Proxy 伺服器。
 
 --
 

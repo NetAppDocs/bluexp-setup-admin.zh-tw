@@ -2314,7 +2314,6 @@
   <block id="e3bc6d35311568d55f1c8ea11984b964" category="paragraph">這些 NSS 認證會與您的特定 BlueXP 帳戶 ID 相關聯。屬於BlueXP帳戶的使用者可以從*支援&gt; nss管理*存取這些認證資料。</block>
   <block id="a046fbde0a8e04968445555624e37a69" category="summary">如果您的企業原則要求您使用Proxy伺服器來進行所有網際網路通訊、則您必須設定連接器以使用該Proxy伺服器。如果在安裝期間未將Connector設定為使用Proxy伺服器、則可將Connector設定為隨時使用該Proxy伺服器。</block>
   <block id="146adb7944757e88795676b780c31811" category="doc">設定連接器以使用Proxy伺服器</block>
-  <block id="9d8704731bd068bd3be5ad98b7941cba" category="paragraph">BlueXP支援HTTP和HTTPS。Proxy 伺服器可以位於雲端或網路中。</block>
   <block id="30d7902c191c571f1aa091af3df65f3d" category="paragraph">如果無法使用公用IP位址或NAT閘道、設定連接器使用Proxy伺服器可提供傳出網際網路存取。此Proxy伺服器僅提供連接器與傳出連線。它不提供Cloud Volumes ONTAP 任何連接功能給不適用的系統。</block>
   <block id="66dcf6df2e799ff19e8fe5b0ed10a143" category="paragraph">如果Cloud Volumes ONTAP 無法透過外部網際網路連線來傳送AutoSupport 各種消息、則BlueXP會自動將這些Cloud Volumes ONTAP 系統設定為使用連接器隨附的Proxy伺服器。唯一的需求是確保連接器的安全群組允許透過連接埠3128進行傳入連線。部署Connector之後、您需要開啟此連接埠。</block>
   <block id="58dcadbd8de2066b4071d6ed4e0b4baf" category="section-title">在連接器上啟用Proxy</block>
@@ -2817,7 +2816,6 @@
 \https://blob.core.microsoft.scloud
 \https://core.microsoft.scloud</block>
   <block id="8ec83edee8d0c8a3dd001c3d7e558479" category="cell">管理Azure IL6區域的資源。</block>
-  <block id="5b9a9863d7ad33310f21a8e9b1c1d682" category="paragraph">在私有模式下、 BlueXP 傳送輸出流量的唯一時間是傳送給雲端供應商、以便建立 Cloud Volumes ONTAP 系統。</block>
   <block id="41d07a4a0a908721d3dbbf8c6e1a98a4" category="paragraph">如果您打算建立 Cloud Volumes ONTAP 系統、則 BlueXP 需要雲端供應商的權限。您需要在雲端供應商中設定權限、然後在安裝之後將這些權限與 Connector 執行個體建立關聯。</block>
   <block id="3d715e57805c2356f84c41d139ed45c5" category="paragraph">如果您要在內部部署安裝 Connector 、則必須使用 AWS 存取金鑰或 Azure 服務主體來提供權限。不支援其他選項。</block>
   <block id="68f824a5014b20fc98aea0beb5945581" category="paragraph">使用 IAM 角色為 Connector 提供權限。您需要手動將角色附加至 Connector 的 EC2 執行個體。</block>
@@ -3847,11 +3845,6 @@ Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" catego
   <block id="bf032cb5bcb45fec81b7b5b993ebabe4" category="paragraph">您需要更新每個 Cloud Volumes ONTAP 系統的備份位置。</block>
   <block id="2a066cad1fef063fff0ca56b5d416b10" category="list-text">從 Cloud Volumes ONTAP CLI 執行下列命令以顯示目前的備份目標：</block>
   <block id="78cae36205d703274f695ea4e85f6ffe" category="list-text">執行下列命令以更新備份目標的 IP 位址：</block>
-  <block id="95371958414dbd4f614d7ff8348b9b31" category="paragraph">由於 IMDSv2 現在是新 EC2 執行個體的預設版本、因此您必須修改執行個體中繼資料選項、才能還原 IMDSv1 的使用。</block>
-  <block id="c637448044ff305c64a7c1cd8b77b196" category="inline-link">AWS 文件：還原 IMDSv1 的使用</block>
-  <block id="dd3ddc1f5982d8946100b097e7993378" category="paragraph"><block ref="dd3ddc1f5982d8946100b097e7993378" category="inline-link-rx"></block></block>
-  <block id="a781cb38c0c2c5288c02850fcd3cda7d" category="list-text">IMDSv1</block>
-  <block id="1b863f7993d117f5ab767043f7a0bcdb" category="list-text">EC2 執行個體需要執行個體中繼資料服務版本 1 （ IMDSv1 ）。IMSv2 不支援 Connector 。</block>
   <block id="daf15a33710ed6188d035a01c084bee9" category="paragraph"><block ref="daf15a33710ed6188d035a01c084bee9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bbd3f8aeec942b5e418da40a3101ed3e" category="paragraph"><block ref="bbd3f8aeec942b5e418da40a3101ed3e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7478f8f98c41fc2f5747e6f31892fe6f" category="list-text">勒索軟體保護</block>
@@ -3996,4 +3989,15 @@ Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" catego
   <block id="a52b83d1b32a42f8a6aff3771048ba3c" category="inline-link">瞭解私有模式</block>
   <block id="cdeb608610a882c24cefcb7daa878a1d" category="list-text"><block ref="cdeb608610a882c24cefcb7daa878a1d" category="inline-link-rx"></block></block>
   <block id="de945439c2ef8db914ae9a056d6763b1" category="section-title">私有模式版本（ 3.9.35 ）</block>
+  <block id="63d6aff1d21e14755a0a0cd9fcdbe7fc" category="paragraph">請注意、 BlueXP 不支援透明 Proxy 伺服器。</block>
+  <block id="a8080c542b2627e36657b832e30937bf" category="paragraph">+
+在私有模式下、 BlueXP 傳送輸出流量的唯一時間是傳送給雲端供應商、以便建立 Cloud Volumes ONTAP 系統。</block>
+  <block id="79911dec911bf03733bda7065e7e3964" category="section-title">不支援透明 Proxy 伺服器</block>
+  <block id="d0da98586108cb1be969ff43380eee45" category="paragraph">BlueXP 不支援使用 Connector 的透明 Proxy 伺服器。</block>
+  <block id="eb38246be0b09c0a9d91cb2085b20b5d" category="inline-link-macro">深入瞭解如何搭配 Connector 使用 Proxy 伺服器</block>
+  <block id="20cac3f0e9288e4238db227a684ecc49" category="paragraph"><block ref="cad892d1cc18ace00e67298d6d6448d0" category="inline-link-macro-rx"></block>。</block>
+  <block id="1f0b82560627b660c6c6958a1df834b8" category="section-title">支援的組態</block>
+  <block id="7d207720727cb20f87ab53c6a1b2514b" category="list-text">BlueXP支援HTTP和HTTPS。</block>
+  <block id="add3a67a28c550a2cc27b87a5a61ea8e" category="list-text">Proxy 伺服器可以位於雲端或網路中。</block>
+  <block id="8ddee083db5cf3707b8335f563d2c755" category="list-text">BlueXP 不支援透明 Proxy 伺服器。</block>
 </blocks>
