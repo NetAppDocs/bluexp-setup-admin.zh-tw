@@ -4000,4 +4000,8 @@ Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" catego
   <block id="7d207720727cb20f87ab53c6a1b2514b" category="list-text">BlueXP支援HTTP和HTTPS。</block>
   <block id="add3a67a28c550a2cc27b87a5a61ea8e" category="list-text">Proxy 伺服器可以位於雲端或網路中。</block>
   <block id="8ddee083db5cf3707b8335f563d2c755" category="list-text">BlueXP 不支援透明 Proxy 伺服器。</block>
+  <block id="116ea46795790eba5c14aa5d5c67dd04" category="list-text">Cloud Volumes ONTAP 必須執行下列其中一個版本：</block>
+  <block id="9ddb47b49482c226b2e422f267668544" category="list-text">9.12.1 P2 （或任何後續修補程式）</block>
+  <block id="53f1b4752b0f2d48c0953219295e0a2b" category="list-text">9.13.0 P4 （或任何後續修補程式）</block>
+  <block id="c2eb567355a3050dee61ad28cde98255" category="list-text">9.13.1 或本版本之後的任何版本</block>
 </blocks>
