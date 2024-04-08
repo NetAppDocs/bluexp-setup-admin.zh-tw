@@ -23,7 +23,11 @@ summary: 當 Connector 手動安裝在內部部署 Linux 主機上時、會使�
 | 傳輸協定 | 連接埠 | 目的 
 
 
-| HTTP | 80 | 提供從用戶端 Web 瀏覽器到本機使用者介面的 HTTP 存取 
+| HTTP | 80  a| 
+* 提供從用戶端 Web 瀏覽器到本機使用者介面的 HTTP 存取
+* 在 Cloud Volumes ONTAP 升級程序期間使用
+
+
 
 
 | HTTPS | 443.. | 提供 HTTPS 存取、從用戶端網頁瀏覽器存取本機使用者介面 

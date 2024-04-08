@@ -28,7 +28,11 @@ summary: 連接器的Azure安全性群組需要傳入和傳出規則。當您從
 | SSH | 22. | 提供對 Connector 主機的 SSH 存取權 
 
 
-| HTTP | 80 | 提供從用戶端 Web 瀏覽器到本機使用者介面的 HTTP 存取 
+| HTTP | 80  a| 
+* 提供從用戶端 Web 瀏覽器到本機使用者介面的 HTTP 存取
+* 在 Cloud Volumes ONTAP 升級程序期間使用
+
+
 
 
 | HTTPS | 443.. | 提供從用戶端網頁瀏覽器到本機使用者介面的 HTTPS 存取、以及 BlueXP 分類執行個體的連線 

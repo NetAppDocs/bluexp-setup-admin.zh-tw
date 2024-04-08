@@ -4004,4 +4004,5 @@ Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" catego
   <block id="9ddb47b49482c226b2e422f267668544" category="list-text">9.12.1 P2 （或任何後續修補程式）</block>
   <block id="53f1b4752b0f2d48c0953219295e0a2b" category="list-text">9.13.0 P4 （或任何後續修補程式）</block>
   <block id="c2eb567355a3050dee61ad28cde98255" category="list-text">9.13.1 或本版本之後的任何版本</block>
+  <block id="7e0ccd7729abca8ae58e9ceff3fd0b87" category="list-text">在 Cloud Volumes ONTAP 升級程序期間使用</block>
 </blocks>
