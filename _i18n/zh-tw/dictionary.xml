@@ -504,7 +504,6 @@
   <block id="530ae65bce71acbabc920f0c53c4b5c2" category="list-text">必須提供20 GiB的空間</block>
   <block id="681992b8581f6d4247af5523a14d0ce4" category="list-text">Docker引擎</block>
   <block id="117c0c98e2a5cb3503de68c655378d13" category="inline-link">檢視安裝指示</block>
-  <block id="762cb137e48e2922920955cfb157dea8" category="list-text">安裝Connector之前、主機上必須安裝Docker Engine 19.3.1版或更新版本。<block ref="bbcf0e5e8b0c8687d84c2c22a5ad2ecf" category="inline-link-rx"></block></block>
   <block id="9f0bb2acc3984bc2da2e5e566dd4bc0a" category="doc">深入瞭解BlueXP</block>
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">功能</block>
   <block id="e250797f3ba805eed2f7fad2419fdd05" category="paragraph">BlueXP 平台提供四大資料管理支柱：儲存、行動力、保護、分析與控制。</block>
@@ -3894,7 +3893,6 @@ Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" catego
   <block id="8035ec6377ab933cc4bc2a70b5416a29" category="paragraph"><block ref="8035ec6377ab933cc4bc2a70b5416a29" category="inline-link-rx"></block></block>
   <block id="89f5243637c4f72512944130a95ee3e5" category="paragraph">在 EC2 執行個體上、執行個體中繼資料服務（ IMDS ）的啟用方式如下：</block>
   <block id="baebea4bbd59d6c8efcae96586b2e199" category="inline-link">Terraform 指令碼</block>
-  <block id="0b18bb2eadaff9912e9bbefb3accbc90" category="list-text">適用於 BlueXP 、 AWS Marketplace 或使用的新 Connector 部署<block ref="d5789cbcfe02eb67db017173bcddbe49" category="inline-link-rx"></block>、根據預設、 EC2 執行個體上會啟用 IMDSv2 。</block>
   <block id="0319f9ec57f9eeb8250ac949896c30fd" category="list-text">如果您在 AWS 中啟動新的 EC2 執行個體、然後手動安裝 Connector 軟體、則預設也會啟用 IMDSv2 。</block>
   <block id="1fac08ada9902743d92641fbbd32d13f" category="list-text">對於現有的 Connectors 、仍支援 IMDSv1 、但您可以視需要在 EC2 執行個體上手動設定 IMDSv2 。</block>
   <block id="d0371cc329d08bb54c28e8881cc93db7" category="list-text">對於 Cloud Volumes ONTAP 、根據預設、會在新的和現有的執行個體上啟用 IMDSv1 。您可以視需要在 EC2 執行個體上手動設定 IMDSv2 。</block>
@@ -4005,4 +4003,14 @@ Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" catego
   <block id="53f1b4752b0f2d48c0953219295e0a2b" category="list-text">9.13.0 P4 （或任何後續修補程式）</block>
   <block id="c2eb567355a3050dee61ad28cde98255" category="list-text">9.13.1 或本版本之後的任何版本</block>
   <block id="7e0ccd7729abca8ae58e9ceff3fd0b87" category="list-text">在 Cloud Volumes ONTAP 升級程序期間使用</block>
+  <block id="970c4756c8fc49a0c32d6a5b32d6d6f5" category="list-text">安裝 Connector 之前、主機上需要 Docker Engine 。</block>
+  <block id="66a843cd9e2f1ff37fec4c91275dc9a7" category="list-text">支援的最低版本為 19.3.1 。</block>
+  <block id="3d0dee7040af4a3fedb8d1c83abf5f56" category="list-text">支援的最大版本為 25.0.0 。</block>
+  <block id="3e291cd3cf657cb754d907986c7587ed" category="paragraph"><block ref="3e291cd3cf657cb754d907986c7587ed" category="inline-link-rx"></block></block>
+  <block id="779956d8a8a5dbf08bbf655892abfefb" category="section-title">2024 年 4 月 11 日</block>
+  <block id="b0672ad18e27e61949a210d3369455e0" category="section-title">Docker Engine 更新</block>
+  <block id="0427fd4cf4edaa5749da5792252fcd70" category="paragraph">我們已更新 Docker Engine 需求、以指定 Connector 上支援的最大版本、即 25.0.0 。支援的最低版本仍為 19.3.1 。</block>
+  <block id="a7d713b0c0233ee2a3bbb328d82ba606" category="inline-link">View Connector 主機需求</block>
+  <block id="10f6464912ab27695ba4f7df57c14783" category="paragraph"><block ref="19b43e2419dde639b2fba3d57b5bca52" category="inline-link-rx"></block>。</block>
+  <block id="91c7ed7e9c640df79f6bf153c6642ae5" category="list-text">適用於從 BlueXP 或使用的新 Connector 部署<block ref="d5789cbcfe02eb67db017173bcddbe49" category="inline-link-rx"></block>、根據預設、 EC2 執行個體上會啟用 IMDSv2 。</block>
 </blocks>

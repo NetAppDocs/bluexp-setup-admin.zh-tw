@@ -51,7 +51,17 @@ CPU:: 4 個核心或 4 個 vCPU
 RAM:: 14 GB
 /opt 中的磁碟空間:: 必須有100 GiB的可用空間
 /var.中的磁碟空間:: 必須提供20 GiB的空間
-Docker引擎:: 安裝Connector之前、主機上必須安裝Docker Engine 19.3.1版或更新版本。 https://docs.docker.com/engine/install/["檢視安裝指示"^]
+Docker引擎:: 安裝 Connector 之前、主機上需要 Docker Engine 。
++
+--
+* 支援的最低版本為 19.3.1 。
+* 支援的最大版本為 25.0.0 。
++
+https://docs.docker.com/engine/install/["檢視安裝指示"^]
+
+
+
+--
 
 
 

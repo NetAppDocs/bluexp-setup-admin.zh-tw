@@ -18,6 +18,18 @@ summary: 瞭解 BlueXP 管理功能的新功能： BlueXP 帳戶、連接器、�
 
 
 
+== 2024 年 4 月 11 日
+
+
+
+=== Docker Engine 更新
+
+我們已更新 Docker Engine 需求、以指定 Connector 上支援的最大版本、即 25.0.0 。支援的最低版本仍為 19.3.1 。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements["View Connector 主機需求"]。
+
+
+
 == 2024 年 3 月 26 日
 
 
@@ -78,7 +90,7 @@ https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-pr
 
 在 EC2 執行個體上、執行個體中繼資料服務（ IMDS ）的啟用方式如下：
 
-* 適用於 BlueXP 、 AWS Marketplace 或使用的新 Connector 部署 https://docs.netapp.com/us-en/bluexp-automation/automate/overview.html["Terraform 指令碼"^]、根據預設、 EC2 執行個體上會啟用 IMDSv2 。
+* 適用於從 BlueXP 或使用的新 Connector 部署 https://docs.netapp.com/us-en/bluexp-automation/automate/overview.html["Terraform 指令碼"^]、根據預設、 EC2 執行個體上會啟用 IMDSv2 。
 * 如果您在 AWS 中啟動新的 EC2 執行個體、然後手動安裝 Connector 軟體、則預設也會啟用 IMDSv2 。
 * 對於現有的 Connectors 、仍支援 IMDSv1 、但您可以視需要在 EC2 執行個體上手動設定 IMDSv2 。
 * 對於 Cloud Volumes ONTAP 、根據預設、會在新的和現有的執行個體上啟用 IMDSv1 。您可以視需要在 EC2 執行個體上手動設定 IMDSv2 。
