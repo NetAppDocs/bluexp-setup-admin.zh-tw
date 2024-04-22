@@ -3860,10 +3860,6 @@ Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" catego
   <block id="84fc34721c0c912a148a70d22ac7cd5a" category="paragraph"><block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
   <block id="98dddf7eafbbdfa88756d62945237473" category="section-title">需要在 Amazon EC2 執行個體上使用 IMDSv2</block>
   <block id="824e7fae55f361d08bb9bd5bdf494ff0" category="inline-link">從 AWS 安全性部落格深入瞭解 IMDSv2</block>
-  <block id="c49009b6f155acc311d4014abe19ec98" category="paragraph">從 2024 年 3 月開始、 BlueXP 現在支援 Amazon EC2 執行個體中繼資料服務版本 2 （ IMDSv2 ）搭配 Connector 和 Cloud Volumes ONTAP （包括 HA 部署的協調器）。IMDSv2 提供更強大的保護功能、防範弱點。<block ref="cb4336eb4a08d88f663206e070c9e1af" category="inline-link-rx"></block></block>
-  <block id="4166379ba80de4be17a81c04ec7819c4" category="list-text">在所有新的 Connector EC2 執行個體上、 IMSv2 預設為啟用。IMDSv1 在 2024 年 3 月之前啟用。</block>
-  <block id="6f218fd0d06a9a2564453a73bc05ee13" category="list-text">根據預設、所有新的和現有的 Cloud Volumes ONTAP EC2 執行個體都會啟用 IMDSv1 。</block>
-  <block id="7e6c98db93605459a9b69da423ef4684" category="paragraph">如果您的安全性原則要求、您可以將 EC2 執行個體設定為使用 IMDSv2 。</block>
   <block id="b2f60e6f194d16e1bf9deaa367cd9eae" category="list-text">Connector 版本必須為 3.9.38 或更新版本。</block>
   <block id="177aac65c5f4518e1a35eb1479fac1a1" category="list-text">此變更需要重新啟動 Cloud Volumes ONTAP 執行個體。</block>
   <block id="5024434a1308ae5aff26ba15a55bce13" category="paragraph">這些步驟需要使用 AWS CLI 、因為您必須將回應躍點限制變更為 3 。</block>
@@ -4013,4 +4009,17 @@ Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" catego
   <block id="a7d713b0c0233ee2a3bbb328d82ba606" category="inline-link">View Connector 主機需求</block>
   <block id="10f6464912ab27695ba4f7df57c14783" category="paragraph"><block ref="19b43e2419dde639b2fba3d57b5bca52" category="inline-link-rx"></block>。</block>
   <block id="91c7ed7e9c640df79f6bf153c6642ae5" category="list-text">適用於從 BlueXP 或使用的新 Connector 部署<block ref="d5789cbcfe02eb67db017173bcddbe49" category="inline-link-rx"></block>、根據預設、 EC2 執行個體上會啟用 IMDSv2 。</block>
+  <block id="9d5b3307d5a7d5905623bf21ab049bdd" category="section-title">2024 年 4 月 22 日</block>
+  <block id="1389c5e279a667948337a56d97caf570" category="section-title">連接器 3.9.39</block>
+  <block id="103f00dbabbbaa84ff4ad44e1ae8f0e0" category="paragraph">目前、 3.9.39 版本適用於標準模式和受限模式。</block>
+  <block id="dcaa3e92176845b160207f9f0d80aef3" category="section-title">AWS 建立 Connector 的權限</block>
+  <block id="492d5f07c90a7db03029f9a6c5532ce3" category="paragraph">現在需要兩個額外權限才能從 BlueXP 在 AWS 中建立 Connector ：</block>
+  <block id="d563c67cb5d34e4276aadadd838867f8" category="paragraph">若要在 Connector 的 EC2 執行個體上啟用 IMDSv2 、必須具備這些權限。</block>
+  <block id="99c957a89e85bd737f02914924c399b3" category="paragraph">我們在建立 Connector 時、 BlueXP 使用者介面中所顯示的原則中、以及文件中所提供的相同原則中、都包含這些權限。</block>
+  <block id="679562c52996a8e2a4db9524251394f4" category="admonition">此原則僅包含從BlueXP啟動AWS中Connector執行個體所需的權限。這與指派給 Connector 執行個體的原則不同。</block>
+  <block id="1c51e24c3b44b362001f3c1a6c51b065" category="inline-link">瞭解如何設定 AWS 權限、從 AWS 建立 Connector</block>
+  <block id="16a785388c44f1116fdb34f01d8816bb" category="paragraph"><block ref="53bbefe6872cea40f97befa74964b71d" category="inline-link-rx"></block>。</block>
+  <block id="946e79c4f58ab5a0a68d36b7ccc89998" category="list-text">如果您從 AWS Marketplace 啟動 Connector 、則預設會啟用 IMDSv1 。您可以在 EC2 執行個體上手動設定 IMDSv2 。</block>
+  <block id="f2e7cda30b20334f5432b14d41028597" category="paragraph">從 2024 年 3 月開始、 BlueXP 現在支援 Amazon EC2 執行個體中繼資料服務版本 2 （ IMDSv2 ）搭配 Connector 和 Cloud Volumes ONTAP （包括 HA 部署的協調器）。在大多數情況下、會在新的 EC2 執行個體上自動設定 IMDSv2 。IMDSv1 在 2024 年 3 月之前啟用。如果您的安全性原則要求、您可能需要在 EC2 執行個體上手動設定 IMDSv2 。</block>
+  <block id="3c27ef222c1ee58d80a2a938ecc7eab9" category="paragraph">IMDSv2 提供更強大的保護功能、防範弱點。<block ref="cb4336eb4a08d88f663206e070c9e1af" category="inline-link-rx"></block></block>
 </blocks>

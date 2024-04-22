@@ -139,13 +139,19 @@ https://cloud.google.com/compute/docs/instances/connecting-to-instance["Google C
 
 == 需要在 Amazon EC2 執行個體上使用 IMDSv2
 
-從 2024 年 3 月開始、 BlueXP 現在支援 Amazon EC2 執行個體中繼資料服務版本 2 （ IMDSv2 ）搭配 Connector 和 Cloud Volumes ONTAP （包括 HA 部署的協調器）。IMDSv2 提供更強大的保護功能、防範弱點。 https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/["從 AWS 安全性部落格深入瞭解 IMDSv2"^]
+從 2024 年 3 月開始、 BlueXP 現在支援 Amazon EC2 執行個體中繼資料服務版本 2 （ IMDSv2 ）搭配 Connector 和 Cloud Volumes ONTAP （包括 HA 部署的協調器）。在大多數情況下、會在新的 EC2 執行個體上自動設定 IMDSv2 。IMDSv1 在 2024 年 3 月之前啟用。如果您的安全性原則要求、您可能需要在 EC2 執行個體上手動設定 IMDSv2 。
 
-* 在所有新的 Connector EC2 執行個體上、 IMSv2 預設為啟用。IMDSv1 在 2024 年 3 月之前啟用。
-* 根據預設、所有新的和現有的 Cloud Volumes ONTAP EC2 執行個體都會啟用 IMDSv1 。
+.關於這項工作
+IMDSv2 提供更強大的保護功能、防範弱點。 https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/["從 AWS 安全性部落格深入瞭解 IMDSv2"^]
 
+在 EC2 執行個體上、執行個體中繼資料服務（ IMDS ）的啟用方式如下：
 
-如果您的安全性原則要求、您可以將 EC2 執行個體設定為使用 IMDSv2 。
+* 適用於從 BlueXP 或使用的新 Connector 部署 https://docs.netapp.com/us-en/bluexp-automation/automate/overview.html["Terraform 指令碼"^]、根據預設、 EC2 執行個體上會啟用 IMDSv2 。
+* 如果您在 AWS 中啟動新的 EC2 執行個體、然後手動安裝 Connector 軟體、則預設也會啟用 IMDSv2 。
+* 如果您從 AWS Marketplace 啟動 Connector 、則預設會啟用 IMDSv1 。您可以在 EC2 執行個體上手動設定 IMDSv2 。
+* 對於現有的 Connectors 、仍支援 IMDSv1 、但您可以視需要在 EC2 執行個體上手動設定 IMDSv2 。
+* 對於 Cloud Volumes ONTAP 、根據預設、會在新的和現有的執行個體上啟用 IMDSv1 。您可以視需要在 EC2 執行個體上手動設定 IMDSv2 。
+
 
 .開始之前
 * Connector 版本必須為 3.9.38 或更新版本。
