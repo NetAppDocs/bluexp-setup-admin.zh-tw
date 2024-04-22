@@ -377,7 +377,7 @@ NOTE: 如果您想在中使用 BlueXP https://aws.amazon.com/federal/secret-clou
 | StorageGRID | 否 | 否 
 
 
-.17+| *服務* | 備份與還原 | 是的
+.16+| *服務* | 備份與還原 | 是的
 
 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-restricted-mode["檢視 ONTAP Volume 資料支援的備份目的地清單"^] | 是的
 
@@ -415,9 +415,6 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.
 
 
 | 勒索軟體保護 | 否 | 否 
-
-
-| 補救 | 否 | 否 
 
 
 | 複寫 | 是的 | 是的 

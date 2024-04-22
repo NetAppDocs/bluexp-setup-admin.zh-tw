@@ -731,20 +731,6 @@ Connector會提出下列API要求、以探索及管理Azure Kubernetes Service�
 
 
 
-=== 補救
-
-當您使用 BlueXP 補救措施時、 Connector 會發出下列 API 要求來管理 Azure 資源上的標記：
-
-* Microsoft.Resources /資源/讀取
-* Microsoft.Resources /訂閱/作業結果/讀取
-* Microsoft.Resources /訂閱/資源群組/讀取
-* Microsoft.Resources /訂閱/資源群組/資源/讀取
-* Microsoft.Resources /標記/讀取
-* Microsoft.Resources /標記/寫入
-
-
-
-
 === 分層
 
 當您設定 BlueXP 分層時、 Connector 會發出下列 API 要求。

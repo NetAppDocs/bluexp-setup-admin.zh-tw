@@ -59,7 +59,6 @@ summary: 當BlueXP在AWS中啟動Connector執行個體時、它會將原則附�
 
 * 邊緣快取
 * Kubernetes
-* 補救
 
 
 [role="tabbed-block"]
@@ -1279,22 +1278,6 @@ Connector會提出下列API要求、以探索及管理Amazon EKS叢集：
 * EKS：清單叢集
 * EKS：取消叢集
 * IAM：GetInstanceProfile
-
-
-
-
-=== 補救
-
-當您使用 BlueXP 補救措施時、 Connector 會發出下列 API 要求來管理 AWS 資源上的標記：
-
-* EC2：建立標記
-* EC2：刪除標記
-* EC2：取消標示
-* 標記：getResources
-* 標記：getTagKeys
-* 標記：getTagValues
-* 標記：TagResources
-* 標記：取消標記資源
 
 
 
