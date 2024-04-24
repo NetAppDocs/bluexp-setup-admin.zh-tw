@@ -552,6 +552,12 @@ Connector 現已安裝、並已使用您的 BlueXP 帳戶進行設定。
 
 .步驟
 . 從 Azure Portal 開啟 * Subscriptions * 服務、然後選取您的訂閱。
++
+請務必從 * 訂閱 * 服務指派角色、因為這會指定訂閱層級的角色指派範圍。_scacity_ 定義存取所套用的資源集。如果您在不同層級（例如虛擬機器層級）指定範圍、則從 BlueXP 中完成動作的能力將受到影響。
+
++
+https://learn.microsoft.com/en-us/azure/role-based-access-control/scope-overview["Microsoft Azure 文件：瞭解 Azure RBAC 的範圍"^]
+
 . 選取 * 存取控制（ IAM ） * > * 新增 * > * 新增角色指派 * 。
 . 在 * 角色 * 索引標籤中、選取 * BlueXP 操作員 * 角色、然後選取 * 下一步 * 。
 +
@@ -561,7 +567,7 @@ NOTE: BlueXP運算子是在BlueXP原則中提供的預設名稱。如果您為�
 . 在「*成員*」索引標籤中、完成下列步驟：
 +
 .. 指派*託管身分識別*的存取權。
-.. 選取 * 選取成員 * 、選取建立 Connector 虛擬機器的訂閱、選擇 * 虛擬機器 * 、然後選取 Connector 虛擬機器。
+.. 選取 * 選取成員 * 、選取建立 Connector 虛擬機器的訂閱、然後在 * 管理身分識別 * 下選擇 * 虛擬機器 * 、然後選取 Connector 虛擬機器。
 .. 選取 * 選取 * 。
 .. 選擇*下一步*。
 .. 選取 * 檢閱 + 指派 * 。
