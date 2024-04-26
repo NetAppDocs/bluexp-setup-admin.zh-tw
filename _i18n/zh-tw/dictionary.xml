@@ -2800,15 +2800,12 @@
   <block id="b55621a1719dba9e40d841c865c267ac" category="inline-link-macro">瞭解私有模式的運作方式</block>
   <block id="e7e043e1590b443c8520402279e7ac44" category="paragraph"><block ref="7d2115a84914cfa6792d7d3921dc8e33" category="inline-link-macro-rx"></block>。</block>
   <block id="ba7c13ef3e78a348949ddfd6f17e4f18" category="paragraph">在私有模式中、您可以在內部部署或雲端中手動安裝 Connector 、方法是在您自己的 Linux 主機上安裝 Connector 。</block>
-  <block id="fb04864667c4668b6288df7ac7f6f40b" category="paragraph">如果您想要在 Google Cloud 中建立 Cloud Volumes ONTAP 系統、則 Connector 必須在 Google Cloud 中執行、因為它無法在內部環境中執行。</block>
   <block id="c3d3f783d267d1bd41b2e7f8639a5865" category="section-title">用於日常作業的端點</block>
   <block id="b2723147717f1c60a42e0b1cbdb0ad6c" category="cell">\https://management.azure.microsoft.scloud
 \https://login.microsoftonline.microsoft.scloud
 \https://blob.core.microsoft.scloud
 \https://core.microsoft.scloud</block>
   <block id="8ec83edee8d0c8a3dd001c3d7e558479" category="cell">管理Azure IL6區域的資源。</block>
-  <block id="41d07a4a0a908721d3dbbf8c6e1a98a4" category="paragraph">如果您打算建立 Cloud Volumes ONTAP 系統、則 BlueXP 需要雲端供應商的權限。您需要在雲端供應商中設定權限、然後在安裝之後將這些權限與 Connector 執行個體建立關聯。</block>
-  <block id="3d715e57805c2356f84c41d139ed45c5" category="paragraph">如果您要在內部部署安裝 Connector 、則必須使用 AWS 存取金鑰或 Azure 服務主體來提供權限。不支援其他選項。</block>
   <block id="68f824a5014b20fc98aea0beb5945581" category="paragraph">使用 IAM 角色為 Connector 提供權限。您需要手動將角色附加至 Connector 的 EC2 執行個體。</block>
   <block id="862b0c0ff0da2b02588d845f4c6d6d34" category="list-text">在您計畫安裝 Connector 的 VM 上啟用系統指派的託管身分識別、以便透過自訂角色提供必要的 Azure 權限。</block>
   <block id="81b303f46dd1d85b6f031bc99d8e87a6" category="summary">BlueXP 提供多種部署模式、可讓您以符合業務與安全需求的方式使用 BlueXP 。標準模式利用 BlueXP SaaS 層來提供完整功能、而限制模式和私有模式則適用於有連線限制的組織。</block>
@@ -4017,4 +4014,7 @@ Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" catego
   <block id="0fde3f77d505a0a1192041da57a5754b" category="inline-link">Microsoft Azure 文件：瞭解 Azure RBAC 的範圍</block>
   <block id="7ec9f2759e8cd477327da5c994d69fd0" category="paragraph"><block ref="7ec9f2759e8cd477327da5c994d69fd0" category="inline-link-rx"></block></block>
   <block id="fae4c7bdd396cfb82d86677f8bc6f763" category="list-text">選取 * 選取成員 * 、選取建立 Connector 虛擬機器的訂閱、然後在 * 管理身分識別 * 下選擇 * 虛擬機器 * 、然後選取 Connector 虛擬機器。</block>
+  <block id="437c802c34c0b8670d61901c4e05641e" category="inline-link-macro">深入瞭解私有模式</block>
+  <block id="d05ac7ff6398ff4f2b0bd26105dd1697" category="paragraph">安裝 Connector 的位置決定了使用私有模式時可用的 BlueXP 服務和功能。例如、如果您想要部署和管理 Cloud Volumes ONTAP 、則必須將 Connector 安裝在雲端中。 <block ref="11a7253f43076934a5664eb6b2874efc" category="inline-link-macro-rx"></block>。</block>
+  <block id="60a1a3ba0b214492b5ab5c5bd4a52eb0" category="paragraph">如果 Connector 安裝在雲端、而您打算建立 Cloud Volumes ONTAP 系統、則 BlueXP 需要雲端供應商的權限。您需要在雲端供應商中設定權限、然後在安裝之後將這些權限與 Connector 執行個體建立關聯。</block>
 </blocks>
