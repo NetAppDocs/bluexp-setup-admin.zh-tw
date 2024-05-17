@@ -1,0 +1,8 @@
+---
+permalink: task-managing-connectors.html 
+redirect: bluexp-setup-admin/task-maintain-connectors.html 
+---
+= 
+:allow-uri-read: 
+
+

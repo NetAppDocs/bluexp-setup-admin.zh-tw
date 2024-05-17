@@ -1,0 +1,82 @@
+---
+sidebar: sidebar 
+permalink: task-uninstall-connector.html 
+keywords: uninstall, remove connector, uninstall connector 
+summary: 解除安裝Connector軟體以疑難排解問題、或從主機上永久移除軟體。您需要使用的步驟取決於您所使用的部署模式。從環境中移除 Connector 之後、您可以將其從 BlueXP 中移除。 
+---
+= 解除安裝並移除 Connector
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+解除安裝Connector軟體以疑難排解問題、或從主機上永久移除軟體。您需要使用的步驟取決於您所使用的部署模式。從環境中移除 Connector 之後、您可以將其從 BlueXP 中移除。
+
+link:concept-modes.html["瞭解 BlueXP 部署模式"]。
+
+
+
+== 使用標準或受限模式時、請解除安裝 Connector
+
+如果您是在標準模式或受限模式下使用 BlueXP （也就是說、 Connector 主機具有輸出連線）、則應遵循下列步驟來解除安裝 Connector 軟體。
+
+.步驟
+. 連接至 Linux VM for the Connector 。
+. 從 Linux 主機執行解除安裝指令碼：
++
+`/opt/application/netapp/service-manager-2/uninstall.sh [silent]`
+
++
+_silon_ 執行指令碼時不會提示您確認。
+
+
+
+.結果
+Connector 軟體現在已從 Linux 主機解除安裝。
+
+
+
+== 使用私有模式時、請解除安裝 Connector
+
+如果您是在私有模式下使用 BlueXP （也就是說、 Connector 主機擁有 _NO 輸出連線）、則應遵循下列步驟來解除安裝 Connector 軟體。
+
+.步驟
+. 連接至 Linux VM for the Connector 。
+. 從Linux主機執行下列命令：
++
+`./opt/application/netapp/ds/cleanup.sh`
+`rm -rf /opt/application/netapp/ds`
+
+
+
+.結果
+Connector 軟體現在已從 Linux 主機解除安裝。
+
+
+
+== 從BlueXP移除連接器
+
+如果連接器處於非作用中狀態、您可以將其從BlueXP的連接器清單中移除。如果您刪除了 Connector 虛擬機器、或是卸載了 Connector 軟體、則可以這麼做。
+
+請注意下列關於移除連接器的事項：
+
+* 此動作不會刪除虛擬機器。
+* 此動作無法還原、只要從 BlueXP 移除 Connector 、就無法重新新增。
+
+
+.步驟
+. 從 BlueXP 標頭中選取 * Connector* 下拉式清單。
+. 選取 * 管理連接器 * 。
+. 選取非作用中 Connector 的動作功能表、然後選取 * 移除 Connector* 。
++
+image:screenshot_connector_remove.gif["連接器 Widget 的快照、可讓您移除非作用中的連接器。"]
+
+. 輸入 Connector 的名稱以確認、然後選取 * 移除 * 。
+
+
+.結果
+BlueXP會將Connector從記錄中移除。

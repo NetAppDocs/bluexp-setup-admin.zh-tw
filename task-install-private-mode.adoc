@@ -28,7 +28,7 @@ summary: 以私有模式部署 Connector 、讓您可以使用 BlueXP 、而不�
 需要root權限才能安裝Connector。
 
 .步驟
-. 確認已啟用並執行Docker。
+. 確認 Docker 已啟用且正在執行。
 +
 [source, cli]
 ----
@@ -95,7 +95,7 @@ image:screenshot-onprem-darksite-details.png["系統詳細資料頁面的快照�
 .結果
 現在已安裝並設定 Connector 。
 
-當有新版 Connector 軟體推出時，這些軟體都會發佈至 NetApp 支援網站。 link:task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["瞭解如何升級Connector"]。
+當有新版 Connector 軟體推出時，這些軟體都會發佈至 NetApp 支援網站。 link:task-upgrade-connector.html["瞭解如何升級Connector"]。
 
 .接下來呢？
 提供 BlueXP 先前設定的權限。

@@ -51,7 +51,13 @@ Connector 軟體必須在符合特定作業系統需求、 RAM 需求、連接�
 --
 * Ubuntu 22.04 LTS
 * CentOS 7.6、7.7、7.8及7.9
++
+NetApp 將持續支援 CentOS 7 的 Connector 、直到 2024 年 6 月 30 日為止。
+
 * Red Hat Enterprise Linux 7.6 、 7.7 、 7.8 和 7.9
++
+NetApp 將持續支援 RHEL 7 的 Connector 、直到 2024 年 6 月 30 日為止。
+
 +
 主機必須向 Red Hat Subscription Management 登錄。如果主機尚未登錄、則無法在 Connector 安裝期間存取儲存庫來更新所需的協力廠商軟體。
 
@@ -64,7 +70,7 @@ Connector 軟體必須在符合特定作業系統需求、 RAM 需求、連接�
 Hypervisor:: 需要經認證可執行 Ubuntu 、 CentOS 或 Red Hat Enterprise Linux 的裸機或託管 Hypervisor 。
 +
 --
-https://access.redhat.com/certified-hypervisors["Red Hat 解決方案：哪些 Hypervisor 已通過認證、可執行 Red Hat Enterprise Linux ？"^]
+https://access.redhat.com/articles/973163["Red Hat 解決方案：哪些 Hypervisor 已通過認證、可執行 Red Hat Enterprise Linux ？"^]
 
 --
 CPU:: 4 個核心或 4 個 vCPU
@@ -99,7 +105,7 @@ https://docs.docker.com/engine/install/["檢視安裝指示"^]
 設定您的網路、讓 Connector 能夠管理公有雲環境中的資源和程序。除了連接器的虛擬網路和子網路之外、您還需要確保符合下列需求。
 
 連線至目標網路:: Connector 必須與您計畫管理儲存設備的位置建立網路連線。例如、您計畫部署 Cloud Volumes ONTAP 的 VPC 或 vnet 、或內部部署 ONTAP 叢集所在的資料中心。
-用於日常作業的端點:: Connector 會聯絡下列端點、以管理公有雲環境中的資源和程序。
+用於日常作業的端點:: 如果您打算建立 Cloud Volumes ONTAP 系統、 Connector 需要連線至雲端供應商的公開資源中的端點。
 +
 --
 [cols="2a,1a"]
@@ -181,18 +187,16 @@ https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-ad
 --
 
 
-Proxy伺服器:: 如果您的組織需要為所有傳出的網際網路流量部署 Proxy 伺服器、請取得下列關於 HTTP 或 HTTPS Proxy 的資訊。您必須在安裝期間提供此資訊。
+Proxy伺服器:: 如果您的組織需要為所有傳出的網際網路流量部署 Proxy 伺服器、請取得下列關於 HTTP 或 HTTPS Proxy 的資訊。您必須在安裝期間提供此資訊。請注意、 BlueXP 不支援透明 Proxy 伺服器。
 +
 --
 * IP 位址
 * 認證資料
 * HTTPS憑證
-
-
-請注意、 BlueXP 不支援透明 Proxy 伺服器。
-
 +
 在私有模式下、 BlueXP 傳送輸出流量的唯一時間是傳送給雲端供應商、以便建立 Cloud Volumes ONTAP 系統。
+
+
 
 --
 連接埠:: 除非您啟動連接器、否則不會有傳入流量進入連接器。

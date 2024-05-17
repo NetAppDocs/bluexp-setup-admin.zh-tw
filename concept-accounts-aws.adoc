@@ -137,9 +137,9 @@ link:task-adding-aws-accounts.html#subscribe["瞭解如何建立AWS訂閱的關�
 * 標準模式
 +
 ** link:task-install-connector-aws-marketplace.html#step-2-set-up-aws-permissions["設定 AWS Marketplace 部署的權限"]
-** link:task-install-connector-on-prem.html#step-3-set-up-cloud-permissions["設定內部部署的權限"]
+** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["設定內部部署的權限"]
 
 
-* link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["設定受限模式的權限"]
+* link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["設定受限模式的權限"]
 * link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["設定私有模式的權限"]
 

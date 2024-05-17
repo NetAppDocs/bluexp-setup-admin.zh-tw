@@ -20,12 +20,6 @@
 NetApp 支援網站上提供的安裝程式可能是舊版。安裝後、如果有新版本可用、 Connector 會自動自行更新。
 
 .步驟
-. 確認已啟用並執行Docker。
-+
-[source, cli]
-----
-sudo systemctl enable docker && sudo systemctl start docker
-----
 . 如果主機上已設定_http或_https或proxy_系統變數、請將其移除：
 +
 [source, cli]
@@ -64,7 +58,7 @@ chmod +x BlueXP-Connector-Cloud-<version>
 +
 [source, cli]
 ----
- ./BlueXP-Connector-Cloud-v3.9.38 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+ ./BlueXP-Connector-Cloud-v3.9.40--proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
 ----
 +
 -Proxy會使用下列其中一種格式、將Connector設定為使用HTTP或HTTPS Proxy伺服器：
@@ -82,7 +76,14 @@ chmod +x BlueXP-Connector-Cloud-<version>
 +
 *** 使用者可以是本機使用者或網域使用者。
 *** 對於網域使用者、您必須使用上方所示的 \ 的 ASCII 碼。
-*** BlueXP不支援包含@字元的密碼。
+*** BlueXP 不支援包含 @ 字元的使用者名稱或密碼。
+*** 如果密碼包含下列任何特殊字元、您必須以反斜線開頭來轉義該特殊字元： & 或 !
++
+例如：
+
++
+\http://bxpproxyuser:netapp1\!@address:3128
+
 
 
 

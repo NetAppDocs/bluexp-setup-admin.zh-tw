@@ -35,7 +35,7 @@ link:task-prepare-restricted-mode.html["深入瞭解網路需求"]
 
 * 具有附加原則的 IAM 角色、其中包含 Connector 所需的權限。
 +
-link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["瞭解如何設定 AWS 權限"]
+link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["瞭解如何設定 AWS 權限"]
 
 * 為您的 IAM 使用者訂閱及取消訂閱 AWS Marketplace 的權限。
 * 瞭解執行個體的 CPU 和 RAM 需求。
@@ -103,7 +103,7 @@ link:task-prepare-restricted-mode.html["深入瞭解網路需求"]
 
 * 具有附加原則的 IAM 角色、其中包含 Connector 所需的權限。
 +
-link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["瞭解如何設定 AWS 權限"]
+link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["瞭解如何設定 AWS 權限"]
 
 * 為您的 IAM 使用者訂閱及取消訂閱 AWS Marketplace 的權限。
 * EC2 執行個體的金鑰配對。
@@ -157,7 +157,7 @@ link:task-prepare-restricted-mode.html["深入瞭解網路需求"]
 
 * Azure 自訂角色、包含 Connector 所需的權限。
 +
-link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["瞭解如何設定 Azure 權限"]
+link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["瞭解如何設定 Azure 權限"]
 
 
 
@@ -220,18 +220,13 @@ Azure 以指定的設定部署虛擬機器。虛擬機器和 Connector 軟體應
 請注意、 BlueXP 不支援透明 Proxy 伺服器。
 
 * CA 簽署的憑證（如果 Proxy 伺服器使用 HTTPS 或 Proxy 是攔截 Proxy ）。
+* 根據您的作業系統而定、安裝 Connector 之前需要使用 Podman 或 Docker Engine 。
 
 
 .關於這項工作
 NetApp 支援網站上提供的安裝程式可能是舊版。安裝後、如果有新版本可用、 Connector 會自動自行更新。
 
 .步驟
-. 確認已啟用並執行Docker。
-+
-[source, cli]
-----
-sudo systemctl enable docker && sudo systemctl start docker
-----
 . 如果主機上已設定_http或_https或proxy_系統變數、請將其移除：
 +
 [source, cli]
@@ -270,7 +265,7 @@ chmod +x BlueXP-Connector-Cloud-<version>
 +
 [source, cli]
 ----
- ./BlueXP-Connector-Cloud-v3.9.38 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+ ./BlueXP-Connector-Cloud-v3.9.40--proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
 ----
 +
 -Proxy會使用下列其中一種格式、將Connector設定為使用HTTP或HTTPS Proxy伺服器：
@@ -288,7 +283,14 @@ chmod +x BlueXP-Connector-Cloud-<version>
 +
 *** 使用者可以是本機使用者或網域使用者。
 *** 對於網域使用者、您必須使用上方所示的 \ 的 ASCII 碼。
-*** BlueXP不支援包含@字元的密碼。
+*** BlueXP 不支援包含 @ 字元的使用者名稱或密碼。
+*** 如果密碼包含下列任何特殊字元、您必須以反斜線開頭來轉義該特殊字元： & 或 !
++
+例如：
+
++
+\http://bxpproxyuser:netapp1\!@address:3128
+
 
 
 
@@ -358,7 +360,7 @@ Connector 現在已安裝、並使用您的 BlueXP 帳戶進行設定。所有�
 
 如果您從 AWS Marketplace 部署 Connector 、則這些步驟不適用、因為您在部署期間選擇了所需的 IAM 角色。
 
-link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["瞭解如何準備雲端權限"]。
+link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["瞭解如何準備雲端權限"]。
 
 [role="tabbed-block"]
 ====

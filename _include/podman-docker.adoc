@@ -1,0 +1,101 @@
+= 
+:allow-uri-read: 
+
+
+根據您的作業系統而定、安裝 Connector 之前需要使用 Podman 或 Docker Engine 。
+
+* Red Hat Enterprise Linux 8 和 9 需要 Podman 。
+* Ubuntu 、 CentOS 和 Red Hat Enterprise Linux 7 需要 Docker Engine 。
+
+
+.步驟
+[role="tabbed-block"]
+====
+.Podman
+--
+安裝 Podman 4.6.1 。
+
+.步驟
+. 如果主機上已安裝 podman-泊 塢視窗套件、請將其移除。
++
+[source, cli]
+----
+dnf remove podman-docker
+rm /var/run/docker.sock
+----
+. 安裝 Podman 。
++
+Podman 可從官方 Red Hat Enterprise Linux 儲存庫取得。
+
++
+[source, cli]
+----
+sudo dnf install podman-2:4.6.1
+----
+. 啟用並啟動 podman.socket 服務。
++
+[source, cli]
+----
+sudo systemctl enable --now podman.socket
+----
+. 安裝 python3 。
++
+[source, cli]
+----
+sudo dnf install python3
+----
+. 如果您的系統上尚未提供 EPEL 儲存庫套件、請加以安裝。
++
+這是必要步驟、因為 podman-compose 可從 Enterprise Linux （ EPEL ）儲存庫取得。
+
++
+對於 Red Hat Enterprise Linux 9 ：
+
++
+[source, cli]
+----
+sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
+----
++
+對於 Red Hat Enterprise Linux 8 ：
+
++
+[source, cli]
+----
+sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+----
+. 安裝 podman-compose 套件 1.0.6 。
++
+[source, cli]
+----
+sudo dnf install podman-compose-1.0.6
+----
++
+
+NOTE: 使用 `dnf install` 命令符合將 podman-compose 新增至 PATH 環境變數的需求。安裝命令會將 podman-compose 新增至已包含在中的 /usr/bin `secure_path` 主機上的選項。
+
+
+
+--
+.Docker引擎
+--
+安裝 19.3.1 到 25.0.0 之間的 Docker Engine 版本。
+
+.步驟
+. 安裝 Docker Engine 。
++
+https://docs.docker.com/engine/install/["檢視 Docker 的安裝指示"^]
+
++
+請務必依照步驟安裝 Docker Engine 的特定版本。安裝最新版本將會安裝 BlueXP 不支援的 Docker 版本。
+
+. 確認 Docker 已啟用且正在執行。
++
+[source, cli]
+----
+sudo systemctl enable docker && sudo systemctl start docker
+----
+
+
+--
+====

@@ -153,10 +153,10 @@ BlueXP 帳戶管理員可以直接從 BlueXP 、雲端供應商的市場、或�
 ** link:concept-install-options-aws.html["AWS 中的連接器安裝選項"]
 ** link:concept-install-options-azure.html["Azure 中的連接器安裝選項"]
 ** link:concept-install-options-google.html["Google Cloud 中的 Connector 安裝選項"]
-** link:task-install-connector-on-prem.html#step-3-set-up-cloud-permissions["設定內部部署的雲端權限"]
+** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["設定內部部署的雲端權限"]
 
 
-* link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["設定受限模式的權限"]
+* link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["設定受限模式的權限"]
 * link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["設定私有模式的權限"]
 
 
@@ -175,7 +175,7 @@ BlueXP 帳戶管理員可以直接從 BlueXP 、雲端供應商的市場、或�
 
 當您在標準模式或受限模式下使用 BlueXP 時、只要 Connector 有外送網際網路存取權來取得軟體更新、它就會自動將其軟體更新至最新版本。如果您在私有模式下使用 BlueXP 、則需要手動升級 Connector 。
 
-link:task-managing-connectors.html["瞭解如何手動升級 Connector 軟體"]。
+link:task-upgrade-connector.html["瞭解如何手動升級 Connector 軟體"]。
 
 
 
@@ -183,7 +183,7 @@ link:task-managing-connectors.html["瞭解如何手動升級 Connector 軟體"]�
 
 在 Connector 主機上維護作業系統是您的責任。例如、您應該遵循公司的作業系統發佈標準程序、將安全性更新套用至 Connector 主機上的作業系統。
 
-請注意、執行作業系統更新時、不需要停止 Connector 主機上的任何服務。
+請注意、套用次要安全性更新時、不需要停止 Connector 主機上的任何服務。
 
 如果您需要停止然後啟動 Connector VM 、您應該從雲端供應商的主控台或使用內部部署管理的標準程序來執行。
 
@@ -191,15 +191,11 @@ link:task-managing-connectors.html["瞭解如何手動升級 Connector 軟體"]�
 
 
 
-== 多種工作環境
+== 多種工作環境與連接器
 
 Connector可以在BlueXP中管理多個工作環境。單一Connector應管理的工作環境數量上限各不相同。這取決於工作環境的類型、磁碟區數量、所管理的容量、以及使用者數量。
 
 如果您有大規模部署、請與NetApp代表合作調整環境規模。如果您在過程中遇到任何問題、請使用產品內對談與我們聯絡。
-
-
-
-== 多個連接器
 
 在某些情況下、您可能只需要一個連接器、但可能需要兩個以上的連接器。
 
@@ -207,33 +203,4 @@ Connector可以在BlueXP中管理多個工作環境。單一Connector應管理�
 
 * 您擁有多雲端環境（例如 AWS 和 Azure ）、偏好在 AWS 中安裝一個 Connector 、在 Azure 中安裝另一個 Connector 。每個系統都能管理 Cloud Volumes ONTAP 在這些環境中執行的不實系統。
 * 服務供應商可能會使用一個 BlueXP 帳戶為客戶提供服務、而使用另一個帳戶為其中一個業務單位提供災難恢復。每個帳戶都會有個別的 Connectors 。
-
-
-
-
-=== 切換時機
-
-建立第一個Connector時、BlueXP會自動將該Connector用於您所建立的每個額外工作環境。建立額外的 Connector 之後、您必須在兩者之間切換、以查看每個 Connector 專屬的工作環境。
-
-link:task-managing-connectors.html["瞭解如何在連接器之間切換"]。
-
-
-
-=== 災難恢復
-
-您可以同時使用多個連接器來管理工作環境、以便進行災難恢復。如果一個連接器故障、您可以切換至另一個連接器、立即管理工作環境。
-
-若要設定此組態：
-
-. link:task-managing-connectors.html["切換至另一個連接器"]。
-. 探索現有的工作環境。
-+
-** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-adding-systems.html["新增現有Cloud Volumes ONTAP 的元件系統至藍圖XP"^]
-** https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["探索 ONTAP 叢集"^]
-
-
-. 設定 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-storage-management.html["容量管理模式"^]
-+
-只有主連接器應設定為*自動模式*。如果您切換至另一個連接器以進行DR、則可視需要變更容量管理模式。
-
 

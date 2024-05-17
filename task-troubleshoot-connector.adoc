@@ -1,0 +1,111 @@
+---
+sidebar: sidebar 
+permalink: task-troubleshoot-connector.html 
+keywords: troubleshoot, system id, system ID, autosupport, asup, troubleshoot connector, download failure, cloud volumes ontap download failure 
+summary: 若要疑難排解 Connector 的問題、您可以與 NetApp 支援部門合作、他們可能會要求您提供系統 ID 或最新的 AutoSupport 訊息。您也可以檢視 NetApp 知識庫、自行疑難排解問題。 
+---
+= 疑難排解 Connector
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+若要疑難排解 Connector 的問題、您可以與 NetApp 支援部門合作、他們可能會要求您提供系統 ID 、 Connector 版本或最新的 AutoSupport 訊息。您也可以檢視 NetApp 知識庫、自行疑難排解問題。
+
+.相關連結
+link:task-get-help.html["取得 NetApp 支援的協助"]。
+
+
+
+== 尋找連接器的系統ID
+
+為了協助您開始使用、您的 NetApp 代表可能會要求您提供 Connector 的系統 ID 。此 ID 通常用於授權和疑難排解。
+
+.步驟
+. 在 BlueXP 主控台的右上角、選取「說明」圖示。
+. 選取 * 支援 > BlueXP Connector* 。
++
+系統 ID 會顯示在頁面頂端。
+
++
+* 範例 *
+
++
+image:screenshot-system-id.png["顯示「支援儀表板」中所顯示之BlueXP系統ID的螢幕快照。"]
+
+
+
+
+
+== 檢視 Connector 的版本
+
+您可以檢視 Connector 的版本、以確認 Connector 已自動升級至最新版本、或是您需要與 NetApp 代表分享。
+
+.步驟
+. 在 BlueXP 主控台的右上角、選取「說明」圖示。
+. 選取 * 支援 > BlueXP Connector* 。
++
+版本會顯示在頁面頂端。
+
++
+image:screenshot-connector-version.png["顯示 Support Dashboard 中 Connector 版本的螢幕快照。"]
+
+
+
+
+
+== 下載AutoSupport 或傳送更新訊息
+
+如果您有任何問題、NetApp人員可能會要求您傳送AutoSupport 一份關於解決疑難的消息給NetApp支援部門。
+
+.步驟
+. 在 BlueXP 主控台的右上角、選取「說明」圖示、然後選取 * 「支援 * 」。
++
+image:screenshot-help-support.png["「說明」功能表的快照、其中「支援」是第一個列出的選項"]
+
+. 選擇 * BlueXP Connector* 。
+. 根據您傳送資訊給NetApp支援部門的方式、請選擇下列其中一個選項：
++
+.. 選取選項、將AutoSupport 此資訊下載到您的本機機器。然後、您可以使用偏好的方法將其傳送給NetApp支援部門。
+.. 選擇 * 傳送 AutoSupport * 、將訊息直接傳送至 NetApp 支援部門。
+
+
++
+image:screenshot-connector-autosupport.png["「支援儀表板」的螢幕擷取畫面、顯示使用者可選擇下載及傳送 AutoSupport 訊息的位置。"]
+
+
+
+
+
+== 修正使用Google Cloud NAT閘道時的下載失敗
+
+Connector會自動下載Cloud Volumes ONTAP 適用於更新的軟體。如果您的組態使用Google Cloud NAT閘道、下載可能會失敗。您可以限制軟體映像分成的零件數量來修正此問題。此步驟必須使用BlueXP API完成。
+
+.步驟
+. 將PUT要求提交至/occm/config、並以下列Json做為本文：
++
+[source]
+----
+{
+  "maxDownloadSessions": 32
+}
+----
++
+_MaxDownloadSseds_的值可以是1或任何大於1的整數。如果值為1、則下載的映像不會分割。
+
++
+請注意、32為範例值。您應該使用的值取決於NAT組態和可同時使用的工作階段數目。
+
+
+
+https://docs.netapp.com/us-en/bluexp-automation/cm/api_ref_resources.html#occmconfig["深入瞭解/occm/config API呼叫"^]
+
+
+
+== 取得 NetApp 知識庫的說明
+
+https://kb.netapp.com/Special:Search?path=Cloud%2FBlueXP&query=connector&type=wiki["檢視 NetApp 支援團隊所建立的疑難排解資訊"]。

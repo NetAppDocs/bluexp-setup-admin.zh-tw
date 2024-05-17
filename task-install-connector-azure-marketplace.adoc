@@ -108,15 +108,13 @@ vnet 和子網路:: 建立 Connector 時、您需要指定 Connector 應位於�
 --
 
 
-Proxy伺服器:: 如果您的組織需要為所有傳出的網際網路流量部署 Proxy 伺服器、請取得下列關於 HTTP 或 HTTPS Proxy 的資訊。您必須在安裝期間提供此資訊。
+Proxy伺服器:: 如果您的組織需要為所有傳出的網際網路流量部署 Proxy 伺服器、請取得下列關於 HTTP 或 HTTPS Proxy 的資訊。您必須在安裝期間提供此資訊。請注意、 BlueXP 不支援透明 Proxy 伺服器。
 +
 --
 * IP 位址
 * 認證資料
 * HTTPS憑證
 
-
-請注意、 BlueXP 不支援透明 Proxy 伺服器。
 
 --
 

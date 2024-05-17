@@ -31,8 +31,8 @@ summary: 當BlueXP在AWS中啟動Connector執行個體時、它會將原則附�
 * 若要檢視使用這些原則的逐步指示、請參閱下列頁面：
 +
 ** link:task-install-connector-aws-marketplace.html#step-2-set-up-aws-permissions["設定 AWS Marketplace 部署的權限"]
-** link:task-install-connector-on-prem.html#step-3-set-up-cloud-permissions["設定內部部署的權限"]
-** link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["設定受限模式的權限"]
+** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["設定內部部署的權限"]
+** link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["設定受限模式的權限"]
 ** link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["設定私有模式的權限"]
 
 
@@ -1256,6 +1256,9 @@ Connector會提出下列API要求、要求在Cloud Volumes ONTAP AWS中部署及
 
 
 | EC2：修改Volume | 否 | 是的 | 否 
+
+
+| 檢查可用性區域是否為 AWS 本機區域、並驗證所有部署參數是否相容 | EC2 ：去除可用性區域 | 是的 | 否 | 是的 
 |===
 
 
@@ -1288,13 +1291,11 @@ Connector會提出下列API要求、以探索及管理Amazon EKS叢集：
 
 
 
-=== 2024 年 3 月 8 日
+=== 2024 年 5 月 9 日
 
-Connector 原則現在包含下列權限：
+Cloud Volumes ONTAP 現在需要下列權限：
 
 EC2 ：去除可用性區域
-
-即將發行的版本需要此權限。我們會在發行版本推出時更新版本資訊、提供更多詳細資料。
 
 
 

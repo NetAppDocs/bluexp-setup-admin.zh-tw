@@ -9,8 +9,43 @@
 +
 --
 * Ubuntu 22.04 LTS
+* CentOS 7.6 至 7.9
++
+NetApp 將持續支援 CentOS 7 的 Connector 、直到 2024 年 6 月 30 日為止。
+
+* Red Hat Enterprise Linux
++
+** 7.6 至 7.9
++
+NetApp 將持續支援 RHEL 7 的 Connector 、直到 2024 年 6 月 30 日為止。
+
+** 8.6 至 8.9
+** 9.1 至 9.3
++
+主機必須向 Red Hat Subscription Management 登錄。如果主機尚未登錄、則無法在 Connector 安裝期間存取儲存庫來更新所需的協力廠商軟體。
+
++
+這些作業系統的英文版本支援 Connector 。
+
+
+
+
+
+--
+
+
+支援的作業系統::
++
+--
+* Ubuntu 22.04 LTS
 * CentOS 7.6、7.7、7.8及7.9
++
+NetApp 將持續支援 CentOS 7 的 Connector 、直到 2024 年 6 月 30 日為止。
+
 * Red Hat Enterprise Linux 7.6 、 7.7 、 7.8 和 7.9
++
+NetApp 將持續支援 RHEL 7 的 Connector 、直到 2024 年 6 月 30 日為止。
+
 +
 主機必須向 Red Hat Subscription Management 登錄。如果主機尚未登錄、則無法在 Connector 安裝期間存取儲存庫來更新所需的協力廠商軟體。
 
@@ -25,7 +60,7 @@
 Hypervisor:: 需要經認證可執行 Ubuntu 、 CentOS 或 Red Hat Enterprise Linux 的裸機或託管 Hypervisor 。
 +
 --
-https://access.redhat.com/certified-hypervisors["Red Hat 解決方案：哪些 Hypervisor 已通過認證、可執行 Red Hat Enterprise Linux ？"^]
+https://access.redhat.com/articles/973163["Red Hat 解決方案：哪些 Hypervisor 已通過認證、可執行 Red Hat Enterprise Linux ？"^]
 
 --
 
@@ -62,6 +97,31 @@ Docker引擎:: 安裝 Connector 之前、主機上需要 Docker Engine 。
 * 支援的最大版本為 25.0.0 。
 +
 https://docs.docker.com/engine/install/["檢視安裝指示"^]
+
+
+
+--
+
+
+容器協調工具:: 根據您的作業系統而定、安裝 Connector 之前需要使用 Podman 或 Docker Engine 。
++
+--
+* Red Hat Enterprise Linux 8 和 9 需要 Podman 4.6.1 版。
++
+Podman 必須符合下列先決條件：
+
++
+** 必須啟用並啟動 podman.socket 服務
+** 必須安裝 python3
+** 必須安裝 podman-compose 套件 1.0.6 版
+** 必須將 podman-compose 新增至 PATH 環境變數
+
+
+* Ubuntu 、 CentOS 和 Red Hat Enterprise Linux 7 需要 Docker Engine 。
++
+** 支援的最低版本為 19.3.1 。
+** 支援的最大版本為 25.0.0 。
+
 
 
 

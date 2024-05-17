@@ -109,9 +109,9 @@ link:task-adding-azure-accounts.html#subscribe["瞭解如何建立Azure訂閱的
 * 標準模式
 +
 ** link:task-install-connector-azure-marketplace.html#step-3-set-up-permissions["設定 Azure Marketplace 部署的權限"]
-** link:task-install-connector-on-prem.html#step-3-set-up-cloud-permissions["設定內部部署的權限"]
+** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["設定內部部署的權限"]
 
 
-* link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["設定受限模式的權限"]
+* link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["設定受限模式的權限"]
 * link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["設定私有模式的權限"]
 

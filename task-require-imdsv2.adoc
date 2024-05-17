@@ -1,0 +1,97 @@
+---
+sidebar: sidebar 
+permalink: task-require-imdsv2.html 
+keywords: managing connectors, uninstall connector, switch connectors, switch between connectors, local interface, local connector, local cloud manager, local ui, go to local ui 
+summary: BlueXP 支援搭配 Connector 和 Cloud Volumes ONTAP 的 IMDSv2 。在大多數情況下、會在新的 EC2 執行個體上自動設定 IMDSv2 。IMDSv1 在 2024 年 3 月之前啟用。如果您的安全性原則要求、您可能需要在 EC2 執行個體上手動設定 IMDSv2 。 
+---
+= 需要在 Amazon EC2 執行個體上使用 IMDSv2
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+BlueXP 支援 Amazon EC2 執行個體中繼資料服務版本 2 （ IMDSv2 ）搭配 Connector 和 Cloud Volumes ONTAP （包括 HA 部署的中介）。在大多數情況下、會在新的 EC2 執行個體上自動設定 IMDSv2 。IMDSv1 在 2024 年 3 月之前啟用。如果您的安全性原則要求、您可能需要在 EC2 執行個體上手動設定 IMDSv2 。
+
+.開始之前
+* Connector 版本必須為 3.9.38 或更新版本。
+* Cloud Volumes ONTAP 必須執行下列其中一個版本：
++
+** 9.12.1 P2 （或任何後續修補程式）
+** 9.13.0 P4 （或任何後續修補程式）
+** 9.13.1 或本版本之後的任何版本
+
+
+* 此變更需要重新啟動 Cloud Volumes ONTAP 執行個體。
+* 這些步驟需要使用 AWS CLI 、因為您必須將回應躍點限制變更為 3 。
+
+
+.關於這項工作
+IMDSv2 提供更強大的保護功能、防範弱點。 https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/["從 AWS 安全性部落格深入瞭解 IMDSv2"^]
+
+在 EC2 執行個體上、執行個體中繼資料服務（ IMDS ）的啟用方式如下：
+
+* 適用於從 BlueXP 或使用的新 Connector 部署 https://docs.netapp.com/us-en/bluexp-automation/automate/overview.html["Terraform 指令碼"^]、根據預設、 EC2 執行個體上會啟用 IMDSv2 。
+* 如果您在 AWS 中啟動新的 EC2 執行個體、然後手動安裝 Connector 軟體、則預設也會啟用 IMDSv2 。
+* 如果您從 AWS Marketplace 啟動 Connector 、則預設會啟用 IMDSv1 。您可以在 EC2 執行個體上手動設定 IMDSv2 。
+* 對於現有的 Connectors 、仍支援 IMDSv1 、但您可以視需要在 EC2 執行個體上手動設定 IMDSv2 。
+* 對於 Cloud Volumes ONTAP 、根據預設、會在新的和現有的執行個體上啟用 IMDSv1 。您可以視需要在 EC2 執行個體上手動設定 IMDSv2 。
+
+
+.步驟
+. 需要在 Connector 執行個體上使用 IMDSv2 ：
++
+.. 連接至 Linux VM for the Connector 。
++
+在AWS中建立Connector執行個體時、您提供了AWS存取金鑰和秘密金鑰。您可以將此金鑰配對用於執行個體的SSH。EC2 Linux 執行個體的使用者名稱為 Ubuntu （對於在 2023 年 5 月之前建立的 Connectors 、使用者名稱為 EC2-user ）。
+
++
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html["AWS文件：連線至您的Linux執行個體"^]
+
+.. 安裝 AWS CLI 。
++
+https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html["AWS 文件：安裝或更新至 AWS CLI 的最新版本"^]
+
+.. 使用 `aws ec2 modify-instance-metadata-options` 命令要求使用 IMDSv2 、並將「輸入回應躍點」限制變更為 3 。
++
+* 範例 *
+
++
+[source, awscli]
+----
+aws ec2 modify-instance-metadata-options \
+    --instance-id <instance-id> \
+    --http-put-response-hop-limit 3 \
+    --http-tokens required \
+    --http-endpoint enabled
+----
+
+
++
+
+NOTE: 。 `http-tokens` 參數會將 IMDSv2 設為必要。何時 `http-tokens` 為必填、您也必須設定 `http-endpoint` 至啟用。
+
+. 需要在 Cloud Volumes ONTAP 執行個體上使用 IMDSv2 ：
++
+.. 前往 https://console.aws.amazon.com/ec2/["Amazon EC2 主控台"^]
+.. 從導覽窗格中、選取 * 執行個體 * 。
+.. 選取 Cloud Volumes ONTAP 執行個體。
+.. 選取 * 「動作」 > 「執行個體設定」 > 「修改執行個體中繼資料選項」 * 。
+.. 在 * 修改執行個體中繼資料選項 * 對話方塊中、選取下列項目：
++
+*** 對於 * 執行個體中繼資料服務 * 、請選取 * 啟用 * 。
+*** 對於 *IMDSv2* ，請選擇 * 必要 * 。
+*** 選擇*保存*。
+
+
+.. 對其他 Cloud Volumes ONTAP 執行個體（包括 HA 協調器）重複這些步驟。
+.. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-state.html["停止並啟動 Cloud Volumes ONTAP 執行個體"^]
+
+
+
+
+.結果
+Connector 執行個體和 Cloud Volumes ONTAP 執行個體現在已設定為使用 IMDSv2 。

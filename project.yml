@@ -19,6 +19,8 @@ sidebar:
       url: "/whats-new.html"
     - title: 已知限制
       url: "/reference-limitations.html"
+    - title: 支援的 Linux 作業系統變更
+      url: "/reference-connector-operating-system-changes.html"
   - title: 開始使用
     entries:
     - title: 瞭解基礎知識
@@ -115,15 +117,23 @@ sidebar:
         url: "/reference-user-roles.html"
     - title: 連接器
       entries:
-      - title: 尋找連接器的系統ID
-        url: "/task-finding-system-id.html"
-      - title: 管理現有的連接器
-        url: "/task-managing-connectors.html"
+      - title: 維護 VM 和 OS
+        url: "/task-maintain-connectors.html"
       - title: 安裝 HTTPS 憑證以進行安全存取
         url: "/task-installing-https-cert.html"
       - title: 設定連接器以使用Proxy伺服器
         url: "/task-configuring-proxy.html"
-      - title: Connector 的預設組態
+      - title: 需要在 EC2 執行個體上使用 IMDSv2
+        url: "/task-require-imdsv2.html"
+      - title: 使用私有模式時升級 Connector
+        url: "/task-upgrade-connector.html"
+      - title: 使用多個連接器
+        url: "/task-manage-multiple-connectors.html"
+      - title: 疑難排解 Connector
+        url: "/task-troubleshoot-connector.html"
+      - title: 解除安裝並移除 Connector
+        url: "/task-uninstall-connector.html"
+      - title: 預設組態
         url: "/reference-connector-default-config.html"
     - title: 認證與訂閱
       entries:

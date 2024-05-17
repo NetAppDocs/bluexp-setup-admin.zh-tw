@@ -1,0 +1,182 @@
+---
+sidebar: sidebar 
+permalink: reference-connector-operating-system-changes.html 
+keywords: connector, operating systems, connector operating systems, os support, supported operating systems, rhel 8, rhel 9, red hat, docker, podman 
+summary: 當我們在特定 Linux 作業系統上新增及移除 Connector 支援時、您可能會對此支援如何影響現有的 Connector 部署有疑問。 
+---
+= 支援的 Linux 作業系統變更
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+當我們在特定 Linux 作業系統上新增及移除 Connector 支援時、您可能會對此支援如何影響現有的 Connector 部署有疑問。
+
+
+
+== 支援 RHEL 8 和 9
+
+從 3.9.40 版本開始、 BlueXP 支援 Connector 搭配下列版本的 Red Hat Enterprise Linux （ RHEL ）：
+
+* 8.6 至 8.9
+* 9.1 至 9.3
+
+
+請注意下列關於這些 RHEL 版本的支援：
+
+限制::
++
+--
+* 當 Connector 安裝在 RHEL 8 或 9 主機上時、 BlueXP 備份與還原會限制單一檔案還原和勒索軟體掃描。如需詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-limitations.html["BlueXP 備份與還原的已知限制"^]
+* 如果您在內部部署的 RHEL 8 或 9 主機上安裝 Connector 、則支援 BlueXP 分類。如果 RHEL 8 或 9 主機位於 AWS 、 Azure 或 Google Cloud 、則不支援此功能。
+
+
+--
+容器協調工具:: 在 RHEL 8 或 9 主機上安裝 Connector 時、必須使用 Podman 作為容器協調工具。RHEL 8 和 9 不支援 Docker Engine 。
++
+--
+link:task-install-connector-on-prem.html#step-1-review-host-requirements["檢視 Podman 的要求"]。
+
+--
+部署模式:: 在標準模式或受限模式下使用 BlueXP 時、支援 RHEL 8 和 9 。
+僅限全新手動安裝:: 在內部部署或雲端上執行的主機上手動安裝 Connector 時、 _new_ Connector 安裝可支援 RHEL 8 和 9 。
+RHEL 升級:: 如果現有的 Connector 是在 RHEL 7 主機上執行、我們不支援將 RHEL 7 作業系統升級為 RHEL 8 或 9 。 <<RHEL 7 或 CentOS 7 上的現有連接器,深入瞭解 RHEL 7 或 CentOS 7 上的現有 Connector>>。
+
+
+
+
+== 終止對 RHEL 7 和 CentOS 7 的支援
+
+在 2024 年 6 月 30 日、 RHEL 7 將會結束維護（ EOM ）、而 CentOS 7 則會達到生命週期結束（ EOL ）。NetApp 將持續支援這些 Linux 套裝作業系統上的 Connector 、直到 2024 年 6 月 30 日為止。
+
+https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux/rhel-7-end-of-maintenance["Red Hat ： Red Hat Enterprise Linux 7 End of Maintenance 的相關資訊"^]
+
+
+
+=== RHEL 7 或 CentOS 7 上的現有連接器
+
+如果您現有的 Connector 是在 RHEL 7 或 CentOS 7 上執行、我們不支援將作業系統升級或轉換為 RHEL 8 或 9 。若要改為在 RHEL 8 或 9 主機上執行 Connector 、您需要執行下列步驟：
+
+. 設定 RHEL 8 或 9 主機。
+. 安裝 Podman 。
+. 執行 _new_ Connector 安裝。
+. 設定 Connector 以探索舊 Connector 所管理的工作環境。
+
+
+
+
+== 持續支援 Ubuntu 22.04 LTS
+
+Ubuntu 22.04 LTS 仍支援 Connector 、是 BlueXP 和市場部署的預設作業系統。
+
+此作業系統需要 Docker Engine 。不支援 Podman 。
+
+
+
+== 支援作業系統的摘要
+
+以下是前幾節所述的作業系統支援摘要。
+
+
+NOTE: NetApp 將持續支援 RHEL 7 和 CentOS 7 上的 Connector 、直到 2024 年 6 月 30 日為止。
+
+[role="tabbed-block"]
+====
+.標準模式
+--
+手動安裝::
++
+--
+* Ubuntu 22.04 LTS
+* CentOS 7.6 至 7.9
+* Red Hat Enterprise Linux
++
+** 7.6 至 7.9
+** 8.6 至 8.9
+** 9.1 至 9.3
+
+
+
+
+--
+從 BlueXP 進行部署:: Ubuntu 22.04 LTS
+從 AWS Marketplace 進行部署:: Ubuntu 22.04 LTS
+從 Azure Marketplace 進行部署:: Ubuntu 22.04 LTS
+
+
+--
+.受限模式
+--
+手動安裝::
++
+--
+* Ubuntu 22.04 LTS
+* CentOS 7.6 至 7.9
+* Red Hat Enterprise Linux
++
+** 7.6 至 7.9
+** 8.6 至 8.9
+** 9.1 至 9.3
+
+
+
+
+--
+從 AWS Marketplace 進行部署:: Ubuntu 22.04 LTS
+從 Azure Marketplace 進行部署:: Ubuntu 22.04 LTS
+
+
+--
+.私有模式
+--
+手動安裝::
++
+--
+* Ubuntu 22.04 LTS
+* CentOS 7.6 至 7.9
+* Red Hat Enterprise Linux 7.6 至 7.9
+
+
+--
+
+
+--
+====
+
+
+== 相關連結
+
+
+
+=== 如何開始使用 RHEL 8 和 9
+
+如需主機需求、 Podcast 需求、以及安裝 Podman 和 Connector 的步驟等詳細資訊、請參閱下列頁面：
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["在內部部署安裝並設定 Connector"] （標準模式）
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-manual.html["在 AWS 中手動安裝 Connector"] （標準模式）
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-azure-manual.html["在 Azure 中手動安裝 Connector"] （標準模式）
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-google-manual.html["在 Google Cloud 中手動安裝 Connector"] （標準模式）
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-restricted-mode.html["準備以受限模式進行部署"]
+
+
+
+
+=== 如何重新探索您的工作環境
+
+請參閱下列頁面、在新的 Connector 部署之後重新探索您的工作環境。
+
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-adding-systems.html["新增現有Cloud Volumes ONTAP 的元件系統至藍圖XP"^]
+* https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["探索內部部署ONTAP 的叢集"^]
+* https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-creating-fsx-working-environment.html["建立或探索適用於 ONTAP 工作環境的 FSX"^]
+* https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-create-working-env.html["打造 Azure NetApp Files 一個不一樣的工作環境"^]
+* https://docs.netapp.com/us-en/bluexp-e-series/task-discover-e-series.html["探索 E 系列系統"^]
+* https://docs.netapp.com/us-en/bluexp-storagegrid/task-discover-storagegrid.html["探索StorageGRID 各種系統"^]
+* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-aws.html["新增Amazon Kubernetes叢集"^]
+* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-azure.html["新增Azure Kubernetes叢集"^]
+* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-gke.html["新增Google Cloud Kubernetes叢集"^]
+* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-openshift.html["匯入 OpenShift 叢集"^]
+

@@ -30,8 +30,18 @@ Connector 軟體必須在符合特定作業系統需求、 RAM 需求、連接�
 +
 --
 * Ubuntu 22.04 LTS
-* CentOS 7.6、7.7、7.8及7.9
-* Red Hat Enterprise Linux 7.6 、 7.7 、 7.8 和 7.9
+* CentOS 7.6 至 7.9
++
+NetApp 將持續支援 CentOS 7 的 Connector 、直到 2024 年 6 月 30 日為止。
+
+* Red Hat Enterprise Linux
++
+** 7.6 至 7.9
++
+NetApp 將持續支援 RHEL 7 的 Connector 、直到 2024 年 6 月 30 日為止。
+
+** 8.6 至 8.9
+** 9.1 至 9.3
 +
 主機必須向 Red Hat Subscription Management 登錄。如果主機尚未登錄、則無法在 Connector 安裝期間存取儲存庫來更新所需的協力廠商軟體。
 
@@ -40,11 +50,13 @@ Connector 軟體必須在符合特定作業系統需求、 RAM 需求、連接�
 
 
 
+
+
 --
 Hypervisor:: 需要經認證可執行 Ubuntu 、 CentOS 或 Red Hat Enterprise Linux 的裸機或託管 Hypervisor 。
 +
 --
-https://access.redhat.com/certified-hypervisors["Red Hat 解決方案：哪些 Hypervisor 已通過認證、可執行 Red Hat Enterprise Linux ？"^]
+https://access.redhat.com/articles/973163["Red Hat 解決方案：哪些 Hypervisor 已通過認證、可執行 Red Hat Enterprise Linux ？"^]
 
 --
 CPU:: 4 個核心或 4 個 vCPU
@@ -53,13 +65,25 @@ AWS EC2 執行個體類型:: 符合上述 CPU 和 RAM 需求的執行個體類�
 金鑰配對:: 建立 Connector 時、您需要選取 EC2 金鑰配對以搭配執行個體使用。
 /opt 中的磁碟空間:: 必須有100 GiB的可用空間
 /var.中的磁碟空間:: 必須提供20 GiB的空間
-Docker引擎:: 安裝 Connector 之前、主機上需要 Docker Engine 。
+容器協調工具:: 根據您的作業系統而定、安裝 Connector 之前需要使用 Podman 或 Docker Engine 。
 +
 --
-* 支援的最低版本為 19.3.1 。
-* 支援的最大版本為 25.0.0 。
+* Red Hat Enterprise Linux 8 和 9 需要 Podman 4.6.1 版。
 +
-https://docs.docker.com/engine/install/["檢視安裝指示"^]
+Podman 必須符合下列先決條件：
+
++
+** 必須啟用並啟動 podman.socket 服務
+** 必須安裝 python3
+** 必須安裝 podman-compose 套件 1.0.6 版
+** 必須將 podman-compose 新增至 PATH 環境變數
+
+
+* Ubuntu 、 CentOS 和 Red Hat Enterprise Linux 7 需要 Docker Engine 。
++
+** 支援的最低版本為 19.3.1 。
+** 支援的最大版本為 25.0.0 。
+
 
 
 
@@ -68,7 +92,108 @@ https://docs.docker.com/engine/install/["檢視安裝指示"^]
 
 
 
-== 步驟 2 ：設定網路
+== 步驟 2 ：安裝 Podman 或 Docker Engine
+
+根據您的作業系統而定、安裝 Connector 之前需要使用 Podman 或 Docker Engine 。
+
+* Red Hat Enterprise Linux 8 和 9 需要 Podman 。
+* Ubuntu 、 CentOS 和 Red Hat Enterprise Linux 7 需要 Docker Engine 。
+
+
+.步驟
+[role="tabbed-block"]
+====
+.Podman
+--
+安裝 Podman 4.6.1 。
+
+.步驟
+. 如果主機上已安裝 podman-泊 塢視窗套件、請將其移除。
++
+[source, cli]
+----
+dnf remove podman-docker
+rm /var/run/docker.sock
+----
+. 安裝 Podman 。
++
+Podman 可從官方 Red Hat Enterprise Linux 儲存庫取得。
+
++
+[source, cli]
+----
+sudo dnf install podman-2:4.6.1
+----
+. 啟用並啟動 podman.socket 服務。
++
+[source, cli]
+----
+sudo systemctl enable --now podman.socket
+----
+. 安裝 python3 。
++
+[source, cli]
+----
+sudo dnf install python3
+----
+. 如果您的系統上尚未提供 EPEL 儲存庫套件、請加以安裝。
++
+這是必要步驟、因為 podman-compose 可從 Enterprise Linux （ EPEL ）儲存庫取得。
+
++
+對於 Red Hat Enterprise Linux 9 ：
+
++
+[source, cli]
+----
+sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
+----
++
+對於 Red Hat Enterprise Linux 8 ：
+
++
+[source, cli]
+----
+sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+----
+. 安裝 podman-compose 套件 1.0.6 。
++
+[source, cli]
+----
+sudo dnf install podman-compose-1.0.6
+----
++
+
+NOTE: 使用 `dnf install` 命令符合將 podman-compose 新增至 PATH 環境變數的需求。安裝命令會將 podman-compose 新增至已包含在中的 /usr/bin `secure_path` 主機上的選項。
+
+
+
+--
+.Docker引擎
+--
+安裝 19.3.1 到 25.0.0 之間的 Docker Engine 版本。
+
+.步驟
+. 安裝 Docker Engine 。
++
+https://docs.docker.com/engine/install/["檢視 Docker 的安裝指示"^]
+
++
+請務必依照步驟安裝 Docker Engine 的特定版本。安裝最新版本將會安裝 BlueXP 不支援的 Docker 版本。
+
+. 確認 Docker 已啟用且正在執行。
++
+[source, cli]
+----
+sudo systemctl enable docker && sudo systemctl start docker
+----
+
+
+--
+====
+
+
+== 步驟 3 ：設定網路
 
 請確定您計畫安裝 Connector 的網路位置支援下列需求。滿足這些需求後、 Connector 便能在混合雲環境中管理資源和程序。
 
@@ -157,15 +282,13 @@ AWS 服務（ amazonaws.com):
 --
 
 
-Proxy伺服器:: 如果您的組織需要為所有傳出的網際網路流量部署 Proxy 伺服器、請取得下列關於 HTTP 或 HTTPS Proxy 的資訊。您必須在安裝期間提供此資訊。
+Proxy伺服器:: 如果您的組織需要為所有傳出的網際網路流量部署 Proxy 伺服器、請取得下列關於 HTTP 或 HTTPS Proxy 的資訊。您必須在安裝期間提供此資訊。請注意、 BlueXP 不支援透明 Proxy 伺服器。
 +
 --
 * IP 位址
 * 認證資料
 * HTTPS憑證
 
-
-請注意、 BlueXP 不支援透明 Proxy 伺服器。
 
 --
 
@@ -189,7 +312,7 @@ Proxy伺服器:: 如果您的組織需要為所有傳出的網際網路流量部
 
 
 
-== 步驟 3 ：設定權限
+== 步驟 4 ：設定權限
 
 您需要使用下列其中一個選項、提供 AWS 對 BlueXP 的權限：
 
@@ -262,7 +385,7 @@ Proxy伺服器:: 如果您的組織需要為所有傳出的網際網路流量部
 ====
 
 
-== 步驟 4 ：安裝 Connector
+== 步驟 5 ：安裝 Connector
 
 完成先決條件後、您可以在自己的 Linux 主機上手動安裝軟體。
 
@@ -284,12 +407,6 @@ Proxy伺服器:: 如果您的組織需要為所有傳出的網際網路流量部
 NetApp 支援網站上提供的安裝程式可能是舊版。安裝後、如果有新版本可用、 Connector 會自動自行更新。
 
 .步驟
-. 確認已啟用並執行Docker。
-+
-[source, cli]
-----
-sudo systemctl enable docker && sudo systemctl start docker
-----
 . 如果主機上已設定_http或_https或proxy_系統變數、請將其移除：
 +
 [source, cli]
@@ -328,7 +445,7 @@ chmod +x BlueXP-Connector-Cloud-<version>
 +
 [source, cli]
 ----
- ./BlueXP-Connector-Cloud-v3.9.38 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+ ./BlueXP-Connector-Cloud-v3.9.40--proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
 ----
 +
 -Proxy會使用下列其中一種格式、將Connector設定為使用HTTP或HTTPS Proxy伺服器：
@@ -346,7 +463,14 @@ chmod +x BlueXP-Connector-Cloud-<version>
 +
 *** 使用者可以是本機使用者或網域使用者。
 *** 對於網域使用者、您必須使用上方所示的 \ 的 ASCII 碼。
-*** BlueXP不支援包含@字元的密碼。
+*** BlueXP 不支援包含 @ 字元的使用者名稱或密碼。
+*** 如果密碼包含下列任何特殊字元、您必須以反斜線開頭來轉義該特殊字元： & 或 !
++
+例如：
+
++
+\http://bxpproxyuser:netapp1\!@address:3128
+
 
 
 
@@ -382,7 +506,7 @@ Connector 現已安裝、並已使用您的 BlueXP 帳戶進行設定。
 
 
 
-== 步驟 5 ：提供 BlueXP 的權限
+== 步驟 6 ：提供 BlueXP 的權限
 
 安裝 Connector 之後、您必須提供 BlueXP 先前設定的 AWS 權限。提供權限可讓 BlueXP 在 AWS 中管理您的資料和儲存基礎架構。
 

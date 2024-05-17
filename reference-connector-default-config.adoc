@@ -33,6 +33,7 @@ summary: 您可能想要在部署連接器之前、或是需要疑難排解任�
 +
 作業系統不含 GUI 。您必須使用終端機來存取系統。
 
+* 安裝包含 Docker Engine 、這是必要的容器協調工具。
 * EC2 Linux 執行個體的使用者名稱為 Ubuntu （對於在 2023 年 5 月之前建立的 Connectors 、使用者名稱為 EC2-user ）。
 * 預設系統磁碟為 100 GiB gp2 磁碟。
 
@@ -48,6 +49,7 @@ summary: 您可能想要在部署連接器之前、或是需要疑難排解任�
 +
 作業系統不含 GUI 。您必須使用終端機來存取系統。
 
+* 安裝包含 Docker Engine 、這是必要的容器協調工具。
 * 預設系統磁碟為100 GiB優質SSD磁碟。
 
 
@@ -62,6 +64,7 @@ summary: 您可能想要在部署連接器之前、或是需要疑難排解任�
 +
 作業系統不含 GUI 。您必須使用終端機來存取系統。
 
+* 安裝包含 Docker Engine 、這是必要的容器協調工具。
 * 預設系統磁碟為100 GiB SSD持續磁碟。
 
 
@@ -83,7 +86,7 @@ Connector 安裝資料夾位於下列位置：
 或
 * /opp/application/NetApp/service-manager-2/logs（從全新3.9.23安裝開始）
 +
-這些資料夾中的記錄提供有關Connector和Docker影像的詳細資料。
+這些資料夾中的記錄會提供有關 Connector 的詳細資料。
 
 * /opp/application/netapp/cloudmanager/dock_occm/data/log
 +

@@ -105,7 +105,6 @@
   <block id="dee4b7ff8cb24e70b467d45ba4ac55c6" category="paragraph"><block ref="dee4b7ff8cb24e70b467d45ba4ac55c6" category="inline-link-rx"></block></block>
   <block id="bbe48fb854ea022537208eeeff822f91" category="paragraph-title">關於這項工作</block>
   <block id="aad3dfdc62f79a4c10e86004046d9509" category="paragraph">NetApp 支援網站上提供的安裝程式可能是舊版。安裝後、如果有新版本可用、 Connector 會自動自行更新。</block>
-  <block id="9764d03a6c521ac6bf9cc6db107b8351" category="list-text">確認已啟用並執行Docker。</block>
   <block id="16c184ab0a5376cef0ecef7f0da93ac2" category="list-text">如果主機上已設定_http或_https或proxy_系統變數、請將其移除：</block>
   <block id="15c8f910fc596ecb4a8b91027b56de66" category="paragraph">如果您未移除這些系統變數、安裝將會失敗。</block>
   <block id="7e64bcd49d202a618920fe22d66f21ac" category="list-text">從下載Connector軟體<block ref="99637e01fa8caa34a544049093cac68c" category="inline-link-rx"></block>，然後將其複製到 Linux 主機。</block>
@@ -490,7 +489,6 @@
   <block id="1b21b0d71706897b69f108572c444d40" category="list-text">Hypervisor</block>
   <block id="0791add814d036f56d1303750c34ee31" category="list-text">需要經認證可執行 Ubuntu 、 CentOS 或 Red Hat Enterprise Linux 的裸機或託管 Hypervisor 。</block>
   <block id="fb2321bb5267696f60c7247224e6d35f" category="inline-link">Red Hat 解決方案：哪些 Hypervisor 已通過認證、可執行 Red Hat Enterprise Linux ？</block>
-  <block id="394349da65ddd77a10f3cdb6426b7439" category="paragraph"><block ref="394349da65ddd77a10f3cdb6426b7439" category="inline-link-rx"></block></block>
   <block id="2b55387dd066c5bac646ac61543d152d" category="list-text">CPU</block>
   <block id="379f39ccee41ac65b6cdfb0734a7098c" category="list-text">4 個核心或 4 個 vCPU</block>
   <block id="e53619c1fe611a51eeeb8d148ba6e532" category="list-text">RAM</block>
@@ -1608,8 +1606,6 @@
   <block id="75327cdc175eca204abf0a4aa66413b3" category="paragraph">若要開始使用、請手動安裝 Connector 軟體、登入 Connector 上執行的 BlueXP 主控台、將 BYOL 授權新增至 BlueXP 數位錢包、然後部署 Cloud Volumes ONTAP 。</block>
   <block id="376a158ceb7d344fa563cce2aa16018f" category="inline-link">將Connector安裝在沒有網際網路存取的位置</block>
   <block id="148472786b9015b5f19ac843e8bc0f31" category="list-text"><block ref="148472786b9015b5f19ac843e8bc0f31" category="inline-link-rx"></block></block>
-  <block id="cbea6f8d2cd687c094438e0a7a38fedf" category="inline-link">存取Connector上的BlueXP主控台</block>
-  <block id="c90756fe60d5b7e957a6726a33ac7a77" category="list-text"><block ref="c90756fe60d5b7e957a6726a33ac7a77" category="inline-link-rx"></block></block>
   <block id="c09d91817b6017a3572898b867b22e36" category="inline-link">新增未指派的授權</block>
   <block id="94fe554eb0f60c68e4d46024baeef975" category="list-text"><block ref="94fe554eb0f60c68e4d46024baeef975" category="inline-link-rx"></block></block>
   <block id="a8ed015209d62d3ffd9042f8a01b9725" category="inline-link">立即開始Cloud Volumes ONTAP 使用</block>
@@ -1930,7 +1926,6 @@
   <block id="ff6e28c8eaa73c74f132f30b8a504071" category="list-text">/opp/application/NetApp/cloudmanager/log
 或</block>
   <block id="f41aa0898b72dcd91cd63bd3d33d4258" category="list-text">/opp/application/NetApp/service-manager-2/logs（從全新3.9.23安裝開始）</block>
-  <block id="ca20316f548fc97a4d2a061c877b1956" category="paragraph">這些資料夾中的記錄提供有關Connector和Docker影像的詳細資料。</block>
   <block id="b7fb1cb20b803995e802d3588f424efa" category="list-text">/opp/application/netapp/cloudmanager/dock_occm/data/log</block>
   <block id="117c785e61d16618a1202c0ae6cf754a" category="paragraph">此資料夾中的記錄提供有關在Connector上執行雲端服務和BlueXP服務的詳細資料。</block>
   <block id="7ab07ea46199c644dddf2520b843394b" category="section-title">連接器服務</block>
@@ -1958,13 +1953,8 @@
   <block id="e6db33ee282f55f359f9274b3cb1f285" category="list-text">在專案中啟用下列 Google Cloud API ：</block>
   <block id="8626ee05ff51b6a467bb5d1ee81047b8" category="inline-link">Google Cloud 文件：啟用 API</block>
   <block id="738140038c4506b7e29508b58d682758" category="paragraph"><block ref="738140038c4506b7e29508b58d682758" category="inline-link-rx"></block></block>
-  <block id="7e9844445f6b28199c6de55c6014f78c" category="summary">建立 Connector 之後、您可能需要隨時加以管理。例如、如果有多個連接器、您可能會想要在連接器之間切換。或者、在私有模式下使用 BlueXP 時、您可能需要手動升級 Connector 。</block>
-  <block id="dd6f576fe34949ea5c3d4b196b2c626d" category="doc">管理現有的連接器</block>
-  <block id="7367c923fb2d3c31abc663e6f8c00fbb" category="inline-link-macro">瞭解 Connectors 的運作方式</block>
-  <block id="691fd1f586b51358d2cf39056265bf93" category="paragraph"><block ref="c6cd765e97b37938d467fcf7100fd8e8" category="inline-link-macro-rx"></block>。</block>
   <block id="28d40d49edc5d8557dfa8624f4921f55" category="section-title">作業系統與 VM 維護</block>
   <block id="19584c42f9ee050980069e98aba18776" category="paragraph">在 Connector 主機上維護作業系統是您的責任。例如、您應該遵循公司的作業系統發佈標準程序、將安全性更新套用至 Connector 主機上的作業系統。</block>
-  <block id="f54ceb27aeb3593e19341732f24d3f61" category="paragraph">請注意、執行作業系統更新時、不需要停止 Connector 主機上的任何服務。</block>
   <block id="58eaadf4bb73c6121323ec8ad981c1bf" category="paragraph">如果您需要停止然後啟動 Connector VM 、您應該從雲端供應商的主控台或使用內部部署管理的標準程序來執行。</block>
   <block id="56f7fa1ed2a5960645c3e1c3f3521ac4" category="inline-link-macro">請注意、 Connector 必須隨時都能運作</block>
   <block id="50f74838f982f7a3b705af170ddd7da4" category="paragraph"><block ref="c94a7910d5b535a9c639377af3b5e75b" category="inline-link-macro-rx"></block>。</block>
@@ -1993,7 +1983,6 @@
   <block id="fa25ff644bc82c03a613715d969f788d" category="list-text">在Google Cloud中建立Connector時、您無法指定驗證方法。不過、您可以使用Google Cloud Console或Google Cloud CLI（gclCloud）連線至Linux VM執行個體。</block>
   <block id="b60097f9f3ac90a5ce4fd69c66be0717" category="inline-link">Google Cloud Docs：連線至Linux VM</block>
   <block id="b80f2820ec689140e03615f3240fde24" category="paragraph"><block ref="b80f2820ec689140e03615f3240fde24" category="inline-link-rx"></block></block>
-  <block id="c1c864c3ccb60090d311d4a9c4abf990" category="section-title">使用私有模式時升級 Connector</block>
   <block id="bdfe8a8b0f5b6a0b4242be2e550dff4a" category="paragraph">如果您在私有模式下使用 BlueXP 、則可在 NetApp 支援網站 提供較新版本時升級 Connector 。</block>
   <block id="84692ef80d23d7ba11b5ce40223e1af5" category="paragraph">Connector 需要在升級過程中重新啟動、以便在升級期間無法使用網路型主控台。</block>
   <block id="d651da37c0942c2e8d61b167e835ec80" category="list-text">從下載Connector軟體<block ref="99637e01fa8caa34a544049093cac68c" category="inline-link-rx"></block>。</block>
@@ -2026,7 +2015,6 @@
   <block id="2edb4e92b7a9da8aeba40d13e6c35982" category="paragraph"><block ref="2edb4e92b7a9da8aeba40d13e6c35982" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ec2047192779921dd8c042d6555c8cd8" category="list-text">輸入 Connector 的名稱以確認、然後選取 * 移除 * 。</block>
   <block id="7c42efcb94d7f8204bfb69f49301938f" category="paragraph">BlueXP會將Connector從記錄中移除。</block>
-  <block id="1e5422449b0eb99ea40cb7fe70879cc1" category="section-title">解除安裝Connector軟體</block>
   <block id="6a5be3e06b444aea04beccda3bc9e1d6" category="list-text">從 Linux 主機執行解除安裝指令碼：</block>
   <block id="0bb43692ecd0352eecc69c235e34d6f0" category="paragraph">_silon_ 執行指令碼時不會提示您確認。</block>
   <block id="c89064bda3f1ae133a231f5b1f44c3b0" category="list-text">從Linux主機執行下列命令：</block>
@@ -2686,33 +2674,19 @@
   <block id="538fc0c04ce8a0ef5cf78a12dbe8f68a" category="section-title">連接器升級</block>
   <block id="c568c61bf8e9e5a305fc06655cdac862" category="paragraph">我們通常每個月更新Connector軟體、以引進新功能並改善穩定性。雖然BlueXP平台的大部分服務與功能都是透過SaaS型軟體提供、但其中幾項功能與連接器的版本有何不同。其中包括Cloud Volumes ONTAP 支援內部的支援、ONTAP 內部的支援、叢集管理、設定及說明。</block>
   <block id="ed0b87049db36af81b1e2989ce889651" category="inline-link-macro">瞭解如何手動升級 Connector 軟體</block>
-  <block id="c6793bcdb1eae6a26c6e9cb42e6b2f31" category="paragraph"><block ref="079398d71b1e343d69f7a6ed5f005eb2" category="inline-link-macro-rx"></block>。</block>
   <block id="2162bc1fbb13d2539c146b3472921eb5" category="paragraph"><block ref="7270aabdb0c26b6b937d76a49fcda623" category="inline-xref-macro-rx"></block>。</block>
-  <block id="3feb0795a14e1cc974940057fc75d0e7" category="section-title">多種工作環境</block>
   <block id="4102d173f8e2253a011fe9286a6db2a3" category="paragraph">Connector可以在BlueXP中管理多個工作環境。單一Connector應管理的工作環境數量上限各不相同。這取決於工作環境的類型、磁碟區數量、所管理的容量、以及使用者數量。</block>
   <block id="63e8317d7c5806dc1cb56752525c4d52" category="paragraph">如果您有大規模部署、請與NetApp代表合作調整環境規模。如果您在過程中遇到任何問題、請使用產品內對談與我們聯絡。</block>
-  <block id="c6d129878583320db44cb10e4daa0ffc" category="section-title">多個連接器</block>
   <block id="18d5aadda239c924412f84368e73290b" category="paragraph">在某些情況下、您可能只需要一個連接器、但可能需要兩個以上的連接器。</block>
   <block id="c270270ae413e473bd85d972dfddb840" category="paragraph">以下是幾個範例：</block>
   <block id="aa043b4c9a6fa32b0f3811520156579a" category="list-text">您擁有多雲端環境（例如 AWS 和 Azure ）、偏好在 AWS 中安裝一個 Connector 、在 Azure 中安裝另一個 Connector 。每個系統都能管理 Cloud Volumes ONTAP 在這些環境中執行的不實系統。</block>
   <block id="c76efa6c691a8c8806671433356c1493" category="list-text">服務供應商可能會使用一個 BlueXP 帳戶為客戶提供服務、而使用另一個帳戶為其中一個業務單位提供災難恢復。每個帳戶都會有個別的 Connectors 。</block>
-  <block id="b7baf76babc410282d303dd810fc0a0e" category="section-title">切換時機</block>
-  <block id="ff0cce8c3f3c48a3ff695c2c92a5b053" category="paragraph">建立第一個Connector時、BlueXP會自動將該Connector用於您所建立的每個額外工作環境。建立額外的 Connector 之後、您必須在兩者之間切換、以查看每個 Connector 專屬的工作環境。</block>
-  <block id="b42a4e8606c4d9b6c9a1f695e362a72a" category="inline-link-macro">瞭解如何在連接器之間切換</block>
-  <block id="8cace447f88df36aff1b15d754f25f8b" category="paragraph"><block ref="34c92eb0b80eb3e0fe9fb66053c42d9e" category="inline-link-macro-rx"></block>。</block>
   <block id="645a84975202e30700b572b49a5ee29d" category="section-title">災難恢復</block>
   <block id="9702ba80b5da1f1cf46d6eb4c043a20a" category="paragraph">您可以同時使用多個連接器來管理工作環境、以便進行災難恢復。如果一個連接器故障、您可以切換至另一個連接器、立即管理工作環境。</block>
-  <block id="1dd9ce9d137f2fa61020574f1082c6d0" category="paragraph">若要設定此組態：</block>
-  <block id="61f2b058abe88a54489dc8da55cb7b80" category="inline-link-macro">切換至另一個連接器</block>
-  <block id="91a0239f3f1ce02c785205d5c052b6de" category="list-text"><block ref="75e6defc2f0cdee5909b5313e077e378" category="inline-link-macro-rx"></block>。</block>
   <block id="fc08f20f6fe5ef74616fbc4c310758ef" category="list-text">探索現有的工作環境。</block>
   <block id="11eeac25dab3c53540d3f299755ecf62" category="inline-link">新增現有Cloud Volumes ONTAP 的元件系統至藍圖XP</block>
   <block id="16d095355b2a308649665d5768df8693" category="list-text"><block ref="16d095355b2a308649665d5768df8693" category="inline-link-rx"></block></block>
   <block id="a1ebf612d281c8e7fb16bbfa253b9627" category="inline-link">探索 ONTAP 叢集</block>
-  <block id="c42ed38279c50e4c5755f93ea09a9661" category="list-text"><block ref="c42ed38279c50e4c5755f93ea09a9661" category="inline-link-rx"></block></block>
-  <block id="35e1526d677f2c5c412538ff39eaacd5" category="inline-link">容量管理模式</block>
-  <block id="e735c0a7fc94ed3c915640c39daf9299" category="list-text">設定<block ref="dc37ab94c751c0e5b427451fa56e921c" category="inline-link-rx"></block></block>
-  <block id="7e869bece5c75f9fb7d53abbc36e200f" category="paragraph">只有主連接器應設定為*自動模式*。如果您切換至另一個連接器以進行DR、則可視需要變更容量管理模式。</block>
   <block id="dd62e3749858cdd06ba5e069b42df256" category="summary">新增及管理AWS認證資料、讓BlueXP擁有在AWS帳戶中部署及管理雲端資源所需的權限。如果您管理多個 AWS 訂閱、您可以從「認證」頁面將每個訂閱指派給不同的 AWS 認證資料。</block>
   <block id="ad600f8720689154e64338aee6489d7f" category="doc">管理適用於BlueXP的AWS認證與訂閱</block>
   <block id="8ecc2cdde03387c9e59ffefef164f1e8" category="paragraph">新增及管理AWS認證資料、讓BlueXP擁有在AWS帳戶中部署及管理雲端資源所需的權限。如果您管理多個 AWS Marketplace 訂閱、您可以從「認證」頁面將每個訂閱指派給不同的 AWS 認證。</block>
@@ -3048,7 +3022,6 @@
   <block id="297a49f6150dc8dc8d45620c0f09f393" category="list-text">如果您想要管理其他 Google Cloud 專案中的資源、請將具有 BlueXP 角色的服務帳戶新增至該專案、以授予存取權。您必須針對每個專案重複此步驟。</block>
   <block id="1f7d098197ba2def0ffc66c388b2aa6c" category="paragraph">如果您為 Cloud Volumes ONTAP 建立新的工作環境、 BlueXP 預設會選取這些 AWS 認證：</block>
   <block id="1c16bd0b2377f4460ae56ecb40a419ae" category="paragraph">請注意、您可以選擇與此角色相關的 Azure 訂閱。您選擇的每個訂閱都會提供 Connector 權限、以管理該訂閱中的資源（例如 Cloud Volumes ONTAP ）。</block>
-  <block id="d90aceadc99dce46d7d593ee18ab0d90" category="paragraph">Connector 會聯絡下列端點、以管理公有雲環境中的資源和程序。</block>
   <block id="91499b479a6f9fe14de575cded8e2ab6" category="paragraph">如果您想要在多個 Azure 訂閱中管理資源、則必須將服務主體繫結至每個訂閱。例如、 BlueXP 可讓您選取部署 Cloud Volumes ONTAP 時要使用的訂閱。</block>
   <block id="6258a889f12d08d6da95cf4059f67498" category="paragraph">您應該為每個想要搭配 BlueXP 使用的 Azure 訂閱新增 ID 。</block>
   <block id="4f700fdc55105ee1225978e0ecbf1046" category="paragraph">如果您使用 Cloud Volumes ONTAP 、 Connector 應部署在與其管理的 Cloud Volumes ONTAP 系統所在的同一個 Azure 區域、或部署在中<block ref="71e0e9a7366955554f0600c5ea8cfc7f" category="inline-link-rx"></block> 適用於整個系統。Cloud Volumes ONTAP這項需求可確保Cloud Volumes ONTAP Azure Private Link連線可用於連接至相關的儲存帳戶。</block>
@@ -3242,7 +3215,6 @@ Azure 政府地區不需要此端點。</block>
   <block id="22cb2add8f3bffef4e749ab0af395ded" category="list-text">* 審查 * ：檢閱詳細資料、接受授權合約、然後選取 * 設定 * 。</block>
   <block id="451c5548be4e9e7bdee0e30d3122050a" category="paragraph"><block ref="5df7abb03e9cd39c0665b677aaa45ef4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6a60f29cdbb848f0645646b0cceee422" category="paragraph">請注意、 Connector 目前正在聯絡「 cloudmanager.cloud.netapp.com" 」、但在即將推出的版本中、會開始聯絡「 api.bluexp.netapp.com" 」。</block>
-  <block id="2da6f1af030756bb235fd83baa6abd7b" category="paragraph">如果您的組織需要為所有傳出的網際網路流量部署 Proxy 伺服器、請取得下列關於 HTTP 或 HTTPS Proxy 的資訊。您必須在安裝期間提供此資訊。</block>
   <block id="f68132eadaa2c37170b842a86fa6955d" category="paragraph">如果 Cloud Volumes ONTAP 系統沒有輸出網際網路連線來傳送 AutoSupport 訊息、 BlueXP 會自動將這些系統設定為使用 Connector 隨附的 Proxy 伺服器。唯一的需求是確保連接器的安全群組允許透過連接埠3128進行傳入連線。部署Connector之後、您需要開啟此連接埠。</block>
   <block id="e12fb4f30abef516bf6f5e0e9a5b72b7" category="doc">從BlueXP在Azure中建立連接器</block>
   <block id="864fadbab69859b77befd9c5a1c37c61" category="paragraph">從 BlueXP 建立 Connector 時、您需要提供登入資訊、讓 BlueXP 能夠與 Azure 驗證並部署 VM 。您有兩種選擇：</block>
@@ -3298,7 +3270,6 @@ Azure 政府地區不需要此端點。</block>
   <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
-  <block id="2274fc3b815748857736944118caafcb" category="paragraph">當有新版 Connector 軟體推出時，這些軟體都會發佈至 NetApp 支援網站。 <block ref="6573e3614f2b2c9574b675c6e2dabc80" category="inline-link-macro-rx"></block>。</block>
   <block id="ea472a728fa8ea8a9d957dafbf3b3c56" category="paragraph"><block ref="4bafa1fce0633bbc25f458d6925369da" category="inline-link-macro-rx"></block>。</block>
   <block id="880b965f9cabc8a09dc307835b0c1c44" category="paragraph">如果您的企業已經有帳戶、而您想要加入帳戶、則應關閉BluXP、並請擁有者將您與帳戶建立關聯。擁有者新增您之後、您就可以登入、而且您可以存取該帳戶。 <block ref="221ad62081662624d5ad46e4eb019f63" category="inline-link-macro-rx"></block>。</block>
   <block id="51a7ac19cbf0f9d074132cf117ad2e0c" category="paragraph">將AWS認證資料新增至現有的Connector、可提供必要的權限、以管理公有雲環境中的資源和程序。 <block ref="c25c39db29c727f1578fc8385e3c589b" category="inline-xref-macro-rx"></block>。</block>
@@ -3372,27 +3343,21 @@ Azure 政府地區不需要此端點。</block>
   <block id="33df6c8bf79bb883818929fadd08fde2" category="paragraph"><block ref="c830bbf16033728edff10270fb2e90fe" category="inline-link-macro-rx"></block>。</block>
   <block id="895abbd8e532d17f2ca587c540bce83a" category="list-text"><block ref="895abbd8e532d17f2ca587c540bce83a" category="inline-link-macro-rx"></block></block>
   <block id="72323525d86fb9af6692c45c5d227ba4" category="list-text"><block ref="72323525d86fb9af6692c45c5d227ba4" category="inline-link-macro-rx"></block></block>
-  <block id="6aae497466fed2612ac006372d018332" category="list-text"><block ref="6aae497466fed2612ac006372d018332" category="inline-link-macro-rx"></block></block>
   <block id="9a1ba924530ef064e3af892730568dd2" category="list-text"><block ref="9a1ba924530ef064e3af892730568dd2" category="inline-link-macro-rx"></block></block>
   <block id="dcaf9d9995c1cce5dfb4399e2434754e" category="summary">若要在您自己的 Linux 主機上手動安裝 Connector 、您必須檢閱主機需求、設定網路、準備 Azure 權限、安裝 Connector 、然後提供您準備的權限。</block>
   <block id="4a121ca6348602c8e2772e9488d338a9" category="doc">在 Azure 中手動安裝 Connector</block>
   <block id="38c977ce808382575da9f341bee1d199" category="paragraph">您應該檢閱 <block ref="a2e83c328c5fe53a1b055bac582f41f6" category="inline-link-macro-rx"></block>。</block>
   <block id="5b6c8baef296a0ee0c5ff5b25d3b43fd" category="section-title">步驟 1 ：檢閱主機需求</block>
-  <block id="50368de37e44f114e14bdf383d655041" category="section-title">步驟 2 ：設定網路</block>
   <block id="777217f0ae54cd380d40c78b43240a00" category="paragraph">請確定您計畫安裝 Connector 的網路位置支援下列需求。滿足這些需求後、 Connector 便能在混合雲環境中管理資源和程序。</block>
   <block id="7f18b4acc8a5bd4dc5f43cf0deb8c2d8" category="list-text">Connector 需要網路連線、才能連線到您計畫建立和管理工作環境的位置。例如、您計畫在內部部署環境中建立 Cloud Volumes ONTAP 系統或儲存系統的網路。</block>
   <block id="3551629b0e37f203b25270d0dfdc1f39" category="list-text">您部署 Connector 的網路位置必須具有傳出網際網路連線、才能連絡特定端點。</block>
   <block id="5761fa91677853434e4537aeda21de63" category="section-title">步驟 3 ：設定權限</block>
   <block id="98fbfc7b90b1537be74af9a49772f49a" category="paragraph">您必須使用下列其中一個選項、提供 Azure BlueXP 權限：</block>
   <block id="477e9f08d03102e04ead3de4b2f8b69e" category="paragraph">請依照步驟準備 BlueXP 的權限。</block>
-  <block id="d10eb1d2e85fdd829a66c3fc142d80ad" category="section-title">步驟 4 ：安裝 Connector</block>
   <block id="f20df450b1161c347a5e7eba9538eeb3" category="paragraph">完成先決條件後、您可以在自己的 Linux 主機上手動安裝軟體。</block>
   <block id="15daaea4d03b83616f3ad0b69cf782d4" category="section-title">步驟 5 ：提供 BlueXP 的權限</block>
   <block id="d0fb5ed733cfc3e5faf9cd5d96f676a9" category="paragraph">安裝 Connector 之後、您必須提供 BlueXP 先前設定的 Azure 權限。提供權限可讓 BlueXP 管理 Azure 中的資料和儲存基礎架構。</block>
-  <block id="72a8b95c961c5befe0da974b494bd112" category="paragraph"><block ref="72a8b95c961c5befe0da974b494bd112" category="inline-link-macro-rx"></block></block>
   <block id="3841f44681bf2f357b9d0af73693bfe7" category="paragraph"><block ref="fd1bb5492ba75369497408ab8d3a2621" category="inline-link-macro-rx"></block>。</block>
-  <block id="36e6f8681cc34503cfb0480443d76ab6" category="paragraph"><block ref="36e6f8681cc34503cfb0480443d76ab6" category="inline-link-macro-rx"></block></block>
-  <block id="04db9667b9afd4fbbbb994922ad2f7c1" category="paragraph"><block ref="f578423c9de0a6574109b1d8ac8175ae" category="inline-link-macro-rx"></block>。</block>
   <block id="d03606e722be163f18ffb05fb7f6b8ad" category="summary">準備 BlueXP 主控台的網路、註冊並建立帳戶、選擇性建立 Connector 、以及訂閱 BlueXP 、以標準模式開始使用 BlueXP 。</block>
   <block id="2c4bc70d5e888213a3bca35048028c96" category="doc">入門工作流程（標準模式）</block>
   <block id="c31816e89acef282910453c5620f26f4" category="inline-link-macro">部署模式</block>
@@ -3413,7 +3378,6 @@ Azure 政府地區不需要此端點。</block>
   <block id="0754f1969636526eac38034bd1419234" category="list-text"><block ref="0754f1969636526eac38034bd1419234" category="inline-link-macro-rx"></block></block>
   <block id="2c23813ca1d467902b4a5cbc8a878232" category="list-text"><block ref="2c23813ca1d467902b4a5cbc8a878232" category="inline-link-macro-rx"></block></block>
   <block id="f0c3f7365e880532f402961957bd549e" category="list-text"><block ref="f0c3f7365e880532f402961957bd549e" category="inline-link-macro-rx"></block></block>
-  <block id="8f62fdc4eba7cbec71350a9ad0375485" category="list-text"><block ref="8f62fdc4eba7cbec71350a9ad0375485" category="inline-link-macro-rx"></block></block>
   <block id="e076f6c74577c43033001756a3886ddc" category="paragraph">請參閱每項 BlueXP 服務的文件。</block>
   <block id="0b849731882fd6505b78e31e7c6793e0" category="doc">入門工作流程（私有模式）</block>
   <block id="86324dc19986cf024d27996fe0699e06" category="list-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> <block ref="0be36da6d7a1ea4d94468b72475c7e35" category="inline-link-macro-rx"></block></block>
@@ -3422,7 +3386,6 @@ Azure 政府地區不需要此端點。</block>
   <block id="f4426e4062930abb33465fb5b79b35dc" category="inline-link-macro">設定 Azure Marketplace 部署的權限</block>
   <block id="d16dc391acdc52d611958fdd5ca48d52" category="list-text"><block ref="d16dc391acdc52d611958fdd5ca48d52" category="inline-link-macro-rx"></block></block>
   <block id="8790c01539f52b3b7d7f0f32b6631813" category="inline-link-macro">設定內部部署的權限</block>
-  <block id="88a6f26465fef463007526defecd01d8" category="list-text"><block ref="88a6f26465fef463007526defecd01d8" category="inline-link-macro-rx"></block></block>
   <block id="643063b79f29bba54b69c5a3d47a8da5" category="summary">若要從 BlueXP 在 AWS 中建立 Connector 、您需要設定網路、準備 AWS 權限、然後建立 Connector 。</block>
   <block id="a9b34414733cf4871ed4d1f23b7438dd" category="doc">在AWS中從BlueXP建立連接器</block>
   <block id="70d8bd725ea77c6a4b800edb3d5b9f5f" category="section-title">步驟 1 ：設定網路</block>
@@ -3459,9 +3422,7 @@ Azure 政府地區不需要此端點。</block>
   <block id="4a34940e5f45b6eb76dabb3e23de10f0" category="section-title">步驟 5 ：準備雲端權限</block>
   <block id="ed699bb1e56dba725718c6f093e80619" category="section-title">步驟 6 ：啟用 Google Cloud API</block>
   <block id="755bdc98f2ba455bba23e5d86a671294" category="section-title">步驟 1 ：瞭解受限模式的運作方式</block>
-  <block id="b5437b8a5eafec074529299c6dc47771" category="section-title">步驟 4 ：準備網路</block>
   <block id="62e5d1121361ae6a6b8f2f35c9e1b534" category="list-text">在受限模式下、可從 Connector 存取 BlueXP 使用者介面。當您使用 BlueXP 使用者介面時、它會聯絡幾個端點來完成資料管理工作。從 BlueXP 主控台完成特定動作時、會從使用者的電腦聯絡這些端點。</block>
-  <block id="d9d13e4310493bbbe9137b8f0bff73c0" category="section-title">步驟： 5 準備雲端權限</block>
   <block id="d33385b3989ad7c0d0d5068246d54b96" category="summary">在 Google Cloud 中建立 Connector 有幾種不同的方法。直接從 BlueXP 開始是最常見的方法。</block>
   <block id="01936da377bd77271790dab55ad9996f" category="inline-link-macro">直接從 BlueXP 建立 Connector</block>
   <block id="81bfdce77d2f02aa0110ac77ab7d117d" category="list-text"><block ref="4e9cbb4f1c74952959ded57fc23d598b" category="inline-link-macro-rx"></block> （這是標準選項）</block>
@@ -3486,7 +3447,6 @@ Azure 政府地區不需要此端點。</block>
   <block id="2309e95f128f15afe4bdf21a377f9d87" category="list-text"><block ref="2309e95f128f15afe4bdf21a377f9d87" category="inline-link-macro-rx"></block></block>
   <block id="c53f978d2c0ef8c78c62cdf0fc803526" category="list-text"><block ref="c53f978d2c0ef8c78c62cdf0fc803526" category="inline-link-macro-rx"></block></block>
   <block id="412d134b731f1d8c5a5b0a427966703d" category="list-text"><block ref="412d134b731f1d8c5a5b0a427966703d" category="inline-link-macro-rx"></block></block>
-  <block id="ed3271e15717ab8332c1de24eba514e0" category="list-text"><block ref="ed3271e15717ab8332c1de24eba514e0" category="inline-link-macro-rx"></block></block>
   <block id="2b27af8d5932753265ba5607c4aca373" category="summary">若要從 Azure Marketplace 建立 Connector 、您必須設定網路、準備 Azure 權限、檢閱執行個體需求、然後建立 Connector 。</block>
   <block id="08162f5d2875618589001f4ce951b82d" category="section-title">步驟 2 ：檢閱 VM 需求</block>
   <block id="67e296817a0a6c22fc1ef6d510785c4d" category="paragraph">建立 Connector 時、您需要選擇符合下列需求的虛擬機器類型。</block>
@@ -3501,7 +3461,6 @@ Azure 政府地區不需要此端點。</block>
   <block id="47c702e5703c00c15a7f10ffe5bb3fdd" category="section-title">步驟 4 ：設定共用 VPC 權限</block>
   <block id="fa48079a29f8b87d7d08f79f359feb76" category="section-title">步驟 5 ：啟用 Google Cloud API</block>
   <block id="69f380f2398b7565bd53d007caa73472" category="paragraph">您必須先啟用數個 Google Cloud API 、才能在 Google Cloud 中部署 Cloud Volumes ONTAP 系統。</block>
-  <block id="da93ca4b1142128f1472b9a3e7c7548c" category="section-title">步驟 6 ：安裝 Connector</block>
   <block id="23f1991165d981fbfc14ff4a1b567d22" category="section-title">步驟 7 ：提供 BlueXP 的權限</block>
   <block id="77c49575039cf84b53e2e3bf39a8a007" category="paragraph">您必須提供 BlueXP 先前設定的 Google Cloud 權限。提供權限可讓 BlueXP 在 Google Cloud 中管理您的資料和儲存基礎架構。</block>
   <block id="af2c4df7e8660cdabd8fc59a2aa0aaf1" category="doc">入門工作流程（受限模式）</block>
@@ -3528,9 +3487,7 @@ Azure 政府地區不需要此端點。</block>
   <block id="f620c8829c45a571ef79c7113979e722" category="list-text"><block ref="f620c8829c45a571ef79c7113979e722" category="inline-link-macro-rx"></block></block>
   <block id="5d2f88742fa055307c09a80d0773bb7f" category="paragraph">此動作也會啟動執行 Linux 和 Connector 軟體的 VM 、但部署是直接從 Azure Marketplace 啟動、而非從 BlueXP 啟動。</block>
   <block id="152e6840a2911cc120f143ff657bdc7e" category="list-text"><block ref="152e6840a2911cc120f143ff657bdc7e" category="inline-link-macro-rx"></block></block>
-  <block id="6a47e87d123961d13235f32c19e7042d" category="section-title">步驟 3 ：設定雲端權限</block>
   <block id="b393abc2831fb45cf9e5b73489057bcc" category="admonition">為何不選擇 Google Cloud ？當 Connector 安裝在您的內部環境中時、就無法在 Google Cloud 中管理您的資源。Connector 必須安裝在 Google Cloud 中、才能管理任何位於該處的資源。</block>
-  <block id="7380491555cdaf40fdcbfe5baeb961c4" category="section-title">步驟 5 ：設定 Connector</block>
   <block id="b8312cd81869d608f8aa6c172b1efa56" category="paragraph">註冊或登入、然後設定 Connector 以搭配 BlueXP 帳戶使用。</block>
   <block id="63833bed9bf25b857c994cd51a878896" category="section-title">步驟 6 ：提供 BlueXP 的權限</block>
   <block id="ccbf44ea31f64041eb3e02bf2d4f1003" category="paragraph">安裝並設定 Connector 之後、請新增您的雲端認證、以便 BlueXP 具有必要的權限、可在 AWS 或 Azure 中執行動作。</block>
@@ -3598,7 +3555,6 @@ Azure 政府地區不需要此端點。</block>
   <block id="0c41c26ede4faf2f62d330df516b6e2c" category="list-text">\https://user-name:password@address:port</block>
   <block id="84d3a6cbeb010ca14b892dcb244ad6c5" category="list-text">\https://domain-name%92user-name:password@address:port</block>
   <block id="9c959780e1c60d211b8e7acdef1e4650" category="list-text">使用者可以是本機使用者或網域使用者。</block>
-  <block id="288412232e1a46f03f9c36a0d0f3b5c0" category="list-text">對於網域使用者、您必須使用上方所示的 \ 的 ASCII 碼。</block>
   <block id="2fc62556a3d8d2f1a8b9dc5e4e4ba9ca" category="list-text">如果伺服器需要基本驗證、請指定使用者名稱和密碼。</block>
   <block id="80bba58d673fb4fcbcf926f928bf80c7" category="list-text">對於網域使用者、您必須輸入 \ 的 ASCII 碼、如下所示： domain-name%92user-name</block>
   <block id="5596775e1e7017bff2ae389af56efd57" category="paragraph">例如： NetApp%92Proxy</block>
@@ -3616,7 +3572,6 @@ Azure 政府地區不需要此端點。</block>
   <block id="1fd4a2295cad602ba9d73683db88e799" category="doc">瞭解 Google Cloud 專案和權限</block>
   <block id="2182d12983be8c797d228ee21c2b02b0" category="inline-link">BlueXP SaaS 主控台</block>
   <block id="17b675be82d235246bdf979500c94ab2" category="paragraph">Connector 包含可從 Connector 主機存取的本機 UI 。此使用者介面適用於以受限模式或私人模式使用 BlueXP 的客戶。在標準模式下使用 BlueXP 時、您應該從存取使用者介面<block ref="6548feb79c59958b036d822d57f02759" category="inline-link-rx"></block></block>
-  <block id="f04fb35532e1f63b23af3f141e062ccb" category="admonition">當您在標準模式或受限模式下使用 BlueXP 時、只要 Connector 有外送網際網路存取權來取得軟體更新、它就會自動將其軟體更新至最新版本。</block>
   <block id="3268a52d584d54a973d1b4473e7ef96b" category="doc">Google Cloud 中的連接器防火牆規則</block>
   <block id="2a503072b9710cfa223e43ffc3e2205d" category="inline-link">瞭解如何從 BlueXP 管理 Google Cloud Storage</block>
   <block id="bd41cc82cd5b7d398db648a7e5e5c451" category="paragraph">如果您在建立 Connector 的同一個 Google Cloud 帳戶中有 Google Cloud Storage 貯體、則 BlueXP 畫布會自動顯示 Google Cloud Storage 工作環境。<block ref="7f24473f521905a69e81b318fe43926f" category="inline-link-rx"></block></block>
@@ -3683,13 +3638,8 @@ Azure 政府地區不需要此端點。</block>
   <block id="0b3b411ceb545e69a73eeeea9e0f4812" category="doc">管理 BlueXP 的 Azure 認證和市場訂閱</block>
   <block id="f2427bd8db58aeac7d862aab97ae63df" category="list-text">您想要變更與 Azure 認證相關的 Azure Marketplace 訂閱。</block>
   <block id="183f3a1e578d0dce86eeb393edf40a5d" category="list-text">Ubuntu 22.04 LTS</block>
-  <block id="7f9b20909dd63d1bee579fee63d32a4a" category="paragraph">解除安裝Connector軟體以疑難排解問題、或從主機上永久移除軟體。您需要使用的步驟取決於您是在具有網際網路存取（標準模式或限制模式）的主機上安裝 Connector 、還是在沒有網際網路存取（私有模式）的網路中安裝 Connector 。</block>
-  <block id="704318f2299bbf226c9c1348790ad16a" category="section-title">使用標準模式或受限模式時解除安裝</block>
-  <block id="cb4aad09336fbc7a1b8ecf07e5495e18" category="paragraph">下列步驟可讓您在標準模式或受限模式下使用 BlueXP 時、解除安裝 Connector 軟體。</block>
   <block id="fd1e4807d8caf9eb7b22acef39d3e5ce" category="list-text">連接至 Linux VM for the Connector 。</block>
   <block id="e1b145fbf942267f38a8e6f0928d8629" category="paragraph"><block ref="9ff6aead716ef57f3a1e9e40a858062f" prefix="" category="inline-code"></block></block>
-  <block id="e62b509228c00429c0a06d3fd75b6e6e" category="section-title">使用私有模式時解除安裝</block>
-  <block id="56772d07c7720c5dc4391eea138265a3" category="paragraph">下列步驟可讓您在無法存取網際網路的私人模式下使用 BlueXP 時、解除安裝 Connector 軟體。</block>
   <block id="72b013396e56865d3673702aa9bcc731" category="paragraph"><block ref="53c9ecf44ffc5c93a5a42f4cda983463" prefix="" category="inline-code"></block><block ref="3be06caa62382aade39cdb5bcb105da0" prefix=" " category="inline-code"></block></block>
   <block id="6ae4e7f185de6791c9b45f3d273959f9" category="cell">\https://aiq.netapp.com</block>
   <block id="034ade3fc7b98591feafb7b0039b2724" category="cell">需要存取 BlueXP 數位顧問。</block>
@@ -3705,7 +3655,6 @@ Azure 政府地區不需要此端點。</block>
   <block id="8156defa13b44a36e67cab400c3b8bd4" category="inline-link">瞭解如何以私有模式開始使用 BlueXP</block>
   <block id="1183e1b8915696495b308d0bdfa59bd4" category="list-text"><block ref="1183e1b8915696495b308d0bdfa59bd4" category="inline-link-rx"></block></block>
   <block id="b29a186d936b198dcafa3a0308485e2c" category="inline-link">瞭解如何在使用私有模式時升級 Connector</block>
-  <block id="4e208e7f54024bf731fae02025ce34d9" category="list-text"><block ref="4e208e7f54024bf731fae02025ce34d9" category="inline-link-rx"></block></block>
   <block id="a6c2003199e95310a83aa40a67058bd8" category="paragraph">請務必下載無網際網路存取的私有網路離線安裝程式。</block>
   <block id="d22d5d645d5b80561936fd406bec2118" category="section-title">2023 年 12 月 5 日</block>
   <block id="f729237ece11d2ac3f651452a87ead32" category="paragraph">將 Volume 資料備份至 Azure Blob 儲存設備時、 BlueXP 備份與還原不再需要下列權限：</block>
@@ -3836,9 +3785,7 @@ Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" catego
   <block id="bbd3f8aeec942b5e418da40a3101ed3e" category="paragraph"><block ref="bbd3f8aeec942b5e418da40a3101ed3e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7478f8f98c41fc2f5747e6f31892fe6f" category="list-text">勒索軟體保護</block>
   <block id="4a1a05ee22994e328d9ec0402052b926" category="section-title">2024 年 3 月 8 日</block>
-  <block id="e95eef6ba2551f885847cc2b51459994" category="paragraph">Connector 原則現在包含下列權限：</block>
   <block id="33e595f0fd43192e3f1d28a291860881" category="paragraph">EC2 ：去除可用性區域</block>
-  <block id="b12f2c2fee8ccdb3cad2171b53ed3cfd" category="paragraph">即將發行的版本需要此權限。我們會在發行版本推出時更新版本資訊、提供更多詳細資料。</block>
   <block id="6a7140fd5370f297d9a834d30e26ffde" category="section-title">2023 年 6 月 6 日</block>
   <block id="5fc531b28735a6e141b39c2b5e2f1dcc" category="section-title">2023 年 2 月 14 日</block>
   <block id="d1b9e6a9e660eac14ba251761cf89e4b" category="paragraph">從 BlueXP 建立 Connector 會使用預設組態、在 Azure 中部署虛擬機器。建立 Connector 之後、不應變更為 CPU 或 RAM 較少的較小 VM 類型。 <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
@@ -3908,7 +3855,6 @@ Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" catego
   <block id="f5d22e387d3dd91dbc45f16de7949a06" category="list-text">選取 * 支援直接 API 流量 * 。</block>
   <block id="0515ac140ab701cd78614b76c8296d4f" category="paragraph">從 BlueXP 建立 Connector 會使用預設組態、在 AWS 中部署 EC2 執行個體。建立 Connector 之後、不應變更為 CPU 或 RAM 較少的較小 EC2 執行個體類型。 <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
   <block id="b1f8391bb8c209468262aa239bef0d41" category="paragraph">建立 Connector 會使用預設組態、在 Google Cloud 中部署虛擬機器執行個體。建立 Connector 之後、不應變更為 CPU 或 RAM 較少的較小 VM 執行個體。 <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
-  <block id="7c3d026f5f0bf0d01848d386f69159eb" category="paragraph"><block ref="7295f02a3c546b103864aa8261ac9cab" category="inline-link-rx"></block>。</block>
   <block id="dbbd746e2d2c019dcb0c3c40b74f4f75" category="section-title">2021年3月8日</block>
   <block id="7b2a09e0d726d9a52333a0ecb6df6812" category="paragraph">此更新包括多項功能與服務的增強功能。</block>
   <block id="f4eb7f69c035214da13ca0f958ab2c5a" category="section-title">更新功能 Cloud Volumes ONTAP</block>
@@ -3972,8 +3918,6 @@ Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" catego
   <block id="cdeb608610a882c24cefcb7daa878a1d" category="list-text"><block ref="cdeb608610a882c24cefcb7daa878a1d" category="inline-link-rx"></block></block>
   <block id="de945439c2ef8db914ae9a056d6763b1" category="section-title">私有模式版本（ 3.9.35 ）</block>
   <block id="63d6aff1d21e14755a0a0cd9fcdbe7fc" category="paragraph">請注意、 BlueXP 不支援透明 Proxy 伺服器。</block>
-  <block id="a8080c542b2627e36657b832e30937bf" category="paragraph">+
-在私有模式下、 BlueXP 傳送輸出流量的唯一時間是傳送給雲端供應商、以便建立 Cloud Volumes ONTAP 系統。</block>
   <block id="79911dec911bf03733bda7065e7e3964" category="section-title">不支援透明 Proxy 伺服器</block>
   <block id="d0da98586108cb1be969ff43380eee45" category="paragraph">BlueXP 不支援使用 Connector 的透明 Proxy 伺服器。</block>
   <block id="eb38246be0b09c0a9d91cb2085b20b5d" category="inline-link-macro">深入瞭解如何搭配 Connector 使用 Proxy 伺服器</block>
@@ -4008,7 +3952,6 @@ Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" catego
   <block id="1c51e24c3b44b362001f3c1a6c51b065" category="inline-link">瞭解如何設定 AWS 權限、從 AWS 建立 Connector</block>
   <block id="16a785388c44f1116fdb34f01d8816bb" category="paragraph"><block ref="53bbefe6872cea40f97befa74964b71d" category="inline-link-rx"></block>。</block>
   <block id="946e79c4f58ab5a0a68d36b7ccc89998" category="list-text">如果您從 AWS Marketplace 啟動 Connector 、則預設會啟用 IMDSv1 。您可以在 EC2 執行個體上手動設定 IMDSv2 。</block>
-  <block id="f2e7cda30b20334f5432b14d41028597" category="paragraph">從 2024 年 3 月開始、 BlueXP 現在支援 Amazon EC2 執行個體中繼資料服務版本 2 （ IMDSv2 ）搭配 Connector 和 Cloud Volumes ONTAP （包括 HA 部署的協調器）。在大多數情況下、會在新的 EC2 執行個體上自動設定 IMDSv2 。IMDSv1 在 2024 年 3 月之前啟用。如果您的安全性原則要求、您可能需要在 EC2 執行個體上手動設定 IMDSv2 。</block>
   <block id="3c27ef222c1ee58d80a2a938ecc7eab9" category="paragraph">IMDSv2 提供更強大的保護功能、防範弱點。<block ref="cb4336eb4a08d88f663206e070c9e1af" category="inline-link-rx"></block></block>
   <block id="8cdfbe4b35f3f9abb80295a7c104865a" category="paragraph">請務必從 * 訂閱 * 服務指派角色、因為這會指定訂閱層級的角色指派範圍。_scacity_ 定義存取所套用的資源集。如果您在不同層級（例如虛擬機器層級）指定範圍、則從 BlueXP 中完成動作的能力將受到影響。</block>
   <block id="0fde3f77d505a0a1192041da57a5754b" category="inline-link">Microsoft Azure 文件：瞭解 Azure RBAC 的範圍</block>
@@ -4017,4 +3960,223 @@ Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" catego
   <block id="437c802c34c0b8670d61901c4e05641e" category="inline-link-macro">深入瞭解私有模式</block>
   <block id="d05ac7ff6398ff4f2b0bd26105dd1697" category="paragraph">安裝 Connector 的位置決定了使用私有模式時可用的 BlueXP 服務和功能。例如、如果您想要部署和管理 Cloud Volumes ONTAP 、則必須將 Connector 安裝在雲端中。 <block ref="11a7253f43076934a5664eb6b2874efc" category="inline-link-macro-rx"></block>。</block>
   <block id="60a1a3ba0b214492b5ab5c5bd4a52eb0" category="paragraph">如果 Connector 安裝在雲端、而您打算建立 Cloud Volumes ONTAP 系統、則 BlueXP 需要雲端供應商的權限。您需要在雲端供應商中設定權限、然後在安裝之後將這些權限與 Connector 執行個體建立關聯。</block>
+  <block id="8ce622f98b54d3dfec80e0d09aa4e0b3" category="list-text">如果您的組織需要為所有傳出的網際網路流量部署 Proxy 伺服器、請取得下列關於 HTTP 或 HTTPS Proxy 的資訊。您必須在安裝期間提供此資訊。請注意、 BlueXP 不支援透明 Proxy 伺服器。</block>
+  <block id="939d44d1e911e1f0f7039e74b3562137" category="list-text"><block ref="939d44d1e911e1f0f7039e74b3562137" category="inline-link-macro-rx"></block></block>
+  <block id="9bf0216383a3ff083b86cdd433d2e65e" category="list-text"><block ref="9bf0216383a3ff083b86cdd433d2e65e" category="inline-link-macro-rx"></block></block>
+  <block id="26553f927e14d69ad84c658048155fb4" category="summary">如果您使用多個連接器、 BlueXP 可讓您直接從主控台在這些連接器之間切換。您也可以使用多個 Connectors 來管理單一工作環境。</block>
+  <block id="7473cbb9b768b471bd45e7579b544a3a" category="doc">使用多個連接器</block>
+  <block id="5cb02414ba99e03fa83bad53db22c1e4" category="section-title">設定災難恢復組態</block>
+  <block id="314f7bfaf4b0cf51e70ed4b138c2f348" category="list-text">切換至您想要在工作環境中管理的其他 Connector 。</block>
+  <block id="c80bec846d41a65d3d86eae721cef56b" category="list-text"><block ref="c80bec846d41a65d3d86eae721cef56b" category="inline-link-rx"></block></block>
+  <block id="49aaf65c31a811a37b2627a951f6f6d2" category="list-text"><block ref="49aaf65c31a811a37b2627a951f6f6d2" category="inline-link-rx"></block></block>
+  <block id="be0d2952f811ceb1724a090c91262d2e" category="list-text">如果您要管理 Cloud Volumes ONTAP 工作環境、請選取 * 設定 &gt; 連接器設定 * 、然後將容量管理模式設定為 * 手動模式 * 。</block>
+  <block id="4a789989adf3b86e195463499e01cf12" category="paragraph">為了避免發生爭用問題、只有主要 Connector 應該設定為 * 自動模式 * 。</block>
+  <block id="f05a0e154340f7c017b3a9bfa5a8bf05" category="inline-link">深入瞭解容量管理模式</block>
+  <block id="e9ec7fb1196fea38d01bfb38780ff401" category="paragraph"><block ref="e9ec7fb1196fea38d01bfb38780ff401" category="inline-link-rx"></block></block>
+  <block id="14d1cdb0a2bd276d491de013f748f36f" category="list-text">CentOS 7.6 至 7.9</block>
+  <block id="039ad6159af7a5795d5ea8a67ed01be0" category="paragraph">NetApp 將持續支援 CentOS 7 的 Connector 、直到 2024 年 6 月 30 日為止。</block>
+  <block id="c73bbd3786350b0a8d3577d82afdf489" category="list-text">Red Hat Enterprise Linux</block>
+  <block id="02fd8714cfc51e3b6db51cd61dd286c9" category="list-text">7.6 至 7.9</block>
+  <block id="733cf095adf4ff17305fe7425a0a7856" category="paragraph">NetApp 將持續支援 RHEL 7 的 Connector 、直到 2024 年 6 月 30 日為止。</block>
+  <block id="f335f00e1188cffe57c3d9416ce23c84" category="list-text">8.6 至 8.9</block>
+  <block id="d80ef147e70626ef64e723b33860d715" category="list-text">9.1 至 9.3</block>
+  <block id="820947c99e79ec5219502b83f9727a99" category="paragraph"><block ref="820947c99e79ec5219502b83f9727a99" category="inline-link-rx"></block></block>
+  <block id="bd3df16097ce93a7398107a82c38c714" category="list-text">容器協調工具</block>
+  <block id="58ee14553c5227edc98c5edc7c7652e1" category="list-text">根據您的作業系統而定、安裝 Connector 之前需要使用 Podman 或 Docker Engine 。</block>
+  <block id="d6b3d211666107f9448c07f59d0ea45a" category="list-text">Red Hat Enterprise Linux 8 和 9 需要 Podman 4.6.1 版。</block>
+  <block id="c8637173b45452de8b06d3e105facbfb" category="paragraph">Podman 必須符合下列先決條件：</block>
+  <block id="6c92d07ad47ca46a1d54c06516989463" category="list-text">必須啟用並啟動 podman.socket 服務</block>
+  <block id="a9beaf3f1f76b7989733494d5f0683c6" category="list-text">必須安裝 python3</block>
+  <block id="43868fbb689a64ee607e9c7e12ad974b" category="list-text">必須安裝 podman-compose 套件 1.0.6 版</block>
+  <block id="52b91e466535d0b3aeeecf2ff692015c" category="list-text">必須將 podman-compose 新增至 PATH 環境變數</block>
+  <block id="d5edf3bedcb983d3a4430b0315f6ddfc" category="list-text">Ubuntu 、 CentOS 和 Red Hat Enterprise Linux 7 需要 Docker Engine 。</block>
+  <block id="105ab5fc478f234922108aa9df08a4ee" category="section-title">步驟 4 ：安裝 Podman 或 Docker Engine</block>
+  <block id="539f3f37fd39a23eafb39c20263238f1" category="paragraph">如果您打算手動安裝 Connector 軟體、則需要安裝 Podman 或 Docker Engine 來準備主機。</block>
+  <block id="c124e878249e7549657a0f175026b2f9" category="list-text">Red Hat Enterprise Linux 8 和 9 需要 Podman 。</block>
+  <block id="455cbd59356abfa16dcf7666d4ae6c2b" category="open-title">Podman</block>
+  <block id="c03528deae4bb700fb6c68eb0ff73760" category="paragraph">安裝 Podman 4.6.1 。</block>
+  <block id="b7f382be5c79895b47058d13f21b554a" category="list-text">如果主機上已安裝 podman-泊 塢視窗套件、請將其移除。</block>
+  <block id="3c7e0e0689042d7582c0880e1b998f2c" category="list-text">安裝 Podman 。</block>
+  <block id="a578f779177074f6631c251c0e25728c" category="paragraph">Podman 可從官方 Red Hat Enterprise Linux 儲存庫取得。</block>
+  <block id="d85624226a34d354eb24bd9f58803ee7" category="list-text">啟用並啟動 podman.socket 服務。</block>
+  <block id="c258dc586685c07a851bfdce98251de9" category="list-text">安裝 python3 。</block>
+  <block id="97c0d440ee76e86ece38ee9da4a462cb" category="list-text">如果您的系統上尚未提供 EPEL 儲存庫套件、請加以安裝。</block>
+  <block id="93052470e7c6a20358c8d89c161e4880" category="paragraph">這是必要步驟、因為 podman-compose 可從 Enterprise Linux （ EPEL ）儲存庫取得。</block>
+  <block id="29c15383bb54e5c0c3bfba429503d481" category="paragraph">對於 Red Hat Enterprise Linux 9 ：</block>
+  <block id="084cfc903eb108eb15642e42f36348f9" category="paragraph">對於 Red Hat Enterprise Linux 8 ：</block>
+  <block id="6f3a42415c589950b9ae4d3fe1f87dc7" category="list-text">安裝 podman-compose 套件 1.0.6 。</block>
+  <block id="ec7c87651a5ede2a98ad4091fe48b517" category="admonition">使用<block ref="02c7499137a5d8d10292d68634eb22a0" prefix=" " category="inline-code"></block> 命令符合將 podman-compose 新增至 PATH 環境變數的需求。安裝命令會將 podman-compose 新增至已包含在中的 /usr/bin<block ref="c9bac30d1d0554c0790285219e5ad518" prefix=" " category="inline-code"></block> 主機上的選項。</block>
+  <block id="2cb776f499f1161a0b5361cda7d46e37" category="paragraph">安裝 19.3.1 到 25.0.0 之間的 Docker Engine 版本。</block>
+  <block id="d96a084915e5de032105988cddcc2bc5" category="list-text">安裝 Docker Engine 。</block>
+  <block id="08a382dc3dd0f48c28f89b74f8bac2a4" category="inline-link">檢視 Docker 的安裝指示</block>
+  <block id="3907e04a67ccb717783cc69d280aaa41" category="paragraph"><block ref="3907e04a67ccb717783cc69d280aaa41" category="inline-link-rx"></block></block>
+  <block id="66f67385f809b0a8d74f0496acc75c90" category="paragraph">請務必依照步驟安裝 Docker Engine 的特定版本。安裝最新版本將會安裝 BlueXP 不支援的 Docker 版本。</block>
+  <block id="2e022b32dcdcb9f0b048e90340feb44b" category="list-text">確認 Docker 已啟用且正在執行。</block>
+  <block id="788ad005554c124586a11cee3346ac9b" category="section-title">步驟 5 ：準備網路</block>
+  <block id="7685c318ab5f247165ff19b3bbc79372" category="section-title">步驟 6 ：準備雲端權限</block>
+  <block id="769b13043a57f26d2165556dec478ca0" category="section-title">步驟 7 ：啟用 Google Cloud API</block>
+  <block id="895e31e93bd7a23981cc0cbeb5581840" category="summary">當我們在特定 Linux 作業系統上新增及移除 Connector 支援時、您可能會對此支援如何影響現有的 Connector 部署有疑問。</block>
+  <block id="06e657c37e762cbeb9edc676ff32181d" category="doc">支援的 Linux 作業系統變更</block>
+  <block id="a5dacfcdb1adb3167b081f091b368732" category="section-title">支援 RHEL 8 和 9</block>
+  <block id="931c37d7beb414a58946263b8614e645" category="paragraph">從 3.9.40 版本開始、 BlueXP 支援 Connector 搭配下列版本的 Red Hat Enterprise Linux （ RHEL ）：</block>
+  <block id="6472d01a592db1ad2bf4a2c914623f1e" category="paragraph">請注意下列關於這些 RHEL 版本的支援：</block>
+  <block id="e646e16bee8b32e6ea29e30d01970a6c" category="list-text">限制</block>
+  <block id="12cde487ed6dcd882cede6dc73a2a96f" category="inline-link">BlueXP 備份與還原的已知限制</block>
+  <block id="7dffd01ec33485e74fcb637e0b8fe15a" category="list-text">當 Connector 安裝在 RHEL 8 或 9 主機上時、 BlueXP 備份與還原會限制單一檔案還原和勒索軟體掃描。如需詳細資訊、請參閱<block ref="a84971be17ca73ce2bed9722547a4b2a" category="inline-link-rx"></block></block>
+  <block id="b6417b62aacc6d16c1ae7a79d851d413" category="list-text">如果您在內部部署的 RHEL 8 或 9 主機上安裝 Connector 、則支援 BlueXP 分類。如果 RHEL 8 或 9 主機位於 AWS 、 Azure 或 Google Cloud 、則不支援此功能。</block>
+  <block id="b71010c70a84a098ff97c54119ce9797" category="list-text">在 RHEL 8 或 9 主機上安裝 Connector 時、必須使用 Podman 作為容器協調工具。RHEL 8 和 9 不支援 Docker Engine 。</block>
+  <block id="b20f6232e01f99983ab6adfc3cb4648e" category="inline-link-macro">檢視 Podman 的要求</block>
+  <block id="5965bb30c82006f547e51cea08649d28" category="paragraph"><block ref="b6742b68d5770c57e621fe89da84d99c" category="inline-link-macro-rx"></block>。</block>
+  <block id="6949300ff5b5cf6bb192114a06c923bb" category="list-text">部署模式</block>
+  <block id="f6b985bf429f605650402152a53dd500" category="list-text">在標準模式或受限模式下使用 BlueXP 時、支援 RHEL 8 和 9 。</block>
+  <block id="62ee52388b4c1539a4b357c9c16e57c6" category="list-text">僅限全新手動安裝</block>
+  <block id="362134ff254c022479b85d3cb9afd90c" category="list-text">在內部部署或雲端上執行的主機上手動安裝 Connector 時、 _new_ Connector 安裝可支援 RHEL 8 和 9 。</block>
+  <block id="ba657bf59cdaa129ee6a10872f7d63cf" category="list-text">RHEL 升級</block>
+  <block id="0cfa4395111b233336d8ffefa6b1d800" category="inline-xref">深入瞭解 RHEL 7 或 CentOS 7 上的現有 Connector</block>
+  <block id="62ff3ea7851f2f84caf44f1e20fe3b5a" category="list-text">如果現有的 Connector 是在 RHEL 7 主機上執行、我們不支援將 RHEL 7 作業系統升級為 RHEL 8 或 9 。 <block ref="1f01b626a2e1f14f910a4c0ca7c14719" category="inline-xref-macro-rx"></block>。</block>
+  <block id="d9fb1337dfb6a869dd0a2630e14b4543" category="section-title">終止對 RHEL 7 和 CentOS 7 的支援</block>
+  <block id="16051bd228f38a4877773f8f795d59a9" category="paragraph">在 2024 年 6 月 30 日、 RHEL 7 將會結束維護（ EOM ）、而 CentOS 7 則會達到生命週期結束（ EOL ）。NetApp 將持續支援這些 Linux 套裝作業系統上的 Connector 、直到 2024 年 6 月 30 日為止。</block>
+  <block id="7eba69a7025f97bec42a74bd138b395e" category="inline-link">Red Hat ： Red Hat Enterprise Linux 7 End of Maintenance 的相關資訊</block>
+  <block id="ebc4aba90c33f7558582b9bbf738fdd9" category="paragraph"><block ref="ebc4aba90c33f7558582b9bbf738fdd9" category="inline-link-rx"></block></block>
+  <block id="673678917598778ddca4521cd7c53d87" category="section-title">RHEL 7 或 CentOS 7 上的現有連接器</block>
+  <block id="431ca930d765a9710ef05b1ce095bc0e" category="paragraph">如果您現有的 Connector 是在 RHEL 7 或 CentOS 7 上執行、我們不支援將作業系統升級或轉換為 RHEL 8 或 9 。若要改為在 RHEL 8 或 9 主機上執行 Connector 、您需要執行下列步驟：</block>
+  <block id="0f50cd1079cb24de2b4571c09546a2e1" category="list-text">設定 RHEL 8 或 9 主機。</block>
+  <block id="5122aad3fbc28bb77264e99f11033279" category="list-text">執行 _new_ Connector 安裝。</block>
+  <block id="a9d10a06adb23581dce371f468ea4904" category="list-text">設定 Connector 以探索舊 Connector 所管理的工作環境。</block>
+  <block id="6fdeb52b60ec4b9c7e60078047c5ce34" category="section-title">持續支援 Ubuntu 22.04 LTS</block>
+  <block id="a9aa1d1b3ffccec7f032ad3fee0e91b8" category="paragraph">Ubuntu 22.04 LTS 仍支援 Connector 、是 BlueXP 和市場部署的預設作業系統。</block>
+  <block id="cadd936a18695c0f75406a35d18725ee" category="paragraph">此作業系統需要 Docker Engine 。不支援 Podman 。</block>
+  <block id="42d12ee6ea3719c1f52fd78afdba631f" category="section-title">支援作業系統的摘要</block>
+  <block id="4dd65f46069a455736b8e8c7d3fed71f" category="paragraph">以下是前幾節所述的作業系統支援摘要。</block>
+  <block id="4fd86dfd467b8b3461b84edce26c3f3f" category="admonition">NetApp 將持續支援 RHEL 7 和 CentOS 7 上的 Connector 、直到 2024 年 6 月 30 日為止。</block>
+  <block id="d20756c02f9913587a3e83e30f0e10d3" category="list-text">手動安裝</block>
+  <block id="0809934ab73994b74ff0369462a31319" category="list-text">從 BlueXP 進行部署</block>
+  <block id="12a87db5b86462e9bd05a612793965de" category="list-text">從 AWS Marketplace 進行部署</block>
+  <block id="21b3bbb098ff9926f5de185468b47efd" category="list-text">從 Azure Marketplace 進行部署</block>
+  <block id="9e9b2b37314c458b11ce81a5a7428ce9" category="list-text">Red Hat Enterprise Linux 7.6 至 7.9</block>
+  <block id="fd976d7410ccbb05f33da778aade918e" category="section-title">如何開始使用 RHEL 8 和 9</block>
+  <block id="19fbd5208079427f7255588fa19e6216" category="paragraph">如需主機需求、 Podcast 需求、以及安裝 Podman 和 Connector 的步驟等詳細資訊、請參閱下列頁面：</block>
+  <block id="c7ebd4cc461f15f97b0c6bb4d8aa138a" category="list-text"><block ref="f3e58ec45f13e79fe493e5ac40efdaef" category="inline-link-rx"></block> （標準模式）</block>
+  <block id="0a33569de64145f5ddb030c5c68f0e2f" category="list-text"><block ref="ce02a119fe20803f37d74f2f696ae608" category="inline-link-rx"></block> （標準模式）</block>
+  <block id="b9ab4eedcc76eaef5111c38dd7cf6955" category="list-text"><block ref="adf5c1237bee96f4b87ff5eb3fd3c25b" category="inline-link-rx"></block> （標準模式）</block>
+  <block id="1d054abd9ef4fcc0992047bc974a0ca7" category="list-text"><block ref="5f47d3df7f8a6f7d2b2dc0a0630af052" category="inline-link-rx"></block> （標準模式）</block>
+  <block id="9f1e71ff4946538e6e8d4160102056bb" category="list-text"><block ref="9f1e71ff4946538e6e8d4160102056bb" category="inline-link-rx"></block></block>
+  <block id="cd4dc0cbdf60f743093e390cb5077d8b" category="section-title">如何重新探索您的工作環境</block>
+  <block id="8c3d753bf73570be606a9b0e412a89ca" category="paragraph">請參閱下列頁面、在新的 Connector 部署之後重新探索您的工作環境。</block>
+  <block id="c6a562375e4b0fa48049f61f2822d10a" category="list-text"><block ref="c6a562375e4b0fa48049f61f2822d10a" category="inline-link-rx"></block></block>
+  <block id="52634ffbb1b3f2242477128412921d76" category="inline-link">建立或探索適用於 ONTAP 工作環境的 FSX</block>
+  <block id="95d0f191b4d79557e09489ccecab7761" category="list-text"><block ref="95d0f191b4d79557e09489ccecab7761" category="inline-link-rx"></block></block>
+  <block id="c5c12e22be965b4ae0e9fc5e1618bdbe" category="inline-link">打造 Azure NetApp Files 一個不一樣的工作環境</block>
+  <block id="caf073322971d4e6cbcb6df23cb81470" category="list-text"><block ref="caf073322971d4e6cbcb6df23cb81470" category="inline-link-rx"></block></block>
+  <block id="e4a9dd1c7d750241fad0d52a3bc7903b" category="inline-link">探索 E 系列系統</block>
+  <block id="90a582acc370affa7fa401384859e582" category="list-text"><block ref="90a582acc370affa7fa401384859e582" category="inline-link-rx"></block></block>
+  <block id="d85b01f001ee16ebd8eb1917c739d824" category="inline-link">探索StorageGRID 各種系統</block>
+  <block id="49193f8c0c9f916e42ecd0ff6595ef39" category="list-text"><block ref="49193f8c0c9f916e42ecd0ff6595ef39" category="inline-link-rx"></block></block>
+  <block id="29eef78ab52bc074b0642baafaa44a77" category="inline-link">新增Amazon Kubernetes叢集</block>
+  <block id="2afa5bfababb7240c7ecb360518a2cea" category="list-text"><block ref="2afa5bfababb7240c7ecb360518a2cea" category="inline-link-rx"></block></block>
+  <block id="8cae45546ea6e7035e9b798f709fc911" category="inline-link">新增Azure Kubernetes叢集</block>
+  <block id="a8c7ee49512f707b31b6b959a438f7ad" category="list-text"><block ref="a8c7ee49512f707b31b6b959a438f7ad" category="inline-link-rx"></block></block>
+  <block id="2872769900c1ca485d1628b4eefde308" category="inline-link">新增Google Cloud Kubernetes叢集</block>
+  <block id="aa7a37aa9bcd687f934565cd13aefe20" category="list-text"><block ref="aa7a37aa9bcd687f934565cd13aefe20" category="inline-link-rx"></block></block>
+  <block id="24e61fea41861d29656588dd6c8ad263" category="inline-link">匯入 OpenShift 叢集</block>
+  <block id="4fc44e3aff437ef0c290689bf2e88325" category="list-text"><block ref="4fc44e3aff437ef0c290689bf2e88325" category="inline-link-rx"></block></block>
+  <block id="7a0d21aaa1ef78351243ec252286827a" category="summary">BlueXP 支援搭配 Connector 和 Cloud Volumes ONTAP 的 IMDSv2 。在大多數情況下、會在新的 EC2 執行個體上自動設定 IMDSv2 。IMDSv1 在 2024 年 3 月之前啟用。如果您的安全性原則要求、您可能需要在 EC2 執行個體上手動設定 IMDSv2 。</block>
+  <block id="7ff8d7153d4eb208dbc1a561fd9985a9" category="paragraph">BlueXP 支援 Amazon EC2 執行個體中繼資料服務版本 2 （ IMDSv2 ）搭配 Connector 和 Cloud Volumes ONTAP （包括 HA 部署的中介）。在大多數情況下、會在新的 EC2 執行個體上自動設定 IMDSv2 。IMDSv1 在 2024 年 3 月之前啟用。如果您的安全性原則要求、您可能需要在 EC2 執行個體上手動設定 IMDSv2 。</block>
+  <block id="ed2660e5566ea9acdabcea9d70f95553" category="section-title">步驟 2 ：安裝 Podman 或 Docker Engine</block>
+  <block id="80308b1bd5b2d563350bbb74c701710f" category="section-title">步驟 3 ：設定網路</block>
+  <block id="1ec27c1bf36f0b2ca3bf06d87015ee63" category="section-title">步驟 4 ：設定 Connector 的權限</block>
+  <block id="a0e4b6848b26b9f671f19438b07d341b" category="section-title">步驟 5 ：設定共用 VPC 權限</block>
+  <block id="e8a3e3734581839fa19bc3d00353a26d" category="section-title">步驟 7 ：安裝 Connector</block>
+  <block id="f4eaf8d1522d08453ae8e8cb159f7355" category="list-text">對於網域使用者、您必須使用上方所示的 \ 的 ASCII 碼。</block>
+  <block id="89c2d7744c53f0bf3fde0710283c534b" category="list-text">BlueXP 不支援包含 @ 字元的使用者名稱或密碼。</block>
+  <block id="e115a77efdd4b6a7256261431461cb96" category="list-text">如果密碼包含下列任何特殊字元、您必須以反斜線開頭來轉義該特殊字元： &amp; 或 !</block>
+  <block id="506c2c0c7f5b70af3df68c45c46f45a7" category="paragraph">例如：</block>
+  <block id="9a8e93f292200e4d86cfd716262b53cc" category="paragraph">\http://bxpproxyuser:netapp1\!@address:3128</block>
+  <block id="b47596b2df9e477c6203e15d91a678ba" category="section-title">步驟 8 ：提供 BlueXP 的權限</block>
+  <block id="1963a5845bb573651eecf0188b584456" category="summary">當您在標準模式或受限模式下使用 BlueXP 時、 BlueXP 會自動將 Connector 升級至最新版本。通常每個月都會發行新版本、以引進新功能並改善穩定性。如果您願意、您可以設定 Connector 改為從本機儲存庫擷取映像更新。對於私有模式部署、您永遠需要自行手動升級 Connector 。</block>
+  <block id="d6b403d1857ecb824db228cac4a628ae" category="doc">使用私有模式時升級 Connector</block>
+  <block id="eb775c24a0b347148812da8a6496489b" category="admonition">在標準模式或受限模式下使用 BlueXP 時、您不需要手動升級 Connector 。只要 Connector 具有外送網際網路存取權限、 BlueXP 就會自動將 Connector 升級至最新版本、以取得軟體更新。</block>
+  <block id="eb762959fcc0cce31949abce6f8eb1c1" category="list-text">準備符合 CPU 、 RAM 、磁碟空間、容器協調工具等需求的專用 Linux 主機。</block>
+  <block id="99ca40e706695ba7607287669fab39f3" category="cell">檢查可用性區域是否為 AWS 本機區域、並驗證所有部署參數是否相容</block>
+  <block id="0683995d371439e19d907680da921ba9" category="section-title">2024 年 5 月 9 日</block>
+  <block id="376a26b461e6c64a1c38b284dbc9703f" category="paragraph">Cloud Volumes ONTAP 現在需要下列權限：</block>
+  <block id="caf547270bba046bebc03d7ccf4b0203" category="paragraph">請注意、套用次要安全性更新時、不需要停止 Connector 主機上的任何服務。</block>
+  <block id="ebb952d62c1eec36921c93691e959c82" category="paragraph"><block ref="ebb952d62c1eec36921c93691e959c82" category="inline-link-macro-rx"></block></block>
+  <block id="25ed61080ee73d701a5ba6feef931050" category="paragraph"><block ref="25ed61080ee73d701a5ba6feef931050" category="inline-link-macro-rx"></block></block>
+  <block id="1b9eb4a1347f52519d9e7d0e26300a53" category="paragraph"><block ref="01cf67ff20127008355664826b726767" category="inline-link-macro-rx"></block>。</block>
+  <block id="ae205f602e7bb700e8f3f1c9a194a3e4" category="section-title">步驟 4 ：設定雲端權限</block>
+  <block id="b94d9194c0f0e59de690d8a088d1601b" category="section-title">步驟 5 ：安裝 Connector</block>
+  <block id="d918fe97b966ce7fb324a30c883b1d7f" category="section-title">步驟 6 ：設定 Connector</block>
+  <block id="76eda41f130889296c61f521e20a1006" category="list-text"><block ref="76eda41f130889296c61f521e20a1006" category="inline-link-macro-rx"></block></block>
+  <block id="08055c0ef3321805b25b3e15ed3038b0" category="paragraph"><block ref="f342de123680c8538c1dec74025adf7a" category="inline-link-macro-rx"></block>。</block>
+  <block id="166140f584d4544702260c25a6b8eab6" category="section-title">多種工作環境與連接器</block>
+  <block id="7a5c1d5a09d9f5a762327becef29fd1a" category="list-text"><block ref="7a5c1d5a09d9f5a762327becef29fd1a" category="inline-link-macro-rx"></block></block>
+  <block id="188fd7f75e50a8a882a75c15dcb630a1" category="section-title">2024 年 5 月 17 日</block>
+  <block id="81f58b484d838909a5fedb3486f3a8e2" category="section-title">連接器 3.9.40</block>
+  <block id="32d1e3d3ebe78d37dbdfcf9933b0cf90" category="paragraph">此版本的 BlueXP Connector 支援額外的作業系統、輕微的安全性改善、以及錯誤修正。</block>
+  <block id="94f95548313e6f5528b5011a7d10e19f" category="paragraph">目前、 3.9.40 版本適用於標準模式和受限模式。</block>
+  <block id="9788cee19c4b5d5971c7a99e340846e8" category="paragraph">現在、在執行下列 Red Hat Enterprise Linux 版本且安裝 _new_ Connector 的主機上支援 Connector ：</block>
+  <block id="00ed051332ed28fe5b1ab0a4ae7aa4f6" category="paragraph">這些作業系統需要使用 Podman 作為容器協調工具。</block>
+  <block id="3d007e1710eb9efcb8c51296efc8eb4f" category="paragraph">您應該瞭解 Podman 的需求、已知限制、作業系統支援摘要、如果您有 RHEL 7 主機該怎麼做、如何開始使用等。</block>
+  <block id="4d3035dcb7b114e2c87c82e5ae7e626c" category="inline-link">瞭解 Connector 對 RHEL 8 和 9 的支援</block>
+  <block id="5fb3739fbc4ea4c4f6ecf12db77ae604" category="paragraph"><block ref="a34a36a25f711a4d3e7acd813af66ea1" category="inline-link-rx"></block>。</block>
+  <block id="cc33fea72b72b4631424774600dd1785" category="inline-link">瞭解如果在 RHEL 7 或 CentOS 7 上執行現有的 Connector 、該怎麼辦</block>
+  <block id="ab95c14710d4a4d5d91375c4a1b3315b" category="paragraph"><block ref="079fd36262e0750841aa2ea8902cdc7a" category="inline-link-rx"></block>。</block>
+  <block id="2f4b86d46e79a7a3f22d1c784c12799e" category="paragraph">在 3.9.38 版本中、我們更新了 AWS 的 Connector 原則、以納入「 EC2 ： DescrubeAvailabilityZones 」權限。現在需要此權限才能支援 AWS 本機區域與 Cloud Volumes ONTAP 。</block>
+  <block id="364a4ff52cd92f16374019cdedf6b91c" category="inline-link">深入瞭解 AWS 本機區域支援</block>
+  <block id="3b1699510f585646e0c8a73fa1b820ae" category="list-text"><block ref="3b1699510f585646e0c8a73fa1b820ae" category="inline-link-rx"></block></block>
+  <block id="e5d325f390c70091b07096d63ab8f353" category="list-text"><block ref="e5d325f390c70091b07096d63ab8f353" category="inline-link-rx"></block></block>
+  <block id="bac0b5f0ce34c6e2b396323f31301d29" category="paragraph"><block ref="c76726faac091108ba3ec0f1466b791f" category="inline-link-rx"></block>。</block>
+  <block id="688aea6136f160e02c8d5bbec6894343" category="list-text">安裝包含 Docker Engine 、這是必要的容器協調工具。</block>
+  <block id="c4dc961d5316a59ada13d5c96c1a11fa" category="paragraph">這些資料夾中的記錄會提供有關 Connector 的詳細資料。</block>
+  <block id="686b3d5992961d588971df7de7cda8a9" category="section-title">步驟 4 ：設定權限</block>
+  <block id="0aeaa2be4667f54cf3aa1aaeae390ca4" category="list-text">如果您打算建立 Cloud Volumes ONTAP 系統、 Connector 需要連線至雲端供應商的公開資源中的端點。</block>
+  <block id="5b9a9863d7ad33310f21a8e9b1c1d682" category="paragraph">在私有模式下、 BlueXP 傳送輸出流量的唯一時間是傳送給雲端供應商、以便建立 Cloud Volumes ONTAP 系統。</block>
+  <block id="6159d7975454b75f156a90167d520646" category="paragraph">當有新版 Connector 軟體推出時，這些軟體都會發佈至 NetApp 支援網站。 <block ref="bab251f8a57b7a2a667c9e7c0790a54f" category="inline-link-macro-rx"></block>。</block>
+  <block id="f3421174c8a7936975afd8a13d00f015" category="summary">若要疑難排解 Connector 的問題、您可以與 NetApp 支援部門合作、他們可能會要求您提供系統 ID 或最新的 AutoSupport 訊息。您也可以檢視 NetApp 知識庫、自行疑難排解問題。</block>
+  <block id="2151729e1f825181e54cccae3ee038a3" category="doc">疑難排解 Connector</block>
+  <block id="9144537792cab654081f969e873391d8" category="paragraph">若要疑難排解 Connector 的問題、您可以與 NetApp 支援部門合作、他們可能會要求您提供系統 ID 、 Connector 版本或最新的 AutoSupport 訊息。您也可以檢視 NetApp 知識庫、自行疑難排解問題。</block>
+  <block id="79f28d7e488ecdc021a6b4339d105950" category="inline-link-macro">取得 NetApp 支援的協助</block>
+  <block id="6176917e424edae60986aa87e2f272a0" category="paragraph"><block ref="9f87f7ac12f12d6e64b11ace2d534ca8" category="inline-link-macro-rx"></block>。</block>
+  <block id="784d74ec26e151955a4c9657042f8469" category="section-title">取得 NetApp 知識庫的說明</block>
+  <block id="d22ff119563c0ee5fe8dab4228074cee" category="inline-link">檢視 NetApp 支援團隊所建立的疑難排解資訊</block>
+  <block id="50442864bbf7126b7b62b75cde676ded" category="paragraph"><block ref="bb2a765d0923866ecd647a5c8b0cc5e9" category="inline-link-rx"></block>。</block>
+  <block id="2ee382a52587bc0e5804f83b40fb1ebd" category="summary">解除安裝Connector軟體以疑難排解問題、或從主機上永久移除軟體。您需要使用的步驟取決於您所使用的部署模式。從環境中移除 Connector 之後、您可以將其從 BlueXP 中移除。</block>
+  <block id="716e455593e3f61d09e3bf6cbb30d375" category="doc">解除安裝並移除 Connector</block>
+  <block id="0ca48b615c940d64cdde98b76cdee8b3" category="section-title">使用標準或受限模式時、請解除安裝 Connector</block>
+  <block id="da529abe542a53761e1008dc23815cf7" category="paragraph">如果您是在標準模式或受限模式下使用 BlueXP （也就是說、 Connector 主機具有輸出連線）、則應遵循下列步驟來解除安裝 Connector 軟體。</block>
+  <block id="0f915c6b577573f25e2e8bfac8c2aacb" category="paragraph">Connector 軟體現在已從 Linux 主機解除安裝。</block>
+  <block id="32b4ba2ff55d15357ed5b70aeb566059" category="section-title">使用私有模式時、請解除安裝 Connector</block>
+  <block id="34a2bd34ae23cc65060f62957132c0eb" category="paragraph">如果您是在私有模式下使用 BlueXP （也就是說、 Connector 主機擁有 _NO 輸出連線）、則應遵循下列步驟來解除安裝 Connector 軟體。</block>
+  <block id="a1fd436d8cb76b77def4aeb2d8bba352" category="doc">維護 Connector VM 和作業系統</block>
+  <block id="32ecd7116f82d32fc86313604d074f12" category="inline-link-macro">支援的 Linux 作業系統變更</block>
+  <block id="6f16d8c603420093f0274e54a03d0a2f" category="admonition">如果您有現有的 Connector 、您應該知道 <block ref="bd6e461b9eed09ced9eb75610086f8d1" category="inline-link-macro-rx"></block>。</block>
+  <block id="6a8efb58df7d7b111b6073b7ce536fe1" category="section-title">作業系統修補程式和 Connector</block>
+  <block id="5c6b62893e9b8753b16ce8db64ae077c" category="paragraph">套用作業系統安全性修補程式時、不需要停止 Connector 主機上的任何服務。</block>
+  <block id="d4c7d564cf9384303b11292ec4d09bf7" category="section-title">停止啟動 Connector VM</block>
+  <block id="f65f967e9525533fe9edbca2e40db32f" category="paragraph">如果您需要停止然後啟動 Connector VM 、則應從雲端供應商的主控台或使用內部部署管理的標準程序來執行。</block>
+  <block id="bd684dd31e369444b29047e57d56ff19" category="sidebar">瞭解部署模式</block>
+  <block id="a620abb16506a8da5f6b8dcbc0073466" category="sidebar">檢視 AWS 權限</block>
+  <block id="b7053c5f835c45d38cf071449c74fd56" category="sidebar">檢視 Azure 權限</block>
+  <block id="7050d365baa220c42a688cbf36a7e997" category="sidebar">檢視 Google Cloud 權限</block>
+  <block id="891c5b2cea54480f0e1abb74959457a6" category="sidebar">開始使用標準 AWS 區域</block>
+  <block id="e766f31fe70a68c11b8631144211d0f7" category="sidebar">開始使用 AWS GovCloud 區域</block>
+  <block id="9722aa95875a94430d4569d2e8bd2382" category="sidebar">開始使用 AWS Secret 或 Top Secret Cloud</block>
+  <block id="e55aba8c57180a56450db886ecd8232e" category="sidebar">檢視 Connector 的 IAM 原則</block>
+  <block id="27c705176bc1f05cf50771b1f8fe182a" category="sidebar">開始使用標準 Azure 區域</block>
+  <block id="60563f8b2620e88ac71d1a98ee73e2e5" category="sidebar">在 Azure 政府區域開始使用</block>
+  <block id="31b63be41ae4657f9e340188aa268589" category="sidebar">開始使用 Azure IL6</block>
+  <block id="3dbdf7d7951b212ca0000f0027184bb8" category="sidebar">檢視 Connector 的自訂角色</block>
+  <block id="6c3328ab0a2ccaa273efaec9a88e2751" category="sidebar">開始使用標準 Google Cloud 區域</block>
+  <block id="6844a754c2b209da7ac4949824ac467d" category="sidebar">檢視 Connector 的服務帳戶</block>
+  <block id="917f62b5224eebe3d212f654f1273e57" category="sidebar">以標準模式安裝並設定 Connector</block>
+  <block id="f6bf5d3da1d67288a149ab832d6401d0" category="sidebar">以私有模式安裝及設定 Connector</block>
+  <block id="6596e863cf1d0baa0dbccff0e9088e4a" category="sidebar">登入</block>
+  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">部落格與社群</block>
+  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp社群</block>
+  <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXP部落格</block>
+  <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">雲端網路研討會</block>
+  <block id="a2e2f8288038950766d9cd088e4d892d" category="sidebar">維護 VM 和 OS</block>
+  <block id="417a7f2f69f19fbcd309a4694944397e" category="sidebar">需要在 EC2 執行個體上使用 IMDSv2</block>
+  <block id="7c584a16cbf4210dc0a344179e274e09" category="sidebar">預設組態</block>
 </blocks>
