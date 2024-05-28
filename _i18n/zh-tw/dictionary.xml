@@ -226,7 +226,6 @@
   <block id="12c7029287280adb69871787fa604772" category="paragraph">您必須將此自訂角色套用至連接器VM的服務帳戶。</block>
   <block id="cb3ffce0d4b8f43b3d9f183b558cca41" category="inline-link-macro">設定受限模式的權限</block>
   <block id="fad45f664f0478b74c9485a0b1f6d781" category="inline-link-macro">設定私有模式的權限</block>
-  <block id="c5078b96055d6b776ee265ca4c7650c2" category="paragraph">您也必須確保在後續版本中新增權限時、該角色是最新的。</block>
   <block id="823b2e7894c2b52c1e9adc9ea10b9be5" category="section-title">如何使用Google Cloud權限</block>
   <block id="06df33001c1d7187fdd81ea1f5b277aa" category="cell">行動</block>
   <block id="8224e3db072d582bb34ae19441c597fe" category="cell">-compute 、 disks.create
@@ -1025,7 +1024,6 @@
   <block id="8098dd228e3c3acafd4ab6231ee02a5b" category="paragraph">無論使用哪一種選項、第一步都是建立 IAM 原則。此原則僅包含從BlueXP啟動AWS中Connector執行個體所需的權限。</block>
   <block id="5409221a62615b6b2cf0061a5376c983" category="inline-link">AWS文件：條件元素</block>
   <block id="15f7c3376619ce497205d543fd1d7767" category="paragraph">如有需要、您可以使用IAM來限制IAM原則<block ref="9e2941b3c81256fac10392aaca4ccfde" prefix=" " category="inline-code"></block> 元素。<block ref="19ffef022087e160f1e54b9948795943" category="inline-link-rx"></block></block>
-  <block id="09eadec3a9869ab363e913c06ab259a3" category="admonition">當 BlueXP 建立 Connector 時、它會將一組新的權限套用至 Connector 執行個體、讓 Connector 能夠管理 AWS 資源。</block>
   <block id="1e71ce7defc90d8f5a2c46c08ba968df" category="list-text">前往AWS IAM主控台。</block>
   <block id="26d4a7a50dfbae842d907e3b8000633e" category="list-text">複製並貼上下列原則：</block>
   <block id="1bd08699c526c66f71094b5ff54dc839" category="list-text">將原則附加至 BlueXP 可以承擔的 IAM 角色、或附加至 IAM 使用者、以便提供 BlueXP 存取金鑰：</block>
@@ -1210,9 +1208,7 @@
   <block id="30782d3f448f611988824827b71e6b96" category="paragraph">當BlueXP在AWS中啟動Connector執行個體時、它會將原則附加到執行個體、讓Connector有權限管理該AWS帳戶內的資源和程序。連接器使用權限來撥打API呼叫數個AWS服務、包括EC2、S3、CloudForecation、IAM、 金鑰管理服務（KMS）等。</block>
   <block id="c1141a37b962270fc1e8960233830c99" category="section-title">IAM 原則</block>
   <block id="d169cac20ae3e0b6b9cec32d273de5f2" category="paragraph">以下提供的IAM原則提供Connector所需的權限、可讓您根據AWS區域來管理公有雲環境中的資源和程序。</block>
-  <block id="74b6a526e505305f967084e06fa6aaf3" category="list-text">如果您直接從BlueXP在標準AWS區域中建立連接器、則BlueXP會自動將原則套用至連接器。在這種情況下、您不需要執行任何動作。</block>
   <block id="7d6d11737dd3bca1243f4e22e7aeaec1" category="list-text">如果您是從AWS Marketplace部署Connector、在Linux主機上手動安裝Connector、或是想要新增額外的AWS認證到BlueXP、則必須自行設定原則。</block>
-  <block id="b8502b99c36d378968d3d20a7561e523" category="list-text">您也必須確保原則在後續版本中新增權限時保持最新狀態。</block>
   <block id="4c3260e1174dd82ea2e496ac6f39fc4a" category="list-text">如有需要、您可以使用IAM來限制IAM原則<block ref="9e2941b3c81256fac10392aaca4ccfde" prefix=" " category="inline-code"></block> 元素。<block ref="19ffef022087e160f1e54b9948795943" category="inline-link-rx"></block></block>
   <block id="5e7e2fc7d83311cfc7311fe5dec48480" category="list-text">若要檢視使用這些原則的逐步指示、請參閱下列頁面：</block>
   <block id="de16d176ab7c6c01a7ce45f2e7213194" category="paragraph">選取您所在的地區以檢視所需的原則：</block>
@@ -3083,7 +3079,6 @@ Azure 政府地區不需要此端點。</block>
 此端點僅在 Azure 政府地區需要使用。</block>
   <block id="d7a02621d52c29a3c5f7895e817cba5b" category="list-text">自動化目錄</block>
   <block id="37b89c92faa8fead3ede2cb2c162ef52" category="inline-link-macro">檢視 Connector 執行個體本身所需的權限</block>
-  <block id="9c7ace21b2c703b0c1706b0f405490ae" category="paragraph">提醒您、此原則僅包含從 BlueXP 在 AWS 中啟動 Connector 執行個體所需的權限。 <block ref="1803651c0d8d31da6be94aca23bd6fb9" category="inline-link-macro-rx"></block>。</block>
   <block id="ee0f5d3d76febb57f0cd8c307401026c" category="paragraph">若要準備進行市場部署、請在 AWS 中建立 IAM 原則、並將其附加至 IAM 角色。當您從 AWS Marketplace 建立 Connector 時、系統會提示您選取該 IAM 角色。</block>
   <block id="b8173d0c4669ed6158a49dda320b1515" category="paragraph">視您打算使用的 BlueXP 服務而定、您可能需要建立第二個原則。對於標準區域、權限分佈在兩個原則之間。由於AWS中受管理原則的字元大小上限、因此需要兩個原則。 <block ref="60507836418f54f0b2b646fcefa2cf2c" category="inline-link-macro-rx"></block>。</block>
   <block id="ad76b7ae56285d87ab9015cde946bbf4" category="list-text"><block ref="ad76b7ae56285d87ab9015cde946bbf4" category="inline-link-rx"></block></block>
@@ -3218,7 +3213,6 @@ Azure 政府地區不需要此端點。</block>
   <block id="f68132eadaa2c37170b842a86fa6955d" category="paragraph">如果 Cloud Volumes ONTAP 系統沒有輸出網際網路連線來傳送 AutoSupport 訊息、 BlueXP 會自動將這些系統設定為使用 Connector 隨附的 Proxy 伺服器。唯一的需求是確保連接器的安全群組允許透過連接埠3128進行傳入連線。部署Connector之後、您需要開啟此連接埠。</block>
   <block id="e12fb4f30abef516bf6f5e0e9a5b72b7" category="doc">從BlueXP在Azure中建立連接器</block>
   <block id="864fadbab69859b77befd9c5a1c37c61" category="paragraph">從 BlueXP 建立 Connector 時、您需要提供登入資訊、讓 BlueXP 能夠與 Azure 驗證並部署 VM 。您有兩種選擇：</block>
-  <block id="79a9c2b8e447685125856ec6046d8128" category="admonition">此自訂角色僅包含從 BlueXP 在 Azure 中啟動 Connector VM 所需的權限。請勿在其他情況下使用此原則。當BlueXP建立Connector時、它會套用一組新的權限至Connector VM、讓Connector能夠管理公有雲環境中的資源。</block>
   <block id="6dc4f3e9aa2dada18f0a17189fa7d079" category="list-text">按一下 * 存取控制（ IAM ） * 。</block>
   <block id="761218505548d0e5a2977bd7c31de50a" category="list-text">按一下「 * 新增 * &gt; * 新增角色指派 * 」、然後新增權限：</block>
   <block id="407df91196b1a54a89a9911a8ac6a332" category="list-text">選取「* Azure Setup AsService*」角色、然後按一下「* Next*」。</block>
@@ -4179,4 +4173,16 @@ Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" catego
   <block id="a2e2f8288038950766d9cd088e4d892d" category="sidebar">維護 VM 和 OS</block>
   <block id="417a7f2f69f19fbcd309a4694944397e" category="sidebar">需要在 EC2 執行個體上使用 IMDSv2</block>
   <block id="7c584a16cbf4210dc0a344179e274e09" category="sidebar">預設組態</block>
+  <block id="abaca48e727d4b8ce4fa03323bbfdae6" category="paragraph">您有責任在後續版本中新增新權限時、更新自訂角色。如果需要新的權限、這些權限會列在版本資訊中。</block>
+  <block id="3799b61c7b8f19b2e2054544594671c3" category="admonition">此自訂角色僅包含從 BlueXP 在 Azure 中啟動 Connector VM 所需的權限。請勿在其他情況下使用此原則。當 BlueXP 建立 Connector 時、它會將一組新的權限套用至 Connector VM 、讓 Connector 能夠管理 Azure 資源。</block>
+  <block id="235877cfbecd45ab1b8e8ccb08915ab6" category="inline-link-macro">深入瞭解 Connector 的自訂角色</block>
+  <block id="9c94f9d5dbcdb22d1966ac1fff333345" category="list-text">當 BlueXP 部署 Connector 時、它會建立自訂角色、並將其指派給 Connector VM 。此角色包含可讓 Connector 管理 Azure 資源的權限。您必須確保角色在後續版本中新增權限時保持在最新狀態。 <block ref="68dcfa6eadd8a48a8164adbbc9abc0e5" category="inline-link-macro-rx"></block>。</block>
+  <block id="1f43b26ddf19b23cb5c358604ad9d1bb" category="paragraph">隨著後續版本中新增權限、您有責任更新 Connector 原則。如果需要新的權限、這些權限會列在版本資訊中。</block>
+  <block id="676f79631572648a20e41bdcef2aa88e" category="list-text">無論是哪種情況、您都必須確保角色是在後續版本中新增權限時的最新狀態。如果需要新的權限、這些權限會列在版本資訊中。</block>
+  <block id="ced19d28868cf97a99ad66ab748a0458" category="list-text">如果您直接從BlueXP在標準AWS區域中建立連接器、則BlueXP會自動將原則套用至連接器。</block>
+  <block id="27bfd6a18f38f12efb7983c46e54e86c" category="list-text">無論是哪種情況、您都必須確保原則是在後續版本中新增權限時的最新狀態。如果需要新的權限、這些權限會列在版本資訊中。</block>
+  <block id="8ed564b3f4045fb1f8ddb641549ce096" category="paragraph">此原則僅包含從BlueXP啟動AWS中Connector執行個體所需的權限。當 BlueXP 建立 Connector 時、它會將一組新的權限套用至 Connector 執行個體、讓 Connector 能夠管理 AWS 資源。 <block ref="1803651c0d8d31da6be94aca23bd6fb9" category="inline-link-macro-rx"></block>。</block>
+  <block id="df6a3e698694ef43588c621a4f033d31" category="inline-link-macro">深入瞭解 Connector 的 IAM 原則</block>
+  <block id="1fb320e90a252e8c1b4c19e3cbd46329" category="list-text">BlueXP 建立 Connector 時、會建立 IAM 角色和執行個體設定檔。此角色包含可讓 Connector 管理 AWS 資源的權限。您必須確保角色在後續版本中新增權限時保持在最新狀態。 <block ref="7c04064b609d1f2f70bc0b0dc253bdfa" category="inline-link-macro-rx"></block>。</block>
+  <block id="4560d9b851db1f575c8bd1ba53369c0a" category="paragraph">您也必須確保在後續版本中新增權限時、該角色是最新的。如果需要新的權限、這些權限會列在版本資訊中。</block>
 </blocks>

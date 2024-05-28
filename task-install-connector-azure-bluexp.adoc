@@ -161,7 +161,7 @@ Proxy伺服器:: 如果您的組織需要為所有傳出的網際網路流量部
 . 複製Azure中新自訂角色所需的權限、並將其儲存在Json檔案中。
 +
 
-NOTE: 此自訂角色僅包含從 BlueXP 在 Azure 中啟動 Connector VM 所需的權限。請勿在其他情況下使用此原則。當BlueXP建立Connector時、它會套用一組新的權限至Connector VM、讓Connector能夠管理公有雲環境中的資源。
+NOTE: 此自訂角色僅包含從 BlueXP 在 Azure 中啟動 Connector VM 所需的權限。請勿在其他情況下使用此原則。當 BlueXP 建立 Connector 時、它會將一組新的權限套用至 Connector VM 、讓 Connector 能夠管理 Azure 資源。
 
 +
 [source, json]
@@ -420,7 +420,9 @@ image:screenshot_azure_client_secret.gif["Azure 入口網站的螢幕擷取畫�
 直接從 BlueXP 網路型主控台建立 Connector 。
 
 .關於這項工作
-從 BlueXP 建立 Connector 會使用預設組態、在 Azure 中部署虛擬機器。建立 Connector 之後、不應變更為 CPU 或 RAM 較少的較小 VM 類型。 link:reference-connector-default-config.html["瞭解連接器的預設組態"]。
+* 從 BlueXP 建立 Connector 會使用預設組態、在 Azure 中部署虛擬機器。建立 Connector 之後、不應變更為 CPU 或 RAM 較少的較小 VM 類型。 link:reference-connector-default-config.html["瞭解連接器的預設組態"]。
+* 當 BlueXP 部署 Connector 時、它會建立自訂角色、並將其指派給 Connector VM 。此角色包含可讓 Connector 管理 Azure 資源的權限。您必須確保角色在後續版本中新增權限時保持在最新狀態。 link:reference-permissions-azure.html["深入瞭解 Connector 的自訂角色"]。
+
 
 .開始之前
 您應該擁有下列項目：

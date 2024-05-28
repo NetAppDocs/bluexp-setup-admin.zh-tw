@@ -167,6 +167,8 @@ BlueXP 帳戶管理員可以直接從 BlueXP 、雲端供應商的市場、或�
 * link:reference-permissions-gcp.html["瞭解Connector如何使用Google Cloud權限"]
 
 
+隨著後續版本中新增權限、您有責任更新 Connector 原則。如果需要新的權限、這些權限會列在版本資訊中。
+
 
 
 == 連接器升級

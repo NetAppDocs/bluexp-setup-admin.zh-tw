@@ -124,9 +124,20 @@ rm /var/run/docker.sock
 Podman 可從官方 Red Hat Enterprise Linux 儲存庫取得。
 
 +
+對於 Red Hat Enterprise Linux 9 ：
+
++
 [source, cli]
 ----
 sudo dnf install podman-2:4.6.1
+----
++
+對於 Red Hat Enterprise Linux 8 ：
+
++
+[source, cli]
+----
+sudo dnf install podman-3:4.6.1
 ----
 . 啟用並啟動 podman.socket 服務。
 +
@@ -319,6 +330,8 @@ Proxy伺服器:: 如果您的組織需要為所有傳出的網際網路流量部
 == 步驟 4 ：設定 Connector 的權限
 
 需要 Google Cloud 服務帳戶、才能為 Connector 提供 BlueXP 在 Google Cloud 中管理資源所需的權限。建立 Connector 時、您需要將此服務帳戶與 Connector VM 建立關聯。
+
+您有責任在後續版本中新增新權限時、更新自訂角色。如果需要新的權限、這些權限會列在版本資訊中。
 
 .步驟
 . 在 Google Cloud 中建立自訂角色：
