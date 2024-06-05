@@ -165,12 +165,6 @@ API 端點:: API 呼叫是針對 Connector 虛擬機器進行的。
 | 分類  a| 
 受限模式的政府地區支援。不支援商業區域或採用限制模式的主權區域。
 
-適用下列限制：
-
-* 無法掃描OneDrive帳戶、SharePoint帳戶和Google雲端硬碟帳戶。
-* Microsoft Azure資訊保護（AIP）標籤功能無法整合。
-
-
 
 
 | Cloud Volumes ONTAP | 完全支援 
