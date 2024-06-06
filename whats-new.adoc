@@ -79,7 +79,7 @@ summary: 瞭解 BlueXP 管理功能的新功能： BlueXP 帳戶、連接器、�
 
 ==== 支援 RHEL 8 和 9
 
-現在、在執行下列 Red Hat Enterprise Linux 版本且安裝 _new_ Connector 的主機上支援 Connector ：
+在標準模式或受限模式下使用 BlueXP 時、執行下列 Red Hat Enterprise Linux 版本且安裝 _new_ Connector 的主機現在支援 Connector ：
 
 * 8.6 至 8.9
 * 9.1 至 9.3

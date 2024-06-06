@@ -2861,9 +2861,6 @@
   <block id="f4c6f851b00d5518bf888815de279aba" category="cell">附註</block>
   <block id="34678ee868eeabce720fc4a0fd60c17a" category="cell">完全支援</block>
   <block id="0a44fe605745a017fde35750e5fae36a" category="paragraph">受限模式的政府地區支援。不支援商業區域或採用限制模式的主權區域。</block>
-  <block id="9bff93d1123789b473f27a881c3e00c6" category="paragraph">適用下列限制：</block>
-  <block id="b3478a494adde25715314b14559dd6a4" category="list-text">無法掃描OneDrive帳戶、SharePoint帳戶和Google雲端硬碟帳戶。</block>
-  <block id="d1f03114b8fef49b0f0cb0a28049ecdf" category="list-text">Microsoft Azure資訊保護（AIP）標籤功能無法整合。</block>
   <block id="8adfa152daa2970174717fd5e24151b2" category="cell">您可以將數位錢包搭配下列受限模式的支援授權選項一起使用。</block>
   <block id="6c253a8aff5dfa835a77545b3006abc8" category="cell">內部部署 ONTAP 的叢集</block>
   <block id="2bd6e3220a2a60e7217c63bc76d9f73c" category="cell">支援使用 Connector 進行探索、以及不使用 Connector （直接探索）進行探索。
@@ -4109,7 +4106,6 @@ Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" catego
   <block id="81f58b484d838909a5fedb3486f3a8e2" category="section-title">連接器 3.9.40</block>
   <block id="32d1e3d3ebe78d37dbdfcf9933b0cf90" category="paragraph">此版本的 BlueXP Connector 支援額外的作業系統、輕微的安全性改善、以及錯誤修正。</block>
   <block id="94f95548313e6f5528b5011a7d10e19f" category="paragraph">目前、 3.9.40 版本適用於標準模式和受限模式。</block>
-  <block id="9788cee19c4b5d5971c7a99e340846e8" category="paragraph">現在、在執行下列 Red Hat Enterprise Linux 版本且安裝 _new_ Connector 的主機上支援 Connector ：</block>
   <block id="00ed051332ed28fe5b1ab0a4ae7aa4f6" category="paragraph">這些作業系統需要使用 Podman 作為容器協調工具。</block>
   <block id="3d007e1710eb9efcb8c51296efc8eb4f" category="paragraph">您應該瞭解 Podman 的需求、已知限制、作業系統支援摘要、如果您有 RHEL 7 主機該怎麼做、如何開始使用等。</block>
   <block id="4d3035dcb7b114e2c87c82e5ae7e626c" category="inline-link">瞭解 Connector 對 RHEL 8 和 9 的支援</block>
@@ -4198,4 +4194,5 @@ Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" catego
   <block id="0dcda936d538d36f9e02f54b88ffefca" category="list-text"><block ref="0dcda936d538d36f9e02f54b88ffefca" category="inline-link-rx"></block></block>
   <block id="d06e6f96135d8cd2fa9fea9a4d9de16b" category="inline-link">瞭解 BlueXP 中 Cloud Volumes ONTAP 管理的新功能</block>
   <block id="29e66847d781138b54aa8aa55b70fb20" category="list-text"><block ref="29e66847d781138b54aa8aa55b70fb20" category="inline-link-rx"></block></block>
+  <block id="3eb0b1a8f5c259c6baffd4acbc27dc9b" category="paragraph">在標準模式或受限模式下使用 BlueXP 時、執行下列 Red Hat Enterprise Linux 版本且安裝 _new_ Connector 的主機現在支援 Connector ：</block>
 </blocks>
