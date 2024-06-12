@@ -525,7 +525,6 @@
   <block id="e216b7a924341f796bca310d1d812baf" category="inline-link">複製與同步</block>
   <block id="f74f0f0050569783e8c306d738c4d91e" category="list-text"><block ref="f74f0f0050569783e8c306d738c4d91e" category="inline-link-rx"></block></block>
   <block id="ba695b3cf8b635f89946173735838948" category="inline-link">邊緣快取</block>
-  <block id="a062a07503c91ac212c0a374cd04a732" category="list-text"><block ref="a062a07503c91ac212c0a374cd04a732" category="inline-link-rx"></block></block>
   <block id="337c62c6b6eb7319bae58701105e889c" category="inline-link">分層</block>
   <block id="81bcb3e3c1a8f797192f8c3c33e62033" category="list-text"><block ref="81bcb3e3c1a8f797192f8c3c33e62033" category="inline-link-rx"></block></block>
   <block id="83f1d9ca1a0c4c2fc51a371c0d773f76" category="list-text">保護</block>
@@ -4195,4 +4194,7 @@ Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" catego
   <block id="d06e6f96135d8cd2fa9fea9a4d9de16b" category="inline-link">瞭解 BlueXP 中 Cloud Volumes ONTAP 管理的新功能</block>
   <block id="29e66847d781138b54aa8aa55b70fb20" category="list-text"><block ref="29e66847d781138b54aa8aa55b70fb20" category="inline-link-rx"></block></block>
   <block id="3eb0b1a8f5c259c6baffd4acbc27dc9b" category="paragraph">在標準模式或受限模式下使用 BlueXP 時、執行下列 Red Hat Enterprise Linux 版本且安裝 _new_ Connector 的主機現在支援 Connector ：</block>
+  <block id="bbe4d8abcc3519b138a73b8e46ee2119" category="section-title">2024 年 6 月 12 日</block>
+  <block id="e7a68d45477c484e2ef45d11f3cea8f8" category="section-title">連接器 3.9.41</block>
+  <block id="deb2d604498906b6056e668d8a921bc6" category="paragraph">3.9.41 版本適用於標準模式和受限模式。</block>
 </blocks>

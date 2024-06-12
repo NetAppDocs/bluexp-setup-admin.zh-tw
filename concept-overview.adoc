@@ -47,7 +47,6 @@ BlueXP 平台提供四大資料管理支柱：儲存、行動力、保護、分�
 +
 --
 * https://bluexp.netapp.com/cloud-sync-service["複製與同步"^]
-* https://bluexp.netapp.com/global-file-cache["邊緣快取"^]
 * https://bluexp.netapp.com/cloud-tiering["分層"^]
 
 
