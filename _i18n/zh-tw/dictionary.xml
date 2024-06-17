@@ -4197,4 +4197,6 @@ Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" catego
   <block id="bbe4d8abcc3519b138a73b8e46ee2119" category="section-title">2024 年 6 月 12 日</block>
   <block id="e7a68d45477c484e2ef45d11f3cea8f8" category="section-title">連接器 3.9.41</block>
   <block id="deb2d604498906b6056e668d8a921bc6" category="paragraph">3.9.41 版本適用於標準模式和受限模式。</block>
+  <block id="4fe47b0a38e9cc2f08e1ebd6f66fc340" category="paragraph">BlueXP 使用<block ref="68ab1268abb7e5f5688810968df97d6b" prefix=" " category="inline-code"></block> 安裝<block ref="a23365e1ae67810a7446b65d3be9a5d0" prefix=" " category="inline-code"></block> 目錄及其內容。</block>
+  <block id="6625b96831c913865dcc04d700d00a02" category="paragraph">BlueXP 需要此空間<block ref="ca905eb4a00d34150573153a09e2e79b" prefix=" " category="inline-code"></block> 因為 Docker 或 Podman 是專為在此目錄中建立容器而設計。具體而言、他們會在中建立容器<block ref="af5045a6e72956f67984a97cd3e8b9da" prefix=" " category="inline-code"></block> 目錄。外部掛載或 symlinks 無法用於此空間。</block>
 </blocks>

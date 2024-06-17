@@ -68,7 +68,17 @@ Google Cloud支援Connector的VM執行個體、其作業系統可支援此連接
 
 --
 /opt 中的磁碟空間:: 必須有100 GiB的可用空間
++
+--
+BlueXP 使用 `/opt` 安裝 `/opt/application/netapp` 目錄及其內容。
+
+--
 /var.中的磁碟空間:: 必須提供20 GiB的空間
++
+--
+BlueXP 需要此空間 `/var` 因為 Docker 或 Podman 是專為在此目錄中建立容器而設計。具體而言、他們會在中建立容器 `/var/lib/containers/storage` 目錄。外部掛載或 symlinks 無法用於此空間。
+
+--
 容器協調工具:: 根據您的作業系統而定、安裝 Connector 之前需要使用 Podman 或 Docker Engine 。
 +
 --
