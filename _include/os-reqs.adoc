@@ -75,7 +75,7 @@ BlueXP 需要此空間 `/var` 因為 Docker 或 Podman 是專為在此目錄中�
 Docker引擎:: 安裝 Connector 之前、主機上需要 Docker Engine 。
 +
 --
-* 支援的最低版本為 19.3.1 。
+* 支援的最低版本為 23.0.6 。
 * 支援的最大版本為 25.0.0 。
 +
 https://docs.docker.com/engine/install/["檢視安裝指示"^]
@@ -101,7 +101,7 @@ Podman 必須符合下列先決條件：
 
 * Ubuntu 需要 Docker Engine 。
 +
-** 支援的最低版本為 19.3.1 。
+** 支援的最低版本為 23.0.6 。
 ** 支援的最大版本為 25.0.0 。
 
 

@@ -661,18 +661,11 @@
   <block id="a6daae7da601d04e5cdb89d612a8d9b1" category="list-text">符合上述 CPU 和 RAM 需求的執行個體類型。我們建議使用 DS3 v2 。</block>
   <block id="ae140c7a1104ac99f1a01b18e5dc3ed8" category="summary">BlueXP 可從網路型主控台存取。當您開始使用 BlueXP 時、您的第一步是使用現有的 NetApp 支援網站 認證或建立 NetApp 雲端登入。</block>
   <block id="156c302d186fc36d9d944c5d74b971af" category="doc">註冊BlueXP</block>
-  <block id="4c6d74757138aa41d2d5f2b14bb05ad1" category="paragraph">您可以使用下列其中一個選項註冊至BlueXP：</block>
   <block id="19df8bb4b5a805b23aeac731605bdf21" category="list-text">您現有NetApp 支援網站 的功能驗證（NSS）認證</block>
-  <block id="d7330e52ac45b9d5a769aa9a5c244319" category="list-text">指定您的電子郵件地址和密碼、即可登入NetApp雲端</block>
   <block id="4cd9dd3aeeaff4f9e2ee0a8b309b6856" category="inline-link-macro">瞭解如何將身分識別聯盟與BlueXP搭配使用</block>
-  <block id="66721b55faa00316d484082879eed67d" category="paragraph">這兩種選項都支援聯盟連線、可讓您使用公司目錄（聯盟身分識別）的認證單一登入。您可以在註冊之後設定聯盟連線。 <block ref="428e058a0b96c0f6b163e3a51b92bb16" category="inline-link-macro-rx"></block>。</block>
   <block id="3a9d5bd356ec8e4fc31c11150128b7ac" category="list-text">開啟網頁瀏覽器、前往<block ref="a47e12f4350b725a128875f50f785a3b" category="inline-link-rx"></block></block>
-  <block id="3587d9f2b48c4f0c9c40433731329a21" category="list-text">如果您有 NetApp 支援網站 帳戶、請在 * 登入 * 頁面上直接輸入與您的 NSS 帳戶相關的電子郵件地址。</block>
   <block id="61bd9c463723beb495c6ca6a1a35e0eb" category="paragraph">如果您有 NSS 帳戶、可以跳過註冊頁面。在此初次登入時、BlueXP會為您註冊。</block>
-  <block id="7c74a9177ae92ae3e635c6ec91ce1d71" category="list-text">如果您沒有 NSS 帳戶、但想要建立 NetApp 雲端登入來註冊、請選取 * 註冊 * 。</block>
-  <block id="9c27b53d053eec29dd123f70f05c5d03" category="list-text">在 * 註冊 * 頁面上、輸入建立 NetApp 雲端登入所需的資訊。</block>
   <block id="9998984c95caccce61e49ca25de1c99f" category="paragraph">請注意、註冊表單中只允許英文字元。</block>
-  <block id="b0844d01c75bb6b60219ee536f20aa15" category="list-text">出現提示時、請檢閱終端使用者授權合約並接受條款。</block>
   <block id="a2d1bd30e95a89c4ecb9d6a39da84e3a" category="list-text">在*歡迎*頁面上、輸入您帳戶的名稱。</block>
   <block id="efb45899558a953ff7d6578e89aa2c1c" category="inline-link-macro">瞭解如何將成員新增至現有帳戶</block>
   <block id="ecbca8245155432067c380b55b5146bb" category="paragraph">帳戶是NetApp身分識別平台的最上層元素。它可讓您新增及管理使用者、角色、權限及工作環境。</block>
@@ -3918,7 +3911,6 @@ Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" catego
   <block id="c2eb567355a3050dee61ad28cde98255" category="list-text">9.13.1 或本版本之後的任何版本</block>
   <block id="7e0ccd7729abca8ae58e9ceff3fd0b87" category="list-text">在 Cloud Volumes ONTAP 升級程序期間使用</block>
   <block id="970c4756c8fc49a0c32d6a5b32d6d6f5" category="list-text">安裝 Connector 之前、主機上需要 Docker Engine 。</block>
-  <block id="66a843cd9e2f1ff37fec4c91275dc9a7" category="list-text">支援的最低版本為 19.3.1 。</block>
   <block id="3d0dee7040af4a3fedb8d1c83abf5f56" category="list-text">支援的最大版本為 25.0.0 。</block>
   <block id="3e291cd3cf657cb754d907986c7587ed" category="paragraph"><block ref="3e291cd3cf657cb754d907986c7587ed" category="inline-link-rx"></block></block>
   <block id="779956d8a8a5dbf08bbf655892abfefb" category="section-title">2024 年 4 月 11 日</block>
@@ -3986,7 +3978,6 @@ Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" catego
   <block id="084cfc903eb108eb15642e42f36348f9" category="paragraph">對於 Red Hat Enterprise Linux 8 ：</block>
   <block id="6f3a42415c589950b9ae4d3fe1f87dc7" category="list-text">安裝 podman-compose 套件 1.0.6 。</block>
   <block id="ec7c87651a5ede2a98ad4091fe48b517" category="admonition">使用<block ref="02c7499137a5d8d10292d68634eb22a0" prefix=" " category="inline-code"></block> 命令符合將 podman-compose 新增至 PATH 環境變數的需求。安裝命令會將 podman-compose 新增至已包含在中的 /usr/bin<block ref="c9bac30d1d0554c0790285219e5ad518" prefix=" " category="inline-code"></block> 主機上的選項。</block>
-  <block id="2cb776f499f1161a0b5361cda7d46e37" category="paragraph">安裝 19.3.1 到 25.0.0 之間的 Docker Engine 版本。</block>
   <block id="d96a084915e5de032105988cddcc2bc5" category="list-text">安裝 Docker Engine 。</block>
   <block id="08a382dc3dd0f48c28f89b74f8bac2a4" category="inline-link">檢視 Docker 的安裝指示</block>
   <block id="3907e04a67ccb717783cc69d280aaa41" category="paragraph"><block ref="3907e04a67ccb717783cc69d280aaa41" category="inline-link-rx"></block></block>
@@ -4192,4 +4183,30 @@ Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" catego
   <block id="06cfdcafd69514150ade31a714fa78db" category="list-text">需要經過認證可執行支援作業系統的裸機或託管 Hypervisor 。</block>
   <block id="1c0a2f304cb94000fe79271bae1284df" category="list-text">Ubuntu 需要 Docker Engine 。</block>
   <block id="eb79e7adcda869f967a810da89679252" category="paragraph">在 2024 年 6 月 30 日、 RHEL 7 已結束維護（ EOM ）、而 CentOS 7 已達到生命週期結束（ EOL ）。NetApp 於 2024 年 6 月 30 日停止支援這些 Linux 套裝作業系統上的 Connector 。</block>
+  <block id="547a1a61c710e2dc947389da0967d175" category="list-text">支援的最低版本為 23.0.6 。</block>
+  <block id="7a96db7c574c0cfb888eceb8119d9bac" category="paragraph">安裝 23.0.6 到 25.0.0 之間的 Docker Engine 版本。</block>
+  <block id="13265d5e2f2489e0351d3bae9dc7d923" category="doc">註冊或登入 BlueXP</block>
+  <block id="400356f2a752e6926bd99ce1db45ee8c" category="paragraph">BlueXP 可從網路型主控台存取。當您開始使用 BlueXP 時、您的第一步是從公司目錄註冊或使用 NetApp 支援網站認證或 SSO 認證登入。</block>
+  <block id="71bf124b6b9da30db8c000241ce01691" category="paragraph">當您第一次存取 BlueXP 時、 BlueXP 可讓您使用下列其中一個選項來登入或登入：</block>
+  <block id="79160996ed8489a5cf6613551aa653a7" category="list-text">BlueXP 登入</block>
+  <block id="097da8092c10ffe933148ded03ffa5e7" category="list-text">您可以建立 BlueXP 登入來註冊。此驗證方法需要您指定電子郵件地址和密碼。驗證電子郵件地址之後、您可以登入並建立 BlueXP 帳戶（如果您尚未擁有）。</block>
+  <block id="4e509fcd83df29eba4ce6711d142163b" category="list-text">NetApp 支援網站（ NSS ）認證</block>
+  <block id="820249dfc3701fd3b37984191fcdfd5c" category="list-text">如果您擁有現有的 NetApp 支援網站認證、就不需要註冊 BlueXP 。您使用 NSS 認證登入後、如果您還不屬於 BlueXP 帳戶、 BlueXP 會提示您建立 BlueXP 帳戶。</block>
+  <block id="9cb17ba10a86a6d673f250ed811a88c2" category="list-text">同盟連線</block>
+  <block id="b9d11f4546264baa9dae3dabfb844735" category="list-text">您可以使用單一登入、從公司目錄（聯盟身分識別）使用認證登入。組織帳戶中的第一個使用者必須登入 BlueXP 或使用 NSS 認證登入、然後設定身分識別聯盟。之後、每個後續使用者都可以使用其 SSO 認證登入。</block>
+  <block id="a3343822f7753a8d8b67395fe90b10ba" category="paragraph"><block ref="428e058a0b96c0f6b163e3a51b92bb16" category="inline-link-macro-rx"></block>。</block>
+  <block id="631a9d1918b756ca1857359538227c2a" category="list-text">如果您有 NetApp 支援網站帳戶、或您已設定身分識別聯盟、請在 * 登入 * 頁面上直接輸入與您帳戶相關的電子郵件地址。</block>
+  <block id="e2a4611e209f9dc6217229cb9441c087" category="list-text">如果您想要建立 BlueXP 登入來註冊、請選取 * 註冊 * 。</block>
+  <block id="dafbc60d299b7ecf7d1bf490a178f77f" category="list-text">在 * 註冊 * 頁面上、輸入所需資訊、然後選取 * 下一步 * 。</block>
+  <block id="422588021a93cfdaa26ce8d7d46dfeda" category="list-text">請查看您的收件匣、查看 NetApp 寄送的電子郵件、其中包含驗證電子郵件地址的指示。</block>
+  <block id="6a453053d8be9574b7b5d32eb1d51842" category="paragraph">登入 BlueXP 之前、必須先執行此步驟。</block>
+  <block id="a0e12b903763894b05053f1758f87c86" category="list-text">登入後、請檢閱「終端使用者授權合約」並接受條款。</block>
+  <block id="8d330209f05c51bacefbee76e24d82e9" category="section-title">2024 年 7 月 8 日</block>
+  <block id="cfcc30e7f5ca49191957ff6a4f02c34d" category="section-title">連接器 3.9.42</block>
+  <block id="b1360a775c6891602e0321f2a2a1aa2b" category="paragraph">此版本包含小型的改良、錯誤修正、以及 AWS Canada West （ Calgary ）地區的 Connector 支援。</block>
+  <block id="2a63395e5cc23edb6ca284fd55193c26" category="section-title">更新版 Docker Engine 需求</block>
+  <block id="a8b199c601f75b6af66327457070a9f8" category="paragraph">當 Connector 安裝在 Ubuntu 主機上時、 Docker Engine 的最低支援版本現在是 13.0.6 。此前為 19.3.1 版。</block>
+  <block id="a0171ad16b4ca1d03af998be3b923d6f" category="paragraph">支援的最大版本仍為 25.0.0 。</block>
+  <block id="0d04c8a15444402f3438c6a0e19e7890" category="section-title">現在需要電子郵件驗證</block>
+  <block id="d2fc5d70b0b08157a615d70d77cb96c2" category="paragraph">新使用者現在必須先驗證其電子郵件地址、才能登入 BlueXP 。</block>
 </blocks>

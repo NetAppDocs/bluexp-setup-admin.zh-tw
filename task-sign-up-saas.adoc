@@ -4,7 +4,7 @@ permalink: task-sign-up-saas.html
 keywords: sign up, signing up, sign in, signing in, login with netapp, log in with netapp, create account, account, log in with nss, nss, nss login 
 summary: BlueXP 可從網路型主控台存取。當您開始使用 BlueXP 時、您的第一步是使用現有的 NetApp 支援網站 認證或建立 NetApp 雲端登入。 
 ---
-= 註冊BlueXP
+= 註冊或登入 BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,29 +14,40 @@ summary: BlueXP 可從網路型主控台存取。當您開始使用 BlueXP 時�
 
 
 [role="lead"]
-BlueXP 可從網路型主控台存取。當您開始使用 BlueXP 時、您的第一步是使用現有的 NetApp 支援網站 認證或建立 NetApp 雲端登入。
+BlueXP 可從網路型主控台存取。當您開始使用 BlueXP 時、您的第一步是從公司目錄註冊或使用 NetApp 支援網站認證或 SSO 認證登入。
 
 .關於這項工作
-您可以使用下列其中一個選項註冊至BlueXP：
+當您第一次存取 BlueXP 時、 BlueXP 可讓您使用下列其中一個選項來登入或登入：
 
-* 您現有NetApp 支援網站 的功能驗證（NSS）認證
-* 指定您的電子郵件地址和密碼、即可登入NetApp雲端
+BlueXP 登入:: 您可以建立 BlueXP 登入來註冊。此驗證方法需要您指定電子郵件地址和密碼。驗證電子郵件地址之後、您可以登入並建立 BlueXP 帳戶（如果您尚未擁有）。
+NetApp 支援網站（ NSS ）認證:: 如果您擁有現有的 NetApp 支援網站認證、就不需要註冊 BlueXP 。您使用 NSS 認證登入後、如果您還不屬於 BlueXP 帳戶、 BlueXP 會提示您建立 BlueXP 帳戶。
+同盟連線:: 您可以使用單一登入、從公司目錄（聯盟身分識別）使用認證登入。組織帳戶中的第一個使用者必須登入 BlueXP 或使用 NSS 認證登入、然後設定身分識別聯盟。之後、每個後續使用者都可以使用其 SSO 認證登入。
++
+--
+link:concept-federation.html["瞭解如何將身分識別聯盟與BlueXP搭配使用"]。
 
+--
 
-這兩種選項都支援聯盟連線、可讓您使用公司目錄（聯盟身分識別）的認證單一登入。您可以在註冊之後設定聯盟連線。 link:concept-federation.html["瞭解如何將身分識別聯盟與BlueXP搭配使用"]。
 
 .步驟
 . 開啟網頁瀏覽器、前往 https://console.bluexp.netapp.com["BlueXP主控台"^]
-. 如果您有 NetApp 支援網站 帳戶、請在 * 登入 * 頁面上直接輸入與您的 NSS 帳戶相關的電子郵件地址。
+. 如果您有 NetApp 支援網站帳戶、或您已設定身分識別聯盟、請在 * 登入 * 頁面上直接輸入與您帳戶相關的電子郵件地址。
 +
 如果您有 NSS 帳戶、可以跳過註冊頁面。在此初次登入時、BlueXP會為您註冊。
 
-. 如果您沒有 NSS 帳戶、但想要建立 NetApp 雲端登入來註冊、請選取 * 註冊 * 。
-. 在 * 註冊 * 頁面上、輸入建立 NetApp 雲端登入所需的資訊。
+. 如果您想要建立 BlueXP 登入來註冊、請選取 * 註冊 * 。
++
+.. 在 * 註冊 * 頁面上、輸入所需資訊、然後選取 * 下一步 * 。
 +
 請注意、註冊表單中只允許英文字元。
 
-. 出現提示時、請檢閱終端使用者授權合約並接受條款。
+.. 請查看您的收件匣、查看 NetApp 寄送的電子郵件、其中包含驗證電子郵件地址的指示。
++
+登入 BlueXP 之前、必須先執行此步驟。
+
+
+
+. 登入後、請檢閱「終端使用者授權合約」並接受條款。
 . 在*歡迎*頁面上、輸入您帳戶的名稱。
 +
 如果您的企業已經有帳戶、而您想要加入帳戶、則應關閉BluXP、並請擁有者將您與帳戶建立關聯。擁有者新增您之後、您就可以登入、而且您可以存取該帳戶。 link:task-managing-netapp-accounts.html#add-users["瞭解如何將成員新增至現有帳戶"]。
