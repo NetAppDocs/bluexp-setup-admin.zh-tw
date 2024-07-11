@@ -26,6 +26,8 @@ summary: 瞭解 BlueXP 管理功能的新功能： BlueXP 帳戶、連接器、�
 
 此版本包含小型的改良、錯誤修正、以及 AWS Canada West （ Calgary ）地區的 Connector 支援。
 
+3.9.42 版本適用於標準模式和受限模式。
+
 
 
 === 更新版 Docker Engine 需求

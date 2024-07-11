@@ -4209,4 +4209,5 @@ Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" catego
   <block id="a0171ad16b4ca1d03af998be3b923d6f" category="paragraph">支援的最大版本仍為 25.0.0 。</block>
   <block id="0d04c8a15444402f3438c6a0e19e7890" category="section-title">現在需要電子郵件驗證</block>
   <block id="d2fc5d70b0b08157a615d70d77cb96c2" category="paragraph">新使用者現在必須先驗證其電子郵件地址、才能登入 BlueXP 。</block>
+  <block id="096051910b67309e40aa0d0e1d279007" category="paragraph">3.9.42 版本適用於標準模式和受限模式。</block>
 </blocks>
