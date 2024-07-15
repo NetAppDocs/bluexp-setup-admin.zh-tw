@@ -4204,4 +4204,5 @@ Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" catego
   <block id="5bde46ec5f2d435355447c38b00c1d9c" category="section-title">2024 年 7 月 15 日</block>
   <block id="415b27bc5d78b639dc8c74a6e8f93e19" category="section-title">支援 RHEL 8.10</block>
   <block id="562442342bba071ba7f2e5fa834d4464" category="paragraph">BlueXP 現在支援在使用標準模式或受限模式的 Red Hat Enterprise Linux 8.10 主機上安裝 Connector 。</block>
+  <block id="01a9b44907bcb1139b6868b9fe7073d0" category="paragraph">從 Connector 3.9.40 版本開始支援 RHEL 8.10 。</block>
 </blocks>
