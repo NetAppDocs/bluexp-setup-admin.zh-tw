@@ -18,6 +18,18 @@ summary: 瞭解 BlueXP 管理功能的新功能： BlueXP 帳戶、連接器、�
 
 
 
+== 2024 年 7 月 15 日
+
+
+
+=== 支援 RHEL 8.10
+
+BlueXP 現在支援在使用標準模式或受限模式的 Red Hat Enterprise Linux 8.10 主機上安裝 Connector 。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["瞭解 Connector 對 RHEL 8 和 9 的支援"]。
+
+
+
 == 2024 年 7 月 8 日
 
 

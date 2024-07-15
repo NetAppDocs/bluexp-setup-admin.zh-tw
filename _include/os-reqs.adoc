@@ -11,7 +11,7 @@
 * Ubuntu 22.04 LTS
 * Red Hat Enterprise Linux
 +
-** 8.6 至 8.9
+** 8.6 至 8.10
 ** 9.1 至 9.3
 +
 主機必須向 Red Hat Subscription Management 登錄。如果主機尚未登錄、則無法在 Connector 安裝期間存取儲存庫來更新所需的協力廠商軟體。

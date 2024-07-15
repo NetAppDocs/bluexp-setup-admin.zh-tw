@@ -3989,8 +3989,6 @@ Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" catego
   <block id="895e31e93bd7a23981cc0cbeb5581840" category="summary">當我們在特定 Linux 作業系統上新增及移除 Connector 支援時、您可能會對此支援如何影響現有的 Connector 部署有疑問。</block>
   <block id="06e657c37e762cbeb9edc676ff32181d" category="doc">支援的 Linux 作業系統變更</block>
   <block id="a5dacfcdb1adb3167b081f091b368732" category="section-title">支援 RHEL 8 和 9</block>
-  <block id="931c37d7beb414a58946263b8614e645" category="paragraph">從 3.9.40 版本開始、 BlueXP 支援 Connector 搭配下列版本的 Red Hat Enterprise Linux （ RHEL ）：</block>
-  <block id="6472d01a592db1ad2bf4a2c914623f1e" category="paragraph">請注意下列關於這些 RHEL 版本的支援：</block>
   <block id="e646e16bee8b32e6ea29e30d01970a6c" category="list-text">限制</block>
   <block id="12cde487ed6dcd882cede6dc73a2a96f" category="inline-link">BlueXP 備份與還原的已知限制</block>
   <block id="7dffd01ec33485e74fcb637e0b8fe15a" category="list-text">當 Connector 安裝在 RHEL 8 或 9 主機上時、 BlueXP 備份與還原會限制單一檔案還原和勒索軟體掃描。如需詳細資訊、請參閱<block ref="a84971be17ca73ce2bed9722547a4b2a" category="inline-link-rx"></block></block>
@@ -4017,8 +4015,6 @@ Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" catego
   <block id="6fdeb52b60ec4b9c7e60078047c5ce34" category="section-title">持續支援 Ubuntu 22.04 LTS</block>
   <block id="a9aa1d1b3ffccec7f032ad3fee0e91b8" category="paragraph">Ubuntu 22.04 LTS 仍支援 Connector 、是 BlueXP 和市場部署的預設作業系統。</block>
   <block id="cadd936a18695c0f75406a35d18725ee" category="paragraph">此作業系統需要 Docker Engine 。不支援 Podman 。</block>
-  <block id="42d12ee6ea3719c1f52fd78afdba631f" category="section-title">支援作業系統的摘要</block>
-  <block id="4dd65f46069a455736b8e8c7d3fed71f" category="paragraph">以下是前幾節所述的作業系統支援摘要。</block>
   <block id="d20756c02f9913587a3e83e30f0e10d3" category="list-text">手動安裝</block>
   <block id="0809934ab73994b74ff0369462a31319" category="list-text">從 BlueXP 進行部署</block>
   <block id="12a87db5b86462e9bd05a612793965de" category="list-text">從 AWS Marketplace 進行部署</block>
@@ -4041,14 +4037,6 @@ Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" catego
   <block id="90a582acc370affa7fa401384859e582" category="list-text"><block ref="90a582acc370affa7fa401384859e582" category="inline-link-rx"></block></block>
   <block id="d85b01f001ee16ebd8eb1917c739d824" category="inline-link">探索StorageGRID 各種系統</block>
   <block id="49193f8c0c9f916e42ecd0ff6595ef39" category="list-text"><block ref="49193f8c0c9f916e42ecd0ff6595ef39" category="inline-link-rx"></block></block>
-  <block id="29eef78ab52bc074b0642baafaa44a77" category="inline-link">新增Amazon Kubernetes叢集</block>
-  <block id="2afa5bfababb7240c7ecb360518a2cea" category="list-text"><block ref="2afa5bfababb7240c7ecb360518a2cea" category="inline-link-rx"></block></block>
-  <block id="8cae45546ea6e7035e9b798f709fc911" category="inline-link">新增Azure Kubernetes叢集</block>
-  <block id="a8c7ee49512f707b31b6b959a438f7ad" category="list-text"><block ref="a8c7ee49512f707b31b6b959a438f7ad" category="inline-link-rx"></block></block>
-  <block id="2872769900c1ca485d1628b4eefde308" category="inline-link">新增Google Cloud Kubernetes叢集</block>
-  <block id="aa7a37aa9bcd687f934565cd13aefe20" category="list-text"><block ref="aa7a37aa9bcd687f934565cd13aefe20" category="inline-link-rx"></block></block>
-  <block id="24e61fea41861d29656588dd6c8ad263" category="inline-link">匯入 OpenShift 叢集</block>
-  <block id="4fc44e3aff437ef0c290689bf2e88325" category="list-text"><block ref="4fc44e3aff437ef0c290689bf2e88325" category="inline-link-rx"></block></block>
   <block id="7a0d21aaa1ef78351243ec252286827a" category="summary">BlueXP 支援搭配 Connector 和 Cloud Volumes ONTAP 的 IMDSv2 。在大多數情況下、會在新的 EC2 執行個體上自動設定 IMDSv2 。IMDSv1 在 2024 年 3 月之前啟用。如果您的安全性原則要求、您可能需要在 EC2 執行個體上手動設定 IMDSv2 。</block>
   <block id="7ff8d7153d4eb208dbc1a561fd9985a9" category="paragraph">BlueXP 支援 Amazon EC2 執行個體中繼資料服務版本 2 （ IMDSv2 ）搭配 Connector 和 Cloud Volumes ONTAP （包括 HA 部署的中介）。在大多數情況下、會在新的 EC2 執行個體上自動設定 IMDSv2 。IMDSv1 在 2024 年 3 月之前啟用。如果您的安全性原則要求、您可能需要在 EC2 執行個體上手動設定 IMDSv2 。</block>
   <block id="ed2660e5566ea9acdabcea9d70f95553" category="section-title">步驟 2 ：安裝 Podman 或 Docker Engine</block>
@@ -4210,4 +4198,10 @@ Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" catego
   <block id="0d04c8a15444402f3438c6a0e19e7890" category="section-title">現在需要電子郵件驗證</block>
   <block id="d2fc5d70b0b08157a615d70d77cb96c2" category="paragraph">新使用者現在必須先驗證其電子郵件地址、才能登入 BlueXP 。</block>
   <block id="096051910b67309e40aa0d0e1d279007" category="paragraph">3.9.42 版本適用於標準模式和受限模式。</block>
+  <block id="597f1630cd21d22c527f63002e42f059" category="list-text">8.6 至 8.10</block>
+  <block id="231007fefc880f5d22c9c9bd81be28b3" category="paragraph">BlueXP Connector 支援下列 Linux 作業系統。</block>
+  <block id="3cf44b158a4bb7a8c4ca007889bedc1a" category="paragraph">請注意下列關於 RHEL 8 和 9 支援的資訊：</block>
+  <block id="5bde46ec5f2d435355447c38b00c1d9c" category="section-title">2024 年 7 月 15 日</block>
+  <block id="415b27bc5d78b639dc8c74a6e8f93e19" category="section-title">支援 RHEL 8.10</block>
+  <block id="562442342bba071ba7f2e5fa834d4464" category="paragraph">BlueXP 現在支援在使用標準模式或受限模式的 Red Hat Enterprise Linux 8.10 主機上安裝 Connector 。</block>
 </blocks>
