@@ -2120,8 +2120,6 @@
   <block id="801fb8cfbc6e3ffd99fcb50ae87133bd" category="paragraph"><block ref="cd13f88aaa57bb10606ac0df26b2eb23" category="inline-link-macro-rx"></block>。</block>
   <block id="b5599f9f352b1fa4cb2153ba99bdb13c" category="list-text">具有附加原則的 IAM 角色、其中包含 Connector 所需的權限。</block>
   <block id="dfcbfa4ce7dbf520f2b737359dfbc591" category="list-text">為您的 IAM 使用者訂閱及取消訂閱 AWS Marketplace 的權限。</block>
-  <block id="7c9b14f6116e140202c359bff8bc86c2" category="inline-link">AWS Marketplace上的BlueXP頁面</block>
-  <block id="3a1757ca714434ada3988895ed0a0fab" category="list-text">前往<block ref="aa1bf3a3349706e28315b07c47668a91" category="inline-link-rx"></block></block>
   <block id="648fca9db3d7e8e554a59d3519d8b0f6" category="inline-image-macro">螢幕快照顯示 AWS Marketplace 上的「繼續訂閱並繼續設定」按鈕。</block>
   <block id="973e3a2a390bb57ce9d9e16ac0145023" category="paragraph"><block ref="973e3a2a390bb57ce9d9e16ac0145023" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7c36ac5a8d104c08bd1c9905b4e5d437" category="paragraph">這些步驟說明如何從EC2主控台啟動執行個體、因為主控台可讓您將IAM角色附加至連接器執行個體。這無法使用 * 從網站啟動 * 動作。</block>
@@ -4205,4 +4203,6 @@ Google Cloud 或中不支援<block ref="da2732e6e9a1be4ab82a1194533aac59" catego
   <block id="415b27bc5d78b639dc8c74a6e8f93e19" category="section-title">支援 RHEL 8.10</block>
   <block id="562442342bba071ba7f2e5fa834d4464" category="paragraph">BlueXP 現在支援在使用標準模式或受限模式的 Red Hat Enterprise Linux 8.10 主機上安裝 Connector 。</block>
   <block id="01a9b44907bcb1139b6868b9fe7073d0" category="paragraph">從 Connector 3.9.40 版本開始支援 RHEL 8.10 。</block>
+  <block id="95dfe7c62c6772d34f6255b3027f736d" category="inline-link">AWS Marketplace 上的 BlueXP Connector 清單</block>
+  <block id="0017322d56b9d155b01ac8380335c15b" category="list-text">前往<block ref="00e748787e3cd0352ad19292d67af7aa" category="inline-link-rx"></block></block>
 </blocks>
