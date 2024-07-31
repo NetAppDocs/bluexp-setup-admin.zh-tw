@@ -18,6 +18,73 @@ summary: 瞭解 BlueXP 管理功能的新功能： BlueXP 帳戶、連接器、�
 
 
 
+== 2024 年 7 月 31 日
+
+
+
+=== 私有模式版本（ 3.9.42 ）
+
+現在可從 NetApp 支援網站 下載新的私有模式版本。
+
+
+
+==== 支援 RHEL 8 和 9
+
+此版本支援在以私有模式使用 BlueXP 時、在 Red Hat Enterprise Linux 8 或 9 主機上安裝 Connector 。支援下列 RHEL 版本：
+
+* 8.6 至 8.10
+* 9.1 至 9.3
+
+
+這些作業系統需要使用 Podman 作為容器協調工具。
+
+您應該瞭解 Podman 的需求、已知限制、作業系統支援摘要、如果您有 RHEL 7 主機該怎麼做、如何開始使用等。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["瞭解 Connector 對 RHEL 8 和 9 的支援"]。
+
+
+
+==== 此版本中包含的版本
+
+此版本包含下列支援私有模式的 BlueXP 服務版本。
+
+[cols="2*"]
+|===
+| 服務 | 隨附版本 
+
+
+| 連接器 | 3.9.42.. 
+
+
+| 備份與還原 | 2024 年 7 月 18 日 
+
+
+| 分類 | 2024 年 7 月 1 日（版本 1.33 ） 
+
+
+| Cloud Volumes ONTAP 管理 | 2024 年 6 月 10 日 
+
+
+| 數位錢包 | 2023 年 7 月 30 日 
+
+
+| 內部部署 ONTAP 叢集管理 | 2023 年 7 月 30 日 
+
+
+| 複寫 | 2022年9月18日 
+|===
+若要深入瞭解這些 BlueXP 服務版本中包含的內容、請參閱每項 BlueXP 服務的版本資訊。
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["瞭解私有模式"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["瞭解如何以私有模式開始使用 BlueXP"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["瞭解如何在使用私有模式時升級 Connector"]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["瞭解 BlueXP 備份與還原的新功能"^]
+* https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["瞭解 BlueXP 分類的新功能"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["瞭解 BlueXP 中 Cloud Volumes ONTAP 管理的新功能"^]
+
+
+
+
 == 2024 年 7 月 15 日
 
 

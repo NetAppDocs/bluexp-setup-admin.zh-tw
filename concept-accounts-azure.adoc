@@ -113,5 +113,5 @@ link:task-adding-azure-accounts.html#subscribe["瞭解如何建立Azure訂閱的
 
 
 * link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["設定受限模式的權限"]
-* link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["設定私有模式的權限"]
+* link:task-prepare-private-mode.html#step-6-prepare-cloud-permissions["設定私有模式的權限"]
 

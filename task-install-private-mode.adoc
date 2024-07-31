@@ -25,15 +25,11 @@ summary: 以私有模式部署 Connector 、讓您可以使用 BlueXP 、而不�
 如果您想在中使用 BlueXP https://aws.amazon.com/federal/secret-cloud/["AWS Secret Cloud"^] 或 https://aws.amazon.com/federal/top-secret-cloud/["AWS Top Secret Cloud"^]然後，您應該按照單獨的說明在這些環境中開始使用。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-aws-c2s.html["瞭解如何在 AWS Secret Cloud 或 Top Secret Cloud 中開始使用 Cloud Volumes ONTAP"^]
 
 .開始之前
-需要root權限才能安裝Connector。
+* 需要root權限才能安裝Connector。
+* 根據您的作業系統而定、安裝 Connector 之前需要使用 Podman 或 Docker Engine 。
+
 
 .步驟
-. 確認 Docker 已啟用且正在執行。
-+
-[source, cli]
-----
-sudo systemctl enable docker && sudo systemctl start docker
-----
 . 從下載Connector軟體 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支援網站"^]
 +
 請務必下載無網際網路存取的私有網路離線安裝程式。
@@ -106,7 +102,7 @@ image:screenshot-onprem-darksite-details.png["系統詳細資料頁面的快照�
 
 如果您想要建立 Cloud Volumes ONTAP 工作環境、您必須提供 BlueXP 先前設定的雲端權限。
 
-link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["瞭解如何準備雲端權限"]。
+link:task-prepare-private-mode.html#step-6-prepare-cloud-permissions["瞭解如何準備雲端權限"]。
 
 [role="tabbed-block"]
 ====

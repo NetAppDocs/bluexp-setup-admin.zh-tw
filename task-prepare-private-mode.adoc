@@ -46,10 +46,23 @@ link:concept-modes.html["瞭解私有模式的運作方式"]。
 Connector 軟體必須在符合特定作業系統需求、 RAM 需求、連接埠需求等的主機上執行。
 
 專用主機:: 與其他應用程式共用的主機不支援 Connector 。主機必須是專屬主機。
-支援的作業系統:: Ubuntu 22.04 LTS
+支援的作業系統::
 +
 --
-此作業系統的英文版本支援 Connector 。
+* Ubuntu 22.04 LTS
+* Red Hat Enterprise Linux
++
+** 8.6 至 8.10
+** 9.1 至 9.3
++
+主機必須向 Red Hat Subscription Management 登錄。如果主機尚未登錄、則無法在 Connector 安裝期間存取儲存庫來更新所需的協力廠商軟體。
+
++
+這些作業系統的英文版本支援 Connector 。
+
+
+
+
 
 --
 Hypervisor:: 需要經過認證可執行支援作業系統的裸機或託管 Hypervisor 。
@@ -75,13 +88,25 @@ BlueXP 使用 `/opt` 安裝 `/opt/application/netapp` 目錄及其內容。
 BlueXP 需要此空間 `/var` 因為 Docker 或 Podman 是專為在此目錄中建立容器而設計。具體而言、他們會在中建立容器 `/var/lib/containers/storage` 目錄。外部掛載或 symlinks 無法用於此空間。
 
 --
-Docker引擎:: 安裝 Connector 之前、主機上需要 Docker Engine 。
+容器協調工具:: 根據您的作業系統而定、安裝 Connector 之前需要使用 Podman 或 Docker Engine 。
 +
 --
-* 支援的最低版本為 23.0.6 。
-* 支援的最大版本為 25.0.0 。
+* Red Hat Enterprise Linux 8 和 9 需要 Podman 4.6.1 版。
 +
-https://docs.docker.com/engine/install/["檢視安裝指示"^]
+Podman 必須符合下列先決條件：
+
++
+** 必須啟用並啟動 podman.socket 服務
+** 必須安裝 python3
+** 必須安裝 podman-compose 套件 1.0.6 版
+** 必須將 podman-compose 新增至 PATH 環境變數
+
+
+* Ubuntu 需要 Docker Engine 。
++
+** 支援的最低版本為 23.0.6 。
+** 支援的最大版本為 25.0.0 。
+
 
 
 
@@ -90,7 +115,121 @@ https://docs.docker.com/engine/install/["檢視安裝指示"^]
 
 
 
-== 步驟 4 ：為 Connector 準備網路
+== 步驟 4 ：安裝 Podman 或 Docker Engine
+
+您需要安裝 Podman 或 Docker Engine 來為 Connector 準備主機。
+
+根據您的作業系統而定、安裝 Connector 之前需要使用 Podman 或 Docker Engine 。
+
+* Red Hat Enterprise Linux 8 和 9 需要 Podman 。
+* Ubuntu 需要 Docker Engine 。
+
+
+.步驟
+[role="tabbed-block"]
+====
+.Podman
+--
+安裝 Podman 4.6.1 。
+
+.步驟
+. 如果主機上已安裝 podman-泊 塢視窗套件、請將其移除。
++
+[source, cli]
+----
+dnf remove podman-docker
+rm /var/run/docker.sock
+----
+. 安裝 Podman 。
++
+Podman 可從官方 Red Hat Enterprise Linux 儲存庫取得。
+
++
+對於 Red Hat Enterprise Linux 9 ：
+
++
+[source, cli]
+----
+sudo dnf install podman-2:4.6.1
+----
++
+對於 Red Hat Enterprise Linux 8 ：
+
++
+[source, cli]
+----
+sudo dnf install podman-3:4.6.1
+----
+. 啟用並啟動 podman.socket 服務。
++
+[source, cli]
+----
+sudo systemctl enable --now podman.socket
+----
+. 安裝 python3 。
++
+[source, cli]
+----
+sudo dnf install python3
+----
+. 如果您的系統上尚未提供 EPEL 儲存庫套件、請加以安裝。
++
+這是必要步驟、因為 podman-compose 可從 Enterprise Linux （ EPEL ）儲存庫取得。
+
++
+對於 Red Hat Enterprise Linux 9 ：
+
++
+[source, cli]
+----
+sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
+----
++
+對於 Red Hat Enterprise Linux 8 ：
+
++
+[source, cli]
+----
+sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+----
+. 安裝 podman-compose 套件 1.0.6 。
++
+[source, cli]
+----
+sudo dnf install podman-compose-1.0.6
+----
++
+
+NOTE: 使用 `dnf install` 命令符合將 podman-compose 新增至 PATH 環境變數的需求。安裝命令會將 podman-compose 新增至已包含在中的 /usr/bin `secure_path` 主機上的選項。
+
+
+
+--
+.Docker引擎
+--
+安裝 23.0.6 到 25.0.0 之間的 Docker Engine 版本。
+
+.步驟
+. 安裝 Docker Engine 。
++
+https://docs.docker.com/engine/install/["檢視 Docker 的安裝指示"^]
+
++
+請務必依照步驟安裝 Docker Engine 的特定版本。安裝最新版本將會安裝 BlueXP 不支援的 Docker 版本。
+
+. 確認 Docker 已啟用且正在執行。
++
+[source, cli]
+----
+sudo systemctl enable docker && sudo systemctl start docker
+----
+
+
+--
+====
+
+
+== 步驟 5 ：準備網路
 
 設定您的網路、讓 Connector 能夠管理公有雲環境中的資源和程序。除了連接器的虛擬網路和子網路之外、您還需要確保符合下列需求。
 
@@ -202,7 +341,7 @@ HTTP （ 80 ）和 HTTPS （ 443 ）可讓您存取 BlueXP 主控台。只有在
 
 
 
-== 步驟 5 ：準備雲端權限
+== 步驟 6 ：準備雲端權限
 
 如果 Connector 安裝在雲端、而您打算建立 Cloud Volumes ONTAP 系統、則 BlueXP 需要雲端供應商的權限。您需要在雲端供應商中設定權限、然後在安裝之後將這些權限與 Connector 執行個體建立關聯。
 
@@ -515,7 +654,7 @@ https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_
 ====
 
 
-== 步驟 6 ：啟用 Google Cloud API
+== 步驟 7 ：啟用 Google Cloud API
 
 在 Google Cloud 中部署 Cloud Volumes ONTAP 需要幾個 API 。
 

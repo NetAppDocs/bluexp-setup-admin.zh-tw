@@ -67,7 +67,19 @@ BlueXP Connector 支援下列 Linux 作業系統。
 --
 .私有模式
 --
-手動安裝:: Ubuntu 22.04 LTS
+手動安裝::
++
+--
+* Ubuntu 22.04 LTS
+* Red Hat Enterprise Linux
++
+** 8.6 至 8.10
+** 9.1 至 9.3
+
+
+
+
+--
 
 
 --
@@ -87,12 +99,7 @@ BlueXP Connector 支援下列 Linux 作業系統。
 
 --
 容器協調工具:: 在 RHEL 8 或 9 主機上安裝 Connector 時、必須使用 Podman 作為容器協調工具。RHEL 8 和 9 不支援 Docker Engine 。
-+
---
-link:task-install-connector-on-prem.html#step-1-review-host-requirements["檢視 Podman 的要求"]。
-
---
-部署模式:: 在標準模式或受限模式下使用 BlueXP 時、支援 RHEL 8 和 9 。
+部署模式:: 在標準模式、受限模式和私有模式下使用 BlueXP 時、支援 RHEL 8 和 9 。
 僅限全新手動安裝:: 在內部部署或雲端上執行的主機上手動安裝 Connector 時、 _new_ Connector 安裝可支援 RHEL 8 和 9 。
 RHEL 升級:: 如果現有的 Connector 是在 RHEL 7 主機上執行、我們不支援將 RHEL 7 作業系統升級為 RHEL 8 或 9 。 <<RHEL 7 或 CentOS 7 上的現有連接器,深入瞭解 RHEL 7 或 CentOS 7 上的現有 Connector>>。
 
@@ -135,13 +142,28 @@ Ubuntu 22.04 LTS 仍支援 Connector 、是 BlueXP 和市場部署的預設作�
 
 如需主機需求、 Podcast 需求、以及安裝 Podman 和 Connector 的步驟等詳細資訊、請參閱下列頁面：
 
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["在內部部署安裝並設定 Connector"] （標準模式）
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-manual.html["在 AWS 中手動安裝 Connector"] （標準模式）
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-azure-manual.html["在 Azure 中手動安裝 Connector"] （標準模式）
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-google-manual.html["在 Google Cloud 中手動安裝 Connector"] （標準模式）
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-restricted-mode.html["準備以受限模式進行部署"]
+[role="tabbed-block"]
+====
+.標準模式
+--
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["在內部部署安裝並設定 Connector"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-manual.html["在 AWS 中手動安裝 Connector"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-azure-manual.html["在 Azure 中手動安裝 Connector"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-google-manual.html["在 Google Cloud 中手動安裝 Connector"]
 
 
+--
+.受限模式
+--
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-restricted-mode.html["準備以受限模式進行部署"]
+
+--
+.私有模式
+--
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-private-mode.html["準備以私有模式進行部署"]
+
+--
+====
 
 
 === 如何重新探索您的工作環境
