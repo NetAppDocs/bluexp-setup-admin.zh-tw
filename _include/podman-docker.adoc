@@ -13,7 +13,7 @@
 ====
 .Podman
 --
-安裝 Podman 4.6.1 。
+安裝支援版本的 Podman 。<<podman-versions,檢視 BlueXP  支援的 Podman 版本>>。
 
 .步驟
 . 如果主機上已安裝 podman-泊 塢視窗套件、請將其移除。
@@ -33,16 +33,22 @@ Podman 可從官方 Red Hat Enterprise Linux 儲存庫取得。
 +
 [source, cli]
 ----
-sudo dnf install podman-2:4.6.1
+sudo dnf install podman-2:<version>
 ----
++
+其中 <version> 是您正在安裝的 Podman 支援版本。<<podman-versions,檢視 BlueXP  支援的 Podman 版本>>。
+
 +
 對於 Red Hat Enterprise Linux 8 ：
 
 +
 [source, cli]
 ----
-sudo dnf install podman-3:4.6.1
+sudo dnf install podman-3:<version>
 ----
++
+其中 <version> 是您正在安裝的 Podman 支援版本。<<podman-versions,檢視 BlueXP  支援的 Podman 版本>>。
+
 . 啟用並啟動 podman.socket 服務。
 +
 [source, cli]

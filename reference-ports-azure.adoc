@@ -39,9 +39,6 @@ summary: 連接器的Azure安全性群組需要傳入和傳出規則。當您從
 
 
 | TCP | 3128 | 提供可存取網際網路的功能、將資訊傳送給NetApp支援部門。Cloud Volumes ONTAP AutoSupport您必須在部署後手動開啟此連接埠。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-verify-autosupport.html["瞭解 Connector 如何用作 AutoSupport 訊息的 Proxy"^] 
-
-
-| TCP | 9060、9061 | 提供在政府地區啟用和使用 BlueXP 分類及 BlueXP 備份與還原的能力。 
 |===
 
 

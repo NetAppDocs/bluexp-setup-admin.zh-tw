@@ -45,22 +45,6 @@ summary: 當BlueXP在AWS中啟動Connector執行個體時、它會將原則附�
 ====
 對於標準區域、權限分佈在兩個原則之間。由於AWS中受管理原則的字元大小上限、因此需要兩個原則。
 
-第一個原則提供下列服務的權限：
-
-* Amazon S3 儲存區探索
-* 備份與還原
-* 分類
-* Cloud Volumes ONTAP
-* FSX ONTAP
-* 分層
-
-
-第二個原則提供下列服務的權限：
-
-* 邊緣快取
-* Kubernetes
-
-
 [role="tabbed-block"]
 =====
 .原則1
@@ -1260,29 +1244,6 @@ Connector會提出下列API要求、要求在Cloud Volumes ONTAP AWS中部署及
 
 | 檢查可用性區域是否為 AWS 本機區域、並驗證所有部署參數是否相容 | EC2 ：去除可用性區域 | 是的 | 否 | 是的 
 |===
-
-
-=== 邊緣快取
-
-Connector 會在部署期間提出下列 API 要求、以部署 BlueXP 邊緣快取執行個體：
-
-* 雲端：無標準堆疊
-* cloudwatch：GetMetricStatistics
-* 雲端：清單堆疊
-
-
-
-
-=== Kubernetes
-
-Connector會提出下列API要求、以探索及管理Amazon EKS叢集：
-
-* EC2：取消註冊
-* EKS：清單叢集
-* EKS：取消叢集
-* IAM：GetInstanceProfile
-
-
 
 
 == 變更記錄

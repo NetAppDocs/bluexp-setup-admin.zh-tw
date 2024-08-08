@@ -66,11 +66,11 @@ Connector 軟體必須在符合特定作業系統需求、 RAM 需求、連接�
 
 --
 Hypervisor:: 需要經過認證可執行支援作業系統的裸機或託管 Hypervisor 。
-CPU:: 4 個核心或 4 個 vCPU
-RAM:: 14 GB
-AWS EC2 執行個體類型:: 符合上述 CPU 和 RAM 需求的執行個體類型。建議使用T3.xLarge。
-Azure VM 大小:: 符合上述 CPU 和 RAM 需求的執行個體類型。我們建議使用 DS3 v2 。
-Google Cloud 機器類型:: 符合上述 CPU 和 RAM 需求的執行個體類型。我們建議使用 n2 標準 4 。
+CPU:: 8 個核心或 8 個 vCPU
+RAM:: 32GB
+AWS EC2 執行個體類型:: 符合上述 CPU 和 RAM 需求的執行個體類型。我們建議使用 t3.2 x 大型。
+Azure VM 大小:: 符合上述 CPU 和 RAM 需求的執行個體類型。我們建議您使用 Standard_D8s_v3 。
+Google Cloud 機器類型:: 符合上述 CPU 和 RAM 需求的執行個體類型。建議使用n2-Standard-8。
 +
 --
 Google Cloud支援Connector的VM執行個體、其作業系統可支援此連接器 https://cloud.google.com/compute/shielded-vm/docs/shielded-vm["防護VM功能"^]
@@ -88,10 +88,39 @@ BlueXP 使用 `/opt` 安裝 `/opt/application/netapp` 目錄及其內容。
 BlueXP 需要此空間 `/var` 因為 Docker 或 Podman 是專為在此目錄中建立容器而設計。具體而言、他們會在中建立容器 `/var/lib/containers/storage` 目錄。外部掛載或 symlinks 無法用於此空間。
 
 --
+
+
+[[podman-versions]]
 容器協調工具:: 根據您的作業系統而定、安裝 Connector 之前需要使用 Podman 或 Docker Engine 。
 +
 --
-* Red Hat Enterprise Linux 8 和 9 需要 Podman 4.6.1 版。
+* Red Hat Enterprise Linux 8 和 9 需要 Podman 。
++
+[cols="50a,50a"]
+|===
+| RHEL 版本 | 支援的 Podman 版本 
+
+
+ a| 
+RHEL 8.6 至 8.9
+ a| 
+Podman 4.6.1
+
+
+
+ a| 
+RHEL 8.10
+ a| 
+Podman 4.6.1 和 4.9.4
+
+
+
+ a| 
+RHEL 9.1 至 9.3
+ a| 
+Podman 4.6.1
+
+|===
 +
 Podman 必須符合下列先決條件：
 
@@ -130,7 +159,7 @@ Podman 必須符合下列先決條件：
 ====
 .Podman
 --
-安裝 Podman 4.6.1 。
+安裝支援版本的 Podman 。<<podman-versions,檢視 BlueXP  支援的 Podman 版本>>。
 
 .步驟
 . 如果主機上已安裝 podman-泊 塢視窗套件、請將其移除。
@@ -150,16 +179,22 @@ Podman 可從官方 Red Hat Enterprise Linux 儲存庫取得。
 +
 [source, cli]
 ----
-sudo dnf install podman-2:4.6.1
+sudo dnf install podman-2:<version>
 ----
++
+其中 <version> 是您正在安裝的 Podman 支援版本。<<podman-versions,檢視 BlueXP  支援的 Podman 版本>>。
+
 +
 對於 Red Hat Enterprise Linux 8 ：
 
 +
 [source, cli]
 ----
-sudo dnf install podman-3:4.6.1
+sudo dnf install podman-3:<version>
 ----
++
+其中 <version> 是您正在安裝的 Podman 支援版本。<<podman-versions,檢視 BlueXP  支援的 Podman 版本>>。
+
 . 啟用並啟動 podman.socket 服務。
 +
 [source, cli]

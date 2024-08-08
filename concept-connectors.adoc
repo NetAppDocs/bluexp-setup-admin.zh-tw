@@ -68,10 +68,7 @@ https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["�
 * 災難恢復
 * E系列系統
 * 經濟效益 ^1^
-* 邊緣快取
 * Google Cloud Storage 貯體
-* Kubernetes叢集
-* 移轉報告
 * 內部部署ONTAP 的不支援叢集整合至BlueXP資料服務
 * 營運恢復能力 ^1^
 * 勒索軟體保護

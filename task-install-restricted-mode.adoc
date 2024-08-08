@@ -60,7 +60,7 @@ image:screenshot-subscribe-aws.png["螢幕快照顯示 AWS Marketplace 上的「
 +
 ** *名稱和標記*：輸入執行個體的名稱和標記。
 ** *應用程式與作業系統映像*：跳過本節。已選取連接器AMI。
-** * 執行個體類型 * ：根據區域可用度、選擇符合 RAM 和 CPU 需求的執行個體類型（建議使用 T3.x 大型）。
+** * 執行個體類型 * ：根據區域可用度、選擇符合 RAM 和 CPU 需求的執行個體類型（建議使用 t3.2xlge ）。
 ** *金鑰配對（登入）*：選取您要用來安全連線至執行個體的金鑰配對。
 ** *網路設定*：視需要編輯網路設定：
 +
@@ -123,7 +123,7 @@ image:screenshot-gov-cloud-mktp.png["在AWS Marketplace中搜尋之後顯示Blue
 
 . 依照提示設定及部署執行個體：
 +
-** *選擇執行個體類型*：視區域可用度而定、請選擇其中一種支援的執行個體類型（建議使用T3.xlge）。
+** * 選擇執行個體類型 * ：根據區域可用度、選擇其中一種支援的執行個體類型（建議使用 t3.2xlarge ）。
 +
 link:task-prepare-restricted-mode.html["檢閱執行個體需求"]。
 
@@ -174,7 +174,7 @@ link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["瞭解�
 設定 VM 時請注意下列事項：
 
 +
-** * VM 大小 * ：選擇符合 CPU 和 RAM 需求的 VM 大小。我們建議使用 DS3 v2 。
+** * VM 大小 * ：選擇符合 CPU 和 RAM 需求的 VM 大小。我們建議您使用 Standard_D8s_v3 。
 ** * 磁碟 * ：連接器可在 HDD 或 SSD 磁碟上以最佳方式執行。
 ** * 公有 IP* ：如果您想將公有 IP 位址與 Connector VM 搭配使用、則 IP 位址必須使用基本 SKU 、以確保 BlueXP 使用此公有 IP 位址。
 +

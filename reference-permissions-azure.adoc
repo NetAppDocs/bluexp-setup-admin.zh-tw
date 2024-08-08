@@ -166,7 +166,10 @@ summary: 當BlueXP在Azure中啟動Connector VM時、它會將自訂角色附加
                     "Microsoft.Synapse/workspaces/privateEndpointConnectionsApproval/action",
                     "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action",
                     "Microsoft.Compute/images/write",
-                    "Microsoft.Network/loadBalancers/frontendIPConfigurations/read"
+                    "Microsoft.Network/loadBalancers/frontendIPConfigurations/read",
+                    "Microsoft.Compute/virtualMachineScaleSets/write",
+                    "Microsoft.Compute/virtualMachineScaleSets/read",
+                    "Microsoft.Compute/virtualMachineScaleSets/delete"
     ],
     "NotActions": [],
     "AssignableScopes": [],
@@ -698,38 +701,16 @@ Connector會提出下列API要求、要求在Cloud Volumes ONTAP Azure中部署�
 
 
 | 在建立期間加密儲存帳戶 | Microsoft.ManagedIdentity /使用者身分識別/指派/行動 | 是的 | 是的 | 否 
+
+
+.3+| 在彈性協調模式中使用虛擬機器擴充集、以指定 Cloud Volumes ONTAP 的特定區域 | Microsoft 。 運算 / 虛擬機器擴充性集 / 寫入 | 是的 | 否 | 否 
+
+
+| Microsoft 。 運算 / 虛擬機器擴充集 / 讀取 | 是的 | 否 | 否 
+
+
+| Microsoft 。 運算 / 虛擬機器擴充性集 / 刪除 | 否 | 否 | 是的 
 |===
-
-
-=== 邊緣快取
-
-當您使用 BlueXP 邊緣快取時、 Connector 會發出下列 API 要求：
-
-* Microsoft.Insights /指標/讀取
-* Microsoft.Compute/virtualMachines/extensions/write
-* Microsoft.Compute/virtualMachines/extensions/read
-* Microsoft.Compute/virtualMachines/extensions/delete
-* Microsoft.Compute/virtualMachines/delete
-* Microsoft.Network/networkInterfaces/delete
-* Microsoft.Network/networkSecurityGroups/delete
-* Microsoft資源/部署/刪除
-
-
-
-
-=== Kubernetes
-
-Connector會提出下列API要求、以探索及管理Azure Kubernetes Service（KS）中執行的叢集：
-
-* Microsoft.Compute/virtualMachines/read
-* Microsoft.Resources /訂閱/位置/讀取
-* Microsoft.Resources /訂閱/作業結果/讀取
-* Microsoft.Resources /訂閱/資源群組/讀取
-* Microsoft.Resources /訂閱/資源群組/資源/讀取
-* Microsoft.ContainerService/管理叢集/讀取
-* Microsoft.ContainerService/managedClusters/listClusterUserCredentials/action
-
-
 
 
 === 分層
@@ -754,6 +735,17 @@ Connector會針對日常作業提出下列API要求。
 == 變更記錄
 
 新增和移除權限時、我們會在下方各節中加以註記。
+
+
+
+=== 2024 年 8 月 7 日
+
+下列權限已新增至 JSON 原則、因為 Cloud Volumes ONTAP 支援虛擬機器磅秤集是必要的：
+
+* Microsoft 。 運算 / 虛擬機器擴充性集 / 寫入
+* Microsoft 。 運算 / 虛擬機器擴充集 / 讀取
+* Microsoft 。 運算 / 虛擬機器擴充性集 / 刪除
+
 
 
 

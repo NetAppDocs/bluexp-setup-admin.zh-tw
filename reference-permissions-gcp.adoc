@@ -296,10 +296,6 @@ includedPermissions:
 - compute.instances.addAccessConfig | 以啟用 BlueXP 分類。 
 
 
-| - container 。叢集。 get
-- container 。叢集清單 | 探索在Google Kubernetes Engine中執行的Kubernetes叢集。 
-
-
 | - compute.instanceGroups.get
 - compute 、 addresses.get
 - compute.instances.updateNetworkInterface | 在Cloud Volumes ONTAP 以各種方式建立及管理儲存VM的整組。 

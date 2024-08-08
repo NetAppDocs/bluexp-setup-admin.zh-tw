@@ -155,11 +155,7 @@ API 端點:: API 呼叫是針對 Connector 虛擬機器進行的。
 | Azure NetApp Files | 完全支援 
 
 
-| 備份與還原 | 受限於政府區域和商業區域、模式受限。受限模式的主權區域不支援。
-
-在受限模式下、 BlueXP 備份與還原僅支援 ONTAP Volume 資料的備份與還原。 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-restricted-mode["檢視 ONTAP 資料支援的備份目的地清單"^]
-
-不支援應用程式資料、虛擬機器資料和 Kubernetes 資料的備份與還原。 
+| 備份與還原 | 受限於政府區域和商業區域、模式受限。受限模式的主權區域不支援。在受限模式下、 BlueXP  備份與還原僅支援備份與還原 ONTAP Volume 資料。 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-restricted-mode["檢視 ONTAP 資料支援的備份目的地清單"^]不支援應用程式資料和虛擬機器資料的備份與還原。 
 
 
 | 分類  a| 
@@ -247,13 +243,7 @@ API 端點:: API 呼叫是針對 Connector 虛擬機器進行的。
 | 支援的服務 | 附註 
 
 
-| 備份與還原 | 支援於 AWS 和 Azure 商業地區。
-
-Google Cloud 或中不支援 https://aws.amazon.com/federal/secret-cloud/["AWS Secret Cloud"^]、 https://aws.amazon.com/federal/top-secret-cloud/["AWS Top Secret Cloud"^]或 https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6."^]
-
-在私有模式中、 BlueXP 備份與還原僅支援 ONTAP Volume 資料的備份與還原。 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-private-mode["檢視 ONTAP 資料支援的備份目的地清單"^]
-
-不支援應用程式資料、虛擬機器資料和 Kubernetes 資料的備份與還原。 
+| 備份與還原 | 支援於 AWS 和 Azure 商業地區。在 Google Cloud 、、或私有模式中不支援 https://aws.amazon.com/federal/secret-cloud/["AWS Secret Cloud"^]BlueXP  備份與還原、 https://aws.amazon.com/federal/top-secret-cloud/["AWS Top Secret Cloud"^] https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6."^] 僅支援備份與還原 ONTAP Volume 資料。 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-private-mode["檢視 ONTAP 資料支援的備份目的地清單"^]不支援應用程式資料和虛擬機器資料的備份與還原。 
 
 
 | Cloud Volumes ONTAP | 由於無法存取網際網路、因此無法使用下列功能：自動軟體升級和 AutoSupport 。 
@@ -278,7 +268,7 @@ Google Cloud 或中不支援 https://aws.amazon.com/federal/secret-cloud/["AWS S
 | 備份與還原  a| 
 在私有模式中、 BlueXP 備份與還原僅支援 ONTAP Volume 資料的備份與還原。 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-private-mode["檢視 ONTAP Volume 資料支援的備份目的地清單"^]
 
-不支援應用程式資料、虛擬機器資料和 Kubernetes 資料的備份與還原。
+不支援應用程式資料和虛擬機器資料的備份與還原。
 
 
 
@@ -336,7 +326,7 @@ NOTE: 如果您想在中使用 BlueXP https://aws.amazon.com/federal/secret-clou
 | 產品領域 | BlueXP 服務或功能 | 受限模式 | 私有模式 
 
 
-.11+| * 工作環境 *
+.10+| * 工作環境 *
 
 此部分表列出了 BlueXP 畫布對工作環境管理的支援。它並不表示 BlueXP 備份與還原支援的備份目的地。 | Amazon FSX for ONTAP Sf | 是的 | 否 
 
@@ -359,9 +349,6 @@ NOTE: 如果您想在中使用 BlueXP https://aws.amazon.com/federal/secret-clou
 | Google Cloud Storage | 否 | 否 
 
 
-| Kubernetes叢集 | 否 | 否 
-
-
 | 內部 ONTAP 部署的叢集 | 是的 | 是的 
 
 
@@ -371,7 +358,7 @@ NOTE: 如果您想在中使用 BlueXP https://aws.amazon.com/federal/secret-clou
 | StorageGRID | 否 | 否 
 
 
-.16+| *服務* | 備份與還原 | 是的
+.14+| *服務* | 備份與還原 | 是的
 
 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-restricted-mode["檢視 ONTAP Volume 資料支援的備份目的地清單"^] | 是的
 
@@ -397,12 +384,6 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.
 
 
 | 經濟效益 | 否 | 否 
-
-
-| 邊緣快取 | 否 | 否 
-
-
-| 移轉報告 | 否 | 否 
 
 
 | 營運恢復能力 | 否 | 否 

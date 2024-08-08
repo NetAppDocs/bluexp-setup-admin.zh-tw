@@ -147,9 +147,9 @@ Proxy伺服器:: 如果您的組織需要為所有傳出的網際網路流量部
 
 建立 Connector 時、您需要選擇符合下列需求的虛擬機器類型。
 
-CPU:: 4 個核心或 4 個 vCPU
-RAM:: 14 GB
-Azure VM 大小:: 符合上述 CPU 和 RAM 需求的執行個體類型。我們建議使用 DS3 v2 。
+CPU:: 8 個核心或 8 個 vCPU
+RAM:: 32GB
+Azure VM 大小:: 符合上述 CPU 和 RAM 需求的執行個體類型。我們建議您使用 Standard_D8s_v3 。
 
 
 
@@ -409,7 +409,7 @@ https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-onco
 設定 VM 時請注意下列事項：
 
 +
-** * VM 大小 * ：選擇符合 CPU 和 RAM 需求的 VM 大小。我們建議使用 DS3 v2 。
+** * VM 大小 * ：選擇符合 CPU 和 RAM 需求的 VM 大小。我們建議您使用 Standard_D8s_v3 。
 ** * 磁碟 * ：連接器可在 HDD 或 SSD 磁碟上以最佳方式執行。
 ** * 網路安全群組 * ： Connector 需要使用 SSH 、 HTTP 和 HTTPS 的傳入連線。
 +

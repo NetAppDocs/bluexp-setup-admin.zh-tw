@@ -59,7 +59,7 @@ link:reference-user-roles.html["深入瞭解這些角色"]。
 
 * 一套系統Cloud Volumes ONTAP
 * 內部部署ONTAP 的叢集
-* Kubernetes叢集
+* StorageGRID 系統
 
 
 link:task-setting-up-netapp-accounts.html["瞭解如何新增工作區"]。

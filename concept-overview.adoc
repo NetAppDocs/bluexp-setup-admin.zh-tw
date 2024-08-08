@@ -56,7 +56,6 @@ BlueXP 平台提供四大資料管理支柱：儲存、行動力、保護、分�
 --
 * https://bluexp.netapp.com/cloud-backup["備份與還原"^]
 * https://bluexp.netapp.com/replication["複寫"^]
-* https://bluexp.netapp.com/solutions/kubernetes["Kubernetes 工作負載的資料保護"^]
 
 
 --

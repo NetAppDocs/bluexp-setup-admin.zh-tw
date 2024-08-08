@@ -443,9 +443,9 @@ link:reference-ports-gcp.html["Google Cloud中的防火牆規則"]
 * 符合網路需求的 VPC 和子網路。
 * 瞭解 VM 執行個體需求。
 +
-** * CPU* ： 4 核心或 4 個 vCPU
-** * RAM* ： 14 GB
-** * 機器類型 * ：建議使用 n2-Standard-4 。
+** * CPU* ： 8 核心或 8 個 vCPU
+** * RAM* ： 32 GB
+** * 機器類型 * ：建議使用 n2-Standard-8 。
 +
 在支援 Shieled VM 功能的 VM 執行個體上、 Google Cloud 支援 Connector 。
 
@@ -488,7 +488,7 @@ $ gcloud components update
 [source, bash]
 ----
 gcloud compute instances create <instance-name>
-  --machine-type=n2-standard-4
+  --machine-type=n2-standard-8
   --image-project=netapp-cloudmanager
   --image-family=cloudmanager
   --scopes=cloud-platform
