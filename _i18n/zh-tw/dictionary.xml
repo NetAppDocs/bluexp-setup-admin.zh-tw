@@ -4093,130 +4093,123 @@ Azure 政府地區不需要此端點。</block>
   <block id="601e92646453def880eec16da18e4390" category="paragraph">在 Red Hat Enterprise Linux 8.10 主機上安裝 Connector 時、現在支援 Podman 4.9.4 版。</block>
   <block id="18ecc589a4f329e3ba95ac4e285b4504" category="section-title">身分識別聯盟的使用者驗證</block>
   <block id="8b71299c32997f38948f7e56b11d69b8" category="paragraph">如果您使用與 BlueXP  的身分識別聯盟、首次登入 BlueXP  的每位使用者都必須填寫快速表單、以驗證其身分。</block>
-  <block id="3b06db209bc32adaf1bbbbba48daabbb" category="paragraph">= 2024 年 7 月 31 日</block>
-  <block id="652e58d9ab93d24e57da886dc3c3c2fe" category="paragraph">=== 私有模式版本（ 3.9.42 ）</block>
-  <block id="d275aa41d3e2c248408e96e8590e61dd" category="paragraph">=== RHEL 8 與 9 支援</block>
-  <block id="42c6171e03e835114e50ca787046ed6a" category="paragraph">=== 本版本中包含的版本</block>
-  <block id="db601bd67ae9ac13ebd2a95fb86b681f" category="paragraph">= 2024 年 7 月 15 日</block>
-  <block id="ea2a64501a8cb55da9c712a433620da3" category="paragraph">=== RHEL 8.10 支援</block>
-  <block id="5304d2e5eb644477806cad8aa20c079a" category="paragraph">= 2024 年 7 月 8 日</block>
-  <block id="c4cbddf8bbc0569856078c6750f942c3" category="paragraph">=== 連接器 3.9.42</block>
-  <block id="dd3c6cafb9970e26aa699884769c61a6" category="paragraph">=== Docker Engine 更新要求</block>
-  <block id="bf9a73b61ef24e03d526d20d0e5c5d96" category="paragraph">=== 現在需要電子郵件驗證</block>
-  <block id="71e4188a388cf9d2dc303867f1e0d933" category="paragraph">= 2024 年 6 月 12 日</block>
-  <block id="f2e4086aed2119715d2909a0216e1f93" category="paragraph">=== Connector 3.9.41</block>
-  <block id="89144b4737404fc1490312c8c4ff65dc" category="paragraph">= 2024 年 6 月 4 日</block>
-  <block id="e224c82e63c1106b3559739bebfd2324" category="paragraph">=== 私有模式版本（ 3.9.40 ）</block>
-  <block id="4c925eba87cdf49efa98c4a4eb1b39ac" category="paragraph">= 2024 年 5 月 17 日</block>
-  <block id="66ee71b7aa3ab0656b1959820159a499" category="paragraph">=== 連接器 3.9.40</block>
-  <block id="e7177011901fc861388b205ff5d78183" category="paragraph">=== 終止對 RHEL 7 和 CentOS 7 的支援</block>
-  <block id="d9bf1c314be4a7a0332846e8b639eb07" category="paragraph">=== AWS 權限更新</block>
-  <block id="49145aaa899f4208efd1bd4862cbc717" category="paragraph">= 2024 年 4 月 22 日</block>
-  <block id="185745d2a6ae82cd21b5865f4a215f41" category="paragraph">=== Connector 3.9.39</block>
-  <block id="198e6bafe0326548d37dd955f1052351" category="paragraph">=== AWS 建立 Connector 的權限</block>
-  <block id="b369a71413a2d45bb546511758ca166f" category="paragraph">= 2024 年 4 月 11 日</block>
-  <block id="0887fd6ff9e912cef46f60f246161af1" category="paragraph">=== Docker Engine 更新</block>
-  <block id="0056ef372d846dfb115d92b5e12ef1c8" category="paragraph">= 2024 年 3 月 26 日</block>
-  <block id="7dba9fc9b6bbaa9d597ef24c74f9db22" category="paragraph">=== 私有模式版本（ 3.9.38 ）</block>
-  <block id="dd661beeeae00b750e119b53b648a4e2" category="paragraph">= 2024 年 3 月 8 日</block>
-  <block id="c0ad5c1fe3ad2869ab13a3d8aaef3c2c" category="paragraph">=== Connector 3.9.38</block>
-  <block id="45c27e45620da6ab28a1d97bbf050319" category="paragraph">=== 支援 IMDSv2</block>
-  <block id="2c095b0c521964bd2a03207f8042f8d6" category="paragraph">=== 代理伺服器設定與 Cloud Volumes ONTAP 設定</block>
-  <block id="377a1ac8f7f92bf339ff46295c4109c9" category="paragraph">= 2024 年 2 月 15 日</block>
-  <block id="0e00e89bb53fceee03b0057fca2279fe" category="paragraph">=== Connector 3.9.37</block>
-  <block id="bf52ba94a181fcc45fd4b68252b8e3eb" category="paragraph">=== 編輯名稱</block>
-  <block id="eaf368a6664fdb727ed36e3ad72573b8" category="paragraph">= 2024 年 1 月 11 日</block>
-  <block id="a29ae659d6eb8a8c2545f0dab3bbd09e" category="paragraph">=== Connector 3.9.36</block>
-  <block id="a43941bb00355570a4a3029f2e674e9a" category="paragraph">= 2023 年 12 月 5 日</block>
-  <block id="6ea18388ba7507dc2fc23db52eda62e0" category="paragraph">=== 私有模式版本（ 3.9.35 ）</block>
-  <block id="a758b4c1f74383995d4c2e33694dcbc2" category="paragraph">= 2023 年 11 月 8 日</block>
-  <block id="7eddb9a40b53d1fb8ac8da4abb1451f0" category="paragraph">=== 連接器 3.9.35</block>
-  <block id="bb7c9c40b7024c59ff43e34ddce76549" category="paragraph">= 2023 年 10 月 6 日</block>
-  <block id="a0c0302c13d3a2d5ffb8859f716233d5" category="paragraph">=== 連接器 3.9.34</block>
-  <block id="855e89b8da5c0b4ce9f6a2e112383cac" category="paragraph">= 2023 年 9 月 10 日</block>
-  <block id="df5ecc723ae3b6518086fca3aa1366bc" category="paragraph">=== Connector 3.9.33</block>
-  <block id="4284a9ec4f65cfa9d42f9c354b1b81e8" category="paragraph">= 2023 年 7 月 30 日</block>
-  <block id="9382b1d0f36bcf98a686b50dc83232df" category="paragraph">=== Connector 3.9.32</block>
-  <block id="87f126342598fc6c6a8d4dda812fcb35" category="paragraph">= 2023 年 7 月 2 日</block>
-  <block id="ce4d94660ef589c1b99d564b322965a5" category="paragraph">=== Connector 3.9.31</block>
-  <block id="82081f1a0a7e8b788d5dc845018429e8" category="paragraph">= 2023 年 6 月 4 日</block>
-  <block id="e8db98f27b9dde59a98ff7b2883bf710" category="paragraph">=== 連接器 3.9.30</block>
-  <block id="ea3c27e74e23fbbbe486d22957cdcbfa" category="paragraph">= 2023 年 5 月 7 日</block>
-  <block id="8b37535c50b26884cfb928b06c8ff5fc" category="paragraph">=== Connector 3.9.29</block>
-  <block id="4d5d317330f4bc873847c0cfedaa5891" category="paragraph">= 2023 年 4 月 4 日</block>
-  <block id="8f7f3ec12d5b9d30ebbb5afae5345055" category="paragraph">=== 部署模式</block>
-  <block id="999a77e2da5001492a83aac85133723f" category="paragraph">= 2023 年 4 月 3 日</block>
-  <block id="4e4bc4209079e01b29bd23543443814f" category="paragraph">=== Connector 3.9.28</block>
-  <block id="68c98feb558670370472cd1f20f8b5da" category="paragraph">= 2023 年 3 月 5 日</block>
-  <block id="fa7e83942ba75437b3b59a0963f3bc9a" category="paragraph">=== Connector 3.9.27</block>
-  <block id="84fc0f6df4babb21ec9ffd68478201bd" category="paragraph">= 2023 年 2 月 5 日</block>
-  <block id="db439755de0aedc826f20aeaf8b85665" category="paragraph">=== Connector 3.9.26</block>
-  <block id="b8a4ac8a67155065b6ae7d58adb58950" category="paragraph">= 2023 年 1 月 1 日</block>
-  <block id="d187e1ba69211c283711cac4bf3c4bc9" category="paragraph">=== 連接器 3.9.25</block>
-  <block id="1ce6a5c7fe7b574a3d820ee2c921e289" category="paragraph">= 2022 年 12 月 4 日</block>
-  <block id="992a11d3c17828e88759860a33deda60" category="paragraph">=== Connector 3.9.24</block>
-  <block id="6b3219b7aea220702f103ff6eefd7252" category="paragraph">= 2022 年 11 月 6 日</block>
-  <block id="d50c5e5d6ea814c6ff63491714b7bb22" category="paragraph">=== Connector 3.9.23</block>
-  <block id="1fc03a6128d14799523b2a38e8a42116" category="paragraph">= 2022 年 11 月 1 日</block>
-  <block id="dbf7a771613eb7de6c8ed16cb3cb3c50" category="paragraph">=== BlueXP  簡介</block>
-  <block id="4947d1323f3d33619cb826c9d26c149c" category="paragraph">=== 更新 NSS 認證的提示</block>
-  <block id="11b1f9630d8a8b5d20d5607b00ed30c8" category="paragraph">= 2022 年 9 月 18 日</block>
-  <block id="7d68d71b65ec6ee24410ec90c0021e57" category="paragraph">=== Connector 3.9.22</block>
-  <block id="e5e576e473f0b1175767ea74de91db00" category="paragraph">= 2022 年 7 月 31 日</block>
-  <block id="4574128c767429addbcb7a65b9df33c1" category="paragraph">=== Connector 3.9.21</block>
-  <block id="d41d107da6988c13975a6a6150f98d93" category="paragraph">= 2022 年 7 月 15 日</block>
-  <block id="0183eb2afe72b4e9feb0eda4946baa36" category="paragraph">=== 政策變更</block>
-  <block id="33064b3086cd44b07c14eb285f88b8ac" category="paragraph">= 2022 年 7 月 3 日</block>
-  <block id="bfcf1e30f4d242f15838008f26ceea59" category="paragraph">=== Connector 3.9.20</block>
-  <block id="88907daba481e0804ac616a3d970086c" category="paragraph">= 2022 年 6 月 28 日</block>
-  <block id="c37545fd3f7644b626cfe4bce4a36d07" category="paragraph">=== 以 NetApp 認證登入</block>
-  <block id="1ff1e2ef857e13c3c37a3772e1a246c0" category="paragraph">= 2022 年 6 月 7 日</block>
-  <block id="9b0d391743416126f0f798369698b4ca" category="paragraph">=== Connector 3.9.19</block>
-  <block id="f65af70cbb477f8f15c77932fe8e9481" category="paragraph">= 2022 年 5 月 12 日</block>
-  <block id="6f0edeaa3d802df6363ee6e04671b297" category="paragraph">=== Connector 3.9.18 修補程式</block>
-  <block id="751b324567f22a4abcbbd075ce956735" category="paragraph">= 2022 年 5 月 2 日</block>
-  <block id="8deffb57cbc0cfa24bc20bc2d95a64f9" category="paragraph">=== Connector 3.9.18</block>
-  <block id="60f48b297008bd94119c106eed7af878" category="paragraph">= 2022 年 4 月 3 日</block>
-  <block id="7e68888b126d72fd224ca006119b34cf" category="paragraph">=== Connector 3.9.17</block>
-  <block id="0b1d7b9b9bd8c9b024bae09b227cf9e3" category="paragraph">= 2022 年 2 月 27 日</block>
-  <block id="30fd205e9fa46b8bb70df5ce15ae27b6" category="paragraph">=== Connector 3.9.16</block>
-  <block id="8a4c3f33bcbb78652f9bb85dff9e0ee1" category="paragraph">= 2022 年 1 月 30 日</block>
-  <block id="e428168607a665e3c1240d1b9974c28b" category="paragraph">=== 連接器 3.9.15</block>
-  <block id="caa0ba355dcd0ee18edd0cb319408218" category="paragraph">= 2022 年 1 月 2 日</block>
-  <block id="ede380fc6dd49f41ee756315ea010637" category="paragraph">=== 減少 Connector 的端點數量</block>
-  <block id="13977f81b81008d3792a9a1b8254b757" category="paragraph">=== 用於 Connector 的 EBS 磁碟加密</block>
-  <block id="580b71f5903e92234a88fd284584b0b3" category="paragraph">=== NSS 帳戶的電子郵件地址</block>
-  <block id="0458addfe949743f8b4c288e8e71d894" category="paragraph">= 2021 年 11 月 28 日</block>
-  <block id="918c310a18db63ca6654f91e1be11bf3" category="paragraph">= NetApp 支援網站帳戶需要更新</block>
-  <block id="c7b9e02750a0fc15c7294c6775bda022" category="paragraph">=== 變更 Cloud Volumes ONTAP 的 NSS 帳戶</block>
-  <block id="2da029ef6994b27f39178baa54415a39" category="paragraph">= 2021 年 11 月 4 日</block>
-  <block id="41ce27119ae5331220c89fd0afbf19cc" category="paragraph">=== SOC 2 Type 2 認證</block>
-  <block id="d9614d86f0b053c2aca35484ddbceda9" category="paragraph">=== Connector 不再支援做為 Proxy</block>
-  <block id="60521726fe42ced004774f715a02d3c2" category="paragraph">= 2021 年 10 月 31 日</block>
-  <block id="eccbc7aa6bf8b8be290c2bc9d7ae8c26" category="paragraph">=== 使用服務主體進行驗證</block>
-  <block id="33c82bad32687f9d37aefa14b5369f88" category="paragraph">=== 認證增強功能</block>
-  <block id="dc166e78e49cb35757bbd7d705139a8d" category="paragraph">= 2021 年 9 月 2 日</block>
-  <block id="6e60c0bf75add61cfbbb033a220f86e2" category="paragraph">=== 已新增通知服務</block>
-  <block id="df8565ae35633fcb91d58c0da5962e81" category="paragraph">= 2021 年 7 月 7 日</block>
-  <block id="c140966fa1061d52e8f60024bb5ffa9a" category="paragraph">=== 新增 Connector 精靈的增強功能</block>
-  <block id="fba1354b4985a6802bd4e78e48bd882b" category="paragraph">=== Support Dashboard 的 NSS 帳戶管理</block>
-  <block id="3276b68888a00d2d4b9e14a15287d6f8" category="paragraph">= 2021 年 5 月 5 日</block>
-  <block id="ed6bc9ed22101c19fb4da7a2343e4689" category="paragraph">=== 時間表中的帳戶</block>
-  <block id="adb4829dfe3cc92189095befde229dd4" category="paragraph">= 2021 年 4 月 11 日</block>
-  <block id="d8638688a8d4722e9c53fc7743a1a62b" category="paragraph">= 直接撥打 API 給 Cloud Manager</block>
-  <block id="bea7b1d47c0245907b7de0e471fb9c77" category="paragraph">=== 服務帳戶使用者</block>
-  <block id="c1b25b034c07d6f894068d2dfefb0623" category="paragraph">=== 私有預覽</block>
-  <block id="989d6f1625a08009991494b7f5c0a4e3" category="paragraph">=== 第三方服務</block>
-  <block id="4cc5a3d9e8c43a39a5b692c0a1db140a" category="paragraph">= 2021 年 3 月 8 日</block>
-  <block id="b34212b682317ac993f17675d714bece" category="paragraph">=== Cloud Volumes ONTAP 增強功能</block>
-  <block id="0e8458dd8dee3c3c503a62dff124f6a6" category="paragraph">=== 所有雲端供應商均可使用的增強功能</block>
-  <block id="c0f83b2b168e714ec1bd45529d93ec7f" category="paragraph">=== AWS 中可用的增強功能</block>
-  <block id="68e1761c49a7fd248e1e59414b004725" category="paragraph">=== Azure 提供的增強功能</block>
-  <block id="2ed9bb36ea40b529647c3ef5e70235c8" category="paragraph">=== Google Cloud 的增強功能</block>
-  <block id="7d5b63b99b68b403ad22fd7794c7b3c8" category="paragraph">=== Connector 增強功能</block>
-  <block id="8a7a1ba1607ed764cfb1593bfbb47787" category="paragraph">=== Cloud Sync 增強功能</block>
-  <block id="def23cac8f6290f84b7067bad7da2ef9" category="paragraph">=== 雲端分層增強功能</block>
-  <block id="115a366c4eaee860ef62ded22f52bf83" category="paragraph">=== Azure NetApp Files 增強功能</block>
-  <block id="b3861887a96662e04f060780761c856e" category="paragraph">= 2021 年 2 月 9 日</block>
-  <block id="39cef9e5890819aaff5b08cfc78c59a4" category="paragraph">=== 支援儀表板改善功能</block>
+  <block id="4f11400d5bfc49418f8fe9e78ffbc58c" category="section-title">2024 年 7 月 31 日</block>
+  <block id="b9cf377931ad2ee7b1d42618c6c12fa5" category="section-title">私有模式版本（ 3.9.42 ）</block>
+  <block id="2791ae5af0f1b2a708aaa92b1fddb49e" category="section-title">此版本中包含的版本</block>
+  <block id="5bde46ec5f2d435355447c38b00c1d9c" category="section-title">2024 年 7 月 15 日</block>
+  <block id="415b27bc5d78b639dc8c74a6e8f93e19" category="section-title">支援 RHEL 8.10</block>
+  <block id="8d330209f05c51bacefbee76e24d82e9" category="section-title">2024 年 7 月 8 日</block>
+  <block id="cfcc30e7f5ca49191957ff6a4f02c34d" category="section-title">連接器 3.9.42</block>
+  <block id="2a63395e5cc23edb6ca284fd55193c26" category="section-title">更新版 Docker Engine 需求</block>
+  <block id="0d04c8a15444402f3438c6a0e19e7890" category="section-title">現在需要電子郵件驗證</block>
+  <block id="bbe4d8abcc3519b138a73b8e46ee2119" category="section-title">2024 年 6 月 12 日</block>
+  <block id="e7a68d45477c484e2ef45d11f3cea8f8" category="section-title">連接器 3.9.41</block>
+  <block id="74ee4e65950c57ed59a7a33de5a179e6" category="section-title">2024 年 6 月 4 日</block>
+  <block id="87174c130fb334601e88a5630bf24478" category="section-title">私有模式版本（ 3.9.40 ）</block>
+  <block id="81f58b484d838909a5fedb3486f3a8e2" category="section-title">連接器 3.9.40</block>
+  <block id="4cc078461f1763cdb13efec9da8a6a3f" category="section-title">AWS 權限更新</block>
+  <block id="9d5b3307d5a7d5905623bf21ab049bdd" category="section-title">2024 年 4 月 22 日</block>
+  <block id="1389c5e279a667948337a56d97caf570" category="section-title">連接器 3.9.39</block>
+  <block id="dcaa3e92176845b160207f9f0d80aef3" category="section-title">AWS 建立 Connector 的權限</block>
+  <block id="779956d8a8a5dbf08bbf655892abfefb" category="section-title">2024 年 4 月 11 日</block>
+  <block id="b0672ad18e27e61949a210d3369455e0" category="section-title">Docker Engine 更新</block>
+  <block id="fe8fcef9d0fdb328fbc812d42b4ca2e7" category="section-title">2024 年 3 月 26 日</block>
+  <block id="3c16167b6c091087d9151aee3f52b379" category="section-title">私有模式版本（ 3.9.38 ）</block>
+  <block id="00d14f718aca7db50368d8fc7008b41a" category="section-title">連接器 3.9.38</block>
+  <block id="b8048e9aa508d6c9379607c39c84e904" category="section-title">支援 IMDSv2</block>
+  <block id="9796f4649a0c963c7b6019196c7f14f0" category="section-title">Proxy 設定和 Cloud Volumes ONTAP 設定</block>
+  <block id="5985540cd0cc5c0e58eaebe95659534e" category="section-title">2024 年 2 月 15 日</block>
+  <block id="875cabf7fcb6d8f631b842029efd2117" category="section-title">連接器 3.9.37</block>
+  <block id="f1c2261d89d52febeed15edf1f34a5b7" category="section-title">編輯名稱</block>
+  <block id="17c3c89f25f7684516a883f30f10b747" category="section-title">2024 年 1 月 11 日</block>
+  <block id="dfbe132af57c8e3ca0aa9a94fc940839" category="section-title">連接器 3.9.36</block>
+  <block id="e8a0c291b754a75e0e91ecf69d567912" category="section-title">2023 年 12 月 5 日</block>
+  <block id="de945439c2ef8db914ae9a056d6763b1" category="section-title">私有模式版本（ 3.9.35 ）</block>
+  <block id="d64cd771f2e77e7c0e4209d28afed019" category="section-title">2023 年 11 月 8 日</block>
+  <block id="82a9cd2bfcf44ef6090c93dcb2ee0451" category="section-title">連接器 3.9.35</block>
+  <block id="69483d973a063c873a5a66f6edcc241c" category="section-title">2023 年 10 月 6 日</block>
+  <block id="ce408175c3b7eaf6c3dfc910f3547833" category="section-title">連接器 3.9.34</block>
+  <block id="200c9dcd65b566ab41bf3c1946647dce" category="section-title">2023 年 9 月 10 日</block>
+  <block id="f2d77c003fbfd61002c06e73a629086c" category="section-title">連接器 3.9.33</block>
+  <block id="167693b239be0e2939d61376cd3a5487" category="section-title">連接器 3.9.32</block>
+  <block id="f73b546b2cf111d3a080443f2cd3b97f" category="section-title">2023 年 7 月 2 日</block>
+  <block id="78ee56d07ea6442fbe0c88b1ea3be7ad" category="section-title">連接器 3.9.31</block>
+  <block id="381c003443d0dbcf14a51f216a4e01dc" category="section-title">2023 年 6 月 4 日</block>
+  <block id="5440676d566a261de836cdd1b9ea4e50" category="section-title">連接器 3.9.30</block>
+  <block id="71bff2737bdd059023a4784358e71a64" category="section-title">2023 年 5 月 7 日</block>
+  <block id="d13015f8ae4fd0f7f263eba9f81f4caa" category="section-title">連接器 3.9.29</block>
+  <block id="38d4d167f6dd9174c3535fc5c7ba4b76" category="section-title">2023 年 4 月 4 日</block>
+  <block id="102787ed6297b34a7504b527e91d01d3" category="section-title">2023 年 4 月 3 日</block>
+  <block id="a62f3b1b0c4abf78f5d81609e7bdd908" category="section-title">連接器 3.9.28</block>
+  <block id="d0693e7bf28b7bbc94287cee0e4b0768" category="section-title">2023 年 3 月 5 日</block>
+  <block id="ba5bb99eb6a04798c8ccd3f156db75a5" category="section-title">連接器 3.9.27</block>
+  <block id="e1bc7b26155063f1ce71b76f655669ef" category="section-title">2023 年 2 月 5 日</block>
+  <block id="d2ab99e3c8406089dca863337debb121" category="section-title">連接器 3.9.26</block>
+  <block id="1f7138998459804601fc351f8d442e29" category="section-title">2023 年 1 月 1 日</block>
+  <block id="e139aa454163ce195b3669d769c3f1c8" category="section-title">連接器 3.9.25</block>
+  <block id="83ec139c80a3d5b2f11f1a94eed47cd2" category="section-title">2022 年 12 月 4 日</block>
+  <block id="9a37fbeb5352e14f2a53fe349c60ad58" category="section-title">連接器 3.9.24</block>
+  <block id="5a4346a01828d72104a6540080377b25" category="section-title">2022 年 11 月 6 日</block>
+  <block id="f658ebadeb22d41618c5222998030cb9" category="section-title">連接器 3.9.23</block>
+  <block id="c642de9f40ee79267e2e62e3ebed032e" category="section-title">2022 年 11 月 1 日</block>
+  <block id="560c5ee7b92d80b3ef198362d8323824" category="section-title">介紹BlueXP</block>
+  <block id="ba1f7346b31e12566f94dd10dbca2587" category="section-title">提示更新 NSS 認證</block>
+  <block id="f7ba76d5c9beab0576f118a6254843e9" category="section-title">2022 年 9 月 18 日</block>
+  <block id="567aae3125fb3d0d81322caa575a9843" category="section-title">連接器 3.9.22</block>
+  <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">2022 年 7 月 31 日</block>
+  <block id="01f2c0e19d8bbd614814f0651e7feec1" category="section-title">連接器 3.9.21</block>
+  <block id="a334cff76a53c8f9b93a01e24c56c9e5" category="section-title">2022 年 7 月 15 日</block>
+  <block id="fd07056b3157389b873051e9d2dd6d40" category="section-title">原則變更</block>
+  <block id="1511b856d0328cfba458b8f83c2e94e3" category="section-title">2022 年 7 月 3 日</block>
+  <block id="dbb3531fc9f461de7f3beb2624712465" category="section-title">連接器 3.9.20</block>
+  <block id="38ce4e90f119b89b2fdf1f274431e262" category="section-title">2022 年 6 月 28 日</block>
+  <block id="47d69a1f17128c359904338c3502fe31" category="section-title">使用NetApp認證登入</block>
+  <block id="f8b475a3fefebada77a30229238d0a1a" category="section-title">2022 年 6 月 7 日</block>
+  <block id="40beea3ec23a7affa39b1a1cbd52f21d" category="section-title">連接器 3.9.19</block>
+  <block id="390e66de0b25a9d9b226d4ede6fa20b5" category="section-title">2022 年 5 月 12 日</block>
+  <block id="e2632c3a4c1aff50543e98b03420fd3c" category="section-title">連接器3.9.18修補程式</block>
+  <block id="49644953fd4e9612a9842d17bef5e79b" category="section-title">2022 年 5 月 2 日</block>
+  <block id="def752908b0fa662bfb5de654a533140" category="section-title">連接器 3.9.18</block>
+  <block id="5e16db4c47abe8cb1c5bd746df2fd94a" category="section-title">2022 年 4 月 3 日</block>
+  <block id="5dc3495f29e6f1332d6d809ba30cbf83" category="section-title">連接器 3.9.17</block>
+  <block id="ba26e4556a0f160834687982b0479336" category="section-title">2022 年 2 月 27 日</block>
+  <block id="8c4a1103eeca70528bc946c2246ec6f1" category="section-title">連接器 3.9.16</block>
+  <block id="3ac47455b10c6fb4061a70a91fdbfde2" category="section-title">2022 年 1 月 30 日</block>
+  <block id="1bb66afbb0f9c20ad9ce021a7051d622" category="section-title">連接器 3.9.15</block>
+  <block id="586301717819197e24001cac47efdaaa" category="section-title">2022 年 1 月 2 日</block>
+  <block id="3eb3c5317b96f11c0338c5ff2b831a15" category="section-title">減少連接器的端點數量</block>
+  <block id="cdacfba529ee299ab36d1cdf539f519d" category="section-title">連接器的EBS磁碟加密</block>
+  <block id="c9ace35ceff752453d1b0f7978e94417" category="section-title">適用於NSS帳戶的電子郵件地址</block>
+  <block id="f61163b681442ac500a8018c87241770" category="section-title">2021 年 11 月 28 日</block>
+  <block id="afd82a1708e69d4da8a44f0cbee4ae9c" category="section-title">NetApp 支援網站帳戶所需的更新</block>
+  <block id="3d0f9c18d87223bbfa0a981f08fc2ba8" category="section-title">變更NSS帳戶Cloud Volumes ONTAP 以供使用</block>
+  <block id="0c8656a54bb3c58b8facb7ba72092bdc" category="section-title">2021 年 11 月 4 日</block>
+  <block id="28d0f6acaa631c64f65938cc5be01ffc" category="section-title">連接器不再支援做為Proxy</block>
+  <block id="784044bd2af30d58bbb0dbcea3adbad6" category="section-title">2021 年 10 月 31 日</block>
+  <block id="67b68df6bafe01dd2b7c0f5e85ec62ff" category="section-title">使用服務主體進行驗證</block>
+  <block id="c4f5f37a3eac48a6747104e3821bdfc7" category="section-title">認證增強</block>
+  <block id="d798cbf5a08fbeb9fdd3652e5b00bb4c" category="section-title">2021 年 9 月 2 日</block>
+  <block id="b965147e511dac4e3aebd73ea41829e3" category="section-title">已新增通知服務</block>
+  <block id="916678dfdf53de83f6afdf8fca563fb3" category="section-title">2021 年 7 月 7 日</block>
+  <block id="087ea838180b315ad53e36db764cd8d2" category="section-title">新增連接器精靈的增強功能</block>
+  <block id="290ecf7cca4e38fcf54e2b2afd77bb68" category="section-title">支援儀表板的NSS帳戶管理</block>
+  <block id="5057fdb214d9f3773bc386ba2aa1fcb0" category="section-title">2021 年 5 月 5 日</block>
+  <block id="d818c001b3cfbc2033e278823ec2a52a" category="section-title">時間軸中的帳戶</block>
+  <block id="29c251ed5a57bbffe470654ccbbe714c" category="section-title">2021 年 4 月 11 日</block>
+  <block id="a751a999298090bf2562492d1817e583" category="section-title">API直接呼叫Cloud Manager</block>
+  <block id="d2ed2d8d9f18d3b3c06c154cfe6e0970" category="section-title">服務帳戶使用者</block>
+  <block id="a214c30250196bf3a7430f258daa1c0a" category="section-title">私有預覽</block>
+  <block id="e4be032a3be0dcfffde1cc853ce81a9f" category="section-title">第三方服務</block>
+  <block id="dbbd746e2d2c019dcb0c3c40b74f4f75" category="section-title">2021 年 3 月 8 日</block>
+  <block id="f4eb7f69c035214da13ca0f958ab2c5a" category="section-title">更新功能 Cloud Volumes ONTAP</block>
+  <block id="cedfa4114a856d26f8fcf723a5b4cb7a" category="section-title">所有雲端供應商均提供增強功能</block>
+  <block id="7b73adc87602305d19eea3376846e09c" category="section-title">AWS 提供的增強功能</block>
+  <block id="0ac19842b01b2e595d367d49d3a2f512" category="section-title">Azure 提供增強功能</block>
+  <block id="b1f9439900369929f00410057598c853" category="section-title">Google Cloud 提供的增強功能</block>
+  <block id="36758ba57a2ee81dcda1cf690cba345c" category="section-title">連接器增強功能</block>
+  <block id="bd10f9ff269639d7e4902e8c79d702a6" category="section-title">更新功能 Cloud Sync</block>
+  <block id="af8de564f8a6452ff0926ac0d084a2a0" category="section-title">雲端分層增強功能</block>
+  <block id="86a6fd8c0323b87db34eb287a461c194" category="section-title">更新功能Azure NetApp Files</block>
+  <block id="d42fa6c698bffd937b50724aa035c2cb" category="section-title">2021 年 2 月 9 日</block>
+  <block id="094be1dbadd11ed5e81a249dfb9a643a" category="section-title">支援儀表板改良功能</block>
 </blocks>
