@@ -50,6 +50,7 @@ _Connector_ 是在您的雲端網路或內部部署網路中執行的 NetApp 軟
 +
 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["深入瞭解內部ONTAP 部署的叢集探索與管理選項"^]
 
+* 軟體更新
 * 永續性
 
 

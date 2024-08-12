@@ -4199,4 +4199,5 @@ Azure 政府地區不需要此端點。</block>
   <block id="094be1dbadd11ed5e81a249dfb9a643a" category="section-title">支援儀表板改良功能</block>
   <block id="a0b762f6b2d72a69263357ecbb8decbc" category="paragraph">當您存取<block ref="7967ef3136667db18d7f95e4158dddb2" category="inline-link-rx"></block>時， BlueXP  會使用自我簽署的憑證來存取 HTTPS 。如果貴企業有需要、您可以安裝由憑證授權單位（ CA ）簽署的憑證、以提供比自我簽署的憑證更好的安全保護。安裝憑證之後、當使用者存取網路型主控台時、 BlueXP  會使用 CA 簽署的憑證。</block>
   <block id="9cc3df8e0a65f95d62b0d0dc557d0fa9" category="section-title">2024 年 8 月 8 日</block>
+  <block id="5009e1070e5138d1308165bc75e5706b" category="list-text">軟體更新</block>
 </blocks>
