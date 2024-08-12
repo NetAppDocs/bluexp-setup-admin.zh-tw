@@ -186,7 +186,6 @@
   <block id="a72a43431413f493c5087ab72327a680" category="list-text">只有在需要連線至主機進行疑難排解時、才需要SSH（22）。</block>
   <block id="288bb352dffecbb16aa463067359ba15" category="summary">根據預設、BlueXP會使用自我簽署的憑證來存取Web主控台的HTTPS。您可以安裝由憑證授權單位（ CA ）簽署的憑證、以提供比自我簽署憑證更好的安全保護。</block>
   <block id="5df0e72b51c6390f3f3b21f402ba3612" category="doc">安裝 HTTPS 憑證以進行安全存取</block>
-  <block id="094e745d52cd94c819bfa88386ee94b4" category="paragraph">根據預設、BlueXP會使用自我簽署的憑證來存取Web主控台的HTTPS。如果貴企業有需要、您可以安裝由憑證授權單位（ CA ）簽署的憑證、以提供比自我簽署的憑證更好的安全保護。</block>
   <block id="8fece025a1a8fef7018449bf104a2527" category="section-title">開始之前</block>
   <block id="3348dcc393bde37af6464ca44f92a231" category="inline-link-macro">瞭解方法</block>
   <block id="4a126f1568270f6124f9c053bf5a5b02" category="paragraph">您必須先建立連接器、才能變更BlueXP設定。 <block ref="9cb3f4e3b2f30b874e967976f1105dcc" category="inline-link-macro-rx"></block>。</block>
@@ -4057,29 +4056,15 @@ Azure 政府地區不需要此端點。</block>
   <block id="33ff271280dc3e0c2c15bf39aeefdeb9" category="list-text">EC2 執行個體類型為 t3.2xlarge 。</block>
   <block id="f637fe372218bb6ee39fd481301dc99f" category="list-text">VM 類型為 Standard_D8s_v3 。</block>
   <block id="d8c41b98cc9656d72fb99f79ff2425ba" category="list-text">VM執行個體為n2-Standard-8。</block>
-  <block id="d44b908365d28414a72f5b042c756f89" category="cell">在彈性協調模式中使用虛擬機器擴充集、以指定 Cloud Volumes ONTAP 的特定區域</block>
-  <block id="e32bb1c8b64cbfd8bf1712551cd39a15" category="cell">Microsoft 。 運算 / 虛擬機器擴充性集 / 寫入</block>
-  <block id="da4802bef00f05ba8274ecb054d0388f" category="cell">Microsoft 。 運算 / 虛擬機器擴充集 / 讀取</block>
-  <block id="d1cca5c5928df2cf3cc230adb4148b49" category="cell">Microsoft 。 運算 / 虛擬機器擴充性集 / 刪除</block>
-  <block id="b8b20e3ad75113ec2b241d05fd702223" category="section-title">2024 年 8 月 7 日</block>
-  <block id="51ec06da7f63e08ee6add2ed46d50777" category="paragraph">下列權限已新增至 JSON 原則、因為 Cloud Volumes ONTAP 支援虛擬機器磅秤集是必要的：</block>
   <block id="784880161a798d3c05d73e33c5740f73" category="list-text">* VM 大小 * ：選擇符合 CPU 和 RAM 需求的 VM 大小。我們建議您使用 Standard_D8s_v3 。</block>
   <block id="23997c4fb216c03ff31d0f8094671142" category="list-text">* CPU* ： 8 核心或 8 個 vCPU</block>
   <block id="3baace5508f5436415356f7f1c718d50" category="list-text">* RAM* ： 32 GB</block>
   <block id="e5ee5282a10eef25059e919331c8ea5e" category="list-text">* 機器類型 * ：建議使用 n2-Standard-8 。</block>
   <block id="4ea5b82f34f27448cadea5ae611c81ba" category="list-text">* 選擇執行個體類型 * ：根據區域可用度、選擇其中一種支援的執行個體類型（建議使用 t3.2xlarge ）。</block>
   <block id="d44724be897a214586cbd2c8b32fb39d" category="list-text">目前、系統會以電子郵件傳送通知、以取得下列 BlueXP  功能與服務： Connector 、 BlueXP  數位錢包、 BlueXP  複製與同步、 BlueXP  備份與還原、以及 BlueXP  分層。未來版本將會新增其他服務。</block>
-  <block id="7940343b35479ccb2e54485d30ff86b4" category="section-title">2024 年 8 月 8 日</block>
   <block id="34c56ac41d4e5a004cc5b7c87b0e2d87" category="section-title">連接器 3.9.43</block>
   <block id="be1b4db310d7b6590c7af9eb4751b6ce" category="paragraph">此版本包括小幅改良、錯誤修正、以及新 Azure 權限的需求。</block>
   <block id="05797637e0cfec59d8a5478eba1acfdf" category="paragraph">3.9.43 版本適用於標準模式和受限模式。</block>
-  <block id="1933591d3cd5758cc59a0316d8d38362" category="section-title">Azure 權限更新</block>
-  <block id="257ae732be2a868d9475f68f934cf7b1" category="paragraph">我們更新了 Azure 的 Connector 原則、以納入下列權限：</block>
-  <block id="c78a856f5972910d86f9b588fe9783e6" category="paragraph">Cloud Volumes ONTAP 支援虛擬機器磅秤集需要這些權限。如果您有現有的 Connectors 、而且想要使用這項新功能、則必須將這些權限新增至與 Azure 認證相關聯的自訂角色。</block>
-  <block id="33deee49118b5c8f42cddf68ea82eb12" category="inline-link">瞭解 Cloud Volumes ONTAP 對虛擬機器擴充集的支援</block>
-  <block id="6f165e27b35c2eee0268707accdba9ba" category="list-text"><block ref="6f165e27b35c2eee0268707accdba9ba" category="inline-link-rx"></block></block>
-  <block id="21952e368aec0a06297b408b56d39588" category="inline-link">檢視 Connector 的 Azure 權限</block>
-  <block id="aee78f717e27d8af727663a423980af9" category="list-text"><block ref="30ea7e04713feb92caddbe86eeb922d8" category="inline-link-rx"></block>。</block>
   <block id="45c4fb485dfa6a5d0af975aa668648a9" category="section-title">更新 CPU 和 RAM 需求</block>
   <block id="07279af47b8b78d8d96257fb42d7c5d9" category="paragraph">為了提供更高的可靠性、並改善 BlueXP  和 Connector 的效能、我們現在需要額外的 CPU 和 RAM 來搭配 Connector 虛擬機器：</block>
   <block id="ab0a05181cb2ac15cc8151f858731517" category="list-text">CPU ： 8 個核心或 8 個 vCPU （先前的需求為 4 個）</block>
@@ -4212,4 +4197,6 @@ Azure 政府地區不需要此端點。</block>
   <block id="86a6fd8c0323b87db34eb287a461c194" category="section-title">更新功能Azure NetApp Files</block>
   <block id="d42fa6c698bffd937b50724aa035c2cb" category="section-title">2021 年 2 月 9 日</block>
   <block id="094be1dbadd11ed5e81a249dfb9a643a" category="section-title">支援儀表板改良功能</block>
+  <block id="a0b762f6b2d72a69263357ecbb8decbc" category="paragraph">當您存取<block ref="7967ef3136667db18d7f95e4158dddb2" category="inline-link-rx"></block>時， BlueXP  會使用自我簽署的憑證來存取 HTTPS 。如果貴企業有需要、您可以安裝由憑證授權單位（ CA ）簽署的憑證、以提供比自我簽署的憑證更好的安全保護。安裝憑證之後、當使用者存取網路型主控台時、 BlueXP  會使用 CA 簽署的憑證。</block>
+  <block id="9cc3df8e0a65f95d62b0d0dc557d0fa9" category="section-title">2024 年 8 月 8 日</block>
 </blocks>
