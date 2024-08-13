@@ -100,6 +100,14 @@ BlueXP Connector 支援下列 Linux 作業系統。
 --
 容器協調工具:: 在 RHEL 8 或 9 主機上安裝 Connector 時、必須使用 Podman 作為容器協調工具。RHEL 8 和 9 不支援 Docker Engine 。
 部署模式:: 在標準模式、受限模式和私有模式下使用 BlueXP 時、支援 RHEL 8 和 9 。
+支援的 Connector 版本:: 從下列 Connector 版本開始、即可支援 RHEL 8 和 9 ：
++
+--
+* 3.9.40 在標準模式或受限模式下使用 BlueXP  時
+* 3.9.42 ：以私有模式使用 BlueXP  時
+
+
+--
 僅限全新手動安裝:: 在內部部署或雲端上執行的主機上手動安裝 Connector 時、 _new_ Connector 安裝可支援 RHEL 8 和 9 。
 RHEL 升級:: 如果現有的 Connector 是在 RHEL 7 主機上執行、我們不支援將 RHEL 7 作業系統升級為 RHEL 8 或 9 。 <<RHEL 7 或 CentOS 7 上的現有連接器,深入瞭解 RHEL 7 或 CentOS 7 上的現有 Connector>>。
 

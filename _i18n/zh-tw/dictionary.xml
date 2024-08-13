@@ -4197,7 +4197,13 @@ Azure 政府地區不需要此端點。</block>
   <block id="86a6fd8c0323b87db34eb287a461c194" category="section-title">更新功能Azure NetApp Files</block>
   <block id="d42fa6c698bffd937b50724aa035c2cb" category="section-title">2021 年 2 月 9 日</block>
   <block id="094be1dbadd11ed5e81a249dfb9a643a" category="section-title">支援儀表板改良功能</block>
-  <block id="a0b762f6b2d72a69263357ecbb8decbc" category="paragraph">當您存取<block ref="7967ef3136667db18d7f95e4158dddb2" category="inline-link-rx"></block>時， BlueXP  會使用自我簽署的憑證來存取 HTTPS 。如果貴企業有需要、您可以安裝由憑證授權單位（ CA ）簽署的憑證、以提供比自我簽署的憑證更好的安全保護。安裝憑證之後、當使用者存取網路型主控台時、 BlueXP  會使用 CA 簽署的憑證。</block>
   <block id="9cc3df8e0a65f95d62b0d0dc557d0fa9" category="section-title">2024 年 8 月 8 日</block>
   <block id="5009e1070e5138d1308165bc75e5706b" category="list-text">軟體更新</block>
+  <block id="66c9d0cfd45dc71069845154fb72a8b8" category="list-text">支援的 Connector 版本</block>
+  <block id="4dc9e2f6078fbeb26bbafe7461aa7ecf" category="list-text">從下列 Connector 版本開始、即可支援 RHEL 8 和 9 ：</block>
+  <block id="1316cb3dbdfa1d8facde6d30372df833" category="list-text">3.9.40 在標準模式或受限模式下使用 BlueXP  時</block>
+  <block id="c8fff1f28296d1ce9e5b594252b146c8" category="list-text">3.9.42 ：以私有模式使用 BlueXP  時</block>
+  <block id="70328d3965555bdfe7c71386e9e25887" category="doc">安裝 CA 簽署的憑證以進行 Web 主控台存取</block>
+  <block id="2f23236775b31842c7a88b27c4b2fd2d" category="paragraph">根據預設， BlueXP  會使用自我簽署的 SSL 憑證，透過 HTTPS 連線提供安全存取<block ref="7967ef3136667db18d7f95e4158dddb2" category="inline-link-rx"></block> 。如果貴企業有需要、您可以安裝由憑證授權單位（ CA ）簽署的憑證、以提供比自我簽署的憑證更好的安全保護。安裝憑證之後、當使用者存取網路型主控台時、 BlueXP  會使用 CA 簽署的憑證。</block>
+  <block id="dee6ffcadeee95a4920b20e3dff92f16" category="paragraph">請注意、預設密碼體驗是一次性密碼（ OTP ）到註冊的電子郵件地址。每次嘗試登入時都會產生新的 OTP 。</block>
 </blocks>
