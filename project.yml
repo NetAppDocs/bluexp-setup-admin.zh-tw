@@ -1,6 +1,6 @@
 ---
 settings:
-  name: Setup and administration
+  name: BlueXP setup and administration
   platform: cloud
   internal:
     pdf_enabled: true
@@ -11,7 +11,7 @@ settings:
   langs: zh-tw,us-en,ja-jp,ko-kr,zh-cn,de-de,es-es,fr-fr,it-it
 sidebar:
   entries:
-  - title: 設定與管理文件
+  - title: BlueXP  設定與管理文件
     url: "/index.html"
   - title: 版本資訊
     entries:
@@ -119,7 +119,7 @@ sidebar:
       entries:
       - title: 維護 VM 和 OS
         url: "/task-maintain-connectors.html"
-      - title: 安裝 HTTPS 憑證以進行安全存取
+      - title: 安裝 CA 簽署的憑證以進行 Web 主控台存取
         url: "/task-installing-https-cert.html"
       - title: 設定連接器以使用Proxy伺服器
         url: "/task-configuring-proxy.html"

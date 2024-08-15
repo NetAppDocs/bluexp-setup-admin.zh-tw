@@ -185,7 +185,6 @@
   <block id="b68600c18c6dd9598d4518bc4a3f2c90" category="list-text">HTTP（80）和HTTPS（443）可存取本機UI、在極少數情況下使用。</block>
   <block id="a72a43431413f493c5087ab72327a680" category="list-text">只有在需要連線至主機進行疑難排解時、才需要SSH（22）。</block>
   <block id="288bb352dffecbb16aa463067359ba15" category="summary">根據預設、BlueXP會使用自我簽署的憑證來存取Web主控台的HTTPS。您可以安裝由憑證授權單位（ CA ）簽署的憑證、以提供比自我簽署憑證更好的安全保護。</block>
-  <block id="5df0e72b51c6390f3f3b21f402ba3612" category="doc">安裝 HTTPS 憑證以進行安全存取</block>
   <block id="8fece025a1a8fef7018449bf104a2527" category="section-title">開始之前</block>
   <block id="3348dcc393bde37af6464ca44f92a231" category="inline-link-macro">瞭解方法</block>
   <block id="4a126f1568270f6124f9c053bf5a5b02" category="paragraph">您必須先建立連接器、才能變更BlueXP設定。 <block ref="9cb3f4e3b2f30b874e967976f1105dcc" category="inline-link-macro-rx"></block>。</block>
@@ -2857,7 +2856,6 @@
   <block id="0d1f9ac2ac0f76a6809ba58855ffa7f5" category="list-text">選項 1 ：使用系統指派的託管身分識別、將自訂角色指派給 Azure VM 。</block>
   <block id="d31f2fb13b2fed83440a04d526a6ca7d" category="list-text">選項 2 ：為 BlueXP 提供具有必要權限的 Azure 服務主體認證。</block>
   <block id="c4da032e0a3943e2f3a51ca860a71925" category="list-text">如果您打算在自己的主機上手動安裝軟體、請在 VM 上啟用系統指派的託管身分識別、以便透過自訂角色提供必要的 Azure 權限。</block>
-  <block id="f53835e0f369158c476f99fda577e700" category="sidebar">設定與管理文件</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">版本資訊</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">開始使用</block>
@@ -3493,7 +3491,6 @@ Azure 政府地區不需要此端點。</block>
   <block id="183f3a1e578d0dce86eeb393edf40a5d" category="list-text">Ubuntu 22.04 LTS</block>
   <block id="fd1e4807d8caf9eb7b22acef39d3e5ce" category="list-text">連接至 Linux VM for the Connector 。</block>
   <block id="e1b145fbf942267f38a8e6f0928d8629" category="paragraph"><block ref="9ff6aead716ef57f3a1e9e40a858062f" prefix="" category="inline-code"></block></block>
-  <block id="72b013396e56865d3673702aa9bcc731" category="paragraph"><block ref="53c9ecf44ffc5c93a5a42f4cda983463" prefix="" category="inline-code"></block><block ref="3be06caa62382aade39cdb5bcb105da0" prefix=" " category="inline-code"></block></block>
   <block id="6ae4e7f185de6791c9b45f3d273959f9" category="cell">\https://aiq.netapp.com</block>
   <block id="034ade3fc7b98591feafb7b0039b2724" category="cell">需要存取 BlueXP 數位顧問。</block>
   <block id="345dbd48a6c734a7dc3b743f014493be" category="paragraph">服務帳戶扮演「使用者」的角色、可撥打授權API呼叫至BlueXP以進行自動化。如此一來、您就不需要根據實際使用者帳戶建置自動化指令碼、也能隨時離開公司、因此更容易管理自動化作業。</block>
@@ -3611,7 +3608,6 @@ Azure 政府地區不需要此端點。</block>
   <block id="ab15c21485050b3b0c09a3b7b31d97d7" category="inline-image-macro">螢幕擷取畫面、顯示在使用者設定下編輯您的姓名的能力。</block>
   <block id="4a784443543a41df794122c52fae1df7" category="paragraph">如果您以同盟連線或 NetApp 支援網站 帳戶登入、則不支援編輯您的名稱。</block>
   <block id="bf032cb5bcb45fec81b7b5b993ebabe4" category="paragraph">您需要更新每個 Cloud Volumes ONTAP 系統的備份位置。</block>
-  <block id="2a066cad1fef063fff0ca56b5d416b10" category="list-text">從 Cloud Volumes ONTAP CLI 執行下列命令以顯示目前的備份目標：</block>
   <block id="78cae36205d703274f695ea4e85f6ffe" category="list-text">執行下列命令以更新備份目標的 IP 位址：</block>
   <block id="daf15a33710ed6188d035a01c084bee9" category="paragraph"><block ref="daf15a33710ed6188d035a01c084bee9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bbd3f8aeec942b5e418da40a3101ed3e" category="paragraph"><block ref="bbd3f8aeec942b5e418da40a3101ed3e" category="inline-image-macro-rx" type="image"></block></block>
@@ -4206,4 +4202,8 @@ Azure 政府地區不需要此端點。</block>
   <block id="70328d3965555bdfe7c71386e9e25887" category="doc">安裝 CA 簽署的憑證以進行 Web 主控台存取</block>
   <block id="2f23236775b31842c7a88b27c4b2fd2d" category="paragraph">根據預設， BlueXP  會使用自我簽署的 SSL 憑證，透過 HTTPS 連線提供安全存取<block ref="7967ef3136667db18d7f95e4158dddb2" category="inline-link-rx"></block> 。如果貴企業有需要、您可以安裝由憑證授權單位（ CA ）簽署的憑證、以提供比自我簽署的憑證更好的安全保護。安裝憑證之後、當使用者存取網路型主控台時、 BlueXP  會使用 CA 簽署的憑證。</block>
   <block id="dee6ffcadeee95a4920b20e3dff92f16" category="paragraph">請注意、預設密碼體驗是一次性密碼（ OTP ）到註冊的電子郵件地址。每次嘗試登入時都會產生新的 OTP 。</block>
+  <block id="3216eccdc5ba0609640cf6e084e8b99b" category="list-text">在 Cloud Volumes ONTAP CLI 中、將權限等級設為進階：</block>
+  <block id="12cf6b8337c04d4e7e622d1c39b40efe" category="list-text">執行下列命令以顯示目前的備份目標：</block>
+  <block id="eb34b10d2fd231974ff6010bc6aa4d4b" category="paragraph"><block ref="5b014535a251b1d5d0c9044a548a8e20" prefix="" category="inline-code"></block><block ref="3be06caa62382aade39cdb5bcb105da0" prefix=" " category="inline-code"></block></block>
+  <block id="60b81afd9ad770d185b5a9b9f08f9809" category="sidebar">BlueXP  設定與管理文件</block>
 </blocks>

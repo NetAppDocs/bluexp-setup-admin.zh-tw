@@ -87,11 +87,17 @@ https://cloud.google.com/compute/docs/instances/connecting-to-instance["Google C
 您需要更新每個 Cloud Volumes ONTAP 系統的備份位置。
 
 +
-.. 從 Cloud Volumes ONTAP CLI 執行下列命令以顯示目前的備份目標：
+.. 在 Cloud Volumes ONTAP CLI 中、將權限等級設為進階：
 +
 [source, cli]
 ----
-system configuration backup show
+set -privilege advanced
+----
+.. 執行下列命令以顯示目前的備份目標：
++
+[source, cli]
+----
+system configuration backup settings show
 ----
 .. 執行下列命令以更新備份目標的 IP 位址：
 +

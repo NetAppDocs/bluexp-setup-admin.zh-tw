@@ -48,7 +48,7 @@ Connector 軟體現在已從 Linux 主機解除安裝。
 . 連接至 Linux VM for the Connector 。
 . 從Linux主機執行下列命令：
 +
-`./opt/application/netapp/ds/cleanup.sh`
+`/opt/application/netapp/ds/cleanup.sh`
 `rm -rf /opt/application/netapp/ds`
 
 
