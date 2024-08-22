@@ -701,6 +701,15 @@ Connector會提出下列API要求、要求在Cloud Volumes ONTAP Azure中部署�
 
 
 | 在建立期間加密儲存帳戶 | Microsoft.ManagedIdentity /使用者身分識別/指派/行動 | 是的 | 是的 | 否 
+
+
+.3+| 在彈性協調模式中使用虛擬機器擴充集、以指定 Cloud Volumes ONTAP 的特定區域 | Microsoft 。 運算 / 虛擬機器擴充性集 / 寫入 | 是的 | 否 | 否 
+
+
+| Microsoft 。 運算 / 虛擬機器擴充集 / 讀取 | 是的 | 否 | 否 
+
+
+| Microsoft 。 運算 / 虛擬機器擴充性集 / 刪除 | 否 | 否 | 是的 
 |===
 
 
@@ -726,6 +735,17 @@ Connector會針對日常作業提出下列API要求。
 == 變更記錄
 
 新增和移除權限時、我們會在下方各節中加以註記。
+
+
+
+=== 2024 年 8 月 22 日
+
+下列權限已新增至 JSON 原則、因為 Cloud Volumes ONTAP 支援虛擬機器磅秤集是必要的：
+
+* Microsoft 。 運算 / 虛擬機器擴充性集 / 寫入
+* Microsoft 。 運算 / 虛擬機器擴充集 / 讀取
+* Microsoft 。 運算 / 虛擬機器擴充性集 / 刪除
+
 
 
 
@@ -768,7 +788,7 @@ BlueXP 分類不再需要「 Microsoft.Storage/storageAccounts/delete 」權限�
 
 
 
-=== 2023年1月5日
+=== 2023 年 1 月 5 日
 
 下列權限已新增至Json原則：
 

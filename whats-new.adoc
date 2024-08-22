@@ -18,6 +18,30 @@ summary: 瞭解 BlueXP 管理功能的新功能： BlueXP 帳戶、連接器、�
 
 
 
+== 2024 年 22 月 8 日
+
+
+
+=== 連接器3.9.43修補程式
+
+我們更新了 Connector 以支援 Cloud Volumes ONTAP 9.15.1 版本。
+
+此版本的支援包括更新 Azure 的 Connector 原則。此原則現在包含下列權限：
+
+[source, json]
+----
+"Microsoft.Compute/virtualMachineScaleSets/write",
+"Microsoft.Compute/virtualMachineScaleSets/read",
+"Microsoft.Compute/virtualMachineScaleSets/delete"
+----
+Cloud Volumes ONTAP 支援虛擬機器磅秤集需要這些權限。如果您有現有的 Connectors 、而且想要使用這項新功能、則必須將這些權限新增至與 Azure 認證相關聯的自訂角色。
+
+* https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["瞭解 Cloud Volumes ONTAP 對虛擬機器擴充集的支援"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["檢視 Connector 的 Azure 權限"]。
+
+
+
+
 == 2024 年 8 月 8 日
 
 
