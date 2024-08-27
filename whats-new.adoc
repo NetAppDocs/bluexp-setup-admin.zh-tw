@@ -36,7 +36,7 @@ summary: 瞭解 BlueXP 管理功能的新功能： BlueXP 帳戶、連接器、�
 ----
 Cloud Volumes ONTAP 支援虛擬機器磅秤集需要這些權限。如果您有現有的 Connectors 、而且想要使用這項新功能、則必須將這些權限新增至與 Azure 認證相關聯的自訂角色。
 
-* https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["瞭解 Cloud Volumes ONTAP 對虛擬機器擴充集的支援"^]
+* https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["瞭解 Cloud Volumes ONTAP 9.15.1 版本"^]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["檢視 Connector 的 Azure 權限"]。
 
 

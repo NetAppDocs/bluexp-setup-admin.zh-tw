@@ -184,7 +184,6 @@
   <block id="407c4e9fac86b98147da49acd4fa0d01" category="section-title">連接埠</block>
   <block id="b68600c18c6dd9598d4518bc4a3f2c90" category="list-text">HTTP（80）和HTTPS（443）可存取本機UI、在極少數情況下使用。</block>
   <block id="a72a43431413f493c5087ab72327a680" category="list-text">只有在需要連線至主機進行疑難排解時、才需要SSH（22）。</block>
-  <block id="288bb352dffecbb16aa463067359ba15" category="summary">根據預設、BlueXP會使用自我簽署的憑證來存取Web主控台的HTTPS。您可以安裝由憑證授權單位（ CA ）簽署的憑證、以提供比自我簽署憑證更好的安全保護。</block>
   <block id="8fece025a1a8fef7018449bf104a2527" category="section-title">開始之前</block>
   <block id="3348dcc393bde37af6464ca44f92a231" category="inline-link-macro">瞭解方法</block>
   <block id="4a126f1568270f6124f9c053bf5a5b02" category="paragraph">您必須先建立連接器、才能變更BlueXP設定。 <block ref="9cb3f4e3b2f30b874e967976f1105dcc" category="inline-link-macro-rx"></block>。</block>
@@ -203,7 +202,6 @@
   <block id="dfcb11207afc726eac079165a5f0eceb" category="cell">安裝您自己的 CA 簽署憑證</block>
   <block id="7ed9585d1e9f5512ccb2cfc8bd359ad0" category="list-text">選擇 * 安裝 CA 簽署的憑證 * 。</block>
   <block id="b554e76151718540fd187e6430e1ffd7" category="list-text">同時載入憑證檔案和私密金鑰、然後選取 * 安裝 * 。</block>
-  <block id="6ff27fa7db63494c1f82ca8c8064562f" category="paragraph">現在、BlueXP使用CA簽署的憑證來提供安全的HTTPS存取。下圖顯示設定為安全存取的BlueXP帳戶：</block>
   <block id="1f2fc480562990aa572340adbb999816" category="inline-image-macro">螢幕擷取畫面：顯示您安裝簽署憑證後的 HTTPS 設定頁面。頁面會顯示憑證內容和續約憑證的選項。</block>
   <block id="ef9bdb2657b8a54fd5e6d5f9b03516c0" category="paragraph"><block ref="ef9bdb2657b8a54fd5e6d5f9b03516c0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c817de507a4c172290a84aec3100fc8a" category="section-title">更新 BlueXP HTTPS 憑證</block>
@@ -4196,7 +4194,6 @@ Azure 政府地區不需要此端點。</block>
   <block id="1316cb3dbdfa1d8facde6d30372df833" category="list-text">3.9.40 在標準模式或受限模式下使用 BlueXP  時</block>
   <block id="c8fff1f28296d1ce9e5b594252b146c8" category="list-text">3.9.42 ：以私有模式使用 BlueXP  時</block>
   <block id="70328d3965555bdfe7c71386e9e25887" category="doc">安裝 CA 簽署的憑證以進行 Web 主控台存取</block>
-  <block id="2f23236775b31842c7a88b27c4b2fd2d" category="paragraph">根據預設， BlueXP  會使用自我簽署的 SSL 憑證，透過 HTTPS 連線提供安全存取<block ref="7967ef3136667db18d7f95e4158dddb2" category="inline-link-rx"></block> 。如果貴企業有需要、您可以安裝由憑證授權單位（ CA ）簽署的憑證、以提供比自我簽署的憑證更好的安全保護。安裝憑證之後、當使用者存取網路型主控台時、 BlueXP  會使用 CA 簽署的憑證。</block>
   <block id="dee6ffcadeee95a4920b20e3dff92f16" category="paragraph">請注意、預設密碼體驗是一次性密碼（ OTP ）到註冊的電子郵件地址。每次嘗試登入時都會產生新的 OTP 。</block>
   <block id="3216eccdc5ba0609640cf6e084e8b99b" category="list-text">在 Cloud Volumes ONTAP CLI 中、將權限等級設為進階：</block>
   <block id="12cf6b8337c04d4e7e622d1c39b40efe" category="list-text">執行下列命令以顯示目前的備份目標：</block>
@@ -4216,8 +4213,12 @@ Azure 政府地區不需要此端點。</block>
   <block id="262115d0d4a65fe9bcd074ab5666018a" category="paragraph">我們更新了 Connector 以支援 Cloud Volumes ONTAP 9.15.1 版本。</block>
   <block id="ede74fed38968a6f0c0dcebc3102b859" category="paragraph">此版本的支援包括更新 Azure 的 Connector 原則。此原則現在包含下列權限：</block>
   <block id="c78a856f5972910d86f9b588fe9783e6" category="paragraph">Cloud Volumes ONTAP 支援虛擬機器磅秤集需要這些權限。如果您有現有的 Connectors 、而且想要使用這項新功能、則必須將這些權限新增至與 Azure 認證相關聯的自訂角色。</block>
-  <block id="33deee49118b5c8f42cddf68ea82eb12" category="inline-link">瞭解 Cloud Volumes ONTAP 對虛擬機器擴充集的支援</block>
-  <block id="d68b9311c71dab46bbfe2456fb69212b" category="list-text"><block ref="d68b9311c71dab46bbfe2456fb69212b" category="inline-link-rx"></block></block>
   <block id="21952e368aec0a06297b408b56d39588" category="inline-link">檢視 Connector 的 Azure 權限</block>
   <block id="aee78f717e27d8af727663a423980af9" category="list-text"><block ref="30ea7e04713feb92caddbe86eeb922d8" category="inline-link-rx"></block>。</block>
+  <block id="649038b676315e0ebdd7132fcd5362c2" category="summary">在受限模式或私有模式下使用 BlueXP  時、請安裝 CA 簽署的憑證、以供使用者存取網路型主控台。</block>
+  <block id="76b215b1722d5e63e6379d518b352edf" category="doc">安裝 CA 簽署的憑證以進行網路型主控台存取</block>
+  <block id="40e7815d87fea23da90e3571602f7f78" category="paragraph">當您以受限模式或私有模式使用 BlueXP  時、使用者介面可從部署在雲端區域或內部部署的 Connector 虛擬機器存取。根據預設、 BlueXP  會使用自我簽署的 SSL 憑證、提供安全的 HTTPS 存取、以存取在 Connector 上執行的網路型主控台。如果貴企業有需要、您可以安裝由憑證授權單位（ CA ）簽署的憑證、以提供比自我簽署的憑證更好的安全保護。安裝憑證之後、當使用者存取網路型主控台時、 BlueXP  會使用 CA 簽署的憑證。</block>
+  <block id="e7b76852295808494e2734a85e108067" category="paragraph">現在、BlueXP使用CA簽署的憑證來提供安全的HTTPS存取。下圖顯示設定為安全存取的 Connector ：</block>
+  <block id="1b41af4e937fd3b48c53451988ba06b5" category="inline-link">瞭解 Cloud Volumes ONTAP 9.15.1 版本</block>
+  <block id="dcc26903c10160517882b9dad3e9f26f" category="list-text"><block ref="dcc26903c10160517882b9dad3e9f26f" category="inline-link-rx"></block></block>
 </blocks>

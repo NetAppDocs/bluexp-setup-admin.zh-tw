@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-installing-https-cert.html 
 keywords: https certificate, certificate, adding, installing, ca, certificate authority, format, encoding, renewing 
-summary: 根據預設、BlueXP會使用自我簽署的憑證來存取Web主控台的HTTPS。您可以安裝由憑證授權單位（ CA ）簽署的憑證、以提供比自我簽署憑證更好的安全保護。 
+summary: 在受限模式或私有模式下使用 BlueXP  時、請安裝 CA 簽署的憑證、以供使用者存取網路型主控台。 
 ---
-= 安裝 CA 簽署的憑證以進行 Web 主控台存取
+= 安裝 CA 簽署的憑證以進行網路型主控台存取
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,13 +14,13 @@ summary: 根據預設、BlueXP會使用自我簽署的憑證來存取Web主控�
 
 
 [role="lead"]
-根據預設， BlueXP  會使用自我簽署的 SSL 憑證，透過 HTTPS 連線提供安全存取 https://console.bluexp.netapp.com/["BlueXP 網路型主控台"^] 。如果貴企業有需要、您可以安裝由憑證授權單位（ CA ）簽署的憑證、以提供比自我簽署的憑證更好的安全保護。安裝憑證之後、當使用者存取網路型主控台時、 BlueXP  會使用 CA 簽署的憑證。
+當您以受限模式或私有模式使用 BlueXP  時、使用者介面可從部署在雲端區域或內部部署的 Connector 虛擬機器存取。根據預設、 BlueXP  會使用自我簽署的 SSL 憑證、提供安全的 HTTPS 存取、以存取在 Connector 上執行的網路型主控台。如果貴企業有需要、您可以安裝由憑證授權單位（ CA ）簽署的憑證、以提供比自我簽署的憑證更好的安全保護。安裝憑證之後、當使用者存取網路型主控台時、 BlueXP  會使用 CA 簽署的憑證。
 
 
 
 == 開始之前
 
-您必須先建立連接器、才能變更BlueXP設定。 link:concept-connectors.html#how-to-create-a-connector["瞭解方法"]。
+您必須先建立連接器、才能變更BlueXP設定。 link:concept-connectors.html#how-to-create-a-connector["瞭解如何建立連接器"]。
 
 
 
@@ -66,7 +66,7 @@ BlueXP會顯示憑證簽署要求。
 
 
 .結果
-現在、BlueXP使用CA簽署的憑證來提供安全的HTTPS存取。下圖顯示設定為安全存取的BlueXP帳戶：
+現在、BlueXP使用CA簽署的憑證來提供安全的HTTPS存取。下圖顯示設定為安全存取的 Connector ：
 
 image:screenshot_https_cert.gif["螢幕擷取畫面：顯示您安裝簽署憑證後的 HTTPS 設定頁面。頁面會顯示憑證內容和續約憑證的選項。"]
 
