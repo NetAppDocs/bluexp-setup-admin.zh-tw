@@ -69,7 +69,7 @@ Cloud Volumes ONTAP 支援虛擬機器磅秤集需要這些權限。如果您有
 * Google Cloud ： n2-Standard-8.
 
 
-此要求適用於新的和現有的連接器。
+更新後的 CPU 和 RAM 需求適用於所有新的連接器。對於現有的連接器、建議增加 CPU 和 RAM 、以改善效能和可靠性。
 
 
 

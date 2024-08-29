@@ -4063,7 +4063,6 @@ Azure 政府地區不需要此端點。</block>
   <block id="43a4336ace07071a0817d23211d30402" category="list-text">AWS ： t3.2 x 大</block>
   <block id="70e7db9a896d903493a8716aa3885ee7" category="list-text">Azure ： Standard_D8s_v3</block>
   <block id="1a0e003291457a847a85677ad5244c4e" category="list-text">Google Cloud ： n2-Standard-8.</block>
-  <block id="7ef0b49c93a0c955c309b5fea693d698" category="paragraph">此要求適用於新的和現有的連接器。</block>
   <block id="fecbdb7e41beb7c2b4125b62d71b116d" category="section-title">支援採用 RHEL 8.10 的 Podman 4.9.4</block>
   <block id="601e92646453def880eec16da18e4390" category="paragraph">在 Red Hat Enterprise Linux 8.10 主機上安裝 Connector 時、現在支援 Podman 4.9.4 版。</block>
   <block id="18ecc589a4f329e3ba95ac4e285b4504" category="section-title">身分識別聯盟的使用者驗證</block>
@@ -4221,4 +4220,5 @@ Azure 政府地區不需要此端點。</block>
   <block id="e7b76852295808494e2734a85e108067" category="paragraph">現在、BlueXP使用CA簽署的憑證來提供安全的HTTPS存取。下圖顯示設定為安全存取的 Connector ：</block>
   <block id="1b41af4e937fd3b48c53451988ba06b5" category="inline-link">瞭解 Cloud Volumes ONTAP 9.15.1 版本</block>
   <block id="dcc26903c10160517882b9dad3e9f26f" category="list-text"><block ref="dcc26903c10160517882b9dad3e9f26f" category="inline-link-rx"></block></block>
+  <block id="9d97f1d57b6500707266656cdf2bf526" category="paragraph">更新後的 CPU 和 RAM 需求適用於所有新的連接器。對於現有的連接器、建議增加 CPU 和 RAM 、以改善效能和可靠性。</block>
 </blocks>
