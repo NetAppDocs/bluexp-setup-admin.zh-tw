@@ -193,7 +193,7 @@ AWS EC2 執行個體類型:: 符合上述 CPU 和 RAM 需求的執行個體類�
 . 前往 https://aws.amazon.com/marketplace/pp/prodview-jbay5iyfmu6ui["AWS Marketplace 上的 BlueXP Connector 清單"^]
 . 在 Marketplace 頁面上、選取 * 繼續訂閱 * 。
 +
-image:screenshot-subscribe-aws.png["螢幕快照顯示 AWS Marketplace 上的「繼續訂閱並繼續設定」按鈕。"]
+image:screenshot-subscribe-aws-continue.png["螢幕快照顯示 AWS Marketplace 上的「繼續訂閱並繼續設定」按鈕。"]
 
 . 若要訂閱軟體、請選取 * 接受條款 * 。
 +
