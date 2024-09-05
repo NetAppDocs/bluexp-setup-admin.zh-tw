@@ -47,29 +47,34 @@ link:task-prepare-restricted-mode.html#step-3-review-host-requirements["檢閱�
 
 .步驟
 . 前往 https://aws.amazon.com/marketplace/pp/prodview-jbay5iyfmu6ui["AWS Marketplace 上的 BlueXP Connector 清單"^]
-. 在 Marketplace 頁面上，選擇 * 繼續訂閱 * ，然後選擇 * 繼續至組態 * 。
+. 在 Marketplace 頁面上、選取 * 繼續訂閱 * 。
 +
 image:screenshot-subscribe-aws.png["螢幕快照顯示 AWS Marketplace 上的「繼續訂閱並繼續設定」按鈕。"]
 
-. 變更任何預設選項、然後選取 * 繼續啟動 * 。
-. 在「 * 選擇行動 * 」下、選取 * 透過 EC2* 啟動、然後選取 * 啟動 * 。
+. 若要訂閱軟體、請選取 * 接受條款 * 。
++
+訂閱程序可能需要幾分鐘的時間。
+
+. 訂購程序完成後、請選取 * 繼續至組態 * 。
++
+image:screenshot-subscribe-aws-configuration.png["螢幕快照顯示 AWS Marketplace 上的「繼續訂閱並繼續設定」按鈕。"]
+
+. 在 * 設定此軟體 * 頁面上、確定您已選取正確的區域、然後選取 * 繼續啟動 * 。
+. 在 * 啟動此軟體 * 頁面上，在 * 選擇動作 * 下，選取 * 透過 EC2* 啟動，然後選取 * 啟動 * 。
 +
 這些步驟說明如何從EC2主控台啟動執行個體、因為主控台可讓您將IAM角色附加至連接器執行個體。這無法使用 * 從網站啟動 * 動作。
 
 . 依照提示設定及部署執行個體：
 +
 ** *名稱和標記*：輸入執行個體的名稱和標記。
-** *應用程式與作業系統映像*：跳過本節。已選取連接器AMI。
-** * 執行個體類型 * ：根據區域可用度、選擇符合 RAM 和 CPU 需求的執行個體類型（建議使用 t3.2xlge ）。
+** * 應用程式與作業系統映像 * ：跳過本節。已選取連接器AMI。
+** * 執行個體類型 * ：根據區域可用度、選擇符合 RAM 和 CPU 需求的執行個體類型（預先選擇並建議使用 t3.2xlge ）。
 ** *金鑰配對（登入）*：選取您要用來安全連線至執行個體的金鑰配對。
 ** *網路設定*：視需要編輯網路設定：
 +
 *** 選擇所需的VPC和子網路。
 *** 指定執行個體是否應有公有IP位址。
-*** 指定防火牆設定、以啟用Connector執行個體所需的連線方法：SSH、HTTP和HTTPS。
-+
-特定組態還需要一些規則。
-
+*** 指定安全性群組設定、以啟用 Connector 執行個體（ SSH 、 HTTP 和 HTTPS ）所需的連線方法。
 +
 link:reference-ports-aws.html["檢視 AWS 的安全性群組規則"]。
 

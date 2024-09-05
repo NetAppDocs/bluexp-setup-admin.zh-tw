@@ -2019,14 +2019,11 @@
   <block id="7c36ac5a8d104c08bd1c9905b4e5d437" category="paragraph">這些步驟說明如何從EC2主控台啟動執行個體、因為主控台可讓您將IAM角色附加至連接器執行個體。這無法使用 * 從網站啟動 * 動作。</block>
   <block id="b3472ff32fca13e95a664d2516fabc9d" category="list-text">依照提示設定及部署執行個體：</block>
   <block id="d062afbb0dab008c992fc7630e6e5b1d" category="list-text">*名稱和標記*：輸入執行個體的名稱和標記。</block>
-  <block id="5fa511356078e407d467aeb21afa8311" category="list-text">*應用程式與作業系統映像*：跳過本節。已選取連接器AMI。</block>
   <block id="3346e4a27b0ab9e94d29515e25908ed6" category="inline-link-macro">檢閱執行個體需求</block>
   <block id="a2edeeec0c237aa79e3b1f0eb87b07e4" category="list-text">*金鑰配對（登入）*：選取您要用來安全連線至執行個體的金鑰配對。</block>
   <block id="db8b616682d262766c36f81013b4f840" category="list-text">*網路設定*：視需要編輯網路設定：</block>
   <block id="c04d267ebc445e8f04c29787ecab6547" category="list-text">選擇所需的VPC和子網路。</block>
   <block id="f851630c999713801d4adbdaeecfc902" category="list-text">指定執行個體是否應有公有IP位址。</block>
-  <block id="d0bf1fb8b3ea2c1aed553c11fcfc2431" category="list-text">指定防火牆設定、以啟用Connector執行個體所需的連線方法：SSH、HTTP和HTTPS。</block>
-  <block id="2cff93ab04445d2412fc49f1670cf749" category="paragraph">特定組態還需要一些規則。</block>
   <block id="752330cdb2fab31ec29aaa286269a882" category="list-text">* 進階詳細資料 * ：在 * IAM 執行個體設定檔 * 下、選擇包含 Connector 所需權限的 IAM 角色。</block>
   <block id="10a3df02c55e733eca6fef076545645a" category="paragraph">AWS 會以指定的設定啟動軟體。Connector 執行個體和軟體應在大約五分鐘內執行。</block>
   <block id="a187fbf78abfcf26b0ccf604029629e6" category="summary">身分識別聯盟可透過BlueXP進行單一登入、讓使用者使用公司身分的認證登入。若要開始使用、請瞭解身分識別聯盟如何與BlueXP搭配運作、然後檢閱設定程序的總覽。</block>
@@ -3049,9 +3046,6 @@ Azure 政府地區不需要此端點。</block>
   <block id="0447e5af15c21fbb6eee1972d30cef83" category="list-text">選擇 * Amazon Web Services* 作為您的雲端供應商、然後選擇 * 繼續 * 。</block>
   <block id="15de410cab5b286c0cff40620cbbc2f8" category="list-text">選擇 * 繼續 * 、使用產品內建指南準備部署。產品內建指南中的每個步驟都包含文件本頁所含的資訊。</block>
   <block id="43c314e15e760781773285daf91c0ad5" category="list-text">如果您已按照本頁的步驟做好準備、請選取 * 跳至部署 * 。</block>
-  <block id="21d86ad4e09aa752397558f2a4a4d776" category="list-text">在 Marketplace 頁面上，選擇 * 繼續訂閱 * ，然後選擇 * 繼續至組態 * 。</block>
-  <block id="62e122f28cedb83482c8d975a0ebbc6b" category="list-text">變更任何預設選項、然後選取 * 繼續啟動 * 。</block>
-  <block id="b5db57dbb4b1fc339bfbf2e32844ab33" category="list-text">在「 * 選擇行動 * 」下、選取 * 透過 EC2* 啟動、然後選取 * 啟動 * 。</block>
   <block id="a77947bca5ad1214f93361073cfddb0a" category="list-text">* 摘要 * ：檢閱摘要並選取 * 啟動執行個體 * 。</block>
   <block id="6cd4b1aeb7ee91ddbd1d37ee958a2b58" category="list-text">選取 * 開始 * 。</block>
   <block id="1ce857b02028095dcbdb6522daf11862" category="list-text">選擇 * 立即取得 * 、然後選擇 * 繼續 * 。</block>
@@ -4023,7 +4017,6 @@ Azure 政府地區不需要此端點。</block>
   <block id="09fcc3c3a46a63684b907c89bb2e4b7b" category="cell">2024 年 7 月 18 日</block>
   <block id="4736cb006ef02fa673f618379e2106bd" category="cell">2024 年 7 月 1 日（版本 1.33 ）</block>
   <block id="8009eebf05fd33b87750f8b4048986f7" category="cell">2024 年 6 月 10 日</block>
-  <block id="d2c0dfc6934302fa99dba597124c94a2" category="list-text">* 執行個體類型 * ：根據區域可用度、選擇符合 RAM 和 CPU 需求的執行個體類型（建議使用 t3.2xlge ）。</block>
   <block id="eefc3c2b6ca2400b2ae57e8da8247c03" category="list-text">8 個核心或 8 個 vCPU</block>
   <block id="911ede8df5585598c294830dafe276fa" category="list-text">32GB</block>
   <block id="3cb4677fb343d8a6f3ab8d904462fda9" category="list-text">符合上述 CPU 和 RAM 需求的執行個體類型。我們建議使用 t3.2 x 大型。</block>
@@ -4221,4 +4214,14 @@ Azure 政府地區不需要此端點。</block>
   <block id="1b41af4e937fd3b48c53451988ba06b5" category="inline-link">瞭解 Cloud Volumes ONTAP 9.15.1 版本</block>
   <block id="dcc26903c10160517882b9dad3e9f26f" category="list-text"><block ref="dcc26903c10160517882b9dad3e9f26f" category="inline-link-rx"></block></block>
   <block id="9d97f1d57b6500707266656cdf2bf526" category="paragraph">更新後的 CPU 和 RAM 需求適用於所有新的連接器。對於現有的連接器、建議增加 CPU 和 RAM 、以改善效能和可靠性。</block>
+  <block id="f24abcf11233503db09edba21b8e5cdb" category="list-text">在 Marketplace 頁面上、選取 * 繼續訂閱 * 。</block>
+  <block id="b57313d1cbeb83e2be3f889cd8fc5526" category="list-text">若要訂閱軟體、請選取 * 接受條款 * 。</block>
+  <block id="b33dcc2933561e1bbdc43d2b68e8ab24" category="paragraph">訂閱程序可能需要幾分鐘的時間。</block>
+  <block id="11c2c43373c3fc2b79b1a6f46f2372bf" category="list-text">訂購程序完成後、請選取 * 繼續至組態 * 。</block>
+  <block id="84bdd294c5ae866bbc0419f7bba9f368" category="paragraph"><block ref="84bdd294c5ae866bbc0419f7bba9f368" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2630dda750b0b4c54559adbe4e5daa21" category="list-text">在 * 設定此軟體 * 頁面上、確定您已選取正確的區域、然後選取 * 繼續啟動 * 。</block>
+  <block id="4a3fda2105dbdf853aa237113073a9f0" category="list-text">在 * 啟動此軟體 * 頁面上，在 * 選擇動作 * 下，選取 * 透過 EC2* 啟動，然後選取 * 啟動 * 。</block>
+  <block id="e5df21e6d1c0f91eabeef6ab2202379e" category="list-text">* 應用程式與作業系統映像 * ：跳過本節。已選取連接器AMI。</block>
+  <block id="60297aa5897806a96d1aabe6d5990c43" category="list-text">* 執行個體類型 * ：根據區域可用度、選擇符合 RAM 和 CPU 需求的執行個體類型（預先選擇並建議使用 t3.2xlge ）。</block>
+  <block id="2ff5664491ece284c069195a204d44c0" category="list-text">指定安全性群組設定、以啟用 Connector 執行個體（ SSH 、 HTTP 和 HTTPS ）所需的連線方法。</block>
 </blocks>
