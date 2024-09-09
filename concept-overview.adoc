@@ -22,7 +22,7 @@ NetApp BlueXP 為您的組織提供單一控制面板、協助您在內部部署
 
 BlueXP 平台提供四大資料管理支柱：儲存、行動力、保護、分析與控制。
 
-儲存設備:: 探索、部署及管理儲存設備、無論是在 AWS 、 Azure 、 Google Cloud 或內部部署。
+儲存設備:: 探索、部署及管理儲存設備、無論是在 AWS 、 Azure 、 Google Cloud 或內部部署中。
 +
 --
 * 設定與使用 https://bluexp.netapp.com/ontap-cloud["Cloud Volumes ONTAP"^] 實現跨雲端的高效率多重傳輸協定資料管理。

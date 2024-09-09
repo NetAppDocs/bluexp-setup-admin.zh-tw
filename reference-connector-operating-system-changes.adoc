@@ -33,7 +33,7 @@ BlueXP Connector 支援下列 Linux 作業系統。
 * Red Hat Enterprise Linux
 +
 ** 8.6 至 8.10
-** 9.1 至 9.3
+** 9.1 至 9.4
 
 
 
@@ -54,7 +54,7 @@ BlueXP Connector 支援下列 Linux 作業系統。
 * Red Hat Enterprise Linux
 +
 ** 8.6 至 8.10
-** 9.1 至 9.3
+** 9.1 至 9.4
 
 
 
@@ -154,7 +154,7 @@ Ubuntu 22.04 LTS 仍支援 Connector 、是 BlueXP 和市場部署的預設作�
 ====
 .標準模式
 --
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["在內部部署安裝並設定 Connector"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["在內部環境中安裝並設定 Connector"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-manual.html["在 AWS 中手動安裝 Connector"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-azure-manual.html["在 Azure 中手動安裝 Connector"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-google-manual.html["在 Google Cloud 中手動安裝 Connector"]

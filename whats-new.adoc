@@ -18,7 +18,83 @@ summary: 瞭解 BlueXP 管理功能的新功能： BlueXP 帳戶、連接器、�
 
 
 
-== 2024 年 22 月 8 日
+== 2024 年 9 月 9 日
+
+
+
+=== 連接器 3.9.44
+
+此版本包含 Docker Engine 26 支援、 SSL 憑證增強功能、以及錯誤修正。
+
+3.9.44 版本適用於標準模式和受限模式。
+
+
+
+==== 支援 Docker Engine 26
+
+Docker Engine 是在 Ubuntu 22.04 LTS 上安裝 Connector 時所需的容器協調工具。
+
+從 Connector 3.9.44 版開始、 Docker Engine 26 現在支援 _new_ Connector 安裝。
+
+支援的 Docker Engine 版本更新清單如下：
+
+* 支援的最低版本為 23.0.6 。
+* 支援的版本上限為 26.0.0 。
+
+
+
+
+==== 已更新 SSL 憑證以供本機 UI 存取
+
+當您以受限模式或私有模式使用 BlueXP  時、使用者介面可從部署在雲端區域或內部部署的 Connector 虛擬機器存取。根據預設、 BlueXP  會使用自我簽署的 SSL 憑證、提供安全的 HTTPS 存取、以存取在 Connector 上執行的網路型主控台。
+
+在此版本中、我們針對新連接器和現有連接器變更了 SSL 憑證：
+
+* 憑證的一般名稱現在與簡短主機名稱相符
+* 憑證主體替代名稱是主機機器的完整網域名稱（ FQDN ）
+
+
+
+
+=== 支援 RHEL 9.4
+
+BlueXP  現在支援在標準模式或受限模式下使用 BlueXP  時、在 Red Hat Enterprise Linux 9.4 主機上安裝 Connector 。
+
+從 Connector 3.9.40 版本開始支援 RHEL 9.4 。
+
+標準模式和受限模式支援 RHEL 版本的更新清單現在包括下列項目：
+
+* 8.6 至 8.10
+* 9.1 至 9.4
+
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["瞭解 Connector 對 RHEL 8 和 9 的支援"]。
+
+
+
+=== 支援所有 RHEL 版本的 Podman 4.9.4
+
+所有支援版本的 Red Hat Enterprise Linux 現在都支援 Podman 4.9.4 。4.9.4 版先前僅支援 RHEL 8.10 。
+
+支援的 Podman 版本更新清單包含 4.6.1 和 4.9.4 與 Red Hat Enterprise Linux 主機。
+
+從 Connector 3.9.40 版本開始、 RHEL 主機需要使用 Podman 。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["瞭解 Connector 對 RHEL 8 和 9 的支援"]。
+
+
+
+=== 更新 AWS 和 Azure 權限
+
+我們更新了 Connector 的 AWS 和 Azure 原則、以移除不再需要的權限。這些權限與 BlueXP  邊緣快取、探索及管理 Kubernetes 叢集有關、截至 2024 年 8 月為止、這些叢集不再受到支援。
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html#change-log["瞭解 AWS 原則有哪些變更"]。
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html#change-log["瞭解 Azure 政策有何改變"]。
+
+
+
+
+== 2024 年 8 月 22 日
 
 
 
@@ -48,7 +124,7 @@ Cloud Volumes ONTAP 支援虛擬機器磅秤集需要這些權限。如果您有
 
 === 連接器 3.9.43
 
-此版本包括小幅改良、錯誤修正、以及新 Azure 權限的需求。
+此版本包含輕微的改善和錯誤修正。
 
 3.9.43 版本適用於標準模式和受限模式。
 

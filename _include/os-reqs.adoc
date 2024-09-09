@@ -12,7 +12,7 @@
 * Red Hat Enterprise Linux
 +
 ** 8.6 至 8.10
-** 9.1 至 9.3
+** 9.1 至 9.4
 +
 主機必須向 Red Hat Subscription Management 登錄。如果主機尚未登錄、則無法在 Connector 安裝期間存取儲存庫來更新所需的協力廠商軟體。
 
@@ -89,7 +89,10 @@ Docker引擎:: 安裝 Connector 之前、主機上需要 Docker Engine 。
 +
 --
 * 支援的最低版本為 23.0.6 。
-* 支援的最大版本為 25.0.0 。
+* 支援的版本上限為 26.0.0 。
++
+請注意、從 3.9.44 版 Connector 開始、 Docker Engine 26 支援 _new_ Connector 安裝。
+
 +
 https://docs.docker.com/engine/install/["檢視安裝指示"^]
 
@@ -102,37 +105,12 @@ https://docs.docker.com/engine/install/["檢視安裝指示"^]
 容器協調工具:: 根據您的作業系統而定、安裝 Connector 之前需要使用 Podman 或 Docker Engine 。
 +
 --
-* Red Hat Enterprise Linux 8 和 9 需要 Podman 。
-+
-[cols="50a,50a"]
-|===
-| RHEL 版本 | 支援的 Podman 版本 
-
-
- a| 
-RHEL 8.6 至 8.9
- a| 
-Podman 4.6.1
-
-
-
- a| 
-RHEL 8.10
- a| 
-Podman 4.6.1 和 4.9.4
-
-
-
- a| 
-RHEL 9.1 至 9.3
- a| 
-Podman 4.6.1
-
-|===
+* Red Hat Enterprise Linux 需要 Podman 。
 +
 Podman 必須符合下列先決條件：
 
 +
+** 需要 Podman 4.6.1 或 4.9.4 版
 ** 必須啟用並啟動 podman.socket 服務
 ** 必須安裝 python3
 ** 必須安裝 podman-compose 套件 1.0.6 版
@@ -142,7 +120,10 @@ Podman 必須符合下列先決條件：
 * Ubuntu 需要 Docker Engine 。
 +
 ** 支援的最低版本為 23.0.6 。
-** 支援的最大版本為 25.0.0 。
+** 支援的版本上限為 26.0.0 。
++
+請注意、從 3.9.44 版 Connector 開始、 Docker Engine 26 支援 _new_ Connector 安裝。
+
 
 
 

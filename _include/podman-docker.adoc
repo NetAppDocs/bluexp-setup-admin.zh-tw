@@ -96,7 +96,7 @@ NOTE: 使用 `dnf install` 命令符合將 podman-compose 新增至 PATH 環境�
 --
 .Docker引擎
 --
-安裝 23.0.6 到 25.0.0 之間的 Docker Engine 版本。
+安裝支援版本的 Docker Engine 。<<podman-versions,檢視 BlueXP  支援的 Docker Engine 版本>>。
 
 .步驟
 . 安裝 Docker Engine 。

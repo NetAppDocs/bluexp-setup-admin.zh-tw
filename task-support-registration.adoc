@@ -7,7 +7,7 @@ summary: 在您透過NetApp技術支援開啟支援案例之前、您必須先�
 = 註冊以取得支援
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]

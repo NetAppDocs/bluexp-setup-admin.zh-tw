@@ -75,7 +75,7 @@ NOTE: 如果您從BlueXP部署Connector、則BlueXP會自動為您部署Connecto
 
 您可以使用 IAM 角色、在部署 Connector 執行個體的來源 AWS 帳戶與其他 AWS 帳戶之間建立信任關係。接著、您會向BlueXP提供來自信任帳戶的IAM角色ARN。
 
-如果連接器安裝在內部部署環境中、您就無法使用此驗證方法。您必須使用AWS金鑰。
+如果 Connector 是內部部署安裝、您就無法使用這種驗證方法。您必須使用AWS金鑰。
 
 .步驟
 . 前往您要為Connector提供權限的目標帳戶中的IAM主控台。
@@ -101,7 +101,7 @@ NOTE: 如果您從BlueXP部署Connector、則BlueXP會自動為您部署Connecto
 
 如果您想為IAM使用者提供AWS金鑰給BlueXP、則必須將必要的權限授予該使用者。BlueXP IAM原則定義了允許BlueXP使用的AWS動作和資源。
 
-如果連接器安裝在內部部署環境中、則必須使用此驗證方法。您無法使用IAM角色。
+如果 Connector 安裝在內部部署、則必須使用此驗證方法。您無法使用IAM角色。
 
 .步驟
 . 從IAM主控台複製並貼上的內容、以建立原則 link:reference-permissions-aws.html["連接器的IAM原則"]。

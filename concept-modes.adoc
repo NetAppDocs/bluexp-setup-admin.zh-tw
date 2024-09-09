@@ -16,7 +16,7 @@ summary: BlueXP 提供多種部署模式、可讓您以符合業務與安全需�
 [role="lead"]
 BlueXP 提供多種 _ 部署模式 _ 、可讓您以符合業務與安全需求的方式使用 BlueXP 。_Standard modity_ 利用 BlueXP SaaS 層提供完整功能、而 _restricted modity_ 和 _private modity_ 則適用於有連線限制的組織。
 
-雖然 BlueXP 在使用受限模式或私有模式時會抑制流量、通訊和資料流、但您有責任確保您的環境（內部部署和雲端環境）符合必要的法規。
+雖然 BlueXP  在使用受限模式或私有模式時會抑制流量、通訊和資料的流通、但您有責任確保您的環境（內部部署和雲端）符合必要的法規。
 
 
 
@@ -38,7 +38,7 @@ BlueXP 為您的帳戶提供下列部署模式。每種模式的輸出連線需�
 <<受限模式,深入瞭解 SaaS 層的輸出連線能力>>。
 
 --
-私有模式:: BlueXP Connector 安裝在內部部署或雲端（位於安全區域、主權雲端區域或商業區域）、而且與 BlueXP SaaS 層之間沒有連線。使用者可從 Connector 提供的網路型主控台、而非從 SaaS 層、在本機存取 BlueXP 。
+私有模式:: BlueXP  Connector 安裝在內部部署或雲端（位於安全區域、主權雲端區域或商業區域）、且與 BlueXP  SaaS 層之間沒有連線。使用者可從 Connector 提供的網路型主控台、而非從 SaaS 層、在本機存取 BlueXP 。
 +
 --
 安全區域包括 https://aws.amazon.com/federal/secret-cloud/["AWS Secret Cloud"^]、 https://aws.amazon.com/federal/top-secret-cloud/["AWS Top Secret Cloud"^]和 https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6."^]
@@ -216,13 +216,13 @@ API 端點:: API 呼叫是針對 Connector 虛擬機器進行的。
 
 == 私有模式
 
-在私有模式中、您可以在內部部署或雲端上安裝 Connector 、然後使用 BlueXP 管理混合雲中的資料。無法連線至 BlueXP SaaS 層。
+在私有模式中、您可以在內部部署或雲端中安裝 Connector 、然後使用 BlueXP  來管理混合雲中的資料。無法連線至 BlueXP SaaS 層。
 
 下列影像顯示私有模式部署的範例、其中 Connector 安裝在雲端、並同時管理 Cloud Volumes ONTAP 和內部部署 ONTAP 叢集。
 
 image:diagram-private-mode-cloud.png["這是一個概念性映像、顯示正在執行 Connector 的雲端中的虛擬網路、並提供對網路型主控台的存取、並在內部部署資料中心中管理 Cloud Volumes ONTAP 和 AFF 叢集。"]
 
-同時、第二個映像顯示私有模式部署的範例、其中 Connector 安裝在內部部署、管理內部部署 ONTAP 叢集、並提供對支援 BlueXP 資料服務的存取。
+同時、第二個映像顯示私有模式部署的範例、其中 Connector 安裝在內部部署、管理內部部署的 ONTAP 叢集、並提供對支援的 BlueXP  資料服務的存取。
 
 image:diagram-private-mode-onprem.png["這是一個概念性影像、顯示內部部署的資料中心、其中 Connector 正在執行、可存取網路型主控台、 BlueXP 資料服務、並正在內部部署資料中心中管理 AFF 叢集。"]
 

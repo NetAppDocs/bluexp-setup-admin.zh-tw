@@ -152,8 +152,6 @@ summary: 當BlueXP在Azure中啟動Connector VM時、它會將自訂角色附加
                     "Microsoft.Network/networkSecurityGroups/securityRules/write",
                     "Microsoft.Network/applicationSecurityGroups/delete",
                     "Microsoft.Network/networkSecurityGroups/securityRules/delete",
-                    "Microsoft.ContainerService/managedClusters/listClusterUserCredential/action",
-                    "Microsoft.ContainerService/managedClusters/read",
                     "Microsoft.Synapse/workspaces/write",
                     "Microsoft.Synapse/workspaces/read",
                     "Microsoft.Synapse/workspaces/delete",
@@ -735,6 +733,16 @@ Connector會針對日常作業提出下列API要求。
 == 變更記錄
 
 新增和移除權限時、我們會在下方各節中加以註記。
+
+
+
+=== 2024 年 9 月 9 日
+
+下列權限已從 JSON 原則中移除、因為 BlueXP  不再支援探索及管理 Kubernetes 叢集：
+
+* Microsoft.ContainerService/managedClusters/listClusterUserCredentials/action
+* Microsoft.ContainerService/管理叢集/讀取
+
 
 
 

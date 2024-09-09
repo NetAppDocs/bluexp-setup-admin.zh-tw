@@ -14,10 +14,12 @@ summary: 若要從 Azure Marketplace 建立 Connector 、您必須設定網路�
 
 
 [role="lead"]
-若要從 Azure Marketplace 建立 Connector 、您必須設定網路、準備 Azure 權限、檢閱執行個體需求、然後建立 Connector 。
+Connector 是在雲端網路或內部部署網路中執行的 NetApp 軟體、可讓您使用所有 BlueXP  功能和服務。其中一個可用的安裝選項是直接從 Azure Marketplace 在 Azure 中建立 Connector 。若要從 Azure Marketplace 建立 Connector 、您必須設定網路、準備 Azure 權限、檢閱執行個體需求、然後建立 Connector 。
 
 .開始之前
-您應該檢閱 link:reference-limitations.html["連接器限制"]。
+* 您應該擁有 link:concept-connectors.html["瞭解連接器"].
+* 您應該檢閱 link:reference-limitations.html["連接器限制"]。
+
 
 
 

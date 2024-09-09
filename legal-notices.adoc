@@ -7,7 +7,7 @@ summary:
 = 法律聲明
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]

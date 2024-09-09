@@ -41,7 +41,7 @@ BlueXP 帳戶管理員可以在雲端或內部部署網路中建立 Connector �
 * link:concept-install-options-aws.html["瞭解如何在 AWS 中建立 Connector"]
 * link:concept-install-options-azure.html["瞭解如何在 Azure 中建立 Connector"]
 * link:concept-install-options-google.html["瞭解如何在Google Cloud中建立Connector"]
-* link:task-install-connector-on-prem.html["瞭解如何在內部部署上建立 Connector"]
+* link:task-install-connector-on-prem.html["瞭解如何建立內部部署的 Connector"]
 
 
 [role="quick-margin-para"]

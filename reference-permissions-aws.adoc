@@ -337,44 +337,6 @@ summary: 當BlueXP在AWS中啟動Connector執行個體時、它會將原則附�
     "Statement": [
         {
             "Action": [
-                "ec2:DescribeRegions",
-                "eks:ListClusters",
-                "eks:DescribeCluster",
-                "iam:GetInstanceProfile"
-            ],
-            "Resource": "*",
-            "Effect": "Allow",
-            "Sid": "K8sServicePolicy"
-        },
-        {
-            "Action": [
-                "cloudformation:DescribeStacks",
-                "cloudwatch:GetMetricStatistics",
-                "cloudformation:ListStacks"
-            ],
-            "Resource": "*",
-            "Effect": "Allow",
-            "Sid": "GFCservicePolicy"
-        },
-        {
-            "Condition": {
-                "StringLike": {
-                    "ec2:ResourceTag/GFCInstance": "*"
-                }
-            },
-            "Action": [
-                "ec2:StartInstances",
-                "ec2:TerminateInstances",
-                "ec2:AttachVolume",
-                "ec2:DetachVolume"
-            ],
-            "Resource": [
-                "arn:aws:ec2:*:*:instance/*"
-            ],
-            "Effect": "Allow"
-        },
-        {
-            "Action": [
                 "ec2:CreateTags",
                 "ec2:DeleteTags",
                 "ec2:DescribeTags",
@@ -1250,6 +1212,57 @@ Connector會提出下列API要求、要求在Cloud Volumes ONTAP AWS中部署及
 
 新增和移除權限時、我們會在下方各節中加以註記。
 
+
+
+=== 2024 年 9 月 9 日
+
+由於 BlueXP  不再支援 BlueXP  邊緣快取、以及 Kubernetes 叢集的探索與管理、因此已從標準地區的原則 #2 移除權限。
+
+.檢視從原則移除的權限
+[%collapsible]
+====
+[source, json]
+----
+        {
+            "Action": [
+                "ec2:DescribeRegions",
+                "eks:ListClusters",
+                "eks:DescribeCluster",
+                "iam:GetInstanceProfile"
+            ],
+            "Resource": "*",
+            "Effect": "Allow",
+            "Sid": "K8sServicePolicy"
+        },
+        {
+            "Action": [
+                "cloudformation:DescribeStacks",
+                "cloudwatch:GetMetricStatistics",
+                "cloudformation:ListStacks"
+            ],
+            "Resource": "*",
+            "Effect": "Allow",
+            "Sid": "GFCservicePolicy"
+        },
+        {
+            "Condition": {
+                "StringLike": {
+                    "ec2:ResourceTag/GFCInstance": "*"
+                }
+            },
+            "Action": [
+                "ec2:StartInstances",
+                "ec2:TerminateInstances",
+                "ec2:AttachVolume",
+                "ec2:DetachVolume"
+            ],
+            "Resource": [
+                "arn:aws:ec2:*:*:instance/*"
+            ],
+            "Effect": "Allow"
+        },
+----
+====
 
 
 === 2024 年 5 月 9 日
