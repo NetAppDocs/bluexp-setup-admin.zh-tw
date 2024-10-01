@@ -188,7 +188,6 @@
   <block id="3348dcc393bde37af6464ca44f92a231" category="inline-link-macro">瞭解方法</block>
   <block id="4a126f1568270f6124f9c053bf5a5b02" category="paragraph">您必須先建立連接器、才能變更BlueXP設定。 <block ref="9cb3f4e3b2f30b874e967976f1105dcc" category="inline-link-macro-rx"></block>。</block>
   <block id="c49ff7d7009f9d4727b2b25afa496418" category="section-title">安裝 HTTPS 憑證</block>
-  <block id="08547be5df7da5ef1e22244cbdbfd5d6" category="paragraph">安裝由 CA 簽署的憑證、以確保安全存取。</block>
   <block id="bfad05e4d9a8b5fbc930a21d6b53cd7a" category="list-text">在 BlueXP 主控台的右上角、選取「設定」圖示、然後選取 *HTTPS Setup* 。</block>
   <block id="4d646a6e32f8084a095a674812f1fb31" category="list-text">在「 HTTPS 設定」頁面中、產生憑證簽署要求（ CSR ）或安裝您自己的 CA 簽署憑證來安裝憑證：</block>
   <block id="054b4f3ea543c990f6b125f41af6ebf7" category="cell">選項</block>
@@ -484,7 +483,6 @@
   <block id="12e2060dbbd01e288c66757f239fb192" category="list-text">/var.中的磁碟空間</block>
   <block id="530ae65bce71acbabc920f0c53c4b5c2" category="list-text">必須提供20 GiB的空間</block>
   <block id="681992b8581f6d4247af5523a14d0ce4" category="list-text">Docker引擎</block>
-  <block id="117c0c98e2a5cb3503de68c655378d13" category="inline-link">檢視安裝指示</block>
   <block id="9f0bb2acc3984bc2da2e5e566dd4bc0a" category="doc">深入瞭解BlueXP</block>
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">功能</block>
   <block id="e250797f3ba805eed2f7fad2419fdd05" category="paragraph">BlueXP 平台提供四大資料管理支柱：儲存、行動力、保護、分析與控制。</block>
@@ -3709,7 +3707,6 @@ Azure 政府地區不需要此端點。</block>
   <block id="53f1b4752b0f2d48c0953219295e0a2b" category="list-text">9.13.0 P4 （或任何後續修補程式）</block>
   <block id="c2eb567355a3050dee61ad28cde98255" category="list-text">9.13.1 或本版本之後的任何版本</block>
   <block id="7e0ccd7729abca8ae58e9ceff3fd0b87" category="list-text">在 Cloud Volumes ONTAP 升級程序期間使用</block>
-  <block id="3e291cd3cf657cb754d907986c7587ed" category="paragraph"><block ref="3e291cd3cf657cb754d907986c7587ed" category="inline-link-rx"></block></block>
   <block id="0427fd4cf4edaa5749da5792252fcd70" category="paragraph">我們已更新 Docker Engine 需求、以指定 Connector 上支援的最大版本、即 25.0.0 。支援的最低版本仍為 19.3.1 。</block>
   <block id="a7d713b0c0233ee2a3bbb328d82ba606" category="inline-link">View Connector 主機需求</block>
   <block id="10f6464912ab27695ba4f7df57c14783" category="paragraph"><block ref="19b43e2419dde639b2fba3d57b5bca52" category="inline-link-rx"></block>。</block>
@@ -3948,7 +3945,6 @@ Azure 政府地區不需要此端點。</block>
   <block id="06cfdcafd69514150ade31a714fa78db" category="list-text">需要經過認證可執行支援作業系統的裸機或託管 Hypervisor 。</block>
   <block id="1c0a2f304cb94000fe79271bae1284df" category="list-text">Ubuntu 需要 Docker Engine 。</block>
   <block id="eb79e7adcda869f967a810da89679252" category="paragraph">在 2024 年 6 月 30 日、 RHEL 7 已結束維護（ EOM ）、而 CentOS 7 已達到生命週期結束（ EOL ）。NetApp 於 2024 年 6 月 30 日停止支援這些 Linux 套裝作業系統上的 Connector 。</block>
-  <block id="547a1a61c710e2dc947389da0967d175" category="list-text">支援的最低版本為 23.0.6 。</block>
   <block id="13265d5e2f2489e0351d3bae9dc7d923" category="doc">註冊或登入 BlueXP</block>
   <block id="400356f2a752e6926bd99ce1db45ee8c" category="paragraph">BlueXP 可從網路型主控台存取。當您開始使用 BlueXP 時、您的第一步是從公司目錄註冊或使用 NetApp 支援網站認證或 SSO 認證登入。</block>
   <block id="71bf124b6b9da30db8c000241ce01691" category="paragraph">當您第一次存取 BlueXP 時、 BlueXP 可讓您使用下列其中一個選項來登入或登入：</block>
@@ -4265,10 +4261,36 @@ Azure 政府地區不需要此端點。</block>
   <block id="f2162c8532f84cb24bc54e30c4c0341c" category="cell">26.0.0</block>
   <block id="4d2dd7c014e329b4fb387303e47f1d83" category="cell">3.9.44 版本之前建立的連接器</block>
   <block id="9b8f09d8d408f824fbf8c4f7321295aa" category="cell">25.0.5</block>
-  <block id="3d0dee7040af4a3fedb8d1c83abf5f56" category="list-text">支援的最大版本為 25.0.0 。</block>
   <block id="f258c97f55e85bfbd607e70e86d840dc" category="section-title">支援 Docker Engine 26 的全新安裝</block>
   <block id="5c968eab53d6065ccf63e9766935cb7b" category="paragraph">從 Connector 3.9.44 版開始、 Docker Engine 26 現在可在 Ubuntu 主機上安裝 _new_ Connector 。</block>
   <block id="0e80b6146d7736683cb1292a9c1ba4af" category="paragraph">如果您在 3.9.44 版本之前建立現有的 Connector 、 Docker Engine 25.0.5 仍是 Ubuntu 主機上支援的最大版本。</block>
   <block id="c64c773fbe16e4df6ae417c106a467ef" category="inline-link">深入瞭解 Docker Engine 需求</block>
   <block id="395f31b2f1bc9cb3993acbb14cf4fb1f" category="paragraph"><block ref="724b4d6e1bb3e6bea768572a2ce7c10e" category="inline-link-rx"></block>。</block>
+  <block id="346c9e732e7e7f6e38707ad310f548d0" category="list-text">https://signin.b2c 。 NetApp ． com （此端點為 https://mysupport ． NetApp ． com 的 CNAME URL ）</block>
+  <block id="cce7af47240992bbe7e732a4ed33061c" category="inline-link">檢視 Docker 安裝指示</block>
+  <block id="11f197927bd64550079e417137ab4ce2" category="paragraph"><block ref="11f197927bd64550079e417137ab4ce2" category="inline-link-rx"></block></block>
+  <block id="6f875ca46d399fa9c75701aab6b0e1eb" category="paragraph">安裝 CA 簽署的憑證、以安全存取 Connector 上執行的網路型主控台。</block>
+  <block id="00be756b024b45d0d82f8cb900cbeacb" category="paragraph">您可以使用下列其中一個選項來安裝憑證：</block>
+  <block id="e832a3ac44d931a4b705999aa307cd09" category="list-text">從 BlueXP  產生憑證簽署要求（ CSR ）、將憑證要求提交給 CA 、然後在 Connector 上安裝 CA 簽署的憑證。</block>
+  <block id="f42f94dc205ad041c3d86658f703465e" category="paragraph">BlueXP  用來產生 CSR 的金鑰配對儲存在內部的 Connector 上。當您在 Connector 上安裝憑證時、 BlueXP  會自動擷取相同的金鑰配對（私密金鑰）。</block>
+  <block id="fa7c85eec1cc76ccc0e893292ce638e4" category="list-text">安裝您現有的 CA 簽署憑證。</block>
+  <block id="44f374dc4bb34314bb885e22229628b6" category="paragraph">使用此選項時、不會透過 BlueXP  產生 CSR 。您可以分別產生 CSR 並將私密金鑰儲存在外部。安裝憑證時、您會提供 BlueXP  私密金鑰。</block>
+  <block id="964635dcf6206ebb279b58d13cf69a92" category="section-title">2024 年 9 月 30 日</block>
+  <block id="0beb94109608ff82d313b33947162f96" category="section-title">私有模式版本（ 3.9.44 ）</block>
+  <block id="f1fb6fd189345cf04ef77974b58bcbfc" category="paragraph">此版本包含下列支援私有模式的 BlueXP  元件和服務版本。</block>
+  <block id="8dd8dbe371973ff01954f1d0db6a6c30" category="cell">3.9.44</block>
+  <block id="5fcc5d3ffc4bbbcf6d018ab4a9639205" category="cell">2024 年 9 月 27 日</block>
+  <block id="48f2931f061b9d56d7805eddf6969cea" category="paragraph">對於 Connector 、 3.9.44 私有模式版本包含 2024 年 8 月和 2024 年 9 月版本中推出的更新。最值得注意的是、支援 Red Hat Enterprise Linux 9.4 。</block>
+  <block id="288ce8ff800de0648500c62f0658b96c" category="paragraph">若要深入瞭解這些 BlueXP  元件和服務版本中包含的內容、請參閱每項 BlueXP  服務的版本資訊：</block>
+  <block id="65439cdb7546ae11a93a141421129d1a" category="inline-link">Connector 2024 年 9 月版本的新功能</block>
+  <block id="46c02b08a8d12f7b5b9a43c01b252fe0" category="list-text"><block ref="46c02b08a8d12f7b5b9a43c01b252fe0" category="inline-link-rx"></block></block>
+  <block id="c531086859410bbf7d79b1d007644e8c" category="inline-link">Connector 2024 年 8 月版本的新功能</block>
+  <block id="3447cde4c00b98b6428bff77da46fd8c" category="list-text"><block ref="3447cde4c00b98b6428bff77da46fd8c" category="inline-link-rx"></block></block>
+  <block id="116a2755907d33cc76c6cdc442c467b0" category="inline-link">BlueXP  備份與還原的新功能</block>
+  <block id="4e02af58c02d9f0704b79eb4e000eb20" category="list-text"><block ref="4e02af58c02d9f0704b79eb4e000eb20" category="inline-link-rx"></block></block>
+  <block id="cdcec1bb4c8f6524979a702b1691d4f7" category="inline-link">BlueXP  分類的新功能</block>
+  <block id="9212eddb7e41302606e7873d754ab3aa" category="list-text"><block ref="9212eddb7e41302606e7873d754ab3aa" category="inline-link-rx"></block></block>
+  <block id="00dc7f0b165829f9f81bfaf12a8db2e4" category="inline-link">BlueXP  Cloud Volumes ONTAP 管理的新功能</block>
+  <block id="941cdb6d27c83c929d4abe28f2321665" category="list-text"><block ref="941cdb6d27c83c929d4abe28f2321665" category="inline-link-rx"></block></block>
+  <block id="6aa6935f7c0067aba2624a4ad2862e39" category="paragraph">如需更多關於私有模式的詳細資訊、包括如何升級、請參閱下列內容：</block>
 </blocks>

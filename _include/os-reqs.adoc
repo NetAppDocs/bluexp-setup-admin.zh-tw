@@ -33,7 +33,7 @@
 * Red Hat Enterprise Linux
 +
 ** 8.6 至 8.10
-** 9.1 至 9.3
+** 9.1 至 9.4
 +
 主機必須向 Red Hat Subscription Management 登錄。如果主機尚未登錄、則無法在 Connector 安裝期間存取儲存庫來更新所需的協力廠商軟體。
 
@@ -116,17 +116,23 @@ Podman 必須符合下列先決條件：
 | 3.9.44 版本之前建立的連接器 | 23.0.6 | 25.0.5 
 |===
 +
-https://docs.docker.com/engine/install/["檢視安裝指示"^]
+https://docs.docker.com/engine/install/["檢視 Docker 安裝指示"^]
 
 
 
 * Ubuntu 需要 Docker Engine 。
 +
-** 支援的最低版本為 23.0.6 。
-** 支援的最大版本為 25.0.0 。
+[cols="3*"]
+|===
+| 連接器版本 | Docker Engine 的最低版本 | Docker Engine 的最大版本 
+
+
+| _New_ Connector 安裝從 3.9.44 開始 | 23.0.6 | 26.0.0 
+
+
+| 3.9.44 版本之前建立的連接器 | 23.0.6 | 25.0.5 
+|===
 +
-https://docs.docker.com/engine/install/["檢視安裝指示"^]
-
-
+https://docs.docker.com/engine/install/["檢視 Docker 安裝指示"^]
 
 
