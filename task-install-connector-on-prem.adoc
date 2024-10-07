@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-install-connector-on-prem.html 
 keywords: install connector, on prem connector installation, on prem connector, install connector on prem, manual install 
-summary: 在內部環境中安裝 Connector 、然後登入並設定以搭配 BlueXP  帳戶使用。 
+summary: 在內部環境中安裝 Connector 、然後登入並設定以與 BlueXP  組織合作。 
 ---
 = 在內部環境中安裝並設定 Connector
 :hardbreaks:
@@ -28,26 +28,64 @@ Connector 是在雲端網路或內部部署網路中執行的 NetApp 軟體、�
 Connector 軟體必須在符合特定作業系統需求、 RAM 需求、連接埠需求等的主機上執行。安裝 Connector 之前、請先確定您的主機符合這些要求。
 
 專用主機:: 與其他應用程式共用的主機不支援 Connector 。主機必須是專屬主機。
-支援的作業系統::
-+
---
-* Ubuntu 22.04 LTS
-* Red Hat Enterprise Linux
-+
-** 8.6 至 8.10
-** 9.1 至 9.4
-+
-主機必須向 Red Hat Subscription Management 登錄。如果主機尚未登錄、則無法在 Connector 安裝期間存取儲存庫來更新所需的協力廠商軟體。
-
-+
-這些作業系統的英文版本支援 Connector 。
-
-
-
-
-
---
 Hypervisor:: 需要經過認證可執行支援作業系統的裸機或託管 Hypervisor 。
+[[podman-versions]] 作業系統與容器需求:: 在標準模式或受限模式下使用 BlueXP  時、 BlueXP  支援連接器搭配下列作業系統。安裝 Connector 之前、需要使用容器協調工具。
++
+--
+[cols="2a,2a,2a,2a,2a"]
+|===
+| 作業系統 | 支援 OS 的支援版本 | 支援的 Connector 版本 | 必要的容器工具 | SELinux 
+
+
+ a| 
+Red Hat Enterprise Linux
+ a| 
+9.1 至 9.4
+
+8.6 至 8.10
+ a| 
+3.9.40 或更新版本、 BlueXP  為標準模式或受限模式
+ a| 
+Podman 4.6.1 或 4.9.4 版
+
+<<podman-configuration,檢視 Podman 組態需求>>。
+ a| 
+在強制模式或允許模式下支援
+
+
+
+ a| 
+Ubuntu
+ a| 
+24.04 LTS
+ a| 
+3.9.45 或更新版本、 BlueXP  為標準模式或受限模式
+ a| 
+Docker Engine 26.0.0
+ a| 
+不支援
+
+
+
+ a| 
+22.04 LTS
+ a| 
+3.9.29 或更新版本
+ a| 
+Docker Engine 23.0.6 至 26.0.0
+
+26.0.0 支援 _new_ Connector 3.9.44 或更新版本的安裝
+ a| 
+不支援
+
+|===
+附註：
+
+* 這些作業系統的英文版本支援 Connector 。
+* 對於 RHEL 、主機必須向 Red Hat Subscription Management 登錄。如果主機尚未登錄、則無法在 Connector 安裝期間存取儲存庫來更新所需的協力廠商軟體。
+
+
+--
 CPU:: 8 個核心或 8 個 vCPU
 RAM:: 32GB
 /opt 中的磁碟空間:: 必須有100 GiB的可用空間
@@ -62,40 +100,6 @@ BlueXP 使用 `/opt` 安裝 `/opt/application/netapp` 目錄及其內容。
 BlueXP 需要此空間 `/var` 因為 Docker 或 Podman 是專為在此目錄中建立容器而設計。具體而言、他們會在中建立容器 `/var/lib/containers/storage` 目錄。外部掛載或 symlinks 無法用於此空間。
 
 --
-容器協調工具:: 根據您的作業系統而定、安裝 Connector 之前需要使用 Podman 或 Docker Engine 。
-+
---
-[[podman-versions]]
-* Red Hat Enterprise Linux 需要 Podman 。
-+
-Podman 必須符合下列先決條件：
-
-+
-** 需要 Podman 4.6.1 或 4.9.4 版
-** 必須啟用並啟動 podman.socket 服務
-** 必須安裝 python3
-** 必須安裝 podman-compose 套件 1.0.6 版
-** 必須將 podman-compose 新增至 PATH 環境變數
-
-
-* Ubuntu 需要 Docker Engine 。
-+
-[cols="3*"]
-|===
-| 連接器版本 | Docker Engine 的最低版本 | Docker Engine 的最大版本 
-
-
-| _New_ Connector 安裝從 3.9.44 開始 | 23.0.6 | 26.0.0 
-
-
-| 3.9.44 版本之前建立的連接器 | 23.0.6 | 25.0.5 
-|===
-+
-https://docs.docker.com/engine/install/["檢視 Docker 安裝指示"^]
-
-
-
---
 
 
 
@@ -105,7 +109,13 @@ https://docs.docker.com/engine/install/["檢視 Docker 安裝指示"^]
 根據您的作業系統而定、安裝 Connector 之前需要使用 Podman 或 Docker Engine 。
 
 * Red Hat Enterprise Linux 8 和 9 需要 Podman 。
++
+<<podman-versions,檢視 BlueXP  支援的 Podman 版本>>。
+
 * Ubuntu 需要 Docker Engine 。
++
+<<podman-versions,檢視 BlueXP  支援的 Docker Engine 版本>>。
+
 
 
 .步驟
@@ -113,7 +123,13 @@ https://docs.docker.com/engine/install/["檢視 Docker 安裝指示"^]
 ====
 .Podman
 --
-安裝支援版本的 Podman 。<<podman-versions,檢視 BlueXP  支援的 Podman 版本>>。
+請依照下列步驟安裝 Podman 、並將其設定為符合下列需求：
+
+* 必須啟用並啟動 podman.socket 服務
+* 必須安裝 python3
+* 必須安裝 podman-compose 套件 1.0.6 版
+* 必須將 podman-compose 新增至 PATH 環境變數
+
 
 .步驟
 . 如果主機上已安裝 podman-泊 塢視窗套件、請將其移除。
@@ -196,13 +212,10 @@ NOTE: 使用 `dnf install` 命令符合將 podman-compose 新增至 PATH 環境�
 --
 .Docker引擎
 --
-安裝支援版本的 Docker Engine 。<<podman-versions,檢視 BlueXP  支援的 Docker Engine 版本>>。
+請遵循 Docker 的文件來安裝 Docker Engine 。
 
 .步驟
-. 安裝 Docker Engine 。
-+
-https://docs.docker.com/engine/install/["檢視 Docker 的安裝指示"^]
-
+. https://docs.docker.com/engine/install/["檢視 Docker 的安裝指示"^]
 +
 請務必依照步驟安裝 Docker Engine 的特定版本。安裝最新版本將會安裝 BlueXP 不支援的 Docker 版本。
 
@@ -343,7 +356,7 @@ AWS 服務（ amazonaws.com):
 --
 
 
-Proxy伺服器:: 如果您的組織需要為所有傳出的網際網路流量部署 Proxy 伺服器、請取得下列關於 HTTP 或 HTTPS Proxy 的資訊。您必須在安裝期間提供此資訊。請注意、 BlueXP 不支援透明 Proxy 伺服器。
+Proxy伺服器:: 如果您的企業需要為所有傳出的網際網路流量部署 Proxy 伺服器、請取得下列關於 HTTP 或 HTTPS Proxy 的資訊。您必須在安裝期間提供此資訊。請注意、 BlueXP 不支援透明 Proxy 伺服器。
 +
 --
 * IP 位址
@@ -672,7 +685,7 @@ chmod +x BlueXP-Connector-Cloud-<version>
 
 == 步驟 6 ：設定 Connector
 
-註冊或登入、然後設定 Connector 以搭配 BlueXP 帳戶使用。
+註冊或登入、然後設定 Connector 與您的 BlueXP  組織合作。
 
 .步驟
 . 開啟網頁瀏覽器並輸入下列 URL ：
@@ -685,7 +698,7 @@ _ipaddress_ 可以是 localhost 、私有 IP 位址或公有 IP 位址、視主�
 . 註冊或登入。
 . 登入之後、請設定BlueXP：
 +
-.. 指定與 Connector 相關聯的 BlueXP 帳戶。
+.. 指定要與連接器關聯的 BlueXP  組織。
 .. 輸入系統名稱。
 .. 在 * 您是在安全的環境中執行？ * 保持停用限制模式。
 +
@@ -715,7 +728,7 @@ BlueXP 現在已設定好您剛安裝的 Connector 。
 .步驟
 . 在 BlueXP 主控台的右上角、選取「設定」圖示、然後選取 * 認證 * 。
 +
-image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」圖示的快照。"]
+image:screenshot-settings-icon-organization.png["顯示BlueXP主控台右上角「設定」圖示的快照。"]
 
 . 選取 * 新增認證 * 、然後依照精靈中的步驟進行。
 +
@@ -741,7 +754,7 @@ BlueXP 現在擁有代表您在 AWS 中執行動作所需的權限。
 .步驟
 . 在 BlueXP 主控台的右上角、選取「設定」圖示、然後選取 * 認證 * 。
 +
-image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」圖示的快照。"]
+image:screenshot-settings-icon-organization.png["顯示BlueXP主控台右上角「設定」圖示的快照。"]
 
 . 選取 * 新增認證 * 、然後依照精靈中的步驟進行。
 +

@@ -23,6 +23,7 @@ summary: 在受限模式下以 BlueXP 啟動並執行之後、您可以開始使
 * https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["備份與還原文件"^]
 * https://docs.netapp.com/us-en/bluexp-classification/index.html["分類文件"^]
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/index.html["文件Cloud Volumes ONTAP"^]
+* https://docs.netapp.com/us-en/bluexp-digital-wallet/index.html["數位錢包文件"^]
 * https://docs.netapp.com/us-en/bluexp-ontap-onprem/index.html["內部部署ONTAP 的叢集文件"^]
 * https://docs.netapp.com/us-en/bluexp-replication/index.html["複寫文件"^]
 

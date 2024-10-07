@@ -4,7 +4,7 @@ permalink: concept-federation.html
 keywords: identity federation, federation, federated identity, set up identity federation, set up federated connection, federated connection 
 summary: 身分識別聯盟可透過BlueXP進行單一登入、讓使用者使用公司身分的認證登入。若要開始使用、請瞭解身分識別聯盟如何與BlueXP搭配運作、然後檢閱設定程序的總覽。 
 ---
-= 使用與BlueXP的身分識別聯盟
+= 使用 BlueXP  的身分識別聯盟來啟用單一登入
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

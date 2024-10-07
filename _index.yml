@@ -1,12 +1,12 @@
 ---
 indexpage:
   title: BlueXP 安裝與管理文件
-  summary: 開始使用 NetApp BlueXP 、讓您開始在內部部署和雲端環境中建置、保護及管理資料。完成設定後、您可以管理 BlueXP 帳戶、 Connectors
-    、雲端供應商帳戶等。
+  summary: 開始使用 NetApp BlueXP 、讓您開始在內部部署和雲端環境中建置、保護及管理資料。完成設定後、您可以使用 BlueXP  身分識別與存取管理（
+    IAM ）來控制資源的存取、並管理 Connectors 、雲端供應商帳戶等。
   keywords: bluexp, connector, accounts, get started, setup, administration, sign
     up, log in, login, permissions
-  lead: 開始使用 NetApp BlueXP 、讓您開始在內部部署和雲端環境中建置、保護及管理資料。完成設定後、您可以管理 BlueXP 帳戶、 Connectors
-    、雲端供應商帳戶等。
+  lead: 開始使用 NetApp BlueXP 、讓您開始在內部部署和雲端環境中建置、保護及管理資料。完成設定後、您可以使用 BlueXP  身分識別與存取管理（
+    IAM ）來控制資源的存取、並管理 Connectors 、雲端供應商帳戶等。
   tiles:
   - title: 開始使用
     links:
@@ -20,14 +20,18 @@ indexpage:
       url: "/task-quick-start-restricted-mode.html"
     - title: 開始使用私有模式
       url: "/task-quick-start-private-mode.html"
-  - title: BlueXP 帳戶
+  - title: BlueXP IAM
     links:
-    - title: 瞭解 BlueXP 帳戶
-      url: concept-netapp-accounts.html
-    - title: 管理 BlueXP 帳戶
-      url: task-managing-netapp-accounts.html
-    - title: 監控您帳戶中的作業
-      url: task-monitor-cm-operations.html
+    - title: 瞭解 BlueXP  身分識別與存取管理
+      url: concept-identity-and-access-management.html
+    - title: BlueXP  IAM 入門
+      url: task-iam-get-started.html
+    - title: 使用資料夾和專案來組織資源
+      url: task-iam-manage-folders-projects.html
+    - title: 管理成員及其權限
+      url: task-iam-manage-members-permissions.html
+    - title: 管理資源階層
+      url: task-iam-manage-resources.html
   - title: 連接器
     links:
     - title: 深入瞭解連接器
@@ -80,7 +84,7 @@ indexpage:
     links:
     - title: 登入BlueXP
       url: task-logging-in.html
-    - title: 使用與BlueXP的身分識別聯盟
+    - title: 使用與 BlueXP  的身分識別聯盟
       url: concept-federation.html
   - title: 部落格與社群
     links:

@@ -4,7 +4,7 @@ permalink: reference-networking-saas-console.html
 keywords: networking, urls, endpoints, web browser, console, network, set up networking 
 summary: 當您使用透過 SaaS 層提供的 BlueXP 網路型主控台時、它會在完成一些管理工作時與多個端點連絡。存取 BlueXP 主控台的電腦應與這些端點建立連線。 
 ---
-= 準備使用 BlueXP 主控台的網路連線
+= 為 BlueXP  主控台準備網路
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -74,7 +74,7 @@ AWS 服務（ amazonaws.com):
 |===
 除了這些端點之外、您還需要確保 Connector 具備對外網際網路存取權、以便聯絡特定端點、以進行日常作業。您可以依照下一節中的連結、找到這些端點的清單。
 
-.相關連結
+.相關資訊
 * 準備連接器的網路連線
 +
 ** link:task-install-connector-aws-bluexp.html#step-1-set-up-networking["設定 AWS 網路"]

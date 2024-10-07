@@ -1,0 +1,258 @@
+---
+sidebar: sidebar 
+permalink: concept-identity-and-access-management.html 
+keywords: iam overview, overview, how iam works, iam example, organization, folders, projects, resources, members, roles, permissions, resource hierarchy, identity and access management, iam 
+summary: BlueXP  身分識別與存取管理（ IAM ）可讓您控制組織資源的存取。 
+---
+= 瞭解 BlueXP  身分識別與存取管理
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+BlueXP  身分識別與存取管理（ IAM ）可讓您組織及控制對 NetApp 資源的存取。您可以根據組織的階層來組織資源。例如、您可以依地理位置、站台或業務單位來組織資源。接著您可以將權限指派給階層特定部分的成員、以防止存取階層其他部分的資源。
+
+BlueXP  IAM 取代並強化 BlueXP  帳戶先前提供的功能。link:whats-new.html#iam["深入瞭解 BlueXP  IAM 的推出"]。
+
+在標準模式下使用 BlueXP  時、支援 BlueXP  IAM 。如果您是以受限模式或私人模式使用 BlueXP  、則可以使用 BlueXP  _account_ 來管理使用者和資源。
+
+* link:concept-netapp-accounts.html["瞭解 BlueXP 帳戶"]
+* link:concept-modes.html["瞭解 BlueXP 部署模式"]
+
+
+
+
+== BlueXP  IAM 的運作方式
+
+BlueXP  IAM 可讓您定義哪些成員具有組織階層特定部分的權限、藉此授予組織資源的存取權。例如、成員可以擁有專案管理權限、讓專案擁有五個相關資源。
+
+使用 BlueXP  IAM 時、您將管理下列元件：
+
+* 組織
+* 資料夾
+* 專案
+* 資源
+* 成員
+* 角色與權限
+* 連接器
+
+
+BlueXP  資源是分層組織的：
+
+* 組織是階層架構的最上層。
+* 資料夾是組織或其他資料夾的子資料夾。
+* 專案是組織或資料夾的子項目。
+* 資源與一或多個資料夾或專案相關聯。
+
+
+下圖說明此階層架構的基本層級。
+
+image:diagram-iam-resource-hierarchy.png["顯示 BlueXP  IAM 資源階層架構的概念圖：組織、資料夾、專案和資源。"]
+
+
+
+=== 組織
+
+_company 是 BlueXP  IAM 系統的頂級產品、通常代表貴公司。您的組織包含資料夾、專案、成員、角色和資源。連接器與組織中的特定專案相關聯。
+
+當您註冊 BlueXP  時、系統會提示您建立新組織。
+
+
+
+=== 資料夾
+
+_fold_ 可讓您將相關專案分組在一起、並將其與組織中的其他專案分開。例如、資料夾可能代表地理位置（歐盟或美國東部）、站台（倫敦或多倫多）或業務單位（工程或行銷）。
+
+資料夾可以包含專案、其他資料夾、或兩者的組合。
+
+您不需要建立資料夾。它們是可選的。
+
+
+
+=== 專案
+
+_project_ 代表 BlueXP  中的工作區、組織成員可從 BlueXP  畫布存取、以管理資源。例如、專案可以包含 Cloud Volumes ONTAP 系統、內部部署 ONTAP 叢集、或是適用於 ONTAP 檔案系統的 FSX 。
+
+組織可以有一或多個專案。專案可以直接位於組織下方或資料夾內。
+
+
+
+=== 資源
+
+_resource_ 是您在 BlueXP  中建立或發現的工作環境。
+
+當您建立或探索資源時、資源會與目前選取的專案相關聯。這可能是您要與此資源建立關聯的唯一專案。但您可以選擇將資源與組織中的其他專案建立關聯。
+
+例如、您可以將 Cloud Volumes ONTAP 系統與一個額外的專案或組織中的所有專案建立關聯。資源的關聯方式取決於組織的需求。
+
+
+TIP: 您也可以將 Connector 與組織中的其他資料夾或專案建立關聯。<<連接器,深入瞭解如何搭配 BlueXP  IAM 使用 Connectors>>。
+
+
+
+==== 何時將資源與資料夾建立關聯
+
+您也可以選擇將資源與資料夾建立關聯、但這是選擇性的、可滿足特定使用案例的需求。
+
+_Organization admin_ 可能會將資源與資料夾建立關聯、讓 _Folder 或專案 admin_ 可以將該資源與位於資料夾中的適當專案建立關聯。
+
+例如、假設您的資料夾包含兩個專案：
+
+image:diagram-iam-resource-association-folder-1.png["顯示資料夾和資料夾中兩個專案的圖表：專案 A 和專案 B"]
+
+_Organization admin_ 可以將資源與資料夾建立關聯：
+
+image:diagram-iam-resource-association-folder-2.png["顯示資料夾的圖表、與資料夾相關的資源、以及位於資料夾中的兩個專案： Project A 和 Project B"]
+
+將資源與資料夾建立關聯、並不會自動讓該資源可從資料夾中的所有專案存取。但是、 _ 資料夾或專案管理員 _ 可以決定該資源應提供給哪些專案。做出決定之後、管理員就可以將資源與正確的專案建立關聯。
+
+在此範例中、管理員會將資源與 Project A 建立關聯：
+
+image:diagram-iam-resource-association-folder-3.png["顯示資料夾的圖表、位於資料夾中的兩個專案：專案 A 和專案 B 、以及與專案 A 相關的資源"]
+
+擁有專案 A 權限的成員現在可以存取資源。
+
+
+
+=== 成員
+
+您組織的成員是使用者帳戶或服務帳戶。應用程式通常會使用服務帳戶來完成指定的工作、而無需人工介入。
+
+組織至少有一個擁有 _ 組織管理 _ 角色的使用者（建立組織的使用者會自動指派此角色）。您可以將其他成員新增至組織、並在資源階層的不同層級中指派不同的權限。
+
+
+
+=== 角色與權限
+
+在 BlueXP  IAM 中、您不會直接授予組織成員權限。而是將角色授予每個成員。角色包含一組權限、可讓成員在資源階層的特定層級執行特定動作。
+
+透過在資源階層的特定部分提供權限、您只能將存取權限限制在成員完成工作所需的資源。
+
+
+
+==== 可在階層中指派角色的位置
+
+當您將成員與角色建立關聯時、您需要選取整個組織、特定資料夾或特定專案。您選取的角色會授予成員對階層中所選部分資源的權限。
+
+
+
+==== 角色繼承
+
+當您指派角色時、該角色會繼承至組織階層：
+
+組織:: 您在組織層級授予的角色會由組織中的所有資料夾、專案和資源繼承。這表示成員對組織中的一切都有權限。
+資料夾:: 您在資料夾層級授予的角色會由資料夾中的所有資料夾、專案和資源繼承。
++
+--
+例如、如果您在資料夾層級指派角色、且該資料夾有三個專案、則成員將擁有這三個專案及任何相關資源的權限。
+
+--
+專案:: 您在專案層級授予的角色會由與該專案相關的所有資源繼承。
+
+
+
+
+==== 多個角色
+
+您可以在組織階層的不同層級上、為每個組織成員指派角色。它可以是相同的角色或不同的角色。例如、您可以為專案 1 和專案 2 指派成員角色 A 。或者、您也可以為專案 1 指派成員角色 A 、為專案 2 指派角色 B 。
+
+
+
+==== 預先定義的角色
+
+BlueXP  支援數個預先定義的角色、您可以指派給組織成員。
+
+link:reference-iam-predefined-roles.html["瞭解 IAM 預先定義的角色"]。
+
+
+
+==== 自訂角色
+
+目前不支援自訂角色。
+
+
+
+=== 連接器
+
+當 _Organization admin_ 建立 Connector 時、 BlueXP  會自動將該 Connector 與組織及目前選取的專案建立關聯。_Organization admin_ 會自動從組織的任何位置存取該 Connector 。但如果組織中有其他成員的角色不同、則除非您將該 Connector 與其他專案建立關聯、否則這些成員只能從建立該 Connector 的專案存取該 Connector 。
+
+在下列情況下、您可能會想要讓 Connector 可用於其他專案：
+
+* 您想要允許組織中的成員使用現有的 Connector 來建立或探索其他專案中的其他工作環境
+* 您將現有資源與其他專案建立關聯、該資源由 Connector 管理
++
+如果使用 BlueXP  Connector 探索到您與其他專案相關聯的資源、則您也需要將 Connector 與資源目前關聯的專案建立關聯。否則、沒有 _Organization admin_ 角色的成員無法從 BlueXP  畫布存取 Connector 及其相關資源。
+
+
+
+您可以從 BlueXP  IAM 的 * 連接器 * 頁面建立關聯：
+
+* 將 Connector 與專案建立關聯
++
+當您將 Connector 與專案建立關聯時、可在檢視專案時從 BlueXP  畫布存取該 Connector 。
+
+* 將 Connector 與資料夾建立關聯
++
+將 Connector 與資料夾建立關聯、並不會自動讓該 Connector 從資料夾中的所有專案存取。組織成員必須先將 Connector 與該特定專案建立關聯、才能從專案存取 Connector 。
+
++
+_Organization admin_ 可能會將 Connector 與資料夾建立關聯、讓 _Folder 或專案 admin_ 可以決定將該 Connector 與位於資料夾中的適當專案建立關聯。
+
+
+
+
+
+== IAM 範例
+
+下列範例說明如何設定組織。
+
+
+
+=== 簡單的組織
+
+下圖顯示使用預設專案且不使用資料夾的組織範例。單一成員管理整個組織。
+
+image:diagram-iam-example-hierarchy-simple.png["顯示組織的概念圖、其中包含專案、相關資源和單一組織管理員。"]
+
+
+
+=== 進階組織
+
+下圖顯示組織使用資料夾來組織企業中每個地理位置的專案。每個專案都有自己的相關資源集。成員包括組織管理員和組織中每個資料夾的管理員。
+
+image:diagram-iam-example-hierarchy-advanced.png["這是一個概念圖、顯示有三個資料夾的組織、每個資料夾都有三個專案及其相關資源。共有四個成員：一個組織管理員和三個資料夾管理員。"]
+
+
+
+== BlueXP  IAM 的用途
+
+下列範例說明如何使用 IAM 來管理 BlueXP  組織：
+
+* 將特定角色授予特定成員、以便他們只能完成所需的工作。
+* 修改成員權限、因為他們搬移部門、或是因為他們有額外的責任。
+* 移除離開公司的使用者。
+* 新增資料夾或專案至您的階層架構、因為新的業務單位已新增 NetApp 儲存設備。
+* 將資源與另一個專案建立關聯、因為該資源具有其他團隊可以使用的容量。
+* 檢視成員可以存取的資源。
+* 檢視與特定專案相關的成員和資源。
+
+
+
+
+== 下一步
+
+* link:task-iam-get-started.html["BlueXP  IAM 入門"]
+* link:task-iam-manage-folders-projects.html["使用資料夾和專案在 BlueXP  中組織您的資源"]
+* link:task-iam-manage-members-permissions.html["管理 BlueXP  成員及其權限"]
+* link:task-iam-manage-resources.html["管理 BlueXP  組織中的資源階層"]
+* link:task-iam-associate-connectors.html["將 Connectors 與資料夾和專案建立關聯"]
+* link:task-iam-switch-organizations-projects.html["在 BlueXP  專案和組織之間切換"]
+* link:task-iam-rename-organization.html["重新命名 BlueXP  組織"]
+* link:task-iam-audit-actions-timeline.html["監控或稽核 IAM 活動"]
+* link:reference-iam-predefined-roles.html["預先定義的 BlueXP  IAM 角色"]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["瞭解 BlueXP  IAM 的 API"^]
+

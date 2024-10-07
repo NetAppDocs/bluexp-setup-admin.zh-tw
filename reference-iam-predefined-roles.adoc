@@ -1,0 +1,112 @@
+---
+sidebar: sidebar 
+permalink: reference-iam-predefined-roles.html 
+keywords: predefined roles, iam roles, organization admin, folder or project admin, classification viewer, snapcenter admin, role, iam role, admin, iam, identity and access management 
+summary: BlueXP  身分識別與存取管理包含數個預先定義的角色、您可以指派給組織成員。 
+---
+= 預先定義的 BlueXP  IAM 角色和權限
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+BlueXP  身分識別與存取管理（ IAM ）包含數個預先定義的角色、您可以在不同的資源階層層級中指派給組織成員。指派這些角色之前、您應該先瞭解每個角色所包含的權限。
+
+
+
+== 組織管理員
+
+說明:: 完全掌控整個 BlueXP  組織。
+權限:: 擁有此角色的成員可以在 BlueXP  中完成所有動作。
+
+
+
+
+== 資料夾或專案管理員
+
+說明:: 可完全控制一或多個專案和資料夾。
++
+--
+請注意、如果您在資料夾層級指派此角色、成員將擁有與該資料夾相關聯的所有專案權限。
+
+--
+權限:: 擁有此角色的成員可在 BlueXP  中完成下列動作：
++
+--
+* 管理其擁有權限的專案和資料夾中的所有工作環境
+* 使用所有 BlueXP  服務
+* 從 BlueXP  IAM 、資料夾管理員可以管理該資料夾的子資料夾、專案和資源：
++
+** 在資料夾中新增資料夾或專案
+** 編輯資料夾和專案：其名稱、相關資源和成員存取
+** 刪除資料夾和專案
+** 新增使用者帳戶、並在資料夾或專案層級建立角色的關聯
+** 將 Connector 與資料夾或專案建立關聯
+** 新增角色至資料夾或專案層級的成員
+** 檢視與資料夾和專案相關的資源
+** 將可檢視的資源與其他資料夾或專案建立關聯
+** 取消資源與資料夾或專案的關聯
+
+
+* 從 BlueXP  IAM 、專案管理員可以管理該專案及其相關資源、如下所示：
++
+** 編輯專案：其名稱、相關資源及成員存取權
+** 新增使用者帳戶、並在專案層級建立角色的關聯
+** 如果成員具有其他相關連接器專案的管理權限、請將連接器與專案建立關聯
+** 新增角色至專案層級的成員
+** 檢視與專案相關的資源
+** 將資源與專案建立關聯（如果成員對其他具有其他相關資源的專案具有管理權限）
+** 將資源與專案分離
+** 刪除專案
+
+
+* 從「設定」 > 「認證」管理認證
+* 檢視 BlueXP  時間表
+* 註冊 BlueXP  以取得支援並提交案例
+
+
+--
+
+
+
+
+== SnapCenter 管理
+
+說明:: 提供從內部部署 ONTAP 叢集備份快照的功能、使用應用程式的 BlueXP  備份與還原功能。
+權限:: 擁有此角色的成員可在 BlueXP  中完成下列動作：
++
+--
+* 從「備份與還原」 > 「應用程式」中完成任何動作
+* 管理其擁有權限的專案和資料夾中的所有工作環境
+* 使用所有 BlueXP  服務
+
+
+--
+
+
+
+
+== 分類檢視器
+
+說明:: 提供檢視 BlueXP  分類掃描結果的能力。
+權限:: 檢視法規遵循資訊、並針對擁有存取權限的資源產生報告。這些使用者無法啟用或停用掃描磁碟區、儲存區或資料庫架構。
++
+--
+擁有此角色的成員無法使用其他動作。
+
+--
+
+
+
+
+== 相關連結
+
+* link:concept-identity-and-access-management.html["瞭解 BlueXP  身分識別與存取管理"]
+* link:task-iam-get-started.html["BlueXP  IAM 入門"]
+* link:task-iam-manage-members-permissions.html["管理 BlueXP  成員及其權限"]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["瞭解 BlueXP  IAM 的 API"^]
+

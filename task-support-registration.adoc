@@ -26,7 +26,7 @@ summary: 在您透過NetApp技術支援開啟支援案例之前、您必須先�
 
 有兩種登錄形式可啟動支援服務權利：
 
-* 註冊您的BlueXP帳戶ID支援訂閱（您的20位數960xxxxxxx序號位於BlueXP的「Support Resources（支援資源）」頁面）。
+* 註冊您的 BlueXP  帳戶序號（您的 20 位數 960xxxxxxxxx 序號位於 BlueXP  的「支援資源」頁面）。
 +
 這是您在BlueXP內任何服務的單一支援訂閱ID。每個BlueXP帳戶層級的支援訂閱都必須註冊。
 
@@ -40,9 +40,9 @@ summary: 在您透過NetApp技術支援開啟支援案例之前、您必須先�
 
 
 
-== 註冊您的 BlueXP 帳戶以取得 NetApp 支援
+== 註冊 BlueXP  以獲得 NetApp 支援
 
-若要註冊以取得支援並啟動支援授權、 BlueXP 帳戶中的一位使用者必須將 NetApp 支援網站 帳戶與其 BlueXP 登入建立關聯。您如何註冊NetApp支援取決於您是否已擁有NetApp 支援網站 一個NetApp（NSS）帳戶。
+若要註冊取得支援並啟動支援授權、您 BlueXP  組織（或帳戶）中的一位使用者必須將 NetApp 支援網站帳戶與其 BlueXP  登入建立關聯。您如何註冊NetApp支援取決於您是否已擁有NetApp 支援網站 一個NetApp（NSS）帳戶。
 
 
 
@@ -56,13 +56,13 @@ summary: 在您透過NetApp技術支援開啟支援案例之前、您必須先�
 . 選取 * 新增 NSS 認證 * 、然後遵循 NetApp 支援網站 （ NSS ）驗證提示。
 . 若要確認註冊程序是否成功、請選取「說明」圖示、然後選取 * 「支援 * 」。
 +
-「 * 資源 * 」頁面應顯示您的帳戶已註冊以取得支援。
+「 * 資源 * 」頁面應顯示您的 BlueXP  組織已註冊取得支援。
 
 +
 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-support-registration.png["螢幕擷取畫面會顯示帳戶序號和綠色核取方塊、以及註冊支援的文字。"]
 
 +
-請注意、如果其他 BlueXP 使用者尚未將 NetApp 支援網站 帳戶與 BlueXP 登入建立關聯、則不會看到此相同的支援登錄狀態。不過、這並不表示您的 BlueXP 帳戶尚未註冊支援。只要帳戶中有一位使用者已遵循這些步驟、您的帳戶就已登錄。
+請注意、如果其他 BlueXP 使用者尚未將 NetApp 支援網站 帳戶與 BlueXP 登入建立關聯、則不會看到此相同的支援登錄狀態。不過、這並不表示您的 BlueXP  組織尚未註冊取得支援。只要組織中有一位使用者遵循這些步驟、您的組織就已註冊。
 
 
 
@@ -111,7 +111,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/scre
 . 完成建立NetApp 支援網站 一個不完善的帳戶 https://mysupport.netapp.com/site/user/registration["《使用者登錄表》NetApp 支援網站"^]
 +
 .. 請務必選擇適當的使用者層級、通常為* NetApp客戶/終端使用者*。
-.. 請務必複製上述序號欄位使用的帳戶序號（960xxxx）。這將加速帳戶處理。
+.. 請務必複製上述序號欄位使用的帳戶序號（960xxxx）。這將加快處理速度。
 
 
 
@@ -125,7 +125,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/scre
 
 == 建立 NSS 認證的關聯、以取得 Cloud Volumes ONTAP 支援
 
-若要為 Cloud Volumes ONTAP 啟用下列關鍵工作流程、必須將 NetApp 支援網站 認證與 BlueXP 帳戶建立關聯：
+若要為 Cloud Volumes ONTAP 啟用下列關鍵工作流程、必須將 NetApp 支援網站認證與您的 BlueXP  組織建立關聯：
 
 * 註冊隨用隨付 Cloud Volumes ONTAP 系統以取得支援
 +
@@ -138,9 +138,9 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/scre
 * 升級Cloud Volumes ONTAP 更新版的更新版
 
 
-將 NSS 認證與 BlueXP 帳戶建立關聯、與 BlueXP 使用者登入相關的 NSS 帳戶不同。
+將 NSS 認證與您的 BlueXP  組織建立關聯、不同於與 BlueXP  使用者登入相關聯的 NSS 帳戶。
 
-這些 NSS 認證會與您的特定 BlueXP 帳戶 ID 相關聯。屬於BlueXP帳戶的使用者可以從*支援> nss管理*存取這些認證資料。
+這些 NSS 認證會與您的特定 BlueXP  組織 ID 相關聯。屬於 BlueXP  組織的使用者可從 * 支援 > NSS 管理 * 存取這些認證。
 
 * 如果您有客戶層級的帳戶、可以新增一或多個NSS帳戶。
 * 如果您有合作夥伴或經銷商帳戶、您可以新增一或多個NSS帳戶、但這些帳戶無法與客戶層級帳戶一起新增。

@@ -105,7 +105,7 @@ link:reference-networking-saas-console.html["檢視從 BlueXP 主控台連絡的
 --
 
 
-Proxy伺服器:: 如果您的組織需要為所有傳出的網際網路流量部署 Proxy 伺服器、請取得下列關於 HTTP 或 HTTPS Proxy 的資訊。您必須在安裝期間提供此資訊。請注意、 BlueXP 不支援透明 Proxy 伺服器。
+Proxy伺服器:: 如果您的企業需要為所有傳出的網際網路流量部署 Proxy 伺服器、請取得下列關於 HTTP 或 HTTPS Proxy 的資訊。您必須在安裝期間提供此資訊。請注意、 BlueXP 不支援透明 Proxy 伺服器。
 +
 --
 * IP 位址
@@ -529,9 +529,9 @@ https://_ipaddress_[]
 
 . 登入後、設定 Connector ：
 +
-.. 指定與 Connector 相關聯的 BlueXP 帳戶。
+.. 指定要與連接器關聯的 BlueXP  組織。
 +
-link:concept-netapp-accounts.html["瞭解 BlueXP 帳戶"]。
+link:concept-identity-and-access-management.html["瞭解 BlueXP  身分識別與存取管理"]。
 
 .. 輸入系統名稱。
 
@@ -539,7 +539,7 @@ link:concept-netapp-accounts.html["瞭解 BlueXP 帳戶"]。
 
 
 .結果
-Connector 現在已安裝、並使用您的 BlueXP 帳戶進行設定。
+現在、您的 BlueXP  組織已安裝並設定 Connector 。
 
 開啟網頁瀏覽器、前往 https://console.bluexp.netapp.com["BlueXP主控台"^] 開始使用Connector with BlueXP。
 

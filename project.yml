@@ -27,8 +27,6 @@ sidebar:
       entries:
       - title: 藍圖
         url: "/concept-overview.html"
-      - title: 帳戶
-        url: "/concept-netapp-accounts.html"
       - title: 連接器
         url: "/concept-connectors.html"
       - title: 部署模式
@@ -37,7 +35,7 @@ sidebar:
       entries:
       - title: 快速入門工作流程
         url: "/task-quick-start-standard-mode.html"
-      - title: 準備使用 BlueXP 主控台的網路連線
+      - title: 為 BlueXP  主控台準備網路
         url: "/reference-networking-saas-console.html"
       - title: 註冊BlueXP
         url: "/task-sign-up-saas.html"
@@ -103,18 +101,40 @@ sidebar:
       url: "/task-logging-in.html"
   - title: 管理BlueXP
     entries:
-    - title: 身分識別聯盟
-      url: "/concept-federation.html"
+    - title: 身分識別與存取管理
+      entries:
+      - title: 瞭解 BlueXP  IAM
+        url: "/concept-identity-and-access-management.html"
+      - title: BlueXP  IAM 入門
+        url: "/task-iam-get-started.html"
+      - title: 使用資料夾和專案來組織資源
+        url: "/task-iam-manage-folders-projects.html"
+      - title: 新增成員並管理其權限
+        url: "/task-iam-manage-members-permissions.html"
+      - title: 管理資源階層
+        url: "/task-iam-manage-resources.html"
+      - title: 將 Connector 與其他資料夾和專案建立關聯
+        url: "/task-iam-associate-connectors.html"
+      - title: 在組織、專案和連接器之間切換
+        url: "/task-iam-switch-organizations-projects.html"
+      - title: 重新命名組織
+        url: "/task-iam-rename-organization.html"
+      - title: 監控或稽核 IAM 活動
+        url: "/task-iam-audit-actions-timeline.html"
+      - title: 預先定義的 IAM 角色
+        url: "/reference-iam-predefined-roles.html"
     - title: BlueXP 帳戶
       entries:
+      - title: 深入瞭解客戶
+        url: "/concept-netapp-accounts.html"
       - title: 管理 BlueXP 帳戶
         url: "/task-managing-netapp-accounts.html"
-      - title: 監控您帳戶中的作業
-        url: "/task-monitor-cm-operations.html"
       - title: 建立另一個 BlueXP 帳戶
         url: "/task-create-account.html"
       - title: 使用者角色
         url: "/reference-user-roles.html"
+    - title: 身分識別聯盟
+      url: "/concept-federation.html"
     - title: 連接器
       entries:
       - title: 維護 VM 和 OS
@@ -155,10 +175,12 @@ sidebar:
           url: "/concept-accounts-gcp.html"
         - title: 管理認證與訂閱
           url: "/task-adding-gcp-accounts.html"
-      - title: 管理與BlueXP帳戶相關聯的NSS認證
+      - title: 管理與 BlueXP  組織或帳戶相關的 NSS 認證
         url: "/task-adding-nss-accounts.html"
       - title: 管理與您的BlueXP登入相關的認證資料
         url: "/task-manage-user-credentials.html"
+    - title: 監控 BlueXP  作業
+      url: "/task-monitor-cm-operations.html"
   - title: 參考資料
     entries:
     - title: 權限

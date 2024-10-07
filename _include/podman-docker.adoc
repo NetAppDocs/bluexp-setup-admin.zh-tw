@@ -5,7 +5,13 @@
 根據您的作業系統而定、安裝 Connector 之前需要使用 Podman 或 Docker Engine 。
 
 * Red Hat Enterprise Linux 8 和 9 需要 Podman 。
++
+<<podman-versions,檢視 BlueXP  支援的 Podman 版本>>。
+
 * Ubuntu 需要 Docker Engine 。
++
+<<podman-versions,檢視 BlueXP  支援的 Docker Engine 版本>>。
+
 
 
 .步驟
@@ -13,7 +19,13 @@
 ====
 .Podman
 --
-安裝支援版本的 Podman 。<<podman-versions,檢視 BlueXP  支援的 Podman 版本>>。
+請依照下列步驟安裝 Podman 、並將其設定為符合下列需求：
+
+* 必須啟用並啟動 podman.socket 服務
+* 必須安裝 python3
+* 必須安裝 podman-compose 套件 1.0.6 版
+* 必須將 podman-compose 新增至 PATH 環境變數
+
 
 .步驟
 . 如果主機上已安裝 podman-泊 塢視窗套件、請將其移除。
@@ -96,13 +108,10 @@ NOTE: 使用 `dnf install` 命令符合將 podman-compose 新增至 PATH 環境�
 --
 .Docker引擎
 --
-安裝支援版本的 Docker Engine 。<<podman-versions,檢視 BlueXP  支援的 Docker Engine 版本>>。
+請遵循 Docker 的文件來安裝 Docker Engine 。
 
 .步驟
-. 安裝 Docker Engine 。
-+
-https://docs.docker.com/engine/install/["檢視 Docker 的安裝指示"^]
-
+. https://docs.docker.com/engine/install/["檢視 Docker 的安裝指示"^]
 +
 請務必依照步驟安裝 Docker Engine 的特定版本。安裝最新版本將會安裝 BlueXP 不支援的 Docker 版本。
 

@@ -29,6 +29,7 @@ BlueXP Connector 支援下列 Linux 作業系統。
 手動安裝::
 +
 --
+* Ubuntu 24.04 LTS
 * Ubuntu 22.04 LTS
 * Red Hat Enterprise Linux
 +
@@ -50,6 +51,7 @@ BlueXP Connector 支援下列 Linux 作業系統。
 手動安裝::
 +
 --
+* Ubuntu 24.04 LTS
 * Ubuntu 22.04 LTS
 * Red Hat Enterprise Linux
 +
@@ -74,7 +76,7 @@ BlueXP Connector 支援下列 Linux 作業系統。
 * Red Hat Enterprise Linux
 +
 ** 8.6 至 8.10
-** 9.1 至 9.3
+** 9.1 至 9.4
 
 
 
@@ -131,14 +133,6 @@ https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux/rhel-7-e
 . 執行 _new_ Connector 安裝。
 . 設定 Connector 以探索舊 Connector 所管理的工作環境。
 
-
-
-
-== 持續支援 Ubuntu 22.04 LTS
-
-Ubuntu 22.04 LTS 仍支援 Connector 、是 BlueXP 和市場部署的預設作業系統。
-
-此作業系統需要 Docker Engine 。不支援 Podman 。
 
 
 

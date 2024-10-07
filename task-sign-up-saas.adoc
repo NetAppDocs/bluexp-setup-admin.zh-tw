@@ -19,14 +19,14 @@ BlueXP 可從網路型主控台存取。當您開始使用 BlueXP 時、您的�
 .關於這項工作
 當您第一次存取 BlueXP 時、 BlueXP 可讓您使用下列其中一個選項來登入或登入：
 
-BlueXP 登入:: 您可以建立 BlueXP 登入來註冊。此驗證方法需要您指定電子郵件地址和密碼。驗證電子郵件地址之後、您可以登入並建立 BlueXP 帳戶（如果您尚未擁有）。
-NetApp 支援網站（ NSS ）認證:: 如果您擁有現有的 NetApp 支援網站認證、就不需要註冊 BlueXP 。您使用 NSS 認證登入後、如果您還不屬於 BlueXP 帳戶、 BlueXP 會提示您建立 BlueXP 帳戶。
+BlueXP 登入:: 您可以建立 BlueXP 登入來註冊。此驗證方法需要您指定電子郵件地址和密碼。驗證電子郵件地址之後、您可以登入、然後建立 BlueXP  組織（如果您還不屬於該組織）。
+NetApp 支援網站（ NSS ）認證:: 如果您擁有現有的 NetApp 支援網站認證、就不需要註冊 BlueXP 。您使用 NSS 認證登入後、如果您還不屬於組織、 BlueXP  會提示您建立 BlueXP  組織。
 +
 --
 請注意、預設密碼體驗是一次性密碼（ OTP ）到註冊的電子郵件地址。每次嘗試登入時都會產生新的 OTP 。
 
 --
-同盟連線:: 您可以使用單一登入、從公司目錄（聯盟身分識別）使用認證登入。組織帳戶中的第一個使用者必須登入 BlueXP 或使用 NSS 認證登入、然後設定身分識別聯盟。之後、每個後續使用者都可以使用其 SSO 認證登入。
+同盟連線:: 您可以使用單一登入、從公司目錄（聯盟身分識別）使用認證登入。組織帳戶中的第一個使用者必須登入 BlueXP 或使用 NSS 認證登入、然後設定身分識別聯盟。之後、您可以將公司身分的成員新增至組織。這些使用者接著可以使用其 SSO 認證登入。
 +
 --
 link:concept-federation.html["瞭解如何將身分識別聯盟與BlueXP搭配使用"]。
@@ -38,7 +38,7 @@ link:concept-federation.html["瞭解如何將身分識別聯盟與BlueXP搭配�
 . 開啟網頁瀏覽器、前往 https://console.bluexp.netapp.com["BlueXP主控台"^]
 . 如果您有 NetApp 支援網站帳戶、或您已設定身分識別聯盟、請在 * 登入 * 頁面上直接輸入與您帳戶相關的電子郵件地址。
 +
-如果您有 NSS 帳戶、可以跳過註冊頁面。在此初次登入時、BlueXP會為您註冊。
+在這兩種情況下、 BlueXP  都會在這次初次登入時註冊。
 
 . 如果您想要建立 BlueXP 登入來註冊、請選取 * 註冊 * 。
 +
@@ -53,18 +53,21 @@ link:concept-federation.html["瞭解如何將身分識別聯盟與BlueXP搭配�
 
 
 . 登入後、請檢閱「終端使用者授權合約」並接受條款。
-. 在*歡迎*頁面上、輸入您帳戶的名稱。
 +
-如果您的企業已經有帳戶、而您想要加入帳戶、則應關閉BluXP、並請擁有者將您與帳戶建立關聯。擁有者新增您之後、您就可以登入、而且您可以存取該帳戶。 link:task-managing-netapp-accounts.html#add-users["瞭解如何將成員新增至現有帳戶"]。
+如果您的使用者帳戶尚未屬於 BlueXP  組織、系統會提示您建立一個帳戶。
+
+. 在 * 歡迎 * 頁面上、輸入 BlueXP  組織的名稱。
++
+組織是 BlueXP  身分識別與存取管理（ IAM ）的頂層元素。link:concept-identity-and-access-management.html["瞭解 BlueXP  IAM"]。
 
 +
-帳戶是NetApp身分識別平台的最上層元素。它可讓您新增及管理使用者、角色、權限及工作環境。
+如果您的企業已經有 BlueXP  組織、而您想要加入該組織、那麼您應該關閉 BlueXP  、並要求擁有者將您與該組織建立關聯。擁有者新增您之後、您就可以登入、而且您可以存取該帳戶。link:task-iam-manage-members-permissions#add-members["瞭解如何新增成員至現有組織"]。
 
 +
-image:screenshot-account-selection.png["當您以不屬於帳戶的新帳戶登入時、會出現歡迎頁面的快照。"]
+image:screenshot-create-organization.png["當您使用不屬於組織的新使用者帳戶登入時、會出現歡迎頁面的螢幕擷取畫面。"]
 
-. 選擇*建立帳戶*。
+. 選取 * 開始 * 。
 
 
 .結果
-您現在有一個BlueXP登入帳戶。在大多數情況下、下一步是建立連接器、將BlueXP的服務連接至混合雲環境。
+您現在有 BlueXP  登入和組織。在大多數情況下、下一步是建立連接器、將BlueXP的服務連接至混合雲環境。

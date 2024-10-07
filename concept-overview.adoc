@@ -25,14 +25,14 @@ BlueXP 平台提供四大資料管理支柱：儲存、行動力、保護、分�
 儲存設備:: 探索、部署及管理儲存設備、無論是在 AWS 、 Azure 、 Google Cloud 或內部部署中。
 +
 --
-* 設定與使用 https://bluexp.netapp.com/ontap-cloud["Cloud Volumes ONTAP"^] 實現跨雲端的高效率多重傳輸協定資料管理。
 * 設定及使用雲端檔案儲存服務：
 +
 ** https://bluexp.netapp.com/azure-netapp-files["Azure NetApp Files"^]
-** https://bluexp.netapp.com/fsx-for-ontap["Amazon FSX for ONTAP Sf"^]
+** https://bluexp.netapp.com/fsx-for-ontap["Amazon FSX for NetApp ONTAP 產品"^]
 ** https://bluexp.netapp.com/cloud-volumes-service-for-gcp["適用於 Google Cloud Cloud Volumes Service"^]
 
 
+* 設定與使用 https://bluexp.netapp.com/ontap-cloud["Cloud Volumes ONTAP"^] 實現跨雲端的高效率多重傳輸協定資料管理。
 * 探索與管理 https://bluexp.netapp.com/netapp-on-premises["內部部署儲存設備"^]：
 +
 ** E系列系統
@@ -43,7 +43,7 @@ BlueXP 平台提供四大資料管理支柱：儲存、行動力、保護、分�
 
 
 --
-行動力:: 透過同步、複製、分層及快取資料、將資料移至所需的位置。
+行動力:: 透過同步、複製及分層資料、將資料移至需要的位置。
 +
 --
 * https://bluexp.netapp.com/cloud-sync-service["複製與同步"^]
@@ -55,7 +55,9 @@ BlueXP 平台提供四大資料管理支柱：儲存、行動力、保護、分�
 +
 --
 * https://bluexp.netapp.com/cloud-backup["備份與還原"^]
+* https://bluexp.netapp.com/disaster-recovery["災難恢復"^]
 * https://bluexp.netapp.com/replication["複寫"^]
+* https://bluexp.netapp.com/ransomware-protection["勒索軟體保護"^]
 
 
 --
@@ -71,7 +73,7 @@ BlueXP 平台提供四大資料管理支柱：儲存、行動力、保護、分�
 --
 
 
-https://bluexp.netapp.com/["深入瞭解如何使用 BlueXP 協助貴組織"^]
+https://bluexp.netapp.com/["深入瞭解如何使用 BlueXP  來管理混合式多雲端環境中的資料"^]
 
 
 
@@ -89,35 +91,45 @@ BlueXP的定價取決於您計畫使用的服務。 https://bluexp.netapp.com/pr
 
 == 藍圖的運作方式
 
-BlueXP 包括透過 SaaS 層提供的網路型主控台、提供多租戶服務的帳戶、以及可管理工作環境並啟用 BlueXP 雲端服務的 Connectors 。
+BlueXP  包含透過 SaaS 層提供的網路型主控台、資源與存取管理系統、以及可管理工作環境並啟用 BlueXP  雲端服務的 Connectors 。
 
 
 
 === 軟體即服務
 
-可透過存取BlueXP https://console.bluexp.netapp.com["網路型主控台"^] 和 API 。這項 SaaS 體驗可讓您在推出時自動存取最新功能、並在 BlueXP 帳戶和 Connector 之間輕鬆切換。
+BlueXP  可透過和 API 存取 https://console.bluexp.netapp.com["網路型主控台"^]。這項 SaaS 體驗可讓您在發行時自動存取最新功能、並在 BlueXP  組織、專案和連接器之間輕鬆切換。
 
 
 
-=== BlueXP帳戶
+=== BlueXP  身分識別與存取管理（ IAM ）
 
-第一次登入 BlueXP 時、系統會提示您建立 _BlueXP 帳戶 _ 。此帳戶提供多租戶共享、可讓您在隔離的 _stap空間 _ 中組織使用者和資源。
+BlueXP  身分識別與存取管理（ IAM ）是一種資源與存取管理模式、可提供精細的資源與權限管理：
 
-link:concept-netapp-accounts.html["深入瞭解客戶"]。
+* 頂層組織 _ 可讓您管理各種專案的存取權
+* _Folders_ 可讓您將相關專案分組在一起
+* 資源管理可讓您將資源與一或多個資料夾或專案建立關聯
+* 存取管理可讓您將角色指派給組織階層不同層級的成員
+
+
+在標準模式下使用 BlueXP  時、支援 BlueXP  IAM 。如果您是以受限模式或私人模式使用 BlueXP  、則會使用 BlueXP  _account_ 來管理工作區、使用者和資源。
+
+* link:concept-identity-and-access-management.html["深入瞭解 BlueXP  IAM"]
+* link:concept-netapp-accounts.html["瞭解 BlueXP 帳戶"]
+
 
 
 
 === 連接器
 
-您不需要 Connector 即可開始使用 BlueXP 、但您需要建立 Connector 才能解除鎖定所有 BlueXP 功能和服務。Connector 可在內部部署和雲端環境中管理資源和程序。需要管理工作環境（例如 Cloud Volumes ONTAP 和內部部署 ONTAP 叢集）、並使用許多 BlueXP 資料服務。
+您不需要 Connector 即可開始使用 BlueXP 、但您需要建立 Connector 才能解除鎖定所有 BlueXP 功能和服務。Connector 可在內部部署和雲端環境中管理資源和程序。需要管理工作環境（例如 Cloud Volumes ONTAP ）、並使用許多 BlueXP  服務。
 
 link:concept-connectors.html["深入瞭解連接器"]。
 
 
 
-=== 受限模式和私有模式
+=== 部署模式
 
-在安全性和連線能力受限的環境中、也支援 BlueXP 。您可以使用 _limit modity_ 或 _private modity_ 來限制與 BlueXP SaaS 層的輸出連線。
+BlueXP  在安全性和連線能力受限的環境中受到支援。您可以使用 _limit modity_ 或 _private modity_ 來限制與 BlueXP SaaS 層的輸出連線。
 
 link:concept-modes.html["深入瞭解 BlueXP 部署模式"]。
 

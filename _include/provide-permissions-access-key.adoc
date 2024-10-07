@@ -4,7 +4,7 @@
 
 . 在 BlueXP 主控台的右上角、選取「設定」圖示、然後選取 * 認證 * 。
 +
-image:screenshot_settings_icon.gif["顯示BlueXP主控台右上角「設定」圖示的快照。"]
+image:screenshot-settings-icon-organization.png["顯示BlueXP主控台右上角「設定」圖示的快照。"]
 
 . 選取 * 新增認證 * 、然後依照精靈中的步驟進行。
 +

@@ -27,7 +27,7 @@ summary: 如果您使用多個連接器、 BlueXP 可讓您直接從主控台在
 .步驟
 . 選取 * Connector * 下拉式清單、選取 Another Connector 、然後選取 * Switch* 。
 +
-image:screenshot_connector_switch.gif["螢幕擷取畫面會在標題和「切換」動作中顯示「 Connector 」圖示。"]
+image:screenshot-connector-switch.png["螢幕擷取畫面會在標題和「切換」動作中顯示「 Connector 」圖示。"]
 
 
 

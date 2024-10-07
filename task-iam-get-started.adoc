@@ -1,0 +1,65 @@
+---
+sidebar: sidebar 
+permalink: task-iam-get-started.html 
+keywords: iam, quick start, get started, get started with iam, identity and access management 
+summary: 若要開始使用 IAM 、請自訂組織的階層架構、新增其他成員、新增或探索資源、並將這些資源與專案建立關聯。 
+---
+= BlueXP  身分識別與存取管理入門
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+當您註冊 BlueXP  時、系統會提示您建立新組織。組織包括一個成員（組織管理員）和一個預設專案。若要設定 BlueXP  身分識別與存取管理（ IAM ）以滿足您的業務需求、您必須自訂組織的階層架構、新增其他成員、新增或探索資源、並將這些資源與階層架構建立關聯。
+
+您必須具有 * 組織管理員 * 權限、才能從 BlueXP  IAM 管理整個組織。如果您具有 * 資料夾或專案管理 * 權限、則只能管理您擁有權限的資料夾和專案。
+
+請依照下列步驟設定新的 BlueXP  組織。您完成這些步驟的順序可能會有所不同、視組織的需求而定。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]編輯預設專案或新增至組織的階層架構
+[role="quick-margin-para"]
+您只需使用預設專案、也可以建立符合業務階層的其他專案和資料夾。
+
+[role="quick-margin-para"]
+link:task-iam-manage-folders-projects.html["瞭解如何使用資料夾和專案來組織資源"]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]將成員與您的組織建立關聯
+[role="quick-margin-para"]
+如果企業中有多位人員需要從 BlueXP  存取及管理資源、您需要將其使用者帳戶與組織建立關聯、並在整個資源階層中提供適當的權限。您也可以選擇將服務帳戶新增至組織。
+
+[role="quick-margin-para"]
+link:task-iam-manage-members-permissions.html["瞭解如何管理成員及其權限"]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]新增或探索資源
+[role="quick-margin-para"]
+將 BlueXP  中的資源新增或探索為 _ 工作環境 _ 。工作環境代表組織成員從專案中管理的儲存系統。例如、 Cloud Volumes ONTAP 系統或內部部署 ONTAP 叢集。
+
+[role="quick-margin-para"]
+瞭解如何從 BlueXP  畫布建立或探索資源：
+
+[role="quick-margin-list"]
+* https://docs.netapp.com/us-en/bluexp-fsx-ontap/index.html["Amazon FSX for NetApp ONTAP 產品"^]
+* https://docs.netapp.com/us-en/bluexp-azure-netapp-files/index.html["Azure NetApp Files"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/index.html["Cloud Volumes ONTAP"^]
+* https://docs.netapp.com/us-en/bluexp-e-series/index.html["E系列系統"^]
+* https://docs.netapp.com/us-en/bluexp-ontap-onprem/index.html["內部部署 ONTAP 的叢集"^]
+* https://docs.netapp.com/us-en/bluexp-storagegrid/index.html["StorageGRID"^]
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]將資源與其他專案建立關聯
+[role="quick-margin-para"]
+當您在 BlueXP  中建立或探索資源時、該資源會自動與您建立或探索工作環境時所選取的專案建立關聯。如果您想要讓該資源可供組織中的其他專案使用、則必須在兩者之間建立關聯。如果資源是由 Connector 管理、則您也需要在專案和相關的 Connector 之間建立關聯。
+
+[role="quick-margin-list"]
+* link:task-iam-manage-resources.html["瞭解如何管理組織的資源階層"]。
+* link:task-iam-associate-connectors.html["瞭解如何將 Connector 與資料夾或專案建立關聯"]。
+
+
+.相關資訊
+* link:concept-identity-and-access-management.html["瞭解 BlueXP  身分識別與存取管理"]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["瞭解 BlueXP  IAM 的 API"^]
+

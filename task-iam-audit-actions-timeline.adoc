@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: task-iam-audit-actions-timeline.html 
+keywords: iam, audit, monitor, audit iam actions, monitor iam actions 
+summary: 從時間表監控或稽核 BlueXP  身分識別與存取管理（ IAM ）動作。 
+---
+= 從 BlueXP  時間表監控或稽核 IAM 活動
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果您需要監控或稽核從 BlueXP  身分識別與存取管理（ IAM ）完成的行動、您可以從 BlueXP  時間表檢視詳細資料。例如、您可能想要驗證誰新增成員至組織、或專案是否已成功刪除。
+
+.步驟
+. 在 BlueXP  主控台的右上角、選取 image:icon-settings-option.png["設定圖示會顯示在 BlueXP  網路主控台的右上角。"] > * 時間軸 * 。
+. 從篩選條件中、選取 * 服務 * 、然後選取 * 佔用 * 。
+. 使用任何其他篩選條件來變更表格中顯示的動作。
++
+例如、您可以使用 * 使用者 * 篩選器來顯示與特定使用者帳戶相關的動作。
+
+
+
+.結果
+時間表會更新、顯示您已完成與 BlueXP  IAM 相關的管理動作。

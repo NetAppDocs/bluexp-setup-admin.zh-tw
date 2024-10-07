@@ -1,0 +1,57 @@
+---
+sidebar: sidebar 
+permalink: task-iam-associate-connectors.html 
+keywords: connector, associate connector, folder, project, associate folder with connector, associate project with connector, associate connector with project, associate connector with resource 
+summary: 如果貴組織的成員需要在另一個專案中使用 Connector 、您需要從 BlueXP  IAM 建立關聯。 
+---
+= 將 BlueXP  Connector 與其他資料夾和專案建立關聯
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+需要有 Connector 才能從 BlueXP  管理多種類型的工作環境。當 _Organization admin_ 建立 Connector 時、 BlueXP  會自動將該 Connector 與組織及目前選取的專案建立關聯。_Organization admin_ 會自動從組織的任何位置存取該 Connector 。組織中的其他成員只能從建立該 Connector 的專案存取該 Connector 、除非您將該 Connector 與 BlueXP  身分識別與存取管理（ IAM ）的其他專案建立關聯。
+
+.開始之前
+您應該瞭解 Connector 關聯的運作方式。link:concept-identity-and-access-management.html#associate-connectors["瞭解如何搭配 BlueXP  IAM 使用 Connectors"]。
+
+.關於這項工作
+* 當 _ 資料夾或專案管理員 _ 檢視 * 連接器 * 頁面時、頁面會顯示組織中的所有連接器。不過、具有此角色的成員只能檢視及關聯擁有權限的資料夾和專案。link:reference-iam-predefined-roles.html["深入瞭解 _Folder 或專案管理員可以完成的動作"]。
+* 由於已知問題、 BlueXP  IAM 中的「連接器」頁面會顯示您先前從 BlueXP  移除的任何舊「連接器」。
+
+
+.步驟
+. 在 BlueXP  主控台右上角、選取 image:icon-settings-option.png["設定圖示會顯示在 BlueXP  網路主控台的右上角。"] > * 身分識別與存取管理 * 。
+. 選擇 * 連接器 * 。
+. 從表格中找出您要關聯的 Connector 。
++
+若要尋找特定的 Connector 、您可以使用表格上方的搜尋、並選取資源階層的特定部分來篩選表格內容。
+
+. 若要先檢視 Connector 所關聯的資料夾和專案、請選取image:icon-action.png["這是三個並排點的圖示"]、然後選取 * 檢視詳細資料 * 。
++
+BlueXP  會顯示與 Connector 相關聯的資料夾和專案詳細資料。
+
+. 選取 * 與資料夾或專案相關 * 。
+. 選取資料夾或專案、然後選取 * 接受 * 。
+. 若要將 Connector 與其他資料夾或專案建立關聯、請選取 * 新增資料夾或專案 * 、然後選取資料夾或專案。
+. 選擇 * 關聯 Connector* 。
+
+
+.結果
+BlueXP  會將 Connector 與選取的資料夾和專案建立關聯。擁有這些資料夾和專案權限的成員現在可以選取該 Connector 。
+
+.完成後
+如果您想要將 Connector 管理的資源與相同的資料夾和專案建立關聯、您可以從「資源」頁面進行關聯。
+
+link:task-iam-manage-resources.html#associate-resource["瞭解如何將資源與資料夾和專案建立關聯"]。
+
+.相關資訊
+* link:concept-connectors.html["瞭解 BlueXP  Connectors"]
+* link:concept-identity-and-access-management.html["瞭解 BlueXP  身分識別與存取管理"]
+* link:task-iam-get-started.html["BlueXP  IAM 入門"]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["瞭解 BlueXP  IAM 的 API"^]
+

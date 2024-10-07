@@ -1,0 +1,144 @@
+---
+sidebar: sidebar 
+permalink: task-iam-manage-resources.html 
+keywords: resource, hierarchy, association, access, resource permissions, resource hierarchy, iam, identity and access management 
+summary: 將資源與特定專案和資料夾建立關聯、以管理組織的資源階層。 
+---
+= 管理 BlueXP  組織中的資源階層
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+當您使用 BlueXP  身分識別與存取管理（ IAM ）將成員與組織建立關聯時、您可以在組織、資料夾或專案層級提供權限。為了確保這些成員有權存取適當的資源、您需要將資源與特定專案和資料夾建立關聯、以管理組織的資源階層。_resource_ 是 BlueXP  已經管理的工作環境。
+
+
+
+== 檢視組織中的資源
+
+若要開始管理資源階層架構、您應該知道與組織相關的資源。
+
+.步驟
+. 在 BlueXP  主控台右上角、選取 image:icon-settings-option.png["設定圖示會顯示在 BlueXP  網路主控台的右上角。"] > * 身分識別與存取管理 * 。
+. 選取 * 資源 * 。
+
+
+.結果
+與組織相關的資源會顯示在 * 資源 * 表格中。
+
+.接下來呢？
+若要尋找特定資源，您可以<<find-resources,搜尋並篩選表格內容>>。
+
+找到您要尋找的資源之後、您可以完成下列任一動作：
+
+* <<view-folders-and-projects,檢視與資源相關聯的資料夾和專案>>
+* <<associate-resource,將資源與其他資料夾和專案建立關聯>>
+* <<remove-resource,從資料夾或專案中移除資源>>
+
+
+
+
+== 尋找組織中的特定資源
+
+如果組織中有大量資源、您可以使用搜尋和篩選選項來尋找特定資源。
+
+.步驟
+. 從「 * 資源 * 」頁面中、選取 * 「進階搜尋與篩選 * 」。
+. 使用任何可用選項來尋找您要尋找的資源：
++
+** * 依資源名稱搜尋 * ：輸入文字字串並選取 * 新增 * 。
+** * 平台 * ：選取一或多個平台、例如 Amazon Web Services 。
+** * 資源 * ：選取一或多個資源、例如 Cloud Volumes ONTAP 。
+** * 組織、資料夾或專案 * ：選取整個組織、特定資料夾或特定專案。
+
+
+. 選取 * 搜尋 * 。
+
+
+.結果
+「資源」表格的內容會重新整理、以顯示符合您的搜尋和篩選選擇的資源。
+
+
+
+== 將資源與資料夾和專案建立關聯
+
+如果您想要讓資源可供組織中的其他資料夾或專案使用、則需要在資料夾或專案與資源之間建立關聯。
+
+.開始之前
+您應該瞭解資源關聯的運作方式。link:concept-identity-and-access-management.html#resources["瞭解資源、包括何時將資源與資料夾建立關聯"]。
+
+.步驟
+. 從「 * 資源 * 」頁面、瀏覽至表格中的資源、選取image:icon-action.png["這是三個並排點的圖示"]、然後選取 * 與資料夾或專案建立關聯 * 。
+. 選取資料夾或專案、然後選取 * 接受 * 。
+. 若要建立其他資料夾或專案的關聯、請選取 * 新增資料夾或專案 * 、然後選取資料夾或專案。
++
+請注意、您只能從您具有管理權限的資料夾和專案中進行選擇。
+
+. 選擇 * 關聯資源 * 。
+
+
+.結果
+BlueXP  會將資源與選取的資料夾和專案建立關聯。
+
+* 如果您將資源與專案相關聯、則擁有這些專案權限的成員現在可以在 BlueXP  中存取資源。
+* 如果您將資源與資料夾相關聯、那麼 _Folder 或專案管理員現在可以從 BlueXP  IAM 中存取資源。link:concept-identity-and-access-management.html#resources["瞭解如何將資源與資料夾建立關聯"]。
+
+
+.完成後
+如果使用 BlueXP  Connector 探索到您關聯的資源、而且組織中有其他成員、則您也需要將 Connector 與資源目前關聯的專案建立關聯。否則、沒有 _Organization admin_ 角色的成員無法從 BlueXP  畫布存取 Connector 及其相關資源。
+
+link:task-iam-associate-connectors.html["瞭解如何將 Connector 與資料夾或專案建立關聯"]。
+
+
+
+== 檢視與資源相關的資料夾和專案
+
+若要識別組織階層中資源的可用位置、您可以檢視與該資源相關聯的資料夾和專案。
+
+.步驟
+. 從「 * 資源 * 」頁面、瀏覽至表格中的資源、選取image:icon-action.png["這是三個並排點的圖示"]、然後選取 * 檢視詳細資料 * 。
+
+
+.結果
+BlueXP  會顯示與資源相關聯的資料夾和專案。
+
+下列範例顯示與一個專案相關的資源。
+
+image:screenshot-iam-resource-details.png["資源詳細資料頁面的螢幕擷取畫面、顯示與組織正下方專案相關的資源。"]
+
+.接下來呢？
+* 您可以<<associate-resource,將資源與其他專案或資料夾建立關聯>>。
+* 您可以<<remove-resource,從特定資料夾或專案中移除資源>>。
+* 如果需要確定哪些組織成員可以訪問資源，您可以link:task-iam-manage-folders-projects.html#view-associated-resources-members["檢視可存取與資源相關之資料夾和專案的成員"]。
+
+
+
+
+== 從資料夾或專案移除資源
+
+若要從資料夾或專案移除資源、您需要移除資料夾或專案與資源之間的關聯。移除關聯後、組織成員將無法再從資料夾或專案管理資源。
+
+.關於這項工作
+如果您想要從整個組織中移除探索到的資源、則需要從 BlueXP  畫布中移除工作環境。
+
+.步驟
+. 從「 * 資源 * 」頁面、瀏覽至表格中的資源、選取image:icon-action.png["這是三個並排點的圖示"]、然後選取 * 檢視詳細資料 * 。
+. 針對您要移除資源的資料夾或專案、選取image:icon-delete.png["垃圾桶的圖示"]
+. 選擇 * 刪除 * 以確認您要移除關聯。
+
+
+.結果
+BlueXP  會移除關聯。成員無法再從該資料夾或專案存取資源。
+
+
+
+== 相關資訊
+
+* link:concept-identity-and-access-management.html["瞭解 BlueXP  身分識別與存取管理"]
+* link:task-iam-get-started.html["BlueXP  IAM 入門"]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["瞭解 BlueXP  IAM 的 API"^]
+

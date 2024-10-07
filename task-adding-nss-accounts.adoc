@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-adding-nss-accounts.html 
 keywords: adding, creating, netapp support site account, nss, update account, update nss account, update nss credentials, delete nss account, remove nss account, change working environment, working environment nss 
-summary: 將 NetApp 支援網站 帳戶與 BlueXP 帳戶建立關聯、以啟用 Cloud Volumes ONTAP 的關鍵工作流程。這些NSS認證資料會與整個BlueXP帳戶建立關聯。 
+summary: 將 NetApp 支援網站帳戶與您的 BlueXP  組織或帳戶建立關聯、以啟用 Cloud Volumes ONTAP 的關鍵工作流程。這些 NSS 認證資料與整個 BlueXP  組織或帳戶相關聯。 
 ---
-= 管理與BlueXP帳戶相關聯的NSS認證
+= 管理與 BlueXP  組織或帳戶相關的 NSS 認證
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,16 +14,23 @@ summary: 將 NetApp 支援網站 帳戶與 BlueXP 帳戶建立關聯、以啟用
 
 
 [role="lead"]
-將 NetApp 支援網站 帳戶與 BlueXP 帳戶建立關聯、以啟用 Cloud Volumes ONTAP 的關鍵工作流程。這些NSS認證資料會與整個BlueXP帳戶建立關聯。
+將 NetApp 支援網站帳戶與您的 BlueXP  組織或帳戶建立關聯、以啟用 Cloud Volumes ONTAP 的關鍵工作流程。這些 NSS 認證資料與整個 BlueXP  組織或帳戶相關聯。
+
+BlueXP  也支援每個 BlueXP  使用者帳戶建立一個 NSS 帳戶的關聯。link:task-manage-user-credentials.html["瞭解如何管理使用者層級認證"]。
 
 
-NOTE: BlueXP也支援為每個BlueXP使用者建立一個NSS帳戶的關聯。 link:task-manage-user-credentials.html["瞭解如何管理使用者層級認證"]。
+TIP: 如果您以標準模式使用 BlueXP  、您將擁有 BlueXP  組織、並使用 BlueXP  身分識別與存取管理（ IAM ）來管理。但如果您是以受限模式或私人模式使用 BlueXP  、則您將擁有 BlueXP  帳戶 _ 。
+
+* link:concept-modes.html["瞭解 BlueXP 部署模式"]
+* link:concept-identity-and-access-management.html["瞭解 BlueXP  身分識別與存取管理"]
+* link:concept-netapp-accounts.html["瞭解 BlueXP 帳戶"]
+
 
 
 
 == 總覽
 
-若要在BlueXP中啟用下列工作、需要將NetApp 支援網站 此認證與您的特定BlueXP帳戶ID建立關聯：
+若要在 BlueXP  中啟用下列工作、必須將 NetApp 支援網站認證與您特定的 BlueXP  帳戶序號建立關聯：
 
 * 自帶授權（Cloud Volumes ONTAP BYOL）即可部署
 +
@@ -36,13 +43,13 @@ NOTE: BlueXP也支援為每個BlueXP使用者建立一個NSS帳戶的關聯。 l
 * 升級Cloud Volumes ONTAP 更新版的更新版
 
 
-這些認證資料會與您的特定BlueXP帳戶ID建立關聯。屬於BlueXP帳戶的使用者可以從*支援> nss管理*存取這些認證資料。
+這些認證與您的特定 BlueXP  帳戶序號相關聯。屬於 BlueXP  組織或帳戶的使用者可從 * 支援 > NSS 管理 * 存取這些認證。
 
 
 
 == 新增一個NSS帳戶
 
-「支援儀表板」可讓您新增及管理NetApp 支援網站 適用於BlueXP帳戶層級的功能。
+「支援儀表板」可讓您新增及管理 NetApp 支援網站帳戶、以便在 BlueXP  組織或帳戶層級與 BlueXP  搭配使用。
 
 * 如果您有客戶層級的帳戶、可以新增一或多個NSS帳戶。
 * 如果您有合作夥伴或經銷商帳戶、您可以新增一或多個NSS帳戶、但這些帳戶無法與客戶層級帳戶一起新增。

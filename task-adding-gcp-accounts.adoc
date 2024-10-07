@@ -52,7 +52,7 @@ image:screenshot_gcp_cvo_marketplace.png["Google Cloud 中 Cloud Volumes ONTAP �
 
 .. 在快顯對話方塊中、選取 * 註冊 NetApp 、 Inc.*
 +
-您必須完成此步驟、才能將 Google Cloud 訂閱連結至您的 BlueXP 帳戶。連結訂閱的程序要等到您從本頁重新導向、然後登入BluXP之後才會完成。
+您必須完成此步驟、才能將 Google Cloud 訂閱連結至您的 BlueXP  組織或帳戶。連結訂閱的程序要等到您從本頁重新導向、然後登入BluXP之後才會完成。
 
 +
 image:screenshot_gcp_marketplace_register.png["註冊快顯畫面。"]
@@ -63,13 +63,13 @@ image:screenshot_gcp_marketplace_register.png["註冊快顯畫面。"]
 NOTE: 如果貴組織的人員已從您的帳單帳戶訂閱NetApp BlueXP訂閱、您將會被重新導向至 https://bluexp.netapp.com/ontap-cloud?x-gcp-marketplace-token=["BlueXP網站上的「支持」頁面Cloud Volumes ONTAP"^] 而是。如果這是意外情況、請聯絡您的NetApp銷售團隊。Google每個Google帳單帳戶只能啟用一次訂閱。
 
 +
-*** 選取您要與此訂閱建立關聯的 BlueXP 帳戶。
-*** 在「*取代現有訂閱*」欄位中、選擇您是否要使用此新訂閱來自動取代現有的單一帳戶訂閱。
+*** 選取您要與此訂閱建立關聯的 BlueXP  組織或帳戶。
+*** 在「 * 取代現有訂閱 * 」欄位中、選擇您是否要自動以這個新訂閱取代一個組織或帳戶的現有訂閱。
 +
-此新訂閱取代現有的帳戶所有認證訂閱。如果一組認證資料從未與訂閱建立關聯、則此新訂閱將不會與這些認證資料建立關聯。
+BlueXP  以這項新訂閱取代組織或帳戶中所有認證的現有訂閱。如果一組認證資料從未與訂閱建立關聯、則此新訂閱將不會與這些認證資料建立關聯。
 
 +
-對於所有其他帳戶、您必須重複這些步驟、手動建立訂閱的關聯。
+對於所有其他組織或帳戶、您必須重複這些步驟、手動建立訂閱的關聯。
 
 *** 選擇*保存*。
 +

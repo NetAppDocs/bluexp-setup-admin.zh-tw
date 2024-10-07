@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: concept-netapp-accounts.html 
-keywords: accounts, workspaces, Connector, users, BlueXP website, admin, Account Admin, Workspace Admin, account settings, workspaces, users, members, connector, service connector, user accounts, what are users, what is a workspace, users and workspaces, bluexp account, netapp account 
-summary: BlueXP 帳戶可為您的組織提供多租戶服務、讓您能夠在隔離的工作空間中組織使用者和資源。例如、使用者群組可以在工作區中部署及管理 Cloud Volumes ONTAP 工作環境、而在不同工作區中管理工作環境的使用者則看不到該工作區。 
+keywords: accounts, workspaces, users, admin, Account Admin, Workspace Admin, account settings, workspaces, users, members, connector, service connector, user accounts, what are users, what is a workspace, users and workspaces, bluexp account, netapp account 
+summary: BlueXP  帳戶可讓您在使用受限模式或私有模式時、在隔離的工作區中管理使用者及組織資源。 
 ---
 = 瞭解 BlueXP 帳戶
 :hardbreaks:
@@ -14,7 +14,17 @@ summary: BlueXP 帳戶可為您的組織提供多租戶服務、讓您能夠在�
 
 
 [role="lead"]
-_BlueXP 帳戶 _ 為您的組織提供多租戶服務、可讓您在隔離的 _stuonustr_stustronustr_stustraled 中組織使用者和資源。例如、使用者群組可以在工作區中部署及管理 Cloud Volumes ONTAP 工作環境、而在不同工作區中管理工作環境的使用者則看不到該工作區。
+當您在受限模式或私人模式下使用 BlueXP  時、您將使用 BlueXP  帳戶 _ 來管理使用者、並在隔離的 _stustronity_ 中組織資源。例如、使用者群組可以在工作區中部署及管理 Cloud Volumes ONTAP 工作環境、而在不同工作區中管理工作環境的使用者則看不到該工作區。
+
+如果您是以標準模式使用 BlueXP  、就不會有 BlueXP  帳戶。您將改為使用 BlueXP  身分識別與存取管理（ IAM ）來管理 BlueXP  組織。
+
+* link:concept-identity-and-access-management.html["瞭解 BlueXP  IAM"]
+* link:concept-modes.html["瞭解 BlueXP 部署模式"]
+
+
+
+
+== 總覽
 
 當您第一次存取 BlueXP 時、系統會提示您選取或建立帳戶。例如、如果您還沒有帳戶、您會看到下列畫面：
 
@@ -25,14 +35,6 @@ image:screenshot-account-selection.png["BlueXP 安裝精靈的螢幕擷取畫面
 image:screenshot-account-settings.png["顯示「管理帳戶」小工具的快照、您可從中管理使用者、工作區和連接器。"]
 
 link:task-managing-netapp-accounts.html["瞭解如何管理 BlueXP 帳戶"]。
-
-
-
-== 部署模式
-
-BlueXP 為您的帳戶提供下列部署模式：標準模式、受限模式和私人模式。這些模式支援安全性和連線限制等級各異的環境。
-
-link:concept-modes.html["深入瞭解 BlueXP 部署模式"]。
 
 
 
