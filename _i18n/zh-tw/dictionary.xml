@@ -4849,4 +4849,5 @@ Azure 政府地區不需要此端點。</block>
   <block id="902a8ce7390bb726da2910b3ec25aae6" category="sidebar">重新命名組織</block>
   <block id="4e9a240c5fb31e56c6b0ab71a915953f" category="sidebar">預先定義的 IAM 角色</block>
   <block id="1326a41ad4b26f3395b0f54dd9172b2b" category="sidebar">深入瞭解客戶</block>
+  <block id="df583ae7ba964fd4806b55904da81813" category="list-text">警示</block>
 </blocks>

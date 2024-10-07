@@ -60,6 +60,7 @@ https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["�
 
 在標準模式下使用 BlueXP 時、 BlueXP 中的下列功能和服務需要 Connector ：
 
+* 警示
 * Amazon FSX提供ONTAP 功能完善的管理功能
 * Amazon S3儲存設備
 * Azure Blob 儲存設備
