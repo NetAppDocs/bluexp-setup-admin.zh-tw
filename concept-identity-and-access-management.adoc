@@ -170,12 +170,6 @@ link:reference-iam-predefined-roles.html["瞭解 IAM 預先定義的角色"]。
 
 
 
-==== 自訂角色
-
-目前不支援自訂角色。
-
-
-
 === 連接器
 
 當 _Organization admin_ 建立 Connector 時、 BlueXP  會自動將該 Connector 與組織及目前選取的專案建立關聯。_Organization admin_ 會自動從組織的任何位置存取該 Connector 。但如果組織中有其他成員的角色不同、則除非您將該 Connector 與其他專案建立關聯、否則這些成員只能從建立該 Connector 的專案存取該 Connector 。

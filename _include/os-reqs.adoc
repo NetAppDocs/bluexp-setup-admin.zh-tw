@@ -149,7 +149,7 @@ Google Cloud支援Connector的VM執行個體、其作業系統可支援此連接
 /opt 中的磁碟空間:: 必須有100 GiB的可用空間
 +
 --
-BlueXP 使用 `/opt` 安裝 `/opt/application/netapp` 目錄及其內容。
+BlueXP  使用 `/opt`安裝 `/opt/application/netapp`目錄及其內容。
 
 --
 /var.中的磁碟空間:: 必須提供20 GiB的空間

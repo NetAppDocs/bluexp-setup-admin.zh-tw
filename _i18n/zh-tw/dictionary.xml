@@ -3826,7 +3826,6 @@ Azure 政府地區不需要此端點。</block>
   <block id="29e66847d781138b54aa8aa55b70fb20" category="list-text"><block ref="29e66847d781138b54aa8aa55b70fb20" category="inline-link-rx"></block></block>
   <block id="3eb0b1a8f5c259c6baffd4acbc27dc9b" category="paragraph">在標準模式或受限模式下使用 BlueXP 時、執行下列 Red Hat Enterprise Linux 版本且安裝 _new_ Connector 的主機現在支援 Connector ：</block>
   <block id="deb2d604498906b6056e668d8a921bc6" category="paragraph">3.9.41 版本適用於標準模式和受限模式。</block>
-  <block id="4fe47b0a38e9cc2f08e1ebd6f66fc340" category="paragraph">BlueXP 使用<block ref="68ab1268abb7e5f5688810968df97d6b" prefix=" " category="inline-code"></block> 安裝<block ref="a23365e1ae67810a7446b65d3be9a5d0" prefix=" " category="inline-code"></block> 目錄及其內容。</block>
   <block id="6625b96831c913865dcc04d700d00a02" category="paragraph">BlueXP 需要此空間<block ref="ca905eb4a00d34150573153a09e2e79b" prefix=" " category="inline-code"></block> 因為 Docker 或 Podman 是專為在此目錄中建立容器而設計。具體而言、他們會在中建立容器<block ref="af5045a6e72956f67984a97cd3e8b9da" prefix=" " category="inline-code"></block> 目錄。外部掛載或 symlinks 無法用於此空間。</block>
   <block id="06cfdcafd69514150ade31a714fa78db" category="list-text">需要經過認證可執行支援作業系統的裸機或託管 Hypervisor 。</block>
   <block id="1c0a2f304cb94000fe79271bae1284df" category="list-text">Ubuntu 需要 Docker Engine 。</block>
@@ -4272,8 +4271,6 @@ Azure 政府地區不需要此端點。</block>
   <block id="befeea17a6d7eca164cf128f9bffe000" category="paragraph">BlueXP  支援數個預先定義的角色、您可以指派給組織成員。</block>
   <block id="2b01a456faf456f22f55be4aabe17b53" category="inline-link-macro">瞭解 IAM 預先定義的角色</block>
   <block id="5939586d23777de38b1394aad3c31735" category="paragraph"><block ref="1d6a3b55f851d6a1155ab766483f6eac" category="inline-link-macro-rx"></block>。</block>
-  <block id="96798f05426bc55e0ae4e4719f68dc28" category="section-title">自訂角色</block>
-  <block id="a38d248b1e1740da2f4eccb2dc9492be" category="paragraph">目前不支援自訂角色。</block>
   <block id="1f2652079b5030c3e1f5c5b95701a71c" category="paragraph">當 _Organization admin_ 建立 Connector 時、 BlueXP  會自動將該 Connector 與組織及目前選取的專案建立關聯。_Organization admin_ 會自動從組織的任何位置存取該 Connector 。但如果組織中有其他成員的角色不同、則除非您將該 Connector 與其他專案建立關聯、否則這些成員只能從建立該 Connector 的專案存取該 Connector 。</block>
   <block id="a84eaa1aafc5282e553ddc52e74d77b9" category="paragraph">在下列情況下、您可能會想要讓 Connector 可用於其他專案：</block>
   <block id="9ce6bd5f8ae0c74108c66519e8a1d5dd" category="list-text">您想要允許組織中的成員使用現有的 Connector 來建立或探索其他專案中的其他工作環境</block>
@@ -4857,4 +4854,8 @@ Azure 政府地區不需要此端點。</block>
   <block id="f08676e8a1e41f582ac0537747703230" category="paragraph"><block ref="f08676e8a1e41f582ac0537747703230" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4d3e366c7ef57f5c2037203fa77c103c" category="list-text"><block ref="4d3e366c7ef57f5c2037203fa77c103c" category="inline-link-rx"></block></block>
   <block id="6b7b64b4bdd6080baf05e2c37372258a" category="list-text"><block ref="6b7b64b4bdd6080baf05e2c37372258a" category="inline-link-rx"></block></block>
+  <block id="f7d8f0ba412660e43ffeb2e82b61e167" category="paragraph">BlueXP  使用<block ref="68ab1268abb7e5f5688810968df97d6b" prefix=" " category="inline-code"></block>安裝<block ref="a23365e1ae67810a7446b65d3be9a5d0" prefix=" " category="inline-code"></block>目錄及其內容。</block>
+  <block id="a1fe52ea216874a5214f41ae7e5bbd63" category="section-title">2024 年 10 月 10 日</block>
+  <block id="9071c576479353103106b574601bd920" category="section-title">連接器3.9.45修補程式</block>
+  <block id="d8497d3046f15c93d3e5c40856129331" category="paragraph">此修補程式包含錯誤修正。</block>
 </blocks>
