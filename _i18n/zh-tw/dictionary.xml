@@ -3889,7 +3889,6 @@ Azure 政府地區不需要此端點。</block>
   <block id="3baace5508f5436415356f7f1c718d50" category="list-text">* RAM* ： 32 GB</block>
   <block id="e5ee5282a10eef25059e919331c8ea5e" category="list-text">* 機器類型 * ：建議使用 n2-Standard-8 。</block>
   <block id="4ea5b82f34f27448cadea5ae611c81ba" category="list-text">* 選擇執行個體類型 * ：根據區域可用度、選擇其中一種支援的執行個體類型（建議使用 t3.2xlarge ）。</block>
-  <block id="d44724be897a214586cbd2c8b32fb39d" category="list-text">目前、系統會以電子郵件傳送通知、以取得下列 BlueXP  功能與服務： Connector 、 BlueXP  數位錢包、 BlueXP  複製與同步、 BlueXP  備份與還原、以及 BlueXP  分層。未來版本將會新增其他服務。</block>
   <block id="34c56ac41d4e5a004cc5b7c87b0e2d87" category="section-title">連接器 3.9.43</block>
   <block id="05797637e0cfec59d8a5478eba1acfdf" category="paragraph">3.9.43 版本適用於標準模式和受限模式。</block>
   <block id="45c4fb485dfa6a5d0af975aa668648a9" category="section-title">更新 CPU 和 RAM 需求</block>
@@ -4858,4 +4857,5 @@ Azure 政府地區不需要此端點。</block>
   <block id="a1fe52ea216874a5214f41ae7e5bbd63" category="section-title">2024 年 10 月 10 日</block>
   <block id="9071c576479353103106b574601bd920" category="section-title">連接器3.9.45修補程式</block>
   <block id="d8497d3046f15c93d3e5c40856129331" category="paragraph">此修補程式包含錯誤修正。</block>
+  <block id="ab99e6e0b893c9db1dce5c6dc26245bc" category="list-text">以下 BlueXP  功能與服務的通知會以電子郵件傳送： Connector 、 BlueXP  數位錢包、 BlueXP  複本與同步、 BlueXP  備份與還原。</block>
 </blocks>

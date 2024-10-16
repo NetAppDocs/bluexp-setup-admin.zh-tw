@@ -137,7 +137,7 @@ image:screenshot_notification_dismiss1.png["顯示如何關閉單一通知的螢
 
 [NOTE]
 ====
-* 目前、系統會以電子郵件傳送通知、以取得下列 BlueXP  功能與服務： Connector 、 BlueXP  數位錢包、 BlueXP  複製與同步、 BlueXP  備份與還原、以及 BlueXP  分層。未來版本將會新增其他服務。
+* 以下 BlueXP  功能與服務的通知會以電子郵件傳送： Connector 、 BlueXP  數位錢包、 BlueXP  複本與同步、 BlueXP  備份與還原。
 * 如果Connector安裝在沒有網際網路存取的網站上、則不支援傳送電子郵件通知。
 
 
