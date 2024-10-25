@@ -29,7 +29,7 @@ Podman 4.6.1 或 4.9.4 版
 
 <<podman-configuration,檢視 Podman 組態需求>>。
  a| 
-在強制模式或允許模式下支援
+在強制模式或允許模式 ^1^ 中支援
 
 
 
@@ -60,8 +60,9 @@ Docker Engine 23.0.6 至 26.0.0
 |===
 附註：
 
-* 這些作業系統的英文版本支援 Connector 。
-* 對於 RHEL 、主機必須向 Red Hat Subscription Management 登錄。如果主機尚未登錄、則無法在 Connector 安裝期間存取儲存庫來更新所需的協力廠商軟體。
+. 在作業系統上啟用 SELinux 的 Connectors 不支援 Cloud Volumes ONTAP 系統的管理。
+. 這些作業系統的英文版本支援 Connector 。
+. 對於 RHEL 、主機必須向 Red Hat Subscription Management 登錄。如果主機尚未登錄、則無法在 Connector 安裝期間存取儲存庫來更新所需的協力廠商軟體。
 
 
 --
@@ -88,7 +89,7 @@ Podman 4.6.1 或 4.9.4 版
 
 <<podman-configuration,檢視 Podman 組態需求>>。
  a| 
-在強制模式或允許模式下支援
+在強制模式或允許模式 ^1^ 中支援
 
 
 
@@ -108,8 +109,9 @@ Docker Engine 23.0.6 至 26.0.0
 |===
 附註：
 
-* 這些作業系統的英文版本支援 Connector 。
-* 對於 RHEL 、主機必須向 Red Hat Subscription Management 登錄。如果主機尚未登錄、則無法在 Connector 安裝期間存取儲存庫來更新所需的協力廠商軟體。
+. 在作業系統上啟用 SELinux 的 Connectors 不支援 Cloud Volumes ONTAP 系統的管理。
+. 這些作業系統的英文版本支援 Connector 。
+. 對於 RHEL 、主機必須向 Red Hat Subscription Management 登錄。如果主機尚未登錄、則無法在 Connector 安裝期間存取儲存庫來更新所需的協力廠商軟體。
 
 
 --

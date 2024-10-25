@@ -1,0 +1,11 @@
+= 
+:allow-uri-read: 
+
+
+使用 BlueXP  網路型主控台時、從電腦連絡的端點:: 從網頁瀏覽器存取 BlueXP  主控台的電腦必須能夠連絡多個端點。您需要使用 BlueXP  主控台來設定連接器、並用於 BlueXP  的日常使用。
++
+--
+link:reference-networking-saas-console.html["為 BlueXP  主控台準備網路"]。
+
+--
+

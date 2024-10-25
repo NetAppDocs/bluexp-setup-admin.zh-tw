@@ -50,7 +50,7 @@ Podman 4.6.1 或 4.9.4 版
 
 <<podman-configuration,檢視 Podman 組態需求>>。
  a| 
-在強制模式或允許模式下支援
+在強制模式或允許模式 ^1^ 中支援
 
 
 
@@ -81,8 +81,9 @@ Docker Engine 23.0.6 至 26.0.0
 |===
 附註：
 
-* 這些作業系統的英文版本支援 Connector 。
-* 對於 RHEL 、主機必須向 Red Hat Subscription Management 登錄。如果主機尚未登錄、則無法在 Connector 安裝期間存取儲存庫來更新所需的協力廠商軟體。
+. 在作業系統上啟用 SELinux 的 Connectors 不支援 Cloud Volumes ONTAP 系統的管理。
+. 這些作業系統的英文版本支援 Connector 。
+. 對於 RHEL 、主機必須向 Red Hat Subscription Management 登錄。如果主機尚未登錄、則無法在 Connector 安裝期間存取儲存庫來更新所需的協力廠商軟體。
 
 
 --
@@ -245,6 +246,14 @@ sudo systemctl enable docker && sudo systemctl start docker
 
 
 傳出網際網路存取:: 您部署 Connector 的網路位置必須具有傳出網際網路連線、才能連絡特定端點。
+
+
+使用 BlueXP  網路型主控台時、從電腦連絡的端點:: 從網頁瀏覽器存取 BlueXP  主控台的電腦必須能夠連絡多個端點。您需要使用 BlueXP  主控台來設定連接器、並用於 BlueXP  的日常使用。
++
+--
+link:reference-networking-saas-console.html["為 BlueXP  主控台準備網路"]。
+
+--
 
 
 手動安裝期間聯絡的端點:: 當您在自己的 Linux 主機上手動安裝 Connector 時、 Connector 的安裝程式需要在安裝過程中存取下列 URL ：

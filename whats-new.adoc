@@ -121,7 +121,11 @@ BlueXP  現在支援 Connector 搭配 Red Hat Enterprise Linux 主機、這些�
 
 支援 SELinux 從標準模式和受限模式的 3.9.40 版本開始、以及私有模式的 3.9.42 版本開始。
 
-BlueXP  不支援使用 Ubuntu 主機的 SELinux 。
+請注意下列限制：
+
+* BlueXP  不支援使用 Ubuntu 主機的 SELinux 。
+* 在作業系統上啟用 SELinux 的 Connectors 不支援管理 Cloud Volumes ONTAP 系統。
+
 
 https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/using_selinux/getting-started-with-selinux_using-selinux["深入瞭解 SELinux"^]
 

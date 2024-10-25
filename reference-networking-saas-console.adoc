@@ -14,9 +14,13 @@ summary: 當您使用透過 SaaS 層提供的 BlueXP 網路型主控台時、它
 
 
 [role="lead"]
-當您使用透過 SaaS 層提供的 BlueXP 網路型主控台時、它會在完成一些管理工作時與多個端點連絡。存取 BlueXP 主控台的電腦應與這些端點建立連線。
+當您登入並使用 BlueXP  網路型主控台時、 BlueXP  會與多個端點聯絡、以完成您起始的動作。存取 BlueXP  主控台的電腦必須連線到這些端點。
 
-從 BlueXP 主控台完成特定動作時、會從使用者的電腦聯絡這些端點。您也應該參閱 Connector 的網路需求、以及特定的 BlueXP 服務。如需詳細資訊、請參閱本頁結尾的相關連結。
+在兩種情況下、我們會聯絡這些端點：
+
+* 在使用者的電腦上完成以「軟體即服務」（ SaaS ）形式提供的特定動作 https://console.bluexp.netapp.com["BlueXP 網路型主控台"^]。
+* 從使用者電腦開啟 Web 瀏覽器、輸入 Connector 主機的 IP 位址、然後登入並設定 Connector 。如果您手動安裝 Connector 、則需要執行這些步驟。
+
 
 [cols="2*"]
 |===
@@ -24,7 +28,10 @@ summary: 當您使用透過 SaaS 層提供的 BlueXP 網路型主控台時、它
 
 
 | \https://console.bluexp.netapp.com
-\https://*.console.bluexp.netapp.com | 當您使用 BlueXP 網路型主控台時、您的網路瀏覽器會連絡這些 URL 。 
+\https://*.console.bluexp.netapp.com | 這是您在網頁瀏覽器中輸入的端點、用於使用 BlueXP  網路型主控台。 
+
+
+| \https://api.bluexp.netapp.com | BlueXP  網路型主控台會連絡此端點、與 BlueXP  API 互動、以執行與授權、授權、訂閱、認證、通知等相關的動作。 
 
 
 | \https://aiq.netapp.com | 需要存取 BlueXP 數位顧問。 

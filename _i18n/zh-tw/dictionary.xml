@@ -437,7 +437,6 @@
   <block id="870a261de0f18a65c1ce93a292943250" category="paragraph">從雲端供應商的市場訂閱 BlueXP 、即可按每小時費率（ PAYGO ）或透過年度合約支付 BlueXP 服務費用。</block>
   <block id="ca514cc7f92949257244bf6c32d47ea3" category="cell">\https://console.bluexp.netapp.com
 \https://*.console.bluexp.netapp.com</block>
-  <block id="7926588c37032e15e3fdc15831f4bbb5" category="cell">當您使用 BlueXP 網路型主控台時、您的網路瀏覽器會連絡這些 URL 。</block>
   <block id="3b365676c5ca74885304eef4c49f337f" category="inline-link">如需詳細資料、請參閱 AWS 文件。</block>
   <block id="c4a18aaebd350cfac0f1a4233f8a3745" category="cell">需要在AWS中部署從BlueXP部署連接器。確切的端點取決於部署Connector的區域。<block ref="8713149e44744e94774c08b8716ce579" category="inline-link-rx"></block></block>
   <block id="f53b89586f387a306de225ad286181a2" category="cell">\https://management.azure.com
@@ -1398,7 +1397,6 @@
   <block id="ecd87ae03b07f0712964d94eb75683a5" category="cell">用於BlueXP的DNS解析</block>
   <block id="1eba71d64e6c5e410e558530711e835b" category="summary">已知限制指出本產品版本不支援的平台、裝置或功能、或是無法與產品正確互通的平台、裝置或功能。請仔細檢閱這些限制。</block>
   <block id="482723983a4f2af954e36ff41e567451" category="doc">已知限制</block>
-  <block id="6802f2d551252ff38d10cfab7b7735b3" category="paragraph">這些限制僅適用於BlueXP的設定與管理：Connector、SaaS平台等。</block>
   <block id="83e566847d42782b3343e108150d7f57" category="section-title">連接器限制</block>
   <block id="911d15b7ac55478d2b567e8488658687" category="section-title">可能與172範圍內的IP位址發生衝突</block>
   <block id="efdb2123102821583a0af000d2fa9040" category="paragraph">BlueXP部署連接器時、會有兩個介面、其中IP位址介於172.17.0.0/16和172.18.0.0/16範圍內。</block>
@@ -2398,7 +2396,6 @@
   <block id="bff15ca70c1ae31932f904ffda23250d" category="paragraph">只有在 AWS 中手動安裝 Connector 時、才適用這些步驟。對於 AWS Marketplace 部署、您已將 Connector 執行個體與包含必要權限的 IAM 角色建立關聯。</block>
   <block id="cdc80f7691441e19b9937f7e3719514f" category="summary">Connector 是指在雲端網路或內部部署網路中執行的 NetApp 軟體。它會執行 BlueXP 管理資料基礎架構所需執行的動作。Connector 會持續輪詢 BlueXP SaaS 層、以找出需要採取的任何行動。您不需要 Connector 即可開始使用 BlueXP 、但您需要建立 Connector 才能解除鎖定所有 BlueXP 功能和服務。</block>
   <block id="e6e80588e9fe7cf89218fea44300f7ca" category="doc">深入瞭解連接器</block>
-  <block id="571d48465b61d33b57b6d0d2d497fc4d" category="paragraph">_Connector_ 是在您的雲端網路或內部部署網路中執行的 NetApp 軟體。它會執行 BlueXP 管理資料基礎架構所需執行的動作。Connector 會持續輪詢 BlueXP SaaS 層、以找出需要採取的任何行動。您不需要 Connector 即可開始使用 BlueXP 、但您需要建立 Connector 才能解除鎖定所有 BlueXP 功能和服務。</block>
   <block id="0c1ff69304e8a667d66b73796ae020d8" category="section-title">沒有 Connector 、您可以做什麼</block>
   <block id="4d3fca1d2cf37433752c20e52858221f" category="paragraph">開始使用 BlueXP 並不需要 Connector 。您可以在 BlueXP 中使用多項功能和服務、而無需建立 Connector 。</block>
   <block id="224dffcf542a8351c726ceb793464d58" category="paragraph">您可以在沒有 Connector 的情況下使用下列 BlueXP 功能和服務：</block>
@@ -2513,7 +2510,6 @@
   <block id="b210da359773bedea1c22163a6dfd9aa" category="section-title">新增認證資料至BlueXP以建立連接器</block>
   <block id="d47da26b990c110e9fc01f6de5204588" category="paragraph">提供IAM角色的ARN、為BlueXP提供建立Connector所需的權限、將AWS認證新增至BlueXP。您可以在建立新的Connector時選擇這些認證資料。</block>
   <block id="d8a56d983b91f097e5ba55dd03a18509" category="section-title">設定IAM角色</block>
-  <block id="e7f0046e5c4acbd3c62bc559d3b9989c" category="paragraph">設定 IAM 角色、讓 BlueXP SaaS 層能夠擔任此角色。</block>
   <block id="44030f19e52b4a03b050525f287bbc15" category="list-text">前往目標帳戶中的IAM主控台。</block>
   <block id="f8fb427b03f3548b0b9a6e3f2f1349de" category="list-text">選取*其他AWS帳戶*、然後輸入BlueXP SaaS的ID：952013314444.</block>
   <block id="875232e8c1abaa42024ddc396bcef6da" category="list-text">建立包含建立Connector所需權限的原則。</block>
@@ -2554,7 +2550,6 @@
   <block id="68f824a5014b20fc98aea0beb5945581" category="paragraph">使用 IAM 角色為 Connector 提供權限。您需要手動將角色附加至 Connector 的 EC2 執行個體。</block>
   <block id="862b0c0ff0da2b02588d845f4c6d6d34" category="list-text">在您計畫安裝 Connector 的 VM 上啟用系統指派的託管身分識別、以便透過自訂角色提供必要的 Azure 權限。</block>
   <block id="81b303f46dd1d85b6f031bc99d8e87a6" category="summary">BlueXP 提供多種部署模式、可讓您以符合業務與安全需求的方式使用 BlueXP 。標準模式利用 BlueXP SaaS 層來提供完整功能、而限制模式和私有模式則適用於有連線限制的組織。</block>
-  <block id="534fd3c26a29e770ad82ea272b33fadf" category="paragraph">BlueXP 提供多種 _ 部署模式 _ 、可讓您以符合業務與安全需求的方式使用 BlueXP 。_Standard modity_ 利用 BlueXP SaaS 層提供完整功能、而 _restricted modity_ 和 _private modity_ 則適用於有連線限制的組織。</block>
   <block id="e3795acf5a54c95b1889f3c7c929ab50" category="list-text">使用者可從網路型主控台以雲端服務的形式存取 BlueXP 。根據您計畫使用的 BlueXP 服務、 BlueXP 管理員會建立一個或多個 Connectors 來管理混合雲環境中的資料。</block>
   <block id="299192dda00d9cbb51cb176b72e6f464" category="paragraph">此模式使用透過公用網際網路的加密資料傳輸。</block>
   <block id="d8e9ba71b83a249480013323ae38e56a" category="list-text">BlueXP Connector 安裝在雲端（位於政府區域、主權雲端區域或商業區域）、而且與 BlueXP SaaS 層的輸出連線有限。使用者可從 Connector 提供的網路型主控台、而非從 SaaS 層、在本機存取 BlueXP 。</block>
@@ -3104,7 +3099,6 @@ Azure 政府地區不需要此端點。</block>
   <block id="6563bdfaccc3983704cae5a10067fc4e" category="list-text"><block ref="6563bdfaccc3983704cae5a10067fc4e" category="inline-link-macro-rx"></block></block>
   <block id="6400bfdbde707064e9b4e7768b35a3f9" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> <block ref="fa53da48b043041a5a8508c7d2d93104" category="inline-link-macro-rx"></block></block>
   <block id="e5d3b66eefdb2ac002721447f12c550c" category="summary">當您使用透過 SaaS 層提供的 BlueXP 網路型主控台時、它會在完成一些管理工作時與多個端點連絡。存取 BlueXP 主控台的電腦應與這些端點建立連線。</block>
-  <block id="2ae779b46b9a3564f7c1c2e6ccea2296" category="paragraph">從 BlueXP 主控台完成特定動作時、會從使用者的電腦聯絡這些端點。您也應該參閱 Connector 的網路需求、以及特定的 BlueXP 服務。如需詳細資訊、請參閱本頁結尾的相關連結。</block>
   <block id="0754f1969636526eac38034bd1419234" category="list-text"><block ref="0754f1969636526eac38034bd1419234" category="inline-link-macro-rx"></block></block>
   <block id="2c23813ca1d467902b4a5cbc8a878232" category="list-text"><block ref="2c23813ca1d467902b4a5cbc8a878232" category="inline-link-macro-rx"></block></block>
   <block id="f0c3f7365e880532f402961957bd549e" category="list-text"><block ref="f0c3f7365e880532f402961957bd549e" category="inline-link-macro-rx"></block></block>
@@ -4173,7 +4167,6 @@ Azure 政府地區不需要此端點。</block>
   <block id="4a7c3449c74a5d09f39518a207c28558" category="paragraph">Podman 4.6.1 或 4.9.4 版</block>
   <block id="98119697a8c596d6a586655f867a2cda" category="inline-xref">檢視 Podman 組態需求</block>
   <block id="a4facfb2d16d1ed97d33467440808582" category="paragraph"><block ref="70e106a4b5e10c3f8e254a047f7ddb34" category="inline-xref-macro-rx"></block>。</block>
-  <block id="80626b31c22fa123b11c56011b1f23b6" category="paragraph">在強制模式或允許模式下支援</block>
   <block id="3d945423f8e9496c429a5d8c65b4604f" category="paragraph">Ubuntu</block>
   <block id="4cb2cce5e859bbc5a24d65a5385fba47" category="paragraph">24.04 LTS</block>
   <block id="8be08c10396c9c621de2a80e7ee83e4b" category="paragraph">3.9.45 或更新版本、 BlueXP  為標準模式或受限模式</block>
@@ -4858,4 +4851,24 @@ Azure 政府地區不需要此端點。</block>
   <block id="9071c576479353103106b574601bd920" category="section-title">連接器3.9.45修補程式</block>
   <block id="d8497d3046f15c93d3e5c40856129331" category="paragraph">此修補程式包含錯誤修正。</block>
   <block id="ab99e6e0b893c9db1dce5c6dc26245bc" category="list-text">以下 BlueXP  功能與服務的通知會以電子郵件傳送： Connector 、 BlueXP  數位錢包、 BlueXP  複本與同步、 BlueXP  備份與還原。</block>
+  <block id="2f0fe646e8dbdc5b077179ddfc54ea80" category="list-text">使用 BlueXP  網路型主控台時、從電腦連絡的端點</block>
+  <block id="f523b9cc17a5029df41584382b959f5e" category="list-text">從網頁瀏覽器存取 BlueXP  主控台的電腦必須能夠連絡多個端點。您需要使用 BlueXP  主控台來設定連接器、並用於 BlueXP  的日常使用。</block>
+  <block id="9b9f80f24ed0b93047113544607e2066" category="paragraph"><block ref="3a812ba80ae549f721789bceed3eb28a" category="inline-link-macro-rx"></block>。</block>
+  <block id="7e4159d172a1854b6946f160a149d326" category="paragraph">在強制模式或允許模式 ^1^ 中支援</block>
+  <block id="3093ae1f44e0f8ba4d59f282f1fccf4d" category="list-text">在作業系統上啟用 SELinux 的 Connectors 不支援 Cloud Volumes ONTAP 系統的管理。</block>
+  <block id="2a1c6b0713eb3b0e8cc5584c21fe42b6" category="paragraph">_Connector_ 是在您的雲端網路或內部部署網路中執行的 NetApp 軟體。它會執行 BlueXP 管理資料基礎架構所需執行的動作。Connector 會持續輪詢 BlueXP  軟體即服務（ SaaS ）層、以找出需要採取的任何行動。您不需要 Connector 即可開始使用 BlueXP 、但您需要建立 Connector 才能解除鎖定所有 BlueXP 功能和服務。</block>
+  <block id="7dbbe2a034f912c5cb9e37aea8e9795a" category="paragraph">BlueXP 提供多種 _ 部署模式 _ 、可讓您以符合業務與安全需求的方式使用 BlueXP 。標準模式 _ 運用 BlueXP  軟體即服務（ SaaS ）層來提供完整功能、而設有連線限制的組織則可使用 _ 受限模式 _ 和 _ 私有模式 _ 。</block>
+  <block id="1503e47ef7de6f4f44b59422cf94ceec" category="paragraph">NetApp BlueXP 為您的組織提供單一控制面板、協助您在內部部署和雲端環境中建置、保護及管理資料。BlueXP  軟體即服務（ SaaS ）平台包含提供儲存管理、資料移動性、資料保護、以及資料分析與控制的服務。管理功能是透過網路型主控台和 API 提供。</block>
+  <block id="9d110ddb304e37d908c266c47eeed9f9" category="paragraph">這些限制僅適用於 BlueXP  的設定與管理： Connector 、軟體即服務（ SaaS ）平台等。</block>
+  <block id="157e45a951f5f71fa231797b436e86ed" category="paragraph">當您登入並使用 BlueXP  網路型主控台時、 BlueXP  會與多個端點聯絡、以完成您起始的動作。存取 BlueXP  主控台的電腦必須連線到這些端點。</block>
+  <block id="4a4c7c5f33ddbb7440e81d7d69be19b1" category="paragraph">在兩種情況下、我們會聯絡這些端點：</block>
+  <block id="f953e73ddb1786ffb7e0d885c981d45b" category="list-text">在使用者的電腦上完成以「軟體即服務」（ SaaS ）形式提供的特定動作<block ref="eecb3fc8bedef660fde4567972ba79cf" category="inline-link-rx"></block>。</block>
+  <block id="a130f473bab21dbd8976611dd2d0dd46" category="list-text">從使用者電腦開啟 Web 瀏覽器、輸入 Connector 主機的 IP 位址、然後登入並設定 Connector 。如果您手動安裝 Connector 、則需要執行這些步驟。</block>
+  <block id="272b8aa6fbc5bf0bcb26f3efff6fd7b6" category="cell">這是您在網頁瀏覽器中輸入的端點、用於使用 BlueXP  網路型主控台。</block>
+  <block id="f2895e2cb7bd6fae5d08822b80c241ad" category="cell">BlueXP  網路型主控台會連絡此端點、與 BlueXP  API 互動、以執行與授權、授權、訂閱、認證、通知等相關的動作。</block>
+  <block id="750d08022e9ecef4d0922cebbac41f77" category="paragraph">設定 IAM 角色、讓 BlueXP  軟體即服務（ SaaS ）層能夠承擔此角色。</block>
+  <block id="80659acde30e18ea087a9d28003264b3" category="paragraph">以私有模式部署 Connector 、讓您可以使用 BlueXP  、而不需連往 BlueXP  軟體即服務（ SaaS ）層的輸出連線。若要開始使用、請安裝 Connector 、存取 Connector 上執行的使用者介面來設定 BlueXP 、然後提供您先前設定的雲端權限。</block>
+  <block id="cc1296d9134596683711d3700fb2e202" category="paragraph">在受限模式下部署 Connector 、以便能在有限的 BlueXP  軟體即服務（ SaaS ）層輸出連線中使用 BlueXP  。若要開始使用、請安裝 Connector 、存取 Connector 上執行的使用者介面來設定 BlueXP 、然後提供您先前設定的雲端權限。</block>
+  <block id="f728ea34fcbb13e7fd98fc40d7498dfc" category="paragraph">請注意下列限制：</block>
+  <block id="3ad7f37470dd6a33dee8070e9cccbeb4" category="list-text">在作業系統上啟用 SELinux 的 Connectors 不支援管理 Cloud Volumes ONTAP 系統。</block>
 </blocks>

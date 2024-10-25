@@ -162,7 +162,7 @@ image:screenshot_accounts_switch_aws.png["螢幕快照、顯示在「詳細資�
 
 === 設定IAM角色
 
-設定 IAM 角色、讓 BlueXP SaaS 層能夠擔任此角色。
+設定 IAM 角色、讓 BlueXP  軟體即服務（ SaaS ）層能夠承擔此角色。
 
 .步驟
 . 前往目標帳戶中的IAM主控台。

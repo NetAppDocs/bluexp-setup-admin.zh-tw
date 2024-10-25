@@ -14,7 +14,7 @@ summary: BlueXP 提供多種部署模式、可讓您以符合業務與安全需�
 
 
 [role="lead"]
-BlueXP 提供多種 _ 部署模式 _ 、可讓您以符合業務與安全需求的方式使用 BlueXP 。_Standard modity_ 利用 BlueXP SaaS 層提供完整功能、而 _restricted modity_ 和 _private modity_ 則適用於有連線限制的組織。
+BlueXP 提供多種 _ 部署模式 _ 、可讓您以符合業務與安全需求的方式使用 BlueXP 。標準模式 _ 運用 BlueXP  軟體即服務（ SaaS ）層來提供完整功能、而設有連線限制的組織則可使用 _ 受限模式 _ 和 _ 私有模式 _ 。
 
 雖然 BlueXP  在使用受限模式或私有模式時會抑制流量、通訊和資料的流通、但您有責任確保您的環境（內部部署和雲端）符合必要的法規。
 
