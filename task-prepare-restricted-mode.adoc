@@ -275,6 +275,9 @@ sudo systemctl enable docker && sudo systemctl start docker
 | 端點 | 目的 
 
 
+| \https://api.bluexp.netapp.com | BlueXP  網路型主控台會連絡此端點、與 BlueXP  API 互動、以執行與授權、授權、訂閱、認證、通知等相關的動作。 
+
+
 | \https://signin.b2c.netapp.com | 需要更新NetApp 支援網站 驗證（NSS）認證或新增新的NSS認證至BlueXP。 
 
 
