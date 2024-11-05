@@ -49,10 +49,7 @@ BlueXP  IAM 提供更精細的資源與權限管理：
 
 這些增強功能可更有效地控制使用者可以執行的動作及其可存取的資源。
 
-
-
-==== BlueXP  IAM 如何影響您現有的帳戶
-
+.BlueXP  IAM 如何影響您現有的帳戶
 登入 BlueXP  時、您會注意到這些變更：
 
 * 您的 _account_ 現在稱為 _ 組織 _
@@ -77,22 +74,13 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 * 如果您有多個 BlueXP  帳戶、現在您有多個 BlueXP  組織。
 
 
-
-
-==== BlueXP  IAM 的 API
-
+.BlueXP  IAM 的 API
 這項變更為 BlueXP  IAM 引進了新的 API 、但與先前的租賃 API 向下相容。 https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["瞭解 BlueXP  IAM 的 API"^]
 
-
-
-==== 支援的部署模式
-
+.支援的部署模式
 在標準模式下使用 BlueXP  時、支援 BlueXP  IAM 。如果您是以受限模式或私人模式使用 BlueXP  、則會繼續使用 BlueXP  _account_ 來管理工作區、使用者和資源。
 
-
-
-==== 下一步
-
+.下一步
 * https://docs.netapp.com/us-en/bluexp-setup-admin/concept-identity-and-access-management.html["瞭解 BlueXP  IAM"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-get-started.html["BlueXP  IAM 入門"]
 
@@ -105,10 +93,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 
 3.9.45 版本適用於標準模式和受限模式。
 
-
-
-==== 支援 Ubuntu 24.04 LTS
-
+.支援 Ubuntu 24.04 LTS
 從 3.9.45 版本開始、 BlueXP  現在支援在標準模式或受限模式下使用 BlueXP  時、在 Ubuntu 24.04 LTS 主機上安裝新的 Connector 。
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements["View Connector 主機需求"]。
@@ -196,20 +181,14 @@ https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/using_s
 
 3.9.44 版本適用於標準模式和受限模式。
 
-
-
-==== 支援 Docker Engine 26 的全新安裝
-
+.支援 Docker Engine 26 的全新安裝
 從 Connector 3.9.44 版開始、 Docker Engine 26 現在可在 Ubuntu 主機上安裝 _new_ Connector 。
 
 如果您在 3.9.44 版本之前建立現有的 Connector 、 Docker Engine 25.0.5 仍是 Ubuntu 主機上支援的最大版本。
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements["深入瞭解 Docker Engine 需求"]。
 
-
-
-==== 已更新 SSL 憑證以供本機 UI 存取
-
+.已更新 SSL 憑證以供本機 UI 存取
 當您以受限模式或私有模式使用 BlueXP  時、使用者介面可從部署在雲端區域或內部部署的 Connector 虛擬機器存取。根據預設、 BlueXP  會使用自我簽署的 SSL 憑證、提供安全的 HTTPS 存取、以存取在 Connector 上執行的網路型主控台。
 
 在此版本中、我們針對新連接器和現有連接器變更了 SSL 憑證：
@@ -333,10 +312,7 @@ Cloud Volumes ONTAP 支援虛擬機器磅秤集需要這些權限。如果您有
 
 現在可從 NetApp 支援網站 下載新的私有模式版本。
 
-
-
-==== 支援 RHEL 8 和 9
-
+.支援 RHEL 8 和 9
 此版本支援在以私有模式使用 BlueXP 時、在 Red Hat Enterprise Linux 8 或 9 主機上安裝 Connector 。支援下列 RHEL 版本：
 
 * 8.6 至 8.10
@@ -349,10 +325,7 @@ Cloud Volumes ONTAP 支援虛擬機器磅秤集需要這些權限。如果您有
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["瞭解 Connector 對 RHEL 8 和 9 的支援"]。
 
-
-
-==== 此版本中包含的版本
-
+.此版本中包含的版本
 此版本包含下列支援私有模式的 BlueXP 服務版本。
 
 [cols="2*"]
@@ -503,10 +476,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.
 
 目前、 3.9.40 版本適用於標準模式和受限模式。
 
-
-
-==== 支援 RHEL 8 和 9
-
+.支援 RHEL 8 和 9
 在標準模式或受限模式下使用 BlueXP 時、執行下列 Red Hat Enterprise Linux 版本且安裝 _new_ Connector 的主機現在支援 Connector ：
 
 * 8.6 至 8.9
@@ -519,18 +489,12 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["瞭解 Connector 對 RHEL 8 和 9 的支援"]。
 
-
-
-==== 終止對 RHEL 7 和 CentOS 7 的支援
-
+.終止對 RHEL 7 和 CentOS 7 的支援
 在 2024 年 6 月 30 日、 RHEL 7 將會結束維護（ EOM ）、而 CentOS 7 則會達到生命週期結束（ EOL ）。NetApp 將持續支援這些 Linux 套裝作業系統上的 Connector 、直到 2024 年 6 月 30 日為止。
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["瞭解如果在 RHEL 7 或 CentOS 7 上執行現有的 Connector 、該怎麼辦"]。
 
-
-
-==== AWS 權限更新
-
+.AWS 權限更新
 在 3.9.38 版本中、我們更新了 AWS 的 Connector 原則、以納入「 EC2 ： DescrubeAvailabilityZones 」權限。現在需要此權限才能支援 AWS 本機區域與 Cloud Volumes ONTAP 。
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["檢視 Connector 的 AWS 權限"]。
@@ -633,10 +597,7 @@ BlueXP 現已推出新的私有模式版本。此版本包含下列支援私有�
 
 目前、 3.9.38 版本適用於標準模式和受限模式。此版本包括 AWS 中的 IMDSv2 支援和 AWS 權限更新。
 
-
-
-==== 支援 IMDSv2
-
+.支援 IMDSv2
 BlueXP 現在支援 Amazon EC2 執行個體中繼資料服務版本 2 （ IMDSv2 ）與 Connector 執行個體及 Cloud Volumes ONTAP 執行個體。IMDSv2 提供更強大的保護功能、防範弱點。之前僅支援 IMDSv1 。
 
 https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/["從 AWS 安全性部落格深入瞭解 IMDSv2"^]
@@ -652,10 +613,7 @@ https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-pr
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-require-imdsv2.html["瞭解如何在現有執行個體上設定 IMDSv2"]。
 
-
-
-==== AWS 權限更新
-
+.AWS 權限更新
 我們更新了 AWS 的 Connector 原則、以納入「 EC2 ： DescrubeAvailabilityZones 」權限。即將發行的版本需要此權限。我們會在發行版本推出時更新版本資訊、提供更多詳細資料。
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["檢視 Connector 的 AWS 權限"]。
@@ -1556,18 +1514,12 @@ link:task-managing-netapp-accounts.html#allow-third-party-services["深入瞭解
 
 此版本的 Cloud Manager 包含 Cloud Volumes ONTAP 管理功能的增強功能。
 
-
-
-==== 所有雲端供應商均提供增強功能
-
+.所有雲端供應商均提供增強功能
 Cloud Manager現在可以部署及管理Cloud Volumes ONTAP
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap/reference_new_990.html["深入瞭Cloud Volumes ONTAP 解本版的更新功能"^]。
 
-
-
-==== AWS 提供的增強功能
-
+.AWS 提供的增強功能
 * 您現在可以在Cloud Volumes ONTAP AWS商業雲端服務（C2S）環境中部署S效能 指數9.8。
 +
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-aws-c2s.html["瞭解如何開始使用C2S"^]
@@ -1581,16 +1533,10 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-setting-up-kms.htm
 
 
 
-
-
-==== Azure 提供增強功能
-
+.Azure 提供增強功能
 您現在可以在Cloud Volumes ONTAP Azure Department of Defence（DoD）Impact Level 6（IL6）中部署整套功能。
 
-
-
-==== Google Cloud 提供的增強功能
-
+.Google Cloud 提供的增強功能
 * 我們已經減少Cloud Volumes ONTAP 了在Google Cloud中使用NetApp 9.8及更新版本所需的IP位址數量。根據預設、需要少一個IP位址（我們將叢集間LIF與節點管理LIF統一化）。您也可以選擇在使用API時跳過SVM管理LIF的建立、如此可減少額外IP位址的需求。
 +
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html["深入瞭解Google Cloud的IP位址需求"^]

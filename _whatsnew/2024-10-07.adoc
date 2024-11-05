@@ -1,0 +1,87 @@
+= BlueXP  身分識別與存取管理
+:allow-uri-read: 
+
+
+
+
+=== BlueXP  身分識別與存取管理
+
+BlueXP  身分識別與存取管理（ IAM ）是一種新的資源與存取管理模式、可在標準模式下使用 BlueXP  時、取代並強化 BlueXP  帳戶先前提供的功能。
+
+BlueXP  IAM 提供更精細的資源與權限管理：
+
+* 頂層組織 _ 可讓您管理各種專案的存取權。
+* _Folders_ 可讓您將相關專案分組在一起。
+* 增強的資源管理功能可讓您將資源與一或多個資料夾或專案建立關聯。
++
+例如、您可以將 Cloud Volumes ONTAP 系統與多個專案建立關聯。
+
+* 增強的存取管理功能可讓您將角色指派給組織階層不同層級的成員。
+
+
+這些增強功能可更有效地控制使用者可以執行的動作及其可存取的資源。
+
+.BlueXP  IAM 如何影響您現有的帳戶
+登入 BlueXP  時、您會注意到這些變更：
+
+* 您的 _account_ 現在稱為 _ 組織 _
+* 您的 _ 工作區 _ 現在稱為 _projects_
+* 使用者角色名稱已變更：
++
+** 帳戶管理員 _ 現在是 _ 組織管理員 _
+** _Workspace admin_ 現在是 _ 資料夾或專案管理 _
+** _ 合規檢視器 _ 現在是 _ 分類檢視器 _
+
+
+* 在「設定」下、您可以存取 BlueXP  身分識別與存取管理、以利用這些增強功能
+
+
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-iam-introduction.png["BlueXP  的螢幕擷取畫面、顯示可從介面頂端選取的組織和專案、以及可從「設定」功能表取得的身分識別和存取管理。"]
+
+請注意下列事項：
+
+* 您現有的使用者或工作環境沒有任何變更。
+* 雖然角色名稱已變更、但從權限觀點來看、並無差異。使用者將繼續享有與以往相同的工作環境存取權。
+* 您登入 BlueXP  的方式沒有變更。BlueXP  IAM 可與 NetApp 雲端登入、 NetApp 支援網站認證和聯盟連線搭配運作、就像 BlueXP  帳戶一樣。
+* 如果您有多個 BlueXP  帳戶、現在您有多個 BlueXP  組織。
+
+
+.BlueXP  IAM 的 API
+這項變更為 BlueXP  IAM 引進了新的 API 、但與先前的租賃 API 向下相容。 https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["瞭解 BlueXP  IAM 的 API"^]
+
+.支援的部署模式
+在標準模式下使用 BlueXP  時、支援 BlueXP  IAM 。如果您是以受限模式或私人模式使用 BlueXP  、則會繼續使用 BlueXP  _account_ 來管理工作區、使用者和資源。
+
+.下一步
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-identity-and-access-management.html["瞭解 BlueXP  IAM"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-get-started.html["BlueXP  IAM 入門"]
+
+
+
+
+=== 連接器 3.9.45
+
+此版本包含擴充的作業系統支援和錯誤修正。
+
+3.9.45 版本適用於標準模式和受限模式。
+
+.支援 Ubuntu 24.04 LTS
+從 3.9.45 版本開始、 BlueXP  現在支援在標準模式或受限模式下使用 BlueXP  時、在 Ubuntu 24.04 LTS 主機上安裝新的 Connector 。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements["View Connector 主機需求"]。
+
+
+
+=== 支援使用 RHEL 主機的 SELinux
+
+BlueXP  現在支援 Connector 搭配 Red Hat Enterprise Linux 主機、這些主機已在強制模式或允許模式下啟用 SELinux 。
+
+支援 SELinux 從標準模式和受限模式的 3.9.40 版本開始、以及私有模式的 3.9.42 版本開始。
+
+請注意下列限制：
+
+* BlueXP  不支援使用 Ubuntu 主機的 SELinux 。
+* 在作業系統上啟用 SELinux 的 Connectors 不支援管理 Cloud Volumes ONTAP 系統。
+
+
+https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/using_selinux/getting-started-with-selinux_using-selinux["深入瞭解 SELinux"^]
