@@ -24,9 +24,9 @@ _Connector_ 是在您的雲端網路或內部部署網路中執行的 NetApp 軟
 
 您可以在沒有 Connector 的情況下使用下列 BlueXP 功能和服務：
 
-* Amazon FSX for NetApp ONTAP 工作環境建立
+* Amazon FSX for NetApp ONTAP 產品
 +
-雖然 Connector 不需要建立工作環境、但需要建立和管理磁碟區、複寫資料、並將適用於 ONTAP 的 FSX 與 BlueXP 分類和 BlueXP 複製與同步等服務整合。
+某些動作需要連接器或 BlueXP  工作負載原廠連結。 https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html["瞭解哪些動作需要連接器或連結"^]
 
 * 自動化目錄
 * Azure NetApp Files
@@ -52,6 +52,7 @@ https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["�
 
 * 軟體更新
 * 永續性
+* 工作負載工廠
 
 
 

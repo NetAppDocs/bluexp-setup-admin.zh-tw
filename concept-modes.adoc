@@ -149,9 +149,6 @@ API 端點:: API 呼叫是針對 Connector 虛擬機器進行的。
 | 支援的服務 | 附註 
 
 
-| Amazon FSX for ONTAP Sf | 完全支援 
-
-
 | Azure NetApp Files | 完全支援 
 
 
@@ -328,7 +325,7 @@ NOTE: 如果您想在中使用 BlueXP https://aws.amazon.com/federal/secret-clou
 
 .10+| * 工作環境 *
 
-此部分表列出了 BlueXP 畫布對工作環境管理的支援。它並不表示 BlueXP 備份與還原支援的備份目的地。 | Amazon FSX for ONTAP Sf | 是的 | 否 
+此部分表列出了 BlueXP 畫布對工作環境管理的支援。它並不表示 BlueXP 備份與還原支援的備份目的地。 | Amazon FSX for ONTAP Sf | 否 | 否 
 
 
 | Amazon S3 | 否 | 否 
@@ -358,7 +355,7 @@ NOTE: 如果您想在中使用 BlueXP https://aws.amazon.com/federal/secret-clou
 | StorageGRID | 否 | 否 
 
 
-.16+| *服務* | 警示 | 否 | 否 
+.17+| *服務* | 警示 | 否 | 否 
 
 
 | 備份與還原 | 是的
@@ -408,6 +405,9 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.
 
 
 | Volume 快取 | 否 | 否 
+
+
+| 工作負載工廠 | 否 | 否 
 
 
 .7+| * 功能 * | BlueXP  身分識別與存取管理 | 否 | 否 

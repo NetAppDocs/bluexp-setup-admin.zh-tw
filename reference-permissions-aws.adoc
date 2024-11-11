@@ -764,7 +764,7 @@ summary: 當BlueXP在AWS中啟動Connector執行個體時、它會將原則附�
 
 === Amazon FSX for ONTAP Sf
 
-Connector 會提出下列 API 要求、以管理 Amazon FSX for ONTAP ：
+Connector 會提出下列 API 要求，以管理 Amazon FSX for ONTAP 檔案系統：
 
 * EC2：資料說明
 * EC2：取消訂閱即時狀態

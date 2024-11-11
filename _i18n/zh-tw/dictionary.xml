@@ -1056,8 +1056,6 @@
   <block id="c7c7fe81ff2afbb7f657e592f9871125" category="summary">在受限模式下以 BlueXP 啟動並執行之後、您可以開始使用受限模式支援的 BlueXP 服務。</block>
   <block id="d279ef9d3fa427882e45e653bc7b1949" category="doc">下一步操作（受限模式）</block>
   <block id="9ed3d93e6149b9255047c4f345ace3ed" category="paragraph">如需協助、請參閱以下服務的文件：</block>
-  <block id="69f7f21f4fc680b59f6e889bf9547523" category="inline-link">Amazon FSX for ONTAP Sfedocs</block>
-  <block id="fc5eb4d28cae2cd561af57ba685dd8d3" category="list-text"><block ref="fc5eb4d28cae2cd561af57ba685dd8d3" category="inline-link-rx"></block></block>
   <block id="d75d347ae1d51e933d39fea688b0abf1" category="inline-link">文件Azure NetApp Files</block>
   <block id="d65407cebf6d2e36f3f922a3e220c70d" category="list-text"><block ref="d65407cebf6d2e36f3f922a3e220c70d" category="inline-link-rx"></block></block>
   <block id="6187e32203fd05e22e575166349f5b99" category="inline-link">備份與還原文件</block>
@@ -1124,7 +1122,6 @@
   <block id="897099bfef7e48dc4adcaa1be92bf1a8" category="open-title">原則 #2</block>
   <block id="1411debdb32e6b128ca27ec92a708cbd" category="example-title">GovCloud（美國）地區</block>
   <block id="abc9b009fdeb5b04ca7bcd60cdae2434" category="section-title">AWS權限的使用方式</block>
-  <block id="06be37baefaab50eae9f413a227fd74c" category="paragraph">Connector 會提出下列 API 要求、以管理 Amazon FSX for ONTAP ：</block>
   <block id="c8e20ceabac2b519b4f4eb301166c9bd" category="list-text">EC2：資料說明</block>
   <block id="3bd5f6b3ab1440bcdf688a075a360180" category="list-text">EC2：取消訂閱即時狀態</block>
   <block id="339c73e7ad58b4e1def2de5bc9ccdc2e" category="list-text">EC2：取消訂閱實例屬性</block>
@@ -1325,20 +1322,13 @@
   <block id="e39fac9d22fb901a8fb8b7118de8c4e7" category="paragraph"><block ref="e4d4efd6d9bbb3c296b1c319bd5c65f5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="109a76aa4a30822be3d0a4a6162bbc73" category="paragraph">您可以 Cloud Volumes ONTAP 使用初始 AWS 認證來部署所有的資訊系統、也可以新增其他認證資料。</block>
   <block id="59cf740f037c70fa5f9d43001aabf6b9" category="section-title">其他 AWS 認證資料</block>
-  <block id="23492b7b8082a813c471e464e7c94c5f" category="paragraph">有兩種方法可以新增額外的 AWS 認證：</block>
-  <block id="b85f0872b269bcc2462c4d6e2c478b31" category="list-text">您可以將 AWS 認證新增至現有的 Connector</block>
-  <block id="d366b2fda179ae88058b546b6cd89726" category="list-text">您可以直接將 AWS 認證新增至 BlueXP</block>
   <block id="1fba93959336f34e08c6d34d0ca68230" category="paragraph">請參閱以下各節以取得更多詳細資料。</block>
-  <block id="a456be184fc96fef017630ede092b15d" category="section-title">將AWS認證資料新增至現有的Connector</block>
   <block id="25743d3dcac2dfe95c6e899571bfccc3" category="inline-image-macro">顯示兩個額外帳戶的概念性映像。每個都有 IAM 原則、一個附加到 IAM 使用者、另一個附加到 IAM 角色。</block>
   <block id="49a11e441cb19dc0d43b1d3a3794d033" category="paragraph"><block ref="49a11e441cb19dc0d43b1d3a3794d033" category="inline-image-macro-rx" type="image"></block></block>
   <block id="48c7f5d184d27ef640370421d3317ba5" category="paragraph">然後您可以指定 IAM 角色的 Amazon 資源名稱（ ARN ）或 IAM 使用者的 AWS 金鑰、將帳戶認證新增至 BlueXP 。</block>
   <block id="a6856ad65a90d33bc83bd78362d9bfce" category="inline-link-macro">瞭解如何將 AWS 認證新增至現有的 Connector 。</block>
   <block id="affef63146feae005315127173a28aa9" category="paragraph"><block ref="affef63146feae005315127173a28aa9" category="inline-link-macro-rx"></block></block>
-  <block id="a923d2e65283c489ad78d9cdfa9bad74" category="section-title">直接將AWS認證資料新增至BlueXP</block>
-  <block id="0404e8036b4360419246e5ea95f84c7f" category="paragraph">新增AWS認證資料至藍圖XP、可提供必要的權限來建立及管理適用於ONTAP 整個作業環境的FSX、或是建立Connector。</block>
   <block id="a3d00aa90b48860260586c7be1bec2e8" category="inline-link-macro">瞭解如何將 AWS 認證新增至 BlueXP for Amazon FSX for ONTAP</block>
-  <block id="d56f297cb566b98a6b65a6dea3038531" category="list-text"><block ref="d56f297cb566b98a6b65a6dea3038531" category="inline-link-macro-rx"></block></block>
   <block id="3e9d4cd6e63ede4decfd24e1cd55b4f5" category="inline-link-macro">瞭解如何將 AWS 認證新增至 BlueXP 以建立 Connector</block>
   <block id="7a3f65e5f9d581964ce0fcd660ba7130" category="list-text"><block ref="7a3f65e5f9d581964ce0fcd660ba7130" category="inline-link-macro-rx"></block></block>
   <block id="3551bffff472d33de9e274227109232f" category="paragraph">以上各節說明建議的連接器部署方法、該方法來自於BlueXP。您也可以從 AWS Marketplace 在 AWS 中部署 Connector 、然後在自己的 Linux 主機上手動安裝 Connector 軟體。</block>
@@ -2399,8 +2389,6 @@
   <block id="0c1ff69304e8a667d66b73796ae020d8" category="section-title">沒有 Connector 、您可以做什麼</block>
   <block id="4d3fca1d2cf37433752c20e52858221f" category="paragraph">開始使用 BlueXP 並不需要 Connector 。您可以在 BlueXP 中使用多項功能和服務、而無需建立 Connector 。</block>
   <block id="224dffcf542a8351c726ceb793464d58" category="paragraph">您可以在沒有 Connector 的情況下使用下列 BlueXP 功能和服務：</block>
-  <block id="9c4069a5e9e7edebdcc575a42ef2628d" category="list-text">Amazon FSX for NetApp ONTAP 工作環境建立</block>
-  <block id="7cd82008ab5d353c3e33f87f49f92961" category="paragraph">雖然 Connector 不需要建立工作環境、但需要建立和管理磁碟區、複寫資料、並將適用於 ONTAP 的 FSX 與 BlueXP 分類和 BlueXP 複製與同步等服務整合。</block>
   <block id="60404bf35ed1506b74cc9cfac99f0818" category="paragraph">雖然不需要連接器來設定和管理 Azure NetApp Files 、但如果您想使用 BlueXP 分類來掃描 Azure NetApp Files 資料、則需要連接器。</block>
   <block id="2049421a4e8e45e83cd7cf18ffc00a12" category="list-text">數位錢包</block>
   <block id="dd37176246e6abf3e559086afcadce82" category="paragraph">在幾乎所有情況下、您都可以在沒有 Connector 的情況下、將授權新增至數位錢包。</block>
@@ -4871,4 +4859,18 @@ Azure 政府地區不需要此端點。</block>
   <block id="cc1296d9134596683711d3700fb2e202" category="paragraph">在受限模式下部署 Connector 、以便能在有限的 BlueXP  軟體即服務（ SaaS ）層輸出連線中使用 BlueXP  。若要開始使用、請安裝 Connector 、存取 Connector 上執行的使用者介面來設定 BlueXP 、然後提供您先前設定的雲端權限。</block>
   <block id="f728ea34fcbb13e7fd98fc40d7498dfc" category="paragraph">請注意下列限制：</block>
   <block id="3ad7f37470dd6a33dee8070e9cccbeb4" category="list-text">在作業系統上啟用 SELinux 的 Connectors 不支援管理 Cloud Volumes ONTAP 系統。</block>
+  <block id="66da3b8ed99d844820b3ca1b0e801633" category="paragraph">在下列情況下，您可以將額外的 AWS 認證新增至 BlueXP  ：</block>
+  <block id="e8244c6ac954370016004050f241aa90" category="list-text">將現有的 BlueXP  Connector 搭配其他 AWS 帳戶使用</block>
+  <block id="035711c24b07fab43b6ec5758a6c6703" category="list-text">在特定 AWS 帳戶中建立新 Connector</block>
+  <block id="3f9d6d7606eb17252b87adea9b9f458c" category="list-text">為 ONTAP 檔案系統建立及管理 FSX</block>
+  <block id="5bf4c36df660772a54db61915e694687" category="section-title">新增 AWS 認證資料，以將 Connector 搭配其他 AWS 帳戶使用</block>
+  <block id="fc307161d6e66ee0b7f27a1afaa966b7" category="section-title">新增 AWS 認證以建立 Connector</block>
+  <block id="f5008f583a621a1056855dbb62f3d059" category="paragraph">將新的 AWS 認證新增至 BlueXP  可提供建立 Connector 所需的權限。</block>
+  <block id="ed552ed06cb5ce7bb73441c3ee146d12" category="section-title">為 ONTAP 的 FSX 新增 AWS 認證</block>
+  <block id="ca4b0ca54e6f206dd7bc7768f4e9dd08" category="paragraph">將新的 AWS 認證新增至 BlueXP  可提供建立及管理 ONTAP 工作環境的 FSX 所需的權限。</block>
+  <block id="fc27df82ebdb036ab59433e6260676e1" category="paragraph"><block ref="fc27df82ebdb036ab59433e6260676e1" category="inline-link-rx"></block></block>
+  <block id="3e502a41fe2a36dd92d791b05a00558b" category="inline-link">瞭解哪些動作需要連接器或連結</block>
+  <block id="b761d39c43ee7b44b5589e7be65657ea" category="paragraph">某些動作需要連接器或 BlueXP  工作負載原廠連結。<block ref="eab18bd75996775296aa94b3a12b305e" category="inline-link-rx"></block></block>
+  <block id="35ccbae2ce9b9594b9af9196a3bed361" category="list-text">工作負載工廠</block>
+  <block id="d5094f4772a2d747eb41596de33fc883" category="paragraph">Connector 會提出下列 API 要求，以管理 Amazon FSX for ONTAP 檔案系統：</block>
 </blocks>

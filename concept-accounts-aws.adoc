@@ -36,17 +36,18 @@ image:screenshot_accounts_select_aws.gif["在「詳細資料擴大機；認證�
 
 == 其他 AWS 認證資料
 
-有兩種方法可以新增額外的 AWS 認證：
+在下列情況下，您可以將額外的 AWS 認證新增至 BlueXP  ：
 
-* 您可以將 AWS 認證新增至現有的 Connector
-* 您可以直接將 AWS 認證新增至 BlueXP
+* 將現有的 BlueXP  Connector 搭配其他 AWS 帳戶使用
+* 在特定 AWS 帳戶中建立新 Connector
+* 為 ONTAP 檔案系統建立及管理 FSX
 
 
 請參閱以下各節以取得更多詳細資料。
 
 
 
-=== 將AWS認證資料新增至現有的Connector
+=== 新增 AWS 認證資料，以將 Connector 搭配其他 AWS 帳戶使用
 
 如果您想要將 BlueXP 與其他 AWS 帳戶搭配使用、則可以為 IAM 使用者提供 AWS 金鑰、或是在信任的帳戶中提供角色的 ARN 。下圖顯示兩個額外的帳戶、一個透過信任帳戶中的 IAM 角色提供權限、另一個則透過 IAM 使用者的 AWS 金鑰提供權限：
 
@@ -62,13 +63,19 @@ link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector["�
 
 
 
-=== 直接將AWS認證資料新增至BlueXP
+=== 新增 AWS 認證以建立 Connector
 
-新增AWS認證資料至藍圖XP、可提供必要的權限來建立及管理適用於ONTAP 整個作業環境的FSX、或是建立Connector。
+將新的 AWS 認證新增至 BlueXP  可提供建立 Connector 所需的權限。
 
-* link:task-adding-aws-accounts.html#add-credentials-to-bluexp-for-creating-a-connector["瞭解如何將 AWS 認證新增至 BlueXP for Amazon FSX for ONTAP"^]
-* link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector["瞭解如何將 AWS 認證新增至 BlueXP 以建立 Connector"]
+link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector["瞭解如何將 AWS 認證新增至 BlueXP 以建立 Connector"]
 
+
+
+=== 為 ONTAP 的 FSX 新增 AWS 認證
+
+將新的 AWS 認證新增至 BlueXP  可提供建立及管理 ONTAP 工作環境的 FSX 所需的權限。
+
+https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["瞭解如何將 AWS 認證新增至 BlueXP for Amazon FSX for ONTAP"^]
 
 
 
