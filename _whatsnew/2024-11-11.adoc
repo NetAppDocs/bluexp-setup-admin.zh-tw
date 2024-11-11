@@ -1,0 +1,19 @@
+= 連接器 3.9.46
+:allow-uri-read: 
+
+
+
+
+=== 連接器 3.9.46
+
+此版本的 BlueXP Connector 包括少量的安全性改善和錯誤修正。
+
+目前、 3.9.46 版本適用於標準模式和受限模式。
+
+
+
+=== IAM 專案的 ID
+
+您現在可以從 BlueXP  身分識別與存取管理檢視專案的 ID 。進行 API 呼叫時，您可能需要使用 ID 。
+
+link:task-iam-manage-folders-projects.html#project-id["瞭解如何取得專案的 ID"]。

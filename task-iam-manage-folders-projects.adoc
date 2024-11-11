@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-iam-manage-folders-projects.html 
-keywords: folders, projects, resource hierarchy, create folders, create projects, iam, identity and access management 
+keywords: folders, projects, resource hierarchy, create folders, create projects, iam, identity and access management, project id 
 summary: BlueXP  的身分識別與存取管理功能可讓您使用資料夾和專案來呈現完整的資源階層。 
 ---
 = 使用資料夾和專案、在 BlueXP  IAM 中組織您的資源
@@ -145,6 +145,23 @@ link:concept-identity-and-access-management.html#role-inheritance["深入瞭解�
 
 .結果
 BlueXP  會更新有權存取資料夾或專案的成員。
+
+
+
+== 取得專案的 ID
+
+如果您使用的是 BlueXP  API ，可能需要取得專案的 ID 。例如，建立 Cloud Volumes ONTAP 工作環境時。
+
+.步驟
+. 在 * 組織 * 頁面中，瀏覽至表格中的專案，然後選取image:icon-action.png["這是三個並排點的圖示"]
++
+隨即顯示專案 ID 。
+
+. 若要複製 ID ，請選取複製按鈕。
++
+image:screenshot-iam-project-id.png["資料夾和專案表格的螢幕擷取畫面，顯示專案 ID 篩選器選取專案的動作功能表。"]
+
+
 
 
 
