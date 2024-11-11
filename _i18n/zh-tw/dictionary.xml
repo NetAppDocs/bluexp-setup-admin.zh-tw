@@ -4878,7 +4878,6 @@ Azure 政府地區不需要此端點。</block>
   <block id="37e5831d4c68f17f87dd40b6ea95f2bc" category="section-title">IAM 專案的 ID</block>
   <block id="102aeb225438210afe20dc2776fb6870" category="paragraph">您現在可以從 BlueXP  身分識別與存取管理檢視專案的 ID 。進行 API 呼叫時，您可能需要使用 ID 。</block>
   <block id="5c8ebe245f66e84eaef1ca801f274ee3" category="inline-link-macro">瞭解如何取得專案的 ID</block>
-  <block id="89d67911b68ccc5d2e1c1ba76f5d85d2" category="paragraph"><block ref="05b01cf8b541aa707e135b6ea0dd3477" category="inline-link-macro-rx"></block>。</block>
   <block id="9c0c9fdc01dbde3e19b2b95d0ed36308" category="section-title">取得專案的 ID</block>
   <block id="b653cd33888ca8dc048a0fd0c8ce7280" category="paragraph">如果您使用的是 BlueXP  API ，可能需要取得專案的 ID 。例如，建立 Cloud Volumes ONTAP 工作環境時。</block>
   <block id="798eb88714cdc2034c3335c3a6c21193" category="list-text">在 * 組織 * 頁面中，瀏覽至表格中的專案，然後選取<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block></block>
@@ -4887,4 +4886,5 @@ Azure 政府地區不需要此端點。</block>
   <block id="c5f7a94f7e361ce9dc993775dd14b3c1" category="inline-image-macro">資料夾和專案表格的螢幕擷取畫面，顯示專案 ID 篩選器選取專案的動作功能表。</block>
   <block id="c4c78a982626adb55fd316627b7b9909" category="paragraph"><block ref="c4c78a982626adb55fd316627b7b9909" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ecbeaffbfe15c72e3bf702b0d0bf9694" category="section-title">2024 年 11 月 11 日</block>
+  <block id="db31ae4dc32d9d514625710dfb24ee0a" category="paragraph"><block ref="52c305e9fd97fc371c1991c1470ed96b" category="inline-link-rx"></block>。</block>
 </blocks>

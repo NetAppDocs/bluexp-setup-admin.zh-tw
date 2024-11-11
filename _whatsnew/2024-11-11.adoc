@@ -16,4 +16,4 @@
 
 您現在可以從 BlueXP  身分識別與存取管理檢視專案的 ID 。進行 API 呼叫時，您可能需要使用 ID 。
 
-link:task-iam-manage-folders-projects.html#project-id["瞭解如何取得專案的 ID"]。
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-folders-projects.html#project-id["瞭解如何取得專案的 ID"]。
