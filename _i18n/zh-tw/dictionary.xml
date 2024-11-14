@@ -4078,7 +4078,6 @@ Azure 政府地區不需要此端點。</block>
   <block id="1017ad8551dc7209fead1d996608e2b5" category="paragraph">Connector 是在雲端網路或內部部署網路中執行的 NetApp 軟體、可讓您使用所有 BlueXP  功能和服務。其中一個可用的安裝選項是直接從 Azure Marketplace 在 Azure 中建立 Connector 。若要從 Azure Marketplace 建立 Connector 、您必須設定網路、準備 Azure 權限、檢閱執行個體需求、然後建立 Connector 。</block>
   <block id="9a63fba43be3e1df0de44c749000ffc5" category="paragraph">Connector 是在雲端網路或內部部署網路中執行的 NetApp 軟體、可讓您使用所有 BlueXP  功能和服務。可用的安裝選項包括直接從 BlueXP  或使用 gCloud 在 AWS 中建立 Connector 。若要從 BlueXP 或使用 gCloud 在 Google Cloud 中建立 Connector 、您必須設定網路、準備 Google Cloud 權限、啟用 Google Cloud API 、然後建立 Connector 。</block>
   <block id="455e0d1571fc687b88776ecc58050d7b" category="paragraph">Connector 是在雲端網路或內部部署網路中執行的 NetApp 軟體、可讓您使用所有 BlueXP  功能和服務。其中一個可用的安裝選項是在 Google Cloud 中執行的 Linux 主機上手動安裝 Connector 軟體。若要在您自己的 Linux 主機上手動安裝 Connector 、您必須檢閱主機需求、設定網路、準備 Google Cloud 權限、啟用 API 、安裝 Connector 、然後提供您準備的權限。</block>
-  <block id="e080a3173dc73a079c4fd120abb491e0" category="paragraph">Connector 是在雲端網路或內部部署網路中執行的 NetApp 軟體、可讓您使用所有 BlueXP  功能和服務。若要在內部環境中執行 Connector 、您需要檢閱主機需求、設定網路、準備雲端權限、安裝 Connector 、設定 Connector 、然後提供您準備的權限。</block>
   <block id="5ed8d571b208e6fe2728f122d3340d93" category="paragraph">當 Connector 安裝在內部部署時、您需要為具有必要權限的 IAM 使用者新增存取金鑰、以提供 BlueXP  AWS 權限。</block>
   <block id="7247a245f2594a184b7ed7669be8c32e" category="paragraph">當 Connector 安裝在內部部署時、您需要在 Microsoft Entra ID 中設定服務主體、並取得 BlueXP  所需的 Azure 認證、以提供 BlueXP  Azure 權限。</block>
   <block id="d73fea737459cd596b8a61a9c640bf6f" category="paragraph">在現有的內部部署 Linux 主機上下載並安裝 Connector 軟體。</block>
@@ -4887,4 +4886,5 @@ Azure 政府地區不需要此端點。</block>
   <block id="c4c78a982626adb55fd316627b7b9909" category="paragraph"><block ref="c4c78a982626adb55fd316627b7b9909" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ecbeaffbfe15c72e3bf702b0d0bf9694" category="section-title">2024 年 11 月 11 日</block>
   <block id="db31ae4dc32d9d514625710dfb24ee0a" category="paragraph"><block ref="52c305e9fd97fc371c1991c1470ed96b" category="inline-link-rx"></block>。</block>
+  <block id="be6af94f792f554a6fe5be714926ba2a" category="paragraph">Connector 是在雲端網路或內部部署網路中執行的 NetApp 軟體、可讓您使用所有 BlueXP  功能和服務。若要在內部環境中執行 Connector ，您需要檢閱主機需求，設定網路，準備雲端權限，安裝 Connector ，設定 Connector ，然後提供您準備的權限。</block>
 </blocks>

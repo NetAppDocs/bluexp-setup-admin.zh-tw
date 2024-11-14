@@ -14,7 +14,7 @@ summary: 在內部環境中安裝 Connector 、然後登入並設定以與 BlueX
 
 
 [role="lead"]
-Connector 是在雲端網路或內部部署網路中執行的 NetApp 軟體、可讓您使用所有 BlueXP  功能和服務。若要在內部環境中執行 Connector 、您需要檢閱主機需求、設定網路、準備雲端權限、安裝 Connector 、設定 Connector 、然後提供您準備的權限。
+Connector 是在雲端網路或內部部署網路中執行的 NetApp 軟體、可讓您使用所有 BlueXP  功能和服務。若要在內部環境中執行 Connector ，您需要檢閱主機需求，設定網路，準備雲端權限，安裝 Connector ，設定 Connector ，然後提供您準備的權限。
 
 .開始之前
 * 您應該擁有 link:concept-connectors.html["瞭解連接器"].
