@@ -2367,12 +2367,9 @@
   <block id="92fa0fc1299e55c066d0a19cd22b4e7b" category="list-text">* 識別 * ：在 * 管理 * 下、選取 * 啟用系統指派的託管識別 * 。</block>
   <block id="2d3bb174766a8cbc78a4d5d0a2739c56" category="paragraph">當您第一次存取 BlueXP 主控台時、系統會提示您選擇要與 Connector 建立關聯的帳戶、您需要啟用受限模式。</block>
   <block id="b22816a3d20c18e89e4ef89984ca5df6" category="inline-link-macro">瞭解如何建立其他 BlueXP 帳戶</block>
-  <block id="432f719258fc9e575a2982302eac9cdc" category="admonition">如果您已經有帳戶、而且想要建立另一個帳戶、則需要使用 Tenancy API 。 <block ref="987610e2980e99ab837daf2502634d0e" category="inline-link-macro-rx"></block>。</block>
   <block id="d0afc367dac05a517daede09c87a1703" category="list-text">註冊或登入 BlueXP 。</block>
   <block id="31925d7c2cb5897bb831e016bf096aeb" category="list-text">登入後、請設定 BlueXP ：</block>
   <block id="511a9fce084315d00b23c33c017b6f00" category="list-text">輸入 Connector 的名稱。</block>
-  <block id="b62bf1f79ab961793aac4650ff63f80e" category="list-text">輸入新 BlueXP 帳戶的名稱、或選取現有帳戶。</block>
-  <block id="60bcc9cfb61752f7c83242e23b71c36a" category="paragraph">如果您的登入已與 BlueXP 帳戶建立關聯、您可以選取現有帳戶。</block>
   <block id="19219dd3059a0601db6b584237e0fa1f" category="list-text">選擇 * 您是否在安全的環境中執行？ *</block>
   <block id="fee876de3937b43909f6c74baf1cadb3" category="list-text">選取 * 啟用此帳戶的受限模式 * 。</block>
   <block id="6c1ad8d8a00d0b91aa909ccb6da52806" category="paragraph">請注意、在 BlueXP 建立帳戶之後、您無法變更此設定。您稍後無法啟用受限模式、之後也無法停用。</block>
@@ -4908,4 +4905,7 @@ Azure 政府地區不需要此端點。</block>
   <block id="bad4efa38c7fe2023ac7a25606d5f186" category="cell">前往<block ref="bb047968fd3a98ed3e45ad4e39500b8b" category="inline-link-rx"></block>並參閱 2024 年 11 月版本中所包含的變更</block>
   <block id="93c9916354f3f5fa45f4019fd081f12a" category="paragraph">雖然 BlueXP  數位錢包和 BlueXP  複寫也包含在私有模式中，但與先前的私有模式版本相比，沒有任何變更。</block>
   <block id="cd33b497651f0d35a9b546fed113bac9" category="list-text"><block ref="e5d325f390c70091b07096d63ab8f353" category="inline-link-rx"></block>S</block>
+  <block id="d9e0b5302621c1c23c370143ae83f9e2" category="paragraph">設定 BlueXP  Connector 的人員必須使用不屬於以標準模式運作的 BlueXP  組織的登入登入來登入 BlueXP  。</block>
+  <block id="958a2cecb2c46938c95b34d62fe1951c" category="paragraph">如果您的 BlueXP  登入是與以標準模式運作的組織相關聯，則您需要註冊不屬於組織的新 BlueXP  登入或 NetApp 支援網站認證。否則，您將無法在設定畫面上看到啟用受限模式的選項。</block>
+  <block id="fbb40b7689fb13eea9ed1fa8b7206a3b" category="list-text">輸入新 BlueXP  帳戶的名稱。</block>
 </blocks>
