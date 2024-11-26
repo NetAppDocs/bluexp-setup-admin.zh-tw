@@ -4887,4 +4887,25 @@ Azure 政府地區不需要此端點。</block>
   <block id="ecbeaffbfe15c72e3bf702b0d0bf9694" category="section-title">2024 年 11 月 11 日</block>
   <block id="db31ae4dc32d9d514625710dfb24ee0a" category="paragraph"><block ref="52c305e9fd97fc371c1991c1470ed96b" category="inline-link-rx"></block>。</block>
   <block id="be6af94f792f554a6fe5be714926ba2a" category="paragraph">Connector 是在雲端網路或內部部署網路中執行的 NetApp 軟體、可讓您使用所有 BlueXP  功能和服務。若要在內部環境中執行 Connector ，您需要檢閱主機需求，設定網路，準備雲端權限，安裝 Connector ，設定 Connector ，然後提供您準備的權限。</block>
+  <block id="64a7a8a4f820d38dc5cedd70930717c0" category="doc">私有模式版本（ 3.9.46 ）</block>
+  <block id="d9d2db6c6792de5c6f6f1c11280bd993" category="paragraph">現在可從下載新的私有模式版本<block ref="d2aa03057485a1ee4125d2121e05288d" category="inline-link-rx"></block></block>
+  <block id="579c9c5aad40c47e8203472b55439941" category="paragraph">3.9.46 版本包含下列 BlueXP  元件和服務的更新。</block>
+  <block id="394b364c6ed61ed167a4f14316ef5ffc" category="cell">元件或服務</block>
+  <block id="2f9dd95401f68032a97298d35b87f433" category="cell">此版本隨附的版本</block>
+  <block id="5431c829b8b64da3908e102d64527909" category="cell">自上一次私有模式版本以來所做的變更</block>
+  <block id="3d93fe525e5005a3aa89376ce36eaf7d" category="cell">3.9.46.</block>
+  <block id="2e6f33758bf126679d5a0225c22673d3" category="cell">輕微的安全性改善和錯誤修正</block>
+  <block id="008c6d012aabba0e44e2b94f8259635c" category="cell">2024 年 22 月 11 日</block>
+  <block id="57d300ca1fdd6058fd2a0882b05ba831" category="inline-link">BlueXP  備份與還原頁面的新功能</block>
+  <block id="cc73bd495467f0768e5ab6fbca8c9fc3" category="cell">前往<block ref="d08346bd70ea49c38d1ac500c69dd11c" category="inline-link-rx"></block>並參閱 2024 年 11 月版本中所包含的變更</block>
+  <block id="d9865720c88f775c3c7aa2407f42807e" category="cell">2024 年 11 月 4 日（版本 1.37 ）</block>
+  <block id="79d6fb7fcd1197d45638c77f96548314" category="inline-link">BlueXP  分類頁面的新功能</block>
+  <block id="3634786b3e46e41488029a1f5adcfb51" category="cell">請移至，<block ref="bb3538c6013ff73961739d7c28fee95d" category="inline-link-rx"></block>並參閱 1.32 至 1.37 版本中所包含的變更</block>
+  <block id="5cee96e11788b0260fca227a2882f413" category="inline-link">Cloud Volumes ONTAP 管理頁面的新功能</block>
+  <block id="2b06273c345679e8396f450bec75502c" category="cell">前往<block ref="90e3b44730452fe495e75ab6e2b7eb58" category="inline-link-rx"></block>並參閱 2024 年 10 月和 2024 年 11 月版本中所包含的變更</block>
+  <block id="d415b73567ff8e090cdf21c20afeaa64" category="cell">2024 年 26 月 11 日</block>
+  <block id="4f2f9aa2e4b010fbcd8cded5bf523370" category="inline-link">內部部署 ONTAP 叢集管理頁面的新功能</block>
+  <block id="bad4efa38c7fe2023ac7a25606d5f186" category="cell">前往<block ref="bb047968fd3a98ed3e45ad4e39500b8b" category="inline-link-rx"></block>並參閱 2024 年 11 月版本中所包含的變更</block>
+  <block id="93c9916354f3f5fa45f4019fd081f12a" category="paragraph">雖然 BlueXP  數位錢包和 BlueXP  複寫也包含在私有模式中，但與先前的私有模式版本相比，沒有任何變更。</block>
+  <block id="cd33b497651f0d35a9b546fed113bac9" category="list-text"><block ref="e5d325f390c70091b07096d63ab8f353" category="inline-link-rx"></block>S</block>
 </blocks>

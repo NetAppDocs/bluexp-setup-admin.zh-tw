@@ -18,6 +18,46 @@ summary: 瞭解 BlueXP  管理功能的新功能： BlueXP  IAM 、 Connectors
 
 
 
+== 2024 年 26 月 11 日
+
+
+
+=== 私有模式版本（ 3.9.46 ）
+
+現在可從下載新的私有模式版本 https://mysupport.netapp.com/site/downloads["NetApp 支援網站"^]
+
+3.9.46 版本包含下列 BlueXP  元件和服務的更新。
+
+[cols="3*"]
+|===
+| 元件或服務 | 此版本隨附的版本 | 自上一次私有模式版本以來所做的變更 
+
+
+| 連接器 | 3.9.46. | 輕微的安全性改善和錯誤修正 
+
+
+| 備份與還原 | 2024 年 22 月 11 日 | 前往 https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["BlueXP  備份與還原頁面的新功能"^]並參閱 2024 年 11 月版本中所包含的變更 
+
+
+| 分類 | 2024 年 11 月 4 日（版本 1.37 ） | 請移至， https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["BlueXP  分類頁面的新功能"^]並參閱 1.32 至 1.37 版本中所包含的變更 
+
+
+| Cloud Volumes ONTAP 管理 | 2024 年 11 月 11 日 | 前往 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["Cloud Volumes ONTAP 管理頁面的新功能"^]並參閱 2024 年 10 月和 2024 年 11 月版本中所包含的變更 
+
+
+| 內部部署 ONTAP 叢集管理 | 2024 年 26 月 11 日 | 前往 https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html["內部部署 ONTAP 叢集管理頁面的新功能"^]並參閱 2024 年 11 月版本中所包含的變更 
+|===
+雖然 BlueXP  數位錢包和 BlueXP  複寫也包含在私有模式中，但與先前的私有模式版本相比，沒有任何變更。
+
+如需更多關於私有模式的詳細資訊、包括如何升級、請參閱下列內容：
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["瞭解私有模式"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["瞭解如何以私有模式開始使用 BlueXP"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["瞭解如何在使用私有模式時升級 Connector"]S
+
+
+
+
 == 2024 年 11 月 11 日
 
 
