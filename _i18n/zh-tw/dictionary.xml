@@ -4905,7 +4905,7 @@ Azure 政府地區不需要此端點。</block>
   <block id="bad4efa38c7fe2023ac7a25606d5f186" category="cell">前往<block ref="bb047968fd3a98ed3e45ad4e39500b8b" category="inline-link-rx"></block>並參閱 2024 年 11 月版本中所包含的變更</block>
   <block id="93c9916354f3f5fa45f4019fd081f12a" category="paragraph">雖然 BlueXP  數位錢包和 BlueXP  複寫也包含在私有模式中，但與先前的私有模式版本相比，沒有任何變更。</block>
   <block id="cd33b497651f0d35a9b546fed113bac9" category="list-text"><block ref="e5d325f390c70091b07096d63ab8f353" category="inline-link-rx"></block>S</block>
-  <block id="d9e0b5302621c1c23c370143ae83f9e2" category="paragraph">設定 BlueXP  Connector 的人員必須使用不屬於以標準模式運作的 BlueXP  組織的登入登入來登入 BlueXP  。</block>
-  <block id="958a2cecb2c46938c95b34d62fe1951c" category="paragraph">如果您的 BlueXP  登入是與以標準模式運作的組織相關聯，則您需要註冊不屬於組織的新 BlueXP  登入或 NetApp 支援網站認證。否則，您將無法在設定畫面上看到啟用受限模式的選項。</block>
   <block id="fbb40b7689fb13eea9ed1fa8b7206a3b" category="list-text">輸入新 BlueXP  帳戶的名稱。</block>
+  <block id="57d3121acc1a5ab1d49ad8c9d1074921" category="paragraph">設定 BlueXP  Connector 的人員必須使用不屬於 BlueXP  帳戶或組織的登入登入來登入 BlueXP  。</block>
+  <block id="b1308196c2d004e3aef97cd9d7807956" category="paragraph">如果您的 BlueXP  登入已與其他帳戶或組織建立關聯，則需要註冊新的 BlueXP  登入。否則，您將無法在設定畫面上看到啟用受限模式的選項。</block>
 </blocks>

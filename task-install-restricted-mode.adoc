@@ -320,9 +320,9 @@ chmod +x BlueXP-Connector-Cloud-<version>
 當您第一次存取 BlueXP 主控台時、系統會提示您選擇要與 Connector 建立關聯的帳戶、您需要啟用受限模式。
 
 .開始之前
-設定 BlueXP  Connector 的人員必須使用不屬於以標準模式運作的 BlueXP  組織的登入登入來登入 BlueXP  。
+設定 BlueXP  Connector 的人員必須使用不屬於 BlueXP  帳戶或組織的登入登入來登入 BlueXP  。
 
-如果您的 BlueXP  登入是與以標準模式運作的組織相關聯，則您需要註冊不屬於組織的新 BlueXP  登入或 NetApp 支援網站認證。否則，您將無法在設定畫面上看到啟用受限模式的選項。
+如果您的 BlueXP  登入已與其他帳戶或組織建立關聯，則需要註冊新的 BlueXP  登入。否則，您將無法在設定畫面上看到啟用受限模式的選項。
 
 .步驟
 . 從連線至 Connector 執行個體的主機開啟網頁瀏覽器、然後輸入下列 URL ：
