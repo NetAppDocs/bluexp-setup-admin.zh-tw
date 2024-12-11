@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-overview.html 
 keywords: overview, concepts, features, use case, cloud manager, bluexp, how bluexp works, supported cloud providers, cloud providers, hyperscalers 
-summary: NetApp BlueXP 為您的組織提供單一控制面板、協助您在內部部署和雲端環境中建置、保護及管理資料。BlueXP SaaS 平台包括提供儲存管理、資料移動性、資料保護、以及資料分析與控制的服務。管理功能是透過網路型主控台和 API 提供。 
+summary: NetApp BlueXP 為您的組織提供單一控制面板、協助您在內部部署和雲端環境中建置、保護及管理資料。 
 ---
 = 深入瞭解BlueXP
 :hardbreaks:
@@ -20,60 +20,84 @@ NetApp BlueXP 為您的組織提供單一控制面板、協助您在內部部署
 
 == 功能
 
-BlueXP 平台提供四大資料管理支柱：儲存、行動力、保護、分析與控制。
+BlueXP  可統一控制混合式多雲端和整合式資料服務的儲存設備，以保護，保護及最佳化資料。
 
-儲存設備:: 探索、部署及管理儲存設備、無論是在 AWS 、 Azure 、 Google Cloud 或內部部署中。
+
+
+=== 從 BlueXP  畫布統一控制儲存設備
+
+BlueXP  畫布可讓您探索，部署，最佳化及管理雲端和內部部署儲存設備。畫布提供單一位置，可進行所有儲存管理。
+
+
+
+==== 支援的雲端和內部部署儲存設備
+
+BlueXP  可讓您從 BlueXP  畫布管理下列類型的儲存設備：
+
+雲端儲存解決方案::
 +
 --
-* 設定及使用雲端檔案儲存服務：
-+
-** https://bluexp.netapp.com/azure-netapp-files["Azure NetApp Files"^]
-** https://bluexp.netapp.com/fsx-for-ontap["Amazon FSX for NetApp ONTAP 產品"^]
-** https://bluexp.netapp.com/cloud-volumes-service-for-gcp["適用於 Google Cloud Cloud Volumes Service"^]
-
-
-* 設定與使用 https://bluexp.netapp.com/ontap-cloud["Cloud Volumes ONTAP"^] 實現跨雲端的高效率多重傳輸協定資料管理。
-* 探索與管理 https://bluexp.netapp.com/netapp-on-premises["內部部署儲存設備"^]：
-+
-** E系列系統
-** 叢集 ONTAP
-** 系統StorageGRID
-
-
+* Amazon FSX for NetApp ONTAP 產品
+* Azure NetApp Files
+* Cloud Volumes ONTAP
 
 
 --
-行動力:: 透過同步、複製及分層資料、將資料移至需要的位置。
+內部部署 Flash 和物件儲存::
 +
 --
-* https://bluexp.netapp.com/cloud-sync-service["複製與同步"^]
-* https://bluexp.netapp.com/cloud-tiering["分層"^]
+* E系列系統
+* 叢集 ONTAP
+* 系統StorageGRID
 
 
 --
-保護:: 使用自動化保護機制來保護資料、避免資料遺失、非計畫性中斷、勒索軟體及其他網路威脅。
+雲端物件儲存::
 +
 --
-* https://bluexp.netapp.com/cloud-backup["備份與還原"^]
-* https://bluexp.netapp.com/disaster-recovery["災難恢復"^]
-* https://bluexp.netapp.com/replication["複寫"^]
-* https://bluexp.netapp.com/ransomware-protection["勒索軟體保護"^]
-
-
---
-分析與控制:: 使用工具來監控、對應及最佳化您的資料儲存與基礎架構。取得可據以行動的情報、以最佳化儲存健全狀況、恢復能力和經濟效益。
-+
---
-* https://bluexp.netapp.com/netapp-cloud-data-sense["分類"^]
-* https://bluexp.netapp.com/digital-advisor["數位顧問"^]
-* https://bluexp.netapp.com/digital-advisor["經濟效益"^]
-* https://bluexp.netapp.com/digital-advisor["營運恢復能力"^]
+* Amazon S3儲存設備
+* Azure Blob 儲存設備
+* Google Cloud Storage
 
 
 --
 
 
-https://bluexp.netapp.com/["深入瞭解如何使用 BlueXP  來管理混合式多雲端環境中的資料"^]
+
+
+==== 從工作環境進行儲存管理
+
+在 BlueXP  畫布上， _ 工作環境 _ 代表您發現或部署的雲端和內部部署儲存設備。您可以選擇工作環境，並將其與 BlueXP  資料服務整合，或進入工作環境來完成儲存管理動作，例如新增磁碟區。
+
+image:screenshot-canvas.png["BlueXP  畫布的螢幕擷取畫面會顯示數個工作環境，其中一個已選取，並顯示啟用 BlueXP  資料服務或選取「進入工作環境」來管理儲存設備的能力。"]
+
+
+
+=== 整合式服務可保護，保護及最佳化資料
+
+BlueXP  包含一套完整的整合式資料服務，可協助您在內部部署和雲端儲存環境中維護資料的安全性，完整性和可用度。
+
+BlueXP  警示:: 檢視 ONTAP 環境中與容量、可用度、效能、保護和安全性相關的問題。
+BlueXP 自動化目錄:: 使用指令碼化解決方案來自動化 NetApp 產品與服務的部署與整合。
+BlueXP 備份與還原:: 備份及還原雲端和內部部署資料。
+BlueXP 分類:: 準備好應用程式資料和雲端環境的隱私保護。
+BlueXP 雲端作業:: 深入瞭解雲端運算支出、並找出可能的節約效益。
+BlueXP 複製與同步:: 在內部部署與雲端資料儲存區之間同步資料。
+BlueXP 數位顧問:: 使用預測性分析和主動式支援來最佳化您的資料基礎架構。
+BlueXP 數位錢包:: 管理及監控您的授權與訂閱。
+BlueXP 災難恢復:: 使用 Amazon FSX for ONTAP 上的 VMware Cloud 做為災難恢復站台、來保護內部部署的 VMware 工作負載。
+BlueXP 經濟效益:: 識別目前或預測容量不足的叢集、並實作資料分層或其他容量建議。
+BlueXP 作業恢復能力:: 實作自動化韌體和軟體組態風險修正、以維持 ONTAP 叢集的健全狀況。
+BlueXP 勒索軟體保護:: 偵測可能導致勒索軟體攻擊的異常狀況。保護及恢復工作負載。
+BlueXP 複寫:: 在儲存系統之間複寫資料、以支援備份與災難恢復。
+BlueXP  軟體更新:: 自動化 ONTAP 升級的評估、規劃及執行。
+BlueXP 永續性儀表板:: 分析儲存系統的永續性。
+BlueXP 分層:: 將內部ONTAP 部署的NetApp儲存設備延伸至雲端。
+BlueXP Volume 快取:: 建立可寫入的快取磁碟區、以加速資料存取或卸載大量存取磁碟區的流量。
+BlueXP  工作負載工廠:: 使用 Amazon FSX for NetApp ONTAP 設計，設定及操作關鍵工作負載。
+
+
+https://www.netapp.com/bluexp/["深入瞭解 BlueXP  和可用的資料服務"^]
 
 
 
@@ -91,7 +115,7 @@ BlueXP的定價取決於您計畫使用的服務。 https://bluexp.netapp.com/pr
 
 == 藍圖的運作方式
 
-BlueXP  包含透過 SaaS 層提供的網路型主控台、資源與存取管理系統、以及可管理工作環境並啟用 BlueXP  雲端服務的 Connectors 。
+BlueXP  包含透過 SaaS 層提供的網路型主控台，資源與存取管理系統，可管理工作環境並啟用 BlueXP  雲端服務的 Connectors ，以及可滿足業務需求的不同部署模式。
 
 
 
@@ -129,7 +153,7 @@ link:concept-connectors.html["深入瞭解連接器"]。
 
 === 部署模式
 
-BlueXP  在安全性和連線能力受限的環境中受到支援。您可以使用 _limit modity_ 或 _private modity_ 來限制與 BlueXP SaaS 層的輸出連線。
+BlueXP  提供三種部署模式。_ 標準模式 _ 運用 BlueXP  軟體即服務（ SaaS ）層來提供完整功能。如果您的環境有安全性和連線限制，則 _ 限制模式 _ 和 _ 私有模式 _ 會限制 BlueXP  SaaS 層的輸出連線。
 
 link:concept-modes.html["深入瞭解 BlueXP 部署模式"]。
 

@@ -35,5 +35,5 @@
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["瞭解私有模式"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["瞭解如何以私有模式開始使用 BlueXP"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["瞭解如何在使用私有模式時升級 Connector"]S
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["瞭解如何在使用私有模式時升級 Connector"]
 

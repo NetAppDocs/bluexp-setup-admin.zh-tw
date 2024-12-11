@@ -5,7 +5,6 @@
 手動安裝期間聯絡的端點:: 當您在自己的 Linux 主機上手動安裝 Connector 時、 Connector 的安裝程式需要在安裝過程中存取下列 URL ：
 +
 --
-* \https://support.netapp.com
 * \https://mysupport.netapp.com
 * https://signin.b2c 。 NetApp ． com （此端點為 https://mysupport ． NetApp ． com 的 CNAME URL ）
 * \https://cloudmanager.cloud.netapp.com/tenancy

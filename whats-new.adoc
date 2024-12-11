@@ -18,6 +18,29 @@ summary: 瞭解 BlueXP  管理功能的新功能： BlueXP  IAM 、 Connectors
 
 
 
+== 2024 年 12 月 9 日
+
+
+
+=== 連接器 3.9.47
+
+此版本的 BlueXP  Connector 包含錯誤修正，以及在 Connector 安裝期間所接觸的端點變更。
+
+目前、 3.9.47 版本適用於標準模式和受限模式。
+
+.端點，在安裝期間聯絡 NetApp 支援部門
+當您手動安裝 Connector 時，安裝程式將不再與 \https://support NetApp .com 聯絡。
+
+安裝程式仍會聯絡 \https://mysupport 。 NetApp .com 。
+
+
+
+=== BlueXP  身分識別與存取管理
+
+「連接器」頁面僅列出目前可用的「連接器」。它不再顯示您已移除的連接器。
+
+
+
 == 2024 年 26 月 11 日
 
 
@@ -53,7 +76,7 @@ summary: 瞭解 BlueXP  管理功能的新功能： BlueXP  IAM 、 Connectors
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["瞭解私有模式"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["瞭解如何以私有模式開始使用 BlueXP"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["瞭解如何在使用私有模式時升級 Connector"]S
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["瞭解如何在使用私有模式時升級 Connector"]
 
 
 
@@ -1134,7 +1157,7 @@ https://bluexp.netapp.com["請至BlueXP網站深入瞭解"^]
 新的導覽功能表:: 在 BlueXP 的導覽功能表中、服務現在會依類別進行組織、並根據其功能來命名。例如、您可以從 * 保護 * 類別存取 BlueXP 備份與還原。
 +
 --
-image:screenshot-navigation-menu.png["BlueXP導覽功能表的快照、顯示儲存與健全狀況等類別。"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-navigation-menu.png["BlueXP導覽功能表的快照、顯示儲存與健全狀況等類別。"]
 
 --
 新產品整合::
@@ -1510,7 +1533,7 @@ NetApp 支援網站（NSS）帳戶現在改從支援儀表板進行管理，而�
 
 link:task-adding-nss-accounts.html["瞭解如何管理NSS帳戶"]。
 
-image:screenshot_nss_management.png["支援儀表板中的\"NSS\"管理索引標籤快照、您可在其中新增NSS\"帳戶。"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot_nss_management.png["支援儀表板中的\"NSS\"管理索引標籤快照、您可在其中新增NSS\"帳戶。"]
 
 
 

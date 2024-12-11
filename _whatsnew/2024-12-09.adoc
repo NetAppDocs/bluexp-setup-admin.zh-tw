@@ -1,0 +1,22 @@
+= 連接器 3.9.47
+:allow-uri-read: 
+
+
+
+
+=== 連接器 3.9.47
+
+此版本的 BlueXP  Connector 包含錯誤修正，以及在 Connector 安裝期間所接觸的端點變更。
+
+目前、 3.9.47 版本適用於標準模式和受限模式。
+
+.端點，在安裝期間聯絡 NetApp 支援部門
+當您手動安裝 Connector 時，安裝程式將不再與 \https://support NetApp .com 聯絡。
+
+安裝程式仍會聯絡 \https://mysupport 。 NetApp .com 。
+
+
+
+=== BlueXP  身分識別與存取管理
+
+「連接器」頁面僅列出目前可用的「連接器」。它不再顯示您已移除的連接器。
