@@ -1,0 +1,40 @@
+= 新的安全端點，以取得 Connector 映像
+:allow-uri-read: 
+
+
+
+
+=== 新的安全端點，以取得 Connector 映像
+
+當您安裝 Connector 或進行自動升級時， Connector 會聯絡儲存庫，以下載安裝或升級的映像。依預設， Connector 一律會連絡下列端點：
+
+* \https://*.blob.core.windows.net
+* \https://cloudmanagerinfraprod.azurecr.io
+
+
+第一個端點包含萬用字元，因為我們無法提供明確的位置。儲存庫的負載平衡是由服務供應商管理，這表示下載可能會從不同的端點進行。
+
+為了提高安全性， Connector 現在可以從專用端點下載安裝和升級映像：
+
+* \https://bluexpinfraprod.eastus2.data.azurecr.io
+* \https://bluexpinfraprod.azurecr.io
+
+
+我們建議您從防火牆規則中移除現有端點，並允許新端點，以開始使用這些新端點。
+
+從 3.9.47 版本的 Connector 開始支援這些新端點。與先前版本的 Connector 沒有回溯相容性。
+
+請注意下列事項：
+
+* 仍支援現有的端點。如果您不想使用新的端點，則不需要變更。
+* Connector 會先聯絡現有的端點。如果無法存取這些端點， Connector 會自動連絡新的端點。
+* 下列案例不支援新的端點：
++
+** 如果 Connector 安裝在政府區域。
+** 如果您使用 Connector 搭配 BlueXP  備份與還原，或 BlueXP  勒索軟體保護。
+
+
++
+對於這兩種情況，您可以繼續使用現有的端點。
+
+

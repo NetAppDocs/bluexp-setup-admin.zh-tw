@@ -268,12 +268,34 @@ link:reference-networking-saas-console.html["為 BlueXP  主控台準備網路"
 * \https://cloudmanager.cloud.netapp.com/tenancy
 * \https://stream.cloudmanager.cloud.netapp.com
 * \https://production-artifacts.cloudmanager.cloud.netapp.com
-* \https://*.blob.core.windows.net
-* \https://cloudmanagerinfraprod.azurecr.io
+* 若要取得映像，安裝程式需要存取這兩組端點之一：
 +
+** 選項 1 （建議）：
++
+*** \https://bluexpinfraprod.eastus2.data.azurecr.io
+*** \https://bluexpinfraprod.azurecr.io
+
+
+** 選項 2 ：
++
+*** \https://*.blob.core.windows.net
+*** \https://cloudmanagerinfraprod.azurecr.io
+
+
+
+
++
+建議使用選項 1 中列出的端點，因為它們更安全。建議您設定防火牆，以允許選項 1 中列出的端點，同時禁止選項 2 中列出的端點。請注意下列關於這些端點的資訊：
+
++
+** 從 3.9.47 版本的 Connector 開始，支援選項 1 中列出的端點。與先前版本的 Connector 沒有回溯相容性。
+** Connector 會先聯絡選項 2 中列出的端點。如果無法存取這些端點， Connector 會自動連絡選項 1 中列出的端點。
+** 如果您使用 Connector 搭配 BlueXP  備份與還原或 BlueXP  勒索軟體保護，則不支援選項 1 中的端點。在這種情況下，您可以不允許選項 1 中列出的端點，同時允許選項 2 中列出的端點。
+
+
+
+
 主機可能會在安裝期間嘗試更新作業系統套件。主機可聯絡不同的鏡射站台、以取得這些 OS 套件。
-
-
 
 --
 
@@ -312,15 +334,7 @@ AWS 服務（ amazonaws.com):
 
 
  a| 
-\https://*.api.bluexp.netapp.com
-
-\https://api.bluexp.netapp.com
-
-\https://*.cloudmanager.cloud.netapp.com
-
-\https://cloudmanager.cloud.netapp.com
-
-\https://netapp-cloud-account.auth0.com
+https://\*.api 。 BlueXP  NetApp 。 NetApp 。 com \https://api 。 BlueXP  。 com \https://*.cloudmanager.cloud 。 NetApp 。 com \https://cloudmanager.cloud 。 NetApp 。 com 。 https ： NetApp-cloud-account.auth0.com
  a| 
 在BlueXP中提供SaaS功能與服務。
 
@@ -329,13 +343,28 @@ AWS 服務（ amazonaws.com):
 
 
  a| 
-\https://*.blob.core.windows.net
+在兩組端點之間選擇：
 
-\https://cloudmanagerinfraprod.azurecr.io
+* 選項 1 （建議） ^1^
++
+\https://bluexpinfraprod.eastus2.data.azurecr.io \https://bluexpinfraprod.azurecr.io
+
+* 選項2
++
+\https://*.blob.core.windows.net \https://cloudmanagerinfraprod.azurecr.io
+
+
  a| 
-升級Connector及其Docker元件。
+取得 Connector 升級的映像。
 
 |===
+^1^ 建議使用選項 1 中列出的端點，因為它們更安全。建議您設定防火牆，以允許選項 1 中列出的端點，同時禁止選項 2 中列出的端點。請注意下列關於這些端點的資訊：
+
+* 從 3.9.47 版本的 Connector 開始，支援選項 1 中列出的端點。與先前版本的 Connector 沒有回溯相容性。
+* Connector 會先聯絡選項 2 中列出的端點。如果無法存取這些端點， Connector 會自動連絡選項 1 中列出的端點。
+* 如果您使用 Connector 搭配 BlueXP  備份與還原或 BlueXP  勒索軟體保護，則不支援選項 1 中的端點。在這種情況下，您可以不允許選項 1 中列出的端點，同時允許選項 2 中列出的端點。
+
+
 --
 
 

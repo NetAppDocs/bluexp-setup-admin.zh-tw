@@ -171,12 +171,8 @@
   <block id="ec646b7b2f70895a68ca206afb2d6108" category="list-text">簡易儲存服務（ S3 ）</block>
   <block id="aec651d37f6f533a4066a1ac8774d6b0" category="inline-link">如需詳細資料、請參閱AWS文件</block>
   <block id="db9e137068a05efe5440105c2494b7f1" category="cell">以取得授權資訊、並將AutoSupport 資訊傳送給NetApp支援部門。</block>
-  <block id="37ba276f010f4ea07f1196b487811443" category="paragraph">\https://*.api.bluexp.netapp.com</block>
   <block id="e1095ff19466581c5274f67123c95036" category="paragraph">\https://api.bluexp.netapp.com</block>
-  <block id="9e434ddc2ad4b9de005368b77254223d" category="paragraph">\https://*.cloudmanager.cloud.netapp.com</block>
-  <block id="115781a0043a85f8707c5c99fd02dc75" category="paragraph">\https://cloudmanager.cloud.netapp.com</block>
   <block id="23486ca53d499245ebae5460cf6d10ad" category="paragraph">在BlueXP中提供SaaS功能與服務。</block>
-  <block id="065880318484084e9bfe33ea9c6a8702" category="cell">升級Connector及其Docker元件。</block>
   <block id="824f455afa0ae197e5e7156988b6dc50" category="section-title">Proxy伺服器</block>
   <block id="407c4e9fac86b98147da49acd4fa0d01" category="section-title">連接埠</block>
   <block id="b68600c18c6dd9598d4518bc4a3f2c90" category="list-text">HTTP（80）和HTTPS（443）可存取本機UI、在極少數情況下使用。</block>
@@ -890,7 +886,6 @@
   <block id="25b6fc1a8ebb7aa3a82a611b3dc7cc8d" category="inline-link-macro">Azure 的連接器部署原則</block>
   <block id="9cbe008fc71c240a16ab125b2873fe44" category="inline-link-macro">檢閱BlueXP如何使用權限</block>
   <block id="1985b326c07cdcb2a260ae0c0c6fde8d" category="inline-link">系統指派的託管身分識別</block>
-  <block id="d47be244f383106c84a24b1e4ba4fea6" category="paragraph">當BlueXP在Azure中部署Connector虛擬機器時、它會啟用<block ref="3b529d5441a4ea26741352247ca08bac" category="inline-link-rx"></block> 在虛擬機器上建立自訂角色、然後將其指派給虛擬機器。此角色可為BlueXP提供所需的權限、以管理該Azure訂閱中的資源和程序。 <block ref="daf58003d5227a43b6fbea1d165f6f7b" category="inline-link-macro-rx"></block>。</block>
   <block id="825a028e49bfdd88d5c17500e011aaf5" category="inline-image-macro">顯示在Azure帳戶和訂閱中部署Connector的BlueXP概念性映像。系統指派的託管身分識別已啟用、並將自訂角色指派給Connector虛擬機器。</block>
   <block id="4ba8970a06f2fd9f7ce2b5459745a3f0" category="paragraph"><block ref="4ba8970a06f2fd9f7ce2b5459745a3f0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="98c16c747c940667876d314b6eb47dba" category="inline-image-macro">在「詳細資料擴大機；認證」頁面中顯示「切換帳戶」選項的螢幕擷取畫面。</block>
@@ -2732,8 +2727,6 @@
   <block id="7cbd2e15c5d25612181f48c177cab04b" category="paragraph">此端點是手動安裝 Connector 及升級 Connector 及其 Docker 元件所必需的。</block>
   <block id="49145759efbc79c21fc5ba75bb2aaf72" category="paragraph">由於此變更、 Azure 政府區域的 Connector 不再與下列端點連線：</block>
   <block id="979b0001d7bec41aff8509faf7b59bef" category="paragraph">請注意、所有其他受限模式組態和標準模式仍需要此端點。</block>
-  <block id="b7e5db85ee5e5c349f5841d09bf19cbe" category="paragraph">Azure 政府地區不需要此端點。</block>
-  <block id="8e1098945acc0cdc1dade8505d9ce607" category="paragraph">此端點僅在 Azure 政府地區需要使用。</block>
   <block id="297a49f6150dc8dc8d45620c0f09f393" category="list-text">如果您想要管理其他 Google Cloud 專案中的資源、請將具有 BlueXP 角色的服務帳戶新增至該專案、以授予存取權。您必須針對每個專案重複此步驟。</block>
   <block id="1f7d098197ba2def0ffc66c388b2aa6c" category="paragraph">如果您為 Cloud Volumes ONTAP 建立新的工作環境、 BlueXP 預設會選取這些 AWS 認證：</block>
   <block id="1c16bd0b2377f4460ae56ecb40a419ae" category="paragraph">請注意、您可以選擇與此角色相關的 Azure 訂閱。您選擇的每個訂閱都會提供 Connector 權限、以管理該訂閱中的資源（例如 Cloud Volumes ONTAP ）。</block>
@@ -2785,14 +2778,7 @@
 \https://cloudkms.googleapis.com/v1
 \https://www.googleapis.com/deploymentmanager/v2/projects</block>
   <block id="641d1f191c2b819061a8e9b6046fdbeb" category="paragraph">| 管理 Google Cloud 中的資源。</block>
-  <block id="cbb0e5cc736eaf87107f863bf695f576" category="paragraph">| \https://*.api.bluexp.netapp.com</block>
   <block id="6032f72586d36689e65d40f24d6a282a" category="paragraph">| 在 BlueXP 中提供 SaaS 功能與服務。</block>
-  <block id="315cc875789c13a43c4e0c550413aeb3" category="paragraph">| \https://*.blob.core.windows.net</block>
-  <block id="f921751bfd3f9ccb8d1939fdcf454c55" category="paragraph">| 升級 Connector 及其 Docker 元件。</block>
-  <block id="8e999f16c9e1bf3513a187ca219b352d" category="paragraph">\https://cloudmanagerinfraprod.azurecr.io
-Azure 政府地區不需要此端點。</block>
-  <block id="badc30c7f0d12562a8053216959ee48c" category="paragraph">\https://occmclientinfragov.azurecr.us
-此端點僅在 Azure 政府地區需要使用。</block>
   <block id="d7a02621d52c29a3c5f7895e817cba5b" category="list-text">自動化目錄</block>
   <block id="37b89c92faa8fead3ede2cb2c162ef52" category="inline-link-macro">檢視 Connector 執行個體本身所需的權限</block>
   <block id="ee0f5d3d76febb57f0cd8c307401026c" category="paragraph">若要準備進行市場部署、請在 AWS 中建立 IAM 原則、並將其附加至 IAM 角色。當您從 AWS Marketplace 建立 Connector 時、系統會提示您選取該 IAM 角色。</block>
@@ -3026,7 +3012,6 @@ Azure 政府地區不需要此端點。</block>
   <block id="60c6ee9a22a8a9d78e90e7b6417781b1" category="list-text">EC2 Linux 執行個體的使用者名稱為 Ubuntu （對於在 2023 年 5 月之前建立的 Connectors 、使用者名稱為 EC2-user ）。</block>
   <block id="2a3be610e29cddb2c56aa61b555b895a" category="list-text">在AWS中建立Connector執行個體時、您提供了AWS存取金鑰和秘密金鑰。您可以將此金鑰配對用於執行個體的SSH。EC2 Linux 執行個體的使用者名稱為 Ubuntu （對於在 2023 年 5 月之前建立的 Connectors 、使用者名稱為 EC2-user ）。</block>
   <block id="04e4cf5594e5bdae569d4fdcee8b46a6" category="list-text">在 Azure 中建立 Connector VM 時、您指定了使用者名稱、並選擇使用密碼或 SSH 公開金鑰進行驗證。使用您選擇的驗證方法來連線至VM。</block>
-  <block id="300f031c227ed1b4448a8bb51abec2bb" category="paragraph">\https://netapp-cloud-account.auth0.com</block>
   <block id="8ddd07f4c199accad92d619cc396eaef" category="video-title">從 AWS Marketplace 訂閱 BlueXP</block>
   <block id="040832c90148c5bba767901a4a55ebe4" category="video-title">從 Azure Marketplace 訂閱 BlueXP</block>
   <block id="c6e17aa071476599f5e5fc5b8bc42431" category="video-title">從 Google Cloud Marketplace 訂閱 BlueXP</block>
@@ -4927,4 +4912,57 @@ Azure 政府地區不需要此端點。</block>
   <block id="1f86b1e4048d088ce153a6f451fb30d6" category="section-title">2024 年 12 月 9 日</block>
   <block id="6dbd17d362d540a01bdcf61fb73192e3" category="paragraph"><block ref="6dbd17d362d540a01bdcf61fb73192e3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8aed33df97a7e5d16736c205973e6239" category="paragraph"><block ref="8aed33df97a7e5d16736c205973e6239" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="670c21c09cc12fa2b540e85129379b5e" category="paragraph">| https://\*.api 。 BlueXP  NetApp 。 NetApp 。 com \https://api 。 BlueXP  。 com \https://*.cloudmanager.cloud 。 NetApp 。 com \https://cloudmanager.cloud 。 NetApp 。 com 。 https ： NetApp-cloud-account.auth0.com</block>
+  <block id="1eda4150e04890cf41a6ea76d98f697a" category="paragraph">A | 選擇兩組端點：</block>
+  <block id="5f6428bd6c6248b828101aca600e81cd" category="list-text">選項 1 （建議） ^1^</block>
+  <block id="7d9fb0da2a7d9c9f4e35c19e20d063fa" category="paragraph">\https://bluexpinfraprod.eastus2.data.azurecr.io \https://bluexpinfraprod.azurecr.io</block>
+  <block id="e24963e40778134b357f4a5eac58e1f5" category="list-text">選項2</block>
+  <block id="136fa3635085015cd64da15749cb05d3" category="paragraph">\https://*.blob.core.windows.net \https://cloudmanagerinfraprod.azurecr.io</block>
+  <block id="ba7444feff898fd31052b2c3d71eb3bc" category="paragraph">| 取得 Connector 升級的映像。</block>
+  <block id="98514385a1eee063dc909984510770cc" category="paragraph">^1^ 建議使用選項 1 中列出的端點，因為它們更安全。建議您設定防火牆，以允許選項 1 中列出的端點，同時禁止選項 2 中列出的端點。請注意下列關於這些端點的資訊：</block>
+  <block id="730c1767bb447dca00c8c31982caa0e8" category="paragraph">+ * 從 3.9.47 版本的 Connector 開始，支援選項 1 中列出的端點。與先前版本的 Connector 沒有回溯相容性。* Connector 會先聯絡選項 2 中列出的端點。如果無法存取這些端點， Connector 會自動連絡選項 1 中列出的端點。* 如果您使用 Connector 搭配 BlueXP  備份與還原或 BlueXP  勒索軟體保護，則不支援選項 1 中的端點。在這種情況下，您可以不允許選項 1 中列出的端點，同時允許選項 2 中列出的端點。</block>
+  <block id="feba1f9c9ed23d57a6a6b22c3aee5bf0" category="paragraph">| 如果連接器位於 AWS 政府區域： \https://*.blob.core.windows.net \https://cloudmanagerinfraprod.azurecr.io</block>
+  <block id="e2fb4de75efd2de9f857c298fc2dedf1" category="paragraph">| 在 AWS 政府區域安裝 Connector 時取得 Connector 升級的映像。</block>
+  <block id="d6e105e0a43b0f59c5054550eb57e887" category="paragraph">| 如果 Connector 位於 Azure 政府地區： \https://*.blob.core.windows.net \https://occmclientinfragov.azurecr.us</block>
+  <block id="030609409e7ee56f73f54985a1ac8e7b" category="paragraph">| 在 Azure 政府地區安裝 Connector 時取得 Connector 升級的映像。</block>
+  <block id="257dc55948667c2bded118f045b26704" category="paragraph">答 | 如果 Connector 位於商業區域或主權區域，您可以在兩組端點之間選擇：</block>
+  <block id="2372eafae2ad885dc502beb3fb342503" category="paragraph">| 在 Connector 安裝於商業區域或主權區域時，取得 Connector 升級的映像。</block>
+  <block id="938bc2259b1b16dfbf9d1ea13da23930" category="list-text">若要取得映像，安裝程式需要存取這兩組端點之一：</block>
+  <block id="947479331852b9cc69da9bbd894654d1" category="list-text">選項 1 （建議）：</block>
+  <block id="534d469c55031860cef85b868a9332d8" category="list-text">\https://bluexpinfraprod.eastus2.data.azurecr.io</block>
+  <block id="a86a33f4f6d9c203eb747987b6d104ca" category="list-text">\https://bluexpinfraprod.azurecr.io</block>
+  <block id="eb499f7aadd76ba50d5925ea6552dcff" category="list-text">選項 2 ：</block>
+  <block id="61544f9ceda91554eec420c29453fe62" category="list-text">當您在自己的 Linux 主機上手動安裝 Connector 時， Connector 的安裝程式需要在安裝過程中存取數個 URL 。</block>
+  <block id="a8565aa4839817f4f46d7e5c184c47e5" category="list-text">無論您在何處安裝 Connector ，都會隨時與下列端點聯絡：</block>
+  <block id="97f55477feef294b3e2c4fa6015719fa" category="list-text">如果您在 AWS 政府區域安裝 Connector ，安裝程式也需要存取這些端點：</block>
+  <block id="13a671e048cea402a53e9e2f012a3ae5" category="list-text">如果您在 Azure 政府區域安裝 Connector ，安裝程式也需要存取這些端點：</block>
+  <block id="414389f3238c146f25f4038ff7741948" category="list-text">如果您在商業區域或主權區域安裝 Connector ，則可以在兩組端點之間進行選擇：</block>
+  <block id="1c65ce30d8659b289e38be6782d58dd0" category="paragraph">建議使用選項 1 中列出的端點，因為它們更安全。建議您設定防火牆，以允許選項 1 中列出的端點，同時禁止選項 2 中列出的端點。請注意下列關於這些端點的資訊： ** 從 3.9.47 版本的 Connector 開始，支援選項 1 中列出的端點。與先前版本的 Connector 沒有回溯相容性。** Connector 會先聯絡選項 2 中列出的端點。如果無法存取這些端點， Connector 會自動連絡選項 1 中列出的端點。** 如果您使用 Connector 搭配 BlueXP  備份與還原或 BlueXP  勒索軟體保護，則不支援選項 1 中的端點。在這種情況下，您可以不允許選項 1 中列出的端點，同時允許選項 2 中列出的端點。</block>
+  <block id="ab83866f9abfe93d14a14fa21b156b05" category="doc">新的安全端點，以取得 Connector 映像</block>
+  <block id="78efdac7339a3a2a767f54e63e415b79" category="paragraph">當您安裝 Connector 或進行自動升級時， Connector 會聯絡儲存庫，以下載安裝或升級的映像。依預設， Connector 一律會連絡下列端點：</block>
+  <block id="e5eb8016a9764345b2f3dd5672e2f245" category="paragraph">第一個端點包含萬用字元，因為我們無法提供明確的位置。儲存庫的負載平衡是由服務供應商管理，這表示下載可能會從不同的端點進行。</block>
+  <block id="5a04f5940b391aa471ffcf2f682f6390" category="paragraph">為了提高安全性， Connector 現在可以從專用端點下載安裝和升級映像：</block>
+  <block id="6265c6aedeb8e4c15d99cb681317d569" category="paragraph">我們建議您從防火牆規則中移除現有端點，並允許新端點，以開始使用這些新端點。</block>
+  <block id="0569478319ea7c217c7aeaef42de04a2" category="paragraph">從 3.9.47 版本的 Connector 開始支援這些新端點。與先前版本的 Connector 沒有回溯相容性。</block>
+  <block id="b7045cdc7261ab3a7b9e78efb0461bfa" category="list-text">仍支援現有的端點。如果您不想使用新的端點，則不需要變更。</block>
+  <block id="4cd508d6b82e76524216714f78d79d2c" category="list-text">Connector 會先聯絡現有的端點。如果無法存取這些端點， Connector 會自動連絡新的端點。</block>
+  <block id="a5f507c0714656865b1f8986b83613de" category="list-text">下列案例不支援新的端點：</block>
+  <block id="6b4d63c99144b38df035c167f8c99b23" category="list-text">如果 Connector 安裝在政府區域。</block>
+  <block id="b90e6d21a82e89d9e93683b887fce78e" category="list-text">如果您使用 Connector 搭配 BlueXP  備份與還原，或 BlueXP  勒索軟體保護。</block>
+  <block id="8ad91183ee4d83d215423d96651219b3" category="paragraph">對於這兩種情況，您可以繼續使用現有的端點。</block>
+  <block id="f75f2bfc89f28bf6c3d0cd6ecc334d38" category="paragraph">BlueXP  在 Azure 中部署 Connector 虛擬機器時，會在虛擬機器上啟用<block ref="3b529d5441a4ea26741352247ca08bac" category="inline-link-rx"></block>，建立自訂角色，並將其指派給虛擬機器。此角色可為BlueXP提供所需的權限、以管理該Azure訂閱中的資源和程序。<block ref="daf58003d5227a43b6fbea1d165f6f7b" category="inline-link-macro-rx"></block>。</block>
+  <block id="74f0517d27c893250b30440df50aedff" category="paragraph">https://\*.api 。 BlueXP  NetApp 。 NetApp 。 com \https://api 。 BlueXP  。 com \https://*.cloudmanager.cloud 。 NetApp 。 com \https://cloudmanager.cloud 。 NetApp 。 com 。 https ： NetApp-cloud-account.auth0.com</block>
+  <block id="929fbbf8aa4e2b9b9d79089f06f4a42b" category="paragraph">在兩組端點之間選擇：</block>
+  <block id="aaecfad986484269a7c076712941aa35" category="paragraph">取得 Connector 升級的映像。</block>
+  <block id="0e268539cbf07323a5b9a48997c1d209" category="list-text">從 3.9.47 版本的 Connector 開始，支援選項 1 中列出的端點。與先前版本的 Connector 沒有回溯相容性。</block>
+  <block id="e8707387f125fbbc4fea2bcf7fb74c5c" category="list-text">Connector 會先聯絡選項 2 中列出的端點。如果無法存取這些端點， Connector 會自動連絡選項 1 中列出的端點。</block>
+  <block id="4780ada9ee9a956e6ffeed073bbca78a" category="list-text">如果您使用 Connector 搭配 BlueXP  備份與還原或 BlueXP  勒索軟體保護，則不支援選項 1 中的端點。在這種情況下，您可以不允許選項 1 中列出的端點，同時允許選項 2 中列出的端點。</block>
+  <block id="f079ba6f508e4d8fffaecae1a59c5bf3" category="paragraph">建議使用選項 1 中列出的端點，因為它們更安全。建議您設定防火牆，以允許選項 1 中列出的端點，同時禁止選項 2 中列出的端點。請注意下列關於這些端點的資訊：</block>
+  <block id="335c5fa07bab41313fe3574d00015e28" category="paragraph">如果連接器位於 AWS 政府區域： \https://*.blob.core.windows.net \https://cloudmanagerinfraprod.azurecr.io</block>
+  <block id="8f250cee3d9453c744424495f2571a74" category="paragraph">在 AWS 政府區域安裝 Connector 時取得 Connector 升級的映像。</block>
+  <block id="a082af315082759bee1f9bba491f14f8" category="paragraph">如果 Connector 位於 Azure 政府地區： \https://*.blob.core.windows.net \https://occmclientinfragov.azurecr.us</block>
+  <block id="cb6ffdd85c34b43b9e70c8dcf3c0e51c" category="paragraph">在 Azure 政府地區安裝 Connector 時取得 Connector 升級的映像。</block>
+  <block id="815ee4222e11b0d1d149ad24cabecc80" category="paragraph">如果 Connector 位於商業區域或主權區域，您可以在兩組端點之間進行選擇：</block>
+  <block id="ad262fe50d2ecf5a3aae7409b3eda8e2" category="paragraph">在 Connector 安裝於商業區域或主權區域時，取得 Connector 升級的映像。</block>
+  <block id="c33f35ab44944cc0d09e5bb702125592" category="section-title">2024 年 16 月 12 日</block>
 </blocks>

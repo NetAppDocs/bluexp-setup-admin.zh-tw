@@ -67,32 +67,48 @@
 \https://support.netapp.com
 \https://mysupport.netapp.com | 取得授權資訊、並將 AutoSupport 訊息傳送至 NetApp 支援。
 
-| \https://*.api.bluexp.netapp.com
-
-\https://api.bluexp.netapp.com
-
-\https://*.cloudmanager.cloud.netapp.com
-
-\https://cloudmanager.cloud.netapp.com
-
-\https://netapp-cloud-account.auth0.com
+| https://\*.api 。 BlueXP  NetApp 。 NetApp 。 com \https://api 。 BlueXP  。 com \https://*.cloudmanager.cloud 。 NetApp 。 com \https://cloudmanager.cloud 。 NetApp 。 com 。 https ： NetApp-cloud-account.auth0.com
 
 | 在 BlueXP 中提供 SaaS 功能與服務。
 
 請注意、 Connector 目前正在聯絡「 cloudmanager.cloud.netapp.com" 」、但在即將推出的版本中、會開始聯絡「 api.bluexp.netapp.com" 」。
 
-| \https://*.blob.core.windows.net
+A | 選擇兩組端點：
 
-\https://cloudmanagerinfraprod.azurecr.io
+* 選項 1 （建議） ^1^
++
+\https://bluexpinfraprod.eastus2.data.azurecr.io \https://bluexpinfraprod.azurecr.io
 
-| 升級 Connector 及其 Docker 元件。
+* 選項2
++
+\https://*.blob.core.windows.net \https://cloudmanagerinfraprod.azurecr.io
 
-| \https://*.blob.core.windows.net
 
-\https://cloudmanagerinfraprod.azurecr.io
-Azure 政府地區不需要此端點。
 
-\https://occmclientinfragov.azurecr.us
-此端點僅在 Azure 政府地區需要使用。
+| 取得 Connector 升級的映像。
 
-| 升級 Connector 及其 Docker 元件。
+^1^ 建議使用選項 1 中列出的端點，因為它們更安全。建議您設定防火牆，以允許選項 1 中列出的端點，同時禁止選項 2 中列出的端點。請注意下列關於這些端點的資訊：
+
++ * 從 3.9.47 版本的 Connector 開始，支援選項 1 中列出的端點。與先前版本的 Connector 沒有回溯相容性。* Connector 會先聯絡選項 2 中列出的端點。如果無法存取這些端點， Connector 會自動連絡選項 1 中列出的端點。* 如果您使用 Connector 搭配 BlueXP  備份與還原或 BlueXP  勒索軟體保護，則不支援選項 1 中的端點。在這種情況下，您可以不允許選項 1 中列出的端點，同時允許選項 2 中列出的端點。
+
+| 如果連接器位於 AWS 政府區域： \https://*.blob.core.windows.net \https://cloudmanagerinfraprod.azurecr.io
+
+| 在 AWS 政府區域安裝 Connector 時取得 Connector 升級的映像。
+
+| 如果 Connector 位於 Azure 政府地區： \https://*.blob.core.windows.net \https://occmclientinfragov.azurecr.us
+
+| 在 Azure 政府地區安裝 Connector 時取得 Connector 升級的映像。
+
+答 | 如果 Connector 位於商業區域或主權區域，您可以在兩組端點之間選擇：
+
+* 選項 1 （建議） ^1^
++
+\https://bluexpinfraprod.eastus2.data.azurecr.io \https://bluexpinfraprod.azurecr.io
+
+* 選項2
++
+\https://*.blob.core.windows.net \https://cloudmanagerinfraprod.azurecr.io
+
+
+
+| 在 Connector 安裝於商業區域或主權區域時，取得 Connector 升級的映像。
