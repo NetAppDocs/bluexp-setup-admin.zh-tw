@@ -25,5 +25,5 @@ summary: 以私人模式使用 BlueXP 開始運作後、您可以開始使用受
 * https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html["使用 BlueXP 備份與還原、將內部部署的 ONTAP Volume 資料備份至 StorageGRID"^]
 
 
-.相關連結
+.相關資訊
 link:concept-modes.html["BlueXP 部署模式"]

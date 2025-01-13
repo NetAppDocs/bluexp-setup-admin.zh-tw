@@ -73,7 +73,7 @@ BlueXP  會切換至選取的專案、並顯示與該專案相關的資源。
 .結果
 BlueXP  會重新整理並顯示與所選 Connector 相關的工作環境。
 
-.相關連結
+.相關資訊
 link:task-iam-associate-connectors.html["將 Connectors 與資料夾和專案建立關聯"]。
 
 

@@ -16,7 +16,7 @@ summary: 若要疑難排解 Connector 的問題、您可以與 NetApp 支援部�
 [role="lead"]
 若要疑難排解 Connector 的問題、您可以與 NetApp 支援部門合作、他們可能會要求您提供系統 ID 、 Connector 版本或最新的 AutoSupport 訊息。您也可以檢視 NetApp 知識庫、自行疑難排解問題。
 
-.相關連結
+.相關資訊
 link:task-get-help.html["取得 NetApp 支援的協助"]。
 
 

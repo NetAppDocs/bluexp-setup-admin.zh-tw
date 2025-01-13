@@ -27,5 +27,5 @@ summary: 在受限模式下以 BlueXP 啟動並執行之後、您可以開始使
 * https://docs.netapp.com/us-en/bluexp-replication/index.html["複寫文件"^]
 
 
-.相關連結
+.相關資訊
 link:concept-modes.html["BlueXP 部署模式"]

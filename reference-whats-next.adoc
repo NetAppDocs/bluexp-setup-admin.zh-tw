@@ -21,5 +21,5 @@ TIP: 如果您在 AWS 、 Microsoft Azure 或 Google Cloud 中安裝 Connector �
 
 如需協助、請前往 https://docs.netapp.com/us-en/bluexp-family/["BlueXP 文件首頁"^] 檢視所有 BlueXP 服務的文件。
 
-.相關連結
+.相關資訊
 link:concept-modes.html["BlueXP 部署模式"]
