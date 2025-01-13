@@ -4948,8 +4948,17 @@
   <block id="2bd6967deb6b9eb3d79e794bad318fb4" category="list-text">在「 * 編輯 * 」頁面上，選取 * 存取 * 以檢視可存取所選資料夾或專案的成員清單。</block>
   <block id="d94261042140ed4ba051dbe4ecd2eeb1" category="paragraph">當您使用 BlueXP  身分識別與存取管理（ IAM ）將成員與組織建立關聯時、您可以在組織、資料夾或專案層級提供權限。為了確保這些成員有權存取適當的資源、您需要將資源與特定專案和資料夾建立關聯、以管理組織的資源階層。_resource_ 是 BlueXP  已經管理或感知的儲存資源。</block>
   <block id="e9c971c6d3dcc12c14f3f119d1d8f701" category="paragraph">您可以同時檢視與組織相關聯的探索及未探索到的資源。未探索到的資源通常是透過數位顧問所知的儲存資源，您尚未將其新增為工作環境。</block>
-  <block id="7e797bc936bc19649c91fa90509a82a9" category="admonition">Amazon FSX for NetApp ONTAP 資源不會顯示在「 IAM 資源」頁面上，因為您無法將它們與 IAM 角色建立關聯。您可以在各自的畫布或工作負載上檢視這些資源。</block>
+  <block id="7e797bc936bc19649c91fa90509a82a9" category="list-text">Amazon FSX for NetApp ONTAP 資源不會顯示在「 IAM 資源」頁面上，因為您無法將它們與 IAM 角色建立關聯。您可以在各自的畫布或工作負載上檢視這些資源。</block>
   <block id="3135ebe2cc4398e8de27fc39c6eb605e" category="list-text">選取 * 資源 * 以檢視「資源」頁面。</block>
   <block id="a5d2efab4d8509840f3f76fe8f0a57c1" category="list-text">選擇 * 進階搜尋與篩選 * 。</block>
   <block id="f7e276f42cb40dbaba008d93e6aff422" category="paragraph">如果您想要讓資源可供組織中的資料夾或專案使用，則需要在資料夾或專案與資源之間建立關聯。</block>
+  <block id="19cb29a89a6fbf6d87da92950ea8482c" category="doc">連接器 3.9.48</block>
+  <block id="4d83c70b301d09d322c3d604e361a689" category="paragraph">目前、 3.9.48 版本適用於標準模式和受限模式。</block>
+  <block id="a8afa3393166930c13f7426758547bca" category="list-text">「資源」頁面現在會顯示未探索到的資源。未探索到的資源是 BlueXP  所知的儲存資源，但您尚未為其建立工作環境。例如，在數位顧問中顯示但尚未有工作環境的資源，會在「資源」頁面上顯示為未探索到的資源。</block>
+  <block id="441419ddc3a341f3081b481a3084eef7" category="section-title">為其他 BlueXP  服務建立支援案例</block>
+  <block id="ac9424bee543a4a40d453b3ffa72ca64" category="paragraph">註冊 BlueXP  以取得支援後，您可以直接從 BlueXP  網路型主控台建立支援案例。建立案例時，您需要選取問題所關聯的服務。</block>
+  <block id="c16acacf37243c052df936e1994e4488" category="paragraph">從此版本開始，您現在可以建立支援案例，並將其與其他 BlueXP  服務建立關聯：</block>
+  <block id="6b8568e4d37788a668f2c72ae872b9a0" category="inline-link">深入瞭解如何建立支援案例</block>
+  <block id="704c39cac41bd3edb3c4d1fc1b619590" category="paragraph"><block ref="8380621c8f80b9213ea8e8be1675d5a4" category="inline-link-rx"></block>。</block>
+  <block id="2b513ec32615ab736c1cab315db516f8" category="section-title">2025 年 1 月 13 日</block>
 </blocks>
