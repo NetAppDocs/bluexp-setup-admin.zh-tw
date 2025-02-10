@@ -4,11 +4,8 @@
 
 .步驟
 . 在 BlueXP 主控台的右上角、選取「設定」圖示、然後選取 * 認證 * 。
-. 選取一組認證的動作功能表、然後選取 * 關聯訂閱 * 。
-+
-image:screenshot_gcp_add_subscription.png["一組現有認證資料的動作功能表快照。"]
-
-. 若要將認證與現有訂閱建立關聯、請從下拉式清單中選取 Google Cloud 專案和訂閱、然後選取 * Associate* 。
+. 選取一組認證的動作功能表，然後選取 * 設定訂閱 * 。需要新的螢幕擷取畫面（ TS ）image:screenshot_gcp_add_subscription.png["一組現有認證資料的動作功能表快照。"]
+. 若要使用選取的認證設定現有訂閱，請從下拉式清單中選取 Google Cloud 專案和訂閱，然後選取 * 設定 * 。
 +
 image:screenshot_gcp_associate.gif["Google Cloud 專案的快照、以及 Google Cloud 認證的訂閱內容。"]
 

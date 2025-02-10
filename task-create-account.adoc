@@ -14,9 +14,9 @@ summary: 當您以受限模式或私人模式設定 BlueXP  時、系統會提�
 
 
 [role="lead"]
-當您以受限模式或私人模式設定 BlueXP  時、系統會提示您建立 BlueXP  帳戶 _ 、讓您能夠管理使用者並組織資源。您可能只需要這個帳戶、但如果您的企業需要多個帳戶、則需要使用 Tenancy API 來建立其他帳戶。
+當您在私有模式中設定 BlueXP  時，系統會提示您建立 BlueXP  帳戶 _ ，讓您能夠管理使用者並組織資源。您可能只需要這個帳戶、但如果您的企業需要多個帳戶、則需要使用 Tenancy API 來建立其他帳戶。
 
-如果您是以標準模式使用 BlueXP  、就不會有 BlueXP  帳戶。您將改用 BlueXP  身分識別與存取管理（ IAM ）來管理組織。link:concept-identity-and-access-management.html["瞭解 BlueXP  IAM"]。
+如果您在標準模式或受限的情況下使用 BlueXP  ，則不會有 BlueXP  帳戶。您將改用 BlueXP  身分識別與存取管理（ IAM ）來管理組織。link:concept-identity-and-access-management.html["瞭解 BlueXP  IAM"]。
 
 .步驟
 . 使用下列 API 呼叫建立其他 BlueXP 帳戶：

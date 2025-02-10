@@ -40,14 +40,6 @@ NOTE: Amazon FSX for NetApp ONTAP 資源不會顯示在「 IAM 資源」頁面�
 . 選取 * 搜尋 * 。
 
 
-.接下來呢？
-找到您要尋找的資源之後、您可以完成下列任一動作：
-
-* <<associate-resource,將資源與其他資料夾和專案建立關聯>>
-* <<view-folders-and-projects,檢視與資源相關聯的資料夾和專案>>
-* <<remove-resource,從資料夾或專案中移除資源>>
-
-
 
 
 == 將資源與資料夾和專案建立關聯
@@ -83,6 +75,9 @@ link:task-iam-associate-connectors.html["瞭解如何將 Connector 與資料夾�
 
 若要識別組織階層中資源的可用位置、您可以檢視與該資源相關聯的資料夾和專案。
 
+
+NOTE: 如果需要確定哪些組織成員可以訪問資源，您可以link:task-iam-manage-folders-projects.html#view-associated-resources-members["檢視可存取與資源相關之資料夾和專案的成員"]。
+
 .步驟
 . 從「 * 資源 * 」頁面、瀏覽至表格中的資源、選取image:icon-action.png["這是三個並排點的圖示"]、然後選取 * 檢視詳細資料 * 。
 
@@ -91,11 +86,8 @@ link:task-iam-associate-connectors.html["瞭解如何將 Connector 與資料夾�
 
 image:screenshot-iam-resource-details.png["資源詳細資料頁面的螢幕擷取畫面、顯示與組織正下方專案相關的資源。"]
 
-.接下來呢？
-* 您可以<<associate-resource,將資源與其他專案或資料夾建立關聯>>。
-* 您可以<<remove-resource,從特定資料夾或專案中移除資源>>。
-* 如果需要確定哪些組織成員可以訪問資源，您可以link:task-iam-manage-folders-projects.html#view-associated-resources-members["檢視可存取與資源相關之資料夾和專案的成員"]。
 
+NOTE: 如果需要確定哪些組織成員可以訪問資源，您可以link:task-iam-manage-folders-projects.html#view-associated-resources-members["檢視可存取與資源相關之資料夾和專案的成員"]。
 
 
 
@@ -103,8 +95,8 @@ image:screenshot-iam-resource-details.png["資源詳細資料頁面的螢幕擷�
 
 若要從資料夾或專案移除資源、您需要移除資料夾或專案與資源之間的關聯。移除關聯後、組織成員將無法再從資料夾或專案管理資源。
 
-.關於這項工作
-如果您想要從整個組織中移除探索到的資源、則需要從 BlueXP  畫布中移除工作環境。
+
+NOTE: 如果您想要從整個組織中移除探索到的資源、則需要從 BlueXP  畫布中移除工作環境。
 
 .步驟
 . 從「 * 資源 * 」頁面、瀏覽至表格中的資源、選取image:icon-action.png["這是三個並排點的圖示"]、然後選取 * 檢視詳細資料 * 。

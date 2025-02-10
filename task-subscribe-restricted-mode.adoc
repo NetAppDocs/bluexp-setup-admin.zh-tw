@@ -4,7 +4,7 @@ permalink: task-subscribe-restricted-mode.html
 keywords: subscribe, subscription, marketplace subscription, paygo, contract, annual contract 
 summary: 從雲端供應商的市場訂閱 BlueXP 、以每小時或每年合約的速度支付 BlueXP 服務費用。如果您向 NetApp 購買授權、您也需要訂閱市場方案。您的授權一律會先收費、但如果您超過授權容量或授權期限到期、則會以每小時費率收費。 
 ---
-= 訂閱 BlueXP （受限模式）
+= 訂閱 BlueXP  資料服務（受限模式）
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,11 +16,13 @@ summary: 從雲端供應商的市場訂閱 BlueXP 、以每小時或每年合約
 [role="lead"]
 從雲端供應商的市場訂閱 BlueXP 、即可按每小時費率（ PAYGO ）或透過年度合約支付 BlueXP 服務費用。如果您向 NetApp （ BYOL ）購買授權、您也需要訂閱市場方案。您的授權一律會先收費、但如果您超過授權容量或授權期限到期、則會以每小時費率收費。
 
-市場訂閱可在受限模式下為下列 BlueXP 服務收費：
+市場訂閱可在受限模式下為下列 BlueXP  資料服務收費：
 
 * 備份與還原
-* 分類
 * Cloud Volumes ONTAP
+* 分層
+* 勒索軟體保護
+* 災難恢復
 
 
 .開始之前
@@ -41,7 +43,7 @@ video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 您必須選取與 Connector 相關聯的認證。您無法將市場訂閱與 BlueXP 相關的認證建立關聯。
 
 +
-image:screenshot_associate_subscription.png["一組現有認證資料的動作功能表快照。"]
+image:screenshot_aws_configure_subscription.png["一組現有認證資料的動作功能表快照。"]
 
 . 若要將認證與現有訂閱建立關聯，請從下拉式清單中選取訂閱，然後選取 * 設定 * 。
 . 若要將認證與新訂閱建立關聯、請選取 * 新增訂閱 > 繼續 * 、然後依照 AWS Marketplace 中的步驟進行：
@@ -74,14 +76,14 @@ BlueXP  以這項新訂閱取代組織或帳戶中所有認證的現有訂閱�
 --
 .步驟
 . 在 BlueXP 主控台的右上角、選取「設定」圖示、然後選取 * 認證 * 。
-. 選取一組認證的動作功能表、然後選取 * 關聯訂閱 * 。
+. 選取一組認證的動作功能表，然後選取 * 設定訂閱 * 。
 +
 您必須選取與 Connector 相關聯的認證。您無法將市場訂閱與 BlueXP 相關的認證建立關聯。
 
 +
 image:screenshot_azure_add_subscription.png["一組現有認證資料的動作功能表快照。"]
 
-. 若要將認證與現有訂閱建立關聯、請從下拉式清單中選取訂閱、然後選取 * 關聯 * 。
+. 若要將認證與現有訂閱建立關聯，請從下拉式清單中選取訂閱，然後選取 * 設定 * 。
 . 若要將認證與新訂閱建立關聯、請選取 * 新增訂閱 > 繼續 * 、然後依照 Azure Marketplace 中的步驟進行：
 +
 .. 出現提示時、請登入您的Azure帳戶。
@@ -119,11 +121,8 @@ video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
 --
 .步驟
 . 在 BlueXP 主控台的右上角、選取「設定」圖示、然後選取 * 認證 * 。
-. 選取一組認證的動作功能表、然後選取 * 關聯訂閱 * 。
-+
-image:screenshot_gcp_add_subscription.png["一組現有認證資料的動作功能表快照。"]
-
-. 若要將認證與現有訂閱建立關聯、請從下拉式清單中選取 Google Cloud 專案和訂閱、然後選取 * Associate* 。
+. 選取一組認證的動作功能表，然後選取 * 設定訂閱 * 。需要新的螢幕擷取畫面（ TS ）image:screenshot_gcp_add_subscription.png["一組現有認證資料的動作功能表快照。"]
+. 若要使用選取的認證設定現有訂閱，請從下拉式清單中選取 Google Cloud 專案和訂閱，然後選取 * 設定 * 。
 +
 image:screenshot_gcp_associate.gif["Google Cloud 專案的快照、以及 Google Cloud 認證的訂閱內容。"]
 

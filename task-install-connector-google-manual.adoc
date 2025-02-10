@@ -28,6 +28,15 @@ Connector 是在雲端網路或內部部署網路中執行的 NetApp 軟體、�
 Connector 軟體必須在符合特定作業系統需求、 RAM 需求、連接埠需求等的主機上執行。
 
 專用主機:: 與其他應用程式共用的主機不支援 Connector 。主機必須是專屬主機。
++
+--
+主機可以是任何符合下列大小需求的架構。
+
+* * CPU ： * 8 核心或 8 個 vCPU
+* * RAM ： * 32 GB
+
+
+--
 Hypervisor:: 需要經過認證可執行支援作業系統的裸機或託管 Hypervisor 。
 [[podman-versions]] 作業系統與容器需求:: 在標準模式或受限模式下使用 BlueXP  時、 BlueXP  支援連接器搭配下列作業系統。安裝 Connector 之前、需要使用容器協調工具。
 +
@@ -87,8 +96,6 @@ Docker Engine 23.0.6 至 26.0.0
 
 
 --
-CPU:: 8 個核心或 8 個 vCPU
-RAM:: 32GB
 Google Cloud 機器類型:: 符合上述 CPU 和 RAM 需求的執行個體類型。建議使用n2-Standard-8。
 +
 --

@@ -92,14 +92,7 @@ BlueXP Connector 支援下列 Linux 作業系統。
 
 請注意下列關於 RHEL 8 和 9 支援的資訊：
 
-限制::
-+
---
-* 當 Connector 安裝在 RHEL 8 或 9 主機上時、 BlueXP 備份與還原會限制單一檔案還原和勒索軟體掃描。如需詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-limitations.html["BlueXP 備份與還原的已知限制"^]
-* 如果您在內部部署的 RHEL 8 或 9 主機上安裝 Connector 、則支援 BlueXP 分類。如果 RHEL 8 或 9 主機位於 AWS 、 Azure 或 Google Cloud 、則不支援此功能。
-
-
---
+限制:: 如果您在內部部署的 RHEL 8 或 9 主機上安裝 Connector 、則支援 BlueXP 分類。如果 RHEL 8 或 9 主機位於 AWS 、 Azure 或 Google Cloud 、則不支援此功能。
 容器協調工具:: 在 RHEL 8 或 9 主機上安裝 Connector 時、必須使用 Podman 作為容器協調工具。RHEL 8 和 9 不支援 Docker Engine 。
 部署模式:: 在標準模式、受限模式和私有模式下使用 BlueXP 時、支援 RHEL 8 和 9 。
 支援的 Connector 版本:: 從下列 Connector 版本開始、即可支援 RHEL 8 和 9 ：

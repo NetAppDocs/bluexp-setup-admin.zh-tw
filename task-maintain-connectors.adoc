@@ -33,8 +33,10 @@ TIP: 如果您有現有的 Connector 、您應該知道 link:reference-connector
 
 CPU 和 RAM 需求如下：
 
-CPU:: 8 個核心或 8 個 vCPU
-RAM:: 32GB
+主機可以是任何符合這些規模需求的架構。
+
+* * CPU ： * 8 核心或 8 個 vCPU
+* * RAM ： * 32 GB
 
 
 link:reference-connector-default-config.html["瞭解連接器的預設組態"]。

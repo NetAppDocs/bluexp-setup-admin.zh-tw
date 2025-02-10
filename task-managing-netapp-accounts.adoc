@@ -14,9 +14,9 @@ summary: 透過新增使用者、建立自動化服務帳戶、新增工作區�
 
 
 [role="lead"]
-當您以受限模式或私人模式使用 BlueXP  時、您將使用 BlueXP  帳戶 _ 來管理使用者及組織資源。當您建立帳戶時、帳戶只會包含單一管理員使用者和工作區。您可以透過新增使用者、建立自動化服務帳戶、新增工作區等方式來管理帳戶、以符合您的需求。
+在私有模式中使用 BlueXP  時，您將使用 BlueXP  帳戶 _ 來管理使用者及組織資源。當您建立帳戶時、帳戶只會包含單一管理員使用者和工作區。您可以透過新增使用者、建立自動化服務帳戶、新增工作區等方式來管理帳戶、以符合您的需求。
 
-如果您是以標準模式使用 BlueXP  、就不會有 BlueXP  帳戶。您將改為使用 BlueXP  身分識別與存取管理（ IAM ）來管理 BlueXP  組織。
+如果您在標準模式或受限模式下使用 BlueXP  ，則不會有 BlueXP  帳戶。您將改為使用 BlueXP  身分識別與存取管理（ IAM ）來管理 BlueXP  組織。
 
 * link:concept-identity-and-access-management.html["瞭解 BlueXP  IAM"]
 * link:concept-modes.html["瞭解 BlueXP 部署模式"]

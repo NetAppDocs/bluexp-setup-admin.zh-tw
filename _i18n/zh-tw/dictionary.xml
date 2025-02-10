@@ -464,8 +464,6 @@
   <block id="bbf3330385f894cd7bd34b34e4c36d6c" category="list-text">支援的作業系統</block>
   <block id="1aa77ca522dde8d598ae9c2372a7494b" category="paragraph">這些作業系統的英文版本支援 Connector 。</block>
   <block id="1b21b0d71706897b69f108572c444d40" category="list-text">Hypervisor</block>
-  <block id="2b55387dd066c5bac646ac61543d152d" category="list-text">CPU</block>
-  <block id="e53619c1fe611a51eeeb8d148ba6e532" category="list-text">RAM</block>
   <block id="38522fbf43585538a7a55ea25460e779" category="list-text">AWS EC2 執行個體類型</block>
   <block id="6cd56a4cc4ddbbfd2bc9d57de5d788aa" category="list-text">金鑰配對</block>
   <block id="0a772cdeecb207bdf7ffd5850a8d59bd" category="list-text">/opt 中的磁碟空間</block>
@@ -1051,7 +1049,6 @@
   <block id="209e33f8aa50ade8c82e5bc82a8c023d" category="section-title">將 Marketplace 訂閱與 Google Cloud 認證建立關聯</block>
   <block id="0307a12e5749f8dd930472ee78f69d2c" category="list-text">在 BlueXP 主控台的右上角、選取「設定」圖示、然後選取 * 認證 * 。</block>
   <block id="0d28acbceed906f52a206d0f3fb0add2" category="inline-image-macro">一組現有認證資料的動作功能表快照。</block>
-  <block id="ea765af20d763fe16d94ba9ef03fd31b" category="paragraph"><block ref="ea765af20d763fe16d94ba9ef03fd31b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fff6f5125be05a94543d2e88dbd30b27" category="inline-image-macro">Google Cloud 專案的快照、以及 Google Cloud 認證的訂閱內容。</block>
   <block id="cab980518d03aa36afc924b709828a6e" category="paragraph"><block ref="cab980518d03aa36afc924b709828a6e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7a0df3203d8f6522d2b39b5f4c38db03" category="admonition">在您完成下列步驟之前、請先確認您的Google Cloud帳戶擁有「帳單管理」權限、以及BlueXP登入權限。</block>
@@ -2488,7 +2485,6 @@
   <block id="4f75e9590de3cece316768ef4b82f1ed" category="paragraph">如需詳細資訊、請參閱<block ref="c186ea5d7dffe196818c2e5a7f99ad62" category="inline-link-rx"></block></block>
   <block id="7061e8aac5780f13c42d7f3d3010b5c2" category="inline-link-macro">瞭解如何建立連接器</block>
   <block id="4affaad75ff37743ed549d6641de07e8" category="paragraph">您必須先建立連接器、才能變更BlueXP設定。 <block ref="ffb61fe647da5972e7e78ecadafdfb45" category="inline-link-macro-rx"></block>。</block>
-  <block id="583059f51a0b347f747db9f8d2421392" category="paragraph"><block ref="583059f51a0b347f747db9f8d2421392" category="inline-image-macro-rx" type="image"></block></block>
   <block id="eceb74088d706d5484df6b70296f87ad" category="paragraph">在BlueXP中編輯AWS認證資料、方法是變更帳戶類型（AWS金鑰或承擔角色）、編輯名稱、或自行更新認證資料（金鑰或角色ARN）。</block>
   <block id="608e5d2c6ae29eafd4acefb54d76730a" category="admonition">您無法編輯與Connector執行個體相關聯之執行個體設定檔的認證資料。</block>
   <block id="a53da898c0e5410eb934bcf693e8290e" category="admonition">您無法刪除與連接器執行個體相關聯之執行個體設定檔的認證。</block>
@@ -2655,10 +2651,7 @@
   <block id="13348442cc6a27032d2b4aa28b75a5d3" category="cell">搜尋</block>
   <block id="285c4c5f9756d9707fc1afed457a8b43" category="summary">連接器的Azure安全性群組需要傳入和傳出規則。當您從 BlueXP 建立 Connector 時、 BlueXP 會自動建立此安全性群組。您需要為所有其他安裝選項設定此安全性群組。</block>
   <block id="60a24477cd4bc1d96c88b21629d8cd7c" category="summary">從雲端供應商的市場訂閱 BlueXP 、以每小時或每年合約的速度支付 BlueXP 服務費用。如果您向 NetApp 購買授權、您也需要訂閱市場方案。您的授權一律會先收費、但如果您超過授權容量或授權期限到期、則會以每小時費率收費。</block>
-  <block id="7280e590fc25414ce879506ed16e2a62" category="doc">訂閱 BlueXP （標準模式）</block>
   <block id="f4abcc0682712b312b347ed2a4b32165" category="paragraph">從雲端供應商的市場訂閱 BlueXP 、即可按每小時費率（ PAYGO ）或透過年度合約支付 BlueXP 服務費用。如果您向 NetApp （ BYOL ）購買授權、您也需要訂閱市場方案。您的授權一律會先收費、但如果您超過授權容量或授權期限到期、則會以每小時費率收費。</block>
-  <block id="56246b5433f690a35c74ed45a296e993" category="paragraph">市場訂閱可為下列 BlueXP 服務收費：</block>
-  <block id="8219b1ea282823d830f661117796ac3d" category="paragraph">訂閱 BlueXP 涉及將市場訂閱與與 Connector 相關的雲端認證建立關聯。如果您遵循「標準模式入門」工作流程、則應該已經有 Connector 。若要深入瞭解、請檢視 <block ref="ce6d43255d920acadadb7e3862aee0b0" category="inline-link-macro-rx"></block>。</block>
   <block id="7561d35e392b638f4fb5bc5f72459710" category="paragraph">您必須選取與 Connector 相關聯的認證。您無法將市場訂閱與 BlueXP 相關的認證建立關聯。</block>
   <block id="53043f0a6d597ccfe179296cc8ded9c0" category="inline-link">管理 Cloud Volumes ONTAP 的 BYOL 容量型授權</block>
   <block id="fe58f6b68f2391f47e7f19d45735226a" category="list-text"><block ref="fe58f6b68f2391f47e7f19d45735226a" category="inline-link-rx"></block></block>
@@ -2667,8 +2660,6 @@
   <block id="e3fd5027f5754ca33b0f205f3239ffbf" category="list-text"><block ref="e3fd5027f5754ca33b0f205f3239ffbf" category="inline-link-rx"></block></block>
   <block id="2bd1bfde12dacc81686c7c76ab937dbc" category="list-text"><block ref="2bd1bfde12dacc81686c7c76ab937dbc" category="inline-link-rx"></block></block>
   <block id="1ec77dbe2fe8675dd025e595535feb02" category="list-text"><block ref="1ec77dbe2fe8675dd025e595535feb02" category="inline-link-rx"></block></block>
-  <block id="033749020c175fc0ec8206a7654a4cec" category="doc">訂閱 BlueXP （受限模式）</block>
-  <block id="ba66b75d479f2289bcf99d989de6e0b1" category="paragraph">市場訂閱可在受限模式下為下列 BlueXP 服務收費：</block>
   <block id="d639d0a55c1a57a909ac7ffab5f941c6" category="paragraph">訂閱 BlueXP 涉及將市場訂閱與與 Connector 相關的雲端認證建立關聯。如果您遵循「開始使用受限模式」工作流程、則您應該已經擁有 Connector 。若要深入瞭解、請檢視 <block ref="2d9421fac12c9ac9462f27b55d118c68" category="inline-link-macro-rx"></block>。</block>
   <block id="9816c573c33f4a6c99fc578d678ba65a" category="summary">Connector的Google Cloud防火牆規則需要傳入和傳出規則。當您從 BlueXP 建立 Connector 時、 BlueXP 會自動建立此安全性群組。您需要為所有其他安裝選項設定此安全性群組。</block>
   <block id="aa414a57d6f1347fc5212beb06655a8e" category="paragraph">連接器的預先定義防火牆規則會開啟所有傳出流量。如果可以接受、請遵循基本的傳出規則。如果您需要更嚴格的規則、請使用進階的傳出規則。</block>
@@ -2839,13 +2830,10 @@
   <block id="05498c836fbd4349a752efbb54e8949c" category="list-text">選取 * 「憑證與機密」 &gt; 「新用戶端機密」 * 。</block>
   <block id="fa12509cfb8e8ccded16e2a254e988c4" category="list-text">選取*「Add*」。</block>
   <block id="c6233dcd0500982eabc73e85f42efc41" category="list-text">選取 * 新增認證 * 、然後依照精靈中的步驟進行。</block>
-  <block id="6372aab032a410c40af497b1755aa8b2" category="list-text">選取一組認證的動作功能表、然後選取 * 關聯訂閱 * 。</block>
-  <block id="5aa5ca3c4ae1419b335323e6ee592b93" category="list-text">若要將認證與現有訂閱建立關聯、請從下拉式清單中選取訂閱、然後選取 * 關聯 * 。</block>
   <block id="875d095c260fa8c96e0e69a41dd336b7" category="list-text">若要將認證與新訂閱建立關聯、請選取 * 新增訂閱 &gt; 繼續 * 、然後依照 Azure Marketplace 中的步驟進行：</block>
   <block id="12975d5f412a47bef9db3c7a4d365814" category="list-text">選取 * 訂閱 * 。</block>
   <block id="9dc9a5b2f23fe90a0fd71125f3034dfd" category="list-text">填寫表單並選擇 * 訂閱 * 。</block>
   <block id="3221538307211e131f96e1a83b1a5235" category="list-text">訂閱程序完成後、請選取 * 立即設定帳戶 * 。</block>
-  <block id="497002c594b6f249087bf6b22381ee4d" category="list-text">若要將認證與現有訂閱建立關聯、請從下拉式清單中選取 Google Cloud 專案和訂閱、然後選取 * Associate* 。</block>
   <block id="ba192d211ab8fe6aceb98f59e685d1bb" category="list-text">如果您尚未訂閱、請選取 * 新增訂閱 &gt; 繼續 * 、然後依照 Google Cloud Marketplace 中的步驟進行。</block>
   <block id="375b5c037ddde62b74d4b30381271828" category="list-text">在快顯對話方塊中、選取 * 註冊 NetApp 、 Inc.*</block>
   <block id="dcb058618377cff08193ee6990096f07" category="list-text">選取 * 存取控制（ IAM ） * &gt; * 新增 * &gt; * 新增角色指派 * 。</block>
@@ -3601,8 +3589,6 @@
   <block id="06e657c37e762cbeb9edc676ff32181d" category="doc">支援的 Linux 作業系統變更</block>
   <block id="a5dacfcdb1adb3167b081f091b368732" category="section-title">支援 RHEL 8 和 9</block>
   <block id="e646e16bee8b32e6ea29e30d01970a6c" category="list-text">限制</block>
-  <block id="12cde487ed6dcd882cede6dc73a2a96f" category="inline-link">BlueXP 備份與還原的已知限制</block>
-  <block id="7dffd01ec33485e74fcb637e0b8fe15a" category="list-text">當 Connector 安裝在 RHEL 8 或 9 主機上時、 BlueXP 備份與還原會限制單一檔案還原和勒索軟體掃描。如需詳細資訊、請參閱<block ref="a84971be17ca73ce2bed9722547a4b2a" category="inline-link-rx"></block></block>
   <block id="b6417b62aacc6d16c1ae7a79d851d413" category="list-text">如果您在內部部署的 RHEL 8 或 9 主機上安裝 Connector 、則支援 BlueXP 分類。如果 RHEL 8 或 9 主機位於 AWS 、 Azure 或 Google Cloud 、則不支援此功能。</block>
   <block id="b71010c70a84a098ff97c54119ce9797" category="list-text">在 RHEL 8 或 9 主機上安裝 Connector 時、必須使用 Podman 作為容器協調工具。RHEL 8 和 9 不支援 Docker Engine 。</block>
   <block id="6949300ff5b5cf6bb192114a06c923bb" category="list-text">部署模式</block>
@@ -3803,8 +3789,6 @@
   <block id="09fcc3c3a46a63684b907c89bb2e4b7b" category="cell">2024 年 7 月 18 日</block>
   <block id="4736cb006ef02fa673f618379e2106bd" category="cell">2024 年 7 月 1 日（版本 1.33 ）</block>
   <block id="8009eebf05fd33b87750f8b4048986f7" category="cell">2024 年 6 月 10 日</block>
-  <block id="eefc3c2b6ca2400b2ae57e8da8247c03" category="list-text">8 個核心或 8 個 vCPU</block>
-  <block id="911ede8df5585598c294830dafe276fa" category="list-text">32GB</block>
   <block id="3cb4677fb343d8a6f3ab8d904462fda9" category="list-text">符合上述 CPU 和 RAM 需求的執行個體類型。我們建議使用 t3.2 x 大型。</block>
   <block id="021caa7094e7de94c50c2e35da292351" category="list-text">符合上述 CPU 和 RAM 需求的執行個體類型。我們建議您使用 Standard_D8s_v3 。</block>
   <block id="bff17a7a57b9d5cdc97a4f823a72230f" category="list-text">符合上述 CPU 和 RAM 需求的執行個體類型。建議使用n2-Standard-8。</block>
@@ -4135,10 +4119,8 @@
   <block id="d2d6f4fd74e2ac2b843a4f202e5a89b6" category="doc">使用 BlueXP  的身分識別聯盟來啟用單一登入</block>
   <block id="194f68541f58f6c331eacf4db74f4f78" category="summary">BlueXP  身分識別與存取管理（ IAM ）可讓您控制組織資源的存取。</block>
   <block id="d135d1b6a10879ca27887c632f4576d7" category="doc">瞭解 BlueXP  身分識別與存取管理</block>
-  <block id="4c68d7a9d2f72cab48af82d15bdd22b9" category="paragraph">BlueXP  身分識別與存取管理（ IAM ）可讓您組織及控制對 NetApp 資源的存取。您可以根據組織的階層來組織資源。例如、您可以依地理位置、站台或業務單位來組織資源。接著您可以將權限指派給階層特定部分的成員、以防止存取階層其他部分的資源。</block>
   <block id="81ac1402c03d0a47ef27fe0243ef45dc" category="inline-link-macro">深入瞭解 BlueXP  IAM 的推出</block>
   <block id="5fdbce3d2319aac7495f83deb2cfb4ec" category="paragraph">BlueXP  IAM 取代並強化 BlueXP  帳戶先前提供的功能。<block ref="05afd8790c123b20ba2a3355efdad456" category="inline-link-macro-rx"></block>。</block>
-  <block id="35a6ef4b2983f2c48bb7abdcd826e67f" category="paragraph">在標準模式下使用 BlueXP  時、支援 BlueXP  IAM 。如果您是以受限模式或私人模式使用 BlueXP  、則可以使用 BlueXP  _account_ 來管理使用者和資源。</block>
   <block id="03dc9106de5affc832d68c188393146d" category="section-title">BlueXP  IAM 的運作方式</block>
   <block id="c070b3ed0873722a725505fd8f648c60" category="paragraph">BlueXP  IAM 可讓您定義哪些成員具有組織階層特定部分的權限、藉此授予組織資源的存取權。例如、成員可以擁有專案管理權限、讓專案擁有五個相關資源。</block>
   <block id="7d5499ec968e6c97c7264ba95116b2d6" category="paragraph">使用 BlueXP  IAM 時、您將管理下列元件：</block>
@@ -4254,8 +4236,6 @@
   <block id="352b89440d5beff7b1d3a05b715d29f3" category="paragraph">BlueXP  提供三種部署模式。每種模式的輸出連線需求、部署位置、安裝程序、驗證方法、可用的資料和儲存服務、以及收費方法各不相同。</block>
   <block id="3d725c77d5fb40a1e06f0ec1f3adb6bf" category="cell">BlueXP  身分識別與存取管理</block>
   <block id="f9fe38e333c2ca53b0f55bf1d77ff415" category="summary">BlueXP  帳戶可讓您在使用受限模式或私有模式時、在隔離的工作區中管理使用者及組織資源。</block>
-  <block id="da7e730676141f6182a7c02360c7231a" category="paragraph">當您在受限模式或私人模式下使用 BlueXP  時、您將使用 BlueXP  帳戶 _ 來管理使用者、並在隔離的 _stustronity_ 中組織資源。例如、使用者群組可以在工作區中部署及管理 Cloud Volumes ONTAP 工作環境、而在不同工作區中管理工作環境的使用者則看不到該工作區。</block>
-  <block id="4d5a6c38dc6ac6534bdcc6ab92e89432" category="paragraph">如果您是以標準模式使用 BlueXP  、就不會有 BlueXP  帳戶。您將改為使用 BlueXP  身分識別與存取管理（ IAM ）來管理 BlueXP  組織。</block>
   <block id="a5a81005322e1187e396e2f1252dca71" category="inline-link-macro">瞭解 BlueXP  IAM</block>
   <block id="0a3f88a939958973fc19097a4507c320" category="list-text"><block ref="0a3f88a939958973fc19097a4507c320" category="inline-link-macro-rx"></block></block>
   <block id="4d82a1ec1af02725042c8c785564ee7a" category="inline-link">Amazon FSX for NetApp ONTAP 產品</block>
@@ -4273,7 +4253,6 @@
   <block id="cdf60a7d13d1d74e115661d87ae97a3f" category="list-text">Ubuntu 24.04 LTS</block>
   <block id="b6f945763d62ac8e8f24fb52111049ee" category="summary">BlueXP  身分識別與存取管理包含數個預先定義的角色、您可以指派給組織成員。</block>
   <block id="9a4737feea9b9d5b10fea0c8478ac45b" category="doc">預先定義的 BlueXP  IAM 角色和權限</block>
-  <block id="58f6c76de5e396f2cb8175b3a9628439" category="paragraph">BlueXP  身分識別與存取管理（ IAM ）包含數個預先定義的角色、您可以在不同的資源階層層級中指派給組織成員。指派這些角色之前、您應該先瞭解每個角色所包含的權限。</block>
   <block id="6a476d78ce3a8169d99c99c3285fa106" category="section-title">組織管理員</block>
   <block id="b35f7cd4ff8cf3b50f8a254ff8eaab4d" category="list-text">擁有此角色的成員可在 BlueXP  中完成下列動作：</block>
   <block id="b7468effacd77ea7140c661bd2dce11a" category="list-text">管理其擁有權限的專案和資料夾中的所有工作環境</block>
@@ -4291,7 +4270,6 @@
   <block id="ef8eb5bec0bebce3b4cac1797fe12831" category="list-text"><block ref="ef8eb5bec0bebce3b4cac1797fe12831" category="inline-link-macro-rx"></block></block>
   <block id="24fff469b53b3c0caad8c3049aada3bc" category="doc">為 BlueXP  主控台準備網路</block>
   <block id="30f60d67f457bb040dffde52197a54da" category="list-title">相關資訊</block>
-  <block id="d7d13641730495fed0b36f7a2cfb5657" category="paragraph">當您以受限模式或私人模式使用 BlueXP  時、您將使用 BlueXP  帳戶 _ 來管理使用者。您可以從下列角色中選擇、為帳戶中的使用者提供特定權限：帳戶管理、工作區管理、法規遵循檢視器和 SnapCenter 管理</block>
   <block id="1e3e0a42c3e9d5acf6234aecce4a2177" category="cell">使用 BlueXP  服務</block>
   <block id="e351b985910352ae6ebe3e03c618e2b9" category="paragraph"><block ref="e351b985910352ae6ebe3e03c618e2b9" category="inline-link-macro-rx"></block></block>
   <block id="32bf39c0f4f8e0ff3b8343a1c55eccc0" category="inline-link">數位錢包文件</block>
@@ -4313,8 +4291,6 @@
   <block id="acc5d74b9730b17cf679fd826310c607" category="paragraph">這些認證與您的特定 BlueXP  帳戶序號相關聯。屬於 BlueXP  組織或帳戶的使用者可從 * 支援 &gt; NSS 管理 * 存取這些認證。</block>
   <block id="607d5f9332bf0fe8fef9f43fcf68c22e" category="paragraph">「支援儀表板」可讓您新增及管理 NetApp 支援網站帳戶、以便在 BlueXP  組織或帳戶層級與 BlueXP  搭配使用。</block>
   <block id="72c38f83a9b4d27b609d1241238f7402" category="summary">當您以受限模式或私人模式設定 BlueXP  時、系統會提示您建立帳戶。如果您需要多個帳戶、則需要使用 Tenancy API 來建立這些帳戶。</block>
-  <block id="6c51e0305a581ec236781db2baf30bac" category="paragraph">當您以受限模式或私人模式設定 BlueXP  時、系統會提示您建立 BlueXP  帳戶 _ 、讓您能夠管理使用者並組織資源。您可能只需要這個帳戶、但如果您的企業需要多個帳戶、則需要使用 Tenancy API 來建立其他帳戶。</block>
-  <block id="770867b0b0a2458eaea7ebb70fd87cd2" category="paragraph">如果您是以標準模式使用 BlueXP  、就不會有 BlueXP  帳戶。您將改用 BlueXP  身分識別與存取管理（ IAM ）來管理組織。<block ref="0a3f88a939958973fc19097a4507c320" category="inline-link-macro-rx"></block>。</block>
   <block id="98d90e398fc56688ddc647e5f49075ec" category="paragraph">工作環境清單位於您在服務頂端橫幅中選取的 BlueXP  組織（或帳戶）、專案（或工作區）和 Connector 範圍內。</block>
   <block id="aeaa07e62e0681df3c00b18be44e1799" category="summary">如果貴組織的成員需要在另一個專案中使用 Connector 、您需要從 BlueXP  IAM 建立關聯。</block>
   <block id="9c1561cceda808c78453a453f4175e14" category="doc">將 BlueXP  Connector 與其他資料夾和專案建立關聯</block>
@@ -4415,7 +4391,6 @@
   <block id="c16f1c2a54634bdad6dee177f8131ef5" category="list-text">選取 * 套用 *</block>
   <block id="19df46354fac1ffd06065f8388377f84" category="section-title">修改成員對資料夾或專案的存取權</block>
   <block id="710dfcb474fc8ee49343c58686c8aded" category="paragraph">修改成員對資料夾或專案的存取權、以確保適當的成員能夠存取與資料夾或專案相關的資源。</block>
-  <block id="91686a8345015e73c2baa91ffbe5ecd6" category="list-text">在 * 編輯 * 頁面上、選取 * 存取 * 。</block>
   <block id="904a2691210bbfe6dfc1b17db516d71c" category="list-text">修改成員存取權：</block>
   <block id="b49630790a232696bd0f62fa51014e55" category="list-text">* 新增成員 * ：選取您要新增至資料夾或專案的成員、然後指派角色給他們。</block>
   <block id="a4f439c667db8a94e9e3159df300905d" category="list-text">* 變更成員的角色 * ：對於組織管理員以外的任何角色成員、請選取其現有角色、然後選擇新角色。</block>
@@ -4454,24 +4429,19 @@
   <block id="ef40c18024e43a3effd7c56a4ee5e3b8" category="list-text">* 選取組織、資料夾或專案 * ：選擇成員應該擁有權限的資源階層層級。</block>
   <block id="6a4cc2830754c534e4d4ede0d53dd765" category="list-text">您只能從具有管理員權限的資料夾和專案中進行選擇。</block>
   <block id="78693d86cfd1ee5b776ba655fad718c2" category="list-text">如果您選取組織或資料夾、成員將擁有組織或資料夾內所有內容的權限。</block>
-  <block id="cb604814075da4e4c030eb2c875d037c" category="list-text">* 選取角色 * ：選擇一個角色，為成員提供與所選組織、資料夾或專案相關的資源權限。</block>
   <block id="edd875bb1109a9f8286024a3b4794e94" category="list-text">如果您選擇了組織、您可以選擇 * 資料夾或專案管理員 * 以外的任何角色。</block>
   <block id="4361a448252604e85e36e94b87d2292d" category="list-text">如果您選擇了文件夾或項目，則可以從 * 組織 admin* 以外的任何角色中進行選擇。</block>
-  <block id="6bf9e2157bec6406efede412c9a7f3d8" category="list-text">* 新增角色 * ：如果您想要提供組織內其他資料夾或專案的存取權、請選取 * 新增角色 * 、指定其他資料夾或專案、然後選擇角色。</block>
-  <block id="e7cafc47c0f061eadce634a20633d476" category="paragraph">BlueXP  會將使用者新增至組織。</block>
   <block id="2c83e58d75bb3a8e196e882a13fad2b6" category="paragraph">使用者應收到 NetApp BlueXP  的電子郵件。電子郵件中包含成員可用來存取 BlueXP  的資訊。</block>
   <block id="18ceb42f6a360de22895a255078e9829" category="open-title">服務帳戶</block>
   <block id="3cf18c3e40a1206110812c369cc39dee" category="list-text">* 實體類型 * ：選擇 * 服務帳戶 * 。</block>
   <block id="79cb42be7b748ee1bfa8b8bda6dcca1e" category="list-text">* 服務帳戶名稱 * ：輸入服務帳戶的名稱。</block>
   <block id="f67f980ba471dba7c5f95c824dd43bf6" category="list-text">下載或複製用戶端 ID 和用戶端機密。</block>
   <block id="8294c35652607973fb1c045f68ed7198" category="paragraph">用戶端機密只會顯示一次、而且不會儲存在任何位置。複製或下載機密、並安全地儲存。請注意、稍後您可以視需要重新建立用戶端 ID 和用戶端機密。</block>
-  <block id="7dd9ac3b82f77a633f44a54628281caa" category="paragraph">BlueXP  會將服務帳戶新增至您的組織。</block>
   <block id="043819e1bae944c0c66cfa39d92d377a" category="section-title">檢視組織成員</block>
   <block id="85f7f0a38e4d8907b849af9be7f0523b" category="paragraph">您可以檢視 BlueXP  組織中所有成員的清單。若要瞭解成員可以使用哪些資源和權限、您可以在組織資源階層的不同層級上檢視指派給成員的角色。</block>
   <block id="4bd98620ebfd813b73be1bb04c31e63a" category="paragraph">「 * 成員 * 」頁面會顯示兩種成員類型的詳細資料：使用者帳戶和服務帳戶。</block>
   <block id="ac926c3351f3a5bf1296ce5e7341b403" category="paragraph">您組織的成員會出現在 * 成員 * 表格中。</block>
   <block id="9c537de44875b062f96c3c19b5d405f8" category="list-text">在 * 成員 * 頁面中、瀏覽至表格中的成員、選取<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>、然後選取 * 檢視詳細資料 * 。</block>
-  <block id="dfd8d68ee86525e48890a53eb4a7ef69" category="paragraph">BlueXP  會顯示成員的詳細資料、包括成員在組織資源階層中擁有權限的資料夾和專案。</block>
   <block id="6f3b2d366fd74358540895c5d487f7fc" category="paragraph">以下是指派給資料夾之 _Folder 或專案管理員角色的成員範例、可提供資料夾中三個專案的權限。</block>
   <block id="a6102229f11a975b96c232bac6fe4518" category="inline-image-macro">擁有專案和資料夾權限的成員之詳細資料頁面的螢幕擷取畫面。</block>
   <block id="77029620a91c1437c153c854b16400d8" category="paragraph"><block ref="77029620a91c1437c153c854b16400d8" category="inline-image-macro-rx" type="image"></block></block>
@@ -4480,58 +4450,26 @@
   <block id="3d5d541246a5be6ff781d877024461b5" category="paragraph"><block ref="3d5d541246a5be6ff781d877024461b5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c2a2a4211749f24853726e3f3a3f7a50" category="inline-link-macro">檢視與特定資料夾或專案相關的所有成員</block>
   <block id="1b6d4c30361c139d898bdf90eabbe5db" category="paragraph"><block ref="f0a4010d1241fe1a26982be23d0ea714" category="inline-link-macro-rx"></block>。</block>
-  <block id="776acd2cbd38043ee8a559500a3c08b8" category="section-title">管理成員的權限</block>
-  <block id="33c733a7c79ecaf94ff72d68d1380f99" category="paragraph">角色定義指派給組織、資料夾或專案層級成員的權限。每個組織成員都可以在組織階層的不同層級指派角色。它可以是相同的角色或不同的角色。例如、您可以為專案 1 指派成員角色 A 、專案 2 指派角色 B 。</block>
   <block id="07e7a075870b5fd1a97b81d0f2032e95" category="admonition">被指派組織管理員角色的成員無法被指派任何其他角色。他們已經擁有整個組織的權限。</block>
-  <block id="1d54adc5a01cf744fbd32cf11ffe9bb7" category="section-title">新增角色至成員</block>
   <block id="ffb0fd8d3db2f95c2bb0961f852f2b9f" category="paragraph">新增適用於組織、資料夾或專案層級的角色、為成員提供組織中的其他權限。</block>
   <block id="276d24e9485b31bc0a3bf0758ebc947d" category="list-text">在 * 成員 * 頁面中、瀏覽至表格中的成員、選取<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>、然後選取 * 新增角色 * 。</block>
   <block id="5f4f2140800f25dcab7691933bfbdbdb" category="list-text">若要新增角色、請完成對話方塊中的步驟：</block>
   <block id="a09853f10b1e18c9e2f541f7e1763305" category="list-text">選取 * 新增角色 * 。</block>
-  <block id="f79c177f403a3ca6381c6f78b9609b80" category="paragraph">BlueXP  新增角色。成員現在擁有您所選組織、資料夾或專案中資源的權限。</block>
-  <block id="5d4215cb3f8195257d8c88bf98595abe" category="section-title">從一個角色變更為另一個角色</block>
-  <block id="e771bf7ac33be61bdf00c2ea7fc03998" category="paragraph">如果您需要修改成員的權限、可以在組織、資料夾或專案層級變更與該成員相關聯的角色。</block>
-  <block id="d89b2042f4ce3e364f18c0eb45c99356" category="paragraph">如果您需要變更組織中多個成員的角色、可以使用大量動作一次完成所有變更。</block>
-  <block id="a18b11a5572ce31c0b380d71d8df5bb9" category="open-title">一名成員</block>
-  <block id="845e17597d8d3da152c11dabc243f4e4" category="list-text">在表格中、瀏覽至組織、資料夾或專案、然後選取新角色。</block>
-  <block id="c4550179ec4d126514726a79ad76c8a1" category="paragraph">BlueXP  會在組織、資料夾和專案層級更新與該成員相關聯的角色。</block>
-  <block id="5394f1457d9d63e0201a5fd504346f00" category="open-title">多個成員</block>
-  <block id="e399336058a14bf4ff08ec67a09ed7a3" category="list-text">在 * 組織 * 頁面中、瀏覽至表格中的專案或資料夾、選取 <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>* 編輯組織 * 、 * 編輯資料夾 * 或 * 編輯專案 * 。</block>
-  <block id="215b65c0c6b889c16ead175b98f917d5" category="list-text">選取所有成員或個別選取兩個或多個成員。</block>
-  <block id="dad55b15ee639e06e0f30982722e1635" category="list-text">選取 * 定義角色 * 。</block>
-  <block id="69cc5b0ed95d422ff6c1d3d52de8c785" category="inline-image-macro">編輯對話方塊中 Access 部分的螢幕擷取畫面、可讓您在選取兩個或多個成員之後、選擇「定義角色」動作。</block>
-  <block id="7cf468e24cab5bc3e7517a362545f945" category="paragraph"><block ref="7cf468e24cab5bc3e7517a362545f945" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9288e22101210bbf855b72095560a27c" category="list-text">選取您要指派給成員的角色、然後選取 * 定義 * 。</block>
-  <block id="27e7adcace4a5cbdc1da6d0d229248d7" category="paragraph">BlueXP  會更新您所選所有成員的角色。</block>
-  <block id="528a4b75a900c412adab255cf7a4df50" category="section-title">移除資料夾或專案的權限</block>
   <block id="dc291d6979f5152f329545d84fe8f44e" category="paragraph">您可以移除成員的角色、以移除成員對特定資料夾或專案的權限。</block>
   <block id="4038b7041781142ee383a5f32eb9a5ad" category="paragraph">如果成員在您的組織中只有一個資料夾或專案的權限、您就無法移除該角色。您有兩種選擇：</block>
   <block id="46008f3c0187ee8bc97921f4799f037a" category="list-text">如果您希望成員擁有資源階層其他部分的權限、您必須先新增該角色、然後刪除現有角色。</block>
-  <block id="c5a9e7f2d1f93fabc381b65634e94749" category="list-text">如果您不想讓成員擁有任何權限、只要將成員從組織中移除即可。</block>
   <block id="a55ecc4bf928da93f86f41bb1fa482cc" category="inline-image-macro">垃圾桶的圖示</block>
-  <block id="776326a0ac90b669316cb0e9cbab55c0" category="list-text">在表格中、瀏覽至資料夾或專案層級、然後選取<block ref="5aa3fbfa4a030d3d0fb7677a91fd2eba" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="fbfd5aa47697579a000ac3aa3884cd1a" category="paragraph">BlueXP  會在資料夾或專案層級移除該成員的權限。</block>
   <block id="a657b530c9804722859fcb4792bf4466" category="section-title">重新建立服務帳戶的認證</block>
   <block id="4e62056c599bc8dfbb5e6f1f5a707256" category="paragraph">您可以隨時重新建立服務帳戶的認證（用戶端 ID 和用戶端機密）。如果您遺失認證、或企業要求您在一段時間後輪換安全認證、則可以重新建立認證。</block>
   <block id="0bf91f2741972566e7b71facbe211ab9" category="paragraph">重新建立認證會刪除服務帳戶的現有認證、然後建立新的認證。您將無法使用先前的認證。</block>
   <block id="bb0f4333667b84217bd737a0e3fc6024" category="list-text">在 *Members （成員） * 表中，導航至服務帳戶，選擇<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>，然後選擇 *recreate Secrets （重新創建機密） * 。</block>
   <block id="8de213850e1e3dc79a14014382d25163" category="list-text">選取 * 重新建立 * 。</block>
-  <block id="fef720cdea9308393ab25d3fcc148e17" category="paragraph">新的用戶端 ID 和用戶端機密現在已與服務帳戶相關聯。</block>
   <block id="4137654b2b560bb6af478553cbc120b2" category="section-title">從組織中移除成員</block>
   <block id="05dc5a4527f82cde43f14fa38fb2640e" category="paragraph">您可能需要從組織中移除成員、例如、如果成員離開公司。</block>
-  <block id="5e7aeb8cbe9cdc031d92f74ef4d40fd0" category="paragraph">此工作不會刪除成員的 BlueXP  帳戶或 NetApp 支援網站帳戶。它只會從組織中移除成員及其相關權限。</block>
   <block id="0479745abf593369ddbda5e8df849e57" category="list-text">在 * 成員 * 頁面中、瀏覽至表格中的成員、選取<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>、然後選取 * 刪除使用者 * 。</block>
   <block id="6e49938f1c5b86ad879eeaf086442b08" category="list-text">確認您要從組織中移除成員。</block>
-  <block id="75e73ef4d25f9f9ea49c38a3bcb941e4" category="paragraph">BlueXP  會移除成員。如果該成員再次登入 BlueXP  、他們就無法再存取您的 BlueXP  組織。</block>
   <block id="2fe6c9d572351b2d4e0b387a62bdf1e2" category="summary">將資源與特定專案和資料夾建立關聯、以管理組織的資源階層。</block>
   <block id="98ca801aa8933a24531043c30c475e2e" category="section-title">檢視組織中的資源</block>
-  <block id="7e2927a58abcc62c9eb5c28962dc9573" category="paragraph">找到您要尋找的資源之後、您可以完成下列任一動作：</block>
-  <block id="d488db7f816284f6712caf2d76eb5169" category="inline-xref">檢視與資源相關聯的資料夾和專案</block>
-  <block id="ea450edd18061a7cc42c1dc5a73807e9" category="list-text"><block ref="725a161a6f11aca02e0e25e2ae9628c0" category="inline-xref-macro-rx"></block></block>
-  <block id="6a9d36cda6e7da452a233dae9f9b821c" category="inline-xref">將資源與其他資料夾和專案建立關聯</block>
-  <block id="e43736ff73ca6844bfafd7ef8dc58bad" category="list-text"><block ref="7d9c5683f2b3adedfbcf34a695515c4d" category="inline-xref-macro-rx"></block></block>
-  <block id="b6af3f20458abefb8743e926f21c0677" category="inline-xref">從資料夾或專案中移除資源</block>
-  <block id="1797f1c38c97687b6136c8e69786e0a2" category="list-text"><block ref="bb02d809bee1364f03f71b60d989a04d" category="inline-xref-macro-rx"></block></block>
   <block id="3d1bc41342a56d581edf9d1765f01a0b" category="list-text">使用任何可用選項來尋找您要尋找的資源：</block>
   <block id="48ca2619b5dca392dc3969df94469cf3" category="list-text">* 依資源名稱搜尋 * ：輸入文字字串並選取 * 新增 * 。</block>
   <block id="b2efca9e0863336ee0d7aa6af1771c24" category="list-text">* 平台 * ：選取一或多個平台、例如 Amazon Web Services 。</block>
@@ -4555,10 +4493,6 @@
   <block id="0d8f80667cd7bc86a6f6ea26c12d18b9" category="paragraph">下列範例顯示與一個專案相關的資源。</block>
   <block id="a46cbe82e9adff7ecc82d6eadb58aa97" category="inline-image-macro">資源詳細資料頁面的螢幕擷取畫面、顯示與組織正下方專案相關的資源。</block>
   <block id="7cadbb5f400f149f938a910df5c5cb0d" category="paragraph"><block ref="7cadbb5f400f149f938a910df5c5cb0d" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e4975c67206b991961fd4bcafcfdcb06" category="inline-xref">將資源與其他專案或資料夾建立關聯</block>
-  <block id="b2b8405c251505e73b6f299e51537cde" category="list-text">您可以<block ref="a442a7300de9bd550df7e0b303674dfb" category="inline-xref-macro-rx"></block>。</block>
-  <block id="50a6a7359fd63777aaa93f91ca89a8bf" category="inline-xref">從特定資料夾或專案中移除資源</block>
-  <block id="7c3a34fff9d504a76d85b9789ba5cda9" category="list-text">您可以<block ref="3afb050ceb060bcbe4b73cf3bf59470f" category="inline-xref-macro-rx"></block>。</block>
   <block id="69f07c715f27603d2e0d422829ad4190" category="inline-link-macro">檢視可存取與資源相關之資料夾和專案的成員</block>
   <block id="7e77a0d272b850a5b082c2fed060594a" category="list-text">如果需要確定哪些組織成員可以訪問資源，您可以<block ref="7b75e3c2af3e500cfb657c057dbc7c5e" category="inline-link-macro-rx"></block>。</block>
   <block id="02daa88c7c6888cad8b055624d764072" category="section-title">從資料夾或專案移除資源</block>
@@ -4610,7 +4544,6 @@
   <block id="3079cacc26f7b40554d23e060596a405" category="inline-link-macro">深入瞭解如何在 BlueXP  組織或帳戶中使用 NSS 認證</block>
   <block id="a24a552d29f91b8982fae044dc32dff5" category="paragraph"><block ref="fb2c227ba20c316c7f097a2784c0c843" category="inline-link-macro-rx"></block>。</block>
   <block id="a15dab64157b0024121a37b3726311bd" category="summary">透過新增使用者、建立自動化服務帳戶、新增工作區等方式來管理您的 BlueXP  帳戶。</block>
-  <block id="ad91be9e96aa62a4fcd46230362092d6" category="paragraph">當您以受限模式或私人模式使用 BlueXP  時、您將使用 BlueXP  帳戶 _ 來管理使用者及組織資源。當您建立帳戶時、帳戶只會包含單一管理員使用者和工作區。您可以透過新增使用者、建立自動化服務帳戶、新增工作區等方式來管理帳戶、以符合您的需求。</block>
   <block id="b89af40709c02abb8e0b01ae305dfd7f" category="summary">您可以監控BlueXP執行的作業狀態、查看是否有任何需要解決的問題。您可以在時間軸、通知中心中檢視狀態、或是將通知傳送至您的電子郵件。</block>
   <block id="57bee919903f0c92a41c5582519db779" category="doc">監控 BlueXP  作業</block>
   <block id="5d4df6d8936b94b888789b2712dcb953" category="paragraph">下表提供時間表與通知中心的比較、讓您瞭解每個項目的內容。</block>
@@ -4859,20 +4792,16 @@
   <block id="e444b5bc216b871d85a48d564b7ce0c4" category="paragraph">BlueXP  包含透過 SaaS 層提供的網路型主控台，資源與存取管理系統，可管理工作環境並啟用 BlueXP  雲端服務的 Connectors ，以及可滿足業務需求的不同部署模式。</block>
   <block id="c7c20b1a51c664c1850bab1281296aca" category="paragraph">BlueXP  提供三種部署模式。_ 標準模式 _ 運用 BlueXP  軟體即服務（ SaaS ）層來提供完整功能。如果您的環境有安全性和連線限制，則 _ 限制模式 _ 和 _ 私有模式 _ 會限制 BlueXP  SaaS 層的輸出連線。</block>
   <block id="cb9e27422b343274f9974efbc9c3dbc1" category="section-title">平台角色</block>
-  <block id="eda0520752c1c966551048d00dbbcc59" category="paragraph">BlueXP  IAM 包含兩個平台角色：組織管理和資料夾或專案管理。兩個 BlueXP  IAM 平台角色的主要差異在於範圍。組織管理員角色在所有資料夾和專案中都具有權限，而資料夾或專案管理員只在指派給他們的資料夾或專案中擁有權限。</block>
   <block id="6573eb5e7a9033869897566e8b1b5f6a" category="paragraph">資料夾或專案管理員角色無法建立連接器。</block>
   <block id="36dc01ca540c36d8a66ee2b32bacb1b6" category="cell">資料夾或專案管理員</block>
   <block id="10c51a836e78385fbf6ad623ad658ee0" category="cell">建立連接器</block>
   <block id="1feb614364d6d0a180fddcd6e40a0223" category="cell">建立，修改或刪除工作環境（使用 BlueXP  畫布新增或探索新資源）</block>
-  <block id="d76dfeebf19d1a2fc8c868ca8643d76d" category="cell">建立專案 / 資料夾，包括重新命名，刪除及編輯</block>
   <block id="15a95a870efdd28ed28ff5a317681ee4" category="cell">指派角色並新增使用者</block>
-  <block id="8af970b54258caf527bed05d8f62f054" category="cell">將資源和連接器與資料夾和專案建立關聯</block>
   <block id="bc76903dd69fe38bc3b58cc4ef4a02c8" category="list-text">大型跨國組織在 BlueXP  中扮演組織角色的範例</block>
   <block id="c89eaf90b9f27cb0ed6b4d2e288716ba" category="list-text">XYZ Corporation 是一家跨國企業，其目標是根據北美，歐洲和亞太地區等地理區域，將資料儲存資源的存取區隔開來。他們希望每個區域都能完全掌控自己的資源，同時維持集中監督。</block>
   <block id="38e4f28b5f78613457381816eb4a925e" category="paragraph">為達成此目標，指派 XYZ 公司 BlueXP  組織管理員角色的人員會建立初始工作環境，然後在 BlueXP  中為每個區域建立個別的資料夾。每個區域的資料夾都包含與該區域相關的專案（含相關資源）。組織管理員會在每個個別區域指派 BlueXP  使用者資料夾 / 專案管理員角色。</block>
   <block id="b232bda0fe68f193c9d3c56d75b4bb04" category="paragraph">完成初始設定後，具有資料夾或專案管理員角色的區域管理員即可建立新的工作環境，並在其區域內新增使用者。這些區域管理員也可以新增 / 移除 / 重新命名指派給他們的資料夾和專案。組織管理員會繼承任何新工作環境或資源的權限，維持整個組織的儲存使用率可見度。</block>
   <block id="35cbd88f43ce85ef7ed6866daa2c6066" category="section-title">資料服務角色</block>
-  <block id="cc3c87c04d3731bf67b97240bf975b52" category="paragraph">資料服務角色可以在任何專案或資料夾中完成其工作。</block>
   <block id="1f86b1e4048d088ce153a6f451fb30d6" category="section-title">2024 年 12 月 9 日</block>
   <block id="6dbd17d362d540a01bdcf61fb73192e3" category="paragraph"><block ref="6dbd17d362d540a01bdcf61fb73192e3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8aed33df97a7e5d16736c205973e6239" category="paragraph"><block ref="8aed33df97a7e5d16736c205973e6239" category="inline-image-macro-rx" type="image"></block></block>
@@ -4961,4 +4890,90 @@
   <block id="6b8568e4d37788a668f2c72ae872b9a0" category="inline-link">深入瞭解如何建立支援案例</block>
   <block id="704c39cac41bd3edb3c4d1fc1b619590" category="paragraph"><block ref="8380621c8f80b9213ea8e8be1675d5a4" category="inline-link-rx"></block>。</block>
   <block id="2b513ec32615ab736c1cab315db516f8" category="section-title">2025 年 1 月 13 日</block>
+  <block id="c933dbf26cb872c859f8dbb81999eff8" category="paragraph">主機可以是任何符合下列大小需求的架構。</block>
+  <block id="9fc9c9f38ac896bc2bd0e275904e2b5d" category="list-text">* CPU ： * 8 核心或 8 個 vCPU</block>
+  <block id="35116a9bfaf82c27806c3c9614e3380e" category="list-text">* RAM ： * 32 GB</block>
+  <block id="c0317bb7a0bafdead64d85dfbc6db80e" category="paragraph">主機可以是任何符合這些規模需求的架構。</block>
+  <block id="2b67fdb5c1c9190b50c83306e4021a2c" category="paragraph"><block ref="2b67fdb5c1c9190b50c83306e4021a2c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e52d2dcc592495f70c82c59eee98424f" category="list-text">選取一組認證的動作功能表，然後選取 * 設定訂閱 * 。需要新的螢幕擷取畫面（ TS ）<block ref="ea765af20d763fe16d94ba9ef03fd31b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ef5d79e3ae5671ca28e5f6e3b02eed27" category="list-text">若要使用選取的認證設定現有訂閱，請從下拉式清單中選取 Google Cloud 專案和訂閱，然後選取 * 設定 * 。</block>
+  <block id="8e64dfb0168516c0e7f7880ae745072a" category="doc">連接器 3.9.49</block>
+  <block id="f5c64d3f640238b8d1e1ed7062c5561f" category="paragraph">目前、 3.9.49 版本適用於標準模式和受限模式。</block>
+  <block id="36cef198e9fac4b4a194f5e01017b8d1" category="list-text">支援指派多個角色給使用者。</block>
+  <block id="6708a31732ccaf29d9ba72b524255e3e" category="list-text">角色現在與以下三種類別之一相關聯：平台，應用程式和資料服務。</block>
+  <block id="035261365b324f2942fd56c2f10f6ed5" category="inline-link">瞭解 IAM 角色</block>
+  <block id="ff73dba782f434133f0fc81382cc8398" category="list-text">兩個新角色與應用程式類別相關聯：儲存檢視器和儲存管理員。<block ref="ac81447e1825c80c6c47ed7167f706b3" category="inline-link-rx"></block></block>
+  <block id="67012c1335c677ff94cd2d777a3c7213" category="list-text">IAM 現已用於 BlueXP  受限模式</block>
+  <block id="2a3e7caa563b2592e27f3890e8d21765" category="section-title">受限模式現在使用 BlueXP  IAM</block>
+  <block id="4fafa85612a8b2fff96d593213d6a0ec" category="paragraph">BlueXP  身分識別與存取管理（ IAM ）現已在限制模式下使用。</block>
+  <block id="2f73a8cbcbf617bd5a78738929bbe5b3" category="paragraph">BlueXP  身分識別與存取管理（ IAM ）是一種資源與存取管理模式，可在標準模式和受限模式下使用 BlueXP  時，取代並強化 BlueXP  帳戶先前提供的功能。</block>
+  <block id="029ade287eade250f2c9612d148e1fad" category="paragraph-title">BlueXP  IAM 如何在受限模式下影響您現有的帳戶</block>
+  <block id="8f2f21c16dc203c77301e868fae6ff8c" category="paragraph">在標準和受限模式下使用 BlueXP  時，支援 BlueXP  IAM 。如果您是以私人模式使用 BlueXP  ，則會繼續使用 BlueXP  _account_ 來管理工作區，使用者和資源。</block>
+  <block id="71d8d71c8cd5b49b9c78b0ae89ca1b5f" category="paragraph">BlueXP  身分識別與存取管理（ IAM ）可讓您組織及控制對 NetApp 資源的存取。您可以根據組織的階層來組織資源。例如、您可以依地理位置、站台或業務單位來組織資源。然後，您可以將 pIAM 角色指派給階層特定部分的成員，以防止存取階層其他部分的資源。</block>
+  <block id="492bd3385d9d03385f8098817a8d0196" category="paragraph">在標準模式和受限模式下使用 BlueXP  時，支援 BlueXP  IAM 。如果您是以私人模式使用 BlueXP  ，則可以使用 BlueXP  _account_ 來管理使用者和資源。</block>
+  <block id="5d733a1853078585aec87e3ef2524bec" category="paragraph">在私有模式下使用 BlueXP  時，您將使用 BlueXP  帳戶 _ 來管理使用者，並在隔離的 _stustronal_ 工作區中組織資源。例如、使用者群組可以在工作區中部署及管理 Cloud Volumes ONTAP 工作環境、而在不同工作區中管理工作環境的使用者則看不到該工作區。</block>
+  <block id="73f420193f5136d2f1d09a09d6f9aabb" category="paragraph">如果您在標準模式或受限模式下使用 BlueXP  ，則不會有 BlueXP  帳戶。您將改為使用 BlueXP  身分識別與存取管理（ IAM ）來管理 BlueXP  組織。</block>
+  <block id="0a53964e7a92fbb432f9201620004f32" category="paragraph">BlueXP  身分識別與存取管理（ IAM ）包含數個預先定義的角色、您可以在不同的資源階層層級中指派給組織成員。指派這些角色之前、您應該先瞭解每個角色所包含的權限。角色分為三類：平台，應用程式和資料服務。</block>
+  <block id="5e1d7b4c2de3509435462a15161a1c7f" category="paragraph">平台角色是您可以指派給使用者的最廣泛角色，並允許廣泛的 BlueXP  管理權限，包括指派角色和新增使用者，以及執行所有 BlueXP  功能。BlueXP  IAM 包含兩個平台角色：組織管理和資料夾或專案管理。兩個 BlueXP  IAM 平台角色的主要差異在於範圍。</block>
+  <block id="64c67a7c22b0ed8bf6e82d2edf341abc" category="paragraph">允許使用者不受限制地存取組織內的所有專案和資料夾，將成員新增至任何專案或資料夾，以及執行任何 BlueXP  工作和使用任何資料服務。</block>
+  <block id="08fe1197004da98b5b31b7f36eb2ecd2" category="section-title">資料夾或專案管理員</block>
+  <block id="d35d08b038947991ac552eb86cf0f88e" category="paragraph">允許使用者不受限制地存取指派給他們的特定專案和資料夾。可以將成員新增至他們所管理的專案或資料夾，以及執行任何 BlueXP  工作，並使用其指派的資料夾或專案中的任何資料服務。</block>
+  <block id="11631a24c36e1c2153a968d2579a70d4" category="section-title">平台角色比較表</block>
+  <block id="7a6a3038937ff2733afeba79c5939221" category="cell">建立專案 / 資料夾，包括刪除</block>
+  <block id="9190c2227acc58d22f06cf5bd5f7f517" category="cell">重新命名現有專案 / 資料夾</block>
+  <block id="f713962a8902c207873eb4046423a1bd" category="cell">將資源與資料夾和專案建立關聯</block>
+  <block id="894e6dbd6e66d6ab2ca99432100d70c4" category="cell">將連接器與資料夾和專案建立關聯</block>
+  <block id="aa3ec14d13bb1138309921733478241a" category="cell">從資料夾和專案中移除連接器</block>
+  <block id="a45abfc4b47949975fbb4a65b1c69386" category="cell">管理連接器（編輯憑證，設定等）</block>
+  <block id="3780f4c88e2a0b66a6db0bbed86d39da" category="section-title">應用程式角色</block>
+  <block id="a8cd96485fd6550be6397e836024466a" category="paragraph">應用程式角色可讓您存取 BlueXP  應用程式，例如 Active IQ 數位顧問（也稱為數位顧問）。</block>
+  <block id="316bb1d5ed8c0cbdba665a6326ba1bde" category="section-title">儲存管理員</block>
+  <block id="5aa668ad17ac4c6dff7f61a5848484d4" category="paragraph">讓使用者能夠在 BlueXP  中執行儲存管理功能，例如軟體更新，以及建立和刪除 BlueXP  工作環境。</block>
+  <block id="5c15172341e03d32ed74659c371f8934" category="list-text">可檢視 BlueXP  畫布。可建立及管理 BlueXP  連接器。擁有 BlueXP  儲存健全狀況和治理功能的讀取 / 寫入存取權，包括下列項目：</block>
+  <block id="3e13881bc2ca947e3961fcf40ae74430" category="list-text">軟體更新（可執行軟體更新）</block>
+  <block id="072d1a387472fb47fdfa33e48ff08ffd" category="list-text">永續發展儀表板</block>
+  <block id="1d63b1d397254c4d509474883c1cb2b9" category="section-title">儲存檢視器</block>
+  <block id="9af31d1128df8146e70487ad0eba97f4" category="paragraph">提供 BlueXP  健全狀況與治理功能的唯讀存取權。此角色通常指派給負責監控組織儲存資源健全狀況的使用者。具有此角色的使用者可以在 BlueXP  中檢視多個應用程式，以建立軟體更新計畫，效率計畫，以及檢視整體儲存健全狀況。</block>
+  <block id="a191e428602026277274d53cff237c2c" category="list-text">具有 BlueXP  儲存健全狀況和治理功能的唯讀存取權，包括：</block>
+  <block id="0920501bc6df68e157496ea6dfe73a04" category="list-text">軟體更新（可下載升級計畫）</block>
+  <block id="09246652e91bee267cf93f6b3c2e9a32" category="paragraph">資料服務角色可讓使用者存取組織，專案或資料夾內的資料服務。</block>
+  <block id="d85398008b1578fbbd6e3fb398a3b5a6" category="paragraph">當您以私人模式使用 BlueXP  時，您將使用 BlueXP  帳戶 _ 來管理使用者。您可以從下列角色中選擇、為帳戶中的使用者提供特定權限：帳戶管理、工作區管理、法規遵循檢視器和 SnapCenter 管理</block>
+  <block id="392a6856ccd2e3342fd3b66da6f5f4f4" category="paragraph">當您在私有模式中設定 BlueXP  時，系統會提示您建立 BlueXP  帳戶 _ ，讓您能夠管理使用者並組織資源。您可能只需要這個帳戶、但如果您的企業需要多個帳戶、則需要使用 Tenancy API 來建立其他帳戶。</block>
+  <block id="1d54d188c16d54d03c291e397f5f5d3c" category="paragraph">如果您在標準模式或受限的情況下使用 BlueXP  ，則不會有 BlueXP  帳戶。您將改用 BlueXP  身分識別與存取管理（ IAM ）來管理組織。<block ref="0a3f88a939958973fc19097a4507c320" category="inline-link-macro-rx"></block>。</block>
+  <block id="9c671793f6e87d755268257623fd8ca3" category="paragraph">若要管理使用者及其權限，您必須指派下列其中一個角色：</block>
+  <block id="e315fd1b95b71681931eeb8955a37b50" category="paragraph">具有此角色的使用者可以管理所有成員</block>
+  <block id="c51c480c437b7c47a9f2adb67928e089" category="paragraph">具有此角色的使用者只能管理指定資料夾或專案的成員</block>
+  <block id="a5aee08a089c901f8eb42f2d09ad05cd" category="paragraph">您可以直接從 BlueXP  新增服務帳戶。不過，使用者必須先註冊 BlueXP  帳戶，才能將其新增至組織或指派角色。</block>
+  <block id="e882dcb285b727741daef45bc38e2d7b" category="paragraph">若要管理使用者及其權限，您必須具有 * 組織管理員 * 角色或 * 資料夾或專案管理員 * 角色。請記住， * 資料夾或專案管理員 * 角色的使用者只能管理其擁有管理員權限的資料夾或專案成員。</block>
+  <block id="516abd045e4dfab41688be05ed0e24b2" category="list-text">* 選擇類別 * ，然後選擇一個 * 角色 * ，該角色 * 爲成員提供與所選組織，文件夾或項目關聯的資源的權限。</block>
+  <block id="5fe83be1c3cd8b5af9b7f3c7fae6d1ad" category="list-text">* 新增角色 * ：如果您想要提供組織內其他資料夾或專案的存取權，或是在所選區域中授予使用者進一步的權限，請選取 * 新增角色 * ，指定其他資料夾或專案或其他角色類別，然後選擇角色。</block>
+  <block id="58f4b315c1bb5704a3e82ffd26d7c1a8" category="paragraph">從組織中移除成員並不會刪除成員的 BlueXP  帳戶或 NetApp 支援網站帳戶。它只會從組織中移除成員及其相關權限。</block>
+  <block id="71a902b9bd8bd5f915e170707c50e813" category="section-title">管理成員角色</block>
+  <block id="e4195c5655315762128bb9e5d89d8f01" category="paragraph">組織成員可以在每個層級和多個資源階層層級上指派角色。您可以指派成員在 BlueXP  組織中與其職責相關的角色。例如，如果您的資源階層中有七個代表各自專案（工作環境），您可以為其中三個專案指派儲存管理員角色，然後為其餘專案指派另一個成員儲存管理員。另一種可能是將整個組織的儲存管理員角色指派給一位使用者。您可以根據組織的需求來管理成員角色。</block>
+  <block id="bb6a1c303d753a3800aa29f0149ef2da" category="paragraph">您可以取消指派成員的角色，新增新角色或兩者。角色定義指派給組織、資料夾或專案層級成員的權限。您可以指派成員在 BlueXP  組織中與其職責相關的角色。</block>
+  <block id="6cbcd95c7c747face3f074348da093de" category="paragraph">每個組織成員都可以在組織階層的不同層級指派角色。它可以是相同的角色或不同的角色。例如、您可以為專案 1 指派成員角色 A 、專案 2 指派角色 B 。</block>
+  <block id="34025ad60edecbf8612a359edaca8684" category="section-title">檢視指派給成員的角色</block>
+  <block id="914f7dbf9ae27653eb2ab889d315d7b8" category="paragraph">您可以檢視成員，以驗證他們目前指派的角色。</block>
+  <block id="787919896edfa2afa28d9030c2bd8ee2" category="list-text">在表格中，展開您要檢視成員指派角色的組織，資料夾或專案相關列，然後在 * 角色 * 欄中選取 * 檢視 * 。</block>
+  <block id="3f4fb5bf409c65d0cdc07e16e971923b" category="section-title">指派角色</block>
+  <block id="868c665304c1cc003d592c37eb2d9284" category="inline-link-macro">瞭解 IAM 角色</block>
+  <block id="e55e8648841d578e12ecc4f02dcf8c7e" category="list-text">* 選擇類別 * ： BlueXP  將角色分成三類：平台，應用程式和資料服務。<block ref="95a2a1c0b49231381e965b8dd6b00696" category="inline-link-macro-rx"></block>。</block>
+  <block id="c46547e3019dfd55748629f99ac2f49c" category="list-text">選取 * 角色 * ：選擇一個角色，為成員提供與所選組織，資料夾或專案相關的資源權限。</block>
+  <block id="5f3c99e4fd9b4f957adfdcdde4d5a1de" category="list-text">* 新增角色 * ：如果您想要提供組織內其他資料夾或專案的存取權，請選取 * 新增角色 * ，指定其他資料夾或專案或角色類別，然後選取角色類別和對應的角色。</block>
+  <block id="068135177d9d1843118236d5f10dc5b7" category="section-title">變更成員的指派角色</block>
+  <block id="955a0a3e2fca13996f710db6f2fbe6a3" category="paragraph">您可以在組織，資料夾或專案層級變更的指派角色。成員可以在組織的不同層級擔任不同的角色。</block>
+  <block id="28e019f4a845184dbf1a98b3299252a4" category="list-text">在表格中，展開您要變更成員指派角色的組織，資料夾或專案相關列，然後在 * 角色 * 欄中選取 * 檢視 * ，以檢視指派給此成員的角色。</block>
+  <block id="4dfcfc5ce7a8e9f46e4eabc1e80c4d28" category="list-text">若要變更成員的角色，請在您要變更的角色旁選擇 * 變更 * 。您只能將此角色變更為相同角色類別中的角色。例如，您可以從一個應用程式角色變更為另一個應用程式角色。系統會要求您確認變更。</block>
+  <block id="9a3441a99feefccc201b51666c68d0d2" category="inline-image-macro">類似垃圾桶的圖示</block>
+  <block id="9410d39af130c313b964685327e24e7a" category="list-text">若要取消指派成員的角色，請選取角色旁的，<block ref="65d5e1d842da62aa3653eba17c2cb20e" category="inline-image-macro-rx" type="image"></block>以取消指派成員各自的角色。系統會要求您確認移除。</block>
+  <block id="1712db0afa6be365f3fb2fe0061eb0c7" category="section-title">取消指派成員的角色</block>
+  <block id="31ddf498fec35ac8707e5b28a896efa1" category="list-text">如果您不想讓成員擁有任何權限，則應將成員從組織中移除。</block>
+  <block id="34a938f284a603fceb6aa9e92a05299f" category="list-text">在表格中，瀏覽至資料夾或專案層級，然後選取<block ref="5aa3fbfa4a030d3d0fb7677a91fd2eba" category="inline-image-macro-rx" type="image"></block>。系統會要求您確認移除。</block>
+  <block id="cb78cc211125b48169ddebcb45d3029b" category="paragraph">在私有模式中使用 BlueXP  時，您將使用 BlueXP  帳戶 _ 來管理使用者及組織資源。當您建立帳戶時、帳戶只會包含單一管理員使用者和工作區。您可以透過新增使用者、建立自動化服務帳戶、新增工作區等方式來管理帳戶、以符合您的需求。</block>
+  <block id="545e0b69c795ac2990b49f290e8c1c99" category="doc">訂閱 BlueXP  資料服務（受限模式）</block>
+  <block id="bb53c4f02e33d64ba478ff18f8fb837e" category="paragraph">市場訂閱可在受限模式下為下列 BlueXP  資料服務收費：</block>
+  <block id="d406f894e93540ac3e08a4bdebcc5418" category="doc">訂閱 BlueXP  資料服務（標準模式）</block>
+  <block id="4c98c292f5ea23f8a2d9dd45741b9411" category="paragraph">市場訂閱可為下列 BlueXP  資料服務收費：</block>
+  <block id="dcaa51b19c3334da8a1c68178fddabbe" category="paragraph">訂閱 BlueXP  資料服務涉及將市場訂閱與與 Connector 相關聯的雲端認證建立關聯。如果您遵循「標準模式入門」工作流程、則應該已經有 Connector 。若要深入瞭解<block ref="ce6d43255d920acadadb7e3862aee0b0" category="inline-link-macro-rx"></block>，請檢視。</block>
+  <block id="c523b074da0b63e607578686184d5981" category="section-title">2025 年 10 月 2 日</block>
 </blocks>
