@@ -46,15 +46,6 @@ link:concept-modes.html["瞭解私有模式的運作方式"]。
 Connector 軟體必須在符合特定作業系統需求、 RAM 需求、連接埠需求等的主機上執行。
 
 專用主機:: 與其他應用程式共用的主機不支援 Connector 。主機必須是專屬主機。
-+
---
-主機可以是任何符合下列大小需求的架構。
-
-* * CPU ： * 8 核心或 8 個 vCPU
-* * RAM ： * 32 GB
-
-
---
 [[podman-versions]] 作業系統與容器需求:: 在私有模式下使用 BlueXP  時、 BlueXP  支援連接器搭配下列作業系統。安裝 Connector 之前、需要使用容器協調工具。
 +
 --
@@ -103,13 +94,8 @@ Docker Engine 23.0.6 至 26.0.0
 
 --
 Hypervisor:: 需要經過認證可執行支援作業系統的裸機或託管 Hypervisor 。
-
-
-主機可以是任何符合這些規模需求的架構。
-
-* * CPU ： * 8 核心或 8 個 vCPU
-* * RAM ： * 32 GB
-+
+CPU:: 8 個核心或 8 個 vCPU
+RAM:: 32GB
 AWS EC2 執行個體類型:: 符合上述 CPU 和 RAM 需求的執行個體類型。我們建議使用 t3.2 x 大型。
 Azure VM 大小:: 符合上述 CPU 和 RAM 需求的執行個體類型。我們建議您使用 Standard_D8s_v3 。
 Google Cloud 機器類型:: 符合上述 CPU 和 RAM 需求的執行個體類型。建議使用n2-Standard-8。
@@ -130,8 +116,6 @@ BlueXP  使用 `/opt`安裝 `/opt/application/netapp`目錄及其內容。
 BlueXP 需要此空間 `/var` 因為 Docker 或 Podman 是專為在此目錄中建立容器而設計。具體而言、他們會在中建立容器 `/var/lib/containers/storage` 目錄。外部掛載或 symlinks 無法用於此空間。
 
 --
-
-
 
 
 
