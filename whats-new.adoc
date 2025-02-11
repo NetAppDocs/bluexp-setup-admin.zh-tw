@@ -34,16 +34,14 @@ summary: 瞭解 BlueXP  管理功能的新功能： BlueXP  IAM 、 Connectors
 
 * 支援指派多個角色給使用者。
 * 角色現在與平台和資料服務這兩個類別之一相關聯。
-
-
-[]
-====
 * 角色現在與以下三種類別之一相關聯：平台，應用程式和資料服務。
 * 兩個新角色與應用程式類別相關聯：儲存檢視器和儲存管理員。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["瞭解 IAM 角色"]
 * IAM 現已用於 BlueXP  受限模式
 
 
-=== 受限模式現在使用 BlueXP  IAM
+
+
+==== 受限模式現在使用 BlueXP  IAM
 
 BlueXP  身分識別與存取管理（ IAM ）現已在限制模式下使用。
 
@@ -98,7 +96,11 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 .支援的部署模式
 在標準和受限模式下使用 BlueXP  時，支援 BlueXP  IAM 。如果您是以私人模式使用 BlueXP  ，則會繼續使用 BlueXP  _account_ 來管理工作區，使用者和資源。
 
-= 2025 年 1 月 13 日
+
+
+== 2025 年 1 月 13 日
+
+
 
 === 連接器 3.9.48
 
@@ -106,10 +108,14 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 
 目前、 3.9.48 版本適用於標準模式和受限模式。
 
+
+
 === BlueXP  身分識別與存取管理
 
 * 「資源」頁面現在會顯示未探索到的資源。未探索到的資源是 BlueXP  所知的儲存資源，但您尚未為其建立工作環境。例如，在數位顧問中顯示但尚未有工作環境的資源，會在「資源」頁面上顯示為未探索到的資源。
 * Amazon FSX for NetApp ONTAP 資源不會顯示在「 IAM 資源」頁面上，因為您無法將它們與 IAM 角色建立關聯。您可以在各自的畫布或工作負載上檢視這些資源。
+
+
 
 
 === 為其他 BlueXP  服務建立支援案例
@@ -124,9 +130,13 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html["深入瞭解如何建立支援案例"]。
 
-= 2024 年 12 月 16 日
 
-=== 新的安全端點以取得 Connector 映像
+
+== 2024 年 16 月 12 日
+
+
+
+=== 新的安全端點，以取得 Connector 映像
 
 當您安裝 Connector 或進行自動升級時， Connector 會聯絡儲存庫，以下載安裝或升級的映像。依預設， Connector 一律會連絡下列端點：
 
@@ -161,9 +171,13 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html["深入瞭�
 
 
 
-= 2024 年 12 月 9 日
 
-=== Connector 3.9.47
+
+== 2024 年 9 月 12 日
+
+
+
+=== 連接器 3.9.47
 
 此版本的 BlueXP  Connector 包含錯誤修正，以及在 Connector 安裝期間所接觸的端點變更。
 
@@ -174,11 +188,17 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html["深入瞭�
 
 安裝程式仍會聯絡 \https://mysupport 。 NetApp .com 。
 
+
+
 === BlueXP  身分識別與存取管理
 
 「連接器」頁面僅列出目前可用的「連接器」。它不再顯示您已移除的連接器。
 
-= 2024 年 11 月 26 日
+
+
+== 2024 年 26 月 11 日
+
+
 
 === 私有模式版本（ 3.9.46 ）
 
@@ -214,7 +234,11 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html["深入瞭�
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["瞭解如何在使用私有模式時升級 Connector"]
 
 
-= 2024 年 11 月 11 日
+
+
+== 2024 年 11 月 11 日
+
+
 
 === 連接器 3.9.46
 
@@ -222,19 +246,29 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html["深入瞭�
 
 目前、 3.9.46 版本適用於標準模式和受限模式。
 
-= IAM 專案的 ID
+
+
+=== IAM 專案的 ID
 
 您現在可以從 BlueXP  身分識別與存取管理檢視專案的 ID 。進行 API 呼叫時，您可能需要使用 ID 。
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-folders-projects.html#project-id["瞭解如何取得專案的 ID"]。
 
-= 2024 年 10 月 10 日
 
-=== Connector 3.9.45 修補程式
+
+== 2024 年 10 月 10 日
+
+
+
+=== 連接器3.9.45修補程式
 
 此修補程式包含錯誤修正。
 
-= 2024 年 10 月 7 日
+
+
+== 2024 年 7 月 10 日
+
+
 
 === BlueXP  身分識別與存取管理
 
@@ -289,6 +323,8 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-get-started.html["BlueXP  IAM 入門"]
 
 
+
+
 === 連接器 3.9.45
 
 此版本包含擴充的作業系統支援和錯誤修正。
@@ -300,7 +336,9 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements["View Connector 主機需求"]。
 
-= 支援使用 RHEL 主機的 SELinux
+
+
+=== 支援使用 RHEL 主機的 SELinux
 
 BlueXP  現在支援 Connector 搭配 Red Hat Enterprise Linux 主機、這些主機已在強制模式或允許模式下啟用 SELinux 。
 
@@ -314,7 +352,11 @@ BlueXP  現在支援 Connector 搭配 Red Hat Enterprise Linux 主機、這些�
 
 https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/using_selinux/getting-started-with-selinux_using-selinux["深入瞭解 SELinux"^]
 
-= 2024 年 9 月 30 日
+
+
+== 2024 年 9 月 30 日
+
+
 
 === 私有模式版本（ 3.9.44 ）
 
@@ -365,9 +407,13 @@ https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/using_s
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["瞭解如何在使用私有模式時升級 Connector"]
 
 
-= 2024 年 9 月 9 日
 
-=== Connector 3.9.44
+
+== 2024 年 9 月 9 日
+
+
+
+=== 連接器 3.9.44
 
 此版本包含 Docker Engine 26 支援、 SSL 憑證增強功能、以及錯誤修正。
 
@@ -389,7 +435,9 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.
 * 憑證主體替代名稱是主機機器的完整網域名稱（ FQDN ）
 
 
-=== RHEL 9.4 支援
+
+
+=== 支援 RHEL 9.4
 
 BlueXP  現在支援在標準模式或受限模式下使用 BlueXP  時、在 Red Hat Enterprise Linux 9.4 主機上安裝 Connector 。
 
@@ -403,7 +451,9 @@ BlueXP  現在支援在標準模式或受限模式下使用 BlueXP  時、在 
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["瞭解 Connector 對 RHEL 8 和 9 的支援"]。
 
-= 支援所有 RHEL 版本的 Podman 4.9.4
+
+
+=== 支援所有 RHEL 版本的 Podman 4.9.4
 
 所有支援版本的 Red Hat Enterprise Linux 現在都支援 Podman 4.9.4 。4.9.4 版先前僅支援 RHEL 8.10 。
 
@@ -413,7 +463,9 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-s
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["瞭解 Connector 對 RHEL 8 和 9 的支援"]。
 
-=== 更新的 AWS 和 Azure 權限
+
+
+=== 更新 AWS 和 Azure 權限
 
 我們更新了 Connector 的 AWS 和 Azure 原則、以移除不再需要的權限。這些權限與 BlueXP  邊緣快取、探索及管理 Kubernetes 叢集有關、截至 2024 年 8 月為止、這些叢集不再受到支援。
 
@@ -421,9 +473,13 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-s
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html#change-log["瞭解 Azure 政策有何改變"]。
 
 
-= 2024 年 8 月 22 日
 
-=== Connector 3.9.43 修補程式
+
+== 2024 年 8 月 22 日
+
+
+
+=== 連接器3.9.43修補程式
 
 我們更新了 Connector 以支援 Cloud Volumes ONTAP 9.15.1 版本。
 
@@ -441,7 +497,11 @@ Cloud Volumes ONTAP 支援虛擬機器磅秤集需要這些權限。如果您有
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["檢視 Connector 的 Azure 權限"]。
 
 
-= 2024 年 8 月 8 日
+
+
+== 2024 年 8 月 8 日
+
+
 
 === 連接器 3.9.43
 
@@ -449,7 +509,9 @@ Cloud Volumes ONTAP 支援虛擬機器磅秤集需要這些權限。如果您有
 
 3.9.43 版本適用於標準模式和受限模式。
 
-=== 更新的 CPU 和 RAM 需求
+
+
+=== 更新 CPU 和 RAM 需求
 
 為了提供更高的可靠性、並改善 BlueXP  和 Connector 的效能、我們現在需要額外的 CPU 和 RAM 來搭配 Connector 虛擬機器：
 
@@ -466,15 +528,23 @@ Cloud Volumes ONTAP 支援虛擬機器磅秤集需要這些權限。如果您有
 
 更新後的 CPU 和 RAM 需求適用於所有新的連接器。對於現有的連接器、建議增加 CPU 和 RAM 、以改善效能和可靠性。
 
-= 支援採用 RHEL 8.10 的 Podman 4.9.4
+
+
+=== 支援採用 RHEL 8.10 的 Podman 4.9.4
 
 在 Red Hat Enterprise Linux 8.10 主機上安裝 Connector 時、現在支援 Podman 4.9.4 版。
+
+
 
 === 身分識別聯盟的使用者驗證
 
 如果您使用與 BlueXP  的身分識別聯盟、首次登入 BlueXP  的每位使用者都必須填寫快速表單、以驗證其身分。
 
-= 2024 年 7 月 31 日
+
+
+== 2024 年 7 月 31 日
+
+
 
 === 私有模式版本（ 3.9.42 ）
 
@@ -531,9 +601,13 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-s
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["瞭解 BlueXP 中 Cloud Volumes ONTAP 管理的新功能"^]
 
 
-= 2024 年 7 月 15 日
 
-=== RHEL 8.10 支援
+
+== 2024 年 7 月 15 日
+
+
+
+=== 支援 RHEL 8.10
 
 BlueXP 現在支援在使用標準模式或受限模式的 Red Hat Enterprise Linux 8.10 主機上安裝 Connector 。
 
@@ -541,7 +615,11 @@ BlueXP 現在支援在使用標準模式或受限模式的 Red Hat Enterprise Li
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["瞭解 Connector 對 RHEL 8 和 9 的支援"]。
 
-= 2024 年 7 月 8 日
+
+
+== 2024 年 7 月 8 日
+
+
 
 === 連接器 3.9.42
 
@@ -549,7 +627,9 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-s
 
 3.9.42 版本適用於標準模式和受限模式。
 
-=== Docker Engine 更新要求
+
+
+=== 更新版 Docker Engine 需求
 
 當 Connector 安裝在 Ubuntu 主機上時、 Docker Engine 的最低支援版本現在是 13.0.6 。此前為 19.3.1 版。
 
@@ -557,19 +637,29 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-s
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements["View Connector 主機需求"]。
 
+
+
 === 現在需要電子郵件驗證
 
 新使用者現在必須先驗證其電子郵件地址、才能登入 BlueXP 。
 
-= 2024 年 6 月 12 日
 
-=== Connector 3.9.41
+
+== 2024 年 12 月 6 日
+
+
+
+=== 連接器 3.9.41
 
 此版本的 BlueXP Connector 包括少量的安全性改善和錯誤修正。
 
 3.9.41 版本適用於標準模式和受限模式。
 
-= 2024 年 6 月 4 日
+
+
+== 2024 年 4 月 6 日
+
+
 
 === 私有模式版本（ 3.9.40 ）
 
@@ -612,7 +702,11 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["瞭解 BlueXP 中 Cloud Volumes ONTAP 管理的新功能"^]
 
 
-= 2024 年 5 月 17 日
+
+
+== 2024 年 5 月 17 日
+
+
 
 === 連接器 3.9.40
 
@@ -645,13 +739,19 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-s
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["深入瞭解 AWS 本機區域支援"^]
 
 
-= 2024 年 4 月 22 日
 
-=== Connector 3.9.39
+
+== 2024 年 4 月 22 日
+
+
+
+=== 連接器 3.9.39
 
 此版本的 BlueXP Connector 包括少量的安全性改善和錯誤修正。
 
 目前、 3.9.39 版本適用於標準模式和受限模式。
+
+
 
 === AWS 建立 Connector 的權限
 
@@ -671,7 +771,11 @@ NOTE: 此原則僅包含從BlueXP啟動AWS中Connector執行個體所需的權�
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-bluexp.html#step-2-set-up-aws-permissions["瞭解如何設定 AWS 權限、從 AWS 建立 Connector"]。
 
-= 2024 年 4 月 11 日
+
+
+== 2024 年 4 月 11 日
+
+
 
 === Docker Engine 更新
 
@@ -679,7 +783,11 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-blue
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements["View Connector 主機需求"]。
 
-= 2024 年 3 月 26 日
+
+
+== 2024 年 3 月 26 日
+
+
 
 === 私有模式版本（ 3.9.38 ）
 
@@ -717,9 +825,13 @@ BlueXP 現已推出新的私有模式版本。此版本包含下列支援私有�
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["瞭解如何在使用私有模式時升級 Connector"]
 
 
-= 2024 年 3 月 8 日
 
-=== Connector 3.9.38
+
+== 2024 年 3 月 8 日
+
+
+
+=== 連接器 3.9.38
 
 目前、 3.9.38 版本適用於標準模式和受限模式。此版本包括 AWS 中的 IMDSv2 支援和 AWS 權限更新。
 
@@ -744,7 +856,9 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-require-imdsv2.html["瞭�
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["檢視 Connector 的 AWS 權限"]。
 
-=== 代理伺服器設定與 Cloud Volumes ONTAP 設定
+
+
+=== Proxy 設定和 Cloud Volumes ONTAP 設定
 
 Connector 的 Proxy 伺服器設定現在可從「 * 管理連接器 * 」頁面（標準模式）或「 * 編輯連接器 * 」頁面（限制模式和私有模式）取得。
 
@@ -754,13 +868,19 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html["�
 
 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-cvo-settings.png["螢幕擷取畫面、顯示「設定」功能表中可用的「 Cloud Volumes ONTAP 設定」選項。"]
 
-= 2024 年 2 月 15 日
 
-=== Connector 3.9.37
+
+== 2024 年 15 月 2 日
+
+
+
+=== 連接器 3.9.37
 
 此版本的 BlueXP Connector 包括少量的安全性改善和錯誤修正。
 
 目前、 3.9.37 版本適用於標準模式和受限模式。
+
+
 
 === 編輯名稱
 
@@ -770,9 +890,13 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 
 如果您以同盟連線或 NetApp 支援網站 帳戶登入、則不支援編輯您的名稱。
 
-= 2024 年 1 月 11 日
 
-=== Connector 3.9.36
+
+== 2024 年 1 月 11 日
+
+
+
+=== 連接器 3.9.36
 
 此版本包括下列雲端區域中的輕微改善、錯誤修正及 Connector 支援：
 
@@ -780,7 +904,11 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 * Google Cloud 中的沙烏地阿拉伯地區
 
 
-= 2023 年 12 月 5 日
+
+
+== 2023 年 12 月 5 日
+
+
 
 === 私有模式版本（ 3.9.35 ）
 
@@ -793,21 +921,33 @@ BlueXP 現已推出新的私有模式版本。此版本包含 3.9.35 版的 Conn
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["瞭解如何在使用私有模式時升級 Connector"]
 
 
-= 2023 年 11 月 8 日
+
+
+== 2023 年 8 月 11 日
+
+
 
 === 連接器 3.9.35
 
 此版本包含較小的安全性改善和錯誤修正。
 
-= 2023 年 10 月 6 日
+
+
+== 2023 年 6 月 10 日
+
+
 
 === 連接器 3.9.34
 
 此版本包含一些小改進和錯誤修復。
 
-= 2023 年 9 月 10 日
 
-=== Connector 3.9.33
+
+== 2023 年 9 月 10 日
+
+
+
+=== 連接器 3.9.33
 
 * 當您從 BlueXP 在 AWS 中建立 Connector 時、現在可以在金鑰配對欄位中搜尋、以便更輕鬆地找到您要與 Connector 執行個體搭配使用的金鑰配對。
 +
@@ -816,9 +956,13 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 * 此更新也包含錯誤修正。
 
 
-= 2023 年 7 月 30 日
 
-=== Connector 3.9.32
+
+== 2023 年 7 月 30 日
+
+
+
+=== 連接器 3.9.32
 
 * 您現在可以使用 BlueXP 稽核服務 API 來匯出稽核記錄。
 +
@@ -838,9 +982,13 @@ https://docs.netapp.com/us-en/bluexp-automation/audit/overview.html["深入瞭�
 
 
 
-= 2023 年 7 月 2 日
 
-=== Connector 3.9.31
+
+== 2023 年 7 月 2 日
+
+
+
+=== 連接器 3.9.31
 
 * 您現在可以從「 * 我的資產 * 」標籤（之前的 * 我的商機 * ）探索內部部署的 ONTAP 叢集
 +
@@ -864,7 +1012,11 @@ https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html#ad
 
 
 
-= 2023 年 6 月 4 日
+
+
+== 2023 年 4 月 6 日
+
+
 
 === 連接器 3.9.30
 
@@ -916,9 +1068,13 @@ https://cloud.netapp.com/cloud-volumes-global-regions["檢視支援區域的完�
 
 
 
-= 2023 年 5 月 7 日
 
-=== Connector 3.9.29
+
+== 2023 年 5 月 7 日
+
+
+
+=== 連接器 3.9.29
 
 * 當您從 BlueXP 或雲端供應商的市場部署 Connector 時、 Ubuntu 22.04 是 Connector 的新作業系統。
 +
@@ -942,7 +1098,11 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#7-may-20
 
 
 
-= 2023 年 4 月 4 日
+
+
+== 2023 年 4 月 4 日
+
+
 
 === 部署模式
 
@@ -958,9 +1118,13 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["深入瞭�
 
 NOTE: 採用受限模式會取代啟用或停用 SaaS 平台的選項。您可以在建立帳戶時啟用限制模式。稍後無法啟用或停用。
 
-= 2023 年 4 月 3 日
 
-=== Connector 3.9.28
+
+== 2023 年 4 月 3 日
+
+
+
+=== 連接器 3.9.28
 
 * BlueXP 數位電子錢包現在支援電子郵件通知。
 +
@@ -992,9 +1156,13 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html#manage-your-
 
 
 
-= 2023 年 3 月 5 日
 
-=== Connector 3.9.27
+
+== 2023 年 3 月 5 日
+
+
+
+=== 連接器 3.9.27
 
 * 現在可在BlueXP主控台中搜尋。此時、您可以使用搜尋來尋找BlueXP服務和功能。
 +
@@ -1027,9 +1195,13 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#5-march-
 
 
 
-= 2023 年 2 月 5 日
 
-=== Connector 3.9.26
+
+== 2023 年 5 月 2 日
+
+
+
+=== 連接器 3.9.26
 
 * 在*登入*頁面上、系統現在會提示您輸入與登入相關的電子郵件地址。選擇 * 下一步 * 後、 BlueXP 會提示您使用與登入相關的驗證方法進行驗證：
 +
@@ -1071,7 +1243,11 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#5-februa
 
 
 
-= 2023 年 1 月 1 日
+
+
+== 2023 年 1 月 1 日
+
+
 
 === 連接器 3.9.25
 
@@ -1079,9 +1255,13 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#5-februa
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#1-january-2023["深入瞭Cloud Volumes ONTAP 解功能強化功能"^]
 
-= 2022 年 12 月 4 日
 
-=== Connector 3.9.24
+
+== 2022 年 12 月 4 日
+
+
+
+=== 連接器 3.9.24
 
 * 我們已將BlueXP主控台的URL更新為 https://console.bluexp.netapp.com[]
 * Google Cloud Israel地區現在支援Connector。
@@ -1093,9 +1273,13 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#1-januar
 
 
 
-= 2022 年 11 月 6 日
 
-=== Connector 3.9.23
+
+== 2022 年 11 月 6 日
+
+
+
+=== 連接器 3.9.23
 
 * 您的 PAYGO 訂閱和 BlueXP 年度合約現在可從數位錢包中檢視及管理。
 +
@@ -1107,9 +1291,13 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#6-novemb
 
 
 
-= 2022 年 11 月 1 日
 
-=== BlueXP  簡介
+
+== 2022 年 11 月 1 日
+
+
+
+=== 介紹BlueXP
 
 NetApp BlueXP 可擴充並強化雲端管理程式所提供的功能。BlueXP 是統一化的控制平台、可為內部部署和雲端環境的儲存和資料服務提供混合式多雲端體驗。
 
@@ -1148,13 +1336,19 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 --
 
 
-=== 更新 NSS 認證的提示
+
+
+=== 提示更新 NSS 認證
 
 Cloud Manager現在會在NetApp 支援網站 與您帳戶相關的更新權杖在3個月後過期時、提示您更新與您的候用帳戶相關的認證資料。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html#update-nss-credentials["瞭解如何管理NSS帳戶"^]
 
-= 2022 年 9 月 18 日
 
-=== Connector 3.9.22
+
+== 2022 年 9 月 18 日
+
+
+
+=== 連接器 3.9.22
 
 * 我們新增_產品內建指南_來強化連接器部署精靈、提供符合Connector安裝最低需求的步驟：權限、驗證和網路。
 * 您現在可以直接從*支援儀表板*的Cloud Manager建立NetApp支援案例。
@@ -1167,9 +1361,13 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#18-septe
 
 
 
-= 2022 年 7 月 31 日
 
-=== Connector 3.9.21
+
+== 2022 年 7 月 31 日
+
+
+
+=== 連接器 3.9.21
 
 * 我們推出新方法、探索您尚未在Cloud Manager中管理的現有雲端資源。
 +
@@ -1187,9 +1385,13 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#31-july-
 
 
 
-= 2022 年 7 月 15 日
 
-=== 政策變更
+
+== 2022 年 7 月 15 日
+
+
+
+=== 原則變更
 
 我們在文件中直接新增Cloud Manager原則、以更新文件內容。這表示您現在可以在Cloud Volumes ONTAP 說明如何設定的步驟旁、檢視連接器和右側的必要權限。這些原則先前可從 NetApp 支援網站頁面存取。
 
@@ -1197,9 +1399,13 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-creating-connectors-aws.ht
 
 我們也建立了一個頁面、提供每個原則的連結。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html["檢視Cloud Manager的權限摘要"]。
 
-= 2022 年 7 月 3 日
 
-=== Connector 3.9.20
+
+== 2022 年 7 月 3 日
+
+
+
+=== 連接器 3.9.20
 
 * 我們推出新的方法、可導覽至Cloud Manager介面不斷增加的功能清單。現在只要將游標放在左側面板上、即可輕鬆找到所有熟悉的Cloud Manager功能。
 +
@@ -1237,18 +1443,26 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#2-july-2
 
 
 
-= 2022 年 6 月 28 日
 
-=== 以 NetApp 認證登入
+
+== 2022 年 6 月 28 日
+
+
+
+=== 使用NetApp認證登入
 
 當新使用者註冊 Cloud Central 時，他們現在可以選擇「*Log in with NetApp（登入 NetApp）*」選項，以 NetApp 支援網站認證資料登入。這是輸入電子郵件地址和密碼的替代方法。
 
 
 NOTE: 使用電子郵件地址和密碼的現有登入必須持續使用該登入方法。「以NetApp登入」選項適用於註冊的新使用者。
 
-= 2022 年 6 月 7 日
 
-=== Connector 3.9.19
+
+== 2022 年 6 月 7 日
+
+
+
+=== 連接器 3.9.19
 
 * 現在AWS雅加達地區（ap東南3區）支援Connector。
 * 現在Azure Brazil東南地區支援Connector。
@@ -1263,15 +1477,23 @@ https://bluexp.netapp.com/cloud-volumes-global-regions["檢視支援區域的完
 
 
 
-= 2022 年 5 月 12 日
 
-=== Connector 3.9.18 修補程式
+
+== 2022 年 5 月 12 日
+
+
+
+=== 連接器3.9.18修補程式
 
 我們更新了Connector、推出錯誤修正。最值得注意的是Cloud Volumes ONTAP 、當Connector位於共享VPC時、會影響到Google Cloud中的功能不均部署。
 
-= 2022 年 5 月 2 日
 
-=== Connector 3.9.18
+
+== 2022 年 5 月 2 日
+
+
+
+=== 連接器 3.9.18
 
 * 下列Google Cloud區域現在支援Connector：
 +
@@ -1308,9 +1530,13 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 
 
 
-= 2022 年 4 月 3 日
 
-=== Connector 3.9.17
+
+== 2022 年 4 月 3 日
+
+
+
+=== 連接器 3.9.17
 
 * 您現在可以透過讓Cloud Manager承擔您在環境中設定的IAM角色來建立Connector。這種驗證方法比共用AWS存取金鑰和秘密金鑰更安全。
 +
@@ -1319,43 +1545,63 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-creating-connectors-aws.ht
 * 此版本的Connector也包含Cloud Volumes ONTAP 了一些功能強化功能。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#3-april-2022["瞭解這些增強功能"^]
 
 
-= 2022 年 2 月 27 日
 
-=== Connector 3.9.16
+
+== 2022 年 2 月 27 日
+
+
+
+=== 連接器 3.9.16
 
 * 當您在Google Cloud中建立新的Connector時、Cloud Manager現在會顯示所有現有的防火牆原則。之前Cloud Manager不會顯示任何沒有目標標記的原則。
 * 此版本的Connector也包含Cloud Volumes ONTAP 了一些功能強化功能。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#27-february-2022["瞭解這些增強功能"^]
 
 
-= 2022 年 1 月 30 日
+
+
+== 2022 年 1 月 30 日
+
+
 
 === 連接器 3.9.15
 
 此版本的Connector包含Cloud Volumes ONTAP 一些功能強化功能。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#30-january-2022["瞭解這些增強功能"^]
 
-= 2022 年 1 月 2 日
 
-=== 減少 Connector 的端點數量
+
+== 2022 年 1 月 2 日
+
+
+
+=== 減少連接器的端點數量
 
 為了管理公有雲環境中的資源和程序、我們減少了Connector需要聯絡的端點數量。
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-checklist-cm.html["檢視所需端點的清單"]
 
-=== 用於 Connector 的 EBS 磁碟加密
+
+
+=== 連接器的EBS磁碟加密
 
 當您從Cloud Manager在AWS中部署新的Connector時、您現在可以選擇使用預設的主要金鑰或管理金鑰來加密Connector的EBS磁碟。
 
 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-connector-disk-encryption.png["在AWS中建立連接器時顯示磁碟加密選項的快照。"]
 
-=== NSS 帳戶的電子郵件地址
+
+
+=== 適用於NSS帳戶的電子郵件地址
 
 Cloud Manager 現在可以顯示與 NetApp 支援網站帳戶相關聯的電子郵件地址。
 
 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-nss-display-email.png["螢幕截圖顯示 NetApp 支援網站帳戶動作選單，其中能夠顯示電子郵件地址。"]
 
-= 2021 年 11 月 28 日
 
-= NetApp 支援網站帳戶需要更新
+
+== 2021 年 11 月 28 日
+
+
+
+=== NetApp 支援網站帳戶所需的更新
 
 自2021年12月起、NetApp現在使用Microsoft Azure Active Directory做為身分識別供應商、提供專為支援與授權所設計的驗證服務。完成此更新之後，Cloud Manager 會提示您更新先前已新增的任何現有 NetApp 支援網站帳戶認證資料。
 
@@ -1363,27 +1609,39 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 
 https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/FAQs_for_NetApp_adoption_of_MS_Azure_AD_B2C_for_login["深入瞭解 NetApp 如何使用 Microsoft Azure Active Directory 進行身分識別管理"^]
 
-=== 變更 Cloud Volumes ONTAP 的 NSS 帳戶
+
+
+=== 變更NSS帳戶Cloud Volumes ONTAP 以供使用
 
 如果貴組織有多個 NetApp 支援網站帳戶，您現在可以變更哪個帳戶要與哪個 Cloud Volumes ONTAP 系統相關聯。
 
 link:task-adding-nss-accounts.html#attach-a-working-environment-to-a-different-nss-account["瞭解如何將工作環境附加至不同的NSS帳戶"]。
 
-= 2021 年 11 月 4 日
 
-=== SOC 2 Type 2 認證
+
+== 2021 年 11 月 4 日
+
+
+
+=== SOC 2類型2認證
 
 一家獨立認證的公共會計公司和服務稽核員、負責審查Cloud Manager Cloud Sync 、NetApp、Cloud Tiering、Cloud Data Sense和Cloud Backup（Cloud Manager平台）、並確認他們已根據適用的信任服務條件、達成SOC 2類報告。
 
 https://www.netapp.com/company/trust-center/compliance/soc-2/["檢視NetApp的SOC 2報告"^]。
 
-=== Connector 不再支援做為 Proxy
+
+
+=== 連接器不再支援做為Proxy
 
 您無法再使用Cloud Manager Connector做為Proxy伺服器、從AutoSupport 停止傳送消息Cloud Volumes ONTAP 。此功能已移除、不再受支援。您必須AutoSupport 透過NAT執行個體或環境的Proxy服務提供不必要的連線功能。
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-verify-autosupport.html["深入瞭解驗證AutoSupport 使用Cloud Volumes ONTAP 效益的方法"^]
 
-= 2021 年 10 月 31 日
+
+
+== 2021 年 10 月 31 日
+
+
 
 === 使用服務主體進行驗證
 
@@ -1391,19 +1649,29 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-verify-autosupport
 
 link:task-creating-connectors-azure.html["瞭解如何與Azure服務主體進行驗證"]。
 
-=== 認證增強功能
+
+
+=== 認證增強
 
 我們重新設計了「認證」頁面、以方便使用、並符合Cloud Manager介面的目前外觀與風格。
 
-= 2021 年 9 月 2 日
+
+
+== 2021 年 9 月 2 日
+
+
 
 === 已新增通知服務
 
 通知服務已推出、因此您可以檢視在目前登入工作階段期間所啟動的Cloud Manager作業狀態。您可以驗證作業是否成功、或是否失敗。 link:task-monitor-cm-operations.html["瞭解如何監控您帳戶中的營運"]。
 
-= 2021 年 7 月 7 日
 
-=== 新增 Connector 精靈的增強功能
+
+== 2021 年 7 月 7 日
+
+
+
+=== 新增連接器精靈的增強功能
 
 我們重新設計了「*新增連接器*」精靈、以新增選項並使其更易於使用。您現在可以新增標記、指定角色（適用於AWS或Azure）、上傳Proxy伺服器的根憑證、檢視Terraform自動化程式碼、檢視進度詳細資料等。
 
@@ -1412,7 +1680,9 @@ link:task-creating-connectors-azure.html["瞭解如何與Azure服務主體進行
 * link:task-creating-connectors-gcp.html["在Google Cloud中建立Connector"]
 
 
-=== Support Dashboard 的 NSS 帳戶管理
+
+
+=== 支援儀表板的NSS帳戶管理
 
 NetApp 支援網站（NSS）帳戶現在改從支援儀表板進行管理，而非從「Settings（設定）」功能表。這項變更可讓您更輕鬆地從單一位置尋找及管理所有支援相關資訊。
 
@@ -1420,21 +1690,31 @@ link:task-adding-nss-accounts.html["瞭解如何管理NSS帳戶"]。
 
 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot_nss_management.png["支援儀表板中的\"NSS\"管理索引標籤快照、您可在其中新增NSS\"帳戶。"]
 
-= 2021 年 5 月 5 日
 
-=== 時間表中的帳戶
+
+== 2021 年 5 月 5 日
+
+
+
+=== 時間軸中的帳戶
 
 Cloud Manager中的時間表現在顯示與帳戶管理相關的行動和事件。這些動作包括建立使用者關聯、建立工作區及建立連接器等項目。如果您需要識別執行特定行動的人員、或是需要識別行動的狀態、檢查時間表會很有幫助。
 
 link:task-monitor-cm-operations.html["瞭解如何將時間表篩選為「租賃」服務"]。
 
-= 2021 年 4 月 11 日
 
-= 直接撥打 API 給 Cloud Manager
+
+== 2021 年 4 月 11 日
+
+
+
+=== API直接呼叫Cloud Manager
 
 如果您已設定Proxy伺服器、現在可以啟用選項、將API呼叫直接傳送至Cloud Manager、而無需透過Proxy。此選項受AWS或Google Cloud中執行的Connectors支援。
 
 link:task-configuring-proxy.html["深入瞭解此設定"]。
+
+
 
 === 服務帳戶使用者
 
@@ -1444,11 +1724,15 @@ link:task-configuring-proxy.html["深入瞭解此設定"]。
 
 link:task-managing-netapp-accounts.html#create-and-manage-service-accounts["深入瞭解如何使用服務帳戶"]。
 
+
+
 === 私有預覽
 
 您現在可以允許帳戶中的私有預覽、以在Cloud Manager中預覽新的NetApp雲端服務。
 
 link:task-managing-netapp-accounts.html#allow-private-previews["深入瞭解此選項"]。
+
+
 
 === 第三方服務
 
@@ -1456,11 +1740,15 @@ link:task-managing-netapp-accounts.html#allow-private-previews["深入瞭解此�
 
 link:task-managing-netapp-accounts.html#allow-third-party-services["深入瞭解此選項"]。
 
-= 2021 年 3 月 8 日
+
+
+== 2021 年 3 月 8 日
 
 此更新包括多項功能與服務的增強功能。
 
-=== Cloud Volumes ONTAP 增強功能
+
+
+=== 更新功能 Cloud Volumes ONTAP
 
 此版本的 Cloud Manager 包含 Cloud Volumes ONTAP 管理功能的增強功能。
 
@@ -1497,7 +1785,9 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gc
 
 
 
-=== Connector 增強功能
+
+
+=== 連接器增強功能
 
 * 當 Connector 未執行時、 Cloud Manager 現在會透過電子郵件通知管理使用者。
 +
@@ -1509,7 +1799,9 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gc
 
 
 
-=== Cloud Sync 增強功能
+
+
+=== 更新功能 Cloud Sync
 
 * Cloud Sync 現在支援 ONTAP S3 儲存設備與 SMB 伺服器之間的同步關係：
 +
@@ -1529,6 +1821,8 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-managing-data-brokers.html#s
 
 
 
+
+
 === 雲端分層增強功能
 
 * 分層至Google Cloud Storage時、您可以套用生命週期規則、以便在30天後、將階層式資料從標準儲存類別轉換為成本較低的Nearline、Coldline或歸檔儲存設備。
@@ -1538,14 +1832,18 @@ https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#discover
 
 
 
-=== Azure NetApp Files 增強功能
+
+
+=== 更新功能Azure NetApp Files
 
 現在您可以動態變更磁碟區的服務層級、以滿足工作負載需求並最佳化成本。該磁碟區會移至其他容量集區、而不會影響該磁碟區。 https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-manage-volumes.html#change-the-volumes-service-level["深入瞭解"^]
 
-= 2021 年 2 月 9 日
 
-=== 支援儀表板改善功能
+
+== 2021 年 2 月 9 日
+
+
+
+=== 支援儀表板改良功能
 
 我們已更新「支援儀表板」，讓您可以新增 NetApp 支援網站認證資料，以登錄您的支援方案。您也可以直接從儀表板啟動NetApp支援案例。只要按一下「說明」圖示、然後按*「支援」*即可。
-
-====
