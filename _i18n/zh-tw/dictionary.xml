@@ -3806,9 +3806,7 @@
   <block id="3baace5508f5436415356f7f1c718d50" category="list-text">* RAM* ： 32 GB</block>
   <block id="e5ee5282a10eef25059e919331c8ea5e" category="list-text">* 機器類型 * ：建議使用 n2-Standard-8 。</block>
   <block id="4ea5b82f34f27448cadea5ae611c81ba" category="list-text">* 選擇執行個體類型 * ：根據區域可用度、選擇其中一種支援的執行個體類型（建議使用 t3.2xlarge ）。</block>
-  <block id="34c56ac41d4e5a004cc5b7c87b0e2d87" category="section-title">連接器 3.9.43</block>
   <block id="05797637e0cfec59d8a5478eba1acfdf" category="paragraph">3.9.43 版本適用於標準模式和受限模式。</block>
-  <block id="45c4fb485dfa6a5d0af975aa668648a9" category="section-title">更新 CPU 和 RAM 需求</block>
   <block id="07279af47b8b78d8d96257fb42d7c5d9" category="paragraph">為了提供更高的可靠性、並改善 BlueXP  和 Connector 的效能、我們現在需要額外的 CPU 和 RAM 來搭配 Connector 虛擬機器：</block>
   <block id="ab0a05181cb2ac15cc8151f858731517" category="list-text">CPU ： 8 個核心或 8 個 vCPU （先前的需求為 4 個）</block>
   <block id="f8cac741f7a99da8594b5802a47567ab" category="list-text">RAM ： 32 GB （先前的需求為 14 GB ）</block>
@@ -3816,130 +3814,17 @@
   <block id="43a4336ace07071a0817d23211d30402" category="list-text">AWS ： t3.2 x 大</block>
   <block id="70e7db9a896d903493a8716aa3885ee7" category="list-text">Azure ： Standard_D8s_v3</block>
   <block id="1a0e003291457a847a85677ad5244c4e" category="list-text">Google Cloud ： n2-Standard-8.</block>
-  <block id="fecbdb7e41beb7c2b4125b62d71b116d" category="section-title">支援採用 RHEL 8.10 的 Podman 4.9.4</block>
   <block id="601e92646453def880eec16da18e4390" category="paragraph">在 Red Hat Enterprise Linux 8.10 主機上安裝 Connector 時、現在支援 Podman 4.9.4 版。</block>
-  <block id="18ecc589a4f329e3ba95ac4e285b4504" category="section-title">身分識別聯盟的使用者驗證</block>
   <block id="8b71299c32997f38948f7e56b11d69b8" category="paragraph">如果您使用與 BlueXP  的身分識別聯盟、首次登入 BlueXP  的每位使用者都必須填寫快速表單、以驗證其身分。</block>
-  <block id="4f11400d5bfc49418f8fe9e78ffbc58c" category="section-title">2024 年 7 月 31 日</block>
-  <block id="b9cf377931ad2ee7b1d42618c6c12fa5" category="section-title">私有模式版本（ 3.9.42 ）</block>
   <block id="2791ae5af0f1b2a708aaa92b1fddb49e" category="section-title">此版本中包含的版本</block>
-  <block id="5bde46ec5f2d435355447c38b00c1d9c" category="section-title">2024 年 7 月 15 日</block>
-  <block id="415b27bc5d78b639dc8c74a6e8f93e19" category="section-title">支援 RHEL 8.10</block>
-  <block id="8d330209f05c51bacefbee76e24d82e9" category="section-title">2024 年 7 月 8 日</block>
-  <block id="cfcc30e7f5ca49191957ff6a4f02c34d" category="section-title">連接器 3.9.42</block>
-  <block id="2a63395e5cc23edb6ca284fd55193c26" category="section-title">更新版 Docker Engine 需求</block>
-  <block id="0d04c8a15444402f3438c6a0e19e7890" category="section-title">現在需要電子郵件驗證</block>
-  <block id="bbe4d8abcc3519b138a73b8e46ee2119" category="section-title">2024 年 6 月 12 日</block>
-  <block id="e7a68d45477c484e2ef45d11f3cea8f8" category="section-title">連接器 3.9.41</block>
-  <block id="74ee4e65950c57ed59a7a33de5a179e6" category="section-title">2024 年 6 月 4 日</block>
-  <block id="87174c130fb334601e88a5630bf24478" category="section-title">私有模式版本（ 3.9.40 ）</block>
-  <block id="81f58b484d838909a5fedb3486f3a8e2" category="section-title">連接器 3.9.40</block>
   <block id="4cc078461f1763cdb13efec9da8a6a3f" category="section-title">AWS 權限更新</block>
   <block id="9d5b3307d5a7d5905623bf21ab049bdd" category="section-title">2024 年 4 月 22 日</block>
-  <block id="1389c5e279a667948337a56d97caf570" category="section-title">連接器 3.9.39</block>
-  <block id="dcaa3e92176845b160207f9f0d80aef3" category="section-title">AWS 建立 Connector 的權限</block>
-  <block id="779956d8a8a5dbf08bbf655892abfefb" category="section-title">2024 年 4 月 11 日</block>
-  <block id="b0672ad18e27e61949a210d3369455e0" category="section-title">Docker Engine 更新</block>
-  <block id="fe8fcef9d0fdb328fbc812d42b4ca2e7" category="section-title">2024 年 3 月 26 日</block>
-  <block id="3c16167b6c091087d9151aee3f52b379" category="section-title">私有模式版本（ 3.9.38 ）</block>
-  <block id="00d14f718aca7db50368d8fc7008b41a" category="section-title">連接器 3.9.38</block>
   <block id="b8048e9aa508d6c9379607c39c84e904" category="section-title">支援 IMDSv2</block>
-  <block id="9796f4649a0c963c7b6019196c7f14f0" category="section-title">Proxy 設定和 Cloud Volumes ONTAP 設定</block>
-  <block id="5985540cd0cc5c0e58eaebe95659534e" category="section-title">2024 年 2 月 15 日</block>
-  <block id="875cabf7fcb6d8f631b842029efd2117" category="section-title">連接器 3.9.37</block>
-  <block id="f1c2261d89d52febeed15edf1f34a5b7" category="section-title">編輯名稱</block>
-  <block id="17c3c89f25f7684516a883f30f10b747" category="section-title">2024 年 1 月 11 日</block>
-  <block id="dfbe132af57c8e3ca0aa9a94fc940839" category="section-title">連接器 3.9.36</block>
   <block id="e8a0c291b754a75e0e91ecf69d567912" category="section-title">2023 年 12 月 5 日</block>
-  <block id="de945439c2ef8db914ae9a056d6763b1" category="section-title">私有模式版本（ 3.9.35 ）</block>
-  <block id="d64cd771f2e77e7c0e4209d28afed019" category="section-title">2023 年 11 月 8 日</block>
-  <block id="82a9cd2bfcf44ef6090c93dcb2ee0451" category="section-title">連接器 3.9.35</block>
-  <block id="69483d973a063c873a5a66f6edcc241c" category="section-title">2023 年 10 月 6 日</block>
-  <block id="ce408175c3b7eaf6c3dfc910f3547833" category="section-title">連接器 3.9.34</block>
-  <block id="200c9dcd65b566ab41bf3c1946647dce" category="section-title">2023 年 9 月 10 日</block>
-  <block id="f2d77c003fbfd61002c06e73a629086c" category="section-title">連接器 3.9.33</block>
-  <block id="167693b239be0e2939d61376cd3a5487" category="section-title">連接器 3.9.32</block>
-  <block id="f73b546b2cf111d3a080443f2cd3b97f" category="section-title">2023 年 7 月 2 日</block>
-  <block id="78ee56d07ea6442fbe0c88b1ea3be7ad" category="section-title">連接器 3.9.31</block>
-  <block id="381c003443d0dbcf14a51f216a4e01dc" category="section-title">2023 年 6 月 4 日</block>
-  <block id="5440676d566a261de836cdd1b9ea4e50" category="section-title">連接器 3.9.30</block>
-  <block id="71bff2737bdd059023a4784358e71a64" category="section-title">2023 年 5 月 7 日</block>
-  <block id="d13015f8ae4fd0f7f263eba9f81f4caa" category="section-title">連接器 3.9.29</block>
-  <block id="38d4d167f6dd9174c3535fc5c7ba4b76" category="section-title">2023 年 4 月 4 日</block>
-  <block id="102787ed6297b34a7504b527e91d01d3" category="section-title">2023 年 4 月 3 日</block>
-  <block id="a62f3b1b0c4abf78f5d81609e7bdd908" category="section-title">連接器 3.9.28</block>
-  <block id="d0693e7bf28b7bbc94287cee0e4b0768" category="section-title">2023 年 3 月 5 日</block>
-  <block id="ba5bb99eb6a04798c8ccd3f156db75a5" category="section-title">連接器 3.9.27</block>
-  <block id="e1bc7b26155063f1ce71b76f655669ef" category="section-title">2023 年 2 月 5 日</block>
-  <block id="d2ab99e3c8406089dca863337debb121" category="section-title">連接器 3.9.26</block>
-  <block id="1f7138998459804601fc351f8d442e29" category="section-title">2023 年 1 月 1 日</block>
-  <block id="e139aa454163ce195b3669d769c3f1c8" category="section-title">連接器 3.9.25</block>
-  <block id="83ec139c80a3d5b2f11f1a94eed47cd2" category="section-title">2022 年 12 月 4 日</block>
-  <block id="9a37fbeb5352e14f2a53fe349c60ad58" category="section-title">連接器 3.9.24</block>
-  <block id="5a4346a01828d72104a6540080377b25" category="section-title">2022 年 11 月 6 日</block>
-  <block id="f658ebadeb22d41618c5222998030cb9" category="section-title">連接器 3.9.23</block>
-  <block id="c642de9f40ee79267e2e62e3ebed032e" category="section-title">2022 年 11 月 1 日</block>
-  <block id="560c5ee7b92d80b3ef198362d8323824" category="section-title">介紹BlueXP</block>
-  <block id="ba1f7346b31e12566f94dd10dbca2587" category="section-title">提示更新 NSS 認證</block>
-  <block id="f7ba76d5c9beab0576f118a6254843e9" category="section-title">2022 年 9 月 18 日</block>
-  <block id="567aae3125fb3d0d81322caa575a9843" category="section-title">連接器 3.9.22</block>
-  <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">2022 年 7 月 31 日</block>
-  <block id="01f2c0e19d8bbd614814f0651e7feec1" category="section-title">連接器 3.9.21</block>
-  <block id="a334cff76a53c8f9b93a01e24c56c9e5" category="section-title">2022 年 7 月 15 日</block>
-  <block id="fd07056b3157389b873051e9d2dd6d40" category="section-title">原則變更</block>
-  <block id="1511b856d0328cfba458b8f83c2e94e3" category="section-title">2022 年 7 月 3 日</block>
-  <block id="dbb3531fc9f461de7f3beb2624712465" category="section-title">連接器 3.9.20</block>
-  <block id="38ce4e90f119b89b2fdf1f274431e262" category="section-title">2022 年 6 月 28 日</block>
-  <block id="47d69a1f17128c359904338c3502fe31" category="section-title">使用NetApp認證登入</block>
-  <block id="f8b475a3fefebada77a30229238d0a1a" category="section-title">2022 年 6 月 7 日</block>
-  <block id="40beea3ec23a7affa39b1a1cbd52f21d" category="section-title">連接器 3.9.19</block>
-  <block id="390e66de0b25a9d9b226d4ede6fa20b5" category="section-title">2022 年 5 月 12 日</block>
-  <block id="e2632c3a4c1aff50543e98b03420fd3c" category="section-title">連接器3.9.18修補程式</block>
-  <block id="49644953fd4e9612a9842d17bef5e79b" category="section-title">2022 年 5 月 2 日</block>
-  <block id="def752908b0fa662bfb5de654a533140" category="section-title">連接器 3.9.18</block>
-  <block id="5e16db4c47abe8cb1c5bd746df2fd94a" category="section-title">2022 年 4 月 3 日</block>
-  <block id="5dc3495f29e6f1332d6d809ba30cbf83" category="section-title">連接器 3.9.17</block>
-  <block id="ba26e4556a0f160834687982b0479336" category="section-title">2022 年 2 月 27 日</block>
-  <block id="8c4a1103eeca70528bc946c2246ec6f1" category="section-title">連接器 3.9.16</block>
-  <block id="3ac47455b10c6fb4061a70a91fdbfde2" category="section-title">2022 年 1 月 30 日</block>
-  <block id="1bb66afbb0f9c20ad9ce021a7051d622" category="section-title">連接器 3.9.15</block>
-  <block id="586301717819197e24001cac47efdaaa" category="section-title">2022 年 1 月 2 日</block>
-  <block id="3eb3c5317b96f11c0338c5ff2b831a15" category="section-title">減少連接器的端點數量</block>
-  <block id="cdacfba529ee299ab36d1cdf539f519d" category="section-title">連接器的EBS磁碟加密</block>
-  <block id="c9ace35ceff752453d1b0f7978e94417" category="section-title">適用於NSS帳戶的電子郵件地址</block>
-  <block id="f61163b681442ac500a8018c87241770" category="section-title">2021 年 11 月 28 日</block>
-  <block id="afd82a1708e69d4da8a44f0cbee4ae9c" category="section-title">NetApp 支援網站帳戶所需的更新</block>
-  <block id="3d0f9c18d87223bbfa0a981f08fc2ba8" category="section-title">變更NSS帳戶Cloud Volumes ONTAP 以供使用</block>
-  <block id="0c8656a54bb3c58b8facb7ba72092bdc" category="section-title">2021 年 11 月 4 日</block>
-  <block id="28d0f6acaa631c64f65938cc5be01ffc" category="section-title">連接器不再支援做為Proxy</block>
-  <block id="784044bd2af30d58bbb0dbcea3adbad6" category="section-title">2021 年 10 月 31 日</block>
-  <block id="67b68df6bafe01dd2b7c0f5e85ec62ff" category="section-title">使用服務主體進行驗證</block>
-  <block id="c4f5f37a3eac48a6747104e3821bdfc7" category="section-title">認證增強</block>
-  <block id="d798cbf5a08fbeb9fdd3652e5b00bb4c" category="section-title">2021 年 9 月 2 日</block>
-  <block id="b965147e511dac4e3aebd73ea41829e3" category="section-title">已新增通知服務</block>
-  <block id="916678dfdf53de83f6afdf8fca563fb3" category="section-title">2021 年 7 月 7 日</block>
-  <block id="087ea838180b315ad53e36db764cd8d2" category="section-title">新增連接器精靈的增強功能</block>
-  <block id="290ecf7cca4e38fcf54e2b2afd77bb68" category="section-title">支援儀表板的NSS帳戶管理</block>
-  <block id="5057fdb214d9f3773bc386ba2aa1fcb0" category="section-title">2021 年 5 月 5 日</block>
-  <block id="d818c001b3cfbc2033e278823ec2a52a" category="section-title">時間軸中的帳戶</block>
-  <block id="29c251ed5a57bbffe470654ccbbe714c" category="section-title">2021 年 4 月 11 日</block>
-  <block id="a751a999298090bf2562492d1817e583" category="section-title">API直接呼叫Cloud Manager</block>
-  <block id="d2ed2d8d9f18d3b3c06c154cfe6e0970" category="section-title">服務帳戶使用者</block>
-  <block id="a214c30250196bf3a7430f258daa1c0a" category="section-title">私有預覽</block>
-  <block id="e4be032a3be0dcfffde1cc853ce81a9f" category="section-title">第三方服務</block>
-  <block id="dbbd746e2d2c019dcb0c3c40b74f4f75" category="section-title">2021 年 3 月 8 日</block>
-  <block id="f4eb7f69c035214da13ca0f958ab2c5a" category="section-title">更新功能 Cloud Volumes ONTAP</block>
   <block id="cedfa4114a856d26f8fcf723a5b4cb7a" category="section-title">所有雲端供應商均提供增強功能</block>
   <block id="7b73adc87602305d19eea3376846e09c" category="section-title">AWS 提供的增強功能</block>
   <block id="0ac19842b01b2e595d367d49d3a2f512" category="section-title">Azure 提供增強功能</block>
   <block id="b1f9439900369929f00410057598c853" category="section-title">Google Cloud 提供的增強功能</block>
-  <block id="36758ba57a2ee81dcda1cf690cba345c" category="section-title">連接器增強功能</block>
-  <block id="bd10f9ff269639d7e4902e8c79d702a6" category="section-title">更新功能 Cloud Sync</block>
-  <block id="af8de564f8a6452ff0926ac0d084a2a0" category="section-title">雲端分層增強功能</block>
-  <block id="86a6fd8c0323b87db34eb287a461c194" category="section-title">更新功能Azure NetApp Files</block>
-  <block id="d42fa6c698bffd937b50724aa035c2cb" category="section-title">2021 年 2 月 9 日</block>
-  <block id="094be1dbadd11ed5e81a249dfb9a643a" category="section-title">支援儀表板改良功能</block>
-  <block id="9cc3df8e0a65f95d62b0d0dc557d0fa9" category="section-title">2024 年 8 月 8 日</block>
   <block id="5009e1070e5138d1308165bc75e5706b" category="list-text">軟體更新</block>
   <block id="66c9d0cfd45dc71069845154fb72a8b8" category="list-text">支援的 Connector 版本</block>
   <block id="4dc9e2f6078fbeb26bbafe7461aa7ecf" category="list-text">從下列 Connector 版本開始、即可支援 RHEL 8 和 9 ：</block>
@@ -3960,7 +3845,6 @@
   <block id="31c59436a743feb0e198d549a11637b0" category="section-title">2023 年 5 月 12 日</block>
   <block id="8b5a7355367fbfe0f4039d610b872ea2" category="section-title">2023 年 3 月 23 日</block>
   <block id="cb73adae14da8ca1c572c8494ce45515" category="section-title">2023 年 1 月 5 日</block>
-  <block id="335b63351c39337de35ede84c3852d4d" category="section-title">連接器3.9.43修補程式</block>
   <block id="262115d0d4a65fe9bcd074ab5666018a" category="paragraph">我們更新了 Connector 以支援 Cloud Volumes ONTAP 9.15.1 版本。</block>
   <block id="ede74fed38968a6f0c0dcebc3102b859" category="paragraph">此版本的支援包括更新 Azure 的 Connector 原則。此原則現在包含下列權限：</block>
   <block id="c78a856f5972910d86f9b588fe9783e6" category="paragraph">Cloud Volumes ONTAP 支援虛擬機器磅秤集需要這些權限。如果您有現有的 Connectors 、而且想要使用這項新功能、則必須將這些權限新增至與 Azure 認證相關聯的自訂角色。</block>
@@ -4020,7 +3904,6 @@
   <block id="1dabb4ec55ee6a1ed060669969044936" category="paragraph">在私有模式中、您可以在內部部署或雲端中手動安裝 Connector 、方法是在您自己的 Linux 主機上安裝 Connector 。</block>
   <block id="b926732963e0a721fc9fc28ea36c9483" category="inline-link-macro">瞭解如何建立內部部署的 Connector</block>
   <block id="159a6de5191a13d6941603c4b5854079" category="list-text"><block ref="159a6de5191a13d6941603c4b5854079" category="inline-link-macro-rx"></block></block>
-  <block id="2e5948b55d019081bde9b17268d72c2c" category="section-title">連接器 3.9.44</block>
   <block id="eef503d0bc4de5d76d47f4691b412e15" category="paragraph">此版本包含 Docker Engine 26 支援、 SSL 憑證增強功能、以及錯誤修正。</block>
   <block id="8e05f2728c2c4042bd5165b33b122aa7" category="paragraph">3.9.44 版本適用於標準模式和受限模式。</block>
   <block id="15ba9bb026c53a148756b12826c46f8b" category="section-title">已更新 SSL 憑證以供本機 UI 存取</block>
@@ -4028,15 +3911,12 @@
   <block id="2737440e84d6c8a13a097fa583a6e67a" category="paragraph">在此版本中、我們針對新連接器和現有連接器變更了 SSL 憑證：</block>
   <block id="6cb49682fd1f125736d18f28cbce1f23" category="list-text">憑證的一般名稱現在與簡短主機名稱相符</block>
   <block id="982638142d38ac9441736ff5402f4e2a" category="list-text">憑證主體替代名稱是主機機器的完整網域名稱（ FQDN ）</block>
-  <block id="44b53ed30a4c420b95b8adba575b84a6" category="section-title">支援 RHEL 9.4</block>
   <block id="70a7dd17e18fef168a9d377653df73ca" category="paragraph">BlueXP  現在支援在標準模式或受限模式下使用 BlueXP  時、在 Red Hat Enterprise Linux 9.4 主機上安裝 Connector 。</block>
   <block id="2ba7632ac1d83ea5ae8e4c11321eb1d3" category="paragraph">從 Connector 3.9.40 版本開始支援 RHEL 9.4 。</block>
   <block id="d624d762d93c33c9dde16183d90a90e0" category="paragraph">標準模式和受限模式支援 RHEL 版本的更新清單現在包括下列項目：</block>
-  <block id="7a8260cd47a221886a3337b85ff2ec45" category="section-title">支援所有 RHEL 版本的 Podman 4.9.4</block>
   <block id="3a5941c5e1e3e3c4cb703b2d9d78963c" category="paragraph">所有支援版本的 Red Hat Enterprise Linux 現在都支援 Podman 4.9.4 。4.9.4 版先前僅支援 RHEL 8.10 。</block>
   <block id="d0f584a070c78efb8fff64b377dbf729" category="paragraph">支援的 Podman 版本更新清單包含 4.6.1 和 4.9.4 與 Red Hat Enterprise Linux 主機。</block>
   <block id="fef89f8fc6e9d583565954d5abe02ec4" category="paragraph">從 Connector 3.9.40 版本開始、 RHEL 主機需要使用 Podman 。</block>
-  <block id="842ce6e5c3bdb8cf81ffbd4f90a57649" category="section-title">更新 AWS 和 Azure 權限</block>
   <block id="c1f46e9419a384f29f23682739cc8d58" category="paragraph">我們更新了 Connector 的 AWS 和 Azure 原則、以移除不再需要的權限。這些權限與 BlueXP  邊緣快取、探索及管理 Kubernetes 叢集有關、截至 2024 年 8 月為止、這些叢集不再受到支援。</block>
   <block id="d201eff65f4516de2c618efea5a7edde" category="inline-link">瞭解 AWS 原則有哪些變更</block>
   <block id="b0c050c316c776928b8b8bc0c327449e" category="list-text"><block ref="aff0e765a5d2f4e281feabd61d1dd500" category="inline-link-rx"></block>。</block>
@@ -4056,7 +3936,6 @@
   <block id="f42f94dc205ad041c3d86658f703465e" category="paragraph">BlueXP  用來產生 CSR 的金鑰配對儲存在內部的 Connector 上。當您在 Connector 上安裝憑證時、 BlueXP  會自動擷取相同的金鑰配對（私密金鑰）。</block>
   <block id="fa7c85eec1cc76ccc0e893292ce638e4" category="list-text">安裝您現有的 CA 簽署憑證。</block>
   <block id="44f374dc4bb34314bb885e22229628b6" category="paragraph">使用此選項時、不會透過 BlueXP  產生 CSR 。您可以分別產生 CSR 並將私密金鑰儲存在外部。安裝憑證時、您會提供 BlueXP  私密金鑰。</block>
-  <block id="964635dcf6206ebb279b58d13cf69a92" category="section-title">2024 年 9 月 30 日</block>
   <block id="0beb94109608ff82d313b33947162f96" category="section-title">私有模式版本（ 3.9.44 ）</block>
   <block id="f1fb6fd189345cf04ef77974b58bcbfc" category="paragraph">此版本包含下列支援私有模式的 BlueXP  元件和服務版本。</block>
   <block id="8dd8dbe371973ff01954f1d0db6a6c30" category="cell">3.9.44</block>
@@ -4592,7 +4471,6 @@
   <block id="8166996cb4a59c147200d89a061bb49c" category="paragraph">這些 NSS 認證會與您的特定 BlueXP  組織 ID 相關聯。屬於 BlueXP  組織的使用者可從 * 支援 &gt; NSS 管理 * 存取這些認證。</block>
   <block id="4a3d304c0a44921333425fa75ae2ca14" category="summary">瞭解 BlueXP  管理功能的新功能： BlueXP  IAM 、 Connectors 、雲端供應商認證等。</block>
   <block id="3659e0ccde34b7f8fd95294187ed03d5" category="paragraph">瞭解 BlueXP  管理功能的新功能：身分識別與存取管理（ IAM ）、連接器、雲端供應商認證等。</block>
-  <block id="e5182edc3707e8e354c40ab7fa819f39" category="section-title">2024 年 10 月 7 日</block>
   <block id="cfb96b15394efa48725d4b6de4d3529b" category="paragraph">BlueXP  身分識別與存取管理（ IAM ）是一種新的資源與存取管理模式、可在標準模式下使用 BlueXP  時、取代並強化 BlueXP  帳戶先前提供的功能。</block>
   <block id="3a3009b65a0b76e5f313a7be507a533e" category="paragraph">BlueXP  IAM 提供更精細的資源與權限管理：</block>
   <block id="97bcbb158b23b5f59aa77340528d8c84" category="list-text">頂層組織 _ 可讓您管理各種專案的存取權。</block>
@@ -4654,7 +4532,6 @@
   <block id="4d3e366c7ef57f5c2037203fa77c103c" category="list-text"><block ref="4d3e366c7ef57f5c2037203fa77c103c" category="inline-link-rx"></block></block>
   <block id="6b7b64b4bdd6080baf05e2c37372258a" category="list-text"><block ref="6b7b64b4bdd6080baf05e2c37372258a" category="inline-link-rx"></block></block>
   <block id="f7d8f0ba412660e43ffeb2e82b61e167" category="paragraph">BlueXP  使用<block ref="68ab1268abb7e5f5688810968df97d6b" prefix=" " category="inline-code"></block>安裝<block ref="a23365e1ae67810a7446b65d3be9a5d0" prefix=" " category="inline-code"></block>目錄及其內容。</block>
-  <block id="a1fe52ea216874a5214f41ae7e5bbd63" category="section-title">2024 年 10 月 10 日</block>
   <block id="9071c576479353103106b574601bd920" category="section-title">連接器3.9.45修補程式</block>
   <block id="d8497d3046f15c93d3e5c40856129331" category="paragraph">此修補程式包含錯誤修正。</block>
   <block id="ab99e6e0b893c9db1dce5c6dc26245bc" category="list-text">以下 BlueXP  功能與服務的通知會以電子郵件傳送： Connector 、 BlueXP  數位錢包、 BlueXP  複本與同步、 BlueXP  備份與還原。</block>
@@ -4802,7 +4679,6 @@
   <block id="38e4f28b5f78613457381816eb4a925e" category="paragraph">為達成此目標，指派 XYZ 公司 BlueXP  組織管理員角色的人員會建立初始工作環境，然後在 BlueXP  中為每個區域建立個別的資料夾。每個區域的資料夾都包含與該區域相關的專案（含相關資源）。組織管理員會在每個個別區域指派 BlueXP  使用者資料夾 / 專案管理員角色。</block>
   <block id="b232bda0fe68f193c9d3c56d75b4bb04" category="paragraph">完成初始設定後，具有資料夾或專案管理員角色的區域管理員即可建立新的工作環境，並在其區域內新增使用者。這些區域管理員也可以新增 / 移除 / 重新命名指派給他們的資料夾和專案。組織管理員會繼承任何新工作環境或資源的權限，維持整個組織的儲存使用率可見度。</block>
   <block id="35cbd88f43ce85ef7ed6866daa2c6066" category="section-title">資料服務角色</block>
-  <block id="1f86b1e4048d088ce153a6f451fb30d6" category="section-title">2024 年 12 月 9 日</block>
   <block id="6dbd17d362d540a01bdcf61fb73192e3" category="paragraph"><block ref="6dbd17d362d540a01bdcf61fb73192e3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8aed33df97a7e5d16736c205973e6239" category="paragraph"><block ref="8aed33df97a7e5d16736c205973e6239" category="inline-image-macro-rx" type="image"></block></block>
   <block id="670c21c09cc12fa2b540e85129379b5e" category="paragraph">| https://\*.api 。 BlueXP  NetApp 。 NetApp 。 com \https://api 。 BlueXP  。 com \https://*.cloudmanager.cloud 。 NetApp 。 com \https://cloudmanager.cloud 。 NetApp 。 com 。 https ： NetApp-cloud-account.auth0.com</block>
@@ -4857,7 +4733,6 @@
   <block id="cb6ffdd85c34b43b9e70c8dcf3c0e51c" category="paragraph">在 Azure 政府地區安裝 Connector 時取得 Connector 升級的映像。</block>
   <block id="815ee4222e11b0d1d149ad24cabecc80" category="paragraph">如果 Connector 位於商業區域或主權區域，您可以在兩組端點之間進行選擇：</block>
   <block id="ad262fe50d2ecf5a3aae7409b3eda8e2" category="paragraph">在 Connector 安裝於商業區域或主權區域時，取得 Connector 升級的映像。</block>
-  <block id="c33f35ab44944cc0d09e5bb702125592" category="section-title">2024 年 16 月 12 日</block>
   <block id="67f44df0b66677509cb8a85769f34ee3" category="paragraph">下列影片顯示從 AWS Marketplace 訂閱 BlueXP  的步驟：</block>
   <block id="96be219c15e8fd2a25d382cfbe8aba22" category="list-text">選取一組認證的動作功能表，然後選取 * 設定訂閱 * 。</block>
   <block id="f9ffa76e11dc9be1f06d413d4c1da4ed" category="list-text">若要將認證與現有訂閱建立關聯，請從下拉式清單中選取訂閱，然後選取 * 設定 * 。</block>
@@ -4889,7 +4764,6 @@
   <block id="c16acacf37243c052df936e1994e4488" category="paragraph">從此版本開始，您現在可以建立支援案例，並將其與其他 BlueXP  服務建立關聯：</block>
   <block id="6b8568e4d37788a668f2c72ae872b9a0" category="inline-link">深入瞭解如何建立支援案例</block>
   <block id="704c39cac41bd3edb3c4d1fc1b619590" category="paragraph"><block ref="8380621c8f80b9213ea8e8be1675d5a4" category="inline-link-rx"></block>。</block>
-  <block id="2b513ec32615ab736c1cab315db516f8" category="section-title">2025 年 1 月 13 日</block>
   <block id="c933dbf26cb872c859f8dbb81999eff8" category="paragraph">主機可以是任何符合下列大小需求的架構。</block>
   <block id="9fc9c9f38ac896bc2bd0e275904e2b5d" category="list-text">* CPU ： * 8 核心或 8 個 vCPU</block>
   <block id="35116a9bfaf82c27806c3c9614e3380e" category="list-text">* RAM ： * 32 GB</block>
@@ -4904,7 +4778,6 @@
   <block id="035261365b324f2942fd56c2f10f6ed5" category="inline-link">瞭解 IAM 角色</block>
   <block id="ff73dba782f434133f0fc81382cc8398" category="list-text">兩個新角色與應用程式類別相關聯：儲存檢視器和儲存管理員。<block ref="ac81447e1825c80c6c47ed7167f706b3" category="inline-link-rx"></block></block>
   <block id="67012c1335c677ff94cd2d777a3c7213" category="list-text">IAM 現已用於 BlueXP  受限模式</block>
-  <block id="2a3e7caa563b2592e27f3890e8d21765" category="section-title">受限模式現在使用 BlueXP  IAM</block>
   <block id="4fafa85612a8b2fff96d593213d6a0ec" category="paragraph">BlueXP  身分識別與存取管理（ IAM ）現已在限制模式下使用。</block>
   <block id="2f73a8cbcbf617bd5a78738929bbe5b3" category="paragraph">BlueXP  身分識別與存取管理（ IAM ）是一種資源與存取管理模式，可在標準模式和受限模式下使用 BlueXP  時，取代並強化 BlueXP  帳戶先前提供的功能。</block>
   <block id="029ade287eade250f2c9612d148e1fad" category="paragraph-title">BlueXP  IAM 如何在受限模式下影響您現有的帳戶</block>
@@ -4913,7 +4786,6 @@
   <block id="492bd3385d9d03385f8098817a8d0196" category="paragraph">在標準模式和受限模式下使用 BlueXP  時，支援 BlueXP  IAM 。如果您是以私人模式使用 BlueXP  ，則可以使用 BlueXP  _account_ 來管理使用者和資源。</block>
   <block id="5d733a1853078585aec87e3ef2524bec" category="paragraph">在私有模式下使用 BlueXP  時，您將使用 BlueXP  帳戶 _ 來管理使用者，並在隔離的 _stustronal_ 工作區中組織資源。例如、使用者群組可以在工作區中部署及管理 Cloud Volumes ONTAP 工作環境、而在不同工作區中管理工作環境的使用者則看不到該工作區。</block>
   <block id="73f420193f5136d2f1d09a09d6f9aabb" category="paragraph">如果您在標準模式或受限模式下使用 BlueXP  ，則不會有 BlueXP  帳戶。您將改為使用 BlueXP  身分識別與存取管理（ IAM ）來管理 BlueXP  組織。</block>
-  <block id="0a53964e7a92fbb432f9201620004f32" category="paragraph">BlueXP  身分識別與存取管理（ IAM ）包含數個預先定義的角色、您可以在不同的資源階層層級中指派給組織成員。指派這些角色之前、您應該先瞭解每個角色所包含的權限。角色分為三類：平台，應用程式和資料服務。</block>
   <block id="5e1d7b4c2de3509435462a15161a1c7f" category="paragraph">平台角色是您可以指派給使用者的最廣泛角色，並允許廣泛的 BlueXP  管理權限，包括指派角色和新增使用者，以及執行所有 BlueXP  功能。BlueXP  IAM 包含兩個平台角色：組織管理和資料夾或專案管理。兩個 BlueXP  IAM 平台角色的主要差異在於範圍。</block>
   <block id="64c67a7c22b0ed8bf6e82d2edf341abc" category="paragraph">允許使用者不受限制地存取組織內的所有專案和資料夾，將成員新增至任何專案或資料夾，以及執行任何 BlueXP  工作和使用任何資料服務。</block>
   <block id="08fe1197004da98b5b31b7f36eb2ecd2" category="section-title">資料夾或專案管理員</block>
@@ -4949,7 +4821,6 @@
   <block id="5fe83be1c3cd8b5af9b7f3c7fae6d1ad" category="list-text">* 新增角色 * ：如果您想要提供組織內其他資料夾或專案的存取權，或是在所選區域中授予使用者進一步的權限，請選取 * 新增角色 * ，指定其他資料夾或專案或其他角色類別，然後選擇角色。</block>
   <block id="58f4b315c1bb5704a3e82ffd26d7c1a8" category="paragraph">從組織中移除成員並不會刪除成員的 BlueXP  帳戶或 NetApp 支援網站帳戶。它只會從組織中移除成員及其相關權限。</block>
   <block id="71a902b9bd8bd5f915e170707c50e813" category="section-title">管理成員角色</block>
-  <block id="e4195c5655315762128bb9e5d89d8f01" category="paragraph">組織成員可以在每個層級和多個資源階層層級上指派角色。您可以指派成員在 BlueXP  組織中與其職責相關的角色。例如，如果您的資源階層中有七個代表各自專案（工作環境），您可以為其中三個專案指派儲存管理員角色，然後為其餘專案指派另一個成員儲存管理員。另一種可能是將整個組織的儲存管理員角色指派給一位使用者。您可以根據組織的需求來管理成員角色。</block>
   <block id="bb6a1c303d753a3800aa29f0149ef2da" category="paragraph">您可以取消指派成員的角色，新增新角色或兩者。角色定義指派給組織、資料夾或專案層級成員的權限。您可以指派成員在 BlueXP  組織中與其職責相關的角色。</block>
   <block id="6cbcd95c7c747face3f074348da093de" category="paragraph">每個組織成員都可以在組織階層的不同層級指派角色。它可以是相同的角色或不同的角色。例如、您可以為專案 1 指派成員角色 A 、專案 2 指派角色 B 。</block>
   <block id="34025ad60edecbf8612a359edaca8684" category="section-title">檢視指派給成員的角色</block>
@@ -4957,13 +4828,11 @@
   <block id="787919896edfa2afa28d9030c2bd8ee2" category="list-text">在表格中，展開您要檢視成員指派角色的組織，資料夾或專案相關列，然後在 * 角色 * 欄中選取 * 檢視 * 。</block>
   <block id="3f4fb5bf409c65d0cdc07e16e971923b" category="section-title">指派角色</block>
   <block id="868c665304c1cc003d592c37eb2d9284" category="inline-link-macro">瞭解 IAM 角色</block>
-  <block id="e55e8648841d578e12ecc4f02dcf8c7e" category="list-text">* 選擇類別 * ： BlueXP  將角色分成三類：平台，應用程式和資料服務。<block ref="95a2a1c0b49231381e965b8dd6b00696" category="inline-link-macro-rx"></block>。</block>
   <block id="c46547e3019dfd55748629f99ac2f49c" category="list-text">選取 * 角色 * ：選擇一個角色，為成員提供與所選組織，資料夾或專案相關的資源權限。</block>
   <block id="5f3c99e4fd9b4f957adfdcdde4d5a1de" category="list-text">* 新增角色 * ：如果您想要提供組織內其他資料夾或專案的存取權，請選取 * 新增角色 * ，指定其他資料夾或專案或角色類別，然後選取角色類別和對應的角色。</block>
   <block id="068135177d9d1843118236d5f10dc5b7" category="section-title">變更成員的指派角色</block>
   <block id="955a0a3e2fca13996f710db6f2fbe6a3" category="paragraph">您可以在組織，資料夾或專案層級變更的指派角色。成員可以在組織的不同層級擔任不同的角色。</block>
   <block id="28e019f4a845184dbf1a98b3299252a4" category="list-text">在表格中，展開您要變更成員指派角色的組織，資料夾或專案相關列，然後在 * 角色 * 欄中選取 * 檢視 * ，以檢視指派給此成員的角色。</block>
-  <block id="4dfcfc5ce7a8e9f46e4eabc1e80c4d28" category="list-text">若要變更成員的角色，請在您要變更的角色旁選擇 * 變更 * 。您只能將此角色變更為相同角色類別中的角色。例如，您可以從一個應用程式角色變更為另一個應用程式角色。系統會要求您確認變更。</block>
   <block id="9a3441a99feefccc201b51666c68d0d2" category="inline-image-macro">類似垃圾桶的圖示</block>
   <block id="9410d39af130c313b964685327e24e7a" category="list-text">若要取消指派成員的角色，請選取角色旁的，<block ref="65d5e1d842da62aa3653eba17c2cb20e" category="inline-image-macro-rx" type="image"></block>以取消指派成員各自的角色。系統會要求您確認移除。</block>
   <block id="1712db0afa6be365f3fb2fe0061eb0c7" category="section-title">取消指派成員的角色</block>
@@ -4976,4 +4845,160 @@
   <block id="4c98c292f5ea23f8a2d9dd45741b9411" category="paragraph">市場訂閱可為下列 BlueXP  資料服務收費：</block>
   <block id="dcaa51b19c3334da8a1c68178fddabbe" category="paragraph">訂閱 BlueXP  資料服務涉及將市場訂閱與與 Connector 相關聯的雲端認證建立關聯。如果您遵循「標準模式入門」工作流程、則應該已經有 Connector 。若要深入瞭解<block ref="ce6d43255d920acadadb7e3862aee0b0" category="inline-link-macro-rx"></block>，請檢視。</block>
   <block id="c523b074da0b63e607578686184d5981" category="section-title">2025 年 10 月 2 日</block>
+  <block id="5a1f7548d3f8b383dfe658d26f915cce" category="list-text">角色現在與平台和資料服務這兩個類別之一相關聯。</block>
+  <block id="8f14bfe5ce946b9a708f23b393e578d4" category="paragraph">=== 受限模式現在使用 BlueXP  IAM</block>
+  <block id="46c10ba27472d93c08d7a9eea31b47a2" category="paragraph">工作範例：例如，如果您的資源階層中有七個代表各自專案（工作環境），您可以為其中三個專案指派儲存管理員角色，然後為其餘專案指派另一個成員儲存管理員。另一種可能是將整個組織的儲存管理員角色指派給一位使用者。您可以根據組織的需求來管理成員角色。</block>
+  <block id="94d01a25e8d719777d74e40fde0e74eb" category="paragraph">BlueXP  身分識別與存取管理（ IAM ）包含數個預先定義的角色、您可以在不同的資源階層層級中指派給組織成員。指派這些角色之前、您應該先瞭解每個角色所包含的權限。角色分為兩類：平台和資料服務。</block>
+  <block id="e9d61c4ab8f60a06a549f931f8154bc3" category="paragraph">組織成員可以在每個層級和多個資源階層層級上指派角色。您可以指派成員在 BlueXP  組織中與其職責相關的角色。</block>
+  <block id="8eaa33e37e898cc8fe60223764d1b067" category="list-text">* 選擇類別 * ： BlueXP  將角色分成兩類：平台和資料服務。<block ref="95a2a1c0b49231381e965b8dd6b00696" category="inline-link-macro-rx"></block>。</block>
+  <block id="9c7bc4ef4922fcab1fc451f7902a3977" category="list-text">若要變更成員的角色，請在您要變更的角色旁選擇 * 變更 * 。您只能將此角色變更為相同角色類別中的角色。例如，您可以從一個資料服務角色變更為另一個角色。系統會要求您確認變更。</block>
+  <block id="fde594c950cb66b3f18c91ad7f07890f" category="paragraph">= 2025 年 1 月 13 日</block>
+  <block id="3aeee87708382bc4780f390a12e92956" category="paragraph">=== 連接器 3.9.48</block>
+  <block id="9de16a4d6c81a766f620276c40f9d7e7" category="paragraph">=== BlueXP  身分識別與存取管理</block>
+  <block id="b1ed8c3eee0e1cc20b12f90da99ddcb1" category="paragraph">=== 為其他 BlueXP  服務建立支援案例</block>
+  <block id="ad9e144e9551835a00fd63c1c124e0c6" category="paragraph">= 2024 年 12 月 16 日</block>
+  <block id="fd50ebc3f1142d7c394d2543ebc91a71" category="paragraph">=== 新的安全端點以取得 Connector 映像</block>
+  <block id="34ba14a5f3d06589e3f02e476b5b33a5" category="paragraph">= 2024 年 12 月 9 日</block>
+  <block id="cebfc4594b2eb6d8bffc21979b6b6b38" category="paragraph">=== Connector 3.9.47</block>
+  <block id="c72445da7784db670e6d5c6bab0ecfaf" category="paragraph">= 2024 年 11 月 26 日</block>
+  <block id="22c61182c3fbfe487c19b5a7efb8555d" category="paragraph">=== 私有模式版本（ 3.9.46 ）</block>
+  <block id="9a9439b3fea989a82de1f85ca361df54" category="paragraph">= 2024 年 11 月 11 日</block>
+  <block id="36691ee8d92f1ddc4e0ab31ac80fface" category="paragraph">=== 連接器 3.9.46</block>
+  <block id="9623bef4cfd1c771decd23dd3e4e26ce" category="paragraph">= IAM 專案的 ID</block>
+  <block id="75b68ca4d5f056f8bb5c2d8c14ab71e3" category="paragraph">= 2024 年 10 月 10 日</block>
+  <block id="f5d2c2531e8fb161896e73bc1ad70662" category="paragraph">=== Connector 3.9.45 修補程式</block>
+  <block id="3d877da6dc8695dd9a37fdce8eb3a966" category="paragraph">= 2024 年 10 月 7 日</block>
+  <block id="087c6125fdb9c1a42cbca98d988cfb4a" category="paragraph">=== 連接器 3.9.45</block>
+  <block id="97e2c7cb047effa09bfda4bceb45f7e3" category="paragraph">= 支援使用 RHEL 主機的 SELinux</block>
+  <block id="60f91190506e61c4d76451d51e853b2a" category="paragraph">= 2024 年 9 月 30 日</block>
+  <block id="0edb8ad2591093df0393919643573cfb" category="paragraph">=== 私有模式版本（ 3.9.44 ）</block>
+  <block id="c8757123530ec7c8303591c9f14c2e7f" category="paragraph">= 2024 年 9 月 9 日</block>
+  <block id="a4b247714b0a316c88c8b716829b13cb" category="paragraph">=== Connector 3.9.44</block>
+  <block id="77a2aa810d2940649203ad09240c9798" category="paragraph">=== RHEL 9.4 支援</block>
+  <block id="9c530dff18502171c6fabfa38c5d9452" category="paragraph">= 支援所有 RHEL 版本的 Podman 4.9.4</block>
+  <block id="04613846ca9d1b1923e2bb00af5d2bf4" category="paragraph">=== 更新的 AWS 和 Azure 權限</block>
+  <block id="c93a2754f7f483d4c6f937309fed8312" category="paragraph">= 2024 年 8 月 22 日</block>
+  <block id="9d5796c7d7f35c54581ceb60642f9db8" category="paragraph">=== Connector 3.9.43 修補程式</block>
+  <block id="6307649b339b47245650021d85bcbcc5" category="paragraph">= 2024 年 8 月 8 日</block>
+  <block id="98572768026b5e76a4023197bb0258f2" category="paragraph">=== 連接器 3.9.43</block>
+  <block id="43a257684ca1bb7d2041fa675c44dec7" category="paragraph">=== 更新的 CPU 和 RAM 需求</block>
+  <block id="3e1ca1f77c52e44c920ba3bc6f69621e" category="paragraph">= 支援採用 RHEL 8.10 的 Podman 4.9.4</block>
+  <block id="d0be31adb0f7bcadc549c526f1949da5" category="paragraph">=== 身分識別聯盟的使用者驗證</block>
+  <block id="3b06db209bc32adaf1bbbbba48daabbb" category="paragraph">= 2024 年 7 月 31 日</block>
+  <block id="652e58d9ab93d24e57da886dc3c3c2fe" category="paragraph">=== 私有模式版本（ 3.9.42 ）</block>
+  <block id="db601bd67ae9ac13ebd2a95fb86b681f" category="paragraph">= 2024 年 7 月 15 日</block>
+  <block id="ea2a64501a8cb55da9c712a433620da3" category="paragraph">=== RHEL 8.10 支援</block>
+  <block id="5304d2e5eb644477806cad8aa20c079a" category="paragraph">= 2024 年 7 月 8 日</block>
+  <block id="c4cbddf8bbc0569856078c6750f942c3" category="paragraph">=== 連接器 3.9.42</block>
+  <block id="dd3c6cafb9970e26aa699884769c61a6" category="paragraph">=== Docker Engine 更新要求</block>
+  <block id="bf9a73b61ef24e03d526d20d0e5c5d96" category="paragraph">=== 現在需要電子郵件驗證</block>
+  <block id="71e4188a388cf9d2dc303867f1e0d933" category="paragraph">= 2024 年 6 月 12 日</block>
+  <block id="f2e4086aed2119715d2909a0216e1f93" category="paragraph">=== Connector 3.9.41</block>
+  <block id="89144b4737404fc1490312c8c4ff65dc" category="paragraph">= 2024 年 6 月 4 日</block>
+  <block id="e224c82e63c1106b3559739bebfd2324" category="paragraph">=== 私有模式版本（ 3.9.40 ）</block>
+  <block id="4c925eba87cdf49efa98c4a4eb1b39ac" category="paragraph">= 2024 年 5 月 17 日</block>
+  <block id="66ee71b7aa3ab0656b1959820159a499" category="paragraph">=== 連接器 3.9.40</block>
+  <block id="49145aaa899f4208efd1bd4862cbc717" category="paragraph">= 2024 年 4 月 22 日</block>
+  <block id="185745d2a6ae82cd21b5865f4a215f41" category="paragraph">=== Connector 3.9.39</block>
+  <block id="198e6bafe0326548d37dd955f1052351" category="paragraph">=== AWS 建立 Connector 的權限</block>
+  <block id="b369a71413a2d45bb546511758ca166f" category="paragraph">= 2024 年 4 月 11 日</block>
+  <block id="0887fd6ff9e912cef46f60f246161af1" category="paragraph">=== Docker Engine 更新</block>
+  <block id="0056ef372d846dfb115d92b5e12ef1c8" category="paragraph">= 2024 年 3 月 26 日</block>
+  <block id="7dba9fc9b6bbaa9d597ef24c74f9db22" category="paragraph">=== 私有模式版本（ 3.9.38 ）</block>
+  <block id="dd661beeeae00b750e119b53b648a4e2" category="paragraph">= 2024 年 3 月 8 日</block>
+  <block id="c0ad5c1fe3ad2869ab13a3d8aaef3c2c" category="paragraph">=== Connector 3.9.38</block>
+  <block id="2c095b0c521964bd2a03207f8042f8d6" category="paragraph">=== 代理伺服器設定與 Cloud Volumes ONTAP 設定</block>
+  <block id="377a1ac8f7f92bf339ff46295c4109c9" category="paragraph">= 2024 年 2 月 15 日</block>
+  <block id="0e00e89bb53fceee03b0057fca2279fe" category="paragraph">=== Connector 3.9.37</block>
+  <block id="bf52ba94a181fcc45fd4b68252b8e3eb" category="paragraph">=== 編輯名稱</block>
+  <block id="eaf368a6664fdb727ed36e3ad72573b8" category="paragraph">= 2024 年 1 月 11 日</block>
+  <block id="a29ae659d6eb8a8c2545f0dab3bbd09e" category="paragraph">=== Connector 3.9.36</block>
+  <block id="a43941bb00355570a4a3029f2e674e9a" category="paragraph">= 2023 年 12 月 5 日</block>
+  <block id="6ea18388ba7507dc2fc23db52eda62e0" category="paragraph">=== 私有模式版本（ 3.9.35 ）</block>
+  <block id="a758b4c1f74383995d4c2e33694dcbc2" category="paragraph">= 2023 年 11 月 8 日</block>
+  <block id="7eddb9a40b53d1fb8ac8da4abb1451f0" category="paragraph">=== 連接器 3.9.35</block>
+  <block id="bb7c9c40b7024c59ff43e34ddce76549" category="paragraph">= 2023 年 10 月 6 日</block>
+  <block id="a0c0302c13d3a2d5ffb8859f716233d5" category="paragraph">=== 連接器 3.9.34</block>
+  <block id="855e89b8da5c0b4ce9f6a2e112383cac" category="paragraph">= 2023 年 9 月 10 日</block>
+  <block id="df5ecc723ae3b6518086fca3aa1366bc" category="paragraph">=== Connector 3.9.33</block>
+  <block id="4284a9ec4f65cfa9d42f9c354b1b81e8" category="paragraph">= 2023 年 7 月 30 日</block>
+  <block id="9382b1d0f36bcf98a686b50dc83232df" category="paragraph">=== Connector 3.9.32</block>
+  <block id="87f126342598fc6c6a8d4dda812fcb35" category="paragraph">= 2023 年 7 月 2 日</block>
+  <block id="ce4d94660ef589c1b99d564b322965a5" category="paragraph">=== Connector 3.9.31</block>
+  <block id="82081f1a0a7e8b788d5dc845018429e8" category="paragraph">= 2023 年 6 月 4 日</block>
+  <block id="e8db98f27b9dde59a98ff7b2883bf710" category="paragraph">=== 連接器 3.9.30</block>
+  <block id="ea3c27e74e23fbbbe486d22957cdcbfa" category="paragraph">= 2023 年 5 月 7 日</block>
+  <block id="8b37535c50b26884cfb928b06c8ff5fc" category="paragraph">=== Connector 3.9.29</block>
+  <block id="4d5d317330f4bc873847c0cfedaa5891" category="paragraph">= 2023 年 4 月 4 日</block>
+  <block id="8f7f3ec12d5b9d30ebbb5afae5345055" category="paragraph">=== 部署模式</block>
+  <block id="999a77e2da5001492a83aac85133723f" category="paragraph">= 2023 年 4 月 3 日</block>
+  <block id="4e4bc4209079e01b29bd23543443814f" category="paragraph">=== Connector 3.9.28</block>
+  <block id="68c98feb558670370472cd1f20f8b5da" category="paragraph">= 2023 年 3 月 5 日</block>
+  <block id="fa7e83942ba75437b3b59a0963f3bc9a" category="paragraph">=== Connector 3.9.27</block>
+  <block id="84fc0f6df4babb21ec9ffd68478201bd" category="paragraph">= 2023 年 2 月 5 日</block>
+  <block id="db439755de0aedc826f20aeaf8b85665" category="paragraph">=== Connector 3.9.26</block>
+  <block id="b8a4ac8a67155065b6ae7d58adb58950" category="paragraph">= 2023 年 1 月 1 日</block>
+  <block id="d187e1ba69211c283711cac4bf3c4bc9" category="paragraph">=== 連接器 3.9.25</block>
+  <block id="1ce6a5c7fe7b574a3d820ee2c921e289" category="paragraph">= 2022 年 12 月 4 日</block>
+  <block id="992a11d3c17828e88759860a33deda60" category="paragraph">=== Connector 3.9.24</block>
+  <block id="6b3219b7aea220702f103ff6eefd7252" category="paragraph">= 2022 年 11 月 6 日</block>
+  <block id="d50c5e5d6ea814c6ff63491714b7bb22" category="paragraph">=== Connector 3.9.23</block>
+  <block id="1fc03a6128d14799523b2a38e8a42116" category="paragraph">= 2022 年 11 月 1 日</block>
+  <block id="dbf7a771613eb7de6c8ed16cb3cb3c50" category="paragraph">=== BlueXP  簡介</block>
+  <block id="4947d1323f3d33619cb826c9d26c149c" category="paragraph">=== 更新 NSS 認證的提示</block>
+  <block id="11b1f9630d8a8b5d20d5607b00ed30c8" category="paragraph">= 2022 年 9 月 18 日</block>
+  <block id="7d68d71b65ec6ee24410ec90c0021e57" category="paragraph">=== Connector 3.9.22</block>
+  <block id="e5e576e473f0b1175767ea74de91db00" category="paragraph">= 2022 年 7 月 31 日</block>
+  <block id="4574128c767429addbcb7a65b9df33c1" category="paragraph">=== Connector 3.9.21</block>
+  <block id="d41d107da6988c13975a6a6150f98d93" category="paragraph">= 2022 年 7 月 15 日</block>
+  <block id="0183eb2afe72b4e9feb0eda4946baa36" category="paragraph">=== 政策變更</block>
+  <block id="33064b3086cd44b07c14eb285f88b8ac" category="paragraph">= 2022 年 7 月 3 日</block>
+  <block id="bfcf1e30f4d242f15838008f26ceea59" category="paragraph">=== Connector 3.9.20</block>
+  <block id="88907daba481e0804ac616a3d970086c" category="paragraph">= 2022 年 6 月 28 日</block>
+  <block id="c37545fd3f7644b626cfe4bce4a36d07" category="paragraph">=== 以 NetApp 認證登入</block>
+  <block id="1ff1e2ef857e13c3c37a3772e1a246c0" category="paragraph">= 2022 年 6 月 7 日</block>
+  <block id="9b0d391743416126f0f798369698b4ca" category="paragraph">=== Connector 3.9.19</block>
+  <block id="f65af70cbb477f8f15c77932fe8e9481" category="paragraph">= 2022 年 5 月 12 日</block>
+  <block id="6f0edeaa3d802df6363ee6e04671b297" category="paragraph">=== Connector 3.9.18 修補程式</block>
+  <block id="751b324567f22a4abcbbd075ce956735" category="paragraph">= 2022 年 5 月 2 日</block>
+  <block id="8deffb57cbc0cfa24bc20bc2d95a64f9" category="paragraph">=== Connector 3.9.18</block>
+  <block id="60f48b297008bd94119c106eed7af878" category="paragraph">= 2022 年 4 月 3 日</block>
+  <block id="7e68888b126d72fd224ca006119b34cf" category="paragraph">=== Connector 3.9.17</block>
+  <block id="0b1d7b9b9bd8c9b024bae09b227cf9e3" category="paragraph">= 2022 年 2 月 27 日</block>
+  <block id="30fd205e9fa46b8bb70df5ce15ae27b6" category="paragraph">=== Connector 3.9.16</block>
+  <block id="8a4c3f33bcbb78652f9bb85dff9e0ee1" category="paragraph">= 2022 年 1 月 30 日</block>
+  <block id="e428168607a665e3c1240d1b9974c28b" category="paragraph">=== 連接器 3.9.15</block>
+  <block id="caa0ba355dcd0ee18edd0cb319408218" category="paragraph">= 2022 年 1 月 2 日</block>
+  <block id="ede380fc6dd49f41ee756315ea010637" category="paragraph">=== 減少 Connector 的端點數量</block>
+  <block id="13977f81b81008d3792a9a1b8254b757" category="paragraph">=== 用於 Connector 的 EBS 磁碟加密</block>
+  <block id="580b71f5903e92234a88fd284584b0b3" category="paragraph">=== NSS 帳戶的電子郵件地址</block>
+  <block id="0458addfe949743f8b4c288e8e71d894" category="paragraph">= 2021 年 11 月 28 日</block>
+  <block id="918c310a18db63ca6654f91e1be11bf3" category="paragraph">= NetApp 支援網站帳戶需要更新</block>
+  <block id="c7b9e02750a0fc15c7294c6775bda022" category="paragraph">=== 變更 Cloud Volumes ONTAP 的 NSS 帳戶</block>
+  <block id="2da029ef6994b27f39178baa54415a39" category="paragraph">= 2021 年 11 月 4 日</block>
+  <block id="41ce27119ae5331220c89fd0afbf19cc" category="paragraph">=== SOC 2 Type 2 認證</block>
+  <block id="d9614d86f0b053c2aca35484ddbceda9" category="paragraph">=== Connector 不再支援做為 Proxy</block>
+  <block id="60521726fe42ced004774f715a02d3c2" category="paragraph">= 2021 年 10 月 31 日</block>
+  <block id="eccbc7aa6bf8b8be290c2bc9d7ae8c26" category="paragraph">=== 使用服務主體進行驗證</block>
+  <block id="33c82bad32687f9d37aefa14b5369f88" category="paragraph">=== 認證增強功能</block>
+  <block id="dc166e78e49cb35757bbd7d705139a8d" category="paragraph">= 2021 年 9 月 2 日</block>
+  <block id="6e60c0bf75add61cfbbb033a220f86e2" category="paragraph">=== 已新增通知服務</block>
+  <block id="df8565ae35633fcb91d58c0da5962e81" category="paragraph">= 2021 年 7 月 7 日</block>
+  <block id="c140966fa1061d52e8f60024bb5ffa9a" category="paragraph">=== 新增 Connector 精靈的增強功能</block>
+  <block id="fba1354b4985a6802bd4e78e48bd882b" category="paragraph">=== Support Dashboard 的 NSS 帳戶管理</block>
+  <block id="3276b68888a00d2d4b9e14a15287d6f8" category="paragraph">= 2021 年 5 月 5 日</block>
+  <block id="ed6bc9ed22101c19fb4da7a2343e4689" category="paragraph">=== 時間表中的帳戶</block>
+  <block id="adb4829dfe3cc92189095befde229dd4" category="paragraph">= 2021 年 4 月 11 日</block>
+  <block id="d8638688a8d4722e9c53fc7743a1a62b" category="paragraph">= 直接撥打 API 給 Cloud Manager</block>
+  <block id="bea7b1d47c0245907b7de0e471fb9c77" category="paragraph">=== 服務帳戶使用者</block>
+  <block id="c1b25b034c07d6f894068d2dfefb0623" category="paragraph">=== 私有預覽</block>
+  <block id="989d6f1625a08009991494b7f5c0a4e3" category="paragraph">=== 第三方服務</block>
+  <block id="4cc5a3d9e8c43a39a5b692c0a1db140a" category="paragraph">= 2021 年 3 月 8 日</block>
+  <block id="b34212b682317ac993f17675d714bece" category="paragraph">=== Cloud Volumes ONTAP 增強功能</block>
+  <block id="7d5b63b99b68b403ad22fd7794c7b3c8" category="paragraph">=== Connector 增強功能</block>
+  <block id="8a7a1ba1607ed764cfb1593bfbb47787" category="paragraph">=== Cloud Sync 增強功能</block>
+  <block id="def23cac8f6290f84b7067bad7da2ef9" category="paragraph">=== 雲端分層增強功能</block>
+  <block id="115a366c4eaee860ef62ded22f52bf83" category="paragraph">=== Azure NetApp Files 增強功能</block>
+  <block id="b3861887a96662e04f060780761c856e" category="paragraph">= 2021 年 2 月 9 日</block>
+  <block id="39cef9e5890819aaff5b08cfc78c59a4" category="paragraph">=== 支援儀表板改善功能</block>
 </blocks>
