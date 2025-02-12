@@ -46,6 +46,15 @@ link:concept-modes.html["瞭解私有模式的運作方式"]。
 Connector 軟體必須在符合特定作業系統需求、 RAM 需求、連接埠需求等的主機上執行。
 
 專用主機:: 與其他應用程式共用的主機不支援 Connector 。主機必須是專屬主機。
++
+--
+主機可以是任何符合下列規模需求的架構：
+
+* CPU ： 8 核心或 8 個 vCPU
+* RAM：32 GB
+
+
+--
 [[podman-versions]] 作業系統與容器需求:: 在私有模式下使用 BlueXP  時、 BlueXP  支援連接器搭配下列作業系統。安裝 Connector 之前、需要使用容器協調工具。
 +
 --

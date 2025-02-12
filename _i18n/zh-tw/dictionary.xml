@@ -4979,4 +4979,7 @@
   <block id="3a85c700de68ae35770a964c115eb7cb" category="list-title">其他 IAM 增強功能</block>
   <block id="afa69926e5d0001214117331ecb2e622" category="list-text">兩個新角色與應用程式類別相關聯：儲存檢視器和儲存管理員。</block>
   <block id="df90fe85a844ffa5c11d99e37754376f" category="paragraph"><block ref="df90fe85a844ffa5c11d99e37754376f" category="inline-link-rx"></block></block>
+  <block id="69ac82a1779b2cc7d528017241f5324f" category="paragraph">主機可以是任何符合下列規模需求的架構：</block>
+  <block id="df4af5ebfed55f726690fe09695fb1fa" category="list-text">CPU ： 8 核心或 8 個 vCPU</block>
+  <block id="357a496c919d7b340d6f4582397b89b5" category="list-text">RAM：32 GB</block>
 </blocks>
