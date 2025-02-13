@@ -1405,8 +1405,6 @@
   <block id="0a6b76c04095167ad3b2e08901195ca3" category="list-text">下列Google Cloud區域現在支援Connector：</block>
   <block id="db760e7471192daa123eed31bfba312d" category="list-text">哥倫布（美國東部5）</block>
   <block id="ad6033c8e4eda00017eca167a149ced4" category="list-text">達拉斯（美國-南1）</block>
-  <block id="3b61cbbfa7452cc07df9dbea0756d650" category="inline-link">檢視支援區域的完整清單</block>
-  <block id="0ec2b2e4840acfd3f21b50b176ec45f1" category="paragraph"><block ref="0ec2b2e4840acfd3f21b50b176ec45f1" category="inline-link-rx"></block></block>
   <block id="05263fcc56b50972b2dfe4be20698328" category="list-text">當您從 BlueXP 或雲端供應商的市場部署 Connector 時、 Ubuntu 22.04 是 Connector 的新作業系統。</block>
   <block id="9ab8f4fa1e0839b1101d04c9cd4e1bae" category="paragraph">您也可以選擇在執行 Ubuntu 22.04 的 Linux 主機上手動安裝 Connector 。</block>
   <block id="dfcaca26de191f6219819bb7091c9ebe" category="list-text">新的 Connector 部署不再支援 Red Hat Enterprise Linux 8.6 和 8.7 。</block>
@@ -1524,7 +1522,6 @@
   <block id="1a1145c860165dcd96b82eb7d32cd59f" category="list-text">巴黎（歐洲-西9）</block>
   <block id="eb4cae07e62b958e999eaa4c0d9b254b" category="list-text">華沙（歐洲中心2）</block>
   <block id="05f08f9410eed79855c8ade92149a276" category="list-text">現在Azure West US 3區域支援Connector。</block>
-  <block id="075b5f25465b6b108fb916bce6a2219f" category="paragraph"><block ref="075b5f25465b6b108fb916bce6a2219f" category="inline-link-rx"></block></block>
   <block id="d9815601b56ec3084872748d000734dd" category="paragraph"><block ref="d9815601b56ec3084872748d000734dd" category="inline-link-rx"></block></block>
   <block id="f646305c890b8deec88379aeecbe56a5" category="paragraph">當新使用者註冊 Cloud Central 時，他們現在可以選擇「*Log in with NetApp（登入 NetApp）*」選項，以 NetApp 支援網站認證資料登入。這是輸入電子郵件地址和密碼的替代方法。</block>
   <block id="f27b2370dfece83354cbb560bf251abc" category="admonition">使用電子郵件地址和密碼的現有登入必須持續使用該登入方法。「以NetApp登入」選項適用於註冊的新使用者。</block>
@@ -4982,4 +4979,5 @@
   <block id="69ac82a1779b2cc7d528017241f5324f" category="paragraph">主機可以是任何符合下列規模需求的架構：</block>
   <block id="df4af5ebfed55f726690fe09695fb1fa" category="list-text">CPU ： 8 核心或 8 個 vCPU</block>
   <block id="357a496c919d7b340d6f4582397b89b5" category="list-text">RAM：32 GB</block>
+  <block id="0c257ecd276502d9a2d45fc70759eec6" category="admonition">截至 2025 年 2 月，這些使用者角色已不再適用於標準和限制部署模式。BlueXP  私有模式僅提供一個角色，可與雲端管理員管理員管理員角色的使用者建立關聯，此角色可授予所有 BlueXP  權限。</block>
 </blocks>

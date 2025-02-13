@@ -1069,9 +1069,6 @@ https://docs.netapp.com/us-en/bluexp-blob-storage/task-add-blob-storage.html["�
 ** 達拉斯（美國-南1）
 
 
-+
-https://cloud.netapp.com/cloud-volumes-global-regions["檢視支援區域的完整清單"^]
-
 
 
 
@@ -1095,9 +1092,6 @@ https://cloud.netapp.com/cloud-volumes-global-regions["檢視支援區域的完�
 
 * 現在、 Google Cloud 中的卡塔爾地區支援 Connector 。
 * Microsoft Azure 的瑞典中部地區也支援 Connector 。
-+
-https://cloud.netapp.com/cloud-volumes-global-regions["檢視支援區域的完整清單"^]
-
 * 此版本的Connector包含Cloud Volumes ONTAP 一些功能強化功能。
 +
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#7-may-2023["深入瞭Cloud Volumes ONTAP 解功能強化功能"^]
@@ -1140,9 +1134,6 @@ NOTE: 採用受限模式會取代啟用或停用 SaaS 平台的選項。您可�
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html["瞭解如何設定電子郵件通知"]。
 
 * Google Cloud Turin地區現在支援Connector。
-+
-https://cloud.netapp.com/cloud-volumes-global-regions["檢視支援區域的完整清單"^]
-
 * 您現在可以管理與您的BlueXP登入相關的使用者認證：ONTAP 功能驗證和NetApp 支援網站 支援（NSS）認證。
 +
 當您移至*「設定」>「認證資料」*時、您可以檢視認證資料、更新認證資料並加以刪除。例如、如果您變更這些認證資料的密碼、則需要更新BlueXP中的密碼。
@@ -1440,9 +1431,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 
 
 * 現在Azure West US 3區域支援Connector。
-+
-https://bluexp.netapp.com/cloud-volumes-global-regions["檢視支援區域的完整清單"^]
-
 * 此版本的Connector也包含Cloud Volumes ONTAP 了一些功能強化功能。
 +
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#2-july-2022["深入瞭Cloud Volumes ONTAP 解功能強化功能"^]
@@ -1472,9 +1460,6 @@ NOTE: 使用電子郵件地址和密碼的現有登入必須持續使用該登�
 
 * 現在AWS雅加達地區（ap東南3區）支援Connector。
 * 現在Azure Brazil東南地區支援Connector。
-+
-https://bluexp.netapp.com/cloud-volumes-global-regions["檢視支援區域的完整清單"^]
-
 * 此版本的Connector也包含Cloud Volumes ONTAP 了加強功能的功能、以及內部ONTAP 的叢集增強功能。
 +
 ** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#7-june-2022["深入瞭Cloud Volumes ONTAP 解功能強化功能"^]
@@ -1508,9 +1493,6 @@ https://bluexp.netapp.com/cloud-volumes-global-regions["檢視支援區域的完
 ** 米蘭（歐洲-西8）
 ** 聖地牙哥（西南1）
 
-
-+
-https://bluexp.netapp.com/cloud-volumes-global-regions["檢視支援區域的完整清單"^]
 
 * 當您選取要搭配Connector使用的Google Cloud服務帳戶時、Cloud Manager現在會顯示與每個服務帳戶相關聯的電子郵件地址。檢視電子郵件地址可讓您更容易區分共用相同名稱的服務帳戶。
 +
