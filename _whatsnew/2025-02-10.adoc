@@ -74,12 +74,3 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 
 .支援的部署模式
 在標準和受限模式下使用 BlueXP  時，支援 BlueXP  IAM 。如果您是以私人模式使用 BlueXP  ，則會繼續使用 BlueXP  _account_ 來管理工作區，使用者和資源。
-
-.其他 IAM 增強功能
-* 支援指派多個角色給使用者。
-* 角色現在與以下三種類別之一相關聯：平台，應用程式和資料服務。
-* 兩個新角色與應用程式類別相關聯：儲存檢視器和儲存管理員。
-+
-https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["瞭解 IAM 角色"]
-
-
