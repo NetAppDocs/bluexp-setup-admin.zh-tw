@@ -409,7 +409,7 @@ Proxy伺服器:: 如果您的企業需要為所有傳出的網際網路流量部
 
 
 
-== 步驟 4 ：設定權限
+== 步驟 4 ：設定 Connector 部署權限
 
 您必須使用下列其中一個選項、提供 Azure BlueXP 權限：
 
@@ -421,7 +421,7 @@ Proxy伺服器:: 如果您的企業需要為所有傳出的網際網路流量部
 
 [role="tabbed-block"]
 ====
-.自訂角色
+.為 Connector 部署建立自訂角色
 --
 請注意、您可以使用 Azure 入口網站、 Azure PowerShell 、 Azure CLI 或 REST API 來建立 Azure 自訂角色。下列步驟說明如何使用 Azure CLI 建立角色。如果您想要使用不同的方法、請參閱 https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Azure文件"^]
 

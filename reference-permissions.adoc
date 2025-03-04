@@ -116,7 +116,7 @@ BlueXP 需要連接器和個別服務的 Azure 權限。
 | 目標 | 說明 | 連結 
 
 
-| 從 BlueXP 部署 Connector | 從BlueXP部署Connector時、您需要使用Azure帳戶或服務主體、該用戶必須具有在Azure中部署Connector VM的權限。 | link:task-install-connector-azure-bluexp.html#step-2-create-a-custom-role["設定 Azure 權限"] 
+| 從 BlueXP 部署 Connector | 從BlueXP部署Connector時、您需要使用Azure帳戶或服務主體、該用戶必須具有在Azure中部署Connector VM的權限。 | link:task-install-connector-azure-bluexp.html#connector-custom-role["設定 Azure 權限"] 
 
 
 | 提供 Connector 的權限  a| 

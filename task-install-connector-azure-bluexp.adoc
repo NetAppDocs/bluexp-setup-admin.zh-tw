@@ -14,7 +14,7 @@ summary: 若要從 BlueXP 在 Azure 中建立 Connector 、您必須設定網路
 
 
 [role="lead"]
-Connector 是在雲端網路或內部部署網路中執行的 NetApp 軟體、可讓您使用所有 BlueXP  功能和服務。其中一個可用的安裝選項是直接從 BlueXP  在 Azure 中建立 Connector 。若要從 BlueXP 在 Azure 中建立 Connector 、您必須設定網路、準備 Azure 權限、然後建立 Connector 。
+您可以直接從 BlueXP  在 Azure 中建立 Connector 。若要從 BlueXP  在 Azure 中建立 Connector ，您必須設定網路，準備 Azure 角色以部署 Connector ，然後部署 Connector 。
 
 .開始之前
 * 您應該擁有 link:concept-connectors.html["瞭解連接器"].
@@ -160,9 +160,13 @@ Proxy伺服器:: 如果您的企業需要為所有傳出的網際網路流量部
 
 
 
-== 步驟 2 ：建立自訂角色
+== 步驟 2 ：建立 Connector 部署原則（自訂角色）
+
+您需要建立具有在 Azure 中部署 Connector 權限的自訂角色。
 
 建立可指派給 Azure 帳戶或 Microsoft Entra 服務主體的 Azure 自訂角色。BlueXP 會驗證 Azure 、並使用這些權限代表您建立 Connector 執行個體。
+
+BlueXP  在 Azure 中部署 Connector 虛擬機器之後，便會在虛擬機器上啟用 https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["系統指派的託管身分識別"^]，自動建立所需的角色，並將其指派給虛擬機器。自動建立的角色可為 BlueXP  提供管理該 Azure 訂閱內資源與程序所需的權限。link:reference-permissions-azure.html["檢閱BlueXP如何使用權限"]。
 
 請注意、您可以使用 Azure 入口網站、 Azure PowerShell 、 Azure CLI 或 REST API 來建立 Azure 自訂角色。下列步驟說明如何使用 Azure CLI 建立角色。如果您想要使用不同的方法、請參閱 https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Azure文件"^]
 

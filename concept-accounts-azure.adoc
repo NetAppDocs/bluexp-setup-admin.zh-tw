@@ -20,7 +20,7 @@ summary: 瞭解 BlueXP 如何使用 Azure 認證來代表您執行動作、以�
 
 == Azure 初始認證
 
-從BlueXP部署Connector時、您需要使用具備部署Connector虛擬機器權限的Azure帳戶或服務主體。所需權限列於 link:task-install-connector-azure-bluexp.html#step-2-create-a-custom-role["Azure 的連接器部署原則"]。
+從BlueXP部署Connector時、您需要使用具備部署Connector虛擬機器權限的Azure帳戶或服務主體。所需的權限列在link:task-install-connector-azure-bluexp.html#connector-custom-role["Azure 的連接器部署原則"]中。
 
 BlueXP  在 Azure 中部署 Connector 虛擬機器時，會在虛擬機器上啟用 https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["系統指派的託管身分識別"^]，建立自訂角色，並將其指派給虛擬機器。此角色可為BlueXP提供所需的權限、以管理該Azure訂閱中的資源和程序。link:reference-permissions-azure.html["檢閱BlueXP如何使用權限"]。
 
