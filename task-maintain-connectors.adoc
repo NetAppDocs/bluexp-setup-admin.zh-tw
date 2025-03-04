@@ -118,6 +118,7 @@ system configuration backup settings modify -destination <target-location>
 .步驟
 . 從 BlueXP 標頭中選取 * Connector* 下拉式清單。
 . 選取 * 管理連接器 * 。
-. 選取 Connector 的動作功能表、然後選取 * 編輯 URI* 。
+. 選取 Connector 的動作功能表、然後選取 * 編輯 Connector* 。
+. 選取 * 連接器 URI* 。
 . 新增並移除 URI 、然後選取 * 套用 * 。
 

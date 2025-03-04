@@ -1768,7 +1768,6 @@
   <block id="c160cffd96a1bb98161a7add244e274f" category="paragraph">新增及移除 Connector 的統一資源識別元（ URI ）。</block>
   <block id="f98b44043815b68b5ba8272fb252dafd" category="list-text">從 BlueXP 標頭中選取 * Connector* 下拉式清單。</block>
   <block id="9cf3804bed44acd4f31054cd5804edd6" category="list-text">選取 * 管理連接器 * 。</block>
-  <block id="330b38a06abadd478b0e03585b3789a5" category="list-text">選取 Connector 的動作功能表、然後選取 * 編輯 URI* 。</block>
   <block id="fb9b59364e346ccfcbfc4636f13644b5" category="list-text">新增並移除 URI 、然後選取 * 套用 * 。</block>
   <block id="fb6890fd99d108eeb3627b961bdfb529" category="section-title">修正使用Google Cloud NAT閘道時的下載失敗</block>
   <block id="2eac5df1bc108f46482e586570f46442" category="paragraph">Connector會自動下載Cloud Volumes ONTAP 適用於更新的軟體。如果您的組態使用Google Cloud NAT閘道、下載可能會失敗。您可以限制軟體映像分成的零件數量來修正此問題。此步驟必須使用BlueXP API完成。</block>
@@ -4980,4 +4979,5 @@
   <block id="7fae3ca49e7c49f36f0627788bfa6e92" category="paragraph">BlueXP  在 Azure 中部署 Connector 虛擬機器之後，便會在虛擬機器上啟用<block ref="3b529d5441a4ea26741352247ca08bac" category="inline-link-rx"></block>，自動建立所需的角色，並將其指派給虛擬機器。自動建立的角色可為 BlueXP  提供管理該 Azure 訂閱內資源與程序所需的權限。<block ref="daf58003d5227a43b6fbea1d165f6f7b" category="inline-link-macro-rx"></block>。</block>
   <block id="be77518281f390b896a01faba311cae7" category="section-title">步驟 4 ：設定 Connector 部署權限</block>
   <block id="d5c982d940dee7fa8f6664ea1ab252e6" category="open-title">為 Connector 部署建立自訂角色</block>
+  <block id="87a06bc88e9a560195c606632e964e42" category="list-text">選取 * 連接器 URI* 。</block>
 </blocks>
