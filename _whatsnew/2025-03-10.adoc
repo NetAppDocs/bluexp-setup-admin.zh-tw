@@ -1,0 +1,9 @@
+= 強制使用者輸入 ONTAP 認證以存取進階檢視（ ONTAP 系統管理員）
+:allow-uri-read: 
+
+
+
+
+=== 強制使用者輸入 ONTAP 認證以存取進階檢視（ ONTAP 系統管理員）
+
+您現在可以強制使用者輸入其 ONTAP 認證，以存取 ONTAP 系統管理員。此設定同時適用於 Cloud Volumes ONTAP 和 ONTAP 內部部署。具有組織管理員角色的使用者可以設定此設定。

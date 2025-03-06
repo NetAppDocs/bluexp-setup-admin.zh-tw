@@ -41,7 +41,7 @@ link:reference-connector-default-config.html["瞭解連接器的預設組態"]�
 
 
 
-== 停止啟動 Connector VM
+== 停止並啟動 Connector VM
 
 如果您需要停止然後啟動 Connector VM 、則應從雲端供應商的主控台或使用內部部署管理的標準程序來執行。
 
@@ -119,6 +119,6 @@ system configuration backup settings modify -destination <target-location>
 . 從 BlueXP 標頭中選取 * Connector* 下拉式清單。
 . 選取 * 管理連接器 * 。
 . 選取 Connector 的動作功能表、然後選取 * 編輯 Connector* 。
-. 選取 * 連接器 URI* 。
+. 展開 *Connector URI* 列以檢視連接器的 URI 。
 . 新增並移除 URI 、然後選取 * 套用 * 。
 

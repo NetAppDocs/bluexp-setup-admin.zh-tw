@@ -1,0 +1,32 @@
+---
+sidebar: sidebar 
+permalink: task-ontap-access-connector.html 
+keywords: administer, credentials, ONTAP, connector, Cloud Volumes ONTAP, on-premises, roles, permissions 
+summary: 系統管理員可以設定 BlueXP  連接器，以提示使用者提供其 ONTAP 認證。 
+---
+= 強制 ONTAP 進階檢視的 ONTAP 權限（ ONTAP 系統管理員）
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+依預設，連接器認證可讓 BlueXP  使用者存取進階檢視（ ONTAP 系統管理員）。您可以設定 BlueXP  來提示使用者提供其 ONTAP 認證。如此可確保使用者在 Cloud Volumes ONTAP 和 ONTAP 內部部署叢集中使用 ONTAP 叢集時，會套用其 ONTAP 權限。
+
+
+NOTE: 您必須具有組織管理員角色，才能編輯 Connector 設定。
+
+.步驟
+. 從 BlueXP 標頭中選取 * Connector* 下拉式清單。
+. 選取 * 管理連接器 * 。
+. 在您要編輯的 Connector 所對應的列中，選取動作功能表。
+. 展開 * 強制認證 * 選項。
+. 選取核取方塊以啟用 * 強制認證 * 選項，然後選取 * 儲存 * 。
+. 檢視 * 強制認證 * 選項，確認已啟用此選項。
++
+image:screenshot-force-credentials-on.png["顯示強制認證已開啟的螢幕擷取畫面"]
+
+

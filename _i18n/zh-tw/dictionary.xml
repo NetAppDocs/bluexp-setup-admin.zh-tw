@@ -570,7 +570,6 @@
   <block id="e3884a4ce043ad31217e0098c7c0537f" category="doc">管理與您的BlueXP登入相關的認證資料</block>
   <block id="5a66a53c80f94aa60f854872b432d82d" category="paragraph">視您在BlueXP中採取的行動而定、ONTAP 您可能會在NetApp 支援網站 使用者登入BlueXP時、擁有相關的功能驗證資料和功能驗證（NSS）認證資料。您可以在建立相關聯之後、在BlueXP中檢視及管理這些認證資料。例如、如果您變更這些認證資料的密碼、則需要更新BlueXP中的密碼。</block>
   <block id="823a6e1d7fe661be55dd3af05f972b11" category="section-title">身分證明ONTAP</block>
-  <block id="b82af7a7b96d34942cadb7921514f408" category="paragraph">當您直接探索內部部署ONTAP 的無線叢集而不使用Connector時、系統會提示您輸入ONTAP 叢集的憑據。這些認證資料是在使用者層級進行管理、這表示登入的其他使用者無法檢視這些認證資料。</block>
   <block id="4cdcf6b8fd95bbaa7cf27e4443c7681b" category="section-title">NSS.認證資料</block>
   <block id="9b7ea233ab4085c74e7506949f6c1a49" category="paragraph">與 BlueXP 登入相關的 NSS 認證資料可支援註冊、案例管理及存取 Digital Advisor 。</block>
   <block id="f57a365a74c463e64fe68cc99fbed5f5" category="list-text">當您存取 * 支援 &gt; 資源 * 並註冊支援時、系統會提示您將 NSS 認證與 BlueXP 登入建立關聯。</block>
@@ -1755,7 +1754,6 @@
   <block id="fa25ff644bc82c03a613715d969f788d" category="list-text">在Google Cloud中建立Connector時、您無法指定驗證方法。不過、您可以使用Google Cloud Console或Google Cloud CLI（gclCloud）連線至Linux VM執行個體。</block>
   <block id="b60097f9f3ac90a5ce4fd69c66be0717" category="inline-link">Google Cloud Docs：連線至Linux VM</block>
   <block id="b80f2820ec689140e03615f3240fde24" category="paragraph"><block ref="b80f2820ec689140e03615f3240fde24" category="inline-link-rx"></block></block>
-  <block id="bdfe8a8b0f5b6a0b4242be2e550dff4a" category="paragraph">如果您在私有模式下使用 BlueXP 、則可在 NetApp 支援網站 提供較新版本時升級 Connector 。</block>
   <block id="84692ef80d23d7ba11b5ce40223e1af5" category="paragraph">Connector 需要在升級過程中重新啟動、以便在升級期間無法使用網路型主控台。</block>
   <block id="d651da37c0942c2e8d61b167e835ec80" category="list-text">從下載Connector軟體<block ref="99637e01fa8caa34a544049093cac68c" category="inline-link-rx"></block>。</block>
   <block id="29796d02ce8782cd7e5fc7ab3be29617" category="list-text">升級完成後、您可以前往*「Help」（說明）&gt;「Support」（支援）&gt;「Connector*」（連接器*）來驗證連接器的版本。</block>
@@ -3627,8 +3625,6 @@
   <block id="9a8e93f292200e4d86cfd716262b53cc" category="paragraph">\http://bxpproxyuser:netapp1\!@address:3128</block>
   <block id="b47596b2df9e477c6203e15d91a678ba" category="section-title">步驟 8 ：提供 BlueXP 的權限</block>
   <block id="1963a5845bb573651eecf0188b584456" category="summary">當您在標準模式或受限模式下使用 BlueXP 時、 BlueXP 會自動將 Connector 升級至最新版本。通常每個月都會發行新版本、以引進新功能並改善穩定性。如果您願意、您可以設定 Connector 改為從本機儲存庫擷取映像更新。對於私有模式部署、您永遠需要自行手動升級 Connector 。</block>
-  <block id="d6b403d1857ecb824db228cac4a628ae" category="doc">使用私有模式時升級 Connector</block>
-  <block id="eb775c24a0b347148812da8a6496489b" category="admonition">在標準模式或受限模式下使用 BlueXP 時、您不需要手動升級 Connector 。只要 Connector 具有外送網際網路存取權限、 BlueXP 就會自動將 Connector 升級至最新版本、以取得軟體更新。</block>
   <block id="eb762959fcc0cce31949abce6f8eb1c1" category="list-text">準備符合 CPU 、 RAM 、磁碟空間、容器協調工具等需求的專用 Linux 主機。</block>
   <block id="99ca40e706695ba7607287669fab39f3" category="cell">檢查可用性區域是否為 AWS 本機區域、並驗證所有部署參數是否相容</block>
   <block id="0683995d371439e19d907680da921ba9" category="section-title">2024 年 5 月 9 日</block>
@@ -3683,7 +3679,6 @@
   <block id="6f16d8c603420093f0274e54a03d0a2f" category="admonition">如果您有現有的 Connector 、您應該知道 <block ref="bd6e461b9eed09ced9eb75610086f8d1" category="inline-link-macro-rx"></block>。</block>
   <block id="6a8efb58df7d7b111b6073b7ce536fe1" category="section-title">作業系統修補程式和 Connector</block>
   <block id="5c6b62893e9b8753b16ce8db64ae077c" category="paragraph">套用作業系統安全性修補程式時、不需要停止 Connector 主機上的任何服務。</block>
-  <block id="d4c7d564cf9384303b11292ec4d09bf7" category="section-title">停止啟動 Connector VM</block>
   <block id="f65f967e9525533fe9edbca2e40db32f" category="paragraph">如果您需要停止然後啟動 Connector VM 、則應從雲端供應商的主控台或使用內部部署管理的標準程序來執行。</block>
   <block id="bd684dd31e369444b29047e57d56ff19" category="sidebar">瞭解部署模式</block>
   <block id="a620abb16506a8da5f6b8dcbc0073466" category="sidebar">檢視 AWS 權限</block>
@@ -4979,5 +4974,48 @@
   <block id="7fae3ca49e7c49f36f0627788bfa6e92" category="paragraph">BlueXP  在 Azure 中部署 Connector 虛擬機器之後，便會在虛擬機器上啟用<block ref="3b529d5441a4ea26741352247ca08bac" category="inline-link-rx"></block>，自動建立所需的角色，並將其指派給虛擬機器。自動建立的角色可為 BlueXP  提供管理該 Azure 訂閱內資源與程序所需的權限。<block ref="daf58003d5227a43b6fbea1d165f6f7b" category="inline-link-macro-rx"></block>。</block>
   <block id="be77518281f390b896a01faba311cae7" category="section-title">步驟 4 ：設定 Connector 部署權限</block>
   <block id="d5c982d940dee7fa8f6664ea1ab252e6" category="open-title">為 Connector 部署建立自訂角色</block>
-  <block id="87a06bc88e9a560195c606632e964e42" category="list-text">選取 * 連接器 URI* 。</block>
+  <block id="68ea9cebb3c452c83085356b253868c5" category="paragraph">您現在可以停用連接器的自動升級。如果您因業務原因而需要手動處理軟體升級，這項功能非常實用。</block>
+  <block id="3d4e00cd939cc5521989a751b4b1dbdb" category="paragraph">客戶可關閉 Connector 3.9.48 版或更新版本的自動升級功能。</block>
+  <block id="71ae02c171873e7af0f7b72300d1da9b" category="inline-link">管理連接器升級</block>
+  <block id="d8d6c527b108697862bc5a357c01048f" category="list-text"><block ref="d8d6c527b108697862bc5a357c01048f" category="inline-link-rx"></block></block>
+  <block id="56997c9a04ad826028323008fa4ae68f" category="doc">強制使用者輸入 ONTAP 認證以存取進階檢視（ ONTAP 系統管理員）</block>
+  <block id="7947a3598cd43dbb491dfbcdf1970bb1" category="paragraph">您現在可以強制使用者輸入其 ONTAP 認證，以存取 ONTAP 系統管理員。此設定同時適用於 Cloud Volumes ONTAP 和 ONTAP 內部部署。具有組織管理員角色的使用者可以設定此設定。</block>
+  <block id="47c94941fabbd38f1b71c23663c608d6" category="section-title">停止並啟動 Connector VM</block>
+  <block id="90754b70edd81e7b1f33fbe6f09ee188" category="list-text">展開 *Connector URI* 列以檢視連接器的 URI 。</block>
+  <block id="fbd9d54f39ed5129df98414b561236de" category="paragraph">使用者需要 ONTAP 管理認證，才能在 BlueXP  中探索 ONTAP 叢集。不過， ONTAP 系統管理員存取取決於您是否使用 Connector 。</block>
+  <block id="b2d980523e7f68a234b1bef9046bf610" category="paragraph-title">沒有連接器</block>
+  <block id="dbe7e61b89ec728b027dc1237e881b38" category="paragraph">系統會提示使用者輸入其 ONTAP 認證，以存取叢集的 ONTAP 系統管理員。使用者可以選擇將這些認證儲存在 BlueXP  中，這表示每次都不會提示他們輸入。使用者認證僅供個別使用者檢視，並可從「使用者認證」頁面進行管理。</block>
+  <block id="ebed6caedf3ce370608544cd61300fb9" category="paragraph-title">使用 Connector</block>
+  <block id="e8cbfb0691fa9052d50053bb8d48f3ca" category="paragraph">根據預設，系統不會提示使用者輸入其 ONTAP 認證來存取 ONTAP 系統管理員。不過， BlueXP  管理員（具有組織管理員角色）可以設定 BlueXP  ，以提示使用者輸入其 ONTAP 認證。啟用此設定時，使用者每次都需要輸入其 ONTAP 認證，因為這些認證並未儲存在 BlueXP  中。</block>
+  <block id="f990e553cdc4c29c2efffba33e08a8c7" category="inline-link-macro">深入瞭解。</block>
+  <block id="efd19a04c99c31329dfaad38a02c2181" category="paragraph"><block ref="efd19a04c99c31329dfaad38a02c2181" category="inline-link-macro-rx"></block></block>
+  <block id="034059bc028cfbb547d4683b2caff29f" category="summary">系統管理員可以設定 BlueXP  連接器，以提示使用者提供其 ONTAP 認證。</block>
+  <block id="29f68982771966bddc72b7dbd3b2f3d3" category="doc">強制 ONTAP 進階檢視的 ONTAP 權限（ ONTAP 系統管理員）</block>
+  <block id="3b0e6670a76f82f4c760fe4ff152d8c0" category="paragraph">依預設，連接器認證可讓 BlueXP  使用者存取進階檢視（ ONTAP 系統管理員）。您可以設定 BlueXP  來提示使用者提供其 ONTAP 認證。如此可確保使用者在 Cloud Volumes ONTAP 和 ONTAP 內部部署叢集中使用 ONTAP 叢集時，會套用其 ONTAP 權限。</block>
+  <block id="19c9798fb0fc2fbadcc32b5470960e0e" category="admonition">您必須具有組織管理員角色，才能編輯 Connector 設定。</block>
+  <block id="1d34d896e9246492a9cf64de3c5abb49" category="list-text">在您要編輯的 Connector 所對應的列中，選取動作功能表。</block>
+  <block id="79200641e6b3df738c3bda6a52fd51c1" category="list-text">展開 * 強制認證 * 選項。</block>
+  <block id="305fd31774e543ad8e03e87cad28ea54" category="list-text">選取核取方塊以啟用 * 強制認證 * 選項，然後選取 * 儲存 * 。</block>
+  <block id="09d01e9645cf22853822390959d6c792" category="list-text">檢視 * 強制認證 * 選項，確認已啟用此選項。</block>
+  <block id="74b59d176e85a927c1b9ec89cd8847b2" category="inline-image-macro">顯示強制認證已開啟的螢幕擷取畫面</block>
+  <block id="e47d9b41f27e043909b844e706663ff6" category="paragraph"><block ref="e47d9b41f27e043909b844e706663ff6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="651a32308986dea9de3797c8e0997c14" category="paragraph">當您在標準模式或受限模式下使用 BlueXP  時，只要連接器具有連出網際網路存取權以取得軟體更新， BlueXP  就會自動將您的連接器升級至最新版本。如果您需要在連接器升級時手動管理，您可以停用標準模式或限制模式的自動升級。</block>
+  <block id="a30a1e13c5419a2d602474533f69dcd1" category="admonition">以私有模式執行 BlueXP  時，您必須自行升級連接器。</block>
+  <block id="6c66e308926fc039cc9e20fe56d7abdf" category="section-title">停用自動升級</block>
+  <block id="a1188a88192f3f804b6f1b62d79bcd67" category="paragraph">停用連接器的自動升級包含兩個步驟。首先，您必須確保目前的連接器健全且為最新狀態。然後，您可以編輯組態檔案，以關閉自動升級功能。</block>
+  <block id="04b99f73471ca057d71f53c3f053b60e" category="admonition">只有在連接器版本 3.9.48 或更新版本時，才能停用自動升級。</block>
+  <block id="377245fa7e4be29c2941f9c3069eae57" category="section-title">驗證連接器的健全狀況</block>
+  <block id="70a6926b672111815dfe273a0292468d" category="paragraph">您應該確認連接器是否穩定，且連接器 VM 上執行的所有容器均正常且正在執行。停用自動升級之後， Connector VM 會停止檢查新的服務或升級套件。</block>
+  <block id="aca0bf9b192b34e35fb37ccbd9cd98be" category="paragraph">請使用下列其中一個命令來驗證您的連接器。所有服務的狀態應為 _Running 。如果不是這樣，請在停用自動升級之前聯絡 NetApp 支援部門。</block>
+  <block id="c5fd214cdd0d2b3b4272e73b022ba5c2" category="list-text">Docker</block>
+  <block id="21fa3d085631029b33cc6537b5b1a964" category="section-title">停用連接器的自動升級</block>
+  <block id="f1a415c9565a5203c9cab67d50062380" category="paragraph">您可以在 _com/ope/application/oracle/service-manager-2/config.json_ NetApp 檔案中設定 _isUpgradeDisabled 旗標，以停用自動升級。根據預設，此旗標會設為 false ，且您的連接器會自動升級。您可以將此旗標設為 true ，以停用自動升級。</block>
+  <block id="fda5aa414d851bf8018163c5fe4acb1a" category="paragraph">若要重新啟用自動升級，請使用下列步驟，並將 _isUpgradeDisabled 旗標設為 false 。</block>
+  <block id="942778941acc11e030b5e5615f2d8d41" category="list-text">請確認您的連接器是最新且正常的。</block>
+  <block id="667f94e7aab832b818ed3d6710e2b890" category="list-text">編輯 _/opt/application/oracle/service-manager-2/config.json_ NetApp 檔案，並將 _isUpgradeDisabled 旗標的值變更為 true ，如本範例底部所示。</block>
+  <block id="9e3e4c61d70076bf677edfc157a67761" category="list-text">儲存檔案。</block>
+  <block id="92ae5258778c2fa8ece2b13c88ec0853" category="list-text">執行下列命令，重新啟動服務管理程式 2 服務：</block>
+  <block id="0a38f6fb9751bd939880be04152c67f3" category="section-title">升級連接器</block>
+  <block id="084d853adc45dcd521da8dd702d68cc0" category="section-title">2025 年 15 月 2 日</block>
+  <block id="ea807586843dea568060289fb3d6cc9a" category="sidebar">在 BlueXP  中強制執行 ONTAP 權限</block>
 </blocks>
