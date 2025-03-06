@@ -4980,7 +4980,6 @@
   <block id="b2d980523e7f68a234b1bef9046bf610" category="paragraph-title">沒有連接器</block>
   <block id="dbe7e61b89ec728b027dc1237e881b38" category="paragraph">系統會提示使用者輸入其 ONTAP 認證，以存取叢集的 ONTAP 系統管理員。使用者可以選擇將這些認證儲存在 BlueXP  中，這表示每次都不會提示他們輸入。使用者認證僅供個別使用者檢視，並可從「使用者認證」頁面進行管理。</block>
   <block id="ebed6caedf3ce370608544cd61300fb9" category="paragraph-title">使用 Connector</block>
-  <block id="e8cbfb0691fa9052d50053bb8d48f3ca" category="paragraph">根據預設，系統不會提示使用者輸入其 ONTAP 認證來存取 ONTAP 系統管理員。不過， BlueXP  管理員（具有組織管理員角色）可以設定 BlueXP  ，以提示使用者輸入其 ONTAP 認證。啟用此設定時，使用者每次都需要輸入其 ONTAP 認證，因為這些認證並未儲存在 BlueXP  中。</block>
   <block id="f990e553cdc4c29c2efffba33e08a8c7" category="inline-link-macro">深入瞭解。</block>
   <block id="efd19a04c99c31329dfaad38a02c2181" category="paragraph"><block ref="efd19a04c99c31329dfaad38a02c2181" category="inline-link-macro-rx"></block></block>
   <block id="034059bc028cfbb547d4683b2caff29f" category="summary">系統管理員可以設定 BlueXP  連接器，以提示使用者提供其 ONTAP 認證。</block>
@@ -5012,9 +5011,6 @@
   <block id="ea807586843dea568060289fb3d6cc9a" category="sidebar">在 BlueXP  中強制執行 ONTAP 權限</block>
   <block id="4bbf2de0e52eb20a42e04cf23bdb1683" category="list-text">支援指派多個角色給 BlueXP  使用者。</block>
   <block id="0608305ed5721ad4a69c3643b176e371" category="list-text">支援在 BlueXP  組織的多個資源上指派角色（組織 / 資料夾 / 專案）</block>
-  <block id="23b3b711859803a815b81aca1cc4811c" category="doc">連接器 3.9.50</block>
-  <block id="d1ff7c4409f85da727e1eb68fa6e3a26" category="paragraph">此版本的 BlueXP  Connector 包括少量的安全性改善和錯誤修正，以及下列功能。</block>
-  <block id="256d8753a695f4395908c9903ae723b2" category="paragraph">目前、 3.9.50 版本適用於標準模式和受限模式。</block>
   <block id="66a5f69d070814deb69bf917dd07a6af" category="section-title">Connector 3.9.49 更新</block>
   <block id="00d64ff7da906ec5530c4e990fb334cb" category="section-title">當 BlueXP  使用連接器時， ONTAP 系統管理員即可存取</block>
   <block id="b539e86fbaa7eae465366a0142624ec2" category="paragraph">BlueXP  管理員（具有組織管理員角色的使用者）可以設定 BlueXP  ，以提示使用者輸入其 ONTAP 認證，以便存取 ONTAP 系統管理員。啟用此設定時，使用者每次都需要輸入其 ONTAP 認證，因為這些認證並未儲存在 BlueXP  中。</block>
@@ -5030,4 +5026,5 @@
   <block id="530a13d3dc2fccc16ebe8e25a47286a1" category="paragraph"><block ref="530a13d3dc2fccc16ebe8e25a47286a1" category="inline-link-macro-rx"></block></block>
   <block id="8890f7f5e319bfe21969241c1f702a89" category="paragraph">停用連接器的自動升級包含兩個步驟。首先，您必須確保目前的連接器健全且為最新狀態。然後您將編輯組態檔案，以關閉自動升級功能。</block>
   <block id="f070435ef55d6c7cc1db59f0a41a4609" category="section-title">2025 年 3 月 10 日</block>
+  <block id="7c92902ee004926d50127061f6c6f6e3" category="paragraph">根據預設，系統不會提示使用者輸入其 ONTAP 認證來存取 ONTAP 系統管理員。不過， BlueXP  管理員（具有組織管理員角色）可以設定 BlueXP  ，以提示使用者輸入其 ONTAP 認證。啟用此設定時，使用者每次都需要輸入其 ONTAP 認證。</block>
 </blocks>
