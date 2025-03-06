@@ -18,19 +18,46 @@ summary: 瞭解 BlueXP  管理功能的新功能： BlueXP  IAM 、 Connectors
 
 
 
-== 2025 年 15 月 2 日
+== 2025 年 3 月 10 日
 
 
 
-=== 連接器
+=== 連接器 3.9.50
 
-您現在可以停用連接器的自動升級。如果您因業務原因而需要手動處理軟體升級，這項功能非常實用。
+此版本的 BlueXP  Connector 包括少量的安全性改善和錯誤修正，以及下列功能。
 
-客戶可關閉 Connector 3.9.48 版或更新版本的自動升級功能。
+目前、 3.9.50 版本適用於標準模式和受限模式。
 
-.相關資訊
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["管理連接器升級"]
 
+
+=== Connector 3.9.49 更新
+
+
+
+==== 當 BlueXP  使用連接器時， ONTAP 系統管理員即可存取
+
+BlueXP  管理員（具有組織管理員角色的使用者）可以設定 BlueXP  ，以提示使用者輸入其 ONTAP 認證，以便存取 ONTAP 系統管理員。啟用此設定時，使用者每次都需要輸入其 ONTAP 認證，因為這些認證並未儲存在 BlueXP  中。
+
+此功能可在 Connector 3.9.49 版及更新版本中使用。link:task-ontap-access-connector.html["瞭解如何設定認證設定。"^]。
+
+
+
+=== Connector 3.9.48 更新
+
+
+
+==== 可停用 Connector 的自動升級設定
+
+您可以停用 Connector 的自動升級功能。
+
+當您在標準模式或受限模式下使用 BlueXP  時，只要連接器具有連出網際網路存取權以取得軟體更新， BlueXP  就會自動將您的連接器升級至最新版本。如果您需要在連接器升級時手動管理，現在可以停用標準模式或限制模式的自動升級。
+
+
+NOTE: 此變更不會影響 BlueXP  私有模式，您必須自行升級連接器。
+
+此功能可在 Connector 3.9.48 版及更高版本中使用。
+
+link:task-upgrade-connector.html["瞭解如何停用 Connector 的自動升級。"^]
 
 
 
@@ -48,7 +75,8 @@ summary: 瞭解 BlueXP  管理功能的新功能： BlueXP  IAM 、 Connectors
 
 === BlueXP  身分識別與存取管理（ IAM ）
 
-* 支援指派多個角色給使用者。
+* 支援指派多個角色給 BlueXP  使用者。
+* 支援在 BlueXP  組織的多個資源上指派角色（組織 / 資料夾 / 專案）
 * 角色現在與平台和資料服務這兩個類別之一相關聯。
 
 
