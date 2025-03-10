@@ -1,34 +1,17 @@
-= Connector 3.9.49 更新
+= Connector 3.9.50 更新
 :allow-uri-read: 
 
 
 
 
-=== Connector 3.9.49 更新
+=== Connector 3.9.50 更新
+
+此版本的 BlueXP Connector 包括少量的安全性改善和錯誤修正。
+
+目前、 3.9.50 版本適用於標準模式和受限模式。
 
 
 
-==== 當 BlueXP  使用連接器時， ONTAP 系統管理員即可存取
+=== BlueXP  提供 NetApp Keystone 試用版
 
-BlueXP  管理員（具有組織管理員角色的使用者）可以設定 BlueXP  ，以提示使用者輸入其 ONTAP 認證，以便存取 ONTAP 系統管理員。啟用此設定時，使用者每次都需要輸入其 ONTAP 認證，因為這些認證並未儲存在 BlueXP  中。
-
-此功能可在 Connector 3.9.49 版及更新版本中使用。link:task-ontap-access-connector.html["瞭解如何設定認證設定。"^]。
-
-
-
-=== Connector 3.9.48 更新
-
-
-
-==== 可停用 Connector 的自動升級設定
-
-您可以停用 Connector 的自動升級功能。
-
-當您在標準模式或受限模式下使用 BlueXP  時，只要連接器具有連出網際網路存取權以取得軟體更新， BlueXP  就會自動將您的連接器升級至最新版本。如果您需要在連接器升級時手動管理，現在可以停用標準模式或限制模式的自動升級。
-
-
-NOTE: 此變更不會影響 BlueXP  私有模式，您必須自行升級連接器。
-
-此功能可在 Connector 3.9.48 版及更高版本中使用。
-
-link:task-upgrade-connector.html["瞭解如何停用 Connector 的自動升級。"^]
+NetApp Keystone 即將從 BlueXP  推出，現已推出試用版。您可以從 BlueXP  左側導覽列存取 NetApp Keystone Beta 的登錄頁面。

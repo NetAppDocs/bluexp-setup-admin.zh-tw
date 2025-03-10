@@ -18,6 +18,24 @@ summary: 瞭解 BlueXP  管理功能的新功能： BlueXP  IAM 、 Connectors
 
 
 
+== 2025 年 3 月 10 日
+
+
+
+=== Connector 3.9.50 更新
+
+此版本的 BlueXP Connector 包括少量的安全性改善和錯誤修正。
+
+目前、 3.9.50 版本適用於標準模式和受限模式。
+
+
+
+=== BlueXP  提供 NetApp Keystone 試用版
+
+NetApp Keystone 即將從 BlueXP  推出，現已推出試用版。您可以從 BlueXP  左側導覽列存取 NetApp Keystone Beta 的登錄頁面。
+
+
+
 == 2025 年 3 月 6 日
 
 
