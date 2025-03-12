@@ -22,7 +22,7 @@ summary: 瞭解 BlueXP  管理功能的新功能： BlueXP  IAM 、 Connectors
 
 
 
-=== Connector 3.9.50 更新
+=== 連接器 3.9.50
 
 此版本的 BlueXP Connector 包括少量的安全性改善和錯誤修正。
 

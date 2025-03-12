@@ -5027,9 +5027,9 @@
   <block id="8890f7f5e319bfe21969241c1f702a89" category="paragraph">停用連接器的自動升級包含兩個步驟。首先，您必須確保目前的連接器健全且為最新狀態。然後您將編輯組態檔案，以關閉自動升級功能。</block>
   <block id="7c92902ee004926d50127061f6c6f6e3" category="paragraph">根據預設，系統不會提示使用者輸入其 ONTAP 認證來存取 ONTAP 系統管理員。不過， BlueXP  管理員（具有組織管理員角色）可以設定 BlueXP  ，以提示使用者輸入其 ONTAP 認證。啟用此設定時，使用者每次都需要輸入其 ONTAP 認證。</block>
   <block id="278edfabbac204688aa13f79c6f52497" category="section-title">2025 年 3 月 6 日</block>
-  <block id="7f1693b8d0ac4ce81a83df26522897a8" category="doc">Connector 3.9.50 更新</block>
   <block id="256d8753a695f4395908c9903ae723b2" category="paragraph">目前、 3.9.50 版本適用於標準模式和受限模式。</block>
   <block id="3f45680fc0523f726aa3afe05af65c63" category="section-title">BlueXP  提供 NetApp Keystone 試用版</block>
   <block id="6bcb702faf24747c517b58ba5f3b8a99" category="paragraph">NetApp Keystone 即將從 BlueXP  推出，現已推出試用版。您可以從 BlueXP  左側導覽列存取 NetApp Keystone Beta 的登錄頁面。</block>
   <block id="f070435ef55d6c7cc1db59f0a41a4609" category="section-title">2025 年 3 月 10 日</block>
+  <block id="23b3b711859803a815b81aca1cc4811c" category="doc">連接器 3.9.50</block>
 </blocks>
