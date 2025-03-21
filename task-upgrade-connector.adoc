@@ -23,7 +23,7 @@ NOTE: 以私有模式執行 BlueXP  時，您必須自行升級連接器。
 
 == 停用自動升級
 
-停用連接器的自動升級包含兩個步驟。首先，您必須確保目前的連接器健全且為最新狀態。然後您將編輯組態檔案，以關閉自動升級功能。
+停用連接器的自動升級包含兩個步驟。首先，您必須確保 Connector 正常且為最新狀態。然後您將編輯組態檔案，以關閉自動升級功能。
 
 
 NOTE: 只有在連接器版本 3.9.48 或更新版本時，才能停用自動升級。
@@ -58,13 +58,14 @@ podman ps -a
 
 === 停用連接器的自動升級
 
-您可以在 _com/ope/application/oracle/service-manager-2/config.json_ NetApp 檔案中設定 _isUpgradeDisabled 旗標，以停用自動升級。根據預設，此旗標會設為 false ，且您的連接器會自動升級。您可以將此旗標設為 true ，以停用自動升級。
+您可以在 _com/ope/application/oracle/service-manager-2/config.json_ NetApp 檔案中設定 _isUpgradeDisabled 旗標，以停用自動升級。根據預設，此旗標會設為 false ，且您的連接器會自動升級。您可以將此旗標設為 true ，以停用自動升級。完成此步驟之前，您應該熟悉 JSON 語法。
 
 若要重新啟用自動升級，請使用下列步驟，並將 _isUpgradeDisabled 旗標設為 false 。
 
 .步驟
 . 請確認您的連接器是最新且正常的。
-. 編輯 _/opt/application/oracle/service-manager-2/config.json_ NetApp 檔案，並將 _isUpgradeDisabled 旗標的值變更為 true ，如本範例底部所示。
+. 建立 _/opt/application/oracle/service-manager-2/config.json_ NetApp 檔案的備份複本，確保您可以還原變更。
+. 編輯 _/opt/application/oracle/service-manager-2/config.json_ NetApp 檔案，並將 _isUpgradeDisabled 旗標的值變更為 true 。
 +
 [source]
 ----
@@ -76,6 +77,12 @@ podman ps -a
 [source, cli]
 ----
 systemctl restart netapp-service-manager.service
+----
+. 執行下列命令，並確認 Connector 狀態顯示為 _active （執行中） _ ： _
++
+[source, cli]
+----
+systemctl status netapp-service-manager.service
 ----
 
 

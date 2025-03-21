@@ -5001,10 +5001,8 @@
   <block id="aca0bf9b192b34e35fb37ccbd9cd98be" category="paragraph">請使用下列其中一個命令來驗證您的連接器。所有服務的狀態應為 _Running 。如果不是這樣，請在停用自動升級之前聯絡 NetApp 支援部門。</block>
   <block id="c5fd214cdd0d2b3b4272e73b022ba5c2" category="list-text">Docker</block>
   <block id="21fa3d085631029b33cc6537b5b1a964" category="section-title">停用連接器的自動升級</block>
-  <block id="f1a415c9565a5203c9cab67d50062380" category="paragraph">您可以在 _com/ope/application/oracle/service-manager-2/config.json_ NetApp 檔案中設定 _isUpgradeDisabled 旗標，以停用自動升級。根據預設，此旗標會設為 false ，且您的連接器會自動升級。您可以將此旗標設為 true ，以停用自動升級。</block>
   <block id="fda5aa414d851bf8018163c5fe4acb1a" category="paragraph">若要重新啟用自動升級，請使用下列步驟，並將 _isUpgradeDisabled 旗標設為 false 。</block>
   <block id="942778941acc11e030b5e5615f2d8d41" category="list-text">請確認您的連接器是最新且正常的。</block>
-  <block id="667f94e7aab832b818ed3d6710e2b890" category="list-text">編輯 _/opt/application/oracle/service-manager-2/config.json_ NetApp 檔案，並將 _isUpgradeDisabled 旗標的值變更為 true ，如本範例底部所示。</block>
   <block id="9e3e4c61d70076bf677edfc157a67761" category="list-text">儲存檔案。</block>
   <block id="92ae5258778c2fa8ece2b13c88ec0853" category="list-text">執行下列命令，重新啟動服務管理程式 2 服務：</block>
   <block id="0a38f6fb9751bd939880be04152c67f3" category="section-title">升級連接器</block>
@@ -5024,7 +5022,6 @@
   <block id="0e9ee8d377b683ca8ac77de05c3539d9" category="paragraph">此功能可在 Connector 3.9.48 版及更高版本中使用。</block>
   <block id="355c51d49cd780f57fe417fdede5f61c" category="inline-link-macro">瞭解如何停用 Connector 的自動升級。</block>
   <block id="530a13d3dc2fccc16ebe8e25a47286a1" category="paragraph"><block ref="530a13d3dc2fccc16ebe8e25a47286a1" category="inline-link-macro-rx"></block></block>
-  <block id="8890f7f5e319bfe21969241c1f702a89" category="paragraph">停用連接器的自動升級包含兩個步驟。首先，您必須確保目前的連接器健全且為最新狀態。然後您將編輯組態檔案，以關閉自動升級功能。</block>
   <block id="7c92902ee004926d50127061f6c6f6e3" category="paragraph">根據預設，系統不會提示使用者輸入其 ONTAP 認證來存取 ONTAP 系統管理員。不過， BlueXP  管理員（具有組織管理員角色）可以設定 BlueXP  ，以提示使用者輸入其 ONTAP 認證。啟用此設定時，使用者每次都需要輸入其 ONTAP 認證。</block>
   <block id="278edfabbac204688aa13f79c6f52497" category="section-title">2025 年 3 月 6 日</block>
   <block id="256d8753a695f4395908c9903ae723b2" category="paragraph">目前、 3.9.50 版本適用於標準模式和受限模式。</block>
@@ -5032,4 +5029,9 @@
   <block id="6bcb702faf24747c517b58ba5f3b8a99" category="paragraph">NetApp Keystone 即將從 BlueXP  推出，現已推出試用版。您可以從 BlueXP  左側導覽列存取 NetApp Keystone Beta 的登錄頁面。</block>
   <block id="f070435ef55d6c7cc1db59f0a41a4609" category="section-title">2025 年 3 月 10 日</block>
   <block id="23b3b711859803a815b81aca1cc4811c" category="doc">連接器 3.9.50</block>
+  <block id="099436dc59c324fbeaf1a2dd276b98f6" category="paragraph">停用連接器的自動升級包含兩個步驟。首先，您必須確保 Connector 正常且為最新狀態。然後您將編輯組態檔案，以關閉自動升級功能。</block>
+  <block id="7b9ab409364ad80b26951a7c1a1d28d7" category="paragraph">您可以在 _com/ope/application/oracle/service-manager-2/config.json_ NetApp 檔案中設定 _isUpgradeDisabled 旗標，以停用自動升級。根據預設，此旗標會設為 false ，且您的連接器會自動升級。您可以將此旗標設為 true ，以停用自動升級。完成此步驟之前，您應該熟悉 JSON 語法。</block>
+  <block id="d0ec983e93943635bce3349bbdcbf79e" category="list-text">建立 _/opt/application/oracle/service-manager-2/config.json_ NetApp 檔案的備份複本，確保您可以還原變更。</block>
+  <block id="b8000759daeb255b90b1845748aeb18e" category="list-text">編輯 _/opt/application/oracle/service-manager-2/config.json_ NetApp 檔案，並將 _isUpgradeDisabled 旗標的值變更為 true 。</block>
+  <block id="bfd2bb89d8e4699a2a0ac8d2e111e1bb" category="list-text">執行下列命令，並確認 Connector 狀態顯示為 _active （執行中） _ ： _</block>
 </blocks>
