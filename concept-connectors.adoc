@@ -36,7 +36,7 @@ _Connector_ 是在您的雲端網路或內部部署網路中執行的 NetApp 軟
 * 適用於 Google Cloud Cloud Volumes Service
 * 複製與同步
 * 數位顧問
-* 數位錢包
+* 數位錢包（僅限授權，訂閱監控需要 Connector ）
 +
 在幾乎所有情況下、您都可以在沒有 Connector 的情況下、將授權新增至數位錢包。
 

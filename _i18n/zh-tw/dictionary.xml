@@ -5034,4 +5034,5 @@
   <block id="d0ec983e93943635bce3349bbdcbf79e" category="list-text">建立 _/opt/application/oracle/service-manager-2/config.json_ NetApp 檔案的備份複本，確保您可以還原變更。</block>
   <block id="b8000759daeb255b90b1845748aeb18e" category="list-text">編輯 _/opt/application/oracle/service-manager-2/config.json_ NetApp 檔案，並將 _isUpgradeDisabled 旗標的值變更為 true 。</block>
   <block id="bfd2bb89d8e4699a2a0ac8d2e111e1bb" category="list-text">執行下列命令，並確認 Connector 狀態顯示為 _active （執行中） _ ： _</block>
+  <block id="973c3bcf96d6257755a3e8ee090eb5f1" category="list-text">數位錢包（僅限授權，訂閱監控需要 Connector ）</block>
 </blocks>
