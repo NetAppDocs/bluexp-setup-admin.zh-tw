@@ -5035,4 +5035,5 @@
   <block id="b8000759daeb255b90b1845748aeb18e" category="list-text">編輯 _/opt/application/oracle/service-manager-2/config.json_ NetApp 檔案，並將 _isUpgradeDisabled 旗標的值變更為 true 。</block>
   <block id="bfd2bb89d8e4699a2a0ac8d2e111e1bb" category="list-text">執行下列命令，並確認 Connector 狀態顯示為 _active （執行中） _ ： _</block>
   <block id="973c3bcf96d6257755a3e8ee090eb5f1" category="list-text">數位錢包（僅限授權，訂閱監控需要 Connector ）</block>
+  <block id="01dc19e1f1ebe0b9a261b5e0d555ea43" category="admonition">當您選擇必須讓 BlueXP  傳送 AutoSupport 訊息時，可能需要五小時的時間，因為 BlueXP  會在傳送 AutoSupport 訊息時自動進行負載平衡。如果您與 NetApp 支援部門的通訊時間相當敏感，您應該下載檔案並自行傳送給 NetApp 支援部門。</block>
 </blocks>
