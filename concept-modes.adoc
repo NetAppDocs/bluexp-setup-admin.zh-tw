@@ -196,14 +196,11 @@ API 端點:: API 呼叫是針對 Connector 虛擬機器進行的。
 如何開始使用受限模式:: 建立 BlueXP 帳戶時、您必須啟用受限模式。
 +
 --
-如果您還沒有帳戶、當您第一次從手動安裝的 Connector 登入 BlueXP 、或是從雲端供應商的市場建立的 Connector 登入時、系統會提示您建立帳戶並啟用受限模式。
+如果您還沒有組織，當您第一次從手動安裝的 Connector 登入，或是從雲端供應商的市場建立的 Connector 登入 BlueXP  時，系統會提示您建立組織並啟用受限模式。
 
-如果您已經有帳戶、而且想要建立另一個帳戶、則需要使用 Tenancy API 。
-
-請注意、在 BlueXP 建立帳戶之後、您無法變更限制模式設定。您稍後無法啟用受限模式、之後也無法停用。必須在建立帳戶時設定。
+請注意，在 BlueXP  建立組織之後，您無法變更受限模式設定。您稍後無法啟用受限模式、之後也無法停用。
 
 * link:task-quick-start-restricted-mode.html["瞭解如何開始使用受限模式"]。
-* link:task-create-account.html["瞭解如何建立其他 BlueXP 帳戶"]。
 
 
 --

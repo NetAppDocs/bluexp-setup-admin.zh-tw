@@ -95,6 +95,12 @@ sidebar:
         url: "/task-prepare-private-mode.html"
       - title: 部署 Connector
         url: "/task-install-private-mode.html"
+      - title: BlueXP 帳戶
+        entries:
+        - title: 深入瞭解客戶
+          url: "/concept-netapp-accounts.html"
+        - title: 管理 BlueXP 帳戶
+          url: "/task-managing-netapp-accounts.html"
       - title: 接下來您可以做什麼
         url: "/reference-whats-next-private-mode.html"
     - title: 登入BlueXP
@@ -123,16 +129,12 @@ sidebar:
         url: "/task-iam-audit-actions-timeline.html"
       - title: 預先定義的 IAM 角色
         url: "/reference-iam-predefined-roles.html"
-    - title: BlueXP 帳戶
+    - title: BlueXP  帳戶（僅限私人模式）
       entries:
       - title: 深入瞭解客戶
         url: "/concept-netapp-accounts.html"
       - title: 管理 BlueXP 帳戶
         url: "/task-managing-netapp-accounts.html"
-      - title: 建立另一個 BlueXP 帳戶
-        url: "/task-create-account.html"
-      - title: 使用者角色
-        url: "/reference-user-roles.html"
     - title: 身分識別聯盟
       url: "/concept-federation.html"
     - title: 連接器

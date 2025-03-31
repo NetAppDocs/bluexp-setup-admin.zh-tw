@@ -18,12 +18,9 @@ summary: 以私人模式使用 BlueXP 開始運作後、您可以開始使用受
 
 如需協助、請參閱下列文件：
 
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/index.html["建立 Cloud Volumes ONTAP 系統"^]
 * https://docs.netapp.com/us-en/bluexp-ontap-onprem/index.html["探索內部部署ONTAP 的叢集"^]
-* https://docs.netapp.com/us-en/bluexp-replication/index.html["複寫資料"^]
+* https://docs.netapp.com/us-en/bluexp-software-updates/index.html["管理軟體更新"^]
 * https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-dark-site.html["使用 BlueXP 分類掃描內部部署 ONTAP Volume 資料"^]
-* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html["使用 BlueXP 備份與還原、將內部部署的 ONTAP Volume 資料備份至 StorageGRID"^]
+* https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-on-prem-clusters.html["使用數位錢包監控授權使用情況"^]
+* https://docs.netapp.com/us-en/active-iq/index.html["使用數位顧問檢視儲存健全狀況資訊"^]
 
-
-.相關資訊
-link:concept-modes.html["BlueXP 部署模式"]

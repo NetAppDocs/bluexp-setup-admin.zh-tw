@@ -14,7 +14,7 @@ summary: BlueXP  帳戶可讓您在使用受限模式或私有模式時、在�
 
 
 [role="lead"]
-在私有模式下使用 BlueXP  時，您將使用 BlueXP  帳戶 _ 來管理使用者，並在隔離的 _stustronal_ 工作區中組織資源。例如、使用者群組可以在工作區中部署及管理 Cloud Volumes ONTAP 工作環境、而在不同工作區中管理工作環境的使用者則看不到該工作區。
+在私有模式下使用 BlueXP  時，您將使用 BlueXP  帳戶 _ 來管理使用者，並在隔離的 _Workston_ 中組織資源。
 
 如果您在標準模式或受限模式下使用 BlueXP  ，則不會有 BlueXP  帳戶。您將改為使用 BlueXP  身分識別與存取管理（ IAM ）來管理 BlueXP  組織。
 
@@ -26,11 +26,9 @@ summary: BlueXP  帳戶可讓您在使用受限模式或私有模式時、在�
 
 == 總覽
 
-當您第一次存取 BlueXP 時、系統會提示您選取或建立帳戶。例如、如果您還沒有帳戶、您會看到下列畫面：
+當您第一次存取 BlueXP  時，系統已為您建立名為 _Workspace-1_ 的工作區。
 
-image:screenshot-account-selection.png["BlueXP 安裝精靈的螢幕擷取畫面、會提示您建立 BlueXP 帳戶。"]
-
-然後、BlueXP Account Admins可透過管理使用者（成員）、工作區和連接器來修改此帳戶的設定：
+接著您可以將成員（使用者）新增至此帳戶，並部署 Connectors ：
 
 image:screenshot-account-settings.png["顯示「管理帳戶」小工具的快照、您可從中管理使用者、工作區和連接器。"]
 
@@ -40,31 +38,17 @@ link:task-managing-netapp-accounts.html["瞭解如何管理 BlueXP 帳戶"]。
 
 == 成員
 
-成員是與 BlueXP 帳戶相關聯的 BlueXP 使用者。將使用者與該帳戶中的帳戶和一或多個工作區建立關聯、可讓這些使用者在BlueXP中建立及管理工作環境。
-
-當您建立使用者關聯時、您會指派一個角色給他們：
-
-* _Account admin_：可在BlueXP中執行任何動作。
-* _Workspace 管理 _ ：可在指派的工作區中建立及管理資源。
-* _Compliance Viewer_ ：只能檢視 BlueXP 分類的法規遵循資訊、並為擁有存取權限的工作區產生報告。
-
-
-link:reference-user-roles.html["深入瞭解這些角色"]。
+成員是與 BlueXP 帳戶相關聯的 BlueXP 使用者。將使用者與該帳戶中的帳戶和工作區建立關聯，可讓這些使用者在 BlueXP  中建立和管理工作環境。
 
 
 
-== 工作區
+== 工作空間
 
-在 BlueXP 中、工作區會將任何數量的 _ 工作環境 _ 與帳戶中的其他使用者隔離。除非帳戶管理員將該管理員與該工作區建立關聯、否則 Workspace 系統管理員無法存取工作區中的工作環境。
+在 BlueXP 中、工作區會將任何數量的 _ 工作環境 _ 與帳戶中的其他使用者隔離。BlueXP  使用者（成員）無法存取工作區中的工作環境，除非他們與該工作區相關聯。
 
-工作環境代表儲存系統。例如：
+工作環境代表內部部署 ONTAP 叢集等儲存系統。
 
-* 一套系統Cloud Volumes ONTAP
-* 內部部署ONTAP 的叢集
-* StorageGRID 系統
-
-
-link:task-setting-up-netapp-accounts.html["瞭解如何新增工作區"]。
+BlueXP  私有模式僅支援一個工作區。
 
 
 
@@ -72,33 +56,6 @@ link:task-setting-up-netapp-accounts.html["瞭解如何新增工作區"]。
 
 Connector 會執行 BlueXP 管理資料基礎架構所需執行的動作。Connector 會在您部署在雲端供應商或您設定的內部部署主機上的虛擬機器執行個體上執行。
 
-您可以將 Connector 搭配多個 BlueXP 服務使用。例如、如果您使用 Connector 來管理 Cloud Volumes ONTAP 、您可以將同一個 Connector 搭配另一個服務使用、例如 BlueXP 分層。
+您可以將 Connector 搭配多個 BlueXP 服務使用。例如，如果您使用 Connector 來管理備份與還原，則可以將同一個 Connector 搭配 BlueXP  分層等其他服務使用。
 
 link:concept-connectors.html["深入瞭解連接器"]。
-
-
-
-== 範例
-
-下列範例說明您如何設定帳戶。
-
-
-NOTE: 在隨後的兩個範例映像中、 Connector 和 Cloud Volumes ONTAP 系統實際上並未位於 BlueXP 帳戶中、而是在雲端供應商中執行。這是每個元件之間關係的概念呈現。
-
-
-
-=== 多個工作區
-
-下列範例顯示使用兩個工作區來建立隔離環境的帳戶。第一個工作區適用於正式作業環境、第二個工作區適用於開發環境。
-
-image:diagram_cloud_central_accounts_one.png["顯示包含兩個工作區的單一 BlueXP 帳戶的圖表。每個工作區都與相同的 Connector 相關聯、而且每個工作區都有自己的 Workspace Admin"]
-
-
-
-=== 多個帳戶
-
-以下是使用兩個獨立的 BlueXP 帳戶顯示最高層級多租戶的另一個範例。例如、服務供應商可能在一個帳戶中使用BlueXP來為客戶提供服務、而使用另一個帳戶來為其中一個業務單位提供災難恢復。
-
-請注意、帳戶 2 包含兩個獨立的連接器。如果您的系統位於不同的地區、或是位於不同的雲端供應商、就可能發生這種情況。
-
-image:diagram_cloud_central_accounts_two.png["顯示兩個 BlueXP 帳戶的圖表、每個帳戶都有多個工作區及其相關的 Workspace 管理員。"]
