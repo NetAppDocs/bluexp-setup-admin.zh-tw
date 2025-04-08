@@ -123,7 +123,7 @@ sidebar:
         url: "/task-iam-associate-connectors.html"
       - title: 在組織、專案和連接器之間切換
         url: "/task-iam-switch-organizations-projects.html"
-      - title: 重新命名組織
+      - title: 組織和專案 ID
         url: "/task-iam-rename-organization.html"
       - title: 監控或稽核 IAM 活動
         url: "/task-iam-audit-actions-timeline.html"

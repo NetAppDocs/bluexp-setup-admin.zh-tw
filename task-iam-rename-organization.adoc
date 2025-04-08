@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: task-iam-rename-organization.html 
-keywords: rename organization, change organization name, name change, rename, change name, iam, identity and access management 
+keywords: rename organization, change organization name, name change, rename, change name, iam, ID, integration, project, organization, API, identity and access management 
 summary: 如有需要、您可以變更 BlueXP  組織的名稱。 
 ---
-= 重新命名 BlueXP  組織
+= 組織和專案 ID
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,13 @@ summary: 如有需要、您可以變更 BlueXP  組織的名稱。
 
 
 [role="lead"]
-如有需要、您可以從 BlueXP  身分識別與存取管理（ IAM ）變更 BlueXP  組織的名稱。組織名稱會顯示在 BlueXP  網路型主控台頂端和 IAM 頁面中。
+您的 BlueXP  組織有名稱和 ID 。您可以為組織選擇名稱，以協助在 BlueXP  部署中識別。您可能也需要擷取組織 ID ，以進行某些整合。
+
+
+
+== 重新命名組織
+
+您可以在 BlueXP  中重新命名組織。如果您支援的組織不只是 BlueXP  部署中的組織，這項功能就很有幫助。
 
 .步驟
 . 在 BlueXP  主控台右上角、選取 image:icon-settings-option.png["設定圖示會顯示在 BlueXP  網路主控台的右上角。"] > * 身分識別與存取管理 * 。
@@ -25,8 +31,36 @@ image:screenshot-iam-edit-organization.png["「概觀」頁面的螢幕擷取畫
 . 輸入新的組織名稱、然後選取 * 套用 * 。
 
 
-.結果
-BlueXP  會更新您組織的名稱。您應該會立即在 BlueXP  主控台頂端看到更新的名稱。
+
+
+== 取得組織 ID
+
+組織 ID 用於與 BlueXP  的某些整合。
+
+您可以從「組織」頁面檢視組織 ID ，並根據需要將其複製到剪貼簿。
+
+.步驟
+. 在 BlueXP  主控台右上角、選取 image:icon-settings-option.png["設定圖示會顯示在 BlueXP  網路主控台的右上角。"] > * 身分識別與存取管理 * 。
+. 選取 * 組織 * 索引標籤以檢視 * 組織 * 頁面。
+. 在 * 組織 * 頁面上，在摘要列中尋找您的組織 ID ，然後將其複製到剪貼簿。您可以儲存此項目以供稍後使用，或將其直接複製到需要使用的位置。
+
+
+
+
+== 取得專案的 ID
+
+如果您使用的是 BlueXP  API ，可能需要取得專案的 ID 。例如，建立 Cloud Volumes ONTAP 工作環境時。
+
+.步驟
+. 在 * 組織 * 頁面中，瀏覽至表格中的專案，然後選取image:icon-action.png["這是三個並排點的圖示"]
++
+隨即顯示專案 ID 。
+
+. 若要複製 ID ，請選取複製按鈕。
++
+image:screenshot-iam-project-id.png["選取專案的動作功能表後，資料夾和專案表格的螢幕擷取畫面會顯示專案 ID 。"]
+
+
 
 .相關資訊
 * link:concept-identity-and-access-management.html["瞭解 BlueXP  身分識別與存取管理"]
