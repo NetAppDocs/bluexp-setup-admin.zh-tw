@@ -4883,7 +4883,6 @@
   <block id="0a38f6fb9751bd939880be04152c67f3" category="section-title">升級連接器</block>
   <block id="ea807586843dea568060289fb3d6cc9a" category="sidebar">在 BlueXP  中強制執行 ONTAP 權限</block>
   <block id="4bbf2de0e52eb20a42e04cf23bdb1683" category="list-text">支援指派多個角色給 BlueXP  使用者。</block>
-  <block id="0608305ed5721ad4a69c3643b176e371" category="list-text">支援在 BlueXP  組織的多個資源上指派角色（組織 / 資料夾 / 專案）</block>
   <block id="66a5f69d070814deb69bf917dd07a6af" category="section-title">Connector 3.9.49 更新</block>
   <block id="00d64ff7da906ec5530c4e990fb334cb" category="section-title">當 BlueXP  使用連接器時， ONTAP 系統管理員即可存取</block>
   <block id="b539e86fbaa7eae465366a0142624ec2" category="paragraph">BlueXP  管理員（具有組織管理員角色的使用者）可以設定 BlueXP  ，以提示使用者輸入其 ONTAP 認證，以便存取 ONTAP 系統管理員。啟用此設定時，使用者每次都需要輸入其 ONTAP 認證，因為這些認證並未儲存在 BlueXP  中。</block>
@@ -4941,7 +4940,6 @@
   <block id="3ed9698e266f4060e99b8c0f2f38b027" category="paragraph">3.9.50 版本包含下列 BlueXP  元件和服務的更新。</block>
   <block id="5820ebbb1da4e36bc0eb0db564450b99" category="cell">3.9.50 ， 3.9.49</block>
   <block id="03f247630aa241e4b15df35baf8f5fd1" category="inline-link">BlueXP  Connector 網頁的新功能</block>
-  <block id="e411690e8dc95cbf79272f1e53cce845" category="cell">請參閱<block ref="291fbb881b3918f162f476bad9d0c478" category="inline-link-rx"></block>，並參閱 3.9.50 和 3.9.49 版所包含的變更。</block>
   <block id="499d067ffbbd553e23809aa38aa67bfa" category="cell">2025 年 3 月 17 日</block>
   <block id="0e231d3391a335865e696150143618bc" category="cell">前往<block ref="d08346bd70ea49c38d1ac500c69dd11c" category="inline-link-rx"></block>並參閱 2024 年 3 月版本中所包含的變更。</block>
   <block id="10c518409c3dfbdd5e9839d2076ed5da" category="cell">2025 年 3 月 10 日（版本 1.41 ）</block>
@@ -4958,4 +4956,27 @@
   <block id="65684205c2c17c1079112735fcb6d59c" category="list-text">在 * 組織 * 頁面上，在摘要列中尋找您的組織 ID ，然後將其複製到剪貼簿。您可以儲存此項目以供稍後使用，或將其直接複製到需要使用的位置。</block>
   <block id="3b114d25af2bc979de4e8bf4773b092f" category="inline-image-macro">選取專案的動作功能表後，資料夾和專案表格的螢幕擷取畫面會顯示專案 ID 。</block>
   <block id="03666f94d7af611921b392c3ee39f483" category="paragraph"><block ref="03666f94d7af611921b392c3ee39f483" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2139dd52a52b11dde53f2a9724789c73" category="list-text">支援在 BlueXP  組織的多個資源上指派角色（組織 / 資料夾 / 專案）</block>
+  <block id="f16867c24816cbe638e99bd00c5d371b" category="cell">請移至，<block ref="291fbb881b3918f162f476bad9d0c478" category="inline-link-rx"></block>並參閱 3.9.50 和 3.9.49 版隨附的變更。</block>
+  <block id="d05e8333cecdf836d5befa221763f3df" category="doc">使用角色來管理使用者對資源的存取</block>
+  <block id="8d6e47c2cba8a87a34c20d42630d03de" category="paragraph">BlueXP  可讓您根據使用者需要執行的工作和地點，將角色指派給使用者。</block>
+  <block id="43f7ba5a95da6743e6d2a613c53f3979" category="paragraph">擁有組織管理員或資料夾或專案管理員角色的使用者有責任指派角色給其他使用者。您可以根據專案或資料夾來指派存取角色。例如，您可以為使用者指派一個專案的勒索軟體保護管理員角色，以及其他專案的 SnapCenter 管理員角色。或者，如果使用者要求特定資料夾內所有專案都具有「分類管理員」角色，您可以在資料夾層級授予他們此存取角色。</block>
+  <block id="d4cee7f9299f715f35c592b05a90fcd5" category="paragraph">根據使用者需要執行的特定 BlueXP  工作，使用存取角色來指派儲存資源的存取權。例如，如果 BlueXP  使用者需要與勒索軟體保護服務互動，則必須為他們指定存取角色，包括存取角色所授予之專案的勒索軟體保護服務的檢視或管理權限。</block>
+  <block id="5bd93d2f07b4ba6321e2f33614c76585" category="paragraph">根據您的 IAM 策略指派角色給使用者，以增強安全性。BlueXP  IAM 角色旨在確保使用者只能存取所需的內容。</block>
+  <block id="9088af3701d0cc1247f7ea61c2e8cc5f" category="inline-link-macro">瞭解如何在 BlueXP  IAM 中使用資料夾和專案來組織資源。</block>
+  <block id="008c625fbd0c2108cc88a6317b2572a8" category="admonition">請記住，您無法直接授予資源。必須先將資源指派給專案。在指派使用者存取權之前，請考慮設定資源階層。<block ref="41b378741b8a64d0f324528fa1890b6f" category="inline-link-macro-rx"></block></block>
+  <block id="f178bfd6340a45b4202cfc2ad448263a" category="paragraph">當您將成員新增至 BlueXP  組織時，系統會提示您指派角色給他們。您可以讓成員確認他們目前指派的角色。</block>
+  <block id="a0a87a9cfcb0287c5701c8fd542f95f5" category="paragraph">如果您有 _Folder 或專案管理員角色，頁面會顯示組織中的所有成員。不過，您只能檢視和管理您擁有權限的資料夾和專案成員權限。<block ref="c691e2b9b4224ed90bb4f1f11059b372" category="inline-link-macro-rx"></block>。</block>
+  <block id="d63f1c66d83451eade374ce0e602a4b4" category="list-text">在表格中，展開您要檢視成員指派角色的組織，資料夾或專案相關列，然後在 * 角色 * 欄中選取 * 檢視 * 。</block>
+  <block id="58bd7e162d519a40f0d8ae550e293a4c" category="section-title">新增存取角色至成員</block>
+  <block id="cfe68ea193af58b89bdd91bea4468531" category="paragraph">一般而言，當您將成員新增至組織時，您會將角色指派給成員。不過，您可以隨時透過移除角色或新增不同角色來更新成員的角色。您可以移除使用者的角色，以移除使用者對專案的存取權。</block>
+  <block id="ba364a79f6fbfab0c8591198ecfd87cc" category="paragraph">您可以為使用者指派組織，資料夾或專案的存取角色。</block>
+  <block id="a9cc80dbcd1f48accd079ee5c494be43" category="paragraph">成員可以在同一個專案和不同專案中擁有多個角色。例如，較小型的組織可能會將所有可用的存取角色指派給同一位使用者，而較大型的組織則可能會讓使用者在 BlueXP  中執行更多專業工作。或者，您也可以為一位使用者指派組織的勒索軟體投影管理員角色。在此範例中，使用者將能夠在組織內的所有專案上執行勒索軟體保護工作。</block>
+  <block id="93bc4c31eeacd2985551a427d417a897" category="paragraph">您的存取角色策略應符合您在 BlueXP  中組織 NetApp 資源的方式。</block>
+  <block id="e3c810a55ea2c0b2958ee28af3cba2d1" category="admonition">被指派組織管理員角色的成員無法被指派任何其他角色。他們已經擁有整個組織的權限。具有資料夾或專案角色的成員無法在其已擁有該角色的資料夾或專案中指派任何其他角色。這兩種角色都能存取指派給他們的範圍內的所有 BlueXP  服務。</block>
+  <block id="0e6e1e539b578c2b0388d566d8ae4e15" category="inline-link-macro">瞭解存取角色</block>
+  <block id="66c24c7330d0db4acf1f42ab6074b3ca" category="list-text">* 選擇類別 * ： BlueXP  將角色分成兩類：平台和資料服務。<block ref="a51247ccde87e175c686e81825c9f657" category="inline-link-macro-rx"></block>。</block>
+  <block id="e666f475ae71221ef0568980f94a0316" category="paragraph"><block ref="a51247ccde87e175c686e81825c9f657" category="inline-link-macro-rx"></block>。* * 新增角色 * ：如果您想要提供組織內其他資料夾或專案的存取權，請選取 * 新增角色 * ，指定其他資料夾或專案或角色類別，然後選取角色類別和對應的角色。</block>
+  <block id="88ccee89efe2b556b8fcc7b01ae63c9f" category="paragraph">如果您需要調整使用者的存取權限，可以變更成員的指派角色。</block>
+  <block id="bd572303cf9daecbf8e01f72f337d250" category="list-text">您可以變更成員的現有角色，或移除角色。</block>
 </blocks>

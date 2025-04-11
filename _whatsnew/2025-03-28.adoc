@@ -15,7 +15,7 @@
 | 元件或服務 | 此版本隨附的版本 | 自上一次私有模式版本以來所做的變更 
 
 
-| 連接器 | 3.9.50 ， 3.9.49 | 請參閱 https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#connector-3-9-50["BlueXP  Connector 網頁的新功能"]，並參閱 3.9.50 和 3.9.49 版所包含的變更。 
+| 連接器 | 3.9.50 ， 3.9.49 | 請移至， https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#connector-3-9-50["BlueXP  Connector 網頁的新功能"]並參閱 3.9.50 和 3.9.49 版隨附的變更。 
 
 
 | 備份與還原 | 2025 年 3 月 17 日 | 前往 https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["BlueXP  備份與還原頁面的新功能"^]並參閱 2024 年 3 月版本中所包含的變更。 
