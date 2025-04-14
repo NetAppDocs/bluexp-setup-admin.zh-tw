@@ -18,35 +18,26 @@ summary: 瞭解 BlueXP  管理功能的新功能： BlueXP  IAM 、 Connectors
 
 
 
-== 2025 年 3 月 28 日
+== 2025 年 4 月 14 日
 
 
 
-=== 私有模式版本（ 3.9.50 ）
+=== 連接器 3.9.51
 
-現在可從下載新的私有模式版本 https://mysupport.netapp.com/site/downloads["NetApp 支援網站"^]
+此版本的 BlueXP Connector 包括少量的安全性改善和錯誤修正。
 
-3.9.50 版本包含下列 BlueXP  元件和服務的更新。
-
-[cols="3*"]
-|===
-| 元件或服務 | 此版本隨附的版本 | 自上一次私有模式版本以來所做的變更 
+目前、 3.9.51 版本適用於標準模式和受限模式。
 
 
-| 連接器 | 3.9.50 ， 3.9.49 | 請移至， https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#connector-3-9-50["BlueXP  Connector 網頁的新功能"]並參閱 3.9.50 和 3.9.49 版隨附的變更。 
+
+=== BlueXP  身分識別與存取管理（ IAM ）
+
+* 您現在需要將角色指派給使用者，讓他們能夠存取勒索軟體保護。您可以指派使用者兩種角色之一：勒索軟體保護管理員或勒索軟體保護檢視器。
+* 您現在需要將角色指派給使用者，讓他們能夠存取 NetApp Keystone 。您可以指派使用者兩個角色之一： Keystone 管理員或 Keystone 檢視器。
+* 您現在可以將 Keystone 訂閱與 IAM 專案建立關聯。將 Keystone 訂閱與 IAM 專案建立關聯可讓您控制 BlueXP  中 Keystone 的存取。
 
 
-| 備份與還原 | 2025 年 3 月 17 日 | 前往 https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["BlueXP  備份與還原頁面的新功能"^]並參閱 2024 年 3 月版本中所包含的變更。 
-
-
-| 分類 | 2025 年 3 月 10 日（版本 1.41 ） | 請移至， https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["BlueXP  分類頁面的新功能"^]並參閱 1.38 至 1.371.41 版本中所包含的變更。 
-|===
-如需更多關於私有模式的詳細資訊、包括如何升級、請參閱下列內容：
-
-* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["瞭解私有模式"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["瞭解如何以私有模式開始使用 BlueXP"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["瞭解如何在使用私有模式時升級 Connector"]
-
+link:reference-iam-predefined-roles.html["瞭解新角色。"^]。
 
 
 
