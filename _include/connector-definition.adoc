@@ -1,0 +1,5 @@
+= 
+:allow-uri-read: 
+
+
+Connector 是您安裝的 NetApp 軟體，可執行 BlueXP  管理儲存基礎架構所需執行的動作。您不需要連接器即可存取 BlueXP  的許多功能，但如果您不需要，則無法使用某些功能。

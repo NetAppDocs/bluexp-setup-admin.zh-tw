@@ -2242,39 +2242,29 @@
   <block id="bff15ca70c1ae31932f904ffda23250d" category="paragraph">只有在 AWS 中手動安裝 Connector 時、才適用這些步驟。對於 AWS Marketplace 部署、您已將 Connector 執行個體與包含必要權限的 IAM 角色建立關聯。</block>
   <block id="cdc80f7691441e19b9937f7e3719514f" category="summary">Connector 是指在雲端網路或內部部署網路中執行的 NetApp 軟體。它會執行 BlueXP 管理資料基礎架構所需執行的動作。Connector 會持續輪詢 BlueXP SaaS 層、以找出需要採取的任何行動。您不需要 Connector 即可開始使用 BlueXP 、但您需要建立 Connector 才能解除鎖定所有 BlueXP 功能和服務。</block>
   <block id="e6e80588e9fe7cf89218fea44300f7ca" category="doc">深入瞭解連接器</block>
-  <block id="0c1ff69304e8a667d66b73796ae020d8" category="section-title">沒有 Connector 、您可以做什麼</block>
-  <block id="4d3fca1d2cf37433752c20e52858221f" category="paragraph">開始使用 BlueXP 並不需要 Connector 。您可以在 BlueXP 中使用多項功能和服務、而無需建立 Connector 。</block>
   <block id="224dffcf542a8351c726ceb793464d58" category="paragraph">您可以在沒有 Connector 的情況下使用下列 BlueXP 功能和服務：</block>
   <block id="60404bf35ed1506b74cc9cfac99f0818" category="paragraph">雖然不需要連接器來設定和管理 Azure NetApp Files 、但如果您想使用 BlueXP 分類來掃描 Azure NetApp Files 資料、則需要連接器。</block>
   <block id="2049421a4e8e45e83cd7cf18ffc00a12" category="list-text">數位錢包</block>
   <block id="dd37176246e6abf3e559086afcadce82" category="paragraph">在幾乎所有情況下、您都可以在沒有 Connector 的情況下、將授權新增至數位錢包。</block>
-  <block id="da48a166a29b8e248a3113d9bd6cba04" category="paragraph">只有在 Connector 需要將授權新增至數位錢包時、才需要使用 Cloud Volumes ONTAP 節點型授權。在這種情況下需要連接器、因為資料是取自Cloud Volumes ONTAP 安裝在效益分析系統上的授權。</block>
   <block id="184e70c253a2ad370c338775e7482497" category="list-text">直接探索內部部署ONTAP 的叢集</block>
   <block id="ef67c5eab6f3bfee1596c3f8734a88c7" category="paragraph">雖然不需要連接器即可直接探索內部部署ONTAP 的叢集、但如果您想要使用更多的BlueXP功能、則需要連接器。</block>
   <block id="eec3baeb5aa60415324495790bc2f136" category="inline-link">深入瞭解內部ONTAP 部署的叢集探索與管理選項</block>
   <block id="dc4523bb6eb17a07ae9db37489829969" category="paragraph"><block ref="dc4523bb6eb17a07ae9db37489829969" category="inline-link-rx"></block></block>
   <block id="098ba24e143dd197f509e41083f0103e" category="section-title">需要連接器時</block>
-  <block id="bf2f35a1367a7ddb519a7dd3cedacfdd" category="paragraph">在標準模式下使用 BlueXP 時、 BlueXP 中的下列功能和服務需要 Connector ：</block>
   <block id="234eb6bb27d592cbf06aa6537a33a380" category="list-text">Amazon FSX提供ONTAP 功能完善的管理功能</block>
   <block id="d79294e72dc3584cc12c98a7a931315d" category="list-text">Amazon S3儲存設備</block>
   <block id="2b3e8f910d66604cd77f93b333670468" category="list-text">Azure Blob 儲存設備</block>
-  <block id="c7a576f5db262c0475afa4a53822979e" category="list-text">經濟效益 ^1^</block>
   <block id="390e388eccc77b388b4d54d73b76f902" category="list-text">Google Cloud Storage 貯體</block>
   <block id="9fc1f8c97e791c3c5fa11f21f2c02740" category="list-text">內部部署ONTAP 的不支援叢集整合至BlueXP資料服務</block>
-  <block id="7713949d8f17ff00f9cdb21469da8a35" category="list-text">營運恢復能力 ^1^</block>
   <block id="ff45d71e69fb5930de79de7c94326d7b" category="list-text">Volume 快取</block>
-  <block id="6d95cfc501ca88bca8a0045681608071" category="paragraph">^1^ 雖然您可以在不使用 Connector 的情況下存取這些服務、但需要有 Connector 才能從服務啟動動作。</block>
   <block id="5bf7ac4937c946ab4eedfb091ffa67ab" category="section-title">連接器必須隨時正常運作</block>
-  <block id="dd42f0ca79b192af5e1f5734b490f194" category="paragraph">連接器是 BlueXP 服務架構的基本部分。您有責任確保相關的連接器隨時正常運作且可存取。雖然這項服務的設計是為了克服連接器可用度的短暫中斷、但您必須在必要時立即採取行動、以補救基礎架構故障。</block>
   <block id="5e546ca24430fc2b79e0e409176438c9" category="paragraph">本文件受EULA規範。如果產品未依照文件操作、則產品的功能與操作、以及您在EULA下的權利、可能會受到不利影響。</block>
   <block id="5d5a04495ebcd46b843dcafaea428460" category="section-title">對 Cloud Volumes ONTAP 的影響</block>
   <block id="65f052fa67c6645d7ad3edc14e47de13" category="paragraph">連接器是Cloud Volumes ONTAP 健全狀況和運作過程中的關鍵要素。如果連接器電源關閉、Cloud Volumes ONTAP 則在與連接器失去通訊超過14天之後、將停止使用以容量為基礎的BYOL系統。這是因為Connector每天都會在系統上重新整理授權。</block>
   <block id="b9c53fca7bb84d0455a2b4768b130e38" category="paragraph">如果Cloud Volumes ONTAP 您的系統擁有節點型BYOL授權、系統會在14天後繼續執行、因為授權已安裝在Cloud Volumes ONTAP 該系統上。</block>
   <block id="ff0e00d64f60db5d99e55c6d706306cc" category="section-title">支援的位置</block>
-  <block id="a92005953b68970af3654f93b3a572c1" category="paragraph">下列位置支援連接器：</block>
   <block id="6beccc67ff905f7da0b29dece26b0485" category="list-text">Amazon Web Services</block>
   <block id="1668ca1bd914c1d847f23b491319ac91" category="list-text">Microsoft Azure</block>
-  <block id="c6c3b56410517700ef27e6cfa0cae38d" category="paragraph">Azure 中的 Connector 應部署在與其管理的 Cloud Volumes ONTAP 系統所在的同一個 Azure 區域、或部署在中<block ref="71e0e9a7366955554f0600c5ea8cfc7f" category="inline-link-rx"></block> 適用於整個系統。Cloud Volumes ONTAP這項需求可確保Cloud Volumes ONTAP Azure Private Link連線可用於連接至相關的儲存帳戶。<block ref="ebdf8919a4d90c512f0e43f5b0739281" category="inline-link-rx"></block></block>
   <block id="51b7d7d3bc9e2a3d4986191018c447ab" category="paragraph">如果您想要搭配 Google Cloud 使用 BlueXP 服務、則必須使用在 Google Cloud 中執行的 Connector 。</block>
   <block id="695e0a47c56539eb9bcf6290d1c797d8" category="list-text">在您的內部環境中</block>
   <block id="11cac4cf4114aafe53015559291d52ce" category="paragraph">若要在受限模式或私有模式下使用 BlueXP 、請先安裝 Connector 、然後存取在 Connector 本機上執行的使用者介面、以開始使用 BlueXP 。</block>
@@ -2290,10 +2280,6 @@
   <block id="e3ab4c013397e346e8f211ff03ac44b2" category="list-text"><block ref="e3ab4c013397e346e8f211ff03ac44b2" category="inline-link-macro-rx"></block></block>
   <block id="538fc0c04ce8a0ef5cf78a12dbe8f68a" category="section-title">連接器升級</block>
   <block id="2162bc1fbb13d2539c146b3472921eb5" category="paragraph"><block ref="7270aabdb0c26b6b937d76a49fcda623" category="inline-xref-macro-rx"></block>。</block>
-  <block id="4102d173f8e2253a011fe9286a6db2a3" category="paragraph">Connector可以在BlueXP中管理多個工作環境。單一Connector應管理的工作環境數量上限各不相同。這取決於工作環境的類型、磁碟區數量、所管理的容量、以及使用者數量。</block>
-  <block id="63e8317d7c5806dc1cb56752525c4d52" category="paragraph">如果您有大規模部署、請與NetApp代表合作調整環境規模。如果您在過程中遇到任何問題、請使用產品內對談與我們聯絡。</block>
-  <block id="18d5aadda239c924412f84368e73290b" category="paragraph">在某些情況下、您可能只需要一個連接器、但可能需要兩個以上的連接器。</block>
-  <block id="c270270ae413e473bd85d972dfddb840" category="paragraph">以下是幾個範例：</block>
   <block id="aa043b4c9a6fa32b0f3811520156579a" category="list-text">您擁有多雲端環境（例如 AWS 和 Azure ）、偏好在 AWS 中安裝一個 Connector 、在 Azure 中安裝另一個 Connector 。每個系統都能管理 Cloud Volumes ONTAP 在這些環境中執行的不實系統。</block>
   <block id="645a84975202e30700b572b49a5ee29d" category="section-title">災難恢復</block>
   <block id="9702ba80b5da1f1cf46d6eb4c043a20a" category="paragraph">您可以同時使用多個連接器來管理工作環境、以便進行災難恢復。如果一個連接器故障、您可以切換至另一個連接器、立即管理工作環境。</block>
@@ -3054,7 +3040,6 @@
   <block id="f6185bb12f5e53c800be8cda7fbca65b" category="paragraph">如需雲端供應商檔案服務、其基礎架構或任何使用服務的解決方案的相關技術支援、請參閱該產品的 BlueXP 文件中的「取得說明」。</block>
   <block id="3880ae5df9fdc4d0fc4a6d00a2239530" category="paragraph">若要獲得 BlueXP 及其儲存解決方案與服務的專屬技術支援、請使用下列支援選項。</block>
   <block id="0b440ac3de48c7d11ee5fad31e6b4f12" category="paragraph">此版本包含一些小改進和錯誤修復。</block>
-  <block id="ca61c00bb942882ff64e228d1e677f97" category="paragraph">在受限模式或私有模式下、需要 Connector 才能使用 BlueXP 。</block>
   <block id="25a9b1247ec1fd14b6ef367a6910af4a" category="inline-link-macro">以標準模式開始使用 BlueXP</block>
   <block id="53307bf922b08c003dac0571547a263c" category="list-text"><block ref="53307bf922b08c003dac0571547a263c" category="inline-link-macro-rx"></block></block>
   <block id="91f55c66e69b3b40e117fc5d123e8cd6" category="inline-link-macro">以受限模式開始使用 BlueXP</block>
@@ -3759,7 +3744,6 @@
   <block id="a69707f32a14657a4148714e0858cc16" category="list-text">您應該擁有 <block ref="265bf4041c284cedb5265913609f75cf" category="inline-link-macro-rx"></block>.</block>
   <block id="0f6f328a496422180419aea5d68c3d2b" category="paragraph">Connector 是在雲端網路或內部部署網路中執行的 NetApp 軟體、可讓您使用所有 BlueXP  功能和服務。其中一個可用的安裝選項是在 AWS 中執行的 Linux 主機上手動安裝 Connector 軟體。若要在您自己的 Linux 主機上手動安裝 Connector 、您必須檢閱主機需求、設定網路、準備 AWS 權限、安裝 Connector 、然後提供您準備的權限。</block>
   <block id="bde99503b08825a9b6290c21b6ff2424" category="paragraph">Connector 是在雲端網路或內部部署網路中執行的 NetApp 軟體、可讓您使用所有 BlueXP  功能和服務。其中一個可用的安裝選項是直接從 AWS Marketplace 在 AWS 中建立 Connector 。若要從 AWS Marketplace 建立 Connector 、您需要設定網路、準備 AWS 權限、檢閱執行個體需求、然後建立 Connector 。</block>
-  <block id="5cb6efc5332c23d8c22978f3559aa613" category="paragraph">Connector 是在雲端網路或內部部署網路中執行的 NetApp 軟體、可讓您使用所有 BlueXP  功能和服務。其中一個可用的安裝選項是在 Azure 中執行的 Linux 主機上手動安裝 Connector 軟體。若要在您自己的 Linux 主機上手動安裝 Connector 、您必須檢閱主機需求、設定網路、準備 Azure 權限、安裝 Connector 、然後提供您準備的權限。</block>
   <block id="1017ad8551dc7209fead1d996608e2b5" category="paragraph">Connector 是在雲端網路或內部部署網路中執行的 NetApp 軟體、可讓您使用所有 BlueXP  功能和服務。其中一個可用的安裝選項是直接從 Azure Marketplace 在 Azure 中建立 Connector 。若要從 Azure Marketplace 建立 Connector 、您必須設定網路、準備 Azure 權限、檢閱執行個體需求、然後建立 Connector 。</block>
   <block id="9a63fba43be3e1df0de44c749000ffc5" category="paragraph">Connector 是在雲端網路或內部部署網路中執行的 NetApp 軟體、可讓您使用所有 BlueXP  功能和服務。可用的安裝選項包括直接從 BlueXP  或使用 gCloud 在 AWS 中建立 Connector 。若要從 BlueXP 或使用 gCloud 在 Google Cloud 中建立 Connector 、您必須設定網路、準備 Google Cloud 權限、啟用 Google Cloud API 、然後建立 Connector 。</block>
   <block id="455e0d1571fc687b88776ecc58050d7b" category="paragraph">Connector 是在雲端網路或內部部署網路中執行的 NetApp 軟體、可讓您使用所有 BlueXP  功能和服務。其中一個可用的安裝選項是在 Google Cloud 中執行的 Linux 主機上手動安裝 Connector 軟體。若要在您自己的 Linux 主機上手動安裝 Connector 、您必須檢閱主機需求、設定網路、準備 Google Cloud 權限、啟用 API 、安裝 Connector 、然後提供您準備的權限。</block>
@@ -3858,7 +3842,6 @@
   <block id="6c42d9d3f2de2ec585181e975309fcf0" category="section-title">與雲端供應商通訊</block>
   <block id="f9a30311177259db80d6ef6b5bc77f80" category="paragraph">Connector 使用 TLS 1.2 與 AWS 、 Azure 和 Google Cloud 進行所有通訊。</block>
   <block id="62e253e417ca4e6f13ae9fae3d41704e" category="paragraph">您可以直接從 BlueXP  、雲端供應商的市場、或手動在自己的 Linux 主機上安裝軟體、來建立 Connector 。開始使用的方式取決於您是在標準模式、受限模式或私人模式下使用 BlueXP 。</block>
-  <block id="be6236f35c24aae3ee086b3f6ec01213" category="paragraph">我們通常每個月更新Connector軟體、以引進新功能並改善穩定性。雖然 BlueXP  平台中的大部分服務和功能都是透過 SaaS 型軟體提供、但有幾項功能則取決於 Connector 的版本。其中包括Cloud Volumes ONTAP 支援內部的支援、ONTAP 內部的支援、叢集管理、設定及說明。</block>
   <block id="429ef702d7e67a893ea297da8613a472" category="inline-link-macro">瞭解如何在使用私有模式時手動升級 Connector 軟體</block>
   <block id="1178d8df6f45ec63d153216266770ffa" category="paragraph"><block ref="8ab15d11feb9213cf5a6950e71fe0578" category="inline-link-macro-rx"></block>。</block>
   <block id="8f65178ee55c2c64ee3bef58afe9c682" category="list-text">服務供應商可能會使用一個 BlueXP  組織來為客戶提供服務、而使用另一個組織來為其中一個業務單位提供災難恢復。每個組織都會有個別的 Connector 。</block>
@@ -4378,7 +4361,6 @@
   <block id="9b9f80f24ed0b93047113544607e2066" category="paragraph"><block ref="3a812ba80ae549f721789bceed3eb28a" category="inline-link-macro-rx"></block>。</block>
   <block id="7e4159d172a1854b6946f160a149d326" category="paragraph">在強制模式或允許模式 ^1^ 中支援</block>
   <block id="3093ae1f44e0f8ba4d59f282f1fccf4d" category="list-text">在作業系統上啟用 SELinux 的 Connectors 不支援 Cloud Volumes ONTAP 系統的管理。</block>
-  <block id="2a1c6b0713eb3b0e8cc5584c21fe42b6" category="paragraph">_Connector_ 是在您的雲端網路或內部部署網路中執行的 NetApp 軟體。它會執行 BlueXP 管理資料基礎架構所需執行的動作。Connector 會持續輪詢 BlueXP  軟體即服務（ SaaS ）層、以找出需要採取的任何行動。您不需要 Connector 即可開始使用 BlueXP 、但您需要建立 Connector 才能解除鎖定所有 BlueXP 功能和服務。</block>
   <block id="7dbbe2a034f912c5cb9e37aea8e9795a" category="paragraph">BlueXP 提供多種 _ 部署模式 _ 、可讓您以符合業務與安全需求的方式使用 BlueXP 。標準模式 _ 運用 BlueXP  軟體即服務（ SaaS ）層來提供完整功能、而設有連線限制的組織則可使用 _ 受限模式 _ 和 _ 私有模式 _ 。</block>
   <block id="1503e47ef7de6f4f44b59422cf94ceec" category="paragraph">NetApp BlueXP 為您的組織提供單一控制面板、協助您在內部部署和雲端環境中建置、保護及管理資料。BlueXP  軟體即服務（ SaaS ）平台包含提供儲存管理、資料移動性、資料保護、以及資料分析與控制的服務。管理功能是透過網路型主控台和 API 提供。</block>
   <block id="9d110ddb304e37d908c266c47eeed9f9" category="paragraph">這些限制僅適用於 BlueXP  的設定與管理： Connector 、軟體即服務（ SaaS ）平台等。</block>
@@ -5025,4 +5007,47 @@
   <block id="9a95138b9cb83f59109eb15c038b1073" category="sidebar">新增成員和服務帳戶</block>
   <block id="7211199f77a8a73dc960b8a15a019199" category="sidebar">使用角色來控制成員存取資源的權限</block>
   <block id="7b86bd575ced3444e23389ac71f98a8f" category="paragraph"><block ref="7b86bd575ced3444e23389ac71f98a8f" category="inline-link-macro-rx"></block></block>
+  <block id="e5a26c78a572123c5a5e442167efbf6e" category="paragraph">Connector 是您安裝的 NetApp 軟體，可執行 BlueXP  管理儲存基礎架構所需執行的動作。您不需要連接器即可存取 BlueXP  的許多功能，但如果您不需要，則無法使用某些功能。</block>
+  <block id="9097a69a8c3aa1836902abae4c2af6b5" category="paragraph">如果您以標準模式執行 BlueXP  ，就不需要安裝 Connector 來執行 BlueXP  的一些服務，例如軟體更新和數位錢包。不過， BlueXP  的部分優質服務（例如勒索軟體保護或災難恢復）需要您安裝 Connector 。如果您在受限或私人模式下使用 BlueXP  ，則需要安裝 Connector 。</block>
+  <block id="c9ea5b101d4c3beb590e4912f1117899" category="section-title">在標準模式中，若沒有 Connector ，您可以執行的動作</block>
+  <block id="25ec9fbdb3e3fbeaa1a630feb04991b6" category="paragraph">如果您是以標準模式執行，則無需安裝 Connector 即可取得 BlueXP  最重要的部分服務。</block>
+  <block id="8d17fdbbeb88dfc223add1e324431fb7" category="paragraph">只有在 Connector 需要將授權新增至數位錢包時、才需要使用 Cloud Volumes ONTAP 節點型授權。需要連接器，因為 BlueXP  需要取得安裝在 Cloud Volumes ONTAP 系統上的授權資料。</block>
+  <block id="8cba62c58c5613090d8d857aa64a0495" category="paragraph">在標準模式下使用 BlueXP  時，您需要安裝一或多個 Connectors ，才能在 BlueXP  中啟用下列功能和服務：</block>
+  <block id="3dc40720b958919be726cd65a8331a73" category="list-text">經濟效益（僅限檢視）</block>
+  <block id="79dbd2d28f5fa406ce0123e58631e94a" category="list-text">營運恢復能力（僅限檢視）</block>
+  <block id="3f5774e40931df608d3773b69b87ef4b" category="paragraph">由於 Connectors 是 BlueXP  服務架構的基本部分，因此您必須確保相關的 Connectors 隨時正常運作且可存取。雖然這項服務的設計是為了克服連接器可用度的短暫中斷、但您必須在必要時立即採取行動、以補救基礎架構故障。</block>
+  <block id="6029872bf2fc642a049b16e0cc87fa62" category="paragraph">您可以在支援的超大規模環境或內部環境中安裝 Connectors ，視您的需求而定。</block>
+  <block id="71428b007b4ee7fbedd790d9e4085760" category="paragraph">將您的 Connector 部署在與其管理的 Cloud Volumes ONTAP 系統相同的 Azure 區域，或部署在<block ref="71e0e9a7366955554f0600c5ea8cfc7f" category="inline-link-rx"></block> Cloud Volumes ONTAP 系統的。如此可確保 Cloud Volumes ONTAP 與其相關儲存帳戶之間使用 Azure 私有連結連線。<block ref="ebdf8919a4d90c512f0e43f5b0739281" category="inline-link-rx"></block></block>
+  <block id="e8094f36d739ced855fc51d64c727572" category="paragraph">NetApp 通常每個月都會更新 Connector 軟體，以引進新功能並改善穩定性。雖然 BlueXP  平台中的大部分服務和功能都是透過 SaaS 型軟體提供、但有幾項功能則取決於 Connector 的版本。其中包括Cloud Volumes ONTAP 支援內部的支援、ONTAP 內部的支援、叢集管理、設定及說明。</block>
+  <block id="3266a93708e14f8781ccf9c017419275" category="paragraph">您可以使用相同的 Connector 來管理 BlueXP  中的多個工作環境。單一Connector應管理的工作環境數量上限各不相同。這取決於工作環境的類型、磁碟區數量、所管理的容量、以及使用者數量。</block>
+  <block id="48daeaff5628b782edf714a3920f97e6" category="paragraph">如果您有大規模部署、請與NetApp代表合作調整環境規模。</block>
+  <block id="238a6a671596e52b58d129f978852aea" category="paragraph">判斷您需要多少個 Connector 時，另一個考量是儲存設備所在的位置。例如，如果您的 Cloud Volumes ONTAP 同時位於 Google Cloud 和 Azure 中，則每個環境都需要一個 Connector 。如果您的儲存設備完全存在於內部部署，您可以在任何超大型擴充器或內部部署中執行 Connector 。</block>
+  <block id="42e49d3f23439ff5f06a12f88d7a3c26" category="paragraph">以下是其他範例：</block>
+  <block id="1d5ad44f665df12a6f6a58cc6fb9cf6a" category="doc">瞭解 BlueXP  服務</block>
+  <block id="d0a6b7265534b9aa87f97edbb7ef469d" category="paragraph">您可以選擇是使用 BlueXP  SaaS 服務（標準模式），在受限的雲端環境中執行 BlueXP  （受限模式），還是在您自己的內部部署資料中心（私有模式）中安裝。無論您的環境為何，您都可以利用集中化管理和額外的資料服務，來維持儲存資源的健全性和安全性。</block>
+  <block id="4a67cdf9663ed372213e941f6b1c835e" category="paragraph">您選擇的模式會決定哪些服務可供您使用，以及您可以管理哪些儲存資源。</block>
+  <block id="bd28522af899bdfb48bbdcbf50ce271e" category="paragraph">開始之前，請先比較每種模式所支援的不同儲存資源，以及可用的資料服務，以協助您判斷哪一項符合貴公司的需求。</block>
+  <block id="43bc868f42929fd56604f4d757ff55ae" category="section-title">資料服務</block>
+  <block id="af355bb6bfae3acf3e713a8c3d2a386f" category="paragraph">下表指出每個部署模式中可用的資料服務，您是否需要訂閱，以及何時需要支援帳戶。</block>
+  <block id="d8f0364777231272b45dd87c1943194e" category="paragraph">* 連接器 * 表格中的連接器欄會指出您何時需要標準模式的連接器。如果您在受限模式或私有模式下使用 BlueXP  ，則永遠需要有一個 Connector 。</block>
+  <block id="adf5b3dacd7f6732c9acfae29de9cacd" category="cell">需要支援帳戶</block>
+  <block id="76d09e89f502dea59e4838b6958c8154" category="cell">需要 Connector</block>
+  <block id="7f4170ba49bff091502ae17552e7bdf2" category="cell">需要訂閱</block>
+  <block id="bfb78ce9833860669efdf093e894f0d5" category="cell">模式可用度</block>
+  <block id="331dfa1e0a93d1ecb14265311c06848f" category="cell">標準，限制</block>
+  <block id="b1b40427c8eb8d0a083ddb16e250325b" category="cell">否*</block>
+  <block id="01a9a3b8d0fcae3055dc91935e8ec6c6" category="cell">是*</block>
+  <block id="eb6d8ae6f20283755b339c0dc273988b" category="cell">標準</block>
+  <block id="305f778e06640140a90fcc1103d99f58" category="cell">支援案例管理</block>
+  <block id="48c9d7749bddd450ac433b0db5269a96" category="section-title">NetApp 儲存設備</block>
+  <block id="51a20565c05385787bec584ddd2bb7fc" category="paragraph">您可以直接從 BlueXP  管理大部分的 NetApp 儲存資源，讓您可以從同一個應用程式檢視所有資源。</block>
+  <block id="1a72ece311084649076a195de688d4b0" category="paragraph">下表列出您可以從每個部署模式管理的儲存資源，以及您需要 Connector 或訂閱的儲存資源。</block>
+  <block id="fec52cc0232a22ef4060c7b61d92c0a0" category="cell">否 ^1^</block>
+  <block id="107ca0e0ef4ce423ae66855ce620468c" category="cell">否 ^2^</block>
+  <block id="8ad971c5d8a76d2b69437c57eda95147" category="cell">是的？</block>
+  <block id="c8ee5046cfa22e8d07f9b9c103372ad2" category="cell">否 ^3^</block>
+  <block id="2141549841410236509f332565c7d685" category="paragraph">^1^ 某些動作需要連接器或 BlueXP  工作負載原廠連結。<block ref="eab18bd75996775296aa94b3a12b305e" category="inline-link-rx"></block></block>
+  <block id="4304dbdc82316f438e38c644a361fd66" category="paragraph">^2^ 雖然不需要連接器來設定和管理 Azure NetApp Files ，但如果您想要使用 BlueXP  分類來掃描 Azure NetApp Files 資料，則需要連接器。</block>
+  <block id="86429eb78c6bc64d5f1ce4125590fe22" category="paragraph">^3^ 雖然直接探索內部部署 ONTAP 叢集不需要連接器，但如果您想要使用其他 BlueXP  功能，則需要連接器。<block ref="04529f27c98d308747ea6be915c240c4" category="inline-link-rx"></block></block>
+  <block id="9c723fb8e231218b213744c9ee3160ca" category="paragraph">您可以在 Azure 中執行的 Linux 主機上手動安裝 Connector 。若要在您自己的 Linux 主機上手動安裝 Connector 、您必須檢閱主機需求、設定網路、準備 Azure 權限、安裝 Connector 、然後提供您準備的權限。</block>
 </blocks>

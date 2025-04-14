@@ -14,13 +14,15 @@ summary: Connector 是指在雲端網路或內部部署網路中執行的 NetApp
 
 
 [role="lead"]
-_Connector_ 是在您的雲端網路或內部部署網路中執行的 NetApp 軟體。它會執行 BlueXP 管理資料基礎架構所需執行的動作。Connector 會持續輪詢 BlueXP  軟體即服務（ SaaS ）層、以找出需要採取的任何行動。您不需要 Connector 即可開始使用 BlueXP 、但您需要建立 Connector 才能解除鎖定所有 BlueXP 功能和服務。
+Connector 是您安裝的 NetApp 軟體，可執行 BlueXP  管理儲存基礎架構所需執行的動作。您不需要連接器即可存取 BlueXP  的許多功能，但如果您不需要，則無法使用某些功能。
+
+如果您以標準模式執行 BlueXP  ，就不需要安裝 Connector 來執行 BlueXP  的一些服務，例如軟體更新和數位錢包。不過， BlueXP  的部分優質服務（例如勒索軟體保護或災難恢復）需要您安裝 Connector 。如果您在受限或私人模式下使用 BlueXP  ，則需要安裝 Connector 。
 
 
 
-== 沒有 Connector 、您可以做什麼
+== 在標準模式中，若沒有 Connector ，您可以執行的動作
 
-開始使用 BlueXP 並不需要 Connector 。您可以在 BlueXP 中使用多項功能和服務、而無需建立 Connector 。
+如果您是以標準模式執行，則無需安裝 Connector 即可取得 BlueXP  最重要的部分服務。
 
 您可以在沒有 Connector 的情況下使用下列 BlueXP 功能和服務：
 
@@ -41,7 +43,7 @@ _Connector_ 是在您的雲端網路或內部部署網路中執行的 NetApp 軟
 在幾乎所有情況下、您都可以在沒有 Connector 的情況下、將授權新增至數位錢包。
 
 +
-只有在 Connector 需要將授權新增至數位錢包時、才需要使用 Cloud Volumes ONTAP 節點型授權。在這種情況下需要連接器、因為資料是取自Cloud Volumes ONTAP 安裝在效益分析系統上的授權。
+只有在 Connector 需要將授權新增至數位錢包時、才需要使用 Cloud Volumes ONTAP 節點型授權。需要連接器，因為 BlueXP  需要取得安裝在 Cloud Volumes ONTAP 系統上的授權資料。
 
 * 直接探索內部部署ONTAP 的叢集
 +
@@ -59,7 +61,7 @@ https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["�
 
 == 需要連接器時
 
-在標準模式下使用 BlueXP 時、 BlueXP 中的下列功能和服務需要 Connector ：
+在標準模式下使用 BlueXP  時，您需要安裝一或多個 Connectors ，才能在 BlueXP  中啟用下列功能和服務：
 
 * 警示
 * Amazon FSX提供ONTAP 功能完善的管理功能
@@ -70,25 +72,21 @@ https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["�
 * Cloud Volumes ONTAP
 * 災難恢復
 * E系列系統
-* 經濟效益 ^1^
+* 經濟效益（僅限檢視）
 * Google Cloud Storage 貯體
 * 內部部署ONTAP 的不支援叢集整合至BlueXP資料服務
-* 營運恢復能力 ^1^
+* 營運恢復能力（僅限檢視）
 * 勒索軟體保護
 * 系統StorageGRID
 * 分層
 * Volume 快取
 
 
-^1^ 雖然您可以在不使用 Connector 的情況下存取這些服務、但需要有 Connector 才能從服務啟動動作。
-
-在受限模式或私有模式下、需要 Connector 才能使用 BlueXP 。
-
 
 
 == 連接器必須隨時正常運作
 
-連接器是 BlueXP 服務架構的基本部分。您有責任確保相關的連接器隨時正常運作且可存取。雖然這項服務的設計是為了克服連接器可用度的短暫中斷、但您必須在必要時立即採取行動、以補救基礎架構故障。
+由於 Connectors 是 BlueXP  服務架構的基本部分，因此您必須確保相關的 Connectors 隨時正常運作且可存取。雖然這項服務的設計是為了克服連接器可用度的短暫中斷、但您必須在必要時立即採取行動、以補救基礎架構故障。
 
 本文件受EULA規範。如果產品未依照文件操作、則產品的功能與操作、以及您在EULA下的權利、可能會受到不利影響。
 
@@ -104,12 +102,12 @@ https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["�
 
 == 支援的位置
 
-下列位置支援連接器：
+您可以在支援的超大規模環境或內部環境中安裝 Connectors ，視您的需求而定。
 
 * Amazon Web Services
 * Microsoft Azure
 +
-Azure 中的 Connector 應部署在與其管理的 Cloud Volumes ONTAP 系統所在的同一個 Azure 區域、或部署在中 https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure區域配對"^] 適用於整個系統。Cloud Volumes ONTAP這項需求可確保Cloud Volumes ONTAP Azure Private Link連線可用於連接至相關的儲存帳戶。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html["瞭Cloud Volumes ONTAP 解如何使用Azure Private Link"^]
+將您的 Connector 部署在與其管理的 Cloud Volumes ONTAP 系統相同的 Azure 區域，或部署在 https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure區域配對"^] Cloud Volumes ONTAP 系統的。如此可確保 Cloud Volumes ONTAP 與其相關儲存帳戶之間使用 Azure 私有連結連線。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html["瞭Cloud Volumes ONTAP 解如何使用Azure Private Link"^]
 
 * Google Cloud
 +
@@ -179,7 +177,7 @@ link:concept-modes.html["瞭解 BlueXP 部署模式"]。
 
 == 連接器升級
 
-我們通常每個月更新Connector軟體、以引進新功能並改善穩定性。雖然 BlueXP  平台中的大部分服務和功能都是透過 SaaS 型軟體提供、但有幾項功能則取決於 Connector 的版本。其中包括Cloud Volumes ONTAP 支援內部的支援、ONTAP 內部的支援、叢集管理、設定及說明。
+NetApp 通常每個月都會更新 Connector 軟體，以引進新功能並改善穩定性。雖然 BlueXP  平台中的大部分服務和功能都是透過 SaaS 型軟體提供、但有幾項功能則取決於 Connector 的版本。其中包括Cloud Volumes ONTAP 支援內部的支援、ONTAP 內部的支援、叢集管理、設定及說明。
 
 當您在標準模式或受限模式下使用 BlueXP 時、只要 Connector 有外送網際網路存取權來取得軟體更新、它就會自動將其軟體更新至最新版本。如果您在私有模式下使用 BlueXP 、則需要手動升級 Connector 。
 
@@ -201,13 +199,13 @@ link:task-upgrade-connector.html["瞭解如何在使用私有模式時手動升�
 
 == 多種工作環境與連接器
 
-Connector可以在BlueXP中管理多個工作環境。單一Connector應管理的工作環境數量上限各不相同。這取決於工作環境的類型、磁碟區數量、所管理的容量、以及使用者數量。
+您可以使用相同的 Connector 來管理 BlueXP  中的多個工作環境。單一Connector應管理的工作環境數量上限各不相同。這取決於工作環境的類型、磁碟區數量、所管理的容量、以及使用者數量。
 
-如果您有大規模部署、請與NetApp代表合作調整環境規模。如果您在過程中遇到任何問題、請使用產品內對談與我們聯絡。
+如果您有大規模部署、請與NetApp代表合作調整環境規模。
 
-在某些情況下、您可能只需要一個連接器、但可能需要兩個以上的連接器。
+判斷您需要多少個 Connector 時，另一個考量是儲存設備所在的位置。例如，如果您的 Cloud Volumes ONTAP 同時位於 Google Cloud 和 Azure 中，則每個環境都需要一個 Connector 。如果您的儲存設備完全存在於內部部署，您可以在任何超大型擴充器或內部部署中執行 Connector 。
 
-以下是幾個範例：
+以下是其他範例：
 
 * 您擁有多雲端環境（例如 AWS 和 Azure ）、偏好在 AWS 中安裝一個 Connector 、在 Azure 中安裝另一個 Connector 。每個系統都能管理 Cloud Volumes ONTAP 在這些環境中執行的不實系統。
 * 服務供應商可能會使用一個 BlueXP  組織來為客戶提供服務、而使用另一個組織來為其中一個業務單位提供災難恢復。每個組織都會有個別的 Connector 。
