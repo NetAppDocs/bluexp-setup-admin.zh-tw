@@ -4923,7 +4923,6 @@
   <block id="44cd288eedf76c78c5b3b26935538537" category="paragraph">目前、 3.9.51 版本適用於標準模式和受限模式。</block>
   <block id="5c4a2c71456e5295a9492bb06d95be3d" category="section-title">BlueXP  身分識別與存取管理（ IAM ）</block>
   <block id="89e154403778feb30a369a4b9959d2e2" category="inline-link-macro">瞭解新角色。</block>
-  <block id="32943cfa903d06d5071cedc0af461130" category="paragraph"><block ref="7b86bd575ced3444e23389ac71f98a8f" category="inline-link-macro-rx"></block>。</block>
   <block id="4409983c60e456858bb3e9ef5737f98a" category="section-title">2025 年 4 月 14 日</block>
   <block id="38469cab8f7065ff2b3a663e28381c62" category="list-text">沒有組織管理員，資料夾或專案管理員的使用者，必須指派勒索軟體保護角色，才能存取勒索軟體保護。您可以指派使用者兩種角色之一：勒索軟體保護管理員或勒索軟體保護檢視器。</block>
   <block id="a9632ee5411be0309684063f13ba77a8" category="list-text">沒有組織管理員，資料夾或專案管理員的使用者必須指派 Keystone 角色，才能存取 Keystone 。您可以指派使用者兩個角色之一： Keystone 管理員或 Keystone 檢視器。</block>
@@ -5025,4 +5024,5 @@
   <block id="d5979f6638739f52389534c5a5861979" category="sidebar">BlueXP  設定與管理</block>
   <block id="9a95138b9cb83f59109eb15c038b1073" category="sidebar">新增成員和服務帳戶</block>
   <block id="7211199f77a8a73dc960b8a15a019199" category="sidebar">使用角色來控制成員存取資源的權限</block>
+  <block id="7b86bd575ced3444e23389ac71f98a8f" category="paragraph"><block ref="7b86bd575ced3444e23389ac71f98a8f" category="inline-link-macro-rx"></block></block>
 </blocks>

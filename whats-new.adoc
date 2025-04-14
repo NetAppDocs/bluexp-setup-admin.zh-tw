@@ -37,7 +37,7 @@ summary: 瞭解 BlueXP  管理功能的新功能： BlueXP  IAM 、 Connectors
 * 如果您具有組織管理員或資料夾或專案管理員角色，現在您可以將 Keystone 訂閱與 IAM 專案建立關聯。將 Keystone 訂閱與 IAM 專案建立關聯可讓您控制 BlueXP  中 Keystone 的存取。
 
 
-link:reference-iam-predefined-roles.html["瞭解新角色。"^]。
+link:reference-iam-predefined-roles.html["瞭解新角色。"^]
 
 
 
