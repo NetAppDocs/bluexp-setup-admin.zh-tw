@@ -5010,7 +5010,6 @@
   <block id="e5a26c78a572123c5a5e442167efbf6e" category="paragraph">Connector 是您安裝的 NetApp 軟體，可執行 BlueXP  管理儲存基礎架構所需執行的動作。您不需要連接器即可存取 BlueXP  的許多功能，但如果您不需要，則無法使用某些功能。</block>
   <block id="9097a69a8c3aa1836902abae4c2af6b5" category="paragraph">如果您以標準模式執行 BlueXP  ，就不需要安裝 Connector 來執行 BlueXP  的一些服務，例如軟體更新和數位錢包。不過， BlueXP  的部分優質服務（例如勒索軟體保護或災難恢復）需要您安裝 Connector 。如果您在受限或私人模式下使用 BlueXP  ，則需要安裝 Connector 。</block>
   <block id="c9ea5b101d4c3beb590e4912f1117899" category="section-title">在標準模式中，若沒有 Connector ，您可以執行的動作</block>
-  <block id="25ec9fbdb3e3fbeaa1a630feb04991b6" category="paragraph">如果您是以標準模式執行，則無需安裝 Connector 即可取得 BlueXP  最重要的部分服務。</block>
   <block id="8d17fdbbeb88dfc223add1e324431fb7" category="paragraph">只有在 Connector 需要將授權新增至數位錢包時、才需要使用 Cloud Volumes ONTAP 節點型授權。需要連接器，因為 BlueXP  需要取得安裝在 Cloud Volumes ONTAP 系統上的授權資料。</block>
   <block id="8cba62c58c5613090d8d857aa64a0495" category="paragraph">在標準模式下使用 BlueXP  時，您需要安裝一或多個 Connectors ，才能在 BlueXP  中啟用下列功能和服務：</block>
   <block id="3dc40720b958919be726cd65a8331a73" category="list-text">經濟效益（僅限檢視）</block>
@@ -5050,4 +5049,5 @@
   <block id="4304dbdc82316f438e38c644a361fd66" category="paragraph">^2^ 雖然不需要連接器來設定和管理 Azure NetApp Files ，但如果您想要使用 BlueXP  分類來掃描 Azure NetApp Files 資料，則需要連接器。</block>
   <block id="86429eb78c6bc64d5f1ce4125590fe22" category="paragraph">^3^ 雖然直接探索內部部署 ONTAP 叢集不需要連接器，但如果您想要使用其他 BlueXP  功能，則需要連接器。<block ref="04529f27c98d308747ea6be915c240c4" category="inline-link-rx"></block></block>
   <block id="9c723fb8e231218b213744c9ee3160ca" category="paragraph">您可以在 Azure 中執行的 Linux 主機上手動安裝 Connector 。若要在您自己的 Linux 主機上手動安裝 Connector 、您必須檢閱主機需求、設定網路、準備 Azure 權限、安裝 Connector 、然後提供您準備的權限。</block>
+  <block id="e6ddd5a54a1d2f8ae254b9358dfed6b9" category="paragraph">如果您是以標準模式執行，則可以開始使用 BlueXP  集中管理儲存資源，而無需安裝 Connector 。</block>
 </blocks>

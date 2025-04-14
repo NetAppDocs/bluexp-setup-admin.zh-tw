@@ -22,7 +22,7 @@ Connector 是您安裝的 NetApp 軟體，可執行 BlueXP  管理儲存基礎�
 
 == 在標準模式中，若沒有 Connector ，您可以執行的動作
 
-如果您是以標準模式執行，則無需安裝 Connector 即可取得 BlueXP  最重要的部分服務。
+如果您是以標準模式執行，則可以開始使用 BlueXP  集中管理儲存資源，而無需安裝 Connector 。
 
 您可以在沒有 Connector 的情況下使用下列 BlueXP 功能和服務：
 
