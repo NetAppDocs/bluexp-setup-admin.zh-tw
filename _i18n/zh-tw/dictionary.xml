@@ -4973,4 +4973,6 @@
   <block id="60b81afd9ad770d185b5a9b9f08f9809" category="sidebar">BlueXP  設定與管理文件</block>
   <block id="739addbbddeacc0bb15e86502b6685e9" category="sidebar">新增成員並管理其權限</block>
   <block id="4e9a240c5fb31e56c6b0ab71a915953f" category="sidebar">預先定義的 IAM 角色</block>
+  <block id="c86bd67be80794fcaa3f1d91aa8b2899" category="inline-link-macro">瞭解存取角色。</block>
+  <block id="5a4d408bd57f7cf7efbd6cf878c737a7" category="paragraph"><block ref="5a4d408bd57f7cf7efbd6cf878c737a7" category="inline-link-macro-rx"></block></block>
 </blocks>
