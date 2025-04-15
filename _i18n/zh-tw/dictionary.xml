@@ -4925,7 +4925,6 @@
   <block id="befeea17a6d7eca164cf128f9bffe000" category="paragraph">BlueXP  支援數個預先定義的角色、您可以指派給組織成員。</block>
   <block id="2b01a456faf456f22f55be4aabe17b53" category="inline-link-macro">瞭解 IAM 預先定義的角色</block>
   <block id="5939586d23777de38b1394aad3c31735" category="paragraph"><block ref="1d6a3b55f851d6a1155ab766483f6eac" category="inline-link-macro-rx"></block>。</block>
-  <block id="9a4737feea9b9d5b10fea0c8478ac45b" category="doc">預先定義的 BlueXP  IAM 角色和權限</block>
   <block id="94d01a25e8d719777d74e40fde0e74eb" category="paragraph">BlueXP  身分識別與存取管理（ IAM ）包含數個預先定義的角色、您可以在不同的資源階層層級中指派給組織成員。指派這些角色之前、您應該先瞭解每個角色所包含的權限。角色分為兩類：平台和資料服務。</block>
   <block id="cb9e27422b343274f9974efbc9c3dbc1" category="section-title">平台角色</block>
   <block id="5e1d7b4c2de3509435462a15161a1c7f" category="paragraph">平台角色是您可以指派給使用者的最廣泛角色，並允許廣泛的 BlueXP  管理權限，包括指派角色和新增使用者，以及執行所有 BlueXP  功能。BlueXP  IAM 包含兩個平台角色：組織管理和資料夾或專案管理。兩個 BlueXP  IAM 平台角色的主要差異在於範圍。</block>
@@ -4934,7 +4933,6 @@
   <block id="6573eb5e7a9033869897566e8b1b5f6a" category="paragraph">資料夾或專案管理員角色無法建立連接器。</block>
   <block id="11631a24c36e1c2153a968d2579a70d4" category="section-title">平台角色比較表</block>
   <block id="bc76903dd69fe38bc3b58cc4ef4a02c8" category="list-text">大型跨國組織在 BlueXP  中扮演組織角色的範例</block>
-  <block id="09246652e91bee267cf93f6b3c2e9a32" category="paragraph">資料服務角色可讓使用者存取組織，專案或資料夾內的資料服務。</block>
   <block id="5924e866f66794971195c3e6a6aa8e84" category="paragraph">如有需要、請選取 * 新增成員 * 以指定其他組織成員、這些成員應該能夠存取資料夾或專案、然後選取角色。角色會定義成員對資料夾或專案的權限。</block>
   <block id="f676fbba085923546a37baf94ce6784b" category="inline-link-macro">從「成員」頁面管理權限</block>
   <block id="5ca796b399d85f3455d2d1844012b11a" category="paragraph">如果成員存取權限是在較高層級（資料夾或組織層級）提供，則在檢視較低層級的資料夾或專案時，您無法移除或變更成員存取權限。您必須切換至階層架構的該部分，並在該處更新成員的權限。或者、您也可以<block ref="101f940efcb2d2a02ec2f0fe1cb20220" category="inline-link-macro-rx"></block>。</block>
@@ -4972,7 +4970,72 @@
   <block id="0d11271abad1cfef17e56e17367d09de" category="paragraph">您可以在其中一部內部部署機器上安裝 Connector 。若要在內部環境中執行 Connector ，您需要檢閱主機需求，設定網路，準備雲端權限，安裝 Connector ，設定 Connector ，然後提供您準備的權限。</block>
   <block id="60b81afd9ad770d185b5a9b9f08f9809" category="sidebar">BlueXP  設定與管理文件</block>
   <block id="739addbbddeacc0bb15e86502b6685e9" category="sidebar">新增成員並管理其權限</block>
-  <block id="4e9a240c5fb31e56c6b0ab71a915953f" category="sidebar">預先定義的 IAM 角色</block>
   <block id="c86bd67be80794fcaa3f1d91aa8b2899" category="inline-link-macro">瞭解存取角色。</block>
   <block id="5a4d408bd57f7cf7efbd6cf878c737a7" category="paragraph"><block ref="5a4d408bd57f7cf7efbd6cf878c737a7" category="inline-link-macro-rx"></block></block>
+  <block id="8c3d337cee5ab07c0918b1ab7f1db96a" category="inline-link-macro">BlueXP  存取角色</block>
+  <block id="a7d6279e87395342f6ca8ef1ab6ad3ca" category="list-text"><block ref="a7d6279e87395342f6ca8ef1ab6ad3ca" category="inline-link-macro-rx"></block></block>
+  <block id="3780f4c88e2a0b66a6db0bbed86d39da" category="section-title">應用程式角色</block>
+  <block id="d48140a7630d821243e3ac2204b3d871" category="paragraph">以下是應用程式類別中的角色清單。</block>
+  <block id="a11961cab6627eac643ea36ae57ce8df" category="section-title">Keystone 角色</block>
+  <block id="2a04d5504b28b9efe0f0dfff02a03355" category="paragraph">您可以使用下列角色指派使用者對 Keystone 的存取權。</block>
+  <block id="78fdf101e42d4e276f66b98cdfe73866" category="admonition">透過 BlueXP  存取 Keystone 目前為試用版。如果您想參加 Keystone 測試版，請聯絡您的 NetApp 代表。</block>
+  <block id="cdcfd0d4763f6f8983003ea128be38cf" category="list-text">* Keystone admin* ：管理 Keystone 訂閱，並對警示，報告和訂閱採取行動。</block>
+  <block id="3275a956f3a80df98f4623ac3ac931a6" category="list-text">* Keystone viewer* ：檢視 Keystone 訂閱，以及檢視報告，警示和資產。</block>
+  <block id="147e83598b37ab6627136a0fbebd7717" category="paragraph">下表指出每個 Keystone 角色可以執行的動作。</block>
+  <block id="4420e7353184ac575b539cdce1b991db" category="cell">功能與行動</block>
+  <block id="3522959e95c9f2aad088e504a7c016d0" category="cell">Keystone 管理</block>
+  <block id="9d0ab4774b32ad710dbc8b73cdf29cce" category="cell">Keystone 檢視器</block>
+  <block id="3d96431c652abba07d810be9a4a3b187" category="cell">檢視下列標籤：訂閱，資產，監控和管理</block>
+  <block id="04b2aaee865f1746c975de785d02e95f" category="cell">* 基礎概念訂閱頁面 * ：</block>
+  <block id="96a37a10e0f320cc761610a86cf2637c" category="cell">可檢視訂閱</block>
+  <block id="0c6e0cfae3b0f2712b3389db1db10e1b" category="cell">可修改或更新訂閱</block>
+  <block id="86744a031b02e581d9a8908f0dbdc8c1" category="cell">* 基礎概念資產頁面 * ：</block>
+  <block id="7c38a1a6d325208696c25a2b660d7c45" category="cell">檢視資產</block>
+  <block id="bb295074f705be0407b1b743a2f6e967" category="cell">管理資產</block>
+  <block id="f00f11f1b7ecc36f276ac4d83ea8ba95" category="cell">* 基礎概念警示頁面 * ：</block>
+  <block id="428c58ec1c2902ea6bff31e38cae88ff" category="cell">檢視警示</block>
+  <block id="685b0f2db45e4fc09a06ccb4695806de" category="cell">管理警示</block>
+  <block id="683e7b4cc33c1c5bb12cefaa8e17c9da" category="cell">建立自我警示</block>
+  <block id="203311c515509be12349a4f1fc044cd7" category="cell">* 數位錢包 * ：</block>
+  <block id="d7609c91ac60bd14d6f61465cd81ab5a" category="cell">可檢視數位錢包</block>
+  <block id="605bf3e1f808ef9bc9fe99c9bf4cdf1f" category="cell">* 基礎報告頁面 * ：</block>
+  <block id="df6e3c89245cdc5bf0a7191c642d6997" category="cell">下載報告</block>
+  <block id="61b0e09fe12f82c766454563f7be036b" category="cell">管理報告</block>
+  <block id="4d1159457f35bcc3ef7ee5b2f65bc124" category="cell">自行建立報告</block>
+  <block id="3b8988881170da948296006bcb3af098" category="cell">* 服務要求 * ：</block>
+  <block id="c144ad302e0d51a72f17afbd09594ba8" category="cell">建立服務要求</block>
+  <block id="3f07e6ff7933633c723d3474e50d9d65" category="cell">可查看組織內任何使用者所建立的服務要求</block>
+  <block id="aafdddc00f0073d6f8feca81436dbc0f" category="paragraph">以下是「資料服務」類別中的角色清單。</block>
+  <block id="452c59bc627cf63c04afb8e67c894d8f" category="paragraph">分類沒有管理員角色。</block>
+  <block id="6e4131153ef85e6099f1a34150c48c4e" category="paragraph">您可以使用下列角色指派使用者存取勒索軟體保護的權限。</block>
+  <block id="bdcfe1c3dfeb861ab87e4cc4b8edc1fc" category="list-text">* 勒索軟體保護管理員 * ：管理「保護」，「警示」，「恢復」，「設定」和「報告」標籤上的動作。</block>
+  <block id="2342f940e11a97078a40faa46aad14e1" category="list-text">* 勒索軟體保護檢視器 * ：檢視工作負載資料，檢視警示資料，下載恢復資料及下載報告。</block>
+  <block id="38af51c4aaeb25c0489791e4bbad2347" category="paragraph">下表指出每個 BlueXP  勒索軟體保護角色可以執行的動作。</block>
+  <block id="a95fe9e5a7b678fa4abc81ea69f1e257" category="cell">勒索軟體保護管理員</block>
+  <block id="6a05decc7d63f19c1d5812a3c728ce8a" category="cell">勒索軟體保護檢視器</block>
+  <block id="b60c44c6bbbb3793d0c08c34cd6e2382" category="cell">檢視儀表板和所有索引標籤</block>
+  <block id="78c7efbfa07116553a52f59800129dde" category="cell">開始免費試用</block>
+  <block id="42174d568723a8694dc7e6dfd143cb12" category="cell">開始探索工作負載</block>
+  <block id="26548eb85488e3cdc0f0b9b27802995f" category="cell">* 在保護標籤 * 上：</block>
+  <block id="0ceaa792ae3f25d0f79dcd1125e9284e" category="cell">新增，修改或刪除原則</block>
+  <block id="bf4011ddd9ae5a6521f75843972999ab" category="cell">保護工作負載</block>
+  <block id="21a74bcaa4f6aef211c1ce1e13ed98fe" category="cell">識別敏感資料</block>
+  <block id="c102bfc829ed11fa589522aa305984a3" category="cell">編輯工作負載保護</block>
+  <block id="d1e541a95d5060702dc6153a411c6c35" category="cell">檢視工作負載詳細資料</block>
+  <block id="4330b42a340140b836c42bbe9c7105be" category="cell">下載資料</block>
+  <block id="b1e60ac72e50f485ca0a5ea9c82143d2" category="cell">* 在「警示」標籤 * 上：</block>
+  <block id="9f64c529078a13eebc43993d1ac578d4" category="cell">檢視警示詳細資料</block>
+  <block id="f700fad2259a25a87fbe56ba2810e8ff" category="cell">編輯事件狀態</block>
+  <block id="ef9988f85b068b8709daa3be2c31fca3" category="cell">檢視事件詳細資料</block>
+  <block id="38de1b212ca13fa4c230f4c20adbb48a" category="cell">取得受影響檔案的完整清單</block>
+  <block id="4b1b2c63b979feafab4b35d6b2307876" category="cell">下載警示資料</block>
+  <block id="b338bf8c8e0fbc61d8a0fad3b4a74e35" category="cell">* 在恢復選項卡 * 上：</block>
+  <block id="f5f949f53a00b2da6ffa7a9f7a0fd0f8" category="cell">下載受影響的檔案</block>
+  <block id="65ca8041cc328ebb64db5f8368a9101a" category="cell">還原工作負載</block>
+  <block id="4ebc1406711ca6754873e22a81f31c6f" category="cell">下載恢復資料</block>
+  <block id="a4f2411faacb07693dd051a3d2d9f97e" category="cell">* 在「設定」標籤 * 上：</block>
+  <block id="988c84a947938e98e39deda3665fae89" category="cell">新增或修改備份目標</block>
+  <block id="08fec10c338548595a28b0310a1c0600" category="cell">新增或修改 SIEM 目標</block>
+  <block id="1ed006cd78ff9bf590a02c6fc268141f" category="cell">* 在「報告」標籤 * 上：</block>
+  <block id="4d2ba7b1416b46d72e4a391ee901ec54" category="paragraph">SnapCenter 沒有檢視者角色。</block>
 </blocks>

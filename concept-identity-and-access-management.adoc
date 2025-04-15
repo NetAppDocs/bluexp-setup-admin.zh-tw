@@ -247,6 +247,6 @@ image:diagram-iam-example-hierarchy-advanced.png["這是一個概念圖、顯示
 * link:task-iam-switch-organizations-projects.html["在 BlueXP  專案和組織之間切換"]
 * link:task-iam-rename-organization.html["重新命名 BlueXP  組織"]
 * link:task-iam-audit-actions-timeline.html["監控或稽核 IAM 活動"]
-* link:reference-iam-predefined-roles.html["預先定義的 BlueXP  IAM 角色"]
+* link:reference-iam-predefined-roles.html["BlueXP  存取角色"]
 * https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["瞭解 BlueXP  IAM 的 API"^]
 
