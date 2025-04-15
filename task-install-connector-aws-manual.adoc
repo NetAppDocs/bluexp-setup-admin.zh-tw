@@ -14,7 +14,7 @@ summary: 若要在您自己的 Linux 主機上手動安裝 Connector 、您必�
 
 
 [role="lead"]
-Connector 是在雲端網路或內部部署網路中執行的 NetApp 軟體、可讓您使用所有 BlueXP  功能和服務。其中一個可用的安裝選項是在 AWS 中執行的 Linux 主機上手動安裝 Connector 軟體。若要在您自己的 Linux 主機上手動安裝 Connector 、您必須檢閱主機需求、設定網路、準備 AWS 權限、安裝 Connector 、然後提供您準備的權限。
+您可以在 AWS 中執行的 Linux 主機上手動安裝 Connector 。若要在您自己的 Linux 主機上手動安裝 Connector 、您必須檢閱主機需求、設定網路、準備 AWS 權限、安裝 Connector 、然後提供您準備的權限。
 
 .開始之前
 * 您應該擁有 link:concept-connectors.html["瞭解連接器"].

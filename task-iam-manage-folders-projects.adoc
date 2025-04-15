@@ -45,10 +45,10 @@ link:concept-identity-and-access-management.html#associate-resource-folder["瞭�
 
 ** * 存取 * ：根據已在資源階層中定義的現有權限、檢視可存取資料夾或專案的成員。
 +
-如有需要、請選取 * 新增成員 * 以指定其他組織成員、這些成員應該能夠存取資料夾或專案、然後選取角色。存取角色會定義成員對資料夾或專案的權限。
+如有需要、請選取 * 新增成員 * 以指定其他組織成員、這些成員應該能夠存取資料夾或專案、然後選取角色。角色會定義成員對資料夾或專案的權限。
 
 +
-link:reference-iam-predefined-roles.html["瞭解存取角色"]。
+link:reference-iam-predefined-roles.html["瞭解預先定義的 IAM 角色"]。
 
 
 
@@ -159,7 +159,7 @@ image:screenshot-iam-member-access.png["「編輯專案」頁面的螢幕擷取�
 
 修改成員對資料夾或專案的存取權、以確保適當的成員能夠存取與資料夾或專案相關的資源。
 
-如果成員存取權限是在較高層級（資料夾或組織層級）提供，則在檢視較低層級的資料夾或專案時，您無法移除或變更其角色。您必須切換到階層架構的那一部分，並在其中更新成員的角色。或者、您也可以link:task-iam-manage-roles.html#manage-permissions["從「成員」頁面管理角色"]。
+如果成員存取權限是在較高層級（資料夾或組織層級）提供，則在檢視較低層級的資料夾或專案時，您無法移除或變更成員存取權限。您必須切換至階層架構的該部分，並在該處更新成員的權限。或者、您也可以link:task-iam-manage-members-permissions.html#manage-permissions["從「成員」頁面管理權限"]。
 
 link:concept-identity-and-access-management.html#role-inheritance["深入瞭解角色繼承"]。
 

@@ -14,7 +14,7 @@ summary: 若要從 BlueXP 在 Azure 中建立 Connector 、您必須設定網路
 
 
 [role="lead"]
-您可以直接從 BlueXP  在 Azure 中建立 Connector 。若要從 BlueXP  在 Azure 中建立 Connector ，您必須設定網路，準備 Azure 角色以部署 Connector ，然後部署 Connector 。
+您可以直接從 BlueXP  在 Azure 中安裝 Connector 。若要從 BlueXP  在 Azure 中建立 Connector ，您必須設定網路，準備 Azure 角色以部署 Connector ，然後部署 Connector 。
 
 .開始之前
 * 您應該擁有 link:concept-connectors.html["瞭解連接器"].

@@ -12,7 +12,7 @@
 
 BlueXP  管理員（具有組織管理員角色的使用者）可以設定 BlueXP  ，以提示使用者輸入其 ONTAP 認證，以便存取 ONTAP 系統管理員。啟用此設定時，使用者每次都需要輸入其 ONTAP 認證，因為這些認證並未儲存在 BlueXP  中。
 
-此功能可在 Connector 3.9.49 版及更新版本中使用。link:task-ontap-access-connector.html["瞭解如何設定認證設定。"^]。
+此功能可在 Connector 3.9.49 版及更高版本中使用。link:https://docs.netapp.com/us-en/bluexp-setup-admin//task-ontap-access-connector.html["瞭解如何設定認證設定。"^]。
 
 
 
@@ -31,4 +31,4 @@ NOTE: 此變更不會影響 BlueXP  私有模式，您必須自行升級連接�
 
 此功能可在 Connector 3.9.48 版及更高版本中使用。
 
-link:task-upgrade-connector.html["瞭解如何停用 Connector 的自動升級。"^]
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["瞭解如何停用 Connector 的自動升級。"^]
