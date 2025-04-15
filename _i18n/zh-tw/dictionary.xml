@@ -5006,7 +5006,6 @@
   <block id="d5979f6638739f52389534c5a5861979" category="sidebar">BlueXP  設定與管理</block>
   <block id="9a95138b9cb83f59109eb15c038b1073" category="sidebar">新增成員和服務帳戶</block>
   <block id="7211199f77a8a73dc960b8a15a019199" category="sidebar">使用角色來控制成員存取資源的權限</block>
-  <block id="7b86bd575ced3444e23389ac71f98a8f" category="paragraph"><block ref="7b86bd575ced3444e23389ac71f98a8f" category="inline-link-macro-rx"></block></block>
   <block id="e5a26c78a572123c5a5e442167efbf6e" category="paragraph">Connector 是您安裝的 NetApp 軟體，可執行 BlueXP  管理儲存基礎架構所需執行的動作。您不需要連接器即可存取 BlueXP  的許多功能，但如果您不需要，則無法使用某些功能。</block>
   <block id="9097a69a8c3aa1836902abae4c2af6b5" category="paragraph">如果您以標準模式執行 BlueXP  ，就不需要安裝 Connector 來執行 BlueXP  的一些服務，例如軟體更新和數位錢包。不過， BlueXP  的部分優質服務（例如勒索軟體保護或災難恢復）需要您安裝 Connector 。如果您在受限或私人模式下使用 BlueXP  ，則需要安裝 Connector 。</block>
   <block id="c9ea5b101d4c3beb590e4912f1117899" category="section-title">在標準模式中，若沒有 Connector ，您可以執行的動作</block>
@@ -5050,4 +5049,6 @@
   <block id="86429eb78c6bc64d5f1ce4125590fe22" category="paragraph">^3^ 雖然直接探索內部部署 ONTAP 叢集不需要連接器，但如果您想要使用其他 BlueXP  功能，則需要連接器。<block ref="04529f27c98d308747ea6be915c240c4" category="inline-link-rx"></block></block>
   <block id="9c723fb8e231218b213744c9ee3160ca" category="paragraph">您可以在 Azure 中執行的 Linux 主機上手動安裝 Connector 。若要在您自己的 Linux 主機上手動安裝 Connector 、您必須檢閱主機需求、設定網路、準備 Azure 權限、安裝 Connector 、然後提供您準備的權限。</block>
   <block id="e6ddd5a54a1d2f8ae254b9358dfed6b9" category="paragraph">如果您是以標準模式執行，則可以開始使用 BlueXP  集中管理儲存資源，而無需安裝 Connector 。</block>
+  <block id="e179a365cbbaaab0ffe96afa0b1123f8" category="paragraph"><block ref="e179a365cbbaaab0ffe96afa0b1123f8" category="inline-link-macro-rx"></block></block>
+  <block id="5f2734b84896bdabcf7fd3574325d116" category="section-title">2025 年 3 月 28 日</block>
 </blocks>
