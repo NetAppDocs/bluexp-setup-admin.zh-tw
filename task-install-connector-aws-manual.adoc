@@ -345,8 +345,6 @@ https://\*.api 。 BlueXP  NetApp 。 NetApp 。 com \https://api 。 BlueXP  
  a| 
 在BlueXP中提供SaaS功能與服務。
 
-請注意、 Connector 目前正在聯絡「 cloudmanager.cloud.netapp.com" 」、但在即將推出的版本中、會開始聯絡「 api.bluexp.netapp.com" 」。
-
 
 
  a| 

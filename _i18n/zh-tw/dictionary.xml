@@ -2752,7 +2752,6 @@
   <block id="b7d7e6e6aa05f7913906689b7f1e583a" category="list-text">* 審查 * ：檢閱您的選擇並選擇 * 發表 * 。</block>
   <block id="22cb2add8f3bffef4e749ab0af395ded" category="list-text">* 審查 * ：檢閱詳細資料、接受授權合約、然後選取 * 設定 * 。</block>
   <block id="451c5548be4e9e7bdee0e30d3122050a" category="paragraph"><block ref="5df7abb03e9cd39c0665b677aaa45ef4" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6a60f29cdbb848f0645646b0cceee422" category="paragraph">請注意、 Connector 目前正在聯絡「 cloudmanager.cloud.netapp.com" 」、但在即將推出的版本中、會開始聯絡「 api.bluexp.netapp.com" 」。</block>
   <block id="f68132eadaa2c37170b842a86fa6955d" category="paragraph">如果 Cloud Volumes ONTAP 系統沒有輸出網際網路連線來傳送 AutoSupport 訊息、 BlueXP 會自動將這些系統設定為使用 Connector 隨附的 Proxy 伺服器。唯一的需求是確保連接器的安全群組允許透過連接埠3128進行傳入連線。部署Connector之後、您需要開啟此連接埠。</block>
   <block id="e12fb4f30abef516bf6f5e0e9a5b72b7" category="doc">從BlueXP在Azure中建立連接器</block>
   <block id="864fadbab69859b77befd9c5a1c37c61" category="paragraph">從 BlueXP 建立 Connector 時、您需要提供登入資訊、讓 BlueXP 能夠與 Azure 驗證並部署 VM 。您有兩種選擇：</block>
@@ -5038,4 +5037,12 @@
   <block id="1ed006cd78ff9bf590a02c6fc268141f" category="cell">* 在「報告」標籤 * 上：</block>
   <block id="4d2ba7b1416b46d72e4a391ee901ec54" category="paragraph">SnapCenter 沒有檢視者角色。</block>
   <block id="198726f3c4a7290d3254fd163158a5d0" category="list-text">沒有組織管理員，資料夾或專案管理員的使用者，必須指派勒索軟體保護角色，才能存取勒索軟體保護。您可以指派使用者兩種角色之一：勒索軟體保護管理員或勒索軟體保護檢視器。</block>
+  <block id="92b9ccffb9a7aebd350ecfd6d0c224c9" category="section-title">私有模式版本（ 3.9.48 ）</block>
+  <block id="cbf6e80d5966345d963bedae0e933eb6" category="paragraph">3.9.48 版本包含下列 BlueXP  元件和服務的更新。</block>
+  <block id="b3a482492c0cc68db9c85faa2f89ba61" category="cell">3.9.48</block>
+  <block id="6a8544d6477cbe97e8f2b597011b60cc" category="cell">請移至，<block ref="682cda11c1c81d1c1e6c42597faddff3" category="inline-link-rx"></block>並參閱 3.9.48 版隨附的變更。</block>
+  <block id="2fd37378e1e9677d0e420385f414d8f5" category="cell">2025 年 5 月 2 日</block>
+  <block id="ea4e82ea5af0ff62421ac55574c06dca" category="cell">請參閱<block ref="d08346bd70ea49c38d1ac500c69dd11c" category="inline-link-rx"></block>，並參閱 2025 年 2 月版本所包含的變更。</block>
+  <block id="84d4352e42fd4f7ef347eca44f4f0a88" category="cell">2025 年 1 月 22 日（版本 1.39 ）</block>
+  <block id="b865a42d40947323c5392132a0cf5ae7" category="cell">請移至，<block ref="bb3538c6013ff73961739d7c28fee95d" category="inline-link-rx"></block>並參閱 1.39 版本中所包含的變更。</block>
 </blocks>
