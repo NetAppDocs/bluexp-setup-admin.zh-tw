@@ -4893,7 +4893,6 @@
   <block id="44cd288eedf76c78c5b3b26935538537" category="paragraph">目前、 3.9.51 版本適用於標準模式和受限模式。</block>
   <block id="5c4a2c71456e5295a9492bb06d95be3d" category="section-title">BlueXP  身分識別與存取管理（ IAM ）</block>
   <block id="4409983c60e456858bb3e9ef5737f98a" category="section-title">2025 年 4 月 14 日</block>
-  <block id="38469cab8f7065ff2b3a663e28381c62" category="list-text">沒有組織管理員，資料夾或專案管理員的使用者，必須指派勒索軟體保護角色，才能存取勒索軟體保護。您可以指派使用者兩種角色之一：勒索軟體保護管理員或勒索軟體保護檢視器。</block>
   <block id="a9632ee5411be0309684063f13ba77a8" category="list-text">沒有組織管理員，資料夾或專案管理員的使用者必須指派 Keystone 角色，才能存取 Keystone 。您可以指派使用者兩個角色之一： Keystone 管理員或 Keystone 檢視器。</block>
   <block id="d4d44165c3ece93b64c24e52e61879a3" category="list-text">如果您具有組織管理員或資料夾或專案管理員角色，現在您可以將 Keystone 訂閱與 IAM 專案建立關聯。將 Keystone 訂閱與 IAM 專案建立關聯可讓您控制 BlueXP  中 Keystone 的存取。</block>
   <block id="5f2734b84896bdabcf7fd3574325d116" category="section-title">2025 年 3 月 28 日</block>
@@ -5038,4 +5037,5 @@
   <block id="08fec10c338548595a28b0310a1c0600" category="cell">新增或修改 SIEM 目標</block>
   <block id="1ed006cd78ff9bf590a02c6fc268141f" category="cell">* 在「報告」標籤 * 上：</block>
   <block id="4d2ba7b1416b46d72e4a391ee901ec54" category="paragraph">SnapCenter 沒有檢視者角色。</block>
+  <block id="198726f3c4a7290d3254fd163158a5d0" category="list-text">沒有組織管理員，資料夾或專案管理員的使用者，必須指派勒索軟體保護角色，才能存取勒索軟體保護。您可以指派使用者兩種角色之一：勒索軟體保護管理員或勒索軟體保護檢視器。</block>
 </blocks>
