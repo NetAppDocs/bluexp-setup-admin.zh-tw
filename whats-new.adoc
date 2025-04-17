@@ -1840,15 +1840,11 @@ link:task-managing-netapp-accounts.html#create-and-manage-service-accounts["深�
 
 您現在可以允許帳戶中的私有預覽、以在Cloud Manager中預覽新的NetApp雲端服務。
 
-link:task-managing-netapp-accounts.html#allow-private-previews["深入瞭解此選項"]。
-
 
 
 === 第三方服務
 
 您也可以允許帳戶中的第三方服務存取Cloud Manager中提供的第三方服務。
-
-link:task-managing-netapp-accounts.html#allow-third-party-services["深入瞭解此選項"]。
 
 
 

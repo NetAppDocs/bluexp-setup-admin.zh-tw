@@ -11,7 +11,7 @@ settings:
   langs: zh-tw,us-en,de-de,es-es,fr-fr,it-it,pt-br,ja-jp,ko-kr,zh-cn
 sidebar:
   entries:
-  - title: BlueXP  設定與管理文件
+  - title: BlueXP  設定與管理
     url: "/index.html"
   - title: 版本資訊
     entries:
@@ -115,8 +115,10 @@ sidebar:
         url: "/task-iam-get-started.html"
       - title: 使用資料夾和專案來組織資源
         url: "/task-iam-manage-folders-projects.html"
-      - title: 新增成員並管理其權限
+      - title: 新增成員和服務帳戶
         url: "/task-iam-manage-members-permissions.html"
+      - title: 使用角色來控制成員存取資源的權限
+        url: "/task-iam-manage-roles.html"
       - title: 管理資源階層
         url: "/task-iam-manage-resources.html"
       - title: 將 Connector 與其他資料夾和專案建立關聯

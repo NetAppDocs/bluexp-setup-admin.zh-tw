@@ -28,10 +28,10 @@ indexpage:
       url: task-iam-get-started.html
     - title: 使用資料夾和專案來組織資源
       url: task-iam-manage-folders-projects.html
-    - title: 管理成員及其權限
+    - title: 新增成員和服務帳戶
       url: task-iam-manage-members-permissions.html
-    - title: 管理資源階層
-      url: task-iam-manage-resources.html
+    - title: 使用角色來控制成員存取資源的權限
+      url: task-iam-manage-roles.html
   - title: 連接器
     links:
     - title: 深入瞭解連接器

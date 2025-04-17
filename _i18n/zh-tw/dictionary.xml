@@ -1532,7 +1532,6 @@
   <block id="83510fd4a5d6f463975ffcf1a28079a3" category="paragraph">服務帳戶扮演「使用者」的角色、可撥打授權API呼叫至Cloud Manager進行自動化。如此一來、您就不需要根據實際使用者帳戶建置自動化指令碼、也能隨時離開公司、因此更容易管理自動化作業。如果您使用同盟、則可以建立權杖、而不需從雲端產生更新權杖。</block>
   <block id="f172ba98380ffa94100632430ae9c805" category="inline-link-macro">深入瞭解如何使用服務帳戶</block>
   <block id="18da70587f043904939613fa4c43ba6d" category="paragraph">您現在可以允許帳戶中的私有預覽、以在Cloud Manager中預覽新的NetApp雲端服務。</block>
-  <block id="50ea4e8dccd315b387c3720bf218560a" category="inline-link-macro">深入瞭解此選項</block>
   <block id="4823145b3655f45dcb57edeef856c1a9" category="paragraph">您也可以允許帳戶中的第三方服務存取Cloud Manager中提供的第三方服務。</block>
   <block id="2a42bd1b25c8685af4b1b1d1ca8e4805" category="paragraph">我們已更新「支援儀表板」，讓您可以新增 NetApp 支援網站認證資料，以登錄您的支援方案。您也可以直接從儀表板啟動NetApp支援案例。只要按一下「說明」圖示、然後按*「支援」*即可。</block>
   <block id="eb13228b7d3a81ef5fba30ba79924b80" category="list-text">在 Google Cloud 中建立自訂角色：</block>
@@ -2802,8 +2801,6 @@
   <block id="51a7ac19cbf0f9d074132cf117ad2e0c" category="paragraph">將AWS認證資料新增至現有的Connector、可提供必要的權限、以管理公有雲環境中的資源和程序。 <block ref="c25c39db29c727f1578fc8385e3c589b" category="inline-xref-macro-rx"></block>。</block>
   <block id="fb2327495633231db53b83b63281ec59" category="paragraph"><block ref="ba792a8f94fc4fa1d6890491a6d3ca88" category="inline-link-macro-rx"></block>。</block>
   <block id="785c09ae237878056a26f76d752f9655" category="paragraph"><block ref="d681f410de8bf56d0591b119af19b91f" category="inline-link-macro-rx"></block>。</block>
-  <block id="819bbc17eab62ac696bc204d9864298c" category="paragraph"><block ref="317e81beacf8b3184ba06b75c8cba7f0" category="inline-link-macro-rx"></block>。</block>
-  <block id="d5a6b4dc8861625dfe113504ac0e255e" category="paragraph"><block ref="fdc7ca711ae67c971d281a756b555324" category="inline-link-macro-rx"></block>。</block>
   <block id="ae74a3a0435bedb1f051b5b083969faa" category="paragraph">BlueXP 需要連接器和個別服務的 AWS 權限。</block>
   <block id="12c74214cb4c18cf36d885303d6aa2e1" category="cell">目標</block>
   <block id="4afbf095518e3a60998aad1ce6f249ce" category="cell">從 BlueXP 部署 Connector</block>
@@ -4327,7 +4324,6 @@
   <block id="2cc038b51982044440dd65fe627f5133" category="sidebar">開始使用 NetApp BlueXP 、讓您開始在內部部署和雲端環境中建置、保護及管理資料。完成設定後、您可以使用 BlueXP  身分識別與存取管理（ IAM ）來控制資源的存取、並管理 Connectors 、雲端供應商帳戶等。</block>
   <block id="d7818a3dcaa08963a99fa80d50e4d009" category="sidebar">BlueXP IAM</block>
   <block id="f9979c483e6c4c3e0bb110084e2529e7" category="sidebar">使用資料夾和專案來組織資源</block>
-  <block id="ff72511bc39f980fe978f1f136d5b661" category="sidebar">管理成員及其權限</block>
   <block id="e824a4cdd52665a1b8f0bccc58724034" category="sidebar">管理資源階層</block>
   <block id="0baaa5b5cebd5e340294b6393a2b73f4" category="sidebar">使用與 BlueXP  的身分識別聯盟</block>
   <block id="22bdd8c71cc34511ea88881e20f7ca21" category="sidebar">身分識別與存取管理</block>
@@ -4933,30 +4929,6 @@
   <block id="bc76903dd69fe38bc3b58cc4ef4a02c8" category="list-text">大型跨國組織在 BlueXP  中扮演組織角色的範例</block>
   <block id="5924e866f66794971195c3e6a6aa8e84" category="paragraph">如有需要、請選取 * 新增成員 * 以指定其他組織成員、這些成員應該能夠存取資料夾或專案、然後選取角色。角色會定義成員對資料夾或專案的權限。</block>
   <block id="f676fbba085923546a37baf94ce6784b" category="inline-link-macro">從「成員」頁面管理權限</block>
-  <block id="5ca796b399d85f3455d2d1844012b11a" category="paragraph">如果成員存取權限是在較高層級（資料夾或組織層級）提供，則在檢視較低層級的資料夾或專案時，您無法移除或變更成員存取權限。您必須切換至階層架構的該部分，並在該處更新成員的權限。或者、您也可以<block ref="101f940efcb2d2a02ec2f0fe1cb20220" category="inline-link-macro-rx"></block>。</block>
-  <block id="f9c68f2e2a54251bd4aa39562ccd5a0a" category="doc">新增 BlueXP  IAM 成員並管理其權限</block>
-  <block id="85f7f0a38e4d8907b849af9be7f0523b" category="paragraph">您可以檢視 BlueXP  組織中所有成員的清單。若要瞭解成員可以使用哪些資源和權限、您可以在組織資源階層的不同層級上檢視指派給成員的角色。</block>
-  <block id="6f3b2d366fd74358540895c5d487f7fc" category="paragraph">以下是指派給資料夾之 _Folder 或專案管理員角色的成員範例、可提供資料夾中三個專案的權限。</block>
-  <block id="a6102229f11a975b96c232bac6fe4518" category="inline-image-macro">擁有專案和資料夾權限的成員之詳細資料頁面的螢幕擷取畫面。</block>
-  <block id="77029620a91c1437c153c854b16400d8" category="paragraph"><block ref="77029620a91c1437c153c854b16400d8" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="2ec798ce1d65b266be695e73de188467" category="paragraph">以下是另一個範例、其中顯示擁有組織管理員角色的成員、可讓使用者存取組織中的所有資源。</block>
-  <block id="8395f2651a81b25e9b7a23fbee8b9549" category="inline-image-macro">擁有組織管理員權限的成員之詳細資料頁面的螢幕擷取畫面。</block>
-  <block id="3d5d541246a5be6ff781d877024461b5" category="paragraph"><block ref="3d5d541246a5be6ff781d877024461b5" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="4bd98620ebfd813b73be1bb04c31e63a" category="paragraph">「 * 成員 * 」頁面會顯示兩種成員類型的詳細資料：使用者帳戶和服務帳戶。</block>
-  <block id="71a902b9bd8bd5f915e170707c50e813" category="section-title">管理成員角色</block>
-  <block id="e9d61c4ab8f60a06a549f931f8154bc3" category="paragraph">組織成員可以在每個層級和多個資源階層層級上指派角色。您可以指派成員在 BlueXP  組織中與其職責相關的角色。</block>
-  <block id="bb6a1c303d753a3800aa29f0149ef2da" category="paragraph">您可以取消指派成員的角色，新增新角色或兩者。角色定義指派給組織、資料夾或專案層級成員的權限。您可以指派成員在 BlueXP  組織中與其職責相關的角色。</block>
-  <block id="6cbcd95c7c747face3f074348da093de" category="paragraph">每個組織成員都可以在組織階層的不同層級指派角色。它可以是相同的角色或不同的角色。例如、您可以為專案 1 指派成員角色 A 、專案 2 指派角色 B 。</block>
-  <block id="07e7a075870b5fd1a97b81d0f2032e95" category="admonition">被指派組織管理員角色的成員無法被指派任何其他角色。他們已經擁有整個組織的權限。</block>
-  <block id="914f7dbf9ae27653eb2ab889d315d7b8" category="paragraph">您可以檢視成員，以驗證他們目前指派的角色。</block>
-  <block id="787919896edfa2afa28d9030c2bd8ee2" category="list-text">在表格中，展開您要檢視成員指派角色的組織，資料夾或專案相關列，然後在 * 角色 * 欄中選取 * 檢視 * 。</block>
-  <block id="3f4fb5bf409c65d0cdc07e16e971923b" category="section-title">指派角色</block>
-  <block id="ffb0fd8d3db2f95c2bb0961f852f2b9f" category="paragraph">新增適用於組織、資料夾或專案層級的角色、為成員提供組織中的其他權限。</block>
-  <block id="868c665304c1cc003d592c37eb2d9284" category="inline-link-macro">瞭解 IAM 角色</block>
-  <block id="8eaa33e37e898cc8fe60223764d1b067" category="list-text">* 選擇類別 * ： BlueXP  將角色分成兩類：平台和資料服務。<block ref="95a2a1c0b49231381e965b8dd6b00696" category="inline-link-macro-rx"></block>。</block>
-  <block id="edd875bb1109a9f8286024a3b4794e94" category="list-text">如果您選擇了組織、您可以選擇 * 資料夾或專案管理員 * 以外的任何角色。</block>
-  <block id="5f3c99e4fd9b4f957adfdcdde4d5a1de" category="list-text">* 新增角色 * ：如果您想要提供組織內其他資料夾或專案的存取權，請選取 * 新增角色 * ，指定其他資料夾或專案或角色類別，然後選取角色類別和對應的角色。</block>
-  <block id="955a0a3e2fca13996f710db6f2fbe6a3" category="paragraph">您可以在組織，資料夾或專案層級變更的指派角色。成員可以在組織的不同層級擔任不同的角色。</block>
   <block id="2862531e5d6bc94c86cde4ee59b36495" category="paragraph">您可以直接從 BlueXP  在 AWS 中建立 Connector 。若要從 BlueXP 在 AWS 中建立 Connector 、您需要設定網路、準備 AWS 權限、然後建立 Connector 。</block>
   <block id="6c6728a3304e61d70edb5c350db7efa1" category="paragraph">您可以在 AWS 中執行的 Linux 主機上手動安裝 Connector 。若要在您自己的 Linux 主機上手動安裝 Connector 、您必須檢閱主機需求、設定網路、準備 AWS 權限、安裝 Connector 、然後提供您準備的權限。</block>
   <block id="0beb1e6219ede132ce0fe96557a2c156" category="paragraph">您可以直接從 AWS Marketplace 在 AWS 中建立 Connector 。若要從 AWS Marketplace 建立 Connector 、您需要設定網路、準備 AWS 權限、檢閱執行個體需求、然後建立 Connector 。</block>
@@ -4966,8 +4938,6 @@
   <block id="44fc4ca54d8261b4facf220d04704531" category="paragraph">您可以從 BlueXP  或 Google Cloud 在 Google Cloud 中建立 Connector 。您需要設定網路，準備 Google Cloud 權限，啟用 Google Cloud API ，然後建立 Connector 。</block>
   <block id="5e7dbc359167a6195a71df82607e8477" category="paragraph">您可以在 Google Cloud 中執行的 Linux 主機上手動安裝 q Connector 。若要在您自己的 Linux 主機上手動安裝 Connector 、您必須檢閱主機需求、設定網路、準備 Google Cloud 權限、啟用 API 、安裝 Connector 、然後提供您準備的權限。</block>
   <block id="0d11271abad1cfef17e56e17367d09de" category="paragraph">您可以在其中一部內部部署機器上安裝 Connector 。若要在內部環境中執行 Connector ，您需要檢閱主機需求，設定網路，準備雲端權限，安裝 Connector ，設定 Connector ，然後提供您準備的權限。</block>
-  <block id="60b81afd9ad770d185b5a9b9f08f9809" category="sidebar">BlueXP  設定與管理文件</block>
-  <block id="739addbbddeacc0bb15e86502b6685e9" category="sidebar">新增成員並管理其權限</block>
   <block id="c86bd67be80794fcaa3f1d91aa8b2899" category="inline-link-macro">瞭解存取角色。</block>
   <block id="5a4d408bd57f7cf7efbd6cf878c737a7" category="paragraph"><block ref="5a4d408bd57f7cf7efbd6cf878c737a7" category="inline-link-macro-rx"></block></block>
   <block id="8c3d337cee5ab07c0918b1ab7f1db96a" category="inline-link-macro">BlueXP  存取角色</block>
@@ -5045,4 +5015,13 @@
   <block id="84d4352e42fd4f7ef347eca44f4f0a88" category="cell">2025 年 1 月 22 日（版本 1.39 ）</block>
   <block id="b865a42d40947323c5392132a0cf5ae7" category="cell">請移至，<block ref="bb3538c6013ff73961739d7c28fee95d" category="inline-link-rx"></block>並參閱 1.39 版本中所包含的變更。</block>
   <block id="09d7c2dac047caa965175fead07159aa" category="cell">2025 年 21 月 2 日</block>
+  <block id="c77472b3cb88175d9f673b4976ce643a" category="paragraph">如果成員存取權限是在較高層級（資料夾或組織層級）提供，則在檢視較低層級的資料夾或專案時，您無法移除或變更成員存取權限。您必須切換至階層架構的該部分，並在該處更新成員的權限。或者、您也可以<block ref="2e250d63a19626cb0aeed14260bd2f59" category="inline-link-macro-rx"></block>。</block>
+  <block id="e07d586e54fb2ecc1791d2d434436330" category="doc">新增 BlueXP  成員並管理其權限</block>
+  <block id="f0b3d6677a212276d758f01224d831be" category="paragraph"><block ref="358dd7829c43f386bdd1bc16bf83b432" category="inline-link-macro-rx"></block>。</block>
+  <block id="45fa36bab7b7452cfb911598ccd2d223" category="inline-link-macro">瞭解如何使用角色來控制對 BlueXP  資源的存取。</block>
+  <block id="eef972128da3061d69cdfbbd20808652" category="paragraph">您可以檢視 BlueXP  組織中所有成員的清單。若要瞭解成員可以使用哪些資源和權限，您可以在組織資源階層的不同層級上檢視指派給成員的角色。<block ref="4e7a66baee137600d665a8be3cbcb6a5" category="inline-link-macro-rx"></block></block>
+  <block id="57c4db21a8e5f9688baa21606de89184" category="paragraph">您可以從 * 成員 * 頁面檢視使用者帳戶和服務帳戶。</block>
+  <block id="9a95138b9cb83f59109eb15c038b1073" category="sidebar">新增成員和服務帳戶</block>
+  <block id="7211199f77a8a73dc960b8a15a019199" category="sidebar">使用角色來控制成員存取資源的權限</block>
+  <block id="d5979f6638739f52389534c5a5861979" category="sidebar">BlueXP  設定與管理</block>
 </blocks>

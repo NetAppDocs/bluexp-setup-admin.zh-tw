@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-iam-manage-roles.html 
-keywords: projects, access, resources, user roles, iam, identity and access management, folder, organization, permissions, roles, members 
+keywords: projects, access, resources, user roles, iam, identity and access management, folder, organization, permissions, roles, members, access roles 
 summary: BlueXP  的身分識別與存取管理功能可讓您使用資料夾和專案來呈現完整的資源階層。 
 ---
 = 使用角色來管理使用者對資源的存取
