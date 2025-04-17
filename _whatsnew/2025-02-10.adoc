@@ -92,7 +92,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 | 連接器 | 3.9.48 | 請移至， https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#connector-3-9-48["BlueXP  Connector 網頁的新功能"]並參閱 3.9.48 版隨附的變更。 
 
 
-| 備份與還原 | 2025 年 5 月 2 日 | 請參閱 https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["BlueXP  備份與還原頁面的新功能"^]，並參閱 2025 年 2 月版本所包含的變更。 
+| 備份與還原 | 2025 年 21 月 2 日 | 請參閱 https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["BlueXP  備份與還原頁面的新功能"^]，並參閱 2025 年 2 月版本所包含的變更。 
 
 
 | 分類 | 2025 年 1 月 22 日（版本 1.39 ） | 請移至， https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["BlueXP  分類頁面的新功能"^]並參閱 1.39 版本中所包含的變更。 
