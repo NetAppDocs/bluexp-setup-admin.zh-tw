@@ -102,7 +102,7 @@ Connector 需要在升級過程中重新啟動、以便在升級期間無法使�
 +
 [source, cli]
 ----
-chmod +x /path/BlueXP-Connector-offline-<version>
+chmod +x /path/BlueXP-Connector-Offline-<version>
 ----
 +
 其中、就是您下載的Connector版本<version> 。
@@ -111,7 +111,7 @@ chmod +x /path/BlueXP-Connector-offline-<version>
 +
 [source, cli]
 ----
-sudo /path/BlueXP-Connector-offline-<version>
+sudo /path/BlueXP-Connector-Offline-<version>
 ----
 +
 其中、就是您下載的Connector版本<version> 。
