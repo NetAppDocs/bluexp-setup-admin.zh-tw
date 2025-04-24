@@ -8,6 +8,12 @@
 
 此版本的 BlueXP Connector 包括少量的安全性改善和錯誤修正。
 
+* 在作業系統上啟用 SELinux 的 Connectors 現在支援 Cloud Volumes ONTAP 系統的管理。
++
+https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/using_selinux/getting-started-with-selinux_using-selinux["深入瞭解 SELinux"^]
+
+
+
 目前、 3.9.50 版本適用於標準模式和受限模式。
 
 

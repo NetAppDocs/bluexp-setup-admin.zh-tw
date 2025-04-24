@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: task-adding-nss-accounts.html 
-keywords: adding, creating, netapp support site account, nss, update account, update nss account, update nss credentials, delete nss account, remove nss account, change working environment, working environment nss 
+keywords: adding, creating, netapp support site account, nss, update account, update nss account, update nss credentials, delete nss account, remove nss account, change working environment, working environment nss, digital wallet, license 
 summary: 將 NetApp 支援網站帳戶與您的 BlueXP  組織或帳戶建立關聯、以啟用 Cloud Volumes ONTAP 的關鍵工作流程。這些 NSS 認證資料與整個 BlueXP  組織或帳戶相關聯。 
 ---
-= 管理與 BlueXP  組織或帳戶相關的 NSS 認證
+= 管理與 BlueXP  相關的 NSS 認證
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -19,7 +19,7 @@ summary: 將 NetApp 支援網站帳戶與您的 BlueXP  組織或帳戶建立�
 BlueXP  也支援每個 BlueXP  使用者帳戶建立一個 NSS 帳戶的關聯。link:task-manage-user-credentials.html["瞭解如何管理使用者層級認證"]。
 
 
-TIP: 如果您以標準模式使用 BlueXP  、您將擁有 BlueXP  組織、並使用 BlueXP  身分識別與存取管理（ IAM ）來管理。但如果您是以受限模式或私人模式使用 BlueXP  、則您將擁有 BlueXP  帳戶 _ 。
+TIP: 如果您是以標準模式或受限模式使用 BlueXP  ，您將擁有 BlueXP  組織，您可以使用 BlueXP  身分識別與存取管理（ IAM ）來管理。但如果您是以私人模式使用 BlueXP  ，則會有 BlueXP  帳戶 _ 。
 
 * link:concept-modes.html["瞭解 BlueXP 部署模式"]
 * link:concept-identity-and-access-management.html["瞭解 BlueXP  身分識別與存取管理"]
@@ -49,42 +49,27 @@ TIP: 如果您以標準模式使用 BlueXP  、您將擁有 BlueXP  組織、�
 
 == 新增一個NSS帳戶
 
-「支援儀表板」可讓您新增及管理 NetApp 支援網站帳戶、以便在 BlueXP  組織或帳戶層級與 BlueXP  搭配使用。
+您可以從 BlueXP  的「支援儀表板」新增及管理 NetApp 支援網站帳戶，以便與 BlueXP  搭配使用。
 
-* 如果您有客戶層級的帳戶、可以新增一或多個NSS帳戶。
-* 如果您有合作夥伴或經銷商帳戶、您可以新增一或多個NSS帳戶、但這些帳戶無法與客戶層級帳戶一起新增。
+當您新增 NSS 帳戶時， BlueXP  可以將此資訊用於授權下載，軟體升級驗證及未來支援註冊等項目。
 
+您可以將多個 NSS 帳戶與您的 BlueXP  組織建立關聯，但是您不能在同一個組織內擁有客戶帳戶和合作夥伴帳戶。
+
+
+NOTE: NetApp 使用 Microsoft Entra ID 做為身分識別提供者、提供專為支援與授權所設計的驗證服務。
 
 .步驟
 . 在 BlueXP 主控台的右上角、選取「說明」圖示、然後選取 * 「支援 * 」。
-+
-image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-help-support.png["「說明」功能表的快照、其中「支援」是第一個列出的選項"]
-
 . 選取 *NSS Management > Add NSS Account* 。
-. 系統提示時、請選取 * 繼續 * 以重新導向至 Microsoft 登入頁面。
+. 選擇 * 繼續 * 以重新導向至 Microsoft 登入頁面。
+. 在登入頁面上，提供 NetApp 支援網站註冊的電子郵件地址和密碼。
 +
-NetApp 使用 Microsoft Entra ID 做為身分識別提供者、提供專為支援與授權所設計的驗證服務。
+成功登入後、NetApp會儲存NSS.使用者名稱。
 
-. 在登入頁面上，提供您的 NetApp 支援網站註冊電子郵件地址和密碼，以執行身分驗證程序。
-+
-這些行動可讓BlueXP將您的nssa帳戶用於授權下載、軟體升級驗證、以及未來的支援註冊等項目。
-
-+
-請注意下列事項：
-
-+
-** NSS-帳戶必須是客戶層級的帳戶（而非來賓帳戶或暫存帳戶）。您可以擁有多個客戶層級的NSS帳戶。
-** 如果該帳戶是合作夥伴層級帳戶、則只能有一個NSS帳戶。如果您嘗試新增客戶層級的NSS帳戶、但有合作夥伴層級的帳戶存在、您會收到下列錯誤訊息：
-+
-「此帳戶不允許使用新增服務客戶類型、因為已經有不同類型的新增服務使用者。」
-
-+
-如果您擁有預先存在的客戶層級的NSS帳戶、並嘗試新增合作夥伴層級的帳戶、情況也是如此。
-
-** 成功登入後、NetApp會儲存NSS.使用者名稱。
 +
 這是系統產生的ID、會對應至您的電子郵件。在「* nssn*管理*」頁面上、您可以從顯示電子郵件 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/icon-nss-menu.png["三個橫點的圖示"] 功能表。
 
++
 ** 如果您需要重新整理登入認證憑證權杖、也可以在中使用*更新認證*選項 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/icon-nss-menu.png["三個橫點的圖示"] 功能表。
 +
 使用此選項會提示您重新登入。請注意、這些帳戶的權杖會在90天後過期。系統會張貼通知、提醒您注意此點。
@@ -106,11 +91,15 @@ NetApp 使用 Microsoft Entra ID 做為身分識別提供者、提供專為支�
 
 == 更新 NSS 認證
 
-發生下列任一情況時、您必須更新BlueXP中的NSS帳戶認證：
+基於安全理由，您必須每 90 天更新一次 NSS 認證。如果您的 NSS 認證已過期，您將會在 BlueXP  通知中心收到通知。link:task-monitor-cm-operations.html#notification-center["深入瞭解通知中心"^]。
 
-* 您可以變更帳戶的認證資料
-* 與您帳戶相關的更新Token會在3個月後過期
+過期的認證可能會中斷下列項目，但不限於：
 
+* 數位錢包的授權更新，這表示您將無法利用新購買的容量。
+* 能夠提交及追蹤支援案例。
+
+
+此外，如果您想要變更與 BlueXP  組織相關聯的 NSS 帳戶，也可以更新與組織相關的 NSS 認證。例如，如果與您的 NSS 帳戶相關聯的人員已離開您的公司。
 
 .步驟
 . 在 BlueXP 主控台的右上角、選取「說明」圖示、然後選取 * 「支援 * 」。
@@ -121,9 +110,9 @@ image:screenshot-nss-update-credentials.png["螢幕截圖顯示 NetApp 支援網
 
 . 系統提示時、請選取 * 繼續 * 以重新導向至 Microsoft 登入頁面。
 +
-NetApp 使用 Microsoft Entra ID 做為身分識別提供者、提供專為支援與授權所設計的驗證服務。
+NetApp 使用 Microsoft Entra ID 做為身分識別提供者，提供與支援和授權相關的驗證服務。
 
-. 在登入頁面上，提供您的 NetApp 支援網站註冊電子郵件地址和密碼，以執行身分驗證程序。
+. 在登入頁面上，提供 NetApp 支援網站註冊的電子郵件地址和密碼。
 
 
 
@@ -132,7 +121,7 @@ NetApp 使用 Microsoft Entra ID 做為身分識別提供者、提供專為支�
 
 如果貴組織有多個 NetApp 支援網站帳戶，您可以變更哪個帳戶要與哪個 Cloud Volumes ONTAP 系統相關聯。
 
-此功能僅支援已設定為使用 NetApp 採用的 Microsoft Entra ID 進行身分識別管理的 NSS 帳戶。在使用此功能之前、您需要選取 * 新增 NSS 帳戶 * 或 * 更新帳戶 * 。
+您必須先將帳戶與 BlueXP  建立關聯。
 
 .步驟
 . 在 BlueXP 主控台的右上角、選取「說明」圖示、然後選取 * 「支援 * 」。
@@ -154,22 +143,19 @@ image:screenshot-nss-change-account.png["螢幕截圖顯示與 NetApp 支援網�
 
 == 顯示NSS帳戶的電子郵件地址
 
-現在 NetApp 支援網站 帳戶使用 Microsoft Entra ID 進行驗證服務、 BlueXP 中顯示的 NSS 使用者名稱通常是 Microsoft Entra 所產生的識別碼。因此、您可能無法立即得知與該帳戶相關的電子郵件地址。不過、BlueXP有一個選項可以顯示相關的電子郵件地址。
+為了安全起見，預設不會顯示與 NSS 帳戶相關的電子郵件地址。您可以檢視 NSS 帳戶的電子郵件地址和相關使用者名稱。
 
 
-TIP: 當您移至「NSS管理」頁面時、BlueXP會為表格中的每個帳戶產生一個權杖。該權杖包含相關電子郵件地址的相關資訊。當您離開頁面時、便會移除權杖。這些資訊永遠不會快取、有助於保護您的隱私。
+TIP: 當您移至「NSS管理」頁面時、BlueXP會為表格中的每個帳戶產生一個權杖。該權杖包含相關電子郵件地址的相關資訊。當您離開頁面時，權杖會移除。這些資訊永遠不會快取、有助於保護您的隱私。
 
 .步驟
 . 在 BlueXP 主控台的右上角、選取「說明」圖示、然後選取 * 「支援 * 」。
 . 選取 * NSS 管理 * 。
-. 針對您要更新的 NSS 帳戶、選取 image:icon-action.png["這是三個並排點的圖示"] 然後選取*顯示電子郵件地址*。
+. 對於您要更新的 NSS 帳戶，請選取 image:icon-action.png["這是三個並排點的圖示"]* 顯示電子郵件地址 * ，然後選取。您可以使用複製按鈕來複製電子郵件地址。
 +
 image:screenshot-nss-display-email.png["螢幕截圖顯示 NetApp 支援網站帳戶動作選單，其中能夠顯示電子郵件地址。"]
 
 
-
-.結果
-BlueXP會顯示NetApp 支援網站 不完整的使用者名稱及相關的電子郵件地址。您可以使用複製按鈕來複製電子郵件地址。
 
 
 
@@ -177,7 +163,7 @@ BlueXP會顯示NetApp 支援網站 不完整的使用者名稱及相關的電子
 
 刪除任何不再想與BlueXP搭配使用的NSS帳戶。
 
-請注意、您無法刪除目前與Cloud Volumes ONTAP 某個運作環境相關聯的帳戶。您首先需要 <<將工作環境附加至不同的NSS帳戶,將這些工作環境附加至不同的NSS帳戶>>。
+您無法刪除目前與 Cloud Volumes ONTAP 工作環境相關聯的帳戶。您首先需要<<將工作環境附加至不同的NSS帳戶,將這些工作環境附加至不同的NSS帳戶>>。
 
 .步驟
 . 在 BlueXP 主控台的右上角、選取「說明」圖示、然後選取 * 「支援 * 」。

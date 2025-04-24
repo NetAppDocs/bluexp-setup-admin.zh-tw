@@ -508,9 +508,6 @@
   <block id="5f74d1c3714e49926cf5f752029ebcc2" category="inline-xref">將這些工作環境附加至不同的NSS帳戶</block>
   <block id="b0afff19aa3343a6f86619d833dbd316" category="inline-image-macro">這是三個並排點的圖示</block>
   <block id="8cb2ff10d15cea1a460cee3b506d5a6c" category="section-title">更新 NSS 認證</block>
-  <block id="90488de845793cd541dd12866e86b44a" category="paragraph">發生下列任一情況時、您必須更新BlueXP中的NSS帳戶認證：</block>
-  <block id="d7fb44c1919b66d02d93dc18ebb82756" category="list-text">您可以變更帳戶的認證資料</block>
-  <block id="b3926834345be7a1da662eba385876a4" category="list-text">與您帳戶相關的更新Token會在3個月後過期</block>
   <block id="a316383f81642dfed8c486925c8bc0d9" category="list-text">針對您要更新的 NSS 帳戶、選取 <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> 然後選取*更新認證*。</block>
   <block id="6194803972b351a3a1a725ec35734320" category="inline-image-macro">螢幕截圖顯示 NetApp 支援網站帳戶的動作選單，其中能夠選擇「Delete（刪除）」選項。</block>
   <block id="2aa3557242cb0eddbff8233ad0c81a45" category="paragraph"><block ref="2aa3557242cb0eddbff8233ad0c81a45" category="inline-image-macro-rx" type="image"></block></block>
@@ -524,14 +521,10 @@
   <block id="11ecc3de6ba7beb5561699b813f5f452" category="paragraph"><block ref="11ecc3de6ba7beb5561699b813f5f452" category="inline-image-macro-rx" type="image"></block></block>
   <block id="17b44f0405de560bdd9ba352b67adb7a" category="list-text">選取帳戶、然後選取 * 儲存 * 。</block>
   <block id="504f62cd55407d98070b45659035b7f5" category="section-title">顯示NSS帳戶的電子郵件地址</block>
-  <block id="a74d4f6da1f4962caa974b5e68852f05" category="admonition">當您移至「NSS管理」頁面時、BlueXP會為表格中的每個帳戶產生一個權杖。該權杖包含相關電子郵件地址的相關資訊。當您離開頁面時、便會移除權杖。這些資訊永遠不會快取、有助於保護您的隱私。</block>
-  <block id="fb62719b7db2f72c6247845a1f5cbcb1" category="list-text">針對您要更新的 NSS 帳戶、選取 <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> 然後選取*顯示電子郵件地址*。</block>
   <block id="51f80facd7c70833cf77adf937c57d0f" category="inline-image-macro">螢幕截圖顯示 NetApp 支援網站帳戶動作選單，其中能夠顯示電子郵件地址。</block>
   <block id="e1116fc74825566193b6ce2f33cadc2b" category="paragraph"><block ref="e1116fc74825566193b6ce2f33cadc2b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c7a6c5419388c54dd17826c0c6b4dc85" category="paragraph">BlueXP會顯示NetApp 支援網站 不完整的使用者名稱及相關的電子郵件地址。您可以使用複製按鈕來複製電子郵件地址。</block>
   <block id="269f277ce2140226081fe499a22595d6" category="section-title">移除NSS.帳戶</block>
   <block id="09e40761f22ee02fc6f59d79db4d6f93" category="paragraph">刪除任何不再想與BlueXP搭配使用的NSS帳戶。</block>
-  <block id="76734448143dd55adf6431fa26af46e4" category="paragraph">請注意、您無法刪除目前與Cloud Volumes ONTAP 某個運作環境相關聯的帳戶。您首先需要 <block ref="ac2d4b7aa5ce32d2814e2f5e96d09326" category="inline-xref-macro-rx"></block>。</block>
   <block id="e5db2949e66eb1e7684dd81e4145d6e3" category="list-text">針對您要刪除的 NSS 帳戶、選取 <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> 然後選取*刪除*。</block>
   <block id="007f1e2d3f01b80a8179746ea45b3c41" category="paragraph"><block ref="007f1e2d3f01b80a8179746ea45b3c41" category="inline-image-macro-rx" type="image"></block></block>
   <block id="93ab98e83f767e271a56c06a99e0061f" category="list-text">選擇 * 刪除 * 進行確認。</block>
@@ -3176,8 +3169,6 @@
   <block id="aa58ae713abe4e1f7b639f232b2814b8" category="list-text">如果您打算使用 BlueXP 分類來掃描公司資料來源、則應該在 BlueXP Connector 系統和 BlueXP 分類系統上啟用網路時間傳輸協定（ NTP ）服務、以便在系統之間同步時間。<block ref="f37549d88d23259dc9470e2f2bfbbbf0" category="inline-link-rx"></block></block>
   <block id="9ed6715eace733ae6dc526b52a03058e" category="paragraph">建立 Connector 之後、您必須實作此網路需求。</block>
   <block id="d59e0b46782e48a01966e5c7ccc38d17" category="paragraph">NetApp 使用 Microsoft Entra ID 做為身分識別提供者、提供專為支援與授權所設計的驗證服務。</block>
-  <block id="dfec517d439938ca1ef24de3972ed1d6" category="paragraph">此功能僅支援已設定為使用 NetApp 採用的 Microsoft Entra ID 進行身分識別管理的 NSS 帳戶。在使用此功能之前、您需要選取 * 新增 NSS 帳戶 * 或 * 更新帳戶 * 。</block>
-  <block id="a5b46ae1ec2ad5287349444529a0b53c" category="paragraph">現在 NetApp 支援網站 帳戶使用 Microsoft Entra ID 進行驗證服務、 BlueXP 中顯示的 NSS 使用者名稱通常是 Microsoft Entra 所產生的識別碼。因此、您可能無法立即得知與該帳戶相關的電子郵件地址。不過、BlueXP有一個選項可以顯示相關的電子郵件地址。</block>
   <block id="009cf1f7b9b15240104b17e10bb20e3a" category="paragraph">在 Microsoft Entra ID 中建立並設定服務主體、並取得 BlueXP 所需的 Azure 認證。</block>
   <block id="20a548e155064dfebc2cf8e9a74ab489" category="list-title">建立 Microsoft Entra 應用程式以進行角色型存取控制</block>
   <block id="3acc75f616414df16724fc2f4fe192eb" category="list-text">從 Azure 入口網站開啟 * Microsoft Entra ID* 服務。</block>
@@ -3998,7 +3989,6 @@
   <block id="1ebe3d8a3d69a73646283d430c26a946" category="paragraph">BlueXP  也支援每個 BlueXP  使用者帳戶建立一個 NSS 帳戶的關聯。<block ref="92ab4e1c25ae34810f6c6d2ede81f4ab" category="inline-link-macro-rx"></block>。</block>
   <block id="e2ca9dfd816e611b53e740c0def06a75" category="paragraph">若要在 BlueXP  中啟用下列工作、必須將 NetApp 支援網站認證與您特定的 BlueXP  帳戶序號建立關聯：</block>
   <block id="acc5d74b9730b17cf679fd826310c607" category="paragraph">這些認證與您的特定 BlueXP  帳戶序號相關聯。屬於 BlueXP  組織或帳戶的使用者可從 * 支援 &gt; NSS 管理 * 存取這些認證。</block>
-  <block id="607d5f9332bf0fe8fef9f43fcf68c22e" category="paragraph">「支援儀表板」可讓您新增及管理 NetApp 支援網站帳戶、以便在 BlueXP  組織或帳戶層級與 BlueXP  搭配使用。</block>
   <block id="98d90e398fc56688ddc647e5f49075ec" category="paragraph">工作環境清單位於您在服務頂端橫幅中選取的 BlueXP  組織（或帳戶）、專案（或工作區）和 Connector 範圍內。</block>
   <block id="aeaa07e62e0681df3c00b18be44e1799" category="summary">如果貴組織的成員需要在另一個專案中使用 Connector 、您需要從 BlueXP  IAM 建立關聯。</block>
   <block id="9c1561cceda808c78453a453f4175e14" category="doc">將 BlueXP  Connector 與其他資料夾和專案建立關聯</block>
@@ -5022,4 +5012,25 @@
   <block id="57b248bc2bcc519c9d26da79b5753feb" category="cell">由組織內任何使用者所建立的 CView 服務要求</block>
   <block id="40abfc355f5aea2697c05cedc7637005" category="section-title">資料服務角色</block>
   <block id="3b5148467641fe76592e826ef571410c" category="paragraph">以下是資料服務類別中的角色清單。每個角色都會在其指定範圍內授予特定權限。沒有必要資料服務角色或平台角色的使用者將無法存取資料服務。</block>
+  <block id="490e13bea5876f4583d326593619ee16" category="list-text">在作業系統上啟用 SELinux 的 Connectors 現在支援 Cloud Volumes ONTAP 系統的管理。</block>
+  <block id="a34db0f5fbf1e24b51b5a7a24f301c5e" category="doc">管理與 BlueXP  相關的 NSS 認證</block>
+  <block id="c60157a3e7becc31536d0dc036b53af0" category="admonition">如果您是以標準模式或受限模式使用 BlueXP  ，您將擁有 BlueXP  組織，您可以使用 BlueXP  身分識別與存取管理（ IAM ）來管理。但如果您是以私人模式使用 BlueXP  ，則會有 BlueXP  帳戶 _ 。</block>
+  <block id="6dbd01b1c2b8dd3f051f0a9d6b7b2bd3" category="paragraph">您可以從 BlueXP  的「支援儀表板」新增及管理 NetApp 支援網站帳戶，以便與 BlueXP  搭配使用。</block>
+  <block id="cd35825320d9b999711fdb0b0b96b105" category="paragraph">當您新增 NSS 帳戶時， BlueXP  可以將此資訊用於授權下載，軟體升級驗證及未來支援註冊等項目。</block>
+  <block id="668a927dea46030d99f290f562cf9a8c" category="paragraph">您可以將多個 NSS 帳戶與您的 BlueXP  組織建立關聯，但是您不能在同一個組織內擁有客戶帳戶和合作夥伴帳戶。</block>
+  <block id="aa46302bfdec80cdcbdb3268e1b7a8f4" category="list-text">選擇 * 繼續 * 以重新導向至 Microsoft 登入頁面。</block>
+  <block id="55e65cdb758bf0c89a872d9cbd3e9b79" category="list-text">在登入頁面上，提供 NetApp 支援網站註冊的電子郵件地址和密碼。</block>
+  <block id="256ed78b4e0484125eb0f0e66fdb7156" category="inline-link-macro">深入瞭解通知中心</block>
+  <block id="4689ffd51b2968888f8c155b13dfcaf5" category="paragraph">基於安全理由，您必須每 90 天更新一次 NSS 認證。如果您的 NSS 認證已過期，您將會在 BlueXP  通知中心收到通知。<block ref="7547de016d191efcd551f32d625b2bc1" category="inline-link-macro-rx"></block>。</block>
+  <block id="a68bd898b36ffcd9b8247470114f5f4a" category="paragraph">過期的認證可能會中斷下列項目，但不限於：</block>
+  <block id="41a210fc1fd64ddb44bf15d9fe670679" category="list-text">數位錢包的授權更新，這表示您將無法利用新購買的容量。</block>
+  <block id="9866777d09d57d152447888262701c25" category="list-text">能夠提交及追蹤支援案例。</block>
+  <block id="6179959f116f310a8ad1ec9ecbaf81f6" category="paragraph">此外，如果您想要變更與 BlueXP  組織相關聯的 NSS 帳戶，也可以更新與組織相關的 NSS 認證。例如，如果與您的 NSS 帳戶相關聯的人員已離開您的公司。</block>
+  <block id="021c1a8115e127518ed9afb84086b193" category="paragraph">NetApp 使用 Microsoft Entra ID 做為身分識別提供者，提供與支援和授權相關的驗證服務。</block>
+  <block id="eeda1356f6044cf81d9e31043444b9aa" category="paragraph">您必須先將帳戶與 BlueXP  建立關聯。</block>
+  <block id="2f8da686adebbe94321da99d4cee7340" category="paragraph">為了安全起見，預設不會顯示與 NSS 帳戶相關的電子郵件地址。您可以檢視 NSS 帳戶的電子郵件地址和相關使用者名稱。</block>
+  <block id="9231e2c70a8d6560c0d7f9c307c71524" category="admonition">當您移至「NSS管理」頁面時、BlueXP會為表格中的每個帳戶產生一個權杖。該權杖包含相關電子郵件地址的相關資訊。當您離開頁面時，權杖會移除。這些資訊永遠不會快取、有助於保護您的隱私。</block>
+  <block id="91db0dcecdec6f07d8d7296d1c7d5cf1" category="list-text">對於您要更新的 NSS 帳戶，請選取 <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>* 顯示電子郵件地址 * ，然後選取。您可以使用複製按鈕來複製電子郵件地址。</block>
+  <block id="95113dfcf72340b0f58f2233f6b68f7d" category="paragraph">您無法刪除目前與 Cloud Volumes ONTAP 工作環境相關聯的帳戶。您首先需要<block ref="ac2d4b7aa5ce32d2814e2f5e96d09326" category="inline-xref-macro-rx"></block>。</block>
+  <block id="df3f743aae5476a7b16bbbc329251f85" category="section-title">2025 年 18 月 2 日</block>
 </blocks>
