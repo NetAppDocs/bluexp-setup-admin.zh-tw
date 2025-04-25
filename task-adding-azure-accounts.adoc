@@ -342,9 +342,6 @@ image:screenshot_accounts_switch_azure.gif["在「詳細資料擴大機；認證
 +
 您必須選取與 Connector 相關聯的認證。您無法將市場訂閱與 BlueXP 相關的認證建立關聯。
 
-+
-image:screenshot_azure_add_subscription.png["一組現有認證資料的動作功能表快照。"]
-
 . 若要將認證與現有訂閱建立關聯，請從下拉式清單中選取訂閱，然後選取 * 設定 * 。
 . 若要將認證與新訂閱建立關聯、請選取 * 新增訂閱 > 繼續 * 、然後依照 Azure Marketplace 中的步驟進行：
 +
