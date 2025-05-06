@@ -35,9 +35,6 @@ _silon_ 執行指令碼時不會提示您確認。
 
 
 
-.結果
-Connector 軟體現在已從 Linux 主機解除安裝。
-
 
 
 == 使用私有模式時、請解除安裝 Connector
@@ -48,13 +45,31 @@ Connector 軟體現在已從 Linux 主機解除安裝。
 . 連接至 Linux VM for the Connector 。
 . 從Linux主機執行下列命令：
 +
-`/opt/application/netapp/ds/cleanup.sh`
-`rm -rf /opt/application/netapp/ds`
+[source, cli]
+----
+/opt/application/netapp/ds/cleanup.sh
+rm -rf /opt/application/netapp/
+----
+. 從 Linux 主機移除舊的，現在未使用的容器映像檔案。如此可確保 /var 目錄中有足夠的空間可供重新安裝。
++
+[role="tabbed-block"]
+====
+.Podman
+--
+[source, cli]
+----
+podman system prune --all
+----
+--
+.Docker
+--
+[source, cli]
+----
+docker system prune -a
+----
+--
+====
 
-
-
-.結果
-Connector 軟體現在已從 Linux 主機解除安裝。
 
 
 
@@ -77,6 +92,3 @@ image:screenshot_connector_remove.gif["連接器 Widget 的快照、可讓您移
 
 . 輸入 Connector 的名稱以確認、然後選取 * 移除 * 。
 
-
-.結果
-BlueXP會將Connector從記錄中移除。

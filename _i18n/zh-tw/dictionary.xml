@@ -1714,7 +1714,6 @@
   <block id="e8e3de05575910fc8863b3e5715b75a4" category="inline-image-macro">連接器 Widget 的快照、可讓您移除非作用中的連接器。</block>
   <block id="2edb4e92b7a9da8aeba40d13e6c35982" category="paragraph"><block ref="2edb4e92b7a9da8aeba40d13e6c35982" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ec2047192779921dd8c042d6555c8cd8" category="list-text">輸入 Connector 的名稱以確認、然後選取 * 移除 * 。</block>
-  <block id="7c42efcb94d7f8204bfb69f49301938f" category="paragraph">BlueXP會將Connector從記錄中移除。</block>
   <block id="6a5be3e06b444aea04beccda3bc9e1d6" category="list-text">從 Linux 主機執行解除安裝指令碼：</block>
   <block id="0bb43692ecd0352eecc69c235e34d6f0" category="paragraph">_silon_ 執行指令碼時不會提示您確認。</block>
   <block id="c89064bda3f1ae133a231f5b1f44c3b0" category="list-text">從Linux主機執行下列命令：</block>
@@ -3529,7 +3528,6 @@
   <block id="716e455593e3f61d09e3bf6cbb30d375" category="doc">解除安裝並移除 Connector</block>
   <block id="0ca48b615c940d64cdde98b76cdee8b3" category="section-title">使用標準或受限模式時、請解除安裝 Connector</block>
   <block id="da529abe542a53761e1008dc23815cf7" category="paragraph">如果您是在標準模式或受限模式下使用 BlueXP （也就是說、 Connector 主機具有輸出連線）、則應遵循下列步驟來解除安裝 Connector 軟體。</block>
-  <block id="0f915c6b577573f25e2e8bfac8c2aacb" category="paragraph">Connector 軟體現在已從 Linux 主機解除安裝。</block>
   <block id="32b4ba2ff55d15357ed5b70aeb566059" category="section-title">使用私有模式時、請解除安裝 Connector</block>
   <block id="34a2bd34ae23cc65060f62957132c0eb" category="paragraph">如果您是在私有模式下使用 BlueXP （也就是說、 Connector 主機擁有 _NO 輸出連線）、則應遵循下列步驟來解除安裝 Connector 軟體。</block>
   <block id="a1fd436d8cb76b77def4aeb2d8bba352" category="doc">維護 Connector VM 和作業系統</block>
@@ -3674,7 +3672,6 @@
   <block id="dee6ffcadeee95a4920b20e3dff92f16" category="paragraph">請注意、預設密碼體驗是一次性密碼（ OTP ）到註冊的電子郵件地址。每次嘗試登入時都會產生新的 OTP 。</block>
   <block id="3216eccdc5ba0609640cf6e084e8b99b" category="list-text">在 Cloud Volumes ONTAP CLI 中、將權限等級設為進階：</block>
   <block id="12cf6b8337c04d4e7e622d1c39b40efe" category="list-text">執行下列命令以顯示目前的備份目標：</block>
-  <block id="eb34b10d2fd231974ff6010bc6aa4d4b" category="paragraph"><block ref="5b014535a251b1d5d0c9044a548a8e20" prefix="" category="inline-code"></block><block ref="3be06caa62382aade39cdb5bcb105da0" prefix=" " category="inline-code"></block></block>
   <block id="d44b908365d28414a72f5b042c756f89" category="cell">在彈性協調模式中使用虛擬機器擴充集、以指定 Cloud Volumes ONTAP 的特定區域</block>
   <block id="e32bb1c8b64cbfd8bf1712551cd39a15" category="cell">Microsoft 。 運算 / 虛擬機器擴充性集 / 寫入</block>
   <block id="da4802bef00f05ba8274ecb054d0388f" category="cell">Microsoft 。 運算 / 虛擬機器擴充集 / 讀取</block>
@@ -5032,4 +5029,6 @@
   <block id="df3f743aae5476a7b16bbbc329251f85" category="section-title">2025 年 18 月 2 日</block>
   <block id="186343db38833a48df757e694e69337d" category="doc">管理與 BlueXP  相關的 NSS 認證</block>
   <block id="b0a6f78c81db9101142cfbb4b289b156" category="list-text">數位錢包的授權更新，這表示您將無法利用新購買的容量。</block>
+  <block id="0e9f50ce17eb61023683d8254bc6a553" category="paragraph">在 Connector 主機上維護作業系統是您（客戶）的責任。例如，您（客戶）應遵循貴公司的作業系統發佈標準程序，將安全性更新套用至 Connector 主機上的作業系統。</block>
+  <block id="ec3b20ec97830a6ca400807ee52fba22" category="list-text">從 Linux 主機移除舊的，現在未使用的容器映像檔案。如此可確保 /var 目錄中有足夠的空間可供重新安裝。</block>
 </blocks>
