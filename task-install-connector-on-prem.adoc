@@ -84,6 +84,8 @@ Docker Engine 26.0.0
 Docker Engine 23.0.6 至 26.0.0
 
 26.0.0 支援 _new_ Connector 3.9.44 或更新版本的安裝
+
+27.0.0 和 28.0.0 支援 _new_ Connector 3.9.52 或更新版本的安裝
  a| 
 不支援
 

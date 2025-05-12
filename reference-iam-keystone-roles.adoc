@@ -1,0 +1,143 @@
+---
+sidebar: sidebar 
+permalink: reference-iam-keystone-roles.html 
+keywords: predefined roles, iam roles, organization admin, folder or project admin, identity and access management, access roles, admin 
+summary: BlueXP  身分識別與存取管理提供兩個管理角色，您可以指派給組織成員。 
+---
+= BlueXP  的 Keystone 存取角色
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Keystone 角色提供對 Keystone 儀表板的存取，並可讓使用者檢視及管理 Keystone 訂閱。共有兩個 Keystone 角色： Keystone 管理和 Keystone 檢視器。這兩種角色的主要差異在於它們可以在 Keystone 中採取的行動。Keystone 管理員角色是唯一允許建立服務要求或修改訂閱的角色。
+
+.BlueXP  中 Keystone 角色的範例
+在 Keystone 訂閱中， XYZ Corporation 擁有四位來自不同部門的儲存工程師，可檢視其 Keystone 訂閱的相關資訊。雖然所有這些使用者都需要監控 Keystone 訂閱，但只有團隊主管可以提出服務要求。其中三位團隊成員被授予 * Keystone viewer* 角色，而團隊主管則被授予 * Keystone admin* 角色，因此可以控制公司的服務要求。
+
+下表指出每個 Keystone 角色可以執行的動作。
+
+[cols="40,20a,20a"]
+|===
+| 功能與行動 | Keystone 管理 | Keystone 檢視器 
+
+
+| 檢視下列標籤：訂閱，資產，監控和管理  a| 
+是的
+ a| 
+是的
+
+
+
+3+| * 基礎概念訂閱頁面 * ： 
+
+
+| 檢視訂閱  a| 
+是的
+ a| 
+是的
+
+
+
+| 修改或更新訂閱  a| 
+是的
+ a| 
+否
+
+
+
+3+| * 基礎概念資產頁面 * ： 
+
+
+| 檢視資產  a| 
+是的
+ a| 
+是的
+
+
+
+| 管理資產  a| 
+是的
+ a| 
+否
+
+
+
+3+| * 基礎概念警示頁面 * ： 
+
+
+| 檢視警示  a| 
+是的
+ a| 
+否
+
+
+
+| 管理警示  a| 
+是的
+ a| 
+否
+
+
+
+| 建立自我警示  a| 
+是的
+ a| 
+是的
+
+
+
+3+| * 數位錢包 * ： 
+
+
+| 可檢視數位錢包  a| 
+是的
+ a| 
+是的
+
+
+
+3+| * 基礎報告頁面 * ： 
+
+
+| 下載報告  a| 
+是的
+ a| 
+是的
+
+
+
+| 管理報告  a| 
+是的
+ a| 
+是的
+
+
+
+| 自行建立報告  a| 
+是的
+ a| 
+是的
+
+
+
+3+| * 服務要求 * ： 
+
+
+| 建立服務要求  a| 
+是的
+ a| 
+否
+
+
+
+| 檢視組織內任何使用者所建立的服務要求  a| 
+是的
+ a| 
+是的
+
+|===

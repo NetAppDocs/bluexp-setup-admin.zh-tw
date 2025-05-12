@@ -407,7 +407,7 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.
 | 工作負載工廠 | 否 | 否 
 
 
-.7+| * 功能 * | BlueXP  身分識別與存取管理 | 否 | 否 
+.7+| * 功能 * | BlueXP  身分識別與存取管理 | 是的 | 否 
 
 
 | BlueXP 帳戶 | 是的 | 是的 

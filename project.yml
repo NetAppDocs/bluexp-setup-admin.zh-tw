@@ -130,7 +130,19 @@ sidebar:
       - title: 監控或稽核 IAM 活動
         url: "/task-iam-audit-actions-timeline.html"
       - title: BlueXP  存取角色
-        url: "/reference-iam-predefined-roles.html"
+        entries:
+        - title: 瞭解 BlueXP  存取角色
+          url: "/reference-iam-predefined-roles.html"
+        - title: 平台角色
+          url: "/reference-iam-platform-roles.html"
+        - title: 應用程式角色
+          entries:
+          - title: Keystone 角色
+            url: "/reference-iam-keystone-roles.html"
+        - title: 資料服務角色
+          entries:
+          - title: 勒索軟體保護角色
+            url: "/reference-iam-ransomware-roles.html"
     - title: BlueXP  帳戶（僅限私人模式）
       entries:
       - title: 深入瞭解客戶

@@ -18,6 +18,30 @@ summary: 瞭解 BlueXP  管理功能的新功能： BlueXP  IAM 、 Connectors
 
 
 
+== 2025 年 12 月 5 日
+
+
+
+=== 連接器 3.9.52
+
+此版本的 BlueXP  Connector 包括少量的安全性改善和錯誤修正，以及一些其他更新。
+
+目前、 3.9.52 版本適用於標準模式和受限模式。
+
+
+
+==== 支援 Docker 27 和 Docker 28
+
+Connector 現在支援 Docker 27 和 Docker 28 。
+
+
+
+=== BlueXP  中提供 Keystone 管理功能
+
+BlueXP  中的 NetApp Keystone 試用版已新增對 Keystone 管理的存取權。您可以從 BlueXP  左側導覽列存取 NetApp Keystone Beta 的登錄頁面。
+
+
+
 == 2025 年 4 月 14 日
 
 
