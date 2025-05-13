@@ -5039,19 +5039,10 @@
   <block id="7f2befb18aac1f714ed732d436d27957" category="cell"><block ref="7f2befb18aac1f714ed732d436d27957" category="inline-link-macro-rx"></block></block>
   <block id="62263858ac3fcc39efab4f2c55c4b609" category="cell">允許使用者不受限制地存取指派給他們的特定專案和資料夾。可以將成員新增至他們管理的資料夾或專案，以及執行任何 BlueXP  工作，並在指派給他們的資料夾或專案中，對資源使用任何資料服務或應用程式。資料夾或專案管理員角色無法建立 Connectors 。</block>
   <block id="ee1afb77ea65d6282a6b2db5ef1c9599" category="cell">應用程式角色</block>
-  <block id="cfc1bf581403883b7597ea57212f92d0" category="cell"><block ref="cfc1bf581403883b7597ea57212f92d0" category="inline-link-macro-rx"></block></block>
   <block id="ff7835459affd6ea09ace7258f1ea831" category="cell">具有 Keystone 管理員角色的使用者可以建立服務要求。可讓使用者監控及檢視他們正在存取的 Keystone 租用戶內的使用量，資產和管理資訊。</block>
-  <block id="eee920c46940781b9236f383eb481644" category="cell"><block ref="eee920c46940781b9236f383eb481644" category="inline-link-macro-rx"></block></block>
-  <block id="1457cd573aaf85c5528a52382534d843" category="cell">具有 Keystone 檢視器角色的使用者無法提出服務要求。可讓使用者監控及檢視他們正在存取的 Keystone 租用戶內的使用量，資產和管理資訊。///</block>
   <block id="316bb1d5ed8c0cbdba665a6326ba1bde" category="inline-link-macro">儲存管理員</block>
-  <block id="1a137246f35bc1bb21510edbe9caad21" category="cell"><block ref="1a137246f35bc1bb21510edbe9caad21" category="inline-link-macro-rx"></block></block>
-  <block id="2c0951a9d6b056c060a4c61f7f245bf2" category="cell">管理儲存健全狀況和治理功能，探索儲存資源，以及修改和刪除現有工作環境。</block>
   <block id="1d63b1d397254c4d509474883c1cb2b9" category="inline-link-macro">儲存檢視器</block>
-  <block id="59f722e254214ae7991868e178f8311d" category="cell"><block ref="59f722e254214ae7991868e178f8311d" category="inline-link-macro-rx"></block></block>
-  <block id="7276a8e39254ac9c35a2e44a3d09f7ef" category="cell">檢視儲存健全狀況和治理功能，以及檢視先前探索到的儲存資源。無法探索，修改或刪除現有的儲存工作環境。</block>
   <block id="172d68d57647cf0cb58a3cbcac52a80d" category="inline-link-macro">系統健全狀況專家</block>
-  <block id="92c9978d93758d2c0ddea09cb5842e0f" category="cell"><block ref="92c9978d93758d2c0ddea09cb5842e0f" category="inline-link-macro-rx"></block></block>
-  <block id="d5ce9b158c00a4469a72ebb1ff919ca7" category="cell">管理儲存，健全狀況和治理功能，儲存管理員的所有權限，但無法修改或刪除現有的工作環境。///</block>
   <block id="f9e4f3681d11897d8d94c7430ef166b2" category="cell">資料服務角色</block>
   <block id="64ed34c845e9e3ebe96d95642bd80c2c" category="cell">分類管理</block>
   <block id="951e833c91b111e3d8854609f6e22cd0" category="cell">提供檢視 BlueXP  分類掃描結果的能力。分類沒有檢視者角色。擁有此角色的使用者可以檢視法規遵循資訊，並針對擁有存取權限的資源產生報告。這些使用者無法啟用或停用掃描磁碟區、儲存區或資料庫架構。</block>
@@ -5111,4 +5102,7 @@
   <block id="5f04b1505df8c3795b59e8cd4a8e01e3" category="sidebar">瞭解 BlueXP  存取角色</block>
   <block id="35cbd88f43ce85ef7ed6866daa2c6066" category="sidebar">資料服務角色</block>
   <block id="0310ff69ee2ad8b9fa1fbf2f23946a8e" category="sidebar">勒索軟體保護角色</block>
+  <block id="fae8f53075db25f03200e0538d6a6e22" category="cell"><block ref="fae8f53075db25f03200e0538d6a6e22" category="inline-link-macro-rx"></block></block>
+  <block id="46956ceeec4262cb23c44eb7922de7ec" category="cell"><block ref="46956ceeec4262cb23c44eb7922de7ec" category="inline-link-macro-rx"></block></block>
+  <block id="fa5213b8e2ea77f3b22ea8b2e36d85b8" category="cell">具有 Keystone 檢視器角色的使用者無法建立服務要求。可讓使用者監控及檢視他們正在存取的 Keystone 租用戶內的使用量，資產和管理資訊。</block>
 </blocks>

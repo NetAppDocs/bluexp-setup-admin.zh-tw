@@ -46,19 +46,10 @@ NOTE: 透過 BlueXP  存取 Keystone 目前為試用版。如果您想參加 Ke
 | 應用程式角色 | 職責 
 
 
-| link:reference-iam-keystone-roles.html["Keystone 管理"] | 具有 Keystone 管理員角色的使用者可以建立服務要求。可讓使用者監控及檢視他們正在存取的 Keystone 租用戶內的使用量，資產和管理資訊。 
+| link:reference-iam-keystone-roles.html["Keystone 管理"^] | 具有 Keystone 管理員角色的使用者可以建立服務要求。可讓使用者監控及檢視他們正在存取的 Keystone 租用戶內的使用量，資產和管理資訊。 
 
 
-| link:reference-iam-keystone-roles.html["Keystone 檢視器"] | 具有 Keystone 檢視器角色的使用者無法提出服務要求。可讓使用者監控及檢視他們正在存取的 Keystone 租用戶內的使用量，資產和管理資訊。/// 
-
-
-| link:reference-iam-storage-roles.html["儲存管理員"] | 管理儲存健全狀況和治理功能，探索儲存資源，以及修改和刪除現有工作環境。 
-
-
-| link:reference-iam-storage-roles.html["儲存檢視器"] | 檢視儲存健全狀況和治理功能，以及檢視先前探索到的儲存資源。無法探索，修改或刪除現有的儲存工作環境。 
-
-
-| link:reference-iam-storage-roles.html["系統健全狀況專家"] | 管理儲存，健全狀況和治理功能，儲存管理員的所有權限，但無法修改或刪除現有的工作環境。/// 
+| link:reference-iam-keystone-roles.html["Keystone 檢視器"^] | 具有 Keystone 檢視器角色的使用者無法建立服務要求。可讓使用者監控及檢視他們正在存取的 Keystone 租用戶內的使用量，資產和管理資訊。 
 |===
 
 
