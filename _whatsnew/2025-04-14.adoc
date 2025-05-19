@@ -12,6 +12,12 @@
 
 
 
+==== Connector 下載的安全端點現在支援備份與還原，以及勒索軟體保護
+
+如果您使用備份與還原或勒索軟體保護，現在可以使用安全端點進行 Connector 下載。 link:https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#new-secure-endpoints-to-obtain-connector-images["瞭解 Connector 下載的安全端點。"^]
+
+
+
 === BlueXP  身分識別與存取管理（ IAM ）
 
 * 沒有組織管理員，資料夾或專案管理員的使用者，必須指派勒索軟體保護角色，才能存取勒索軟體保護。您可以指派使用者兩種角色之一：勒索軟體保護管理員或勒索軟體保護檢視器。
