@@ -5108,4 +5108,5 @@
   <block id="7dd4f26252edc5554ac1671370b55f2e" category="section-title">Connector 下載的安全端點現在支援備份與還原，以及勒索軟體保護</block>
   <block id="fa3ad4e82d26203dad8cb93a91e5c448" category="inline-link-macro">瞭解 Connector 下載的安全端點。</block>
   <block id="65a207edfe2ea4576ceb53eb1d7a6caa" category="paragraph">如果您使用備份與還原或勒索軟體保護，現在可以使用安全端點進行 Connector 下載。 <block ref="037b27fad48ee4136808e628650ebfff" category="inline-link-macro-rx"></block></block>
+  <block id="299e5505ce975112afaefec130cc83e0" category="paragraph">7.9</block>
 </blocks>
