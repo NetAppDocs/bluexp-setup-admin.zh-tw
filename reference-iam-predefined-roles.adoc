@@ -4,7 +4,7 @@ permalink: reference-iam-predefined-roles.html
 keywords: predefined roles, iam roles, organization admin, folder or project admin, classification viewer, snapcenter admin, role, iam role, admin, iam, identity and access management 
 summary: BlueXP  身分識別與存取管理包含數個預先定義的角色、您可以指派給組織成員。 
 ---
-= BlueXP  存取角色
+= 瞭解 BlueXP  存取角色
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -20,17 +20,17 @@ BlueXP  身分識別與存取管理（ IAM ）包含數個預先定義的角色
 
 == 平台角色
 
-平台角色是您可以指派給使用者的最廣泛角色，並允許 BlueXP 管理的所有權限，包括指派角色和新增使用者。擁有平台角色的使用者可存取 BlueXP  中的所有資料服務和應用程式。BlueXP  IAM 包含兩個平台角色：組織管理和資料夾或專案管理。兩個 BlueXP  IAM 平台角色的主要差異在於範圍。
+平台角色是您可以指派給使用者的最廣泛角色，並允許 BlueXP 管理的所有權限，包括指派角色和新增使用者。擁有平台角色的使用者可存取 BlueXP  中的所有資料服務和應用程式。BlueXP IAM 包含兩個平台角色：組織管理員和資料夾或專案管理員。兩個 BlueXP  IAM 平台角色的主要差異在於範圍。
 
 [cols="1,2"]
 |===
 | 平台角色 | 職責 
 
 
-| link:reference-iam-platform-roles.html["組織管理員"^] | 允許使用者不受限制地存取組織內的所有專案和資料夾，將成員新增至任何專案或資料夾，以及執行任何 BlueXP  工作和使用任何資料服務。擔任此角色的使用者必須負責組織及管理整個 BlueXP  環境。他們可以建立資料夾和專案，指派角色，以及將使用者新增至任何專案或資料夾。他們也可以管理組織內的所有工作環境。這是唯一可以建立 Connectors 的存取角色。 
+| link:reference-iam-platform-roles.html["組織管理員"] | 允許使用者不受限制地存取組織內的所有專案和資料夾，將成員新增至任何專案或資料夾，以及執行任何 BlueXP  工作和使用任何資料服務。擔任此角色的使用者必須負責組織及管理整個 BlueXP  環境。他們可以建立資料夾和專案，指派角色，以及將使用者新增至任何專案或資料夾。他們也可以管理組織內的所有工作環境。這是唯一可以建立 Connectors 的存取角色。 
 
 
-| link:reference-iam-platform-roles.html["資料夾或專案管理員"^] | 允許使用者不受限制地存取指派給他們的特定專案和資料夾。可以將成員新增至他們管理的資料夾或專案，以及執行任何 BlueXP  工作，並在指派給他們的資料夾或專案中，對資源使用任何資料服務或應用程式。資料夾或專案管理員角色無法建立 Connectors 。 
+| link:reference-iam-platform-roles.html["資料夾或專案管理員"] | 允許使用者不受限制地存取指派給他們的特定專案和資料夾。可以將成員新增至他們管理的資料夾或專案，以及執行任何 BlueXP  工作，並在指派給他們的資料夾或專案中，對資源使用任何資料服務或應用程式。資料夾或專案管理員角色無法建立 Connectors 。 
 |===
 
 
@@ -46,10 +46,19 @@ NOTE: 透過 BlueXP  存取 Keystone 目前為試用版。如果您想參加 Ke
 | 應用程式角色 | 職責 
 
 
-| link:reference-iam-keystone-roles.html["Keystone 管理"^] | 具有 Keystone 管理員角色的使用者可以建立服務要求。可讓使用者監控及檢視他們正在存取的 Keystone 租用戶內的使用量，資產和管理資訊。 
+| link:reference-iam-keystone-roles.html["Keystone 管理"] | 具有 Keystone 管理員角色的使用者可以建立服務要求。可讓使用者監控及檢視他們正在存取的 Keystone 租用戶內的使用量，資產和管理資訊。 
 
 
-| link:reference-iam-keystone-roles.html["Keystone 檢視器"^] | 具有 Keystone 檢視器角色的使用者無法建立服務要求。可讓使用者監控及檢視他們正在存取的 Keystone 租用戶內的使用量，資產和管理資訊。 
+| link:reference-iam-keystone-roles.html["Keystone 檢視器"] | 具有 Keystone 檢視器角色的使用者無法建立服務要求。可讓使用者監控及檢視他們正在存取的 Keystone 租用戶內的使用量，資產和管理資訊。 
+
+
+| link:reference-iam-storage-roles.html["儲存管理員"] | 管理儲存健全狀況和治理功能，探索儲存資源，以及修改和刪除現有工作環境。 
+
+
+| link:reference-iam-storage-roles.html["儲存檢視器"] | 檢視儲存健全狀況和治理功能，以及檢視先前探索到的儲存資源。無法探索，修改或刪除現有的儲存工作環境。 
+
+
+| link:reference-iam-storage-roles.html["系統健全狀況專家"] | 管理儲存，健全狀況和治理功能，儲存管理員的所有權限，但無法修改或刪除現有的工作環境。 
 |===
 
 
@@ -65,10 +74,10 @@ NOTE: 透過 BlueXP  存取 Keystone 目前為試用版。如果您想參加 Ke
 | 分類管理 | 提供檢視 BlueXP  分類掃描結果的能力。分類沒有檢視者角色。擁有此角色的使用者可以檢視法規遵循資訊，並針對擁有存取權限的資源產生報告。這些使用者無法啟用或停用掃描磁碟區、儲存區或資料庫架構。 
 
 
-| link:reference-iam-ransomware-roles.html["勒索軟體保護管理員"^] | 在勒索軟體保護服務的「保護」，「警示」，「恢復」，「設定」和「報告」索引標籤上管理動作。 
+| link:reference-iam-ransomware-roles.html["勒索軟體保護管理員"] | 在勒索軟體保護服務的「保護」，「警示」，「恢復」，「設定」和「報告」索引標籤上管理動作。 
 
 
-| link:reference-iam-ransomware-roles.html["勒索軟體保護檢視器"^] | 在勒索軟體保護服務中檢視工作負載資料，檢視警示資料，下載恢復資料及下載報告。 
+| link:reference-iam-ransomware-roles.html["勒索軟體保護檢視器"] | 在勒索軟體保護服務中檢視工作負載資料，檢視警示資料，下載恢復資料及下載報告。 
 
 
 | SnapCenter 管理  a| 

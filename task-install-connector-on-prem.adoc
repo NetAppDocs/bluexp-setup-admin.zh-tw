@@ -137,11 +137,14 @@ BlueXP 需要此空間 `/var` 因為 Docker 或 Podman 是專為在此目錄中�
 --
 請依照下列步驟安裝 Podman 、並將其設定為符合下列需求：
 
-* 必須啟用並啟動 podman.socket 服務
-* 必須安裝 python3
-* 必須安裝 podman-compose 套件 1.0.6 版
-* 必須將 podman-compose 新增至 PATH 環境變數
+* 啟用並啟動 podman.socket 服務
+* 安裝 python3
+* 安裝 podman-compose 軟體套件版本 1.0.6
+* 將 podman-compose 加入到 PATH 環境變量
 
+
+
+NOTE: 使用 Podman 時，安裝 Connector 後請調整 aardvark-dns 服務連接埠（預設：53），避免與主機上的 DNS 連接埠衝突。按照說明配置連接埠。
 
 .步驟
 . 如果主機上已安裝 podman-泊 塢視窗套件、請將其移除。
@@ -721,6 +724,27 @@ chmod +x BlueXP-Connector-Cloud-<version>
 
 +
 -cacert指定用於連接器與Proxy伺服器之間HTTPS存取的CA簽署憑證。只有當您指定 HTTPS Proxy 伺服器或 Proxy 是攔截 Proxy 時、才需要此參數。
+
+. 如果您使用 Podman，則需要調整 aardvark-dns 連接埠。
++
+.. 透過 SSH 連接到 BlueXP Connector 虛擬機器。
+.. 開啟 podman _/usr/share/containers/containers.conf_ 檔案並修改 Aardvark DNS 服務的選定連接埠。例如改為54。
++
+[source, cli]
+----
+vi /usr/share/containers/containers.conf
+...
+# Port to use for dns forwarding daemon with netavark in rootful bridge
+# mode and dns enabled.
+# Using an alternate port might be useful if other DNS services should
+# run on the machine.
+#
+dns_bind_port = 54
+...
+Esc:wq
+----
+.. 重新啟動 Connector 虛擬機器。
+
 
 
 

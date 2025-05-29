@@ -4,7 +4,7 @@ permalink: concept-accounts-aws.html
 keywords: cloud provider accounts, aws, aws accounts, keys, multiple accounts, permission, aws permissions, policy, policies, credentials, marketplace subscription, replace subscription, subscription, amazon 
 summary: 瞭解 BlueXP 如何使用 AWS 認證來代表您執行動作、以及這些認證如何與市場訂閱相關聯。在 BlueXP 中管理一或多個 AWS 帳戶的認證時、瞭解這些詳細資料可能很有幫助。例如、您可能想要瞭解何時將額外的 AWS 認證新增至 BlueXP 。 
 ---
-= 深入瞭解 AWS 認證與權限
+= 了解 BlueXP 中的 AWS 憑證和權限
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

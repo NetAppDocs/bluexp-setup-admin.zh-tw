@@ -2248,9 +2248,6 @@
   <block id="ff45d71e69fb5930de79de7c94326d7b" category="list-text">Volume 快取</block>
   <block id="5bf7ac4937c946ab4eedfb091ffa67ab" category="section-title">連接器必須隨時正常運作</block>
   <block id="5e546ca24430fc2b79e0e409176438c9" category="paragraph">本文件受EULA規範。如果產品未依照文件操作、則產品的功能與操作、以及您在EULA下的權利、可能會受到不利影響。</block>
-  <block id="5d5a04495ebcd46b843dcafaea428460" category="section-title">對 Cloud Volumes ONTAP 的影響</block>
-  <block id="65f052fa67c6645d7ad3edc14e47de13" category="paragraph">連接器是Cloud Volumes ONTAP 健全狀況和運作過程中的關鍵要素。如果連接器電源關閉、Cloud Volumes ONTAP 則在與連接器失去通訊超過14天之後、將停止使用以容量為基礎的BYOL系統。這是因為Connector每天都會在系統上重新整理授權。</block>
-  <block id="b9c53fca7bb84d0455a2b4768b130e38" category="paragraph">如果Cloud Volumes ONTAP 您的系統擁有節點型BYOL授權、系統會在14天後繼續執行、因為授權已安裝在Cloud Volumes ONTAP 該系統上。</block>
   <block id="ff0e00d64f60db5d99e55c6d706306cc" category="section-title">支援的位置</block>
   <block id="6beccc67ff905f7da0b29dece26b0485" category="list-text">Amazon Web Services</block>
   <block id="1668ca1bd914c1d847f23b491319ac91" category="list-text">Microsoft Azure</block>
@@ -3402,10 +3399,6 @@
   <block id="d80ef147e70626ef64e723b33860d715" category="list-text">9.1 至 9.3</block>
   <block id="bd3df16097ce93a7398107a82c38c714" category="list-text">容器協調工具</block>
   <block id="58ee14553c5227edc98c5edc7c7652e1" category="list-text">根據您的作業系統而定、安裝 Connector 之前需要使用 Podman 或 Docker Engine 。</block>
-  <block id="6c92d07ad47ca46a1d54c06516989463" category="list-text">必須啟用並啟動 podman.socket 服務</block>
-  <block id="a9beaf3f1f76b7989733494d5f0683c6" category="list-text">必須安裝 python3</block>
-  <block id="43868fbb689a64ee607e9c7e12ad974b" category="list-text">必須安裝 podman-compose 套件 1.0.6 版</block>
-  <block id="52b91e466535d0b3aeeecf2ff692015c" category="list-text">必須將 podman-compose 新增至 PATH 環境變數</block>
   <block id="105ab5fc478f234922108aa9df08a4ee" category="section-title">步驟 4 ：安裝 Podman 或 Docker Engine</block>
   <block id="539f3f37fd39a23eafb39c20263238f1" category="paragraph">如果您打算手動安裝 Connector 軟體、則需要安裝 Podman 或 Docker Engine 來準備主機。</block>
   <block id="c124e878249e7549657a0f175026b2f9" category="list-text">Red Hat Enterprise Linux 8 和 9 需要 Podman 。</block>
@@ -4832,17 +4825,12 @@
   <block id="2139dd52a52b11dde53f2a9724789c73" category="list-text">支援在 BlueXP  組織的多個資源上指派角色（組織 / 資料夾 / 專案）</block>
   <block id="f16867c24816cbe638e99bd00c5d371b" category="cell">請移至，<block ref="291fbb881b3918f162f476bad9d0c478" category="inline-link-rx"></block>並參閱 3.9.50 和 3.9.49 版隨附的變更。</block>
   <block id="d05e8333cecdf836d5befa221763f3df" category="doc">使用角色來管理使用者對資源的存取</block>
-  <block id="8d6e47c2cba8a87a34c20d42630d03de" category="paragraph">BlueXP  可讓您根據使用者需要執行的工作和地點，將角色指派給使用者。</block>
-  <block id="43f7ba5a95da6743e6d2a613c53f3979" category="paragraph">擁有組織管理員或資料夾或專案管理員角色的使用者有責任指派角色給其他使用者。您可以根據專案或資料夾來指派存取角色。例如，您可以為使用者指派一個專案的勒索軟體保護管理員角色，以及其他專案的 SnapCenter 管理員角色。或者，如果使用者要求特定資料夾內所有專案都具有「分類管理員」角色，您可以在資料夾層級授予他們此存取角色。</block>
   <block id="d4cee7f9299f715f35c592b05a90fcd5" category="paragraph">根據使用者需要執行的特定 BlueXP  工作，使用存取角色來指派儲存資源的存取權。例如，如果 BlueXP  使用者需要與勒索軟體保護服務互動，則必須為他們指定存取角色，包括存取角色所授予之專案的勒索軟體保護服務的檢視或管理權限。</block>
   <block id="5bd93d2f07b4ba6321e2f33614c76585" category="paragraph">根據您的 IAM 策略指派角色給使用者，以增強安全性。BlueXP  IAM 角色旨在確保使用者只能存取所需的內容。</block>
   <block id="9088af3701d0cc1247f7ea61c2e8cc5f" category="inline-link-macro">瞭解如何在 BlueXP  IAM 中使用資料夾和專案來組織資源。</block>
-  <block id="008c625fbd0c2108cc88a6317b2572a8" category="admonition">請記住，您無法直接授予資源。必須先將資源指派給專案。在指派使用者存取權之前，請考慮設定資源階層。<block ref="41b378741b8a64d0f324528fa1890b6f" category="inline-link-macro-rx"></block></block>
   <block id="f178bfd6340a45b4202cfc2ad448263a" category="paragraph">當您將成員新增至 BlueXP  組織時，系統會提示您指派角色給他們。您可以讓成員確認他們目前指派的角色。</block>
   <block id="a0a87a9cfcb0287c5701c8fd542f95f5" category="paragraph">如果您有 _Folder 或專案管理員角色，頁面會顯示組織中的所有成員。不過，您只能檢視和管理您擁有權限的資料夾和專案成員權限。<block ref="c691e2b9b4224ed90bb4f1f11059b372" category="inline-link-macro-rx"></block>。</block>
   <block id="d63f1c66d83451eade374ce0e602a4b4" category="list-text">在表格中，展開您要檢視成員指派角色的組織，資料夾或專案相關列，然後在 * 角色 * 欄中選取 * 檢視 * 。</block>
-  <block id="58bd7e162d519a40f0d8ae550e293a4c" category="section-title">新增存取角色至成員</block>
-  <block id="cfe68ea193af58b89bdd91bea4468531" category="paragraph">一般而言，當您將成員新增至組織時，您會將角色指派給成員。不過，您可以隨時透過移除角色或新增不同角色來更新成員的角色。您可以移除使用者的角色，以移除使用者對專案的存取權。</block>
   <block id="ba364a79f6fbfab0c8591198ecfd87cc" category="paragraph">您可以為使用者指派組織，資料夾或專案的存取角色。</block>
   <block id="a9cc80dbcd1f48accd079ee5c494be43" category="paragraph">成員可以在同一個專案和不同專案中擁有多個角色。例如，較小型的組織可能會將所有可用的存取角色指派給同一位使用者，而較大型的組織則可能會讓使用者在 BlueXP  中執行更多專業工作。或者，您也可以為一位使用者指派組織的勒索軟體投影管理員角色。在此範例中，使用者將能夠在組織內的所有專案上執行勒索軟體保護工作。</block>
   <block id="93bc4c31eeacd2985551a427d417a897" category="paragraph">您的存取角色策略應符合您在 BlueXP  中組織 NetApp 資源的方式。</block>
@@ -4971,7 +4959,6 @@
   <block id="7211199f77a8a73dc960b8a15a019199" category="sidebar">使用角色來控制成員存取資源的權限</block>
   <block id="d5979f6638739f52389534c5a5861979" category="sidebar">BlueXP  設定與管理</block>
   <block id="52ae0ac7aa539174fa20e657c71eddf3" category="paragraph">BlueXP  身分識別與存取管理（ IAM ）包含數個預先定義的角色、您可以在不同的資源階層層級中指派給組織成員。指派這些角色之前、您應該先瞭解每個角色所包含的權限。角色分為下列類別：平台，應用程式和資料服務。</block>
-  <block id="af7aabee58f78d8c3ba27e6b227a45cd" category="paragraph">平台角色是您可以指派給使用者的最廣泛角色，並允許 BlueXP 管理的所有權限，包括指派角色和新增使用者。擁有平台角色的使用者可存取 BlueXP  中的所有資料服務和應用程式。BlueXP  IAM 包含兩個平台角色：組織管理和資料夾或專案管理。兩個 BlueXP  IAM 平台角色的主要差異在於範圍。</block>
   <block id="91ddd20c84fc1e8ded7b005f805d8705" category="cell">建立連接器</block>
   <block id="1963c5def9c98c78ad1a24795d77fd45" category="cell">建立資料夾和專案，包括刪除</block>
   <block id="3e02e95230f791e515adffdd7086123c" category="cell">重新命名現有資料夾和專案</block>
@@ -5034,9 +5021,7 @@
   <block id="3aba2887bff41f744b43940b1b82080a" category="cell">平台角色</block>
   <block id="460874c7c996eb6762b8a5b10ff2d76f" category="cell">職責</block>
   <block id="692fafcb7a4c1881280af40a80baa20d" category="inline-link-macro">組織管理員</block>
-  <block id="35ccbb635b1465432c3a19f88cbf034c" category="cell"><block ref="35ccbb635b1465432c3a19f88cbf034c" category="inline-link-macro-rx"></block></block>
   <block id="6d67156c2e45db37cd67283f29d6768d" category="cell">允許使用者不受限制地存取組織內的所有專案和資料夾，將成員新增至任何專案或資料夾，以及執行任何 BlueXP  工作和使用任何資料服務。擔任此角色的使用者必須負責組織及管理整個 BlueXP  環境。他們可以建立資料夾和專案，指派角色，以及將使用者新增至任何專案或資料夾。他們也可以管理組織內的所有工作環境。這是唯一可以建立 Connectors 的存取角色。</block>
-  <block id="7f2befb18aac1f714ed732d436d27957" category="cell"><block ref="7f2befb18aac1f714ed732d436d27957" category="inline-link-macro-rx"></block></block>
   <block id="62263858ac3fcc39efab4f2c55c4b609" category="cell">允許使用者不受限制地存取指派給他們的特定專案和資料夾。可以將成員新增至他們管理的資料夾或專案，以及執行任何 BlueXP  工作，並在指派給他們的資料夾或專案中，對資源使用任何資料服務或應用程式。資料夾或專案管理員角色無法建立 Connectors 。</block>
   <block id="ee1afb77ea65d6282a6b2db5ef1c9599" category="cell">應用程式角色</block>
   <block id="ff7835459affd6ea09ace7258f1ea831" category="cell">具有 Keystone 管理員角色的使用者可以建立服務要求。可讓使用者監控及檢視他們正在存取的 Keystone 租用戶內的使用量，資產和管理資訊。</block>
@@ -5046,13 +5031,10 @@
   <block id="f9e4f3681d11897d8d94c7430ef166b2" category="cell">資料服務角色</block>
   <block id="64ed34c845e9e3ebe96d95642bd80c2c" category="cell">分類管理</block>
   <block id="951e833c91b111e3d8854609f6e22cd0" category="cell">提供檢視 BlueXP  分類掃描結果的能力。分類沒有檢視者角色。擁有此角色的使用者可以檢視法規遵循資訊，並針對擁有存取權限的資源產生報告。這些使用者無法啟用或停用掃描磁碟區、儲存區或資料庫架構。</block>
-  <block id="d9662380e44d74fee971f8bcdbb998ba" category="cell"><block ref="d9662380e44d74fee971f8bcdbb998ba" category="inline-link-macro-rx"></block></block>
   <block id="83dcec25bcd459aaca6d3bde03c5731a" category="cell">在勒索軟體保護服務的「保護」，「警示」，「恢復」，「設定」和「報告」索引標籤上管理動作。</block>
-  <block id="61e1bc1deec24a3ec686d90d9df2cf23" category="cell"><block ref="61e1bc1deec24a3ec686d90d9df2cf23" category="inline-link-macro-rx"></block></block>
   <block id="c449660979799948a46372470a0eddb9" category="cell">在勒索軟體保護服務中檢視工作負載資料，檢視警示資料，下載恢復資料及下載報告。</block>
   <block id="7da7bcb3da6129c11bc8f0544e81beb1" category="paragraph">提供從內部部署 ONTAP 叢集備份快照的功能、使用應用程式的 BlueXP  備份與還原功能。擁有此角色的成員可在 BlueXP  中完成下列動作：</block>
   <block id="720f5754e0beaeec96d607861fcee6d3" category="doc">BlueXP  的勒索軟體保護存取角色</block>
-  <block id="47ecf80e12db1325b5156ff3a7d35b15" category="paragraph">勒索軟體角色的設計旨在提供對勒索軟體保護服務的存取。使用者可以指派管理角色，讓他們在勒索軟體保護中採取行動，或是只要他們有監控責任，就指派檢視者角色。這兩個角色分別是勒索軟體保護管理員和勒索軟體保護檢視器。這兩種角色的主要差異在於他們在勒索軟體保護方面可以採取的行動。</block>
   <block id="318302fa87b47b527d51268d94db7ea6" category="doc">BlueXP  的儲存存取角色</block>
   <block id="53105795a2d166c0331ae09564295071" category="paragraph">您可以將下列角色指派給使用者，讓他們存取 BlueXP  中與支援儲存資源相關的儲存管理功能。使用者可以指派管理角色，讓他們在儲存管理中採取行動，或是只要他們有監控責任，就指派檢視者角色。</block>
   <block id="09e3c84fe1afd5eaa9fc94f8638d3695" category="paragraph">儲存角色可指派給使用者，以取得下列儲存資源和功能：</block>
@@ -5097,16 +5079,60 @@
   <block id="27f3006d10a705c76accae9904ea16cd" category="cell">可輸入認證</block>
   <block id="3a8e375f86c81e7b283b9ee0db531e4d" category="cell">*認證*</block>
   <block id="1dc9c22149f4c0ef8e2fc6c49159dc73" category="cell">使用者認證</block>
-  <block id="6cf4eb09d2134609121513a507415999" category="doc">管理與 git BlueXP  相關聯的 NSS 認證</block>
   <block id="e48502083eb8949c8f65b2ccddd5adec" category="section-title">2025 年 12 月 5 日</block>
   <block id="5f04b1505df8c3795b59e8cd4a8e01e3" category="sidebar">瞭解 BlueXP  存取角色</block>
   <block id="35cbd88f43ce85ef7ed6866daa2c6066" category="sidebar">資料服務角色</block>
   <block id="0310ff69ee2ad8b9fa1fbf2f23946a8e" category="sidebar">勒索軟體保護角色</block>
-  <block id="fae8f53075db25f03200e0538d6a6e22" category="cell"><block ref="fae8f53075db25f03200e0538d6a6e22" category="inline-link-macro-rx"></block></block>
-  <block id="46956ceeec4262cb23c44eb7922de7ec" category="cell"><block ref="46956ceeec4262cb23c44eb7922de7ec" category="inline-link-macro-rx"></block></block>
   <block id="fa5213b8e2ea77f3b22ea8b2e36d85b8" category="cell">具有 Keystone 檢視器角色的使用者無法建立服務要求。可讓使用者監控及檢視他們正在存取的 Keystone 租用戶內的使用量，資產和管理資訊。</block>
   <block id="7dd4f26252edc5554ac1671370b55f2e" category="section-title">Connector 下載的安全端點現在支援備份與還原，以及勒索軟體保護</block>
   <block id="fa3ad4e82d26203dad8cb93a91e5c448" category="inline-link-macro">瞭解 Connector 下載的安全端點。</block>
   <block id="65a207edfe2ea4576ceb53eb1d7a6caa" category="paragraph">如果您使用備份與還原或勒索軟體保護，現在可以使用安全端點進行 Connector 下載。 <block ref="037b27fad48ee4136808e628650ebfff" category="inline-link-macro-rx"></block></block>
   <block id="299e5505ce975112afaefec130cc83e0" category="paragraph">7.9</block>
+  <block id="4d286ab7c41699ac1c0222a6a25c8ee6" category="list-text">如果您使用 Podman，則需要調整 aardvark-dns 連接埠。</block>
+  <block id="6d6b1f0f1080ec2381bb912afda46e99" category="list-text">透過 SSH 連接到 BlueXP Connector 虛擬機器。</block>
+  <block id="dbd4c3db8125866be9bb5a796f445d43" category="list-text">開啟 podman _/usr/share/containers/containers.conf_ 檔案並修改 Aardvark DNS 服務的選定連接埠。例如改為54。</block>
+  <block id="c64d59ca306ac51dc7b163258cb6505c" category="list-text">重新啟動 Connector 虛擬機器。</block>
+  <block id="98ddd266a82e7cfd3a24eb45842bec48" category="list-text">啟用並啟動 podman.socket 服務</block>
+  <block id="402a934d05f32752831bc2ed8043fb03" category="list-text">安裝 python3</block>
+  <block id="e7655ce2e211e4106a4d229011bca18b" category="list-text">安裝 podman-compose 軟體套件版本 1.0.6</block>
+  <block id="a50a451f2ba0bc5a53f19d6887c717e4" category="list-text">將 podman-compose 加入到 PATH 環境變量</block>
+  <block id="18a986f7c2b60d8720ae30a7dcf4925a" category="admonition">使用 Podman 時，安裝 Connector 後請調整 aardvark-dns 服務連接埠（預設：53），避免與主機上的 DNS 連接埠衝突。按照說明配置連接埠。</block>
+  <block id="1cb98a955a2cc6db0fd659024f067adb" category="paragraph">當連接器不合規或停機超過 14 天時，Cloud Volumes ONTAP 節點不再關閉。當 Cloud Volumes ONTAP 失去對連接器的存取權限時，它仍會發送事件管理訊息。此變更是為了確保即使連接器長時間處於停機狀態，Cloud Volumes ONTAP 仍可繼續運作。它不會改變連接器的合規性要求。</block>
+  <block id="b2a4dd9da503b6b927d0278084e6ea56" category="section-title">新的儲存管理角色</block>
+  <block id="bf593570fbef026982251facf0c215e1" category="paragraph">儲存管理員、系統健康專家和儲存檢視器角色可用，可以指派給使用者。</block>
+  <block id="9e8f8caceb21ce13b88d4160e465e2a5" category="paragraph">這些角色使您能夠管理組織中的誰可以發現和管理儲存資源，以及查看儲存健康資訊和執行軟體更新。</block>
+  <block id="1640c7bcb4a85ded2f136361a51dd52e" category="paragraph">這些角色支援控制對以下儲存資源的存取：</block>
+  <block id="d0a39c85bb5fdaacac18ed6c4e5b511f" category="list-text">內部部署ONTAP 的作業系統</block>
+  <block id="b80ffca4d1f83e77193d4613c9044556" category="paragraph">您也可以使用這些角色來控制對下列 BlueXP 服務的存取：</block>
+  <block id="a594a24eac9dea3cdb34c6d3c35b39a6" category="paragraph">已新增以下角色：</block>
+  <block id="98d63ffef525e1f04dd3ec407ff57b30" category="list-text">*存儲管理員*</block>
+  <block id="f1aeec4f24299e314aab97d634337c25" category="paragraph">管理組織內儲存資源的儲存健康、治理和發現。該角色還可以對儲存資源執行軟體更新。</block>
+  <block id="24bae3be890c130e5ac1c22d16f741bd" category="list-text">*系統健康專家*</block>
+  <block id="3886b56eea2fe550b4e6b51dc07a1911" category="paragraph">管理組織內儲存資源的儲存健康和治理。該角色還可以對儲存資源執行軟體更新。此角色不能修改或刪除工作環境。</block>
+  <block id="4172ddc56d4e9fa18f3ae18bdb0184b5" category="list-text">*儲存檢視器*</block>
+  <block id="c4bd9bd2263d800e3d498cc0849de57f" category="paragraph">查看儲存健康資訊和治理資料。</block>
+  <block id="91fc3f2bc4cd3f1898449b6955a5b0dc" category="doc">了解 BlueXP 中的 AWS 憑證和權限</block>
+  <block id="7de6afef390d0c27101fd5599a80c841" category="doc">了解 BlueXP 中的 Azure 憑證和權限</block>
+  <block id="03254909de451d9aa06c90615a3da4c3" category="paragraph">平台角色是您可以指派給使用者的最廣泛角色，並允許 BlueXP 管理的所有權限，包括指派角色和新增使用者。擁有平台角色的使用者可存取 BlueXP  中的所有資料服務和應用程式。BlueXP IAM 包含兩個平台角色：組織管理員和資料夾或專案管理員。兩個 BlueXP  IAM 平台角色的主要差異在於範圍。</block>
+  <block id="3ef1691185c3215cee725eacc5ae60e1" category="cell"><block ref="3ef1691185c3215cee725eacc5ae60e1" category="inline-link-macro-rx"></block></block>
+  <block id="92d4c119f475b9887b30ea36f68501b4" category="cell"><block ref="92d4c119f475b9887b30ea36f68501b4" category="inline-link-macro-rx"></block></block>
+  <block id="cfc1bf581403883b7597ea57212f92d0" category="cell"><block ref="cfc1bf581403883b7597ea57212f92d0" category="inline-link-macro-rx"></block></block>
+  <block id="eee920c46940781b9236f383eb481644" category="cell"><block ref="eee920c46940781b9236f383eb481644" category="inline-link-macro-rx"></block></block>
+  <block id="1a137246f35bc1bb21510edbe9caad21" category="cell"><block ref="1a137246f35bc1bb21510edbe9caad21" category="inline-link-macro-rx"></block></block>
+  <block id="2c0951a9d6b056c060a4c61f7f245bf2" category="cell">管理儲存健全狀況和治理功能，探索儲存資源，以及修改和刪除現有工作環境。</block>
+  <block id="59f722e254214ae7991868e178f8311d" category="cell"><block ref="59f722e254214ae7991868e178f8311d" category="inline-link-macro-rx"></block></block>
+  <block id="7276a8e39254ac9c35a2e44a3d09f7ef" category="cell">檢視儲存健全狀況和治理功能，以及檢視先前探索到的儲存資源。無法探索，修改或刪除現有的儲存工作環境。</block>
+  <block id="92c9978d93758d2c0ddea09cb5842e0f" category="cell"><block ref="92c9978d93758d2c0ddea09cb5842e0f" category="inline-link-macro-rx"></block></block>
+  <block id="b37ec767ea432f9cebcfa9e86d16aebd" category="cell">管理儲存，健全狀況和治理功能，儲存管理員的所有權限，但無法修改或刪除現有的工作環境。</block>
+  <block id="a7ea070f0a66aea7597cf3f5e4e8e58b" category="cell"><block ref="a7ea070f0a66aea7597cf3f5e4e8e58b" category="inline-link-macro-rx"></block></block>
+  <block id="dfab73175d9a922a1fe643936c1f54e4" category="cell"><block ref="dfab73175d9a922a1fe643936c1f54e4" category="inline-link-macro-rx"></block></block>
+  <block id="833e00f31e416ca14991170252d67cec" category="paragraph">勒索軟體角色為使用者提供存取勒索軟體保護服務的權限。可以為使用者指派管理角色，這使他們能夠在勒索軟體保護中採取行動，或者如果他們只具有監控職責，則可以為使用者指派查看者角色。這兩個角色分別是勒索軟體保護管理員和勒索軟體保護檢視器。這兩種角色的主要差異在於他們在勒索軟體保護方面可以採取的行動。</block>
+  <block id="bf4e3f1e6e25cc18b8667c6b66e7fdec" category="admonition">BlueXP 合作夥伴 API 不提供這些角色。</block>
+  <block id="186343db38833a48df757e694e69337d" category="doc">管理與 BlueXP  相關的 NSS 認證</block>
+  <block id="deb39e59109a0390d9ded9ebca0fafc9" category="paragraph">在 BlueXP 中，您可以根據使用者需要做什麼以及在哪裡為使用者指派角色。</block>
+  <block id="cac6061c847908899813ed3b8a218b9a" category="paragraph">具有*組織管理員*或*資料夾或專案管理員*角色的使用者有責任將角色指派給其他使用者。您可以根據專案或資料夾來指派存取角色。例如，您可以為使用者指派一個專案的勒索軟體保護管理員角色，以及其他專案的 SnapCenter 管理員角色。或者，如果使用者要求特定資料夾內所有專案都具有「分類管理員」角色，您可以在資料夾層級授予他們此存取角色。</block>
+  <block id="40f8b3f803da288fde0e62e0282c00f7" category="admonition">請記住，您不能直接授予對資源的存取權限。必須先將資源指派給專案。在指派使用者存取權之前，請考慮設定資源階層。<block ref="41b378741b8a64d0f324528fa1890b6f" category="inline-link-macro-rx"></block></block>
+  <block id="12815307393fa19648b391d49b4282e4" category="section-title">為成員新增存取角色</block>
+  <block id="e1c2f7c4dfacd1ec651c2d8a7b88a182" category="paragraph">一般而言，當您將成員新增至組織時，您會將角色指派給成員。但是，您可以隨時透過刪除角色或新增其他角色來更新成員的角色。您可以移除使用者的角色，以移除使用者對專案的存取權。</block>
+  <block id="7654fe6ca44295ba5f844fc9798f0103" category="sidebar">儲存角色</block>
 </blocks>

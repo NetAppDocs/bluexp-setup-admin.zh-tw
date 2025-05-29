@@ -94,14 +94,6 @@ https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["�
 
 
 
-=== 對 Cloud Volumes ONTAP 的影響
-
-連接器是Cloud Volumes ONTAP 健全狀況和運作過程中的關鍵要素。如果連接器電源關閉、Cloud Volumes ONTAP 則在與連接器失去通訊超過14天之後、將停止使用以容量為基礎的BYOL系統。這是因為Connector每天都會在系統上重新整理授權。
-
-如果Cloud Volumes ONTAP 您的系統擁有節點型BYOL授權、系統會在14天後繼續執行、因為授權已安裝在Cloud Volumes ONTAP 該系統上。
-
-
-
 == 支援的位置
 
 下列位置支援連接器：

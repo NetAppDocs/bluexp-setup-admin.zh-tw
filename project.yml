@@ -139,6 +139,8 @@ sidebar:
           entries:
           - title: Keystone 角色
             url: "/reference-iam-keystone-roles.html"
+          - title: 儲存角色
+            url: "/reference-iam-storage.roles.html"
         - title: 資料服務角色
           entries:
           - title: 勒索軟體保護角色
