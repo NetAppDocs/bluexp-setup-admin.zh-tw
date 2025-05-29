@@ -859,7 +859,6 @@
   <block id="a5cd95b551d8bf545c63c76c6fb91786" category="paragraph">對於內部部署、您無法設定 Connector 的託管身分識別、但可以使用服務主體來提供權限。</block>
   <block id="53c512e9599c71e1a585d636a5229820" category="list-text">標準模式</block>
   <block id="4275ae61422c34253a59329bd20a0449" category="inline-link-macro">設定 Azure 權限</block>
-  <block id="12f7970cff397ea2f0846f3904f8e00f" category="inline-link-macro">設定內部部署的雲端權限</block>
   <block id="07999df8a3fec91dcf6daa7e52777cc7" category="list-text"><block ref="07999df8a3fec91dcf6daa7e52777cc7" category="inline-link-macro-rx"></block></block>
   <block id="62bd7572081df25dd3f1f52151883c4a" category="inline-link-macro">瞭解 BlueXP 部署模式</block>
   <block id="d8c1ee023ea7a4705048e3464cfcb854" category="list-text"><block ref="d8c1ee023ea7a4705048e3464cfcb854" category="inline-link-macro-rx"></block></block>
@@ -1243,7 +1242,6 @@
   <block id="025a22cb479bbf0e83048a4ae6ffaaa0" category="paragraph">在前兩個選項中、BlueXP會使用AWS安全性權杖服務來取得持續循環的暫用認證資料。此程序是最佳實務做法、它是自動且安全的。</block>
   <block id="f265ab1711375ae7a7a4e8594c5e1395" category="paragraph">如果您為BlueXP提供AWS存取金鑰、您應該定期在BlueXP中更新金鑰、以旋轉金鑰。這是完全手動的程序。</block>
   <block id="ccd2fd61b259ee660f0c8a22d4d70882" category="summary">當 Connector 手動安裝在內部部署 Linux 主機上時、會使用傳入連接埠。您可能需要參考這些連接埠以進行規劃。</block>
-  <block id="e3d41d6e94475edc27ad068b42448e0e" category="doc">內部連接器的連接埠</block>
   <block id="5f8de67c0199ff42bf6b781ec98f1ce8" category="paragraph">當 Connector 手動安裝在內部部署 Linux 主機上時、 Connector 會使用 _inbound 連接埠。您可能需要參考這些連接埠以進行規劃。</block>
   <block id="12d823193ac650eb174ac6e076ca93b8" category="paragraph">這些輸入規則適用於所有 BlueXP 部署模式。</block>
   <block id="888a77f5ac0748b6c8001822417df8b6" category="cell">傳輸協定</block>
@@ -1295,7 +1293,6 @@
   <block id="83e566847d42782b3343e108150d7f57" category="section-title">連接器限制</block>
   <block id="911d15b7ac55478d2b567e8488658687" category="section-title">可能與172範圍內的IP位址發生衝突</block>
   <block id="efdb2123102821583a0af000d2fa9040" category="paragraph">BlueXP部署連接器時、會有兩個介面、其中IP位址介於172.17.0.0/16和172.18.0.0/16範圍內。</block>
-  <block id="5646658d58bb92ba775a6c2cd024ef17" category="paragraph">如果您的網路已設定具有上述任一範圍的子網路、則可能會遇到來自BlueXP的連線故障。例如ONTAP 、在BlueXP中探索內部的功能不全的叢集可能會失敗。</block>
   <block id="4195cd5f5be4f9f1f03edcb9e48c9b07" category="inline-link-macro">BlueXP Connector IP與現有網路衝突</block>
   <block id="290b978e42f71f7d091ff656795a223e" category="paragraph">請參閱知識庫文章 <block ref="ec3dc3610ab92c8939c1af12267841a7" category="inline-link-macro-rx"></block> 如需如何變更連接器介面的IP位址的指示。</block>
   <block id="1bc21092e961975ea4123f4414693f69" category="section-title">不支援SSL解密</block>
@@ -1366,10 +1363,7 @@
   <block id="4e46804b204e02c9bd12cc6d7232cca6" category="list-text">您現在可以在建立支援案例或更新現有支援案例的案例備註時上傳附件。</block>
   <block id="72c3a2be47cc6617cea246e89af67993" category="inline-link">瞭解如何建立及管理支援案例</block>
   <block id="e076d1de7062df2857bf544f4a4aa82d" category="paragraph"><block ref="c7a2ab7c05c0b984c7e95e609cb46e34" category="inline-link-rx"></block>。</block>
-  <block id="1765dff10197df4bf080f41e5537f2a5" category="list-text">此版本的Connector也包含Cloud Volumes ONTAP 了加強功能的功能、以及內部ONTAP 的叢集增強功能。</block>
   <block id="55a6750574b4447541f67bb4e01cab9a" category="list-text"><block ref="55a6750574b4447541f67bb4e01cab9a" category="inline-link-rx"></block></block>
-  <block id="6ff2a7981cc8a7efd758e8ffec4cc69e" category="inline-link">深入瞭ONTAP 解內部叢集增強功能</block>
-  <block id="6ee17626d7e1b5c782c10c267de6f85c" category="list-text"><block ref="6ee17626d7e1b5c782c10c267de6f85c" category="inline-link-rx"></block></block>
   <block id="ce47c670900f3fe8347a2fc95ff710d8" category="list-text">現在可在BlueXP主控台中搜尋。此時、您可以使用搜尋來尋找BlueXP服務和功能。</block>
   <block id="da1115c120e230094c1f271ddc8b2faa" category="paragraph"><block ref="da1115c120e230094c1f271ddc8b2faa" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a48a6aaa99b4cf4a4e641c293de897fa" category="inline-link">瞭解如何管理您的支援案例</block>
@@ -1415,7 +1409,6 @@
   <block id="609db1dbd04bb2ee742cb4078546018c" category="list-text">我們已將BlueXP主控台的URL更新為<block ref="d4d03fd3c2a1ab003ebd5cf52ee8df58" category="inline-link-rx"></block></block>
   <block id="4a11791a9bd4070a9cb5e2e709d06351" category="list-text">Google Cloud Israel地區現在支援Connector。</block>
   <block id="b48a790ba42e24d7c2c6394ead9c61e4" category="list-text"><block ref="b48a790ba42e24d7c2c6394ead9c61e4" category="inline-link-rx"></block></block>
-  <block id="e88218c7954191edd5ee25a2260fe7c2" category="list-text"><block ref="e88218c7954191edd5ee25a2260fe7c2" category="inline-link-rx"></block></block>
   <block id="c35e844c4a277ceb06b238910d3b86e7" category="list-text">您的 PAYGO 訂閱和 BlueXP 年度合約現在可從數位錢包中檢視及管理。</block>
   <block id="949b19dd7e9f6496c1125f7166270450" category="inline-link">瞭解如何管理您的訂閱</block>
   <block id="a36a7ffe5c1160531a9a2bc1012be15f" category="paragraph"><block ref="a36a7ffe5c1160531a9a2bc1012be15f" category="inline-link-rx"></block></block>
@@ -1461,7 +1454,6 @@
   <block id="fb9fefdc512037af8c4c1f84c436bd8e" category="list-text">現在AWS雅加達地區（ap東南3區）支援Connector。</block>
   <block id="49ed7ab586a5135eae3ee7b3aea2ae20" category="list-text">現在Azure Brazil東南地區支援Connector。</block>
   <block id="046fc05000d85b784cc7466da1c65e32" category="list-text"><block ref="046fc05000d85b784cc7466da1c65e32" category="inline-link-rx"></block></block>
-  <block id="e9917715e557501b320f321479432f1b" category="list-text"><block ref="e9917715e557501b320f321479432f1b" category="inline-link-rx"></block></block>
   <block id="8156333613ef46e2aeaf70650af07b00" category="paragraph">我們更新了Connector、推出錯誤修正。最值得注意的是Cloud Volumes ONTAP 、當Connector位於共享VPC時、會影響到Google Cloud中的功能不均部署。</block>
   <block id="b11df59ba05c25c3a8734d54b7501ae7" category="list-text">德里（亞洲-南2）</block>
   <block id="68fb6cfeb81e52feef062b88d7037b7e" category="list-text">墨爾本（澳洲-蘇特斯塔2）</block>
@@ -1605,8 +1597,6 @@
   <block id="fced466a309d5f02b614e19af9c50a3a" category="paragraph">如需協助、請參閱下列文件：</block>
   <block id="c5fbee6586294d81141f8dd158707985" category="inline-link">探索內部部署ONTAP 的叢集</block>
   <block id="f19b6baefd30f42b716828a3ce67d843" category="list-text"><block ref="f19b6baefd30f42b716828a3ce67d843" category="inline-link-rx"></block></block>
-  <block id="36eb10a8720e9fc3cc595882ff021ccf" category="inline-link">使用 BlueXP 分類掃描內部部署 ONTAP Volume 資料</block>
-  <block id="eb14ba8446024f1dd902949682a561b2" category="list-text"><block ref="eb14ba8446024f1dd902949682a561b2" category="inline-link-rx"></block></block>
   <block id="2fc22405cb36e8596d9bdb7b52cbf10c" category="summary">您可能想要在部署連接器之前、或是需要疑難排解任何問題時、先深入瞭解連接器。</block>
   <block id="6e8114a6676a5923599d8d78479d23d8" category="doc">Connector 的預設組態</block>
   <block id="ebed13b527202f35f3ec91ab58b5a4c2" category="paragraph">您可能想要在部署 Connector 之前、或是需要疑難排解任何問題時、深入瞭解 Connector 的組態。</block>
@@ -1716,7 +1706,6 @@
   <block id="6a5be3e06b444aea04beccda3bc9e1d6" category="list-text">從 Linux 主機執行解除安裝指令碼：</block>
   <block id="0bb43692ecd0352eecc69c235e34d6f0" category="paragraph">_silon_ 執行指令碼時不會提示您確認。</block>
   <block id="c89064bda3f1ae133a231f5b1f44c3b0" category="list-text">從Linux主機執行下列命令：</block>
-  <block id="111374538bcb0d5c90baaab097278e39" category="doc">設定內部網路</block>
   <block id="8efafb8ae5af62e571308cca0bdcb4f0" category="paragraph">當您在自己的 Linux 主機上手動安裝 Connector 時、 Connector 的安裝程式需要在安裝過程中存取下列 URL ：</block>
   <block id="068395f3cd26ca40ad905de3790c9435" category="cell">管理Azure公共區域的資源。</block>
   <block id="232055d452a21264f8d549e50d695b18" category="cell">管理Azure中國地區的資源。</block>
@@ -2237,8 +2226,6 @@
   <block id="dd37176246e6abf3e559086afcadce82" category="paragraph">在幾乎所有情況下、您都可以在沒有 Connector 的情況下、將授權新增至數位錢包。</block>
   <block id="184e70c253a2ad370c338775e7482497" category="list-text">直接探索內部部署ONTAP 的叢集</block>
   <block id="ef67c5eab6f3bfee1596c3f8734a88c7" category="paragraph">雖然不需要連接器即可直接探索內部部署ONTAP 的叢集、但如果您想要使用更多的BlueXP功能、則需要連接器。</block>
-  <block id="eec3baeb5aa60415324495790bc2f136" category="inline-link">深入瞭解內部ONTAP 部署的叢集探索與管理選項</block>
-  <block id="dc4523bb6eb17a07ae9db37489829969" category="paragraph"><block ref="dc4523bb6eb17a07ae9db37489829969" category="inline-link-rx"></block></block>
   <block id="098ba24e143dd197f509e41083f0103e" category="section-title">需要連接器時</block>
   <block id="234eb6bb27d592cbf06aa6537a33a380" category="list-text">Amazon FSX提供ONTAP 功能完善的管理功能</block>
   <block id="d79294e72dc3584cc12c98a7a931315d" category="list-text">Amazon S3儲存設備</block>
@@ -2247,7 +2234,6 @@
   <block id="9fc1f8c97e791c3c5fa11f21f2c02740" category="list-text">內部部署ONTAP 的不支援叢集整合至BlueXP資料服務</block>
   <block id="ff45d71e69fb5930de79de7c94326d7b" category="list-text">Volume 快取</block>
   <block id="5bf7ac4937c946ab4eedfb091ffa67ab" category="section-title">連接器必須隨時正常運作</block>
-  <block id="5e546ca24430fc2b79e0e409176438c9" category="paragraph">本文件受EULA規範。如果產品未依照文件操作、則產品的功能與操作、以及您在EULA下的權利、可能會受到不利影響。</block>
   <block id="ff0e00d64f60db5d99e55c6d706306cc" category="section-title">支援的位置</block>
   <block id="6beccc67ff905f7da0b29dece26b0485" category="list-text">Amazon Web Services</block>
   <block id="1668ca1bd914c1d847f23b491319ac91" category="list-text">Microsoft Azure</block>
@@ -2255,7 +2241,6 @@
   <block id="695e0a47c56539eb9bcf6290d1c797d8" category="list-text">在您的內部環境中</block>
   <block id="11cac4cf4114aafe53015559291d52ce" category="paragraph">若要在受限模式或私有模式下使用 BlueXP 、請先安裝 Connector 、然後存取在 Connector 本機上執行的使用者介面、以開始使用 BlueXP 。</block>
   <block id="31f2b2cbba0d986ad6ce5bec030a9de1" category="paragraph"><block ref="d8c1ee023ea7a4705048e3464cfcb854" category="inline-link-macro-rx"></block>。</block>
-  <block id="fa1f9e92f4f0aa51cba859b2dbc37a02" category="section-title">如何建立連接器</block>
   <block id="d08ccf52b4cdd08e41cfb99ec42e0b29" category="section-title">權限</block>
   <block id="11fde693c59aa81cdd27bb562b84f44b" category="paragraph">直接從 BlueXP 建立 Connector 需要特定權限、而 Connector 執行個體本身則需要另一組權限。如果您直接從 BlueXP 在 AWS 或 Azure 中建立 Connector 、則 BlueXP 會建立具有所需權限的 Connector 。</block>
   <block id="338a6f193e9988b8f40b3128d5e4ffb7" category="inline-link-macro">瞭解Connector如何使用AWS權限</block>
@@ -2266,7 +2251,6 @@
   <block id="e3ab4c013397e346e8f211ff03ac44b2" category="list-text"><block ref="e3ab4c013397e346e8f211ff03ac44b2" category="inline-link-macro-rx"></block></block>
   <block id="538fc0c04ce8a0ef5cf78a12dbe8f68a" category="section-title">連接器升級</block>
   <block id="2162bc1fbb13d2539c146b3472921eb5" category="paragraph"><block ref="7270aabdb0c26b6b937d76a49fcda623" category="inline-xref-macro-rx"></block>。</block>
-  <block id="aa043b4c9a6fa32b0f3811520156579a" category="list-text">您擁有多雲端環境（例如 AWS 和 Azure ）、偏好在 AWS 中安裝一個 Connector 、在 Azure 中安裝另一個 Connector 。每個系統都能管理 Cloud Volumes ONTAP 在這些環境中執行的不實系統。</block>
   <block id="645a84975202e30700b572b49a5ee29d" category="section-title">災難恢復</block>
   <block id="9702ba80b5da1f1cf46d6eb4c043a20a" category="paragraph">您可以同時使用多個連接器來管理工作環境、以便進行災難恢復。如果一個連接器故障、您可以切換至另一個連接器、立即管理工作環境。</block>
   <block id="fc08f20f6fe5ef74616fbc4c310758ef" category="list-text">探索現有的工作環境。</block>
@@ -2442,9 +2426,6 @@
   <block id="0a44fe605745a017fde35750e5fae36a" category="paragraph">受限模式的政府地區支援。不支援商業區域或採用限制模式的主權區域。</block>
   <block id="8adfa152daa2970174717fd5e24151b2" category="cell">您可以將數位錢包搭配下列受限模式的支援授權選項一起使用。</block>
   <block id="6c253a8aff5dfa835a77545b3006abc8" category="cell">內部部署 ONTAP 的叢集</block>
-  <block id="2bd6e3220a2a60e7217c63bc76d9f73c" category="cell">支援使用 Connector 進行探索、以及不使用 Connector （直接探索）進行探索。
-
-當您發現內部叢集有 Connector 時、就不支援進階檢視（ System Manager ）。</block>
   <block id="c26e19b0ab82c81e1df83e4f6d44e6af" category="list-text">受限模式支援下列授權選項：</block>
   <block id="b012b5d8eb383d0a82055699469c06d6" category="list-text">市場訂閱（每小時和每年合約）</block>
   <block id="7fe4c05710aa3ce341a005ab26b2dfdf" category="list-text">對於 Cloud Volumes ONTAP 、僅支援容量型授權。</block>
@@ -2469,7 +2450,6 @@
   <block id="71fa0def55e8ba28f8cea8204dcaaf4f" category="cell">需要從雲端（安裝 Connector 的位置）連線至內部環境。
 
 不支援不含 Connector 的探索（直接探索）。</block>
-  <block id="99f9fe7adce4b6282eee924da977b6d4" category="list-text">內部部署中支援的 BlueXP 服務</block>
   <block id="614a24e7adcef9d83ca4454cd4443cbd" category="list-text">當 Connector 安裝在內部部署上時、 BlueXP 支援下列具有私有模式的儲存和資料服務：</block>
   <block id="53a7caecec393fdcc143318b6a21f701" category="list-text">唯一支援的資料來源是您可以在本機探索的資料來源。</block>
   <block id="ad85db404f0dfc2267b348299aa513b9" category="inline-link">檢視您可以在本機探索的來源</block>
@@ -2494,7 +2474,6 @@
   <block id="270fcb785810d0206945029bb05f4e97" category="cell">Amazon S3</block>
   <block id="52745271323ee9ea30e3a37d0338d118" category="cell">Azure Blob</block>
   <block id="833c2c211a541e50ad94433664e4b5c1" category="cell">Google Cloud Storage</block>
-  <block id="d0f1687c68ee0f0d9bac765716d18923" category="cell">內部 ONTAP 部署的叢集</block>
   <block id="4a17f9505c41e2b9d2fdf8e21809e428" category="cell">E系列</block>
   <block id="392d70ca39f31f10bd637936769788df" category="cell">StorageGRID</block>
   <block id="1376d64de9953f470f0708fc6e330334" category="cell">*服務*</block>
@@ -2655,7 +2634,6 @@
   <block id="dc5b71cece1f13a67fc01472a59d8781" category="inline-link">CMEK 的權限</block>
   <block id="73206ed184feb2313c9f626b7f266208" category="list-text"><block ref="73206ed184feb2313c9f626b7f266208" category="inline-link-rx"></block></block>
   <block id="6e9436752850e460930666efdaf1e025" category="cell">將內部部署的 ONTAP 叢集備份至 Google Cloud</block>
-  <block id="c37ee52df9a55f654f757f6a622c2ab8" category="cell">使用 BlueXP 備份與還原備份內部部署 ONTAP 叢集時、您需要新增 Connector 的權限、才能使用「搜尋與還原」功能。</block>
   <block id="072b4c796b4a06820f943c41d4da3162" category="cell"><block ref="6a045f48523c0716d40c678a68c87636" category="inline-link-rx"></block></block>
   <block id="045416b62d2dbcb0a3156290bfb14bc5" category="paragraph">除了這些端點之外、您還需要確保 Connector 具備對外網際網路存取權、以便聯絡特定端點、以進行日常作業。您可以依照下一節中的連結、找到這些端點的清單。</block>
   <block id="33afe8d49ba0b54b76d44e7f5b190b53" category="section-title">為 BlueXP 服務做好網路準備</block>
@@ -2700,7 +2678,6 @@
   <block id="23822bdcf5039c31a637229d8ca51ffa" category="paragraph"><block ref="23822bdcf5039c31a637229d8ca51ffa" category="inline-link-rx"></block></block>
   <block id="d00604985bd7a191952bde8a0cec39fd" category="paragraph">請注意、您也可以從時間軸頁面上的 BlueXP 使用者介面存取此連結。</block>
   <block id="23c565330e0f5d82619b18108f5a32ca" category="list-text"><block ref="23c565330e0f5d82619b18108f5a32ca" category="inline-link-rx"></block></block>
-  <block id="405527e38d3c42926031f86b50d381d4" category="list-text"><block ref="405527e38d3c42926031f86b50d381d4" category="inline-link-rx"></block></block>
   <block id="b5163cd43881e34d9478fc7e00e66e62" category="list-text">在*登入*頁面上、系統現在會提示您輸入與登入相關的電子郵件地址。選擇 * 下一步 * 後、 BlueXP 會提示您使用與登入相關的驗證方法進行驗證：</block>
   <block id="3de985fb980dfcce5f5196709e3e62ce" category="list-text">選取 * 原則 &gt; 建立原則 * 。</block>
   <block id="d36ec2dc8acd5ade1fda1b4397ccc99a" category="list-text">選取 * JSON* 。</block>
@@ -2886,7 +2863,6 @@
   <block id="99b431ba0bae952794b186c1e8ca969f" category="list-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> <block ref="f4c0bdac7b3aa5cf7bf7f433238f96a2" category="inline-link-macro-rx"></block></block>
   <block id="f4426e4062930abb33465fb5b79b35dc" category="inline-link-macro">設定 Azure Marketplace 部署的權限</block>
   <block id="d16dc391acdc52d611958fdd5ca48d52" category="list-text"><block ref="d16dc391acdc52d611958fdd5ca48d52" category="inline-link-macro-rx"></block></block>
-  <block id="8790c01539f52b3b7d7f0f32b6631813" category="inline-link-macro">設定內部部署的權限</block>
   <block id="643063b79f29bba54b69c5a3d47a8da5" category="summary">若要從 BlueXP 在 AWS 中建立 Connector 、您需要設定網路、準備 AWS 權限、然後建立 Connector 。</block>
   <block id="a9b34414733cf4871ed4d1f23b7438dd" category="doc">在AWS中從BlueXP建立連接器</block>
   <block id="70d8bd725ea77c6a4b800edb3d5b9f5f" category="section-title">步驟 1 ：設定網路</block>
@@ -3086,7 +3062,6 @@
   <block id="0fa4c0b97cc5b7972696a2ba8c38b9c8" category="paragraph">如果您有多個 Azure 認證屬於不同的 Azure 訂閱、則這些認證可以與相同的 Azure Marketplace 訂閱或不同的市場訂閱相關聯。</block>
   <block id="4666e56ab2715e92af8b4dbb7fc97357" category="section-title">我可以將現有的 Cloud Volumes ONTAP 工作環境移轉至不同的 Azure 訂閱嗎？</block>
   <block id="cd0af57faab800d64dbc9b6686539495" category="paragraph">否、您無法將與 Cloud Volumes ONTAP 工作環境相關的 Azure 資源移轉至不同的 Azure 訂閱。</block>
-  <block id="94db8f0d9e472465df4f4a2373f34e15" category="section-title">認證如何適用於市場部署和內部部署？</block>
   <block id="459f61ebe7bde01cca8ed21d42e836ca" category="paragraph">在Google Cloud中部署Connector時、BlueXP會建立一組與Connector VM執行個體相關的預設認證資料。您可以隨時變更與這些認證相關的 Google Cloud Marketplace 訂閱。訂閱可讓您建立隨用隨付的 Cloud Volumes ONTAP 系統、並使用其他 BlueXP 服務。</block>
   <block id="9e2bbef36ac6bd075f201eb1ac82fddb" category="paragraph">以新訂閱取代目前的市場訂閱、可變更任何現有 Cloud Volumes ONTAP 工作環境和所有新工作環境的市場訂閱。</block>
   <block id="6f3c919771c405c0014ee0f6d72d3149" category="summary">瞭解 BlueXP 如何使用 Google Cloud 認證來代表您執行行動、以及這些認證如何與市場訂閱相關聯。瞭解這些詳細資料有助於您管理一或多個 Google Cloud 專案的認證。例如、您可能想要瞭解與 Connector VM 相關聯的服務帳戶。</block>
@@ -3204,7 +3179,6 @@
   <block id="6cc6d549680ee5bae0375022aa7c117c" category="paragraph">NetApp BlueXP 可擴充並強化雲端管理程式所提供的功能。BlueXP 是統一化的控制平台、可為內部部署和雲端環境的儲存和資料服務提供混合式多雲端體驗。</block>
   <block id="4860911c5c67c5e04987564884e8b85e" category="list-text">統一化管理體驗</block>
   <block id="c3eb39b445a75ad05505fe32c6f061df" category="list-text">BlueXP可讓您從單一介面管理所有的儲存與資料資產。</block>
-  <block id="a28e6578744ceeb545878235d414e497" category="paragraph">您可以使用 BlueXP 來建立和管理雲端儲存設備（例如 Cloud Volumes ONTAP 和 Azure NetApp Files ）、移動、保護和分析資料、以及控制許多內部部署和邊緣儲存設備。</block>
   <block id="fc8ff23d0bf81d0f8427b5c75023f80e" category="inline-link">請至BlueXP網站深入瞭解</block>
   <block id="6680bbdbd7bdd3c542020121df4cb264" category="paragraph"><block ref="6680bbdbd7bdd3c542020121df4cb264" category="inline-link-rx"></block></block>
   <block id="31f0834695d820dc381e57397e466d12" category="list-text">新的導覽功能表</block>
@@ -3212,7 +3186,6 @@
   <block id="7cb04a79785e33be744a126127319a35" category="inline-image-macro">BlueXP導覽功能表的快照、顯示儲存與健全狀況等類別。</block>
   <block id="68d4f3d7366b4ea59a65f0c44540e368" category="list-text">新產品整合</block>
   <block id="cf6a3994dac804af910024cf740e14ac" category="list-text">您現在可以在安裝Connector的AWS帳戶中管理Amazon S3儲存區。</block>
-  <block id="054332983ba253fe4573945dcdbc8109" category="list-text">您現在可以管理更多內部儲存系統、例如E系列和StorageGRID E原地 儲存系統。</block>
   <block id="bcaa38b35b3f595027217ec10755368a" category="list-text">您現在可以使用先前僅以獨立式服務形式提供的資料服務、使用獨立的 UI 、例如 BlueXP 數位顧問（ Active IQ ）。</block>
   <block id="d59048f21fd887ad520398ce677be586" category="list-text">深入瞭解</block>
   <block id="72098f7f145b12a125b92539edd37f4a" category="inline-link">管理Amazon S3儲存區</block>
@@ -3333,7 +3306,6 @@
   <block id="a51f8f17029baacb9ec578d529b96fc1" category="inline-link">深入瞭解如何定義統一化組態</block>
   <block id="ba6ad1a8a7ff7fed9858ae1a6056a044" category="paragraph"><block ref="ba6ad1a8a7ff7fed9858ae1a6056a044" category="inline-link-rx"></block></block>
   <block id="b4baef0a3a494382cb3865753733f031" category="list-text">分層至Google Cloud Storage時、您可以套用生命週期規則、以便在30天後、將階層式資料從標準儲存類別轉換為成本較低的Nearline、Coldline或歸檔儲存設備。</block>
-  <block id="d85e79234e503ba2929218e38d0c7268" category="list-text">現在、如果您有任何內部部署 ONTAP 叢集未探索到、則會顯示雲端分層、以便將它們新增至 Cloud Manager 、以便在這些叢集上啟用分層或其他服務。</block>
   <block id="da79c9a9c81722678ed4139ebb8929d9" category="inline-link">瞭解如何探索這些額外的叢集</block>
   <block id="b29f8ca8f9e48d5b3100564f6829e5f6" category="paragraph"><block ref="b29f8ca8f9e48d5b3100564f6829e5f6" category="inline-link-rx"></block></block>
   <block id="d63816bce1f68b3d99c6b101eb23f900" category="paragraph">現在您可以動態變更磁碟區的服務層級、以滿足工作負載需求並最佳化成本。該磁碟區會移至其他容量集區、而不會影響該磁碟區。<block ref="1c1fc3f10579c2dcdaafa6f121b73c03" category="inline-link-rx"></block></block>
@@ -3382,7 +3354,6 @@
   <block id="437c802c34c0b8670d61901c4e05641e" category="inline-link-macro">深入瞭解私有模式</block>
   <block id="d05ac7ff6398ff4f2b0bd26105dd1697" category="paragraph">安裝 Connector 的位置決定了使用私有模式時可用的 BlueXP 服務和功能。例如、如果您想要部署和管理 Cloud Volumes ONTAP 、則必須將 Connector 安裝在雲端中。 <block ref="11a7253f43076934a5664eb6b2874efc" category="inline-link-macro-rx"></block>。</block>
   <block id="60a1a3ba0b214492b5ab5c5bd4a52eb0" category="paragraph">如果 Connector 安裝在雲端、而您打算建立 Cloud Volumes ONTAP 系統、則 BlueXP 需要雲端供應商的權限。您需要在雲端供應商中設定權限、然後在安裝之後將這些權限與 Connector 執行個體建立關聯。</block>
-  <block id="939d44d1e911e1f0f7039e74b3562137" category="list-text"><block ref="939d44d1e911e1f0f7039e74b3562137" category="inline-link-macro-rx"></block></block>
   <block id="9bf0216383a3ff083b86cdd433d2e65e" category="list-text"><block ref="9bf0216383a3ff083b86cdd433d2e65e" category="inline-link-macro-rx"></block></block>
   <block id="26553f927e14d69ad84c658048155fb4" category="summary">如果您使用多個連接器、 BlueXP 可讓您直接從主控台在這些連接器之間切換。您也可以使用多個 Connectors 來管理單一工作環境。</block>
   <block id="7473cbb9b768b471bd45e7579b544a3a" category="doc">使用多個連接器</block>
@@ -3484,9 +3455,7 @@
   <block id="ae205f602e7bb700e8f3f1c9a194a3e4" category="section-title">步驟 4 ：設定雲端權限</block>
   <block id="b94d9194c0f0e59de690d8a088d1601b" category="section-title">步驟 5 ：安裝 Connector</block>
   <block id="d918fe97b966ce7fb324a30c883b1d7f" category="section-title">步驟 6 ：設定 Connector</block>
-  <block id="76eda41f130889296c61f521e20a1006" category="list-text"><block ref="76eda41f130889296c61f521e20a1006" category="inline-link-macro-rx"></block></block>
   <block id="166140f584d4544702260c25a6b8eab6" category="section-title">多種工作環境與連接器</block>
-  <block id="7a5c1d5a09d9f5a762327becef29fd1a" category="list-text"><block ref="7a5c1d5a09d9f5a762327becef29fd1a" category="inline-link-macro-rx"></block></block>
   <block id="188fd7f75e50a8a882a75c15dcb630a1" category="section-title">2024 年 5 月 17 日</block>
   <block id="32d1e3d3ebe78d37dbdfcf9933b0cf90" category="paragraph">此版本的 BlueXP Connector 支援額外的作業系統、輕微的安全性改善、以及錯誤修正。</block>
   <block id="94f95548313e6f5528b5011a7d10e19f" category="paragraph">目前、 3.9.40 版本適用於標準模式和受限模式。</block>
@@ -3808,8 +3777,6 @@
   <block id="c64577fbea6506f38ae9b43ab46da844" category="paragraph">對於所有其他組織或帳戶、您必須重複這些步驟、手動建立訂閱的關聯。</block>
   <block id="aed7c8a25120d41eacc3c97ed0b851e5" category="paragraph">您必須完成此步驟、才能將 Google Cloud 訂閱連結至您的 BlueXP  組織或帳戶。連結訂閱的程序要等到您從本頁重新導向、然後登入BluXP之後才會完成。</block>
   <block id="6c42d9d3f2de2ec585181e975309fcf0" category="section-title">與雲端供應商通訊</block>
-  <block id="f9a30311177259db80d6ef6b5bc77f80" category="paragraph">Connector 使用 TLS 1.2 與 AWS 、 Azure 和 Google Cloud 進行所有通訊。</block>
-  <block id="62e253e417ca4e6f13ae9fae3d41704e" category="paragraph">您可以直接從 BlueXP  、雲端供應商的市場、或手動在自己的 Linux 主機上安裝軟體、來建立 Connector 。開始使用的方式取決於您是在標準模式、受限模式或私人模式下使用 BlueXP 。</block>
   <block id="429ef702d7e67a893ea297da8613a472" category="inline-link-macro">瞭解如何在使用私有模式時手動升級 Connector 軟體</block>
   <block id="1178d8df6f45ec63d153216266770ffa" category="paragraph"><block ref="8ab15d11feb9213cf5a6950e71fe0578" category="inline-link-macro-rx"></block>。</block>
   <block id="8f65178ee55c2c64ee3bef58afe9c682" category="list-text">服務供應商可能會使用一個 BlueXP  組織來為客戶提供服務、而使用另一個組織來為其中一個業務單位提供災難恢復。每個組織都會有個別的 Connector 。</block>
@@ -4087,13 +4054,10 @@
   <block id="48a726f3d57687547ef8fb70fab0c713" category="list-text">確認您要刪除資料夾或專案。</block>
   <block id="0574e6792e501b2d7f486dd56c08812e" category="summary">管理組織成員、以提供跨組織資源階層不同層級的權限。</block>
   <block id="4e1b8aff40899e4c95a3c48a1d8be909" category="paragraph">BlueXP  身分識別與存取管理（ IAM ）可讓您新增成員至組織、並在整個資源階層中指派一或多個角色。_role_ 包含一組權限、可讓成員在資源階層的特定層級上執行特定動作。您可以建立新使用者帳戶和服務帳戶的關聯、管理成員角色等。</block>
-  <block id="5ab22546ed60fe10595d23125ed0b721" category="admonition">為了確保您不會失去對 BlueXP  組織的存取權、最佳做法是讓兩位成員擔任組織管理員角色。</block>
-  <block id="0c33a84e89f04d016e75e654ef3ce490" category="paragraph">當 _ 資料夾或專案管理員 _ 檢視 * 成員 * 頁面時、頁面會顯示組織中的所有成員。不過、具有此角色的成員只能檢視及管理其擁有權限之資料夾和專案的成員權限。<block ref="c691e2b9b4224ed90bb4f1f11059b372" category="inline-link-macro-rx"></block>。</block>
   <block id="e3a1bd8f43fc761424ef512d07c27a8b" category="section-title">新增成員至組織</block>
   <block id="488cf26f47d26088a59a4ac2eaef1a3e" category="paragraph">您可以在組織中新增兩種類型的成員：使用者帳戶和服務帳戶。應用程式通常會使用服務帳戶來完成指定的工作、而無需人工介入。</block>
   <block id="2fa104cdb397e386efece8c040a2e601" category="open-title">使用者帳戶</block>
   <block id="55116207f6aac3a1c7009f777207f1eb" category="list-text">如果使用者尚未這麼做、請他們前往<block ref="2fbfa33fd647f6f78a572269d50d0708" category="inline-link-rx"></block>並註冊。</block>
-  <block id="f535d18baa302d9949025f9cdeb6dae8" category="paragraph">當使用者註冊時、他們應該完成「 * 註冊 * 」頁面、確認電子郵件地址、然後登入。當系統提示建立組織時、使用者應該關閉 BlueXP  、並告知您他們已建立使用者帳戶。然後、您可以將使用者新增至現有的 BlueXP  組織。</block>
   <block id="a03a7a8bd694ce33c9c0c2cfdb88ceeb" category="inline-link-macro">瞭解如何註冊 BlueXP </block>
   <block id="cf2da96b6ab9e2a236b955bf0f10d6cf" category="paragraph"><block ref="0ad6f11c6cde9791902ac82d37c3487c" category="inline-link-macro-rx"></block>。</block>
   <block id="ea06d0aa9a6946f5aa264a3c85890998" category="list-text">選取 * 成員 * 。</block>
@@ -4105,14 +4069,11 @@
   <block id="6a4cc2830754c534e4d4ede0d53dd765" category="list-text">您只能從具有管理員權限的資料夾和專案中進行選擇。</block>
   <block id="78693d86cfd1ee5b776ba655fad718c2" category="list-text">如果您選取組織或資料夾、成員將擁有組織或資料夾內所有內容的權限。</block>
   <block id="4361a448252604e85e36e94b87d2292d" category="list-text">如果您選擇了文件夾或項目，則可以從 * 組織 admin* 以外的任何角色中進行選擇。</block>
-  <block id="2c83e58d75bb3a8e196e882a13fad2b6" category="paragraph">使用者應收到 NetApp BlueXP  的電子郵件。電子郵件中包含成員可用來存取 BlueXP  的資訊。</block>
   <block id="18ceb42f6a360de22895a255078e9829" category="open-title">服務帳戶</block>
   <block id="3cf18c3e40a1206110812c369cc39dee" category="list-text">* 實體類型 * ：選擇 * 服務帳戶 * 。</block>
   <block id="79cb42be7b748ee1bfa8b8bda6dcca1e" category="list-text">* 服務帳戶名稱 * ：輸入服務帳戶的名稱。</block>
   <block id="f67f980ba471dba7c5f95c824dd43bf6" category="list-text">下載或複製用戶端 ID 和用戶端機密。</block>
-  <block id="8294c35652607973fb1c045f68ed7198" category="paragraph">用戶端機密只會顯示一次、而且不會儲存在任何位置。複製或下載機密、並安全地儲存。請注意、稍後您可以視需要重新建立用戶端 ID 和用戶端機密。</block>
   <block id="043819e1bae944c0c66cfa39d92d377a" category="section-title">檢視組織成員</block>
-  <block id="ac926c3351f3a5bf1296ce5e7341b403" category="paragraph">您組織的成員會出現在 * 成員 * 表格中。</block>
   <block id="9c537de44875b062f96c3c19b5d405f8" category="list-text">在 * 成員 * 頁面中、瀏覽至表格中的成員、選取<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>、然後選取 * 檢視詳細資料 * 。</block>
   <block id="c2a2a4211749f24853726e3f3a3f7a50" category="inline-link-macro">檢視與特定資料夾或專案相關的所有成員</block>
   <block id="1b6d4c30361c139d898bdf90eabbe5db" category="paragraph"><block ref="f0a4010d1241fe1a26982be23d0ea714" category="inline-link-macro-rx"></block>。</block>
@@ -4124,12 +4085,9 @@
   <block id="46008f3c0187ee8bc97921f4799f037a" category="list-text">如果您希望成員擁有資源階層其他部分的權限、您必須先新增該角色、然後刪除現有角色。</block>
   <block id="a55ecc4bf928da93f86f41bb1fa482cc" category="inline-image-macro">垃圾桶的圖示</block>
   <block id="a657b530c9804722859fcb4792bf4466" category="section-title">重新建立服務帳戶的認證</block>
-  <block id="4e62056c599bc8dfbb5e6f1f5a707256" category="paragraph">您可以隨時重新建立服務帳戶的認證（用戶端 ID 和用戶端機密）。如果您遺失認證、或企業要求您在一段時間後輪換安全認證、則可以重新建立認證。</block>
-  <block id="0bf91f2741972566e7b71facbe211ab9" category="paragraph">重新建立認證會刪除服務帳戶的現有認證、然後建立新的認證。您將無法使用先前的認證。</block>
   <block id="bb0f4333667b84217bd737a0e3fc6024" category="list-text">在 *Members （成員） * 表中，導航至服務帳戶，選擇<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>，然後選擇 *recreate Secrets （重新創建機密） * 。</block>
   <block id="8de213850e1e3dc79a14014382d25163" category="list-text">選取 * 重新建立 * 。</block>
   <block id="4137654b2b560bb6af478553cbc120b2" category="section-title">從組織中移除成員</block>
-  <block id="05dc5a4527f82cde43f14fa38fb2640e" category="paragraph">您可能需要從組織中移除成員、例如、如果成員離開公司。</block>
   <block id="0479745abf593369ddbda5e8df849e57" category="list-text">在 * 成員 * 頁面中、瀏覽至表格中的成員、選取<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>、然後選取 * 刪除使用者 * 。</block>
   <block id="6e49938f1c5b86ad879eeaf086442b08" category="list-text">確認您要從組織中移除成員。</block>
   <block id="2fe6c9d572351b2d4e0b387a62bdf1e2" category="summary">將資源與特定專案和資料夾建立關聯、以管理組織的資源階層。</block>
@@ -4411,12 +4369,10 @@
   <block id="2b86317cf346d1bf47abc8c04df6f353" category="list-text">BlueXP 自動化目錄</block>
   <block id="5d880ed9e8bc81eec72f5edb5332637d" category="list-text">使用指令碼化解決方案來自動化 NetApp 產品與服務的部署與整合。</block>
   <block id="ede1cce9f240fed5ecc4264bd699cee1" category="list-text">BlueXP 備份與還原</block>
-  <block id="a3460dd01b0f0c32632246bf209e730f" category="list-text">備份及還原雲端和內部部署資料。</block>
   <block id="2090f2d846793f153b9266c648b079ef" category="list-text">準備好應用程式資料和雲端環境的隱私保護。</block>
   <block id="7c3a23f387fffbae2b30f2fdcf4eb3e3" category="list-text">BlueXP 雲端作業</block>
   <block id="a17d9dd4943af64ba04db4529621baf0" category="list-text">深入瞭解雲端運算支出、並找出可能的節約效益。</block>
   <block id="9b4b22e819a51a3523fc811f5d93370a" category="list-text">BlueXP 複製與同步</block>
-  <block id="9f47c7f98e6626074067a711fc1863ea" category="list-text">在內部部署與雲端資料儲存區之間同步資料。</block>
   <block id="046d76eda0c1ca3ef0dc85e15394ce90" category="list-text">BlueXP 數位顧問</block>
   <block id="6f46f51af0fa796b3853885705907e6f" category="list-text">使用預測性分析和主動式支援來最佳化您的資料基礎架構。</block>
   <block id="7b432de78427e2c7ffdddf3f0a09ce52" category="list-text">BlueXP 數位錢包</block>
@@ -4436,7 +4392,6 @@
   <block id="0519e7e082ac907bdeb4ef1c92c001ad" category="list-text">BlueXP 永續性儀表板</block>
   <block id="b6ec628f73e9b33a6ae94b2c3ef2879b" category="list-text">分析儲存系統的永續性。</block>
   <block id="078be6a9f1dfaaea5e7153ff9ec78760" category="list-text">BlueXP 分層</block>
-  <block id="c6844dc3fe4e51f03d9c9209b1f58fc4" category="list-text">將內部ONTAP 部署的NetApp儲存設備延伸至雲端。</block>
   <block id="5f63db6bf0512dc0612ee852c1faf373" category="list-text">BlueXP Volume 快取</block>
   <block id="d0e71bba7a9d538f008b05b19274bfe1" category="list-text">建立可寫入的快取磁碟區、以加速資料存取或卸載大量存取磁碟區的流量。</block>
   <block id="428b0b39be2352757edeb5f9f12a7bdd" category="list-text">BlueXP  工作負載工廠</block>
@@ -4547,12 +4502,9 @@
   <block id="f713962a8902c207873eb4046423a1bd" category="cell">將資源與資料夾和專案建立關聯</block>
   <block id="9c671793f6e87d755268257623fd8ca3" category="paragraph">若要管理使用者及其權限，您必須指派下列其中一個角色：</block>
   <block id="e315fd1b95b71681931eeb8955a37b50" category="paragraph">具有此角色的使用者可以管理所有成員</block>
-  <block id="c51c480c437b7c47a9f2adb67928e089" category="paragraph">具有此角色的使用者只能管理指定資料夾或專案的成員</block>
-  <block id="a5aee08a089c901f8eb42f2d09ad05cd" category="paragraph">您可以直接從 BlueXP  新增服務帳戶。不過，使用者必須先註冊 BlueXP  帳戶，才能將其新增至組織或指派角色。</block>
   <block id="e882dcb285b727741daef45bc38e2d7b" category="paragraph">若要管理使用者及其權限，您必須具有 * 組織管理員 * 角色或 * 資料夾或專案管理員 * 角色。請記住， * 資料夾或專案管理員 * 角色的使用者只能管理其擁有管理員權限的資料夾或專案成員。</block>
   <block id="516abd045e4dfab41688be05ed0e24b2" category="list-text">* 選擇類別 * ，然後選擇一個 * 角色 * ，該角色 * 爲成員提供與所選組織，文件夾或項目關聯的資源的權限。</block>
   <block id="5fe83be1c3cd8b5af9b7f3c7fae6d1ad" category="list-text">* 新增角色 * ：如果您想要提供組織內其他資料夾或專案的存取權，或是在所選區域中授予使用者進一步的權限，請選取 * 新增角色 * ，指定其他資料夾或專案或其他角色類別，然後選擇角色。</block>
-  <block id="58f4b315c1bb5704a3e82ffd26d7c1a8" category="paragraph">從組織中移除成員並不會刪除成員的 BlueXP  帳戶或 NetApp 支援網站帳戶。它只會從組織中移除成員及其相關權限。</block>
   <block id="34025ad60edecbf8612a359edaca8684" category="section-title">檢視指派給成員的角色</block>
   <block id="c46547e3019dfd55748629f99ac2f49c" category="list-text">選取 * 角色 * ：選擇一個角色，為成員提供與所選組織，資料夾或專案相關的資源權限。</block>
   <block id="068135177d9d1843118236d5f10dc5b7" category="section-title">變更成員的指派角色</block>
@@ -4861,7 +4813,6 @@
   <block id="dd42f0ca79b192af5e1f5734b490f194" category="paragraph">連接器是 BlueXP 服務架構的基本部分。您有責任確保相關的連接器隨時正常運作且可存取。雖然這項服務的設計是為了克服連接器可用度的短暫中斷、但您必須在必要時立即採取行動、以補救基礎架構故障。</block>
   <block id="a92005953b68970af3654f93b3a572c1" category="paragraph">下列位置支援連接器：</block>
   <block id="c6c3b56410517700ef27e6cfa0cae38d" category="paragraph">Azure 中的 Connector 應部署於與其管理的 Cloud Volumes ONTAP 系統所在的同一個 Azure 區域，或部署於<block ref="71e0e9a7366955554f0600c5ea8cfc7f" category="inline-link-rx"></block> Cloud Volumes ONTAP 系統的。這項要求可確保 Cloud Volumes ONTAP 與其相關儲存帳戶之間使用 Azure 私有連結連線。<block ref="ebdf8919a4d90c512f0e43f5b0739281" category="inline-link-rx"></block></block>
-  <block id="be6236f35c24aae3ee086b3f6ec01213" category="paragraph">我們通常每個月更新Connector軟體、以引進新功能並改善穩定性。雖然 BlueXP  平台中的大部分服務和功能都是透過 SaaS 型軟體提供、但有幾項功能則取決於 Connector 的版本。其中包括Cloud Volumes ONTAP 支援內部的支援、ONTAP 內部的支援、叢集管理、設定及說明。</block>
   <block id="4102d173f8e2253a011fe9286a6db2a3" category="paragraph">Connector可以在BlueXP中管理多個工作環境。單一Connector應管理的工作環境數量上限各不相同。這取決於工作環境的類型、磁碟區數量、所管理的容量、以及使用者數量。</block>
   <block id="63e8317d7c5806dc1cb56752525c4d52" category="paragraph">如果您有大規模部署、請與NetApp代表合作調整環境規模。如果您在過程中遇到任何問題、請使用產品內對談與我們聯絡。</block>
   <block id="18d5aadda239c924412f84368e73290b" category="paragraph">在某些情況下、您可能只需要一個連接器、但可能需要兩個以上的連接器。</block>
@@ -5135,4 +5086,51 @@
   <block id="12815307393fa19648b391d49b4282e4" category="section-title">為成員新增存取角色</block>
   <block id="e1c2f7c4dfacd1ec651c2d8a7b88a182" category="paragraph">一般而言，當您將成員新增至組織時，您會將角色指派給成員。但是，您可以隨時透過刪除角色或新增其他角色來更新成員的角色。您可以移除使用者的角色，以移除使用者對專案的存取權。</block>
   <block id="7654fe6ca44295ba5f844fc9798f0103" category="sidebar">儲存角色</block>
+  <block id="b317bc8015ab38ad52bce34c9ef3ed4f" category="section-title">憑證如何用於市場部署和本地部署？</block>
+  <block id="56e4e843754027d4bb0539f8e0c4faea" category="inline-link-macro">設定本地部署的權限</block>
+  <block id="3d0af4236ade79fa9ba92e57deb0baaa" category="list-text"><block ref="3d0af4236ade79fa9ba92e57deb0baaa" category="inline-link-macro-rx"></block></block>
+  <block id="9b049adb8a41cc7a0f049e9ffbda62b5" category="inline-link">了解有關本地 ONTAP 叢集的發現和管理選項的更多信息</block>
+  <block id="6a9bba218e71d2777929e42afb6991ea" category="paragraph"><block ref="6a9bba218e71d2777929e42afb6991ea" category="inline-link-rx"></block></block>
+  <block id="f8a0b666073e2361543027ae29d21758" category="paragraph">本文件受EULA規範。如果未按照文件操作產品，則產品的功能和操作以及您在 EULA 下的權利可能會受到不利影響。</block>
+  <block id="df3adb56314efbe583d898e1faf75d5b" category="paragraph">Connector 使用 TLS 1.3 與 AWS 、 Azure 和 Google Cloud 進行所有通訊。</block>
+  <block id="ebe9346393421eaeddb4b80d87a1e3e3" category="section-title">如何安裝連接器</block>
+  <block id="06f256a533d5a20ddffc37beb9565bc4" category="paragraph">您可以直接從 BlueXP、雲端供應商的市場安裝連接器，也可以在您自己的 Linux 主機上手動安裝軟體。開始使用的方式取決於您是在標準模式、受限模式或私人模式下使用 BlueXP 。</block>
+  <block id="57d93d5e81bafd40970707a32bf098e7" category="inline-link-macro">為本地部署設定雲端權限</block>
+  <block id="12368f54b2e6a4e2dd993defc6b725e9" category="list-text"><block ref="12368f54b2e6a4e2dd993defc6b725e9" category="inline-link-macro-rx"></block></block>
+  <block id="cccc2b687799dea05d000964281fe94d" category="paragraph">我們通常每個月更新Connector軟體、以引進新功能並改善穩定性。雖然 BlueXP  平台中的大部分服務和功能都是透過 SaaS 型軟體提供、但有幾項功能則取決於 Connector 的版本。其中包括 Cloud Volumes ONTAP 管理、on-premisesONTAP 叢集管理、設定和說明。</block>
+  <block id="df2b2e3ed2e29dcb18914cf19445462e" category="list-text">您有一個多雲環境（例如，AWS 和 Azure），並且您希望在 AWS 中使用一個連接器，在 Azure 中使用另一個連接器。每個系統都能管理 Cloud Volumes ONTAP 在這些環境中執行的不實系統。</block>
+  <block id="303dd9be0eeb1860776aa43ceeb3e470" category="cell">支援使用 Connector 進行探索、以及不使用 Connector （直接探索）進行探索。當您發現具有連接器的本機叢集時，進階視圖（系統管理員）不受支援。</block>
+  <block id="4487b7b02fe57e6e8bdfe54c2ad74d34" category="list-text">在本地部署中支援的 BlueXP 服務</block>
+  <block id="caf4a30b20a11e01cd72ece077ed9e50" category="cell">本地 ONTAP 叢集</block>
+  <block id="0912b43cc7311cb2cc7bce5ac8b068fe" category="list-text">備份和還原雲端和本地資料。</block>
+  <block id="ce77730dd6dbc743a3b153b41918d0fc" category="list-text">在本地端和雲端資料儲存之間同步資料。</block>
+  <block id="0bc1c35cddc206d6a1870748d6b782d8" category="list-text">將您的本機 ONTAP 儲存擴展到雲端。</block>
+  <block id="a849a8a45d50681fc0b30ac28b4d11e1" category="paragraph">如果您的網路已設定具有上述任一範圍的子網路、則可能會遇到來自BlueXP的連線故障。例如，在 BlueXP 中發現 on-premisesONTAP 叢集可能會失敗。</block>
+  <block id="f35e114f48c5f22c2fe8ecda03690d52" category="inline-link-macro">設定本地網絡</block>
+  <block id="0de6919a4162aaaea1163fcece2a0a16" category="list-text"><block ref="0de6919a4162aaaea1163fcece2a0a16" category="inline-link-macro-rx"></block></block>
+  <block id="508ef8cc04a12b92629c3959ece8d473" category="cell">當使用 BlueXP 備份和復原來備份本機 ONTAP 叢集時，您需要為連接器新增權限才能使用「搜尋和復原」功能。</block>
+  <block id="0b7a047195bdd655b80be504a06e7bbe" category="doc">on-premisesConnector 的端口</block>
+  <block id="e6929928a5493903d213002ab8ecbfe4" category="inline-link">使用 BlueXP 分類掃描本機 ONTAP 磁碟區數據</block>
+  <block id="4599c08645d7102b295f6f73ef9fe891" category="list-text"><block ref="4599c08645d7102b295f6f73ef9fe891" category="inline-link-rx"></block></block>
+  <block id="7a38f6c0fc484a193bd9b10fd9107151" category="paragraph">建議：提示：確保兩名成員具有組織管理員角色，以避免失去對 BlueXP 組織的存取權。</block>
+  <block id="f2822d5dedda5be93d6f6e298458878b" category="paragraph">具有此角色的使用者只能管理指定資料夾或專案的成員</block>
+  <block id="822c446995ebe71a6c753c700e7dd2b0" category="paragraph">您可以直接從 BlueXP  新增服務帳戶。使用者必須先註冊 BlueXP 帳戶，然後才能新增至組織或指派角色。</block>
+  <block id="d0dc99396b7d861a7866a8e109f9b1c6" category="paragraph">註冊後，使用者完成*註冊*頁面，查看電子郵件並登入。如果提示建立組織，他們應該關閉 BlueXP 並通知您他們的帳戶已建立。然後、您可以將使用者新增至現有的 BlueXP  組織。</block>
+  <block id="08a2395e6fbea42394d928f53df9f3e7" category="paragraph">使用者會收到來自 NetApp BlueXP 的電子郵件，其中包含會員用於存取 BlueXP 的資訊。</block>
+  <block id="00407d7a171d24d8741b64c4670528bc" category="paragraph">lueXP 僅顯示一次客戶端金鑰並且不儲存它。複製或下載機密、並安全地儲存。請注意、稍後您可以視需要重新建立用戶端 ID 和用戶端機密。</block>
+  <block id="981e68aebbf5499db66d9a2b0c273b16" category="paragraph">*成員*表格顯示您組織的成員。</block>
+  <block id="e4cb5729a397d486706aec2c33ce4ea6" category="paragraph">您可能需要從您的組織中刪除某個成員 - 例如，如果他們離開了您的公司。</block>
+  <block id="a8b5ca2eacd6c76f00fb50a8de358707" category="paragraph">刪除成員會撤銷其權限，但保留其 BlueXP 和 NetApp 支援網站帳戶。</block>
+  <block id="9db713593f37da13d4833a36d120ccfd" category="paragraph">如果遺失或需要更新安全憑證，請建立新憑證。</block>
+  <block id="52f5be4f784cf685f0ad8a80aedf6b64" category="paragraph">重新建立認證會刪除服務帳戶的現有認證、然後建立新的認證。您不能使用先前的憑證。</block>
+  <block id="81bce7de713bcaf7549f55a3a0969660" category="paragraph">BlueXP 僅顯示一次用戶端金鑰，並且不會儲存在任何地方。複製或下載機密、並安全地儲存。</block>
+  <block id="78ce04965d900b7ef35dfc2218778225" category="list-text">此版本的連接器還包括 Cloud Volumes ONTAP 增強功能和 on-premisesONTAP 叢集增強功能。</block>
+  <block id="797ea56826da2367a2d9d995e3baa7ce" category="inline-link">了解 ONTAP 本機叢集增強功能</block>
+  <block id="6b5f698f33fda7e21ffb6353943e1348" category="list-text"><block ref="6b5f698f33fda7e21ffb6353943e1348" category="inline-link-rx"></block></block>
+  <block id="ffdf38e49e65f18329f7f8e5beb3abaf" category="list-text"><block ref="ffdf38e49e65f18329f7f8e5beb3abaf" category="inline-link-rx"></block></block>
+  <block id="09798dd0fb4ac612714839b6f2723d58" category="list-text"><block ref="09798dd0fb4ac612714839b6f2723d58" category="inline-link-rx"></block></block>
+  <block id="2b514d363c7b672f94e04264ce6b6266" category="paragraph">您可以使用 BlueXP 建立和管理雲端儲存（例如，Cloud Volumes ONTAP 和 Azure NetApp Files），移動、保護和分析數據，以及控制許多本地和邊緣儲存設備。</block>
+  <block id="ab244aa8ea93b8114e0cc9009af3f81b" category="list-text">現在您可以管理更多內部部署儲存系統，例如 E 系列和 StorageGRID。</block>
+  <block id="036d3952a98988224205b6f039be487f" category="list-text"><block ref="036d3952a98988224205b6f039be487f" category="inline-link-rx"></block></block>
+  <block id="6a3405f47013290acf99c18684c84269" category="list-text">Cloud Tiering 現在會顯示您是否有任何未發現的 on-premisesONTAP 集群，以便您可以將它們新增至 Cloud Manager 以在這些集群上啟用分層或其他服務。</block>
 </blocks>

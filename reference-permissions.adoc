@@ -184,7 +184,7 @@ BlueXP 需要 Google Cloud 權限才能使用 Connector 和個別服務。
 
 
 
-| 將內部部署的 ONTAP 叢集備份至 Google Cloud | 使用 BlueXP 備份與還原備份內部部署 ONTAP 叢集時、您需要新增 Connector 的權限、才能使用「搜尋與還原」功能。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-gcp.html#verify-or-add-permissions-to-the-connector["搜尋擴大機的權限；還原功能"^] 
+| 將內部部署的 ONTAP 叢集備份至 Google Cloud | 當使用 BlueXP 備份和復原來備份本機 ONTAP 叢集時，您需要為連接器新增權限才能使用「搜尋和復原」功能。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-gcp.html#verify-or-add-permissions-to-the-connector["搜尋擴大機的權限；還原功能"^] 
 |===
 
 

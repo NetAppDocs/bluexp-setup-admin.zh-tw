@@ -131,7 +131,7 @@ link:task-adding-aws-accounts.html#subscribe["瞭解如何建立AWS訂閱的關�
 
 
 
-=== 認證如何適用於市場部署和內部部署？
+=== 憑證如何用於市場部署和本地部署？
 
 以上各節說明建議的連接器部署方法、該方法來自於BlueXP。您也可以從 AWS Marketplace 在 AWS 中部署 Connector 、然後在自己的 Linux 主機上手動安裝 Connector 軟體。
 
@@ -144,7 +144,7 @@ link:task-adding-aws-accounts.html#subscribe["瞭解如何建立AWS訂閱的關�
 * 標準模式
 +
 ** link:task-install-connector-aws-marketplace.html#step-2-set-up-aws-permissions["設定 AWS Marketplace 部署的權限"]
-** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["設定內部部署的權限"]
+** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["設定本地部署的權限"]
 
 
 * link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["設定受限模式的權限"]

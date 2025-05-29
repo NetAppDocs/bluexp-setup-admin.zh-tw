@@ -166,9 +166,7 @@ API 端點:: API 呼叫是針對 Connector 虛擬機器進行的。
 | 數位錢包 | 您可以將數位錢包搭配下列受限模式的支援授權選項一起使用。 
 
 
-| 內部部署 ONTAP 的叢集 | 支援使用 Connector 進行探索、以及不使用 Connector （直接探索）進行探索。
-
-當您發現內部叢集有 Connector 時、就不支援進階檢視（ System Manager ）。 
+| 內部部署 ONTAP 的叢集 | 支援使用 Connector 進行探索、以及不使用 Connector （直接探索）進行探索。當您發現具有連接器的本機叢集時，進階視圖（系統管理員）不受支援。 
 
 
 | 複寫 | 受限模式的政府地區支援。不支援商業區域或採用限制模式的主權區域。 
@@ -251,7 +249,7 @@ API 端點:: API 呼叫是針對 Connector 虛擬機器進行的。
 不支援不含 Connector 的探索（直接探索）。 
 |===
 --
-內部部署中支援的 BlueXP 服務:: 當 Connector 安裝在內部部署上時、 BlueXP 支援下列具有私有模式的儲存和資料服務：
+在本地部署中支援的 BlueXP 服務:: 當 Connector 安裝在內部部署上時、 BlueXP 支援下列具有私有模式的儲存和資料服務：
 +
 --
 [cols="2*"]
@@ -343,7 +341,7 @@ NOTE: 如果您想在中使用 BlueXP https://aws.amazon.com/federal/secret-clou
 | Google Cloud Storage | 否 | 否 
 
 
-| 內部 ONTAP 部署的叢集 | 是的 | 是的 
+| 本地 ONTAP 叢集 | 是的 | 是的 
 
 
 | E系列 | 否 | 否 

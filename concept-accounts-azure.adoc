@@ -96,7 +96,7 @@ link:task-adding-azure-accounts.html#subscribe["瞭解如何建立Azure訂閱的
 
 
 
-=== 認證如何適用於市場部署和內部部署？
+=== 憑證如何用於市場部署和本地部署？
 
 以上各節說明建議的連接器部署方法、該方法來自於BlueXP。您也可以從 Azure Marketplace 在 Azure 中部署 Connector 、也可以在自己的 Linux 主機上安裝 Connector 軟體。
 
@@ -109,7 +109,7 @@ link:task-adding-azure-accounts.html#subscribe["瞭解如何建立Azure訂閱的
 * 標準模式
 +
 ** link:task-install-connector-azure-marketplace.html#step-3-set-up-permissions["設定 Azure Marketplace 部署的權限"]
-** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["設定內部部署的權限"]
+** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["設定本地部署的權限"]
 
 
 * link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["設定受限模式的權限"]

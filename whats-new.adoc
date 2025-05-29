@@ -1216,10 +1216,10 @@ https://docs.netapp.com/us-en/bluexp-automation/audit/overview.html["深入瞭�
 +
 請注意、您也可以從時間軸頁面上的 BlueXP 使用者介面存取此連結。
 
-* 此版本的Connector也包含Cloud Volumes ONTAP 了加強功能的功能、以及內部ONTAP 的叢集增強功能。
+* 此版本的連接器還包括 Cloud Volumes ONTAP 增強功能和 on-premisesONTAP 叢集增強功能。
 +
 ** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#30-july-2023["深入瞭Cloud Volumes ONTAP 解功能強化功能"^]
-** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#30-july-2023["深入瞭ONTAP 解內部叢集增強功能"^]
+** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#30-july-2023["了解 ONTAP 本機叢集增強功能"^]
 
 
 
@@ -1381,10 +1381,10 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-user-credentials.ht
 +
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html#manage-your-support-cases["瞭解如何建立及管理支援案例"]。
 
-* 此版本的Connector也包含Cloud Volumes ONTAP 了加強功能的功能、以及內部ONTAP 的叢集增強功能。
+* 此版本的連接器還包括 Cloud Volumes ONTAP 增強功能和 on-premisesONTAP 叢集增強功能。
 +
 ** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#3-april-2023["深入瞭Cloud Volumes ONTAP 解功能強化功能"^]
-** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#3-april-2023["深入瞭ONTAP 解內部叢集增強功能"^]
+** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#3-april-2023["了解 ONTAP 本機叢集增強功能"^]
 
 
 
@@ -1498,10 +1498,10 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#1-januar
 
 * 我們已將BlueXP主控台的URL更新為 https://console.bluexp.netapp.com[]
 * Google Cloud Israel地區現在支援Connector。
-* 此版本的Connector也包含Cloud Volumes ONTAP 了加強功能的功能、以及內部ONTAP 的叢集增強功能。
+* 此版本的連接器還包括 Cloud Volumes ONTAP 增強功能和 on-premisesONTAP 叢集增強功能。
 +
 ** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#4-december-2022["深入瞭Cloud Volumes ONTAP 解功能強化功能"^]
-** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#4-december-2022["深入瞭ONTAP 解內部叢集增強功能"^]
+** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#4-december-2022["了解 ONTAP 本機叢集增強功能"^]
 
 
 
@@ -1537,7 +1537,7 @@ NetApp BlueXP 可擴充並強化雲端管理程式所提供的功能。BlueXP �
 統一化管理體驗:: BlueXP可讓您從單一介面管理所有的儲存與資料資產。
 +
 --
-您可以使用 BlueXP 來建立和管理雲端儲存設備（例如 Cloud Volumes ONTAP 和 Azure NetApp Files ）、移動、保護和分析資料、以及控制許多內部部署和邊緣儲存設備。
+您可以使用 BlueXP 建立和管理雲端儲存（例如，Cloud Volumes ONTAP 和 Azure NetApp Files），移動、保護和分析數據，以及控制許多本地和邊緣儲存設備。
 
 https://bluexp.netapp.com["請至BlueXP網站深入瞭解"^]
 
@@ -1552,7 +1552,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 +
 --
 * 您現在可以在安裝Connector的AWS帳戶中管理Amazon S3儲存區。
-* 您現在可以管理更多內部儲存系統、例如E系列和StorageGRID E原地 儲存系統。
+* 現在您可以管理更多內部部署儲存系統，例如 E 系列和 StorageGRID。
 * 您現在可以使用先前僅以獨立式服務形式提供的資料服務、使用獨立的 UI 、例如 BlueXP 數位顧問（ Active IQ ）。
 
 
@@ -1696,10 +1696,10 @@ NOTE: 使用電子郵件地址和密碼的現有登入必須持續使用該登�
 
 * 現在AWS雅加達地區（ap東南3區）支援Connector。
 * 現在Azure Brazil東南地區支援Connector。
-* 此版本的Connector也包含Cloud Volumes ONTAP 了加強功能的功能、以及內部ONTAP 的叢集增強功能。
+* 此版本的連接器還包括 Cloud Volumes ONTAP 增強功能和 on-premisesONTAP 叢集增強功能。
 +
 ** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#7-june-2022["深入瞭Cloud Volumes ONTAP 解功能強化功能"^]
-** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#7-june-2022["深入瞭ONTAP 解內部叢集增強功能"^]
+** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#7-june-2022["了解 ONTAP 本機叢集增強功能"^]
 
 
 
@@ -2046,7 +2046,7 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-managing-data-brokers.html#s
 === 雲端分層增強功能
 
 * 分層至Google Cloud Storage時、您可以套用生命週期規則、以便在30天後、將階層式資料從標準儲存類別轉換為成本較低的Nearline、Coldline或歸檔儲存設備。
-* 現在、如果您有任何內部部署 ONTAP 叢集未探索到、則會顯示雲端分層、以便將它們新增至 Cloud Manager 、以便在這些叢集上啟用分層或其他服務。
+* Cloud Tiering 現在會顯示您是否有任何未發現的 on-premisesONTAP 集群，以便您可以將它們新增至 Cloud Manager 以在這些集群上啟用分層或其他服務。
 +
 https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#discovering-additional-clusters-from-bluexp-tiering["瞭解如何探索這些額外的叢集"^]
 
