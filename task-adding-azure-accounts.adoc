@@ -284,7 +284,7 @@ image:screenshot_azure_client_secret.gif["Azure 入口網站的螢幕擷取畫�
 如果您剛在雲端供應商中建立這些認證資料、可能需要幾分鐘的時間才能使用。請稍候幾分鐘、再將認證資料新增至BlueXP。
 
 .開始之前
-您必須先建立連接器、才能變更BlueXP設定。 link:concept-connectors.html#how-to-create-a-connector["瞭解如何建立連接器"]。
+您必須先建立連接器、才能變更BlueXP設定。link:concept-connectors.html#connector-installation["瞭解如何建立連接器"]。
 
 .步驟
 . 在 BlueXP 主控台的右上角、選取「設定」圖示、然後選取 * 認證 * 。
@@ -334,7 +334,7 @@ image:screenshot_accounts_switch_azure.gif["在「詳細資料擴大機；認證
 
 
 .開始之前
-您必須先建立連接器、才能變更BlueXP設定。 link:concept-connectors.html#how-to-create-a-connector["瞭解方法"]。
+您需要先建立一個連接器，然後才能變更 BlueXP 設定。公升link:concept-connectors.html#connector-installation["瞭解如何建立連接器"] 。
 
 .步驟
 . 在 BlueXP 主控台的右上角、選取「設定」圖示、然後選取 * 認證 * 。

@@ -178,8 +178,6 @@
   <block id="b68600c18c6dd9598d4518bc4a3f2c90" category="list-text">HTTP（80）和HTTPS（443）可存取本機UI、在極少數情況下使用。</block>
   <block id="a72a43431413f493c5087ab72327a680" category="list-text">只有在需要連線至主機進行疑難排解時、才需要SSH（22）。</block>
   <block id="8fece025a1a8fef7018449bf104a2527" category="section-title">開始之前</block>
-  <block id="3348dcc393bde37af6464ca44f92a231" category="inline-link-macro">瞭解方法</block>
-  <block id="4a126f1568270f6124f9c053bf5a5b02" category="paragraph">您必須先建立連接器、才能變更BlueXP設定。 <block ref="9cb3f4e3b2f30b874e967976f1105dcc" category="inline-link-macro-rx"></block>。</block>
   <block id="c49ff7d7009f9d4727b2b25afa496418" category="section-title">安裝 HTTPS 憑證</block>
   <block id="bfad05e4d9a8b5fbc930a21d6b53cd7a" category="list-text">在 BlueXP 主控台的右上角、選取「設定」圖示、然後選取 *HTTPS Setup* 。</block>
   <block id="4d646a6e32f8084a095a674812f1fb31" category="list-text">在「 HTTPS 設定」頁面中、產生憑證簽署要求（ CSR ）或安裝您自己的 CA 簽署憑證來安裝憑證：</block>
@@ -2328,7 +2326,6 @@
   <block id="0919fa8ef252f518174a76feefbed72b" category="inline-link">適用於 Amazon FSX for ONTAP 的 BlueXP 文件</block>
   <block id="4f75e9590de3cece316768ef4b82f1ed" category="paragraph">如需詳細資訊、請參閱<block ref="c186ea5d7dffe196818c2e5a7f99ad62" category="inline-link-rx"></block></block>
   <block id="7061e8aac5780f13c42d7f3d3010b5c2" category="inline-link-macro">瞭解如何建立連接器</block>
-  <block id="4affaad75ff37743ed549d6641de07e8" category="paragraph">您必須先建立連接器、才能變更BlueXP設定。 <block ref="ffb61fe647da5972e7e78ecadafdfb45" category="inline-link-macro-rx"></block>。</block>
   <block id="eceb74088d706d5484df6b70296f87ad" category="paragraph">在BlueXP中編輯AWS認證資料、方法是變更帳戶類型（AWS金鑰或承擔角色）、編輯名稱、或自行更新認證資料（金鑰或角色ARN）。</block>
   <block id="608e5d2c6ae29eafd4acefb54d76730a" category="admonition">您無法編輯與Connector執行個體相關聯之執行個體設定檔的認證資料。</block>
   <block id="a53da898c0e5410eb934bcf693e8290e" category="admonition">您無法刪除與連接器執行個體相關聯之執行個體設定檔的認證。</block>
@@ -3948,8 +3945,6 @@
   <block id="cd42e1c1af0a908f68d68ae6103b5c30" category="list-text">在 BlueXP  主控台右上角、選取 <block ref="32173ab85f1c68a28384d1a40cf387db" category="inline-image-macro-rx" type="image"></block> &gt; * 身分識別與存取管理 * 。</block>
   <block id="898a5f7650c6f7bf6a01efe09c881973" category="list-text">選擇 * 連接器 * 。</block>
   <block id="efd7c600c956f9a4ecd581c9e8a5de04" category="list-text">從表格中找出您要關聯的 Connector 。</block>
-  <block id="0e081d7aa898f932c4f244f1d41dd4df" category="paragraph">若要尋找特定的 Connector 、您可以使用表格上方的搜尋、並選取資源階層的特定部分來篩選表格內容。</block>
-  <block id="16b0f0c24bd4a14288344d064f0b09c2" category="list-text">若要先檢視 Connector 所關聯的資料夾和專案、請選取<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>、然後選取 * 檢視詳細資料 * 。</block>
   <block id="a2884a208c64d00906f60b988f29dfd3" category="paragraph">BlueXP  會顯示與 Connector 相關聯的資料夾和專案詳細資料。</block>
   <block id="7b0e84897f645e2241868699f64b6699" category="list-text">選取 * 與資料夾或專案相關 * 。</block>
   <block id="3ecb65defa4c1a5901512a34a0590820" category="list-text">選取資料夾或專案、然後選取 * 接受 * 。</block>
@@ -4009,7 +4004,6 @@
   <block id="5506a3204ff4171234856af0ca0d34fd" category="list-text">提供資料夾或專案的詳細資料：</block>
   <block id="0ab63481584814b59197d796cfc5dc97" category="list-text">* 名稱與位置 * ：輸入名稱、然後在資料夾或專案的階層中選擇位置。資料夾或專案可以直接位於組織下方或資料夾內。</block>
   <block id="f46059ba82cb53e4af025ce918760999" category="list-text">* 資源 * ：選取您要與此資料夾或專案相關聯的資源。</block>
-  <block id="217f7358d2ee319a9c814b539574d78d" category="paragraph">您只能從與資料夾或專案父項目相關聯的資源中選取。如果父組織是組織、則您可以從組織中的任何資源中選擇。如果父資料夾是資料夾、則您只能從與該資料夾相關的資源中選取。</block>
   <block id="dc401be3adab60c813414832f0b97d88" category="inline-link-macro">瞭解何時可以將資源與資料夾建立關聯</block>
   <block id="d706c5ded100123a86d8602a03703158" category="paragraph"><block ref="114ceb4aae340f51ba021c40f504c25f" category="inline-link-macro-rx"></block>。</block>
   <block id="8bb3c5dc86a399d0babf2eb49831e5ec" category="list-text">* 存取 * ：根據已在資源階層中定義的現有權限、檢視可存取資料夾或專案的成員。</block>
@@ -4034,7 +4028,6 @@
   <block id="883f9a97670aa2ea1a29d0163ef97be1" category="paragraph"><block ref="883f9a97670aa2ea1a29d0163ef97be1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c16f1c2a54634bdad6dee177f8131ef5" category="list-text">選取 * 套用 *</block>
   <block id="19df46354fac1ffd06065f8388377f84" category="section-title">修改成員對資料夾或專案的存取權</block>
-  <block id="710dfcb474fc8ee49343c58686c8aded" category="paragraph">修改成員對資料夾或專案的存取權、以確保適當的成員能夠存取與資料夾或專案相關的資源。</block>
   <block id="904a2691210bbfe6dfc1b17db516d71c" category="list-text">修改成員存取權：</block>
   <block id="b49630790a232696bd0f62fa51014e55" category="list-text">* 新增成員 * ：選取您要新增至資料夾或專案的成員、然後指派角色給他們。</block>
   <block id="a4f439c667db8a94e9e3159df300905d" category="list-text">* 變更成員的角色 * ：對於組織管理員以外的任何角色成員、請選取其現有角色、然後選擇新角色。</block>
@@ -4316,8 +4309,6 @@
   <block id="798eb88714cdc2034c3335c3a6c21193" category="list-text">在 * 組織 * 頁面中，瀏覽至表格中的專案，然後選取<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="efb318f1d905ec45c96414554f0f7c18" category="paragraph">隨即顯示專案 ID 。</block>
   <block id="811c7706be3ba95d1d407ea18e420365" category="list-text">若要複製 ID ，請選取複製按鈕。</block>
-  <block id="c5f7a94f7e361ce9dc993775dd14b3c1" category="inline-image-macro">資料夾和專案表格的螢幕擷取畫面，顯示專案 ID 篩選器選取專案的動作功能表。</block>
-  <block id="c4c78a982626adb55fd316627b7b9909" category="paragraph"><block ref="c4c78a982626adb55fd316627b7b9909" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ecbeaffbfe15c72e3bf702b0d0bf9694" category="section-title">2024 年 11 月 11 日</block>
   <block id="64a7a8a4f820d38dc5cedd70930717c0" category="doc">私有模式版本（ 3.9.46 ）</block>
   <block id="d9d2db6c6792de5c6f6f1c11280bd993" category="paragraph">現在可從下載新的私有模式版本<block ref="d2aa03057485a1ee4125d2121e05288d" category="inline-link-rx"></block></block>
@@ -4466,11 +4457,9 @@
   <block id="98ab56b1913a765c1df746951483fcf9" category="paragraph">在您將認證新增至 BlueXP  之後，您可以在兩種情況下設定 AWS Marketplace 訂閱：</block>
   <block id="5ae59f56e745767e7fb2cc05712fc6a6" category="list-text">當您最初將認證新增至 BlueXP  時，並未設定訂閱。</block>
   <block id="1fa2cd673301895c14fbffad8568f063" category="list-text">您想要變更設定為 AWS 認證的 AWS Marketplace 訂閱。</block>
-  <block id="992e95d72701e4be3c32c42f86ff8eb2" category="paragraph">組織資源階層的深度可降至 7 個層級。因此、您可以建立最多 6 個層級的巢狀資料夾。最後一個巢狀資料夾可以包含階層第七層的專案。</block>
   <block id="602717d0c1fbb3310698d48708d917bc" category="paragraph">下圖說明組織資源階層的最大深度：</block>
   <block id="7ef08e2a2795e0ebd33ca241791da34d" category="section-title">檢視與資料夾或專案相關的資源</block>
   <block id="b9cbaac63edb6628a694750d4f1ba083" category="list-text">在 * 編輯 * 頁面上，您可以展開 * 資源 * 或 * 存取 * 區段，以檢視所選資料夾或專案的詳細資料。</block>
-  <block id="c89793030e51a304fd86f478545c616e" category="paragraph">您可以透過關聯或取消關聯資源來修改與資料夾或專案相關的資源。例如、您可能想要將資源與其他專案建立關聯、因為該資源具有其他團隊可以使用的容量。將資源與資料夾或專案建立關聯後，擁有該資料夾或專案權限的組織成員即可存取相關資源。</block>
   <block id="e3621d23b92254c73b3a713d227a66f5" category="section-title">檢視與資料夾或專案相關的成員</block>
   <block id="2bd6967deb6b9eb3d79e794bad318fb4" category="list-text">在「 * 編輯 * 」頁面上，選取 * 存取 * 以檢視可存取所選資料夾或專案的成員清單。</block>
   <block id="d94261042140ed4ba051dbe4ecd2eeb1" category="paragraph">當您使用 BlueXP  身分識別與存取管理（ IAM ）將成員與組織建立關聯時、您可以在組織、資料夾或專案層級提供權限。為了確保這些成員有權存取適當的資源、您需要將資源與特定專案和資料夾建立關聯、以管理組織的資源階層。_resource_ 是 BlueXP  已經管理或感知的儲存資源。</block>
@@ -4900,7 +4889,6 @@
   <block id="84d4352e42fd4f7ef347eca44f4f0a88" category="cell">2025 年 1 月 22 日（版本 1.39 ）</block>
   <block id="b865a42d40947323c5392132a0cf5ae7" category="cell">請移至，<block ref="bb3538c6013ff73961739d7c28fee95d" category="inline-link-rx"></block>並參閱 1.39 版本中所包含的變更。</block>
   <block id="09d7c2dac047caa965175fead07159aa" category="cell">2025 年 21 月 2 日</block>
-  <block id="c77472b3cb88175d9f673b4976ce643a" category="paragraph">如果成員存取權限是在較高層級（資料夾或組織層級）提供，則在檢視較低層級的資料夾或專案時，您無法移除或變更成員存取權限。您必須切換至階層架構的該部分，並在該處更新成員的權限。或者、您也可以<block ref="2e250d63a19626cb0aeed14260bd2f59" category="inline-link-macro-rx"></block>。</block>
   <block id="e07d586e54fb2ecc1791d2d434436330" category="doc">新增 BlueXP  成員並管理其權限</block>
   <block id="f0b3d6677a212276d758f01224d831be" category="paragraph"><block ref="358dd7829c43f386bdd1bc16bf83b432" category="inline-link-macro-rx"></block>。</block>
   <block id="45fa36bab7b7452cfb911598ccd2d223" category="inline-link-macro">瞭解如何使用角色來控制對 BlueXP  資源的存取。</block>
@@ -5133,4 +5121,24 @@
   <block id="ab244aa8ea93b8114e0cc9009af3f81b" category="list-text">現在您可以管理更多內部部署儲存系統，例如 E 系列和 StorageGRID。</block>
   <block id="036d3952a98988224205b6f039be487f" category="list-text"><block ref="036d3952a98988224205b6f039be487f" category="inline-link-rx"></block></block>
   <block id="6a3405f47013290acf99c18684c84269" category="list-text">Cloud Tiering 現在會顯示您是否有任何未發現的 on-premisesONTAP 集群，以便您可以將它們新增至 Cloud Manager 以在這些集群上啟用分層或其他服務。</block>
+  <block id="5aac456da49390227897f1fa93e12f80" category="doc">私有模式版本（ 3.9.52 ）</block>
+  <block id="3ad3533e2236195b0d2ff39cc302bac1" category="paragraph">3.9.52 版本包含下列 BlueXP  元件和服務的更新。</block>
+  <block id="918d08b069e4e8b9bd825945d099eff0" category="cell">3.9.52 ， 3.9.51</block>
+  <block id="d29240cb60727e796e55d4bf8ac33966" category="cell">請移至，<block ref="291fbb881b3918f162f476bad9d0c478" category="inline-link-rx"></block>並參閱 3.9.52 和 3.9.50 版隨附的變更。</block>
+  <block id="fb6bee0c273267d6fdde07008552b62f" category="cell">前往<block ref="d08346bd70ea49c38d1ac500c69dd11c" category="inline-link-rx"></block>並參考 2025 年 5 月版本中包含的變更。</block>
+  <block id="3e18ba454ff1bfb5aee5e5d425b20ea3" category="cell">2025 年 5 月 12 日（版本 1.43 ）</block>
+  <block id="e604d3f0ea5a3e895506b1c61f048b4d" category="paragraph">您必須先建立連接器、才能變更BlueXP設定。<block ref="d6da137eb117a8b1a6fe744483bdf83d" category="inline-link-macro-rx"></block>。</block>
+  <block id="5b5ddc8c08b78e13543c02ee18a88455" category="paragraph">您需要先建立一個連接器，然後才能變更 BlueXP 設定。公升<block ref="d6da137eb117a8b1a6fe744483bdf83d" category="inline-link-macro-rx"></block> 。</block>
+  <block id="e049b2d97a8ed0a8d2e842c6e0c625b3" category="inline-image-macro">設定圖示</block>
+  <block id="1ffc44d5620a15f62b04c6a8580e783a" category="list-text">在 BlueXP  主控台右上角、選取 <block ref="c0116accfefd0197a42c99a28533a02c" category="inline-image-macro-rx" type="image"></block> &gt; * 身分識別與存取管理 * 。</block>
+  <block id="aa16286c48b235d2df04d578aeed8edb" category="paragraph">使用表格上方的搜尋功能尋找特定的連接器或依資源層次結構篩選表格。</block>
+  <block id="f53392d049b9dddff4ba55ad74c96588" category="inline-image-macro">具有三個點的圖示</block>
+  <block id="c16d0f9fc94c90341b26a5a3efda881c" category="list-text">若要查看連結到連接器的資料夾和項目，請選擇<block ref="e85cc783c74f9ef35cfeeca99fcaf6f6" category="inline-image-macro-rx" type="image"></block>然後選擇*查看詳細資訊*。</block>
+  <block id="e91f37331347d046e8f84d619f57d7c8" category="paragraph">您的組織的資源層次結構最多可以有 7 個級別，嵌套資料夾最多可有 6 個級別，專案最多可有 7 個級別。</block>
+  <block id="8d7e1bfd65485e98b0f12b20edd6d4b2" category="paragraph">您可以選擇與父資料夾或項目關聯的資源：組織父級的所有資源，或資料夾父級的資料夾特定資源。</block>
+  <block id="e6e4545a44f4062ee0d1ed5ca569ddc1" category="paragraph">系統顯示項目 ID。</block>
+  <block id="189b8907a7ab6c4c7b1ea92510e40d70" category="paragraph">擁有資料夾或專案權限的成員可以存取其相關資源。</block>
+  <block id="838d404665efe77bad8374ea27c3b7ca" category="paragraph">修改成員存取權限以確保正確的成員可以存取相關資源。</block>
+  <block id="a5adc30e4e36f3ae2a8e99ff0f19a490" category="paragraph">較高層次結構層級提供的成員存取權限不能在較低層級變更。您必須切換至階層架構的該部分，並在該處更新成員的權限。或者、您也可以<block ref="2e250d63a19626cb0aeed14260bd2f59" category="inline-link-macro-rx"></block>。</block>
+  <block id="1971cba9fca6bc598cf10a08dfb20cb6" category="section-title">2025 年 29 月 5 日</block>
 </blocks>

@@ -22,13 +22,13 @@ summary: 如果貴組織的成員需要在另一個專案中使用 Connector 、
 
 
 .步驟
-. 在 BlueXP  主控台右上角、選取 image:icon-settings-option.png["設定圖示會顯示在 BlueXP  網路主控台的右上角。"] > * 身分識別與存取管理 * 。
+. 在 BlueXP  主控台右上角、選取 image:icon-settings-option.png["設定圖示"] > * 身分識別與存取管理 * 。
 . 選擇 * 連接器 * 。
 . 從表格中找出您要關聯的 Connector 。
 +
-若要尋找特定的 Connector 、您可以使用表格上方的搜尋、並選取資源階層的特定部分來篩選表格內容。
+使用表格上方的搜尋功能尋找特定的連接器或依資源層次結構篩選表格。
 
-. 若要先檢視 Connector 所關聯的資料夾和專案、請選取image:icon-action.png["這是三個並排點的圖示"]、然後選取 * 檢視詳細資料 * 。
+. 若要查看連結到連接器的資料夾和項目，請選擇image:icon-action.png["具有三個點的圖示"]然後選擇*查看詳細資訊*。
 +
 BlueXP  會顯示與 Connector 相關聯的資料夾和專案詳細資料。
 

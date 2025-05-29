@@ -20,7 +20,7 @@ summary: 在受限模式或私有模式下使用 BlueXP  時、請安裝 CA 簽
 
 == 開始之前
 
-您必須先建立連接器、才能變更BlueXP設定。 link:concept-connectors.html#how-to-create-a-connector["瞭解如何建立連接器"]。
+您必須先建立連接器、才能變更BlueXP設定。link:concept-connectors.html#connector-installation["瞭解如何建立連接器"]。
 
 
 

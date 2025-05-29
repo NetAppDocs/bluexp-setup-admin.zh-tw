@@ -235,7 +235,7 @@ image:screenshot-settings-icon-organization.png["顯示BlueXP主控台右上角�
 
 
 .開始之前
-您必須先建立連接器、才能變更BlueXP設定。 link:concept-connectors.html#how-to-create-a-connector["瞭解如何建立連接器"]。
+您必須先建立連接器、才能變更BlueXP設定。link:concept-connectors.html#connector-installation["瞭解如何建立連接器"]。
 
 下列影片顯示從 AWS Marketplace 訂閱 BlueXP  的步驟：
 
