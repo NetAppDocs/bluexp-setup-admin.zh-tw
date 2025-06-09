@@ -22,24 +22,24 @@ summary: 若要開始使用 IAM 、請自訂組織的階層架構、新增其他
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]編輯預設專案或新增至組織的階層架構
 [role="quick-margin-para"]
-您只需使用預設專案、也可以建立符合業務階層的其他專案和資料夾。
+使用預設項目或建立與您的業務層次結構相符的其他項目和資料夾。
 
 [role="quick-margin-para"]
 link:task-iam-manage-folders-projects.html["瞭解如何使用資料夾和專案來組織資源"]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]將成員與您的組織建立關聯
 [role="quick-margin-para"]
-如果企業中有多位人員需要從 BlueXP  存取及管理資源、您需要將其使用者帳戶與組織建立關聯、並在整個資源階層中提供適當的權限。您也可以選擇將服務帳戶新增至組織。
+如果您的企業中有多個人需要存取 BlueXP，請將他們的使用者帳戶與您的組織關聯並指派必要的權限。您也可以選擇將服務帳戶新增至組織。
 
 [role="quick-margin-para"]
 link:task-iam-manage-members-permissions.html["瞭解如何管理成員及其權限"]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]新增或探索資源
 [role="quick-margin-para"]
-將 BlueXP  中的資源新增或探索為 _ 工作環境 _ 。工作環境代表組織成員從專案中管理的儲存系統。例如、 Cloud Volumes ONTAP 系統或內部部署 ONTAP 叢集。
+在 BlueXP 中新增或發現資源作為_工作環境_。組織成員在專案內部管理代表儲存系統的工作環境。
 
 [role="quick-margin-para"]
-瞭解如何從 BlueXP  畫布建立或探索資源：
+了解如何建立或發現資源：
 
 [role="quick-margin-list"]
 * https://docs.netapp.com/us-en/bluexp-fsx-ontap/index.html["Amazon FSX for NetApp ONTAP 產品"^]
@@ -52,7 +52,7 @@ link:task-iam-manage-members-permissions.html["瞭解如何管理成員及其權
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]將資源與其他專案建立關聯
 [role="quick-margin-para"]
-當您在 BlueXP  中建立或探索資源時、該資源會自動與您建立或探索工作環境時所選取的專案建立關聯。如果您想要讓該資源可供組織中的其他專案使用、則必須在兩者之間建立關聯。如果資源是由 Connector 管理、則您也需要在專案和相關的 Connector 之間建立關聯。
+當您在 BlueXP  中建立或探索資源時、該資源會自動與您建立或探索工作環境時所選取的專案建立關聯。如果您想要讓該資源可供組織中的其他專案使用、則必須在兩者之間建立關聯。如果連接器管理資源，則將連接器與對應的項目關聯。
 
 [role="quick-margin-list"]
 * link:task-iam-manage-resources.html["瞭解如何管理組織的資源階層"]。

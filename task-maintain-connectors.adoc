@@ -14,7 +14,7 @@ summary: 在 Connector 主機上維護作業系統是您的責任。例如、您
 
 
 [role="lead"]
-在 Connector 主機上維護作業系統是您的責任。例如、您應該遵循公司的作業系統發佈標準程序、將安全性更新套用至 Connector 主機上的作業系統。
+維護連接器主機上的作業系統是您（客戶）的責任。例如，您（客戶）應依照公司作業系統分發的標準流程，將安全性更新套用至連接器主機上的作業系統。
 
 
 TIP: 如果您有現有的 Connector 、您應該知道 link:reference-connector-operating-system-changes.html["支援的 Linux 作業系統變更"]。

@@ -14,10 +14,10 @@ summary: 系統管理員可以設定 BlueXP  連接器，以提示使用者提�
 
 
 [role="lead"]
-依預設，連接器認證可讓 BlueXP  使用者存取進階檢視（ ONTAP 系統管理員）。您可以設定 BlueXP  來提示使用者提供其 ONTAP 認證。如此可確保使用者在 Cloud Volumes ONTAP 和 ONTAP 內部部署叢集中使用 ONTAP 叢集時，會套用其 ONTAP 權限。
+預設情況下，Connector 憑證允許使用者存取進階視圖 (ONTAP 系統管理員)。您可以改為提示使用者輸入其 ONTAP 憑證。如此可確保使用者在 Cloud Volumes ONTAP 和 ONTAP 內部部署叢集中使用 ONTAP 叢集時，會套用其 ONTAP 權限。
 
 
-NOTE: 您必須具有組織管理員角色，才能編輯 Connector 設定。
+NOTE: 您必須具有組織管理員角色才能編輯連接器設定。
 
 .步驟
 . 從 BlueXP 標頭中選取 * Connector* 下拉式清單。
@@ -25,7 +25,7 @@ NOTE: 您必須具有組織管理員角色，才能編輯 Connector 設定。
 . 在您要編輯的 Connector 所對應的列中，選取動作功能表。
 . 展開 * 強制認證 * 選項。
 . 選取核取方塊以啟用 * 強制認證 * 選項，然後選取 * 儲存 * 。
-. 檢視 * 強制認證 * 選項，確認已啟用此選項。
+. 檢查「強制憑證」選項是否已啟用。
 +
 image:screenshot-force-credentials-on.png["顯示強制認證已開啟的螢幕擷取畫面"]
 

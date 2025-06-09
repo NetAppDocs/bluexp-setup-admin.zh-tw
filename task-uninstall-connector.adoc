@@ -22,7 +22,7 @@ link:concept-modes.html["瞭解 BlueXP 部署模式"]。
 
 == 使用標準或受限模式時、請解除安裝 Connector
 
-如果您是在標準模式或受限模式下使用 BlueXP （也就是說、 Connector 主機具有輸出連線）、則應遵循下列步驟來解除安裝 Connector 軟體。
+如果您使用的是標準模式或受限模式（換句話說，連接器主機具有出站連接），那麼您應該按照以下步驟卸載連接器軟體。
 
 .步驟
 . 連接至 Linux VM for the Connector 。
@@ -39,7 +39,7 @@ _silon_ 執行指令碼時不會提示您確認。
 
 == 使用私有模式時、請解除安裝 Connector
 
-如果您是在私有模式下使用 BlueXP （也就是說、 Connector 主機擁有 _NO 輸出連線）、則應遵循下列步驟來解除安裝 Connector 軟體。
+如果您使用的是私有模式（換句話說，連接器主機沒有出站連接），那麼您應該按照以下步驟卸載連接器軟體。
 
 .步驟
 . 連接至 Linux VM for the Connector 。
@@ -50,7 +50,7 @@ _silon_ 執行指令碼時不會提示您確認。
 /opt/application/netapp/ds/cleanup.sh
 rm -rf /opt/application/netapp/
 ----
-. 從 Linux 主機移除舊的，現在未使用的容器映像檔案。如此可確保 /var 目錄中有足夠的空間可供重新安裝。
+. 從 Linux 主機刪除舊的、未使用的容器映像文件，以釋放 /var 目錄中的空間以供重新安裝。
 +
 [role="tabbed-block"]
 ====
@@ -80,7 +80,7 @@ docker system prune -a
 請注意下列關於移除連接器的事項：
 
 * 此動作不會刪除虛擬機器。
-* 此動作無法還原、只要從 BlueXP 移除 Connector 、就無法重新新增。
+* 此操作無法恢復 - 一旦刪除連接器，就無法將其加回。
 
 
 .步驟

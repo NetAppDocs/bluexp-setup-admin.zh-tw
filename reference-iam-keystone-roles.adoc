@@ -17,7 +17,7 @@ summary: BlueXP  身分識別與存取管理提供兩個管理角色，您可�
 Keystone 角色提供對 Keystone 儀表板的存取，並可讓使用者檢視及管理 Keystone 訂閱。共有兩個 Keystone 角色： Keystone 管理和 Keystone 檢視器。這兩種角色的主要差異在於它們可以在 Keystone 中採取的行動。Keystone 管理員角色是唯一允許建立服務要求或修改訂閱的角色。
 
 .BlueXP  中 Keystone 角色的範例
-在 Keystone 訂閱中， XYZ Corporation 擁有四位來自不同部門的儲存工程師，可檢視其 Keystone 訂閱的相關資訊。雖然所有這些使用者都需要監控 Keystone 訂閱，但只有團隊主管可以提出服務要求。其中三位團隊成員被授予 * Keystone viewer* 角色，而團隊主管則被授予 * Keystone admin* 角色，因此可以控制公司的服務要求。
+XYZ 公司有四名來自不同部門的儲存工程師查看 Keystone 訂閱資訊。雖然所有這些使用者都需要監控 Keystone 訂閱，但只有團隊主管可以提出服務要求。其中三位團隊成員被授予 * Keystone viewer* 角色，而團隊主管則被授予 * Keystone admin* 角色，因此可以控制公司的服務要求。
 
 下表指出每個 Keystone 角色可以執行的動作。
 

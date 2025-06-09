@@ -1,0 +1,29 @@
+= 連接器 3.9.53
+:allow-uri-read: 
+
+
+
+
+=== 連接器 3.9.53
+
+BlueXP Connector 的此版本包括安全性改進和錯誤修復。
+
+目前、 3.9.53 版本適用於標準模式和受限模式。
+
+
+
+=== BlueXP  身分識別與存取管理（ IAM ）
+
+
+
+==== 多因素驗證（MFA）
+
+非聯合用戶現在可以為其 BlueXP 帳戶啟用多重身份驗證 (MFA)，從而增強帳戶安全性。 BlueXP管理員可以管理使用者的 MFA 設置，並根據需要為各個使用者重置或停用 MFA。
+
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-user-settings.html#task-user-mfa["了解如何為自己設定多重身份驗證。"^] link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-members.permission.html#manage-mfa["了解如何管理使用者的多重身份驗證。"^]
+
+
+
+=== 工作負載
+
+現在您可以從 BlueXP 中的憑證頁面查看和刪除 Amazon FSx for NetApp ONTAP 憑證。

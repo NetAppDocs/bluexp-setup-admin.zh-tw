@@ -14,11 +14,11 @@ summary: 當您使用透過 SaaS 層提供的 BlueXP 網路型主控台時、它
 
 
 [role="lead"]
-當您登入並使用 BlueXP  網路型主控台時、 BlueXP  會與多個端點聯絡、以完成您起始的動作。存取 BlueXP  主控台的電腦必須連線到這些端點。
+當您登入並使用基於 Web 的控制台時，BlueXP 會聯絡多個端點來完成您發起的操作。存取控制台的電腦必須連接到這些端點。
 
 在兩種情況下、我們會聯絡這些端點：
 
-* 在使用者的電腦上完成以「軟體即服務」（ SaaS ）形式提供的特定動作 https://console.bluexp.netapp.com["BlueXP 網路型主控台"^]。
+* 在使用者的電腦上完成 https://console.bluexp.netapp.com["BlueXP 網路型主控台"^]可作為軟體即服務（SaaS）使用。
 * 從使用者電腦開啟 Web 瀏覽器、輸入 Connector 主機的 IP 位址、然後登入並設定 Connector 。如果您手動安裝 Connector 、則需要執行這些步驟。
 
 
@@ -28,13 +28,13 @@ summary: 當您使用透過 SaaS 層提供的 BlueXP 網路型主控台時、它
 
 
 | \https://console.bluexp.netapp.com
-\https://*.console.bluexp.netapp.com | 這是您在網頁瀏覽器中輸入的端點、用於使用 BlueXP  網路型主控台。 
+\https://*.console.bluexp.netapp.com | 這是您在 Web 瀏覽器中輸入以使用基於 Web 的控制台的端點。 
 
 
-| \https://api.bluexp.netapp.com | BlueXP  網路型主控台會連絡此端點、與 BlueXP  API 互動、以執行與授權、授權、訂閱、認證、通知等相關的動作。 
+| \https://api.bluexp.netapp.com | 基於 Web 的控制台聯絡此端點與 API 進行交互，以執行與授權、授權、訂閱、憑證、通知等相關的操作。 
 
 
-| \https://aiq.netapp.com | 需要存取 BlueXP 數位顧問。 
+| \https://aiq.netapp.com | 需要訪問數位顧問。 
 
 
  a| 
@@ -46,7 +46,7 @@ AWS 服務（ amazonaws.com):
 * 安全性權杖服務（ STOS ）
 * 簡易儲存服務（ S3 ）
 
-| 需要在AWS中部署從BlueXP部署連接器。確切的端點取決於部署Connector的區域。 https://docs.aws.amazon.com/general/latest/gr/rande.html["如需詳細資料、請參閱 AWS 文件。"^] 
+| 需要在AWS中部署從BlueXP部署連接器。確切的端點取決於您部署連接器的區域。  https://docs.aws.amazon.com/general/latest/gr/rande.html["有關詳細信息，請參閱 AWS 文件。"]建議：  https://docs.aws.amazon.com/general/latest/gr/rande.html["有關詳細信息，請參閱 AWS 文件。"] 
 
 
 | \https://management.azure.com
@@ -77,9 +77,9 @@ AWS 服務（ amazonaws.com):
 \https://services.cloud.netapp.com | 您的網頁瀏覽器會連線至這些端點、以便透過BlueXP進行集中式使用者驗證。 
 
 
-| \https://widget.intercom.io | 產品內對談可讓您與 NetApp 雲端專家交談。 
+| \https://widget.intercom.io | 透過產品內聊天，您可以與 NetApp 支援人員溝通。 
 |===
-除了這些端點之外、您還需要確保 Connector 具備對外網際網路存取權、以便聯絡特定端點、以進行日常作業。您可以依照下一節中的連結、找到這些端點的清單。
+確保連接器具有對聯繫終端節點的出站互聯網存取權限，以便進行日常操作。請點擊下方下一節中的鏈接，以尋找這些終端節點的清單。
 
 .相關資訊
 * 準備連接器的網路連線

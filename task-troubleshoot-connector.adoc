@@ -74,7 +74,7 @@ image:screenshot-help-support.png["「說明」功能表的快照、其中「支
 .. 選擇 * 傳送 AutoSupport * 、將訊息直接傳送至 NetApp 支援部門。
 +
 
-NOTE: 當您選擇必須讓 BlueXP  傳送 AutoSupport 訊息時，可能需要五小時的時間，因為 BlueXP  會在傳送 AutoSupport 訊息時自動進行負載平衡。如果您與 NetApp 支援部門的通訊時間相當敏感，您應該下載檔案並自行傳送給 NetApp 支援部門。
+NOTE: 由於負載平衡，BlueXP 可能需要最多五個小時才能發送 AutoSupport 訊息。如需緊急通信，請下載文件並手動發送。
 
 
 

@@ -14,7 +14,7 @@ summary: 準備您的環境、部署 Connector 及訂閱 BlueXP 、以受限模�
 
 
 [role="lead"]
-準備您的環境、部署 Connector 及訂閱 BlueXP 、以受限模式開始使用 BlueXP 。
+透過準備您的環境和部署連接器，開始以受限模式使用 BlueXP。
 
 受限模式通常由州政府和地方政府及受管制公司使用、包括在 AWS GovCloud 和 Azure 政府地區部署。開始之前、您應該先瞭解 link:concept-netapp-accounts.html["BlueXP 帳戶"]、 link:concept-connectors.html["連接器"]和 link:concept-modes.html["部署模式"]。
 
@@ -32,6 +32,6 @@ summary: 準備您的環境、部署 Connector 及訂閱 BlueXP 、以受限模�
 . 提供 BlueXP 先前設定的權限。
 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] link:task-subscribe-restricted-mode.html["訂閱 BlueXP"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] link:task-subscribe-restricted-mode.html["訂閱 NetApp 智慧服務（可選）"]
 [role="quick-margin-para"]
-從雲端供應商的市場訂閱 BlueXP 、即可按每小時費率（ PAYGO ）或透過年度合約支付 BlueXP 服務費用。
+可選：從您的雲端供應商市場訂購 NetApp 智慧服務，按小時費率 (PAYGO) 或按年合約支付資料服務費用。 NetApp智慧服務包括備份和復原、Cloud Volumes ONTAP、分層、勒索軟體防護和災難復原。分類功能包含在您的訂閱中，無需額外付費。

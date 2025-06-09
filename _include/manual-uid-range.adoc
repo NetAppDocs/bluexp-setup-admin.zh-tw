@@ -1,0 +1,136 @@
+= 
+:allow-uri-read: 
+
+
+.開始之前
+您應該擁有下列項目：
+
+* 安裝Connector的root權限。
+* Proxy伺服器的詳細資料、如果需要Proxy才能從Connector存取網際網路。
++
+您可以選擇在安裝後設定Proxy伺服器、但需要重新啟動Connector。
+
++
+請注意、 BlueXP 不支援透明 Proxy 伺服器。
+
+* CA 簽署的憑證（如果 Proxy 伺服器使用 HTTPS 或 Proxy 是攔截 Proxy ）。
+
+
+.關於這項工作
+NetApp 支援網站上提供的安裝程式可能是舊版。安裝後、如果有新版本可用、 Connector 會自動自行更新。
+
+.步驟
+. 如果主機上已設定_http或_https或proxy_系統變數、請將其移除：
++
+[source, cli]
+----
+unset http_proxy
+unset https_proxy
+----
++
+如果您未移除這些系統變數、安裝將會失敗。
+
+. 從下載Connector軟體 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支援網站"^]，然後將其複製到 Linux 主機。
++
+您應該下載「線上」 Connector 安裝程式、以供您的網路或雲端使用。Connector 有獨立的「離線」安裝程式、但僅支援私有模式部署。
+
+. 指派執行指令碼的權限。
++
+[source, cli]
+----
+chmod +x BlueXP-Connector-Cloud-<version>
+----
++
+其中、就是您下載的Connector版本<version> 。
+
+. 執行安裝指令碼。
++
+[source, cli]
+----
+ ./BlueXP-Connector-Cloud-<version> --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
+----
++
+-Proxy和--cacert參數是可選的。如果您有 Proxy 伺服器、則需要輸入如圖所示的參數。安裝程式不會提示您提供Proxy的相關資訊。
+
++
+以下是使用兩個選用參數的命令範例：
+
++
+[source, cli]
+----
+ ./BlueXP-Connector-Cloud-v3.9.40--proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+----
++
+-Proxy會使用下列其中一種格式、將Connector設定為使用HTTP或HTTPS Proxy伺服器：
+
++
+** \http://address:port
+** \http://user-name:password@address:port
+** \http://domain-name%92user-name:password@address:port
+** \https://address:port
+** \https://user-name:password@address:port
+** \https://domain-name%92user-name:password@address:port
++
+請注意下列事項：
+
++
+*** 使用者可以是本機使用者或網域使用者。
+*** 對於網域使用者、您必須使用上方所示的 \ 的 ASCII 碼。
+*** BlueXP 不支援包含 @ 字元的使用者名稱或密碼。
+*** 如果密碼包含下列任何特殊字元、您必須以反斜線開頭來轉義該特殊字元： & 或 !
++
+例如：
+
++
+\http://bxpproxyuser:netapp1\!@address:3128
+
+
+
+
+
++
+-cacert指定用於連接器與Proxy伺服器之間HTTPS存取的CA簽署憑證。只有當您指定 HTTPS Proxy 伺服器或 Proxy 是攔截 Proxy 時、才需要此參數。
+
+. 如果您使用 Podman，則需要調整 aardvark-dns 連接埠。
++
+.. 透過 SSH 連接到 BlueXP Connector 虛擬機器。
+.. 開啟 podman _/usr/share/containers/containers.conf_ 檔案並修改 Aardvark DNS 服務的選定連接埠。例如改為54。
++
+[source, cli]
+----
+vi /usr/share/containers/containers.conf
+...
+# Port to use for dns forwarding daemon with netavark in rootful bridge
+# mode and dns enabled.
+# Using an alternate port might be useful if other DNS services should
+# run on the machine.
+#
+dns_bind_port = 54
+...
+Esc:wq
+----
+.. 重新啟動 Connector 虛擬機器。
+
+
+
+
+. 等待安裝完成。
++
+安裝結束時、如果您指定Proxy伺服器、Connector服務（occm）會重新啟動兩次。
+
+. 從連線至 Connector 虛擬機器的主機開啟網頁瀏覽器、然後輸入下列 URL ：
++
+https://_ipaddress_[]
+
+. 登入後、設定 Connector ：
++
+.. 指定要與連接器關聯的 BlueXP  組織。
+.. 輸入系統名稱。
+.. 在 * 您是在安全的環境中執行？ * 保持停用限制模式。
++
+您應該保持停用受限模式、因為這些步驟說明如何在標準模式中使用 BlueXP 。只有當您擁有安全的環境、而且想要中斷此帳戶與 BlueXP 後端服務的連線時、才應啟用受限模式。如果是這樣、 link:task-quick-start-restricted-mode.html["請依照步驟、以受限模式開始使用 BlueXP"]。
+
+.. 選取 * 開始 * 。
+
+
+

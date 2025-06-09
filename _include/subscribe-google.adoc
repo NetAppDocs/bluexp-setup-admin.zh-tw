@@ -3,7 +3,7 @@
 
 
 .步驟
-. 在 BlueXP 主控台的右上角、選取「設定」圖示、然後選取 * 認證 * 。
+. 在控制台的右上角，選擇“設定”圖標，然後選擇“*憑證*”。
 . 選取一組認證的動作功能表，然後選取 * 設定訂閱 * 。需要新的螢幕擷取畫面（ TS ）image:screenshot_gcp_add_subscription.png["一組現有認證資料的動作功能表快照。"]
 . 若要使用選取的認證設定現有訂閱，請從下拉式清單中選取 Google Cloud 專案和訂閱，然後選取 * 設定 * 。
 +
@@ -15,7 +15,7 @@ image:screenshot_gcp_associate.gif["Google Cloud 專案的快照、以及 Google
 NOTE: 在您完成下列步驟之前、請先確認您的Google Cloud帳戶擁有「帳單管理」權限、以及BlueXP登入權限。
 
 +
-.. 重新導向至之後 https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Google Cloud Marketplace上的NetApp BlueXP頁面"^]下、請確定在頂端導覽功能表中選取正確的專案。
+.. 在您被重定向到 https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Google Cloud Marketplace 上的 NetApp 智慧服務頁面"^] ，確保在頂部導航選單中選擇了正確的項目。
 +
 image:screenshot_gcp_cvo_marketplace.png["Google Cloud 中 Cloud Volumes ONTAP 市場頁面的螢幕擷取畫面。"]
 

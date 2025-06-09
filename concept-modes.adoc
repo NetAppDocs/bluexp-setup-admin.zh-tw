@@ -14,7 +14,7 @@ summary: BlueXP 提供多種部署模式、可讓您以符合業務與安全需�
 
 
 [role="lead"]
-BlueXP 提供多種 _ 部署模式 _ 、可讓您以符合業務與安全需求的方式使用 BlueXP 。標準模式 _ 運用 BlueXP  軟體即服務（ SaaS ）層來提供完整功能、而設有連線限制的組織則可使用 _ 受限模式 _ 和 _ 私有模式 _ 。
+BlueXP 提供多種部署模式，協助您滿足業務和安全需求。標準模式利用軟體即服務 (SaaS) 層提供完整功能，而受限模式和私有模式則適用於有連線限制的組織。
 
 雖然 BlueXP  在使用受限模式或私有模式時會抑制流量、通訊和資料的流通、但您有責任確保您的環境（內部部署和雲端）符合必要的法規。
 
@@ -22,15 +22,15 @@ BlueXP 提供多種 _ 部署模式 _ 、可讓您以符合業務與安全需求�
 
 == 總覽
 
-BlueXP  提供三種部署模式。每種模式的輸出連線需求、部署位置、安裝程序、驗證方法、可用的資料和儲存服務、以及收費方法各不相同。
+每種部署模式在出站連線需求、部署位置、安裝流程、驗證方法、可用資料和儲存服務以及收費方法方面有所不同。
 
-標準模式:: 使用者可從網路型主控台以雲端服務的形式存取 BlueXP 。根據您計畫使用的 BlueXP 服務、 BlueXP 管理員會建立一個或多個 Connectors 來管理混合雲環境中的資料。
+標準模式:: 您可以透過基於 Web 的控制台使用 SaaS 服務。根據您計劃使用的資料服務和功能，BlueXP 管理員會建立一個或多個連接器來管理混合雲環境中的資料。
 +
 --
 此模式使用透過公用網際網路的加密資料傳輸。
 
 --
-受限模式:: BlueXP Connector 安裝在雲端（位於政府區域、主權雲端區域或商業區域）、而且與 BlueXP SaaS 層的輸出連線有限。使用者可從 Connector 提供的網路型主控台、而非從 SaaS 層、在本機存取 BlueXP 。
+受限模式:: 您在雲端（在政府區域、主權雲端區域或商業區域）安裝 BlueXP 連接器，並且與 BlueXP SaaS 層的出站連接有限。使用者可從 Connector 提供的網路型主控台、而非從 SaaS 層、在本機存取 BlueXP 。
 +
 --
 此模式通常由州政府和地方政府及受管制公司使用。
@@ -38,7 +38,7 @@ BlueXP  提供三種部署模式。每種模式的輸出連線需求、部署�
 <<受限模式,深入瞭解 SaaS 層的輸出連線能力>>。
 
 --
-私有模式:: BlueXP  Connector 安裝在內部部署或雲端（位於安全區域、主權雲端區域或商業區域）、且與 BlueXP  SaaS 層之間沒有連線。使用者可從 Connector 提供的網路型主控台、而非從 SaaS 層、在本機存取 BlueXP 。
+私有模式:: 您在本機或雲端（安全區域、主權雲端區域或商業區域）安裝 BlueXP 連接器，且與 BlueXP SaaS 層沒有連線。使用者可從 Connector 提供的網路型主控台、而非從 SaaS 層、在本機存取 BlueXP 。
 +
 --
 安全區域包括 https://aws.amazon.com/federal/secret-cloud/["AWS Secret Cloud"^]、 https://aws.amazon.com/federal/top-secret-cloud/["AWS Top Secret Cloud"^]和 https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6."^]
@@ -77,7 +77,7 @@ BlueXP  提供三種部署模式。每種模式的輸出連線需求、部署�
 | 儲存與資料服務 | 全部均受支援 | 許多都受到支援 | 支援數種 
 
 
-| 授權選項 | 市場訂閱和 BYOL | 市場訂閱和 BYOL | BYOL 
+| 資料服務許可選項 | 市場訂閱和 BYOL | 市場訂閱和 BYOL | BYOL 
 |===
 請參閱下列各節、深入瞭解這些模式、包括支援哪些 BlueXP 功能和服務。
 

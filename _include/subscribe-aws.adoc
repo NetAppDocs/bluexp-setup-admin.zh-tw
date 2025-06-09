@@ -2,9 +2,9 @@
 :allow-uri-read: 
 
 
-下列影片顯示從 AWS Marketplace 訂閱 BlueXP  的步驟：
+以下影片展示了從 AWS Marketplace 訂閱 NetApp 智慧服務的步驟：
 
-.從 AWS Marketplace 訂閱 BlueXP
+.從 AWS Marketplace 訂閱 NetApp 智慧服務
 video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 .步驟
 . 在 BlueXP 主控台的右上角、選取「設定」圖示、然後選取 * 認證 * 。

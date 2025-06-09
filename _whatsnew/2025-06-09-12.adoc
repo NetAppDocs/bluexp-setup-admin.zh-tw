@@ -1,0 +1,41 @@
+= 連接器 3.9.52
+:allow-uri-read: 
+
+
+
+
+=== 連接器 3.9.52
+
+此版本的 BlueXP  Connector 包括少量的安全性改善和錯誤修正，以及一些其他更新。
+
+目前、 3.9.52 版本適用於標準模式和受限模式。
+
+
+
+==== 支援 Docker 27 和 Docker 28
+
+Connector 現在支援 Docker 27 和 Docker 28 。
+
+
+
+==== Cloud Volumes ONTAP
+
+當連接器不合規或停機超過 14 天時，Cloud Volumes ONTAP 基於容量的節點不再關閉。當 Cloud Volumes ONTAP 失去對連接器的存取權限時，它仍會發送事件管理訊息。此變更是為了確保即使連接器長時間處於停機狀態，Cloud Volumes ONTAP 仍可繼續運作。它不會改變連接器的合規性要求。
+
+
+
+=== BlueXP  中提供 Keystone 管理功能
+
+BlueXP  中的 NetApp Keystone 試用版已新增對 Keystone 管理的存取權。您可以從 BlueXP  左側導覽列存取 NetApp Keystone Beta 的登錄頁面。
+
+
+
+=== BlueXP  身分識別與存取管理（ IAM ）
+
+BlueXP IAM 中提供以下新功能。
+
+
+
+==== 本地用戶的多重身份驗證 (MFA)
+
+本機使用者（非聯合使用者且未與 NetApp 支援網站帳戶關聯）可以啟用多重驗證。管理員可以管理使用者的 MFA 設置，例如在需要時暫時停用或移除 MFA。

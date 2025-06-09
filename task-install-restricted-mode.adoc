@@ -14,7 +14,7 @@ summary: 在受限模式下部署 Connector 、以便在與 BlueXP SaaS 層的�
 
 
 [role="lead"]
-在受限模式下部署 Connector 、以便能在有限的 BlueXP  軟體即服務（ SaaS ）層輸出連線中使用 BlueXP  。若要開始使用、請安裝 Connector 、存取 Connector 上執行的使用者介面來設定 BlueXP 、然後提供您先前設定的雲端權限。
+以受限模式部署連接器，以便您可以在有限的出站連線下使用 BlueXP。若要開始使用、請安裝 Connector 、存取 Connector 上執行的使用者介面來設定 BlueXP 、然後提供您先前設定的雲端權限。
 
 
 

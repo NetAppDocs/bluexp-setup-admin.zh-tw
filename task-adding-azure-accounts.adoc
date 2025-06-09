@@ -337,7 +337,7 @@ image:screenshot_accounts_switch_azure.gif["在「詳細資料擴大機；認證
 您需要先建立一個連接器，然後才能變更 BlueXP 設定。公升link:concept-connectors.html#connector-installation["瞭解如何建立連接器"] 。
 
 .步驟
-. 在 BlueXP 主控台的右上角、選取「設定」圖示、然後選取 * 認證 * 。
+. 在控制台的右上角，選擇“設定”圖標，然後選擇“*憑證*”。
 . 選取一組認證的動作功能表，然後選取 * 設定訂閱 * 。
 +
 您必須選取與 Connector 相關聯的認證。您無法將市場訂閱與 BlueXP 相關的認證建立關聯。
@@ -350,7 +350,7 @@ image:screenshot_accounts_switch_azure.gif["在「詳細資料擴大機；認證
 .. 填寫表單並選擇 * 訂閱 * 。
 .. 訂閱程序完成後、請選取 * 立即設定帳戶 * 。
 +
-您將被重新導向至BlueXP網站。
+您將被重新導向至 BlueXP。
 
 .. 從*訂閱指派*頁面：
 +
@@ -367,7 +367,7 @@ BlueXP  以這項新訂閱取代組織或帳戶中所有認證的現有訂閱�
 下列影片顯示從Azure Marketplace訂閱的步驟：
 
 +
-.從 Azure Marketplace 訂閱 BlueXP
+.從 Azure 市場訂閱 NetApp 智慧服務
 video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
 
 

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-adding-gcp-accounts.html 
 keywords: permissions, gcp, marketplace, gcp subscription, subscription, gcp marketplace, subscribe, data tiering, tiering, setup, requirements, account for data tiering, account for tiering, interoperable, interoperability, interoperable storage access keys, access keys 
-summary: 您可以建立與 Connector VM 執行個體相關聯的 Google Cloud 認證、方法是建立市場訂閱的關聯、並疑難排解訂閱程序。這兩項工作都能確保您可以使用市場訂閱來支付 BlueXP 服務費用。 
+summary: 您可以建立與 Connector VM 執行個體相關聯的 Google Cloud 認證、方法是建立市場訂閱的關聯、並疑難排解訂閱程序。這兩項任務確保您可以使用市場訂閱來支付數據服務。 
 ---
 = 管理 BlueXP 的 Google Cloud 認證和訂閱
 :hardbreaks:
@@ -14,18 +14,18 @@ summary: 您可以建立與 Connector VM 執行個體相關聯的 Google Cloud �
 
 
 [role="lead"]
-您可以建立與 Connector VM 執行個體相關聯的 Google Cloud 認證、方法是建立市場訂閱的關聯、並疑難排解訂閱程序。這兩項工作都能確保您可以使用市場訂閱來支付 BlueXP 服務費用。
+您可以建立與 Connector VM 執行個體相關聯的 Google Cloud 認證、方法是建立市場訂閱的關聯、並疑難排解訂閱程序。這兩項任務確保您可以使用市場訂閱來支付數據服務。
 
 
 
 == 將 Marketplace 訂閱與 Google Cloud 認證建立關聯
 
-在Google Cloud中部署Connector時、BlueXP會建立一組與Connector VM執行個體相關的預設認證資料。您可以隨時變更與這些認證相關的 Google Cloud Marketplace 訂閱。訂閱可讓您建立隨用隨付的 Cloud Volumes ONTAP 系統、並使用其他 BlueXP 服務。
+在Google Cloud中部署Connector時、BlueXP會建立一組與Connector VM執行個體相關的預設認證資料。您可以隨時變更與這些認證相關的 Google Cloud Marketplace 訂閱。透過訂閱，您可以建立按使用量付費的 Cloud Volumes ONTAP 系統，並使用其他資料服務。
 
 以新訂閱取代目前的市場訂閱、可變更任何現有 Cloud Volumes ONTAP 工作環境和所有新工作環境的市場訂閱。
 
 .步驟
-. 在 BlueXP 主控台的右上角、選取「設定」圖示、然後選取 * 認證 * 。
+. 在控制台的右上角，選擇“設定”圖標，然後選擇“*憑證*”。
 . 選取一組認證的動作功能表，然後選取 * 設定訂閱 * 。需要新的螢幕擷取畫面（ TS ）image:screenshot_gcp_add_subscription.png["一組現有認證資料的動作功能表快照。"]
 . 若要使用選取的認證設定現有訂閱，請從下拉式清單中選取 Google Cloud 專案和訂閱，然後選取 * 設定 * 。
 +
@@ -37,7 +37,7 @@ image:screenshot_gcp_associate.gif["Google Cloud 專案的快照、以及 Google
 NOTE: 在您完成下列步驟之前、請先確認您的Google Cloud帳戶擁有「帳單管理」權限、以及BlueXP登入權限。
 
 +
-.. 重新導向至之後 https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Google Cloud Marketplace上的NetApp BlueXP頁面"^]下、請確定在頂端導覽功能表中選取正確的專案。
+.. 在您被重定向到 https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Google Cloud Marketplace 上的 NetApp 智慧服務頁面"^] ，確保在頂部導航選單中選擇了正確的項目。
 +
 image:screenshot_gcp_cvo_marketplace.png["Google Cloud 中 Cloud Volumes ONTAP 市場頁面的螢幕擷取畫面。"]
 
@@ -89,7 +89,7 @@ image:screenshot_gcp_associate.gif["訂閱指派頁面的快照。"]
 
 == 疑難排解 Marketplace 訂閱程序
 
-有時透過 Google Cloud Marketplace 訂閱 BlueXP 可能會因為權限不正確或不小心轉寄至 BlueXP 網站而變得零散。如果發生這種情況、請使用下列步驟完成訂購程序。
+有時，透過 Google Cloud Marketplace 訂閱 NetApp 智慧服務可能會因為權限不正確或意外未遵循重定向到 BlueXP 網站而變得碎片化。如果發生這種情況、請使用下列步驟完成訂購程序。
 
 .步驟
 . 瀏覽至 https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Google Cloud Marketplace上的NetApp BlueXP頁面"^] 檢查訂單狀態。如果頁面顯示 * 管理供應商 * 、請向下捲動並選取 * 管理訂單 * 。

@@ -16,8 +16,6 @@ summary: 您登入 BlueXP 的方式取決於您帳戶使用的 BlueXP 部署模�
 [role="lead"]
 您登入 BlueXP 的方式取決於您帳戶使用的 BlueXP 部署模式。
 
-Connector 包含可從 Connector 主機存取的本機 UI 。此使用者介面適用於以受限模式或私人模式使用 BlueXP 的客戶。在標準模式下使用 BlueXP 時、您應該從存取使用者介面 https://console.bluexp.netapp.com/["BlueXP SaaS 主控台"^]
-
 link:concept-modes.html["瞭解 BlueXP 部署模式"]。
 
 [role="tabbed-block"]
