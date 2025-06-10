@@ -26,7 +26,7 @@ BlueXP  可統一控制混合式多雲端和整合式資料服務的儲存設�
 
 === 從 BlueXP  畫布統一控制儲存設備
 
-BlueXP  畫布可讓您探索，部署，最佳化及管理雲端和內部部署儲存設備。畫布提供單一位置，可進行所有儲存管理。
+_BlueXP 畫布_可讓您發現、部署和管理雲端和本機儲存。畫布提供單一位置，可進行所有儲存管理。
 
 
 
@@ -67,7 +67,7 @@ BlueXP  可讓您從 BlueXP  畫布管理下列類型的儲存設備：
 
 ==== 從工作環境進行儲存管理
 
-在 BlueXP  畫布上， _ 工作環境 _ 代表您發現或部署的雲端和內部部署儲存設備。您可以選擇工作環境，並將其與 BlueXP  資料服務整合，或進入工作環境來完成儲存管理動作，例如新增磁碟區。
+在 BlueXP 畫布上，「工作環境」表示已發現或已部署的儲存空間。您可以選擇一個“工作環境”，將其與 BlueXP 資料服務集成，或管理存儲，例如新增磁碟區。
 
 image:screenshot-canvas.png["BlueXP  畫布的螢幕擷取畫面會顯示數個工作環境，其中一個已選取，並顯示啟用 BlueXP  資料服務或選取「進入工作環境」來管理儲存設備的能力。"]
 
@@ -75,7 +75,7 @@ image:screenshot-canvas.png["BlueXP  畫布的螢幕擷取畫面會顯示數個
 
 === 整合式服務可保護，保護及最佳化資料
 
-BlueXP  包含一套完整的整合式資料服務，可協助您在內部部署和雲端儲存環境中維護資料的安全性，完整性和可用度。
+BlueXP 包括整合資料服務，以維護本地和雲端儲存中資料的安全性和可用性。
 
 BlueXP  警示:: 檢視 ONTAP 環境中與容量、可用度、效能、保護和安全性相關的問題。
 BlueXP 自動化目錄:: 使用指令碼化解決方案來自動化 NetApp 產品與服務的部署與整合。
@@ -109,7 +109,7 @@ BlueXP可讓您管理雲端儲存設備、並在Amazon Web Services、Microsoft 
 
 == 成本
 
-BlueXP的定價取決於您計畫使用的服務。 https://bluexp.netapp.com/pricing["瞭解BlueXP定價"^]
+BlueXP 的定價取決於您使用的服務。 https://bluexp.netapp.com/pricing["瞭解BlueXP定價"^]
 
 
 
@@ -135,7 +135,7 @@ BlueXP  身分識別與存取管理（ IAM ）是一種資源與存取管理模
 * 存取管理可讓您將角色指派給組織階層不同層級的成員
 
 
-在標準模式下使用 BlueXP  時、支援 BlueXP  IAM 。如果您是以受限模式或私人模式使用 BlueXP  、則會使用 BlueXP  _account_ 來管理工作區、使用者和資源。
+在標準或受限模式下使用 BlueXP 時，支援 BlueXP IAM。如果您在私人模式下使用 BlueXP，則可以使用 BlueXP 帳戶來管理工作區、使用者和資源。
 
 * link:concept-identity-and-access-management.html["深入瞭解 BlueXP  IAM"]
 * link:concept-netapp-accounts.html["瞭解 BlueXP 帳戶"]

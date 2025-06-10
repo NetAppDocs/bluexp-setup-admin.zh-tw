@@ -20,7 +20,7 @@ summary: 當我們在特定 Linux 作業系統上新增及移除 Connector 支�
 
 == 支援的作業系統
 
-BlueXP Connector 支援下列 Linux 作業系統。
+NetApp 支援以下 Linux 作業系統的 BlueXP Connector。
 
 [role="tabbed-block"]
 ====
@@ -93,9 +93,9 @@ BlueXP Connector 支援下列 Linux 作業系統。
 請注意下列關於 RHEL 8 和 9 支援的資訊：
 
 限制:: 如果您在內部部署的 RHEL 8 或 9 主機上安裝 Connector 、則支援 BlueXP 分類。如果 RHEL 8 或 9 主機位於 AWS 、 Azure 或 Google Cloud 、則不支援此功能。
-容器協調工具:: 在 RHEL 8 或 9 主機上安裝 Connector 時、必須使用 Podman 作為容器協調工具。RHEL 8 和 9 不支援 Docker Engine 。
+容器協調工具:: 在 RHEL 8 或 9 主機上安裝連接器時，必須使用 Podman 工具作為容器編排工具。RHEL 8 和 9 不支援 Docker Engine 。
 部署模式:: 在標準模式、受限模式和私有模式下使用 BlueXP 時、支援 RHEL 8 和 9 。
-支援的 Connector 版本:: 從下列 Connector 版本開始、即可支援 RHEL 8 和 9 ：
+支援的 Connector 版本:: NetApp 從下列版本的 Connector 開始支援 RHEL 8 和 9：
 +
 --
 * 3.9.40 在標準模式或受限模式下使用 BlueXP  時
@@ -119,7 +119,7 @@ https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux/rhel-7-e
 
 === RHEL 7 或 CentOS 7 上的現有連接器
 
-如果您現有的 Connector 是在 RHEL 7 或 CentOS 7 上執行、我們不支援將作業系統升級或轉換為 RHEL 8 或 9 。若要改為在 RHEL 8 或 9 主機上執行 Connector 、您需要執行下列步驟：
+如果您現有的 Connector 是在 RHEL 7 或 CentOS 7 上執行、我們不支援將作業系統升級或轉換為 RHEL 8 或 9 。您需要在受支援的作業系統上建立一個新的連接器。
 
 . 設定 RHEL 8 或 9 主機。
 . 安裝 Podman 。

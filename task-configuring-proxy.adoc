@@ -16,9 +16,9 @@ summary: 如果您的企業原則要求您使用Proxy伺服器來進行所有網
 [role="lead"]
 如果您的企業原則要求您使用Proxy伺服器來進行所有網際網路通訊、則您必須設定連接器以使用該Proxy伺服器。如果在安裝期間未將Connector設定為使用Proxy伺服器、則可將Connector設定為隨時使用該Proxy伺服器。
 
-將 Connector 設定為使用代理伺服器，可在公用 IP 位址或 NAT 閘道不可用時啟用出站網際網路存取。代理伺服器僅為 Connector 提供出站連接，不為 Cloud Volumes ONTAP 系統提供出站連接。
+當沒有可用的公用 IP 或 NAT 閘道時，使用具有連接器的代理伺服器可以實現出站網際網路存取。代理伺服器僅為 Connector 提供出站連接，不為 Cloud Volumes ONTAP 系統提供出站連接。
 
-如果Cloud Volumes ONTAP 無法透過外部網際網路連線來傳送AutoSupport 各種消息、則BlueXP會自動將這些Cloud Volumes ONTAP 系統設定為使用連接器隨附的Proxy伺服器。唯一的需求是確保連接器的安全群組允許透過連接埠3128進行傳入連線。部署連接器後開啟此連接埠。
+如果Cloud Volumes ONTAP 無法透過外部網際網路連線來傳送AutoSupport 各種消息、則BlueXP會自動將這些Cloud Volumes ONTAP 系統設定為使用連接器隨附的Proxy伺服器。您必須確保連接器的安全群組允許透過連接埠 3128 的入站連線。部署連接器後，開啟此連接埠。
 
 
 
@@ -35,12 +35,12 @@ summary: 如果您的企業原則要求您使用Proxy伺服器來進行所有網
 
 當您將連接器設定為使用 Proxy 伺服器、連接器及 Cloud Volumes ONTAP 其所管理的各種系統（包括任何 HA 協調器）時、都會使用 Proxy 伺服器。
 
-請注意、此作業會重新啟動Connector。請先確定 Connector 未執行任何作業、然後再繼續。
+此操作將重新啟動連接器。請先確定 Connector 未執行任何作業、然後再繼續。
 
 .步驟
 . 瀏覽至 * 編輯 BlueXP Connector* 頁面。
 +
-導覽方式取決於您是以標準模式使用 BlueXP （從 SaaS 網站存取 BlueXP 介面）、還是以受限模式或私有模式使用 BlueXP （從 Connector 主機本機存取 BlueXP 介面）。
+導航取決於您的 BlueXP 模式。在標準模式下，從 SaaS 網站存取介面。在受限或私有模式下，從連接器主機本地​​存取。
 
 +
 [role="tabbed-block"]
@@ -97,16 +97,16 @@ image:screenshot-edit-connector.png["螢幕擷取畫面顯示 [ 編輯連接器 
 
 == 啟用直接API流量
 
-如果您將連接器設定為使用Proxy伺服器、則可在連接器上啟用直接API流量、以便直接將API呼叫傳送至雲端供應商服務、而無需透過Proxy。此選項受AWS、Azure或Google Cloud中執行的Connectors支援。
+如果您將連接器設定為使用Proxy伺服器、則可在連接器上啟用直接API流量、以便直接將API呼叫傳送至雲端供應商服務、而無需透過Proxy。在 AWS、Azure 或 Google Cloud 中執行的連接器支援此選項。
 
-如果您停用使用Azure私有連結Cloud Volumes ONTAP 搭配使用、並改用服務端點、則必須啟用直接API流量。否則、流量將無法正確路由傳送。
+如果您停用帶有 Cloud Volumes ONTAP 的 Azure Private Links 並使用服務端點，請啟用直接 API 流量。否則、流量將無法正確路由傳送。
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html["深入瞭解如何搭配Cloud Volumes ONTAP 使用Azure Private Link或服務端點搭配使用"^]
 
 .步驟
 . 瀏覽 * 編輯 BlueXP Connector* 頁面：
 +
-導覽方式取決於您是以標準模式使用 BlueXP （從 SaaS 網站存取 BlueXP 介面）、還是以受限模式或私有模式使用 BlueXP （從 Connector 主機本機存取 BlueXP 介面）。
+導航取決於您的 BlueXP 模式。在標準模式下，從 SaaS 網站存取介面。在受限或私有模式下，從連接器主機本地​​存取。
 
 +
 [role="tabbed-block"]

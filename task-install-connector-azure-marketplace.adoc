@@ -18,14 +18,14 @@ summary: 若要從 Azure Marketplace 建立 Connector 、您必須設定網路�
 
 .開始之前
 * 您應該擁有 link:concept-connectors.html["瞭解連接器"].
-* 您應該檢閱 link:reference-limitations.html["連接器限制"]。
+* 審查link:reference-limitations.html["連接器限制"] 。
 
 
 
 
 == 步驟 1 ：設定網路
 
-請確定您計畫安裝 Connector 的網路位置支援下列需求。滿足這些需求後、 Connector 便能在混合雲環境中管理資源和程序。
+確保您計劃安裝連接器的網路位置支援以下要求。這些要求使連接器能夠管理混合雲中的資源。
 
 Azure地區:: 如果您使用 Cloud Volumes ONTAP 、 Connector 應部署在與其管理的 Cloud Volumes ONTAP 系統所在的同一個 Azure 區域、或部署在中 https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure區域配對"^] 適用於整個系統。Cloud Volumes ONTAP這項需求可確保Cloud Volumes ONTAP Azure Private Link連線可用於連接至相關的儲存帳戶。
 +
@@ -143,7 +143,7 @@ Proxy伺服器:: 如果您的企業需要為所有傳出的網際網路流量部
 啟用 NTP:: 如果您打算使用 BlueXP 分類來掃描公司資料來源、則應該在 BlueXP Connector 系統和 BlueXP 分類系統上啟用網路時間傳輸協定（ NTP ）服務、以便在系統之間同步時間。 https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["深入瞭解 BlueXP 分類"^]
 +
 --
-建立 Connector 之後、您必須實作此網路需求。
+建立連接器後實現網路需求。
 
 --
 
@@ -152,7 +152,7 @@ Proxy伺服器:: 如果您的企業需要為所有傳出的網際網路流量部
 
 == 步驟 2 ：檢閱 VM 需求
 
-建立 Connector 時、您需要選擇符合下列需求的虛擬機器類型。
+建立連接器時，請選擇符合下列要求的虛擬機器類型。
 
 CPU:: 8 個核心或 8 個 vCPU
 RAM:: 32GB
@@ -369,9 +369,6 @@ image:screenshot_azure_client_secret.gif["Azure 入口網站的螢幕擷取畫�
 
 
 
-.結果
-您的服務主體現在已設定完成、您應該已經複製應用程式（用戶端） ID 、目錄（租戶） ID 、以及用戶端機密的值。新增Azure帳戶時、您必須在BlueXP中輸入此資訊。
-
 --
 ====
 
@@ -381,7 +378,7 @@ image:screenshot_azure_client_secret.gif["Azure 入口網站的螢幕擷取畫�
 直接從 Azure Marketplace 啟動 Connector 。
 
 .關於這項工作
-從 Azure Marketplace 建立 Connector 會使用預設組態、在 Azure 中部署虛擬機器。 link:reference-connector-default-config.html["瞭解連接器的預設組態"]。
+從 Azure 市場建立連接器會設定具有預設配置的虛擬機器。link:reference-connector-default-config.html["瞭解連接器的預設組態"]。
 
 .開始之前
 您應該擁有下列項目：
@@ -430,7 +427,7 @@ link:reference-ports-azure.html["檢視 Azure 的安全性群組規則"]。
 
 . 在 *Review + create* 頁面上、檢閱您的選擇、然後選取 * Create* 開始部署。
 +
-Azure 以指定的設定部署虛擬機器。虛擬機器和 Connector 軟體應在大約五分鐘內執行。
+Azure 以指定的設定部署虛擬機器。您應該會在大約五分鐘內看到虛擬機器和連接器軟體運作。
 
 . 從連線至 Connector 虛擬機器的主機開啟網頁瀏覽器、然後輸入下列 URL ：
 +
@@ -442,7 +439,7 @@ https://_ipaddress_[]
 .. 輸入系統名稱。
 .. 在 * 您是在安全的環境中執行？ * 保持停用限制模式。
 +
-您應該保持停用受限模式、因為這些步驟說明如何在標準模式中使用 BlueXP 。只有當您擁有安全的環境、而且想要中斷此帳戶與 BlueXP 後端服務的連線時、才應啟用受限模式。如果是這樣、 link:task-quick-start-restricted-mode.html["請依照步驟、以受限模式開始使用 BlueXP"]。
+保持受限模式處於停用狀態，以便在標準模式下使用 BlueXP。只有當您擁有安全的環境、而且想要中斷此帳戶與 BlueXP 後端服務的連線時、才應啟用受限模式。如果是這樣， link:task-quick-start-restricted-mode.html["請依照步驟、以受限模式開始使用 BlueXP"] 。
 
 .. 選取 * 開始 * 。
 
@@ -450,7 +447,7 @@ https://_ipaddress_[]
 
 
 .結果
-現在已安裝 Connector 、並已與您的 BlueXP  組織一起設定。
+現在您已經安裝了連接器並將其與您的 BlueXP 組織一起設定。
 
 如果您在建立 Connector 的同一個 Azure 訂閱中擁有 Azure Blob 儲存設備、則會在 BlueXP 畫布上自動顯示 Azure Blob 儲存設備工作環境。 https://docs.netapp.com/us-en/bluexp-blob-storage/index.html["瞭解如何從 BlueXP 管理 Azure Blob 儲存設備"^]
 

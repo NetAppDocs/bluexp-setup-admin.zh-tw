@@ -16,13 +16,13 @@ summary: BlueXP 提供多種部署模式、可讓您以符合業務與安全需�
 [role="lead"]
 BlueXP 提供多種部署模式，協助您滿足業務和安全需求。標準模式利用軟體即服務 (SaaS) 層提供完整功能，而受限模式和私有模式則適用於有連線限制的組織。
 
-雖然 BlueXP  在使用受限模式或私有模式時會抑制流量、通訊和資料的流通、但您有責任確保您的環境（內部部署和雲端）符合必要的法規。
+雖然 BlueXP 在使用受限模式或私有模式時會抑制流量、通訊和資料的流動，但您有責任確保您的環境（本地和雲端）符合您業務所需的規定。
 
 
 
 == 總覽
 
-每種部署模式在出站連線需求、部署位置、安裝流程、驗證方法、可用資料和儲存服務以及收費方法方面有所不同。
+每種部署模式在出站連線、位置、安裝、驗證、資料服務和收費方法方面有所不同。
 
 標準模式:: 您可以透過基於 Web 的控制台使用 SaaS 服務。根據您計劃使用的資料服務和功能，BlueXP 管理員會建立一個或多個連接器來管理混合雲環境中的資料。
 +
@@ -30,7 +30,7 @@ BlueXP 提供多種部署模式，協助您滿足業務和安全需求。標準�
 此模式使用透過公用網際網路的加密資料傳輸。
 
 --
-受限模式:: 您在雲端（在政府區域、主權雲端區域或商業區域）安裝 BlueXP 連接器，並且與 BlueXP SaaS 層的出站連接有限。使用者可從 Connector 提供的網路型主控台、而非從 SaaS 層、在本機存取 BlueXP 。
+受限模式:: 您在雲端中（在政府、主權或商業區域）安裝 BlueXP 連接器，並且它與 BlueXP SaaS 層的出站連接有限。
 +
 --
 此模式通常由州政府和地方政府及受管制公司使用。
@@ -38,7 +38,7 @@ BlueXP 提供多種部署模式，協助您滿足業務和安全需求。標準�
 <<受限模式,深入瞭解 SaaS 層的輸出連線能力>>。
 
 --
-私有模式:: 您在本機或雲端（安全區域、主權雲端區域或商業區域）安裝 BlueXP 連接器，且與 BlueXP SaaS 層沒有連線。使用者可從 Connector 提供的網路型主控台、而非從 SaaS 層、在本機存取 BlueXP 。
+私有模式:: 您在本機或雲端（安全區域、主權雲端區域或商業區域）安裝 BlueXP 連接器，且與 BlueXP SaaS 層沒有連線。使用者在本機存取 Connector 提供的 BlueXP 控制台，而不是 SaaS 層。
 +
 --
 安全區域包括 https://aws.amazon.com/federal/secret-cloud/["AWS Secret Cloud"^]、 https://aws.amazon.com/federal/top-secret-cloud/["AWS Top Secret Cloud"^]和 https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6."^]
@@ -101,8 +101,8 @@ BlueXP 在標準模式下的運作方式如下：
 
 --
 Connector 支援的位置:: 在標準模式中、 Connector 可在雲端或內部部署中獲得支援。
-連接器安裝:: 您可以從 BlueXP 的設定精靈、 AWS 或 Azure Marketplace 、或使用安裝程式、在資料中心或雲端的您自己的 Linux 主機上手動安裝 Connector 、來安裝 Connector 。
-連接器升級:: BlueXP 提供 Connector 軟體的自動升級、每月更新一次。
+連接器安裝:: 您可以使用 BlueXP 安裝精靈、AWS 或 Azure Marketplace、Google Cloud SDK 或資料中心或雲端中的 Linux 主機上的手動安裝程式來安裝連接器。
+連接器升級:: BlueXP 透過每月更新提供 Connector 軟體的自動升級。
 使用者介面存取:: 使用者介面可從透過 SaaS 層提供的網路型主控台存取。
 API 端點:: API 呼叫會撥打至下列端點：
 \https://cloudmanager.cloud.netapp.com
@@ -127,7 +127,7 @@ image:diagram-restricted-mode.png["這是一個概念性影像、顯示可用 Sa
 
 BlueXP 在受限模式下的運作方式如下：
 
-傳出通訊:: 從 Connector 到 BlueXP SaaS 層需要輸出連線、才能使用 BlueXP 資料服務、啟用 Connector 的自動軟體升級、使用驗證 0 型驗證、以及傳送中繼資料以進行充電（儲存 VM 名稱、分配的容量、以及 Volume UUID 、類型和 IOPS ）。
+傳出通訊:: 連接器需要與 BlueXP SaaS 層建立出站連接，以實現資料服務、軟體升級、身份驗證和元資料傳輸。
 +
 --
 BlueXP SaaS 層不會啟動與 Connector 的通訊。所有通訊都是由 Connector 起始、可視需要從 SaaS 層擷取或推送資料至 SaaS 層。
@@ -137,7 +137,7 @@ BlueXP SaaS 層不會啟動與 Connector 的通訊。所有通訊都是由 Conne
 --
 Connector 支援的位置:: 在受限模式下、 Connector 在雲端中受到支援：在政府區域、主權區域或商業區域中。
 連接器安裝:: 您可以從 AWS 或 Azure Marketplace 安裝 Connector 、或在您自己的 Linux 主機上手動安裝 Connector 。
-連接器升級:: BlueXP 提供 Connector 軟體的自動升級、每月更新一次。
+連接器升級:: BlueXP 透過每月更新提供 Connector 軟體的自動升級。
 使用者介面存取:: 使用者介面可從部署於雲端區域的 Connector 虛擬機器存取。
 API 端點:: API 呼叫是針對 Connector 虛擬機器進行的。
 驗證:: 驗證是透過 BlueXP 的雲端服務使用驗證 0 提供。也提供身分識別聯盟功能。
