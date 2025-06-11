@@ -4939,15 +4939,10 @@
   <block id="12cae065030aa4e0842692035a8202bd" category="inline-link">Google Cloud Marketplace 上的 NetApp 智慧服務頁面</block>
   <block id="6e7edd679a9a95191eb6b90ce6943fe5" category="list-text">在您被重定向到<block ref="e3f48af04aeab9b1f546df3c8b75ea2a" category="inline-link-rx"></block> ，確保在頂部導航選單中選擇了正確的項目。</block>
   <block id="d46543c7114457c380d6e75a76c470af" category="paragraph">從雲端供應商的市場訂閱 NetApp 智慧服務，以按小時費率 (PAYGO) 或透過年度合約支付資料服務費用。如果您向 NetApp （ BYOL ）購買授權、您也需要訂閱市場方案。您的授權一律會先收費、但如果您超過授權容量或授權期限到期、則會以每小時費率收費。</block>
-  <block id="4f8b575844fe92cc4a57a5823b2c4c6f" category="paragraph">當連接器不合規或停機超過 14 天時，Cloud Volumes ONTAP 基於容量的節點不再關閉。當 Cloud Volumes ONTAP 失去對連接器的存取權限時，它仍會發送事件管理訊息。此變更是為了確保即使連接器長時間處於停機狀態，Cloud Volumes ONTAP 仍可繼續運作。它不會改變連接器的合規性要求。</block>
-  <block id="078afc7a02a9e486708bde9dd30391e7" category="paragraph">BlueXP IAM 中提供以下新功能。</block>
-  <block id="6b83d0ae16acd42e6178ac5dde77e977" category="section-title">本地用戶的多重身份驗證 (MFA)</block>
-  <block id="e79a1a29d1adbbfc3e2d52a916a22b07" category="paragraph">本機使用者（非聯合使用者且未與 NetApp 支援網站帳戶關聯）可以啟用多重驗證。管理員可以管理使用者的 MFA 設置，例如在需要時暫時停用或移除 MFA。</block>
   <block id="e9bf07011be1831466ac0bf1bbfe1140" category="doc">連接器 3.9.53</block>
   <block id="734a861d3d201b7a4e47067ddb5a7339" category="paragraph">BlueXP Connector 的此版本包括安全性改進和錯誤修復。</block>
   <block id="216b28cad63bed5c978cb116067bfc38" category="paragraph">目前、 3.9.53 版本適用於標準模式和受限模式。</block>
   <block id="2519e52723b63d73b91fe9567002e2ad" category="section-title">多因素驗證（MFA）</block>
-  <block id="35234ac77de9ce6dd39c6d724c620019" category="paragraph">非聯合用戶現在可以為其 BlueXP 帳戶啟用多重身份驗證 (MFA)，從而增強帳戶安全性。 BlueXP管理員可以管理使用者的 MFA 設置，並根據需要為各個使用者重置或停用 MFA。</block>
   <block id="9950fd493db1cd52e6769f96bf27cc78" category="inline-link-macro">了解如何為自己設定多重身份驗證。</block>
   <block id="35084d885dea7b061e6894c1cf3036d9" category="section-title">工作負載</block>
   <block id="01537291f07f4eb50dc075e6b0282ce8" category="paragraph">現在您可以從 BlueXP 中的憑證頁面查看和刪除 Amazon FSx for NetApp ONTAP 憑證。</block>
@@ -5144,8 +5139,6 @@
   <block id="102e22f275df79c5a1dde1e8293216b7" category="sidebar">訂閱 NetApp 智慧服務</block>
   <block id="60a6933aebf1c90a063b74167b72b65a" category="sidebar">使用 BlueXP</block>
   <block id="6055633e93e75f195e1ce7a98f705965" category="sidebar">管理會員和服務帳戶</block>
-  <block id="09788a09cd40182e19bc9a2e7bfaa2ac" category="inline-link-macro">了解如何管理使用者的多重身份驗證。</block>
-  <block id="b06421b9a95d9ca2cc843abf3c5edbe4" category="paragraph"><block ref="b5f93708cb2e7c8499feb8c2a3a457d0" category="inline-link-macro-rx"></block> <block ref="6e0396b4058b8ab3f91c2a62781d9fbc" category="inline-link-macro-rx"></block></block>
   <block id="b41bf2522840309de504df12a13b70d2" category="paragraph">NetApp 支援團隊將審核並處理您的請求。</block>
   <block id="fcad29f3a62024a218de540d2a955cdf" category="paragraph">設定身分識別聯盟會在BlueXP的驗證服務供應商（Auth0）和您自己的身分識別管理供應商之間建立信任連線。</block>
   <block id="d1d43f38caca7dedb941839c492f984b" category="list-text">Active Directory 聯合驗證服務 (AD FS)</block>
@@ -5214,4 +5207,10 @@
   <block id="62fb2f4eacb3d56ea8cb96e9b068426c" category="admonition">如果您無法存取您的身份驗證應用程式或恢復程式碼，您將需要聯絡您的 BlueXP 管理員來重設您的 MFA 配置。</block>
   <block id="42f007f9f4877a6aa4543c5ae82e6e41" category="paragraph">如果您需要聯絡組織管理員，可以直接透過 BlueXP 向他們發送電子郵件。管理員管理組織內的使用者帳戶和權限。</block>
   <block id="f27f1ce6df3e2ec2518f77e8e1a4a531" category="section-title">2025 年 6 月 9 日</block>
+  <block id="079da054a19d880b356cedc5deeaf9e3" category="paragraph">非聯合用戶現在可以為其 BlueXP 帳戶啟用多重身份驗證 (MFA)，從而增強帳戶安全性。 BlueXP管理員可以管理使用者的 MFA 設置，並根據需要為各個使用者重置或停用 MFA。這僅在標準模式下支援。</block>
+  <block id="8b6178443fc25355a974613e3d6951b4" category="inline-link-macro">了解如何為使用者管理多重身份驗證。</block>
+  <block id="432ca61a502f036a7c9fe7850d55f376" category="paragraph"><block ref="b5f93708cb2e7c8499feb8c2a3a457d0" category="inline-link-macro-rx"></block> <block ref="1104a8a08c217b6a8c157f716ea4a98c" category="inline-link-macro-rx"></block></block>
+  <block id="1a504cebc3822fd967eb6426a7ff0a31" category="cell">多因素驗證</block>
+  <block id="812dbc1b1f1c0d72bc2c50e8ea107ab8" category="cell">適用於本地用戶</block>
+  <block id="2d25c72c1b18e562f6654fff8e11711e" category="cell">無法使用</block>
 </blocks>
