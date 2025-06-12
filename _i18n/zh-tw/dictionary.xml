@@ -4941,7 +4941,6 @@
   <block id="d46543c7114457c380d6e75a76c470af" category="paragraph">從雲端供應商的市場訂閱 NetApp 智慧服務，以按小時費率 (PAYGO) 或透過年度合約支付資料服務費用。如果您向 NetApp （ BYOL ）購買授權、您也需要訂閱市場方案。您的授權一律會先收費、但如果您超過授權容量或授權期限到期、則會以每小時費率收費。</block>
   <block id="e9bf07011be1831466ac0bf1bbfe1140" category="doc">連接器 3.9.53</block>
   <block id="734a861d3d201b7a4e47067ddb5a7339" category="paragraph">BlueXP Connector 的此版本包括安全性改進和錯誤修復。</block>
-  <block id="216b28cad63bed5c978cb116067bfc38" category="paragraph">目前、 3.9.53 版本適用於標準模式和受限模式。</block>
   <block id="2519e52723b63d73b91fe9567002e2ad" category="section-title">多因素驗證（MFA）</block>
   <block id="9950fd493db1cd52e6769f96bf27cc78" category="inline-link-macro">了解如何為自己設定多重身份驗證。</block>
   <block id="35084d885dea7b061e6894c1cf3036d9" category="section-title">工作負載</block>
@@ -5213,4 +5212,11 @@
   <block id="1a504cebc3822fd967eb6426a7ff0a31" category="cell">多因素驗證</block>
   <block id="812dbc1b1f1c0d72bc2c50e8ea107ab8" category="cell">適用於本地用戶</block>
   <block id="2d25c72c1b18e562f6654fff8e11711e" category="cell">無法使用</block>
+  <block id="33eba214b6723fe54975309f2fc419fe" category="paragraph">3.9.53 版本適用於標準模式和受限模式。</block>
+  <block id="39615b94cc2fe576502275ed459d404b" category="section-title">磁碟空間使用情況警報</block>
+  <block id="0b6d76bd9d461e2dc31436ce64d71b70" category="paragraph">通知中心現在包含連接器上磁碟空間使用情況的警報。 <block ref="f731d1927408fd2f4c1db9e73951a633" category="inline-link-macro-rx"></block></block>
+  <block id="797f681b34046f4455905e56cb5d8cd4" category="section-title">監控磁碟空間</block>
+  <block id="373df0df4c9bf458b635c60e6bd81875" category="inline-link-macro">查看 NetApp 知識庫文章</block>
+  <block id="2b081e4d7f5e73b0295cc7f384e9ef53" category="paragraph">當 Connector VM 的磁碟空間不足時，BlueXP 會通知您。您可以在通知中心監控這些通知，或將其設定為發送電子郵件警報。解決磁碟空間問題是您的責任。<block ref="2f3ae1328a4e13fb2f2d9aa6f559f827" category="inline-link-macro-rx"></block>。</block>
+  <block id="b76919d8a6dd33b62b49a16ab1b560aa" category="paragraph"><block ref="b76919d8a6dd33b62b49a16ab1b560aa" category="inline-link-macro-rx"></block></block>
 </blocks>

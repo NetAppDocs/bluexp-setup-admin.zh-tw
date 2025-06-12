@@ -41,6 +41,14 @@ link:reference-connector-default-config.html["瞭解連接器的預設組態"]�
 
 
 
+== 監控磁碟空間
+
+當 Connector VM 的磁碟空間不足時，BlueXP 會通知您。您可以在通知中心監控這些通知，或將其設定為發送電子郵件警報。解決磁碟空間問題是您的責任。link:ttps://kb.netapp.com/Cloud/BlueXP/Cloud_Manager/How_to_resolve_disk_space_issues_on_BlueXP_connector_VM["查看 NetApp 知識庫文章"^]。
+
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#notification-center["深入瞭解。"^]
+
+
+
 == 停止並啟動 Connector VM
 
 如果您需要停止然後啟動 Connector VM 、則應從雲端供應商的主控台或使用內部部署管理的標準程序來執行。
