@@ -1997,7 +1997,6 @@
   <block id="3d1f92a565d3b1a61880236e33c49bf3" category="cell">時間表</block>
   <block id="0486b07a3d352a89611f0005bff8bbd3" category="cell">顯示事件和行動的高層級狀態</block>
   <block id="c32042b6c968f47ecb4422de1d828cb1" category="cell">提供每個事件或行動的詳細資料、以供進一步調查</block>
-  <block id="2ddcf1998aac047c3f06e0a1fcf978b5" category="cell">顯示目前登入工作階段的狀態（登出後、資訊不會顯示在通知中心）</block>
   <block id="2fe85263c62b0b870277c30652459354" category="cell">保留上個月的狀態</block>
   <block id="b2d8a4e919485c2282a84ad3f4408095" category="cell">僅顯示在使用者介面中啟動的動作</block>
   <block id="8c6775236733a876a2482bf9932cd018" category="cell">顯示UI或API的所有動作</block>
@@ -2011,7 +2010,6 @@
   <block id="d59387ab05a2cbd005866b74628417a0" category="inline-image-macro">顯示通知中心目前通知清單的快照。</block>
   <block id="e24c5199eee665d8e879dc72dc56c667" category="paragraph"><block ref="e24c5199eee665d8e879dc72dc56c667" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2a4be390687f80c7cdf976afca0fe778" category="section-title">通知類型</block>
-  <block id="0ebfeb3212b9bb4b152ea82a5877a33b" category="paragraph">通知分為下列類別：</block>
   <block id="9e89e978c220a2a733d027866cb12907" category="cell">通知類型</block>
   <block id="278d01e5af56273bae1bb99a98b370cd" category="cell">關鍵</block>
   <block id="0b68cecd3f3f6281c0b25a5c4847524e" category="cell">如果未立即採取修正行動、可能導致服務中斷。</block>
@@ -2044,7 +2042,6 @@
   <block id="5e56842d0cfbf695522e945a01570eba" category="paragraph"><block ref="5e56842d0cfbf695522e945a01570eba" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d7c731c9a7afeb038e27198fc653763a" category="list-text">輸入姓名、電子郵件地址、然後選取收件者將收到的通知類型、然後選取 * 新增收件者 * 。</block>
   <block id="f56df3affea06e9aeedc9830da1f0d91" category="section-title">關閉通知</block>
-  <block id="e438ae665566728a83af19e41ac9ac6d" category="paragraph">如果您不再需要查看通知、可以從頁面移除通知。您可以一次關閉所有通知、也可以關閉個別通知。</block>
   <block id="61130fb01406e968937613de0add552f" category="inline-image-macro">具有三個垂直點的圖示</block>
   <block id="ca1c9774b98be72a0f55d88b3579e19c" category="inline-image-macro">顯示「通知」功能表的快照、可選取設定並關閉所有選項。</block>
   <block id="fd0bf9d17b691309acb1c6ef4b12bd43" category="paragraph">若要關閉所有通知、請在通知中心中選取 <block ref="bfe50e4fac5e58634c6fb748dce94758" category="inline-image-macro-rx" type="image"></block> 並選擇*全部關閉*。
@@ -2052,7 +2049,6 @@
   <block id="8e94ce578d759d7ee56ab163db1168d4" category="inline-image-macro">顯示如何關閉單一通知的螢幕快照。</block>
   <block id="f0347b571f6b77eac494a6f04226e225" category="paragraph">若要關閉個別通知、請將游標移至通知上方、然後選取 * 關閉 * 。
 <block ref="1932261efa358e221b5ec460a7384dc2" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="322812be635bbd80fb94dbae450a00b4" category="paragraph">如果您需要識別執行特定行動的人員、或是需要識別行動的狀態、檢查時間表會很有幫助。</block>
   <block id="1c03861f288d9b723fd929e611a6e8fd" category="summary">新增及管理 Azure 認證、讓 BlueXP 擁有在 Azure 訂閱中部署及管理雲端資源所需的權限。如果您管理多個 Azure Marketplace 訂閱、您可以從「認證」頁面將每個訂閱指派給不同的 Azure 認證。</block>
   <block id="92a9c164b3357bd8694c8be608dc3d23" category="paragraph">如果您需要使用多個Azure認證或多個Azure Marketplace訂閱Cloud Volumes ONTAP 以供使用、請依照本頁的步驟進行。</block>
   <block id="67cbb61f9d12c71b3b67153567963530" category="paragraph">在BlueXP中新增額外Azure訂閱和認證的方法有兩種。</block>
@@ -2476,7 +2472,6 @@
   <block id="cb4a26e3cea7ec3938d93961d212ef39" category="list-text">如果您想要管理其他專案中的資源、請將具有 BlueXP 角色的服務帳戶新增至該專案、以授予存取權。您必須針對每個專案重複此步驟。</block>
   <block id="c063b725387c641804ed10699362a645" category="list-text">部署 Connector 時、系統會提示您選取<block ref="98f22f2dda0728ebb39af9a8fe826c8e" category="inline-link-rx"></block> 適用於 VM 執行個體。BlueXP 可從服務帳戶取得權限來建立和管理 Cloud Volumes ONTAP 系統、使用 BlueXP 備份和還原來管理備份等。將自訂角色附加至服務帳戶、即可提供權限。</block>
   <block id="4196d70b52fef46e6943a70842908897" category="paragraph">如果您為 Cloud Volumes ONTAP 建立新的工作環境、 BlueXP 預設會選取以下 Azure 認證：</block>
-  <block id="9704e328148ed91b7f98eb143244edd7" category="paragraph">通知會追蹤您在BlueXP中啟動的作業進度、以便您確認作業是否成功。這些功能可讓您檢視您在目前登入工作階段期間所啟動的許多BlueXP動作狀態。目前並非所有 BlueXP 服務都會將資訊回報至通知中心。</block>
   <block id="8efb4a247c34c0ca71ba217009352182" category="inline-xref">設定電子郵件通知設定</block>
   <block id="b0689737e83154357ff9ef36053bda4f" category="paragraph">依預設、您會在通知中心看到所有作用中的通知。您可以篩選看到的通知、僅顯示對您很重要的通知。您可以依BlueXP「服務」和通知「類型」進行篩選。</block>
   <block id="7fcffcce675dad706dbf53d68f1f86f2" category="paragraph">所有其他使用者和收件者均設定為不接收任何通知電子郵件、因此您需要為任何其他使用者設定通知設定。</block>
@@ -4017,12 +4012,10 @@
   <block id="a15dab64157b0024121a37b3726311bd" category="summary">透過新增使用者、建立自動化服務帳戶、新增工作區等方式來管理您的 BlueXP  帳戶。</block>
   <block id="b89af40709c02abb8e0b01ae305dfd7f" category="summary">您可以監控BlueXP執行的作業狀態、查看是否有任何需要解決的問題。您可以在時間軸、通知中心中檢視狀態、或是將通知傳送至您的電子郵件。</block>
   <block id="57bee919903f0c92a41c5582519db779" category="doc">監控 BlueXP  作業</block>
-  <block id="5d4df6d8936b94b888789b2712dcb953" category="paragraph">下表提供時間表與通知中心的比較、讓您瞭解每個項目的內容。</block>
   <block id="a7eb158a02fb55f7c66bb86081e76732" category="cell">可將通知以電子郵件傳送給使用者和其他人</block>
   <block id="5059f2db2465d7555c44d131a23b2fdb" category="section-title">從 BlueXP  時間表稽核使用者活動</block>
   <block id="e8bcacc75837d7d116d27b0912ef8827" category="list-text">使用表格上方的篩選條件來變更表格中顯示的動作。</block>
   <block id="76bf1023f56feea71963b97c682ddeec" category="paragraph">例如、您可以使用 * 服務 * 篩選器來顯示與特定 BlueXP  服務相關的動作、或使用 * 使用者 * 篩選器來顯示與特定使用者帳戶相關的動作。</block>
-  <block id="706ba753310eea4d62504cab3d622cb4" category="paragraph">時間表會更新、顯示您已完成的管理動作。</block>
   <block id="d9e60fcce9ab0af5d2ac79ed5bd1726a" category="paragraph">您也可以將 BlueXP 設定為透過電子郵件傳送特定類型的通知、以便即使您未登入系統、也能得知重要的系統活動。電子郵件可以傳送給您 BlueXP  組織或帳戶的任何使用者、或是需要注意特定類型系統活動的任何其他收件者。請參閱如何<block ref="a148e670707e0255b9681ed2a38729bc" category="inline-xref-macro-rx"></block>。</block>
   <block id="d7070a88c379ebcd8e00bafb5d6aaffa" category="section-title">比較通知中心與 BlueXP  警示</block>
   <block id="9e449a0ea34e3a3f3848e51e4cec5859" category="paragraph">通知中心可讓您檢視從 BlueXP  啟動的作業狀態、並針對特定類型的系統活動設定警示通知。同時、 BlueXP  警示可讓您檢視 ONTAP 儲存環境中與容量、可用度、效能、保護和安全性相關的問題或潛在風險。</block>
@@ -5058,8 +5051,6 @@
   <block id="559bd85dc0b5b9d897cd8986e9388b2b" category="paragraph">NSS 帳戶層級的認證與與 BlueXP 登入相關的 NSS 帳戶不同。NSS 帳戶級憑證可讓您使用 BYOL 部署 Cloud Volumes ONTAP、註冊 PAYGO 系統並升級其軟體。</block>
   <block id="5c6dd86ba1cfb5c1af500970adb2daaa" category="paragraph">BlueXP 會更新您的憑證，您在造訪 ONTAP 叢集、數位顧問或個案管理頁面時會看到變更。</block>
   <block id="521c45217c3b337424dd8adb5c5179b2" category="paragraph">時間軸顯示使用者為管理您的組織或帳戶而完成的操作。這包括建立使用者關聯、建立工作環境、建立連接器等管理動作。</block>
-  <block id="575fd6319f836c10418c8e0f6cdd8167" category="list-text">以下功能和服務的通知透過電子郵件發送：連接器、數位錢包、複製和同步以及備份和還原。</block>
-  <block id="72cda922628bc633fbe14c3e16ca18f4" category="paragraph">您必須具有組織管理員角色才能自訂通知設定。</block>
   <block id="1d0dc238d165f094b64e86313624b2d9" category="paragraph">_使用者_標籤中顯示的使用者是從您的組織或帳戶中的使用者自動填入的。您可以在「_其他收件者_」索引標籤中新增電子郵件地址、以供無權存取BlueXP但需要收到特定警示和通知類型通知的其他人員或群組使用。</block>
   <block id="6eee4754146b2d969d2a7e90197130a3" category="paragraph">預設情況下，Connector 憑證允許使用者存取進階視圖 (ONTAP 系統管理員)。您可以改為提示使用者輸入其 ONTAP 憑證。如此可確保使用者在 Cloud Volumes ONTAP 和 ONTAP 內部部署叢集中使用 ONTAP 叢集時，會套用其 ONTAP 權限。</block>
   <block id="00acd0a6ea62c6d6fd734cfcb2850d1f" category="admonition">您必須具有組織管理員角色才能編輯連接器設定。</block>
@@ -5219,4 +5210,21 @@
   <block id="373df0df4c9bf458b635c60e6bd81875" category="inline-link-macro">查看 NetApp 知識庫文章</block>
   <block id="2b081e4d7f5e73b0295cc7f384e9ef53" category="paragraph">當 Connector VM 的磁碟空間不足時，BlueXP 會通知您。您可以在通知中心監控這些通知，或將其設定為發送電子郵件警報。解決磁碟空間問題是您的責任。<block ref="2f3ae1328a4e13fb2f2d9aa6f559f827" category="inline-link-macro-rx"></block>。</block>
   <block id="b76919d8a6dd33b62b49a16ab1b560aa" category="paragraph"><block ref="b76919d8a6dd33b62b49a16ab1b560aa" category="inline-link-macro-rx"></block></block>
+  <block id="35e36a667d1baf91dbb76a03357b3183" category="section-title">審計改進</block>
+  <block id="37e905ff49f6da834567cfa78667e2b7" category="paragraph">時間軸現在包含使用者的登入事件。這使您能夠查看使用者何時登入 BlueXP，這有助於稽核和安全監控。具有組織管理員角色的 API 使用者可以透過新增以下資訊來查看已登入使用者的電子郵件地址： <block ref="603b75134f0f5d7ea187a9ec930623d0" prefix=" " category="inline-code"></block>參數如下： <block ref="a87d1f23773a5263432b2160d5b0c667" prefix=" " category="inline-code"></block> 。</block>
+  <block id="a0b97dd4496f33209c0a49172d25b07e" category="section-title">BlueXP 中提供 Keystone 訂閱管理</block>
+  <block id="92fd6983a547cfe3acf24d017a43dd47" category="paragraph">您可以從 BlueXP 管理您的 NetApp Keystone 訂閱。</block>
+  <block id="29e615c9125f030edfca48f5dd489a27" category="inline-link-macro">了解 BlueXP 中的 Keystone 訂閱管理。</block>
+  <block id="b449211baca42f6cd385865db145f827" category="paragraph"><block ref="b449211baca42f6cd385865db145f827" category="inline-link-macro-rx"></block></block>
+  <block id="edf88e3025787a448a9dd00447a52f8b" category="paragraph">該表比較了時間軸和通知中心以突出它們的功能。</block>
+  <block id="b89956868ff9efb9e5c6419d523fce3a" category="cell">顯示目前登入工作階段的狀態（登出後，該資訊不會出現在通知中心）</block>
+  <block id="4219da23ef386f3439d954a399b71bf7" category="paragraph">時間軸有助於識別誰執行了某個操作或其狀態。</block>
+  <block id="7e141c8ec6a4f5611124b9a17fc58d90" category="section-title">從時間軸下載稽核日誌</block>
+  <block id="818dacbccd1bb52d545879ff94db3fb8" category="paragraph">您可以將時間軸中的審核日誌下載到 CSV 檔案中。這樣，您就可以記錄使用者在組織中執行的操作。下載的 CSV 檔案包含時間軸中所有可用的列，無論您在時間軸中篩選或顯示哪些列。</block>
+  <block id="5ed869e88cbd6968dfbc3468b7f488e9" category="list-text">在時間軸中，選擇表格右上角的下載圖示。</block>
+  <block id="4a299decaff59944c828ad4546959edb" category="paragraph">通知會追蹤您的 BlueXP 操作的進度以驗證是否成功。這些功能可讓您檢視您在目前登入工作階段期間所啟動的許多BlueXP動作狀態。目前並非所有 BlueXP 服務都會將資訊回報至通知中心。</block>
+  <block id="9cb953f0886e30994918dec9a83c9369" category="paragraph">BlueXP 將通知分為以下幾類：</block>
+  <block id="5c978e399a8f1d0acd4407aa13d8eb47" category="paragraph">如果您不再需要查看通知、可以從頁面移除通知。您可以單獨或一次關閉所有通知。</block>
+  <block id="d7fce9a3c3250c2897219cf1e55613fc" category="list-text">BlueXP 為連接器、數位錢包、複製和同步以及備份和恢復發送電子郵件通知。</block>
+  <block id="1d3e249b6555eefc80860021fe042ffd" category="paragraph">您必須具有組織管理員角色才能自訂通知設定。</block>
 </blocks>
