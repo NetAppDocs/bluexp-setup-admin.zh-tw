@@ -5211,7 +5211,6 @@
   <block id="2b081e4d7f5e73b0295cc7f384e9ef53" category="paragraph">當 Connector VM 的磁碟空間不足時，BlueXP 會通知您。您可以在通知中心監控這些通知，或將其設定為發送電子郵件警報。解決磁碟空間問題是您的責任。<block ref="2f3ae1328a4e13fb2f2d9aa6f559f827" category="inline-link-macro-rx"></block>。</block>
   <block id="b76919d8a6dd33b62b49a16ab1b560aa" category="paragraph"><block ref="b76919d8a6dd33b62b49a16ab1b560aa" category="inline-link-macro-rx"></block></block>
   <block id="35e36a667d1baf91dbb76a03357b3183" category="section-title">審計改進</block>
-  <block id="37e905ff49f6da834567cfa78667e2b7" category="paragraph">時間軸現在包含使用者的登入事件。這使您能夠查看使用者何時登入 BlueXP，這有助於稽核和安全監控。具有組織管理員角色的 API 使用者可以透過新增以下資訊來查看已登入使用者的電子郵件地址： <block ref="603b75134f0f5d7ea187a9ec930623d0" prefix=" " category="inline-code"></block>參數如下： <block ref="a87d1f23773a5263432b2160d5b0c667" prefix=" " category="inline-code"></block> 。</block>
   <block id="a0b97dd4496f33209c0a49172d25b07e" category="section-title">BlueXP 中提供 Keystone 訂閱管理</block>
   <block id="92fd6983a547cfe3acf24d017a43dd47" category="paragraph">您可以從 BlueXP 管理您的 NetApp Keystone 訂閱。</block>
   <block id="29e615c9125f030edfca48f5dd489a27" category="inline-link-macro">了解 BlueXP 中的 Keystone 訂閱管理。</block>
@@ -5227,4 +5226,5 @@
   <block id="5c978e399a8f1d0acd4407aa13d8eb47" category="paragraph">如果您不再需要查看通知、可以從頁面移除通知。您可以單獨或一次關閉所有通知。</block>
   <block id="d7fce9a3c3250c2897219cf1e55613fc" category="list-text">BlueXP 為連接器、數位錢包、複製和同步以及備份和恢復發送電子郵件通知。</block>
   <block id="1d3e249b6555eefc80860021fe042ffd" category="paragraph">您必須具有組織管理員角色才能自訂通知設定。</block>
+  <block id="71c9d16d02984e33cfc9f5c051c0fdb6" category="paragraph">時間軸現在包含使用者的登入和登出事件。您可以查看登入活動的時間，這有助於稽核和安全監控。具有組織管理員角色的 API 使用者可以透過新增以下資訊來查看已登入使用者的電子郵件地址： <block ref="603b75134f0f5d7ea187a9ec930623d0" prefix=" " category="inline-code"></block>參數如下： <block ref="a87d1f23773a5263432b2160d5b0c667" prefix=" " category="inline-code"></block> 。</block>
 </blocks>

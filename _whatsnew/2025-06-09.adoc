@@ -20,7 +20,7 @@ BlueXP Connector 的此版本包括安全性改進和錯誤修復。
 
 === 審計改進
 
-時間軸現在包含使用者的登入事件。這使您能夠查看使用者何時登入 BlueXP，這有助於稽核和安全監控。具有組織管理員角色的 API 使用者可以透過新增以下資訊來查看已登入使用者的電子郵件地址：  `includeUserData=true``參數如下：  `/audit/<account_id>?includeUserData=true` 。
+時間軸現在包含使用者的登入和登出事件。您可以查看登入活動的時間，這有助於稽核和安全監控。具有組織管理員角色的 API 使用者可以透過新增以下資訊來查看已登入使用者的電子郵件地址：  `includeUserData=true``參數如下：  `/audit/<account_id>?includeUserData=true` 。
 
 
 
