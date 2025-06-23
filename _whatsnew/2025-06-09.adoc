@@ -14,7 +14,7 @@ BlueXP Connector 的此版本包括安全性改進和錯誤修復。
 
 === 磁碟空間使用情況警報
 
-通知中心現在包含連接器上磁碟空間使用情況的警報。 link:task-maintain-connectors.html#monitor-disk-space["深入瞭解。"^]
+通知中心現在包含連接器上磁碟空間使用情況的警報。 link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-maintain-connectors.html#monitor-disk-space["深入瞭解。"^]
 
 
 
