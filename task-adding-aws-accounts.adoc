@@ -362,7 +362,7 @@ image:screenshot-credentials-with-subscription.png["BlueXP 帳戶認證頁面的
 透過變更帳戶類型（AWS 金鑰或承擔角色）、編輯名稱或更新憑證本身（金鑰或角色 ARN）來編輯您的 AWS 憑證。
 
 
-NOTE: 您無法編輯與連接器執行個體或 Amazon FSx for ONTAP 執行個體關聯的執行個體設定檔的憑證。
+NOTE: 您無法編輯與連接器執行個體或 Amazon FSx for ONTAP 執行個體關聯的執行個體設定檔的憑證。您只能重新命名 FSx for ONTAP 實例的憑證。
 
 .步驟
 . 在控制台的右上角，選擇“設定”圖標，然後選擇“*憑證*”。
