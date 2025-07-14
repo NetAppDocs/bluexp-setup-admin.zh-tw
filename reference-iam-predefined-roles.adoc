@@ -14,7 +14,7 @@ summary: BlueXP  身分識別與存取管理包含數個預先定義的角色�
 
 
 [role="lead"]
-BlueXP  身分識別與存取管理（ IAM ）包含數個預先定義的角色、您可以在不同的資源階層層級中指派給組織成員。指派這些角色之前、您應該先瞭解每個角色所包含的權限。角色分為下列類別：平台，應用程式和資料服務。
+BlueXP身分和存取管理 (IAM) 包含預先定義角色，您可以將這些角色指派給資源層次結構不同層級的組織成員。指派這些角色之前、您應該先瞭解每個角色所包含的權限。角色分為下列類別：平台，應用程式和資料服務。
 
 
 
@@ -31,6 +31,12 @@ BlueXP  身分識別與存取管理（ IAM ）包含數個預先定義的角色
 
 
 | link:reference-iam-platform-roles.html["資料夾或專案管理員"] | 允許使用者不受限制地存取指派給他們的特定專案和資料夾。可以將成員新增至他們管理的資料夾或專案，以及執行任何 BlueXP  工作，並在指派給他們的資料夾或專案中，對資源使用任何資料服務或應用程式。資料夾或專案管理員角色無法建立 Connectors 。 
+
+
+| link:reference-iam-platform-roles.html["聯盟管理員"] | 允許使用者使用BlueXP建立和管理聯合，從而實現單一登入 (SSO)。 
+
+
+| link:reference-iam-platform-roles.html["聯合查看器"] | 允許使用者使用BlueXP查看現有的聯合。無法建立或管理聯合。 
 |===
 
 
@@ -66,6 +72,33 @@ BlueXP  身分識別與存取管理（ IAM ）包含數個預先定義的角色
 [cols="10,24"]
 |===
 | 資料服務角色 | 職責 
+
+
+| link:reference-iam-backup-rec-roles.html["備份和恢復超級管理員"] | 執行備份和還原服務中的任何操作。 
+
+
+| link:reference-iam-backup-rec-roles.html["備份和復原管理員"] | 執行本機快照備份、複製到二級儲存以及備份到物件儲存。 
+
+
+| link:reference-iam-backup-rec-roles.html["備份和還原復原管理員"] | 恢復備份和還原服務中的工作負載。 
+
+
+| link:reference-iam-backup-rec-roles.html["備份和還原克隆管理員"] | 在備份和復原服務中克隆應用程式和資料。 
+
+
+| link:reference-iam-backup-rec-roles.html["備份和還原檢視器"] | 查看備份和復原資訊。 
+
+
+| link:reference-iam-disaster-rec-roles.html["災難復原管理員"] | 執行災難復原服務中的任何操作。 
+
+
+| link:reference-iam-disaster-rec-roles.html["災難復原故障轉移管理員"] | 執行故障轉移和遷移。 
+
+
+| link:reference-iam-disaster-rec-roles.html["災難復原應用程式管理員"] | 建立複製計劃、修改複製計劃並啟動測試故障轉移。 
+
+
+| link:reference-iam-disaster-rec-roles.html["災難復原檢視器"] | 僅查看資訊。 
 
 
 | 分類管理 | 提供檢視 BlueXP  分類掃描結果的能力。分類沒有檢視者角色。擁有此角色的使用者可以檢視法規遵循資訊，並針對擁有存取權限的資源產生報告。這些使用者無法啟用或停用掃描磁碟區、儲存區或資料庫架構。 

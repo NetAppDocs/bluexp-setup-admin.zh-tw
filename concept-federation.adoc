@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: concept-federation.html 
-keywords: identity federation, federation, federated identity, set up identity federation, set up federated connection, federated connection 
-summary: 身分識別聯盟可透過BlueXP進行單一登入、讓使用者使用公司身分的認證登入。若要開始使用、請瞭解身分識別聯盟如何與BlueXP搭配運作、然後檢閱設定程序的總覽。 
+keywords: identity federation, BlueXP, single sign-on, SSO, identity provider, IdP, SAML, Microsoft Entra ID, AD FS, PingFederate, ACS URL, Entity ID, user access, security, productivity, compliance, authentication, business continuity, account management, user experience, access control, workflow automation, credential management, login process, organization admin 
+summary: 身分識別聯盟可透過BlueXP進行單一登入、讓使用者使用公司身分的認證登入。首先，查看設定過程。 
 ---
 = 使用 BlueXP  的身分識別聯盟來啟用單一登入
 :hardbreaks:
@@ -14,182 +14,82 @@ summary: 身分識別聯盟可透過BlueXP進行單一登入、讓使用者使�
 
 
 [role="lead"]
-_Identity Federation®啟用單一登入BlueXP、讓使用者可以使用公司身分的認證登入。首先，了解身分聯合的工作原理，然後查看設定過程的概述。
+單一登入（聯合）功能允許使用者使用其公司憑證登入BlueXP ，從而簡化登入流程並增強安全性。您可以透過身分識別提供者 (IdP) 或NetApp支援網站啟用單一登入 (SSO)。
+
+.所需角色
+組織管理員、聯盟管理員、聯盟檢視器。 link:reference-iam-predefined-roles.html["了解有關訪問角色的更多資訊。"]
 
 
 
-== 與 NSS 認證的身分識別聯盟
+== 與NetApp支援站點的身份聯合
 
-如果您使用 NetApp 支援網站 （ NSS ）認證登入 BlueXP 、則不應遵循本頁的指示來設定身分識別聯盟。您應該改為執行下列動作：
-
-* 下載並完成 https://kb.netapp.com/@api/deki/files/98382/NetApp-B2C-Federation-Request-Form-April-2022.docx?revision=1["NetApp 聯盟申請表"^]
-* 將表單提交至表單中指定的電子郵件地址
+當您與NetApp支援網站聯合使用時，使用者可以使用您用於NetApp支援網站、 Active IQ以及與您的NetApp支援網站帳戶相關的其他應用程式的相同憑證登入存取BlueXP 。設定聯合後，任何建立NetApp支援網站帳戶的新使用者也將能夠存取BlueXP。
 
 
-NetApp 支援團隊將審核並處理您的請求。
+NOTE: 如果您與NetApp支援網站聯合，則無法同時與您的企業身分管理提供者聯合。請選擇最適合您組織的提供者。
 
-
-
-== 身分識別聯盟的運作方式
-
-設定身分識別聯盟會在BlueXP的驗證服務供應商（Auth0）和您自己的身分識別管理供應商之間建立信任連線。
-
-下圖說明身分識別聯盟如何與BlueXP搭配運作：
-
-image:diagram-identity-federation.png["顯示使用者使用BlueXP進行驗證、以及BlueXP與驗證使用者身分識別供應商之間的連線的圖表。"]
-
-. 使用者在 BlueXP 登入頁面輸入他們的電子郵件地址。
-. BlueXP會識別電子郵件網域是聯盟連線的一部分、並使用信任的連線將驗證要求傳送給身分識別供應商。
+.步驟
+. 下載並完成 https://kb.netapp.com/@api/deki/files/98382/NetApp-B2C-Federation-Request-Form-April-2022.docx?revision=1["NetApp 聯盟申請表"^] 。
+. 將表格提交至表格中指定的電子郵件地址。
 +
-當您設定聯盟連線時、BlueXP一律會使用該聯盟連線進行驗證。
-
-. 使用者使用公司目錄中的認證資料進行驗證。
-. 您的身分識別供應商會驗證使用者的身分識別、且使用者已登入BlueXP。
-
-
-身分識別聯盟使用開放式標準、例如安全聲明標記語言2.0（SAML）和OpenID Connect（OIDC）。
+NetApp支援團隊將審核並處理您的請求。
 
 
 
-== 支援的身分識別供應商
 
-BlueXP支援下列身分識別供應商：
 
+== 與您的身分提供者建立聯合連接
+
+您可以與身分識別提供者建立聯合連接，以便為BlueXP啟用單一登入 (SSO)。此過程包括配置身分識別提供者以信任NetApp作為服務提供者，然後在BlueXP中建立連線。
+
+
+
+=== 支援的身分識別供應商
+
+NetApp支援以下聯合身分識別提供者和協定：
+
+.通訊協定
 * 安全聲明標記語言（SAML）身分識別供應商
-* Microsoft Entra ID
 * Active Directory 聯合驗證服務 (AD FS)
+
+
+.身分提供者
+* Microsoft Entra ID
 * PingFedate
 
 
-BlueXP 僅支援服務提供者發起的（SP 發起的）SSO。
 
 
+=== 與BlueXP工作流程聯合
 
-== 設定程序總覽
+NetApp僅支援服務供應商發起的（SP發起的）SSO。您需要先配置身分提供者，以信任NetApp作為服務提供者。然後，您可以在BlueXP中建立使用身分提供者配置的連線。
 
-在 BlueXP 和您的身分管理提供者之間建立連線之前，請先了解所需的準備步驟。
+您可以與您的電子郵件網域或您擁有的其他網域結合。若要與您的電子郵件網域以外的網域結合，請先驗證您擁有該網域。
 
-這些步驟僅適用於使用 NetApp 雲端登入登入 BlueXP 的使用者。如果您使用 NSS 認證登入 BlueXP 、 <<與 NSS 認證的身分識別聯盟,瞭解如何使用 NSS 認證設定身分識別聯盟>>。
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]驗證您的網域名稱（如果不使用您的電子郵件網域）
+[role="quick-margin-para"]
+如果您要與不同於您電子郵件網域的網域名稱聯合，則必須先驗證您是否擁有該網域。您無需執行任何額外步驟即可聯合您的電子郵件網域。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]配置您的 IdP 以信任NetApp作為服務提供者
+[role="quick-margin-para"]
+您可以透過建立新應用程式並提供必要的資訊（例如 ACS URL、實體 ID 或其他憑證資訊）來配置身分提供者，使其信任NetApp作為服務提供者。服務提供者資訊因身分提供者而異，因此請參閱特定身分提供者的文件以了解詳細資訊。您需要與您的 IdP 管理員合作完成此步驟。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]在BlueXP中建立聯邦連接
+[role="quick-margin-para"]
+要建立連接，您需要提供來自身分提供者的必要信息，例如 SAML 元資料 URL 或檔案。這些資訊用於建立BlueXP與您的身分提供者之間的信任關係。您提供的資訊取決於您使用的 IdP。例如，如果您使用的是 Microsoft Entra ID，則需要提供用戶端 ID、金鑰和網域。
 
-=== SAML身分識別供應商
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["三"]在BlueXP中測試您的聯盟
+[role="quick-margin-para"]
+在啟用聯邦連接之前，請先測試它以確保其正常運作。 BlueXP中的「聯邦」頁面提供了一個測試選項，可讓您驗證測試使用者是否能夠成功進行身份驗證。如果測試成功，您就可以啟用該連線。
 
-與 SAML 身分提供者建立聯合連線涉及以下步驟：
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["三"]在BlueXP中啟用您的連接
+[role="quick-margin-para"]
+啟用連線後，使用者可以使用其公司憑證登入BlueXP 。
 
-[cols="10,15,75"]
-|===
-| 步驟 | 完成者 | 說明 
+查看對應協議或 IdP 的主題以開始：
 
+* link:task-federation-adfs.html["與 AD FS 設定聯合連接"]
+* link:task-federation-entra-id.html["與 Microsoft Entra ID 建立聯合連接"]
+* link:task-federation-ping.html["使用 PingFederate 設定聯合連接"]
+* link:task-federation-saml.html["與 SAML 身分提供者建立聯合連接"]
 
-| 1. | IdP 管理員 | 設定您的SAML身分識別供應商、以啟用與BlueXP的身分識別聯盟功能。查看您的 SAML 身分提供者的說明：*  https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-adfs-saml-connections["ADFS"^] *  https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-okta-as-saml-identity-provider["奧塔"^] *  https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-onelogin-as-saml-identity-provider["OneLogin"^] *  https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-pingfederate-as-saml-identity-provider["PingFedate"^] *  https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-salesforce-as-saml-identity-provider["Salesforce"^] *  https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-siteminder-as-saml-identity-provider["產品型資料夾"^] *  https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-ssocircle-as-saml-identity-provider["SSOCircle"^]如果您的身分提供者未出現在上面的清單中，  https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider["請遵循下列一般指示"^]提示：不要完成描述如何在 auth0 中建立連線的步驟。您將在下一步建立該連線。 
-
-
-| 2. | BlueXP管理  a| 
-前往 https://services.cloud.netapp.com/federation-setup["NetApp聯盟設定頁面"^] 並建立與BlueXP的連線。
-
-要完成此步驟，您需要從 IdP 管理員處取得有關身分提供者的以下資訊：
-
-* 登入URL
-* X509簽署憑證（PEE或CERE格式）
-* 登出URL（選用）
-
-
-使用此資訊建立連線後，聯合設定頁面會列出您可以傳送給 IdP 管理員的參數，以便在下一個步驟中完成設定。
-
-
-NOTE: 請記下憑證到期日。您需要返回「聯盟設定」頁面、並在憑證過期前更新憑證。這是您的責任。BlueXP 不會追蹤到期日期，因此您必須在憑證到期之前監控並更新憑證。最好與您的 IT 團隊合作、準時收到警示。
-
-
-
-| 3. | IdP 管理員 | 完成步驟2之後、請使用「聯盟設定」頁面上顯示的參數、在身分識別供應商上完成組態設定。 
-
-
-| 4. | BlueXP管理 | 測試並啟用連接 https://services.cloud.netapp.com/federation-setup["NetApp聯盟設定頁面"^]頁面會在測試連線和啟用連線之間刷新。 
-|===
-
-
-=== Microsoft Entra ID
-
-在 BlueXP 和 Microsoft Entra ID 之間建立聯合連線包含下列步驟：
-
-[cols="10,15,75"]
-|===
-| 步驟 | 完成者 | 說明 
-
-
-| 1. | IdP 管理員 | 設定 Microsoft Entra ID 以啟用與 BlueXP 的身分識別聯盟。https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/azure-active-directory/v2["檢視使用 Microsoft Entra ID 登錄應用程式的指示"^]提示：不要完成描述如何在 auth0 中建立連線的步驟。您將在下一步建立該連線。 
-
-
-| 2. | BlueXP管理 | 前往 https://services.cloud.netapp.com/federation-setup["NetApp聯盟設定頁面"^]並與 BlueXP 建立連線。要完成此步驟，您需要從 IdP 管理員處取得以下資訊：* 用戶端 ID * 用戶端金鑰值 * Microsoft Entra ID 網域。使用此資訊建立連線後，「聯合設定」頁面會列出您可以傳送給 AD 管理員的參數，以便在下一個步驟中完成設定。注意：請記下密鑰的到期日。您需要返回「聯盟設定」頁面、並在憑證過期前更新憑證。這是您的責任。BlueXP 不會追蹤到期日。最好與您的 AD 團隊合作、準時收到警示。 
-
-
-| 3. | IdP 管理員 | 完成步驟 2 之後、請使用「聯盟設定」頁面上顯示的參數、完成 Microsoft Entra ID 的組態設定。 
-
-
-| 4. | BlueXP管理 | 從測試並啟用連線 https://services.cloud.netapp.com/federation-setup["NetApp聯盟設定頁面"^]
-
-請注意、測試連線和啟用連線之間的頁面會重新整理。 
-|===
-
-
-=== AD FS
-
-在 BlueXP 和 AD FS 之間建立聯合連線包括以下步驟：
-
-[cols="10,15,75"]
-|===
-| 步驟 | 完成者 | 說明 
-
-
-| 1. | IdP 管理員 | 設定 AD FS 伺服器以啟用與 BlueXP 的身份聯合。 https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/adfs["檢視使用auth0設定ADFS伺服器的指示"^] 
-
-
-| 2. | BlueXP管理  a| 
-前往 https://services.cloud.netapp.com/federation-setup["NetApp聯盟設定頁面"^] 並建立與BlueXP的連線。
-
-要完成此步驟，您需要從 IdP 管理員處取得以下內容：AD FS 伺服器或聯合元資料檔案的 URL。
-
-使用此資訊建立連線後，聯合設定頁面會列出您可以傳送給 IdP 管理員的參數，以便在下一個步驟中完成設定。
-
-
-NOTE: 追蹤證書到期日期。在證書到期之前，請在「聯合設定」頁面上更新證書。這是您的責任。BlueXP 不會追蹤到期日。最好與您的 AD 團隊合作、準時收到警示。
-
-
-
-| 3. | IdP 管理員 | 完成步驟2後、使用「Federation Setup」（聯盟設定）頁面上顯示的參數、完成ADFS伺服器上的組態。 
-
-
-| 4. | BlueXP管理 | 測試並啟用連接 https://services.cloud.netapp.com/federation-setup["NetApp聯盟設定頁面"^]頁面會在測試和啟用連線之間刷新。 
-|===
-
-
-=== PingFedate
-
-在 BlueXP 和 PingFederate 伺服器之間建立聯合連線包含下列步驟：
-
-[cols="10,15,75"]
-|===
-| 步驟 | 完成者 | 說明 
-
-
-| 1. | IdP 管理員 | 設定您的PingFederation伺服器、以啟用與BluedXP的身分識別聯盟。https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/ping-federate["檢視建立連線的指示"^]提示：不要完成描述如何在 auth0 中建立連線的步驟。您將在下一步建立該連線。 
-
-
-| 2. | BlueXP管理 | 前往 https://services.cloud.netapp.com/federation-setup["NetApp聯盟設定頁面"^]並與 BlueXP 建立連線。要完成此步驟，您需要從 AD 管理員取得以下資訊：* PingFederate 伺服器的 URL * X509 簽章憑證（PEM 或 CER 格式）。使用此資訊建立連線後，「聯合設定」頁面會列出您可以傳送給 AD 管理員的參數，以便完成下一步的設定。注意：請追蹤證書到期日期。請在證書到期前在「聯合設定」頁面上更新證書。這是您的責任。BlueXP 不會追蹤到期日。最好與您的 IdP 團隊合作，以便及時收到通知。 
-
-
-| 3. | IdP 管理員 | 完成步驟2之後、請使用「聯盟設定」頁面上顯示的參數、在PingFederation伺服器上完成設定。 
-
-
-| 4. | BlueXP管理 | 測試並啟用連接 https://services.cloud.netapp.com/federation-setup["NetApp聯盟設定頁面"^]頁面會在測試連線和啟用連線之間刷新。 
-|===
-
-
-== 正在更新聯盟連線
-
-在BlueXP管理員啟用連線之後、管理員可以隨時從更新連線 https://services.cloud.netapp.com/federation-setup["NetApp聯盟設定頁面"^]
-
-例如、您可能需要上傳新的憑證來更新連線。
-
-只有建立該連線的 BlueXP 管理員可以更新它。如果您想新增其他管理員，請聯絡 NetApp 支援。

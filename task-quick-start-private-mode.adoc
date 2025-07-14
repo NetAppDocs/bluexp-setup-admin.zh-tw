@@ -18,7 +18,7 @@ summary: 準備您的環境並部署 Connector 、以私有模式開始使用 Bl
 
 私有模式通常用於沒有網際網路連線的內部環境、以及安全的雲端區域、包括 https://aws.amazon.com/federal/secret-cloud/["AWS Secret Cloud"^]、 https://aws.amazon.com/federal/top-secret-cloud/["AWS Top Secret Cloud"^]和 https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6."^]
 
-開始之前、您應該先瞭解 link:concept-netapp-accounts.html["BlueXP 帳戶"]、 link:concept-connectors.html["連接器"]和 link:concept-modes.html["部署模式"]。
+開始之前、您應該先瞭解 link:concept-connectors.html["連接器"] 和 link:concept-modes.html["部署模式"]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] link:task-prepare-private-mode.html["準備部署"]
 [role="quick-margin-list"]

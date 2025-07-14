@@ -109,7 +109,7 @@ Connector 支援的位置:: 在標準模式中、 Connector 可在雲端或內�
 使用者介面存取:: 使用者介面可從透過 SaaS 層提供的網路型主控台存取。
 API 端點:: API 呼叫會撥打至下列端點：
 \https://cloudmanager.cloud.netapp.com
-驗證:: 驗證是透過 BlueXP 的雲端服務使用驗證 0 或透過 NetApp 支援網站 （ NSS ）登入來提供。可使用身分識別聯盟。
+驗證:: BlueXP提供透過 auth0 或NetApp支援網站 (NSS) 登入的驗證。可使用身分識別聯盟。
 支援的 BlueXP 服務:: 所有 BlueXP 服務均可供使用者使用。
 支援的授權選項:: 標準模式支援市場訂閱和 BYOL ；不過、支援的授權選項取決於您使用的 BlueXP 服務。檢閱每項服務的文件、以深入瞭解可用的授權選項。
 如何開始使用標準模式:: 前往 https://console.bluexp.netapp.com["BlueXP 網路型主控台"^] 並註冊。
@@ -197,7 +197,7 @@ API 端點:: API 呼叫是針對 Connector 虛擬機器進行的。
 如何開始使用受限模式:: 建立 BlueXP 帳戶時、您必須啟用受限模式。
 +
 --
-如果您還沒有組織，當您第一次從手動安裝的 Connector 登入，或是從雲端供應商的市場建立的 Connector 登入 BlueXP  時，系統會提示您建立組織並啟用受限模式。
+如果您還沒有組織，當您第一次從手動安裝的連接器或從雲端供應商的市場建立的連接器登入BlueXP時，系統會提示您建立組織並啟用受限模式。
 
 請注意，在 BlueXP  建立組織之後，您無法變更受限模式設定。您稍後無法啟用受限模式、之後也無法停用。
 
@@ -252,7 +252,7 @@ API 端點:: API 呼叫是針對 Connector 虛擬機器進行的。
 不支援不含 Connector 的探索（直接探索）。 
 |===
 --
-在本地部署中支援的 BlueXP 服務:: 當 Connector 安裝在內部部署上時、 BlueXP 支援下列具有私有模式的儲存和資料服務：
+在本地部署中支援的BlueXP服務:: 當 Connector 安裝在內部部署上時、 BlueXP 支援下列具有私有模式的儲存和資料服務：
 +
 --
 [cols="2*"]
@@ -292,7 +292,7 @@ https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-dark-
 支援的授權選項:: 私有模式僅支援 BYOL 。
 +
 --
-對於 Cloud Volumes ONTAP BYOL 、僅支援節點型授權。不支援容量型授權。由於無法使用外傳網際網路連線、因此您需要手動上傳 BlueXP 數位錢包中的 Cloud Volumes ONTAP 授權檔案。
+對於 Cloud Volumes ONTAP BYOL 、僅支援節點型授權。不支援容量型授權。由於沒有可用的外部網路連接，您需要在BlueXP digital wallet中手動上傳您的Cloud Volumes ONTAP許可檔案。
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html#add-unassigned-licenses["瞭解如何新增授權至 BlueXP 數位錢包"^]
 
@@ -408,10 +408,7 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.
 | 工作負載工廠 | 否 | 否 
 
 
-.7+| * 功能 * | BlueXP  身分識別與存取管理 | 是的 | 否 
-
-
-| BlueXP 帳戶 | 是的 | 是的 
+.7+| * 功能 * | BlueXP  身分識別與存取管理 | 是的 | 是的 
 
 
 | 認證資料 | 是的 | 是的 

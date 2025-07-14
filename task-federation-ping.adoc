@@ -1,0 +1,76 @@
+---
+sidebar: sidebar 
+permalink: task-federation-ping.html 
+keywords: PingFederate, BlueXP, federation, single sign-on, SSO, identity provider, IdP, service provider-initiated SSO, X.509 certificate, Audience/Entity ID, Reply URL, organization admin 
+summary: '與您的 PingFederate IdP 提供者聯合，為BlueXP啟用單一登入 (SSO)。這允許用戶使用其公司憑證登入。' 
+---
+= 聯合BlueXP與 PingFederate
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+與您的 PingFederate IdP 提供者聯合，為BlueXP啟用單一登入 (SSO)。這允許用戶使用其公司憑證登入。
+
+.必備角色
+需要組織管理員或聯盟管理員才能建立和管理聯盟。聯盟檢視者可以查看聯盟頁面。 link:reference-iam-predefined-roles.html["了解有關訪問角色的更多資訊。"]
+
+
+NOTE: 您可以與企業 IdP 或NetApp支援網站聯合。 NetAppNetApp選擇其中之一，但不要同時選擇兩者。
+
+NetApp僅支援服務供應商發起的（SP發起的）SSO。您需要先配置身分提供者，以信任NetApp作為服務提供者。然後，您可以在BlueXP中建立使用身分提供者配置的連線。
+
+您可以使用 PingFederate 設定聯合連接，以便為BlueXP啟用單一登入 (SSO)。此過程包括配置 PingFederate 伺服器以信任BlueXP作為服務供應商，然後在BlueXP中建立連線。
+
+.開始之前
+* 需要具有管理員權限的 IdP 帳號。請與您的 IdP 管理員協調完成這些步驟。
+* 確定要用於聯合的網域。您可以使用您的電子郵件域名，也可以使用您擁有的其他域名。如果您想使用電子郵件域名以外的域名，則必須先在BlueXP中驗證該域名。您可以按照以下步驟操作link:task-federation-verify-domain.html["在BlueXP中驗證您的域名"]話題。
+
+
+.步驟
+. 在 BlueXP  主控台右上角、選取 image:icon-settings-option.png["設定圖示會顯示在 BlueXP  網路主控台的右上角。"] > * 身分識別與存取管理 * 。
+. 選擇“*Federation*”選項卡。
+. 選擇*配置新聯合*。
+. 輸入您的網域詳細資料：
++
+.. 選擇您要使用已驗證網域或您的電子郵件網域。電子郵件網域是與您登入的帳戶關聯的網域。
+.. 輸入您正在設定的聯盟的名稱。
+.. 如果您選擇已驗證的網域，請從清單中選擇該網域。
+
+
+. 選擇*下一步*。
+. 對於您的連線方法，選擇*提供者*，然後選擇*PingFederate*。
+. 選擇*下一步*。
+. 設定您的 PingFederate 伺服器以信任NetApp為服務提供者。您需要在 PingFederate 伺服器上執行此步驟。
++
+.. 配置 PingFederate 以信任BlueXP時，請使用下列值：
++
+*** 對於 *回覆 URL* 或 *斷言消費者服務 (ACS) URL*，使用 `https://netapp-cloud-account.auth0.com/login/callback`
+*** 對於*登出 URL*，使用 `https://netapp-cloud-account.auth0.com/logout`
+*** 對於*受眾/實體 ID*，使用 `urn:auth0:netapp-cloud-account:<fed-domain-name-saml>`其中 <fed-domain-name-pingfederate> 是聯盟的網域名稱。例如，如果您的網域是 `example.com` ，受眾/實體 ID 將是 `urn:auth0:netappcloud-account:fed-example-com-pingfederate` 。
+
+
+.. 複製 PingFederate 伺服器 URL。在BlueXP中建立連線時需要此 URL。
+.. 從您的 PingFederate 伺服器下載 X.509 憑證。此證書需採用 Base64 編碼的 PEM 格式（.pem、.crt、.cer）。
+
+
+. 返回BlueXP，然後選擇 *下一步* 建立連線。
+. 使用 PingFederate 建立連接
++
+.. 輸入您在上一個步驟中複製的 PingFederate 伺服器 URL。
+.. 上傳 X.509 簽署憑證。該證書必須為 PEM、CER 或 CRT 格式。
+
+
+. 選擇“建立連線”。系統將在幾秒鐘內建立連接。
+. 選擇*下一步*。
+. 選擇“測試連線”來測試您的連線。您將被引導至 IdP 伺服器的登入頁面。使用您的 IdP 憑證登入以完成測試，然後返回BlueXP啟用連線。
+. 選擇*下一步*。
+. 在「啟用聯合」頁面上，查看聯合詳細信息，然後選擇「啟用聯合」。
+. 選擇“*完成*”以完成該過程。
+
+
+啟用聯合後，使用者可以使用其公司憑證登入BlueXP 。

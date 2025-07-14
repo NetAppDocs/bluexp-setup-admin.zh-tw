@@ -16,7 +16,7 @@ summary: 準備您的環境、部署 Connector 及訂閱 BlueXP 、以受限模�
 [role="lead"]
 透過準備您的環境和部署連接器，開始以受限模式使用 BlueXP。
 
-受限模式通常由州政府和地方政府及受管制公司使用、包括在 AWS GovCloud 和 Azure 政府地區部署。開始之前、您應該先瞭解 link:concept-netapp-accounts.html["BlueXP 帳戶"]、 link:concept-connectors.html["連接器"]和 link:concept-modes.html["部署模式"]。
+受限模式通常由州政府和地方政府及受管制公司使用、包括在 AWS GovCloud 和 Azure 政府地區部署。在開始之前，請確保您了解link:concept-connectors.html["連接器"]和link:concept-modes.html["部署模式"] 。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] link:task-prepare-restricted-mode.html["準備部署"]
 [role="quick-margin-list"]

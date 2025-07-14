@@ -95,12 +95,6 @@ sidebar:
         url: "/task-prepare-private-mode.html"
       - title: 部署 Connector
         url: "/task-install-private-mode.html"
-      - title: BlueXP 帳戶
-        entries:
-        - title: 深入瞭解客戶
-          url: "/concept-netapp-accounts.html"
-        - title: 管理 BlueXP 帳戶
-          url: "/task-managing-netapp-accounts.html"
       - title: 接下來您可以做什麼
         url: "/reference-whats-next-private-mode.html"
   - title: 使用 BlueXP
@@ -147,16 +141,34 @@ sidebar:
             url: "/reference-iam-storage-roles.html"
         - title: 資料服務角色
           entries:
+          - title: 備份和還原角色
+            url: "/reference-iam-backup-rec-roles.html"
+          - title: 災難復原角色
+            url: "/reference-iam-disaster-rec-roles.html"
           - title: 勒索軟體保護角色
             url: "/reference-iam-ransomware-roles.html"
-    - title: BlueXP  帳戶（僅限私人模式）
-      entries:
-      - title: 深入瞭解客戶
-        url: "/concept-netapp-accounts.html"
-      - title: 管理 BlueXP 帳戶
-        url: "/task-managing-netapp-accounts.html"
     - title: 身分識別聯盟
-      url: "/concept-federation.html"
+      entries:
+      - title: 了解身分聯合
+        url: "/concept-federation.html"
+      - title: 網域驗證
+        entries:
+        - title: 驗證您的域名
+          url: "/task-federation-verify-domain.html"
+      - title: 配置聯合
+        entries:
+        - title: 與 Active Directory 聯合驗證服務 (AD FS) 提供者聯合
+          url: "/task-federation-adfs.html"
+        - title: 與 Microsoft Entra ID 提供者聯合
+          url: "/task-federation-entra-id.html"
+        - title: 與 PingFederate 建立聯盟
+          url: "/task-federation-ping.html"
+        - title: 與 SAML 身分提供者聯合
+          url: "/task-federation-saml.html"
+      - title: 管理聯盟
+        url: "/task-federation-manage.html"
+      - title: 匯入現有的聯合連接
+        url: "/task-federation-import.html"
     - title: 連接器
       entries:
       - title: 維護 VM 和 OS
@@ -207,6 +219,10 @@ sidebar:
       url: "/task-monitor-cm-operations.html"
   - title: 參考資料
     entries:
+    - title: 連接器維護控制台
+      entries:
+      - title: 連接器維護台
+        url: "/reference-connector-maint-console.html"
     - title: 權限
       entries:
       - title: 權限摘要

@@ -279,12 +279,8 @@ BlueXP  以這項新訂閱取代組織或帳戶中所有認證的現有訂閱�
 
 當您從 AWS Marketplace 訂閱時，流程的最後一步是將訂閱與您的組織關聯。如果您未完成此步驟，則無法將訂閱與您的組織或帳戶一起使用。
 
-
-TIP: 如果您使用標準或受限模式，您將擁有一個_BlueXP 組織_，您可以使用 BlueXP 身分和存取管理 (IAM) 來管理它。但如果您是以私人模式使用 BlueXP  ，則會有 BlueXP  帳戶 _ 。
-
 * link:concept-modes.html["瞭解 BlueXP 部署模式"]
 * link:concept-identity-and-access-management.html["瞭解 BlueXP  身分識別與存取管理"]
-* link:concept-netapp-accounts.html["瞭解 BlueXP 帳戶"]
 
 
 如果您從 AWS Marketplace 訂閱了 NetApp 智慧資料服務，但您錯過了將訂閱與您的帳戶關聯的步驟，請按照以下步驟操作。

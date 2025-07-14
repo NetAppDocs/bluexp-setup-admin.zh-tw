@@ -26,7 +26,7 @@ BlueXP  可統一控制混合式多雲端和整合式資料服務的儲存設�
 
 === 從 BlueXP  畫布統一控制儲存設備
 
-_BlueXP 畫布_可讓您發現、部署和管理雲端和本機儲存。畫布提供單一位置，可進行所有儲存管理。
+_BlueXP 畫布_可讓您發現、部署和管理雲端和本機儲存。畫布集中儲存管理。
 
 
 
@@ -75,13 +75,12 @@ image:screenshot-canvas.png["BlueXP  畫布的螢幕擷取畫面會顯示數個
 
 === 整合式服務可保護，保護及最佳化資料
 
-BlueXP 包括整合資料服務，以維護本地和雲端儲存中資料的安全性和可用性。
+BlueXP包含資料服務，以確保和維護跨儲存的資料可用性。
 
 BlueXP  警示:: 檢視 ONTAP 環境中與容量、可用度、效能、保護和安全性相關的問題。
 BlueXP 自動化目錄:: 使用指令碼化解決方案來自動化 NetApp 產品與服務的部署與整合。
 BlueXP 備份與還原:: 備份和還原雲端和本地資料。
 BlueXP 分類:: 準備好應用程式資料和雲端環境的隱私保護。
-BlueXP 雲端作業:: 深入瞭解雲端運算支出、並找出可能的節約效益。
 BlueXP 複製與同步:: 在本地端和雲端資料儲存之間同步資料。
 BlueXP 數位顧問:: 使用預測性分析和主動式支援來最佳化您的資料基礎架構。
 BlueXP 數位錢包:: 管理及監控您的授權與訂閱。
@@ -92,7 +91,7 @@ BlueXP 勒索軟體保護:: 偵測可能導致勒索軟體攻擊的異常狀況�
 BlueXP 複寫:: 在儲存系統之間複寫資料、以支援備份與災難恢復。
 BlueXP  軟體更新:: 自動化 ONTAP 升級的評估、規劃及執行。
 BlueXP 永續性儀表板:: 分析儲存系統的永續性。
-BlueXP 分層:: 將您的本機 ONTAP 儲存擴展到雲端。
+BlueXP 分層:: 將您的本機ONTAP儲存擴展到雲端。
 BlueXP Volume 快取:: 建立可寫入的快取磁碟區、以加速資料存取或卸載大量存取磁碟區的流量。
 BlueXP  工作負載工廠:: 使用 Amazon FSX for NetApp ONTAP 設計，設定及操作關鍵工作負載。
 
@@ -138,14 +137,13 @@ BlueXP  身分識別與存取管理（ IAM ）是一種資源與存取管理模
 在標準或受限模式下使用 BlueXP 時，支援 BlueXP IAM。如果您在私人模式下使用 BlueXP，則可以使用 BlueXP 帳戶來管理工作區、使用者和資源。
 
 * link:concept-identity-and-access-management.html["深入瞭解 BlueXP  IAM"]
-* link:concept-netapp-accounts.html["瞭解 BlueXP 帳戶"]
 
 
 
 
 === 連接器
 
-您不需要 Connector 即可開始使用 BlueXP 、但您需要建立 Connector 才能解除鎖定所有 BlueXP 功能和服務。Connector 可在內部部署和雲端環境中管理資源和程序。需要管理工作環境（例如 Cloud Volumes ONTAP ）、並使用許多 BlueXP  服務。
+您不需要 Connector 即可開始使用 BlueXP 、但您需要建立 Connector 才能解除鎖定所有 BlueXP 功能和服務。連接器可讓您管理本機和雲端環境中的資源和流程。您需要它來管理工作環境（例如Cloud Volumes ONTAP）並使用許多BlueXP服務。
 
 link:concept-connectors.html["深入瞭解連接器"]。
 
@@ -161,6 +159,6 @@ link:concept-modes.html["深入瞭解 BlueXP 部署模式"]。
 
 == SOC 2類型2認證
 
-一家專業的執業會計師公司和服務稽核員審查了 BlueXP 、並確認它根據適用的信託服務標準、達成 SOC 2 類報告。
+獨立的註冊會計師事務所和服務審計師對BlueXP進行了審查，並確認BlueXP根據適用的信託服務標準獲得了 SOC 2 類型 2 報告。
 
 https://www.netapp.com/company/trust-center/compliance/soc-2/["檢視NetApp的SOC 2報告"^]

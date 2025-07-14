@@ -1,0 +1,84 @@
+---
+sidebar: sidebar 
+permalink: task-federation-adfs.html 
+keywords: federation, active directory federation services, adfs, ad fs, single sign-on, microsoft, federate, federated connection, SSO, identity federation, identity management, corporate identity 
+summary: '與您的 Active Directory 聯合身分驗證服務 (AD FS) 聯合，為BlueXP啟用單一登入 (SSO)。這允許用戶使用其公司憑證登入。' 
+---
+= 將BlueXP與 Active Directory 聯合服務 (AD FS) 聯合起來
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+將您的 Active Directory 聯合身分驗證服務 (AD FS) 與BlueXP聯合，以啟用BlueXP的單一登入 (SSO)。這允許用戶使用其公司憑證登入BlueXP 。
+
+.必備角色
+需要組織管理員或聯盟管理員才能建立和管理聯盟。聯盟檢視者可以查看聯盟頁面。 link:reference-iam-predefined-roles.html["了解有關訪問角色的更多資訊。"]
+
+
+NOTE: 您可以與企業 IdP 或NetApp支援網站聯合。 NetAppNetApp選擇其中之一，但不要同時選擇兩者。
+
+NetApp僅支援服務供應商發起的 (SP發起) SSO。首先，將身分提供者配置為信任BlueXP作為服務提供者。然後，使用身分提供者的配置在BlueXP中建立連線。
+
+您可以與 AD FS 伺服器建立聯合，以便為BlueXP啟用單一登入 (SSO)。此流程包括設定您的 AD FS 以信任BlueXP作為服務供應商，然後在BlueXP中建立連線。
+
+.開始之前
+* 需要具有管理員權限的 IdP 帳號。請與您的 IdP 管理員協調完成這些步驟。
+* 確定要用於聯合的網域。您可以使用您的電子郵件域名，也可以使用您擁有的其他域名。如果您想使用電子郵件域名以外的域名，則必須先在BlueXP中驗證該域名。您可以按照以下步驟操作link:task-federation-verify-domain.html["在BlueXP中驗證您的域名"]話題。
+
+
+.步驟
+. 在 BlueXP  主控台右上角、選取 image:icon-settings-option.png["設定圖示會顯示在 BlueXP  網路主控台的右上角。"] > * 身分識別與存取管理 * 。
+. 選擇“*Federation*”選項卡。
+. 選擇*配置新聯合*。
+. 輸入您的網域詳細資料：
++
+.. 選擇您要使用已驗證網域或您的電子郵件網域。電子郵件網域是與您登入的帳戶關聯的網域。
+.. 輸入您正在設定的聯盟的名稱。
+.. 如果您選擇已驗證的網域，請從清單中選擇該網域。
+
+
+. 選擇*下一步*。
+. 對於您的連線方法，選擇*協定*，然後選擇*Active Directory 聯合驗證服務 (AD FS)*。
+. 選擇*下一步*。
+. 在 AD FS 伺服器中建立信賴方信任。您可以使用 PowerShell 或在 AD FS 伺服器上手動設定它。有關如何建立信賴方信任的詳細信息，請參閱 AD FS 文件。
++
+.. 使用以下腳本透過 PowerShell 建立信任：
++
+[source, powershell]
+----
+(new-object Net.WebClient -property @{Encoding = [Text.Encoding]::UTF8}).DownloadString("https://raw.github.com/auth0/AD FS-auth0/master/AD FS.ps1") | iex
+AddRelyingParty "urn:auth0:netapp-cloud-account" "https://netapp-cloud-account.auth0.com/login/callback"
+----
+.. 或者，您也可以在 AD FS 管理控制台中手動建立信任。建立信任時，請使用下列BlueXP值：
++
+*** 建立依賴信任識別碼時，使用 **YOUR_TENANT** 值：  `netapp-cloud-account`
+*** 當您選擇「啟用對 WS-Federation 的支援」時，請使用「YOUR_AUTH0_DOMAIN」值：  `netapp-cloud-account.auth0.com`
+
+
+.. 建立信任後，從 AD FS 伺服器複製元資料 URL 或下載聯合元資料檔。您需要此 URL 或檔案才能在BlueXP中完成連線。
+
+
+
+
++ NetApp建議使用元資料 URL，讓BlueXP自動檢索最新的 AD FS 設定。如果您下載了聯合元資料文件，則每當 AD FS 配置發生變更時，都需要在BlueXP中手動更新該文件。
+
+. 返回BlueXP，然後選擇 *下一步* 建立連線。
+. 建立與 AD FS 的連線。
++
+.. 輸入您在上一個步驟中從 AD FS 伺服器複製的 *AD FS URL* 或上傳您從 AD FS 伺服器下載的聯合元資料檔案。
+
+
+. 選擇“建立連線”。建立連線可能需要幾秒鐘。
+. 選擇*下一步*。
+. 選擇“測試連線”來測試您的連線。您將被引導至 IdP 伺服器的登入頁面。使用您的 IdP 憑證登入以完成測試，然後返回BlueXP啟用連線。
+. 選擇*下一步*。
+. 在「啟用聯合」頁面上，查看聯合詳細信息，然後選擇「啟用聯合」。
+. 選擇“*完成*”以完成該過程。
+
+
+啟用聯合後，使用者可以使用其公司憑證登入BlueXP 。

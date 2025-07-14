@@ -14,7 +14,7 @@ summary: Connector 是指在雲端網路或內部部署網路中執行的 NetApp
 
 
 [role="lead"]
-_Connector_ 是在您的雲端網路或內部部署網路中執行的 NetApp 軟體。它會執行 BlueXP 管理資料基礎架構所需執行的動作。Connector 會持續輪詢 BlueXP  軟體即服務（ SaaS ）層、以找出需要採取的任何行動。您不需要 Connector 即可開始使用 BlueXP 、但您需要建立 Connector 才能解除鎖定所有 BlueXP 功能和服務。
+_Connector_ 是在您的雲端網路或內部部署網路中執行的 NetApp 軟體。它用於將 BlueXP 的服務連接到您的儲存環境。
 
 
 

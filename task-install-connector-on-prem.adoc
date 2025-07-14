@@ -17,7 +17,7 @@ summary: 在內部環境中安裝 Connector 、然後登入並設定以與 BlueX
 您可以在其中一部內部部署機器上安裝 Connector 。若要在內部環境中執行 Connector ，您需要檢閱主機需求，設定網路，準備雲端權限，安裝 Connector ，設定 Connector ，然後提供您準備的權限。
 
 .開始之前
-* 您應該擁有 link:concept-connectors.html["瞭解連接器"].
+* 查看有關的信息link:concept-connectors.html["連接器"] 。
 * 您應該檢閱 link:reference-limitations.html["連接器限制"]。
 
 
@@ -25,7 +25,7 @@ summary: 在內部環境中安裝 Connector 、然後登入並設定以與 BlueX
 
 == 步驟 1 ：檢閱主機需求
 
-Connector 軟體必須在符合特定作業系統需求、 RAM 需求、連接埠需求等的主機上執行。安裝 Connector 之前、請先確定您的主機符合這些要求。
+在符合作業系統、RAM 和連接埠要求的主機上執行連接器軟體。安裝 Connector 之前、請先確定您的主機符合這些要求。
 
 
 NOTE: 連接器保留 19000 到 19200 的 UID 和 GID 範圍。此範圍是固定的，無法修改。如果主機上的任何第三方軟體使用此範圍內的 UID 或 GID，連接器安裝將會失敗。 NetApp建議使用未安裝第三方軟體的主機，以避免衝突。
@@ -247,7 +247,7 @@ sudo systemctl enable docker && sudo systemctl start docker
 
 == 步驟 3 ：設定網路
 
-設定您的網路、讓 Connector 能夠管理混合雲環境中的資源和程序。例如、您需要確保目標網路可以使用連線、而且可以使用輸出網際網路存取。
+設定網路以確保連接器可以管理資源，並連接到目標網路並進行出站網路存取。
 
 連線至目標網路:: Connector 需要網路連線、才能連線到您計畫建立和管理工作環境的位置。例如、您計畫在內部部署環境中建立 Cloud Volumes ONTAP 系統或儲存系統的網路。
 
@@ -404,7 +404,7 @@ https://\*.api 。 BlueXP  NetApp 。 NetApp 。 com \https://api 。 BlueXP  
 --
 
 
-Proxy伺服器:: 如果您的企業需要為所有傳出的網際網路流量部署 Proxy 伺服器、請取得下列關於 HTTP 或 HTTPS Proxy 的資訊。您必須在安裝期間提供此資訊。請注意、 BlueXP 不支援透明 Proxy 伺服器。
+Proxy伺服器:: NetApp支援顯式和透明代理配置。如果您使用透明代理，則只需提供代理伺服器的憑證。如果您使用明確代理，則還需要 IP 位址和憑證。
 +
 --
 * IP 位址
@@ -439,7 +439,7 @@ Proxy伺服器:: 如果您的企業需要為所有傳出的網際網路流量部
 如果您想在 AWS 或 Azure 中搭配內部部署 Connector 使用 BlueXP 服務、則需要在雲端供應商中設定權限、以便在安裝之後將認證新增至 Connector 。
 
 
-TIP: 為何不選擇 Google Cloud ？當 Connector 安裝在您的內部環境中時、就無法在 Google Cloud 中管理您的資源。Connector 必須安裝在 Google Cloud 中、才能管理任何位於該處的資源。
+TIP: 為何不選擇 Google Cloud ？當 Connector 安裝在您的內部環境中時、就無法在 Google Cloud 中管理您的資源。您必須在 Google Cloud 中安裝連接器才能管理駐留在那裡的任何資源。
 
 [role="tabbed-block"]
 ====
@@ -474,7 +474,7 @@ TIP: 為何不選擇 Google Cloud ？當 Connector 安裝在您的內部環境�
 
 
 .結果
-您現在應該擁有具有必要權限的 IAM 使用者存取金鑰。安裝 Connector 之後、您需要將這些認證與 BlueXP 的 Connector 建立關聯。
+您現在應該擁有具有必要權限的 IAM 使用者存取金鑰。安裝連接器後，將這些憑證與BlueXP中的連接器關聯。
 
 --
 .Azure
@@ -624,9 +624,6 @@ image:screenshot_azure_client_secret.gif["Azure 入口網站的螢幕擷取畫�
 
 
 
-.結果
-您的服務主體現在已設定完成、您應該已經複製應用程式（用戶端） ID 、目錄（租戶） ID 、以及用戶端機密的值。安裝 Connector 之後、您需要將這些認證與 BlueXP 的 Connector 建立關聯。
-
 --
 ====
 
@@ -643,11 +640,11 @@ image:screenshot_azure_client_secret.gif["Azure 入口網站的螢幕擷取畫�
 +
 您可以選擇在安裝後設定Proxy伺服器、但需要重新啟動Connector。
 
-+
-請注意、 BlueXP 不支援透明 Proxy 伺服器。
-
 * CA 簽署的憑證（如果 Proxy 伺服器使用 HTTPS 或 Proxy 是攔截 Proxy ）。
 
+
+
+NOTE: 手動安裝連接器時，無法為透明代理伺服器設定憑證。如果需要為透明代理伺服器設定證書，則必須在安裝後使用維護控制台。深入瞭解link:reference-connector-maint-console.html["連接器維護控制台"]。
 
 .關於這項工作
 NetApp 支援網站上提供的安裝程式可能是舊版。安裝後、如果有新版本可用、 Connector 會自動自行更新。
@@ -683,10 +680,10 @@ chmod +x BlueXP-Connector-Cloud-<version>
  ./BlueXP-Connector-Cloud-<version> --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
 ----
 +
--Proxy和--cacert參數是可選的。如果您有 Proxy 伺服器、則需要輸入如圖所示的參數。安裝程式不會提示您提供Proxy的相關資訊。
+如果您的網路需要代理才能存取互聯網，則需要新增代理資訊。您可以新增透明代理或顯式代理程式。 --proxy 和 --cacert 參數是可選的，系統不會提示您新增它們。如果您有 Proxy 伺服器、則需要輸入如圖所示的參數。
 
 +
-以下是使用兩個選用參數的命令範例：
+以下是使用 CA 簽章憑證設定明確代理伺服器的範例：
 
 +
 [source, cli]
@@ -717,13 +714,21 @@ chmod +x BlueXP-Connector-Cloud-<version>
 +
 \http://bxpproxyuser:netapp1\!@address:3128
 
-
++
+-cacert指定用於連接器與Proxy伺服器之間HTTPS存取的CA簽署憑證。HTTPS代理伺服器、攔截代理伺服器、透明代理伺服器都需要此參數。
 
 
 
 +
--cacert指定用於連接器與Proxy伺服器之間HTTPS存取的CA簽署憑證。只有當您指定 HTTPS Proxy 伺服器或 Proxy 是攔截 Proxy 時、才需要此參數。
+以下是配置透明代理伺服器的範例。配置透明代理時，無需定義代理伺服器。只需向連接器主機新增 CA 簽署的憑證即可：
 
+
+
++
+[source, cli]
+----
+ ./BlueXP-Connector-Cloud-v3.9.40 --cacert /tmp/cacert/certificate.cer
+----
 . 如果您使用 Podman，則需要調整 aardvark-dns 連接埠。
 +
 .. 透過 SSH 連接到 BlueXP Connector 虛擬機器。
@@ -748,13 +753,13 @@ Esc:wq
 
 
 .結果
-現在已安裝Connector。安裝結束時、如果您指定Proxy伺服器、Connector服務（occm）會重新啟動兩次。
+安裝結束時、如果您指定Proxy伺服器、Connector服務（occm）會重新啟動兩次。
 
 
 
-== 步驟 6 ：設定 Connector
+== 步驟 6：使用BlueXP註冊連接器
 
-註冊或登入、然後設定 Connector 與您的 BlueXP  組織合作。
+登入BlueXP並將連接器與您的組織關聯。登入方式取決於您使用BlueXP 的模式。如果您在標準模式下使用BlueXP ，則可以透過 SaaS 網站登入。如果您在受限或私有模式下使用BlueXP ，則可以透過連接器主機本機登入。
 
 .步驟
 . 開啟網頁瀏覽器並輸入下列 URL ：
@@ -771,15 +776,12 @@ _ipaddress_ 可以是 localhost 、私有 IP 位址或公有 IP 位址、視主�
 .. 輸入系統名稱。
 .. 在 * 您是在安全的環境中執行？ * 保持停用限制模式。
 +
-您應該保持停用受限模式、因為這些步驟說明如何在標準模式中使用 BlueXP 。（此外、當 Connector 安裝在內部部署時、不支援受限模式。）
+保持受限模式處於停用狀態，因為這些步驟在標準模式下使用BlueXP 。（此外、當 Connector 安裝在內部部署時、不支援受限模式。）
 
 .. 選取 * 開始 * 。
 
 
 
-
-.結果
-BlueXP 現在已設定好您剛安裝的 Connector 。
 
 
 
@@ -792,7 +794,7 @@ BlueXP 現在已設定好您剛安裝的 Connector 。
 .AWS
 --
 .開始之前
-如果您剛在 AWS 中建立這些認證、可能需要幾分鐘的時間才能使用。請稍候幾分鐘、再將認證資料新增至BlueXP。
+如果您剛剛建立這些 AWS 憑證，它們可能需要幾分鐘才能生效。請稍候幾分鐘、再將認證資料新增至BlueXP。
 
 .步驟
 . 在 BlueXP 主控台的右上角、選取「設定」圖示、然後選取 * 認證 * 。
@@ -818,7 +820,7 @@ BlueXP 現在擁有代表您在 AWS 中執行動作所需的權限。
 .Azure
 --
 .開始之前
-如果您剛在 Azure 中建立這些認證、可能需要幾分鐘的時間才能使用。請稍候幾分鐘、再將認證資料新增至BlueXP。
+如果您剛剛建立了這些 Azure 憑證，它們可能需要幾分鐘才能可用。請稍候幾分鐘、再將認證資料新增至BlueXP。
 
 .步驟
 . 在 BlueXP 主控台的右上角、選取「設定」圖示、然後選取 * 認證 * 。

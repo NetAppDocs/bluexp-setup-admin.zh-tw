@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-iam-keystone-roles.html 
 keywords: predefined roles, iam roles, organization admin, folder or project admin, identity and access management, access roles, admin 
-summary: BlueXP  身分識別與存取管理提供兩個管理角色，您可以指派給組織成員。 
+summary: BlueXP身分和存取管理提供了兩個Keystone角色，您可以將其指派給組織成員。 
 ---
 = BlueXP  的 Keystone 存取角色
 :hardbreaks:

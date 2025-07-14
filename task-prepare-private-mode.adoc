@@ -347,7 +347,7 @@ https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-ad
 --
 
 
-Proxy伺服器:: 如果您的企業需要為所有傳出的網際網路流量部署 Proxy 伺服器、請取得下列關於 HTTP 或 HTTPS Proxy 的資訊。您必須在安裝期間提供此資訊。請注意、 BlueXP 不支援透明 Proxy 伺服器。
+Proxy伺服器:: NetApp支援顯式和透明代理配置。如果您使用透明代理，則只需提供代理伺服器的憑證。如果您使用明確代理，則還需要 IP 位址和憑證。
 +
 --
 * IP 位址

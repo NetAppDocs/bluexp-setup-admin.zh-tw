@@ -379,7 +379,7 @@ https://\*.api 。 BlueXP  NetApp 。 NetApp 。 com \https://api 。 BlueXP  
 --
 
 
-Proxy伺服器:: 如果您的企業需要為所有傳出的網際網路流量部署 Proxy 伺服器、請取得下列關於 HTTP 或 HTTPS Proxy 的資訊。您必須在安裝期間提供此資訊。請注意、 BlueXP 不支援透明 Proxy 伺服器。
+Proxy伺服器:: NetApp支援顯式和透明代理配置。如果您使用透明代理，則只需提供代理伺服器的憑證。如果您使用明確代理，則還需要 IP 位址和憑證。
 +
 --
 * IP 位址
@@ -494,11 +494,11 @@ Proxy伺服器:: 如果您的企業需要為所有傳出的網際網路流量部
 +
 您可以選擇在安裝後設定Proxy伺服器、但需要重新啟動Connector。
 
-+
-請注意、 BlueXP 不支援透明 Proxy 伺服器。
-
 * CA 簽署的憑證（如果 Proxy 伺服器使用 HTTPS 或 Proxy 是攔截 Proxy ）。
 
+
+
+NOTE: 手動安裝連接器時，無法為透明代理伺服器設定憑證。如果需要為透明代理伺服器設定證書，則必須在安裝後使用維護控制台。深入瞭解link:reference-connector-maint-console.html["連接器維護控制台"]。
 
 .關於這項工作
 NetApp 支援網站上提供的安裝程式可能是舊版。安裝後、如果有新版本可用、 Connector 會自動自行更新。
@@ -534,10 +534,10 @@ chmod +x BlueXP-Connector-Cloud-<version>
  ./BlueXP-Connector-Cloud-<version> --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
 ----
 +
--Proxy和--cacert參數是可選的。如果您有 Proxy 伺服器、則需要輸入如圖所示的參數。安裝程式不會提示您提供Proxy的相關資訊。
+如果您的網路需要代理才能存取互聯網，則需要新增代理資訊。您可以新增透明代理或顯式代理程式。 --proxy 和 --cacert 參數是可選的，系統不會提示您新增它們。如果您有 Proxy 伺服器、則需要輸入如圖所示的參數。
 
 +
-以下是使用兩個選用參數的命令範例：
+以下是使用 CA 簽章憑證設定明確代理伺服器的範例：
 
 +
 [source, cli]
@@ -568,13 +568,21 @@ chmod +x BlueXP-Connector-Cloud-<version>
 +
 \http://bxpproxyuser:netapp1\!@address:3128
 
-
++
+-cacert指定用於連接器與Proxy伺服器之間HTTPS存取的CA簽署憑證。HTTPS代理伺服器、攔截代理伺服器、透明代理伺服器都需要此參數。
 
 
 
 +
--cacert指定用於連接器與Proxy伺服器之間HTTPS存取的CA簽署憑證。只有當您指定 HTTPS Proxy 伺服器或 Proxy 是攔截 Proxy 時、才需要此參數。
+以下是配置透明代理伺服器的範例。配置透明代理時，無需定義代理伺服器。只需向連接器主機新增 CA 簽署的憑證即可：
 
+
+
++
+[source, cli]
+----
+ ./BlueXP-Connector-Cloud-v3.9.40 --cacert /tmp/cacert/certificate.cer
+----
 . 如果您使用 Podman，則需要調整 aardvark-dns 連接埠。
 +
 .. 透過 SSH 連接到 BlueXP Connector 虛擬機器。

@@ -16,32 +16,35 @@ summary: 如果您的企業原則要求您使用Proxy伺服器來進行所有網
 [role="lead"]
 如果您的企業原則要求您使用Proxy伺服器來進行所有網際網路通訊、則您必須設定連接器以使用該Proxy伺服器。如果在安裝期間未將Connector設定為使用Proxy伺服器、則可將Connector設定為隨時使用該Proxy伺服器。
 
-當沒有可用的公用 IP 或 NAT 閘道時，使用具有連接器的代理伺服器可以實現出站網際網路存取。代理伺服器僅為 Connector 提供出站連接，不為 Cloud Volumes ONTAP 系統提供出站連接。
+連接器的代理伺服器無需公用 IP 或 NAT 閘道即可實現出站網際網路存取。代理伺服器僅為 Connector 提供出站連接，不為 Cloud Volumes ONTAP 系統提供出站連接。
 
-如果Cloud Volumes ONTAP 無法透過外部網際網路連線來傳送AutoSupport 各種消息、則BlueXP會自動將這些Cloud Volumes ONTAP 系統設定為使用連接器隨附的Proxy伺服器。您必須確保連接器的安全群組允許透過連接埠 3128 的入站連線。部署連接器後，開啟此連接埠。
+如果Cloud Volumes ONTAP系統缺少出站互聯網訪問， BlueXP會將其配置為使用連接器的代理伺服器。您必須確保連接器的安全群組允許透過連接埠 3128 的入站連線。部署連接器後開啟此連接埠。
+
+如果連接器本身沒有出站網路連接， Cloud Volumes ONTAP系統將無法使用已設定的代理伺服器。
 
 
 
 == 支援的組態
 
-* BlueXP支援HTTP和HTTPS。
-* Proxy 伺服器可以位於雲端或網路中。
-* BlueXP 不支援透明 Proxy 伺服器。
+* 為Cloud Volumes ONTAP系統提供服務的連接器支援透明代理伺服器。如果您將BlueXP服務與Cloud Volumes ONTAP結合使用，請建立專用於Cloud Volumes ONTAP 的連接器，以便在其中使用透明代理伺服器。
+* 所有連接器都支援明確代理伺服器，包括管理Cloud Volumes ONTAP系統的連接器和管理BlueXP服務的連接器。
+* HTTP 和 HTTPS。
+* 代理伺服器可以位於雲端或您的網路。
 
 
 
+IMPORTANT: 配置代理程式後，您將無法變更代理類型。如果需要變更代理程式類型，請移除連接器，然後新增一個採用新代理類型的新連接器。
 
-== 在連接器上啟用Proxy
+
+
+== 在連接器上啟用明確代理
 
 當您將連接器設定為使用 Proxy 伺服器、連接器及 Cloud Volumes ONTAP 其所管理的各種系統（包括任何 HA 協調器）時、都會使用 Proxy 伺服器。
 
-此操作將重新啟動連接器。請先確定 Connector 未執行任何作業、然後再繼續。
+此操作將重新啟動連接器。繼續操作之前，請確認連接器處於空閒狀態。
 
 .步驟
 . 瀏覽至 * 編輯 BlueXP Connector* 頁面。
-+
-導航取決於您的 BlueXP 模式。在標準模式下，從 SaaS 網站存取介面。在受限或私有模式下，從連接器主機本地​​存取。
-
 +
 [role="tabbed-block"]
 ====
@@ -71,27 +74,78 @@ image:screenshot-edit-connector.png["螢幕擷取畫面顯示 [ 編輯連接器 
 --
 ====
 . 選擇 * HTTP Proxy 組態 * 。
-. 設定Proxy：
-+
-.. 選取 * 啟用 Proxy* 。
-.. 使用語法指定伺服器 http://_address:port_[] 或 https://_address:port_[]
-.. 如果伺服器需要基本驗證、請指定使用者名稱和密碼。
+. 在配置類型欄位中選擇*明確代理*。
+. 選取 * 啟用 Proxy* 。
+. 使用語法指定伺服器 http://_address:port_[] 或 https://_address:port_[]
+. 如果伺服器需要基本驗證、請指定使用者名稱和密碼。
 +
 請注意下列事項：
 
 +
-*** 使用者可以是本機使用者或網域使用者。
-*** 對於網域使用者、您必須輸入 \ 的 ASCII 碼、如下所示： domain-name%92user-name
+** 使用者可以是本機使用者或網域使用者。
+** 對於網域使用者、您必須輸入 \ 的 ASCII 碼、如下所示： domain-name%92user-name
 +
 例如： NetApp%92Proxy
 
-*** BlueXP不支援包含@字元的密碼。
+** BlueXP不支援包含@字元的密碼。
 
 
-.. 選擇*保存*。
+. 選擇*保存*。
 
 
 
+
+== 在連接器上啟用透明代理
+
+僅Cloud Volumes ONTAP支援在連接器上使用透明代理。如果您除了Cloud Volumes ONTAP之外還使用BlueXP服務，則應建立單獨的連接器以用於資料服務或用於Cloud Volumes ONTAP。
+
+在啟用透明代理之前，請確保滿足以下要求：
+
+* 連接器與透明代理伺服器安裝在同一網路上。
+* 代理伺服器上啟用了 TLS 檢查。
+* 您擁有一個 PEM 格式的證書，與透明代理伺服器上使用的證書相符。
+* 您不能將連接器用於Cloud Volumes ONTAP以外的任何NetApp資料服務。
+
+
+若要將現有連接器設定為使用透明代理伺服器，您可以使用可透過連接器主機上的命令列取得的連接器維護工具。
+
+配置代理伺服器時，連接器會重新啟動。請先驗證連接器是否處於空閒狀態，然後再繼續操作。
+
+.步驟
++ 確保您擁有代理伺服器的 PEM 格式憑證檔案。如果您沒有證書，請聯絡網路管理員取得。
+
+. 在連接器主機上開啟命令列介面。
+. 導航至連接器維護工具目錄：  `/opt/application/netapp/service-manager-2/connector-maint-console`
+. 運行以下命令啟用透明代理，其中 `/home/ubuntu/<certificate-file>.pem`是您擁有的代理伺服器憑證檔案的目錄和名稱：
++
+[source, CLI]
+----
+./connector-maint-console proxy add -c /home/ubuntu/<certificate-file>.pem
+----
++
+確保憑證檔案為 PEM 格式且與指令位於相同目錄中，或指定憑證檔案的完整路徑。
+
++
+[source, CLI]
+----
+./connector-maint-console proxy add -c /home/ubuntu/<certificate-file>.pem
+----
+
+
+
+
+=== 修改連接器的透明代理
+
+您可以使用 `proxy update`命令或使用 `proxy remove`命令。有關更多信息，請參閱link:reference-connector-maint-console.html["連接器維護控制台"] 。
+
+
+IMPORTANT: 配置代理程式後，您將無法變更代理類型。如果需要變更代理程式類型，請移除連接器，然後新增一個採用新代理類型的新連接器。
+
+
+
+== 如果無法存取互聯網，請更新連接器代理
+
+如果您網路的代理配置發生變化，您的連接器可能會失去對網際網路的存取權限。例如，如果有人更改了代理伺服器的密碼或更新了憑證。在這種情況下，您需要直接從連接器主機存取 UI 並更新設定。請確保您可以透過網路存取連接器主機，並且可以登入BlueXP UI。
 
 
 

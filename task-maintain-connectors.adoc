@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-maintain-connectors.html 
-keywords: connector operating system, connector maintenance, vm maintenance, os updates, operating system updates, stop connector, restart connector 
+keywords: connector operating system, connector maintenance, vm maintenance, os updates, operating system updates, stop connector, restart connector, notifications, connector health, connector disk space, connector cpu usage, connector ram usage, connector vm, connector ip address, connector uri 
 summary: 在 Connector 主機上維護作業系統是您的責任。例如、您應該遵循公司的作業系統發佈標準程序、將安全性更新套用至 Connector 主機上的作業系統。 
 ---
 = 維護 Connector VM 和作業系統
@@ -23,15 +23,15 @@ TIP: 如果您有現有的 Connector 、您應該知道 link:reference-connector
 
 == 作業系統修補程式和 Connector
 
-套用作業系統安全性修補程式時、不需要停止 Connector 主機上的任何服務。
+無需停止連接器主機服務即可套用作業系統安全修補程式。
 
 
 
 == VM 或執行個體類型
 
-如果您直接從 BlueXP 建立 Connector 、 BlueXP 會使用預設組態、在雲端供應商中部署虛擬機器執行個體。建立 Connector 之後、不應變更為 CPU 或 RAM 較少的較小 VM 執行個體。
+如果您透過BlueXP建立連接器，它會使用預設配置在您的雲端提供者中部署一個虛擬機器實例。建立連接器後，請勿切換到 CPU 或 RAM 較少的小型虛擬機器執行個體。
 
-CPU 和 RAM 需求如下：
+下表列出了 CPU 和 RAM 需求：
 
 CPU:: 8 個核心或 8 個 vCPU
 RAM:: 32GB
@@ -41,17 +41,35 @@ link:reference-connector-default-config.html["瞭解連接器的預設組態"]�
 
 
 
-== 監控磁碟空間
+== 監控連接器
 
-當 Connector VM 的磁碟空間不足時，BlueXP 會通知您。您可以在通知中心監控這些通知，或將其設定為發送電子郵件警報。解決磁碟空間問題是您的責任。link:ttps://kb.netapp.com/Cloud/BlueXP/Cloud_Manager/How_to_resolve_disk_space_issues_on_BlueXP_connector_VM["查看 NetApp 知識庫文章"^]。
+當連接器虛擬機器出現問題（包括磁碟空間、RAM 和 CPU 問題）時， BlueXP會通知您。您可以在BlueXP 的通知中心監控這些通知，也可以設定電子郵件通知。磁碟空間、記憶體或 CPU 使用率偶爾增加是正常現象，但如果這種情況頻繁發生，您應該採取措施解決。
+
+當連接器資源（CPU、RAM 或磁碟空間）連續 30 分鐘超過其總容量的 90% 時， BlueXP會通知您。之後，如果資源使用率降至該閾值以下，通知中心會顯示為「已解決」（綠色）。
+
+
+NOTE: 如果您對修改連接器虛擬機器有任何疑問，請聯絡NetApp支援。
 
 link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#notification-center["深入瞭解。"^]
 
+[cols="47,47"]
+|===
+| 通知 | 需要採取行動 
+
+
+| 磁碟空間過高 | link:https://kb.netapp.com/Cloud/BlueXP/Cloud_Manager/How_to_resolve_disk_space_issues_on_BlueXP_connector_VM["查看 NetApp 知識庫文章"^]。 
+
+
+| CPU 使用率過高 | 根據您安裝連接器虛擬機器的位置，在超大規模伺服器或本機增加其 CPU 大小。或者，建立更多連接器，並將工作負載分配到多個連接器。 RAM利用率會因您的環境、 ONTAP工作負載、 Cloud Volumes ONTAP系統數量以及您使用的資料服務而有所不同。 
+
+
+| RAM 使用率過高 | 根據您安裝連接器虛擬機器的位置，在超大規模伺服器或本地增加其 RAM。或者，建立其他連接器，並將工作負載分配到多個連接器。 RAM利用率會因您的環境、 ONTAP工作負載、 Cloud Volumes ONTAP系統數量以及您所使用的資料服務而有所不同。 
+|===
 
 
 == 停止並啟動 Connector VM
 
-如果您需要停止然後啟動 Connector VM 、則應從雲端供應商的主控台或使用內部部署管理的標準程序來執行。
+如果需要，請使用雲端提供者的控制台或標準內部部署程式停止並啟動連接器虛擬機器。
 
 link:concept-connectors.html#connectors-must-be-operational-at-all-times["請注意、 Connector 必須隨時都能運作"]。
 
@@ -59,15 +77,15 @@ link:concept-connectors.html#connectors-must-be-operational-at-all-times["請注
 
 == 連線至Linux VM
 
-如果您需要連線至執行Connector的Linux VM、可以使用雲端供應商提供的連線選項來執行。
+如果您需要連接到執行連接器的 Linux VM，請使用雲端提供者提供的連線選項。
 
-AWS:: 在AWS中建立Connector執行個體時、您提供了AWS存取金鑰和秘密金鑰。您可以將此金鑰配對用於執行個體的SSH。EC2 Linux 執行個體的使用者名稱為 Ubuntu （對於在 2023 年 5 月之前建立的 Connectors 、使用者名稱為 EC2-user ）。
+AWS:: 在 AWS 中建立連接器執行個體時，請提供 AWS 存取金鑰和金鑰。您可以將此金鑰配對用於執行個體的SSH。對於 EC2 Linux 實例，請使用使用者名稱「ubuntu」。對於 2023 年 5 月之前建立的連接器，請使用使用者名稱「ec2-user」。
 +
 --
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html["AWS文件：連線至您的Linux執行個體"^]
 
 --
-Azure:: 在 Azure 中建立 Connector VM 時、您指定了使用者名稱、並選擇使用密碼或 SSH 公開金鑰進行驗證。使用您選擇的驗證方法來連線至VM。
+Azure:: 在 Azure 中建立連接器虛擬機器時，您可以指定使用者名稱並選擇使用密碼或 SSH 公鑰進行驗證。使用您選擇的驗證方法來連線至VM。
 +
 --
 https://docs.microsoft.com/en-us/azure/virtual-machines/linux/mac-create-ssh-keys#ssh-into-your-vm["Azure文件：SSH進入VM"^]
@@ -85,14 +103,14 @@ https://cloud.google.com/compute/docs/instances/connecting-to-instance["Google C
 
 == 變更連接器的IP位址
 
-如果貴企業需要、您可以變更由雲端供應商自動指派之Connector執行個體的內部IP位址和公有IP位址。
+如果需要，您可以變更雲端提供者指派的連接器執行個體的內部和公用 IP 位址。
 
 .步驟
 . 依照雲端供應商的指示、變更連接器執行個體的本機IP位址或公有IP位址（或兩者）。
-. 如果您變更了公用IP位址、而且需要連線至連接器上執行的本機使用者介面、請重新啟動連接器執行個體、以使用BlueXP登錄新的IP位址。
+. 重新啟動 Connector 執行個體以向BlueXP註冊新的公用 IP 位址。
 . 如果您變更了私有IP位址、請更新Cloud Volumes ONTAP 支援的還原組態檔案備份位置、以便將備份傳送到Connector上的新私有IP位址。
 +
-您需要更新每個 Cloud Volumes ONTAP 系統的備份位置。
+更新每個Cloud Volumes ONTAP系統的備份位置。
 
 +
 .. 在 Cloud Volumes ONTAP CLI 中、將權限等級設為進階：
@@ -121,12 +139,11 @@ system configuration backup settings modify -destination <target-location>
 
 == 編輯連接器的URI
 
-新增及移除 Connector 的統一資源識別元（ URI ）。
+您可以新增和刪除連接器的統一資源標識符 (URI)。
 
 .步驟
 . 從 BlueXP 標頭中選取 * Connector* 下拉式清單。
 . 選取 * 管理連接器 * 。
-. 展開 *Connector URI* 列以檢視連接器的 URI 。
-. 展開 *Connector URI* 列以檢視連接器的 URI 。
+. 展開「*連接器 URI*」欄以查看連接器 URI。
 . 新增並移除 URI 、然後選取 * 套用 * 。
 

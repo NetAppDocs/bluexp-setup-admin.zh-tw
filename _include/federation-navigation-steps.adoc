@@ -1,0 +1,9 @@
+= 
+:allow-uri-read: 
+
+
+.步驟
+. 在 BlueXP  主控台右上角、選取 image:icon-settings-option.png["設定圖示會顯示在 BlueXP  網路主控台的右上角。"] > * 身分識別與存取管理 * 。
+. 選擇“*Federation*”選項卡。
+. 選擇*配置新聯合*。
+
