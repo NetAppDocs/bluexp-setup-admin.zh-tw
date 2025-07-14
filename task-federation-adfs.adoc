@@ -63,9 +63,8 @@ AddRelyingParty "urn:auth0:netapp-cloud-account" "https://netapp-cloud-account.a
 .. 建立信任後，從 AD FS 伺服器複製元資料 URL 或下載聯合元資料檔。您需要此 URL 或檔案才能在BlueXP中完成連線。
 
 
-
-
-+ NetApp建議使用元資料 URL，讓BlueXP自動檢索最新的 AD FS 設定。如果您下載了聯合元資料文件，則每當 AD FS 配置發生變更時，都需要在BlueXP中手動更新該文件。
++
+NetApp建議使用元資料 URL 讓BlueXP自動檢索最新的 AD FS 設定。如果您下載了聯合元資料文件，則每當 AD FS 配置發生變更時，都需要在BlueXP中手動更新該文件。
 
 . 返回BlueXP，然後選擇 *下一步* 建立連線。
 . 建立與 AD FS 的連線。

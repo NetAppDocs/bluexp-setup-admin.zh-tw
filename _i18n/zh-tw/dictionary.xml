@@ -5015,7 +5015,6 @@
   <block id="f7b353257b71afef5402701e6c93dc8a" category="doc">連接器 3.9.54</block>
   <block id="98b6a9150dc84b6f02a11b49d3f18c05" category="paragraph">此版本的BlueXP Connector 包括安全性改進、錯誤修復以及以下新功能：</block>
   <block id="0e0a4ccfeecf6ead97d3838c2dc57d40" category="inline-link-macro">了解有關配置透明代理的更多資訊。</block>
-  <block id="313ef52bd65a76709d5fc69694074f0c" category="list-text">支援專用於支援Cloud Volumes ONTAP服務的連接器的透明代理。 <block ref="139e9d43e4ebdf2d28d8a7ff0c85548a" category="inline-link-macro-rx"></block></block>
   <block id="4439ae12e6cc703b73c18fa22032bcff" category="list-text">當連接器部署在 Google Cloud 環境中時，能夠使用網路標籤來協助路由連接器流量。</block>
   <block id="a72a5a23a9089a372f557a0032363d4e" category="list-text">用於連接器健康監控的附加產品內通知，包括 CPU 和 RAM 使用情況。</block>
   <block id="86c10fecfc44ffe6d27d3e73e9158cad" category="paragraph">目前、 3.9.54 版本適用於標準模式和受限模式。</block>
@@ -5031,18 +5030,15 @@
   <block id="a7cc903fc36eaee51a699d9d59b1496c" category="paragraph">BlueXP現在提供更直覺的身份聯合管理介面。這包括更便捷的導航、更清晰的聯合連接配置選項，以及更強大的現有聯合可見性。</block>
   <block id="c06fd8d559af4ac97a50afd1857f0e4e" category="paragraph">透過身分聯合啟用單一登入 (SSO)，使用者可以使用其公司憑證登入BlueXP 。這提高了安全性，減少了密碼使用量，並簡化了使用者入職流程。</block>
   <block id="62532a5520311cce692e8abb3a619189" category="inline-link-macro">了解有關將現有聯合連接導入BlueXP 的更多資訊。</block>
-  <block id="09de16a2da9f0884c7445f0a40b10aa4" category="paragraph">系統將提示您將所有現有的聯合連線匯入新介面，以取得新的管理功能。這樣，您無需重新建立聯合連接即可充分利用最新的增強功能。 <block ref="172066467f700483f74d71d92d89ce7c" category="inline-link-macro-rx"></block></block>
   <block id="35db97c0083a9f24d4de60744f2ae08c" category="paragraph">改進的聯合管理允許您：</block>
   <block id="c7cfa37b557dec5d42fe4ae1f33a84a9" category="list-text">將多個已驗證的網域新增至聯合連接，可讓您將多個網域與同一個身分提供者 (IdP) 一起使用。</block>
   <block id="b4a4e2a03df0b0c5b7847629f778c654" category="list-text">在需要時停用或刪除聯合連接，讓您控制使用者存取和安全性。</block>
   <block id="77f3e518793db250165393f568090955" category="list-text">使用 IAM 角色控制對聯合管理的存取。</block>
   <block id="ac784304eb7a6a12a493cf93b5cef5a9" category="inline-link-macro">了解有關BlueXP中的身份聯合的更多資訊。</block>
-  <block id="7970bfbac6093d2cbee1b40bcff193c3" category="paragraph"><block ref="7970bfbac6093d2cbee1b40bcff193c3" category="inline-link-macro-rx"></block></block>
   <block id="e16a950fa56f1c93596e628653af0177" category="section-title">BlueXP backup and recovery、 BlueXP disaster recovery和聯合管理的新存取角色</block>
   <block id="f4b57a3793a05b2b72338f8e9fcc9496" category="paragraph">BlueXP現在支援使用 IAM 角色實現以下功能和資料服務：</block>
   <block id="43db2a9bc6b7310c67fd6873bb6ca7a4" category="list-text">聯邦</block>
   <block id="f52cf765b6d2324047bf70dbb3a134b2" category="inline-link-macro">了解有關使用訪問角色的更多資訊。</block>
-  <block id="10bab6385b6290f87ce28199462adf76" category="paragraph"><block ref="10bab6385b6290f87ce28199462adf76" category="inline-link-macro-rx"></block></block>
   <block id="59d63e81aab85c8d960a9f1f13ec3a20" category="paragraph">_Connector_ 是在您的雲端網路或內部部署網路中執行的 NetApp 軟體。它用於將 BlueXP 的服務連接到您的儲存環境。</block>
   <block id="8e3127f706f1e56c4038e102362daa9e" category="summary">身分識別聯盟可透過BlueXP進行單一登入、讓使用者使用公司身分的認證登入。首先，查看設定過程。</block>
   <block id="35da6b1009cfb85617a9cb6b76ca78b5" category="paragraph">單一登入（聯合）功能允許使用者使用其公司憑證登入BlueXP ，從而簡化登入流程並增強安全性。您可以透過身分識別提供者 (IdP) 或NetApp支援網站啟用單一登入 (SSO)。</block>
@@ -5283,7 +5279,6 @@
   <block id="c3735d9c34fd4ed334e4dbdf6f9399bf" category="list-text">建立依賴信任識別碼時，使用 **YOUR_TENANT** 值： <block ref="54abc930040d4aaee039ddb6714c161b" prefix=" " category="inline-code"></block></block>
   <block id="5f1e9ae008e49ccbc1bb7bb997f7072d" category="list-text">當您選擇「啟用對 WS-Federation 的支援」時，請使用「YOUR_AUTH0_DOMAIN」值： <block ref="fe93c33621416c4736b5beefec28d44e" prefix=" " category="inline-code"></block></block>
   <block id="bf7f21a3f0a9d15815e8898ab4b0d126" category="list-text">建立信任後，從 AD FS 伺服器複製元資料 URL 或下載聯合元資料檔。您需要此 URL 或檔案才能在BlueXP中完成連線。</block>
-  <block id="84999323afead336ecc889d3b9f1f8b9" category="paragraph">+ NetApp建議使用元資料 URL，讓BlueXP自動檢索最新的 AD FS 設定。如果您下載了聯合元資料文件，則每當 AD FS 配置發生變更時，都需要在BlueXP中手動更新該文件。</block>
   <block id="ca0d62b869f281351aeda2084ef067c3" category="list-text">返回BlueXP，然後選擇 *下一步* 建立連線。</block>
   <block id="4b682b6bee53df811273a0bfbe611e45" category="list-text">建立與 AD FS 的連線。</block>
   <block id="c1b7d1f0d06c7cfb1404c3d5e03d6802" category="list-text">輸入您在上一個步驟中從 AD FS 伺服器複製的 *AD FS URL* 或上傳您從 AD FS 伺服器下載的聯合元資料檔案。</block>
@@ -5305,7 +5300,6 @@
   <block id="a31725e5a996167aefdc67c1628c7ebf" category="list-text">輸入您在上一個步驟中建立的客戶端 ID 和客戶端金鑰。</block>
   <block id="56195ae93f466d39ec4d363a2fb1500e" category="list-text">輸入 Microsoft Entra ID 網域。</block>
   <block id="414584aec7c36f7a64ee722e65458b2f" category="list-text">選擇“建立連線”。系統將在幾秒鐘內建立連接。</block>
-  <block id="a341e999958dd720d932630dc8e0be57" category="floating-title">測試並啟用連接</block>
   <block id="085cc3c433cdddd132661c8498367dd3" category="summary">將您現有的聯合連線匯入BlueXP ，以便在新介面中進行管理。這樣，您無需重新建立聯合連接，即可充分利用最新的增強功能。</block>
   <block id="c25a3e76b4346814957eaeaf7f21b29b" category="doc">將您的聯盟導入BlueXP</block>
   <block id="e4ebb9b2ed3ade70212bc0487a5b0956" category="paragraph">已與BlueXP建立聯合連線的現有客戶，可將現有聯合匯入新介面。這樣，您就可以在新的「聯合」頁面中管理您的聯合連接，而無需重新建立。</block>
@@ -5453,4 +5447,10 @@
   <block id="d00255b25e6ac270c154c1b88351cb61" category="sidebar">管理聯盟</block>
   <block id="b738cb995b90e7ef0f6b53e82271107a" category="sidebar">匯入現有的聯合連接</block>
   <block id="20bcff7d6fd558badea4ab3c38447c64" category="sidebar">連接器維護台</block>
+  <block id="5e976f8888129db7a70ab686bfcc86b9" category="list-text">支援專用於支援Cloud Volumes ONTAP服務的連接器的透明代理。 <block ref="addeb9305f92d41fc2dd640d1ef810f0" category="inline-link-macro-rx"></block></block>
+  <block id="a930f8ca18589b33c946f81801d0bbf6" category="paragraph">系統將提示您將所有現有的聯合連線匯入新介面，以取得新的管理功能。這樣，您無需重新建立聯合連接即可充分利用最新的增強功能。 <block ref="374020c220651e051317a80c1b5ae1db" category="inline-link-macro-rx"></block></block>
+  <block id="b658b3504fd725bf7abab622b28f1851" category="paragraph"><block ref="b658b3504fd725bf7abab622b28f1851" category="inline-link-macro-rx"></block></block>
+  <block id="12abdfb9ba5fcfe154c4363eb977b22b" category="paragraph"><block ref="12abdfb9ba5fcfe154c4363eb977b22b" category="inline-link-macro-rx"></block></block>
+  <block id="119ba48130d6c62c98b23ef445867ae0" category="paragraph">NetApp建議使用元資料 URL 讓BlueXP自動檢索最新的 AD FS 設定。如果您下載了聯合元資料文件，則每當 AD FS 配置發生變更時，都需要在BlueXP中手動更新該文件。</block>
+  <block id="f7ad98daa7023cc12c8a8312a6fb794e" category="floating-title">測試並啟用連接</block>
 </blocks>

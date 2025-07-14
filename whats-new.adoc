@@ -26,7 +26,7 @@ summary: 瞭解 BlueXP  管理功能的新功能： BlueXP  IAM 、 Connectors
 
 此版本的BlueXP Connector 包括安全性改進、錯誤修復以及以下新功能：
 
-* 支援專用於支援Cloud Volumes ONTAP服務的連接器的透明代理。 link:https://docs.netapp.com/us-en/bluexp/task-configuring-proxy.html["了解有關配置透明代理的更多資訊。"]
+* 支援專用於支援Cloud Volumes ONTAP服務的連接器的透明代理。 link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html["了解有關配置透明代理的更多資訊。"]
 * 當連接器部署在 Google Cloud 環境中時，能夠使用網路標籤來協助路由連接器流量。
 * 用於連接器健康監控的附加產品內通知，包括 CPU 和 RAM 使用情況。
 
@@ -60,7 +60,7 @@ BlueXP現在提供更直覺的身份聯合管理介面。這包括更便捷的�
 
 透過身分聯合啟用單一登入 (SSO)，使用者可以使用其公司憑證登入BlueXP 。這提高了安全性，減少了密碼使用量，並簡化了使用者入職流程。
 
-系統將提示您將所有現有的聯合連線匯入新介面，以取得新的管理功能。這樣，您無需重新建立聯合連接即可充分利用最新的增強功能。 link:https://docs.netapp.com/us-en/bluexp/task-federation-import.html["了解有關將現有聯合連接導入BlueXP 的更多資訊。"]
+系統將提示您將所有現有的聯合連線匯入新介面，以取得新的管理功能。這樣，您無需重新建立聯合連接即可充分利用最新的增強功能。 link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-federation-import.html["了解有關將現有聯合連接導入BlueXP 的更多資訊。"]
 
 改進的聯合管理允許您：
 
@@ -69,7 +69,7 @@ BlueXP現在提供更直覺的身份聯合管理介面。這包括更便捷的�
 * 使用 IAM 角色控制對聯合管理的存取。
 
 
-link:https://docs.netap.com/us-en/bluexp-setup-admin/concept-federation.html["了解有關BlueXP中的身份聯合的更多資訊。"]
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-federation.html["了解有關BlueXP中的身份聯合的更多資訊。"]
 
 
 
@@ -82,7 +82,7 @@ BlueXP現在支援使用 IAM 角色實現以下功能和資料服務：
 * 聯邦
 
 
-link:https://docs.netapp.com/us-en/bluexp/reference-iam-predefined-roles.html["了解有關使用訪問角色的更多資訊。"]
+link:https://docs.netapp.com/us-en/bluexp-admin/reference-iam-predefined-roles.html["了解有關使用訪問角色的更多資訊。"]
 
 
 
