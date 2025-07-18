@@ -5255,7 +5255,6 @@
   <block id="0de6f673e972fb67cc36c32ad5fcb898" category="list-text">您不能將連接器用於Cloud Volumes ONTAP以外的任何NetApp資料服務。</block>
   <block id="ee8603a5f78124f751bd9a36bb2f1053" category="paragraph">若要將現有連接器設定為使用透明代理伺服器，您可以使用可透過連接器主機上的命令列取得的連接器維護工具。</block>
   <block id="66f1817e95be4137166f119a89852722" category="paragraph">配置代理伺服器時，連接器會重新啟動。請先驗證連接器是否處於空閒狀態，然後再繼續操作。</block>
-  <block id="e1a3bbb95e9e5f5476f81f3831fe98de" category="paragraph">+ 確保您擁有代理伺服器的 PEM 格式憑證檔案。如果您沒有證書，請聯絡網路管理員取得。</block>
   <block id="040c90d5413009e841ba3cc3b521d699" category="list-text">在連接器主機上開啟命令列介面。</block>
   <block id="2bc1351fc63f28a1cf5ed4c899d4fc35" category="list-text">導航至連接器維護工具目錄： <block ref="ea59a49bc639b17bbbe69f3540f9f07c" prefix=" " category="inline-code"></block></block>
   <block id="05c44d09b879c8fb4432a79dc845c0f5" category="list-text">運行以下命令啟用透明代理，其中<block ref="d2d60207eee35ee99f434fbad44a604c" prefix=" " category="inline-code"></block>是您擁有的代理伺服器憑證檔案的目錄和名稱：</block>
@@ -5453,4 +5452,5 @@
   <block id="12abdfb9ba5fcfe154c4363eb977b22b" category="paragraph"><block ref="12abdfb9ba5fcfe154c4363eb977b22b" category="inline-link-macro-rx"></block></block>
   <block id="119ba48130d6c62c98b23ef445867ae0" category="paragraph">NetApp建議使用元資料 URL 讓BlueXP自動檢索最新的 AD FS 設定。如果您下載了聯合元資料文件，則每當 AD FS 配置發生變更時，都需要在BlueXP中手動更新該文件。</block>
   <block id="f7ad98daa7023cc12c8a8312a6fb794e" category="floating-title">測試並啟用連接</block>
+  <block id="540c166e455adde220d6a9dbeddca7d0" category="paragraph">確保您擁有代理伺服器的 PEM 格式的憑證檔案。如果您沒有證書，請聯絡網路管理員取得。</block>
 </blocks>

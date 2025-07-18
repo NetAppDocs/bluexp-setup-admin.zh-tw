@@ -112,7 +112,7 @@ image:screenshot-edit-connector.png["螢幕擷取畫面顯示 [ 編輯連接器 
 配置代理伺服器時，連接器會重新啟動。請先驗證連接器是否處於空閒狀態，然後再繼續操作。
 
 .步驟
-+ 確保您擁有代理伺服器的 PEM 格式憑證檔案。如果您沒有證書，請聯絡網路管理員取得。
+確保您擁有代理伺服器的 PEM 格式的憑證檔案。如果您沒有證書，請聯絡網路管理員取得。
 
 . 在連接器主機上開啟命令列介面。
 . 導航至連接器維護工具目錄：  `/opt/application/netapp/service-manager-2/connector-maint-console`
