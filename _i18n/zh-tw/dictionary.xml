@@ -4567,7 +4567,6 @@
   <block id="3aba2887bff41f744b43940b1b82080a" category="cell">平台角色</block>
   <block id="460874c7c996eb6762b8a5b10ff2d76f" category="cell">職責</block>
   <block id="692fafcb7a4c1881280af40a80baa20d" category="inline-link-macro">組織管理員</block>
-  <block id="62263858ac3fcc39efab4f2c55c4b609" category="cell">允許使用者不受限制地存取指派給他們的特定專案和資料夾。可以將成員新增至他們管理的資料夾或專案，以及執行任何 BlueXP  工作，並在指派給他們的資料夾或專案中，對資源使用任何資料服務或應用程式。資料夾或專案管理員角色無法建立 Connectors 。</block>
   <block id="ee1afb77ea65d6282a6b2db5ef1c9599" category="cell">應用程式角色</block>
   <block id="ff7835459affd6ea09ace7258f1ea831" category="cell">具有 Keystone 管理員角色的使用者可以建立服務要求。可讓使用者監控及檢視他們正在存取的 Keystone 租用戶內的使用量，資產和管理資訊。</block>
   <block id="316bb1d5ed8c0cbdba665a6326ba1bde" category="inline-link-macro">儲存管理員</block>
@@ -4575,7 +4574,6 @@
   <block id="172d68d57647cf0cb58a3cbcac52a80d" category="inline-link-macro">系統健全狀況專家</block>
   <block id="f9e4f3681d11897d8d94c7430ef166b2" category="cell">資料服務角色</block>
   <block id="64ed34c845e9e3ebe96d95642bd80c2c" category="cell">分類管理</block>
-  <block id="951e833c91b111e3d8854609f6e22cd0" category="cell">提供檢視 BlueXP  分類掃描結果的能力。分類沒有檢視者角色。擁有此角色的使用者可以檢視法規遵循資訊，並針對擁有存取權限的資源產生報告。這些使用者無法啟用或停用掃描磁碟區、儲存區或資料庫架構。</block>
   <block id="83dcec25bcd459aaca6d3bde03c5731a" category="cell">在勒索軟體保護服務的「保護」，「警示」，「恢復」，「設定」和「報告」索引標籤上管理動作。</block>
   <block id="c449660979799948a46372470a0eddb9" category="cell">在勒索軟體保護服務中檢視工作負載資料，檢視警示資料，下載恢復資料及下載報告。</block>
   <block id="720f5754e0beaeec96d607861fcee6d3" category="doc">BlueXP  的勒索軟體保護存取角色</block>
@@ -4658,7 +4656,6 @@
   <block id="cfc1bf581403883b7597ea57212f92d0" category="cell"><block ref="cfc1bf581403883b7597ea57212f92d0" category="inline-link-macro-rx"></block></block>
   <block id="eee920c46940781b9236f383eb481644" category="cell"><block ref="eee920c46940781b9236f383eb481644" category="inline-link-macro-rx"></block></block>
   <block id="1a137246f35bc1bb21510edbe9caad21" category="cell"><block ref="1a137246f35bc1bb21510edbe9caad21" category="inline-link-macro-rx"></block></block>
-  <block id="2c0951a9d6b056c060a4c61f7f245bf2" category="cell">管理儲存健全狀況和治理功能，探索儲存資源，以及修改和刪除現有工作環境。</block>
   <block id="59f722e254214ae7991868e178f8311d" category="cell"><block ref="59f722e254214ae7991868e178f8311d" category="inline-link-macro-rx"></block></block>
   <block id="7276a8e39254ac9c35a2e44a3d09f7ef" category="cell">檢視儲存健全狀況和治理功能，以及檢視先前探索到的儲存資源。無法探索，修改或刪除現有的儲存工作環境。</block>
   <block id="92c9978d93758d2c0ddea09cb5842e0f" category="cell"><block ref="92c9978d93758d2c0ddea09cb5842e0f" category="inline-link-macro-rx"></block></block>
@@ -4753,8 +4750,6 @@
   <block id="23281988aab04cbdc82eb76f370939d5" category="paragraph">BlueXP 提供多種部署模式，協助您滿足業務和安全需求。標準模式利用軟體即服務 (SaaS) 層提供完整功能，而受限模式和私有模式則適用於有連線限制的組織。</block>
   <block id="43edcdb6c00656305d8defca5b3b7be0" category="cell">資料服務許可選項</block>
   <block id="960800e4f6948441d5ac2b7201b75a9b" category="paragraph">XYZ 公司有四名來自不同部門的儲存工程師查看 Keystone 訂閱資訊。雖然所有這些使用者都需要監控 Keystone 訂閱，但只有團隊主管可以提出服務要求。其中三位團隊成員被授予 * Keystone viewer* 角色，而團隊主管則被授予 * Keystone admin* 角色，因此可以控制公司的服務要求。</block>
-  <block id="25145ab25e099e46c84c50107c0e7b62" category="paragraph">平台角色授予 BlueXP 管理的所有權限，包括指派角色和新增使用者。擁有平台角色的使用者可存取 BlueXP  中的所有資料服務和應用程式。BlueXP IAM 包含兩個平台角色：組織管理員和資料夾或專案管理員。兩個 BlueXP  IAM 平台角色的主要差異在於範圍。</block>
-  <block id="7b04a3d971f6fb74392d3b30085071f6" category="cell">允許使用者不受限制地存取組織內的所有專案和資料夾，將成員新增至任何專案或資料夾，以及執行任何 BlueXP  工作和使用任何資料服務。具有此角色的使用者負責組織和管理整個 BlueXP 環境。他們可以建立資料夾和專案、指派角色、新增用戶，如果擁有相應權限，還可以管理所有工作環境。這是唯一可以建立 Connectors 的存取角色。</block>
   <block id="69d1234e785810f2a95867f80dbd3641" category="cell">提供從內部部署 ONTAP 叢集備份快照的功能、使用應用程式的 BlueXP  備份與還原功能。擁有此角色的成員可以在 BlueXP 中完成以下操作：* 完成「備份和復原」&gt;「應用程式」中的任何操作* 管理他們擁有權限的項目和資料夾中的所有工作環境* 使用所有 BlueXP 服務 SnapCenter 沒有查看者角色。</block>
   <block id="3165f916e808450973ebffe2ea357d4f" category="paragraph">下表顯示了每個 BlueXP 勒索軟體防護角色可以執行的操作。</block>
   <block id="bd03ede87c82adb65c788a5ae08c50b6" category="cell">探索工作負載</block>
@@ -5207,7 +5202,6 @@
   <block id="d16108a94f09df45e5ddf78eb3f9301c" category="cell">查看聯盟及其詳細信息</block>
   <block id="d1030414e0b81438e7c1e475b3ff1c37" category="paragraph">BlueXP身分和存取管理 (IAM) 包含預先定義角色，您可以將這些角色指派給資源層次結構不同層級的組織成員。指派這些角色之前、您應該先瞭解每個角色所包含的權限。角色分為下列類別：平台，應用程式和資料服務。</block>
   <block id="10140df1e1454ada0fe484df8f86e609" category="cell"><block ref="10140df1e1454ada0fe484df8f86e609" category="inline-link-macro-rx"></block></block>
-  <block id="4e85a0bcc87f86ef6776a6100384468f" category="cell">允許使用者使用BlueXP建立和管理聯合，從而實現單一登入 (SSO)。</block>
   <block id="94dc84e1e8721887c7b647f1cdb802f2" category="cell"><block ref="94dc84e1e8721887c7b647f1cdb802f2" category="inline-link-macro-rx"></block></block>
   <block id="178e676d4dcf16fc5b1d8f7c9431f792" category="cell">允許使用者使用BlueXP查看現有的聯合。無法建立或管理聯合。</block>
   <block id="da46150dd1fb0497beb9ff6a9328d80c" category="cell"><block ref="da46150dd1fb0497beb9ff6a9328d80c" category="inline-link-macro-rx"></block></block>
@@ -5453,4 +5447,25 @@
   <block id="119ba48130d6c62c98b23ef445867ae0" category="paragraph">NetApp建議使用元資料 URL 讓BlueXP自動檢索最新的 AD FS 設定。如果您下載了聯合元資料文件，則每當 AD FS 配置發生變更時，都需要在BlueXP中手動更新該文件。</block>
   <block id="f7ad98daa7023cc12c8a8312a6fb794e" category="floating-title">測試並啟用連接</block>
   <block id="540c166e455adde220d6a9dbeddca7d0" category="paragraph">確保您擁有代理伺服器的 PEM 格式的憑證檔案。如果您沒有證書，請聯絡網路管理員取得。</block>
+  <block id="89d69ff3dca93dc4c1c160728186e722" category="doc">支援Google Cloud NetApp Volumes</block>
+  <block id="c0f8420dd2331e8c703faf905ce556ba" category="inline-link-macro">了解有關Google Cloud NetApp Volumes 的更多資訊。</block>
+  <block id="e1541d92f45c55d1c796b46df595a40b" category="paragraph">現在您可以在BlueXP中查看Google Cloud NetApp Volumes 。 <block ref="2d9a0dbc9abdf3f5520c900e61ce6c78" category="inline-link-macro-rx"></block></block>
+  <block id="7ef119d24b993215797de865841c626e" category="section-title">Google Cloud NetApp Volumes的新訪問角色</block>
+  <block id="558052264db83696c2bf10ecfe0eaedd" category="paragraph">BlueXP現在支援對以下儲存系統使用存取角色：</block>
+  <block id="1215f8190533dfdf63d2224a6d88266f" category="list-text">Google Cloud NetApp Volumes</block>
+  <block id="88dadd964be88ff7da405999bf5d6376" category="summary">BlueXP身分和存取管理提供了管理員角色，您可以將其指派給需要存取Google Cloud NetApp Volumes 的組織成員。</block>
+  <block id="5c06fd7ff7155e85c2867088844a5bb8" category="doc">Google Cloud NetApp Volumes角色</block>
+  <block id="30c0516d71000af9463ac4def215fd5d" category="paragraph">您可以為使用者指派以下角色，以便他們存取BlueXP中的Google Cloud NetApp Volumes 。</block>
+  <block id="656f6fe68f4a2af975dfebecd7cca424" category="paragraph">Google Cloud NetApp Volumes使用以下角色：</block>
+  <block id="0b4cb7a54420fa8396e2ded3254b1844" category="list-text">* Google Cloud NetApp Volumes管理員*：在BlueXP中發現並管理Google Cloud NetApp Volumes 。</block>
+  <block id="b55b12e6582a0dc256699ea566c98812" category="paragraph">平台角色授予所有BlueXP管理權限，包括指派角色和新增使用者。平台角色提供所有BlueXP資料服務和應用程式的存取權限。BlueXP IAM 包含兩個平台角色：組織管理員和資料夾或專案管理員。兩個 BlueXP  IAM 平台角色的主要差異在於範圍。</block>
+  <block id="ab916e6cd4ed974d54491c86731e930c" category="cell">允許使用者不受限制地存取組織內的所有專案和資料夾，將成員新增至任何專案或資料夾，以及執行任何 BlueXP  工作和使用任何資料服務。具有此角色的使用者組織和管理您的BlueXP組織。他們可以建立資料夾和專案、指派角色、新增用戶，如果擁有相應權限，還可以管理所有工作環境。這是唯一可以建立 Connectors 的存取角色。</block>
+  <block id="332cf7fa33c69ec5f4db12e0c5d4c230" category="cell">允許使用者不受限制地存取指派給他們的特定專案和資料夾。可以將成員新增至他們管理的資料夾或專案，以及執行任何 BlueXP  工作，並在指派給他們的資料夾或專案中，對資源使用任何資料服務或應用程式。資料夾或專案管理員無法建立連接器。</block>
+  <block id="1e92f5c7fccb14971fe2537bec747773" category="cell">允許使用者使用BlueXP建立和管理聯合，從而實現單一登入 (SSO)。</block>
+  <block id="077ceb8a17d475a37128a6986bf1819f" category="inline-link-macro">Google Cloud NetApp Volumes管理員</block>
+  <block id="42e05b82ea98ae962f4c09a6330b152a" category="cell"><block ref="42e05b82ea98ae962f4c09a6330b152a" category="inline-link-macro-rx"></block></block>
+  <block id="ee848730515e9ec34272f93a110738f2" category="cell">具有Google Cloud NetApp Volumes角色的使用者可以發現和管理Google Cloud NetApp Volumes。</block>
+  <block id="afa251e583f752e51e3383587060e30b" category="cell">管理儲存健康和治理功能，發現儲存資源，以及變更和刪除現有的工作環境。</block>
+  <block id="95b4eb24270de6ac5f87fadb096e4edf" category="cell">提供查看BlueXP classification掃描結果的能力。擁有此角色的使用者可以檢視法規遵循資訊，並針對擁有存取權限的資源產生報告。這些使用者無法啟用或停用掃描磁碟區、儲存區或資料庫架構。分類沒有檢視者角色。</block>
+  <block id="6bf86021a24fd009a31d432250a9ad20" category="section-title">2025 年 21 月 7 日</block>
 </blocks>

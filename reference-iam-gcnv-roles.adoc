@@ -1,0 +1,22 @@
+---
+sidebar: sidebar 
+permalink: reference-iam-gc-roles.html 
+keywords: gcp, google cloud, Google Cloud NetApp Volumes, gcnv, permissions, access control, role-based access control, rbac, role-based access 
+summary: BlueXP身分和存取管理提供了管理員角色，您可以將其指派給需要存取Google Cloud NetApp Volumes 的組織成員。 
+---
+= Google Cloud NetApp Volumes角色
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以為使用者指派以下角色，以便他們存取BlueXP中的Google Cloud NetApp Volumes 。
+
+Google Cloud NetApp Volumes使用以下角色：
+
+* * Google Cloud NetApp Volumes管理員*：在BlueXP中發現並管理Google Cloud NetApp Volumes 。
+

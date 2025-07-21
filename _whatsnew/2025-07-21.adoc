@@ -1,0 +1,24 @@
+= 支援Google Cloud NetApp Volumes
+:allow-uri-read: 
+
+
+
+
+=== 支援Google Cloud NetApp Volumes
+
+現在您可以在BlueXP中查看Google Cloud NetApp Volumes 。 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-service-gcp/index.html["了解有關Google Cloud NetApp Volumes 的更多資訊。"]
+
+
+
+=== BlueXP  身分識別與存取管理（ IAM ）
+
+
+
+==== Google Cloud NetApp Volumes的新訪問角色
+
+BlueXP現在支援對以下儲存系統使用存取角色：
+
+* Google Cloud NetApp Volumes
+
+
+link:https://docs.netapp.com/us-en/bluexp-admin/reference-iam-predefined-roles.html["了解有關使用訪問角色的更多資訊。"]
