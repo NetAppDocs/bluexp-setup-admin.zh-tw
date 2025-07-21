@@ -5449,7 +5449,6 @@
   <block id="540c166e455adde220d6a9dbeddca7d0" category="paragraph">確保您擁有代理伺服器的 PEM 格式的憑證檔案。如果您沒有證書，請聯絡網路管理員取得。</block>
   <block id="89d69ff3dca93dc4c1c160728186e722" category="doc">支援Google Cloud NetApp Volumes</block>
   <block id="c0f8420dd2331e8c703faf905ce556ba" category="inline-link-macro">了解有關Google Cloud NetApp Volumes 的更多資訊。</block>
-  <block id="e1541d92f45c55d1c796b46df595a40b" category="paragraph">現在您可以在BlueXP中查看Google Cloud NetApp Volumes 。 <block ref="2d9a0dbc9abdf3f5520c900e61ce6c78" category="inline-link-macro-rx"></block></block>
   <block id="7ef119d24b993215797de865841c626e" category="section-title">Google Cloud NetApp Volumes的新訪問角色</block>
   <block id="558052264db83696c2bf10ecfe0eaedd" category="paragraph">BlueXP現在支援對以下儲存系統使用存取角色：</block>
   <block id="1215f8190533dfdf63d2224a6d88266f" category="list-text">Google Cloud NetApp Volumes</block>
@@ -5468,4 +5467,5 @@
   <block id="afa251e583f752e51e3383587060e30b" category="cell">管理儲存健康和治理功能，發現儲存資源，以及變更和刪除現有的工作環境。</block>
   <block id="95b4eb24270de6ac5f87fadb096e4edf" category="cell">提供查看BlueXP classification掃描結果的能力。擁有此角色的使用者可以檢視法規遵循資訊，並針對擁有存取權限的資源產生報告。這些使用者無法啟用或停用掃描磁碟區、儲存區或資料庫架構。分類沒有檢視者角色。</block>
   <block id="6bf86021a24fd009a31d432250a9ad20" category="section-title">2025 年 21 月 7 日</block>
+  <block id="21af40e527b4a74ba2f5692e884472ba" category="paragraph">現在您可以在BlueXP中查看Google Cloud NetApp Volumes 。 <block ref="8ecfd1740a85ce17a70e2419c5980488" category="inline-link-macro-rx"></block></block>
 </blocks>

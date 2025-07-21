@@ -24,7 +24,7 @@ summary: 瞭解 BlueXP  管理功能的新功能： BlueXP  IAM 、 Connectors
 
 === 支援Google Cloud NetApp Volumes
 
-現在您可以在BlueXP中查看Google Cloud NetApp Volumes 。 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-service-gcp/index.html["了解有關Google Cloud NetApp Volumes 的更多資訊。"]
+現在您可以在BlueXP中查看Google Cloud NetApp Volumes 。 link:https://docs.netapp.com/us-en//bluexp-google-cloud-netapp-volumes/index.html/index.html["了解有關Google Cloud NetApp Volumes 的更多資訊。"]
 
 
 
