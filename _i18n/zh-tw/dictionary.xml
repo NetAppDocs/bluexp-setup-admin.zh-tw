@@ -5473,4 +5473,5 @@
   <block id="864ccda1428bb8cb646ce133e0de4547" category="list-text">*選擇一個類別*，然後選擇一個*角色*，該角色為成員提供與您選擇的組織、資料夾或專案相關的資源的權限。</block>
   <block id="65c825984634823998b7cac205641007" category="paragraph">BlueXP僅顯示一次用戶端金鑰並且不儲存它。複製或下載機密、並安全地儲存。請注意、稍後您可以視需要重新建立用戶端 ID 和用戶端機密。</block>
   <block id="17968a6208774a9e7e1a042da70ec52f" category="list-text">從「成員」頁面，導覽至表中的成員，選擇<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>然後選擇*刪除使用者*。</block>
+  <block id="fa37736e47ccc44e2228f573f9d2a303" category="paragraph"><block ref="fa37736e47ccc44e2228f573f9d2a303" category="inline-link-macro-rx"></block></block>
 </blocks>

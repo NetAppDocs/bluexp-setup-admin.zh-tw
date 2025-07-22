@@ -21,4 +21,4 @@ BlueXP現在支援對以下儲存系統使用存取角色：
 * Google Cloud NetApp Volumes
 
 
-link:https://docs.netapp.com/us-en/bluexp-admin/reference-iam-predefined-roles.html["了解有關使用訪問角色的更多資訊。"]
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解有關使用訪問角色的更多資訊。"]
