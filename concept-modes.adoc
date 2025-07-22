@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-modes.html 
-keywords: dark site, internet, on prem, no internet, supported deployments, govcloud, government access, environments, supported environments, deployment modes, modes, private mode, restricted mode, il6, sc2s, c2s, dark site, sovereign region, saas, government region, secret region, top secret, aws secret, aws top secret 
+keywords: dark site, internet, on prem, no internet, supported deployments, govcloud, government access, environments, supported environments, deployment modes, modes, private mode, restricted mode, il6, sc2s, c2s, dark site, sovereign region, saas, government region, secret region, top secret, aws secret, aws top secret, private 
 summary: BlueXP 提供多種部署模式、可讓您以符合業務與安全需求的方式使用 BlueXP 。標準模式利用 BlueXP SaaS 層來提供完整功能、而限制模式和私有模式則適用於有連線限制的組織。 
 ---
 = 瞭解 BlueXP 部署模式
@@ -338,7 +338,7 @@ NOTE: 如果您想在中使用 BlueXP https://aws.amazon.com/federal/secret-clou
 | Cloud Volumes ONTAP | 是的 | 是的 
 
 
-| 適用於 Google Cloud Cloud Volumes Service | 否 | 否 
+| Google Cloud NetApp Volumes | 否 | 否 
 
 
 | Google Cloud Storage | 否 | 否 
