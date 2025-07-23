@@ -1,7 +1,6 @@
 ---
 settings:
   name: BlueXP setup and administration
-  platform: cloud
   internal:
     pdf_enabled: true
   prod:
