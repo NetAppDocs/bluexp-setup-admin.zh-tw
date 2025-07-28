@@ -173,6 +173,30 @@ image:screenshot_accounts_switch_aws.png["螢幕快照、顯示在「詳細資�
 +
 ** 在*信任的實體類型*下、選取* AWS帳戶*。
 ** 選取*其他AWS帳戶*、然後輸入BlueXP SaaS的ID：952013314444.
+** 具體來說，對於Amazon FSx for NetApp ONTAP ，編輯 *信任關係* 策略以包含「AWS」：「arn:aws:iam::952013314444:root」。
++
+例如，該策略應如下所示：
+
++
+[source, JSON]
+----
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "arn:aws:iam::952013314444:root",
+        "Service": "ec2.amazonaws.com"
+      },
+      "Action": "sts:AssumeRole"
+    }
+  ]
+}
+----
++
+參考link:https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies-cross-account-resource-access.html["AWS 身分和存取管理 (IAM) 文檔"^]有關 IAM 中跨帳戶資源存取的詳細資訊。
+
 ** 建立包含建立Connector所需權限的原則。
 +
 *** https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["檢視FSXfor ONTAP Sfor Sf哪些 權限"^]

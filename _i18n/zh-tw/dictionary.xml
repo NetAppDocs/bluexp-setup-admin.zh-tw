@@ -758,7 +758,6 @@
   <block id="7390f55a27add10ddc1a6c765b8a67c7" category="doc">BlueXP 安裝與管理文件</block>
   <block id="c9df4195a305212ffd7b56d24f67129d" category="summary">NetApp以多種方式提供對BlueXP的支援。我們全年無休提供豐富的免費自助支援選項、例如知識庫（KB）文章和社群論壇。您的支援註冊包括透過網路票證提供遠端技術支援。</block>
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">取得協助</block>
-  <block id="7c5661ab6b39ee901cea00a6e7020a49" category="paragraph">NetApp以多種方式支援BlueXP及其雲端服務。我們全年無休提供豐富的免費自助支援選項、例如知識庫（KB）文章和社群論壇。您的支援註冊包括透過網路票證提供遠端技術支援。</block>
   <block id="edd15fbeb7b2dffa163336ecd4f3e80c" category="section-title">使用自我支援選項</block>
   <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">這些選項可供免費使用、一天24小時、一週7天：</block>
   <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">文件</block>
@@ -1814,8 +1813,6 @@
   <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">現有的客戶、擁有一個新服務客戶帳戶</block>
   <block id="7e177185e7eddff33dd8f3aeb7551132" category="paragraph">如果您是擁有NSS帳戶的NetApp客戶、您只需透過BlueXP註冊即可獲得支援。</block>
   <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">選取 * 新增 NSS 認證 * 、然後遵循 NetApp 支援網站 （ NSS ）驗證提示。</block>
-  <block id="10c56875db7a47f791d653e5d5bff0e9" category="inline-image-macro">螢幕擷取畫面會顯示帳戶序號和綠色核取方塊、以及註冊支援的文字。</block>
-  <block id="3d183819a15163ef2e2e7d9d764254a9" category="paragraph"><block ref="3d183819a15163ef2e2e7d9d764254a9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1ff5aefce774ec72a211f2b3bb10b950" category="section-title">現有客戶、但無NSS.帳戶</block>
   <block id="bdd862f49d428a850400bcf2f53cdaf2" category="paragraph">如果您是現有的 NetApp 客戶、擁有現有的授權和序號、但沒有 NSS_ 帳戶、則需要建立一個 NSS 帳戶、並將其與您的 BlueXP 登入建立關聯。</block>
   <block id="5b2b7f628f804bcb786a097c7e45aa41" category="inline-link">《使用者登錄表》NetApp 支援網站</block>
@@ -5295,19 +5292,12 @@
   <block id="ed0a34e7c50c8b6a49b38156f4ad0507" category="inline-link-macro">了解有關管理聯盟的更多資訊。</block>
   <block id="a28baf546d6789e9df4bf20f4b47ea7e" category="admonition">匯入現有聯盟後，您可以從聯盟頁面管理該聯盟。 <block ref="9d534edc1c56628e78a226390e0c6f0b" category="inline-link-macro-rx"></block></block>
   <block id="4538ec0a58b95f3c1aac1a5acb748667" category="paragraph">組織管理員或聯盟管理員。 <block ref="8f129ac67aaaf533c741c49d131f7a5d" category="inline-link-macro-rx"></block></block>
-  <block id="6a83e05584ae3a368d76b79ed5fca4ac" category="section-title">導入聯盟</block>
   <block id="af5e5162616eb70fd66eb845ab93c3b3" category="list-text">選擇*導入聯合*。</block>
   <block id="ad0b8ffb10bbe432e9cf58b09772aa69" category="section-title">將已驗證的網域新增至現有聯合</block>
-  <block id="a0ddba99351ac47d380e4259aadba269" category="paragraph">您可以將已驗證的網域新增至BlueXP中的現有聯合。您可以將已驗證的網域新增至BlueXP中的現有聯合，以便將多個網域與同一個身分提供者 (IdP) 一起使用。</block>
-  <block id="be834cc1c8b7f8b6b0e9b3daed0042f5" category="paragraph">您必須已在BlueXP中驗證該網域，然後才能將其新增至聯盟。如果您尚未驗證該網域，可以按照<block ref="1a287a79053335f45f3db75bc57fd747" category="inline-link-macro-rx"></block> 。</block>
-  <block id="d62d240b9c34b152e7a4c1f1ba2faecc" category="paragraph">&lt;這裡需要一個用例來說明何時需要這樣做&gt;--Tonia &lt;這個新網域的用戶需要多長時間才能登入？ --Tonia&gt; 步驟</block>
   <block id="62d5f424f490cb35fe635af945e09e93" category="list-text">選擇操作選單<block ref="bfe50e4fac5e58634c6fb748dce94758" category="inline-image-macro-rx" type="image"></block> ，然後選擇“更新域”。「更新網域」對話方塊會列出已與此聯盟關聯的網域。</block>
   <block id="d84c85105e6a24d5f4e5213f4a62212a" category="list-text">從可用網域清單中選擇一個已驗證的網域。</block>
   <block id="35165f9b14f6cde03fa7f6f9b03732ba" category="list-text">選擇*更新*。</block>
   <block id="b9441c75b64b2bff3d5c0252b881eb80" category="section-title">更新即將到期的聯合連接</block>
-  <block id="50bc8d94201d22ead4d5ac5de70f8c4e" category="paragraph">您可以在BlueXP中更新聯合連接的詳細資訊。例如，如果憑證或用戶端金鑰等憑證過期，則需要更新聯合連線。如有需要，請更新通知日期，以提醒您在連線過期前更新連線。</block>
-  <block id="6ec267b868ac52e9c551ecf053445e50" category="admonition">若要避免登入問題，請先更新 IdP，然後再更新BlueXP中的連線。更新過程中請保持BlueXP登入狀態。 ——這裡的順序是什麼？ ——Tonia</block>
-  <block id="e8d5347d0ad03b9156b4d8234c820a54" category="list-text">選擇要新增已驗證網域的聯盟旁的操作選單（三個垂直點），然後選擇「更新聯盟」。「更新網域」對話方塊會列出已與此聯盟關聯的網域。</block>
   <block id="e82e66adccb64cbe61e87f3c0617c3f8" category="list-text">根據需要更新聯盟的詳細資訊。</block>
   <block id="f0c3a42a5f59fcf574664a16032f7f98" category="section-title">測試現有聯盟</block>
   <block id="579e693274492fb64ae09b19e40c366a" category="paragraph">如果您在使用現有聯盟時遇到問題，可以測試連線是否正常運作。這可以幫助您識別聯盟中存在的問題並進行故障排除。</block>
@@ -5316,7 +5306,6 @@
   <block id="f00c704f82067284063e6d08ee509d82" category="list-text">選擇“*完成*”返回“*聯合*”選項卡。</block>
   <block id="3104ea2b12b1bb5b1bf9e44f8a04c551" category="section-title">禁用聯合</block>
   <block id="e29366acd257602b75067c91b960f62f" category="paragraph">如果您不再需要聯盟，可以將其停用。這將阻止與聯盟關聯的使用者使用其公司憑證登入BlueXP 。您可以稍後根據需要重新啟用聯盟。</block>
-  <block id="29fd568fb93920cf501488e171b7f20b" category="paragraph">用戶何時應禁用聯邦？例如，如果 IdP 正在更新，或者不再需要聯邦。 ——Tonia？</block>
   <block id="ba1cad8ed3a99d167191e2e7f53a0e1d" category="list-text">選擇操作選單<block ref="bfe50e4fac5e58634c6fb748dce94758" category="inline-image-macro-rx" type="image"></block>在您要新增已驗證網域的聯盟旁邊，然後選擇*停用*。</block>
   <block id="a679ca81df887999afdb29cc812dba1a" category="section-title">刪除聯盟</block>
   <block id="2e39c9a75c534c723834aef16604225c" category="paragraph">如果您不再需要某個聯合，可以將其刪除。這會將該聯合從BlueXP中移除，並阻止任何與該聯合關聯的使用者使用其公司憑證登入BlueXP 。例如，如果 IdP 即將停用，或不再需要該聯合。刪除聯合後，您將無法恢復。您必須建立新的聯合。</block>
@@ -5474,4 +5463,11 @@
   <block id="17968a6208774a9e7e1a042da70ec52f" category="list-text">從「成員」頁面，導覽至表中的成員，選擇<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>然後選擇*刪除使用者*。</block>
   <block id="fa37736e47ccc44e2228f573f9d2a303" category="paragraph"><block ref="fa37736e47ccc44e2228f573f9d2a303" category="inline-link-macro-rx"></block></block>
   <block id="fa5213b8e2ea77f3b22ea8b2e36d85b8" category="cell">具有 Keystone 檢視器角色的使用者無法建立服務要求。可讓使用者監控及檢視他們正在存取的 Keystone 租用戶內的使用量，資產和管理資訊。</block>
+  <block id="43fcb7c92b7808baf72f1cd9eecef7a5" category="list-text">具體來說，對於Amazon FSx for NetApp ONTAP ，編輯 *信任關係* 策略以包含「AWS」：「arn:aws:iam::952013314444:root」。</block>
+  <block id="f8aabc110ec9d0099e69b9276f73b751" category="paragraph">例如，該策略應如下所示：</block>
+  <block id="37747908c82600c4f83a3de02bd7dc1a" category="inline-link-macro">AWS 身分和存取管理 (IAM) 文檔</block>
+  <block id="e8cffeeec612132e8c2cb2355463f31f" category="paragraph">參考<block ref="ac3530460cd18c242c3653db3709495c" category="inline-link-macro-rx"></block>有關 IAM 中跨帳戶資源存取的詳細資訊。</block>
+  <block id="bbbc9b55f08bfe80f146b5207bdb7728" category="paragraph">NetApp以多種方式為BlueXP及其雲端服務提供支援。我們提供全天候 (24/7) 的大量免費自助支援選項，例如知識庫 (KB) 文章和社群論壇。您的支援註冊包含透過網路工單取得的遠端技術支援。</block>
+  <block id="759d32287efdf88cd8ac71dccc0ecf8d" category="inline-image-macro">螢幕截圖顯示了帳戶序號、綠色複選框和文字「已註冊支援」。</block>
+  <block id="4c441b388bebcddf8c08fb782095b864" category="paragraph"><block ref="4c441b388bebcddf8c08fb782095b864" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
