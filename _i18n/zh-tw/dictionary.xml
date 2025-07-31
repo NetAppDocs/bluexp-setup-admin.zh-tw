@@ -5452,7 +5452,6 @@
   <block id="afa251e583f752e51e3383587060e30b" category="cell">管理儲存健康和治理功能，發現儲存資源，以及變更和刪除現有的工作環境。</block>
   <block id="95b4eb24270de6ac5f87fadb096e4edf" category="cell">提供查看BlueXP classification掃描結果的能力。擁有此角色的使用者可以檢視法規遵循資訊，並針對擁有存取權限的資源產生報告。這些使用者無法啟用或停用掃描磁碟區、儲存區或資料庫架構。分類沒有檢視者角色。</block>
   <block id="6bf86021a24fd009a31d432250a9ad20" category="section-title">2025 年 21 月 7 日</block>
-  <block id="21af40e527b4a74ba2f5692e884472ba" category="paragraph">現在您可以在BlueXP中查看Google Cloud NetApp Volumes 。 <block ref="8ecfd1740a85ce17a70e2419c5980488" category="inline-link-macro-rx"></block></block>
   <block id="5cc5248d8f5f2a5831a23c2c1c7ba338" category="cell">ONTAP調解器設定角色</block>
   <block id="b3aa67ea8b077eb2b67ff9a0651b5426" category="inline-link-macro">ONTAP雲端調解器</block>
   <block id="04799ba9193d1752205122631a125181" category="cell">具有ONTAP調解器設定角色的服務帳戶可以建立服務請求。服務帳戶中需要此角色來配置<block ref="a95914b5fa4d5193b1ebdf5a17356faa" category="inline-link-macro-rx"></block> 。</block>
@@ -5470,4 +5469,5 @@
   <block id="bbbc9b55f08bfe80f146b5207bdb7728" category="paragraph">NetApp以多種方式為BlueXP及其雲端服務提供支援。我們提供全天候 (24/7) 的大量免費自助支援選項，例如知識庫 (KB) 文章和社群論壇。您的支援註冊包含透過網路工單取得的遠端技術支援。</block>
   <block id="759d32287efdf88cd8ac71dccc0ecf8d" category="inline-image-macro">螢幕截圖顯示了帳戶序號、綠色複選框和文字「已註冊支援」。</block>
   <block id="4c441b388bebcddf8c08fb782095b864" category="paragraph"><block ref="4c441b388bebcddf8c08fb782095b864" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="639e89a5be71c4602c59d165b598d738" category="paragraph">現在您可以在BlueXP中查看Google Cloud NetApp Volumes 。<block ref="dbbb7a4d531819b88c662793ae2a1ef8" category="inline-link-macro-rx"></block></block>
 </blocks>
