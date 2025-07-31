@@ -5470,4 +5470,13 @@
   <block id="759d32287efdf88cd8ac71dccc0ecf8d" category="inline-image-macro">螢幕截圖顯示了帳戶序號、綠色複選框和文字「已註冊支援」。</block>
   <block id="4c441b388bebcddf8c08fb782095b864" category="paragraph"><block ref="4c441b388bebcddf8c08fb782095b864" category="inline-image-macro-rx" type="image"></block></block>
   <block id="639e89a5be71c4602c59d165b598d738" category="paragraph">現在您可以在BlueXP中查看Google Cloud NetApp Volumes 。<block ref="dbbb7a4d531819b88c662793ae2a1ef8" category="inline-link-macro-rx"></block></block>
+  <block id="e57098a6bb00611fdfd163e39e3448e8" category="paragraph">3.9.54 版本包括以下BlueXP元件和服務的更新。</block>
+  <block id="9cc4b579fbb9d233102b44ff5119e060" category="cell">3.9.54, 3.9.53</block>
+  <block id="4e7c2b7c3f7b00a4db742817336d985b" category="inline-link">BlueXP頁面中的新功能</block>
+  <block id="fb973b0a3719c8d26b960aed72e4fe3f" category="cell">前往<block ref="f2bb5a2291ad18ff55b18a4b4553234a" category="inline-link-rx"></block>並參考版本 3.9.54 和 3.9.53 所包含的變更。</block>
+  <block id="1caea5bc420fef9b14013d5029b5ada8" category="cell">2025年7月22日</block>
+  <block id="72d49cd6d8e65ef0285be68616ea0f51" category="cell">前往<block ref="d08346bd70ea49c38d1ac500c69dd11c" category="inline-link-rx"></block>並參考 2025 年 7 月版本中包含的變更。</block>
+  <block id="9285fd96738351d44da30f801dea109b" category="cell">2025 年 7 月 14 日（版本 1.45）</block>
+  <block id="b3b08e322117d7e66cdd302866bc6d85" category="cell">前往<block ref="bb3538c6013ff73961739d7c28fee95d" category="inline-link-rx"></block>。</block>
+  <block id="328e39c031d3f6a77403904d6dda2377" category="section-title">2025年7月31日</block>
 </blocks>
