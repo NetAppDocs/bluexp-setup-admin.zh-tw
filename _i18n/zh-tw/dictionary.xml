@@ -4561,7 +4561,6 @@
   <block id="f14b021b1ac020c4bd6150459ddd2d19" category="doc">BlueXP  平台存取角色</block>
   <block id="3aba2887bff41f744b43940b1b82080a" category="cell">平台角色</block>
   <block id="460874c7c996eb6762b8a5b10ff2d76f" category="cell">職責</block>
-  <block id="692fafcb7a4c1881280af40a80baa20d" category="inline-link-macro">組織管理員</block>
   <block id="ee1afb77ea65d6282a6b2db5ef1c9599" category="cell">應用程式角色</block>
   <block id="ff7835459affd6ea09ace7258f1ea831" category="cell">具有 Keystone 管理員角色的使用者可以建立服務要求。可讓使用者監控及檢視他們正在存取的 Keystone 租用戶內的使用量，資產和管理資訊。</block>
   <block id="316bb1d5ed8c0cbdba665a6326ba1bde" category="inline-link-macro">儲存管理員</block>
@@ -4645,7 +4644,6 @@
   <block id="c4bd9bd2263d800e3d498cc0849de57f" category="paragraph">查看儲存健康資訊和治理資料。</block>
   <block id="91fc3f2bc4cd3f1898449b6955a5b0dc" category="doc">了解 BlueXP 中的 AWS 憑證和權限</block>
   <block id="7de6afef390d0c27101fd5599a80c841" category="doc">了解 BlueXP 中的 Azure 憑證和權限</block>
-  <block id="3ef1691185c3215cee725eacc5ae60e1" category="cell"><block ref="3ef1691185c3215cee725eacc5ae60e1" category="inline-link-macro-rx"></block></block>
   <block id="92d4c119f475b9887b30ea36f68501b4" category="cell"><block ref="92d4c119f475b9887b30ea36f68501b4" category="inline-link-macro-rx"></block></block>
   <block id="cfc1bf581403883b7597ea57212f92d0" category="cell"><block ref="cfc1bf581403883b7597ea57212f92d0" category="inline-link-macro-rx"></block></block>
   <block id="eee920c46940781b9236f383eb481644" category="cell"><block ref="eee920c46940781b9236f383eb481644" category="inline-link-macro-rx"></block></block>
@@ -5034,14 +5032,12 @@
   <block id="78dc241469129405c4f4b99066b0c5c3" category="inline-link-macro">了解有關訪問角色的更多資訊。</block>
   <block id="4610064cac3ad84114cc400649031071" category="paragraph">組織管理員、聯盟管理員、聯盟檢視器。 <block ref="8f129ac67aaaf533c741c49d131f7a5d" category="inline-link-macro-rx"></block></block>
   <block id="517210395e603e1c3d5f72b67c9d0d8b" category="section-title">與NetApp支援站點的身份聯合</block>
-  <block id="7f75689f905a0cb4e29c4a2843031d94" category="paragraph">當您與NetApp支援網站聯合使用時，使用者可以使用您用於NetApp支援網站、 Active IQ以及與您的NetApp支援網站帳戶相關的其他應用程式的相同憑證登入存取BlueXP 。設定聯合後，任何建立NetApp支援網站帳戶的新使用者也將能夠存取BlueXP。</block>
   <block id="465e770e13636214d49910bb014b1053" category="admonition">如果您與NetApp支援網站聯合，則無法同時與您的企業身分管理提供者聯合。請選擇最適合您組織的提供者。</block>
   <block id="2364b4b1093b706141a365b97b678a4d" category="list-text">下載並完成<block ref="82f36446881e14fa28b945cd41d2b383" category="inline-link-rx"></block> 。</block>
   <block id="28ff396d9aacc41256de2a2d064386fd" category="list-text">將表格提交至表格中指定的電子郵件地址。</block>
   <block id="d712dedaa07f66d96d580961a7fed8f3" category="paragraph">NetApp支援團隊將審核並處理您的請求。</block>
   <block id="d6a05f20cad23a452bca7452f796d46c" category="section-title">與您的身分提供者建立聯合連接</block>
   <block id="0909b89c9a263634fe87c7ab9bbebb6a" category="paragraph">您可以與身分識別提供者建立聯合連接，以便為BlueXP啟用單一登入 (SSO)。此過程包括配置身分識別提供者以信任NetApp作為服務提供者，然後在BlueXP中建立連線。</block>
-  <block id="0c3f7255651040017d5aff94372442bb" category="paragraph">NetApp支援以下聯合身分識別提供者和協定：</block>
   <block id="9985b4390c40137573e6da05caf85874" category="list-title">通訊協定</block>
   <block id="e0485ece44807b13d7328ec34970e8d7" category="list-title">身分提供者</block>
   <block id="fe24ffaf16a8b56ee36712a6283173a6" category="section-title">與BlueXP工作流程聯合</block>
@@ -5474,9 +5470,13 @@
   <block id="9cc4b579fbb9d233102b44ff5119e060" category="cell">3.9.54, 3.9.53</block>
   <block id="4e7c2b7c3f7b00a4db742817336d985b" category="inline-link">BlueXP頁面中的新功能</block>
   <block id="fb973b0a3719c8d26b960aed72e4fe3f" category="cell">前往<block ref="f2bb5a2291ad18ff55b18a4b4553234a" category="inline-link-rx"></block>並參考版本 3.9.54 和 3.9.53 所包含的變更。</block>
-  <block id="1caea5bc420fef9b14013d5029b5ada8" category="cell">2025年7月22日</block>
   <block id="72d49cd6d8e65ef0285be68616ea0f51" category="cell">前往<block ref="d08346bd70ea49c38d1ac500c69dd11c" category="inline-link-rx"></block>並參考 2025 年 7 月版本中包含的變更。</block>
   <block id="9285fd96738351d44da30f801dea109b" category="cell">2025 年 7 月 14 日（版本 1.45）</block>
   <block id="b3b08e322117d7e66cdd302866bc6d85" category="cell">前往<block ref="bb3538c6013ff73961739d7c28fee95d" category="inline-link-rx"></block>。</block>
   <block id="328e39c031d3f6a77403904d6dda2377" category="section-title">2025年7月31日</block>
+  <block id="8ec07d17b9626eed73b7d8c3ecb0e32f" category="doc">私人模式發布（3.9.54）</block>
+  <block id="67c66b3b8df7b2dee0354dd9f9fcec17" category="cell">2025年7月28日</block>
+  <block id="985faaef42ae98b8d59df17cd449681e" category="paragraph">當您與NetApp支援網站聯合使用時，使用者可以使用與造訪NetApp支援網站、 Active IQ Digital Advisor以及與您的NetApp支援網站帳戶相關的其他應用程式相同的憑證登入以存取BlueXP 。設定聯合後，任何建立NetApp支援網站帳戶的新使用者也將能夠存取BlueXP。</block>
+  <block id="fb18d9c76416da6ad7e8f165ea36f1d5" category="paragraph">NetApp支援以下聯合協定和身分提供者：</block>
+  <block id="f207a0643b8dada892565ed2318b05cd" category="cell"><block ref="f207a0643b8dada892565ed2318b05cd" category="inline-link-macro-rx"></block></block>
 </blocks>
