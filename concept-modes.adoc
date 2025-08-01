@@ -356,11 +356,7 @@ NOTE: 如果您想在中使用 BlueXP https://aws.amazon.com/federal/secret-clou
 .17+| *服務* | 警示 | 否 | 否 
 
 
-| 備份與還原 | 是的
-
-https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-restricted-mode["檢視 ONTAP Volume 資料支援的備份目的地清單"^] | 是的
-
-https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-private-mode["檢視 ONTAP Volume 資料支援的備份目的地清單"^] 
+| 備份與還原 | 是的https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["檢視 ONTAP Volume 資料支援的備份目的地清單"^] | 是的https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-no-internet-connectivity["檢視 ONTAP Volume 資料支援的備份目的地清單"^] 
 
 
 | 分類 | 是的 | 是的 

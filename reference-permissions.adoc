@@ -49,7 +49,7 @@ BlueXP 需要連接器和個別服務的 AWS 權限。
 | 目標 | 說明 | 連結 
 
 
-| 將內部部署 ONTAP 叢集備份至 Amazon S3 | 在 ONTAP 磁碟區上啟動備份時、 BlueXP 備份與還原會提示您為具有特定權限的 IAM 使用者輸入存取金鑰與密碼。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-aws.html#set-up-s3-permissions["設定 S3 備份權限"^] 
+| 使用BlueXP backup and recovery將本機ONTAP叢集備份到 Amazon S3 | 在 ONTAP 磁碟區上啟動備份時、 BlueXP 備份與還原會提示您為具有特定權限的 IAM 使用者輸入存取金鑰與密碼。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-onprem-aws.html["設定 S3 備份權限"^] 
 |===
 
 
@@ -131,6 +131,29 @@ link:reference-permissions-azure.html["連接器的Azure權限"]
 |===
 
 
+=== 備份與還原
+
+[cols="20,60,20"]
+|===
+| 目標 | 說明 | 連結 
+
+
+| 將Cloud Volumes ONTAP備份到 Azure Blob 存儲  a| 
+使用 BlueXP 備份與還原來備份 Cloud Volumes ONTAP 時、您需要在下列案例中新增 Connector 的權限：
+
+* 您想要使用「搜尋與還原」功能
+* 您想要使用客戶管理的加密金鑰（ CMEK ）
+
+ a| 
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-cvo-azure.html["使用備份和還原將Cloud Volumes ONTAP資料備份到 Azure Blob 存儲"^]
+
+
+
+
+| 將本機ONTAP叢集備份到 Azure Blob 存儲 | 當使用 BlueXP 備份和復原來備份本機 ONTAP 叢集時，您需要為連接器新增權限才能使用「搜尋和復原」功能。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-onprem-azure.html["使用備份和還原將本機ONTAP資料備份到 Azure Blob 存儲"^] 
+|===
+
+
 === 複製與同步
 
 [cols="20,60,20"]
@@ -178,13 +201,12 @@ BlueXP 需要 Google Cloud 權限才能使用 Connector 和個別服務。
 * 您想要使用客戶管理的加密金鑰（ CMEK ）
 
  a| 
-* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-to-gcp.html#verify-or-add-permissions-to-the-connector["搜尋擴大機的權限；還原功能"^]
-* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-to-gcp.html#required-information-for-using-customer-managed-encryption-keys-cmek["CMEK 的權限"^]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-cvo-gcp.html["使用備份和還原將Cloud Volumes ONTAP資料備份到 Google Cloud Storage"^]
 
 
 
 
-| 將內部部署的 ONTAP 叢集備份至 Google Cloud | 當使用 BlueXP 備份和復原來備份本機 ONTAP 叢集時，您需要為連接器新增權限才能使用「搜尋和復原」功能。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-gcp.html#verify-or-add-permissions-to-the-connector["搜尋擴大機的權限；還原功能"^] 
+| 將內部部署的 ONTAP 叢集備份至 Google Cloud | 當使用 BlueXP 備份和復原來備份本機 ONTAP 叢集時，您需要為連接器新增權限才能使用「搜尋和復原」功能。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-onprem-gcp.html["使用備份和還原將本地ONTAP資料備份到 Google Cloud Storage"^] 
 |===
 
 
@@ -226,7 +248,7 @@ BlueXP 需要兩項服務的 StorageGRID 權限。
 | 目標 | 說明 | 連結 
 
 
-| 將內部部署 ONTAP 叢集備份至 StorageGRID | 當您準備將 StorageGRID 做為 ONTAP 叢集的備份目標時、 BlueXP 備份與還原會提示您輸入具有特定權限的 IAM 使用者的存取金鑰和密碼。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target["準備 StorageGRID 做為備份目標"^] 
+| 將內部部署 ONTAP 叢集備份至 StorageGRID | 當您準備將 StorageGRID 做為 ONTAP 叢集的備份目標時、 BlueXP 備份與還原會提示您輸入具有特定權限的 IAM 使用者的存取金鑰和密碼。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-onprem-storagegrid.html["準備 StorageGRID 做為備份目標"^] 
 |===
 
 

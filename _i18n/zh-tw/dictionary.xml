@@ -2394,14 +2394,11 @@
   <block id="9a29204f81d065ca790be5e05be49951" category="paragraph">您現在可以前往<block ref="a47e12f4350b725a128875f50f785a3b" category="inline-link-rx"></block> 開始使用Connector with BlueXP。</block>
   <block id="3cedfb797d3e1bc073ba2b0b4d2502cf" category="inline-link">Azure文件</block>
   <block id="5c5eae78661bfbe6d566f6e00a0b5a67" category="paragraph">請注意、您可以使用 Azure 入口網站、 Azure PowerShell 、 Azure CLI 或 REST API 來建立 Azure 自訂角色。下列步驟說明如何使用 Azure CLI 建立角色。如果您想要使用不同的方法、請參閱<block ref="9dee1d16cb9c40964c81f1bda0fd9839" category="inline-link-rx"></block></block>
-  <block id="5377c5407df56ba84e782b4e83f6c6ba" category="cell">將內部部署 ONTAP 叢集備份至 Amazon S3</block>
   <block id="adfa465566f5539105be4291db1cc510" category="cell">在 ONTAP 磁碟區上啟動備份時、 BlueXP 備份與還原會提示您為具有特定權限的 IAM 使用者輸入存取金鑰與密碼。</block>
   <block id="ba37f89d4d4c6ea1b335169793666fbe" category="inline-link">設定 S3 備份權限</block>
-  <block id="3a723efda81312f328c7de4a7741cb2c" category="cell"><block ref="3a723efda81312f328c7de4a7741cb2c" category="inline-link-rx"></block></block>
   <block id="9f60318dba873b8aa280da655451eafb" category="cell">將內部部署 ONTAP 叢集備份至 StorageGRID</block>
   <block id="649c5239d0163afb3411e36c5e857809" category="cell">當您準備將 StorageGRID 做為 ONTAP 叢集的備份目標時、 BlueXP 備份與還原會提示您輸入具有特定權限的 IAM 使用者的存取金鑰和密碼。</block>
   <block id="08cdeb7ce64fda06111111c8fea66510" category="inline-link">準備 StorageGRID 做為備份目標</block>
-  <block id="62d09ae20af8b1a53c08a95792d3bdb1" category="cell"><block ref="62d09ae20af8b1a53c08a95792d3bdb1" category="inline-link-rx"></block></block>
   <block id="e6b202bba8f7c7c067b2137e58a41397" category="cell">當您啟用 BlueXP 分層至 AWS 時、精靈會提示您輸入存取金鑰和秘密金鑰。這些認證資料會傳遞ONTAP 到S庫 叢集、ONTAP 以便讓S庫 將資料分層傳送到S3儲存庫。</block>
   <block id="827bb82562627531a1105788bd9826e6" category="inline-link">設定 S3 分層權限</block>
   <block id="5f2c172dbfc6022aa5027029dc114852" category="cell"><block ref="5f2c172dbfc6022aa5027029dc114852" category="inline-link-rx"></block></block>
@@ -2413,12 +2410,7 @@
   <block id="498541290e9165e5844d20ce7c56fdce" category="paragraph">使用 BlueXP 備份與還原來備份 Cloud Volumes ONTAP 時、您需要在下列案例中新增 Connector 的權限：</block>
   <block id="963c1d6b60ef9ab217e4a2f0f2f4a47f" category="list-text">您想要使用「搜尋與還原」功能</block>
   <block id="0ce14c433ae57608c1aced4d631bc039" category="list-text">您想要使用客戶管理的加密金鑰（ CMEK ）</block>
-  <block id="3f4149dc5a7846817dd458a59e650f5f" category="inline-link">搜尋擴大機的權限；還原功能</block>
-  <block id="aae920cbe0beab1a7b76937b223c2d92" category="list-text"><block ref="4b3b7e478cad27964ed24a4ab3fe4c45" category="inline-link-rx"></block></block>
-  <block id="dc5b71cece1f13a67fc01472a59d8781" category="inline-link">CMEK 的權限</block>
-  <block id="73206ed184feb2313c9f626b7f266208" category="list-text"><block ref="73206ed184feb2313c9f626b7f266208" category="inline-link-rx"></block></block>
   <block id="6e9436752850e460930666efdaf1e025" category="cell">將內部部署的 ONTAP 叢集備份至 Google Cloud</block>
-  <block id="072b4c796b4a06820f943c41d4da3162" category="cell"><block ref="6a045f48523c0716d40c678a68c87636" category="inline-link-rx"></block></block>
   <block id="33afe8d49ba0b54b76d44e7f5b190b53" category="section-title">為 BlueXP 服務做好網路準備</block>
   <block id="eeb8e055593f1709925a03e2ebb13265" category="inline-link">BlueXP文件</block>
   <block id="1c74bcfdef9917ce07420aafab8bce83" category="paragraph"><block ref="1c74bcfdef9917ce07420aafab8bce83" category="inline-link-rx"></block></block>
@@ -2880,12 +2872,6 @@
   <block id="d0622c7af7b2cc2435986b2d005d8fc3" category="cell">* 工作環境 *
 
 此部分表列出了 BlueXP 畫布對工作環境管理的支援。它並不表示 BlueXP 備份與還原支援的備份目的地。</block>
-  <block id="156b68e03278a01a3d2781f8c900caac" category="cell">是的
-
-<block ref="14c876cb6a245f558ae78bae571d2b6e" category="inline-link-rx"></block></block>
-  <block id="fa0738e12b2324073fa9b5f91af71e48" category="cell">是的
-
-<block ref="42dbd2df9d57eeeb664cce05b5a35bf1" category="inline-link-rx"></block></block>
   <block id="ceff1e7e9afd603be2687369aac73bb6" category="paragraph">此設定很重要、因為託管身分識別可讓 Connector 虛擬機器在 Microsoft Entra ID 中識別自己、而無需提供任何認證。<block ref="f91ce7faef49711445322691b4d6ac64" category="inline-link-rx"></block>。</block>
   <block id="10d9864d222fd249479246f9c50df58c" category="list-text">* 定義認證 * ：輸入 Microsoft Entra 服務授權者的相關資訊、以授予必要的權限：</block>
   <block id="9c0e62a86b9fe558cad9c4d280ea439d" category="list-text">啟用 NTP</block>
@@ -4567,7 +4553,6 @@
   <block id="1d63b1d397254c4d509474883c1cb2b9" category="inline-link-macro">儲存檢視器</block>
   <block id="172d68d57647cf0cb58a3cbcac52a80d" category="inline-link-macro">系統健全狀況專家</block>
   <block id="f9e4f3681d11897d8d94c7430ef166b2" category="cell">資料服務角色</block>
-  <block id="64ed34c845e9e3ebe96d95642bd80c2c" category="cell">分類管理</block>
   <block id="83dcec25bcd459aaca6d3bde03c5731a" category="cell">在勒索軟體保護服務的「保護」，「警示」，「恢復」，「設定」和「報告」索引標籤上管理動作。</block>
   <block id="c449660979799948a46372470a0eddb9" category="cell">在勒索軟體保護服務中檢視工作負載資料，檢視警示資料，下載恢復資料及下載報告。</block>
   <block id="720f5754e0beaeec96d607861fcee6d3" category="doc">BlueXP  的勒索軟體保護存取角色</block>
@@ -5192,7 +5177,6 @@
   <block id="d1030414e0b81438e7c1e475b3ff1c37" category="paragraph">BlueXP身分和存取管理 (IAM) 包含預先定義角色，您可以將這些角色指派給資源層次結構不同層級的組織成員。指派這些角色之前、您應該先瞭解每個角色所包含的權限。角色分為下列類別：平台，應用程式和資料服務。</block>
   <block id="10140df1e1454ada0fe484df8f86e609" category="cell"><block ref="10140df1e1454ada0fe484df8f86e609" category="inline-link-macro-rx"></block></block>
   <block id="94dc84e1e8721887c7b647f1cdb802f2" category="cell"><block ref="94dc84e1e8721887c7b647f1cdb802f2" category="inline-link-macro-rx"></block></block>
-  <block id="178e676d4dcf16fc5b1d8f7c9431f792" category="cell">允許使用者使用BlueXP查看現有的聯合。無法建立或管理聯合。</block>
   <block id="da46150dd1fb0497beb9ff6a9328d80c" category="cell"><block ref="da46150dd1fb0497beb9ff6a9328d80c" category="inline-link-macro-rx"></block></block>
   <block id="589491adabb65d62d42f2088d68fdee0" category="cell">執行備份和還原服務中的任何操作。</block>
   <block id="eaec472b7a23d9c311a78adfd10b1032" category="inline-link-macro">備份和復原管理員</block>
@@ -5445,7 +5429,6 @@
   <block id="077ceb8a17d475a37128a6986bf1819f" category="inline-link-macro">Google Cloud NetApp Volumes管理員</block>
   <block id="42e05b82ea98ae962f4c09a6330b152a" category="cell"><block ref="42e05b82ea98ae962f4c09a6330b152a" category="inline-link-macro-rx"></block></block>
   <block id="ee848730515e9ec34272f93a110738f2" category="cell">具有Google Cloud NetApp Volumes角色的使用者可以發現和管理Google Cloud NetApp Volumes。</block>
-  <block id="afa251e583f752e51e3383587060e30b" category="cell">管理儲存健康和治理功能，發現儲存資源，以及變更和刪除現有的工作環境。</block>
   <block id="95b4eb24270de6ac5f87fadb096e4edf" category="cell">提供查看BlueXP classification掃描結果的能力。擁有此角色的使用者可以檢視法規遵循資訊，並針對擁有存取權限的資源產生報告。這些使用者無法啟用或停用掃描磁碟區、儲存區或資料庫架構。分類沒有檢視者角色。</block>
   <block id="6bf86021a24fd009a31d432250a9ad20" category="section-title">2025 年 21 月 7 日</block>
   <block id="5cc5248d8f5f2a5831a23c2c1c7ba338" category="cell">ONTAP調解器設定角色</block>
@@ -5479,4 +5462,21 @@
   <block id="985faaef42ae98b8d59df17cd449681e" category="paragraph">當您與NetApp支援網站聯合使用時，使用者可以使用與造訪NetApp支援網站、 Active IQ Digital Advisor以及與您的NetApp支援網站帳戶相關的其他應用程式相同的憑證登入以存取BlueXP 。設定聯合後，任何建立NetApp支援網站帳戶的新使用者也將能夠存取BlueXP。</block>
   <block id="fb18d9c76416da6ad7e8f165ea36f1d5" category="paragraph">NetApp支援以下聯合協定和身分提供者：</block>
   <block id="f207a0643b8dada892565ed2318b05cd" category="cell"><block ref="f207a0643b8dada892565ed2318b05cd" category="inline-link-macro-rx"></block></block>
+  <block id="c1c35b571a8270f43bf6faa6757452f6" category="cell">是的<block ref="7017fcd1de8071674201a0278a852eae" category="inline-link-rx"></block></block>
+  <block id="a6c599d9b9bbe744be463c056f9e194a" category="cell">是的<block ref="8cbf8dca81955ce6c3d97cec5394e7fd" category="inline-link-rx"></block></block>
+  <block id="e3e606b368c3f3a65f5cb75fbe9c3115" category="cell">允許使用者查看與BlueXP 的現有聯合。無法建立或管理聯盟</block>
+  <block id="1393a4279651a3334e20f39925a139f5" category="cell">分類檢視器</block>
+  <block id="725b2ecc37229f77405f9188278a6a1f" category="cell">使用BlueXP backup and recovery將本機ONTAP叢集備份到 Amazon S3</block>
+  <block id="12e11cedace336bc23a4b1c9ab448974" category="cell"><block ref="12e11cedace336bc23a4b1c9ab448974" category="inline-link-rx"></block></block>
+  <block id="51fa9005485af9016610af9875c0e913" category="cell">將Cloud Volumes ONTAP備份到 Azure Blob 存儲</block>
+  <block id="8625ed737cea7841c422023f4e27bc1d" category="inline-link">使用備份和還原將Cloud Volumes ONTAP資料備份到 Azure Blob 存儲</block>
+  <block id="518ffd78f998d0a25c5446da8989b6a6" category="list-text"><block ref="518ffd78f998d0a25c5446da8989b6a6" category="inline-link-rx"></block></block>
+  <block id="f66493a5c1b72a6a6a675e1d79371789" category="cell">將本機ONTAP叢集備份到 Azure Blob 存儲</block>
+  <block id="957901780fae6c72beed34248e8e252d" category="inline-link">使用備份和還原將本機ONTAP資料備份到 Azure Blob 存儲</block>
+  <block id="6d94d8c7b4ec021fb7a5a5704629681e" category="cell"><block ref="6d94d8c7b4ec021fb7a5a5704629681e" category="inline-link-rx"></block></block>
+  <block id="cd84e76d2557bd459057089ba5e1385c" category="inline-link">使用備份和還原將Cloud Volumes ONTAP資料備份到 Google Cloud Storage</block>
+  <block id="3b5162ff96cd00bbd1b1ad424d59bd8f" category="list-text"><block ref="3b5162ff96cd00bbd1b1ad424d59bd8f" category="inline-link-rx"></block></block>
+  <block id="6d4f1161a06d11fa7424e224b2a86d25" category="inline-link">使用備份和還原將本地ONTAP資料備份到 Google Cloud Storage</block>
+  <block id="b9142ed8495860430205961c82c827a0" category="cell"><block ref="b9142ed8495860430205961c82c827a0" category="inline-link-rx"></block></block>
+  <block id="86b4fb0c56ea4924e5069e8f25d3a778" category="cell"><block ref="86b4fb0c56ea4924e5069e8f25d3a778" category="inline-link-rx"></block></block>
 </blocks>
