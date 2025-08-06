@@ -23,7 +23,7 @@ summary: 身分識別聯盟可透過BlueXP進行單一登入、讓使用者使�
 
 == 與NetApp支援站點的身份聯合
 
-當您與NetApp支援網站聯合使用時，使用者可以使用與造訪NetApp支援網站、 Active IQ Digital Advisor以及與您的NetApp支援網站帳戶相關的其他應用程式相同的憑證登入以存取BlueXP 。設定聯合後，任何建立NetApp支援網站帳戶的新使用者也將能夠存取BlueXP。
+當您與NetApp支援網站聯合使用時，使用者可以使用與造訪NetApp支援網站、 Active IQ Digital Advisor以及與您的NetApp支援網站帳戶相關的其他應用程式相同的憑證登入以存取BlueXP 。設定聯合後，任何建立NetApp支援網站帳戶的新使用者也能夠存取BlueXP。
 
 
 NOTE: 如果您與NetApp支援網站聯合，則無法同時與您的企業身分管理提供者聯合。請選擇最適合您組織的提供者。
@@ -41,6 +41,9 @@ NetApp支援團隊將審核並處理您的請求。
 == 與您的身分提供者建立聯合連接
 
 您可以與身分識別提供者建立聯合連接，以便為BlueXP啟用單一登入 (SSO)。此過程包括配置身分識別提供者以信任NetApp作為服務提供者，然後在BlueXP中建立連線。
+
+
+NOTE: 如果您之前使用NetApp Cloud Central（ BlueXP的外部應用程式）配置了聯合，則需要使用BlueXP Federation 頁面匯入聯合，以便能夠在BlueXP中管理它。link:task-federation-import.html["了解如何匯入您的聯盟"]
 
 
 
@@ -68,19 +71,19 @@ NetApp僅支援服務供應商發起的（SP發起的）SSO。您需要先配置
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]驗證您的網域名稱（如果不使用您的電子郵件網域）
 [role="quick-margin-para"]
-如果您要與不同於您電子郵件網域的網域名稱聯合，則必須先驗證您是否擁有該網域。您無需執行任何額外步驟即可聯合您的電子郵件網域。
+若要與不同於您的電子郵件網域的網域聯合，請驗證您擁有該網域。您無需任何額外步驟即可聯合您的電子郵件網域。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]配置您的 IdP 以信任NetApp作為服務提供者
 [role="quick-margin-para"]
-您可以透過建立新應用程式並提供必要的資訊（例如 ACS URL、實體 ID 或其他憑證資訊）來配置身分提供者，使其信任NetApp作為服務提供者。服務提供者資訊因身分提供者而異，因此請參閱特定身分提供者的文件以了解詳細資訊。您需要與您的 IdP 管理員合作完成此步驟。
+透過建立新的應用程式並提供必要的資訊（例如 ACS URL、實體 ID 或其他憑證資訊）來設定您的身分提供者以信任NetApp 。服務提供者資訊因身分提供者而異，因此請參閱特定身分提供者的文件以了解詳細資訊。您需要與您的 IdP 管理員合作來完成此步驟。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]在BlueXP中建立聯邦連接
 [role="quick-margin-para"]
-要建立連接，您需要提供來自身分提供者的必要信息，例如 SAML 元資料 URL 或檔案。這些資訊用於建立BlueXP與您的身分提供者之間的信任關係。您提供的資訊取決於您使用的 IdP。例如，如果您使用的是 Microsoft Entra ID，則需要提供用戶端 ID、金鑰和網域。
+要建立連接，您需要從身分提供者提供必要的信息，例如 SAML 元資料 URL 或檔案。這些資訊用於建立BlueXP和您的身分提供者之間的信任關係。您提供的資訊取決於您使用的 IdP。例如，如果您使用 Microsoft Entra ID，則需要提供用戶端 ID、金鑰和網域。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["三"]在BlueXP中測試您的聯盟
 [role="quick-margin-para"]
-在啟用聯邦連接之前，請先測試它以確保其正常運作。 BlueXP中的「聯邦」頁面提供了一個測試選項，可讓您驗證測試使用者是否能夠成功進行身份驗證。如果測試成功，您就可以啟用該連線。
+在啟用聯合連線之前對其進行測試。 BlueXP中的 Federation 頁面提供了一個測試選項，可讓您驗證測試使用者是否能夠成功進行身份驗證。如果測試成功，則可以啟用連線。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["三"]在BlueXP中啟用您的連接
 [role="quick-margin-para"]

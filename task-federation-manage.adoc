@@ -16,6 +16,9 @@ summary: 添加聯邦連接後，您可以在BlueXP中管理它。您可以查�
 [role="lead"]
 您可以在BlueXP中管理您的聯盟。您可以停用它、更新過期的憑證，並在不再需要時將其停用。
 
+
+NOTE: 如果您之前使用NetApp Cloud Central（ BlueXP的外部應用程式）配置了聯合，則需要使用BlueXP Federation 頁面匯入聯合，以便能夠在BlueXP中管理它。link:task-federation-import.html["了解如何匯入您的聯盟"]
+
 您也可以將已驗證的網域新增至現有聯合中，這允許您使用多個網域進行聯合連線。
 
 
