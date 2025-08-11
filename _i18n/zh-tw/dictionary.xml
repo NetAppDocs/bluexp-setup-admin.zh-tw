@@ -3641,8 +3641,6 @@
   <block id="c7b1fe992423d57d0e492585ff631c02" category="list-text">使用 Amazon FSX for ONTAP 上的 VMware Cloud 做為災難恢復站台、來保護內部部署的 VMware 工作負載。</block>
   <block id="71bd4794c020a7645a4cfe74173f4058" category="list-text">BlueXP 經濟效益</block>
   <block id="068ff21264880d35ad4153fad90e3828" category="list-text">識別目前或預測容量不足的叢集、並實作資料分層或其他容量建議。</block>
-  <block id="dd7c710b103a018a2046baa2f5052ed9" category="list-text">BlueXP 作業恢復能力</block>
-  <block id="00ac035a0893138aed2f04da8c8223d3" category="list-text">實作自動化韌體和軟體組態風險修正、以維持 ONTAP 叢集的健全狀況。</block>
   <block id="67ecb6c0a19888100e5352d06f886856" category="list-text">BlueXP 勒索軟體保護</block>
   <block id="a8dd42d088a97f32bf9a4c69abc2517a" category="list-text">偵測可能導致勒索軟體攻擊的異常狀況。保護及恢復工作負載。</block>
   <block id="3ffe2e9dffcfea6ba0652c1f11e54fc1" category="list-text">BlueXP 複寫</block>
@@ -3899,7 +3897,6 @@
   <block id="da48a166a29b8e248a3113d9bd6cba04" category="paragraph">只有在 Connector 需要將授權新增至數位錢包時、才需要使用 Cloud Volumes ONTAP 節點型授權。在這種情況下需要連接器、因為資料是取自Cloud Volumes ONTAP 安裝在效益分析系統上的授權。</block>
   <block id="bf2f35a1367a7ddb519a7dd3cedacfdd" category="paragraph">在標準模式下使用 BlueXP 時、 BlueXP 中的下列功能和服務需要 Connector ：</block>
   <block id="c7a576f5db262c0475afa4a53822979e" category="list-text">經濟效益 ^1^</block>
-  <block id="7713949d8f17ff00f9cdb21469da8a35" category="list-text">營運恢復能力 ^1^</block>
   <block id="6d95cfc501ca88bca8a0045681608071" category="paragraph">^1^ 雖然您可以在不使用 Connector 的情況下存取這些服務、但需要有 Connector 才能從服務啟動動作。</block>
   <block id="ca61c00bb942882ff64e228d1e677f97" category="paragraph">在受限模式或私有模式下、需要 Connector 才能使用 BlueXP 。</block>
   <block id="dd42f0ca79b192af5e1f5734b490f194" category="paragraph">連接器是 BlueXP 服務架構的基本部分。您有責任確保相關的連接器隨時正常運作且可存取。雖然這項服務的設計是為了克服連接器可用度的短暫中斷、但您必須在必要時立即採取行動、以補救基礎架構故障。</block>
@@ -4076,10 +4073,6 @@
   <block id="34153016d27f6bc08ca28afe350597f0" category="cell">檢視叢集的更新詳細資料</block>
   <block id="b9632e5402da95a15f8096dffe8fe849" category="cell">執行更新前檢查並下載升級計畫</block>
   <block id="26c438938da81386c731f3d387eda803" category="cell">安裝軟體更新</block>
-  <block id="faf3b0fdd74f34bfe5b5e712fd212952" category="cell">* 營運恢復能力 *</block>
-  <block id="71dfe4aa697335a7f919f97a8273c0b2" category="cell">檢閱安全風險問題</block>
-  <block id="0416203226164e8fc52087494d33b58d" category="cell">下載 Ansible 教戰手冊</block>
-  <block id="55ecbcc86c1df8e0bbccc58434b65675" category="cell">自動修正問題</block>
   <block id="c7c10204d64df7a89f6234e58c752612" category="cell">* 經濟效益 *</block>
   <block id="2dcdbb99022cfb6c4ef2bd327930b9d0" category="cell">檢閱容量規劃狀態</block>
   <block id="a9857843d1ca1e121ff59133f171d8cf" category="cell">選擇下一個行動（最佳實務做法，階層）</block>
@@ -5007,4 +5000,6 @@
   <block id="a99608db4d85374403174f1119cac088" category="list-text">移動*黑暗主題*滑桿以啟用它。</block>
   <block id="b9d888f58b09c4007db0247286e392b5" category="section-title">2025年8月11日</block>
   <block id="107d607a0fbcdbb5eddd688662ad90ca" category="sidebar">營運支援分析師</block>
+  <block id="63c109031bd5690629b7c9170bf3f4e8" category="section-title">營運彈性功能</block>
+  <block id="873883e64c5f2d509253776eb02b66b4" category="paragraph">操作彈性功能已從BlueXP中刪除。如果遇到問題，請聯絡NetApp支援。</block>
 </blocks>
