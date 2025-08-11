@@ -259,5 +259,5 @@ BlueXP 需要兩項服務的 StorageGRID 權限。
 | 目標 | 說明 | 連結 
 
 
-| 將內部部署的 ONTAP 叢集分層至 StorageGRID | 當您設定 BlueXP 分層到 StorageGRID 時、您需要提供 BlueXP 分層、並提供 S3 存取金鑰和秘密金鑰。BlueXP 分層使用金鑰來存取您的貯體。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target["準備分層至 StorageGRID"^] 
+| 將內部部署的 ONTAP 叢集分層至 StorageGRID | 當您設定 BlueXP 分層到 StorageGRID 時、您需要提供 BlueXP 分層、並提供 S3 存取金鑰和秘密金鑰。BlueXP 分層使用金鑰來存取您的貯體。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-onprem-storagegrid.html["準備分層至 StorageGRID"^] 
 |===

@@ -61,6 +61,9 @@ BlueXP身分和存取管理 (IAM) 包含預先定義角色，您可以將這些�
 | ONTAP調解器設定角色 | 具有ONTAP調解器設定角色的服務帳戶可以建立服務請求。服務帳戶中需要此角色來配置link:https://docs.netapp.com/us-en/ontap/mediator/mediator-overview-concept.html["ONTAP雲端調解器"^] 。 
 
 
+| link:reference-iam-analyst-roles.html["營運支援分析師"] | 提供對警報和監控工具的存取以及輸入和管理支援案例的能力。 
+
+
 | link:reference-iam-storage-roles.html["儲存管理員"] | 管理儲存健全狀況和治理功能，探索儲存資源，以及修改和刪除現有工作環境。 
 
 

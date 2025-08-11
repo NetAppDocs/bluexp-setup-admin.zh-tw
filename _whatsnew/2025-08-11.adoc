@@ -1,0 +1,31 @@
+= 連接器 3.9.55
+:allow-uri-read: 
+
+
+
+
+=== 連接器 3.9.55
+
+BlueXP Connector 的此版本包括安全性改進和錯誤修復。
+
+3.9.55 版本適用於標準模式和限制模式。
+
+
+
+=== 日語支持
+
+BlueXP UI 現已提供日文版本。如果您的瀏覽器語言是日語， BlueXP會以日文顯示。若要存取日語文檔，請使用文檔網站上的語言選單。
+
+
+
+=== BlueXP  身分識別與存取管理（ IAM ）
+
+BlueXP中的身分和存取管理現在提供以下功能。
+
+
+
+=== 營運支援的新訪問角色
+
+BlueXP現在支援營運支援分析師角色。此角色授予使用者監控儲存警報、查看BlueXP稽核時間軸以及輸入和追蹤NetApp支援案例的權限。
+
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解有關使用訪問角色的更多資訊。"]

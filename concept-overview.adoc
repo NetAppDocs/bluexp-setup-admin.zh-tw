@@ -40,6 +40,7 @@ BlueXP  可讓您從 BlueXP  畫布管理下列類型的儲存設備：
 * Amazon FSX for NetApp ONTAP 產品
 * Azure NetApp Files
 * Cloud Volumes ONTAP
+* Google Cloud NetApp Volumes
 
 
 --

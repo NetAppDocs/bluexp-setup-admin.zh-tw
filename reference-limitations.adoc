@@ -24,19 +24,11 @@ summary: 已知限制指出本產品版本不支援的平台、裝置或功能�
 
 
 
-=== 不支援透明 Proxy 伺服器
-
-BlueXP 不支援使用 Connector 的透明 Proxy 伺服器。
-
-link:task-configuring-proxy.html["深入瞭解如何搭配 Connector 使用 Proxy 伺服器"]。
-
-
-
 === 可能與172範圍內的IP位址發生衝突
 
 BlueXP部署連接器時、會有兩個介面、其中IP位址介於172.17.0.0/16和172.18.0.0/16範圍內。
 
-如果您的網路已設定具有上述任一範圍的子網路、則可能會遇到來自BlueXP的連線故障。例如，在 BlueXP 中發現 on-premisesONTAP 叢集可能會失敗。
+如果您的網路具有配置了上述任一範圍的子網，那麼您可能會遇到BlueXP連線失敗的情況。例如，在BlueXP中發現本地ONTAP叢集可能會失敗。
 
 請參閱知識庫文章 link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Manager/Cloud_Manager_shows_inactive_as_Connector_IP_range_in_172.x.x.x_conflict_with_docker_network["BlueXP Connector IP與現有網路衝突"] 如需如何變更連接器介面的IP位址的指示。
 

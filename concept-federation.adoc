@@ -43,7 +43,7 @@ NetApp支援團隊將審核並處理您的請求。
 您可以與身分識別提供者建立聯合連接，以便為BlueXP啟用單一登入 (SSO)。此過程包括配置身分識別提供者以信任NetApp作為服務提供者，然後在BlueXP中建立連線。
 
 
-NOTE: 如果您之前使用NetApp Cloud Central（ BlueXP的外部應用程式）配置了聯合，則需要使用BlueXP Federation 頁面匯入聯合，以便能夠在BlueXP中管理它。link:task-federation-import.html["了解如何匯入您的聯盟"]
+NOTE: 如果您之前使用NetApp Cloud Central（ BlueXP的外部應用程式）配置了聯合，則需要使用BlueXP Federation 頁面匯入聯合，以便能夠在BlueXP中管理它。link:task-federation-import.html["了解如何導入您的聯盟。"]
 
 
 

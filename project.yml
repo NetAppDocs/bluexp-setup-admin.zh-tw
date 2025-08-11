@@ -136,6 +136,8 @@ sidebar:
           entries:
           - title: Keystone 角色
             url: "/reference-iam-keystone-roles.html"
+          - title: 營運支援分析師
+            url: "/reference-iam-analyst-roles.html"
           - title: 儲存角色
             url: "/reference-iam-storage-roles.html"
         - title: 資料服務角色

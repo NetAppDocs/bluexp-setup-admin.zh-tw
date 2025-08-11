@@ -1,0 +1,41 @@
+---
+sidebar: sidebar 
+permalink: reference-iam-analyst-roles.html 
+keywords: predefined roles, iam roles, organization admin, folder or project admin, identity and access management, access roles, admin 
+summary: BlueXP身分和存取管理提供支援分析師角色來協助監控和支援案例。 
+---
+= BlueXP的營運支援分析師訪問角色
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以為使用者指派以下角色，以便他們存取警報和監控。具有此角色的使用者還可以開啟支援案例。
+
+
+
+== 營運支援分析師
+
+[cols="1,1"]
+|===
+| 工作 | 可以執行 
+
+
+| 從「設定」>「憑證」管理自己的使用者憑證 | 是的 
+
+
+| 檢視探索到的資源 | 是的 
+
+
+| 透過BlueXP註冊支援並提交案例 | 是的 
+
+
+| 是的 | 查看BlueXP時間軸和通知 
+
+
+| 是的 | 查看、下載和設定警報 
+|===

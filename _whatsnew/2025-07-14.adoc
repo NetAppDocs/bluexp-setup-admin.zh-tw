@@ -64,4 +64,4 @@ BlueXP現在支援使用 IAM 角色實現以下功能和資料服務：
 * 聯邦
 
 
-link:https://docs.netapp.com/us-en/bluexp-admin/reference-iam-predefined-roles.html["了解有關使用訪問角色的更多資訊。"]
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解有關使用訪問角色的更多資訊。"]
