@@ -4198,7 +4198,6 @@
   <block id="f4a866cc8d962c94d7c7fd8decdd7e6c" category="list-text">當您在資料夾層級授予存取角色時，資料夾中的所有資料夾、項目和資源都會繼承該角色。</block>
   <block id="34aee3ad45d37ad6cf603311eb0838fb" category="list-text">當您在專案層級授予存取角色時，與該專案相關的所有資源都會繼承該角色。</block>
   <block id="b65cc9ab2327fd85f7b0e7503c06a66f" category="paragraph">如果使用 BlueXP 連接器發現與其他項目關聯的資源，那麼您還需要將連接器與資源現在關聯的項目關聯。否則，沒有「組織管理員」角色的成員無法從 BlueXP 畫布存取連接器及其關聯資源。</block>
-  <block id="23281988aab04cbdc82eb76f370939d5" category="paragraph">BlueXP 提供多種部署模式，協助您滿足業務和安全需求。標準模式利用軟體即服務 (SaaS) 層提供完整功能，而受限模式和私有模式則適用於有連線限制的組織。</block>
   <block id="43edcdb6c00656305d8defca5b3b7be0" category="cell">資料服務許可選項</block>
   <block id="960800e4f6948441d5ac2b7201b75a9b" category="paragraph">XYZ 公司有四名來自不同部門的儲存工程師查看 Keystone 訂閱資訊。雖然所有這些使用者都需要監控 Keystone 訂閱，但只有團隊主管可以提出服務要求。其中三位團隊成員被授予 * Keystone viewer* 角色，而團隊主管則被授予 * Keystone admin* 角色，因此可以控制公司的服務要求。</block>
   <block id="69d1234e785810f2a95867f80dbd3641" category="cell">提供從內部部署 ONTAP 叢集備份快照的功能、使用應用程式的 BlueXP  備份與還原功能。擁有此角色的成員可以在 BlueXP 中完成以下操作：* 完成「備份和復原」&gt;「應用程式」中的任何操作* 管理他們擁有權限的項目和資料夾中的所有工作環境* 使用所有 BlueXP 服務 SnapCenter 沒有查看者角色。</block>
@@ -5002,4 +5001,5 @@
   <block id="107d607a0fbcdbb5eddd688662ad90ca" category="sidebar">營運支援分析師</block>
   <block id="63c109031bd5690629b7c9170bf3f4e8" category="section-title">營運彈性功能</block>
   <block id="873883e64c5f2d509253776eb02b66b4" category="paragraph">操作彈性功能已從BlueXP中刪除。如果遇到問題，請聯絡NetApp支援。</block>
+  <block id="1483f680ce3bdf9d9815a763f9aff7ff" category="paragraph">BlueXP提供_部署模式_，使您能夠滿足您的業務和安全需求。  _標準模式_利用軟體即服務 (SaaS) 層來提供全部功能，而_限制模式_和_私人模式_適用於有連線限制的組織。</block>
 </blocks>
