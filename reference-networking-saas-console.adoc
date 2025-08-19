@@ -18,7 +18,7 @@ summary: 當您使用透過 SaaS 層提供的 BlueXP 網路型主控台時、它
 
 在兩種情況下、我們會聯絡這些端點：
 
-* 在使用者的電腦上完成 https://console.bluexp.netapp.com["BlueXP 網路型主控台"^]可作為軟體即服務（SaaS）使用。
+* 在使用者電腦上完成以下部分時 https://console.bluexp.netapp.com["BlueXP 網路型主控台"^]可作為軟體即服務（SaaS）使用。
 * 從使用者電腦開啟 Web 瀏覽器、輸入 Connector 主機的 IP 位址、然後登入並設定 Connector 。如果您手動安裝 Connector 、則需要執行這些步驟。
 
 

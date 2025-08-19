@@ -4208,7 +4208,6 @@
   <block id="6c5717b14632d720938288e07cadd604" category="paragraph">XYZ Corporation 是一家跨國企業，擁有龐大的儲存工程師和儲存管理員團隊。他們允許該團隊管理其所在地區的儲存資產，同時限制對核心 BlueXP 任務（如用戶管理、連接器創建和數位錢包等成本工具）的存取。</block>
   <block id="496d5f930a1daf128efdaf083cd8dcbb" category="paragraph">下表顯示了每個 BlueXP 儲存角色執行的操作。</block>
   <block id="f427e4ecee2d5f4a7a3729b4087d142b" category="paragraph">當您登入並使用基於 Web 的控制台時，BlueXP 會聯絡多個端點來完成您發起的操作。存取控制台的電腦必須連接到這些端點。</block>
-  <block id="6c5ff8f0129671982d1831fd73cf4dc0" category="list-text">在使用者的電腦上完成<block ref="eecb3fc8bedef660fde4567972ba79cf" category="inline-link-rx"></block>可作為軟體即服務（SaaS）使用。</block>
   <block id="6f7595410ecabe6d611ded757d1f969c" category="cell">這是您在 Web 瀏覽器中輸入以使用基於 Web 的控制台的端點。</block>
   <block id="3e692c92398b899f8bef9e541b9e153b" category="cell">基於 Web 的控制台聯絡此端點與 API 進行交互，以執行與授權、授權、訂閱、憑證、通知等相關的操作。</block>
   <block id="f3000ad965f0ab15a5956bdd572c01d0" category="cell">需要訪問數位顧問。</block>
@@ -5002,4 +5001,5 @@
   <block id="63c109031bd5690629b7c9170bf3f4e8" category="section-title">營運彈性功能</block>
   <block id="873883e64c5f2d509253776eb02b66b4" category="paragraph">操作彈性功能已從BlueXP中刪除。如果遇到問題，請聯絡NetApp支援。</block>
   <block id="1483f680ce3bdf9d9815a763f9aff7ff" category="paragraph">BlueXP提供_部署模式_，使您能夠滿足您的業務和安全需求。  _標準模式_利用軟體即服務 (SaaS) 層來提供全部功能，而_限制模式_和_私人模式_適用於有連線限制的組織。</block>
+  <block id="123a6b352fe45a0ef3d13dd5def43f93" category="list-text">在使用者電腦上完成以下部分時<block ref="eecb3fc8bedef660fde4567972ba79cf" category="inline-link-rx"></block>可作為軟體即服務（SaaS）使用。</block>
 </blocks>
