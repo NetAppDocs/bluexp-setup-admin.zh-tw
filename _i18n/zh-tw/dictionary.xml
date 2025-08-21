@@ -2058,7 +2058,6 @@
   <block id="4a17f9505c41e2b9d2fdf8e21809e428" category="cell">E系列</block>
   <block id="392d70ca39f31f10bd637936769788df" category="cell">StorageGRID</block>
   <block id="1376d64de9953f470f0708fc6e330334" category="cell">*服務*</block>
-  <block id="5b942e8f71976a7f4120006aa3ac54cc" category="cell">雲端作業</block>
   <block id="723ffd15eb7b4453afd0fa0af42c04c3" category="cell">經濟效益</block>
   <block id="efc0c4f71709b261c273fb935757cfae" category="cell">營運恢復能力</block>
   <block id="86d0f8f9c44b93c040cb35a58ca2f2ff" category="cell">* 功能 *</block>
@@ -4610,7 +4609,6 @@
   <block id="c6b984bc2ca856b4291f8e64fa30cd9a" category="cell">檢視工作</block>
   <block id="295cc024728a10becfec47e1d454c4f9" category="cell">取消作業</block>
   <block id="19624807a266987c5ebc85871209b179" category="summary">BlueXP身分和存取管理提供了兩個Keystone角色，您可以將其指派給組織成員。</block>
-  <block id="1e903debc38b532ef2e80f7138839ce6" category="summary">為使用者指派平台角色，以授予管理BlueXP、指派角色、新增使用者、建立連接器和管理聯合的權限。</block>
   <block id="405968a9734d63c6f8b2d95182972328" category="paragraph">下表列出了每個BlueXP平台角色可以執行的動作。</block>
   <block id="fa8ca558421297ffc0846340271c7c6e" category="section-title">組織管理角色</block>
   <block id="85d14999212ce25d0b655728819c9d41" category="cell">建立、管理和檢視聯合</block>
@@ -4873,7 +4871,6 @@
   <block id="656f6fe68f4a2af975dfebecd7cca424" category="paragraph">Google Cloud NetApp Volumes使用以下角色：</block>
   <block id="0b4cb7a54420fa8396e2ded3254b1844" category="list-text">* Google Cloud NetApp Volumes管理員*：在BlueXP中發現並管理Google Cloud NetApp Volumes 。</block>
   <block id="b55b12e6582a0dc256699ea566c98812" category="paragraph">平台角色授予所有BlueXP管理權限，包括指派角色和新增使用者。平台角色提供所有BlueXP資料服務和應用程式的存取權限。BlueXP IAM 包含兩個平台角色：組織管理員和資料夾或專案管理員。兩個 BlueXP  IAM 平台角色的主要差異在於範圍。</block>
-  <block id="ab916e6cd4ed974d54491c86731e930c" category="cell">允許使用者不受限制地存取組織內的所有專案和資料夾，將成員新增至任何專案或資料夾，以及執行任何 BlueXP  工作和使用任何資料服務。具有此角色的使用者組織和管理您的BlueXP組織。他們可以建立資料夾和專案、指派角色、新增用戶，如果擁有相應權限，還可以管理所有工作環境。這是唯一可以建立 Connectors 的存取角色。</block>
   <block id="332cf7fa33c69ec5f4db12e0c5d4c230" category="cell">允許使用者不受限制地存取指派給他們的特定專案和資料夾。可以將成員新增至他們管理的資料夾或專案，以及執行任何 BlueXP  工作，並在指派給他們的資料夾或專案中，對資源使用任何資料服務或應用程式。資料夾或專案管理員無法建立連接器。</block>
   <block id="1e92f5c7fccb14971fe2537bec747773" category="cell">允許使用者使用BlueXP建立和管理聯合，從而實現單一登入 (SSO)。</block>
   <block id="077ceb8a17d475a37128a6986bf1819f" category="inline-link-macro">Google Cloud NetApp Volumes管理員</block>
@@ -4910,11 +4907,9 @@
   <block id="67c66b3b8df7b2dee0354dd9f9fcec17" category="cell">2025年7月28日</block>
   <block id="fb18d9c76416da6ad7e8f165ea36f1d5" category="paragraph">NetApp支援以下聯合協定和身分提供者：</block>
   <block id="f207a0643b8dada892565ed2318b05cd" category="cell"><block ref="f207a0643b8dada892565ed2318b05cd" category="inline-link-macro-rx"></block></block>
-  <block id="c1c35b571a8270f43bf6faa6757452f6" category="cell">是的<block ref="7017fcd1de8071674201a0278a852eae" category="inline-link-rx"></block></block>
   <block id="e3e606b368c3f3a65f5cb75fbe9c3115" category="cell">允許使用者查看與BlueXP 的現有聯合。無法建立或管理聯盟</block>
   <block id="1393a4279651a3334e20f39925a139f5" category="cell">分類檢視器</block>
   <block id="725b2ecc37229f77405f9188278a6a1f" category="cell">使用BlueXP backup and recovery將本機ONTAP叢集備份到 Amazon S3</block>
-  <block id="12e11cedace336bc23a4b1c9ab448974" category="cell"><block ref="12e11cedace336bc23a4b1c9ab448974" category="inline-link-rx"></block></block>
   <block id="51fa9005485af9016610af9875c0e913" category="cell">將Cloud Volumes ONTAP備份到 Azure Blob 存儲</block>
   <block id="8625ed737cea7841c422023f4e27bc1d" category="inline-link">使用備份和還原將Cloud Volumes ONTAP資料備份到 Azure Blob 存儲</block>
   <block id="518ffd78f998d0a25c5446da8989b6a6" category="list-text"><block ref="518ffd78f998d0a25c5446da8989b6a6" category="inline-link-rx"></block></block>
@@ -4923,8 +4918,6 @@
   <block id="6d94d8c7b4ec021fb7a5a5704629681e" category="cell"><block ref="6d94d8c7b4ec021fb7a5a5704629681e" category="inline-link-rx"></block></block>
   <block id="cd84e76d2557bd459057089ba5e1385c" category="inline-link">使用備份和還原將Cloud Volumes ONTAP資料備份到 Google Cloud Storage</block>
   <block id="3b5162ff96cd00bbd1b1ad424d59bd8f" category="list-text"><block ref="3b5162ff96cd00bbd1b1ad424d59bd8f" category="inline-link-rx"></block></block>
-  <block id="6d4f1161a06d11fa7424e224b2a86d25" category="inline-link">使用備份和還原將本地ONTAP資料備份到 Google Cloud Storage</block>
-  <block id="b9142ed8495860430205961c82c827a0" category="cell"><block ref="b9142ed8495860430205961c82c827a0" category="inline-link-rx"></block></block>
   <block id="86b4fb0c56ea4924e5069e8f25d3a778" category="cell"><block ref="86b4fb0c56ea4924e5069e8f25d3a778" category="inline-link-rx"></block></block>
   <block id="00f4500782739238dc0801f2579a354e" category="paragraph">當您與NetApp支援網站聯合使用時，使用者可以使用與造訪NetApp支援網站、 Active IQ Digital Advisor以及與您的NetApp支援網站帳戶相關的其他應用程式相同的憑證登入以存取BlueXP 。設定聯合後，任何建立NetApp支援網站帳戶的新使用者也能夠存取BlueXP。</block>
   <block id="6ead1a7fe0f07609f377bd234facc0ef" category="inline-link-macro">了解如何匯入您的聯盟</block>
@@ -4944,10 +4937,6 @@
   <block id="9a69bf13bbd4a86f23945e6b153f3913" category="paragraph">BlueXP現在支援營運支援分析師角色。此角色授予使用者監控儲存警報、查看BlueXP稽核時間軸以及輸入和追蹤NetApp支援案例的權限。</block>
   <block id="21199c6ee115447074a02f720b934dab" category="inline-link-macro">了解如何導入您的聯盟。</block>
   <block id="8e6882f602fd5ecebb3dc685c943a7ce" category="admonition">如果您之前使用NetApp Cloud Central（ BlueXP的外部應用程式）配置了聯合，則需要使用BlueXP Federation 頁面匯入聯合，以便能夠在BlueXP中管理它。<block ref="f94fc06031e07cb597f1d58d86de05fb" category="inline-link-macro-rx"></block></block>
-  <block id="fbe04f74a8debcc655aecf9e3678c2f1" category="cell">在政府區域和商業區域受限制模式支持。不支援在具有限制模式的主權區域使用。在受限模式下， BlueXP backup and recovery僅支援ONTAP磁碟區資料的備份和還原。<block ref="9a868aa7b1ac276f990ea6d049f53427" category="inline-link-rx"></block>不支援應用程式資料和虛擬機器資料的備份和還原。</block>
-  <block id="5276c2566a84a3042431220ea0b747b3" category="cell">在 AWS 和 Azure 商業區域受支援。在 Google Cloud 或<block ref="da2732e6e9a1be4ab82a1194533aac59" category="inline-link-rx"></block>，<block ref="6f5217ea8a3f93cd9532863eb844647b" category="inline-link-rx"></block> ， 或者<block ref="360910fe60b5d1cf9b7056b9b6f46685" category="inline-link-rx"></block>在私有模式下， BlueXP backup and recovery僅支援ONTAP磁碟區資料的備份和還原。<block ref="9a868aa7b1ac276f990ea6d049f53427" category="inline-link-rx"></block>不支援應用程式資料和虛擬機器資料的備份和還原。</block>
-  <block id="73a5ff4735cfc57b857a1b43760e3ec0" category="paragraph">在私有模式下， BlueXP backup and recovery僅支援ONTAP磁碟區資料的備份和還原。<block ref="d39fc9c0f82d5c4bb16800a042d6f6e7" category="inline-link-rx"></block></block>
-  <block id="4f77989b947b64c4712e48bb29004e08" category="cell">是的<block ref="7017fcd1de8071674201a0278a852eae" category="inline-link-rx"></block> <block ref="7017fcd1de8071674201a0278a852eae" category="inline-link-rx"></block></block>
   <block id="952ed66e1f35fd535945868e5723338d" category="summary">BlueXP身分和存取管理提供支援分析師角色來協助監控和支援案例。</block>
   <block id="5a08d24aa69b6e45f6d4bbbceac0ec8e" category="doc">BlueXP的營運支援分析師訪問角色</block>
   <block id="7e901891254682b3e1fddc06e4e1938a" category="paragraph">您可以為使用者指派以下角色，以便他們存取警報和監控。具有此角色的使用者還可以開啟支援案例。</block>
@@ -5002,4 +4991,72 @@
   <block id="873883e64c5f2d509253776eb02b66b4" category="paragraph">操作彈性功能已從BlueXP中刪除。如果遇到問題，請聯絡NetApp支援。</block>
   <block id="1483f680ce3bdf9d9815a763f9aff7ff" category="paragraph">BlueXP提供_部署模式_，使您能夠滿足您的業務和安全需求。  _標準模式_利用軟體即服務 (SaaS) 層來提供全部功能，而_限制模式_和_私人模式_適用於有連線限制的組織。</block>
   <block id="123a6b352fe45a0ef3d13dd5def43f93" category="list-text">在使用者電腦上完成以下部分時<block ref="eecb3fc8bedef660fde4567972ba79cf" category="inline-link-rx"></block>可作為軟體即服務（SaaS）使用。</block>
+  <block id="7796900f00ac833c56ab39c1f53647a4" category="paragraph">新的私人模式版本現已可從<block ref="d2aa03057485a1ee4125d2121e05288d" category="inline-link-rx"></block>。</block>
+  <block id="1caea5bc420fef9b14013d5029b5ada8" category="cell">2025年7月22日</block>
+  <block id="6d7056f4a613b172773d03a9eefe2ba5" category="cell">在政府區域和商業區域受限制模式支持。不支援在具有限制模式的主權區域使用。在受限模式下， BlueXP backup and recovery僅支援ONTAP磁碟區資料的備份和還原。<block ref="9a868aa7b1ac276f990ea6d049f53427" category="inline-link-rx"></block>在受限模式下， BlueXP backup and recovery僅支援ONTAP磁碟區資料的備份和還原。<block ref="9a868aa7b1ac276f990ea6d049f53427" category="inline-link-rx"></block>不支援應用程式資料和虛擬機器資料的備份和還原。</block>
+  <block id="1111602656f276babc9e9c14c32e1c29" category="cell">在 AWS 和 Azure 商業區域受支援。在 Google Cloud 或<block ref="da2732e6e9a1be4ab82a1194533aac59" category="inline-link-rx"></block>，<block ref="6f5217ea8a3f93cd9532863eb844647b" category="inline-link-rx"></block> ， 或者<block ref="360910fe60b5d1cf9b7056b9b6f46685" category="inline-link-rx"></block>在私有模式下， BlueXP backup and recovery僅支援ONTAP磁碟區資料的備份和還原。<block ref="15e6ab2d8e5fe020b0c50f9b9c646000" category="inline-link-rx"></block>不支援應用程式資料和虛擬機器資料的備份和還原。</block>
+  <block id="8ec22990440236bef094659080045622" category="paragraph">在私有模式下， BlueXP backup and recovery僅支援ONTAP磁碟區資料的備份和還原。<block ref="b31f203263729f4286583cdb64627773" category="inline-link-rx"></block></block>
+  <block id="1e26f8ab2a662e479805c3cfb2beb8cc" category="cell">是的<block ref="786a3e24a23d3c4968859c8e0f050df6" category="inline-link-rx"></block>ONTAP磁碟區資料支援的備份目標清單^]</block>
+  <block id="a6c599d9b9bbe744be463c056f9e194a" category="cell">是的<block ref="8cbf8dca81955ce6c3d97cec5394e7fd" category="inline-link-rx"></block></block>
+  <block id="794b3a495ea7fc3d5dfc4a04fca36174" category="summary">為使用者指派平台角色，以授予在BlueXP中執行管理任務的權限、指派角色、新增使用者、建立連接器和管理聯合。</block>
+  <block id="c6583b97e14f16bc392f485bc9330714" category="cell">允許使用者不受限制地存取組織內的所有專案和資料夾，為任何專案或資料夾新增成員，以及執行任何BlueXP任務並使用任何沒有明確關聯角色的資料服務。具有此角色的使用者組織和管理您的BlueXP組織。如果他們有資格，他們可以建立資料夾和項目、分配角色、新增使用者並管理所有工作環境。這是唯一可以建立連接器的存取角色。</block>
+  <block id="3adefaf0742bb05998d95535c058e1ff" category="cell"><block ref="3adefaf0742bb05998d95535c058e1ff" category="inline-link-rx"></block></block>
+  <block id="f440bceeae5f537573e3d8bf616b2de6" category="list-text">hhttps://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-cvo-gcp.html[CMEK 的權限^]</block>
+  <block id="3f4149dc5a7846817dd458a59e650f5f" category="inline-link">搜尋和恢復功能的權限</block>
+  <block id="a420dd2924b01530fcf3ece61c9728df" category="cell"><block ref="81705cdd494c9139b5b5def25d4145b1" category="inline-link-rx"></block></block>
+  <block id="4f11400d5bfc49418f8fe9e78ffbc58c" category="section-title">2024年7月31日</block>
+  <block id="b9cf377931ad2ee7b1d42618c6c12fa5" category="section-title">私人模式發布（3.9.42）</block>
+  <block id="de4d4b8489d091cd028889fa8739a4a3" category="paragraph">此版本包括在私人模式下使用BlueXP時在 Red Hat Enterprise Linux 8 或 9 主機上安裝連接器的支援。支援以下版本的 RHEL：</block>
+  <block id="d80ef147e70626ef64e723b33860d715" category="list-text">9.1 至 9.3</block>
+  <block id="00ed051332ed28fe5b1ab0a4ae7aa4f6" category="paragraph">Podman 是這些作業系統所必需的容器編排工具。</block>
+  <block id="3d007e1710eb9efcb8c51296efc8eb4f" category="paragraph">您應該了解 Podman 的要求、已知的限制、作業系統支援的摘要、如果您有 RHEL 7 主機該怎麼做、如何開始等等。</block>
+  <block id="2791ae5af0f1b2a708aaa92b1fddb49e" category="paragraph-title">此版本包含的版本</block>
+  <block id="ee91704d04c9c24001ba7aa413122767" category="paragraph">此版本包括支援私人模式的以下版本的BlueXP服務。</block>
+  <block id="58660abbd738b63f91f751c0fcd3787d" category="cell">3.9.42</block>
+  <block id="09fcc3c3a46a63684b907c89bb2e4b7b" category="cell">2024年7月18日</block>
+  <block id="4736cb006ef02fa673f618379e2106bd" category="cell">2024 年 7 月 1 日（版本 1.33）</block>
+  <block id="8009eebf05fd33b87750f8b4048986f7" category="cell">2024年6月10日</block>
+  <block id="64cc8195fcb01e582343c910736d1abd" category="paragraph">要了解有關這些BlueXP服務版本中包含的內容的更多信息，請參閱每個BlueXP服務的發行說明。</block>
+  <block id="451cc12943297b25b1cf250cc5d0e60a" category="inline-link">了解BlueXP backup and recovery的新功能</block>
+  <block id="d846859679a4eca86e97e1887623b347" category="list-text"><block ref="d846859679a4eca86e97e1887623b347" category="inline-link-rx"></block></block>
+  <block id="dd890c1f1f06a084e8274154f3f07ebe" category="inline-link">了解BlueXP classification的新功能</block>
+  <block id="0dcda936d538d36f9e02f54b88ffefca" category="list-text"><block ref="0dcda936d538d36f9e02f54b88ffefca" category="inline-link-rx"></block></block>
+  <block id="d06e6f96135d8cd2fa9fea9a4d9de16b" category="inline-link">了解BlueXP中Cloud Volumes ONTAP管理的新功能</block>
+  <block id="29e66847d781138b54aa8aa55b70fb20" category="list-text"><block ref="29e66847d781138b54aa8aa55b70fb20" category="inline-link-rx"></block></block>
+  <block id="5bde46ec5f2d435355447c38b00c1d9c" category="section-title">2024年7月15日</block>
+  <block id="415b27bc5d78b639dc8c74a6e8f93e19" category="section-title">支援 RHEL 8.10</block>
+  <block id="562442342bba071ba7f2e5fa834d4464" category="paragraph">BlueXP現在支援在使用標準模式或受限模式時在 Red Hat Enterprise Linux 8.10 主機上安裝連接器。</block>
+  <block id="01a9b44907bcb1139b6868b9fe7073d0" category="paragraph">從 Connector 3.9.40 版本開始支援 RHEL 8.10。</block>
+  <block id="8d330209f05c51bacefbee76e24d82e9" category="section-title">2024年7月8日</block>
+  <block id="cfcc30e7f5ca49191957ff6a4f02c34d" category="section-title">連接器 3.9.42</block>
+  <block id="b1360a775c6891602e0321f2a2a1aa2b" category="paragraph">此版本包括一些小改進、錯誤修復以及對 AWS 加拿大西部（卡加利）地區連接器的支援。</block>
+  <block id="096051910b67309e40aa0d0e1d279007" category="paragraph">3.9.42 版本適用於標準模式和限制模式。</block>
+  <block id="2a63395e5cc23edb6ca284fd55193c26" category="section-title">更新了 Docker Engine 要求</block>
+  <block id="a8b199c601f75b6af66327457070a9f8" category="paragraph">當連接器安裝在 Ubuntu 主機上時，Docker Engine 的最低支援版本現在為 23.0.6。之前是 19.3.1。</block>
+  <block id="a0171ad16b4ca1d03af998be3b923d6f" category="paragraph">最高支援版本仍為25.0.5。</block>
+  <block id="0d04c8a15444402f3438c6a0e19e7890" category="section-title">現在需要電子郵件驗證</block>
+  <block id="d2fc5d70b0b08157a615d70d77cb96c2" category="paragraph">現在，註冊BlueXP 的新用戶需要驗證他們的電子郵件地址才能登入。</block>
+  <block id="bbe4d8abcc3519b138a73b8e46ee2119" category="section-title">2024年6月12日</block>
+  <block id="e7a68d45477c484e2ef45d11f3cea8f8" category="section-title">連接器 3.9.41</block>
+  <block id="deb2d604498906b6056e668d8a921bc6" category="paragraph">3.9.41 版本適用於標準模式和限制模式。</block>
+  <block id="74ee4e65950c57ed59a7a33de5a179e6" category="section-title">2024年6月4日</block>
+  <block id="87174c130fb334601e88a5630bf24478" category="section-title">私人模式發布（3.9.40）</block>
+  <block id="3a88f5b91fe23c6da00e330b440f9fd7" category="paragraph">現在可以從NetApp支援網站下載新的私有模式版本。此版本包括支援私人模式的以下版本的BlueXP服務。</block>
+  <block id="4f56b8c7a0f62edc59659cfaecc68958" category="paragraph">請注意，此私有模式版本不包括對 Red Hat Enterprise Linux 8 和 9 的連接器的支援。</block>
+  <block id="f691a3ef752f6e51a74183a6b7b1c432" category="cell">3.9.40</block>
+  <block id="188fd7f75e50a8a882a75c15dcb630a1" category="cell">2024年5月17日</block>
+  <block id="81f58b484d838909a5fedb3486f3a8e2" category="section-title">連接器 3.9.40</block>
+  <block id="32d1e3d3ebe78d37dbdfcf9933b0cf90" category="paragraph">BlueXP Connector 的此版本包括對其他作業系統的支援、小的安全性改進和錯誤修復。</block>
+  <block id="94f95548313e6f5528b5011a7d10e19f" category="paragraph">目前，3.9.40 版本適用於標準模式和限制模式。</block>
+  <block id="3eb0b1a8f5c259c6baffd4acbc27dc9b" category="paragraph">在標準模式或限制模式下使用BlueXP時，執行下列版本的 Red Hat Enterprise Linux 且安裝了_new_ Connector 的主機現在支援此連接器：</block>
+  <block id="f335f00e1188cffe57c3d9416ce23c84" category="list-text">8.6 至 8.9</block>
+  <block id="16051bd228f38a4877773f8f795d59a9" category="paragraph">2024 年 6 月 30 日，RHEL 7 將達到維護終止（EOM），而 CentOS 7 將達到生命週期終止（EOL）。  NetApp將繼續支援這些 Linux 發行版上的 Connector，直到 2024 年 6 月 30 日。</block>
+  <block id="cc33fea72b72b4631424774600dd1785" category="inline-link">了解如果現有的 Connector 在 RHEL 7 或 CentOS 7 上運行，該怎麼辦</block>
+  <block id="ab95c14710d4a4d5d91375c4a1b3315b" category="paragraph"><block ref="079fd36262e0750841aa2ea8902cdc7a" category="inline-link-rx"></block> 。</block>
+  <block id="4cc078461f1763cdb13efec9da8a6a3f" category="paragraph-title">AWS 權限更新</block>
+  <block id="2f4b86d46e79a7a3f22d1c784c12799e" category="paragraph">在 3.9.38 版本中，我們更新了 AWS 的連接器策略以包含「ec2:DescribeAvailabilityZones」權限。現在需要此權限來支援具有Cloud Volumes ONTAP 的AWS 本地區域。</block>
+  <block id="7595af352964f2b06057ab6310fdff44" category="inline-link">查看連接器的 AWS 權限</block>
+  <block id="bad85d32b5f3e46e956809c13b502817" category="list-text"><block ref="7e42187d6259f740c2e1915df5429efc" category="inline-link-rx"></block> 。</block>
+  <block id="364a4ff52cd92f16374019cdedf6b91c" category="inline-link">了解有關 AWS 本地區域支援的更多信息</block>
+  <block id="3b1699510f585646e0c8a73fa1b820ae" category="list-text"><block ref="3b1699510f585646e0c8a73fa1b820ae" category="inline-link-rx"></block></block>
 </blocks>

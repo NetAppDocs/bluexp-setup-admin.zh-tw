@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-iam-platform-roles.html 
 keywords: predefined roles, iam roles, organization admin, folder or project admin, classification viewer, snapcenter admin, role, iam role, admin, iam, identity and access management 
-summary: 為使用者指派平台角色，以授予管理BlueXP、指派角色、新增使用者、建立連接器和管理聯合的權限。 
+summary: 為使用者指派平台角色，以授予在BlueXP中執行管理任務的權限、指派角色、新增使用者、建立連接器和管理聯合。 
 ---
 = BlueXP  平台存取角色
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 為使用者指派平台角色，以授予管理BlueXP、指派角色�
 
 
 [role="lead"]
-為使用者指派平台角色，以授予管理BlueXP、指派角色、新增使用者、建立連接器和管理聯合的權限。
+為使用者指派平台角色，以授予在BlueXP中執行管理任務的權限、指派角色、新增使用者、建立連接器和管理聯合。
 
 .大型跨國組織在 BlueXP  中扮演組織角色的範例
 XYZ 公司按地區（北美、歐洲和亞太地區）組織資料儲存訪問，從而提供區域控制和集中監督。

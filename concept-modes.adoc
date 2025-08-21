@@ -155,7 +155,7 @@ API 端點:: API 呼叫是針對 Connector 虛擬機器進行的。
 | Azure NetApp Files | 完全支援 
 
 
-| 備份與還原 | 在政府區域和商業區域受限制模式支持。不支援在具有限制模式的主權區域使用。在受限模式下， BlueXP backup and recovery僅支援ONTAP磁碟區資料的備份和還原。 https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["檢視 ONTAP 資料支援的備份目的地清單"^]不支援應用程式資料和虛擬機器資料的備份和還原。 
+| 備份與還原 | 在政府區域和商業區域受限制模式支持。不支援在具有限制模式的主權區域使用。在受限模式下， BlueXP backup and recovery僅支援ONTAP磁碟區資料的備份和還原。 https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["檢視 ONTAP 資料支援的備份目的地清單"^]在受限模式下， BlueXP backup and recovery僅支援ONTAP磁碟區資料的備份和還原。 https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["檢視 ONTAP 資料支援的備份目的地清單"^]不支援應用程式資料和虛擬機器資料的備份和還原。 
 
 
 | 分類  a| 
@@ -238,7 +238,7 @@ API 端點:: API 呼叫是針對 Connector 虛擬機器進行的。
 | 支援的服務 | 附註 
 
 
-| 備份與還原 | 在 AWS 和 Azure 商業區域受支援。在 Google Cloud 或 https://aws.amazon.com/federal/secret-cloud/["AWS Secret Cloud"^]， https://aws.amazon.com/federal/top-secret-cloud/["AWS Top Secret Cloud"^] ， 或者 https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6."^]在私有模式下， BlueXP backup and recovery僅支援ONTAP磁碟區資料的備份和還原。 https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["檢視 ONTAP 資料支援的備份目的地清單"^]不支援應用程式資料和虛擬機器資料的備份和還原。 
+| 備份與還原 | 在 AWS 和 Azure 商業區域受支援。在 Google Cloud 或 https://aws.amazon.com/federal/secret-cloud/["AWS Secret Cloud"^]， https://aws.amazon.com/federal/top-secret-cloud/["AWS Top Secret Cloud"^] ， 或者 https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6."^]在私有模式下， BlueXP backup and recovery僅支援ONTAP磁碟區資料的備份和還原。 https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-no-internet-connectivity["檢視 ONTAP 資料支援的備份目的地清單"^]不支援應用程式資料和虛擬機器資料的備份和還原。 
 
 
 | Cloud Volumes ONTAP | 由於無法存取網際網路、因此無法使用下列功能：自動軟體升級和 AutoSupport 。 
@@ -261,7 +261,7 @@ API 端點:: API 呼叫是針對 Connector 虛擬機器進行的。
 
 
 | 備份與還原  a| 
-在私有模式下， BlueXP backup and recovery僅支援ONTAP磁碟區資料的備份和還原。 https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["檢視 ONTAP Volume 資料支援的備份目的地清單"^]
+在私有模式下， BlueXP backup and recovery僅支援ONTAP磁碟區資料的備份和還原。 https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-no-internet-connectivity["檢視 ONTAP Volume 資料支援的備份目的地清單"^]
 
 不支援應用程式資料和虛擬機器資料的備份與還原。
 
@@ -353,16 +353,13 @@ NOTE: 如果您想在中使用 BlueXP https://aws.amazon.com/federal/secret-clou
 | StorageGRID | 否 | 否 
 
 
-.17+| *服務* | 警示 | 否 | 否 
+.16+| *服務* | 警示 | 否 | 否 
 
 
-| 備份與還原 | 是的https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["檢視 ONTAP Volume 資料支援的備份目的地清單"^] https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["檢視 ONTAP Volume 資料支援的備份目的地清單"^] | 是的https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["檢視 ONTAP Volume 資料支援的備份目的地清單"^] 
+| 備份與還原 | 是的https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivityView[]ONTAP磁碟區資料支援的備份目標清單^] | 是的https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-no-internet-connectivity["檢視 ONTAP Volume 資料支援的備份目的地清單"^] 
 
 
 | 分類 | 是的 | 是的 
-
-
-| 雲端作業 | 否 | 否 
 
 
 | 複製與同步 | 否 | 否 
