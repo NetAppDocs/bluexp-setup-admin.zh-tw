@@ -4996,7 +4996,6 @@
   <block id="6d7056f4a613b172773d03a9eefe2ba5" category="cell">在政府區域和商業區域受限制模式支持。不支援在具有限制模式的主權區域使用。在受限模式下， BlueXP backup and recovery僅支援ONTAP磁碟區資料的備份和還原。<block ref="9a868aa7b1ac276f990ea6d049f53427" category="inline-link-rx"></block>在受限模式下， BlueXP backup and recovery僅支援ONTAP磁碟區資料的備份和還原。<block ref="9a868aa7b1ac276f990ea6d049f53427" category="inline-link-rx"></block>不支援應用程式資料和虛擬機器資料的備份和還原。</block>
   <block id="1111602656f276babc9e9c14c32e1c29" category="cell">在 AWS 和 Azure 商業區域受支援。在 Google Cloud 或<block ref="da2732e6e9a1be4ab82a1194533aac59" category="inline-link-rx"></block>，<block ref="6f5217ea8a3f93cd9532863eb844647b" category="inline-link-rx"></block> ， 或者<block ref="360910fe60b5d1cf9b7056b9b6f46685" category="inline-link-rx"></block>在私有模式下， BlueXP backup and recovery僅支援ONTAP磁碟區資料的備份和還原。<block ref="15e6ab2d8e5fe020b0c50f9b9c646000" category="inline-link-rx"></block>不支援應用程式資料和虛擬機器資料的備份和還原。</block>
   <block id="8ec22990440236bef094659080045622" category="paragraph">在私有模式下， BlueXP backup and recovery僅支援ONTAP磁碟區資料的備份和還原。<block ref="b31f203263729f4286583cdb64627773" category="inline-link-rx"></block></block>
-  <block id="1e26f8ab2a662e479805c3cfb2beb8cc" category="cell">是的<block ref="786a3e24a23d3c4968859c8e0f050df6" category="inline-link-rx"></block>ONTAP磁碟區資料支援的備份目標清單^]</block>
   <block id="a6c599d9b9bbe744be463c056f9e194a" category="cell">是的<block ref="8cbf8dca81955ce6c3d97cec5394e7fd" category="inline-link-rx"></block></block>
   <block id="794b3a495ea7fc3d5dfc4a04fca36174" category="summary">為使用者指派平台角色，以授予在BlueXP中執行管理任務的權限、指派角色、新增使用者、建立連接器和管理聯合。</block>
   <block id="c6583b97e14f16bc392f485bc9330714" category="cell">允許使用者不受限制地存取組織內的所有專案和資料夾，為任何專案或資料夾新增成員，以及執行任何BlueXP任務並使用任何沒有明確關聯角色的資料服務。具有此角色的使用者組織和管理您的BlueXP組織。如果他們有資格，他們可以建立資料夾和項目、分配角色、新增使用者並管理所有工作環境。這是唯一可以建立連接器的存取角色。</block>
@@ -5059,4 +5058,5 @@
   <block id="bad85d32b5f3e46e956809c13b502817" category="list-text"><block ref="7e42187d6259f740c2e1915df5429efc" category="inline-link-rx"></block> 。</block>
   <block id="364a4ff52cd92f16374019cdedf6b91c" category="inline-link">了解有關 AWS 本地區域支援的更多信息</block>
   <block id="3b1699510f585646e0c8a73fa1b820ae" category="list-text"><block ref="3b1699510f585646e0c8a73fa1b820ae" category="inline-link-rx"></block></block>
+  <block id="c1c35b571a8270f43bf6faa6757452f6" category="cell">是的<block ref="7017fcd1de8071674201a0278a852eae" category="inline-link-rx"></block></block>
 </blocks>

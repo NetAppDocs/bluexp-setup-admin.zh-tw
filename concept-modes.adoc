@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-modes.html 
-keywords: dark site, internet, on prem, no internet, supported deployments, govcloud, government access, environments, supported environments, deployment modes, modes, private mode, restricted mode, il6, sc2s, c2s, dark site, sovereign region, saas, government region, secret region, top secret, aws secret, aws top secret, private 
+keywords: dark site, internet, on prem, no internet, supported deployments, govcloud, government access, environments, supported environments, deployment modes, modes, private mode, restricted mode, il6, sc2s, c2s, sovereign region, saas, government region, secret region, top secret, aws secret, aws top secret, private 
 summary: BlueXP 提供多種部署模式、可讓您以符合業務與安全需求的方式使用 BlueXP 。標準模式利用 BlueXP SaaS 層來提供完整功能、而限制模式和私有模式則適用於有連線限制的組織。 
 ---
 = 瞭解 BlueXP 部署模式
@@ -353,10 +353,10 @@ NOTE: 如果您想在中使用 BlueXP https://aws.amazon.com/federal/secret-clou
 | StorageGRID | 否 | 否 
 
 
-.16+| *服務* | 警示 | 否 | 否 
+.15+| *服務* | 警示 | 否 | 否 
 
 
-| 備份與還原 | 是的https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivityView[]ONTAP磁碟區資料支援的備份目標清單^] | 是的https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-no-internet-connectivity["檢視 ONTAP Volume 資料支援的備份目的地清單"^] 
+| 備份與還原 | 是的https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["檢視 ONTAP Volume 資料支援的備份目的地清單"^] | 是的https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-no-internet-connectivity["檢視 ONTAP Volume 資料支援的備份目的地清單"^] 
 
 
 | 分類 | 是的 | 是的 
@@ -398,20 +398,26 @@ NOTE: 如果您想在中使用 BlueXP https://aws.amazon.com/federal/secret-clou
 | 工作負載工廠 | 否 | 否 
 
 
-.6+| * 功能 * | 身分識別與存取管理 | 是的 
+.8+| * 功能 * | 身分識別與存取管理 | 是的 | 是的 
 
 
-| 是的 | 認證資料 | 是的 
+| 認證資料 | 是的 | 是的 
 
 
-| 是的 | NSS 帳戶 | 是的 
+| 聯邦 | 是的 | 否 
 
 
-| 否 | 通知 | 是的 
+| 多因素驗證 | 是的 | 否 
 
 
-| 否 | 搜尋 | 是的 
+| NSS 帳戶 | 是的 | 否 
 
 
-| 否 | 時間表 | 是的 
+| 通知 | 是的 | 否 
+
+
+| 搜尋 | 是的 | 否 
+
+
+| 時間表 | 是的 | 是的 
 |===
