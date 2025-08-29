@@ -398,7 +398,7 @@ NOTE: 如果您想在中使用 BlueXP https://aws.amazon.com/federal/secret-clou
 | 工作負載工廠 | 否 | 否 
 
 
-.6+| * 功能 * | BlueXP  身分識別與存取管理 | 是的 
+.6+| * 功能 * | 身分識別與存取管理 | 是的 
 
 
 | 是的 | 認證資料 | 是的 
