@@ -4,7 +4,7 @@ permalink: task-federation-manage.html
 keywords: federation, BlueXP, identity provider, IdP, single sign-on, SSO, verified domain, credentials, certificate, client secret, update, manage federations, security, compliance, user access, productivity, account management, authentication, access control, business continuity 
 summary: 添加聯邦連接後，您可以在BlueXP中管理它。您可以查看連接的狀態，並根據需要啟用或停用它。 
 ---
-= 在 BLueXP 中管理聯盟
+= 在BlueXP中管理聯盟
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

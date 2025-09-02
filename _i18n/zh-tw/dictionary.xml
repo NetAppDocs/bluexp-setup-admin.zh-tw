@@ -4094,7 +4094,6 @@
   <block id="7dd4f26252edc5554ac1671370b55f2e" category="section-title">Connector 下載的安全端點現在支援備份與還原，以及勒索軟體保護</block>
   <block id="fa3ad4e82d26203dad8cb93a91e5c448" category="inline-link-macro">瞭解 Connector 下載的安全端點。</block>
   <block id="65a207edfe2ea4576ceb53eb1d7a6caa" category="paragraph">如果您使用備份與還原或勒索軟體保護，現在可以使用安全端點進行 Connector 下載。 <block ref="037b27fad48ee4136808e628650ebfff" category="inline-link-macro-rx"></block></block>
-  <block id="299e5505ce975112afaefec130cc83e0" category="paragraph">7.9</block>
   <block id="4d286ab7c41699ac1c0222a6a25c8ee6" category="list-text">如果您使用 Podman，則需要調整 aardvark-dns 連接埠。</block>
   <block id="6d6b1f0f1080ec2381bb912afda46e99" category="list-text">透過 SSH 連接到 BlueXP Connector 虛擬機器。</block>
   <block id="dbd4c3db8125866be9bb5a796f445d43" category="list-text">開啟 podman _/usr/share/containers/containers.conf_ 檔案並修改 Aardvark DNS 服務的選定連接埠。例如改為54。</block>
@@ -4503,7 +4502,6 @@
   <block id="3f2aa4bd073d2458603c46bc293f8ade" category="inline-link-macro">與 SAML 身分提供者建立聯合連接</block>
   <block id="00aef0f14c29d451cdbf8446ce6b0b8e" category="list-text"><block ref="00aef0f14c29d451cdbf8446ce6b0b8e" category="inline-link-macro-rx"></block></block>
   <block id="89d483b606a77baabe08bc060a494729" category="paragraph">BlueXP IAM 可讓您透過為使用者指派層次結構中特定部分的存取角色來授予資源存取權限。例如，可以為某個包含五個資源的項目指派資料夾或專案管理員角色。</block>
-  <block id="2c6203bceaf797d85b477f5b84315d7e" category="paragraph">資料夾可以包含項目、其他資料夾或兩者。建立資料夾是可選的。</block>
   <block id="fe82a8e97a8582336b585b91be018051" category="paragraph">_組織管理員_可能會將資源與資料夾關聯，以允許_資料夾或專案管理員_將該資源連結到資料夾中的相應項目。</block>
   <block id="0e60822112467cb5794c648314aae8c1" category="paragraph">將資源與資料夾關聯並不會使所有項目都可以存取它；只有資料夾或專案管理員可以看到它。資料夾管理員或專案管理員會決定哪些項目可以存取該資源，並將該資源與對應的項目關聯。</block>
   <block id="7b83c7b722f59c1d116d59def3df05be" category="paragraph">在特定層次結構層級授予權限會限製成員對所需資源以及可以使用這些資源的服務的存取。</block>
@@ -4739,7 +4737,6 @@
   <block id="a679ca81df887999afdb29cc812dba1a" category="section-title">刪除聯盟</block>
   <block id="2e39c9a75c534c723834aef16604225c" category="paragraph">如果您不再需要某個聯合，可以將其刪除。這會將該聯合從BlueXP中移除，並阻止任何與該聯合關聯的使用者使用其公司憑證登入BlueXP 。例如，如果 IdP 即將停用，或不再需要該聯合。刪除聯合後，您將無法恢復。您必須建立新的聯合。</block>
   <block id="46e00d5f60a3c01d902dd137d055d6cb" category="summary">添加聯邦連接後，您可以在BlueXP中管理它。您可以查看連接的狀態，並根據需要啟用或停用它。</block>
-  <block id="1b5bf5b8576a36a3f5b9e0e44e117c81" category="doc">在 BLueXP 中管理聯盟</block>
   <block id="da8dd0a914b02a392c9eda56004447a3" category="paragraph">您可以在BlueXP中管理您的聯盟。您可以停用它、更新過期的憑證，並在不再需要時將其停用。</block>
   <block id="22ae8cdedea46c7c71a0f34e66a726f1" category="paragraph">您也可以將已驗證的網域新增至現有聯合中，這允許您使用多個網域進行聯合連線。</block>
   <block id="92627f50638acf35c284d9f2b5e45cb5" category="inline-link-macro">了解有關BlueXP中的監控操作的更多資訊。</block>
@@ -5059,4 +5056,6 @@
   <block id="364a4ff52cd92f16374019cdedf6b91c" category="inline-link">了解有關 AWS 本地區域支援的更多信息</block>
   <block id="3b1699510f585646e0c8a73fa1b820ae" category="list-text"><block ref="3b1699510f585646e0c8a73fa1b820ae" category="inline-link-rx"></block></block>
   <block id="c1c35b571a8270f43bf6faa6757452f6" category="cell">是的<block ref="7017fcd1de8071674201a0278a852eae" category="inline-link-rx"></block></block>
+  <block id="4ebca8d078924ec17de1cf258147df0c" category="paragraph">資料夾可以包含項目、其他資料夾或兩者。建立資料夾是可選的。</block>
+  <block id="5c2b3c6d1859da2427f6c94e995cf39c" category="doc">在BlueXP中管理聯盟</block>
 </blocks>
