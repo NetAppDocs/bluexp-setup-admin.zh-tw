@@ -5058,4 +5058,5 @@
   <block id="c1c35b571a8270f43bf6faa6757452f6" category="cell">是的<block ref="7017fcd1de8071674201a0278a852eae" category="inline-link-rx"></block></block>
   <block id="4ebca8d078924ec17de1cf258147df0c" category="paragraph">資料夾可以包含項目、其他資料夾或兩者。建立資料夾是可選的。</block>
   <block id="5c2b3c6d1859da2427f6c94e995cf39c" category="doc">在BlueXP中管理聯盟</block>
+  <block id="12315f52b33926030701f1c76338e060" category="cell">\ https://netapp-cloud-account.auth0.com \ https://netapp-cloud-account.us.auth0.com \ https://cdn.auth0.com \ https://services.cloud.netapp.com</block>
 </blocks>
