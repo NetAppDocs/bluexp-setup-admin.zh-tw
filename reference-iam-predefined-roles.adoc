@@ -49,7 +49,7 @@ BlueXP身分和存取管理 (IAM) 包含預先定義角色，您可以將這些�
 | 應用程式角色 | 職責 
 
 
-| link:reference-iam-keystone-roles.html["Google Cloud NetApp Volumes管理員"] | 具有Google Cloud NetApp Volumes角色的使用者可以發現和管理Google Cloud NetApp Volumes。 
+| link:reference-iam-gcnv-roles.html["Google Cloud NetApp Volumes管理員"] | 具有Google Cloud NetApp Volumes角色的使用者可以發現和管理Google Cloud NetApp Volumes。 
 
 
 | link:reference-iam-keystone-roles.html["Keystone 管理"] | 具有 Keystone 管理員角色的使用者可以建立服務要求。可讓使用者監控及檢視他們正在存取的 Keystone 租用戶內的使用量，資產和管理資訊。 

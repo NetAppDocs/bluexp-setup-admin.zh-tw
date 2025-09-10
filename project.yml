@@ -134,6 +134,8 @@ sidebar:
           url: "/reference-iam-platform-roles.html"
         - title: 應用程式角色
           entries:
+          - title: Google Cloud NetApp Volumes角色
+            url: "/reference-iam-gcnv-roles.html"
           - title: Keystone 角色
             url: "/reference-iam-keystone-roles.html"
           - title: 營運支援分析師

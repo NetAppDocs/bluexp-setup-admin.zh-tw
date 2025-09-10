@@ -2335,10 +2335,6 @@
   <block id="ccdd7e208a0a423c2c21b0cf2b9c9cf9" category="cell">Connector VM執行個體的服務帳戶必須具有特定的日常作業權限。在部署期間、您需要將服務帳戶與 Connector 建立關聯。
 
 您也必須確保在後續版本中新增權限時、原則保持在最新狀態。</block>
-  <block id="2ffc85864a3bde535e5f41ca5ceb963e" category="cell">探索 Cloud Volumes Service for Google Cloud</block>
-  <block id="fb40390dc5f9af56c8a05dba3f355101" category="cell">BlueXP需要透過Cloud Volumes Service Google Cloud服務帳戶存取功能、以及適當的權限。</block>
-  <block id="ec8725380aa2f688c9b9d45557c44600" category="inline-link">設定服務帳戶</block>
-  <block id="71ff910f19cd22c3817e69aefe990dc8" category="cell"><block ref="71ff910f19cd22c3817e69aefe990dc8" category="inline-link-rx"></block></block>
   <block id="326383c715f7d58418eab62449d7e6b5" category="cell">在 Google Cloud 中部署資料代理程式</block>
   <block id="6f0cd56d775c80607dc578326e3840bd" category="cell">確保部署資料代理程式的 Google Cloud 使用者擁有必要的權限。</block>
   <block id="23c5a36a4e18015e399e97b3a48f2255" category="inline-link">在Google Cloud中部署資料代理商所需的權限</block>
@@ -4871,7 +4867,6 @@
   <block id="332cf7fa33c69ec5f4db12e0c5d4c230" category="cell">允許使用者不受限制地存取指派給他們的特定專案和資料夾。可以將成員新增至他們管理的資料夾或專案，以及執行任何 BlueXP  工作，並在指派給他們的資料夾或專案中，對資源使用任何資料服務或應用程式。資料夾或專案管理員無法建立連接器。</block>
   <block id="1e92f5c7fccb14971fe2537bec747773" category="cell">允許使用者使用BlueXP建立和管理聯合，從而實現單一登入 (SSO)。</block>
   <block id="077ceb8a17d475a37128a6986bf1819f" category="inline-link-macro">Google Cloud NetApp Volumes管理員</block>
-  <block id="42e05b82ea98ae962f4c09a6330b152a" category="cell"><block ref="42e05b82ea98ae962f4c09a6330b152a" category="inline-link-macro-rx"></block></block>
   <block id="ee848730515e9ec34272f93a110738f2" category="cell">具有Google Cloud NetApp Volumes角色的使用者可以發現和管理Google Cloud NetApp Volumes。</block>
   <block id="95b4eb24270de6ac5f87fadb096e4edf" category="cell">提供查看BlueXP classification掃描結果的能力。擁有此角色的使用者可以檢視法規遵循資訊，並針對擁有存取權限的資源產生報告。這些使用者無法啟用或停用掃描磁碟區、儲存區或資料庫架構。分類沒有檢視者角色。</block>
   <block id="6bf86021a24fd009a31d432250a9ad20" category="section-title">2025 年 21 月 7 日</block>
@@ -4997,7 +4992,6 @@
   <block id="794b3a495ea7fc3d5dfc4a04fca36174" category="summary">為使用者指派平台角色，以授予在BlueXP中執行管理任務的權限、指派角色、新增使用者、建立連接器和管理聯合。</block>
   <block id="c6583b97e14f16bc392f485bc9330714" category="cell">允許使用者不受限制地存取組織內的所有專案和資料夾，為任何專案或資料夾新增成員，以及執行任何BlueXP任務並使用任何沒有明確關聯角色的資料服務。具有此角色的使用者組織和管理您的BlueXP組織。如果他們有資格，他們可以建立資料夾和項目、分配角色、新增使用者並管理所有工作環境。這是唯一可以建立連接器的存取角色。</block>
   <block id="3adefaf0742bb05998d95535c058e1ff" category="cell"><block ref="3adefaf0742bb05998d95535c058e1ff" category="inline-link-rx"></block></block>
-  <block id="f440bceeae5f537573e3d8bf616b2de6" category="list-text">hhttps://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-cvo-gcp.html[CMEK 的權限^]</block>
   <block id="3f4149dc5a7846817dd458a59e650f5f" category="inline-link">搜尋和恢復功能的權限</block>
   <block id="a420dd2924b01530fcf3ece61c9728df" category="cell"><block ref="81705cdd494c9139b5b5def25d4145b1" category="inline-link-rx"></block></block>
   <block id="4f11400d5bfc49418f8fe9e78ffbc58c" category="section-title">2024年7月31日</block>
@@ -5059,4 +5053,7 @@
   <block id="4ebca8d078924ec17de1cf258147df0c" category="paragraph">資料夾可以包含項目、其他資料夾或兩者。建立資料夾是可選的。</block>
   <block id="5c2b3c6d1859da2427f6c94e995cf39c" category="doc">在BlueXP中管理聯盟</block>
   <block id="12315f52b33926030701f1c76338e060" category="cell">\ https://netapp-cloud-account.auth0.com \ https://netapp-cloud-account.us.auth0.com \ https://cdn.auth0.com \ https://services.cloud.netapp.com</block>
+  <block id="7e4f2643de3611653e3c76b199ce2ca9" category="cell"><block ref="7e4f2643de3611653e3c76b199ce2ca9" category="inline-link-macro-rx"></block></block>
+  <block id="dc5b71cece1f13a67fc01472a59d8781" category="inline-link">CMEK 的權限</block>
+  <block id="564104d82a92323d6161aa7da0e8071a" category="list-text"><block ref="564104d82a92323d6161aa7da0e8071a" category="inline-link-rx"></block></block>
 </blocks>

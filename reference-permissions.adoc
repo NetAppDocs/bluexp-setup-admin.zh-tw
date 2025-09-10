@@ -202,23 +202,12 @@ BlueXP 需要 Google Cloud 權限才能使用 Connector 和個別服務。
 
  a| 
 * https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-cvo-gcp.html["使用備份和還原將Cloud Volumes ONTAP資料備份到 Google Cloud Storage"^]
-* hhttps://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-cvo-gcp.html[CMEK 的權限^]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-cvo-gcp.html["CMEK 的權限"^]
 
 
 
 
 | 將內部部署的 ONTAP 叢集備份至 Google Cloud | 當使用 BlueXP 備份和復原來備份本機 ONTAP 叢集時，您需要為連接器新增權限才能使用「搜尋和復原」功能。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-onprem-gcp.html["搜尋和恢復功能的權限"^] 
-|===
-
-
-=== 適用於 Google Cloud Cloud Volumes Service
-
-[cols="20,60,20"]
-|===
-| 目標 | 說明 | 連結 
-
-
-| 探索 Cloud Volumes Service for Google Cloud | BlueXP需要透過Cloud Volumes Service Google Cloud服務帳戶存取功能、以及適當的權限。 | https://docs.netapp.com/us-en/bluexp-cloud-volumes-service-gcp/task-set-up-google-cloud.html["設定服務帳戶"^] 
 |===
 
 
